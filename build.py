@@ -118,7 +118,7 @@ def neutralize_links(html):
             return m.group(0)
         if logical in PAGES or logical.startswith("assets/") or "assets/" in logical:
             return m.group(0)
-        return '<a class="soon" aria-disabled="true" data-soon="bientôt"'
+        return '<a class="soon" aria-disabled="true" data-soon="bientôt" data-cible="%s"' % logical
     return re.sub(r'<a href="([^"]+)"', fix, html)
 
 
@@ -381,10 +381,7 @@ def main():
         for f in files:
             if not f.endswith(".html") or f == "404.html":
                 continue
-            for href in re.findall(r'href="((?:\.\./)*[^":#]*/)"', read(os.path.join(dirpath, f))):
-                logical = re.sub(r"^(\.\./)+", "", href)
-                if logical and not logical.startswith(("http", "/")) and logical not in PAGES:
-                    missing.add(logical)
+            missing.update(re.findall(r'data-cible="([^"]+)"', read(os.path.join(dirpath, f))))
     if missing:
         print("Pages encore à écrire (liens marqués « bientôt ») :")
         for m in sorted(missing):
