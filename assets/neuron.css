@@ -838,3 +838,13 @@ body.nav-open{overflow:hidden}
 .thero-job .thero-promise > .jh{display:block;padding:13px 20px;background:rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.14);font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 .thero-job .thero-promise > span{padding:15px 20px;border-bottom:1px solid rgba(255,255,255,.1);align-items:flex-start}
 .thero-job .thero-promise > span:last-child{border-bottom:0}
+
+/* Pictogrammes du méga-menu : pastille bleu pâle, trait accent, alignée sur le socle */
+.mega-col > a.mico{display:grid;grid-template-columns:34px 1fr;gap:13px;align-items:start}
+.mega-col > a.mico .mi{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:var(--tint);color:var(--blue-d);flex-shrink:0;transition:background .15s,color .15s}
+.mega-col > a.mico .mi svg{width:18px;height:18px}
+.mega-col > a.mico:hover .mi{background:var(--blue-d);color:#fff}
+.mega-col > a.mico .mtxt{min-width:0}
+.mega-col > a.mico b{display:block;font-size:14.5px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.mega-col > a.mico:hover b{color:var(--blue-d)}
+.mega-col > a.mico em{display:block;font-style:normal;font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:3px}
