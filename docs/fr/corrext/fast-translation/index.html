@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast translation · Corrext par Neur.on : traduire un texte ou un fichier juridique en Suisse</title>
+<meta name="description" content="Fast translation, l'outil de traduction instantanée de Corrext : texte jusqu'à 10'000 caractères, fichiers Word, Excel, PowerPoint et PDF, conversion PDF vers Word, réécriture en cinq styles, alternatives par moteur, vérification terminologique CHnell. Traitement en Suisse en mode Highly sensitive.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/fr/corrext/fast-translation/">
+<meta property="og:title" content="Fast translation · Corrext par Neur.on : traduire un texte ou un fichier juridique en Suisse">
+<meta property="og:description" content="Fast translation, l'outil de traduction instantanée de Corrext : texte jusqu'à 10'000 caractères, fichiers Word, Excel, PowerPoint et PDF, conversion PDF vers Word, réécriture en cinq styles, alternatives par moteur, vérification terminologique CHnell. Traitement en Suisse en mode Highly sensitive.">
+<meta property="og:url" content="https://neur-on.ai/fr/corrext/fast-translation/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="fr_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=20260915b">
+<script type="application/ld+json">{
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Quels formats de fichiers Fast translation accepte-t-il ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, jusqu'à 25 fichiers de 50 Mo chacun par envoi. La traduction est livrée dans le format d'origine. L'onglet PDF to Word convertit un PDF, y compris scanné, en document Word."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien de texte puis-je traduire en une fois ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Jusqu'à 10'000 caractères dans Text translation et 5'000 caractères dans Rephrasing. Au-delà, déposez le document dans File translation ou créez un Translation project."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quels moteurs de traduction sont disponibles ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Neur.on LLM, le moteur suisse entraîné sur le droit suisse, ainsi que DeepL Pro, Azure OpenAI GPT et Claude. Le moteur se choisit à chaque envoi et le panneau Alternatives compare jusqu'à quatre propositions, chacune attribuée à son moteur."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Que fait l'interrupteur Highly sensitive content ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Il impose un stockage et un traitement exclusivement en Suisse, pour l'allemand, le français, l'italien et l'anglais ; selon la définition affichée par Corrext dans Translation project, le contenu n'est pas réutilisé dans une mémoire de traduction. Il est grisé sur l'onglet PDF to Word, qui ne traduit pas."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Comment vérifier un terme pendant une traduction ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Surlignez le mot dans le texte source et cliquez sur Fast Lookup : CHnell affiche des segments alignés tirés de sources officielles suisses, avec le domaine et la source de chaque occurrence."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Fast translation remplace-t-il la relecture par un traducteur juridique ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Fast translation sert à comprendre, préparer et travailler vite. Pour un document destiné à des tiers, à une publication ou à une autorité, créez un Translation project avec relecture Light, Full ou Double review et traduction certifiée."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Corrext", "item": "https://neur-on.ai/fr/corrext/"}, {"@type": "ListItem", "position": 3, "name": "Fast translation", "item": "https://neur-on.ai/fr/corrext/fast-translation/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="nav" id="siteNav" data-active="corrext">
+  <div class="container nav-inner">
+    <a href="../../../fr/" class="logo" aria-label="Neur.on, retour à l'accueil">Neur<span>.</span>on</a>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="neuron-llm">
+        <a href="../../../fr/neuron-llm/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="nav-a">Neur.on LLM</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Langue">
+        <a href="../../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span class="sep">·</span>
+        <a class="on" href="../../../fr/" aria-current="true">FR</a><span class="sep">·</span>
+        <a href="../../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span class="sep">·</span>
+        <a href="../../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+      </div>
+      <a href="../../../fr/contact/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="btn btn-blue">Demander une démo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Ouvrir le menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La plateforme</p>
+        <a href="../../../fr/corrext/"><b>Corrext, le poste de commande</b><span>Projets, devis, ressources et droits dans un seul environnement suisse</span></a>
+        <a href="../../../fr/neuron-llm/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Neur.on LLM</b><span>Le moteur entraîné sur le droit et la finance suisses</span></a>
+        <a href="../../../fr/securite-souverainete/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Sécurité et souveraineté</b><span>Où vos données sont stockées, traitées et par quel moteur</span></a>
+        <a href="../../../fr/corrext/api-on-premises/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>API et on-premises</b><span>Intégration à vos DMS, intranets et workflows</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Les quatre outils</p>
+        <a href="../../../fr/corrext/fast-translation/"><b>Fast translation</b><span>Texte, fichiers, PDF vers Word, réécriture</span></a>
+        <a href="../../../fr/corrext/translation-project/"><b>Translation project</b><span>Relecture humaine à la carte, devis et délai instantanés</span></a>
+        <a href="../../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse, 26 domaines</span></a>
+        <a href="../../../fr/corrext/extraits-registre-commerce/"><b>Extraits du registre</b><span>Traduction certifiée, notariée, apostillée</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Aller plus loin</p>
+        <a href="../../../fr/niveaux-de-qualite/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Quatre niveaux de qualité</b><span>De la traduction machine à la certification</span></a>
+        <a href="../../../fr/langues-et-formats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Langues et formats</b><span>30 langues, quatre natives, tous vos formats bureautiques</span></a>
+        <a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Centre d'aide</b><span>Comment faire, étape par étape</span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Essayez sans inscription</p>
+        <p class="mega-p">L'interface de Corrext, reproduite à l'identique sur trois extraits de droit suisse.</p>
+        <a href="../../../fr/corrext/fast-translation/#demo" class="mega-cta">Ouvrir la démo en direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Par métier</p>
+        <a href="../../../fr/solutions/cabinets-avocats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Cabinets d'avocats</b></a>
+        <a href="../../../fr/solutions/banques-finance/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Banques et finance</b></a>
+        <a href="../../../fr/solutions/directions-juridiques/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Directions juridiques et Legal Ops</b></a>
+        <a href="../../../fr/solutions/autorites-administration/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Autorités et administration</b></a>
+        <a href="../../../fr/solutions/fiduciaires-conseil/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Fiduciaires et conseil</b></a>
+        <a href="../../../fr/solutions/editeurs-legaltech/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>LegalTechs et éditeurs</b></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par domaine du droit</p>
+        <a href="../../../fr/traduction/contrats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Contrats</b></a>
+        <a href="../../../fr/traduction/droit-des-societes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Droit des sociétés</b></a>
+        <a href="../../../fr/traduction/fusions-acquisitions/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Fusions et acquisitions</b></a>
+        <a href="../../../fr/traduction/contentieux-arbitrage/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Contentieux et arbitrage</b></a>
+        <a href="../../../fr/traduction/banque-finance/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Banque et finance</b></a>
+        <a href="../../../fr/traduction/compliance-finma/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Compliance et FINMA</b></a>
+        <a href="../../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="mega-all">Les treize domaines <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par paire de langues</p>
+        <a href="../../../fr/traduction/allemand-francais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Allemand vers français</b></a>
+        <a href="../../../fr/traduction/francais-allemand/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Français vers allemand</b></a>
+        <a href="../../../fr/traduction/allemand-anglais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Allemand vers anglais</b></a>
+        <a href="../../../fr/traduction/francais-anglais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Français vers anglais</b></a>
+        <a href="../../../fr/traduction/italien-francais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Italien vers français</b></a>
+        <a href="../../../fr/traduction/anglais-allemand/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Anglais vers allemand</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Vous hésitez encore ?</p>
+        <p class="mega-p">Ce que Corrext fait que les outils génériques ne font pas, comparé point par point.</p>
+        <a href="../../../fr/comparatif/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="mega-cta">Voir les comparatifs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Comprendre</p>
+        <a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Blog</b><span>Droit suisse, traduction et intelligence artificielle</span></a>
+        <a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Guides</b><span>Méthodes de fond, signées par nos spécialistes</span></a>
+        <a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Études et benchmarks</b><span>Nos mesures sur corpus de droit suisse</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consulter</p>
+        <a href="../../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Glossaire juridique suisse</b><span>Chaque terme en allemand, français, italien et anglais</span></a>
+        <a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Centre d'aide Corrext</b><span>Prise en main et réponses pratiques</span></a>
+        <a href="../../../fr/aide/faq/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Questions fréquentes</b><span>Sécurité, langues, formats, relecture</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Comparer</p>
+        <a href="../../../fr/comparatif/deepl-traduction-juridique/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Corrext et DeepL</b></a>
+        <a href="../../../fr/comparatif/chatgpt-traduction-juridique/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Corrext et les LLM généralistes</b></a>
+        <a href="../../../fr/comparatif/agence-ou-plateforme/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Agence de traduction ou plateforme</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Une société suisse, une infrastructure suisse, un moteur entraîné sur le droit suisse.</p>
+        <a href="../../../fr/a-propos/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="mega-cta">À propos et distinctions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/corrext/">Corrext, la plateforme</a>
+        <a href="../../../fr/corrext/fast-translation/">Fast translation</a>
+        <a href="../../../fr/corrext/translation-project/">Translation project</a>
+        <a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a>
+        <a href="../../../fr/corrext/api-on-premises/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">API et on-premises</a>
+        <a href="../../../fr/neuron-llm/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Neur.on LLM</a>
+        <a href="../../../fr/securite-souverainete/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Sécurité et souveraineté</a>
+        <a href="../../../fr/niveaux-de-qualite/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Niveaux de qualité</a>
+        <a href="../../../fr/langues-et-formats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Langues et formats</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/solutions/cabinets-avocats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Cabinets d'avocats</a>
+        <a href="../../../fr/solutions/banques-finance/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Banques et finance</a>
+        <a href="../../../fr/solutions/directions-juridiques/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Directions juridiques et Legal Ops</a>
+        <a href="../../../fr/solutions/autorites-administration/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Autorités et administration</a>
+        <a href="../../../fr/solutions/fiduciaires-conseil/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Fiduciaires et conseil</a>
+        <a href="../../../fr/solutions/editeurs-legaltech/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">LegalTechs et éditeurs</a>
+        <a href="../../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Traduction par domaine</a>
+        <a href="../../../fr/comparatif/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Comparatifs</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a>
+        <a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a>
+        <a href="../../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Glossaire juridique suisse</a>
+        <a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a>
+        <a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Centre d'aide</a>
+        <a href="../../../fr/a-propos/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">À propos</a>
+      </div>
+    </div>
+    <a href="../../../fr/contact/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="btn btn-blue nm-cta">Demander une démo</a>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/corrext/">Corrext</a></li><li><span aria-current="page">Fast translation</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO compact : la démo est l'objet -->
+<section class="thero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Fast translation.</em> Traduisez un texte ou un fichier, comparez les moteurs, reformulez</h1>
+        <p class="lead">L'outil du quotidien dans Corrext : une traduction juridique en quelques secondes, dans le format d'origine, avec le moteur de votre choix et la terminologie suisse vérifiable en contexte. Essayez-le ci-dessous sur de vrais articles de loi.</p>
+        <div class="thero-cta">
+          <a href="../../../fr/contact/" class="btn btn-blue">
+            Demander une démo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#demo" class="btn btn-ghost">Essayer ci-dessous</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Highly sensitive content :</b> stockage et traitement exclusivement en Suisse (EN, FR, IT, DE)</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>30 langues</b> sur la plateforme ; allemand, français, italien et anglais en natif avec Neur.on LLM</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Quatre moteurs</b> dans une seule interface : Neur.on LLM, DeepL Pro, Azure OpenAI GPT, Claude, avec alternatives comparées</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÉMO : le cadre Corrext, débordant sous le hero -->
+<section class="tdemo demo" id="demo" style="padding:0;background:transparent">
+  <div class="container">
+    <div class="cx-ex" id="cxEx" role="group" aria-label="Extraits de démonstration">
+      <span>Choisissez un extrait :</span>
+      <button type="button" data-ex="co" class="on">Contrat · art. 104 CO</button>
+      <button type="button" data-ex="lb">Banque · art. 47 LB</button>
+      <button type="button" data-ex="ldip">Arbitrage · art. 186 LDIP</button>
+    </div>
+
+    <div class="cx" id="cx" aria-label="Démonstration de l'interface Corrext, outil Fast translation">
+      <div class="cx-top">
+        <span class="cx-logo"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c1.6 4.2 4.2 6.8 8.4 8.4L28 12l-3.6 1.6c-4.2 1.6-6.8 4.2-8.4 8.4L14.4 26 12.8 22c-1.6-4.2-4.2-6.8-8.4-8.4L.8 12l3.6-1.6C8.6 8.8 11.2 6.2 12.8 2z" transform="translate(1.6 1.6) scale(.9)" fill="#b8c5f4"/><circle cx="16" cy="16" r="3.2" fill="#fff"/></svg><span>CORRE<b>X</b>T</span></span>
+        <span class="home">Home</span>
+        <span class="grow"></span>
+        <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <span class="cx-avatar" aria-hidden="true">AM</span>
+      </div>
+
+      <div class="cx-notice" id="cxNotice" role="status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <b>Attorney-Client privilege notice</b>
+        You have chosen to use third-party translation engines hosted abroad. Before uploading your file(s), your organization requires you to remove any references that could potentially disclose the identity of clients, any other related parties, or the subject matter at hand. Third-party translation engines hosted abroad may exclusively be used for documents that have been completely pseudonymized. The use of such engines for high-profile or price-sensitive matters is strictly prohibited.
+      </div>
+
+      <div class="cx-tabs">
+        <div class="cx-tablist" role="tablist" aria-label="Outils Fast translation">
+          <button type="button" class="cx-tab on" data-tab="text" role="tab" aria-selected="true">Text translation</button>
+          <button type="button" class="cx-tab" data-tab="file" role="tab" aria-selected="false">File translation</button>
+          <button type="button" class="cx-tab" data-tab="pdf" role="tab" aria-selected="false">PDF to Word</button>
+          <button type="button" class="cx-tab" data-tab="reph" role="tab" aria-selected="false">Rephrasing</button>
+        </div>
+        <button type="button" class="cx-switch" id="cxSwitch" aria-pressed="true"><i aria-hidden="true"></i> Highly sensitive content</button>
+      </div>
+
+      <!-- Onglet Text translation -->
+      <div class="cx-panel on" id="cxp-text">
+        <div class="cx-work">
+          <div class="cx-bar">
+            <select class="cx-sel" id="cxSrcLang" aria-label="Langue source"><option>Detect language</option><option>Detected language (French)</option></select>
+            <span class="cx-swap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 5h18"/><polyline points="7 23 3 19 7 15"/><path d="M21 19H3"/></svg></span>
+            <select class="cx-sel" id="cxTgt" aria-label="Langue cible"><option value="de">German</option><option value="en">English</option><option value="it">Italian</option></select>
+            <select class="cx-sel" id="cxEng" aria-label="Moteur de traduction"><option>Neur.on LLM</option><option>DeepL Pro</option><option>Azure OpenAI - GPT</option></select>
+          </div>
+          <div class="cx-panes">
+            <div class="cx-pane">
+              <textarea class="cx-src" id="cxSrc" readonly aria-label="Texte source" placeholder="Enter the text you would like to translate.&#10;&#10;To translate files, simply upload them directly into our file translation interface."></textarea>
+              <button type="button" class="cx-ic clear" id="cxClear" aria-label="Effacer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+              <button type="button" class="cx-lookup-btn" id="cxLookupBtn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8zM19 14l.9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9z"/></svg> Fast Lookup</button>
+              <div class="cx-foot"><span class="ur" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h10a5 5 0 0 1 0 10H9"/><path d="M7 6 3 10l4 4"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10H11a5 5 0 0 0 0 10h4"/><path d="m17 6 4 4-4 4"/></svg></span><span class="cnt" id="cxCnt">0 / 10000</span></div>
+            </div>
+            <div class="cx-pane">
+              <div class="cx-out" id="cxOut" aria-live="polite"></div>
+              <button type="button" class="cx-ic copy" id="cxCopy" aria-label="Copier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+              <button type="button" class="cx-ic spark" id="cxSpark" aria-label="Alternatives"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8zM19 14l.9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9z"/></svg></button>
+              <div class="cx-foot"><span class="ur" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h10a5 5 0 0 1 0 10H9"/><path d="M7 6 3 10l4 4"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10H11a5 5 0 0 0 0 10h4"/><path d="m17 6 4 4-4 4"/></svg></span></div>
+            </div>
+          </div>
+          <div class="cx-alts" id="cxAlts">
+            <div class="h">Alternatives
+              <span class="gen"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg> Generate more</span>
+              <span class="pg"><span id="cxPg">1 / 2</span>
+                <button type="button" id="cxUp" aria-label="Alternative précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+                <button type="button" id="cxDn" aria-label="Alternative suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></button>
+                <button type="button" id="cxAltX" aria-label="Fermer les alternatives"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+              </span>
+            </div>
+            <div class="t" id="cxAltT"></div>
+          </div>
+        </div>
+        <div class="cx-hint">
+          <div class="ill" aria-hidden="true">Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO.</div>
+          <div><b>Need a quick word translation check?</b><p>To quickly verify the meaning or usage of a word in context, simply highlight the chosen word and click on “Fast Lookup”.</p></div>
+        </div>
+      </div>
+
+      <!-- Onglet File translation -->
+      <div class="cx-panel cx-upl" id="cxp-file">
+        <div class="cfg">
+          <div><label for="cxFEng">Translation engine</label><select class="cx-sel" id="cxFEng"><option>Neur.on LLM</option><option>DeepL Pro</option><option>Azure OpenAI - GPT</option></select></div>
+          <div><label for="cxFTgt">Translation target language</label><select class="cx-sel" id="cxFTgt"><option>German</option><option>English</option><option>Italian</option><option>French</option></select></div>
+        </div>
+        <p class="cx-h4">Upload your file(s)</p>
+        <button type="button" class="cx-drop" id="cxFileDrop">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3-3 3 3"/></svg></span>
+          <span class="t"><b>Click to upload</b> or drag and drop up to 25 files</span>
+          <span class="s">Supported file types: .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx<br>Max file size: 50MB</span>
+        </button>
+        <div class="cx-file" id="cxFileRow">
+          <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <span class="fm"><span class="fn">Darlehensvertrag_2026.docx</span><span class="fs" id="cxFileSub">248 KB · 14 pages · German → French</span><span class="bar"><i id="cxFileBar"></i></span></span>
+          <span class="st" id="cxFileSt">Translating…</span>
+        </div>
+        <p class="cx-note">Démo : le dépôt est simulé, le fichier n'est pas envoyé.</p>
+      </div>
+
+      <!-- Onglet PDF to Word -->
+      <div class="cx-panel cx-upl" id="cxp-pdf">
+        <p class="cx-h4" style="margin-top:14px">Upload your file(s)</p>
+        <button type="button" class="cx-drop" id="cxPdfDrop">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3-3 3 3"/></svg></span>
+          <span class="t"><b>Click to upload</b> or drag and drop up to 25 files</span>
+          <span class="s">Supported file types: .pdf<br>Max file size: 50MB</span>
+        </button>
+        <div class="cx-file" id="cxPdfRow">
+          <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <span class="fm"><span class="fn">Pieces_arbitrage_scan.pdf</span><span class="fs">3.1 MB · 42 pages · scan</span><span class="bar"><i id="cxPdfBar"></i></span></span>
+          <span class="st" id="cxPdfSt">Converting…</span>
+        </div>
+        <p class="cx-note">Démo : la conversion est simulée, le fichier n'est pas envoyé.</p>
+      </div>
+
+      <!-- Onglet Rephrasing -->
+      <div class="cx-panel" id="cxp-reph">
+        <div class="cx-work">
+          <div class="cx-bar reph">
+            <select class="cx-sel" aria-label="Langue source"><option>Detect language</option><option selected>Detected language (French)</option></select>
+            <span class="cx-swap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></span>
+            <select class="cx-sel" aria-label="Moteur"><option>Neur.on LLM</option></select>
+            <div class="cx-setwrap">
+              <select class="cx-sel" id="cxSetBtn" aria-label="Settings"><option>Settings</option></select>
+              <span class="cx-dot" id="cxSetDot" aria-hidden="true"></span>
+              <div class="cx-set-pop" id="cxSetPop">
+                <p class="cx-h5">Styles</p>
+                <div class="cx-chips" id="cxStyles">
+                  <button type="button" class="cx-chip" data-style="Formal legal">Formal legal</button>
+                  <button type="button" class="cx-chip" data-style="Financial">Financial</button>
+                  <button type="button" class="cx-chip" data-style="Simplified">Simplified</button>
+                  <button type="button" class="cx-chip" data-style="Formal">Formal</button>
+                  <button type="button" class="cx-chip" data-style="Informal">Informal</button>
+                </div>
+                <p class="cx-h5">Options</p>
+                <div class="cx-chips"><button type="button" class="cx-chip" data-style="Shorten">Shorten</button></div>
+                <div class="cx-set-act"><button type="button" class="rst" id="cxSetReset">Reset</button><button type="button" class="cx-btn" id="cxSetApply">Apply</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="cx-panes">
+            <div class="cx-pane">
+              <textarea class="cx-src" id="cxRSrc" readonly aria-label="Texte à reformuler" placeholder="Enter the text you would like to rephrase."></textarea>
+              <div class="cx-foot"><span class="ur" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h10a5 5 0 0 1 0 10H9"/><path d="M7 6 3 10l4 4"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10H11a5 5 0 0 0 0 10h4"/><path d="m17 6 4 4-4 4"/></svg></span><span class="cnt" id="cxRCnt">0 / 5000</span></div>
+            </div>
+            <div class="cx-pane">
+              <div class="cx-out" id="cxROut" aria-live="polite"></div>
+              <button type="button" class="cx-ic copy" aria-label="Copier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+              <button type="button" class="cx-ic regen" aria-label="Régénérer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 1 3 6.7L3 16"/><path d="M3 21v-5h5"/></svg></button>
+              <div class="cx-foot"><span class="ur" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h10a5 5 0 0 1 0 10H9"/><path d="M7 6 3 10l4 4"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10H11a5 5 0 0 0 0 10h4"/><path d="m17 6 4 4-4 4"/></svg></span></div>
+            </div>
+          </div>
+        </div>
+        <p class="cx-note" id="cxRNote">Démo : réécriture disponible sur l'extrait « Contrat · art. 104 CO », avec le réglage par défaut et le style Simplified.</p>
+      </div>
+
+      <!-- Fast Lookup : CHnell -->
+      <div class="cx-modal" id="cxModal" role="dialog" aria-modal="true" aria-label="Fast Lookup CHnell">
+        <div class="cx-chnell">
+          <div class="head">
+            <span class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c1.6 4.2 4.2 6.8 8.4 8.4L28 12l-3.6 1.6c-4.2 1.6-6.8 4.2-8.4 8.4L14.4 26 12.8 22c-1.6-4.2-4.2-6.8-8.4-8.4L.8 12l3.6-1.6C8.6 8.8 11.2 6.2 12.8 2z" transform="translate(1.6 1.6) scale(.9)" fill="#9b1c2a"/></svg><b>CH</b><span>nell</span></span>
+            <span class="pow">powered by Neur.on</span>
+          </div>
+          <div class="q">
+            <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="cxLkQ">Verzugszins</span></span>
+            <span class="lang" id="cxLkL1">German</span>
+            <span class="sw" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 5h18"/><polyline points="7 23 3 19 7 15"/><path d="M21 19H3"/></svg></span>
+            <span class="lang" id="cxLkL2">French</span>
+          </div>
+          <div class="cols" id="cxLkCols"></div>
+          <div class="more">Show more results</div>
+          <div class="close"><button type="button" class="cx-btn ghost" id="cxLkClose">Close</button></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="cx-caption">Interface reproduite d'après l'application Corrext · données de démonstration · 3 des 4 moteurs nommés sur ce site, Claude sans sortie récoltée · résultats réels obtenus dans Corrext le 14 septembre 2026.</p>
+  </div>
+</section>
+
+<!-- CE QUE FAIT L'OUTIL : registre de faits observés -->
+<div class="tafter">
+<section class="facts" id="faits">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Ce que fait Fast translation, exactement</h2>
+        <p>Fast translation est l'outil de traduction instantanée de Corrext. Il traduit un texte ou un lot de fichiers avec le moteur de votre choix, compare des alternatives attribuées à leur moteur, vérifie un terme dans son contexte officiel via CHnell et reformule un texte en cinq styles. Tout ce qui suit a été observé dans l'application le 14 septembre 2026.</p>
+        <div class="links">
+          <a href="../../../fr/corrext/translation-project/" class="feat-link">Pour une relecture humaine : Translation project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="../../../fr/securite-souverainete/" class="feat-link">Où vos données sont traitées <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Text translation</b><p>Jusqu'à 10'000 caractères, langue source détectée automatiquement, traduction à la saisie sans bouton. Boutons copier, effacer, annuler et rétablir.<small>Sorties de la démo : art. 104 CO, art. 47 LB, art. 186 LDIP, telles que produites par Neur.on LLM.</small></p></div>
+        <div class="fact"><b>File translation</b><p>Jusqu'à 25 fichiers par envoi, 50 Mo par fichier : .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx. La traduction conserve le format d'origine.<small>Conseil de l'application : déposer le format original (.docx ou .xlsx plutôt que .pdf) quand il existe.</small></p></div>
+        <div class="fact"><b>PDF to Word</b><p>Conversion d'un PDF, y compris scanné, en document Word éditable, avant traduction ou pour le travail interne.<small>L'interrupteur Highly sensitive content est grisé sur cet onglet : il ne traduit pas.</small></p></div>
+        <div class="fact"><b>Moteurs</b><p>Neur.on LLM (suisse, par défaut), DeepL Pro, Azure OpenAI GPT et Claude, choisis à chaque envoi. Les moteurs hébergés à l'étranger déclenchent l'avis Attorney-Client privilege de votre organisation.</p></div>
+        <div class="fact"><b>Alternatives</b><p>Le bouton étincelle ouvre jusqu'à quatre propositions, chacune attribuée à son moteur, avec un pagineur et « Generate more ». Vous comparez avant de retenir une formulation.</p></div>
+        <div class="fact"><b>Fast Lookup</b><p>Un mot surligné dans la source ouvre CHnell sur ce mot, en contexte : segments alignés, domaine, source officielle, « Show in context ».<small>Verzugszins : 324 résultats ; Bankgeheimnis : 425 résultats, au 14 septembre 2026.</small></p></div>
+        <div class="fact"><b>Rephrasing</b><p>Réécriture d'un texte jusqu'à 5'000 caractères avec Neur.on LLM. Styles Formal legal, Financial, Simplified, Formal, Informal ; option Shorten. Les mots modifiés sont soulignés.</p></div>
+        <div class="fact"><b>Langues</b><p>30 langues sur la plateforme, dont l'arabe, le chinois, le japonais et les langues européennes. Allemand, français, italien et anglais en natif avec Neur.on LLM et en mode Highly sensitive.</p></div>
+        <div class="fact"><b>Confidentialité</b><p>Stockage sur les serveurs suisses de Corrext dans tous les cas. Traitement exclusivement en Suisse avec Neur.on LLM ou en mode Highly sensitive content.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section class="who">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Trois situations où Fast translation change la journée</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-item">
+        <h3><span class="pn">Cabinets d'avocats.</span> Comprendre 40 pièces avant la séance de demain</h3>
+        <p>Déposez le lot en File translation, moteur Neur.on LLM, mode Highly sensitive : vous lisez les pièces dans leur mise en page d'origine, sans qu'un mot ait quitté la Suisse, et vous vérifiez les termes qui comptent dans CHnell.</p>
+      </div>
+      <div class="who-item">
+        <h3><span class="pn">Banques et compliance.</span> Répondre en trois langues à une circulaire FINMA</h3>
+        <p>Traduisez le passage en Text translation, ouvrez les alternatives pour choisir la formulation la plus proche de l'usage officiel, puis reformulez en style Financial pour la note interne.</p>
+      </div>
+      <div class="who-item">
+        <h3><span class="pn">Legal Ops et directions juridiques.</span> Mettre fin aux traductions sauvages</h3>
+        <p>Vos équipes ont un outil approuvé, gouverné par la politique de moteurs de l'organisation, avec les mêmes formats et la même terminologie pour tout le monde. Les outils en ligne non sécurisés n'ont plus de raison d'être.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOUVERNANCE -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Que se passe-t-il quand vous choisissez un moteur hébergé à l'étranger ?</h2>
+        <p>Corrext ne vous l'interdit pas : il applique la politique de votre organisation. Dès que DeepL Pro, Azure OpenAI GPT ou Claude est sélectionné, l'avis Attorney-Client privilege rappelle que seuls des documents entièrement pseudonymisés peuvent leur être confiés, et que les dossiers sensibles leur sont interdits. Avec Neur.on LLM ou en mode Highly sensitive content, tout reste en Suisse.</p>
+        <a href="../../../fr/securite-souverainete/" class="feat-link">Sécurité et souveraineté des données <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><b>Avis affiché dans l'outil.</b> Le texte de la politique s'affiche au moment du choix, pas dans une charte oubliée.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>Pseudonymisation exigée.</b> Noms de clients, parties et objet du dossier retirés avant tout envoi à un moteur étranger.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Mode Highly sensitive content.</b> Stockage et traitement exclusivement en Suisse, EN, FR, IT, DE.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTILS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Les autres outils de Corrext</h2>
+    <div class="siblings-row">
+      <a href="../../../fr/corrext/translation-project/"><b>Translation project</b><span>Projet en trois étapes, relecture interne ou externe en trois niveaux, devis et délai instantanés.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse : sources officielles, 26 domaines, vos propres ressources.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/corrext/extraits-registre-commerce/"><b>Extraits du registre du commerce</b><span>Traduction certifiée, notariée ou apostillée, commandée en ligne en quatre étapes.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Questions fréquentes sur Fast translation</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Quels formats de fichiers Fast translation accepte-t-il ?</summary>
+        <p>Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, jusqu'à 25 fichiers de 50 Mo chacun par envoi. La traduction est livrée dans le format d'origine. L'onglet PDF to Word convertit un PDF, y compris scanné, en document Word.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Combien de texte puis-je traduire en une fois ?</summary>
+        <p>Jusqu'à 10'000 caractères dans Text translation et 5'000 caractères dans Rephrasing. Au-delà, déposez le document dans File translation ou créez un Translation project.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quels moteurs de traduction sont disponibles ?</summary>
+        <p>Neur.on LLM, le moteur suisse entraîné sur le droit suisse, ainsi que DeepL Pro, Azure OpenAI GPT et Claude. Le moteur se choisit à chaque envoi et le panneau Alternatives compare jusqu'à quatre propositions, chacune attribuée à son moteur.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Que fait l'interrupteur Highly sensitive content ?</summary>
+        <p>Il impose un stockage et un traitement exclusivement en Suisse, pour l'allemand, le français, l'italien et l'anglais ; selon la définition affichée par Corrext dans Translation project, le contenu n'est pas réutilisé dans une mémoire de traduction. Il est grisé sur l'onglet PDF to Word, qui ne traduit pas.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Comment vérifier un terme pendant une traduction ?</summary>
+        <p>Surlignez le mot dans le texte source et cliquez sur Fast Lookup : CHnell affiche des segments alignés tirés de sources officielles suisses, avec le domaine et la source de chaque occurrence.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Fast translation remplace-t-il la relecture par un traducteur juridique ?</summary>
+        <p>Non. Fast translation sert à comprendre, préparer et travailler vite. Pour un document destiné à des tiers, à une publication ou à une autorité, créez un Translation project avec relecture Light, Full ou Double review et traduction certifiée.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Voyez Fast translation sur vos propres documents</h2>
+      <p>Une démo personnalisée avec un expert qui connaît le droit suisse, sur vos formats, vos langues et votre terminologie.</p>
+      <div class="final-cta-btns">
+        <a href="../../../fr/contact/" class="btn btn-blue">
+          Demander une démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../../fr/corrext/" class="btn-outline">Revenir à la plateforme Corrext</a>
+      </div>
+      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../fr/" class="logo">Neur<span>.</span>on</a>
+        <p>Le moteur de traduction du droit, de la fiscalité et de la finance suisses. Une solution entièrement suisse : entité, infrastructure et moteur Neur.on LLM, pour une précision quadrilingue et une souveraineté totale des données.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hébergement en Suisse (Exoscale) · nLPD et RGPD</p>
+      </div>
+      <div>
+        <h5>Plateforme</h5>
+        <ul>
+          <li><a href="../../../fr/corrext/">Corrext, la plateforme</a></li>
+          <li><a href="../../../fr/corrext/fast-translation/">Fast translation</a></li>
+          <li><a href="../../../fr/corrext/translation-project/">Translation project</a></li>
+          <li><a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a></li>
+          <li><a href="../../../fr/corrext/api-on-premises/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">API et on-premises</a></li>
+          <li><a href="../../../fr/neuron-llm/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Neur.on LLM, le moteur</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../../../fr/solutions/cabinets-avocats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Cabinets d'avocats</a></li>
+          <li><a href="../../../fr/solutions/banques-finance/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Banques et finance</a></li>
+          <li><a href="../../../fr/solutions/directions-juridiques/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Directions juridiques</a></li>
+          <li><a href="../../../fr/solutions/autorites-administration/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Autorités et administration</a></li>
+          <li><a href="../../../fr/solutions/fiduciaires-conseil/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Fiduciaires et conseil</a></li>
+          <li><a href="../../../fr/solutions/editeurs-legaltech/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">LegalTechs et éditeurs</a></li>
+          <li><a href="../../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Traduction par domaine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ressources</h5>
+        <ul>
+          <li><a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a></li>
+          <li><a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a></li>
+          <li><a href="../../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Glossaire juridique</a></li>
+          <li><a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a></li>
+          <li><a href="../../../fr/comparatif/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Comparatifs</a></li>
+          <li><a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Centre d'aide</a></li>
+          <li><a href="../../../fr/securite-souverainete/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Sécurité et souveraineté</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Neur.on</h5>
+        <ul class="footer-contact">
+          <li><a href="../../../fr/a-propos/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">À propos et distinctions</a></li>
+          <li><a href="../../../fr/a-propos/presse/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Presse</a></li>
+          <li><a href="../../../fr/contact/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Demander une démo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@neur-on.ai">contact@neur-on.ai</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Fribourg, Suisse. Tous droits réservés.</span>
+      <div class="links">
+        <a href="https://neur-on.ai/mentions-legales">Mentions légales</a>
+        <a href="https://neur-on.ai/confidentialite">Protection des données</a>
+        <a href="https://neur-on.ai/cgu">CGU</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../assets/nav.js?v=20260915b" defer></script>
+<script src="../../../assets/corrext-demo.js?v=20260915b"></script>
+</body>
+</html>

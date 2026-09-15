@@ -1,0 +1,693 @@
+<!--page
+title: Translation project · Corrext par Neur.on : relecture juridique à la carte, devis et délai instantanés
+description: Translation project, le tunnel en trois étapes de Corrext : confidentialité, fichiers analysés, relecture interne ou externe, devis et délai instantanés.
+short: Translation project
+nav: corrext
+assets: []
+canonical: https://neur-on.ai/fr/corrext/translation-project/
+-->
+
+<style>
+/* Démo Translation project · tunnel projet reproduit dans le cadre Corrext (préfixe .cxp-, couleurs --cx-* uniquement) */
+.cx [hidden]{display:none!important}
+.cxp-stepper{list-style:none;margin:0;padding:16px 18px 4px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 0}
+.cxp-stepper li{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--cx-muted)}
+.cxp-stepper li+li::before{content:"";width:44px;height:1px;background:var(--cx-line);margin:0 12px}
+.cxp-stepper li.done+li::before{background:var(--cx-indigo)}
+.cxp-stepper .n{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--cx-dim-2);background:#fff;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:var(--cx-muted);flex-shrink:0}
+.cxp-stepper .n svg{display:none;width:13px;height:13px}
+.cxp-stepper li.on{color:var(--cx-indigo)}
+.cxp-stepper li.on .n{background:var(--cx-indigo);border-color:var(--cx-indigo);color:#fff}
+.cxp-stepper li.done{color:var(--cx-ink)}
+.cxp-stepper li.done .n{border-color:var(--cx-indigo);color:var(--cx-indigo)}
+.cxp-stepper li.done .n .num{display:none}
+.cxp-stepper li.done .n svg{display:block}
+.cxp-body{padding:12px 18px 0}
+.cxp-step{display:none}
+.cxp-step.on{display:block}
+.cxp-title{font-size:16px;font-weight:700;color:var(--cx-ink);margin:0 0 4px;letter-spacing:-.01em}
+.cxp-title:focus{outline:none}
+.cxp-sub{font-size:12.5px;color:var(--cx-muted);margin:0 0 18px}
+.cxp-body .cx-h4{font-size:13px;font-weight:700;color:var(--cx-ink);margin:0 0 10px}
+.cxp-q{font-size:12.5px;font-weight:600;color:var(--cx-ink);margin:18px 0 8px}
+.cxp-field-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.cxp-field-head label{font-size:12.5px;font-weight:600;color:var(--cx-ink)}
+.cxp-switch{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--cx-indigo);cursor:pointer;border:0;background:transparent;padding:0;font-family:inherit}
+.cxp-switch i{width:34px;height:20px;border-radius:50px;background:var(--cx-indigo);position:relative;flex-shrink:0;transition:background .2s}
+.cxp-switch i::after{content:"";position:absolute;top:3px;right:3px;width:14px;height:14px;border-radius:50%;background:#fff}
+.cxp-switch.off{color:var(--cx-muted)}
+.cxp-switch.off i{background:var(--cx-dim-2)}
+.cxp-switch.off i::after{right:auto;left:3px}
+.cxp-input{width:100%;border:1px solid var(--cx-line);border-radius:8px;padding:9px 12px;font-family:inherit;font-size:12.5px;color:var(--cx-ink);background:#fff}
+.cxp-input:read-only{background:var(--cx-bg);color:var(--cx-text)}
+.cxp-input:disabled{background:var(--cx-bg);color:var(--cx-muted);cursor:default}
+.cxp-conf{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cxp-card{text-align:left;border:1.5px solid var(--cx-line);border-radius:12px;padding:14px 16px;background:#fff;cursor:pointer;font-family:inherit;color:var(--cx-text);display:block;width:100%;transition:border-color .15s}
+.cxp-card:hover{border-color:var(--cx-dim)}
+.cxp-card.on{border-color:var(--cx-indigo)}
+.cxp-card b{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--cx-ink);margin-bottom:6px}
+.cxp-card b::before{content:"";width:14px;height:14px;border-radius:50%;border:1.5px solid var(--cx-dim-2);flex-shrink:0;box-sizing:border-box}
+.cxp-card.on b{color:var(--cx-indigo)}
+.cxp-card.on b::before{border:4px solid var(--cx-indigo)}
+.cxp-card span{display:block;font-size:12px;line-height:1.5;color:var(--cx-text)}
+.cxp-langbtn{display:inline-flex;align-items:center;gap:8px}
+.cxp-langbtn svg{width:14px;height:14px}
+.cxp-langwrap .cx-chips{margin:0 0 10px}
+.cxp-pop{margin-top:10px;border:1px solid var(--cx-line);border-radius:10px;padding:10px;background:#fff;max-width:340px}
+.cxp-langlist{list-style:none;margin:8px 0 0;padding:0;max-height:186px;overflow:auto}
+.cxp-langlist label{display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:6px;font-size:12.5px;color:var(--cx-ink);cursor:pointer}
+.cxp-langlist label:hover{background:var(--cx-bg)}
+.cx input[type=checkbox]{accent-color:var(--cx-indigo);width:15px;height:15px;margin:0}
+.cx-drop:disabled{opacity:.55;cursor:default}
+.cx-drop:disabled:hover{background:#fff}
+.cxp-filecard{border:1px solid var(--cx-line);border-radius:10px;margin-top:12px}
+.cxp-filecard .cx-file{border:0;margin:0;padding:12px 14px}
+.cxp-filecard .fn,.cxp-filecard .fs{display:block}
+.cxp-file-act{display:inline-flex;gap:4px}
+.cxp-ic{width:28px;height:28px;border-radius:6px;border:0;background:transparent;color:var(--cx-muted);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.cxp-ic svg{width:15px;height:15px}
+.cxp-ic:hover{background:var(--cx-indigo-soft);color:var(--cx-indigo)}
+.cxp-ic:disabled{opacity:.45;cursor:default}
+.cxp-ic:disabled:hover{background:transparent;color:var(--cx-muted)}
+.cxp-filemeta{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding:10px 14px 12px 62px;border-top:1px solid var(--cx-line)}
+.cxp-filemeta .pg{font-size:12.5px;color:var(--cx-ink)}
+.cxp-filemeta label{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--cx-muted)}
+.cxp-filemeta .cx-sel,.cxp-table .cx-sel{border:1px solid var(--cx-line);border-radius:8px;padding:7px 30px 7px 10px;font-size:12px;width:auto}
+/* Étape 3 · Quotes */
+.cxp-qtabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 16px}
+.cxp-qtab{text-align:left;border:1.5px solid var(--cx-line);border-radius:12px;padding:12px 14px;background:#fff;cursor:pointer;font-family:inherit;transition:border-color .15s}
+.cxp-qtab:hover{border-color:var(--cx-dim)}
+.cxp-qtab.on{border-color:var(--cx-indigo)}
+.cxp-qtab b{display:block;font-size:13px;color:var(--cx-ink)}
+.cxp-qtab.on b{color:var(--cx-indigo)}
+.cxp-qtab span{display:block;font-size:12px;color:var(--cx-muted);margin-top:2px}
+.cxp-qgrid{display:grid;grid-template-columns:1fr 272px;gap:16px;align-items:start}
+.cxp-block{border:1px solid var(--cx-line);border-radius:12px;padding:16px}
+.cxp-spec{display:grid;gap:10px}
+.cxp-spec label,.cxp-lbl{display:block;font-size:12px;color:var(--cx-muted)}
+.cxp-spec label .cxp-input,.cxp-lbl .cxp-input{margin-top:5px}
+.cxp-lbl .cxp-input{max-width:220px}
+.cxp-link{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--cx-indigo);text-decoration:underline;text-underline-offset:2px}
+.cxp-yn{display:inline-flex;border:1px solid var(--cx-line);border-radius:8px;overflow:hidden}
+.cxp-yn-btn{border:0;background:#fff;padding:7px 18px;font-size:12.5px;font-weight:600;color:var(--cx-ink);cursor:pointer;font-family:inherit}
+.cxp-yn-btn+.cxp-yn-btn{border-left:1px solid var(--cx-line)}
+.cxp-yn-btn.on{background:var(--cx-indigo);color:#fff}
+.cxp-tablewrap{border:1px solid var(--cx-line);border-radius:12px;margin-top:14px;padding:0 0 4px}
+.cxp-scroll{overflow-x:auto}
+.cxp-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:600px}
+.cxp-table th{text-align:left;font-size:11.5px;font-weight:600;color:var(--cx-muted);padding:10px 12px;border-bottom:1px solid var(--cx-line);white-space:nowrap}
+.cxp-table td{padding:10px 12px;border-bottom:1px solid var(--cx-line);color:var(--cx-ink);vertical-align:middle;white-space:nowrap}
+.cxp-table th label{display:inline-flex;align-items:center;gap:7px;cursor:pointer}
+.cxp-table .fn{font-weight:600}
+.cxp-infobtn{width:20px;height:20px;border:0;background:transparent;color:var(--cx-indigo);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;vertical-align:middle;margin-left:4px;border-radius:50%}
+.cxp-infobtn svg{width:15px;height:15px}
+.cxp-infobtn:hover{background:var(--cx-indigo-soft)}
+.cxp-info{margin:10px 12px 6px;padding:12px 14px;background:var(--cx-bg);border-radius:10px}
+.cxp-info dl{margin:0;display:grid;gap:10px}
+.cxp-info dt{font-size:12px;font-weight:700;color:var(--cx-ink)}
+.cxp-info dd{margin:2px 0 0;font-size:12px;line-height:1.5;color:var(--cx-text)}
+.cxp-tablewrap .cx-note{padding:8px 12px 6px}
+.cxp-est{border:1px solid var(--cx-line);border-radius:12px;padding:16px;background:var(--cx-bg)}
+.cxp-est dl{margin:0 0 14px}
+.cxp-est dl div{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--cx-line);font-size:12.5px;color:var(--cx-text)}
+.cxp-est dl div.tot{border-bottom:0;font-weight:700;color:var(--cx-ink)}
+.cxp-est dt{font-weight:inherit}
+.cxp-est dd{margin:0;font-variant-numeric:tabular-nums;text-align:right;color:var(--cx-ink)}
+.cxp-est .cx-shim{display:inline-block;width:56px;margin:0;vertical-align:middle}
+.cxp-est .cx-btn{width:100%}
+.cxp-est .cx-note{padding:0 0 12px}
+.cxp-banner{margin:10px 0 0;padding:10px 12px;background:var(--cx-indigo-soft);border-radius:8px;font-size:12px;color:var(--cx-ink);line-height:1.45}
+.cxp-foot{display:flex;align-items:center;gap:10px;padding:14px 18px;border-top:1px solid var(--cx-line);margin-top:18px}
+.cxp-foot .grow{flex:1}
+.cxp-gear{width:34px;height:34px;border-radius:8px;border:1px solid var(--cx-line);background:#fff;color:var(--cx-muted);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.cxp-gear svg{width:16px;height:16px}
+.cxp-gear:disabled{opacity:.45;cursor:default}
+@media(max-width:940px){.cxp-qgrid{grid-template-columns:1fr}}
+@media(max-width:560px){.cxp-body{padding:10px 14px 0}.cxp-stepper{padding:14px 14px 2px}.cxp-stepper li{font-size:12px}.cxp-stepper li+li::before{width:14px;margin:0 8px}.cxp-conf,.cxp-qtabs{grid-template-columns:1fr}.cxp-filemeta{padding-left:14px}.cxp-foot{padding:12px 14px;flex-wrap:wrap}.cxp-block{padding:14px}}
+</style>
+
+<script type="application/ld+json">
+{
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Quelle différence entre Standard confidentiality et Highly sensitive content ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En Standard confidentiality, le projet est enregistré sur les serveurs suisses de Corrext et les données sont traitées en Suisse ou à l'étranger selon le moteur de traduction choisi ; le projet peut ensuite vous servir, à vous seul, de mémoire de traduction. En Highly sensitive content, stockage et traitement sont exclusivement suisses, pour l'anglais, le français, l'italien et l'allemand, et le contenu traduit n'est jamais réutilisé en mémoire."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Qu'est-ce qu'une page standard ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est l'unité de comptage que Corrext affiche pour chaque fichier dès son dépôt, à côté de la langue et de la catégorie juridique détectées. Le délai estimé et le devis reposent sur ce nombre de pages standard. Dans l'exemple de cette page, un contrat d'assurance de quelques pages compte 2.5 pages standard."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quels sont les trois niveaux de relecture externe ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Light review, par un traducteur juridique : les erreurs significatives, omissions et contresens de la traduction automatique sont corrigés, pour une traduction complète et fidèle destinée à la compréhension et à la transmission interne. Full review, par un traducteur juridique : la traduction est en plus adaptée pour la cohérence, les tournures idiomatiques, le style et le ton, prête à être partagée avec des tiers. Double review et traduction certifiée, par une agence spécialisée : relecture complète par deux traducteurs juridiques qualifiés et certificat signé attestant l'exactitude et l'impartialité de la traduction, pour l'usage légal, la publication ou la remise aux autorités."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Qui relit mes documents ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Vous le décidez fichier par fichier. En Internal review, c'est votre propre équipe : vous renseignez son prix par page standard et son prix horaire approximatif pour valoriser ce travail dans le devis. En relecture externe, c'est un traducteur juridique pour la Light review et la Full review, ou une agence de traduction spécialisée, avec deux traducteurs et un certificat signé, pour la Double review et traduction certifiée."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Le devis et le délai sont-ils vraiment instantanés ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Dès que la date d'échéance et le niveau de relecture sont choisis, l'encadré Estimated time affiche la préparation, la relecture interne, la relecture externe et le délai total, sans attendre le retour d'une agence. Le bouton Generate quote produit ensuite le devis correspondant à ces choix."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Mes projets alimentent-ils une mémoire de traduction ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Seulement en Standard confidentiality : le projet est enregistré sur les serveurs suisses de Corrext et peut être utilisé exclusivement par vous comme mémoire de traduction pour vos projets futurs. En Highly sensitive content, le contenu traduit n'est jamais réutilisé."
+   }
+  }
+ ]
+}
+</script>
+
+<!-- HERO compact : la démo est l'objet -->
+<section class="thero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Translation project.</em> De la demande au devis, en trois étapes</h1>
+        <p class="lead">Nommez le projet, choisissez son mode de confidentialité, déposez vos fichiers : Corrext détecte la langue, la catégorie juridique et le nombre de pages standard de chacun. Vous choisissez ensuite une relecture interne par votre équipe ou externe en trois niveaux, et le devis comme le délai s'affichent instantanément.</p>
+        <div class="thero-cta">
+          <a href="contact.html" class="btn btn-blue">
+            Demander une démo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#demo" class="btn btn-ghost">Parcourir les trois étapes</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Confidentialité choisie projet par projet :</b> Standard, stockage suisse et traitement selon le moteur ; Highly sensitive, stockage et traitement exclusivement en Suisse (EN, FR, IT, DE), aucune réutilisation en mémoire</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>Relecture à la carte :</b> par votre équipe, par un traducteur juridique (Light ou Full review) ou par une agence spécialisée (Double review et traduction certifiée)</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><b>Devis et délai instantanés :</b> calculés à partir des pages standard et de la catégorie juridique détectées au dépôt du fichier</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÉMO : le tunnel projet dans le cadre Corrext, débordant sous le hero -->
+<section class="tdemo demo" id="demo" style="padding:0;background:transparent">
+  <div class="container">
+    <div class="cx" id="cx" aria-label="Démonstration de l'interface Corrext, outil Translation project">
+      <div class="cx-top">
+        <span class="cx-logo"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c1.6 4.2 4.2 6.8 8.4 8.4L28 12l-3.6 1.6c-4.2 1.6-6.8 4.2-8.4 8.4L14.4 26 12.8 22c-1.6-4.2-4.2-6.8-8.4-8.4L.8 12l3.6-1.6C8.6 8.8 11.2 6.2 12.8 2z" transform="translate(1.6 1.6) scale(.9)" fill="#b8c5f4"/><circle cx="16" cy="16" r="3.2" fill="#fff"/></svg><span>CORRE<b>X</b>T</span></span>
+        <span class="home">Home</span>
+        <span class="grow"></span>
+        <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <span class="cx-avatar" aria-hidden="true">AM</span>
+      </div>
+
+      <!-- Stepper -->
+      <ol class="cxp-stepper" aria-label="Étapes du projet">
+        <li class="on" aria-current="step"><span class="n"><span class="num">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Set-up</span></li>
+        <li><span class="n"><span class="num">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">File overview</span></li>
+        <li><span class="n"><span class="num">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Quotes</span></li>
+      </ol>
+
+      <div class="cxp-body">
+
+        <!-- Étape 1 · Set-up -->
+        <div class="cxp-step on" id="cxpStep1">
+          <p class="cxp-title" tabindex="-1">Create a new project</p>
+          <p class="cxp-sub">Name your translation project and choose the target languages for your documents.</p>
+
+          <div class="cxp-field">
+            <div class="cxp-field-head">
+              <label for="cxpName">Project name</label>
+              <button type="button" class="cxp-switch" id="cxpDefault" aria-pressed="true"><i aria-hidden="true"></i> Use default name</button>
+            </div>
+            <input type="text" class="cxp-input" id="cxpName" value="2026-09-14_Organisation_Utilisateur" readonly>
+          </div>
+
+          <p class="cxp-q" id="cxpConfQ">How confidential are the project and the uploaded files?</p>
+          <div class="cxp-conf" role="radiogroup" aria-labelledby="cxpConfQ">
+            <button type="button" class="cxp-card on" role="radio" aria-checked="true" data-conf="standard">
+              <b>Standard confidentiality</b>
+              <span>The data will be processed either inside or outside Switzerland according to your choice of machine translation engine. Projects will be saved on Corrext's Swiss servers and can be used exclusively by you as translation memory for future projects.</span>
+            </button>
+            <button type="button" class="cxp-card" role="radio" aria-checked="false" data-conf="sensitive">
+              <b>Highly sensitive content</b>
+              <span>The data will be stored and processed exclusively in Switzerland. Translated material will not be used in translation memories for future projects. This option is currently available for the following languages: EN, FR, IT, DE.</span>
+            </button>
+          </div>
+
+          <p class="cxp-q">Translation target languages</p>
+          <div class="cxp-langwrap">
+            <div class="cx-chips" id="cxpLangChips" hidden></div>
+            <button type="button" class="cx-btn ghost cxp-langbtn" id="cxpLangBtn" aria-expanded="false" aria-controls="cxpLangPop">Select target languages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="cxp-pop" id="cxpLangPop" hidden>
+              <input type="search" class="cxp-input" id="cxpLangSearch" placeholder="Search" aria-label="Search languages" autocomplete="off">
+              <ul class="cxp-langlist" id="cxpLangList">
+                <li><label><input type="checkbox" value="German"> German</label></li>
+                <li><label><input type="checkbox" value="French"> French</label></li>
+                <li><label><input type="checkbox" value="Italian"> Italian</label></li>
+                <li><label><input type="checkbox" value="English"> English</label></li>
+                <li><label><input type="checkbox" value="Czech"> Czech</label></li>
+                <li><label><input type="checkbox" value="Hungarian"> Hungarian</label></li>
+                <li><label><input type="checkbox" value="Arabic"> Arabic</label></li>
+                <li><label><input type="checkbox" value="Bulgarian"> Bulgarian</label></li>
+                <li><label><input type="checkbox" value="Danish"> Danish</label></li>
+                <li><label><input type="checkbox" value="Greek"> Greek</label></li>
+                <li><label><input type="checkbox" value="Spanish"> Spanish</label></li>
+                <li><label><input type="checkbox" value="Dutch"> Dutch</label></li>
+              </ul>
+            </div>
+          </div>
+          <p class="cx-note">Démo : choisissez au moins une langue cible pour activer Next.</p>
+        </div>
+
+        <!-- Étape 2 · File overview -->
+        <div class="cxp-step" id="cxpStep2">
+          <p class="cxp-title" tabindex="-1">File overview</p>
+          <p class="cxp-sub">Upload the documents to translate. Corrext analyses each file before the quote.</p>
+          <button type="button" class="cx-drop" id="cxpDrop">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3-3 3 3"/></svg></span>
+            <span class="t"><b>Click to upload</b> or drag and drop files</span>
+            <span class="s">Supported file types: .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx<br>When available, preferably upload the original format (.docx or .xlsx rather than .pdf)<br>Max file size: 50MB</span>
+          </button>
+          <div class="cxp-filecard" id="cxpFileCard" hidden>
+            <div class="cx-file show">
+              <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+              <span class="fm"><span class="fn">Contrat_assurance.docx</span><span class="fs" id="cxpFileSub" aria-live="polite">Analysing…</span><span class="bar"><i id="cxpFileBar"></i></span></span>
+              <span class="cxp-file-act">
+                <button type="button" class="cxp-ic" disabled aria-label="Télécharger Contrat_assurance.docx (indisponible en démo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><path d="M12 15V3"/></svg></button>
+                <button type="button" class="cxp-ic" id="cxpFileDel" aria-label="Supprimer Contrat_assurance.docx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+              </span>
+            </div>
+            <div class="cxp-filemeta" id="cxpFileMeta" hidden>
+              <span class="pg"><b>2.5</b> standard pages</span>
+              <label>Detected language <select class="cx-sel" id="cxpFileLang"><option selected>French</option><option>German</option><option>Italian</option><option>English</option></select></label>
+              <label>Detected category <select class="cx-sel" id="cxpFileCat"><option selected>Private Insurance</option><option>Banking &amp; Finance</option><option>Company Law</option><option>Litigation &amp; Enforcement</option><option>M&amp;A</option><option>Tax &amp; Customs</option><option>Other</option></select></label>
+            </div>
+          </div>
+          <p class="cx-note">Démo : le dépôt est simulé, aucun fichier n'est envoyé.</p>
+        </div>
+
+        <!-- Étape 3 · Quotes -->
+        <div class="cxp-step" id="cxpStep3">
+          <p class="cxp-title" tabindex="-1">Quotes</p>
+          <p class="cxp-sub">Choose who reviews the machine translation, then get the estimated time and the quote.</p>
+
+          <div class="cxp-qtabs" role="tablist" aria-label="Type de devis">
+            <button type="button" class="cxp-qtab on" role="tab" id="cxpTabInt" aria-selected="true" aria-controls="cxpPanInt"><b>Internal review</b><span>Internal review time: 1-2 hours</span></button>
+            <button type="button" class="cxp-qtab" role="tab" id="cxpTabCus" aria-selected="false" aria-controls="cxpPanCus" tabindex="-1"><b>Custom workflow</b><span>External review, due date and priority order</span></button>
+          </div>
+
+          <!-- Onglet Internal review -->
+          <div class="cxp-qpanel" id="cxpPanInt" role="tabpanel" aria-labelledby="cxpTabInt">
+            <div class="cxp-qgrid">
+              <div class="cxp-block">
+                <p class="cx-h4">Internal review specifications</p>
+                <div class="cxp-spec">
+                  <label>Number of Standard Pages for internal review <input type="text" class="cxp-input" value="2.5" readonly></label>
+                  <label>Reviewing price per Standard Page charged by you <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
+                  <label>Approximate review price per hour <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
+                </div>
+              </div>
+              <aside class="cxp-est" aria-label="Estimated time">
+                <p class="cx-h4">Estimated time</p>
+                <dl><div class="tot"><dt>Review</dt><dd>1-2 hours</dd></div></dl>
+                <button type="button" class="cx-btn" id="cxpCreate">Create project</button>
+                <p class="cxp-banner" id="cxpCreateMsg" role="status" hidden>Démo : aucun projet n'est créé dans l'application.</p>
+              </aside>
+            </div>
+          </div>
+
+          <!-- Onglet Custom workflow -->
+          <div class="cxp-qpanel" id="cxpPanCus" role="tabpanel" aria-labelledby="cxpTabCus" hidden>
+            <div class="cxp-qgrid">
+              <div>
+                <div class="cxp-block">
+                  <p class="cx-h4">External review specifications</p>
+                  <label class="cxp-lbl" for="cxpDue">Due date</label>
+                  <input type="date" class="cxp-input cxp-due" id="cxpDue" value="2026-09-24" min="2026-09-15" style="max-width:220px;margin-top:5px">
+                  <br><a href="contact.html" class="cxp-link">Contact us for an earlier delivery date</a>
+                  <p class="cxp-q" id="cxpPrioQ">Do you want to specify a priority order for processing your files?</p>
+                  <div class="cxp-yn" role="group" aria-labelledby="cxpPrioQ">
+                    <button type="button" class="cxp-yn-btn" aria-pressed="false" data-yn="yes">Yes</button>
+                    <button type="button" class="cxp-yn-btn on" aria-pressed="true" data-yn="no">No</button>
+                  </div>
+                </div>
+                <div class="cxp-tablewrap">
+                  <div class="cxp-scroll">
+                    <table class="cxp-table">
+                      <thead>
+                        <tr>
+                          <th scope="col"><label><input type="checkbox" id="cxpSelAll"> Select all</label></th>
+                          <th scope="col">File</th>
+                          <th scope="col">Languages</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Review level <button type="button" class="cxp-infobtn" id="cxpInfoBtn" aria-expanded="false" aria-controls="cxpInfo" aria-label="Définition des niveaux de relecture"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></button></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox" id="cxpRowBox" aria-label="Sélectionner Contrat_assurance.docx"></td>
+                          <td class="fn">Contrat_assurance.docx</td>
+                          <td>FR → DE</td>
+                          <td><select class="cx-sel" id="cxpRev" aria-label="Review"><option selected>External</option><option>Internal</option></select></td>
+                          <td><select class="cx-sel" id="cxpLevel" aria-label="Review level"><option value="" selected>Choose review</option><option value="light">Light review (Legal translator)</option><option value="full">Full review (Legal translator)</option><option value="double">Double review &amp; certified translation (Specialized agency)</option></select></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="cxp-info" id="cxpInfo" hidden>
+                    <dl>
+                      <div><dt>Light review (Legal translator)</dt><dd>The output of the machine translation is reviewed by a translator to correct any significant errors, omissions or mistranslations. The result is a complete and semantically accurate translation of the document, recommended for understanding and internal transmission.</dd></div>
+                      <div><dt>Full review (Legal translator)</dt><dd>The output of the machine translation is reviewed by a translator, adapted and modified, with additional focus on consistency, idiomatic wording, style and tone. This ensures a good legal translation of your documents, ready to be shared with third parties.</dd></div>
+                      <div><dt>Double review &amp; certified translation (Specialized agency)</dt><dd>Full review of the documents by two qualified legal translators. A certificate signed by the specialized translation agency in charge of the project attests to the accuracy and impartiality of the translation. Suitable for documents intended for legal use, publication, or submission to authorities.</dd></div>
+                    </dl>
+                  </div>
+                  <p class="cx-note">Démo : les montants du devis ne sont pas affichés.</p>
+                </div>
+              </div>
+              <aside class="cxp-est" aria-label="Estimated time">
+                <p class="cx-h4">Estimated time</p>
+                <dl aria-live="polite">
+                  <div><dt>Preparation</dt><dd id="cxpEstPrep">-</dd></div>
+                  <div><dt>Internal review</dt><dd id="cxpEstInt">-</dd></div>
+                  <div><dt>External review</dt><dd id="cxpEstExt">-</dd></div>
+                  <div class="tot"><dt>Estimated review time</dt><dd id="cxpEstTot">-</dd></div>
+                </dl>
+                <p class="cx-note" id="cxpEstNote" hidden>Démo : seul le niveau Full review a été observé le 14 septembre 2026 ; les autres délais s'affichent dans l'application.</p>
+                <button type="button" class="cx-btn" id="cxpQuote" disabled>Generate quote</button>
+                <p class="cxp-banner" id="cxpQuoteMsg" role="status" hidden>Démo : aucun devis n'est généré ni envoyé.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pied du tunnel -->
+      <div class="cxp-foot">
+        <button type="button" class="cxp-gear" disabled aria-label="Settings (non reproduit dans la démo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+        <span class="grow"></span>
+        <button type="button" class="cx-btn ghost" id="cxpPrev" disabled>Previous</button>
+        <button type="button" class="cx-btn" id="cxpNext" disabled>Next</button>
+      </div>
+    </div>
+
+    <p class="cx-caption">Interface reproduite d'après l'application Corrext · données de démonstration · textes des étapes et niveaux de relecture tels qu'observés le 14 septembre 2026.</p>
+  </div>
+</section>
+
+<!-- CE QUE FAIT L'OUTIL : registre de faits observés -->
+<div class="tafter">
+<section class="facts" id="faits">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Ce que fait Translation project, exactement</h2>
+        <p>Translation project est le tunnel de commande de Corrext en trois étapes : Set-up, File overview, Quotes. Il nomme le projet, fixe le mode de confidentialité, analyse chaque fichier déposé (pages standard, langue, catégorie juridique), puis propose une relecture interne par votre équipe ou externe par un traducteur juridique ou une agence certifiée, avec délai et devis instantanés.</p>
+        <p>Tout ce qui suit a été observé dans l'application le 14 septembre 2026.</p>
+        <div class="links">
+          <a href="corrext-fast-translation.html" class="feat-link">Pour l'instantané sans relecture : Fast translation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="securite-souverainete.html" class="feat-link">Où vos données sont stockées et traitées <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Set-up</b><p>Nom du projet généré par défaut (date, organisation, utilisateur) ou saisi librement, mode de confidentialité, puis langues cibles choisies dans une liste à cases avec recherche.<small>Le projet est créé dès le passage à l'étape suivante.</small></p></div>
+        <div class="fact"><b>Confidentialité</b><p>Standard confidentiality : traitement en Suisse ou à l'étranger selon le moteur choisi, projet enregistré sur les serveurs suisses de Corrext. Highly sensitive content : stockage et traitement exclusivement en Suisse, pour EN, FR, IT et DE.<small>En mode sensible, le contenu traduit n'alimente aucune mémoire de traduction.</small></p></div>
+        <div class="fact"><b>Langues cibles</b><p>Une ou plusieurs langues cibles par projet, parmi les 30 langues de la plateforme. Chaque langue retenue s'affiche en chip et se retire d'un clic ; Next reste inactif tant qu'aucune n'est choisie.</p></div>
+        <div class="fact"><b>File overview</b><p>Formats .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, 50 Mo par fichier ; l'application conseille le format original (.docx ou .xlsx plutôt que .pdf). Pour chaque fichier : nombre de pages standard, langue détectée et catégorie juridique détectée, toutes deux modifiables.<small>Exemple observé : 2.5 pages standard, French, Private Insurance.</small></p></div>
+        <div class="fact"><b>Internal review</b><p>Votre équipe relit elle-même la traduction automatique. Vous indiquez le nombre de pages standard, le prix par page et le prix horaire approximatif de votre relecture pour la valoriser dans le devis.<small>Délai affiché pour l'exemple de 2.5 pages standard : 1-2 heures.</small></p></div>
+        <div class="fact"><b>Custom workflow</b><p>Date d'échéance (week-ends grisés), lien de contact pour une livraison plus rapide, ordre de priorité entre fichiers, puis pour chaque fichier le choix entre relecture interne ou externe et le niveau de relecture. Le bouton devient Generate quote.</p></div>
+        <div class="fact"><b>Les trois niveaux</b><p>Light review, par un traducteur juridique : erreurs significatives, omissions et contresens corrigés, pour comprendre et transmettre en interne. Full review, par un traducteur juridique : cohérence, tournures idiomatiques, style et ton, prêt pour des tiers. Double review et traduction certifiée, par une agence spécialisée : deux traducteurs juridiques et certificat signé, pour l'usage légal, la publication ou les autorités.</p></div>
+        <div class="fact"><b>Devis et délai</b><p>Calculés instantanément à partir des pages standard, de la catégorie détectée, du niveau de relecture et de la date d'échéance : préparation, relecture interne, relecture externe et délai total, avant toute commande.<small>Exemple observé : Full review, échéance à dix jours, 2.5 pages standard : 1 jour.</small></p></div>
+        <div class="fact"><b>Mémoire de traduction</b><p>Les projets en Standard confidentiality sont enregistrés sur les serveurs suisses de Corrext et réutilisables exclusivement par vous comme mémoire de traduction pour vos projets futurs. Rien n'est réutilisé en mode Highly sensitive.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section class="who">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Trois situations où Translation project prend le relais</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-item">
+        <h3><span class="pn">Legal Ops et directions juridiques.</span> Publier le rapport annuel en allemand et en italien</h3>
+        <p>Un seul projet, deux langues cibles, Double review et traduction certifiée par une agence spécialisée. Le délai et le devis s'affichent avant la commande : vous arbitrez entre les niveaux de relecture sur des chiffres, sans attendre le retour d'une agence.</p>
+      </div>
+      <div class="who-item">
+        <h3><span class="pn">Cabinets d'avocats.</span> Transmettre des pièces à un correspondant étranger</h3>
+        <p>Projet en Highly sensitive content : stockage et traitement en Suisse, aucune réutilisation en mémoire. Full review par un traducteur juridique pour des pièces prêtes à être partagées, avec la date d'échéance fixée dès le devis ; Double review et traduction certifiée si l'autorité destinataire exige un certificat.</p>
+      </div>
+      <div class="who-item">
+        <h3><span class="pn">Banques et compliance.</span> Faire relire par l'équipe juridique interne</h3>
+        <p>Internal review : la traduction automatique est relue par vos propres juristes, et leur temps est valorisé dans le devis grâce au prix par page standard et au prix horaire que vous renseignez. Le délai affiché tient compte de cette relecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOUVERNANCE : le mode de confidentialité -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Standard ou Highly sensitive : que change le mode de confidentialité ?</h2>
+        <p>Le choix se fait à la création de chaque projet, avant le dépôt du premier fichier. Dans les deux cas, le projet est enregistré sur les serveurs suisses de Corrext. La différence porte sur le lieu de traitement et sur la mémoire de traduction : en Standard confidentiality, le traitement suit le moteur choisi, suisse ou étranger, et le projet enrichit votre mémoire privée ; en Highly sensitive content, tout reste en Suisse et rien n'est réutilisé.</p>
+        <a href="securite-souverainete.html" class="feat-link">Sécurité et souveraineté des données <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg><span><b>Stockage suisse dans les deux cas.</b> Le projet est enregistré sur les serveurs suisses de Corrext, quel que soit le mode choisi.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Traitement selon le mode.</b> Standard : en Suisse ou à l'étranger selon le moteur de traduction choisi. Highly sensitive : exclusivement en Suisse, pour EN, FR, IT et DE.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg><span><b>Mémoire de traduction.</b> Standard : le projet est réutilisable exclusivement par vous comme mémoire pour vos projets futurs. Highly sensitive : aucune réutilisation.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTILS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Les autres outils de Corrext</h2>
+    <div class="siblings-row">
+      <a href="corrext-fast-translation.html"><b>Fast translation</b><span>Texte ou fichier traduit instantanément, alternatives par moteur, PDF vers Word, réécriture en cinq styles.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="corrext-chnell.html"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse : sources officielles, 26 domaines, vos propres ressources.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="corrext-extraits-registre.html"><b>Extraits du registre du commerce</b><span>Traduction certifiée, notariée ou apostillée, commandée en ligne en quatre étapes.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Questions fréquentes sur Translation project</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Quelle différence entre Standard confidentiality et Highly sensitive content ?</summary>
+        <p>En Standard confidentiality, le projet est enregistré sur les serveurs suisses de Corrext et les données sont traitées en Suisse ou à l'étranger selon le moteur de traduction choisi ; le projet peut ensuite vous servir, à vous seul, de mémoire de traduction. En Highly sensitive content, stockage et traitement sont exclusivement suisses, pour l'anglais, le français, l'italien et l'allemand, et le contenu traduit n'est jamais réutilisé en mémoire.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Qu'est-ce qu'une page standard ?</summary>
+        <p>C'est l'unité de comptage que Corrext affiche pour chaque fichier dès son dépôt, à côté de la langue et de la catégorie juridique détectées. Le délai estimé et le devis reposent sur ce nombre de pages standard. Dans l'exemple de cette page, un contrat d'assurance de quelques pages compte 2.5 pages standard.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quels sont les trois niveaux de relecture externe ?</summary>
+        <p>Light review, par un traducteur juridique : les erreurs significatives, omissions et contresens de la traduction automatique sont corrigés, pour une traduction complète et fidèle destinée à la compréhension et à la transmission interne. Full review, par un traducteur juridique : la traduction est en plus adaptée pour la cohérence, les tournures idiomatiques, le style et le ton, prête à être partagée avec des tiers. Double review et traduction certifiée, par une agence spécialisée : relecture complète par deux traducteurs juridiques qualifiés et certificat signé attestant l'exactitude et l'impartialité de la traduction, pour l'usage légal, la publication ou la remise aux autorités.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Qui relit mes documents ?</summary>
+        <p>Vous le décidez fichier par fichier. En Internal review, c'est votre propre équipe : vous renseignez son prix par page standard et son prix horaire approximatif pour valoriser ce travail dans le devis. En relecture externe, c'est un traducteur juridique pour la Light review et la Full review, ou une agence de traduction spécialisée, avec deux traducteurs et un certificat signé, pour la Double review et traduction certifiée.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Le devis et le délai sont-ils vraiment instantanés ?</summary>
+        <p>Oui. Dès que la date d'échéance et le niveau de relecture sont choisis, l'encadré Estimated time affiche la préparation, la relecture interne, la relecture externe et le délai total, sans attendre le retour d'une agence. Le bouton Generate quote produit ensuite le devis correspondant à ces choix.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mes projets alimentent-ils une mémoire de traduction ?</summary>
+        <p>Seulement en Standard confidentiality : le projet est enregistré sur les serveurs suisses de Corrext et peut être utilisé exclusivement par vous comme mémoire de traduction pour vos projets futurs. En Highly sensitive content, le contenu traduit n'est jamais réutilisé.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Voyez Translation project sur vos propres dossiers</h2>
+      <p>Une démo personnalisée avec un expert qui connaît le droit suisse : vos formats, vos langues cibles et le niveau de relecture adapté à chaque usage.</p>
+      <div class="final-cta-btns">
+        <a href="contact.html" class="btn btn-blue">
+          Demander une démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="corrext.html" class="btn-outline">Revenir à la plateforme Corrext</a>
+      </div>
+      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+/* Démo Translation project · tunnel en trois étapes, état réel reflété dans le stepper et les boutons */
+(function(){
+  var cx=document.getElementById('cx'); if(!cx){return;}
+  var reduce=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var $=function(id){return document.getElementById(id);};
+  var each=function(list,fn){Array.prototype.forEach.call(list,fn);};
+  var state={step:1,langs:[],file:false};
+
+  /* Navigation entre étapes */
+  var steps=[$('cxpStep1'),$('cxpStep2'),$('cxpStep3')];
+  var items=cx.querySelectorAll('.cxp-stepper li');
+  var prev=$('cxpPrev'),next=$('cxpNext');
+  function render(focus){
+    for(var i=0;i<3;i++){
+      var n=i+1,on=n===state.step;
+      steps[i].classList.toggle('on',on);
+      items[i].classList.toggle('on',on);
+      items[i].classList.toggle('done',n<state.step);
+      if(on){items[i].setAttribute('aria-current','step');}else{items[i].removeAttribute('aria-current');}
+    }
+    prev.disabled=state.step===1;
+    next.hidden=state.step===3;
+    next.disabled=(state.step===1&&!state.langs.length)||(state.step===2&&!state.file);
+    if(focus){var t=steps[state.step-1].querySelector('.cxp-title');if(t){t.focus();}}
+  }
+  prev.addEventListener('click',function(){if(state.step>1){state.step--;render(true);}});
+  next.addEventListener('click',function(){if(state.step<3&&!next.disabled){state.step++;render(true);}});
+
+  /* Étape 1 · nom du projet */
+  var nameIn=$('cxpName'),defBtn=$('cxpDefault'),DEF='2026-09-14_Organisation_Utilisateur';
+  defBtn.addEventListener('click',function(){
+    var off=defBtn.classList.toggle('off');
+    defBtn.setAttribute('aria-pressed',off?'false':'true');
+    nameIn.readOnly=!off;
+    if(off){nameIn.focus();nameIn.select();}else{nameIn.value=DEF;}
+  });
+
+  /* Étape 1 · confidentialité */
+  var cards=cx.querySelectorAll('.cxp-card');
+  each(cards,function(c){c.addEventListener('click',function(){
+    each(cards,function(o){var on=o===c;o.classList.toggle('on',on);o.setAttribute('aria-checked',on?'true':'false');});
+  });});
+
+  /* Étape 1 · langues cibles */
+  var langBtn=$('cxpLangBtn'),langPop=$('cxpLangPop'),langSearch=$('cxpLangSearch'),langList=$('cxpLangList'),chips=$('cxpLangChips');
+  function openPop(open){langPop.hidden=!open;langBtn.setAttribute('aria-expanded',open?'true':'false');}
+  langBtn.addEventListener('click',function(){var open=langPop.hidden;openPop(open);if(open){langSearch.focus();}});
+  langSearch.addEventListener('input',function(){
+    var q=langSearch.value.trim().toLowerCase();
+    each(langList.querySelectorAll('li'),function(li){li.hidden=!!q&&li.textContent.toLowerCase().indexOf(q)<0;});
+  });
+  function renderChips(){
+    chips.innerHTML='';
+    state.langs.forEach(function(l){
+      var b=document.createElement('button');b.type='button';b.className='cx-chip on';
+      b.setAttribute('aria-label','Retirer '+l);
+      b.appendChild(document.createTextNode(l+' '));
+      var x=document.createElement('span');x.setAttribute('aria-hidden','true');x.textContent='×';b.appendChild(x);
+      b.addEventListener('click',function(){setLang(l,false);});
+      chips.appendChild(b);
+    });
+    chips.hidden=!state.langs.length;
+  }
+  function setLang(l,on){
+    var box=langList.querySelector('input[value="'+l+'"]');if(box){box.checked=on;}
+    var i=state.langs.indexOf(l);
+    if(on&&i<0){state.langs.push(l);}
+    if(!on&&i>=0){state.langs.splice(i,1);}
+    renderChips();render(false);
+  }
+  langList.addEventListener('change',function(e){if(e.target&&e.target.type==='checkbox'){setLang(e.target.value,e.target.checked);}});
+  langPop.addEventListener('keydown',function(e){if(e.key==='Escape'){openPop(false);langBtn.focus();}});
+  document.addEventListener('click',function(e){if(!langPop.hidden&&!langPop.contains(e.target)&&e.target!==langBtn&&!langBtn.contains(e.target)){openPop(false);}});
+
+  /* Étape 2 · dépôt simulé */
+  var drop=$('cxpDrop'),card=$('cxpFileCard'),bar=$('cxpFileBar'),sub=$('cxpFileSub'),meta=$('cxpFileMeta'),del=$('cxpFileDel'),tm;
+  drop.addEventListener('click',function(){
+    if(state.file||drop.disabled){return;}
+    drop.disabled=true;card.hidden=false;meta.hidden=true;sub.hidden=false;sub.textContent='Analysing…';
+    bar.style.transition='none';bar.style.transform='scaleX(0)';
+    void bar.offsetWidth;
+    bar.style.transition='';
+    requestAnimationFrame(function(){bar.style.transform='scaleX(1)';});
+    clearTimeout(tm);
+    tm=setTimeout(function(){
+      sub.hidden=true;
+      meta.hidden=false;state.file=true;render(false);next.focus();
+    },reduce?0:2400);
+  });
+  del.addEventListener('click',function(){
+    clearTimeout(tm);
+    card.hidden=true;state.file=false;drop.disabled=false;
+    bar.style.transition='none';bar.style.transform='scaleX(0)';
+    render(false);drop.focus();
+  });
+
+  /* Étape 3 · onglets Internal review / Custom workflow */
+  var tabs=[$('cxpTabInt'),$('cxpTabCus')],pans=[$('cxpPanInt'),$('cxpPanCus')];
+  function selTab(i){each(tabs,function(t,k){var on=k===i;t.classList.toggle('on',on);t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;pans[k].hidden=!on;});}
+  each(tabs,function(t,i){
+    t.addEventListener('click',function(){selTab(i);});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var n=(i+1)%2;selTab(n);tabs[n].focus();}});
+  });
+  $('cxpCreate').addEventListener('click',function(){$('cxpCreateMsg').hidden=false;});
+
+  /* Étape 3 · Custom workflow : priorité, sélection, info, estimation */
+  var yn=cx.querySelectorAll('.cxp-yn-btn');
+  each(yn,function(b){b.addEventListener('click',function(){each(yn,function(o){var on=o===b;o.classList.toggle('on',on);o.setAttribute('aria-pressed',on?'true':'false');});});});
+  var selAll=$('cxpSelAll'),rowBox=$('cxpRowBox');
+  selAll.addEventListener('change',function(){rowBox.checked=selAll.checked;});
+  rowBox.addEventListener('change',function(){selAll.checked=rowBox.checked;});
+  var infoBtn=$('cxpInfoBtn'),info=$('cxpInfo');
+  infoBtn.addEventListener('click',function(){var open=info.hidden;info.hidden=!open;infoBtn.setAttribute('aria-expanded',open?'true':'false');});
+
+  var due=$('cxpDue'),rev=$('cxpRev'),level=$('cxpLevel'),quote=$('cxpQuote'),quoteMsg=$('cxpQuoteMsg'),estNote=$('cxpEstNote'),et;
+  var dd={prep:$('cxpEstPrep'),inter:$('cxpEstInt'),ext:$('cxpEstExt'),tot:$('cxpEstTot')};
+  function setEst(v){for(var k in dd){if(dd.hasOwnProperty(k)){dd[k].textContent=v[k];}}}
+  function compute(){
+    var lvl=level.value,d=due.value,r=rev.value;
+    quote.disabled=!(lvl&&d);
+    quoteMsg.hidden=true;
+    clearTimeout(et);
+    if(!lvl){setEst({prep:'-',inter:'-',ext:'-',tot:'-'});estNote.hidden=true;return;}
+    for(var k in dd){if(dd.hasOwnProperty(k)){dd[k].innerHTML='<span class="cx-shim"></span>';}}
+    et=setTimeout(function(){
+      if(r==='External'&&lvl==='full'&&d==='2026-09-24'){
+        setEst({prep:'1 day',inter:'0 hours',ext:'1 day',tot:'1 day'});estNote.hidden=true;
+      }else{
+        setEst({prep:'à calculer',inter:'à calculer',ext:'à calculer',tot:'à calculer'});estNote.hidden=false;
+      }
+    },reduce?0:700);
+  }
+  due.addEventListener('change',compute);rev.addEventListener('change',compute);level.addEventListener('change',compute);
+  quote.addEventListener('click',function(){if(!quote.disabled){quoteMsg.hidden=false;}});
+
+  render(false);
+  compute();
+})();
+</script>

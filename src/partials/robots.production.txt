@@ -1,0 +1,29 @@
+# neur-on.ai · robots.txt (proposition de refonte, 2026-09-14)
+# Les robots des moteurs de recherche et des assistants IA sont autorisés à indexer et citer le site.
+
+User-agent: *
+Allow: /
+
+# Assistants IA (recherche et citation)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# Collecte d'entraînement générique (optionnel : à bloquer si Neur.on ne souhaite pas nourrir Common Crawl)
+# User-agent: CCBot
+# Disallow: /
+
+Sitemap: https://neur-on.ai/sitemap.xml
