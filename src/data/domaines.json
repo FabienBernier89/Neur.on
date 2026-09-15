@@ -4,7 +4,7 @@
     "short": "Contrats",
     "resume": "Baux, CGV, contrats de prêt : le vocabulaire du Code des obligations.",
     "title": "Traduction juridique de contrats suisses, DE FR IT · Neur.on",
-    "description": "Baux, contrats de travail, conditions générales, contrats de prêt : traduisez-les avec la terminologie du Code des obligations et une relecture juridique en Suisse.",
+    "description": "Baux, contrats de travail, CGV, prêts : traduire avec la terminologie du Code des obligations suisse et la relecture d'un traducteur juridique.",
     "lede": "Contrats.",
     "h1": "La terminologie du Code des obligations, d'une langue à l'autre",
     "lead": "Un bail commercial, des conditions générales, un contrat de prêt : chaque clause renvoie à une notion que le Code des obligations définit en allemand, en français et en italien. Corrext rend le document dans sa mise en page d'origine et montre, terme par terme, la formulation retenue par le texte officiel.",
@@ -54,8 +54,8 @@
       {"q": "La mise en page du contrat est-elle conservée ?", "r": "Oui, le document revient dans son format d'origine, avec ses articles, ses alinéas et ses annexes. L'application recommande de déposer le fichier natif, Word ou Excel, plutôt qu'un PDF quand il est disponible. Pour un contrat scanné, l'onglet PDF to Word produit d'abord un document éditable."},
       {"q": "Qui relit un contrat avant signature ?", "r": "Un traducteur juridique, en Light review pour un contrôle de cohérence ou en Full review pour une vérification ligne à ligne. Pour un document qui engage la société devant un tiers, la Double review mobilise deux traducteurs et une agence spécialisée, avec certificat. Le niveau se choisit document par document."},
       {"q": "Mes contrats servent-ils à entraîner un moteur ?", "r": "Non. Les contenus clients ne servent pas à entraîner les moteurs. Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction réutilisable exclusivement par votre organisation ; les projets en mode Highly sensitive content ne sont jamais réutilisés, même en interne."},
-      {"q": "Comment garder le même terme d'un avenant à l'autre ?", "r": "En vérifiant le terme retenu la première fois. Un mot surligné ouvre Fast lookup CHnell sur ce mot en contexte, avec sa source officielle, et le concordancier accepte vos propres ressources terminologiques en plus des 26 domaines déjà couverts."},
-      {"q": "Puis-je traduire un extrait de contrat sans déposer de fichier ?", "r": "Oui. La traduction de texte de Fast translation accepte jusqu'à 10'000 caractères collés directement, avec le choix du moteur et jusqu'à quatre alternatives de formulation. C'est le geste adapté à une clause isolée en cours de négociation."}
+      {"q": "Comment garder le même terme d'un avenant à l'autre ?", "r": "En vérifiant le terme retenu la première fois. Un mot surligné ouvre Fast lookup CHnell sur ce mot en contexte, avec sa source officielle, et le concordancier accepte vos propres ressources terminologiques en plus des 26 domaines déjà couverts. Les projets en confidentialité Standard alimentent en outre une mémoire de traduction réutilisable par votre seule organisation."},
+      {"q": "Puis-je traduire un extrait de contrat sans déposer de fichier ?", "r": "Oui. La traduction de texte de Fast translation accepte jusqu'à 10'000 caractères collés directement, avec le choix du moteur et jusqu'à quatre alternatives de formulation. C'est le geste adapté à une clause isolée en cours de négociation. Le résultat se copie directement dans le document en cours de rédaction."}
     ],
     "cta_t": "Voyez Corrext sur l'un de vos contrats",
     "cta_p": "Une démonstration sur vos propres clauses, avec un spécialiste du droit suisse.",
@@ -66,7 +66,7 @@
     "short": "Droit des sociétés",
     "resume": "Statuts, procès-verbaux, extraits du registre : le vocabulaire des sociétés.",
     "title": "Traduction en droit des sociétés suisse, DE FR IT · Neur.on",
-    "description": "Statuts, convocations, procès-verbaux d'assemblée générale, extraits du registre du commerce : la terminologie du droit suisse des sociétés dans les quatre langues.",
+    "description": "Statuts, convocations, procès-verbaux d'assemblée, extraits du registre du commerce : la terminologie du droit suisse des sociétés en quatre langues.",
     "lede": "Droit des sociétés.",
     "h1": "Statuts, assemblées et registre du commerce dans les quatre langues",
     "lead": "Une société suisse vit en plusieurs langues : statuts déposés en allemand, procès-verbaux tenus en français, extrait du registre demandé en italien. Corrext traduit ces pièces avec les termes que le Code des obligations emploie lui-même, et l'extrait certifié se commande dans le même environnement.",
@@ -115,8 +115,8 @@
       {"q": "Faut-il traduire les statuts dans les trois langues officielles ?", "r": "La loi n'impose pas les trois versions : l'inscription se fait dans une langue officielle du canton. Les sociétés qui ont des actionnaires ou des filiales dans plusieurs régions linguistiques diffusent en revanche une traduction de travail, et c'est elle qui doit employer exactement les libellés du registre."},
       {"q": "Comment obtenir un extrait du registre du commerce certifié ?", "r": "Il se commande en ligne depuis la plateforme, avec trois niveaux de certification selon l'usage prévu : extrait simple, extrait certifié conforme, puis notarisation et apostille pour une production à l'étranger. La commande suit le même circuit que vos projets de traduction."},
       {"q": "Un procès-verbal confidentiel peut-il être traduit sans risque ?", "r": "Oui, à condition de choisir le bon mode. Le stockage est suisse dans tous les cas ; le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger déclenchent un avertissement avant tout envoi."},
-      {"q": "Comment garder le même vocabulaire d'une année à l'autre ?", "r": "Par la mémoire de traduction et par le concordancier. En confidentialité Standard, un projet alimente une mémoire réutilisable par votre seule organisation, et Fast lookup CHnell accepte vos propres ressources terminologiques en plus de ses 26 domaines sourcés."},
-      {"q": "Quelles langues sont couvertes pour les documents de société ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs, dans toutes les paires, et la plateforme couvre 30 langues au total. C'est utile quand un actionnaire étranger demande une version de travail des statuts ou d'un procès-verbal."},
+      {"q": "Comment garder le même vocabulaire d'une année à l'autre ?", "r": "Par la mémoire de traduction et par le concordancier. En confidentialité Standard, un projet alimente une mémoire réutilisable par votre seule organisation, et Fast lookup CHnell accepte vos propres ressources terminologiques en plus de ses 26 domaines sourcés. Les ressources peuvent être partagées entre vos équipes, ce qui évite qu'une filiale emploie un libellé différent."},
+      {"q": "Quelles langues sont couvertes pour les documents de société ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs, dans toutes les paires, et la plateforme couvre 30 langues au total. C'est utile quand un actionnaire étranger demande une version de travail des statuts ou d'un procès-verbal. Les quatre langues natives couvrent l'ensemble des régions linguistiques suisses."},
       {"q": "Puis-je faire relire par mes propres juristes ?", "r": "Oui. Le mode Internal review du tunnel projet organise la relecture par vos équipes et chiffre le temps nécessaire à partir du nombre de pages standard détecté dans les fichiers déposés. La relecture externe par un traducteur juridique reste disponible en parallèle."}
     ],
     "cta_t": "Vos statuts et procès-verbaux, dans Corrext",
@@ -128,7 +128,7 @@
     "short": "Fusions et acquisitions",
     "resume": "Data room, contrat de fusion, closing : traduire vite et sans fuite.",
     "title": "Traduction pour fusions et acquisitions en Suisse · Neur.on",
-    "description": "Data room, due diligence, contrat de fusion, documents de closing : traduire des milliers de pages sans que la transaction quitte la Suisse, avec la terminologie de la LFus.",
+    "description": "Data room, due diligence, contrat de fusion, closing : traduire des milliers de pages sans que la transaction quitte la Suisse, terminologie LFus.",
     "lede": "Fusions et acquisitions.",
     "h1": "Des milliers de pages à comprendre avant le closing",
     "lead": "Une data room mêle contrats, comptes, baux, brevets et procès-verbaux, souvent dans deux ou trois langues. L'équipe doit lire vite pour repérer les risques, puis produire quelques documents engageants au mot près. Corrext sépare ces deux gestes et garde la transaction sur des serveurs suisses.",
@@ -177,9 +177,9 @@
       {"q": "Peut-on traduire une data room sans que les documents quittent la Suisse ?", "r": "Oui. Le stockage se fait sur des serveurs suisses dans tous les cas, et le traitement reste en Suisse avec Neur.on LLM ou en mode Highly sensitive content. Si un collaborateur choisit un moteur hébergé à l'étranger, l'avis Attorney-Client privilege s'affiche avant l'envoi et rappelle qu'une pseudonymisation préalable est nécessaire."},
       {"q": "Combien de documents peut-on envoyer en une fois ?", "r": "Jusqu'à 25 fichiers de 50 Mo chacun par envoi dans Fast translation, dans les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Pour un lot plus important, pour un suivi par lots ou pour une relecture humaine, la bonne porte d'entrée est le Translation project."},
       {"q": "Tous les documents d'une transaction méritent-ils une relecture humaine ?", "r": "Non, et c'est tout l'intérêt de séparer les deux gestes. Les pièces lues pour comprendre passent en traduction machine. Les actes qui engagent les parties, contrat de fusion et décisions sociales en tête, passent en Full review ou en Double review certifiée, choisies document par document."},
-      {"q": "Les documents de l'opération alimentent-ils une base partagée ?", "r": "Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction réutilisable exclusivement par votre organisation. Les projets en mode Highly sensitive content ne sont jamais réutilisés en mémoire, ce qui convient aux opérations encore confidentielles."},
+      {"q": "Les documents de l'opération alimentent-ils une base partagée ?", "r": "Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction réutilisable exclusivement par votre organisation. Les projets en mode Highly sensitive content ne sont jamais réutilisés en mémoire, ce qui convient aux opérations encore confidentielles. Le choix du mode se fait projet par projet, au moment de la création."},
       {"q": "Comment traduire le vocabulaire de la restructuration ?", "r": "En reprenant les termes de la loi sur la fusion, qui distingue quatre opérations : fusion, scission, transformation et transfert de patrimoine. Chacune a un nom officiel en allemand, en français et en italien, consultable en contexte dans Fast lookup CHnell avec sa référence."},
-      {"q": "Et pour les pièces rédigées dans une langue plus rare ?", "r": "La plateforme couvre 30 langues, avec l'allemand, le français, l'italien et l'anglais en natif dans toutes les paires. Une filiale étrangère dont les contrats sont rédigés dans une autre langue reste donc lisible pour l'équipe de transaction."}
+      {"q": "Et pour les pièces rédigées dans une langue plus rare ?", "r": "La plateforme couvre 30 langues, avec l'allemand, le français, l'italien et l'anglais en natif dans toutes les paires. Une filiale étrangère dont les contrats sont rédigés dans une autre langue reste donc lisible pour l'équipe de transaction. Les pièces reviennent dans leur format d'origine quelle que soit la langue de départ."}
     ],
     "cta_t": "Testez Corrext sur une data room de démonstration",
     "cta_p": "Un spécialiste vous montre le circuit complet, de la due diligence au closing.",
@@ -190,7 +190,7 @@
     "short": "Contentieux et arbitrage",
     "resume": "Mémoires, pièces, sentences : traduire ce qui sera lu par un juge.",
     "title": "Traduction juridique pour contentieux et arbitrage · Neur.on",
-    "description": "Mémoires, bordereaux de pièces, sentences arbitrales, recours au Tribunal fédéral : traduire pour une procédure suisse, avec la terminologie du CPC et de la LDIP.",
+    "description": "Mémoires, bordereaux de pièces, sentences arbitrales, recours au Tribunal fédéral : traduire avec la terminologie du CPC et de la LDIP en Suisse.",
     "lede": "Contentieux et arbitrage.",
     "h1": "Traduire ce qui sera lu par un juge ou un arbitre",
     "lead": "Une procédure suisse se plaide dans la langue officielle du for, mais les pièces arrivent dans toutes les langues. Il faut comprendre vite des centaines de pages, puis produire des traductions citables au mot près. Corrext traite les deux, sans sortir le dossier de Suisse.",
@@ -239,9 +239,9 @@
       {"q": "Un tribunal suisse accepte-t-il une traduction automatique ?", "r": "Une pièce produite devant un tribunal doit être fiable, et selon le cas attestée. La traduction machine sert à comprendre le dossier ; ce qui est déposé passe par une Full review par un traducteur juridique, ou par une Double review avec certificat quand une attestation est demandée."},
       {"q": "Dans quelle langue faut-il traduire les pièces ?", "r": "Dans la langue officielle du for, qui dépend du canton et de l'autorité saisie. L'allemand, le français et l'italien sont natifs dans toutes les paires, l'anglais également, ce qui couvre aussi les arbitrages internationaux menés en anglais avec des pièces germanophones."},
       {"q": "Comment garder le secret du dossier ?", "r": "Le stockage se fait sur des serveurs suisses dans tous les cas. Le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."},
-      {"q": "Peut-on comparer plusieurs traductions d'un même passage ?", "r": "Oui. La fonction Alternatives propose jusqu'à quatre formulations, chacune attribuée au moteur qui l'a produite. C'est utile pour une citation de sentence ou de jurisprudence, où deux formulations acceptables n'ont pas la même portée devant l'instance suivante."},
+      {"q": "Peut-on comparer plusieurs traductions d'un même passage ?", "r": "Oui. La fonction Alternatives propose jusqu'à quatre formulations, chacune attribuée au moteur qui l'a produite. C'est utile pour une citation de sentence ou de jurisprudence, où deux formulations acceptables n'ont pas la même portée devant l'instance suivante. Le choix retenu peut ensuite être fixé dans vos ressources terminologiques, pour tout le dossier."},
       {"q": "Comment vérifier un terme de procédure ?", "r": "En le surlignant : Fast lookup CHnell l'ouvre en contexte avec sa source officielle, dans les domaines Litigation & Enforcement et Arbitration. Le concordancier accepte les opérateurs entre guillemets, le signe moins et l'opérateur or pour cibler une occurrence précise."},
-      {"q": "Et les pièces scannées de mauvaise qualité ?", "r": "L'onglet PDF to Word de Fast translation convertit un scan en document Word éditable avant traduction ou annotation. C'est souvent la première étape d'un bordereau, où une partie des annexes n'existe que sous forme d'image."}
+      {"q": "Et les pièces scannées de mauvaise qualité ?", "r": "L'onglet PDF to Word de Fast translation convertit un scan en document Word éditable avant traduction ou annotation. C'est souvent la première étape d'un bordereau, où une partie des annexes n'existe que sous forme d'image. Le document Word obtenu se traduit ensuite comme n'importe quel fichier natif."}
     ],
     "cta_t": "Voyez Corrext sur un bordereau de pièces",
     "cta_p": "Une démonstration sur vos propres dossiers, avec un spécialiste du droit suisse.",
@@ -252,7 +252,7 @@
     "short": "Banque et finance",
     "resume": "Contrats de crédit, prospectus, documentation de fonds : le lexique bancaire.",
     "title": "Traduction juridique et financière pour les banques · Neur.on",
-    "description": "Contrats de crédit, prospectus, documentation de fonds, conditions générales bancaires : traduire sans que la donnée quitte la Suisse, avec la terminologie de la LB et de la LSFin.",
+    "description": "Contrats de crédit, prospectus, documentation de fonds : traduire sans que la donnée quitte la Suisse, avec la terminologie de la LB et de la LSFin.",
     "lede": "Banque et finance.",
     "h1": "Le lexique bancaire suisse, du crédit au prospectus",
     "lead": "Une banque suisse produit chaque semaine des documents contraints : contrats de crédit, conditions générales, documentation de fonds, communications aux clients. Ils circulent en quatre langues et tombent sous le secret bancaire. Corrext les traite sur des serveurs suisses, avec la terminologie des textes de surveillance.",
@@ -261,7 +261,7 @@
       {"t": "Documents récurrents", "d": "conditions générales et documentation de fonds en mémoire de traduction"},
       {"t": "Quatre langues natives", "d": "allemand, français, italien et anglais, toutes paires"}
     ],
-    "definition": "Traduire en droit bancaire et financier suisse, c'est manipuler un vocabulaire encadré par la loi sur les banques, la loi sur les services financiers et les textes de la surveillance : chaque notion, des fonds propres au prospectus, a une définition légale publiée en allemand, en français et en italien, et c'est cette formulation qui fait foi dans un document destiné au client ou à l'autorité.",
+    "definition": "Traduire en droit bancaire suisse, c'est manipuler un vocabulaire encadré par la loi sur les banques, la loi sur les services financiers et les textes de la surveillance : chaque notion, des fonds propres au prospectus, a une définition légale publiée en allemand, en français et en italien.",
     "facts": [
       {"k": "Contrat de crédit", "v": "Un contrat de prêt se traduit avec les termes du CO : la Full review vérifie taux, échéances et sûretés ligne à ligne."},
       {"k": "Conditions générales", "v": "Elles changent peu d'une version à l'autre : en confidentialité Standard, la mémoire de traduction rend les mises à jour annuelles bien plus rapides."},
@@ -300,9 +300,9 @@
       {"q": "Le secret bancaire est-il compatible avec une traduction automatique ?", "r": "Oui, à condition de maîtriser le lieu de traitement. Le stockage se fait sur des serveurs suisses dans tous les cas, et le mode Highly sensitive content impose un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire. Les moteurs hébergés à l'étranger exigent une pseudonymisation préalable et affichent un avertissement."},
       {"q": "Quels moteurs sont disponibles ?", "r": "Neur.on LLM, le moteur suisse entraîné sur la donnée juridique et financière du pays, ainsi que DeepL Pro, Azure OpenAI GPT et Claude. Les trois derniers sont hébergés à l'étranger : l'application le signale au moment du choix, avant tout envoi de document."},
       {"q": "Peut-on traduire des fichiers Excel de tableaux financiers ?", "r": "Oui, les formats .xls et .xlsx sont pris en charge au même titre que Word, PowerPoint et PDF, dans la limite de 25 fichiers de 50 Mo par envoi. Le fichier revient dans son format d'origine, structure de tableau conservée."},
-      {"q": "Comment assurer la cohérence entre versions annuelles ?", "r": "Par la mémoire de traduction, alimentée par les projets en confidentialité Standard et réutilisable exclusivement par votre organisation, et par les ressources terminologiques propres que Fast lookup CHnell accepte en plus de ses 26 domaines sourcés."},
+      {"q": "Comment assurer la cohérence entre versions annuelles ?", "r": "Par la mémoire de traduction, alimentée par les projets en confidentialité Standard et réutilisable exclusivement par votre organisation, et par les ressources terminologiques propres que Fast lookup CHnell accepte en plus de ses 26 domaines sourcés. Les deux mécanismes se combinent : la mémoire pour les phrases, le concordancier pour les termes."},
       {"q": "Qui relit une documentation destinée aux investisseurs ?", "r": "Un traducteur juridique en Light review ou en Full review selon l'enjeu, ou deux traducteurs et une agence spécialisée pour une Double review avec certificat. Le niveau se choisit document par document, et le délai s'affiche avant la validation du devis."},
-      {"q": "Les documents traduits servent-ils à entraîner un moteur ?", "r": "Non. Les contenus clients ne servent pas à entraîner les moteurs. Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction, mais elle reste cloisonnée à votre organisation ; en mode Highly sensitive content, aucune réutilisation n'a lieu."}
+      {"q": "Les documents traduits servent-ils à entraîner un moteur ?", "r": "Non. Les contenus clients ne servent pas à entraîner les moteurs. Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction, mais elle reste cloisonnée à votre organisation ; en mode Highly sensitive content, aucune réutilisation n'a lieu. Le mode se choisit à la création du projet."}
     ],
     "cta_t": "Vos documents bancaires, traités en Suisse",
     "cta_p": "Une démonstration avec un spécialiste du droit bancaire et financier suisse.",
@@ -313,7 +313,7 @@
     "short": "Compliance et FINMA",
     "resume": "Directives internes, rapports, correspondance avec l'autorité de surveillance.",
     "title": "Traduction réglementaire, compliance et FINMA · Neur.on",
-    "description": "Directives internes, dossiers de clients, rapports à l'autorité de surveillance : traduire la compliance suisse avec la terminologie de la LBA et des textes de surveillance.",
+    "description": "Directives internes, dossiers de diligence, rapports à l'autorité de surveillance : traduire la conformité suisse avec la terminologie de la LBA.",
     "lede": "Compliance et FINMA.",
     "h1": "La documentation de conformité, dans la langue de l'autorité",
     "lead": "Un service compliance écrit pour trois publics : ses propres collaborateurs, l'autorité de surveillance et l'auditeur. Directives, dossiers de clients, rapports et correspondance doivent dire exactement la même chose dans chaque langue. Corrext les traite sur des serveurs suisses, avec le vocabulaire des textes applicables.",
@@ -374,7 +374,7 @@
     "short": "Rapports annuels",
     "resume": "Rapport de gestion, comptes annuels, annexe : traduire la clôture.",
     "title": "Traduction des rapports annuels et comptes suisses · Neur.on",
-    "description": "Rapport de gestion, comptes annuels, annexe, rapport de l'organe de révision : traduire la clôture dans les quatre langues, avec la terminologie comptable du Code des obligations.",
+    "description": "Rapport de gestion, comptes annuels, annexe, rapport de révision : traduire la clôture en quatre langues avec les libellés du Code des obligations.",
     "lede": "Rapports annuels.",
     "h1": "La clôture en quatre langues, sans réécrire les tableaux",
     "lead": "Le rapport annuel arrive toujours en même temps que les délais : comptes, annexe, rapport de l'organe de révision et texte de gestion, à publier dans plusieurs langues à date fixe. Corrext traite les fichiers dans leur format d'origine, avec le vocabulaire comptable du Code des obligations.",
@@ -422,10 +422,10 @@
     "faq": [
       {"q": "Les tableaux Excel sont-ils traduits sans casser la structure ?", "r": "Oui, les fichiers .xls et .xlsx sont pris en charge comme les autres formats bureautiques et reviennent dans leur format d'origine, structure de tableau conservée. Pour un fichier complexe, il vaut mieux déposer le format natif plutôt qu'un export PDF."},
       {"q": "Quels libellés comptables faut-il employer ?", "r": "Ceux du titre 32 du Code des obligations, qui nomme le bilan, le compte de résultat et l'annexe dans les trois langues officielles. Les usages de place existent, mais un rapport publié gagne à reprendre le vocabulaire légal, que le concordancier affiche avec sa source."},
-      {"q": "Un rapport non encore publié est-il protégé ?", "r": "Le stockage se fait sur des serveurs suisses dans tous les cas. Pour un rapport sous embargo, le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction."},
+      {"q": "Un rapport non encore publié est-il protégé ?", "r": "Le stockage se fait sur des serveurs suisses dans tous les cas. Pour un rapport sous embargo, le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."},
       {"q": "Faut-il tout faire relire par un humain ?", "r": "Rarement. Le texte de gestion, qui sera lu et cité, justifie une Full review. Les annexes très standardisées peuvent se contenter d'une Light review, voire d'une Internal review par vos équipes, dont le tunnel projet chiffre le temps à partir du nombre de pages détecté."},
-      {"q": "Comment gagner du temps d'une clôture à l'autre ?", "r": "En réutilisant la mémoire de traduction constituée par les projets en confidentialité Standard : les passages inchangés ne sont pas retraduits et le travail se concentre sur les nouveautés de l'exercice. La mémoire reste réutilisable exclusivement par votre organisation."},
-      {"q": "Dans quelles langues peut-on publier ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs dans toutes les paires, ce qui couvre les besoins d'un rapport suisse. La plateforme prend en charge 30 langues au total pour les publications destinées à des investisseurs étrangers."}
+      {"q": "Comment gagner du temps d'une clôture à l'autre ?", "r": "En réutilisant la mémoire de traduction constituée par les projets en confidentialité Standard : les passages inchangés ne sont pas retraduits et le travail se concentre sur les nouveautés de l'exercice. La mémoire reste réutilisable exclusivement par votre organisation. Le rapport de l'organe de révision, très stable, en profite particulièrement."},
+      {"q": "Dans quelles langues peut-on publier ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs dans toutes les paires, ce qui couvre les besoins d'un rapport suisse. La plateforme prend en charge 30 langues au total pour les publications destinées à des investisseurs étrangers. Le choix des langues se fait document par document dans le tunnel projet."}
     ],
     "cta_t": "Préparez votre prochaine clôture avec Corrext",
     "cta_p": "Une démonstration sur vos propres comptes, tableaux compris.",
@@ -436,7 +436,7 @@
     "short": "Fiscalité",
     "resume": "Décisions de taxation, réclamations, échanges avec l'administration fiscale.",
     "title": "Traduction juridique et fiscale en droit suisse · Neur.on",
-    "description": "Décisions de taxation, réclamations, conventions fiscales, correspondance avec l'administration : traduire la fiscalité suisse avec la terminologie de la LIFD et de la LTVA.",
+    "description": "Décisions de taxation, réclamations, correspondance avec l'administration : traduire la fiscalité suisse avec les termes de la LIFD et de la LTVA.",
     "lede": "Fiscalité.",
     "h1": "Trois niveaux d'impôt, trois langues officielles",
     "lead": "La fiscalité suisse se joue à la fois au niveau fédéral, cantonal et communal, et chaque canton travaille dans sa langue officielle. Une décision de taxation en allemand, une réclamation en français et une note interne en anglais parlent pourtant des mêmes notions. Corrext les traduit avec les termes des lois fiscales.",
@@ -483,11 +483,11 @@
     "faq_titre": "Questions fréquentes sur la traduction fiscale",
     "faq": [
       {"q": "Dans quelle langue l'administration fiscale communique-t-elle ?", "r": "Dans la langue officielle du canton concerné, ce qui produit des dossiers multilingues dès qu'une société a des établissements dans plusieurs régions. Les quatre langues de travail de la plateforme, allemand, français, italien et anglais, sont natives dans toutes les paires."},
-      {"q": "Une traduction suffit-elle pour répondre à une décision ?", "r": "La traduction sert à comprendre et à décider. L'écriture déposée, réclamation ou recours, engage le contribuable et justifie une Full review par un traducteur juridique. Quand une attestation est demandée, la Double review avec certificat reste disponible."},
+      {"q": "Une traduction suffit-elle pour répondre à une décision ?", "r": "La traduction sert à comprendre et à décider. L'écriture déposée, réclamation ou recours, engage le contribuable et justifie une Full review par un traducteur juridique. Quand une attestation est demandée, la Double review avec certificat reste disponible. Le délai de relecture s'affiche avant la validation du devis."},
       {"q": "Comment traduire les notions fiscales qui n'ont pas d'équivalent ?", "r": "En partant du texte de loi plutôt que de l'usage. L'impôt anticipé, par exemple, porte un nom officiel dans les trois langues et une définition propre. Le domaine Tax & Customs du concordancier affiche ces occurrences en contexte avec leur source."},
       {"q": "Les dossiers fiscaux sont-ils traités en Suisse ?", "r": "Le stockage se fait sur des serveurs suisses dans tous les cas, et le traitement reste en Suisse avec Neur.on LLM ou en mode Highly sensitive content. Un dossier contenant des données de contribuables ne devrait pas partir vers un moteur hébergé à l'étranger sans pseudonymisation préalable."},
-      {"q": "Peut-on traduire les annexes comptables d'une déclaration ?", "r": "Oui. Les formats .xls et .xlsx sont pris en charge comme Word, PowerPoint et PDF, jusqu'à 25 fichiers de 50 Mo par envoi, et les fichiers reviennent dans leur format d'origine avec leur structure de tableau."},
-      {"q": "Et pour un simple courrier à l'administration ?", "r": "La traduction de texte de Fast translation accepte jusqu'à 10'000 caractères collés, avec choix du moteur et jusqu'à quatre alternatives de formulation. C'est le geste adapté à une lettre courte qu'il faut envoyer dans la journée."}
+      {"q": "Peut-on traduire les annexes comptables d'une déclaration ?", "r": "Oui. Les formats .xls et .xlsx sont pris en charge comme Word, PowerPoint et PDF, jusqu'à 25 fichiers de 50 Mo par envoi, et les fichiers reviennent dans leur format d'origine avec leur structure de tableau. Pour un lot plus important, la voie est le Translation project."},
+      {"q": "Et pour un simple courrier à l'administration ?", "r": "La traduction de texte de Fast translation accepte jusqu'à 10'000 caractères collés, avec choix du moteur et jusqu'à quatre alternatives de formulation. C'est le geste adapté à une lettre courte qu'il faut envoyer dans la journée. Une Light review peut être commandée ensuite si le courrier engage la société."}
     ],
     "cta_t": "Vos dossiers fiscaux, lisibles dans toutes les langues du pays",
     "cta_p": "Une démonstration avec un spécialiste de la terminologie fiscale suisse.",
@@ -498,7 +498,7 @@
     "short": "Assurance",
     "resume": "Conditions générales, polices, déclarations de sinistre : le vocabulaire LCA.",
     "title": "Traduction juridique pour l'assurance en Suisse · Neur.on",
-    "description": "Conditions générales, polices, déclarations de sinistre, correspondance de règlement : traduire en assurance privée avec la terminologie de la loi sur le contrat d'assurance.",
+    "description": "Conditions générales, polices, déclarations de sinistre : traduire en assurance privée avec la terminologie de la loi suisse sur le contrat d'assurance.",
     "lede": "Assurance.",
     "h1": "Des conditions générales aux dossiers de sinistre",
     "lead": "Un assureur suisse publie ses conditions générales dans plusieurs langues, reçoit des déclarations de sinistre dans toutes, et doit répondre dans celle de l'assuré. Les mêmes notions reviennent à chaque dossier, définies par la loi sur le contrat d'assurance. Corrext les traduit avec la formulation du texte officiel.",
@@ -545,10 +545,10 @@
     "faq": [
       {"q": "Les conditions générales doivent-elles exister dans plusieurs langues ?", "r": "Un assureur actif dans plusieurs régions linguistiques les publie dans les langues de ses assurés. La difficulté n'est pas la publication mais la cohérence : le même mot doit couvrir la même chose dans chaque version, ce que la mémoire de traduction et le concordancier aident à tenir dans le temps."},
       {"q": "Comment traiter les données de santé d'un dossier de sinistre ?", "r": "Le stockage est suisse dans tous les cas. Pour les données sensibles, le mode Highly sensitive content impose un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."},
-      {"q": "Peut-on traiter des déclarations scannées ?", "r": "Oui. L'onglet PDF to Word de Fast translation convertit un PDF scanné en document Word éditable, qui peut ensuite être traduit et annoté. C'est utile pour les déclarations remplies à la main et pour les rapports transmis en image."},
+      {"q": "Peut-on traiter des déclarations scannées ?", "r": "Oui. L'onglet PDF to Word de Fast translation convertit un PDF scanné en document Word éditable, qui peut ensuite être traduit et annoté. C'est utile pour les déclarations remplies à la main et pour les rapports transmis en image. Le fichier obtenu suit ensuite le même circuit que les autres documents."},
       {"q": "Quel niveau de relecture pour une lettre de refus ?", "r": "Une Full review par un traducteur juridique au minimum, car la formulation peut être opposée à l'assureur. Pour une communication interne ou un accusé de réception, la Light review suffit. Le niveau se choisit document par document, avec le délai affiché avant validation."},
-      {"q": "Le vocabulaire de l'assurance est-il couvert par le concordancier ?", "r": "Oui, avec un domaine Private Insurance et un domaine Employment & Social Ins. pour les dossiers qui touchent aux assurances sociales. Chaque occurrence s'ouvre en contexte, avec sa source officielle, ce qui permet de trancher entre deux formulations plausibles."},
-      {"q": "Combien de documents peut-on envoyer pour un même sinistre ?", "r": "Jusqu'à 25 fichiers de 50 Mo par envoi dans Fast translation, dans les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Pour un dossier plus lourd ou une relecture humaine, la voie est le Translation project."}
+      {"q": "Le vocabulaire de l'assurance est-il couvert par le concordancier ?", "r": "Oui, avec un domaine Private Insurance et un domaine Employment & Social Ins. pour les dossiers qui touchent aux assurances sociales. Chaque occurrence s'ouvre en contexte, avec sa source officielle, ce qui permet de trancher entre deux formulations plausibles. Vos propres ressources terminologiques s'y ajoutent."},
+      {"q": "Combien de documents peut-on envoyer pour un même sinistre ?", "r": "Jusqu'à 25 fichiers de 50 Mo par envoi dans Fast translation, dans les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Pour un dossier plus lourd ou une relecture humaine, la voie est le Translation project. Les documents reviennent dans leur format d'origine, annexes comprises."}
     ],
     "cta_t": "Vos dossiers d'assurance, traités dans les quatre langues",
     "cta_p": "Une démonstration sur vos conditions générales et vos dossiers de sinistre.",
@@ -559,7 +559,7 @@
     "short": "Propriété intellectuelle",
     "resume": "Brevets, marques, droit d'auteur : traduire des titres opposables.",
     "title": "Traduction de brevets, marques et droit d'auteur · Neur.on",
-    "description": "Demandes de brevet, dépôts de marque, contrats de licence, oppositions : traduire des titres de propriété intellectuelle avec la terminologie suisse de la LBI, la LPM et la LDA.",
+    "description": "Demandes de brevet, dépôts de marque, licences, oppositions : traduire des titres opposables avec la terminologie suisse de la LBI, la LPM et la LDA.",
     "lede": "Propriété intellectuelle.",
     "h1": "Traduire des titres qui seront opposés à un tiers",
     "lead": "Une revendication de brevet, une liste de produits et services, une clause de cession de droits : en propriété intellectuelle, la traduction devient le titre lui-même. Le moindre écart de formulation change la portée de la protection. Corrext s'appuie sur les termes des lois suisses et les affiche avec leur source.",
@@ -608,9 +608,9 @@
       {"q": "Une traduction automatique suffit-elle pour un dépôt ?", "r": "Non pour le texte déposé. La traduction machine prépare le travail et permet de comprendre l'état de la technique ou une opposition adverse, mais un titre opposable à un tiers justifie une Full review par un traducteur juridique, voire une Double review avec certificat quand une attestation est exigée."},
       {"q": "Comment garder la même terminologie dans tout un portefeuille ?", "r": "En fixant les termes retenus dans vos propres ressources terminologiques, que Fast lookup CHnell affiche à côté de ses 26 domaines sourcés, et en laissant les projets en confidentialité Standard alimenter une mémoire de traduction réutilisable par votre seule organisation."},
       {"q": "Une invention non déposée peut-elle être traduite sans risque ?", "r": "Avant publication, une invention est un secret d'affaires protégé notamment par l'art. 162 CP. Le mode Highly sensitive content impose un stockage et un traitement exclusivement en Suisse, sans réutilisation en mémoire, ce qui convient à un texte encore confidentiel."},
-      {"q": "Les documents techniques scannés sont-ils pris en charge ?", "r": "Oui. L'onglet PDF to Word convertit un PDF scanné en document Word éditable avant traduction, ce qui est fréquent pour les documents de l'état de la technique et pour les annexes de procédures d'opposition."},
+      {"q": "Les documents techniques scannés sont-ils pris en charge ?", "r": "Oui. L'onglet PDF to Word convertit un PDF scanné en document Word éditable avant traduction, ce qui est fréquent pour les documents de l'état de la technique et pour les annexes de procédures d'opposition. Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx sont acceptés, jusqu'à 25 fichiers de 50 Mo par envoi."},
       {"q": "Quelles langues pour une extension à l'étranger ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs dans toutes les paires, et la plateforme couvre 30 langues au total. La référence suisse reste toutefois le texte allemand, français ou italien des lois applicables, que le concordancier affiche avec sa source."},
-      {"q": "Peut-on comparer plusieurs formulations d'une revendication ?", "r": "Oui. La fonction Alternatives propose jusqu'à quatre traductions d'un même passage, chacune attribuée au moteur qui l'a produite. C'est un appui utile quand deux formulations sont correctes linguistiquement mais n'ont pas la même portée technique."}
+      {"q": "Peut-on comparer plusieurs formulations d'une revendication ?", "r": "Oui. La fonction Alternatives propose jusqu'à quatre traductions d'un même passage, chacune attribuée au moteur qui l'a produite. C'est un appui utile quand deux formulations sont correctes linguistiquement mais n'ont pas la même portée technique. Le juriste tranche, et le terme retenu peut être fixé pour tout le portefeuille."}
     ],
     "cta_t": "Vos dépôts et vos contrats de licence, dans Corrext",
     "cta_p": "Une démonstration sur vos propres revendications et listes de produits.",
@@ -621,7 +621,7 @@
     "short": "Droit du travail",
     "resume": "Contrats de travail, règlements, certificats : le vocabulaire du CO et de la LTr.",
     "title": "Traduction juridique en droit du travail suisse · Neur.on",
-    "description": "Contrats de travail, règlements d'entreprise, lettres de résiliation, certificats de travail : traduire les ressources humaines avec la terminologie du Code des obligations.",
+    "description": "Contrats de travail, règlements, lettres de résiliation, certificats : traduire les documents RH avec la terminologie du Code des obligations suisse.",
     "lede": "Droit du travail.",
     "h1": "Du contrat d'embauche au certificat de travail",
     "lead": "Une entreprise suisse embauche à Zurich, à Lausanne et à Lugano, avec les mêmes règlements et des collaborateurs qui ne lisent pas la même langue. Contrats, avenants, lettres de résiliation et certificats doivent dire exactement la même chose partout. Corrext s'appuie sur le vocabulaire du Code des obligations.",
@@ -670,9 +670,9 @@
       {"q": "Un contrat de travail doit-il être rédigé dans la langue du collaborateur ?", "r": "La loi n'impose pas une langue en particulier pour le contrat individuel, mais un employeur qui veut un engagement compris et opposable a intérêt à fournir une version dans la langue de travail du collaborateur. Les quatre langues nationales de la plateforme couvrent ce besoin."},
       {"q": "Comment traduire une lettre de résiliation sans risque ?", "r": "En distinguant les trois régimes du Code des obligations : résiliation ordinaire, résiliation abusive et résiliation immédiate pour justes motifs. Les termes officiels existent dans les trois langues, et la lettre elle-même justifie une Full review par un traducteur juridique avant envoi."},
       {"q": "Les dossiers du personnel peuvent-ils passer par la plateforme ?", "r": "Oui, avec le bon mode. Le stockage est suisse dans tous les cas, et le mode Highly sensitive content impose un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire. Les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."},
-      {"q": "Comment garder un règlement identique sur tous les sites ?", "r": "Par la mémoire de traduction, qui limite le travail aux passages modifiés lors d'une révision, et par des ressources terminologiques propres à votre organisation, que Fast lookup CHnell affiche en plus de ses 26 domaines sourcés."},
+      {"q": "Comment garder un règlement identique sur tous les sites ?", "r": "Par la mémoire de traduction, qui limite le travail aux passages modifiés lors d'une révision, et par des ressources terminologiques propres à votre organisation, que Fast lookup CHnell affiche en plus de ses 26 domaines sourcés. Chaque terme s'ouvre en contexte avec sa source avant d'être figé."},
       {"q": "Les conventions collectives sont-elles couvertes ?", "r": "Leur vocabulaire relève du domaine Employment & Social Ins. du concordancier, avec des sources officielles. Chaque terme s'ouvre en contexte avec sa référence, ce qui permet de vérifier une notion avant de la reprendre dans un contrat ou un règlement."},
-      {"q": "Peut-on traduire rapidement une simple note de service ?", "r": "Oui. La traduction de texte de Fast translation accepte jusqu'à 10'000 caractères collés, avec le choix du moteur et jusqu'à quatre alternatives de formulation. Pour une communication interne, une Light review suffit généralement."}
+      {"q": "Peut-on traduire rapidement une simple note de service ?", "r": "Oui. La traduction de texte de Fast translation accepte jusqu'à 10'000 caractères collés, avec le choix du moteur et jusqu'à quatre alternatives de formulation. Pour une communication interne, une Light review suffit généralement. Pour un document remis à un collaborateur et susceptible d'être produit plus tard, mieux vaut une Full review."}
     ],
     "cta_t": "Vos documents RH, cohérents dans toute la Suisse",
     "cta_p": "Une démonstration sur vos contrats types et vos règlements d'entreprise.",
@@ -683,7 +683,7 @@
     "short": "Droit pénal",
     "resume": "Ordonnances pénales, actes d'accusation, entraide : traduire une procédure.",
     "title": "Traduction en droit pénal et procédure pénale suisse · Neur.on",
-    "description": "Ordonnances pénales, actes d'accusation, dossiers d'instruction, demandes d'entraide : traduire une procédure pénale suisse avec la terminologie du CP et du CPP.",
+    "description": "Ordonnances pénales, actes d'accusation, dossiers d'instruction, entraide : traduire une procédure pénale suisse avec les termes du CP et du CPP.",
     "lede": "Droit pénal.",
     "h1": "Les actes d'une procédure pénale, d'une langue à l'autre",
     "lead": "Une procédure pénale suisse se conduit dans la langue du canton, mais les prévenus, les témoins et les pièces ne la parlent pas toujours. Dossiers d'instruction, ordonnances pénales, actes d'accusation et demandes d'entraide circulent donc traduits. Corrext les traite sur des serveurs suisses, avec les termes du Code de procédure pénale.",
@@ -733,8 +733,8 @@
       {"q": "Comment protéger le secret de l'instruction ?", "r": "Le stockage se fait sur des serveurs suisses dans tous les cas. Le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction, et les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."},
       {"q": "Les noms des actes de procédure sont-ils harmonisés ?", "r": "Le Code de procédure pénale est unifié depuis 2011 et publié dans les trois langues officielles, ce qui fixe le nom de chaque acte. Le concordancier affiche ces occurrences en contexte, avec leur source, dans les domaines Criminal Law et Litigation & Enforcement."},
       {"q": "Peut-on traiter un dossier de plusieurs milliers de pages ?", "r": "Oui, par lots : jusqu'à 25 fichiers de 50 Mo par envoi dans Fast translation, ou via un Translation project pour un suivi d'ensemble avec devis et relecture. Les documents reviennent dans leur format d'origine, ce qui préserve la numérotation des pièces."},
-      {"q": "Et les pièces scannées ou de mauvaise qualité ?", "r": "L'onglet PDF to Word convertit un PDF scanné en document Word éditable avant traduction ou annotation. C'est fréquent pour les pièces saisies, les correspondances anciennes et les annexes transmises en image par une autorité étrangère."},
-      {"q": "Quelles langues pour une procédure internationale ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs dans toutes les paires, et la plateforme couvre 30 langues au total. Les qualifications restent toutefois celles du droit suisse, que le concordancier permet de vérifier article par article."}
+      {"q": "Et les pièces scannées ou de mauvaise qualité ?", "r": "L'onglet PDF to Word convertit un PDF scanné en document Word éditable avant traduction ou annotation. C'est fréquent pour les pièces saisies, les correspondances anciennes et les annexes transmises en image par une autorité étrangère. Le document obtenu se traduit ensuite comme un fichier natif."},
+      {"q": "Quelles langues pour une procédure internationale ?", "r": "L'allemand, le français, l'italien et l'anglais sont natifs dans toutes les paires, et la plateforme couvre 30 langues au total. Les qualifications restent toutefois celles du droit suisse, que le concordancier permet de vérifier article par article. Les pièces reviennent dans leur format d'origine, quelle que soit la langue de départ."}
     ],
     "cta_t": "Vos dossiers pénaux, traités sans quitter la Suisse",
     "cta_p": "Une démonstration sur vos propres pièces, avec un spécialiste du droit suisse.",
@@ -745,7 +745,7 @@
     "short": "Droit administratif",
     "resume": "Décisions, recours, consultations : la langue des autorités suisses.",
     "title": "Traduction en droit administratif et public suisse · Neur.on",
-    "description": "Décisions administratives, recours, rapports et consultations : traduire pour les autorités suisses avec la terminologie de la PA, de la Constitution et des lois cantonales.",
+    "description": "Décisions, recours, rapports et consultations : traduire pour les autorités suisses avec la terminologie de la PA et de la Constitution fédérale.",
     "lede": "Droit administratif.",
     "h1": "La langue des autorités, d'un canton à l'autre",
     "lead": "Une administration suisse rend des décisions, instruit des recours, publie des rapports et répond à des consultations, le tout dans une ou plusieurs langues officielles. Le vocabulaire est fixé par la procédure administrative et par la Constitution. Corrext traduit ces actes sur des serveurs suisses, avec les termes du texte applicable.",
@@ -792,8 +792,8 @@
     "faq_titre": "Questions fréquentes sur la traduction pour les autorités",
     "faq": [
       {"q": "Une administration peut-elle utiliser une plateforme de traduction en ligne ?", "r": "La question porte moins sur l'outil que sur le lieu de traitement des données. Le stockage se fait sur des serveurs suisses dans tous les cas, et le traitement reste en Suisse avec Neur.on LLM ou en mode Highly sensitive content. Les moteurs hébergés à l'étranger sont signalés avant tout envoi."},
-      {"q": "Comment traduire les mentions de voies de droit ?", "r": "En reprenant les formulations de la loi de procédure applicable, fédérale ou cantonale, qui existe dans les langues officielles concernées. Le concordancier affiche ces occurrences avec leur source dans le domaine Administrative Law, ce qui évite les reformulations approximatives."},
-      {"q": "Les dossiers d'administrés peuvent-ils être traités ?", "r": "Oui, avec le mode adapté. Un dossier contenant des données personnelles relève du mode Highly sensitive content, qui impose un stockage et un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction."},
+      {"q": "Comment traduire les mentions de voies de droit ?", "r": "En reprenant les formulations de la loi de procédure applicable, fédérale ou cantonale, qui existe dans les langues officielles concernées. Le concordancier affiche ces occurrences avec leur source dans le domaine Administrative Law, ce qui évite les reformulations approximatives. Ces mentions gagnent à passer par une relecture humaine."},
+      {"q": "Les dossiers d'administrés peuvent-ils être traités ?", "r": "Oui, avec le mode adapté. Un dossier contenant des données personnelles relève du mode Highly sensitive content, qui impose un stockage et un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Le mode se choisit à la création du projet, avant le dépôt des fichiers."},
       {"q": "Quel niveau de relecture pour une publication officielle ?", "r": "Une Full review par un traducteur juridique pour un texte publié, une Light review pour un document de travail interne. L'Internal review permet aussi de confier la relecture à vos propres collaborateurs, le tunnel projet chiffrant le temps à partir du nombre de pages détecté."},
       {"q": "Le vocabulaire du droit des étrangers est-il couvert ?", "r": "Oui, le concordancier comprend un domaine Migration Law, en plus des domaines Administrative Law et Constitution & Publ. Internat. Law. Chaque terme s'ouvre en contexte avec sa source officielle, ce qui est utile pour les décisions de séjour et de travail."},
       {"q": "Peut-on traiter les documents dans leur format d'origine ?", "r": "Oui. Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx sont pris en charge, jusqu'à 25 fichiers de 50 Mo par envoi, et les documents reviennent dans leur mise en page. Pour un PDF scanné, l'onglet PDF to Word produit d'abord un fichier éditable."}

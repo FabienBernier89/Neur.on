@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions fréquentes sur Corrext et Neur.on · Centre d'aide</title>
+<meta name="description" content="Sécurité des données, langues, formats, moteurs, relecture juridique, certification, tarifs, intégration : les réponses aux questions les plus posées sur Corrext et Neur.on LLM.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/fr/aide/faq/">
+<meta property="og:title" content="Questions fréquentes sur Corrext et Neur.on · Centre d'aide">
+<meta property="og:description" content="Sécurité des données, langues, formats, moteurs, relecture juridique, certification, tarifs, intégration : les réponses aux questions les plus posées sur Corrext et Neur.on LLM.">
+<meta property="og:url" content="https://neur-on.ai/fr/aide/faq/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="fr_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../../../assets/favicon.svg">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<style>.qsum{padding:76px 0 0}
+.qsum-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.qsum-grid a{padding:22px 24px 22px 0;border-right:1px solid var(--line-2);display:block;transition:background .15s}
+.qsum-grid a:last-child{border-right:0}
+.qsum-grid a + a{padding-left:24px}
+.qsum-grid a:hover{background:rgba(49,123,255,.04)}
+.qsum-grid b{display:block;font-size:15px;color:var(--ink);letter-spacing:-.01em;margin-bottom:5px}
+.qsum-grid a:hover b{color:var(--blue-d)}
+.qsum-grid span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.qblock{padding:56px 0 0}
+.qblock h2{font-size:clamp(24px,2.8vw,32px);margin-bottom:6px}
+.qblock .qh{font-size:14.5px;color:var(--muted);margin-bottom:22px;max-width:64ch}
+@media(max-width:940px){.qsum-grid{grid-template-columns:1fr 1fr}.qsum-grid a{border-right:0;border-bottom:1px solid var(--line-2);padding:18px 0}.qsum-grid a + a{padding-left:0}}
+@media(max-width:560px){.qsum-grid{grid-template-columns:1fr}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Où mes documents sont-ils stockés ?", "acceptedAnswer": {"@type": "Answer", "text": "Sur les serveurs suisses de Corrext, chez un hébergeur suisse, dans tous les cas, quel que soit le moteur de traduction choisi. Neur.on est certifié ISO 27001 depuis février 2024 et conforme à la nLPD et au RGPD. Le détail figure sur la page Sécurité et souveraineté."}}, {"@type": "Question", "name": "Mes documents sont-ils traités en Suisse ?", "acceptedAnswer": {"@type": "Answer", "text": "Cela dépend de deux choix que vous faites vous-même. En mode Highly sensitive content, le stockage et le traitement restent exclusivement en Suisse. En mode Standard, le traitement suit le moteur retenu : Neur.on LLM s'exécute en Suisse, alors que DeepL Pro, Azure OpenAI GPT et Claude sont des moteurs tiers hébergés à l'étranger."}}, {"@type": "Question", "name": "Puis-je utiliser un moteur étranger pour un dossier couvert par le secret professionnel ?", "acceptedAnswer": {"@type": "Answer", "text": "L'application affiche l'avis Attorney-Client privilege dès qu'un moteur tiers est sélectionné : votre organisation exige alors le retrait de toute référence permettant d'identifier des clients ou l'objet du dossier, et interdit ces moteurs pour les affaires sensibles. Pour ces dossiers, le mode Highly sensitive content ou le moteur Neur.on LLM gardent tout en Suisse."}}, {"@type": "Question", "name": "Mes contenus servent-ils à entraîner des modèles ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Les contenus clients ne servent pas à entraîner les modèles de Neur.on. Les projets créés en confidentialité Standard peuvent en revanche alimenter une mémoire de traduction réutilisable par votre seule organisation, et les projets en mode Highly sensitive content ne sont jamais réutilisés."}}, {"@type": "Question", "name": "Neur.on est-il soumis au CLOUD Act américain ?", "acceptedAnswer": {"@type": "Answer", "text": "Neur.on AI Solutions SA est une société de droit suisse établie à Fribourg, et son infrastructure est hébergée en Suisse. Le choix d'un moteur tiers hébergé à l'étranger fait en revanche sortir le texte de ce périmètre, ce que l'application signale avant l'envoi."}}, {"@type": "Question", "name": "Quelles langues sont couvertes ?", "acceptedAnswer": {"@type": "Answer", "text": "La plateforme couvre une trentaine de langues. L'allemand, le français, l'italien et l'anglais sont natifs avec Neur.on LLM et sont les quatre langues disponibles en mode Highly sensitive content. La liste complète figure sur la page Langues et formats."}}, {"@type": "Question", "name": "Quels fichiers puis-je déposer ?", "acceptedAnswer": {"@type": "Answer", "text": "Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, jusqu'à 25 fichiers de 50 Mo chacun par envoi. L'application recommande de déposer le format original, un fichier Word ou Excel plutôt qu'un PDF, quand il existe."}}, {"@type": "Question", "name": "La mise en page est-elle conservée ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, la traduction est livrée dans le format d'origine. Pour un PDF, notamment un scan, l'onglet PDF to Word produit d'abord un document Word éditable."}}, {"@type": "Question", "name": "Y a-t-il une limite de longueur pour le texte ?", "acceptedAnswer": {"@type": "Answer", "text": "Dix mille caractères pour la traduction de texte et cinq mille pour la réécriture. Au-delà, le document se dépose dans File translation ou dans un Translation project."}}, {"@type": "Question", "name": "Qu'est-ce que Neur.on LLM ?", "acceptedAnswer": {"@type": "Answer", "text": "Le modèle de langue de Neur.on, entraîné sur la donnée juridique et financière suisse, plus de quinze millions de segments multilingues issus de la jurisprudence du Tribunal fédéral, des textes de la FINMA et des codes. Il s'exécute en Suisse. Voir la page Neur.on LLM."}}, {"@type": "Question", "name": "Puis-je utiliser DeepL ou un modèle généraliste dans Corrext ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. DeepL Pro, Azure OpenAI GPT et Claude sont disponibles dans l'interface, avec l'avis de pseudonymisation qui s'affiche au moment du choix. La fonction Alternatives compare jusqu'à quatre propositions, chacune attribuée à son moteur."}}, {"@type": "Question", "name": "Comment vérifier un terme juridique suisse ?", "acceptedAnswer": {"@type": "Answer", "text": "En surlignant le mot dans le texte source, puis en ouvrant Fast Lookup : le concordancier CHnell affiche des segments alignés tirés de sources officielles, avec le domaine et la source de chaque occurrence. Le glossaire reprend les termes les plus courants dans les quatre langues."}}, {"@type": "Question", "name": "Qui relit les traductions ?", "acceptedAnswer": {"@type": "Answer", "text": "Vos propres équipes en relecture interne, un traducteur juridique en Light review ou en Full review, ou deux traducteurs et une agence spécialisée pour une Double review avec certificat. Le niveau se choisit document par document dans le tunnel projet, avec le délai affiché avant validation."}}, {"@type": "Question", "name": "Comment obtenir une traduction certifiée ou apostillée ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour un extrait du registre du commerce, le service en ligne propose trois niveaux : certification par Corrext, certification notariée, et certification notariée puis apostillée selon la Convention de La Haye du 5 octobre 1961. Pour les autres documents, la Double review aboutit à un certificat délivré par l'agence responsable."}}, {"@type": "Question", "name": "Combien cela coûte-t-il ?", "acceptedAnswer": {"@type": "Answer", "text": "Les prix ne sont pas publics : ils dépendent des volumes, des langues et du niveau de relecture. Dans l'application, le devis et le délai s'affichent avant toute validation, calculés à partir du nombre de pages standard et de la catégorie juridique détectés dans vos fichiers. Le cadrage se fait lors d'une démonstration."}}, {"@type": "Question", "name": "Existe-t-il un essai gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Pas d'essai en libre-service. La démonstration se fait avec un spécialiste, sur vos propres documents, dans vos langues. La démonstration interactive de ce site reproduit l'interface réelle avec des résultats obtenus dans l'application."}}, {"@type": "Question", "name": "Combien de temps prend la mise en place ?", "acceptedAnswer": {"@type": "Answer", "text": "L'application web ne demande aucune installation : un compte suffit, avec une authentification par mot de passe ou par authentification unique Microsoft. Une intégration à vos systèmes par API, ou un déploiement sur vos propres serveurs, se cadre lors d'un échange technique."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Centre d'aide", "item": "https://neur-on.ai/fr/aide/"}, {"@type": "ListItem", "position": 3, "name": "Questions fréquentes", "item": "https://neur-on.ai/fr/aide/faq/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="nav" id="siteNav" data-active="ressources">
+  <div class="container nav-inner">
+    <a href="../../../fr/" class="logo" aria-label="Neur.on, retour à l'accueil">Neur<span>.</span>on</a>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="neuron-llm">
+        <a href="../../../fr/neuron-llm/" class="nav-a">Neur.on LLM</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Langue">
+        <a href="../../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span class="sep">·</span>
+        <a class="on" href="../../../fr/" aria-current="true">FR</a><span class="sep">·</span>
+        <a href="../../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span class="sep">·</span>
+        <a href="../../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+      </div>
+      <a href="../../../fr/contact/" class="btn btn-blue">Demander une démo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Ouvrir le menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La plateforme</p>
+        <a href="../../../fr/corrext/"><b>Corrext, le poste de commande</b><span>Projets, devis, ressources et droits dans un seul environnement suisse</span></a>
+        <a href="../../../fr/neuron-llm/"><b>Neur.on LLM</b><span>Le moteur entraîné sur le droit et la finance suisses</span></a>
+        <a href="../../../fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Où vos données sont stockées, traitées et par quel moteur</span></a>
+        <a href="../../../fr/corrext/api-on-premises/"><b>API et on-premises</b><span>Intégration à vos DMS, intranets et workflows</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Les quatre outils</p>
+        <a href="../../../fr/corrext/fast-translation/"><b>Fast translation</b><span>Texte, fichiers, PDF vers Word, réécriture</span></a>
+        <a href="../../../fr/corrext/translation-project/"><b>Translation project</b><span>Relecture humaine à la carte, devis et délai instantanés</span></a>
+        <a href="../../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse, 26 domaines</span></a>
+        <a href="../../../fr/corrext/extraits-registre-commerce/"><b>Extraits du registre</b><span>Traduction certifiée, notariée, apostillée</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Aller plus loin</p>
+        <a href="../../../fr/niveaux-de-qualite/"><b>Quatre niveaux de qualité</b><span>De la traduction machine à la certification</span></a>
+        <a href="../../../fr/langues-et-formats/"><b>Langues et formats</b><span>30 langues, quatre natives, tous vos formats bureautiques</span></a>
+        <a href="../../../fr/aide/"><b>Centre d'aide</b><span>Comment faire, étape par étape</span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Essayez sans inscription</p>
+        <p class="mega-p">L'interface de Corrext, reproduite à l'identique sur trois extraits de droit suisse.</p>
+        <a href="../../../fr/corrext/fast-translation/#demo" class="mega-cta">Ouvrir la démo en direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Par métier</p>
+        <a href="../../../fr/solutions/cabinets-avocats/"><b>Cabinets d'avocats</b></a>
+        <a href="../../../fr/solutions/banques-finance/"><b>Banques et finance</b></a>
+        <a href="../../../fr/solutions/directions-juridiques/"><b>Directions juridiques et Legal Ops</b></a>
+        <a href="../../../fr/solutions/autorites-administration/"><b>Autorités et administration</b></a>
+        <a href="../../../fr/solutions/fiduciaires-conseil/"><b>Fiduciaires et conseil</b></a>
+        <a href="../../../fr/solutions/editeurs-legaltech/"><b>LegalTechs et éditeurs</b></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par domaine du droit</p>
+        <a href="../../../fr/traduction/contrats/"><b>Contrats</b></a>
+        <a href="../../../fr/traduction/droit-des-societes/"><b>Droit des sociétés</b></a>
+        <a href="../../../fr/traduction/fusions-acquisitions/"><b>Fusions et acquisitions</b></a>
+        <a href="../../../fr/traduction/contentieux-arbitrage/"><b>Contentieux et arbitrage</b></a>
+        <a href="../../../fr/traduction/banque-finance/"><b>Banque et finance</b></a>
+        <a href="../../../fr/traduction/compliance-finma/"><b>Compliance et FINMA</b></a>
+        <a href="../../../fr/traduction/" class="mega-all">Les treize domaines <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par paire de langues</p>
+        <a href="../../../fr/traduction/allemand-francais/"><b>Allemand vers français</b></a>
+        <a href="../../../fr/traduction/francais-allemand/"><b>Français vers allemand</b></a>
+        <a href="../../../fr/traduction/allemand-anglais/"><b>Allemand vers anglais</b></a>
+        <a href="../../../fr/traduction/francais-anglais/"><b>Français vers anglais</b></a>
+        <a href="../../../fr/traduction/italien-francais/"><b>Italien vers français</b></a>
+        <a href="../../../fr/traduction/anglais-allemand/"><b>Anglais vers allemand</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Vous hésitez encore ?</p>
+        <p class="mega-p">Ce que Corrext fait que les outils génériques ne font pas, comparé point par point.</p>
+        <a href="../../../fr/comparatif/" class="mega-cta">Voir les comparatifs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Comprendre</p>
+        <a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Blog</b><span>Droit suisse, traduction et intelligence artificielle</span></a>
+        <a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Guides</b><span>Méthodes de fond, signées par nos spécialistes</span></a>
+        <a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Études et benchmarks</b><span>Nos mesures sur corpus de droit suisse</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consulter</p>
+        <a href="../../../fr/ressources/glossaire/"><b>Glossaire juridique suisse</b><span>Chaque terme en allemand, français, italien et anglais</span></a>
+        <a href="../../../fr/aide/"><b>Centre d'aide Corrext</b><span>Prise en main et réponses pratiques</span></a>
+        <a href="../../../fr/aide/faq/"><b>Questions fréquentes</b><span>Sécurité, langues, formats, relecture</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Comparer</p>
+        <a href="../../../fr/comparatif/deepl-traduction-juridique/"><b>Corrext et DeepL</b></a>
+        <a href="../../../fr/comparatif/chatgpt-traduction-juridique/"><b>Corrext et les LLM généralistes</b></a>
+        <a href="../../../fr/comparatif/agence-ou-plateforme/"><b>Agence de traduction ou plateforme</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Une société suisse, une infrastructure suisse, un moteur entraîné sur le droit suisse.</p>
+        <a href="../../../fr/a-propos/" class="mega-cta">À propos et distinctions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/corrext/">Corrext, la plateforme</a>
+        <a href="../../../fr/corrext/fast-translation/">Fast translation</a>
+        <a href="../../../fr/corrext/translation-project/">Translation project</a>
+        <a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a>
+        <a href="../../../fr/corrext/api-on-premises/">API et on-premises</a>
+        <a href="../../../fr/neuron-llm/">Neur.on LLM</a>
+        <a href="../../../fr/securite-souverainete/">Sécurité et souveraineté</a>
+        <a href="../../../fr/niveaux-de-qualite/">Niveaux de qualité</a>
+        <a href="../../../fr/langues-et-formats/">Langues et formats</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/solutions/cabinets-avocats/">Cabinets d'avocats</a>
+        <a href="../../../fr/solutions/banques-finance/">Banques et finance</a>
+        <a href="../../../fr/solutions/directions-juridiques/">Directions juridiques et Legal Ops</a>
+        <a href="../../../fr/solutions/autorites-administration/">Autorités et administration</a>
+        <a href="../../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a>
+        <a href="../../../fr/solutions/editeurs-legaltech/">LegalTechs et éditeurs</a>
+        <a href="../../../fr/traduction/">Traduction par domaine</a>
+        <a href="../../../fr/comparatif/">Comparatifs</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a>
+        <a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a>
+        <a href="../../../fr/ressources/glossaire/">Glossaire juridique suisse</a>
+        <a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a>
+        <a href="../../../fr/aide/">Centre d'aide</a>
+        <a href="../../../fr/a-propos/">À propos</a>
+      </div>
+    </div>
+    <a href="../../../fr/contact/" class="btn btn-blue nm-cta">Demander une démo</a>
+    <div class="nm-langs" aria-label="Langue">
+      <a href="../../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span>·</span>
+      <a class="on" href="../../../fr/" aria-current="true">FR</a><span>·</span>
+      <a href="../../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span>·</span>
+      <a href="../../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/aide/">Centre d'aide</a></li><li><span aria-current="page">Questions fréquentes</span></li></ol></div></nav>
+
+<main id="main">
+<section class="thero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Questions fréquentes.</em> Ce que les juristes nous demandent en premier</h1>
+        <p class="lead">Les réponses courtes aux questions qui reviennent dans chaque démonstration : où vont les données, quelles langues sont natives, qui relit, ce qui est certifié, ce qui coûte du temps. Chaque réponse renvoie à la page qui la détaille.</p>
+        <div class="thero-cta">
+          <a href="../../../fr/contact/" class="btn btn-blue">Demander une démo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#securite" class="btn btn-ghost">Aller aux questions</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Vérifié :</b> chaque réponse correspond à l'application telle qu'elle fonctionne</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Cinq thèmes :</b> sécurité, langues et formats, moteurs, relecture, mise en place</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Pour aller plus loin :</b> le centre d'aide détaille chaque procédure</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="qsum">
+  <div class="container">
+    <div class="qsum-grid">
+      <a href="#securite"><b>Sécurité et données</b><span>Stockage, traitement, réutilisation, certification</span></a>
+      <a href="#langues"><b>Langues et formats</b><span>Langues natives, fichiers acceptés, limites</span></a>
+      <a href="#moteurs"><b>Moteurs et qualité</b><span>Neur.on LLM, moteurs tiers, alternatives</span></a>
+      <a href="#relecture"><b>Relecture et certification</b><span>Niveaux, relecteurs, devis, apostille</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="securite">
+  <div class="container">
+    <h2>Sécurité et protection des données</h2>
+    <p class="qh">Ce sont les premières questions d'un cabinet, d'une banque ou d'une autorité, et elles ont des réponses précises.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Où mes documents sont-ils stockés ?</summary>
+        <p>Sur les serveurs suisses de Corrext, chez un hébergeur suisse, dans tous les cas, quel que soit le moteur de traduction choisi. Neur.on est certifié ISO&nbsp;27001 depuis février 2024 et conforme à la nLPD et au RGPD. Le détail figure sur la page <a href="../../../fr/securite-souverainete/">Sécurité et souveraineté</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mes documents sont-ils traités en Suisse ?</summary>
+        <p>Cela dépend de deux choix que vous faites vous-même. En mode Highly sensitive content, le stockage et le traitement restent exclusivement en Suisse. En mode Standard, le traitement suit le moteur retenu : Neur.on LLM s'exécute en Suisse, alors que DeepL Pro, Azure OpenAI GPT et Claude sont des moteurs tiers hébergés à l'étranger.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Puis-je utiliser un moteur étranger pour un dossier couvert par le secret professionnel ?</summary>
+        <p>L'application affiche l'avis Attorney-Client privilege dès qu'un moteur tiers est sélectionné : votre organisation exige alors le retrait de toute référence permettant d'identifier des clients ou l'objet du dossier, et interdit ces moteurs pour les affaires sensibles. Pour ces dossiers, le mode Highly sensitive content ou le moteur Neur.on LLM gardent tout en Suisse.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mes contenus servent-ils à entraîner des modèles ?</summary>
+        <p>Non. Les contenus clients ne servent pas à entraîner les modèles de Neur.on. Les projets créés en confidentialité Standard peuvent en revanche alimenter une mémoire de traduction réutilisable par votre seule organisation, et les projets en mode Highly sensitive content ne sont jamais réutilisés.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Neur.on est-il soumis au CLOUD Act américain ?</summary>
+        <p>Neur.on AI Solutions SA est une société de droit suisse établie à Fribourg, et son infrastructure est hébergée en Suisse. Le choix d'un moteur tiers hébergé à l'étranger fait en revanche sortir le texte de ce périmètre, ce que l'application signale avant l'envoi.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="langues">
+  <div class="container">
+    <h2>Langues et formats</h2>
+    <p class="qh">Les chiffres viennent de l'application, vérifiés en septembre 2026.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Quelles langues sont couvertes ?</summary>
+        <p>La plateforme couvre une trentaine de langues. L'allemand, le français, l'italien et l'anglais sont natifs avec Neur.on LLM et sont les quatre langues disponibles en mode Highly sensitive content. La liste complète figure sur la page <a href="../../../fr/langues-et-formats/">Langues et formats</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quels fichiers puis-je déposer ?</summary>
+        <p>Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, jusqu'à 25 fichiers de 50 Mo chacun par envoi. L'application recommande de déposer le format original, un fichier Word ou Excel plutôt qu'un PDF, quand il existe.</p>
+      </details>
+      <details class="faq-item">
+        <summary>La mise en page est-elle conservée ?</summary>
+        <p>Oui, la traduction est livrée dans le format d'origine. Pour un PDF, notamment un scan, l'onglet PDF to Word produit d'abord un document Word éditable.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Y a-t-il une limite de longueur pour le texte ?</summary>
+        <p>Dix mille caractères pour la traduction de texte et cinq mille pour la réécriture. Au-delà, le document se dépose dans File translation ou dans un Translation project.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="moteurs">
+  <div class="container">
+    <h2>Moteurs et qualité de traduction</h2>
+    <p class="qh">La plateforme est agnostique : vous choisissez, et vous comparez.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Qu'est-ce que Neur.on LLM ?</summary>
+        <p>Le modèle de langue de Neur.on, entraîné sur la donnée juridique et financière suisse, plus de quinze millions de segments multilingues issus de la jurisprudence du Tribunal fédéral, des textes de la FINMA et des codes. Il s'exécute en Suisse. Voir la page <a href="../../../fr/neuron-llm/">Neur.on LLM</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Puis-je utiliser DeepL ou un modèle généraliste dans Corrext ?</summary>
+        <p>Oui. DeepL Pro, Azure OpenAI GPT et Claude sont disponibles dans l'interface, avec l'avis de pseudonymisation qui s'affiche au moment du choix. La fonction Alternatives compare jusqu'à quatre propositions, chacune attribuée à son moteur.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Comment vérifier un terme juridique suisse ?</summary>
+        <p>En surlignant le mot dans le texte source, puis en ouvrant Fast Lookup : le concordancier CHnell affiche des segments alignés tirés de sources officielles, avec le domaine et la source de chaque occurrence. Le <a href="../../../fr/ressources/glossaire/">glossaire</a> reprend les termes les plus courants dans les quatre langues.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="relecture">
+  <div class="container">
+    <h2>Relecture, certification et mise en place</h2>
+    <p class="qh">Ce qui distingue un document qu'on lit d'un document qu'on dépose.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Qui relit les traductions ?</summary>
+        <p>Vos propres équipes en relecture interne, un traducteur juridique en Light review ou en Full review, ou deux traducteurs et une agence spécialisée pour une Double review avec certificat. Le niveau se choisit document par document dans le <a href="../../../fr/corrext/translation-project/">tunnel projet</a>, avec le délai affiché avant validation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Comment obtenir une traduction certifiée ou apostillée ?</summary>
+        <p>Pour un extrait du registre du commerce, le service en ligne propose trois niveaux : certification par Corrext, certification notariée, et certification notariée puis apostillée selon la Convention de La Haye du 5 octobre 1961. Pour les autres documents, la Double review aboutit à un certificat délivré par l'agence responsable.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Combien cela coûte-t-il ?</summary>
+        <p>Les prix ne sont pas publics : ils dépendent des volumes, des langues et du niveau de relecture. Dans l'application, le devis et le délai s'affichent avant toute validation, calculés à partir du nombre de pages standard et de la catégorie juridique détectés dans vos fichiers. Le cadrage se fait lors d'une démonstration.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Existe-t-il un essai gratuit ?</summary>
+        <p>Pas d'essai en libre-service. La démonstration se fait avec un spécialiste, sur vos propres documents, dans vos langues. La démonstration interactive de ce site reproduit l'interface réelle avec des résultats obtenus dans l'application.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Combien de temps prend la mise en place ?</summary>
+        <p>L'application web ne demande aucune installation : un compte suffit, avec une authentification par mot de passe ou par authentification unique Microsoft. Une intégration à vos systèmes par API, ou un déploiement sur vos propres serveurs, se cadre lors d'un échange technique.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="siblings" style="padding:76px 0 84px">
+  <div class="container">
+    <h2>Pour aller plus loin</h2>
+    <div class="siblings-row">
+      <a href="../../../fr/aide/"><b>Centre d'aide</b><span>Chaque procédure de l'application, étape par étape.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Le tableau complet du parcours de vos données.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/comparatif/"><b>Comparatifs</b><span>Corrext face à DeepL, aux modèles généralistes et à l'agence.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Une question qui n'est pas dans cette liste ?</h2>
+      <p>Posez-la lors d'une démonstration : un spécialiste du droit suisse répond sur vos propres documents.</p>
+      <div class="final-cta-btns">
+        <a href="../../../fr/contact/" class="btn btn-blue">Demander une démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../../fr/aide/" class="btn-outline">Parcourir le centre d'aide</a>
+      </div>
+      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../fr/" class="logo">Neur<span>.</span>on</a>
+        <p>Le moteur de traduction du droit, de la fiscalité et de la finance suisses. Une solution entièrement suisse : entité, infrastructure et moteur Neur.on LLM, pour une précision quadrilingue et une souveraineté totale des données.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hébergement en Suisse (Exoscale) · nLPD et RGPD</p>
+      </div>
+      <div>
+        <h5>Plateforme</h5>
+        <ul>
+          <li><a href="../../../fr/corrext/">Corrext, la plateforme</a></li>
+          <li><a href="../../../fr/corrext/fast-translation/">Fast translation</a></li>
+          <li><a href="../../../fr/corrext/translation-project/">Translation project</a></li>
+          <li><a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a></li>
+          <li><a href="../../../fr/corrext/api-on-premises/">API et on-premises</a></li>
+          <li><a href="../../../fr/neuron-llm/">Neur.on LLM, le moteur</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../../../fr/solutions/cabinets-avocats/">Cabinets d'avocats</a></li>
+          <li><a href="../../../fr/solutions/banques-finance/">Banques et finance</a></li>
+          <li><a href="../../../fr/solutions/directions-juridiques/">Directions juridiques</a></li>
+          <li><a href="../../../fr/solutions/autorites-administration/">Autorités et administration</a></li>
+          <li><a href="../../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a></li>
+          <li><a href="../../../fr/solutions/editeurs-legaltech/">LegalTechs et éditeurs</a></li>
+          <li><a href="../../../fr/traduction/">Traduction par domaine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ressources</h5>
+        <ul>
+          <li><a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a></li>
+          <li><a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a></li>
+          <li><a href="../../../fr/ressources/glossaire/">Glossaire juridique</a></li>
+          <li><a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a></li>
+          <li><a href="../../../fr/comparatif/">Comparatifs</a></li>
+          <li><a href="../../../fr/aide/">Centre d'aide</a></li>
+          <li><a href="../../../fr/securite-souverainete/">Sécurité et souveraineté</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Neur.on</h5>
+        <ul class="footer-contact">
+          <li><a href="../../../fr/a-propos/">À propos et distinctions</a></li>
+          <li><a href="../../../fr/a-propos/presse/">Presse</a></li>
+          <li><a href="../../../fr/contact/">Demander une démo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@neur-on.ai">contact@neur-on.ai</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Fribourg, Suisse. Tous droits réservés.</span>
+      <div class="links">
+        <a href="https://neur-on.ai/mentions-legales">Mentions légales</a>
+        <a href="https://neur-on.ai/confidentialite">Protection des données</a>
+        <a href="https://neur-on.ai/cgu">CGU</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+</body>
+</html>

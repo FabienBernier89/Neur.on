@@ -148,6 +148,19 @@ def build_page(path, meta, body):
     body = re.sub(r'href="([a-z0-9\-]+\.html)(#[^"]*)?"', legacy, body)
     body = body.replace('href="{{ROOT}}', 'href="' + root).replace("{{ROOT}}", root)
 
+    # FAQPage automatique : toute page qui pose des questions le déclare aux moteurs
+    if "faq-item" in body and not any('"FAQPage"' in ld for ld in lds):
+        pairs = re.findall(r'<details class="faq-item">\s*<summary>(.*?)</summary>\s*<p>(.*?)</p>',
+                           body, re.S)
+        def flat(x):
+            x = re.sub(r"<[^>]+>", "", x)
+            return re.sub(r"\s+", " ", x).replace("&nbsp;", " ").strip()
+        qs = [{"@type": "Question", "name": flat(q),
+               "acceptedAnswer": {"@type": "Answer", "text": flat(a)}} for q, a in pairs]
+        if qs:
+            lds.append(json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+                                   "mainEntity": qs}, ensure_ascii=False))
+
     # fil d'Ariane
     items = crumbs_for(path, short)
     crumb_html = ""

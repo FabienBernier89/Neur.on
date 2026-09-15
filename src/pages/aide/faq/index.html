@@ -1,0 +1,187 @@
+<!--page
+title: Questions fréquentes sur Corrext et Neur.on · Centre d'aide
+description: Sécurité des données, langues, formats, moteurs, relecture juridique, certification, tarifs, intégration : les réponses aux questions les plus posées sur Corrext et Neur.on LLM.
+short: Questions fréquentes
+nav: ressources
+-->
+
+<style>
+.qsum{padding:76px 0 0}
+.qsum-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.qsum-grid a{padding:22px 24px 22px 0;border-right:1px solid var(--line-2);display:block;transition:background .15s}
+.qsum-grid a:last-child{border-right:0}
+.qsum-grid a + a{padding-left:24px}
+.qsum-grid a:hover{background:rgba(49,123,255,.04)}
+.qsum-grid b{display:block;font-size:15px;color:var(--ink);letter-spacing:-.01em;margin-bottom:5px}
+.qsum-grid a:hover b{color:var(--blue-d)}
+.qsum-grid span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.qblock{padding:56px 0 0}
+.qblock h2{font-size:clamp(24px,2.8vw,32px);margin-bottom:6px}
+.qblock .qh{font-size:14.5px;color:var(--muted);margin-bottom:22px;max-width:64ch}
+@media(max-width:940px){.qsum-grid{grid-template-columns:1fr 1fr}.qsum-grid a{border-right:0;border-bottom:1px solid var(--line-2);padding:18px 0}.qsum-grid a + a{padding-left:0}}
+@media(max-width:560px){.qsum-grid{grid-template-columns:1fr}}
+</style>
+
+<section class="thero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Questions fréquentes.</em> Ce que les juristes nous demandent en premier</h1>
+        <p class="lead">Les réponses courtes aux questions qui reviennent dans chaque démonstration : où vont les données, quelles langues sont natives, qui relit, ce qui est certifié, ce qui coûte du temps. Chaque réponse renvoie à la page qui la détaille.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">Demander une démo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#securite" class="btn btn-ghost">Aller aux questions</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Vérifié :</b> chaque réponse correspond à l'application telle qu'elle fonctionne</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Cinq thèmes :</b> sécurité, langues et formats, moteurs, relecture, mise en place</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Pour aller plus loin :</b> le centre d'aide détaille chaque procédure</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="qsum">
+  <div class="container">
+    <div class="qsum-grid">
+      <a href="#securite"><b>Sécurité et données</b><span>Stockage, traitement, réutilisation, certification</span></a>
+      <a href="#langues"><b>Langues et formats</b><span>Langues natives, fichiers acceptés, limites</span></a>
+      <a href="#moteurs"><b>Moteurs et qualité</b><span>Neur.on LLM, moteurs tiers, alternatives</span></a>
+      <a href="#relecture"><b>Relecture et certification</b><span>Niveaux, relecteurs, devis, apostille</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="securite">
+  <div class="container">
+    <h2>Sécurité et protection des données</h2>
+    <p class="qh">Ce sont les premières questions d'un cabinet, d'une banque ou d'une autorité, et elles ont des réponses précises.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Où mes documents sont-ils stockés ?</summary>
+        <p>Sur les serveurs suisses de Corrext, chez un hébergeur suisse, dans tous les cas, quel que soit le moteur de traduction choisi. Neur.on est certifié ISO&nbsp;27001 depuis février 2024 et conforme à la nLPD et au RGPD. Le détail figure sur la page <a href="{{ROOT}}fr/securite-souverainete/">Sécurité et souveraineté</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mes documents sont-ils traités en Suisse ?</summary>
+        <p>Cela dépend de deux choix que vous faites vous-même. En mode Highly sensitive content, le stockage et le traitement restent exclusivement en Suisse. En mode Standard, le traitement suit le moteur retenu : Neur.on LLM s'exécute en Suisse, alors que DeepL Pro, Azure OpenAI GPT et Claude sont des moteurs tiers hébergés à l'étranger.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Puis-je utiliser un moteur étranger pour un dossier couvert par le secret professionnel ?</summary>
+        <p>L'application affiche l'avis Attorney-Client privilege dès qu'un moteur tiers est sélectionné : votre organisation exige alors le retrait de toute référence permettant d'identifier des clients ou l'objet du dossier, et interdit ces moteurs pour les affaires sensibles. Pour ces dossiers, le mode Highly sensitive content ou le moteur Neur.on LLM gardent tout en Suisse.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mes contenus servent-ils à entraîner des modèles ?</summary>
+        <p>Non. Les contenus clients ne servent pas à entraîner les modèles de Neur.on. Les projets créés en confidentialité Standard peuvent en revanche alimenter une mémoire de traduction réutilisable par votre seule organisation, et les projets en mode Highly sensitive content ne sont jamais réutilisés.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Neur.on est-il soumis au CLOUD Act américain ?</summary>
+        <p>Neur.on AI Solutions SA est une société de droit suisse établie à Fribourg, et son infrastructure est hébergée en Suisse. Le choix d'un moteur tiers hébergé à l'étranger fait en revanche sortir le texte de ce périmètre, ce que l'application signale avant l'envoi.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="langues">
+  <div class="container">
+    <h2>Langues et formats</h2>
+    <p class="qh">Les chiffres viennent de l'application, vérifiés en septembre 2026.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Quelles langues sont couvertes ?</summary>
+        <p>La plateforme couvre une trentaine de langues. L'allemand, le français, l'italien et l'anglais sont natifs avec Neur.on LLM et sont les quatre langues disponibles en mode Highly sensitive content. La liste complète figure sur la page <a href="{{ROOT}}fr/langues-et-formats/">Langues et formats</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quels fichiers puis-je déposer ?</summary>
+        <p>Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, jusqu'à 25 fichiers de 50 Mo chacun par envoi. L'application recommande de déposer le format original, un fichier Word ou Excel plutôt qu'un PDF, quand il existe.</p>
+      </details>
+      <details class="faq-item">
+        <summary>La mise en page est-elle conservée ?</summary>
+        <p>Oui, la traduction est livrée dans le format d'origine. Pour un PDF, notamment un scan, l'onglet PDF to Word produit d'abord un document Word éditable.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Y a-t-il une limite de longueur pour le texte ?</summary>
+        <p>Dix mille caractères pour la traduction de texte et cinq mille pour la réécriture. Au-delà, le document se dépose dans File translation ou dans un Translation project.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="moteurs">
+  <div class="container">
+    <h2>Moteurs et qualité de traduction</h2>
+    <p class="qh">La plateforme est agnostique : vous choisissez, et vous comparez.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Qu'est-ce que Neur.on LLM ?</summary>
+        <p>Le modèle de langue de Neur.on, entraîné sur la donnée juridique et financière suisse, plus de quinze millions de segments multilingues issus de la jurisprudence du Tribunal fédéral, des textes de la FINMA et des codes. Il s'exécute en Suisse. Voir la page <a href="{{ROOT}}fr/neuron-llm/">Neur.on LLM</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Puis-je utiliser DeepL ou un modèle généraliste dans Corrext ?</summary>
+        <p>Oui. DeepL Pro, Azure OpenAI GPT et Claude sont disponibles dans l'interface, avec l'avis de pseudonymisation qui s'affiche au moment du choix. La fonction Alternatives compare jusqu'à quatre propositions, chacune attribuée à son moteur.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Comment vérifier un terme juridique suisse ?</summary>
+        <p>En surlignant le mot dans le texte source, puis en ouvrant Fast Lookup : le concordancier CHnell affiche des segments alignés tirés de sources officielles, avec le domaine et la source de chaque occurrence. Le <a href="{{ROOT}}fr/ressources/glossaire/">glossaire</a> reprend les termes les plus courants dans les quatre langues.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="qblock faq" id="relecture">
+  <div class="container">
+    <h2>Relecture, certification et mise en place</h2>
+    <p class="qh">Ce qui distingue un document qu'on lit d'un document qu'on dépose.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Qui relit les traductions ?</summary>
+        <p>Vos propres équipes en relecture interne, un traducteur juridique en Light review ou en Full review, ou deux traducteurs et une agence spécialisée pour une Double review avec certificat. Le niveau se choisit document par document dans le <a href="{{ROOT}}fr/corrext/translation-project/">tunnel projet</a>, avec le délai affiché avant validation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Comment obtenir une traduction certifiée ou apostillée ?</summary>
+        <p>Pour un extrait du registre du commerce, le service en ligne propose trois niveaux : certification par Corrext, certification notariée, et certification notariée puis apostillée selon la Convention de La Haye du 5 octobre 1961. Pour les autres documents, la Double review aboutit à un certificat délivré par l'agence responsable.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Combien cela coûte-t-il ?</summary>
+        <p>Les prix ne sont pas publics : ils dépendent des volumes, des langues et du niveau de relecture. Dans l'application, le devis et le délai s'affichent avant toute validation, calculés à partir du nombre de pages standard et de la catégorie juridique détectés dans vos fichiers. Le cadrage se fait lors d'une démonstration.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Existe-t-il un essai gratuit ?</summary>
+        <p>Pas d'essai en libre-service. La démonstration se fait avec un spécialiste, sur vos propres documents, dans vos langues. La démonstration interactive de ce site reproduit l'interface réelle avec des résultats obtenus dans l'application.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Combien de temps prend la mise en place ?</summary>
+        <p>L'application web ne demande aucune installation : un compte suffit, avec une authentification par mot de passe ou par authentification unique Microsoft. Une intégration à vos systèmes par API, ou un déploiement sur vos propres serveurs, se cadre lors d'un échange technique.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="siblings" style="padding:76px 0 84px">
+  <div class="container">
+    <h2>Pour aller plus loin</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/aide/"><b>Centre d'aide</b><span>Chaque procédure de l'application, étape par étape.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Le tableau complet du parcours de vos données.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/comparatif/"><b>Comparatifs</b><span>Corrext face à DeepL, aux modèles généralistes et à l'agence.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Une question qui n'est pas dans cette liste ?</h2>
+      <p>Posez-la lors d'une démonstration : un spécialiste du droit suisse répond sur vos propres documents.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">Demander une démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/aide/" class="btn-outline">Parcourir le centre d'aide</a>
+      </div>
+      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+    </div>
+  </div>
+</section>

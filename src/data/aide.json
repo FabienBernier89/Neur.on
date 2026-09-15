@@ -11,7 +11,7 @@
       {
         "slug": "se-connecter",
         "titre": "Se connecter à Corrext",
-        "title": "Se connecter à Corrext : mot de passe ou SSO · Neur.on",
+        "title": "Se connecter à Corrext : mot de passe ou SSO unique · Neur.on",
         "description": "Ouvrir une session Corrext avec votre adresse e-mail et un mot de passe de 12 caractères, ou par l'authentification unique Microsoft de votre organisation.",
         "reponse": "Corrext s'ouvre depuis corrext.com, qui redirige vers la page d'authentification de la plateforme. Vous vous identifiez avec votre adresse e-mail et votre mot de passe, long de douze caractères au minimum, ou avec le bouton d'authentification unique Microsoft si votre organisation l'a activée. Une fois connecté, vous arrivez sur l'accueil, qui liste vos outils de traduction.",
         "etapes": [
@@ -30,7 +30,7 @@
       {
         "slug": "les-quatre-outils",
         "titre": "Les quatre outils de l'accueil",
-        "title": "Les quatre outils de l'accueil de Corrext · Neur.on",
+        "title": "Les quatre outils de la page d'accueil de Corrext · Neur.on",
         "description": "Fast translation, Translation project, Fast lookup et Commercial register extract : à quoi sert chacune des quatre cartes de l'accueil de Corrext.",
         "reponse": "L'accueil de Corrext regroupe quatre outils sous le titre « My translation tools » : Fast translation pour traduire immédiatement un texte ou des fichiers, Translation project pour faire estimer un délai et commander une relecture, Fast lookup pour chercher un terme en contexte dans CHnell, et Commercial register extract pour commander une traduction certifiée d'extrait du registre du commerce. Vos projets en cours apparaissent plus bas, sous « My projects ».",
         "etapes": [
@@ -51,7 +51,7 @@
       {
         "slug": "choisir-un-moteur",
         "titre": "Choisir un moteur de traduction",
-        "title": "Choisir un moteur de traduction dans Corrext · Neur.on",
+        "title": "Comment choisir un moteur de traduction dans Corrext · Neur.on",
         "description": "Corrext vous laisse choisir le moteur de traduction. Moteurs suisses de Neur.on ou moteurs tiers hébergés à l'étranger : ce que change votre choix.",
         "reponse": "Dans Fast translation, une liste déroulante placée à droite des langues vous laisse choisir le moteur qui traduit votre texte ou vos fichiers. Elle propose les moteurs suisses de Neur.on, dont Neur.on LLM, et des moteurs tiers hébergés à l'étranger : « DeepL Pro », « Azure OpenAI GPT » et « Claude ». Le choix d'un moteur tiers fait apparaître un avis Attorney-Client privilege, que vous devez lire avant d'envoyer quoi que ce soit.",
         "etapes": [
@@ -71,7 +71,7 @@
       {
         "slug": "mode-highly-sensitive",
         "titre": "Le mode Highly sensitive content",
-        "title": "Le mode Highly sensitive content de Corrext · Neur.on",
+        "title": "Le mode Highly sensitive content de Corrext expliqué · Neur.on",
         "description": "Ce que change l'interrupteur Highly sensitive content : stockage et traitement en Suisse, aucune réutilisation en mémoire, quatre langues disponibles.",
         "reponse": "Le mode « Highly sensitive content » garantit que vos données sont stockées et traitées exclusivement en Suisse, et que le contenu traduit n'alimente aucune mémoire de traduction pour vos projets futurs. Dans Fast translation, il prend la forme d'un interrupteur placé à droite des onglets ; dans Translation project, il s'agit de l'une des deux cartes de confidentialité. Il est disponible pour l'anglais, le français, l'italien et l'allemand.",
         "etapes": [
@@ -90,8 +90,8 @@
       {
         "slug": "avis-attorney-client-privilege",
         "titre": "Comprendre l'avis Attorney-Client privilege",
-        "title": "L'avis Attorney-Client privilege de Corrext · Neur.on",
-        "description": "Pourquoi Corrext affiche un avis quand vous choisissez un moteur tiers hébergé à l'étranger, et ce que votre organisation exige avant tout envoi de document.",
+        "title": "L'avis Attorney-Client privilege affiché par Corrext · Neur.on",
+        "description": "Pourquoi Corrext affiche un avis quand vous choisissez un moteur tiers hébergé à l'étranger, et ce que votre organisation exige avant tout envoi.",
         "reponse": "Quand vous sélectionnez un moteur de traduction tiers hébergé à l'étranger, Corrext affiche un bandeau « Attorney-Client privilege notice ». Il rappelle la règle de votre organisation : retirer du document toute référence susceptible de révéler l'identité de clients, de parties liées ou l'objet de l'affaire. Ces moteurs ne peuvent servir que pour des documents entièrement pseudonymisés, et jamais pour une affaire sensible ou à forte visibilité.",
         "etapes": [
           "Ouvrez la liste des moteurs dans « Fast translation » et sélectionnez un moteur tiers, par exemple « DeepL Pro ».",
@@ -110,7 +110,7 @@
         "slug": "langues-disponibles",
         "titre": "Les langues disponibles",
         "title": "Choisir les langues source et cible dans Corrext · Neur.on",
-        "description": "Détection automatique de la langue source, inversion des langues, 30 langues cibles sur la plateforme et quatre langues nationales natives.",
+        "description": "La détection automatique de la langue source, l'inversion des langues, les 30 langues cibles de la plateforme et les quatre langues natives.",
         "reponse": "Corrext propose 30 langues cibles sur la plateforme, avec l'allemand, le français, l'italien et l'anglais comme quatre langues natives. La langue source est détectée automatiquement : la liste de gauche affiche « Detect language », puis la langue reconnue dès que vous commencez à écrire. Un bouton d'inversion placé entre les deux listes permute la source et la cible en un clic.",
         "etapes": [
           "Ouvrez « Fast translation » : la liste de gauche affiche <b>« Detect language »</b> par défaut.",
@@ -139,7 +139,7 @@
       {
         "slug": "traduire-un-texte",
         "titre": "Traduire un texte",
-        "title": "Traduire un texte dans Fast translation · Neur.on",
+        "title": "Traduire un texte dans Fast translation de Corrext · Neur.on",
         "description": "Coller un texte dans Fast translation, choisir les langues et le moteur, et lire la traduction qui s'écrit au fil de la saisie, jusqu'à 10'000 caractères.",
         "reponse": "Dans Fast translation, l'onglet « Text translation » traduit au fil de la saisie : il n'y a pas de bouton à presser. Vous collez votre texte à gauche, la traduction apparaît à droite, dans la limite de 10'000 caractères affichée par le compteur sous la zone de saisie. Un bouton de copie, en haut du volet de droite, récupère le résultat.",
         "etapes": [
@@ -159,7 +159,7 @@
       {
         "slug": "traduire-des-fichiers",
         "titre": "Traduire des fichiers",
-        "title": "Traduire des fichiers dans Fast translation · Neur.on",
+        "title": "Traduire plusieurs fichiers dans Fast translation · Neur.on",
         "description": "Envoyer jusqu'à 25 fichiers Word, Excel, PowerPoint ou PDF de 50 Mo au maximum dans Fast translation, avec le moteur et la langue cible de votre choix.",
         "reponse": "L'onglet « File translation » de Fast translation traduit vos documents sans copier-coller. Vous choisissez d'abord un moteur et une langue cible, puis vous déposez jusqu'à 25 fichiers, de 50 Mo au maximum chacun, aux formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. L'interrupteur « Highly sensitive content » reste actif sur cet onglet, ce qui permet de traiter un lot confidentiel sans sortir de Suisse.",
         "etapes": [
@@ -179,7 +179,7 @@
       {
         "slug": "convertir-pdf-en-word",
         "titre": "Convertir un PDF en Word",
-        "title": "Convertir un PDF en Word avec PDF to Word · Neur.on",
+        "title": "Convertir un PDF en Word avec l'onglet PDF to Word · Neur.on",
         "description": "L'onglet PDF to Word transforme jusqu'à 25 fichiers PDF de 50 Mo en documents Word éditables, avant traduction, annotation ou relecture juridique.",
         "reponse": "L'onglet « PDF to Word » de Fast translation convertit vos PDF, y compris des documents scannés, en fichiers Word éditables. Il accepte jusqu'à 25 fichiers au format .pdf, de 50 Mo au maximum chacun. C'est l'étape à faire en premier quand une pièce n'existe qu'en PDF et que vous voulez ensuite la traduire, l'annoter ou la faire relire proprement.",
         "etapes": [
@@ -282,13 +282,13 @@
     "h1": "Faire relire et chiffrer une traduction",
     "lead": "Translation project enchaîne trois étapes : réglage du projet, revue des fichiers, puis devis. Voici comment créer un projet, choisir sa confidentialité, déposer vos documents et commander une relecture interne ou externe.",
     "outil": "Translation project",
-    "title": "Translation project : relecture et devis dans Corrext · Neur.on",
+    "title": "Translation project : relecture et devis Corrext · Neur.on",
     "description": "Créer un projet, choisir sa confidentialité, déposer les fichiers, comparer relecture interne et workflow personnalisé, obtenir un devis et un délai.",
     "articles": [
       {
         "slug": "creer-un-projet",
         "titre": "Créer un projet",
-        "title": "Créer un projet de traduction dans Corrext · Neur.on",
+        "title": "Créer un nouveau projet de traduction dans Corrext · Neur.on",
         "description": "Nommer un projet, garder le nom par défaut et choisir les langues cibles : la première étape du tunnel Translation project, expliquée écran par écran.",
         "reponse": "Translation project se déroule en trois étapes affichées en haut de l'écran : « Set-up », « File overview », puis « Quotes ». La première étape demande un nom de projet, un niveau de confidentialité et une ou plusieurs langues cibles. Le bouton « Next » reste inactif tant qu'aucune langue cible n'est choisie ; le projet est créé dès que vous passez à l'étape suivante.",
         "etapes": [
@@ -327,8 +327,8 @@
       {
         "slug": "deposer-les-fichiers",
         "titre": "Déposer les fichiers et vérifier la détection",
-        "title": "Déposer les fichiers d'un projet et vérifier · Neur.on",
-        "description": "À l'étape File overview, Corrext compte les pages standard et détecte la langue et la catégorie juridique de chaque fichier : vérifiez-les avant de continuer.",
+        "title": "Déposer les fichiers d'un projet et les vérifier · Neur.on",
+        "description": "À l'étape File overview, Corrext compte les pages standard et détecte la langue et la catégorie de chaque fichier : vérifiez-les avant de continuer.",
         "reponse": "La deuxième étape, « File overview », reçoit vos documents aux formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, de 50 Mo au maximum. Chaque fichier déposé affiche son nom, son nombre de pages standard, sa langue détectée et sa catégorie juridique détectée, par exemple 2.5 pages standard pour un document court. La langue et la catégorie sont modifiables : vérifiez-les, elles servent de base au devis.",
         "etapes": [
           "À l'étape <b>« File overview »</b>, cliquez sur la zone de dépôt ou faites glisser vos documents dessus.",
@@ -388,7 +388,7 @@
       {
         "slug": "devis-et-delai",
         "titre": "Obtenir un devis et un délai",
-        "title": "Obtenir un devis et un délai dans Corrext · Neur.on",
+        "title": "Obtenir un devis et un délai dans un projet Corrext · Neur.on",
         "description": "Corrext calcule le devis et le délai à partir du nombre de pages standard et de la catégorie détectée, puis détaille préparation et relectures.",
         "reponse": "À l'étape « Quotes », Corrext calcule une estimation à partir du nombre de pages standard de vos fichiers et de la catégorie juridique détectée. Un encadré « Estimated time » détaille le temps de préparation, le temps de relecture interne et le temps de relecture externe, et affiche un coût total hors taxe. Le bouton « Generate quote » produit le devis une fois l'échéance et le niveau de relecture renseignés.",
         "etapes": [
@@ -414,12 +414,12 @@
     "lead": "CHnell est un concordancier bilingue : il montre comment un terme est réellement traduit dans des textes officiels suisses, segment par segment, avec sa source et son domaine. Voici comment chercher, filtrer et lire un résultat.",
     "outil": "Fast lookup CHnell",
     "title": "Fast lookup CHnell : chercher un terme en contexte · Neur.on",
-    "description": "Chercher un terme dans CHnell, utiliser les opérateurs, filtrer par domaine et par source, distinguer les ressources partagées et lire un segment en contexte.",
+    "description": "Chercher un terme dans CHnell, utiliser les opérateurs, filtrer par domaine et par source, distinguer les ressources et lire un segment en contexte.",
     "articles": [
       {
         "slug": "rechercher-un-terme",
         "titre": "Rechercher un terme",
-        "title": "Rechercher un terme dans Fast lookup CHnell · Neur.on",
+        "title": "Rechercher un terme dans l'outil Fast lookup CHnell · Neur.on",
         "description": "Choisir un couple de langues, saisir un mot ou une expression et lancer la recherche CHnell avec le bouton Search pour lire des segments alignés.",
         "reponse": "CHnell cherche un mot ou une expression dans un couple de langues et renvoie des segments bilingues tirés de sources officielles. Vous réglez la langue de départ et la langue d'arrivée en haut de l'écran, vous saisissez votre terme dans le champ « Search for a word, an expression, a term », puis vous cliquez sur le bouton « Search ». La touche Entrée ne déclenche pas la recherche.",
         "etapes": [
@@ -459,7 +459,7 @@
         "slug": "filtrer-domaine-et-source",
         "titre": "Filtrer par domaine et par source",
         "title": "Filtrer une recherche CHnell par domaine et source · Neur.on",
-        "description": "Advanced search et le panneau Filters restreignent les résultats CHnell à un type de ressource, à certains des 26 domaines juridiques et à des sources précises.",
+        "description": "Advanced search et le panneau Filters restreignent les résultats CHnell à un type de ressource, à certains des 26 domaines et à des sources précises.",
         "reponse": "CHnell classe ses segments par domaine juridique et par source. Avant de chercher, le bloc repliable « Advanced search » permet de restreindre le type de ressource et de cocher un ou plusieurs domaines parmi les 26 disponibles, du droit des sociétés à la fiscalité en passant par l'arbitrage. Sur la page de résultats, le panneau « Filters » reprend ces critères et y ajoute la sélection des sources.",
         "etapes": [
           "Sur l'écran CHnell, dépliez le bloc <b>« Advanced search »</b> au-dessus du champ de recherche.",
@@ -478,7 +478,7 @@
       {
         "slug": "ressources-partagees-et-propres",
         "titre": "Ressources partagées et ressources propres",
-        "title": "Ressources partagées et propres dans CHnell · Neur.on",
+        "title": "Les ressources partagées et propres dans CHnell · Neur.on",
         "description": "Le filtre Resource type de CHnell distingue toutes les ressources, les ressources partagées et vos ressources propres. Ce que recouvre chacune d'elles.",
         "reponse": "Dans « Advanced search », le filtre « Resource type » propose trois valeurs : « All resources », « Shared resources » et « Own resources ». Les ressources partagées sont les corpus mis à disposition de tous les utilisateurs de CHnell ; les ressources propres sont celles rattachées à votre organisation. Le filtre permet donc de chercher soit partout, soit uniquement dans le patrimoine de votre organisation.",
         "etapes": [
@@ -498,8 +498,8 @@
       {
         "slug": "segment-en-contexte",
         "titre": "Afficher un segment en contexte",
-        "title": "Afficher un segment CHnell dans son contexte · Neur.on",
-        "description": "Lire un résultat CHnell : segment aligné, terme surligné, domaine, source officielle, lien Show in context et bouton Show more results.",
+        "title": "Afficher un segment de CHnell dans son contexte · Neur.on",
+        "description": "Lire un résultat CHnell : le segment aligné, le terme surligné, le domaine, la source officielle et le lien Show in context sous chaque segment.",
         "reponse": "Chaque résultat de CHnell est un segment aligné : la phrase source à gauche, sa traduction à droite, avec le terme cherché surligné dans les deux. Au-dessus figure le domaine juridique en capitales, en dessous la source exacte du texte, par exemple un recueil fédéral ou le site d'une autorité. Le lien « Show in context » ouvre le segment dans son environnement d'origine, pour vérifier qu'il correspond bien à votre cas.",
         "etapes": [
           "Lancez une recherche dans CHnell et parcourez la liste de segments alignés.",
@@ -523,14 +523,14 @@
     "h1": "Commander une traduction certifiée en ligne",
     "lead": "La traduction certifiée d'un extrait du registre du commerce suisse se commande en ligne, en quatre étapes. Voici comment trouver la société, choisir le niveau de certification et régler la livraison.",
     "outil": "Extraits du registre du commerce",
-    "title": "Extraits du registre du commerce : traduction certifiée · Neur.on",
+    "title": "Traduction certifiée d'extraits du registre suisse · Neur.on",
     "description": "Commander la traduction certifiée d'un extrait du registre du commerce suisse : recherche de la société, niveau de certification, livraison et délai.",
     "articles": [
       {
         "slug": "commander-une-traduction-certifiee",
         "titre": "Commander une traduction certifiée",
         "title": "Commander la traduction certifiée d'un extrait · Neur.on",
-        "description": "Trouver une société par son nom ou son numéro IDE, choisir la langue cible et lancer la commande d'une traduction certifiée d'extrait du registre du commerce.",
+        "description": "Trouver une société par son nom ou son numéro IDE, choisir la langue cible et commander la traduction certifiée d'un extrait du registre suisse.",
         "reponse": "La traduction certifiée d'un extrait du registre du commerce suisse se commande depuis un service en ligne dédié, accessible par la carte « Commercial register extract » de l'accueil de Corrext. Le parcours tient en quatre étapes : trouver la société par son nom ou son numéro d'identification, choisir le niveau de certification, choisir le mode de livraison, puis fixer le délai. Le service couvre plus de 30 langues.",
         "etapes": [
           "Depuis l'accueil de Corrext, cliquez sur la carte <b>« Commercial register extract »</b> : un service en ligne distinct s'ouvre.",
@@ -593,14 +593,14 @@
     "h1": "Ce que Corrext accepte, et jusqu'où",
     "lead": "Formats de fichiers, nombre et taille des envois, limites de caractères, langues disponibles : toutes les limites de la plateforme réunies, telles qu'elles s'affichent dans l'application.",
     "outil": "Toute la plateforme",
-    "title": "Formats et langues acceptés par Corrext · Neur.on",
-    "description": "Les formats de fichiers acceptés par Corrext, les limites de nombre, de taille et de caractères, les 30 langues de la plateforme et les quatre langues natives.",
+    "title": "Formats de fichiers et langues acceptés par Corrext · Neur.on",
+    "description": "Les formats de fichiers acceptés par Corrext, les limites de nombre, de taille et de caractères, les 30 langues et les quatre langues natives.",
     "articles": [
       {
         "slug": "formats-acceptes",
         "titre": "Formats de fichiers acceptés",
-        "title": "Formats de fichiers acceptés par Corrext · Neur.on",
-        "description": "Corrext accepte les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. L'onglet PDF to Word n'accepte que le PDF. Préférez toujours le format d'origine.",
+        "title": "Quels formats de fichiers Corrext accepte-t-il · Neur.on",
+        "description": "Corrext accepte les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. L'onglet PDF to Word n'accepte que le PDF. Préférez le format d'origine.",
         "reponse": "Corrext accepte sept formats de fichiers pour la traduction : .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Cette liste vaut pour l'onglet « File translation » de Fast translation comme pour l'étape « File overview » d'un projet de traduction. L'onglet « PDF to Word » fait exception : il n'accepte que le format .pdf, puisqu'il sert précisément à le convertir.",
         "etapes": [
           "Vérifiez l'extension de votre fichier avant de le déposer : .pdf, .doc, .docx, .xls, .xlsx, .ppt ou .pptx.",
@@ -619,7 +619,7 @@
         "slug": "limites-taille-et-nombre",
         "titre": "Limites de taille et de nombre",
         "title": "Limites de taille et de nombre de fichiers Corrext · Neur.on",
-        "description": "Corrext accepte jusqu'à 25 fichiers par envoi, de 50 Mo au maximum chacun, dans Fast translation comme dans un projet de traduction.",
+        "description": "Jusqu'à 25 fichiers par envoi et 50 Mo par fichier : les limites de dépôt de Corrext, dans Fast translation comme dans un projet de traduction.",
         "reponse": "Les zones de dépôt de Corrext annoncent deux limites : jusqu'à 25 fichiers par envoi, et 50 Mo au maximum par fichier. Elles s'appliquent à l'onglet « File translation » comme à l'onglet « PDF to Word » de Fast translation. L'étape « File overview » d'un projet de traduction rappelle également la limite de 50 Mo par fichier.",
         "etapes": [
           "Comptez vos fichiers avant de les déposer : la limite est de 25 fichiers par envoi.",
@@ -657,7 +657,7 @@
         "slug": "langues-et-langues-natives",
         "titre": "Langues disponibles et langues natives",
         "title": "Les 30 langues de Corrext et les langues natives · Neur.on",
-        "description": "Corrext couvre 30 langues cibles, dont quatre langues nationales natives, et se limite à l'anglais, au français, à l'italien et à l'allemand en mode sensible.",
+        "description": "Corrext couvre 30 langues cibles, dont quatre langues natives, et se limite à l'anglais, au français, à l'italien et à l'allemand en mode sensible.",
         "reponse": "Corrext propose 30 langues cibles sur la plateforme, de l'anglais au japonais en passant par l'arabe, le chinois, le polonais ou le turc. Quatre d'entre elles sont natives et couvrent les langues du travail juridique suisse : l'allemand, le français, l'italien et l'anglais. Le mode « Highly sensitive content » restreint le choix à ces quatre langues, puisque le traitement doit alors rester en Suisse.",
         "etapes": [
           "Ouvrez la liste des langues cibles dans Fast translation, ou le bouton « Select target languages » dans un projet.",
@@ -681,7 +681,7 @@
     "lead": "Stockage suisse, traitement selon le moteur, mémoires de traduction, gestion du compte : les réponses précises aux questions de sécurité que pose Corrext, sans promesse au-delà de ce que l'application montre.",
     "outil": "Toute la plateforme",
     "title": "Compte et sécurité : vos données dans Corrext · Neur.on",
-    "description": "Où sont stockées et traitées vos données dans Corrext, quels moteurs traitent hors de Suisse, comment fonctionnent les mémoires et comment gérer son compte.",
+    "description": "Où sont stockées et traitées vos données, quels moteurs traitent hors de Suisse, comment fonctionnent les mémoires et comment gérer son compte.",
     "articles": [
       {
         "slug": "hebergement-et-traitement",
@@ -743,8 +743,8 @@
       {
         "slug": "deconnexion-et-compte",
         "titre": "Se déconnecter et gérer son compte",
-        "title": "Se déconnecter et gérer son compte Corrext · Neur.on",
-        "description": "Le menu de l'avatar ne contient que Log out, la cloche affiche vos notifications. Les réglages de compte passent par votre administrateur.",
+        "title": "Se déconnecter et gérer son compte dans Corrext · Neur.on",
+        "description": "Le menu de l'avatar ne contient que Log out, la cloche affiche vos notifications. Les réglages du compte utilisateur passent par votre administrateur.",
         "reponse": "Dans l'en-tête de Corrext, l'avatar à vos initiales ouvre un menu qui contient uniquement « Log out » : c'est par là que vous fermez votre session. La cloche voisine affiche vos notifications, ou la mention « No notifications » quand il n'y en a aucune. Aucune page de réglages de compte n'a été observée depuis un compte utilisateur standard : les demandes de modification passent par votre administrateur.",
         "etapes": [
           "Repérez l'avatar à vos initiales, tout à droite de l'en-tête, présent sur tous les écrans.",
@@ -773,7 +773,7 @@
       {
         "slug": "bouton-next-grise",
         "titre": "Le bouton Next reste grisé",
-        "title": "Le bouton Next reste grisé dans Corrext · Neur.on",
+        "title": "Pourquoi le bouton Next reste grisé dans Corrext · Neur.on",
         "description": "Next reste inactif tant qu'aucune langue cible n'est choisie à l'étape Set-up, ou tant qu'aucun fichier n'est déposé à l'étape File overview.",
         "reponse": "Dans Translation project, le bouton « Next » ne s'active que lorsque l'étape en cours est complète. À l'étape « Set-up », il reste grisé tant qu'aucune langue cible n'a été sélectionnée. À l'étape « File overview », il reste grisé tant qu'aucun fichier n'a été déposé. À l'étape « Quotes », le bouton « Generate quote » suit la même logique et attend une échéance et un niveau de relecture.",
         "etapes": [
@@ -792,8 +792,8 @@
       {
         "slug": "langue-cible-indisponible",
         "titre": "La langue cible n'est pas disponible",
-        "title": "La langue cible n'apparaît pas dans Corrext · Neur.on",
-        "description": "En mode Highly sensitive content, Corrext limite le choix à l'anglais, au français, à l'italien et à l'allemand. Désactivez-le pour retrouver les 30 langues.",
+        "title": "Pourquoi la langue cible n'apparaît pas dans Corrext · Neur.on",
+        "description": "En mode Highly sensitive content, Corrext limite le choix à l'anglais, au français, à l'italien et à l'allemand. Désactivez-le pour les 30 langues.",
         "reponse": "Si une langue cible n'apparaît pas dans la liste, la cause la plus fréquente est le mode « Highly sensitive content ». Ce mode impose un traitement exclusivement suisse et n'est disponible que pour l'anglais, le français, l'italien et l'allemand. En le désactivant, ou en choisissant la confidentialité standard dans un projet, vous retrouvez les 30 langues de la plateforme.",
         "etapes": [
           "Dans Fast translation, repérez l'interrupteur <b>« Highly sensitive content »</b> à droite des onglets et vérifiez s'il est actif.",
@@ -811,7 +811,7 @@
       {
         "slug": "traduction-ne-se-lance-pas",
         "titre": "La traduction ne se lance pas",
-        "title": "La traduction ne se lance pas dans Corrext · Neur.on",
+        "title": "Pourquoi la traduction ne se lance pas dans Corrext · Neur.on",
         "description": "Il n'y a pas de bouton Traduire : le texte est traduit au fil de la saisie. Vérifiez surtout que la langue source et la langue cible sont bien différentes.",
         "reponse": "Dans l'onglet « Text translation », il n'existe pas de bouton pour lancer la traduction : elle se fait au fil de la saisie. Si rien n'apparaît dans le volet de droite, vérifiez d'abord que la langue source et la langue cible sont différentes, car l'application affiche alors le message « Identical source and target languages ». Un message d'erreur passager peut aussi s'afficher : relancez l'action.",
         "etapes": [
