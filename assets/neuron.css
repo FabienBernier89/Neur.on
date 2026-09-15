@@ -857,3 +857,9 @@ body.nav-open{overflow:hidden}
 .mega-col > a.mico b{display:block;font-size:14.5px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
 .mega-col > a.mico:hover b{color:var(--blue-d)}
 .mega-col > a.mico em{display:block;font-style:normal;font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:3px}
+
+/* ============ LOGO (image officielle) ============ */
+.logo{display:inline-flex;align-items:center;line-height:0}
+.logo img{height:34px;width:auto;display:block}
+.footer-about .logo img{height:34px}
+@media(max-width:560px){.logo img{height:26px}}

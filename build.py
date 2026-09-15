@@ -208,8 +208,9 @@ def build_page(path, meta, body):
         '<link rel="preconnect" href="https://fonts.googleapis.com">',
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">',
-        f'<link rel="icon" type="image/svg+xml" href="{root}assets/favicon.svg">',
-        f'<link rel="apple-touch-icon" href="{root}assets/favicon.svg">',
+        f'<link rel="icon" href="{root}assets/img/favicon.ico" sizes="any">',
+        f'<link rel="icon" type="image/png" href="{root}assets/img/neuron-mark.png">',
+        f'<link rel="apple-touch-icon" href="{root}assets/img/neuron-mark-180.png">',
         '<meta name="theme-color" content="#001B4C">',
         f'<link rel="stylesheet" href="{root}assets/neuron.css?v={ASSET_V}">',
     ]
