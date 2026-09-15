@@ -4,32 +4,40 @@
 
 Neur.on s'adresse aux cabinets d'avocats, aux banques et établissements financiers, aux directions juridiques et Legal Ops, aux autorités cantonales et fédérales, aux fiduciaires et aux éditeurs juridiques, en Suisse et dans les quatre langues nationales (allemand, français, italien, anglais). Pas d'essai gratuit ni de tarif public : démonstration personnalisée sur demande.
 
-## Produit : Corrext
+## Produit : la plateforme Corrext
 
-- [Corrext, la plateforme](https://neur-on.ai/fr/corrext/) : le poste de commande des traductions (projets, devis, ressources, droits).
-- [Fast translation](https://neur-on.ai/fr/corrext/fast-translation/) : traduction de texte (10'000 caractères) et de fichiers (.pdf .doc .docx .xls .xlsx .ppt .pptx, jusqu'à 25 fichiers de 50 Mo), conversion PDF vers Word, réécriture en cinq styles, alternatives par moteur, Fast Lookup terminologique. 30 langues sur la plateforme.
-- [Translation project](https://neur-on.ai/fr/corrext/translation-project/) : projet en trois étapes (Set-up, File overview, Quotes), mode Standard ou Highly sensitive content, relecture interne ou externe en trois niveaux (Light review, Full review, Double review et traduction certifiée), devis et délai instantanés.
-- [Fast lookup CHnell](https://neur-on.ai/fr/corrext/chnell/) : concordancier bilingue du droit suisse, sources officielles (Fedlex, Feuille fédérale, FINMA, administrations), 26 domaines, ressources propres et partagées, opérateurs de recherche "" - or.
-- [Extraits du registre du commerce certifiés](https://neur-on.ai/fr/corrext/extraits-registre-commerce/) : traduction certifiée d'extraits du registre du commerce suisse, trois niveaux (certification Corrext, notariée, notariée et apostillée selon la Convention de La Haye), commande en ligne.
+- [Corrext : la plateforme de traduction juridique et financière de Neur.on](https://neur-on.ai/fr/corrext/)
+- [API et on-premises](https://neur-on.ai/fr/corrext/api-on-premises/)
+- [Fast lookup CHnell](https://neur-on.ai/fr/corrext/chnell/)
+- [Extraits du registre du commerce certifiés](https://neur-on.ai/fr/corrext/extraits-registre-commerce/)
+- [Fast translation](https://neur-on.ai/fr/corrext/fast-translation/)
+- [Translation project](https://neur-on.ai/fr/corrext/translation-project/)
 
-## Moteur et sécurité
+## Le moteur et la sécurité
 
-- [Neur.on LLM](https://neur-on.ai/fr/neuron-llm/) : le moteur entraîné sur la donnée juridique et financière suisse (ATF/BGE, FINMA, codes). Corrext est agnostique : DeepL Pro, Azure OpenAI GPT et Claude sont disponibles dans la même interface, avec un avertissement de pseudonymisation pour les moteurs hébergés à l'étranger.
-- [Sécurité et souveraineté](https://neur-on.ai/fr/securite-souverainete/) : stockage en Suisse pour tous les projets ; traitement exclusivement en Suisse en mode Highly sensitive content ou avec Neur.on LLM ; aucune réutilisation des contenus sensibles en mémoire ; ISO 27001.
+- [Langues et formats de Corrext par Neur.on : les 30 langues](https://neur-on.ai/fr/langues-et-formats/)
+- [Neur.on LLM : le moteur de Corrext entraîné sur le droit suisse](https://neur-on.ai/fr/neuron-llm/)
+- [Quatre niveaux de qualité de traduction](https://neur-on.ai/fr/niveaux-de-qualite/)
+- [Sécurité et souveraineté des données suisses](https://neur-on.ai/fr/securite-souverainete/)
 
-## Niveaux de qualité
+## Solutions par métier
 
-1. Traduction machine (Neur.on LLM ou moteur au choix).
-2. Post-édition light ou full par un traducteur juridique.
-3. Relecture juridique.
-4. Certification, notarisation et apostille via un réseau de traducteurs experts.
+- [Solutions par métier](https://neur-on.ai/fr/solutions/)
+- [Traduction pour autorités et administrations suisses](https://neur-on.ai/fr/solutions/autorites-administration/)
+- [Traduction juridique et financière pour banques suisses](https://neur-on.ai/fr/solutions/banques-finance/)
+- [Traduction juridique pour cabinets d'avocats suisses](https://neur-on.ai/fr/solutions/cabinets-avocats/)
+- [Traduction juridique pour directions juridiques et Legal Ops](https://neur-on.ai/fr/solutions/directions-juridiques/)
+- [Moteur de traduction juridique suisse pour LegalTechs et éditeurs](https://neur-on.ai/fr/solutions/editeurs-legaltech/)
+- [Traduction pour fiduciaires, audit et conseil en Suisse](https://neur-on.ai/fr/solutions/fiduciaires-conseil/)
+
+## Comparatifs
+
+- [Comparatifs](https://neur-on.ai/fr/comparatif/)
+- [ChatGPT et traduction juridique : ce que Corrext apporte](https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/)
+- [DeepL Pro et traduction juridique : ce que Corrext change](https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/)
 
 ## Entreprise
 
-- Distinctions : Swiss Fintech Awards 2024 (Early Stage, lauréat), BILANZ Top Innovative Company 2024, Digital Shapers 2023, projet d'innovation soutenu par Innosuisse avec l'iCoSys (HEIA-FR).
-- [Contact et démo](https://neur-on.ai/fr/contact/) : Neur.on AI Solutions SA, Place de la Gare 15, 1700 Fribourg, Suisse. contact@neur-on.ai
-
-## Optional
-
-- [Page d'accueil](https://neur-on.ai/fr/)
-- Versions DE, IT et EN à venir sous /de/, /it/ et /en/.
+- [À propos de Neur.on](https://neur-on.ai/fr/a-propos/)
+- [Presse](https://neur-on.ai/fr/a-propos/presse/)
+- [Contact et démo](https://neur-on.ai/fr/contact/)

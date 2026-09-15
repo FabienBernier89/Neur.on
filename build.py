@@ -285,10 +285,33 @@ def write_annexes(paths):
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + "\n".join(urls) + "\n</urlset>\n")
 
-    # llms.txt : conservé depuis les sources, chemins à jour
-    llms = os.path.join(SRC, "partials", "llms.txt")
-    if os.path.exists(llms):
-        shutil.copy(llms, os.path.join(OUT, "llms.txt"))
+    # llms.txt : en-tête rédigé, index des pages généré
+    head = read(os.path.join(SRC, "partials", "llms-head.md"))
+    groups = [
+        ("Produit : la plateforme Corrext", ["fr/corrext/"]),
+        ("Le moteur et la sécurité", ["fr/neuron-llm/", "fr/securite-souverainete/",
+                                      "fr/niveaux-de-qualite/", "fr/langues-et-formats/"]),
+        ("Solutions par métier", ["fr/solutions/"]),
+        ("Traduction par domaine et par langue", ["fr/traduction/"]),
+        ("Comparatifs", ["fr/comparatif/"]),
+        ("Ressources", ["fr/ressources/"]),
+        ("Centre d'aide", ["fr/aide/"]),
+        ("Entreprise", ["fr/a-propos/", "fr/contact/"]),
+    ]
+    used, lines = set(), []
+    for titre, prefixes in groups:
+        block = []
+        for p in sorted(paths):
+            if p in used:
+                continue
+            if any(p == pre or p.startswith(pre) for pre in prefixes):
+                info = PAGES.get(p, {})
+                label = info.get("title", p).split(" · ")[0]
+                block.append(f"- [{label}]({SITE}/{p})")
+                used.add(p)
+        if block:
+            lines.append(f"## {titre}\n\n" + "\n".join(block))
+    write(os.path.join(OUT, "llms.txt"), head.rstrip() + "\n\n" + "\n\n".join(lines) + "\n")
 
 
 def main():
