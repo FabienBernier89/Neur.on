@@ -1,5 +1,5 @@
-/* Démo Corrext · Fast translation : données réelles récoltées dans l'application le 14 septembre 2026 (moteurs nommables uniquement).
-   Partagé par la page d'accueil et la page Fast translation. Une seule instance de cadre #cx par page. */
+/* Démo Corrext · Traduction texte et document : données réelles récoltées dans l'application le 14 septembre 2026 (moteurs nommables uniquement).
+   Partagé par la page d'accueil et la page Traduction texte et document. Une seule instance de cadre #cx par page. */
 (function(){
   var EX={
     co:{label:"Contrat · art. 104 CO",

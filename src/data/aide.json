@@ -31,13 +31,13 @@
         "slug": "les-quatre-outils",
         "titre": "Les quatre outils de l'accueil",
         "title": "Les quatre outils de la page d'accueil de Corrext · Neur.on",
-        "description": "Fast translation, Translation project, Fast lookup et Commercial register extract : à quoi sert chacune des quatre cartes de l'accueil de Corrext.",
-        "reponse": "L'accueil de Corrext regroupe quatre outils sous le titre « My translation tools » : Fast translation pour traduire immédiatement un texte ou des fichiers, Translation project pour faire estimer un délai et commander une relecture, Fast lookup pour chercher un terme en contexte dans CHnell, et Commercial register extract pour commander une traduction certifiée d'extrait du registre du commerce. Vos projets en cours apparaissent plus bas, sous « My projects ».",
+        "description": "Traduction texte et document, Gestion de projet, Fast lookup et Commercial register extract : à quoi sert chacune des quatre cartes de l'accueil de Corrext.",
+        "reponse": "L'accueil de Corrext regroupe quatre outils sous le titre « My translation tools » : Traduction texte et document pour traduire immédiatement un texte ou des fichiers, Gestion de projet pour faire estimer un délai et commander une relecture, Fast lookup pour chercher un terme en contexte dans CHnell, et Commercial register extract pour commander une traduction certifiée d'extrait du registre du commerce. Vos projets en cours apparaissent plus bas, sous « My projects ».",
         "etapes": [
           "Connectez-vous : l'accueil s'affiche directement après la connexion, ou par le lien « Home » de l'en-tête.",
           "Repérez la section <b>« My translation tools »</b> : elle contient quatre cartes, chacune avec un bouton fléché sur la droite.",
-          "Choisissez <b>« Fast translation »</b> pour traduire un texte ou des fichiers tout de suite, comparer des alternatives et reformuler.",
-          "Choisissez <b>« Translation project »</b> pour estimer un temps de relecture, obtenir un devis et commander une relecture externe.",
+          "Choisissez <b>« Traduction texte et document »</b> pour traduire un texte ou des fichiers tout de suite, comparer des alternatives et reformuler.",
+          "Choisissez <b>« Gestion de projet »</b> pour estimer un temps de relecture, obtenir un devis et commander une relecture externe.",
           "Choisissez <b>« Fast lookup »</b> pour chercher un terme en contexte et trouver des synonymes dans l'outil CHnell.",
           "Choisissez <b>« Commercial register extract »</b> pour commander une traduction certifiée, avec notarisation et apostille si nécessaire.",
           "Descendez jusqu'à <b>« My projects »</b> pour retrouver vos projets ; tant qu'il n'y en a aucun, l'écran propose « Create project »."
@@ -53,9 +53,9 @@
         "titre": "Choisir un moteur de traduction",
         "title": "Comment choisir un moteur de traduction dans Corrext · Neur.on",
         "description": "Corrext vous laisse choisir le moteur de traduction. Moteurs suisses de Neur.on ou moteurs tiers hébergés à l'étranger : ce que change votre choix.",
-        "reponse": "Dans Fast translation, une liste déroulante placée à droite des langues vous laisse choisir le moteur qui traduit votre texte ou vos fichiers. Elle propose les moteurs suisses de Neur.on, dont Neur.on LLM, et des moteurs tiers hébergés à l'étranger : « DeepL Pro », « Azure OpenAI GPT » et « Claude ». Le choix d'un moteur tiers fait apparaître un avis Attorney-Client privilege, que vous devez lire avant d'envoyer quoi que ce soit.",
+        "reponse": "Dans Traduction texte et document, une liste déroulante placée à droite des langues vous laisse choisir le moteur qui traduit votre texte ou vos fichiers. Elle propose les moteurs suisses de Neur.on, dont Neur.on LLM, et des moteurs tiers hébergés à l'étranger : « DeepL Pro », « Azure OpenAI GPT » et « Claude ». Le choix d'un moteur tiers fait apparaître un avis Attorney-Client privilege, que vous devez lire avant d'envoyer quoi que ce soit.",
         "etapes": [
-          "Ouvrez <b>« Fast translation »</b> depuis l'accueil, puis restez sur l'onglet « Text translation » ou passez sur « File translation ».",
+          "Ouvrez <b>« Traduction texte et document »</b> depuis l'accueil, puis restez sur l'onglet « Text translation » ou passez sur « File translation ».",
           "Repérez la liste déroulante du moteur, à droite des deux listes de langues, dans la barre de configuration.",
           "Ouvrez-la et choisissez un moteur suisse de Neur.on pour garder le traitement en Suisse.",
           "Ou choisissez un moteur tiers, « DeepL Pro », « Azure OpenAI GPT » ou « Claude », pour comparer une autre façon de traduire.",
@@ -73,12 +73,12 @@
         "titre": "Le mode Highly sensitive content",
         "title": "Le mode Highly sensitive content de Corrext expliqué · Neur.on",
         "description": "Ce que change l'interrupteur Highly sensitive content : stockage et traitement en Suisse, aucune réutilisation en mémoire, quatre langues disponibles.",
-        "reponse": "Le mode « Highly sensitive content » garantit que vos données sont stockées et traitées exclusivement en Suisse, et que le contenu traduit n'alimente aucune mémoire de traduction pour vos projets futurs. Dans Fast translation, il prend la forme d'un interrupteur placé à droite des onglets ; dans Translation project, il s'agit de l'une des deux cartes de confidentialité. Il est disponible pour l'anglais, le français, l'italien et l'allemand.",
+        "reponse": "Le mode « Highly sensitive content » garantit que vos données sont stockées et traitées exclusivement en Suisse, et que le contenu traduit n'alimente aucune mémoire de traduction pour vos projets futurs. Dans Traduction texte et document, il prend la forme d'un interrupteur placé à droite des onglets ; dans Gestion de projet, il s'agit de l'une des deux cartes de confidentialité. Il est disponible pour l'anglais, le français, l'italien et l'allemand.",
         "etapes": [
-          "Dans <b>« Fast translation »</b>, repérez l'interrupteur <b>« Highly sensitive content »</b>, placé à droite de la rangée d'onglets.",
+          "Dans <b>« Traduction texte et document »</b>, repérez l'interrupteur <b>« Highly sensitive content »</b>, placé à droite de la rangée d'onglets.",
           "Activez-le avant de saisir votre texte ou de déposer vos fichiers : il reste actif quand vous passez sur l'onglet « File translation ».",
           "Vérifiez votre langue cible : en mode sensible, seules les langues EN, FR, IT et DE sont proposées.",
-          "Dans <b>« Translation project »</b>, choisissez la carte <b>« Highly sensitive content »</b> à la question « How confidential are the project and the uploaded files? ».",
+          "Dans <b>« Gestion de projet »</b>, choisissez la carte <b>« Highly sensitive content »</b> à la question « How confidential are the project and the uploaded files? ».",
           "Poursuivez le tunnel normalement : le choix de confidentialité s'applique à tous les fichiers du projet."
         ],
         "savoir": [
@@ -94,7 +94,7 @@
         "description": "Pourquoi Corrext affiche un avis quand vous choisissez un moteur tiers hébergé à l'étranger, et ce que votre organisation exige avant tout envoi.",
         "reponse": "Quand vous sélectionnez un moteur de traduction tiers hébergé à l'étranger, Corrext affiche un bandeau « Attorney-Client privilege notice ». Il rappelle la règle de votre organisation : retirer du document toute référence susceptible de révéler l'identité de clients, de parties liées ou l'objet de l'affaire. Ces moteurs ne peuvent servir que pour des documents entièrement pseudonymisés, et jamais pour une affaire sensible ou à forte visibilité.",
         "etapes": [
-          "Ouvrez la liste des moteurs dans « Fast translation » et sélectionnez un moteur tiers, par exemple « DeepL Pro ».",
+          "Ouvrez la liste des moteurs dans « Traduction texte et document » et sélectionnez un moteur tiers, par exemple « DeepL Pro ».",
           "Lisez le bandeau <b>« Attorney-Client privilege notice »</b> qui apparaît au-dessus de la zone de travail.",
           "Retirez de votre texte ou de vos fichiers les noms de clients, de parties liées et toute mention permettant d'identifier l'affaire.",
           "N'utilisez pas ces moteurs pour une affaire à forte visibilité ou sensible sur le plan des prix : votre organisation l'interdit.",
@@ -113,7 +113,7 @@
         "description": "La détection automatique de la langue source, l'inversion des langues, les 30 langues cibles de la plateforme et les quatre langues natives.",
         "reponse": "Corrext propose 30 langues cibles sur la plateforme, avec l'allemand, le français, l'italien et l'anglais comme quatre langues natives. La langue source est détectée automatiquement : la liste de gauche affiche « Detect language », puis la langue reconnue dès que vous commencez à écrire. Un bouton d'inversion placé entre les deux listes permute la source et la cible en un clic.",
         "etapes": [
-          "Ouvrez « Fast translation » : la liste de gauche affiche <b>« Detect language »</b> par défaut.",
+          "Ouvrez « Traduction texte et document » : la liste de gauche affiche <b>« Detect language »</b> par défaut.",
           "Commencez à saisir votre texte : la liste bascule sur la langue reconnue, que vous pouvez corriger à la main.",
           "Ouvrez la liste de droite pour choisir votre langue cible ; l'anglais est proposé par défaut.",
           "Utilisez le bouton d'inversion entre les deux listes pour permuter la langue source et la langue cible.",
@@ -121,29 +121,29 @@
         ],
         "savoir": [
           "Si la langue source et la langue cible sont identiques, le volet de droite affiche « Identical source and target languages » au lieu d'une traduction.",
-          "Dans Translation project, les langues cibles se choisissent par le bouton « Select target languages », qui autorise plusieurs langues à la fois.",
+          "Dans Gestion de projet, les langues cibles se choisissent par le bouton « Select target languages », qui autorise plusieurs langues à la fois.",
           "Dans CHnell, le couple de langues se règle en haut de l'écran, avec deux listes et un bouton d'inversion identiques."
         ]
       }
     ]
   },
   {
-    "slug": "fast-translation",
-    "titre": "Fast translation",
+    "slug": "traduction-texte-et-document",
+    "titre": "Traduction texte et document",
     "h1": "Traduire, convertir et reformuler tout de suite",
-    "lead": "Fast translation réunit quatre onglets : traduction de texte, traduction de fichiers, conversion de PDF en Word et reformulation. Voici le geste exact pour chacun, et la façon de comparer les moteurs sur une même phrase.",
-    "outil": "Fast translation",
-    "title": "Fast translation : traduire un texte ou des fichiers · Neur.on",
-    "description": "Traduire un texte, envoyer jusqu'à 25 fichiers, convertir un PDF en Word, comparer les moteurs et reformuler : les gestes de Fast translation, pas à pas.",
+    "lead": "Traduction texte et document réunit quatre onglets : traduction de texte, traduction de fichiers, conversion de PDF en Word et reformulation. Voici le geste exact pour chacun, et la façon de comparer les moteurs sur une même phrase.",
+    "outil": "Traduction texte et document",
+    "title": "Traduction texte et document dans Corrext · Neur.on",
+    "description": "Traduire un texte, envoyer jusqu'à 25 fichiers, convertir un PDF en Word, comparer les moteurs et reformuler : les gestes de Traduction texte et document, pas à pas.",
     "articles": [
       {
         "slug": "traduire-un-texte",
         "titre": "Traduire un texte",
-        "title": "Traduire un texte dans Fast translation de Corrext · Neur.on",
-        "description": "Coller un texte dans Fast translation, choisir les langues et le moteur, et lire la traduction qui s'écrit au fil de la saisie, jusqu'à 10'000 caractères.",
-        "reponse": "Dans Fast translation, l'onglet « Text translation » traduit au fil de la saisie : il n'y a pas de bouton à presser. Vous collez votre texte à gauche, la traduction apparaît à droite, dans la limite de 10'000 caractères affichée par le compteur sous la zone de saisie. Un bouton de copie, en haut du volet de droite, récupère le résultat.",
+        "title": "Traduire un texte dans Corrext, étape par étape · Neur.on",
+        "description": "Coller un texte dans Traduction texte et document, choisir les langues et le moteur, et lire la traduction qui s'écrit au fil de la saisie, jusqu'à 10'000 caractères.",
+        "reponse": "Dans Traduction texte et document, l'onglet « Text translation » traduit au fil de la saisie : il n'y a pas de bouton à presser. Vous collez votre texte à gauche, la traduction apparaît à droite, dans la limite de 10'000 caractères affichée par le compteur sous la zone de saisie. Un bouton de copie, en haut du volet de droite, récupère le résultat.",
         "etapes": [
-          "Ouvrez « Fast translation » depuis l'accueil, puis restez sur l'onglet <b>« Text translation »</b>.",
+          "Ouvrez « Traduction texte et document » depuis l'accueil, puis restez sur l'onglet <b>« Text translation »</b>.",
           "Vérifiez l'interrupteur <b>« Highly sensitive content »</b> et le moteur, à droite de la barre de configuration.",
           "Laissez la liste de gauche sur « Detect language » ou fixez la langue source, puis choisissez la langue cible à droite.",
           "Collez ou saisissez votre texte dans le volet de gauche : la traduction s'écrit dans le volet de droite sans action de votre part.",
@@ -159,11 +159,11 @@
       {
         "slug": "traduire-des-fichiers",
         "titre": "Traduire des fichiers",
-        "title": "Traduire plusieurs fichiers dans Fast translation · Neur.on",
-        "description": "Envoyer jusqu'à 25 fichiers Word, Excel, PowerPoint ou PDF de 50 Mo au maximum dans Fast translation, avec le moteur et la langue cible de votre choix.",
-        "reponse": "L'onglet « File translation » de Fast translation traduit vos documents sans copier-coller. Vous choisissez d'abord un moteur et une langue cible, puis vous déposez jusqu'à 25 fichiers, de 50 Mo au maximum chacun, aux formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. L'interrupteur « Highly sensitive content » reste actif sur cet onglet, ce qui permet de traiter un lot confidentiel sans sortir de Suisse.",
+        "title": "Traduire plusieurs fichiers d'un coup dans Corrext · Neur.on",
+        "description": "Envoyer jusqu'à 25 fichiers Word, Excel, PowerPoint ou PDF de 50 Mo au maximum dans Traduction texte et document, avec le moteur et la langue cible de votre choix.",
+        "reponse": "L'onglet « File translation » de Traduction texte et document traduit vos documents sans copier-coller. Vous choisissez d'abord un moteur et une langue cible, puis vous déposez jusqu'à 25 fichiers, de 50 Mo au maximum chacun, aux formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. L'interrupteur « Highly sensitive content » reste actif sur cet onglet, ce qui permet de traiter un lot confidentiel sans sortir de Suisse.",
         "etapes": [
-          "Ouvrez « Fast translation », puis cliquez sur l'onglet <b>« File translation »</b>.",
+          "Ouvrez « Traduction texte et document », puis cliquez sur l'onglet <b>« File translation »</b>.",
           "Sous <b>« Choose a translation engine and a target language »</b>, réglez le moteur puis la langue cible.",
           "Vérifiez l'interrupteur « Highly sensitive content » si vos documents sont confidentiels : il s'applique aussi aux fichiers.",
           "Cliquez sur la zone <b>« Click to upload or drag and drop »</b> ou faites glisser vos fichiers dessus.",
@@ -173,7 +173,7 @@
         "savoir": [
           "Préférez toujours le format d'origine, .docx ou .xlsx plutôt qu'un PDF : la mise en page en ressort mieux conservée.",
           "Un scan ou un PDF non éditable gagne à passer d'abord par l'onglet « PDF to Word », qui le rend modifiable.",
-          "Pour faire relire vos fichiers par un traducteur juridique, passez par Translation project plutôt que par Fast translation."
+          "Pour faire relire vos fichiers par un traducteur juridique, passez par Gestion de projet plutôt que par Traduction texte et document."
         ]
       },
       {
@@ -181,9 +181,9 @@
         "titre": "Convertir un PDF en Word",
         "title": "Convertir un PDF en Word avec l'onglet PDF to Word · Neur.on",
         "description": "L'onglet PDF to Word transforme jusqu'à 25 fichiers PDF de 50 Mo en documents Word éditables, avant traduction, annotation ou relecture juridique.",
-        "reponse": "L'onglet « PDF to Word » de Fast translation convertit vos PDF, y compris des documents scannés, en fichiers Word éditables. Il accepte jusqu'à 25 fichiers au format .pdf, de 50 Mo au maximum chacun. C'est l'étape à faire en premier quand une pièce n'existe qu'en PDF et que vous voulez ensuite la traduire, l'annoter ou la faire relire proprement.",
+        "reponse": "L'onglet « PDF to Word » de Traduction texte et document convertit vos PDF, y compris des documents scannés, en fichiers Word éditables. Il accepte jusqu'à 25 fichiers au format .pdf, de 50 Mo au maximum chacun. C'est l'étape à faire en premier quand une pièce n'existe qu'en PDF et que vous voulez ensuite la traduire, l'annoter ou la faire relire proprement.",
         "etapes": [
-          "Ouvrez « Fast translation », puis cliquez sur l'onglet <b>« PDF to Word »</b>.",
+          "Ouvrez « Traduction texte et document », puis cliquez sur l'onglet <b>« PDF to Word »</b>.",
           "Cliquez sur la zone de dépôt ou faites glisser vos fichiers : seul le format .pdf est accepté sur cet onglet.",
           "Restez dans les limites affichées : jusqu'à 25 fichiers, 50 Mo par fichier.",
           "Récupérez les documents Word convertis, puis vérifiez la mise en page avant de les utiliser.",
@@ -202,7 +202,7 @@
         "description": "Le panneau Alternatives propose plusieurs traductions de la même phrase, chacune attribuée au moteur qui l'a produite, avec un bouton Generate more.",
         "reponse": "Corrext ne se contente pas d'une traduction : le bouton en forme d'étincelle, en bas à droite du volet cible, ouvre un panneau « Alternatives » qui propose plusieurs versions de la même phrase. Chaque alternative porte le nom du moteur qui l'a produite, ce qui permet de comparer les formulations avant de choisir. Un pagineur fait défiler les propositions et un bouton « Generate more » en demande d'autres.",
         "etapes": [
-          "Traduisez d'abord un texte dans l'onglet « Text translation » de Fast translation.",
+          "Traduisez d'abord un texte dans l'onglet « Text translation » de Traduction texte et document.",
           "Cliquez sur le bouton en forme d'étincelle, en bas à droite du volet cible.",
           "Lisez le panneau <b>« Alternatives »</b> qui s'ouvre sous la traduction : chaque proposition est suivie du nom de son moteur.",
           "Utilisez les flèches du pagineur, à droite du compteur de propositions, pour passer d'une alternative à l'autre.",
@@ -212,17 +212,17 @@
         "savoir": [
           "L'attribution de chaque alternative à son moteur est la raison d'être du panneau : elle montre où les moteurs divergent sur un terme juridique.",
           "Un message d'erreur passager peut s'afficher avant le chargement du panneau. Relancez la génération, le panneau se remplit ensuite.",
-          "Comparer des alternatives ne remplace pas une relecture humaine : pour un document engageant, passez par Translation project."
+          "Comparer des alternatives ne remplace pas une relecture humaine : pour un document engageant, passez par Gestion de projet."
         ]
       },
       {
         "slug": "lancer-fast-lookup",
         "titre": "Lancer Fast Lookup depuis une traduction",
         "title": "Lancer Fast Lookup depuis une traduction Corrext · Neur.on",
-        "description": "Surligner un mot dans Fast translation fait apparaître un bouton Fast Lookup qui ouvre CHnell sur ce mot, en contexte, sans quitter votre traduction.",
-        "reponse": "Quand un mot vous semble douteux dans Fast translation, surlignez-le : un bouton flottant « Fast Lookup » apparaît juste au-dessus de la sélection. Il ouvre l'outil CHnell sur ce mot précis, avec des segments bilingues tirés de sources officielles suisses. C'est le geste le plus rapide pour vérifier le sens ou l'usage d'un terme sans quitter votre traduction, comme le rappelle le bandeau d'aide affiché sous l'outil.",
+        "description": "Surligner un mot dans Traduction texte et document fait apparaître un bouton Fast Lookup qui ouvre CHnell sur ce mot, en contexte, sans quitter votre traduction.",
+        "reponse": "Quand un mot vous semble douteux dans Traduction texte et document, surlignez-le : un bouton flottant « Fast Lookup » apparaît juste au-dessus de la sélection. Il ouvre l'outil CHnell sur ce mot précis, avec des segments bilingues tirés de sources officielles suisses. C'est le geste le plus rapide pour vérifier le sens ou l'usage d'un terme sans quitter votre traduction, comme le rappelle le bandeau d'aide affiché sous l'outil.",
         "etapes": [
-          "Traduisez votre texte dans l'onglet « Text translation » de Fast translation.",
+          "Traduisez votre texte dans l'onglet « Text translation » de Traduction texte et document.",
           "Double-cliquez sur le mot à vérifier dans le volet source, ou sélectionnez-le à la souris.",
           "Cliquez sur le bouton flottant <b>« Fast Lookup »</b> qui apparaît au-dessus de la sélection.",
           "Lisez dans CHnell les segments bilingues qui contiennent ce mot, avec leur domaine et leur source.",
@@ -239,9 +239,9 @@
         "titre": "Reformuler un texte",
         "title": "Reformuler un texte avec Rephrasing dans Corrext · Neur.on",
         "description": "L'onglet Rephrasing réécrit un texte jusqu'à 5'000 caractères, avec cinq styles dont Formal legal et Simplified, et une option de raccourcissement.",
-        "reponse": "L'onglet « Rephrasing » de Fast translation réécrit un texte dans le style que vous choisissez, sans changer de langue. Il fonctionne avec le moteur suisse Neur.on LLM par défaut et accepte jusqu'à 5'000 caractères. Une liste « Settings » donne accès à cinq styles, dont « Formal legal » et « Simplified », et à une option « Shorten » qui raccourcit le texte. Les mots modifiés sont soulignés dans le résultat.",
+        "reponse": "L'onglet « Rephrasing » de Traduction texte et document réécrit un texte dans le style que vous choisissez, sans changer de langue. Il fonctionne avec le moteur suisse Neur.on LLM par défaut et accepte jusqu'à 5'000 caractères. Une liste « Settings » donne accès à cinq styles, dont « Formal legal » et « Simplified », et à une option « Shorten » qui raccourcit le texte. Les mots modifiés sont soulignés dans le résultat.",
         "etapes": [
-          "Ouvrez « Fast translation », puis cliquez sur l'onglet <b>« Rephrasing »</b>.",
+          "Ouvrez « Traduction texte et document », puis cliquez sur l'onglet <b>« Rephrasing »</b>.",
           "Collez votre texte dans le volet de gauche : le compteur indique le nombre de caractères utilisés sur 5'000.",
           "Ouvrez la liste <b>« Settings »</b> pour choisir un style parmi « Formal legal », « Financial », « Simplified », « Formal » et « Informal ».",
           "Cochez l'option <b>« Shorten »</b> si vous voulez en plus raccourcir le texte, puis cliquez sur « Apply ».",
@@ -259,8 +259,8 @@
         "slug": "corriger-copier-effacer",
         "titre": "Corriger, copier et effacer une traduction",
         "title": "Corriger, copier et effacer une traduction Corrext · Neur.on",
-        "description": "Annuler, rétablir, vider la zone de saisie et copier la traduction : les commandes des deux volets de Fast translation et ce que fait chacune d'elles.",
-        "reponse": "Les deux volets de Fast translation ont leurs propres commandes. Sous chaque zone de texte, un bouton annuler et un bouton rétablir reviennent sur vos modifications. Le volet source porte une croix qui vide la saisie, et un compteur de caractères. Le volet cible porte un bouton de copie en haut à droite et, en bas à droite, le bouton d'alternatives ou de régénération selon l'onglet.",
+        "description": "Annuler, rétablir, vider la zone de saisie et copier la traduction : les commandes des deux volets de Traduction texte et document et ce que fait chacune d'elles.",
+        "reponse": "Les deux volets de Traduction texte et document ont leurs propres commandes. Sous chaque zone de texte, un bouton annuler et un bouton rétablir reviennent sur vos modifications. Le volet source porte une croix qui vide la saisie, et un compteur de caractères. Le volet cible porte un bouton de copie en haut à droite et, en bas à droite, le bouton d'alternatives ou de régénération selon l'onglet.",
         "etapes": [
           "Repérez les boutons annuler et rétablir sous chaque volet : ils agissent indépendamment sur la source et sur la cible.",
           "Cliquez sur la croix du volet source pour vider entièrement la zone de saisie et repartir d'un texte neuf.",
@@ -277,22 +277,22 @@
     ]
   },
   {
-    "slug": "translation-project",
-    "titre": "Translation project",
+    "slug": "gestion-de-projet",
+    "titre": "Gestion de projet",
     "h1": "Faire relire et chiffrer une traduction",
-    "lead": "Translation project enchaîne trois étapes : réglage du projet, revue des fichiers, puis devis. Voici comment créer un projet, choisir sa confidentialité, déposer vos documents et commander une relecture interne ou externe.",
-    "outil": "Translation project",
-    "title": "Translation project : relecture et devis Corrext · Neur.on",
+    "lead": "Gestion de projet enchaîne trois étapes : réglage du projet, revue des fichiers, puis devis. Voici comment créer un projet, choisir sa confidentialité, déposer vos documents et commander une relecture interne ou externe.",
+    "outil": "Gestion de projet",
+    "title": "Gestion de projet : relecture et devis Corrext · Neur.on",
     "description": "Créer un projet, choisir sa confidentialité, déposer les fichiers, comparer relecture interne et workflow personnalisé, obtenir un devis et un délai.",
     "articles": [
       {
         "slug": "creer-un-projet",
         "titre": "Créer un projet",
         "title": "Créer un nouveau projet de traduction dans Corrext · Neur.on",
-        "description": "Nommer un projet, garder le nom par défaut et choisir les langues cibles : la première étape du tunnel Translation project, expliquée écran par écran.",
-        "reponse": "Translation project se déroule en trois étapes affichées en haut de l'écran : « Set-up », « File overview », puis « Quotes ». La première étape demande un nom de projet, un niveau de confidentialité et une ou plusieurs langues cibles. Le bouton « Next » reste inactif tant qu'aucune langue cible n'est choisie ; le projet est créé dès que vous passez à l'étape suivante.",
+        "description": "Nommer un projet, garder le nom par défaut et choisir les langues cibles : la première étape du tunnel Gestion de projet, expliquée écran par écran.",
+        "reponse": "Gestion de projet se déroule en trois étapes affichées en haut de l'écran : « Set-up », « File overview », puis « Quotes ». La première étape demande un nom de projet, un niveau de confidentialité et une ou plusieurs langues cibles. Le bouton « Next » reste inactif tant qu'aucune langue cible n'est choisie ; le projet est créé dès que vous passez à l'étape suivante.",
         "etapes": [
-          "Ouvrez <b>« Translation project »</b> depuis l'accueil : l'étape <b>« Set-up »</b> s'affiche en premier.",
+          "Ouvrez <b>« Gestion de projet »</b> depuis l'accueil : l'étape <b>« Set-up »</b> s'affiche en premier.",
           "Saisissez un nom dans <b>« Project name »</b>, ou laissez l'interrupteur « Use default name », qui compose un nom à partir de la date, de l'organisation et de l'utilisateur.",
           "Répondez à la question « How confidential are the project and the uploaded files? » en choisissant l'une des deux cartes de confidentialité.",
           "Cliquez sur <b>« Select target languages »</b> et cochez vos langues cibles dans la liste, en vous aidant du champ de recherche.",
@@ -341,7 +341,7 @@
         "savoir": [
           "Le bouton « Next » reste bloqué tant qu'aucun fichier n'a été déposé : l'étape des devis a besoin d'au moins un document.",
           "La catégorie juridique détectée oriente le traitement : une correction à cette étape évite un devis fondé sur le mauvais domaine.",
-          "Un PDF scanné gagne à passer d'abord par l'onglet « PDF to Word » de Fast translation, puis à être déposé en format Word."
+          "Un PDF scanné gagne à passer d'abord par l'onglet « PDF to Word » de Traduction texte et document, puis à être déposé en format Word."
         ]
       },
       {
@@ -562,7 +562,7 @@
         "savoir": [
           "Le niveau requis dépend de l'autorité destinataire, pas de la langue : un même extrait peut demander une apostille dans un pays et pas dans un autre.",
           "L'apostille est délivrée par la Chancellerie d'État : elle s'ajoute à la notarisation, elle ne la remplace pas.",
-          "Pour un document qui n'est pas un extrait du registre du commerce, passez par Translation project et son niveau « Double review »."
+          "Pour un document qui n'est pas un extrait du registre du commerce, passez par Gestion de projet et son niveau « Double review »."
         ]
       },
       {
@@ -601,7 +601,7 @@
         "titre": "Formats de fichiers acceptés",
         "title": "Quels formats de fichiers Corrext accepte-t-il · Neur.on",
         "description": "Corrext accepte les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. L'onglet PDF to Word n'accepte que le PDF. Préférez le format d'origine.",
-        "reponse": "Corrext accepte sept formats de fichiers pour la traduction : .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Cette liste vaut pour l'onglet « File translation » de Fast translation comme pour l'étape « File overview » d'un projet de traduction. L'onglet « PDF to Word » fait exception : il n'accepte que le format .pdf, puisqu'il sert précisément à le convertir.",
+        "reponse": "Corrext accepte sept formats de fichiers pour la traduction : .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Cette liste vaut pour l'onglet « File translation » de Traduction texte et document comme pour l'étape « File overview » d'un projet de traduction. L'onglet « PDF to Word » fait exception : il n'accepte que le format .pdf, puisqu'il sert précisément à le convertir.",
         "etapes": [
           "Vérifiez l'extension de votre fichier avant de le déposer : .pdf, .doc, .docx, .xls, .xlsx, .ppt ou .pptx.",
           "Préférez le format d'origine, <b>.docx ou .xlsx plutôt qu'un PDF</b>, comme le rappelle la zone de dépôt d'un projet.",
@@ -612,15 +612,15 @@
         "savoir": [
           "Un document déposé en PDF alors que la version Word existe perd de la qualité de mise en page : le format d'origine reste toujours préférable.",
           "Un PDF scanné n'est pas du texte : convertissez-le en Word avant de le traduire ou de le faire relire.",
-          "La liste des formats est la même pour Fast translation et pour Translation project : un fichier refusé d'un côté le sera de l'autre."
+          "La liste des formats est la même pour Traduction texte et document et pour Gestion de projet : un fichier refusé d'un côté le sera de l'autre."
         ]
       },
       {
         "slug": "limites-taille-et-nombre",
         "titre": "Limites de taille et de nombre",
         "title": "Limites de taille et de nombre de fichiers Corrext · Neur.on",
-        "description": "Jusqu'à 25 fichiers par envoi et 50 Mo par fichier : les limites de dépôt de Corrext, dans Fast translation comme dans un projet de traduction.",
-        "reponse": "Les zones de dépôt de Corrext annoncent deux limites : jusqu'à 25 fichiers par envoi, et 50 Mo au maximum par fichier. Elles s'appliquent à l'onglet « File translation » comme à l'onglet « PDF to Word » de Fast translation. L'étape « File overview » d'un projet de traduction rappelle également la limite de 50 Mo par fichier.",
+        "description": "Jusqu'à 25 fichiers par envoi et 50 Mo par fichier : les limites de dépôt de Corrext, dans Traduction texte et document comme dans un projet de traduction.",
+        "reponse": "Les zones de dépôt de Corrext annoncent deux limites : jusqu'à 25 fichiers par envoi, et 50 Mo au maximum par fichier. Elles s'appliquent à l'onglet « File translation » comme à l'onglet « PDF to Word » de Traduction texte et document. L'étape « File overview » d'un projet de traduction rappelle également la limite de 50 Mo par fichier.",
         "etapes": [
           "Comptez vos fichiers avant de les déposer : la limite est de 25 fichiers par envoi.",
           "Vérifiez le poids de chaque fichier : la limite est de 50 Mo par fichier, pas pour l'ensemble du lot.",
@@ -639,13 +639,13 @@
         "titre": "Limites de caractères",
         "title": "Limites de caractères dans Corrext expliquées · Neur.on",
         "description": "La traduction de texte accepte 10'000 caractères et la reformulation 5'000. Au-delà, passez par la traduction de fichiers plutôt que de découper.",
-        "reponse": "Deux limites de caractères coexistent dans Fast translation. L'onglet « Text translation » accepte 10'000 caractères, affichés par un compteur sous la zone de saisie. L'onglet « Rephrasing » s'arrête à 5'000 caractères. Au-delà, la bonne méthode n'est pas de découper indéfiniment votre texte, mais de passer par l'onglet « File translation », qui traite un document entier.",
+        "reponse": "Deux limites de caractères coexistent dans Traduction texte et document. L'onglet « Text translation » accepte 10'000 caractères, affichés par un compteur sous la zone de saisie. L'onglet « Rephrasing » s'arrête à 5'000 caractères. Au-delà, la bonne méthode n'est pas de découper indéfiniment votre texte, mais de passer par l'onglet « File translation », qui traite un document entier.",
         "etapes": [
           "Surveillez le compteur sous la zone de saisie : il affiche le nombre de caractères utilisés et la limite de l'onglet.",
           "Restez sous <b>10'000 caractères</b> pour une traduction de texte dans l'onglet « Text translation ».",
           "Restez sous <b>5'000 caractères</b> pour une reformulation dans l'onglet « Rephrasing ».",
           "Au-delà, enregistrez votre texte dans un document et déposez-le dans l'onglet <b>« File translation »</b>.",
-          "Pour un long document à faire relire, ouvrez plutôt un projet dans Translation project."
+          "Pour un long document à faire relire, ouvrez plutôt un projet dans Gestion de projet."
         ],
         "savoir": [
           "Le compteur se met à jour au fil de la saisie : il permet de voir immédiatement qu'un collage dépasse la limite.",
@@ -660,7 +660,7 @@
         "description": "Corrext couvre 30 langues cibles, dont quatre langues natives, et se limite à l'anglais, au français, à l'italien et à l'allemand en mode sensible.",
         "reponse": "Corrext propose 30 langues cibles sur la plateforme, de l'anglais au japonais en passant par l'arabe, le chinois, le polonais ou le turc. Quatre d'entre elles sont natives et couvrent les langues du travail juridique suisse : l'allemand, le français, l'italien et l'anglais. Le mode « Highly sensitive content » restreint le choix à ces quatre langues, puisque le traitement doit alors rester en Suisse.",
         "etapes": [
-          "Ouvrez la liste des langues cibles dans Fast translation, ou le bouton « Select target languages » dans un projet.",
+          "Ouvrez la liste des langues cibles dans Traduction texte et document, ou le bouton « Select target languages » dans un projet.",
           "Utilisez le champ de recherche de la liste pour retrouver une langue sans faire défiler les 30 entrées.",
           "Privilégiez les quatre langues natives, allemand, français, italien et anglais, pour un travail juridique suisse.",
           "Vérifiez l'interrupteur « Highly sensitive content » si une langue attendue n'apparaît pas : il limite le choix à EN, FR, IT et DE.",
@@ -693,7 +693,7 @@
           "Lisez, à l'étape « Set-up » d'un projet, la description des deux cartes de confidentialité : elle énonce la règle exacte.",
           "Choisissez <b>« Highly sensitive content »</b> pour que le stockage et le traitement aient lieu exclusivement en Suisse.",
           "Choisissez <b>« Standard confidentiality »</b> si le traitement peut suivre le moteur retenu : le stockage reste suisse.",
-          "Dans Fast translation, vérifiez l'interrupteur « Highly sensitive content » et le moteur avant de saisir un contenu confidentiel.",
+          "Dans Traduction texte et document, vérifiez l'interrupteur « Highly sensitive content » et le moteur avant de saisir un contenu confidentiel.",
           "Si l'avis <b>« Attorney-Client privilege notice »</b> apparaît, c'est que le moteur choisi traite hors de Suisse."
         ],
         "savoir": [
@@ -709,7 +709,7 @@
         "description": "DeepL Pro, Azure OpenAI GPT et Claude sont hébergés à l'étranger et déclenchent l'avis Attorney-Client privilege. Les moteurs de Neur.on restent suisses.",
         "reponse": "Corrext distingue deux familles de moteurs. Les moteurs suisses de Neur.on, dont Neur.on LLM, traitent le contenu en Suisse. Les moteurs tiers, « DeepL Pro », « Azure OpenAI GPT » et « Claude », sont hébergés à l'étranger : les sélectionner fait apparaître l'avis « Attorney-Client privilege notice », qui impose de pseudonymiser entièrement le document et interdit leur usage pour une affaire sensible.",
         "etapes": [
-          "Ouvrez la liste des moteurs dans « Fast translation » et identifiez celui qui est sélectionné.",
+          "Ouvrez la liste des moteurs dans « Traduction texte et document » et identifiez celui qui est sélectionné.",
           "Retenez que les moteurs suisses de Neur.on traitent en Suisse, y compris pour la reformulation.",
           "Retenez que <b>« DeepL Pro »</b>, <b>« Azure OpenAI GPT »</b> et <b>« Claude »</b> sont hébergés à l'étranger.",
           "Lisez l'avis « Attorney-Client privilege notice » dès qu'il apparaît : il signale un traitement hors de Suisse.",
@@ -775,7 +775,7 @@
         "titre": "Le bouton Next reste grisé",
         "title": "Pourquoi le bouton Next reste grisé dans Corrext · Neur.on",
         "description": "Next reste inactif tant qu'aucune langue cible n'est choisie à l'étape Set-up, ou tant qu'aucun fichier n'est déposé à l'étape File overview.",
-        "reponse": "Dans Translation project, le bouton « Next » ne s'active que lorsque l'étape en cours est complète. À l'étape « Set-up », il reste grisé tant qu'aucune langue cible n'a été sélectionnée. À l'étape « File overview », il reste grisé tant qu'aucun fichier n'a été déposé. À l'étape « Quotes », le bouton « Generate quote » suit la même logique et attend une échéance et un niveau de relecture.",
+        "reponse": "Dans Gestion de projet, le bouton « Next » ne s'active que lorsque l'étape en cours est complète. À l'étape « Set-up », il reste grisé tant qu'aucune langue cible n'a été sélectionnée. À l'étape « File overview », il reste grisé tant qu'aucun fichier n'a été déposé. À l'étape « Quotes », le bouton « Generate quote » suit la même logique et attend une échéance et un niveau de relecture.",
         "etapes": [
           "À l'étape <b>« Set-up »</b>, cliquez sur « Select target languages » et cochez au moins une langue cible.",
           "Vérifiez que la puce de langue s'affiche bien sous le bouton : c'est elle qui active « Next ».",
@@ -796,7 +796,7 @@
         "description": "En mode Highly sensitive content, Corrext limite le choix à l'anglais, au français, à l'italien et à l'allemand. Désactivez-le pour les 30 langues.",
         "reponse": "Si une langue cible n'apparaît pas dans la liste, la cause la plus fréquente est le mode « Highly sensitive content ». Ce mode impose un traitement exclusivement suisse et n'est disponible que pour l'anglais, le français, l'italien et l'allemand. En le désactivant, ou en choisissant la confidentialité standard dans un projet, vous retrouvez les 30 langues de la plateforme.",
         "etapes": [
-          "Dans Fast translation, repérez l'interrupteur <b>« Highly sensitive content »</b> à droite des onglets et vérifiez s'il est actif.",
+          "Dans Traduction texte et document, repérez l'interrupteur <b>« Highly sensitive content »</b> à droite des onglets et vérifiez s'il est actif.",
           "Désactivez-le si votre contenu le permet : la liste des langues cibles se recharge avec les 30 langues.",
           "Dans un projet, revenez à l'étape <b>« Set-up »</b> et vérifiez la carte de confidentialité sélectionnée.",
           "Choisissez <b>« Standard confidentiality »</b> si le document n'exige pas un traitement exclusivement suisse.",
@@ -845,7 +845,7 @@
         "savoir": [
           "Le format et le poids se vérifient plus vite que le contenu : commencez toujours par ces deux points.",
           "Un PDF scanné très lourd gagne à être converti en Word par l'onglet « PDF to Word » avant toute autre opération.",
-          "Les limites sont identiques dans Fast translation et dans Translation project : un fichier refusé d'un côté le sera de l'autre."
+          "Les limites sont identiques dans Traduction texte et document et dans Gestion de projet : un fichier refusé d'un côté le sera de l'autre."
         ]
       }
     ]

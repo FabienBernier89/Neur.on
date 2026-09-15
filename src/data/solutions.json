@@ -26,7 +26,7 @@
     "facts_intro": "Un cabinet traduit pour trois raisons : comprendre vite, produire un document engageant, et déposer devant une autorité. Ces trois besoins n'appellent ni le même outil, ni le même niveau de relecture, ni le même budget de temps. Corrext les sépare explicitement.",
     "facts_liens": [
       {
-        "href": "fr/corrext/fast-translation/",
+        "href": "fr/corrext/traduction-texte-et-document/",
         "txt": "Traduire des pièces maintenant"
       },
       {
@@ -60,7 +60,7 @@
       },
       {
         "k": "Document engageant",
-        "v": "Translation project commande une relecture Light ou Full par un traducteur juridique, ou une Double review certifiée par une agence spécialisée."
+        "v": "Gestion de projet commande une relecture Light ou Full par un traducteur juridique, ou une Double review certifiée par une agence spécialisée."
       },
       {
         "k": "Dépôt devant une autorité",
@@ -111,13 +111,13 @@
     ],
     "outils": [
       {
-        "href": "fr/corrext/fast-translation/",
-        "t": "Fast translation",
+        "href": "fr/corrext/traduction-texte-et-document/",
+        "t": "Traduction texte et document",
         "d": "Pièces, contrats, correspondance : texte et fichiers, en quelques secondes."
       },
       {
-        "href": "fr/corrext/translation-project/",
-        "t": "Translation project",
+        "href": "fr/corrext/gestion-de-projet/",
+        "t": "Gestion de projet",
         "d": "Relecture par un traducteur juridique, devis et délai affichés avant validation."
       },
       {
@@ -134,7 +134,7 @@
       },
       {
         "q": "Combien de pièces puis-je traduire en une fois ?",
-        "r": "Jusqu'à 25 fichiers de 50 Mo chacun par envoi dans Fast translation, dans les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Pour un lot plus important ou une relecture humaine, créez un Translation project."
+        "r": "Jusqu'à 25 fichiers de 50 Mo chacun par envoi dans Traduction texte et document, dans les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Pour un lot plus important ou une relecture humaine, créez un projet de traduction."
       },
       {
         "q": "La mise en page des contrats est-elle conservée ?",
@@ -207,7 +207,7 @@
       },
       {
         "k": "Rapports annuels",
-        "v": "Les volumes récurrents passent en Translation project avec une relecture Full review, ou Double review et certification quand le document est publié."
+        "v": "Les volumes récurrents passent en Gestion de projet avec une relecture Full review, ou Double review et certification quand le document est publié."
       },
       {
         "k": "Politiques internes",
@@ -267,8 +267,8 @@
     ],
     "outils": [
       {
-        "href": "fr/corrext/translation-project/",
-        "t": "Translation project",
+        "href": "fr/corrext/gestion-de-projet/",
+        "t": "Gestion de projet",
         "d": "Relecture juridique et certification pour les documents publiés."
       },
       {
@@ -277,8 +277,8 @@
         "d": "Terminologie bancaire et prudentielle, sourcée et datée."
       },
       {
-        "href": "fr/corrext/fast-translation/",
-        "t": "Fast translation",
+        "href": "fr/corrext/traduction-texte-et-document/",
+        "t": "Traduction texte et document",
         "d": "Le quotidien : notes, correspondance, documents de travail."
       }
     ],
@@ -339,7 +339,7 @@
     "facts_intro": "Le problème d'une direction juridique n'est pas la qualité d'une traduction isolée : c'est la dispersion. Chaque service commande où il veut, personne ne capitalise, et les documents sensibles circulent par courriel. Corrext ramène tout dans un seul flux, sans retirer aux équipes la possibilité d'aller vite.",
     "facts_liens": [
       {
-        "href": "fr/corrext/translation-project/",
+        "href": "fr/corrext/gestion-de-projet/",
         "txt": "Le tunnel projet, étape par étape"
       },
       {
@@ -401,7 +401,7 @@
       }
     ],
     "gov_q": "Comment garder la maîtrise sans ralentir les équipes ?",
-    "gov_p": "En séparant les usages. La compréhension rapide passe par Fast translation, en libre-service et en quelques secondes. Le document engageant passe par un projet, avec relecture et devis. La même plateforme couvre les deux, sous la même politique de confidentialité.",
+    "gov_p": "En séparant les usages. La compréhension rapide passe par Traduction texte et document, en libre-service et en quelques secondes. Le document engageant passe par un projet, avec relecture et devis. La même plateforme couvre les deux, sous la même politique de confidentialité.",
     "gov_lien": {
       "href": "fr/securite-souverainete/",
       "txt": "Sécurité et souveraineté des données"
@@ -422,13 +422,13 @@
     ],
     "outils": [
       {
-        "href": "fr/corrext/translation-project/",
-        "t": "Translation project",
+        "href": "fr/corrext/gestion-de-projet/",
+        "t": "Gestion de projet",
         "d": "Le cœur du dispositif : projet, relecture, devis et délai."
       },
       {
-        "href": "fr/corrext/fast-translation/",
-        "t": "Fast translation",
+        "href": "fr/corrext/traduction-texte-et-document/",
+        "t": "Traduction texte et document",
         "d": "Le libre-service qui remplace les outils non sécurisés."
       },
       {
@@ -576,8 +576,8 @@
     ],
     "outils": [
       {
-        "href": "fr/corrext/translation-project/",
-        "t": "Translation project",
+        "href": "fr/corrext/gestion-de-projet/",
+        "t": "Gestion de projet",
         "d": "Décisions et rapports, avec relecture et délai affichés."
       },
       {
@@ -700,7 +700,7 @@
       {
         "a": "Audit",
         "t": "Des annexes à lire vite avant une revue",
-        "p": "Le lot part en Fast translation, revient dans son format, et les termes comptables se vérifient dans le concordancier."
+        "p": "Le lot part en Traduction texte et document, revient dans son format, et les termes comptables se vérifient dans le concordancier."
       },
       {
         "a": "Fiscalité",
@@ -735,13 +735,13 @@
         "d": "Commande en ligne, trois niveaux de certification."
       },
       {
-        "href": "fr/corrext/fast-translation/",
-        "t": "Fast translation",
+        "href": "fr/corrext/traduction-texte-et-document/",
+        "t": "Traduction texte et document",
         "d": "Lire vite un jeu d'annexes ou de statuts."
       },
       {
-        "href": "fr/corrext/translation-project/",
-        "t": "Translation project",
+        "href": "fr/corrext/gestion-de-projet/",
+        "t": "Gestion de projet",
         "d": "Relecture juridique des documents engageants."
       }
     ],
@@ -765,7 +765,7 @@
       },
       {
         "q": "Et pour les autres documents d'entreprise ?",
-        "r": "Statuts, procès-verbaux, rapports et annexes passent par Translation project, avec le niveau de relecture adapté au destinataire, jusqu'à la double relecture certifiée par une agence spécialisée."
+        "r": "Statuts, procès-verbaux, rapports et annexes passent par Gestion de projet, avec le niveau de relecture adapté au destinataire, jusqu'à la double relecture certifiée par une agence spécialisée."
       },
       {
         "q": "Les dossiers clients restent-ils confidentiels ?",

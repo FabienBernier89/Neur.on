@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=53679077">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9c8c44e5">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment le devis est-il calculé ?", "acceptedAnswer": {"@type": "Answer", "text": "À partir du nombre de pages standard détecté dans chaque fichier, de la catégorie juridique reconnue, du niveau de relecture choisi et de la date d'échéance. Le délai et le coût s'affichent avant toute validation, dans l'application."}}, {"@type": "Question", "name": "Peut-on faire relire en interne plutôt qu'en externe ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Le mode Internal review chiffre le temps de relecture de vos équipes à partir du nombre de pages standard, et vous pouvez valoriser vous-même ce temps dans le devis."}}, {"@type": "Question", "name": "Comment sont gérés les droits d'accès ?", "acceptedAnswer": {"@type": "Answer", "text": "Les droits se règlent jusqu'au niveau du document et se synchronisent avec SharePoint et Active Directory."}}, {"@type": "Question", "name": "Nos traductions passées peuvent-elles être réutilisées ?", "acceptedAnswer": {"@type": "Answer", "text": "Les projets créés en confidentialité Standard peuvent servir de mémoire de traduction, réutilisable exclusivement par votre organisation. Les projets en mode Highly sensitive content ne le sont jamais."}}, {"@type": "Question", "name": "Faut-il former les équipes ?", "acceptedAnswer": {"@type": "Answer", "text": "L'interface reprend les gestes attendus : déposer un fichier, choisir une langue, lancer. Le centre d'aide documente chaque écran, et la démonstration se fait sur vos propres documents."}}, {"@type": "Question", "name": "Peut-on intégrer Corrext à nos outils ?", "acceptedAnswer": {"@type": "Answer", "text": "Une API REST permet de relier la traduction à vos systèmes de gestion documentaire et à vos intranets, et un déploiement sur vos propres serveurs est possible pour les environnements les plus sensibles."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://neur-on.ai/fr/solutions/"}, {"@type": "ListItem", "position": 3, "name": "Directions juridiques", "item": "https://neur-on.ai/fr/solutions/directions-juridiques/"}]}</script>
 </head>
@@ -71,8 +71,8 @@
       </div>
       <div class="mega-col">
         <p class="mega-h">Les quatre outils</p>
-        <a href="../../../fr/corrext/fast-translation/"><b>Fast translation</b><span>Texte, fichiers, PDF vers Word, réécriture</span></a>
-        <a href="../../../fr/corrext/translation-project/"><b>Translation project</b><span>Relecture humaine à la carte, devis et délai instantanés</span></a>
+        <a href="../../../fr/corrext/traduction-texte-et-document/"><b>Traduction texte et document</b><span>Texte, fichiers, PDF vers Word, réécriture</span></a>
+        <a href="../../../fr/corrext/gestion-de-projet/"><b>Gestion de projet</b><span>Relecture humaine à la carte, devis et délai instantanés</span></a>
         <a href="../../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse, 26 domaines</span></a>
         <a href="../../../fr/corrext/extraits-registre-commerce/"><b>Extraits du registre</b><span>Traduction certifiée, notariée, apostillée</span></a>
       </div>
@@ -85,7 +85,7 @@
       <div class="mega-col mega-promo">
         <p class="mega-h">Essayez sans inscription</p>
         <p class="mega-p">L'interface de Corrext, reproduite à l'identique sur trois extraits de droit suisse.</p>
-        <a href="../../../fr/corrext/fast-translation/#demo" class="mega-cta">Ouvrir la démo en direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a href="../../../fr/corrext/traduction-texte-et-document/#demo" class="mega-cta">Ouvrir la démo en direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       </div>
     </div>
   </div>
@@ -166,8 +166,8 @@
       <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="nm-body">
         <a href="../../../fr/corrext/">Corrext, la plateforme</a>
-        <a href="../../../fr/corrext/fast-translation/">Fast translation</a>
-        <a href="../../../fr/corrext/translation-project/">Translation project</a>
+        <a href="../../../fr/corrext/traduction-texte-et-document/">Traduction texte et document</a>
+        <a href="../../../fr/corrext/gestion-de-projet/">Gestion de projet</a>
         <a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a>
         <a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a>
         <a href="../../../fr/corrext/api-on-premises/">API et on-premises</a>
@@ -235,7 +235,7 @@
       <div class="facts-lead">
         <h2>Ce que Corrext change dans une direction juridique</h2>
         <p>Le problème d'une direction juridique n'est pas la qualité d'une traduction isolée : c'est la dispersion. Chaque service commande où il veut, personne ne capitalise, et les documents sensibles circulent par courriel. Corrext ramène tout dans un seul flux, sans retirer aux équipes la possibilité d'aller vite.</p>
-        <div class="links"><a href="../../../fr/corrext/translation-project/" class="feat-link">Le tunnel projet, étape par étape <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><a href="../../../fr/niveaux-de-qualite/" class="feat-link">Choisir le bon niveau de finition <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
+        <div class="links"><a href="../../../fr/corrext/gestion-de-projet/" class="feat-link">Le tunnel projet, étape par étape <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><a href="../../../fr/niveaux-de-qualite/" class="feat-link">Choisir le bon niveau de finition <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
       </div>
       <div class="facts-list"><div class="fact"><b>Demande unique</b><p>Un projet se crée en trois étapes : nom et confidentialité, dépôt des fichiers, devis. Les demandeurs n'ont plus à chercher un prestataire.</p></div><div class="fact"><b>Détection automatique</b><p>Chaque fichier déposé affiche son nombre de pages standard, sa langue détectée et sa catégorie juridique, modifiables.<small>La base du délai et du devis est donc visible avant toute validation.</small></p></div><div class="fact"><b>Relecture interne</b><p>Vos propres juristes relisent, et le temps que cela leur prend est estimé dans le devis.</p></div><div class="fact"><b>Relecture externe</b><p>Trois niveaux : Light review et Full review par un traducteur juridique, Double review et traduction certifiée par une agence spécialisée.</p></div><div class="fact"><b>Priorités</b><p>Une date d'échéance et un ordre de priorité entre les fichiers se fixent au moment du devis.</p></div><div class="fact"><b>Droits d'accès</b><p>Les accès se règlent jusqu'au document et se synchronisent avec SharePoint et Active Directory.</p></div><div class="fact"><b>Mémoire d'entreprise</b><p>Les projets en confidentialité Standard alimentent une mémoire réutilisable par votre seule organisation.</p></div><div class="fact"><b>Fin des traductions sauvages</b><p>Les équipes disposent d'un outil approuvé, ce qui retire toute raison d'utiliser un service en ligne non sécurisé.</p></div></div>
     </div>
@@ -252,7 +252,7 @@
     <div class="gov-box">
       <div>
         <h2>Comment garder la maîtrise sans ralentir les équipes ?</h2>
-        <p>En séparant les usages. La compréhension rapide passe par Fast translation, en libre-service et en quelques secondes. Le document engageant passe par un projet, avec relecture et devis. La même plateforme couvre les deux, sous la même politique de confidentialité.</p>
+        <p>En séparant les usages. La compréhension rapide passe par Traduction texte et document, en libre-service et en quelques secondes. Le document engageant passe par un projet, avec relecture et devis. La même plateforme couvre les deux, sous la même politique de confidentialité.</p>
         <a href="../../../fr/securite-souverainete/" class="feat-link">Sécurité et souveraineté des données <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       </div>
       <div class="gov-steps"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Confidentialité choisie projet par projet.</b> Standard ou Highly sensitive content, avec les conséquences affichées au moment du choix.</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Devis et délai avant l'engagement.</b> Calculés à partir des pages standard et de la catégorie détectée.</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Traçabilité des accès.</b> Droits jusqu'au document, synchronisés avec vos annuaires.</span></div></div>
@@ -262,7 +262,7 @@
 <section class="siblings">
   <div class="container">
     <h2>Les outils que ce métier utilise le plus</h2>
-    <div class="siblings-row"><a href="../../../fr/corrext/translation-project/"><b>Translation project</b><span>Le cœur du dispositif : projet, relecture, devis et délai.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><a href="../../../fr/corrext/fast-translation/"><b>Fast translation</b><span>Le libre-service qui remplace les outils non sécurisés.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><a href="../../../fr/corrext/api-on-premises/"><b>API et on-premises</b><span>Brancher la traduction sur vos systèmes existants.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
+    <div class="siblings-row"><a href="../../../fr/corrext/gestion-de-projet/"><b>Gestion de projet</b><span>Le cœur du dispositif : projet, relecture, devis et délai.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><a href="../../../fr/corrext/traduction-texte-et-document/"><b>Traduction texte et document</b><span>Le libre-service qui remplace les outils non sécurisés.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><a href="../../../fr/corrext/api-on-premises/"><b>API et on-premises</b><span>Brancher la traduction sur vos systèmes existants.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
   </div>
 </section>
 
@@ -299,8 +299,8 @@
         <h5>Plateforme</h5>
         <ul>
           <li><a href="../../../fr/corrext/">Corrext, la plateforme</a></li>
-          <li><a href="../../../fr/corrext/fast-translation/">Fast translation</a></li>
-          <li><a href="../../../fr/corrext/translation-project/">Translation project</a></li>
+          <li><a href="../../../fr/corrext/traduction-texte-et-document/">Traduction texte et document</a></li>
+          <li><a href="../../../fr/corrext/gestion-de-projet/">Gestion de projet</a></li>
           <li><a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a></li>
           <li><a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a></li>
           <li><a href="../../../fr/corrext/api-on-premises/">API et on-premises</a></li>
@@ -359,6 +359,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=53679077" defer></script>
+<script src="../../../assets/nav.js?v=9c8c44e5" defer></script>
 </body>
 </html>

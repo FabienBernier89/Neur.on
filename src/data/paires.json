@@ -71,7 +71,7 @@
       {
         "a": "Transactions",
         "t": "Des conditions générales rédigées à Zurich, signées à Genève",
-        "p": "La version française doit employer les termes du Code des obligations, pas leur paraphrase. La relecture Full par un traducteur juridique se commande dans Translation project, avec le délai affiché avant validation."
+        "p": "La version française doit employer les termes du Code des obligations, pas leur paraphrase. La relecture Full par un traducteur juridique se commande dans Gestion de projet, avec le délai affiché avant validation."
       },
       {
         "a": "Autorités",
@@ -95,7 +95,7 @@
       },
       {
         "q": "Un document long garde-t-il sa mise en page ?",
-        "r": "Oui, la traduction est livrée dans le format d'origine. Fast translation accepte jusqu'à 25 fichiers de 50 Mo par envoi, aux formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, et l'onglet PDF to Word convertit un scan en document éditable avant traitement."
+        "r": "Oui, la traduction est livrée dans le format d'origine. Traduction texte et document accepte jusqu'à 25 fichiers de 50 Mo par envoi, aux formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx, et l'onglet PDF to Word convertit un scan en document éditable avant traitement."
       },
       {
         "q": "Le texte peut-il rester en Suisse de bout en bout ?",
@@ -187,7 +187,7 @@
       {
         "a": "Autorités",
         "t": "Une communication cantonale destinée aux deux régions linguistiques",
-        "p": "Le texte allemand doit paraître le même jour, avec le même niveau de langue. Translation project organise la relecture interne et chiffre le temps nécessaire à partir du nombre de pages standard détecté."
+        "p": "Le texte allemand doit paraître le même jour, avec le même niveau de langue. Gestion de projet organise la relecture interne et chiffre le temps nécessaire à partir du nombre de pages standard détecté."
       }
     ],
     "faq_titre": "Questions fréquentes sur le français vers l'allemand",
@@ -266,7 +266,7 @@
       },
       {
         "k": "Volume des due diligences",
-        "v": "Fast translation accepte jusqu'à 25 fichiers de 50 Mo par envoi, et l'onglet PDF to Word transforme un scan en document éditable, ce qui compte quand une part importante des pièces arrive numérisée."
+        "v": "Traduction texte et document accepte jusqu'à 25 fichiers de 50 Mo par envoi, et l'onglet PDF to Word transforme un scan en document éditable, ce qui compte quand une part importante des pièces arrive numérisée."
       },
       {
         "k": "Confidentialité",
@@ -486,7 +486,7 @@
       },
       {
         "k": "Volume d'un arbitrage",
-        "v": "Les pièces arrivent par centaines de pages et souvent en PDF. Fast translation accepte jusqu'à 25 fichiers de 50 Mo par envoi et convertit un scan en Word éditable avant traitement."
+        "v": "Les pièces arrivent par centaines de pages et souvent en PDF. Traduction texte et document accepte jusqu'à 25 fichiers de 50 Mo par envoi et convertit un scan en Word éditable avant traitement."
       },
       {
         "k": "Confidentialité",
@@ -517,7 +517,7 @@
       {
         "a": "Organisations internationales",
         "t": "Un texte réglementaire à diffuser dans les deux langues",
-        "p": "Les deux versions sortent ensemble et doivent rester alignées, paragraphe par paragraphe. Translation project organise la relecture et affiche le délai avant validation."
+        "p": "Les deux versions sortent ensemble et doivent rester alignées, paragraphe par paragraphe. Gestion de projet organise la relecture et affiche le délai avant validation."
       }
     ],
     "faq_titre": "Questions fréquentes sur le français vers l'anglais",
@@ -650,7 +650,7 @@
       },
       {
         "q": "Les documents tessinois arrivent souvent scannés, est-ce un problème ?",
-        "r": "Non. L'onglet PDF to Word de Fast translation convertit un scan en document Word éditable avant traduction, ce qui permet de conserver la structure et d'annoter ensuite. Les fichiers repartent dans leur format d'origine."
+        "r": "Non. L'onglet PDF to Word de Traduction texte et document convertit un scan en document Word éditable avant traduction, ce qui permet de conserver la structure et d'annoter ensuite. Les fichiers repartent dans leur format d'origine."
       }
     ],
     "cta_t": "Faites vérifier un dossier tessinois par un juriste-linguiste",

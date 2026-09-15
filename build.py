@@ -33,8 +33,8 @@ ASSET_V = _asset_version()
 LEGACY = {
     "neuron-homepage.html": "fr/",
     "corrext.html": "fr/corrext/",
-    "corrext-fast-translation.html": "fr/corrext/fast-translation/",
-    "corrext-translation-project.html": "fr/corrext/translation-project/",
+    "corrext-traduction-texte-et-document.html": "fr/corrext/traduction-texte-et-document/",
+    "corrext-gestion-de-projet.html": "fr/corrext/gestion-de-projet/",
     "corrext-chnell.html": "fr/corrext/chnell/",
     "corrext-extraits-registre.html": "fr/corrext/extraits-registre-commerce/",
     "securite-souverainete.html": "fr/securite-souverainete/",

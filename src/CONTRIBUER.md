@@ -15,7 +15,7 @@ nav: corrext | solutions | ressources | neuron-llm | (vide)
 -->
 ```
 
-Ajoutez `assets: ["corrext-demo.js"]` seulement si la page réutilise la démo Fast translation
+Ajoutez `assets: ["corrext-demo.js"]` seulement si la page réutilise la démo Traduction texte et document
 (un seul cadre `#cx` par page).
 
 ## Ordre des blocs
