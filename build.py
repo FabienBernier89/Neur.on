@@ -108,19 +108,23 @@ def crumbs_for(path, short):
     return items
 
 
-def render_nav_footer(part, path, navkey):
-    s = part.replace("{{ROOT}}", "../" * path.count("/")).replace("{{NAV}}", navkey or "")
-    # les liens vers des pages non encore construites ne sont pas cliquables
+def neutralize_links(html):
+    """Un lien vers une page non encore écrite perd son href : ni cliquable, ni suivi."""
     def fix(m):
         href = m.group(1)
-        target = href.split("#")[0]
+        target = href.split("#")[0].split("?")[0]
         logical = re.sub(r"^(\.\./)+", "", target)
-        if logical.startswith(("http", "mailto:", "#")) or not logical:
+        if href.startswith(("http", "mailto:", "#", "/")) or not logical:
             return m.group(0)
-        if logical in PAGES:
+        if logical in PAGES or logical.startswith("assets/") or "assets/" in logical:
             return m.group(0)
-        return '<a href="%s" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"' % href
-    return re.sub(r'<a href="([^"]+)"', fix, s)
+        return '<a class="soon" aria-disabled="true" data-soon="bientôt"'
+    return re.sub(r'<a href="([^"]+)"', fix, html)
+
+
+def render_nav_footer(part, path, navkey):
+    s = part.replace("{{ROOT}}", "../" * path.count("/")).replace("{{NAV}}", navkey or "")
+    return neutralize_links(s)
 
 
 def build_page(path, meta, body):
@@ -147,6 +151,7 @@ def build_page(path, meta, body):
         return m.group(0)
     body = re.sub(r'href="([a-z0-9\-]+\.html)(#[^"]*)?"', legacy, body)
     body = body.replace('href="{{ROOT}}', 'href="' + root).replace("{{ROOT}}", root)
+    body = neutralize_links(body)
 
     # FAQPage automatique : toute page qui pose des questions le déclare aux moteurs
     if "faq-item" in body and not any('"FAQPage"' in ld for ld in lds):
