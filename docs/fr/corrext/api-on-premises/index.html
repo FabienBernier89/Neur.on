@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API et on-premises · Corrext par Neur.on : intégrations</title>
+<meta name="description" content="Intégrer le moteur de traduction juridique suisse dans vos DMS, intranets et produits : API REST, déploiement on-premises, cadrage d'une intégration.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/fr/corrext/api-on-premises/">
+<meta property="og:title" content="API et on-premises · Corrext par Neur.on : intégrations">
+<meta property="og:description" content="Intégrer le moteur de traduction juridique suisse dans vos DMS, intranets et produits : API REST, déploiement on-premises, cadrage d'une intégration.">
+<meta property="og:url" content="https://neur-on.ai/fr/corrext/api-on-premises/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="fr_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=3c031066">
+<style>/* Page API et on-premises · styles propres (préfixe .api-) */
+.thero.api-hero{padding:30px 0 52px}
+.api-int{padding:88px 0 90px;background:#fff}
+.api-int .code{max-width:100%;overflow-x:auto}
+.api-illus{margin-top:14px;display:flex;align-items:flex-start;gap:9px;font-size:12.5px;color:var(--muted);line-height:1.5}
+.api-illus svg{width:15px;height:15px;color:var(--blue-d);flex-shrink:0;margin-top:2px}
+.api-facts{padding:0 0 88px;background:#fff}
+.api-ask{padding:0 0 90px;background:#fff}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Proposez-vous une API pour intégrer la traduction dans nos outils ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, une API REST permet d'appeler le moteur depuis vos propres systèmes : gestion documentaire, intranet, workflow métier. Nous ne publions pas de documentation technique en accès libre : le contrat d'interface, l'authentification et le périmètre des appels se fixent au moment du cadrage, avec votre DSI et notre équipe technique."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Peut-on déployer la solution dans notre propre infrastructure ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un déploiement on-premises est possible pour les environnements les plus sensibles, c'est-à-dire lorsque vos règles internes imposent que rien ne sorte de votre réseau. C'est un projet d'intégration à part entière, cadré avec votre DSI : architecture, dimensionnement, mises à jour et exploitation sont définis avant tout engagement."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Nos droits d'accès peuvent-ils être repris de SharePoint ou d'Active Directory ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est prévu dans le cadre d'un projet d'intégration : les droits d'accès peuvent être synchronisés avec votre annuaire et vos espaces documentaires, pour que chacun retrouve dans Corrext le périmètre qu'il a déjà chez vous. Cette synchronisation n'est pas un réglage libre-service de l'interface web : elle se met en place avec votre DSI."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Peut-on intégrer le moteur dans notre propre produit, en marque blanche ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est le cas d'usage des LegalTechs et des éditeurs juridiques : la traduction devient une fonction de votre produit, appelée par API, sans que vos utilisateurs changent d'outil. Le périmètre fonctionnel, la marque affichée et les conditions se définissent contractuellement lors du cadrage."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Où les données sont-elles traitées lors d'un appel à l'API ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Les mêmes règles qu'en interface s'appliquent : le stockage a lieu sur des serveurs suisses dans tous les cas. Le traitement est exclusivement suisse avec Neur.on LLM ou en mode Highly sensitive content, disponible pour l'anglais, le français, l'italien et l'allemand. Les moteurs tiers, DeepL Pro, Azure OpenAI GPT et Claude, sont hébergés à l'étranger et déclenchent l'avis de pseudonymisation défini par votre organisation. En déploiement on-premises, le périmètre de traitement est celui de votre propre infrastructure."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Corrext", "item": "https://neur-on.ai/fr/corrext/"}, {"@type": "ListItem", "position": 3, "name": "API et on-premises", "item": "https://neur-on.ai/fr/corrext/api-on-premises/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="nav" id="siteNav" data-active="corrext">
+  <div class="container nav-inner">
+    <a href="../../../fr/" class="logo" aria-label="Neur.on, retour à l'accueil">Neur<span>.</span>on</a>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="neuron-llm">
+        <a href="../../../fr/neuron-llm/" class="nav-a">Neur.on LLM</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Langue">
+        <a href="../../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span class="sep">·</span>
+        <a class="on" href="../../../fr/" aria-current="true">FR</a><span class="sep">·</span>
+        <a href="../../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span class="sep">·</span>
+        <a href="../../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+      </div>
+      <a href="../../../fr/contact/" class="btn btn-blue">Demander une démo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Ouvrir le menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La plateforme</p>
+        <a href="../../../fr/corrext/"><b>Corrext, le poste de commande</b><span>Projets, devis, ressources et droits dans un seul environnement suisse</span></a>
+        <a href="../../../fr/neuron-llm/"><b>Neur.on LLM</b><span>Le moteur entraîné sur le droit et la finance suisses</span></a>
+        <a href="../../../fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Où vos données sont stockées, traitées et par quel moteur</span></a>
+        <a href="../../../fr/corrext/api-on-premises/"><b>API et on-premises</b><span>Intégration à vos DMS, intranets et workflows</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Les quatre outils</p>
+        <a href="../../../fr/corrext/fast-translation/"><b>Fast translation</b><span>Texte, fichiers, PDF vers Word, réécriture</span></a>
+        <a href="../../../fr/corrext/translation-project/"><b>Translation project</b><span>Relecture humaine à la carte, devis et délai instantanés</span></a>
+        <a href="../../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse, 26 domaines</span></a>
+        <a href="../../../fr/corrext/extraits-registre-commerce/"><b>Extraits du registre</b><span>Traduction certifiée, notariée, apostillée</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Aller plus loin</p>
+        <a href="../../../fr/niveaux-de-qualite/"><b>Quatre niveaux de qualité</b><span>De la traduction machine à la certification</span></a>
+        <a href="../../../fr/langues-et-formats/"><b>Langues et formats</b><span>30 langues, quatre natives, tous vos formats bureautiques</span></a>
+        <a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Centre d'aide</b><span>Comment faire, étape par étape</span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Essayez sans inscription</p>
+        <p class="mega-p">L'interface de Corrext, reproduite à l'identique sur trois extraits de droit suisse.</p>
+        <a href="../../../fr/corrext/fast-translation/#demo" class="mega-cta">Ouvrir la démo en direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Par métier</p>
+        <a href="../../../fr/solutions/cabinets-avocats/"><b>Cabinets d'avocats</b></a>
+        <a href="../../../fr/solutions/banques-finance/"><b>Banques et finance</b></a>
+        <a href="../../../fr/solutions/directions-juridiques/"><b>Directions juridiques et Legal Ops</b></a>
+        <a href="../../../fr/solutions/autorites-administration/"><b>Autorités et administration</b></a>
+        <a href="../../../fr/solutions/fiduciaires-conseil/"><b>Fiduciaires et conseil</b></a>
+        <a href="../../../fr/solutions/editeurs-legaltech/"><b>LegalTechs et éditeurs</b></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par domaine du droit</p>
+        <a href="../../../fr/traduction/contrats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Contrats</b></a>
+        <a href="../../../fr/traduction/droit-des-societes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Droit des sociétés</b></a>
+        <a href="../../../fr/traduction/fusions-acquisitions/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Fusions et acquisitions</b></a>
+        <a href="../../../fr/traduction/contentieux-arbitrage/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Contentieux et arbitrage</b></a>
+        <a href="../../../fr/traduction/banque-finance/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Banque et finance</b></a>
+        <a href="../../../fr/traduction/compliance-finma/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Compliance et FINMA</b></a>
+        <a href="../../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="mega-all">Les treize domaines <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par paire de langues</p>
+        <a href="../../../fr/traduction/allemand-francais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Allemand vers français</b></a>
+        <a href="../../../fr/traduction/francais-allemand/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Français vers allemand</b></a>
+        <a href="../../../fr/traduction/allemand-anglais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Allemand vers anglais</b></a>
+        <a href="../../../fr/traduction/francais-anglais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Français vers anglais</b></a>
+        <a href="../../../fr/traduction/italien-francais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Italien vers français</b></a>
+        <a href="../../../fr/traduction/anglais-allemand/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Anglais vers allemand</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Vous hésitez encore ?</p>
+        <p class="mega-p">Ce que Corrext fait que les outils génériques ne font pas, comparé point par point.</p>
+        <a href="../../../fr/comparatif/" class="mega-cta">Voir les comparatifs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Comprendre</p>
+        <a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Blog</b><span>Droit suisse, traduction et intelligence artificielle</span></a>
+        <a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Guides</b><span>Méthodes de fond, signées par nos spécialistes</span></a>
+        <a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Études et benchmarks</b><span>Nos mesures sur corpus de droit suisse</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consulter</p>
+        <a href="../../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Glossaire juridique suisse</b><span>Chaque terme en allemand, français, italien et anglais</span></a>
+        <a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Centre d'aide Corrext</b><span>Prise en main et réponses pratiques</span></a>
+        <a href="../../../fr/aide/faq/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Questions fréquentes</b><span>Sécurité, langues, formats, relecture</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Comparer</p>
+        <a href="../../../fr/comparatif/deepl-traduction-juridique/"><b>Corrext et DeepL</b></a>
+        <a href="../../../fr/comparatif/chatgpt-traduction-juridique/"><b>Corrext et les LLM généralistes</b></a>
+        <a href="../../../fr/comparatif/agence-ou-plateforme/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Agence de traduction ou plateforme</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Une société suisse, une infrastructure suisse, un moteur entraîné sur le droit suisse.</p>
+        <a href="../../../fr/a-propos/" class="mega-cta">À propos et distinctions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/corrext/">Corrext, la plateforme</a>
+        <a href="../../../fr/corrext/fast-translation/">Fast translation</a>
+        <a href="../../../fr/corrext/translation-project/">Translation project</a>
+        <a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a>
+        <a href="../../../fr/corrext/api-on-premises/">API et on-premises</a>
+        <a href="../../../fr/neuron-llm/">Neur.on LLM</a>
+        <a href="../../../fr/securite-souverainete/">Sécurité et souveraineté</a>
+        <a href="../../../fr/niveaux-de-qualite/">Niveaux de qualité</a>
+        <a href="../../../fr/langues-et-formats/">Langues et formats</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/solutions/cabinets-avocats/">Cabinets d'avocats</a>
+        <a href="../../../fr/solutions/banques-finance/">Banques et finance</a>
+        <a href="../../../fr/solutions/directions-juridiques/">Directions juridiques et Legal Ops</a>
+        <a href="../../../fr/solutions/autorites-administration/">Autorités et administration</a>
+        <a href="../../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a>
+        <a href="../../../fr/solutions/editeurs-legaltech/">LegalTechs et éditeurs</a>
+        <a href="../../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Traduction par domaine</a>
+        <a href="../../../fr/comparatif/">Comparatifs</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a>
+        <a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a>
+        <a href="../../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Glossaire juridique suisse</a>
+        <a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a>
+        <a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Centre d'aide</a>
+        <a href="../../../fr/a-propos/">À propos</a>
+      </div>
+    </div>
+    <a href="../../../fr/contact/" class="btn btn-blue nm-cta">Demander une démo</a>
+    <div class="nm-langs" aria-label="Langue">
+      <a href="../../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span>·</span>
+      <a class="on" href="../../../fr/" aria-current="true">FR</a><span>·</span>
+      <a href="../../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span>·</span>
+      <a href="../../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/corrext/">Corrext</a></li><li><span aria-current="page">API et on-premises</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="thero api-hero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>API et on-premises.</em> Intégrer le moteur là où le travail se fait déjà</h1>
+        <p class="lead">Vos juristes ne devraient pas changer d'outil pour traduire. Le moteur entraîné sur le droit suisse s'appelle depuis votre gestion documentaire, votre intranet ou votre propre produit, et se déploie dans votre infrastructure quand vos règles internes l'exigent.</p>
+        <div class="thero-cta">
+          <a href="../../../fr/contact/" class="btn btn-blue">
+            Cadrer une intégration
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#disponible" class="btn btn-ghost">Ce qui est disponible</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span><b>API REST</b> pour vos systèmes de gestion documentaire, intranets et workflows</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Déploiement on-premises</b> pour les environnements les plus sensibles</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Mêmes règles de souveraineté</b> qu'en interface : stockage suisse, traitement suisse avec Neur.on LLM</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TROIS CAS D'INTÉGRATION -->
+<section class="who" id="cas">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Trois façons d'intégrer Neur.on à votre système d'information</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-item">
+        <h3><span class="pn">Gestion documentaire.</span> Traduire sans sortir du DMS</h3>
+        <p>Un document déposé dans votre gestion documentaire part à la traduction depuis son propre écran, et la version cible revient à côté de l'original, dans la même arborescence et sous les mêmes droits. Vos juristes ne quittent pas l'outil dans lequel ils classent déjà leurs dossiers, et aucune copie ne part vers un service en ligne non gouverné.</p>
+      </div>
+      <div class="who-item">
+        <h3><span class="pn">Intranet et portail interne.</span> Un service de traduction pour toute l'organisation</h3>
+        <p>La traduction devient une brique de votre portail : un formulaire interne, une page de dépôt, un bouton dans un workflow de validation. Les équipes qui n'ouvriront jamais une plateforme de traduction y ont accès depuis l'endroit où elles travaillent, avec le périmètre de langues et de moteurs que vous avez décidé.</p>
+      </div>
+      <div class="who-item">
+        <h3><span class="pn">LegalTechs et éditeurs.</span> Le moteur dans votre produit, sous votre marque</h3>
+        <p>Vous éditez une solution juridique et vos clients suisses demandent la traduction de leurs contenus. Plutôt que d'entraîner un moteur, vous appelez le nôtre depuis votre produit : la fonction est à vous, l'infrastructure et la terminologie suisse sont les nôtres. Le périmètre et la marque affichée se définissent contractuellement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPEL TYPE -->
+<section class="api-int">
+  <div class="container">
+    <div class="feature">
+      <div class="feat-txt">
+        <h3>Un appel, les mêmes réglages que dans l'interface</h3>
+        <p>Ce qui se choisit à l'écran dans Corrext se choisit aussi dans un appel : la langue source, la langue cible, le moteur et le domaine juridique. C'est ce qui permet à une intégration de respecter la même gouvernance que l'interface, au lieu de créer un canal parallèle sans règles.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Langue source et langue cible, parmi les langues de la plateforme</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Choix du moteur, donc choix du lieu de traitement</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Domaine juridique, pour la terminologie attendue</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Texte ou fichier, selon ce que votre système envoie</li>
+        </ul>
+        <a href="../../../fr/contact/" class="feat-link">Demander le contrat d'interface <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="doc-body">
+            <div class="code"><span class="k">POST</span> /v1/translate<br><span class="m">"source_language"</span>: <span class="s">"de"</span>,<br><span class="m">"target_language"</span>: <span class="s">"fr"</span>,<br><span class="m">"engine"</span>: <span class="s">"neuron-llm"</span>,<br><span class="m">"domain"</span>: <span class="s">"banking"</span></div>
+            <p class="api-illus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>Illustration, pas documentation. Les chemins, les noms de champs et l'authentification réels sont définis dans le contrat d'interface remis lors du cadrage.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUI EST DISPONIBLE -->
+<section class="facts api-facts" id="disponible">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Ce qui est disponible, et sous quelle forme</h2>
+        <p>Nous distinguons deux choses : ce que vous trouvez aujourd'hui dans l'application web, utilisable dès l'ouverture d'un compte, et ce qui relève d'un projet d'intégration, cadré avec votre DSI. Chaque ligne le précise.</p>
+        <div class="links">
+          <a href="../../../fr/corrext/" class="feat-link">La plateforme Corrext <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="../../../fr/securite-souverainete/" class="feat-link">Sécurité et souveraineté des données <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>API REST</b><p>Appel du moteur depuis vos propres systèmes, avec les mêmes réglages qu'en interface.<small>Capacité d'intégration : contrat d'interface, authentification et périmètre fixés au cadrage. Aucune documentation publique.</small></p></div>
+        <div class="fact"><b>Déploiement on-premises</b><p>Installation dans votre infrastructure, pour les environnements dans lesquels rien ne doit sortir de votre réseau.<small>Fourni dans le cadre d'un projet d'intégration, après étude d'architecture et de dimensionnement.</small></p></div>
+        <div class="fact"><b>Droits d'accès synchronisés</b><p>Reprise de vos droits SharePoint et Active Directory, pour que chacun retrouve le périmètre qu'il a déjà chez vous.<small>Fourni dans le cadre d'un projet d'intégration ; ce n'est pas un réglage libre-service de l'interface web.</small></p></div>
+        <div class="fact"><b>Livraison des traducteurs</b><p>Les traducteurs juridiques et les agences travaillent dans leurs outils, Trados ou MemoQ, et livrent dans la chaîne du projet.<small>Chaîne de production des projets avec relecture externe, sans intervention de votre part.</small></p></div>
+        <div class="fact"><b>Collaboration dans Word</b><p>La relecture d'un document traduit se fait dans l'outil de rédaction de vos équipes plutôt que dans une interface de plus.<small>À cadrer dans un projet d'intégration : le périmètre exact est confirmé avec l'équipe avant tout engagement.</small></p></div>
+        <div class="fact"><b>Les quatre outils de la plateforme</b><p>Fast translation, Translation project, Fast lookup CHnell et les extraits du registre du commerce certifiés.<small>Disponibles aujourd'hui dans l'application web, dès l'ouverture d'un compte.</small></p></div>
+        <div class="fact"><b>Choix du moteur</b><p>Neur.on LLM, DeepL Pro, Azure OpenAI GPT et Claude, sélectionnés à chaque envoi et gouvernés par la politique de votre organisation.<small>Disponible aujourd'hui dans l'application web.</small></p></div>
+        <div class="fact"><b>Souveraineté, dans les deux cas</b><p>Stockage sur des serveurs suisses en toutes circonstances ; traitement exclusivement en Suisse avec Neur.on LLM ou en mode Highly sensitive content. En on-premises, le périmètre est celui de votre propre infrastructure.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CADRAGE -->
+<section class="gov api-ask">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Ce que nous avons besoin de savoir avant de cadrer une intégration</h2>
+        <p>Une intégration se dimensionne sur des faits, pas sur une intention. Cinq réponses suffisent à dire si le sujet relève d'un appel d'API en quelques jours, d'un connecteur à écrire, ou d'un déploiement dans votre infrastructure. Vous pouvez les préparer avant le premier échange : nous partons de là, et nous vous disons ce qui est réaliste.</p>
+        <a href="../../../fr/contact/" class="feat-link">Nous transmettre ces éléments <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 16v-5M13 16V8M18 16v-3"/></svg><span><b>Volumes.</b> Combien de pages ou de documents par mois, avec quelles pointes, et pour combien d'utilisateurs ?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><b>Formats.</b> Que produisent réellement vos systèmes : des fichiers bureautiques, des PDF scannés, du texte brut ?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Langues.</b> Quelles paires, dans quelles proportions, et avec quelle part de langues hors des quatre natives ?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>Niveau de confidentialité.</b> Vos règles internes imposent-elles le mode Highly sensitive content, un moteur suisse, ou un déploiement dans votre réseau ?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Systèmes existants.</b> Quel DMS, quel annuaire, quel portail, et qui les exploite chez vous ou chez votre prestataire ?</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Les autres pages de la plateforme</h2>
+    <div class="siblings-row">
+      <a href="../../../fr/corrext/fast-translation/"><b>Fast translation</b><span>L'outil du quotidien : texte, fichiers, PDF vers Word, réécriture.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/langues-et-formats/"><b>Langues et formats</b><span>30 langues, quatre natives, sept formats bureautiques et leurs limites.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Stockage, traitement, moteurs et gouvernance, expliqués sans détour.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Questions fréquentes sur l'API et le on-premises</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Proposez-vous une API pour intégrer la traduction dans nos outils ?</summary>
+        <p>Oui, une API REST permet d'appeler le moteur depuis vos propres systèmes : gestion documentaire, intranet, workflow métier. Nous ne publions pas de documentation technique en accès libre : le contrat d'interface, l'authentification et le périmètre des appels se fixent au moment du cadrage, avec votre DSI et notre équipe technique.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Peut-on déployer la solution dans notre propre infrastructure ?</summary>
+        <p>Un déploiement on-premises est possible pour les environnements les plus sensibles, c'est-à-dire lorsque vos règles internes imposent que rien ne sorte de votre réseau. C'est un projet d'intégration à part entière, cadré avec votre DSI : architecture, dimensionnement, mises à jour et exploitation sont définis avant tout engagement.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Nos droits d'accès peuvent-ils être repris de SharePoint ou d'Active Directory ?</summary>
+        <p>C'est prévu dans le cadre d'un projet d'intégration : les droits d'accès peuvent être synchronisés avec votre annuaire et vos espaces documentaires, pour que chacun retrouve dans Corrext le périmètre qu'il a déjà chez vous. Cette synchronisation n'est pas un réglage libre-service de l'interface web : elle se met en place avec votre DSI.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Peut-on intégrer le moteur dans notre propre produit, en marque blanche ?</summary>
+        <p>C'est le cas d'usage des LegalTechs et des éditeurs juridiques : la traduction devient une fonction de votre produit, appelée par API, sans que vos utilisateurs changent d'outil. Le périmètre fonctionnel, la marque affichée et les conditions se définissent contractuellement lors du cadrage.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Où les données sont-elles traitées lors d'un appel à l'API ?</summary>
+        <p>Les mêmes règles qu'en interface s'appliquent : le stockage a lieu sur des serveurs suisses dans tous les cas. Le traitement est exclusivement suisse avec Neur.on LLM ou en mode Highly sensitive content, disponible pour l'anglais, le français, l'italien et l'allemand. Les moteurs tiers, DeepL Pro, Azure OpenAI GPT et Claude, sont hébergés à l'étranger et déclenchent l'avis de pseudonymisation défini par votre organisation. En déploiement on-premises, le périmètre de traitement est celui de votre propre infrastructure.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Cadrons votre intégration</h2>
+      <p>Volumes, formats, langues, niveau de confidentialité, systèmes en place : un échange avec notre équipe technique suffit à dire ce qui est réaliste, et dans quel ordre.</p>
+      <div class="final-cta-btns">
+        <a href="../../../fr/contact/" class="btn btn-blue">
+          Cadrer une intégration
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../../fr/corrext/" class="btn-outline">Revenir à la plateforme Corrext</a>
+      </div>
+      <p class="micro">Échange technique · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../fr/" class="logo">Neur<span>.</span>on</a>
+        <p>Le moteur de traduction du droit, de la fiscalité et de la finance suisses. Une solution entièrement suisse : entité, infrastructure et moteur Neur.on LLM, pour une précision quadrilingue et une souveraineté totale des données.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hébergement en Suisse (Exoscale) · nLPD et RGPD</p>
+      </div>
+      <div>
+        <h5>Plateforme</h5>
+        <ul>
+          <li><a href="../../../fr/corrext/">Corrext, la plateforme</a></li>
+          <li><a href="../../../fr/corrext/fast-translation/">Fast translation</a></li>
+          <li><a href="../../../fr/corrext/translation-project/">Translation project</a></li>
+          <li><a href="../../../fr/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a></li>
+          <li><a href="../../../fr/corrext/api-on-premises/">API et on-premises</a></li>
+          <li><a href="../../../fr/neuron-llm/">Neur.on LLM, le moteur</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../../../fr/solutions/cabinets-avocats/">Cabinets d'avocats</a></li>
+          <li><a href="../../../fr/solutions/banques-finance/">Banques et finance</a></li>
+          <li><a href="../../../fr/solutions/directions-juridiques/">Directions juridiques</a></li>
+          <li><a href="../../../fr/solutions/autorites-administration/">Autorités et administration</a></li>
+          <li><a href="../../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a></li>
+          <li><a href="../../../fr/solutions/editeurs-legaltech/">LegalTechs et éditeurs</a></li>
+          <li><a href="../../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Traduction par domaine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ressources</h5>
+        <ul>
+          <li><a href="../../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a></li>
+          <li><a href="../../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a></li>
+          <li><a href="../../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Glossaire juridique</a></li>
+          <li><a href="../../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a></li>
+          <li><a href="../../../fr/comparatif/">Comparatifs</a></li>
+          <li><a href="../../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Centre d'aide</a></li>
+          <li><a href="../../../fr/securite-souverainete/">Sécurité et souveraineté</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Neur.on</h5>
+        <ul class="footer-contact">
+          <li><a href="../../../fr/a-propos/">À propos et distinctions</a></li>
+          <li><a href="../../../fr/a-propos/presse/">Presse</a></li>
+          <li><a href="../../../fr/contact/">Demander une démo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@neur-on.ai">contact@neur-on.ai</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Fribourg, Suisse. Tous droits réservés.</span>
+      <div class="links">
+        <a href="https://neur-on.ai/mentions-legales">Mentions légales</a>
+        <a href="https://neur-on.ai/confidentialite">Protection des données</a>
+        <a href="https://neur-on.ai/cgu">CGU</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../assets/nav.js?v=3c031066" defer></script>
+</body>
+</html>

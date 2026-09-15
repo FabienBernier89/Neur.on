@@ -1,0 +1,263 @@
+<!--page
+title: Comparatifs · Corrext par Neur.on face aux autres solutions
+description: Trois comparatifs honnêtes : Corrext et DeepL Pro, Corrext et les LLM généralistes, agence de traduction ou plateforme. Ce que chacun fait bien, vérifié en septembre 2026.
+short: Comparatifs
+nav: ressources
+assets: []
+canonical: https://neur-on.ai/fr/comparatif/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Ces comparatifs sont-ils neutres ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non, et nous préférons le dire : ils sont écrits par Neur.on, éditeur de Corrext. C'est précisément pourquoi ils s'en tiennent à des critères vérifiables par vous-même : lieu de stockage et de traitement des données, terminologie du droit suisse en contexte, gestion des références légales, présence d'une chaîne de relecture, d'un devis et d'une certification. Nous ne comparons ni les prix ni la vitesse brute."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Corrext peut-il utiliser DeepL Pro, Azure OpenAI GPT ou Claude ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Ces moteurs sont disponibles dans Corrext, aux côtés de Neur.on LLM, et se choisissent à chaque envoi. Comme ils sont hébergés à l'étranger, leur sélection déclenche l'avis Attorney-Client privilege de votre organisation, qui exige une pseudonymisation complète du document. Notre proposition n'est donc pas de renoncer à ces moteurs, mais de les utiliser dans un cadre qui protège votre secret professionnel."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "À quelle date ces comparaisons ont-elles été vérifiées ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En septembre 2026. Tout ce que nous affirmons de Corrext a été observé dans l'application le 14 septembre 2026. Ce que nous affirmons des autres solutions se limite à ce qui est public et stable à cette date. Les exemples de traduction sont des sorties réelles et ponctuelles, datées, jamais des mesures statistiques."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+/* Hero compact : ces pages sont du texte, pas une démo */
+.thero{padding:44px 0 64px}
+.thero-grid{align-items:start;padding-bottom:0}
+.thero h1{max-width:24ch}
+
+/* Trois comparatifs en blocs fonctionnalité */
+.cph-feats{padding:78px 0 82px;background:#fff}
+.cph-feats .sec-head{text-align:left;margin:0 0 54px;max-width:760px}
+.cphv-top{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--bg)}
+.cphv-top .d{width:10px;height:10px;border-radius:50%;background:#d4ddee}
+.cphv-top .t{margin-left:10px;font-size:12px;font-weight:600;color:var(--muted)}
+.cphv-body{padding:8px 20px 18px}
+.cphv-row{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:12px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.cphv-row:last-child{border-bottom:0}
+.cphv-row.hd{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.cphv-row .l{color:var(--ink);font-weight:600}
+.cphv-row .a{color:var(--muted)}
+.cphv-row .b{color:var(--navy);font-weight:700}
+.cphv-foot{padding:12px 20px 16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);background:var(--bg)}
+
+/* Méthode : registre de faits en deux colonnes */
+.cph-method{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cph-method .facts-grid{align-items:start}
+
+@media(max-width:940px){
+  .cphv-row{grid-template-columns:1fr;gap:3px}
+  .cphv-row.hd{display:none}
+  .cphv-row .a::before{content:"Sans Corrext : ";color:var(--muted)}
+  .cphv-row .b::before{content:"Avec Corrext : ";color:var(--muted);font-weight:400}
+}
+</style>
+
+<!-- HERO -->
+<section class="thero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Comparatifs.</em> Ce que les autres solutions font bien, et ce que Corrext ajoute</h1>
+        <p class="lead">Trois comparaisons écrites pour des juristes qui liront la ligne qui les intéresse et vérifieront le reste. Nous nommons ce que DeepL Pro, les LLM généralistes et les agences de traduction réussissent, puis nous disons précisément où se situe la différence : le lieu de traitement des données, la terminologie du droit suisse et la chaîne de relecture.</p>
+        <div class="thero-cta">
+          <a href="contact.html" class="btn btn-blue">
+            Demander une démo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#comparatifs" class="btn btn-ghost">Voir les trois comparatifs</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Aucun dénigrement :</b> chaque page commence par ce que l'autre solution fait bien</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Corrext les intègre :</b> DeepL Pro, Azure OpenAI GPT et Claude sont disponibles dans la plateforme</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><b>Dernière vérification :</b> septembre 2026, application observée le 14 septembre 2026</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LES TROIS COMPARATIFS -->
+<section class="cph-feats" id="comparatifs">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Trois comparaisons, trois questions différentes</h2>
+      <p>La première porte sur un moteur de traduction, la deuxième sur un assistant de rédaction, la troisième sur un modèle de travail. Elles ne se répondent pas de la même manière.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feat-txt">
+        <h3><span class="pn">Corrext et DeepL.</span> Le même moteur, dans un cadre qui protège le secret professionnel</h3>
+        <p>DeepL Pro est un excellent moteur de traduction générique : rapide, fluide, à l'aise sur les documents Office et les PDF. Il reste disponible dans Corrext. Ce qui change, c'est le cadre autour de lui.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce que DeepL Pro fait bien : la fluidité, les formats, ses propres glossaires, un engagement public de suppression des textes de ses clients Pro.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce qu'il ne fournit pas seul : un traitement en Suisse, un concordancier de droit suisse sourcé, une chaîne de relecture juridique.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Notre position : ne renoncez pas à DeepL Pro, utilisez-le sous la gouvernance de votre organisation.</li>
+        </ul>
+        <a href="{{ROOT}}fr/comparatif/deepl-traduction-juridique/" class="feat-link">Lire le comparatif Corrext et DeepL <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Extrait du tableau</span></div>
+          <div class="cphv-body">
+            <div class="cphv-row hd"><span></span><span class="a">DeepL Pro seul</span><span class="b">Corrext</span></div>
+            <div class="cphv-row"><span class="l">Lieu de traitement</span><span class="a">Hors de Suisse</span><span class="b">Suisse, au choix</span></div>
+            <div class="cphv-row"><span class="l">Avis avant envoi</span><span class="a">Aucun</span><span class="b">Attorney-Client privilege</span></div>
+            <div class="cphv-row"><span class="l">Terminologie suisse sourcée</span><span class="a">Glossaires à créer</span><span class="b">CHnell, 26 domaines</span></div>
+            <div class="cphv-row"><span class="l">Formats et mise en page</span><span class="a">Oui</span><span class="b">Oui</span></div>
+          </div>
+          <div class="cphv-foot">Vérifié en septembre 2026 · le tableau complet compte onze lignes</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature rev">
+      <div class="feat-txt">
+        <h3><span class="pn">Corrext et les LLM généralistes.</span> Remarquables pour comprendre, insuffisants seuls pour engager</h3>
+        <p>ChatGPT, Azure OpenAI GPT et Claude reformulent, résument et expliquent un passage juridique avec une aisance qu'aucun moteur de traduction classique n'atteint. Le problème n'est pas là : il est dans ce qu'ils ne peuvent pas prouver.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce qu'ils font bien : reformuler, résumer, expliquer, s'adapter au registre, travailler l'ambiguïté d'une clause.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce qu'ils ne fournissent pas seuls : une terminologie suisse sourcée, une référence légale vérifiable, un devis, une relecture commandée.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Un fait que nous documentons : aucun moteur n'est une source de droit, le nôtre compris.</li>
+        </ul>
+        <a href="{{ROOT}}fr/comparatif/chatgpt-traduction-juridique/" class="feat-link">Lire le comparatif Corrext et les LLM généralistes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Extrait du tableau</span></div>
+          <div class="cphv-body">
+            <div class="cphv-row hd"><span></span><span class="a">LLM seul</span><span class="b">Corrext</span></div>
+            <div class="cphv-row"><span class="l">Reformuler, expliquer</span><span class="a">Excellent</span><span class="b">Rephrasing, 5 styles</span></div>
+            <div class="cphv-row"><span class="l">Référence légale vérifiable</span><span class="a">Sans source</span><span class="b">Concordancier sourcé</span></div>
+            <div class="cphv-row"><span class="l">Comparer les moteurs</span><span class="a">Un seul</span><span class="b">4 alternatives</span></div>
+            <div class="cphv-row"><span class="l">Relecture commandée</span><span class="a">Non</span><span class="b">Light, Full, Double</span></div>
+          </div>
+          <div class="cphv-foot">Vérifié en septembre 2026 · Azure OpenAI GPT et Claude sont disponibles dans Corrext</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feat-txt">
+        <h3><span class="pn">Agence de traduction ou plateforme.</span> Deux modèles de travail, pas deux camps</h3>
+        <p>Une agence de traduction juridique apporte ce qu'aucun logiciel ne remplace : une responsabilité contractuelle, un traducteur nommé, une certification. Corrext ne cherche pas à la remplacer. Le tunnel projet commande justement cette relecture externe.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce qu'une agence apporte : responsabilité, relation humaine, certification, métier du document engageant.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce qu'un outil générique apporte : l'immédiateté pour lire et comprendre.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ce que Corrext articule : l'immédiateté d'abord, la relecture humaine sur les seuls documents qui l'exigent.</li>
+        </ul>
+        <a href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" class="feat-link">Lire le comparatif agence ou plateforme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Extrait du tableau</span></div>
+          <div class="cphv-body">
+            <div class="cphv-row hd"><span></span><span class="a">Agence seule</span><span class="b">Corrext</span></div>
+            <div class="cphv-row"><span class="l">Délai de mise en route</span><span class="a">Devis, commande</span><span class="b">Immédiat</span></div>
+            <div class="cphv-row"><span class="l">Qualité sur un acte engageant</span><span class="a">C'est son métier</span><span class="b">Relecture commandée</span></div>
+            <div class="cphv-row"><span class="l">Traduction certifiée</span><span class="a">Oui</span><span class="b">Oui</span></div>
+            <div class="cphv-row"><span class="l">Contrôle du processus</span><span class="a">Hors de chez vous</span><span class="b">Dans la plateforme</span></div>
+          </div>
+          <div class="cphv-foot">Vérifié en septembre 2026 · la relecture externe passe par des traducteurs juridiques et des agences certifiées</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section class="cph-method" id="methode">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Notre méthode de comparaison</h2>
+        <p>Ces pages sont écrites par Neur.on, éditeur de Corrext. Nous ne prétendons donc pas être neutres : nous nous imposons d'être vérifiables. Chaque ligne de chaque tableau porte sur un critère que vous pouvez contrôler vous-même, dans les deux outils, sans nous croire sur parole.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Où vos données sont stockées et traitées <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/neuron-llm/" class="feat-link">Ce qu'est Neur.on LLM, et ce qu'il n'est pas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Ce que nous comparons</b><p>Le lieu de stockage et le lieu de traitement des données, l'existence d'un avertissement avant l'envoi d'un document, la terminologie du droit suisse consultable en contexte, la gestion des références légales suisses, la possibilité de comparer plusieurs moteurs, la relecture humaine commandée dans l'outil, le devis et le délai, la traduction certifiée, les formats et le déploiement.</p></div>
+        <div class="fact"><b>Ce que nous ne comparons pas</b><p>Les prix : ils dépendent de votre volume, de vos langues et de votre niveau de relecture, et une grille comparée n'aurait aucun sens hors contexte. La vitesse brute : tous les moteurs cités traduisent en quelques secondes, l'écart ne décide de rien. La qualité « en général » : elle ne se mesure pas sur une phrase.</p></div>
+        <div class="fact"><b>Ce que nous affirmons des autres</b><p>Uniquement ce qui est public et stable à la date de vérification : la nature générique d'un moteur, la localisation de son infrastructure, l'absence d'une chaîne de relecture juridique intégrée, l'absence d'un concordancier de droit suisse sourcé.<small>Quand un point nous a paru incertain, nous l'avons nuancé plutôt que tranché.</small></p></div>
+        <div class="fact"><b>Ce que nous affirmons de Corrext</b><p>Uniquement ce qui a été observé dans l'application. Les fonctions non vues dans l'interface ne sont pas promises sur ce site.<small>Vérité produit relevée dans Corrext le 14 septembre 2026.</small></p></div>
+        <div class="fact"><b>Les exemples de traduction</b><p>Ce sont des sorties réelles, récoltées dans Corrext à une date donnée, sur des articles de loi suisses publics. Elles illustrent une différence, elles ne mesurent rien : une autre génération, un autre jour, donnerait un autre résultat.<small>Aucun écart de performance chiffré n'est avancé sur ces pages.</small></p></div>
+        <div class="fact"><b>Dernière vérification</b><p>Septembre 2026. Ces pages sont reprises à chaque évolution significative de Corrext ou des solutions comparées.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings" style="padding:84px 0">
+  <div class="container">
+    <h2>Pour aller plus loin</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/corrext/fast-translation/"><b>Fast translation</b><span>Traduire un texte ou un lot de fichiers, comparer les moteurs, vérifier un terme en contexte.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/translation-project/"><b>Translation project</b><span>Relecture interne ou externe en trois niveaux, devis et délai calculés dans l'outil.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Stockage suisse, mode Highly sensitive, ISO 27001, gouvernance des moteurs tiers.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Questions fréquentes sur ces comparatifs</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Ces comparatifs sont-ils neutres ?</summary>
+        <p>Non, et nous préférons le dire : ils sont écrits par Neur.on, éditeur de Corrext. C'est précisément pourquoi ils s'en tiennent à des critères vérifiables par vous-même : lieu de stockage et de traitement des données, terminologie du droit suisse en contexte, gestion des références légales, présence d'une chaîne de relecture, d'un devis et d'une certification. Nous ne comparons ni les prix ni la vitesse brute.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Corrext peut-il utiliser DeepL Pro, Azure OpenAI GPT ou Claude ?</summary>
+        <p>Oui. Ces moteurs sont disponibles dans Corrext, aux côtés de Neur.on LLM, et se choisissent à chaque envoi. Comme ils sont hébergés à l'étranger, leur sélection déclenche l'avis Attorney-Client privilege de votre organisation, qui exige une pseudonymisation complète du document. Notre proposition n'est donc pas de renoncer à ces moteurs, mais de les utiliser dans un cadre qui protège votre secret professionnel.</p>
+      </details>
+      <details class="faq-item">
+        <summary>À quelle date ces comparaisons ont-elles été vérifiées ?</summary>
+        <p>En septembre 2026. Tout ce que nous affirmons de Corrext a été observé dans l'application le 14 septembre 2026. Ce que nous affirmons des autres solutions se limite à ce qui est public et stable à cette date. Les exemples de traduction sont des sorties réelles et ponctuelles, datées, jamais des mesures statistiques.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>La meilleure comparaison se fait sur vos documents</h2>
+      <p>Une démo avec un spécialiste du droit suisse, sur vos formats, vos langues et votre terminologie. Vous comparez les moteurs vous-même, dans l'interface.</p>
+      <div class="final-cta-btns">
+        <a href="contact.html" class="btn btn-blue">
+          Demander une démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/" class="btn-outline">Découvrir la plateforme Corrext</a>
+      </div>
+      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · stockage 100% suisse</p>
+    </div>
+  </div>
+</section>

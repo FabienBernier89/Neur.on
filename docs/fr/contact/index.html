@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact et démo · Neur.on, traduction juridique en Suisse</title>
+<meta name="description" content="Demandez une démo de Corrext par Neur.on : un expert du droit suisse vous la montre sur vos documents, vos langues et votre terminologie, depuis Fribourg.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/fr/contact/">
+<meta property="og:title" content="Contact et démo · Neur.on, traduction juridique en Suisse">
+<meta property="og:description" content="Demandez une démo de Corrext par Neur.on : un expert du droit suisse vous la montre sur vos documents, vos langues et votre terminologie, depuis Fribourg.">
+<meta property="og:url" content="https://neur-on.ai/fr/contact/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="fr_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/neuron.css?v=3c031066">
+<style>/* ============ HERO DE CONVERSION : pas de cadre débordant, on referme le bas ============ */
+.cf-hero{padding:34px 0 66px}
+.cf-hero .thero-grid{align-items:start;padding-bottom:0}
+
+/* ============ CORPS : formulaire + colonne de réassurance ============ */
+.cf{padding:74px 0 86px;background:linear-gradient(180deg,var(--bg) 0%,#fff 52%)}
+.cf-grid{display:grid;grid-template-columns:1.32fr 1fr;gap:56px;align-items:start}
+
+/* Formulaire */
+.cf-form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:34px 34px 30px;box-shadow:0 34px 76px -50px rgba(8,24,68,.34)}
+.cf-form h2{font-size:clamp(22px,2.4vw,27px);margin-bottom:8px}
+.cf-intro{font-size:14.5px;color:var(--muted);line-height:1.6;margin-bottom:26px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.cf-f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.cf-f label,.cf-set legend{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.cf-req{color:var(--blue-d);font-weight:700}
+.cf-in{
+  width:100%;font-family:inherit;font-size:14.5px;color:var(--ink);
+  background:#fff;border:1.5px solid var(--line-2);border-radius:10px;
+  padding:11px 13px;transition:border-color .2s,box-shadow .2s;
+}
+select.cf-in{
+  appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:36px;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b6880' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;background-size:15px;
+}
+textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
+.cf-in:hover{border-color:var(--blue-pale)}
+.cf-in:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(49,123,255,.16)}
+.cf-in:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.cf-hint{font-size:12.5px;color:var(--muted);line-height:1.5}
+
+/* Cases à cocher : langues */
+.cf-set{border:0;margin-bottom:16px}
+.cf-set legend{padding:0;margin-bottom:10px}
+.cf-checks{display:flex;flex-wrap:wrap;gap:9px}
+.cf-check{
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+  border:1.5px solid var(--line-2);border-radius:10px;padding:9px 14px 9px 12px;
+  font-size:14px;color:var(--ink);transition:border-color .2s,background .2s;
+}
+.cf-check:hover{border-color:var(--blue-pale);background:rgba(49,123,255,.04)}
+.cf-check input{width:16px;height:16px;accent-color:var(--blue-d);cursor:pointer;flex-shrink:0}
+.cf-check:has(input:checked){border-color:var(--blue);background:rgba(49,123,255,.06)}
+
+/* Consentement */
+.cf-consent{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;
+  border-top:1px solid var(--line);margin-top:22px;padding-top:20px}
+.cf-consent input{width:17px;height:17px;margin-top:2px;accent-color:var(--blue-d);cursor:pointer;flex-shrink:0}
+.cf-consent label{font-size:13.5px;color:var(--text);line-height:1.6;font-weight:400}
+.cf-consent a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.cf-send{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.cf-send .btn-blue{padding:15px 28px;font-size:15px}
+.cf-usage{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* Colonne de réassurance */
+.cf-side{display:flex;flex-direction:column;gap:30px;position:sticky;top:96px}
+.cf-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 26px 24px}
+.cf-card h2{font-size:18.5px;margin-bottom:14px;letter-spacing:-.02em}
+.cf-card h3{font-size:13px;font-weight:700;color:var(--muted);text-transform:none;margin-bottom:8px}
+.cf-steps{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.cf-steps div{display:grid;grid-template-columns:auto 1fr;gap:13px;padding:14px 0;
+  border-bottom:1px solid var(--line);font-size:14px;color:var(--text);line-height:1.55;align-items:start}
+.cf-steps div:last-child{border-bottom:0;padding-bottom:0}
+.cf-steps .n{font-weight:800;font-size:13px;color:var(--blue-d);font-variant-numeric:tabular-nums;margin-top:1px}
+.cf-steps b{display:block;color:var(--ink);font-weight:700;margin-bottom:2px}
+.cf-adr{font-size:14.5px;color:var(--text);line-height:1.7;font-style:normal}
+.cf-adr b{color:var(--ink)}
+.cf-adr a{color:var(--blue-d);font-weight:600}
+.cf-adr a:hover{text-decoration:underline}
+.cf-langs{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.cf-langs span{font-size:13px;font-weight:600;color:var(--navy);background:var(--blue-pale);border-radius:10px;padding:5px 11px}
+.cf-seal{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.cf-seal span{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--text);line-height:1.5}
+.cf-seal svg{width:16px;height:16px;color:var(--blue-d);flex-shrink:0;margin-top:2px}
+
+@media(max-width:940px){
+  .cf{padding:48px 0 62px}
+  .cf-grid{grid-template-columns:1fr;gap:34px}
+  .cf-row{grid-template-columns:1fr;gap:16px}
+  .cf-form{padding:26px 22px 24px}
+  .cf-side{position:static}
+}
+@media(max-width:560px){
+  .cf-form{padding:22px 18px 20px}
+  .cf-check{width:100%}
+}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "ContactPage",
+ "name": "Contact et démo · Neur.on",
+ "url": "https://neur-on.ai/fr/contact/",
+ "inLanguage": "fr-CH",
+ "mainEntity": {
+  "@type": "Organization",
+  "name": "Neur.on",
+  "legalName": "Neur.on AI Solutions SA",
+  "url": "https://neur-on.ai/",
+  "email": "contact@neur-on.ai",
+  "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Place de la Gare 15",
+   "postalCode": "1700",
+   "addressLocality": "Fribourg",
+   "addressRegion": "FR",
+   "addressCountry": "CH"
+  },
+  "contactPoint": {
+   "@type": "ContactPoint",
+   "contactType": "Demande de démonstration",
+   "email": "contact@neur-on.ai",
+   "areaServed": "CH",
+   "availableLanguage": ["fr", "de", "it", "en"]
+  }
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Que se passe-t-il après ma demande ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un premier échange de cadrage : vos langues, vos types de documents, vos contraintes de confidentialité et la façon dont vos traductions circulent aujourd'hui. Vient ensuite une démonstration de Corrext construite sur ce cadrage, puis, si l'outil correspond, un essai encadré avec un périmètre, des utilisateurs et une durée définis ensemble."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "La démo se fait-elle sur nos propres documents ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, c'est le principe. Vous apportez des documents représentatifs de votre pratique et nous les traitons dans Corrext pendant la séance, dans vos paires de langues et avec votre terminologie. Pour des pièces sensibles, la démonstration se fait en mode Highly sensitive content : stockage et traitement exclusivement en Suisse. Un accord de confidentialité peut être signé avant la séance."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Existe-t-il un essai gratuit en libre-service ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non, et c'est un choix assumé. Corrext traite des documents couverts par le secret professionnel ou le secret bancaire : les droits d'accès, la politique de moteurs, la terminologie et les mémoires se paramètrent avec vous. Un formulaire d'inscription en libre-service ne permet ni ce cadrage ni cette responsabilité. L'essai existe, mais il est encadré et il suit la démonstration."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Dans quelles langues pouvons-nous échanger ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En français, en allemand, en italien et en anglais, à l'écrit comme en séance. Ce sont les quatre langues natives de Neur.on LLM et celles de la pratique juridique suisse."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://neur-on.ai/fr/contact/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="nav" id="siteNav" data-active="">
+  <div class="container nav-inner">
+    <a href="../../fr/" class="logo" aria-label="Neur.on, retour à l'accueil">Neur<span>.</span>on</a>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="neuron-llm">
+        <a href="../../fr/neuron-llm/" class="nav-a">Neur.on LLM</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Langue">
+        <a href="../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span class="sep">·</span>
+        <a class="on" href="../../fr/" aria-current="true">FR</a><span class="sep">·</span>
+        <a href="../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span class="sep">·</span>
+        <a href="../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+      </div>
+      <a href="../../fr/contact/" class="btn btn-blue">Demander une démo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Ouvrir le menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La plateforme</p>
+        <a href="../../fr/corrext/"><b>Corrext, le poste de commande</b><span>Projets, devis, ressources et droits dans un seul environnement suisse</span></a>
+        <a href="../../fr/neuron-llm/"><b>Neur.on LLM</b><span>Le moteur entraîné sur le droit et la finance suisses</span></a>
+        <a href="../../fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Où vos données sont stockées, traitées et par quel moteur</span></a>
+        <a href="../../fr/corrext/api-on-premises/"><b>API et on-premises</b><span>Intégration à vos DMS, intranets et workflows</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Les quatre outils</p>
+        <a href="../../fr/corrext/fast-translation/"><b>Fast translation</b><span>Texte, fichiers, PDF vers Word, réécriture</span></a>
+        <a href="../../fr/corrext/translation-project/"><b>Translation project</b><span>Relecture humaine à la carte, devis et délai instantanés</span></a>
+        <a href="../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse, 26 domaines</span></a>
+        <a href="../../fr/corrext/extraits-registre-commerce/"><b>Extraits du registre</b><span>Traduction certifiée, notariée, apostillée</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Aller plus loin</p>
+        <a href="../../fr/niveaux-de-qualite/"><b>Quatre niveaux de qualité</b><span>De la traduction machine à la certification</span></a>
+        <a href="../../fr/langues-et-formats/"><b>Langues et formats</b><span>30 langues, quatre natives, tous vos formats bureautiques</span></a>
+        <a href="../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Centre d'aide</b><span>Comment faire, étape par étape</span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Essayez sans inscription</p>
+        <p class="mega-p">L'interface de Corrext, reproduite à l'identique sur trois extraits de droit suisse.</p>
+        <a href="../../fr/corrext/fast-translation/#demo" class="mega-cta">Ouvrir la démo en direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Par métier</p>
+        <a href="../../fr/solutions/cabinets-avocats/"><b>Cabinets d'avocats</b></a>
+        <a href="../../fr/solutions/banques-finance/"><b>Banques et finance</b></a>
+        <a href="../../fr/solutions/directions-juridiques/"><b>Directions juridiques et Legal Ops</b></a>
+        <a href="../../fr/solutions/autorites-administration/"><b>Autorités et administration</b></a>
+        <a href="../../fr/solutions/fiduciaires-conseil/"><b>Fiduciaires et conseil</b></a>
+        <a href="../../fr/solutions/editeurs-legaltech/"><b>LegalTechs et éditeurs</b></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par domaine du droit</p>
+        <a href="../../fr/traduction/contrats/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Contrats</b></a>
+        <a href="../../fr/traduction/droit-des-societes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Droit des sociétés</b></a>
+        <a href="../../fr/traduction/fusions-acquisitions/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Fusions et acquisitions</b></a>
+        <a href="../../fr/traduction/contentieux-arbitrage/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Contentieux et arbitrage</b></a>
+        <a href="../../fr/traduction/banque-finance/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Banque et finance</b></a>
+        <a href="../../fr/traduction/compliance-finma/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Compliance et FINMA</b></a>
+        <a href="../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt" class="mega-all">Les treize domaines <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Par paire de langues</p>
+        <a href="../../fr/traduction/allemand-francais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Allemand vers français</b></a>
+        <a href="../../fr/traduction/francais-allemand/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Français vers allemand</b></a>
+        <a href="../../fr/traduction/allemand-anglais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Allemand vers anglais</b></a>
+        <a href="../../fr/traduction/francais-anglais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Français vers anglais</b></a>
+        <a href="../../fr/traduction/italien-francais/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Italien vers français</b></a>
+        <a href="../../fr/traduction/anglais-allemand/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Anglais vers allemand</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Vous hésitez encore ?</p>
+        <p class="mega-p">Ce que Corrext fait que les outils génériques ne font pas, comparé point par point.</p>
+        <a href="../../fr/comparatif/" class="mega-cta">Voir les comparatifs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Comprendre</p>
+        <a href="../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Blog</b><span>Droit suisse, traduction et intelligence artificielle</span></a>
+        <a href="../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Guides</b><span>Méthodes de fond, signées par nos spécialistes</span></a>
+        <a href="../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Études et benchmarks</b><span>Nos mesures sur corpus de droit suisse</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consulter</p>
+        <a href="../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Glossaire juridique suisse</b><span>Chaque terme en allemand, français, italien et anglais</span></a>
+        <a href="../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Centre d'aide Corrext</b><span>Prise en main et réponses pratiques</span></a>
+        <a href="../../fr/aide/faq/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Questions fréquentes</b><span>Sécurité, langues, formats, relecture</span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Comparer</p>
+        <a href="../../fr/comparatif/deepl-traduction-juridique/"><b>Corrext et DeepL</b></a>
+        <a href="../../fr/comparatif/chatgpt-traduction-juridique/"><b>Corrext et les LLM généralistes</b></a>
+        <a href="../../fr/comparatif/agence-ou-plateforme/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt"><b>Agence de traduction ou plateforme</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Une société suisse, une infrastructure suisse, un moteur entraîné sur le droit suisse.</p>
+        <a href="../../fr/a-propos/" class="mega-cta">À propos et distinctions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../fr/corrext/">Corrext, la plateforme</a>
+        <a href="../../fr/corrext/fast-translation/">Fast translation</a>
+        <a href="../../fr/corrext/translation-project/">Translation project</a>
+        <a href="../../fr/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a>
+        <a href="../../fr/corrext/api-on-premises/">API et on-premises</a>
+        <a href="../../fr/neuron-llm/">Neur.on LLM</a>
+        <a href="../../fr/securite-souverainete/">Sécurité et souveraineté</a>
+        <a href="../../fr/niveaux-de-qualite/">Niveaux de qualité</a>
+        <a href="../../fr/langues-et-formats/">Langues et formats</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../fr/solutions/cabinets-avocats/">Cabinets d'avocats</a>
+        <a href="../../fr/solutions/banques-finance/">Banques et finance</a>
+        <a href="../../fr/solutions/directions-juridiques/">Directions juridiques et Legal Ops</a>
+        <a href="../../fr/solutions/autorites-administration/">Autorités et administration</a>
+        <a href="../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a>
+        <a href="../../fr/solutions/editeurs-legaltech/">LegalTechs et éditeurs</a>
+        <a href="../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Traduction par domaine</a>
+        <a href="../../fr/comparatif/">Comparatifs</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a>
+        <a href="../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a>
+        <a href="../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Glossaire juridique suisse</a>
+        <a href="../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a>
+        <a href="../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Centre d'aide</a>
+        <a href="../../fr/a-propos/">À propos</a>
+      </div>
+    </div>
+    <a href="../../fr/contact/" class="btn btn-blue nm-cta">Demander une démo</a>
+    <div class="nm-langs" aria-label="Langue">
+      <a href="../../de/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">DE</a><span>·</span>
+      <a class="on" href="../../fr/" aria-current="true">FR</a><span>·</span>
+      <a href="../../it/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">IT</a><span>·</span>
+      <a href="../../en/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../fr/">Accueil</a></li><li><span aria-current="page">Contact</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="thero cf-hero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Demandez une démo.</em> Corrext, ouvert sur vos propres documents</h1>
+        <p class="lead">Ce n'est pas une visite guidée générique : un expert qui connaît le droit suisse ouvre la plateforme sur vos documents, dans vos paires de langues, avec votre terminologie. Il n'existe pas d'essai gratuit en libre-service et c'est un choix assumé : un outil qui traite des pièces couvertes par le secret professionnel se met en place avec vous, pas derrière un bouton d'inscription.</p>
+        <div class="thero-cta">
+          <a href="#demande" class="btn btn-blue">
+            Aller au formulaire
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#suite" class="btn btn-ghost">Ce qui se passe ensuite</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><b>Sur vos documents :</b> vos formats, vos paires de langues, votre terminologie, pas un jeu de démonstration</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Quatre langues d'échange :</b> français, allemand, italien, anglais</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>ISO&nbsp;27001</b> et hébergement en Suisse : la démonstration se fait sous mode Highly sensitive content si vos pièces l'exigent</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAIRE + RÉASSURANCE -->
+<section class="cf">
+  <div class="container">
+    <div class="cf-grid">
+
+      <!-- À CÂBLER : action du formulaire (HubSpot, Formspree ou endpoint Neur.on) -->
+      <form class="cf-form" id="demande" method="post" action="#" aria-labelledby="cf-title">
+        <h2 id="cf-title">Demander une démonstration</h2>
+        <p class="cf-intro">Les champs marqués d'un astérisque sont obligatoires. Plus vous décrivez votre contexte, plus la démonstration sera proche de votre pratique.</p>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-prenom">Prénom <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="text" id="cf-prenom" name="prenom" autocomplete="given-name" required>
+          </div>
+          <div class="cf-f">
+            <label for="cf-nom">Nom <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="text" id="cf-nom" name="nom" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-email">E-mail professionnel <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="email" id="cf-email" name="email" autocomplete="email" inputmode="email" required>
+          </div>
+          <div class="cf-f">
+            <label for="cf-organisation">Organisation <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="text" id="cf-organisation" name="organisation" autocomplete="organization" required>
+          </div>
+        </div>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-fonction">Fonction <span class="cf-req" aria-hidden="true">*</span></label>
+            <select class="cf-in" id="cf-fonction" name="fonction" autocomplete="organization-title" required>
+              <option value="">Choisissez votre fonction</option>
+              <option value="avocat">Avocat ou associé de cabinet</option>
+              <option value="juriste-entreprise">Juriste d'entreprise</option>
+              <option value="compliance">Compliance ou risque</option>
+              <option value="traduction">Traduction, terminologie ou documentation</option>
+              <option value="direction">Direction ou direction générale</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="cf-f">
+            <label for="cf-taille">Taille de l'organisation</label>
+            <select class="cf-in" id="cf-taille" name="taille" autocomplete="off">
+              <option value="">Choisissez une taille</option>
+              <option value="1-10">1 à 10 personnes</option>
+              <option value="11-50">11 à 50 personnes</option>
+              <option value="51-200">51 à 200 personnes</option>
+              <option value="201-1000">201 à 1000 personnes</option>
+              <option value="1000+">Plus de 1000 personnes</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="cf-set">
+          <legend>Langues concernées</legend>
+          <div class="cf-checks">
+            <label class="cf-check" for="cf-lang-de"><input type="checkbox" id="cf-lang-de" name="langues" value="allemand" autocomplete="off"><span>Allemand</span></label>
+            <label class="cf-check" for="cf-lang-fr"><input type="checkbox" id="cf-lang-fr" name="langues" value="francais" autocomplete="off"><span>Français</span></label>
+            <label class="cf-check" for="cf-lang-it"><input type="checkbox" id="cf-lang-it" name="langues" value="italien" autocomplete="off"><span>Italien</span></label>
+            <label class="cf-check" for="cf-lang-en"><input type="checkbox" id="cf-lang-en" name="langues" value="anglais" autocomplete="off"><span>Anglais</span></label>
+            <label class="cf-check" for="cf-lang-autre"><input type="checkbox" id="cf-lang-autre" name="langues" value="autre" autocomplete="off"><span>Autre langue</span></label>
+          </div>
+        </fieldset>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-volume">Volume mensuel approximatif</label>
+            <select class="cf-in" id="cf-volume" name="volume" autocomplete="off">
+              <option value="">Choisissez un ordre de grandeur</option>
+              <option value="ponctuel">Ponctuel, quelques documents par mois</option>
+              <option value="moins-100">Moins de 100 pages par mois</option>
+              <option value="100-500">100 à 500 pages par mois</option>
+              <option value="500-2000">500 à 2000 pages par mois</option>
+              <option value="plus-2000">Plus de 2000 pages par mois</option>
+              <option value="inconnu">Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="cf-f">
+            <label for="cf-sujet">Ce que vous traduisez le plus souvent</label>
+            <input class="cf-in" type="text" id="cf-sujet" name="sujet" autocomplete="off" placeholder="Contrats, pièces de procédure, rapports FINMA...">
+          </div>
+        </div>
+
+        <div class="cf-f" style="margin-bottom:4px">
+          <label for="cf-message">Votre message</label>
+          <textarea class="cf-in" id="cf-message" name="message" autocomplete="off" placeholder="Votre contexte, vos contraintes de confidentialité, les outils déjà en place, les documents que vous aimeriez voir traités pendant la démonstration."></textarea>
+          <p class="cf-hint">N'envoyez aucune pièce confidentielle par ce formulaire : les documents de la démonstration se transmettent dans un cadre convenu ensemble.</p>
+        </div>
+
+        <div class="cf-consent">
+          <input type="checkbox" id="cf-consent" name="consentement" value="oui" autocomplete="off" required>
+          <label for="cf-consent">J'accepte que Neur.on AI Solutions SA traite ces informations pour répondre à ma demande, conformément à la <a href="https://neur-on.ai/confidentialite">politique de protection des données</a>. <span class="cf-req" aria-hidden="true">*</span></label>
+        </div>
+
+        <div class="cf-send">
+          <button type="submit" class="btn btn-blue">
+            Envoyer ma demande
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <span class="cf-hint">Vous préférez écrire ? <a href="mailto:contact@neur-on.ai" style="color:var(--blue-d);font-weight:600">contact@neur-on.ai</a></span>
+        </div>
+
+        <p class="cf-usage">Ces informations ne servent qu'à traiter votre demande de démonstration et à préparer l'échange. Elles ne sont ni revendues, ni cédées à des tiers, et n'entraînent aucune inscription automatique à une lettre d'information.</p>
+      </form>
+
+      <!-- Colonne de réassurance -->
+      <div class="cf-side">
+        <div class="cf-card" id="suite">
+          <h2>Ce qui se passe après l'envoi</h2>
+          <div class="cf-steps">
+            <div><span class="n">1</span><span><b>Un échange de cadrage</b>Vos langues, vos types de documents, vos contraintes de confidentialité et la façon dont vos traductions circulent aujourd'hui.</span></div>
+            <div><span class="n">2</span><span><b>Une démonstration sur vos documents</b>Corrext ouvert sur des pièces représentatives de votre pratique, avec le moteur, le mode et la terminologie qui correspondent à votre cas.</span></div>
+            <div><span class="n">3</span><span><b>Un essai encadré</b>Si l'outil correspond, un essai avec un périmètre, des utilisateurs et une durée définis ensemble. Jamais un accès anonyme en libre-service.</span></div>
+          </div>
+        </div>
+
+        <div class="cf-card">
+          <h2>Nous écrire, nous trouver</h2>
+          <address class="cf-adr">
+            <b>Neur.on AI Solutions SA</b><br>
+            Place de la Gare 15<br>
+            1700 Fribourg, Suisse<br>
+            <a href="mailto:contact@neur-on.ai">contact@neur-on.ai</a>
+          </address>
+          <h3 style="margin-top:20px">Langues d'échange</h3>
+          <div class="cf-langs">
+            <span>Français</span><span>Allemand</span><span>Italien</span><span>Anglais</span>
+          </div>
+        </div>
+
+        <div class="cf-card">
+          <h2>Le cadre, avant même la démo</h2>
+          <div class="cf-seal">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Certification ISO&nbsp;27001 obtenue en février 2024.</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9 6 9-6M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7M3 7l9-4 9 4"/></svg><span>Hébergement en Suisse, chez Exoscale, à Genève et à Dietikon.</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Accord de confidentialité signé avant la séance si vos pièces l'exigent.</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Mode Highly sensitive content : stockage et traitement exclusivement en Suisse.</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Avant de remplir le formulaire</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Que se passe-t-il après ma demande ?</summary>
+        <p>Un premier échange de cadrage : vos langues, vos types de documents, vos contraintes de confidentialité et la façon dont vos traductions circulent aujourd'hui. Vient ensuite une démonstration de Corrext construite sur ce cadrage, puis, si l'outil correspond, un essai encadré avec un périmètre, des utilisateurs et une durée définis ensemble.</p>
+      </details>
+      <details class="faq-item">
+        <summary>La démo se fait-elle sur nos propres documents ?</summary>
+        <p>Oui, c'est le principe. Vous apportez des documents représentatifs de votre pratique et nous les traitons dans Corrext pendant la séance, dans vos paires de langues et avec votre terminologie. Pour des pièces sensibles, la démonstration se fait en mode Highly sensitive content : stockage et traitement exclusivement en Suisse. Un accord de confidentialité peut être signé avant la séance.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Existe-t-il un essai gratuit en libre-service ?</summary>
+        <p>Non, et c'est un choix assumé. Corrext traite des documents couverts par le secret professionnel ou le secret bancaire : les droits d'accès, la politique de moteurs, la terminologie et les mémoires se paramètrent avec vous. Un formulaire d'inscription en libre-service ne permet ni ce cadrage ni cette responsabilité. L'essai existe, mais il est encadré et il suit la démonstration.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Dans quelles langues pouvons-nous échanger ?</summary>
+        <p>En français, en allemand, en italien et en anglais, à l'écrit comme en séance. Ce sont les quatre langues natives de Neur.on LLM et celles de la pratique juridique suisse.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Une question avant de nous écrire ?</h2>
+      <p>Si votre sujet ne rentre pas dans un formulaire, un message suffit. Nous répondons en français, en allemand, en italien ou en anglais.</p>
+      <div class="final-cta-btns">
+        <a href="mailto:contact@neur-on.ai" class="btn btn-blue">
+          contact@neur-on.ai
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#demande" class="btn-outline">Revenir au formulaire</a>
+      </div>
+      <p class="micro">Neur.on AI Solutions SA · Place de la Gare 15, 1700 Fribourg · ISO&nbsp;27001 · hébergement en Suisse</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../fr/" class="logo">Neur<span>.</span>on</a>
+        <p>Le moteur de traduction du droit, de la fiscalité et de la finance suisses. Une solution entièrement suisse : entité, infrastructure et moteur Neur.on LLM, pour une précision quadrilingue et une souveraineté totale des données.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hébergement en Suisse (Exoscale) · nLPD et RGPD</p>
+      </div>
+      <div>
+        <h5>Plateforme</h5>
+        <ul>
+          <li><a href="../../fr/corrext/">Corrext, la plateforme</a></li>
+          <li><a href="../../fr/corrext/fast-translation/">Fast translation</a></li>
+          <li><a href="../../fr/corrext/translation-project/">Translation project</a></li>
+          <li><a href="../../fr/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../fr/corrext/extraits-registre-commerce/">Extraits du registre</a></li>
+          <li><a href="../../fr/corrext/api-on-premises/">API et on-premises</a></li>
+          <li><a href="../../fr/neuron-llm/">Neur.on LLM, le moteur</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="../../fr/solutions/cabinets-avocats/">Cabinets d'avocats</a></li>
+          <li><a href="../../fr/solutions/banques-finance/">Banques et finance</a></li>
+          <li><a href="../../fr/solutions/directions-juridiques/">Directions juridiques</a></li>
+          <li><a href="../../fr/solutions/autorites-administration/">Autorités et administration</a></li>
+          <li><a href="../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a></li>
+          <li><a href="../../fr/solutions/editeurs-legaltech/">LegalTechs et éditeurs</a></li>
+          <li><a href="../../fr/traduction/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Traduction par domaine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ressources</h5>
+        <ul>
+          <li><a href="../../fr/ressources/blog/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Blog</a></li>
+          <li><a href="../../fr/ressources/guides/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Guides</a></li>
+          <li><a href="../../fr/ressources/glossaire/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Glossaire juridique</a></li>
+          <li><a href="../../fr/ressources/etudes/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Études et benchmarks</a></li>
+          <li><a href="../../fr/comparatif/">Comparatifs</a></li>
+          <li><a href="../../fr/aide/" class="soon" aria-disabled="true" tabindex="-1" data-soon="bientôt">Centre d'aide</a></li>
+          <li><a href="../../fr/securite-souverainete/">Sécurité et souveraineté</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Neur.on</h5>
+        <ul class="footer-contact">
+          <li><a href="../../fr/a-propos/">À propos et distinctions</a></li>
+          <li><a href="../../fr/a-propos/presse/">Presse</a></li>
+          <li><a href="../../fr/contact/">Demander une démo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@neur-on.ai">contact@neur-on.ai</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Fribourg, Suisse. Tous droits réservés.</span>
+      <div class="links">
+        <a href="https://neur-on.ai/mentions-legales">Mentions légales</a>
+        <a href="https://neur-on.ai/confidentialite">Protection des données</a>
+        <a href="https://neur-on.ai/cgu">CGU</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/nav.js?v=3c031066" defer></script>
+</body>
+</html>

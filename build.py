@@ -18,7 +18,16 @@ SITE = "https://neur-on.ai"
 LANG = "fr"
 PRODUCTION = "--production" in sys.argv
 TODAY = datetime.date.today().isoformat()
-ASSET_V = "20260915b"
+def _asset_version():
+    import hashlib
+    h = hashlib.sha1()
+    for f in sorted(os.listdir(os.path.join(BASE, "assets"))):
+        if f.endswith((".css", ".js")):
+            h.update(open(os.path.join(BASE, "assets", f), "rb").read())
+    return h.hexdigest()[:8]
+
+
+ASSET_V = _asset_version()
 
 # Anciens noms de fichiers plats vers les chemins du site
 LEGACY = {

@@ -734,3 +734,14 @@ body.nav-open{overflow:hidden}
 .footer-iso{margin-top:14px;font-size:12.5px;color:var(--sky)}
 @media(max-width:940px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
+/* Les langues non encore publiées restent discrètes, sans badge « bientôt » */
+.lang-switch a.soon::after{content:none}
+.lang-switch a.soon{opacity:.45}
+@media(max-width:940px){
+  .nav-inner > .nav-cta > .lang-switch{display:none}
+  .nm-langs{display:flex;align-items:center;gap:4px;margin-top:26px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;font-weight:600;color:var(--muted)}
+  .nm-langs a{padding:6px 10px;border-radius:8px}
+  .nm-langs a.on{color:var(--navy);background:var(--tint)}
+  .nm-langs a.soon{opacity:.45}
+  .nm-langs a.soon::after{content:none}
+}

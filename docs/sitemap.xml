@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://neur-on.ai/fr/</loc><lastmod>2026-09-15</lastmod><priority>1.0</priority></url>
+  <url><loc>https://neur-on.ai/fr/a-propos/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/a-propos/presse/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/comparatif/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/contact/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/corrext/api-on-premises/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/chnell/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/extraits-registre-commerce/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/fast-translation/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/translation-project/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/langues-et-formats/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/neuron-llm/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/niveaux-de-qualite/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/securite-souverainete/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/autorites-administration/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/banques-finance/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/cabinets-avocats/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/directions-juridiques/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/editeurs-legaltech/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/solutions/fiduciaires-conseil/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
 </urlset>
