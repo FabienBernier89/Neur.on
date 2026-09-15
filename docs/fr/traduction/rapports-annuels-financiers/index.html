@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9a72ca12">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -31,6 +31,7 @@
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -38,7 +39,7 @@
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}</style>
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Les tableaux Excel sont-ils traduits sans casser la structure ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les fichiers .xls et .xlsx sont pris en charge comme les autres formats bureautiques et reviennent dans leur format d'origine, structure de tableau conservée. Pour un fichier complexe, il vaut mieux déposer le format natif plutôt qu'un export PDF."}}, {"@type": "Question", "name": "Quels libellés comptables faut-il employer ?", "acceptedAnswer": {"@type": "Answer", "text": "Ceux du titre 32 du Code des obligations, qui nomme le bilan, le compte de résultat et l'annexe dans les trois langues officielles. Les usages de place existent, mais un rapport publié gagne à reprendre le vocabulaire légal, que le concordancier affiche avec sa source."}}, {"@type": "Question", "name": "Un rapport non encore publié est-il protégé ?", "acceptedAnswer": {"@type": "Answer", "text": "Le stockage se fait sur des serveurs suisses dans tous les cas. Pour un rapport sous embargo, le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."}}, {"@type": "Question", "name": "Faut-il tout faire relire par un humain ?", "acceptedAnswer": {"@type": "Answer", "text": "Rarement. Le texte de gestion, qui sera lu et cité, justifie une Full review. Les annexes très standardisées peuvent se contenter d'une Light review, voire d'une Internal review par vos équipes, dont le tunnel projet chiffre le temps à partir du nombre de pages détecté."}}, {"@type": "Question", "name": "Comment gagner du temps d'une clôture à l'autre ?", "acceptedAnswer": {"@type": "Answer", "text": "En réutilisant la mémoire de traduction constituée par les projets en confidentialité Standard : les passages inchangés ne sont pas retraduits et le travail se concentre sur les nouveautés de l'exercice. La mémoire reste réutilisable exclusivement par votre organisation. Le rapport de l'organe de révision, très stable, en profite particulièrement."}}, {"@type": "Question", "name": "Dans quelles langues peut-on publier ?", "acceptedAnswer": {"@type": "Answer", "text": "L'allemand, le français, l'italien et l'anglais sont natifs dans toutes les paires, ce qui couvre les besoins d'un rapport suisse. La plateforme prend en charge 30 langues au total pour les publications destinées à des investisseurs étrangers. Le choix des langues se fait document par document dans le tunnel projet."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Rapports annuels", "item": "https://neur-on.ai/fr/traduction/rapports-annuels-financiers/"}]}</script>
 </head>
@@ -229,10 +230,10 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Rapports annuels</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Rapports annuels</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -243,7 +244,11 @@
           <a href="#faits" class="btn btn-ghost">Ce que Corrext apporte</a>
         </div>
       </div>
-      <div class="thero-promise"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Tableaux préservés :</b> fichiers .xls et .xlsx traités comme les documents Word</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Vocabulaire du CO :</b> bilan, compte de résultat, annexe : les libellés officiels</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Reprise d'une année sur l'autre :</b> la mémoire de traduction évite de retraduire l'identique</span></span></div>
+      <div class="law-spec">
+        <div class="sh"><b>Terminologie officielle</b><span>8 termes</span></div>
+        <div class="sr first"><i>Allemand</i><b>Geschäftsbericht</b></div><div class="sr"><i>Français</i><b>rapport de gestion</b></div><div class="sr"><i>Italien</i><b>relazione sulla gestione</b></div><div class="sr"><i>Anglais</i><b>annual report</b></div>
+        <div class="sf">art. 958 CO · vérifiable dans Fast lookup CHnell</div>
+      </div>
     </div>
   </div>
 </section>
@@ -388,6 +393,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

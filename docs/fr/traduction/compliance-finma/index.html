@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9a72ca12">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -31,6 +31,7 @@
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -38,7 +39,7 @@
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}</style>
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Une donnée de client peut-elle passer par un moteur de traduction ?", "acceptedAnswer": {"@type": "Answer", "text": "Cela dépend du moteur et du mode. Le stockage reste suisse dans tous les cas ; avec Neur.on LLM ou en mode Highly sensitive content, le traitement l'est aussi. Les moteurs hébergés à l'étranger affichent un avertissement et supposent des documents entièrement pseudonymisés."}}, {"@type": "Question", "name": "Comment garder des directives identiques dans quatre langues ?", "acceptedAnswer": {"@type": "Answer", "text": "En travaillant à partir d'une mémoire de traduction propre à votre organisation, alimentée par les projets en confidentialité Standard, et en fixant les termes sensibles dans vos propres ressources terminologiques, que Fast lookup CHnell affiche à côté de ses 26 domaines sourcés."}}, {"@type": "Question", "name": "La terminologie de surveillance est-elle couverte ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Le concordancier comprend un domaine Supervisory (FINMA) et un domaine Banking & Finance, alimentés par des sources officielles. Chaque occurrence s'ouvre en contexte avec sa référence, ce qui permet de vérifier un terme avant de le figer dans une directive."}}, {"@type": "Question", "name": "Peut-on traduire un support de formation en PowerPoint ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les formats .ppt et .pptx sont pris en charge comme Word, Excel et PDF, jusqu'à 25 fichiers de 50 Mo par envoi. Le support revient dans sa mise en page, ce qui évite de reconstruire les diapositives après traduction."}}, {"@type": "Question", "name": "Quel niveau de relecture pour un document remis à l'autorité ?", "acceptedAnswer": {"@type": "Answer", "text": "Au minimum une Full review par un traducteur juridique, qui vérifie le texte ligne à ligne. Quand une attestation est attendue, la Double review mobilise deux traducteurs et une agence spécialisée et délivre un certificat. Le choix se fait document par document."}}, {"@type": "Question", "name": "Les traductions laissent-elles une trace exploitable en audit ?", "acceptedAnswer": {"@type": "Answer", "text": "Le tunnel Translation project enregistre le niveau de relecture retenu et le délai validé pour chaque document, ce qui documente le geste. Le mode de confidentialité choisi détermine par ailleurs si le contenu peut ou non alimenter une mémoire de traduction."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Compliance et FINMA", "item": "https://neur-on.ai/fr/traduction/compliance-finma/"}]}</script>
 </head>
@@ -229,10 +230,10 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Compliance et FINMA</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Compliance et FINMA</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -243,7 +244,11 @@
           <a href="#faits" class="btn btn-ghost">Ce que Corrext apporte</a>
         </div>
       </div>
-      <div class="thero-promise"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Vocabulaire de la LBA :</b> diligence, ayant droit économique, obligation de communiquer</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Traitement en Suisse :</b> Neur.on LLM ou mode Highly sensitive content</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Cohérence des directives :</b> mémoire de traduction propre à votre organisation</span></span></div>
+      <div class="law-spec">
+        <div class="sh"><b>Terminologie officielle</b><span>7 termes</span></div>
+        <div class="sr first"><i>Allemand</i><b>Geldwäscherei</b></div><div class="sr"><i>Français</i><b>blanchiment d'argent</b></div><div class="sr"><i>Italien</i><b>riciclaggio di denaro</b></div><div class="sr"><i>Anglais</i><b>money laundering</b></div>
+        <div class="sf">art. 305bis CP · vérifiable dans Fast lookup CHnell</div>
+      </div>
     </div>
   </div>
 </section>
@@ -388,6 +393,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

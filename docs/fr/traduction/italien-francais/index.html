@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9a72ca12">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -31,6 +31,7 @@
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -38,7 +39,7 @@
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}</style>
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "L'italien juridique suisse est-il différent de l'italien d'Italie ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, et la différence porte sur l'essentiel : les institutions et les procédures. Le ricorso suisse va au Tribunale federale, le precetto esecutivo appartient à la procédure de poursuite prévue par le droit fédéral, le decreto d'accusa est un acte du Code de procédure pénale suisse. Les mêmes mots existent parfois en Italie pour désigner autre chose."}}, {"@type": "Question", "name": "La version italienne d'une loi fédérale fait-elle foi ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, au même titre que les versions allemande et française. C'est pour cette raison que les équivalences terminologiques se lisent directement dans les textes officiels : les trois versions d'un article donnent les trois termes exacts, sans passer par une traduction d'usage."}}, {"@type": "Question", "name": "Comment sont converties les abréviations de lois ?", "acceptedAnswer": {"@type": "Answer", "text": "Selon la langue cible. La poursuite pour dettes et la faillite s'abrège LEF en italien et LP en français ; le droit international privé s'abrège LDIP dans les deux langues, mais IPRG en allemand ; le Code des obligations reste CO en italien et en français. En cas de doute, le nom complet de la loi est écrit en toutes lettres."}}, {"@type": "Question", "name": "Traitez-vous aussi le français vers l'italien ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les quatre langues natives fonctionnent dans toutes les combinaisons, dans un sens comme dans l'autre. Ce sont aussi les seules langues disponibles en mode Highly sensitive content ; la plateforme couvre par ailleurs 30 langues pour les pièces étrangères."}}, {"@type": "Question", "name": "Les documents tessinois arrivent souvent scannés, est-ce un problème ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'onglet PDF to Word de Fast translation convertit un scan en document Word éditable avant traduction, ce qui permet de conserver la structure et d'annoter ensuite. Les fichiers repartent dans leur format d'origine."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Italien vers français", "item": "https://neur-on.ai/fr/traduction/italien-francais/"}]}</script>
 </head>
@@ -229,10 +230,10 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Italien vers français</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Italien vers français</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -243,7 +244,11 @@
           <a href="#faits" class="btn btn-ghost">Ce qui change dans cette paire</a>
         </div>
       </div>
-      <div class="thero-promise"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Italien de Suisse :</b> ricorso, precetto esecutivo, Tribunale federale</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Version qui fait foi :</b> l'italien est l'une des trois langues officielles des lois</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Langue native :</b> l'italien est l'une des quatre langues de Neur.on LLM</span></span></div>
+      <div class="law-spec">
+        <div class="sh"><b>Un terme, quatre langues</b><span>6 termes</span></div>
+        <div class="sr first"><i>Allemand</i><b>Beschwerde</b></div><div class="sr"><i>Français</i><b>recours</b></div><div class="sr"><i>Italien</i><b>ricorso</b></div><div class="sr"><i>Anglais</i><b>appeal</b></div>
+        <div class="sf">art. 72 LTF · publié dans les langues officielles</div>
+      </div>
     </div>
   </div>
 </section>
@@ -380,6 +385,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

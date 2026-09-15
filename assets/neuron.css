@@ -79,7 +79,7 @@ button{font-family:inherit;cursor:pointer;border:none}
 
 /* ============ HERO ============ */
 .hero{padding:96px 0 58px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(1100px 560px at 50% -10%, rgba(127,176,255,.34), transparent 60%),radial-gradient(780px 540px at 88% 118%, rgba(49,123,255,.30), transparent 60%),radial-gradient(640px 480px at 4% 108%, rgba(127,176,255,.18), transparent 62%),var(--navy-grad)}
-.hero .container{max-width:1280px}
+
 .hero-inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:#fff;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:7px 15px;margin-bottom:24px}
 .hero-badge svg{width:15px;height:15px;flex-shrink:0}
@@ -570,7 +570,7 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 
 /* ============ PAGES OUTILS · « L'objet unique » : la démo est le hero ============ */
 .thero{padding:30px 0 62px;color:#fff;position:relative;background:radial-gradient(900px 480px at 82% 0%, rgba(127,176,255,.28), transparent 60%),radial-gradient(600px 420px at 6% 100%, rgba(49,123,255,.22), transparent 62%),var(--navy-grad)}
-.thero .container{max-width:1280px}
+
 .thero-grid{display:grid;grid-template-columns:7fr 5fr;gap:52px;align-items:end;padding-bottom:44px}
 .thero h1{font-size:clamp(30px,4vw,46px);color:#fff;letter-spacing:-.03em;line-height:1.12;margin:0 0 18px;max-width:22ch;text-wrap:balance}
 .thero h1 em{font-style:normal;color:var(--sky)}
@@ -587,7 +587,7 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 /* Le cadre de démonstration déborde sous le hero ; la section suivante compense */
 .thero-demo{padding-bottom:236px}
 .tdemo{position:relative;z-index:2;margin-top:-236px;margin-bottom:-150px}
-.tdemo .container{max-width:1280px}
+
 .tdemo .cx-ex{justify-content:flex-start}
 .tdemo .cx-ex span{color:rgba(255,255,255,.72)}
 .tdemo .cx-ex button{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);color:#fff}
@@ -746,3 +746,85 @@ body.nav-open{overflow:hidden}
   .nm-langs a.soon{opacity:.45}
   .nm-langs a.soon::after{content:none}
 }
+
+/* ============ COLONNE DE GAUCHE COLLANTE (blocs « description + registre ») ============
+   Le titre et le paragraphe restent en vue pendant que la liste défile à droite.
+   Désactivé sous 940px (colonne unique) et si l'utilisateur limite les animations n'y change rien :
+   sticky n'est pas une animation, mais on garde un repli propre si la hauteur manque. */
+.facts-lead,
+.tlaws-lead,
+.usp-lead,
+.trust-lead{position:sticky;top:96px;align-self:start}
+@supports not (position:sticky){.facts-lead,.tlaws-lead,.usp-lead,.trust-lead{position:static}}
+@media(max-width:940px){
+  .facts-lead,.tlaws-lead,.usp-lead,.trust-lead{position:static;top:auto}
+}
+
+/* ============ REGISTRES DE HERO ============
+   Quatre registres, pour que le visiteur sache où il est sans lire :
+   · défaut (bleu nuit)      produit, plateforme, entreprise
+   · .thero-law (clair)      matière juridique : domaines et paires de langues
+   · .thero-read (blanc)     éditorial : blog, guides, études
+   · .thero-help (teinté)    documentation : centre d'aide
+   Le fil d'Ariane suit : .crumbs-light quand le hero n'est pas bleu nuit. */
+
+/* Fil d'Ariane clair */
+.crumbs-light{background:#fff;color:var(--muted);border-bottom:0;padding:16px 0 0}
+.crumbs-light li+li::before{background:var(--line-2)}
+.crumbs-light a:hover{color:var(--blue-d)}
+.crumbs-light [aria-current]{color:var(--ink);font-weight:600}
+
+/* B · Matière juridique : la terminologie est le sujet, donc elle est dans le hero */
+.thero-law{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);color:var(--text);border-bottom:1px solid var(--line);padding:26px 0 64px}
+.thero-law .thero-grid{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-bottom:0}
+.thero-law h1{color:var(--ink);max-width:19ch}
+.thero-law h1 em{color:var(--blue-d)}
+.thero-law .lead{color:var(--text)}
+.thero-law .btn-ghost{color:var(--ink);border:1px solid var(--line-2);background:#fff}
+.thero-law .btn-ghost:hover{border-color:var(--ink);background:#fff}
+.law-spec{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 30px 60px -34px rgba(8,24,68,.22);overflow:hidden}
+.law-spec .sh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid var(--line);background:var(--bg)}
+.law-spec .sh b{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.law-spec .sh span{font-size:12px;color:var(--blue-d);font-weight:700;font-variant-numeric:tabular-nums}
+.law-spec .sr{display:grid;grid-template-columns:86px 1fr;gap:14px;align-items:baseline;padding:13px 20px;border-bottom:1px solid var(--line)}
+.law-spec .sr:last-of-type{border-bottom:0}
+.law-spec .sr i{font-style:normal;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.law-spec .sr b{font-size:16px;color:var(--ink);font-weight:600;letter-spacing:-.01em}
+.law-spec .sr.first b{color:var(--navy);font-weight:800}
+.law-spec .sf{padding:13px 20px;background:var(--bg);border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+
+/* C · Éditorial : une colonne, la signature et la date avant le texte */
+.thero-read{background:#fff;border-bottom:1px solid var(--line);padding:22px 0 44px}
+.thero-read .thero-grid{grid-template-columns:1fr;gap:0;max-width:820px;padding-bottom:0}
+.thero-read .rkicker{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-d);margin-bottom:18px}
+.thero-read .rkicker::after{content:"";width:34px;height:1px;background:var(--line-2)}
+.thero-read h1{color:var(--ink);font-size:clamp(30px,4.1vw,46px);max-width:22ch;margin-bottom:20px}
+.thero-read h1 em{color:var(--blue-d)}
+.thero-read .lead{color:var(--text);font-size:19px;line-height:1.6;max-width:64ch;margin-bottom:24px}
+.thero-read .rmeta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;font-size:13px;color:var(--muted);padding-top:18px;border-top:1px solid var(--line)}
+.thero-read .rmeta b{color:var(--ink);font-weight:600}
+.thero-read .rmeta .dot{width:3px;height:3px;border-radius:50%;background:var(--line-2)}
+
+/* D · Documentation : compact, la réponse plutôt que la promesse */
+.thero-help{background:var(--bg);border-bottom:1px solid var(--line);padding:20px 0 34px;color:var(--text)}
+.thero-help .thero-grid{grid-template-columns:1.35fr .65fr;gap:44px;align-items:end;padding-bottom:0}
+.thero-help h1{color:var(--ink);font-size:clamp(25px,3.1vw,36px);max-width:24ch;margin-bottom:14px}
+.thero-help h1 em{color:var(--blue-d)}
+.thero-help .lead{color:var(--text);font-size:16.5px;max-width:64ch;margin-bottom:0}
+.thero-help .htags{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.thero-help .htags span{font-size:12px;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:50px;padding:6px 13px}
+.thero-help .htags span b{color:var(--muted);font-weight:600}
+
+@media(max-width:940px){
+  .thero-law .thero-grid,.thero-help .thero-grid{grid-template-columns:1fr;gap:28px;align-items:start}
+  .thero-law{padding-bottom:44px}
+  .thero-help .htags{justify-content:flex-start}
+}
+/* Registre éditorial : les repères passent en ligne sous le chapô, sans filet vertical */
+.thero-read .thero-promise{flex-direction:row;flex-wrap:wrap;gap:12px 28px;border-left:0;border-top:1px solid var(--line);padding:18px 0 0;margin-top:26px;font-size:13px;color:var(--muted)}
+.thero-read .thero-promise > span{max-width:34ch;align-items:flex-start}
+.thero-read .thero-promise b{color:var(--ink)}
+.thero-read .thero-promise svg{color:var(--blue-d)}
+.thero-read .btn-ghost{color:var(--ink);border:1px solid var(--line-2);background:#fff}
+.thero-read .btn-ghost:hover{border-color:var(--ink)}
+.thero-read .thero-cta{margin-top:4px}

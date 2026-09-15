@@ -176,7 +176,8 @@ def build_page(path, meta, body):
                 lis.append('<li><a href="%s%s">%s</a></li>' % (root, target, label))
             else:
                 lis.append('<li><span aria-current="page">%s</span></li>' % label)
-        crumb_html = ('\n<nav class="crumbs" aria-label="Fil d\'Ariane"><div class="container"><ol>'
+        light = " crumbs-light" if meta.get("hero") in ("law", "read", "help") else ""
+        crumb_html = ('\n<nav class="crumbs%s" aria-label="Fil d\'Ariane"><div class="container"><ol>' % light
                       + "".join(lis) + "</ol></div></nav>\n")
         crumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList",
                     "itemListElement": [

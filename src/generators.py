@@ -56,6 +56,49 @@ def hero(h1_lede, h1_rest, lead, promesses, ancre="#faits", ancre_txt="Voir le d
 </section>'''
 
 
+def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt="Ce que Corrext apporte"):
+    """Hero des pages de matière juridique : la terminologie tient lieu de visuel."""
+    rows = "".join(
+        f'<div class="sr{" first" if i == 0 else ""}"><i>{lab}</i><b>{spec["mots"][k]}</b></div>'
+        for i, (k, lab) in enumerate((("de", "Allemand"), ("fr", "Français"),
+                                      ("it", "Italien"), ("en", "Anglais"))))
+    return f'''<section class="thero thero-law">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>{lede}</em> {rest}</h1>
+        <p class="lead">{lead}</p>
+        <div class="thero-cta">
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">Demander une démo {ARROW}</a>
+          <a href="{ancre}" class="btn btn-ghost">{ancre_txt}</a>
+        </div>
+      </div>
+      <div class="law-spec">
+        <div class="sh"><b>{spec["titre"]}</b><span>{spec["compte"]}</span></div>
+        {rows}
+        <div class="sf">{spec["pied"]}</div>
+      </div>
+    </div>
+  </div>
+</section>'''
+
+
+def hero_help(rubrique, titre, reponse, tags):
+    """Hero de documentation : la réponse d'abord, la promesse nulle part."""
+    ts = "".join(f'<span><b>{t["k"]} :</b> {t["v"]}</span>' for t in tags)
+    return f'''<section class="thero thero-help">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>{rubrique}.</em> {titre}</h1>
+        <p class="lead">{reponse}</p>
+      </div>
+      <div class="htags">{ts}</div>
+    </div>
+  </div>
+</section>'''
+
+
 def facts(titre, intro, liens, lignes, ident="faits"):
     ls = "".join(f'<a href="{{{{ROOT}}}}{l["href"]}" class="feat-link">{l["txt"]} {ARROW}</a>'
                  for l in liens)
@@ -181,6 +224,7 @@ TERMS_CSS = """<style>
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -188,7 +232,7 @@ TERMS_CSS = """<style>
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}
 </style>"""
 
 
@@ -270,9 +314,12 @@ def gen_domaines(src):
     pages, data = [], load(src, "domaines")
     for d in data:
         vois = [v for v in data if v["slug"] in d.get("voisins", [])][:3]
+        t0 = d["termes"][0]
+        spec = {"titre": "Terminologie officielle", "compte": f'{len(d["termes"])} termes',
+                "mots": t0, "pied": f'{t0["ref"]} · vérifiable dans Fast lookup CHnell'}
         body = "\n".join([
             TERMS_CSS,
-            hero(d["lede"], d["h1"], d["lead"], d["promesses"], "#faits", "Ce que Corrext apporte"),
+            hero_law(d["lede"], d["h1"], d["lead"], spec),
             facts("Traduire ce domaine, concrètement", d["definition"],
                   [{"href": "fr/corrext/fast-translation/", "txt": "Traduire un document maintenant"},
                    {"href": "fr/corrext/translation-project/", "txt": "Commander une relecture juridique"}],
@@ -290,16 +337,19 @@ def gen_domaines(src):
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',
                       {"title": d["title"], "description": d["description"],
-                       "short": d["short"], "nav": "solutions"}, body))
+                       "short": d["short"], "nav": "solutions", "hero": "law"}, body))
     return pages
 
 
 def gen_paires(src):
     pages, data = [], load(src, "paires")
     for d in data:
+        t0 = d["termes"][0]
+        spec = {"titre": "Un terme, quatre langues", "compte": f'{len(d["termes"])} termes',
+                "mots": t0, "pied": f'{t0["ref"]} · publié dans les langues officielles'}
         body = "\n".join([
             TERMS_CSS,
-            hero(d["lede"], d["h1"], d["lead"], d["promesses"], "#faits", "Ce qui change dans cette paire"),
+            hero_law(d["lede"], d["h1"], d["lead"], spec, "#faits", "Ce qui change dans cette paire"),
             facts("Cette paire de langues, en pratique", d["definition"],
                   [{"href": "fr/corrext/fast-translation/", "txt": "Essayer sur un extrait de loi"},
                    {"href": "fr/langues-et-formats/", "txt": "Toutes les langues et formats"}],
@@ -314,7 +364,7 @@ def gen_paires(src):
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',
                       {"title": d["title"], "description": d["description"],
-                       "short": d["short"], "nav": "solutions"}, body))
+                       "short": d["short"], "nav": "solutions", "hero": "law"}, body))
     return pages
 
 
@@ -374,6 +424,8 @@ def gen_glossaire(src):
 .gmeta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
 .gmeta span{font-size:12px;font-weight:700;background:var(--tint);color:var(--navy);border-radius:50px;padding:5px 12px}
 .glangs{border-top:1px solid var(--line)}
+.gnote{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:26px 28px}
+.gnote p{font-size:14.5px;color:var(--text);line-height:1.65;margin-bottom:16px}
 .glang{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .glang i{font-style:normal;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 .glang b{font-size:16px;color:var(--ink)}
@@ -389,31 +441,14 @@ def gen_glossaire(src):
 </style>"""
     for d in data:
         vois = [v for v in data if v["slug"] in d.get("voisins", [])][:3]
-        langs = "".join(
-            f'<div class="glang"><i>{lab}</i><b>{d[k]}</b></div>'
-            for k, lab in (("de", "Allemand"), ("fr", "Français"),
-                           ("it", "Italien"), ("en", "Anglais")))
-        body = "\n".join([css,
-            f'''<section class="thero" style="padding-bottom:70px">
-  <div class="container">
-    <div class="thero-grid">
-      <div>
-        <h1><em>{d["de"]}</em> · {d["fr"]}</h1>
-        <p class="lead">{d["lead"]}</p>
-        <div class="thero-cta">
-          <a href="{{{{ROOT}}}}fr/corrext/chnell/" class="btn btn-blue">Chercher ce terme en contexte {ARROW}</a>
-          <a href="{{{{ROOT}}}}fr/ressources/glossaire/" class="btn btn-ghost">Tout le glossaire</a>
-        </div>
-      </div>
-      <div class="thero-promise">
-        <span>{SHIELD}<span><b>Base légale :</b> {d["base"]}</span></span>
-        <span>{GLOBE}<span><b>Domaine :</b> {d["domaine"]}</span></span>
-        <span>{SPARK}<span><b>Source :</b> {d["source"]}</span></span>
-      </div>
-    </div>
-  </div>
-</section>''',
-            f'''<section class="gterm">
+        body_hero = hero_law(
+            d["de"], "· " + d["fr"], d["lead"],
+            {"titre": "Le terme, quatre langues", "compte": d["domaine"],
+             "mots": {k: d[k] for k in ("de", "fr", "it", "en")},
+             "pied": f'{d["base"]} · source : {d["source"]}'},
+            "#definition", "Lire la définition")
+        body = "\n".join([css, body_hero,
+            f'''<section class="gterm" id="definition">
   <div class="container">
     <div class="gterm-grid">
       <div>
@@ -421,7 +456,12 @@ def gen_glossaire(src):
         <p class="gdef">{d["definition"]}</p>
         <div class="gmeta"><span>{d["domaine"]}</span><span>{d["base"]}</span></div>
       </div>
-      <div class="glangs">{langs}</div>
+      <div class="gnote">
+        <p>Les lois fédérales suisses sont publiées en allemand, en français et en italien, et les
+          trois versions font foi. L'équivalence ci-contre n'est donc pas une traduction d'usage :
+          c'est le terme employé par le texte officiel lui-même.</p>
+        <a class="feat-link" href="{{{{ROOT}}}}fr/ressources/glossaire/">Tout le glossaire {ARROW}</a>
+      </div>
     </div>
   </div>
 </section>''',
@@ -451,7 +491,7 @@ def gen_glossaire(src):
         ])
         pages.append((f'fr/ressources/glossaire/{d["slug"]}/', {
             "title": d["title"], "description": d["description"],
-            "short": f'{d["de"]} · {d["fr"]}', "nav": "ressources"}, body))
+            "short": f'{d["de"]} · {d["fr"]}', "nav": "ressources", "hero": "law"}, body))
 
     # index du glossaire
     rows = "".join(
@@ -508,9 +548,11 @@ def gen_aide(src):
     css = """<style>
 .hsteps{padding:70px 0}
 .hsteps-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.hsteps-grid > div:first-child{position:sticky;top:96px;align-self:start}
 .hanswer{font-size:18px;line-height:1.6;color:var(--ink);max-width:52ch}
 .hol{counter-reset:s;border-top:1px solid var(--line)}
 .hol li{counter-increment:s;list-style:none;display:grid;grid-template-columns:30px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.6;color:var(--text)}
+.hol li > span{display:block}
 .hol li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:800}
 .hol li b{color:var(--ink)}
 .hnote{padding:0 0 84px}
@@ -519,11 +561,11 @@ def gen_aide(src):
 .hnote-box ul{list-style:none}
 .hnote-box li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:9px 0;font-size:14.5px;line-height:1.55;color:var(--text)}
 .hnote-box li svg{width:17px;height:17px;color:var(--blue-d);margin-top:3px}
-@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}}
+@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}.hsteps-grid > div:first-child{position:static}}
 </style>"""
     for rub in data:
         for art in rub["articles"]:
-            steps = "".join(f"<li>{s}</li>" for s in art["etapes"])
+            steps = "".join(f"<li><span>{e}</span></li>" for e in art["etapes"])
             notes = "".join(
                 f'<li>{ICONS[i % 3]}<span>{n}</span></li>' for i, n in enumerate(art.get("savoir", [])))
             ld = {"@context": "https://schema.org", "@type": "HowTo", "name": art["titre"],
@@ -534,27 +576,18 @@ def gen_aide(src):
             autres = [a for a in rub["articles"] if a["slug"] != art["slug"]][:3]
             body = "\n".join([css,
                 '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
-                f'''<section class="thero" style="padding-bottom:60px">
-  <div class="container">
-    <div class="thero-grid">
-      <div>
-        <h1><em>{rub["titre"]}.</em> {art["titre"]}</h1>
-        <p class="lead">{art["reponse"]}</p>
-        <div class="thero-cta">
-          <a href="{{{{ROOT}}}}fr/aide/" class="btn btn-ghost">Tout le centre d'aide</a>
-        </div>
-      </div>
-      <div class="thero-promise">
-        <span>{SHIELD}<span><b>Outil :</b> {rub["outil"]}</span></span>
-        <span>{GLOBE}<span><b>Rubrique :</b> {rub["titre"]}</span></span>
-      </div>
-    </div>
-  </div>
-</section>''',
+                hero_help(rub["titre"], art["titre"], art["reponse"],
+                          [{"k": "Outil", "v": rub["outil"]},
+                           {"k": "Étapes", "v": str(len(art["etapes"]))},
+                           {"k": "Vérifié", "v": "septembre 2026"}]),
                 f'''<section class="hsteps">
   <div class="container">
     <div class="hsteps-grid">
-      <div><h2>En bref</h2><p class="hanswer">{art["reponse"]}</p></div>
+      <div><h2>Les étapes</h2>
+        <p class="hanswer">{len(art["etapes"])} étapes dans l'application. Les libellés entre
+          guillemets sont ceux affichés par Corrext, en anglais.</p>
+        <a class="feat-link" href="{{{{ROOT}}}}fr/aide/{rub["slug"]}/">Tous les articles
+          « {rub["titre"]} » {ARROW}</a></div>
       <div><ol class="hol">{steps}</ol></div>
     </div>
   </div>
@@ -572,18 +605,17 @@ def gen_aide(src):
             ])
             pages.append((f'fr/aide/{rub["slug"]}/{art["slug"]}/', {
                 "title": art["title"], "description": art["description"],
-                "short": art["titre"], "nav": "ressources"}, body))
+                "short": art["titre"], "nav": "ressources", "hero": "help"}, body))
 
         # index de rubrique
         cards = "".join(
             f'<a href="{{{{ROOT}}}}fr/aide/{rub["slug"]}/{a["slug"]}/"><b>{a["titre"]}</b>'
             f'<span>{a["reponse"][:110]}…</span>{ARROW}</a>' for a in rub["articles"])
         body = "\n".join([
-            hero(rub["titre"] + ".", rub["h1"], rub["lead"],
-                 [{"t": "Outil", "d": rub["outil"]},
-                  {"t": "Articles", "d": f'{len(rub["articles"])} articles pas à pas'},
-                  {"t": "Mise à jour", "d": "d'après l'application, septembre 2026"}],
-                 "#articles", "Voir les articles"),
+            hero_help(rub["titre"], rub["h1"], rub["lead"],
+                      [{"k": "Outil", "v": rub["outil"]},
+                       {"k": "Articles", "v": str(len(rub["articles"]))},
+                       {"k": "Vérifié", "v": "septembre 2026"}]),
             f'''<section class="siblings" id="articles" style="padding:84px 0">
   <div class="container"><h2>Les articles de cette rubrique</h2>
     <div class="siblings-row grid2">{cards}</div></div>
@@ -598,7 +630,7 @@ def gen_aide(src):
         ])
         pages.append((f'fr/aide/{rub["slug"]}/', {
             "title": rub["title"], "description": rub["description"],
-            "short": rub["titre"], "nav": "ressources"}, body))
+            "short": rub["titre"], "nav": "ressources", "hero": "help"}, body))
 
     # index général du centre d'aide
     blocks = "".join(
@@ -606,13 +638,12 @@ def gen_aide(src):
         f'<span>{r["lead"][:110]}…</span>{ARROW}</a>' for r in data)
     total = sum(len(r["articles"]) for r in data)
     body = "\n".join([
-        hero("Centre d'aide Corrext.", "Comment faire, étape par étape",
-             f"{total} articles tirés de l'application telle qu'elle fonctionne, sans jargon et "
-             "sans promesse. Chaque procédure a été vérifiée dans Corrext en septembre 2026.",
-             [{"t": "Vérifié", "d": "chaque étape correspond à un écran réel de l'application"},
-              {"t": "Par outil", "d": "Fast translation, Translation project, CHnell, extraits certifiés"},
-              {"t": "Sécurité", "d": "où vont vos données, expliqué simplement"}],
-             "#rubriques", "Voir les rubriques"),
+        hero_help("Centre d'aide Corrext", "Comment faire, étape par étape",
+                  f"{total} articles tirés de l'application telle qu'elle fonctionne, sans jargon et "
+                  "sans promesse. Chaque procédure a été vérifiée dans Corrext en septembre 2026.",
+                  [{"k": "Rubriques", "v": str(len(data))},
+                   {"k": "Articles", "v": str(total)},
+                   {"k": "Vérifié", "v": "septembre 2026"}]),
         f'''<section class="siblings" id="rubriques" style="padding:84px 0">
   <div class="container"><h2>Les rubriques</h2>
     <div class="siblings-row grid2">{blocks}</div></div>
@@ -626,6 +657,7 @@ def gen_aide(src):
             {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
     ])
     pages.append(("fr/aide/", {
+        "hero": "help",
         "title": "Centre d'aide Corrext · Neur.on",
         "description": "Prendre en main Corrext : traduire un texte ou des fichiers, créer un "
                        "projet de traduction, obtenir un devis, chercher un terme dans CHnell, "

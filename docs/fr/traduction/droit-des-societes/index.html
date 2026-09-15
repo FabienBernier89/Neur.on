@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9a72ca12">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -31,6 +31,7 @@
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -38,7 +39,7 @@
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}</style>
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Faut-il traduire les statuts dans les trois langues officielles ?", "acceptedAnswer": {"@type": "Answer", "text": "La loi n'impose pas les trois versions : l'inscription se fait dans une langue officielle du canton. Les sociétés qui ont des actionnaires ou des filiales dans plusieurs régions linguistiques diffusent en revanche une traduction de travail, et c'est elle qui doit employer exactement les libellés du registre."}}, {"@type": "Question", "name": "Comment obtenir un extrait du registre du commerce certifié ?", "acceptedAnswer": {"@type": "Answer", "text": "Il se commande en ligne depuis la plateforme, avec trois niveaux de certification selon l'usage prévu : extrait simple, extrait certifié conforme, puis notarisation et apostille pour une production à l'étranger. La commande suit le même circuit que vos projets de traduction."}}, {"@type": "Question", "name": "Un procès-verbal confidentiel peut-il être traduit sans risque ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, à condition de choisir le bon mode. Le stockage est suisse dans tous les cas ; le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger déclenchent un avertissement avant tout envoi."}}, {"@type": "Question", "name": "Comment garder le même vocabulaire d'une année à l'autre ?", "acceptedAnswer": {"@type": "Answer", "text": "Par la mémoire de traduction et par le concordancier. En confidentialité Standard, un projet alimente une mémoire réutilisable par votre seule organisation, et Fast lookup CHnell accepte vos propres ressources terminologiques en plus de ses 26 domaines sourcés. Les ressources peuvent être partagées entre vos équipes, ce qui évite qu'une filiale emploie un libellé différent."}}, {"@type": "Question", "name": "Quelles langues sont couvertes pour les documents de société ?", "acceptedAnswer": {"@type": "Answer", "text": "L'allemand, le français, l'italien et l'anglais sont natifs, dans toutes les paires, et la plateforme couvre 30 langues au total. C'est utile quand un actionnaire étranger demande une version de travail des statuts ou d'un procès-verbal. Les quatre langues natives couvrent l'ensemble des régions linguistiques suisses."}}, {"@type": "Question", "name": "Puis-je faire relire par mes propres juristes ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Le mode Internal review du tunnel projet organise la relecture par vos équipes et chiffre le temps nécessaire à partir du nombre de pages standard détecté dans les fichiers déposés. La relecture externe par un traducteur juridique reste disponible en parallèle."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Droit des sociétés", "item": "https://neur-on.ai/fr/traduction/droit-des-societes/"}]}</script>
 </head>
@@ -229,10 +230,10 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Droit des sociétés</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Droit des sociétés</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -243,7 +244,11 @@
           <a href="#faits" class="btn btn-ghost">Ce que Corrext apporte</a>
         </div>
       </div>
-      <div class="thero-promise"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Termes du registre :</b> Verwaltungsrat, Handelsregister, Statuten et leurs équivalents officiels</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Pièces récurrentes :</b> les statuts d'une année sur l'autre alimentent votre mémoire de traduction</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Extrait certifié :</b> registre du commerce, avec notarisation et apostille, commandé en ligne</span></span></div>
+      <div class="law-spec">
+        <div class="sh"><b>Terminologie officielle</b><span>8 termes</span></div>
+        <div class="sr first"><i>Allemand</i><b>Aktiengesellschaft</b></div><div class="sr"><i>Français</i><b>société anonyme</b></div><div class="sr"><i>Italien</i><b>società anonima</b></div><div class="sr"><i>Anglais</i><b>company limited by shares</b></div>
+        <div class="sf">art. 620 CO · vérifiable dans Fast lookup CHnell</div>
+      </div>
     </div>
   </div>
 </section>
@@ -388,6 +393,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

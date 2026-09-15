@@ -20,12 +20,14 @@
 <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../../assets/neuron.css?v=9a72ca12">
 <style>.hsteps{padding:70px 0}
 .hsteps-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.hsteps-grid > div:first-child{position:sticky;top:96px;align-self:start}
 .hanswer{font-size:18px;line-height:1.6;color:var(--ink);max-width:52ch}
 .hol{counter-reset:s;border-top:1px solid var(--line)}
 .hol li{counter-increment:s;list-style:none;display:grid;grid-template-columns:30px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.6;color:var(--text)}
+.hol li > span{display:block}
 .hol li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:800}
 .hol li b{color:var(--ink)}
 .hnote{padding:0 0 84px}
@@ -34,7 +36,7 @@
 .hnote-box ul{list-style:none}
 .hnote-box li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:9px 0;font-size:14.5px;line-height:1.55;color:var(--text)}
 .hnote-box li svg{width:17px;height:17px;color:var(--blue-d);margin-top:3px}
-@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}}</style>
+@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}.hsteps-grid > div:first-child{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Formats de fichiers acceptés", "description": "Corrext accepte sept formats de fichiers pour la traduction : .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Cette liste vaut pour l'onglet « File translation » de Fast translation comme pour l'étape « File overview » d'un projet de traduction. L'onglet « PDF to Word » fait exception : il n'accepte que le format .pdf, puisqu'il sert précisément à le convertir.", "step": [{"@type": "HowToStep", "position": 1, "text": "Vérifiez l'extension de votre fichier avant de le déposer : .pdf, .doc, .docx, .xls, .xlsx, .ppt ou .pptx."}, {"@type": "HowToStep", "position": 2, "text": "Préférez le format d'origine, .docx ou .xlsx plutôt qu'un PDF, comme le rappelle la zone de dépôt d'un projet."}, {"@type": "HowToStep", "position": 3, "text": "Pour convertir un PDF en document Word éditable, passez par l'onglet « PDF to Word », qui n'accepte que le .pdf."}, {"@type": "HowToStep", "position": 4, "text": "Convertissez au préalable tout fichier dans un autre format : l'application ne le prendra pas tel quel."}, {"@type": "HowToStep", "position": 5, "text": "Relisez le texte des zones de dépôt : elles rappellent la liste exacte des formats acceptés à chaque endroit."}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Centre d'aide", "item": "https://neur-on.ai/fr/aide/"}, {"@type": "ListItem", "position": 3, "name": "Formats et langues", "item": "https://neur-on.ai/fr/aide/formats-et-langues/"}, {"@type": "ListItem", "position": 4, "name": "Formats de fichiers acceptés", "item": "https://neur-on.ai/fr/aide/formats-et-langues/formats-acceptes/"}]}</script>
 </head>
@@ -225,31 +227,29 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../../fr/">Accueil</a></li><li><a href="../../../../fr/aide/">Centre d'aide</a></li><li><a href="../../../../fr/aide/formats-et-langues/">Formats et langues</a></li><li><span aria-current="page">Formats de fichiers acceptés</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../../fr/">Accueil</a></li><li><a href="../../../../fr/aide/">Centre d'aide</a></li><li><a href="../../../../fr/aide/formats-et-langues/">Formats et langues</a></li><li><span aria-current="page">Formats de fichiers acceptés</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero" style="padding-bottom:60px">
+<section class="thero thero-help">
   <div class="container">
     <div class="thero-grid">
       <div>
         <h1><em>Formats et langues.</em> Formats de fichiers acceptés</h1>
         <p class="lead">Corrext accepte sept formats de fichiers pour la traduction : .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Cette liste vaut pour l'onglet « File translation » de Fast translation comme pour l'étape « File overview » d'un projet de traduction. L'onglet « PDF to Word » fait exception : il n'accepte que le format .pdf, puisqu'il sert précisément à le convertir.</p>
-        <div class="thero-cta">
-          <a href="../../../../fr/aide/" class="btn btn-ghost">Tout le centre d'aide</a>
-        </div>
       </div>
-      <div class="thero-promise">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Outil :</b> Toute la plateforme</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Rubrique :</b> Formats et langues</span></span>
-      </div>
+      <div class="htags"><span><b>Outil :</b> Toute la plateforme</span><span><b>Étapes :</b> 5</span><span><b>Vérifié :</b> septembre 2026</span></div>
     </div>
   </div>
 </section>
 <section class="hsteps">
   <div class="container">
     <div class="hsteps-grid">
-      <div><h2>En bref</h2><p class="hanswer">Corrext accepte sept formats de fichiers pour la traduction : .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx. Cette liste vaut pour l'onglet « File translation » de Fast translation comme pour l'étape « File overview » d'un projet de traduction. L'onglet « PDF to Word » fait exception : il n'accepte que le format .pdf, puisqu'il sert précisément à le convertir.</p></div>
-      <div><ol class="hol"><li>Vérifiez l'extension de votre fichier avant de le déposer : .pdf, .doc, .docx, .xls, .xlsx, .ppt ou .pptx.</li><li>Préférez le format d'origine, <b>.docx ou .xlsx plutôt qu'un PDF</b>, comme le rappelle la zone de dépôt d'un projet.</li><li>Pour convertir un PDF en document Word éditable, passez par l'onglet <b>« PDF to Word »</b>, qui n'accepte que le .pdf.</li><li>Convertissez au préalable tout fichier dans un autre format : l'application ne le prendra pas tel quel.</li><li>Relisez le texte des zones de dépôt : elles rappellent la liste exacte des formats acceptés à chaque endroit.</li></ol></div>
+      <div><h2>Les étapes</h2>
+        <p class="hanswer">5 étapes dans l'application. Les libellés entre
+          guillemets sont ceux affichés par Corrext, en anglais.</p>
+        <a class="feat-link" href="../../../../fr/aide/formats-et-langues/">Tous les articles
+          « Formats et langues » <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
+      <div><ol class="hol"><li><span>Vérifiez l'extension de votre fichier avant de le déposer : .pdf, .doc, .docx, .xls, .xlsx, .ppt ou .pptx.</span></li><li><span>Préférez le format d'origine, <b>.docx ou .xlsx plutôt qu'un PDF</b>, comme le rappelle la zone de dépôt d'un projet.</span></li><li><span>Pour convertir un PDF en document Word éditable, passez par l'onglet <b>« PDF to Word »</b>, qui n'accepte que le .pdf.</span></li><li><span>Convertissez au préalable tout fichier dans un autre format : l'application ne le prendra pas tel quel.</span></li><li><span>Relisez le texte des zones de dépôt : elles rappellent la liste exacte des formats acceptés à chaque endroit.</span></li></ol></div>
     </div>
   </div>
 </section>
@@ -349,6 +349,6 @@
   </div>
 </footer>
 
-<script src="../../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

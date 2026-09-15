@@ -20,12 +20,14 @@
 <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../../assets/neuron.css?v=9a72ca12">
 <style>.hsteps{padding:70px 0}
 .hsteps-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.hsteps-grid > div:first-child{position:sticky;top:96px;align-self:start}
 .hanswer{font-size:18px;line-height:1.6;color:var(--ink);max-width:52ch}
 .hol{counter-reset:s;border-top:1px solid var(--line)}
 .hol li{counter-increment:s;list-style:none;display:grid;grid-template-columns:30px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.6;color:var(--text)}
+.hol li > span{display:block}
 .hol li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:800}
 .hol li b{color:var(--ink)}
 .hnote{padding:0 0 84px}
@@ -34,7 +36,7 @@
 .hnote-box ul{list-style:none}
 .hnote-box li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:9px 0;font-size:14.5px;line-height:1.55;color:var(--text)}
 .hnote-box li svg{width:17px;height:17px;color:var(--blue-d);margin-top:3px}
-@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}}</style>
+@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}.hsteps-grid > div:first-child{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Limites de caractères", "description": "Deux limites de caractères coexistent dans Fast translation. L'onglet « Text translation » accepte 10'000 caractères, affichés par un compteur sous la zone de saisie. L'onglet « Rephrasing » s'arrête à 5'000 caractères. Au-delà, la bonne méthode n'est pas de découper indéfiniment votre texte, mais de passer par l'onglet « File translation », qui traite un document entier.", "step": [{"@type": "HowToStep", "position": 1, "text": "Surveillez le compteur sous la zone de saisie : il affiche le nombre de caractères utilisés et la limite de l'onglet."}, {"@type": "HowToStep", "position": 2, "text": "Restez sous 10'000 caractères pour une traduction de texte dans l'onglet « Text translation »."}, {"@type": "HowToStep", "position": 3, "text": "Restez sous 5'000 caractères pour une reformulation dans l'onglet « Rephrasing »."}, {"@type": "HowToStep", "position": 4, "text": "Au-delà, enregistrez votre texte dans un document et déposez-le dans l'onglet « File translation »."}, {"@type": "HowToStep", "position": 5, "text": "Pour un long document à faire relire, ouvrez plutôt un projet dans Translation project."}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Centre d'aide", "item": "https://neur-on.ai/fr/aide/"}, {"@type": "ListItem", "position": 3, "name": "Formats et langues", "item": "https://neur-on.ai/fr/aide/formats-et-langues/"}, {"@type": "ListItem", "position": 4, "name": "Limites de caractères", "item": "https://neur-on.ai/fr/aide/formats-et-langues/limites-de-caracteres/"}]}</script>
 </head>
@@ -225,31 +227,29 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../../fr/">Accueil</a></li><li><a href="../../../../fr/aide/">Centre d'aide</a></li><li><a href="../../../../fr/aide/formats-et-langues/">Formats et langues</a></li><li><span aria-current="page">Limites de caractères</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../../fr/">Accueil</a></li><li><a href="../../../../fr/aide/">Centre d'aide</a></li><li><a href="../../../../fr/aide/formats-et-langues/">Formats et langues</a></li><li><span aria-current="page">Limites de caractères</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero" style="padding-bottom:60px">
+<section class="thero thero-help">
   <div class="container">
     <div class="thero-grid">
       <div>
         <h1><em>Formats et langues.</em> Limites de caractères</h1>
         <p class="lead">Deux limites de caractères coexistent dans Fast translation. L'onglet « Text translation » accepte 10'000 caractères, affichés par un compteur sous la zone de saisie. L'onglet « Rephrasing » s'arrête à 5'000 caractères. Au-delà, la bonne méthode n'est pas de découper indéfiniment votre texte, mais de passer par l'onglet « File translation », qui traite un document entier.</p>
-        <div class="thero-cta">
-          <a href="../../../../fr/aide/" class="btn btn-ghost">Tout le centre d'aide</a>
-        </div>
       </div>
-      <div class="thero-promise">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Outil :</b> Toute la plateforme</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Rubrique :</b> Formats et langues</span></span>
-      </div>
+      <div class="htags"><span><b>Outil :</b> Toute la plateforme</span><span><b>Étapes :</b> 5</span><span><b>Vérifié :</b> septembre 2026</span></div>
     </div>
   </div>
 </section>
 <section class="hsteps">
   <div class="container">
     <div class="hsteps-grid">
-      <div><h2>En bref</h2><p class="hanswer">Deux limites de caractères coexistent dans Fast translation. L'onglet « Text translation » accepte 10'000 caractères, affichés par un compteur sous la zone de saisie. L'onglet « Rephrasing » s'arrête à 5'000 caractères. Au-delà, la bonne méthode n'est pas de découper indéfiniment votre texte, mais de passer par l'onglet « File translation », qui traite un document entier.</p></div>
-      <div><ol class="hol"><li>Surveillez le compteur sous la zone de saisie : il affiche le nombre de caractères utilisés et la limite de l'onglet.</li><li>Restez sous <b>10'000 caractères</b> pour une traduction de texte dans l'onglet « Text translation ».</li><li>Restez sous <b>5'000 caractères</b> pour une reformulation dans l'onglet « Rephrasing ».</li><li>Au-delà, enregistrez votre texte dans un document et déposez-le dans l'onglet <b>« File translation »</b>.</li><li>Pour un long document à faire relire, ouvrez plutôt un projet dans Translation project.</li></ol></div>
+      <div><h2>Les étapes</h2>
+        <p class="hanswer">5 étapes dans l'application. Les libellés entre
+          guillemets sont ceux affichés par Corrext, en anglais.</p>
+        <a class="feat-link" href="../../../../fr/aide/formats-et-langues/">Tous les articles
+          « Formats et langues » <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
+      <div><ol class="hol"><li><span>Surveillez le compteur sous la zone de saisie : il affiche le nombre de caractères utilisés et la limite de l'onglet.</span></li><li><span>Restez sous <b>10'000 caractères</b> pour une traduction de texte dans l'onglet « Text translation ».</span></li><li><span>Restez sous <b>5'000 caractères</b> pour une reformulation dans l'onglet « Rephrasing ».</span></li><li><span>Au-delà, enregistrez votre texte dans un document et déposez-le dans l'onglet <b>« File translation »</b>.</span></li><li><span>Pour un long document à faire relire, ouvrez plutôt un projet dans Translation project.</span></li></ol></div>
     </div>
   </div>
 </section>
@@ -349,6 +349,6 @@
   </div>
 </footer>
 
-<script src="../../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

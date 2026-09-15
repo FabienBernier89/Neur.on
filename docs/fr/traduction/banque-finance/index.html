@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9a72ca12">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -31,6 +31,7 @@
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -38,7 +39,7 @@
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}</style>
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Le secret bancaire est-il compatible avec une traduction automatique ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, à condition de maîtriser le lieu de traitement. Le stockage se fait sur des serveurs suisses dans tous les cas, et le mode Highly sensitive content impose un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire. Les moteurs hébergés à l'étranger exigent une pseudonymisation préalable et affichent un avertissement."}}, {"@type": "Question", "name": "Quels moteurs sont disponibles ?", "acceptedAnswer": {"@type": "Answer", "text": "Neur.on LLM, le moteur suisse entraîné sur la donnée juridique et financière du pays, ainsi que DeepL Pro, Azure OpenAI GPT et Claude. Les trois derniers sont hébergés à l'étranger : l'application le signale au moment du choix, avant tout envoi de document."}}, {"@type": "Question", "name": "Peut-on traduire des fichiers Excel de tableaux financiers ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les formats .xls et .xlsx sont pris en charge au même titre que Word, PowerPoint et PDF, dans la limite de 25 fichiers de 50 Mo par envoi. Le fichier revient dans son format d'origine, structure de tableau conservée."}}, {"@type": "Question", "name": "Comment assurer la cohérence entre versions annuelles ?", "acceptedAnswer": {"@type": "Answer", "text": "Par la mémoire de traduction, alimentée par les projets en confidentialité Standard et réutilisable exclusivement par votre organisation, et par les ressources terminologiques propres que Fast lookup CHnell accepte en plus de ses 26 domaines sourcés. Les deux mécanismes se combinent : la mémoire pour les phrases, le concordancier pour les termes."}}, {"@type": "Question", "name": "Qui relit une documentation destinée aux investisseurs ?", "acceptedAnswer": {"@type": "Answer", "text": "Un traducteur juridique en Light review ou en Full review selon l'enjeu, ou deux traducteurs et une agence spécialisée pour une Double review avec certificat. Le niveau se choisit document par document, et le délai s'affiche avant la validation du devis."}}, {"@type": "Question", "name": "Les documents traduits servent-ils à entraîner un moteur ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Les contenus clients ne servent pas à entraîner les moteurs. Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction, mais elle reste cloisonnée à votre organisation ; en mode Highly sensitive content, aucune réutilisation n'a lieu. Le mode se choisit à la création du projet."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Banque et finance", "item": "https://neur-on.ai/fr/traduction/banque-finance/"}]}</script>
 </head>
@@ -229,10 +230,10 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Banque et finance</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Banque et finance</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -243,7 +244,11 @@
           <a href="#faits" class="btn btn-ghost">Ce que Corrext apporte</a>
         </div>
       </div>
-      <div class="thero-promise"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Secret bancaire :</b> mode Highly sensitive content : stockage et traitement en Suisse</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Documents récurrents :</b> conditions générales et documentation de fonds en mémoire de traduction</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Quatre langues natives :</b> allemand, français, italien et anglais, toutes paires</span></span></div>
+      <div class="law-spec">
+        <div class="sh"><b>Terminologie officielle</b><span>7 termes</span></div>
+        <div class="sr first"><i>Allemand</i><b>Bankgeheimnis</b></div><div class="sr"><i>Français</i><b>secret bancaire</b></div><div class="sr"><i>Italien</i><b>segreto bancario</b></div><div class="sr"><i>Anglais</i><b>banking secrecy</b></div>
+        <div class="sf">art. 47 LB · vérifiable dans Fast lookup CHnell</div>
+      </div>
     </div>
   </div>
 </section>
@@ -388,6 +393,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

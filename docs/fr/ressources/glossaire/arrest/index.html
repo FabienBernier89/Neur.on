@@ -20,13 +20,15 @@
 <link rel="icon" type="image/svg+xml" href="../../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../../assets/neuron.css?v=9a72ca12">
 <style>.gterm{padding:70px 0}
 .gterm-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
 .gdef{font-size:18px;line-height:1.6;color:var(--ink);max-width:56ch}
 .gmeta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
 .gmeta span{font-size:12px;font-weight:700;background:var(--tint);color:var(--navy);border-radius:50px;padding:5px 12px}
 .glangs{border-top:1px solid var(--line)}
+.gnote{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:26px 28px}
+.gnote p{font-size:14.5px;color:var(--text);line-height:1.65;margin-bottom:16px}
 .glang{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .glang i{font-style:normal;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 .glang b{font-size:16px;color:var(--ink)}
@@ -228,29 +230,29 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../../fr/">Accueil</a></li><li><a href="../../../../fr/ressources/">Ressources</a></li><li><a href="../../../../fr/ressources/glossaire/">Glossaire</a></li><li><span aria-current="page">Arrest · séquestre</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../../fr/">Accueil</a></li><li><a href="../../../../fr/ressources/">Ressources</a></li><li><a href="../../../../fr/ressources/glossaire/">Glossaire</a></li><li><span aria-current="page">Arrest · séquestre</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero" style="padding-bottom:70px">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
         <h1><em>Arrest</em> · séquestre</h1>
         <p class="lead">Le séquestre bloque des biens situés en Suisse avant même que la créance soit établie. Le mot allemand ne désigne pas une arrestation : c'est un faux ami redoutable dans les dossiers internationaux.</p>
         <div class="thero-cta">
-          <a href="../../../../fr/corrext/chnell/" class="btn btn-blue">Chercher ce terme en contexte <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="../../../../fr/ressources/glossaire/" class="btn btn-ghost">Tout le glossaire</a>
+          <a href="../../../../fr/contact/" class="btn btn-blue">Demander une démo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="#definition" class="btn btn-ghost">Lire la définition</a>
         </div>
       </div>
-      <div class="thero-promise">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Base légale :</b> art. 271 LP</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Domaine :</b> Poursuite et faillite</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Source :</b> Fedlex, loi fédérale sur la poursuite pour dettes et la faillite</span></span>
+      <div class="law-spec">
+        <div class="sh"><b>Le terme, quatre langues</b><span>Poursuite et faillite</span></div>
+        <div class="sr first"><i>Allemand</i><b>Arrest</b></div><div class="sr"><i>Français</i><b>séquestre</b></div><div class="sr"><i>Italien</i><b>sequestro</b></div><div class="sr"><i>Anglais</i><b>attachment</b></div>
+        <div class="sf">art. 271 LP · source : Fedlex, loi fédérale sur la poursuite pour dettes et la faillite</div>
       </div>
     </div>
   </div>
 </section>
-<section class="gterm">
+<section class="gterm" id="definition">
   <div class="container">
     <div class="gterm-grid">
       <div>
@@ -258,7 +260,12 @@
         <p class="gdef">Le séquestre est une mesure conservatoire qui permet au créancier d'une dette échue et non garantie par gage de faire bloquer les biens du débiteur situés en Suisse. Il est ordonné par le juge dans les cas prévus par la loi, notamment lorsque le débiteur n'a pas de domicile fixe, tente de se soustraire à ses obligations ou n'habite pas en Suisse. Le créancier doit ensuite valider le séquestre par une poursuite ou une action.</p>
         <div class="gmeta"><span>Poursuite et faillite</span><span>art. 271 LP</span></div>
       </div>
-      <div class="glangs"><div class="glang"><i>Allemand</i><b>Arrest</b></div><div class="glang"><i>Français</i><b>séquestre</b></div><div class="glang"><i>Italien</i><b>sequestro</b></div><div class="glang"><i>Anglais</i><b>attachment</b></div></div>
+      <div class="gnote">
+        <p>Les lois fédérales suisses sont publiées en allemand, en français et en italien, et les
+          trois versions font foi. L'équivalence ci-contre n'est donc pas une traduction d'usage :
+          c'est le terme employé par le texte officiel lui-même.</p>
+        <a class="feat-link" href="../../../../fr/ressources/glossaire/">Tout le glossaire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
@@ -369,6 +376,6 @@
   </div>
 </footer>
 
-<script src="../../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
 <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../../../assets/favicon.svg">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=9e9920fa">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=9a72ca12">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -31,6 +31,7 @@
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.tlaws-lead{position:sticky;top:96px;align-self:start}
 .tlaws h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
 .tlaws-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
 .tlaw{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -38,7 +39,7 @@
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}}</style>
+@media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Un tribunal suisse accepte-t-il une traduction automatique ?", "acceptedAnswer": {"@type": "Answer", "text": "Une pièce produite devant un tribunal doit être fiable, et selon le cas attestée. La traduction machine sert à comprendre le dossier ; ce qui est déposé passe par une Full review par un traducteur juridique, ou par une Double review avec certificat quand une attestation est demandée."}}, {"@type": "Question", "name": "Dans quelle langue faut-il traduire les pièces ?", "acceptedAnswer": {"@type": "Answer", "text": "Dans la langue officielle du for, qui dépend du canton et de l'autorité saisie. L'allemand, le français et l'italien sont natifs dans toutes les paires, l'anglais également, ce qui couvre aussi les arbitrages internationaux menés en anglais avec des pièces germanophones."}}, {"@type": "Question", "name": "Comment garder le secret du dossier ?", "acceptedAnswer": {"@type": "Answer", "text": "Le stockage se fait sur des serveurs suisses dans tous les cas. Le mode Highly sensitive content impose en plus un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Les moteurs hébergés à l'étranger affichent un avertissement avant tout envoi."}}, {"@type": "Question", "name": "Peut-on comparer plusieurs traductions d'un même passage ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La fonction Alternatives propose jusqu'à quatre formulations, chacune attribuée au moteur qui l'a produite. C'est utile pour une citation de sentence ou de jurisprudence, où deux formulations acceptables n'ont pas la même portée devant l'instance suivante. Le choix retenu peut ensuite être fixé dans vos ressources terminologiques, pour tout le dossier."}}, {"@type": "Question", "name": "Comment vérifier un terme de procédure ?", "acceptedAnswer": {"@type": "Answer", "text": "En le surlignant : Fast lookup CHnell l'ouvre en contexte avec sa source officielle, dans les domaines Litigation & Enforcement et Arbitration. Le concordancier accepte les opérateurs entre guillemets, le signe moins et l'opérateur or pour cibler une occurrence précise."}}, {"@type": "Question", "name": "Et les pièces scannées de mauvaise qualité ?", "acceptedAnswer": {"@type": "Answer", "text": "L'onglet PDF to Word de Fast translation convertit un scan en document Word éditable avant traduction ou annotation. C'est souvent la première étape d'un bordereau, où une partie des annexes n'existe que sous forme d'image. Le document Word obtenu se traduit ensuite comme n'importe quel fichier natif."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Contentieux et arbitrage", "item": "https://neur-on.ai/fr/traduction/contentieux-arbitrage/"}]}</script>
 </head>
@@ -229,10 +230,10 @@
   </div>
 </div>
 
-<nav class="crumbs" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Contentieux et arbitrage</span></li></ol></div></nav>
+<nav class="crumbs crumbs-light" aria-label="Fil d'Ariane"><div class="container"><ol><li><a href="../../../fr/">Accueil</a></li><li><a href="../../../fr/traduction/">Traduction</a></li><li><span aria-current="page">Contentieux et arbitrage</span></li></ol></div></nav>
 
 <main id="main">
-<section class="thero">
+<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -243,7 +244,11 @@
           <a href="#faits" class="btn btn-ghost">Ce que Corrext apporte</a>
         </div>
       </div>
-      <div class="thero-promise"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Volume de pièces :</b> jusqu'à 25 fichiers de 50 Mo par envoi, mise en page conservée</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Citations exactes :</b> la formulation des textes officiels, article par article</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Secret du dossier :</b> mode Highly sensitive content, stockage et traitement en Suisse</span></span></div>
+      <div class="law-spec">
+        <div class="sh"><b>Terminologie officielle</b><span>8 termes</span></div>
+        <div class="sr first"><i>Allemand</i><b>Schiedsgericht</b></div><div class="sr"><i>Français</i><b>tribunal arbitral</b></div><div class="sr"><i>Italien</i><b>tribunale arbitrale</b></div><div class="sr"><i>Anglais</i><b>arbitral tribunal</b></div>
+        <div class="sf">art. 186 LDIP · vérifiable dans Fast lookup CHnell</div>
+      </div>
     </div>
   </div>
 </section>
@@ -388,6 +393,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=9e9920fa" defer></script>
+<script src="../../../assets/nav.js?v=9a72ca12" defer></script>
 </body>
 </html>
