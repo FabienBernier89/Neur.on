@@ -5,6 +5,9 @@ DESIGN.md
 
 # Captures de revue et artefacts locaux
 *.png
+# ... sauf les images de marque, qui font partie du site
+!assets/img/*.png
+!docs/assets/img/*.png
 .DS_Store
 __pycache__/
 src/__pycache__/
