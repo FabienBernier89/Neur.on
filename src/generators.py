@@ -56,6 +56,28 @@ def hero(h1_lede, h1_rest, lead, promesses, ancre="#faits", ancre_txt="Voir le d
 </section>'''
 
 
+def hero_job(lede, rest, lead, promesses, titre_fiche, ancre="#faits", ancre_txt="Ce que Corrext change"):
+    """Hero métier : le bleu nuit du produit, mais les repères forment une fiche de profil."""
+    ps = "".join(
+        f'<span>{ICONS[i % 3]}<span><b>{p["t"]} :</b> {p["d"]}</span></span>'
+        for i, p in enumerate(promesses))
+    return f'''<section class="thero thero-job">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>{lede}</em> {rest}</h1>
+        <p class="lead">{lead}</p>
+        <div class="thero-cta">
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">Demander une démo {ARROW}</a>
+          <a href="{ancre}" class="btn btn-ghost">{ancre_txt}</a>
+        </div>
+      </div>
+      <div class="thero-promise"><span class="jh">{titre_fiche}</span>{ps}</div>
+    </div>
+  </div>
+</section>'''
+
+
 def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt="Ce que Corrext apporte"):
     """Hero des pages de matière juridique : la terminologie tient lieu de visuel."""
     rows = "".join(
@@ -257,7 +279,8 @@ def gen_solutions(src):
     data = load(src, "solutions")
     for d in data:
         body = "\n".join([
-            hero(d["lede"], d["h1"], d["lead"], d["promesses"], "#faits", "Ce que Corrext change"),
+            hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
+                     "Ce métier, en trois points"),
             facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
             who(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
