@@ -68,8 +68,11 @@ canonical: https://neur-on.ai/fr/comparatif/
 @media(max-width:940px){
   .cphv-row{grid-template-columns:1fr;gap:3px}
   .cphv-row.hd{display:none}
-  .cphv-row .a::before{content:"Sans Corrext : ";color:var(--muted)}
-  .cphv-row .b::before{content:"Avec Corrext : ";color:var(--muted);font-weight:400}
+  .cphv-row .a::before{content:var(--la);color:var(--muted);font-weight:600}
+  .cphv-row .b::before{content:"Corrext : ";color:var(--muted);font-weight:400}
+  .cphv-body.v-deepl{--la:"DeepL Pro seul : "}
+  .cphv-body.v-llm{--la:"LLM seul : "}
+  .cphv-body.v-agence{--la:"Agence seule : "}
 }
 </style>
 
@@ -119,7 +122,7 @@ canonical: https://neur-on.ai/fr/comparatif/
       <div class="feat-visual">
         <div class="win">
           <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Extrait du tableau</span></div>
-          <div class="cphv-body">
+          <div class="cphv-body v-deepl">
             <div class="cphv-row hd"><span></span><span class="a">DeepL Pro seul</span><span class="b">Corrext</span></div>
             <div class="cphv-row"><span class="l">Lieu de traitement</span><span class="a">Hors de Suisse</span><span class="b">Suisse, au choix</span></div>
             <div class="cphv-row"><span class="l">Avis avant envoi</span><span class="a">Aucun</span><span class="b">Attorney-Client privilege</span></div>
@@ -145,7 +148,7 @@ canonical: https://neur-on.ai/fr/comparatif/
       <div class="feat-visual">
         <div class="win">
           <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Extrait du tableau</span></div>
-          <div class="cphv-body">
+          <div class="cphv-body v-llm">
             <div class="cphv-row hd"><span></span><span class="a">LLM seul</span><span class="b">Corrext</span></div>
             <div class="cphv-row"><span class="l">Reformuler, expliquer</span><span class="a">Excellent</span><span class="b">Rephrasing, 5 styles</span></div>
             <div class="cphv-row"><span class="l">Référence légale vérifiable</span><span class="a">Sans source</span><span class="b">Concordancier sourcé</span></div>
@@ -171,7 +174,7 @@ canonical: https://neur-on.ai/fr/comparatif/
       <div class="feat-visual">
         <div class="win">
           <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Extrait du tableau</span></div>
-          <div class="cphv-body">
+          <div class="cphv-body v-agence">
             <div class="cphv-row hd"><span></span><span class="a">Agence seule</span><span class="b">Corrext</span></div>
             <div class="cphv-row"><span class="l">Délai de mise en route</span><span class="a">Devis, commande</span><span class="b">Immédiat</span></div>
             <div class="cphv-row"><span class="l">Qualité sur un acte engageant</span><span class="a">C'est son métier</span><span class="b">Relecture commandée</span></div>

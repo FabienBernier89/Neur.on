@@ -30,11 +30,77 @@ Neur.on s'adresse aux cabinets d'avocats, aux banques et établissements financi
 - [Moteur de traduction juridique suisse pour LegalTechs et éditeurs](https://neur-on.ai/fr/solutions/editeurs-legaltech/)
 - [Traduction pour fiduciaires, audit et conseil en Suisse](https://neur-on.ai/fr/solutions/fiduciaires-conseil/)
 
+## Traduction par domaine et par langue
+
+- [Traduction juridique par domaine et par langue](https://neur-on.ai/fr/traduction/)
+- [Traduction juridique de l'allemand vers l'anglais](https://neur-on.ai/fr/traduction/allemand-anglais/)
+- [Traduction juridique de l'allemand au français](https://neur-on.ai/fr/traduction/allemand-francais/)
+- [Traduction juridique de l'anglais vers l'allemand](https://neur-on.ai/fr/traduction/anglais-allemand/)
+- [Traduction juridique du français vers l'allemand](https://neur-on.ai/fr/traduction/francais-allemand/)
+- [Traduction juridique du français vers l'anglais](https://neur-on.ai/fr/traduction/francais-anglais/)
+- [Traduction juridique de l'italien au français](https://neur-on.ai/fr/traduction/italien-francais/)
+
 ## Comparatifs
 
 - [Comparatifs](https://neur-on.ai/fr/comparatif/)
+- [Agence de traduction ou plateforme : le choix avec Corrext](https://neur-on.ai/fr/comparatif/agence-ou-plateforme/)
 - [ChatGPT et traduction juridique : ce que Corrext apporte](https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/)
 - [DeepL Pro et traduction juridique : ce que Corrext change](https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/)
+
+## Ressources
+
+- [Traduire un contrat en droit suisse quadrilingue](https://neur-on.ai/fr/ressources/blog/traduire-contrat-droit-suisse/)
+
+## Centre d'aide
+
+- [Centre d'aide Corrext](https://neur-on.ai/fr/aide/)
+- [Fast lookup CHnell : chercher un terme en contexte](https://neur-on.ai/fr/aide/chnell/)
+- [Filtrer une recherche CHnell par domaine et source](https://neur-on.ai/fr/aide/chnell/filtrer-domaine-et-source/)
+- [Les operateurs de recherche de CHnell expliques](https://neur-on.ai/fr/aide/chnell/operateurs-de-recherche/)
+- [Rechercher un terme dans Fast lookup CHnell](https://neur-on.ai/fr/aide/chnell/rechercher-un-terme/)
+- [Ressources partagees et propres dans CHnell](https://neur-on.ai/fr/aide/chnell/ressources-partagees-et-propres/)
+- [Afficher un segment CHnell dans son contexte](https://neur-on.ai/fr/aide/chnell/segment-en-contexte/)
+- [Compte et securite : vos donnees dans Corrext](https://neur-on.ai/fr/aide/compte-et-securite/)
+- [Se deconnecter et gerer son compte Corrext](https://neur-on.ai/fr/aide/compte-et-securite/deconnexion-et-compte/)
+- [Ou sont hebergees et traitees vos donnees Corrext](https://neur-on.ai/fr/aide/compte-et-securite/hebergement-et-traitement/)
+- [Memoires de traduction et reutilisation Corrext](https://neur-on.ai/fr/aide/compte-et-securite/memoires-de-traduction/)
+- [Quels moteurs de Corrext traitent hors de Suisse](https://neur-on.ai/fr/aide/compte-et-securite/moteurs-hors-suisse/)
+- [Depannage Corrext : bouton grise, langue, fichier](https://neur-on.ai/fr/aide/depannage/)
+- [Le bouton Next reste grise dans Corrext](https://neur-on.ai/fr/aide/depannage/bouton-next-grise/)
+- [Mon fichier est refuse par Corrext : que faire](https://neur-on.ai/fr/aide/depannage/fichier-refuse/)
+- [La langue cible n'apparait pas dans Corrext](https://neur-on.ai/fr/aide/depannage/langue-cible-indisponible/)
+- [La traduction ne se lance pas dans Corrext](https://neur-on.ai/fr/aide/depannage/traduction-ne-se-lance-pas/)
+- [Extraits du registre du commerce : traduction certifiee](https://neur-on.ai/fr/aide/extraits-registre/)
+- [Commander la traduction certifiee d'un extrait](https://neur-on.ai/fr/aide/extraits-registre/commander-une-traduction-certifiee/)
+- [Choisir la livraison et le delai d'un extrait](https://neur-on.ai/fr/aide/extraits-registre/livraison-et-delai/)
+- [Choisir le niveau de certification d'un extrait](https://neur-on.ai/fr/aide/extraits-registre/niveau-de-certification/)
+- [Fast translation : traduire un texte ou des fichiers](https://neur-on.ai/fr/aide/fast-translation/)
+- [Comparer les alternatives par moteur dans Corrext](https://neur-on.ai/fr/aide/fast-translation/comparer-les-alternatives/)
+- [Convertir un PDF en Word avec PDF to Word](https://neur-on.ai/fr/aide/fast-translation/convertir-pdf-en-word/)
+- [Corriger, copier et effacer une traduction Corrext](https://neur-on.ai/fr/aide/fast-translation/corriger-copier-effacer/)
+- [Lancer Fast Lookup depuis une traduction Corrext](https://neur-on.ai/fr/aide/fast-translation/lancer-fast-lookup/)
+- [Reformuler un texte avec Rephrasing dans Corrext](https://neur-on.ai/fr/aide/fast-translation/reformuler-un-texte/)
+- [Traduire des fichiers dans Fast translation](https://neur-on.ai/fr/aide/fast-translation/traduire-des-fichiers/)
+- [Traduire un texte dans Fast translation](https://neur-on.ai/fr/aide/fast-translation/traduire-un-texte/)
+- [Formats et langues acceptes par Corrext](https://neur-on.ai/fr/aide/formats-et-langues/)
+- [Formats de fichiers acceptes par Corrext](https://neur-on.ai/fr/aide/formats-et-langues/formats-acceptes/)
+- [Les 30 langues de Corrext et les langues natives](https://neur-on.ai/fr/aide/formats-et-langues/langues-et-langues-natives/)
+- [Limites de caracteres dans Corrext expliquees](https://neur-on.ai/fr/aide/formats-et-langues/limites-de-caracteres/)
+- [Limites de taille et de nombre de fichiers Corrext](https://neur-on.ai/fr/aide/formats-et-langues/limites-taille-et-nombre/)
+- [Premiers pas dans Corrext : se connecter et traduire](https://neur-on.ai/fr/aide/premiers-pas/)
+- [L'avis Attorney-Client privilege de Corrext](https://neur-on.ai/fr/aide/premiers-pas/avis-attorney-client-privilege/)
+- [Choisir un moteur de traduction dans Corrext](https://neur-on.ai/fr/aide/premiers-pas/choisir-un-moteur/)
+- [Choisir les langues source et cible dans Corrext](https://neur-on.ai/fr/aide/premiers-pas/langues-disponibles/)
+- [Les quatre outils de l'accueil de Corrext](https://neur-on.ai/fr/aide/premiers-pas/les-quatre-outils/)
+- [Le mode Highly sensitive content de Corrext](https://neur-on.ai/fr/aide/premiers-pas/mode-highly-sensitive/)
+- [Se connecter a Corrext : mot de passe ou SSO](https://neur-on.ai/fr/aide/premiers-pas/se-connecter/)
+- [Translation project : relecture et devis dans Corrext](https://neur-on.ai/fr/aide/translation-project/)
+- [Creer un projet de traduction dans Corrext](https://neur-on.ai/fr/aide/translation-project/creer-un-projet/)
+- [Deposer les fichiers d'un projet et verifier](https://neur-on.ai/fr/aide/translation-project/deposer-les-fichiers/)
+- [Obtenir un devis et un delai dans Corrext](https://neur-on.ai/fr/aide/translation-project/devis-et-delai/)
+- [Choisir le niveau de confidentialite d'un projet](https://neur-on.ai/fr/aide/translation-project/niveau-de-confidentialite/)
+- [Les trois niveaux de relecture externe de Corrext](https://neur-on.ai/fr/aide/translation-project/niveaux-de-relecture-externe/)
+- [Relecture interne ou workflow personnalise Corrext](https://neur-on.ai/fr/aide/translation-project/relecture-interne-ou-workflow/)
 
 ## Entreprise
 

@@ -3,7 +3,56 @@
   <url><loc>https://neur-on.ai/fr/</loc><lastmod>2026-09-15</lastmod><priority>1.0</priority></url>
   <url><loc>https://neur-on.ai/fr/a-propos/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/a-propos/presse/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/chnell/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/chnell/filtrer-domaine-et-source/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/chnell/operateurs-de-recherche/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/chnell/rechercher-un-terme/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/chnell/ressources-partagees-et-propres/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/chnell/segment-en-contexte/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/compte-et-securite/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/compte-et-securite/deconnexion-et-compte/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/compte-et-securite/hebergement-et-traitement/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/compte-et-securite/memoires-de-traduction/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/compte-et-securite/moteurs-hors-suisse/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/depannage/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/depannage/bouton-next-grise/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/depannage/fichier-refuse/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/depannage/langue-cible-indisponible/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/depannage/traduction-ne-se-lance-pas/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/extraits-registre/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/extraits-registre/commander-une-traduction-certifiee/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/extraits-registre/livraison-et-delai/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/extraits-registre/niveau-de-certification/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/comparer-les-alternatives/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/convertir-pdf-en-word/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/corriger-copier-effacer/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/lancer-fast-lookup/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/reformuler-un-texte/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/traduire-des-fichiers/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/fast-translation/traduire-un-texte/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/formats-acceptes/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/langues-et-langues-natives/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/limites-de-caracteres/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/limites-taille-et-nombre/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/avis-attorney-client-privilege/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/choisir-un-moteur/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/langues-disponibles/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/les-quatre-outils/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/mode-highly-sensitive/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/premiers-pas/se-connecter/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/creer-un-projet/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/deposer-les-fichiers/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/devis-et-delai/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/niveau-de-confidentialite/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/niveaux-de-relecture-externe/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/translation-project/relecture-interne-ou-workflow/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/comparatif/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/comparatif/agence-ou-plateforme/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/contact/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
@@ -16,6 +65,7 @@
   <url><loc>https://neur-on.ai/fr/langues-et-formats/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/neuron-llm/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/niveaux-de-qualite/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/ressources/blog/traduire-contrat-droit-suisse/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/securite-souverainete/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/solutions/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/solutions/autorites-administration/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
@@ -24,4 +74,11 @@
   <url><loc>https://neur-on.ai/fr/solutions/directions-juridiques/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/solutions/editeurs-legaltech/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/solutions/fiduciaires-conseil/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/</loc><lastmod>2026-09-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/allemand-anglais/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/allemand-francais/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/anglais-allemand/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/francais-allemand/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/francais-anglais/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/traduction/italien-francais/</loc><lastmod>2026-09-15</lastmod><priority>0.6</priority></url>
 </urlset>
