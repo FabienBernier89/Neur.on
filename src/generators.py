@@ -493,7 +493,7 @@ def gen_glossaire(src):
             {"href": "fr/corrext/chnell/", "txt": "Découvrir CHnell"}),
     ])
     pages.append(("fr/ressources/glossaire/", {
-        "title": "Glossaire juridique suisse allemand, français, italien, anglais · Neur.on",
+        "title": "Glossaire juridique suisse en quatre langues · Neur.on",
         "description": "La terminologie du droit suisse dans les quatre langues, avec la base "
                        "légale et la source officielle de chaque terme. Vérifiable en contexte "
                        "dans le concordancier CHnell de Corrext.",
