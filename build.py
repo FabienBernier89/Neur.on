@@ -189,6 +189,9 @@ def build_page(path, meta, body):
         '<link rel="preconnect" href="https://fonts.googleapis.com">',
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">',
+        f'<link rel="icon" type="image/svg+xml" href="{root}assets/favicon.svg">',
+        f'<link rel="apple-touch-icon" href="{root}assets/favicon.svg">',
+        '<meta name="theme-color" content="#001B4C">',
         f'<link rel="stylesheet" href="{root}assets/neuron.css?v={ASSET_V}">',
     ]
     for st in styles:
@@ -250,19 +253,44 @@ def write_annexes(paths):
           '<body><p>Redirection vers <a href="fr/">Neur.on</a>.</p>\n'
           '<script>location.replace("fr/");</script>\n</body>\n</html>\n' % SITE)
 
-    # page 404 minimale, cohérente avec le socle
+    # page 404 : servie depuis n'importe quelle profondeur, donc styles en ligne
     write(os.path.join(OUT, "404.html"),
-          '<!DOCTYPE html>\n<html lang="fr">\n<head>\n<meta charset="UTF-8">\n'
-          '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
-          '<meta name="robots" content="noindex">\n<title>Page introuvable · Neur.on</title>\n'
-          '<link rel="stylesheet" href="/assets/neuron.css?v=%s">\n</head>\n<body>\n'
-          '<section class="final-cta" style="min-height:70vh;display:flex;align-items:center">'
-          '<div class="container"><div class="final-cta-inner">'
-          '<h2>Cette page n\'existe pas</h2>'
-          '<p>Le lien est peut-être ancien. Reprenez depuis l\'accueil ou la plateforme Corrext.</p>'
-          '<div class="final-cta-btns"><a href="/fr/" class="btn btn-blue">Accueil</a>'
-          '<a href="/fr/corrext/" class="btn-outline">Corrext</a></div>'
-          '</div></div></section>\n</body>\n</html>\n' % ASSET_V)
+          """<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page introuvable · Neur.on</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:linear-gradient(152deg,#0c2f7a 0%,#001B4C 54%,#001233 100%);color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 24px;line-height:1.6}
+.w{max-width:620px;text-align:center}
+.lg{font-weight:900;font-size:26px;letter-spacing:-.03em;margin-bottom:34px;display:inline-block;color:#fff;text-decoration:none}
+.lg span{color:#317BFF}
+h1{font-size:clamp(28px,5vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1.15;margin-bottom:16px}
+p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:30px}
+.b{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;margin:0 6px 10px}
+.b1{background:#1f5fd6;color:#fff}
+.b2{border:1px solid rgba(255,255,255,.32);color:#fff}
+</style>
+</head>
+<body>
+<div class="w">
+<a class="lg" href="/fr/">Neur<span>.</span>on</a>
+<h1>Cette page n'existe pas</h1>
+<p>Le lien est peut-être ancien, ou la page n'a pas encore été publiée. Reprenez depuis l'accueil ou depuis la plateforme Corrext.</p>
+<a class="b b1" href="/fr/">Accueil</a><a class="b b2" href="/fr/corrext/">La plateforme Corrext</a>
+</div>
+<script>
+/* Sur un aperçu servi dans un sous-dossier, les liens absolus sont reprefixes */
+(function(){var m=location.pathname.match(/^\\/[^/]+\\//);
+ if(m && m[0] !== "/fr/"){[].forEach.call(document.querySelectorAll("a[href^='/']"),function(a){
+   a.setAttribute("href", m[0].replace(/\\/$/,"") + a.getAttribute("href"));});}})();
+</script>
+</body>
+</html>
+""")
 
     open(os.path.join(OUT, ".nojekyll"), "w").close()
 
