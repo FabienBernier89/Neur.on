@@ -31,12 +31,18 @@
   <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/limites-de-caracteres/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/formats-et-langues/limites-taille-et-nombre/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/choisir-le-moteur-du-projet/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/creer-un-projet/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/deposer-les-fichiers/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/devis-et-delai/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/fixer-la-terminologie/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/niveau-de-confidentialite/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/niveaux-de-relecture-externe/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/panneau-lateral-de-l-editeur/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/relecture-interne-ou-workflow/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/relire-dans-l-editeur/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/travailler-dans-word/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/aide/gestion-de-projet/valider-et-recuperer/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/premiers-pas/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/premiers-pas/avis-attorney-client-privilege/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/aide/premiers-pas/choisir-un-moteur/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
@@ -60,6 +66,7 @@
   <url><loc>https://neur-on.ai/fr/corrext/</loc><lastmod>2026-09-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/api-on-premises/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/chnell/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://neur-on.ai/fr/corrext/editeur-de-relecture/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/extraits-registre-commerce/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/gestion-de-projet/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://neur-on.ai/fr/corrext/traduction-texte-et-document/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority></url>

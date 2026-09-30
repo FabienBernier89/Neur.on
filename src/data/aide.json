@@ -280,10 +280,10 @@
     "slug": "gestion-de-projet",
     "titre": "Gestion de projet",
     "h1": "Faire relire et chiffrer une traduction",
-    "lead": "Gestion de projet enchaîne trois étapes : réglage du projet, revue des fichiers, puis devis. Voici comment créer un projet, choisir sa confidentialité, déposer vos documents et commander une relecture interne ou externe.",
+    "lead": "Gestion de projet enchaîne trois étapes de commande (réglage du projet, revue des fichiers, devis), puis la terminologie, le choix du moteur et la relecture dans l'éditeur. Voici comment créer un projet, fixer vos termes, relire la traduction et la valider.",
     "outil": "Gestion de projet",
     "title": "Gestion de projet : relecture et devis Corrext · Neur.on",
-    "description": "Créer un projet, choisir sa confidentialité, déposer les fichiers, comparer relecture interne et workflow personnalisé, obtenir un devis et un délai.",
+    "description": "Créer un projet, fixer la terminologie, choisir le moteur, relire dans l'éditeur ou dans Word, obtenir un devis et valider la traduction.",
     "articles": [
       {
         "slug": "creer-un-projet",
@@ -403,6 +403,123 @@
           "L'unité de calcul est la page standard, pas le fichier : deux documents courts peuvent compter moins qu'une seule pièce dense.",
           "Le coût affiché est hors taxe. Corrext l'indique explicitement dans l'encadré d'estimation.",
           "« Generate quote » transmet la demande à l'agence chargée de la relecture externe : ne le déclenchez que lorsque vos réglages sont définitifs."
+        ]
+      },
+      {
+        "slug": "fixer-la-terminologie",
+        "titre": "Fixer la terminologie du projet",
+        "title": "Fixer la terminologie d'un projet Corrext · Neur.on",
+        "description": "Après la création du projet, Corrext repère les termes clés de vos documents. Fixez leur traduction : elle sera reprise par la traduction automatique.",
+        "reponse": "Une fois le projet créé, l'écran « Project terminology » affiche les termes que Corrext a repérés dans vos documents, par exemple « résiliation » ou « for exclusif ». Un clic sur un terme ouvre un champ où vous saisissez sa traduction dans chaque langue cible. Vous pouvez aussi ajouter vos propres termes avec « Custom term ». Les traductions fixées ici sont reprises telles quelles par la traduction automatique du projet.",
+        "etapes": [
+          "Cliquez sur <b>« Create project »</b> à l'étape « Quotes » : l'écran <b>« Project terminology »</b> s'ouvre.",
+          "Parcourez les termes proposés, regroupés sous l'onglet de la langue source.",
+          "Cliquez sur un terme, par exemple « résiliation », pour l'ajouter à la terminologie du projet.",
+          "Saisissez sa traduction dans le champ de chaque langue cible, par exemple « EN ».",
+          "Ajoutez un terme absent de la liste avec <b>« Custom term »</b>, ou retirez-en un d'un clic sur la corbeille.",
+          "Cliquez sur <b>« Next »</b> pour passer au choix du moteur."
+        ],
+        "savoir": [
+          "La traduction fixée s'applique à la forme exacte du terme. Un mot de la même famille, comme le verbe « résilier », n'est pas concerné.",
+          "Les termes proposés viennent de vos propres documents : la liste change d'un projet à l'autre.",
+          "Pour une terminologie commune à tous les projets, votre administrateur peut importer une base terminologique au format TBX ou XML au niveau de l'organisation."
+        ]
+      },
+      {
+        "slug": "choisir-le-moteur-du-projet",
+        "titre": "Choisir le moteur du projet",
+        "title": "Choisir le moteur de traduction d'un projet Corrext · Neur.on",
+        "description": "Dernière étape avant la traduction : choisir le moteur du projet, suisse ou tiers. Ce que disent les cartes, et ce que change votre choix pour vos données.",
+        "reponse": "Après la terminologie, l'écran « Choose a machine translation engine » présente les moteurs sous forme de cartes. Le moteur suisse recommandé est présélectionné. Les moteurs de Neur.on, dont Neur.on LLM, garantissent un traitement 100 % suisse. Les moteurs tiers affichent un rappel : votre politique interne peut exiger une pseudonymisation préalable. Un clic sur « Next » lance la traduction automatique et ouvre le tableau de bord du projet.",
+        "etapes": [
+          "Depuis « Project terminology », cliquez sur « Next » : l'écran <b>« Choose a machine translation engine »</b> s'affiche.",
+          "Repérez la carte marquée <b>« Recommended »</b> : c'est le moteur suisse présélectionné.",
+          "Lisez la description de chaque carte : les moteurs de Neur.on portent la mention « 100% Swiss Data Processing ».",
+          "Pour un moteur tiers, « DeepL Pro », « Azure OpenAI GPT » ou « Claude », lisez le rappel sur la pseudonymisation avant de le choisir.",
+          "Cliquez sur <b>« Next »</b> : la traduction démarre et le tableau de bord du projet s'ouvre."
+        ],
+        "savoir": [
+          "Votre administrateur peut restreindre la liste des moteurs autorisés pour votre organisation.",
+          "En mode « Highly sensitive content », seuls les moteurs suisses restent disponibles.",
+          "D'après leurs cartes, le moteur recommandé colle au plus près du texte source, tandis que Neur.on LLM privilégie des tournures plus naturelles."
+        ]
+      },
+      {
+        "slug": "relire-dans-l-editeur",
+        "titre": "Relire un fichier dans l'éditeur",
+        "title": "Relire une traduction dans l'éditeur de Corrext · Neur.on",
+        "description": "Le bouton « Open in CAT » ouvre l'éditeur de relecture : source et traduction côte à côte, phrase par phrase, avec confirmation et progression.",
+        "reponse": "Dans le tableau de bord du projet, le bouton « Open in CAT » ouvre l'éditeur de relecture. Le document s'y affiche en deux colonnes, texte source à gauche et traduction à droite, phrase par phrase. Vous corrigez la traduction dans la colonne de droite, vous confirmez chaque phrase relue et vous vous aidez du panneau latéral : mémoires, Fast Lookup, assistant IA et Sync.",
+        "etapes": [
+          "Ouvrez le projet depuis « My projects » sur l'accueil, puis repérez la ligne du fichier dans le tableau des tâches.",
+          "Cliquez sur <b>« Open in CAT »</b> : l'éditeur s'ouvre sur le document traduit.",
+          "Retrouvez un mot avec <b>« Filter source »</b> ou <b>« Filter target »</b>.",
+          "Cliquez sur une phrase : le panneau latéral affiche les correspondances de mémoire et les alternatives de l'assistant IA.",
+          "Corrigez la traduction dans la colonne de droite, puis cochez la case de la phrase pour la confirmer.",
+          "Suivez la progression en pourcentage en haut de l'éditeur, puis revenez au tableau de bord avec <b>« Back »</b>."
+        ],
+        "savoir": [
+          "Le repère « MT » signale une phrase issue de la traduction automatique ; sa jauge donne une indication de qualité.",
+          "Les phrases répétées et les balises incohérentes entre source et traduction sont signalées dans le tableau.",
+          "En confidentialité standard, vos corrections enrichissent votre mémoire de traduction et servent à vos projets suivants."
+        ]
+      },
+      {
+        "slug": "panneau-lateral-de-l-editeur",
+        "titre": "Utiliser le panneau latéral de l'éditeur",
+        "title": "Mémoires, Fast Lookup, IA et Sync dans l'éditeur · Neur.on",
+        "description": "Le panneau latéral de l'éditeur réunit mémoires, Fast Lookup, assistant IA et Sync. À quoi sert chaque onglet et comment l'utiliser sur une phrase.",
+        "reponse": "Le panneau latéral de l'éditeur réunit quatre outils, accessibles par les icônes à droite de l'écran : les mémoires de traduction, Fast Lookup, l'assistant IA et Sync. Ils portent sur la phrase sélectionnée et ne modifient rien tant que vous ne cliquez pas sur « Apply ».",
+        "etapes": [
+          "Sélectionnez une phrase dans l'éditeur.",
+          "Onglet <b>« Translation memories »</b> : consultez les traductions déjà validées proches de la phrase et appliquez-en une avec « Apply ».",
+          "Onglet <b>« Fast Lookup »</b> : cherchez un mot dans les mémoires et dans CHnell, côté « Source » ou côté « Target ».",
+          "Onglet <b>« AI Assistant »</b>, partie « Alternatives » : comparez la phrase traduite par plusieurs moteurs, et obtenez-en d'autres avec « Generate more ».",
+          "Partie <b>« Rephrasing »</b> : choisissez un style dans « Settings » (Formal legal, Financial, Simplified, Formal, Informal) ou l'option « Shorten », puis cliquez sur « Apply ».",
+          "Onglet <b>« Sync »</b> : arbitrez les conflits entre versions et les décisions de propagation."
+        ],
+        "savoir": [
+          "Dans Fast Lookup, le terme cherché est surligné dans la source et dans la traduction, avec le nom du document d'origine.",
+          "La reformulation souligne les mots modifiés : vous voyez l'écart avant d'appliquer.",
+          "Sync ne sert que si plusieurs personnes travaillent sur le même fichier, ou si vous l'avez ouvert dans plusieurs sessions."
+        ]
+      },
+      {
+        "slug": "travailler-dans-word",
+        "titre": "Relire dans Word",
+        "title": "Relire une traduction Corrext dans Word · Neur.on",
+        "description": "Exportez le fichier du projet, relisez-le dans Word avec le complément Corrext (assistant IA, Fast Lookup, mémoires, Sync), puis réimportez-le.",
+        "reponse": "Si vous préférez relire dans Word, exportez le fichier depuis le tableau de bord avec « Export docx », ouvrez-le dans Word et affichez le complément Corrext depuis le ruban. Son panneau reprend l'assistant IA, Fast Lookup, les correspondances de mémoire et Sync. Une fois la relecture terminée, réimportez le fichier dans le projet avec « Reimport docx ».",
+        "etapes": [
+          "Dans le tableau de bord du projet, cliquez sur <b>« Export docx »</b> pour le fichier à relire.",
+          "Ouvrez le fichier exporté dans Word, puis cliquez sur le bouton <b>« Corrext »</b> du ruban pour afficher le panneau « Corrext editor ».",
+          "Connectez-vous avec <b>« Log in »</b> si le panneau le demande.",
+          "Relisez en vous aidant des onglets « AI Assistant », « Fast Lookup », « Matches » et « Sync ».",
+          "Enregistrez le document, puis réimportez-le dans le projet avec <b>« Reimport docx »</b>."
+        ],
+        "savoir": [
+          "Le complément ne s'ouvre que sur un document exporté par « Export docx » : un fichier issu de la traduction rapide est refusé.",
+          "Il faut être membre du projet et disposer de Word 2021 ou de Microsoft 365.",
+          "Pendant le chargement d'un long document, ne fermez ni le panneau ni le fichier ; vous pouvez déjà travailler, puis résoudre les conflits dans « Sync »."
+        ]
+      },
+      {
+        "slug": "valider-et-recuperer",
+        "titre": "Valider et récupérer la traduction",
+        "title": "Valider et télécharger une traduction Corrext · Neur.on",
+        "description": "Le bouton « Validate » clôt la relecture d'un fichier, sans retour possible. Aperçu, export Word et mémoire TMX se récupèrent depuis le tableau de bord.",
+        "reponse": "Quand la relecture est terminée, le bouton « Validate » du tableau de bord clôt la tâche : l'action est définitive. Le tableau de bord donne aussi un aperçu du fichier (« Preview »), l'export Word et le téléchargement de la mémoire du projet au format TMX.",
+        "etapes": [
+          "Vérifiez la progression affichée dans l'éditeur, puis revenez au tableau de bord.",
+          "Relisez le rendu du fichier avec <b>« Preview »</b>.",
+          "Cliquez sur <b>« Validate »</b> sous l'état « Reviewing » de la tâche, puis confirmez.",
+          "Pour clore toutes les tâches d'un coup, utilisez <b>« Validate all »</b>.",
+          "Téléchargez la traduction et, au besoin, la mémoire du projet avec <b>« Download TMX »</b>."
+        ],
+        "savoir": [
+          "La validation ne peut pas être annulée : Corrext le rappelle dans la fenêtre de confirmation.",
+          "Une tâche passe par les états « Reviewing », « Validated », puis « Exported » lorsque le fichier Word a été exporté.",
+          "Le format TMX est le format d'échange standard des mémoires de traduction : il se réutilise dans la plupart des outils de traduction."
         ]
       }
     ]
@@ -736,7 +853,7 @@
         ],
         "savoir": [
           "La mémoire constituée par vos projets standard est utilisable exclusivement par vous : elle n'est pas partagée avec d'autres utilisateurs.",
-          "Aucun écran de gestion des mémoires de traduction ou des glossaires n'a été observé depuis un compte utilisateur standard : cette administration n'est pas documentée ici.",
+          "Votre administrateur gère les mémoires de l'organisation : il peut y importer des mémoires au format TMX et des bases terminologiques au format TBX ou XML, jusqu'à 5 Mo par fichier.",
           "À ne pas confondre avec CHnell, qui interroge des corpus de textes officiels et non votre mémoire de traduction."
         ]
       },

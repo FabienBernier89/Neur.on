@@ -643,7 +643,7 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 /* Outils voisins : bande de liens, pas de cartes */
 .siblings{padding:0 0 84px}
 .siblings h2{font-size:22px;margin-bottom:18px}
-.siblings-row{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.siblings-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid var(--line);border-radius:18px;overflow:hidden}
 .siblings-row a{padding:24px 26px;border-right:1px solid var(--line);display:block;transition:background .2s}
 .siblings-row a:last-child{border-right:0}
 .siblings-row a:hover{background:rgba(49,123,255,.04)}
