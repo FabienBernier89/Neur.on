@@ -606,7 +606,7 @@
     "termes": [
       {"de": "Beschwerde", "fr": "recours", "it": "ricorso", "en": "appeal", "ref": "art. 72 LTF"},
       {"de": "Bundesgericht", "fr": "Tribunal fédéral", "it": "Tribunale federale", "en": "Federal Supreme Court", "ref": "art. 188 Cst."},
-      {"de": "Zahlungsbefehl", "fr": "commandement de payer", "it": "precetto esecutivo", "en": "payment summons", "ref": "art. 69 LP"},
+      {"de": "Zahlungsbefehl", "fr": "commandement de payer", "it": "precetto esecutivo", "en": "summons for payment", "ref": "art. 69 LP"},
       {"de": "Strafbefehl", "fr": "ordonnance pénale", "it": "decreto d'accusa", "en": "summary penalty order", "ref": "art. 352 CPP"},
       {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interesse moratorio", "en": "default interest", "ref": "art. 104 CO"},
       {"de": "Mängelrüge", "fr": "avis des défauts", "it": "avviso dei difetti", "en": "notice of defects", "ref": "art. 201 CO"}

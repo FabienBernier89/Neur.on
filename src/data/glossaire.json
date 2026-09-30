@@ -239,7 +239,7 @@
   },
   {
     "slug": "zahlungsbefehl",
-    "de": "Zahlungsbefehl", "fr": "commandement de payer", "it": "precetto esecutivo", "en": "payment summons",
+    "de": "Zahlungsbefehl", "fr": "commandement de payer", "it": "precetto esecutivo", "en": "summons for payment",
     "resume": "L'acte notifié au débiteur qui ouvre la poursuite pour dettes.",
     "title": "Zahlungsbefehl : le commandement de payer suisse · Neur.on",
     "description": "Zahlungsbefehl, commandement de payer, precetto esecutivo : le premier acte de la poursuite suisse et son terme exact dans les quatre langues.",
