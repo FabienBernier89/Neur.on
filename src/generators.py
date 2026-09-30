@@ -424,7 +424,7 @@ def gen_traduction_hub(src):
 .grid3 a:nth-child(3n){{border-right:0}}
 @media(max-width:940px){{.grid3{{grid-template-columns:1fr}}.grid3 a{{border-right:0}}}}</style>''',
         cta("Votre domaine n'est pas dans la liste ?",
-            "Corrext couvre 26 domaines dans son concordancier et 30 langues sur la plateforme. "
+            "Corrext couvre 30 domaines dans son concordancier et 30 langues sur la plateforme. "
             "Dites-nous ce que vous traduisez.",
             {"href": "fr/corrext/chnell/", "txt": "Voir Fast lookup CHnell"}),
     ])
@@ -552,7 +552,7 @@ def gen_glossaire(src):
   </div>
 </section>''',
         cta("Votre terminologie, appliquée partout",
-            "CHnell couvre 26 domaines et vos propres ressources s'y ajoutent.",
+            "CHnell couvre 30 domaines et vos propres ressources s'y ajoutent.",
             {"href": "fr/corrext/chnell/", "txt": "Découvrir CHnell"}),
     ])
     pages.append(("fr/ressources/glossaire/", {

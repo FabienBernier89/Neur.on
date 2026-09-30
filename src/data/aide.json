@@ -459,7 +459,7 @@
         "slug": "filtrer-domaine-et-source",
         "titre": "Filtrer par domaine et par source",
         "title": "Filtrer une recherche CHnell par domaine et source · Neur.on",
-        "description": "Advanced search et le panneau Filters restreignent les résultats CHnell à un type de ressource, à certains des 26 domaines et à des sources précises.",
+        "description": "Advanced search et le panneau Filters restreignent les résultats CHnell à un type de ressource, à certains des 30 domaines et à des sources précises.",
         "reponse": "CHnell classe ses segments par domaine juridique et par source. Avant de chercher, le bloc repliable « Advanced search » permet de restreindre le type de ressource et de cocher un ou plusieurs domaines parmi les 26 disponibles, du droit des sociétés à la fiscalité en passant par l'arbitrage. Sur la page de résultats, le panneau « Filters » reprend ces critères et y ajoute la sélection des sources.",
         "etapes": [
           "Sur l'écran CHnell, dépliez le bloc <b>« Advanced search »</b> au-dessus du champ de recherche.",
@@ -472,7 +472,7 @@
         "savoir": [
           "Le domaine de chaque segment est affiché en capitales au-dessus du texte : c'est le moyen le plus rapide de juger si un résultat est pertinent.",
           "Filtrer par source est utile quand plusieurs autorités emploient des formulations différentes pour un même concept.",
-          "La liste complète des 26 domaines s'ouvre dans l'application : elle couvre aussi bien le droit des sociétés que le droit pénal ou la fiscalité."
+          "La liste complète des 30 domaines s'ouvre dans l'application : elle couvre aussi bien le droit des sociétés que le droit pénal ou la fiscalité."
         ]
       },
       {

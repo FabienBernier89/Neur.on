@@ -290,7 +290,7 @@
       },
       {
         "q": "La terminologie de la FINMA est-elle couverte ?",
-        "r": "Le concordancier CHnell couvre 26 domaines, dont Banking & Finance, Supervisory (FINMA) et Fund Prospectuses. Chaque résultat affiche sa source officielle, par exemple la Feuille fédérale ou Fedlex, et s'ouvre en contexte."
+        "r": "Le concordancier CHnell couvre 30 domaines, dont Banking & Finance, Supervisory (FINMA) et Fund Prospectuses. Chaque résultat affiche sa source officielle, par exemple la Feuille fédérale ou Fedlex, et s'ouvre en contexte."
       },
       {
         "q": "Peut-on imposer un moteur suisse à toute l'organisation ?",
@@ -822,7 +822,7 @@
       },
       {
         "k": "Concordancier",
-        "v": "CHnell couvre 26 domaines et cite la source de chaque segment, ce qui donne à vos utilisateurs de quoi vérifier."
+        "v": "CHnell couvre 30 domaines et cite la source de chaque segment, ce qui donne à vos utilisateurs de quoi vérifier."
       },
       {
         "k": "Agnostique",

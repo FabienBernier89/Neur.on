@@ -504,7 +504,7 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 .cx-modal.on{display:flex}
 .cx-chnell{background:#fff;border-radius:12px;width:100%;max-width:660px;padding:18px 18px 16px;box-shadow:0 30px 70px -18px rgba(30,31,59,.5)}
 .cx-chnell .head{display:flex;flex-direction:column;align-items:center;gap:2px;margin-bottom:12px}
-.cx-chnell .logo{display:inline-flex;align-items:center;gap:8px;font-size:20px;color:#9b1c2a}
+.cx-chnell .logo{display:inline-flex;align-items:center;gap:8px;font-size:20px;color:#9f182f}
 .cx-chnell .logo svg{width:26px;height:26px}
 .cx-chnell .logo b{font-weight:800}.cx-chnell .logo span{font-weight:300}
 .cx-chnell .pow{font-size:11.5px;color:var(--cx-ink)}
@@ -863,3 +863,11 @@ body.nav-open{overflow:hidden}
 .logo img{height:34px;width:auto;display:block}
 .footer-about .logo img{height:34px}
 @media(max-width:560px){.logo img{height:26px}}
+
+/* Symbole Neur.on dans les cadres de démonstration (logo Corrext bleu, logo CHnell rouge) */
+.cx-logo .cx-sym{width:24px;height:24px;display:block;object-fit:contain}
+.cx-chnell .logo .cx-sym{width:26px;height:26px;display:block;object-fit:contain}
+.cx .cx-sym{flex-shrink:0}
+/* Logos officiels Corrext et CHnell (fichiers de l'application) */
+.cx-logo .cx-brand{height:26px;width:auto;display:block}
+.cx-chnell .logo .cx-brand{height:40px;width:auto;display:block;margin:0 auto}
