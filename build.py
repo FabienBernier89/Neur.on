@@ -119,7 +119,7 @@ def neutralize_links(html):
         href = m.group(1)
         target = href.split("#")[0].split("?")[0]
         logical = re.sub(r"^(\.\./)+", "", target)
-        if href.startswith(("http", "mailto:", "#", "/")) or not logical:
+        if href.startswith(("http", "mailto:", "tel:", "#", "/")) or not logical:
             return m.group(0)
         if logical in PAGES or logical.startswith("assets/") or "assets/" in logical:
             return m.group(0)
@@ -194,6 +194,8 @@ def build_page(path, meta, body):
             else:
                 lis.append('<li><span aria-current="page">%s</span></li>' % label)
         light = " crumbs-light" if meta.get("hero") in ("law", "read", "help") else ""
+        # Centre d'aide et pages de lecture : fil d'Ariane en bandeau clair, sans héro sombre
+        light = " crumbs-light crumbs-band" if meta.get("hero") == "aide" else light
         crumb_html = ('\n<nav class="crumbs%s" aria-label="Fil d\'Ariane"><div class="container"><ol>' % light
                       + "".join(lis) + "</ol></div></nav>\n")
         crumb_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -244,7 +246,7 @@ def build_page(path, meta, body):
 
     scripts = [f'<script src="{root}assets/nav.js?v={ASSET_V}" defer></script>']
     if PRODUCTION and GA4_ID:
-        scripts.append(f'<script src="{root}assets/consent.js?v={ASSET_V}" data-ga4="{GA4_ID}" defer></script>')
+        scripts.append(f'<script src="{root}assets/consent.js?v={ASSET_V}" data-ga4="{GA4_ID}" data-privacy="{root}fr/protection-des-donnees/" defer></script>')
     for a in meta.get("assets", []) or []:
         scripts.append(f'<script src="{root}assets/{a}?v={ASSET_V}"></script>')
 

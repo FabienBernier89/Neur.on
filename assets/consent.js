@@ -4,6 +4,7 @@
   var me = document.currentScript;
   var GA = me && me.getAttribute("data-ga4");
   if (!GA) { return; }
+  var PRIV = (me && me.getAttribute("data-privacy")) || "https://neur-on.ai/privacy-policy/";
   var KEY = "neuron-consent";
   function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
@@ -30,7 +31,7 @@
     b.setAttribute("aria-label", "Cookies de mesure d'audience");
     b.innerHTML =
       '<p>Nous aimerions mesurer la fréquentation du site avec Google Analytics. Aucun cookie de mesure n\'est déposé sans votre accord. ' +
-      '<a href="https://neur-on.ai/privacy-policy/">Protection des données</a></p>' +
+      '<a href="' + PRIV + '">Protection des données</a></p>' +
       '<div class="ck-btns"><button type="button" class="btn-outline ck-no">Refuser</button>' +
       '<button type="button" class="btn btn-blue ck-yes">Accepter</button></div>';
     document.body.appendChild(b);

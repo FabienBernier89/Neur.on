@@ -131,27 +131,6 @@ def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt="Ce que Corrext a
 </section>'''
 
 
-def hero_help(rubrique, titre, reponse, tags, ancre="#etapes", ancre_txt="Voir les étapes"):
-    """Hero de documentation : la réponse d'abord, puis la fiche de l'article (outil, étapes, vérification)."""
-    rows = "".join(f'<div class="sr{" first" if i == 0 else ""}"><i>{t["k"]}</i><b>{t["v"]}</b></div>'
-                   for i, t in enumerate(tags))
-    return f'''<section class="thero thero-help">
-  <div class="container">
-    <div class="thero-grid">
-      <div>
-        <h1><em>{rubrique}.</em> {titre}</h1>
-        <p class="lead">{reponse}</p>
-        <div class="thero-cta">
-          <a href="{ancre}" class="btn btn-blue">{ancre_txt} {ARROW}</a>
-          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-ghost">Demander une démo</a>
-        </div>
-      </div>
-      <div class="law-spec"><div class="sh"><b>En bref</b><span>Centre d'aide</span></div>{rows}</div>
-    </div>
-  </div>
-</section>'''
-
-
 def facts(titre, intro, liens, lignes, ident="faits"):
     ls = "".join(f'<a href="{{{{ROOT}}}}{l["href"]}" class="feat-link">{l["txt"]} {ARROW}</a>'
                  for l in liens)
@@ -770,7 +749,8 @@ def gen_aide(src):
   <input id="hc-q" name="q" type="search" autocomplete="off" placeholder="Rechercher une question (ex : traduire un fichier, devis, ajouter un membre)">
   {'<div class="hc-results" id="hc-results" role="listbox" hidden></div>' if grande else ''}
 </form>'''
-    side = lambda courant: '<nav class="hc-side" aria-label="Rubriques du centre d\'aide">' + "".join(
+    side = lambda courant: ('<nav class="hc-side" aria-label="Rubriques du centre d\'aide">'
+                            f'<a class="hc-back" href="{{{{ROOT}}}}fr/aide/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>Centre d\'aide</a>') + "".join(
         f'<p class="hc-side-t">{titre}</p><ul>' + "".join(
             f'<li><a href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"{" aria-current=\"page\"" if r["slug"] == courant else ""}>'
             f'<span class="ws-ic">{WS_ICONS[r["icone"]]}</span>{r["titre"]}</a></li>' for r in data if r["espace"] == esp) + "</ul>"
@@ -790,18 +770,14 @@ def gen_aide(src):
         espace = "Administrateurs" if r["espace"] == "admin" else "Utilisateurs"
         body = "\n".join([
             '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
-            hero_help(r["titre"], r["h1"], r["lead"],
-                      [{"k": "Espace", "v": espace}, {"k": "Questions", "v": str(n)},
-                       {"k": "Outil", "v": r["outil"]}, {"k": "Vérifié", "v": "septembre 2026"}],
-                      "#questions", "Voir les questions"),
             f'''<section class="hc" id="questions">
   <div class="container">
     <div class="hc-grid">
       {side(r["slug"])}
       <div class="hc-main">
-        {recherche(False)}
-        <p class="hc-kicker">{espace} · {n} questions</p>
-        <h2 class="hc-h2">{r["titre"]}</h2>
+        <p class="hc-kicker">Centre d'aide · {espace}</p>
+        <h1 class="hc-h1">{r["titre"]}</h1>
+        <p class="hc-intro">{r["lead"]}</p>
         <div class="faq-list hc-list">{qs}</div>
       </div>
     </div>
@@ -810,7 +786,7 @@ def gen_aide(src):
             contact, script_ancre,
         ])
         pages.append((f'fr/aide/{r["slug"]}/', {"title": r["title"], "description": r["description"],
-                                                 "short": r["titre"], "nav": "ressources", "hero": "help"}, body))
+                                                 "short": r["titre"], "nav": "ressources", "hero": "aide"}, body))
 
     total = sum(len(r["articles"]) for r in data)
     blocs = "".join(
@@ -823,9 +799,6 @@ def gen_aide(src):
             for r in data if r["espace"] == esp) + '''</div>
   </div>
 </section>''' for esp, titre, texte in ESPACES)
-    tags = "".join(f'<a href="{{{{ROOT}}}}fr/aide/{u}">{t}</a>' for t, u in (
-        ("Traduire des fichiers", "traduction-texte-et-document/#traduire-des-fichiers"), ("Mode Highly sensitive", "premiers-pas/#mode-highly-sensitive"),
-        ("Obtenir un devis", "gestion-de-projet/#devis-et-delai"), ("Ajouter un membre", "admin-organisation/#ajouter-un-membre")))
     moteur = """<script>(function(){var I=window.HC_INDEX||[],f=document.querySelector('.hc-search.big'),q=document.getElementById('hc-q'),box=document.getElementById('hc-results');if(!f||!q||!box)return;
 function n(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9' ]+/g,' ');}
 var V=I.map(function(x){return {x:x,q:n(x.q),t:n(x.t),r:n(x.r)};});
@@ -837,24 +810,18 @@ q.addEventListener('input',function(){cherche(q.value);});
 f.addEventListener('submit',function(e){e.preventDefault();var r=cherche(q.value);if(r.length)location.href=r[0].o.x.u;});
 var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;cherche(p);}})();</script>"""
     body = "\n".join([
-        f'''<section class="thero thero-help thero-hc">
+        f'''<section class="hc-hero">
   <div class="container">
-    <div class="thero-grid">
-      <div>
-        <p class="hc-kicker">Centre d'aide Corrext</p>
-        <h1>Comment pouvons-nous vous aider ?</h1>
-        <p class="lead">{total} réponses vérifiées dans l'application, de votre première traduction à l'administration de votre organisation.</p>
-        {recherche(True)}
-        <div class="hc-tags"><span>Recherches fréquentes :</span>{tags}</div>
-        <div class="hc-spaces"><a href="#utilisateur">Je l'utilise</a><a href="#admin">Je l'administre</a></div>
-      </div>
-    </div>
+    <p class="hc-kicker">Centre d'aide</p>
+    <h1>Comment <span class="nw">pouvons-nous</span> vous aider\u00a0?</h1>
+    <p class="lead">Guides pas à pas et réponses pour tirer le meilleur de Corrext, de votre première traduction à l'administration de votre organisation.</p>
+    {recherche(True)}
   </div>
 </section>''',
         blocs, contact,
         "<script>window.HC_INDEX=" + json.dumps(index, ensure_ascii=False).replace("</", "<\\/") + ";</script>", moteur,
     ])
-    pages.append(("fr/aide/", {"hero": "help", "title": "Centre d'aide Corrext · Neur.on",
+    pages.append(("fr/aide/", {"hero": "aide", "title": "Centre d'aide Corrext · Neur.on",
                                "description": f"{total} réponses sur Corrext, vérifiées dans l'application : traduire, faire relire, vérifier un terme, sécurité, et administration de votre organisation.",
                                "short": "Centre d'aide", "nav": "ressources"}, body))
     return pages
