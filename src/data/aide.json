@@ -220,7 +220,7 @@
         "titre": "Lancer Fast Lookup depuis une traduction",
         "title": "Lancer Fast Lookup depuis une traduction Corrext · Neur.on",
         "description": "Surligner un mot dans Traduction texte et document fait apparaître un bouton Fast Lookup qui ouvre CHnell sur ce mot, en contexte, sans quitter votre traduction.",
-        "reponse": "Quand un mot vous semble douteux dans Traduction texte et document, surlignez-le : un bouton flottant « Fast Lookup » apparaît juste au-dessus de la sélection. Il ouvre l'outil CHnell sur ce mot précis, avec des segments bilingues tirés de sources officielles suisses. C'est le geste le plus rapide pour vérifier le sens ou l'usage d'un terme sans quitter votre traduction, comme le rappelle le bandeau d'aide affiché sous l'outil.",
+        "reponse": "Quand un mot vous semble douteux dans Traduction texte et document, surlignez-le : un bouton flottant « Fast Lookup » apparaît juste au-dessus de la sélection. Il ouvre l'outil CHnell sur ce mot précis, avec des segments bilingues tirés de sources officielles suisses. C'est le geste le plus rapide pour vérifier le sens ou l'usage d'un terme sans quitter votre traduction.",
         "etapes": [
           "Traduisez votre texte dans l'onglet « Text translation » de Traduction texte et document.",
           "Double-cliquez sur le mot à vérifier dans le volet source, ou sélectionnez-le à la souris.",
@@ -370,7 +370,7 @@
         "titre": "Comprendre les trois niveaux de relecture externe",
         "title": "Les trois niveaux de relecture externe de Corrext · Neur.on",
         "description": "Light review, Full review et Double review certifiée : ce que chaque niveau corrige vraiment, et pour quel usage du document il est recommandé.",
-        "reponse": "Corrext propose trois niveaux de relecture externe. « Light review » fait corriger par un traducteur les erreurs importantes, les omissions et les contresens : le texte est complet et fidèle, recommandé pour comprendre et diffuser en interne. « Full review » ajoute la cohérence, l'idiomatisme, le style et le ton, pour un document destiné à des tiers. « Double review » fait relire par deux traducteurs juridiques et joint un certificat d'exactitude.",
+        "reponse": "Corrext propose trois niveaux de relecture externe. « Light review » fait corriger les erreurs importantes, les omissions et les contresens, pour comprendre et diffuser en interne. « Full review » ajoute la cohérence, l'idiomatisme, le style et le ton, pour un document destiné à des tiers. « Double review » fait relire par deux traducteurs juridiques et joint un certificat d'exactitude.",
         "etapes": [
           "À l'étape « Quotes », passez sur la carte <b>« Custom workflow »</b> et descendez jusqu'au tableau des fichiers.",
           "Ouvrez la colonne <b>« Review level »</b> pour le fichier concerné : les trois niveaux y sont proposés.",

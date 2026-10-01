@@ -810,9 +810,9 @@ body.nav-open{overflow:hidden}
 .thero-read .thero-grid{grid-template-columns:1fr;gap:0;max-width:820px;padding-bottom:0}
 .thero-read .rkicker{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-d);margin-bottom:18px}
 .thero-read .rkicker::after{content:"";width:34px;height:1px;background:var(--line-2)}
-.thero-read h1{color:var(--ink);font-size:clamp(30px,4.1vw,46px);max-width:22ch;margin-bottom:20px}
+.thero-read h1{color:var(--ink);font-size:clamp(30px,4.1vw,46px);max-width:22ch;margin-bottom:16px}
 .thero-read h1 em{color:var(--blue-d)}
-.thero-read .lead{color:var(--text);font-size:19px;line-height:1.6;max-width:64ch;margin-bottom:24px}
+.thero-read .lead{color:var(--text);font-size:18.5px;line-height:1.6;max-width:64ch;margin-bottom:22px}
 .thero-read .rmeta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;font-size:13px;color:var(--muted);padding-top:18px;border-top:1px solid var(--line)}
 .thero-read .rmeta b{color:var(--ink);font-weight:600}
 .thero-read .rmeta .dot{width:3px;height:3px;border-radius:50%;background:var(--line-2)}
@@ -832,7 +832,7 @@ body.nav-open{overflow:hidden}
   .thero-law{padding-bottom:44px}
 }
 /* Registre éditorial : les repères passent en ligne sous le chapô, sans filet vertical */
-.thero-read .thero-promise{flex-direction:row;flex-wrap:wrap;gap:12px 28px;border-left:0;border-top:1px solid var(--line);padding:18px 0 0;margin-top:26px;font-size:13px;color:var(--muted)}
+.thero-read .thero-promise{flex-direction:row;flex-wrap:wrap;gap:12px 28px;border-left:0;border-top:1px solid var(--line);padding:16px 0 0;margin-top:16px;font-size:13px;color:var(--muted)}
 .thero-read .thero-promise > span{max-width:34ch;align-items:flex-start}
 .thero-read .thero-promise b{color:var(--ink)}
 .thero-read .thero-promise svg{color:var(--blue-d)}
@@ -985,13 +985,13 @@ body.nav-open{overflow:hidden}
 
 /* ============ Hauteur commune des heros (toutes les pages sauf l'accueil) ============
    Référence : le hero métier, titre sur 3 lignes, chapeau sur 4 lignes (5 entre 1024 et 1279 px),
-   boutons de 58 px. Les autres heros prennent cette hauteur et centrent leur contenu.
+   boutons de 58 px. Les autres heros prennent cette hauteur, et leur contenu commence au même niveau (92 px).
    Hero avec démonstration : la démonstration commence exactement à cette hauteur. */
 @media (min-width:1024px){:root{--hero-h:calc(240px + 3.36 * clamp(33px,4.5vw,52px) + 18px + 5 * 1.62 * 18.5px + 32px + 58px)}}
 @media (min-width:1280px){:root{--hero-h:calc(240px + 3.36 * clamp(33px,4.5vw,52px) + 18px + 4 * 1.62 * 18.5px + 32px + 58px)}}
 @media (min-width:1024px){
-  .thero:not(.thero-job):not(.thero-demo){min-height:var(--hero-h);display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
-  .thero:not(.thero-job)>.container{width:100%}
+  .thero:not(.thero-job):not(.thero-demo){min-height:var(--hero-h);padding-top:92px;padding-bottom:40px}
   .thero:not(.thero-job):not(.thero-demo) .thero-grid{padding-bottom:0}
-  .thero-demo{min-height:calc(var(--hero-h) + 236px);display:flex;flex-direction:column;justify-content:center}
+  .thero:not(.thero-job) .thero-grid>:first-child{align-self:start}
+  .thero-demo{min-height:calc(var(--hero-h) + 236px)}
 }

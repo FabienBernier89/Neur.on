@@ -109,9 +109,9 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 /* Hauteur commune des heros : le hero du hub prend la hauteur du hero métier ; la fenêtre garde son débord de 120 px
    sur la section suivante, avec un fondu en bas quand le tableau de bord est plus long que l'espace disponible */
 @media(min-width:1024px){
-  .phero{height:var(--hero-h);padding-top:64px}
+  .phero{height:var(--hero-h);padding-top:92px}
   .phero-txt{padding-top:0;padding-bottom:0}
-  .dash{height:calc(var(--hero-h) - 64px - 12px + 120px);min-height:0}
+  .dash{height:calc(var(--hero-h) - 92px - 12px + 120px);min-height:0}
   .dash::after{content:"";position:absolute;left:0;right:0;bottom:0;height:72px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none;z-index:3}
 }
 @media(min-width:1024px) and (max-width:1279px){.phero-grid{grid-template-columns:9fr 11fr;gap:40px}.phero-cta{gap:10px}.phero-cta .btn-blue,.phero-cta .btn-ghost{padding:16px 18px;font-size:14.5px}}
@@ -170,7 +170,7 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
     <div class="phero-grid">
       <div class="phero-txt">
         <h1>Corrext : reprenez le contrôle de <em>vos traductions</em></h1>
-        <p class="lead">La plateforme qui réunit vos projets, vos devis, vos ressources terminologiques et vos droits d'accès dans un seul environnement suisse. Vous voyez tout, vous décidez de tout, et chaque poste de travail est à portée de clic.</p>
+        <p class="lead">La plateforme qui réunit vos projets, vos devis, vos ressources terminologiques et vos droits d'accès dans un seul environnement suisse. Vous voyez tout et vous décidez de tout.</p>
         <div class="phero-cta">
           <a href="contact.html" class="btn btn-blue">
             Demander une démo

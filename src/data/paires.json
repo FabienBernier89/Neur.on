@@ -7,7 +7,7 @@
     "description": "L'allemand juridique suisse vers le français : abréviations OR, ZGB, SchKG converties, orthographe suisse reconnue, documents traités en Suisse.",
     "lede": "Allemand vers français.",
     "h1": "La paire qui fait circuler le droit suisse d'une rive à l'autre",
-    "lead": "Un jugement zurichois à lire à Genève, un contrat rédigé à Bâle à signer en Suisse romande, une circulaire fédérale à diffuser en interne : cette paire porte l'essentiel du droit suisse en circulation. Elle demande de reconnaître l'allemand juridique suisse, ses abréviations et ses conventions typographiques, puis de retrouver le mot français du même texte de loi plutôt qu'un équivalent approché.",
+    "lead": "Un jugement zurichois à lire à Genève, un contrat bâlois à signer en Suisse romande : cette paire porte l'essentiel du droit suisse en circulation. Elle demande de lire l'allemand juridique suisse et ses abréviations, puis de retrouver le mot français du même texte de loi.",
     "promesses": [
       {"t": "Allemand suisse", "d": "ss au lieu de ß, milliers en 15'000, guillemets « »"},
       {"t": "Abréviations", "d": "OR devient CO, ZGB devient CC, SchKG devient LP"},
@@ -119,7 +119,7 @@
     "description": "Du français juridique suisse vers l'allemand : termes des lois fédérales, ss et apostrophe des milliers, abréviations CO, LP, LDIP converties.",
     "lede": "Français vers allemand.",
     "h1": "Écrire le droit suisse pour un lecteur alémanique",
-    "lead": "Un mémoire romand qui part devant une instance alémanique, des conditions générales à publier dans toute la Suisse, une note interne qui doit être comprise à Zurich comme à Lausanne. Le texte allemand n'a pas à être élégant : il doit employer les mots des lois fédérales, dans leur orthographe suisse, sinon il perd sa force devant le lecteur qu'il vise.",
+    "lead": "Un mémoire romand qui part devant une instance alémanique, des conditions générales à publier dans toute la Suisse. Le texte allemand n'a pas à être élégant : il doit employer les mots des lois fédérales, dans leur orthographe suisse, sinon il perd sa force devant le lecteur qu'il vise.",
     "promesses": [
       {"t": "Allemand suisse", "d": "ss partout, jamais de ß, apostrophe dans les milliers"},
       {"t": "Abréviations", "d": "CO devient OR, LP devient SchKG, LDIP devient IPRG"},
@@ -230,7 +230,7 @@
     "description": "Le droit suisse alémanique en anglais : les versions anglaises des lois n'ont pas force de loi, et les notions suisses gardent leur terme d'origine.",
     "lede": "Allemand vers anglais.",
     "h1": "Rendre le droit suisse intelligible sans le déformer",
-    "lead": "Une due diligence pilotée depuis Londres, un rapport de conformité destiné à une maison mère américaine, un arrêt à produire dans un arbitrage international. Le lecteur ne connaît ni le Code des obligations, ni la poursuite pour dettes, et l'anglais ne dispose d'aucun terme officiel suisse : la traduction doit expliquer sans inventer un droit qui n'existe pas.",
+    "lead": "Une due diligence pilotée depuis Londres, un rapport destiné à une maison mère américaine, un arrêt à produire dans un arbitrage. Le lecteur ne connaît pas le Code des obligations et l'anglais n'a aucun terme officiel suisse : la traduction doit expliquer sans inventer un droit qui n'existe pas.",
     "promesses": [
       {"t": "Langue non officielle", "d": "les versions anglaises des lois suisses sont informatives"},
       {"t": "Notions sans équivalent", "d": "Betreibung et Verfügung gardent leur terme d'origine"},
@@ -340,7 +340,7 @@
     "description": "Contrats rédigés en anglais et soumis au droit suisse : la version allemande ancre chaque clause sur les notions exactes du Code des obligations.",
     "lede": "Anglais vers allemand.",
     "h1": "Faire atterrir un contrat anglo-saxon dans le droit suisse",
-    "lead": "Un contrat d'acquisition, un accord de financement ou un accord de confidentialité sont souvent rédigés en anglais alors qu'ils sont soumis au droit suisse. La version allemande est celle que lira une autorité ou une contrepartie alémanique : elle doit raccrocher chaque clause à une notion du Code des obligations, sans importer des concepts que le droit suisse ignore.",
+    "lead": "Un contrat d'acquisition ou un accord de financement est souvent rédigé en anglais alors qu'il est soumis au droit suisse. La version allemande est celle que lira une autorité ou une contrepartie alémanique : chaque clause doit se rattacher à une notion du Code des obligations.",
     "promesses": [
       {"t": "Ancrage légal", "d": "chaque clause ramenée aux notions de l'Obligationenrecht"},
       {"t": "Allemand suisse", "d": "ss, apostrophe dans les milliers, sigles suisses conservés"},
@@ -450,7 +450,7 @@
     "description": "Le droit suisse romand en anglais : arbitrage, arrêts du Tribunal fédéral et conformité, avec des versions anglaises informatives qui ne font pas foi.",
     "lede": "Français vers anglais.",
     "h1": "Porter un dossier romand devant un lecteur international",
-    "lead": "Genève et Lausanne travaillent en français et plaident souvent en anglais : arbitrages internationaux, organisations basées sur l'arc lémanique, sociétés cotées qui publient dans les deux langues. La traduction doit rendre le droit suisse compréhensible pour ce lecteur, en gardant une réserve constante : aucune version anglaise d'une loi suisse ne fait foi.",
+    "lead": "Genève et Lausanne travaillent en français et plaident souvent en anglais : arbitrages internationaux, organisations de l'arc lémanique, sociétés cotées. La traduction doit rendre le droit suisse compréhensible pour ce lecteur, en rappelant qu'aucune version anglaise d'une loi suisse ne fait foi.",
     "promesses": [
       {"t": "Langue non officielle", "d": "les versions anglaises des lois sont informatives"},
       {"t": "Arbitrage", "d": "le vocabulaire du chapitre 12 de la LDIP, terme par terme"},
@@ -560,7 +560,7 @@
     "description": "L'italien juridique suisse vers le français : ricorso, precetto esecutivo, Tribunale federale et les termes du Tessin, distincts de l'italien d'Italie.",
     "lede": "Italien vers français.",
     "h1": "La troisième langue officielle, avec son vocabulaire propre",
-    "lead": "Le Tessin et les vallées italophones des Grisons rendent la justice en italien, et la Confédération publie ses lois dans cette langue au même titre qu'en allemand et en français. L'italien juridique suisse n'est pourtant pas celui d'Italie : il a ses institutions, ses recours et ses procédures, qu'un moteur généraliste remplace volontiers par le vocabulaire de la péninsule.",
+    "lead": "Le Tessin et les vallées italophones des Grisons rendent la justice en italien, et la Confédération publie ses lois dans cette langue. L'italien juridique suisse n'est pourtant pas celui d'Italie : il a ses institutions et ses procédures, qu'un moteur généraliste remplace volontiers par le vocabulaire de la péninsule.",
     "promesses": [
       {"t": "Italien de Suisse", "d": "ricorso, precetto esecutivo, Tribunale federale"},
       {"t": "Version qui fait foi", "d": "l'italien est l'une des trois langues officielles des lois"},
