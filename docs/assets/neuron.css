@@ -886,3 +886,5 @@ body.nav-open{overflow:hidden}
 .ck-bar a{color:var(--blue-d);font-weight:600}
 .ck-btns{display:flex;gap:10px;flex-wrap:wrap}
 .ck-pref{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+/* Pages métier : même hauteur de hero que Cabinets d'avocats sur les petits écrans d'ordinateur (paragraphe réservé sur 5 lignes) */
+@media (min-width:1024px) and (max-width:1279px){.thero-job .lead{min-height:5lh}}
