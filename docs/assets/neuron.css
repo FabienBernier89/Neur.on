@@ -1026,15 +1026,3 @@ body.nav-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){.vs-card,.vs-card>em svg{transition:none}.vs-card:hover{transform:none}}
 @media(max-width:940px){.vs-grid{grid-template-columns:1fr;gap:16px}}
 
-/* Réseau neuronal du hero LexMachina : liaisons aux poids appris, signal qui circule */
-.nn{padding:12px 14px 4px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
-.nn svg{display:block;width:100%;height:auto}
-.nn .e{stroke:#5b8fe6;stroke-linecap:round}
-.nn .e.f{stroke:var(--blue);stroke-dasharray:3 9;animation:nnflux 1.8s linear infinite}
-@keyframes nnflux{to{stroke-dashoffset:-24}}
-.nn .n{fill:#fff;stroke:var(--blue);stroke-width:1.6}
-.nn .n.on{fill:var(--blue)}
-.nn .p{fill:var(--blue-pale);stroke:#c9d9f5}
-.nn .p.o{fill:#fff;stroke:var(--blue)}
-.nn text{font:700 11px 'Inter',sans-serif;fill:var(--navy)}
-@media(prefers-reduced-motion:reduce){.nn .e.f{animation:none}}

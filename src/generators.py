@@ -60,38 +60,8 @@ def carte(nom):
     if c["type"] == "code":
         code = "".join(f'<span class="{k}">{v}</span>' if k != "t" else v for k, v in c["code"])
         return f'<div class="law-spec hcarte">{tete}<div class="hcode">{code}</div>{pied}</div>'
-    if c["type"] == "reseau":
-        return f'<div class="law-spec hcarte">{tete}<div class="nn">{reseau_svg(c["entrees"], c["sorties"])}</div>{pied}</div>'
     corps = "".join(f'<div class="sr"><i>{k}</i><b>{v}</b></div>' for k, v in c["lignes"])
     return f'<div class="law-spec hcarte">{tete}{corps}{pied}</div>'
-
-
-def reseau_svg(entrees, sorties):
-    """Réseau neuronal stylisé : sources d'entraînement, trois couches cachées aux poids appris, langues de sortie.
-    Les poids sont pseudo-aléatoires mais fixes, pour un dessin identique à chaque build."""
-    W, H = 460, 250
-    poids = lambda a, b, k: ((a * 37 + b * 91 + k * 53 + a * b * 7) % 100) / 100
-    ys = lambda n, m=24: [round(m + i * (H - 2 * m) / (n - 1)) for i in range(n)]
-    xe, xs = 112, 364
-    couches = [(xe, ys(len(entrees), 34))] + [(x, ys(7)) for x in (180, 242, 304)] + [(xs, ys(len(sorties), 34))]
-    lignes = []
-    for k in range(len(couches) - 1):
-        (xa, ya), (xb, yb) = couches[k], couches[k + 1]
-        for i, ay in enumerate(ya):
-            for j, by in enumerate(yb):
-                w = poids(i, j, k)
-                if w < .3:
-                    continue
-                cl = "e f" if (i * 3 + j + k) % 4 == 0 and w > .5 else "e"
-                lignes.append(f'<line class="{cl}" x1="{xa}" y1="{ay}" x2="{xb}" y2="{by}" stroke-opacity="{.14 + w * .46:.2f}" stroke-width="{.5 + w * 1.5:.2f}"/>')
-    noeuds = "".join(f'<circle class="n{" on" if (i * 2 + k) % 3 == 0 else ""}" cx="{x}" cy="{y}" r="5.5"/>'
-                     for k, (x, col) in enumerate(couches[1:-1]) for i, y in enumerate(col))
-    e = "".join(f'<rect class="p" x="6" y="{y - 14}" width="{xe - 6}" height="28" rx="8"/><text x="{(xe + 6) // 2}" y="{y + 4}" text-anchor="middle">{t}</text><circle class="n on" cx="{xe}" cy="{y}" r="4.5"/>'
-                for t, y in zip(entrees, couches[0][1]))
-    o = "".join(f'<circle class="n on" cx="{xs}" cy="{y}" r="4.5"/><rect class="p o" x="{xs + 12}" y="{y - 14}" width="78" height="28" rx="8"/><text x="{xs + 51}" y="{y + 4}" text-anchor="middle">{t}</text>'
-                for t, y in zip(sorties, couches[-1][1]))
-    label = ("Schéma d'un réseau neuronal entraîné : " + ", ".join(entrees) + " en entrée, trois couches apprises, sortie en " + ", ".join(sorties))
-    return (f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{label}">' + "".join(lignes) + noeuds + e + o + '</svg>')
 
 
 def hero(h1_lede, h1_rest, lead, nom_carte, ancre="#faits", ancre_txt="Voir le détail"):
