@@ -343,8 +343,8 @@
  {
   "num": 37,
   "date": "2024-06-24",
-  "titre": "Neur.on élu « Early Stage Start-up of the Year » aux Swiss Fintech Awards 2024",
-  "texte": "<p>Nous sommes fiers d’annoncer que Neur.on a remporté le prix « Early Stage Start-up of the Year » aux Swiss Fintech Awards 2024 !</p><p><strong>Les lauréats des Swiss Fintech Awards 2024 sont :</strong></p><ul><li><strong>Early Stage Start-up of the Year :</strong> la start-up d’IA Neur.on</li><li><strong>Growth Stage Start-up of the Year :</strong> GenTwo, qui élargit l’univers d’investissement</li><li><strong>Influencer of the Year :</strong> Johannes « Johs » Höhener</li></ul><p>Félicitations à GenTwo et à Johs Höhener pour leurs remarquables réussites !</p><p>Nous remercions aussi chaleureusement les finalistes, CLIMADA Technologies et Payrexx - Digital Payments. Ce fut un honneur de partager la scène avec des personnes aussi talentueuses et remarquables.</p><p><strong>Pour en savoir plus sur les lauréats et l’événement dans les médias :</strong></p><ul><li><a href=\"https://fintechnews.ch/fintech/the-winners-of-the-swiss-fintech-awards-2024/71082/\" rel=\"noopener\" target=\"_blank\">Fintechnews Switzerland</a></li><li><a href=\"https://punkt4.info/nachrichten/detail/news/neuron-gewinnt-einen-der-swiss-fintech-awards/\" rel=\"noopener\" target=\"_blank\">punkt4</a></li><li><a href=\"https://www.fuw.ch/fintech-awards-die-zwei-besten-schweizer-fintechs-wurden-gekuert-958308325910\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a></li></ul><p>Merci à toutes celles et à tous ceux qui nous ont soutenus dans cette aventure. À la poursuite de l’innovation et du succès dans le monde de la fintech !</p>",
+  "titre": "Neur.on élu « Early Stage Start-up of the Year » aux Swiss FinTech Awards 2024",
+  "texte": "<p>Nous sommes fiers d’annoncer que Neur.on a remporté le prix « Early Stage Start-up of the Year » aux Swiss FinTech Awards 2024 !</p><p><strong>Les lauréats des Swiss FinTech Awards 2024 sont :</strong></p><ul><li><strong>Early Stage Start-up of the Year :</strong> la start-up d’IA Neur.on</li><li><strong>Growth Stage Start-up of the Year :</strong> GenTwo, qui élargit l’univers d’investissement</li><li><strong>Influencer of the Year :</strong> Johannes « Johs » Höhener</li></ul><p>Félicitations à GenTwo et à Johs Höhener pour leurs remarquables réussites !</p><p>Nous remercions aussi chaleureusement les finalistes, CLIMADA Technologies et Payrexx - Digital Payments. Ce fut un honneur de partager la scène avec des personnes aussi talentueuses et remarquables.</p><p><strong>Pour en savoir plus sur les lauréats et l’événement dans les médias :</strong></p><ul><li><a href=\"https://fintechnews.ch/fintech/the-winners-of-the-swiss-fintech-awards-2024/71082/\" rel=\"noopener\" target=\"_blank\">Fintechnews Switzerland</a></li><li><a href=\"https://punkt4.info/nachrichten/detail/news/neuron-gewinnt-einen-der-swiss-fintech-awards/\" rel=\"noopener\" target=\"_blank\">punkt4</a></li><li><a href=\"https://www.fuw.ch/fintech-awards-die-zwei-besten-schweizer-fintechs-wurden-gekuert-958308325910\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a></li></ul><p>Merci à toutes celles et à tous ceux qui nous ont soutenus dans cette aventure. À la poursuite de l’innovation et du succès dans le monde de la fintech !</p>",
   "categorie": "Prix et distinctions",
   "lien_principal": {
    "libelle": "Lire l’article",
@@ -925,11 +925,11 @@
   "num": 96,
   "date": "2022-12-01",
   "titre": "Neur.on dans Lawstyle : premier investissement en capital-risque de Helbing Lichtenhahn",
-  "texte": "<p>La start-up SaaS de traduction juridique « Neur.on », premier investissement en capital-risque de la maison d’édition juridique Helbing Lichtenhahn : le début d’une nouvelle ère pour les LegalTech suisses ?</p><p>Cliquez <a href=\"https://neur-on.ai/wp-content/uploads/2020/11/2022_Lawstyle_Neur.on_.pdf\" rel=\"noopener\" target=\"_blank\">ici</a> pour lire l’article.</p>",
+  "texte": "<p>La start-up SaaS de traduction juridique « Neur.on », premier investissement en capital-risque de la maison d’édition juridique Helbing Lichtenhahn : le début d’une nouvelle ère pour les LegalTech suisses ?</p><p>Cliquez <a href=\"{{ROOT}}assets/docs/2022-lawstyle-neuron.pdf\" rel=\"noopener\" target=\"_blank\">ici</a> pour lire l’article.</p>",
   "categorie": "Presse et médias",
   "lien_principal": {
    "libelle": "Lire l’article (PDF)",
-   "url": "https://neur-on.ai/wp-content/uploads/2020/11/2022_Lawstyle_Neur.on_.pdf"
+   "url": "{{ROOT}}assets/docs/2022-lawstyle-neuron.pdf"
   },
   "image": {
    "src": "assets/img/actualites/2022-12-01-96.webp",

@@ -97,6 +97,12 @@ def esc(s):
 
 # ---------------------------------------------------------------- rendu
 
+def load_json_data(name):
+    """Fichier de src/data/ lu tel quel (None s'il n'existe pas)."""
+    p = os.path.join(SRC, "data", name + ".json")
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
 def crumbs_for(path, short):
     """[(libellé, chemin ou None), …] du fil d'Ariane, racine exclue de la page courante."""
     if path == "fr/":
@@ -353,12 +359,28 @@ p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:30px}
                   "User-agent: *\nDisallow: /\n")
     write(os.path.join(OUT, "robots.txt"), robots)
 
+    # anciennes adresses de neur-on.ai : une page de renvoi à chaque adresse (les 301 serveur viendront en production)
+    red = load_json_data("redirections")
+    for r in (red or {}).get("redirections", []):
+        ancien, nouveau = r["ancien"].strip("/") + "/", r["nouveau"].lstrip("/")
+        if ancien in paths or ancien == "/":
+            raise SystemExit(f"Redirection {ancien} : l'adresse est déjà une page du site")
+        racine = "../" * ancien.count("/")
+        write(os.path.join(OUT, ancien, "index.html"),
+              '<!DOCTYPE html>\n<html lang="fr"><head><meta charset="UTF-8"><title>Page déplacée · Neur.on</title>'
+              f'<meta name="robots" content="noindex"><link rel="canonical" href="{SITE}/{nouveau}">'
+              f'<meta http-equiv="refresh" content="0; url={racine}{nouveau}">'
+              f'<script>location.replace("{racine}{nouveau}"+"")</script></head>'
+              f'<body><p>Cette page a déménagé : <a href="{racine}{nouveau}">voir la nouvelle adresse</a>.</p></body></html>\n')
+
     # sitemap
     prio = {"fr/": "1.0"}
     urls = []
     for p in sorted(paths):
         pr = prio.get(p, "0.8" if p.count("/") <= 2 else "0.6")
-        urls.append(f"  <url><loc>{SITE}/{p}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority></url>")
+        # un article garde sa date d'origine (front-matter ou générateur : lastmod), jamais celle du jour
+        lm = PAGES.get(p, {}).get("lastmod") or TODAY
+        urls.append(f"  <url><loc>{SITE}/{p}</loc><lastmod>{lm}</lastmod><priority>{pr}</priority></url>")
     write(os.path.join(OUT, "sitemap.xml"),
           '<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -406,7 +428,7 @@ def main():
                     ignore=shutil.ignore_patterns("*.map"))
 
     for path, meta, _body in pages:
-        PAGES[path] = {"short": meta.get("short", path), "title": meta.get("title", "")}
+        PAGES[path] = {"short": meta.get("short", path), "title": meta.get("title", ""), "lastmod": meta.get("lastmod")}
 
     built = [build_page(p, m, b) for p, m, b in pages]
     write_annexes(built)

@@ -64,7 +64,7 @@ vos classes pour éviter les collisions.
   promesse non observée dans l'application.
 - Chiffres autorisés : plus de 15 millions de segments, ISO 27001 (février 2024), 30 langues sur la
   plateforme, quatre langues natives, 25 fichiers de 50 Mo, 30 domaines CHnell, économies « jusqu'à »
-  60 / 50 / 80 %, distinctions (Swiss Fintech Awards 2024, BILANZ 2024, Digital Shapers 2023,
+  60 / 50 / 80 %, distinctions (Swiss FinTech Awards 2024, BILANZ 2024, Digital Shapers 2023,
   Innosuisse).
 - **Souveraineté, formulation exacte** : stockage sur des serveurs suisses dans tous les cas ;
   traitement exclusivement en Suisse en mode Highly sensitive content ou avec LexMachina ; les

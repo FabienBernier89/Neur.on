@@ -1,0 +1,261 @@
+{
+ "_note": "Anciennes adresses de neur-on.ai (WordPress) et leur nouvelle adresse. À la mise en production, configurer des redirections 301 serveur avec cette table ; en attendant, build.py écrit une page de renvoi (canonical + refresh) à chaque ancienne adresse.",
+ "redirections": [
+  {
+   "ancien": "/news/",
+   "nouveau": "/fr/ressources/blog/actualites/"
+  },
+  {
+   "ancien": "/privacy-policy/",
+   "nouveau": "/fr/protection-des-donnees/"
+  },
+  {
+   "ancien": "/impressum/",
+   "nouveau": "/fr/mentions-legales/"
+  },
+  {
+   "ancien": "/terms-of-use/",
+   "nouveau": "/fr/mentions-legales/#conditions-d-utilisation"
+  },
+  {
+   "ancien": "/about/",
+   "nouveau": "/fr/a-propos/"
+  },
+  {
+   "ancien": "/contact/",
+   "nouveau": "/fr/contact/"
+  },
+  {
+   "ancien": "/schedule-a-demo/",
+   "nouveau": "/fr/contact/"
+  },
+  {
+   "ancien": "/fr/news/",
+   "nouveau": "/fr/ressources/blog/actualites/"
+  },
+  {
+   "ancien": "/fr/privacy-policy/",
+   "nouveau": "/fr/protection-des-donnees/"
+  },
+  {
+   "ancien": "/fr/impressum/",
+   "nouveau": "/fr/mentions-legales/"
+  },
+  {
+   "ancien": "/fr/terms-of-use/",
+   "nouveau": "/fr/mentions-legales/#conditions-d-utilisation"
+  },
+  {
+   "ancien": "/fr/about/",
+   "nouveau": "/fr/a-propos/"
+  },
+  {
+   "ancien": "/fr/schedule-a-demo/",
+   "nouveau": "/fr/contact/"
+  },
+  {
+   "ancien": "/de/news/",
+   "nouveau": "/fr/ressources/blog/actualites/"
+  },
+  {
+   "ancien": "/de/privacy-policy/",
+   "nouveau": "/fr/protection-des-donnees/"
+  },
+  {
+   "ancien": "/de/impressum/",
+   "nouveau": "/fr/mentions-legales/"
+  },
+  {
+   "ancien": "/de/terms-of-use/",
+   "nouveau": "/fr/mentions-legales/#conditions-d-utilisation"
+  },
+  {
+   "ancien": "/de/about/",
+   "nouveau": "/fr/a-propos/"
+  },
+  {
+   "ancien": "/de/contact/",
+   "nouveau": "/fr/contact/"
+  },
+  {
+   "ancien": "/de/schedule-a-demo/",
+   "nouveau": "/fr/contact/"
+  },
+  {
+   "ancien": "/test-page/",
+   "nouveau": "/fr/"
+  },
+  {
+   "ancien": "/lexmachina-the-first-translation-engine-directly-processing-pdfs/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-103"
+  },
+  {
+   "ancien": "/lexmachina-le-premier-traducteur-automatique-qui-traite-directement-les-pdf/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-103"
+  },
+  {
+   "ancien": "/lexmachina-die-erste-uebersetzungsmaschine-die-pdfs-direkt-uebersetzt/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-103"
+  },
+  {
+   "ancien": "/lexmachina-powered-by-heia-fr-and-innosuisse/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-104"
+  },
+  {
+   "ancien": "/lexmachina-powered-by-heia-fr-and-innosuisse-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-104"
+  },
+  {
+   "ancien": "/1513/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-104"
+  },
+  {
+   "ancien": "/interview-mit-language-box-den-schweizer-experten-fuer-uebersetzungsprozesse/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-105"
+  },
+  {
+   "ancien": "/interview-mit-language-box-den-schweizer-experten-fur-ubersetzungsprozesse/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-105"
+  },
+  {
+   "ancien": "/interview-mit-language-box-den-schweizer-experten-in-ubersetzungsprozessen/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-105"
+  },
+  {
+   "ancien": "/lexmachina-becomes-a-member-of-the-swiss-legaltech-association/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-106"
+  },
+  {
+   "ancien": "/lexmachina-becomes-a-member-of-the-swiss-legaltech-association-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-106"
+  },
+  {
+   "ancien": "/lexmachina-becomes-a-member-of-the-swiss-legaltech-association-3/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-106"
+  },
+  {
+   "ancien": "/you-missed-our-presentation-at-the-14th-amta-conference/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-107"
+  },
+  {
+   "ancien": "/you-missed-our-presentation-at-the-14th-amta-conference-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-107"
+  },
+  {
+   "ancien": "/you-missed-our-presentation-at-the-14th-amta-conference-3/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-107"
+  },
+  {
+   "ancien": "/discover-our-paper-on-neural-machine-translation/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-108"
+  },
+  {
+   "ancien": "/discover-our-paper-on-neural-machine-translation-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-108"
+  },
+  {
+   "ancien": "/1273/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-108"
+  },
+  {
+   "ancien": "/join-lexmachina-at-the-amta-2020-virtual-conference/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-109"
+  },
+  {
+   "ancien": "/join-lexmachina-at-the-amta-2020-virtual-conference-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-109"
+  },
+  {
+   "ancien": "/join-lexmachina-at-the-amta-2020-virtual-conference-3/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-109"
+  },
+  {
+   "ancien": "/discover-our-swiss-criminal-law-engine/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-110"
+  },
+  {
+   "ancien": "/discover-our-criminal-law-engine/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-110"
+  },
+  {
+   "ancien": "/german-news/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-110"
+  },
+  {
+   "ancien": "/find-the-best-legal-translator-to-review-your-machine-translation/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-111"
+  },
+  {
+   "ancien": "/find-the-best-legal-translator-to-review-your-machine-translation-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-111"
+  },
+  {
+   "ancien": "/find-the-best-legal-translator-to-improve-last/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-111"
+  },
+  {
+   "ancien": "/wordbee-panel-discussion-on-nmt/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-112"
+  },
+  {
+   "ancien": "/wordbee-panel-discussion-on-nmt-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-112"
+  },
+  {
+   "ancien": "/wordbee-french-sample/",
+   "nouveau": "/fr/ressources/blog/actualites/#actu-112"
+  },
+  {
+   "ancien": "/vernissage-of-lexmachina/",
+   "nouveau": "/fr/ressources/blog/actualites/#annee-2020"
+  },
+  {
+   "ancien": "/vernissage-of-lexmachina-2/",
+   "nouveau": "/fr/ressources/blog/actualites/#annee-2020"
+  },
+  {
+   "ancien": "/find-the-best-legal-translator-to-improve/",
+   "nouveau": "/fr/ressources/blog/actualites/#annee-2020"
+  },
+  {
+   "ancien": "/category/non-classifiee/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/fr/category/non-classifiee/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/fr/category/uncategorized-fr/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/de/category/uncategorized-de/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/category/uncategorized/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/category/unkategorisiert/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/de/category/unkategorisiert/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/tag/news/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/tag/translation/",
+   "nouveau": "/fr/ressources/blog/"
+  },
+  {
+   "ancien": "/author/s-lantin/",
+   "nouveau": "/fr/ressources/blog/"
+  }
+ ]
+}
