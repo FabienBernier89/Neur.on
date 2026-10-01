@@ -127,7 +127,20 @@
     ["text","file","pdf","reph"].forEach(function(k){$("cxp-"+k).classList.toggle("on",k===t.getAttribute("data-tab"));});
     sw.classList.toggle("dis",t.getAttribute("data-tab")==="pdf");
     lookupBtn.classList.remove("show");
+    syncH();
   });});
+
+  /* Hauteur constante : chaque onglet garde la hauteur de Text translation, le plus haut */
+  var pText=$("cxp-text"),pOthers=["file","pdf","reph"].map(function(k){return $("cxp-"+k);});
+  function textH(){
+    if(pText.classList.contains("on")) return pText.offsetHeight;
+    var s=pText.style; s.display="block"; s.visibility="hidden"; s.position="absolute"; s.width=cx.clientWidth+"px";
+    var h=pText.offsetHeight; s.display=s.visibility=s.position=s.width=""; return h;
+  }
+  function syncH(){var h=textH(); if(h) pOthers.forEach(function(p){p.style.minHeight=h+"px";});}
+  var rz; window.addEventListener("resize",function(){clearTimeout(rz); rz=setTimeout(syncH,150);});
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(syncH);
+  syncH();
 
   /* Fast Lookup : surligner un mot dans la source ouvre CHnell */
   function selectionInSrc(){var s=window.getSelection?String(window.getSelection()):""; return s&&s.trim().length>1;}
@@ -190,7 +203,7 @@
 
   /* Démarrage : premier extrait, dès que le cadre approche du viewport (240px avant) */
   var started=false;
-  function start(){if(started)return; started=true; loadExample("co");}
+  function start(){if(started)return; started=true; loadExample("co"); syncH(); setTimeout(syncH,1000);}
   if("IntersectionObserver" in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){start(); io.disconnect();}});},{threshold:0,rootMargin:"0px 0px 240px 0px"});
     io.observe(cx);
