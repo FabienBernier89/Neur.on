@@ -958,6 +958,7 @@ body.nav-open{overflow:hidden}
 @media(max-width:1023px){.ws-grid{grid-template-columns:1fr;gap:16px}.ws-item{padding:26px 24px 28px}.ws-item p{max-width:68ch}}
 /* Témoignage client */
 .temo{padding:92px 0}
+.jv-tools+.temo{padding-top:0}
 .temo-fig{max-width:860px;margin:0 auto;text-align:center}
 .temo-mark{display:block;font-size:72px;line-height:1;font-weight:700;color:var(--sky);margin-bottom:4px}
 .temo blockquote{margin:0}
@@ -970,5 +971,4 @@ body.nav-open{overflow:hidden}
 .temo-todo blockquote p{color:var(--muted)}
 .temo-todo .temo-mark{color:var(--line-2)}
 @media(max-width:560px){.temo{padding:64px 0}.temo-todo .temo-fig{padding:32px 20px}}
-.temo-tag{display:inline-block;margin-bottom:18px;padding:3px 11px;font-size:11.5px;font-weight:600;color:var(--muted);border:1px dashed var(--line-2);border-radius:999px}
 @media(min-width:1024px) and (max-width:1179px){.ws-grid{gap:16px}.ws-item{padding:28px 22px 30px}.ws-item h3{font-size:16px;gap:12px}}

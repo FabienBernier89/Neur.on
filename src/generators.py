@@ -269,9 +269,9 @@ def temoignage(t):
                 'associée sur un dossier concret traité avec Corrext, publiées avec son accord écrit.</p></blockquote>\n'
                 '    <figcaption><b>Prénom Nom</b><span>Fonction, cabinet</span></figcaption>\n'
                 '  </figure></div>\n</section>')
+    # Un exemple n'est plus étiqueté à l'écran, mais la classe temo-ex reste : la garde de production de build.py s'appuie dessus.
     ex = t.get("exemple")
     return (f'<section class="temo{" temo-ex" if ex else ""}">\n  <div class="container"><figure class="temo-fig">\n'
-            + ('    <span class="temo-tag">Exemple, à remplacer par un témoignage réel</span>\n' if ex else "")
             + '    <span class="temo-mark" aria-hidden="true">«</span>\n'
             f'    <blockquote><p>{t["citation"]}</p></blockquote>\n'
             f'    <figcaption><b>{t["auteur"]}</b><span>{t["fonction"]}</span></figcaption>\n'
