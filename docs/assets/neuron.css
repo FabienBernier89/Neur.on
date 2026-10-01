@@ -900,26 +900,7 @@ body.nav-open{overflow:hidden}
 .jv-chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--blue-pale);color:var(--blue-dd)}
 .jv-chip.dark{background:var(--navy);color:#fff}
 .jv-chip svg{width:12px;height:12px}
-.jv-files{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
-.jv-files li{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:9px;padding:7px 10px;background:#fff;border:1px solid var(--line);border-radius:9px}
-.jv-ext{font-size:9.5px;font-weight:800;letter-spacing:.05em;color:var(--blue-dd);background:var(--blue-pale);border-radius:5px;padding:2px 5px}
-.jv-fn{color:var(--ink);font-weight:500}
-.jv-pg{color:var(--muted);font-variant-numeric:tabular-nums}
-.jv-ok{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--blue);color:#fff}
-.jv-ok svg{width:11px;height:11px}
 .jv-foot{font-size:11.5px;color:var(--muted)}
-.jv-time{list-style:none;margin:0;padding:0}
-.jv-time li{position:relative;display:grid;grid-template-columns:12px 1fr;gap:12px;padding:7px 0}
-.jv-time li i{width:12px;height:12px;border-radius:50%;background:var(--blue);margin-top:3px;box-shadow:0 0 0 4px var(--blue-pale)}
-.jv-time li.next i{background:#fff;border:2px solid var(--blue);box-shadow:none}
-.jv-time li:not(:last-child)::after{content:"";position:absolute;left:5.5px;top:24px;bottom:-8px;width:1px;background:var(--line-2)}
-.jv-time b{display:block;font-size:11px;font-weight:700;color:var(--blue-d);letter-spacing:.02em}
-.jv-time span{color:var(--ink)}
-.jv-alt{padding:8px 11px;background:#fff;border:1px solid var(--line);border-radius:9px}
-.jv-alt p{margin:0;color:var(--ink);font-size:12.5px;line-height:1.5}
-.jv-alt em{display:block;margin-top:3px;font-style:normal;font-size:11px;font-weight:600;color:var(--blue-d)}
-.jv-alt.other mark{background:#eef1f6;color:var(--muted)}
-.jv-alt.other em{color:var(--muted)}
 .jv-src{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted)}
 .jv-src svg{width:13px;height:13px;color:#9F182F;flex-shrink:0}
 .jv-langs{display:flex;align-items:center;justify-content:space-between;font-size:11.5px;font-weight:600;color:var(--ink)}
@@ -942,13 +923,16 @@ body.nav-open{overflow:hidden}
 .jv-search svg{width:14px;height:14px;color:var(--muted)}
 .jv-search b{color:var(--ink);font-weight:600}
 .jv-search span{margin-left:auto;font-size:11px;color:var(--muted)}
-/* Bloc « moments » : trois vignettes alignées ligne à ligne */
-.jv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 30px;grid-auto-rows:auto auto 1fr}
-.jv-item{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0}
-.jv-item .jv-win{margin-bottom:24px}
-.jv-item h3{font-size:17px;margin-bottom:10px;letter-spacing:-.015em}
-.jv-item h3 .pn{color:var(--blue-d)}
-.jv-item p{font-size:14.5px;color:var(--text);line-height:1.62}
+.jv-code{padding:10px 12px;background:var(--navy);color:#dbe6ff;border-radius:9px;font:500 11.5px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre;overflow:hidden}
+.jv-code .m{color:#8fb6ff;font-weight:700}
+.jv-code .k{color:#a9cdff}
+.jv-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.jv-list li{display:flex;align-items:center;gap:9px;padding:7px 10px;background:#fff;border:1px solid var(--line);border-radius:9px;color:var(--ink);font-weight:500}
+.jv-list i{width:12px;height:12px;border-radius:50%;border:1.5px solid var(--line-2);flex-shrink:0}
+.jv-list li.on{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-pale)}
+.jv-list li.on i{border:3.5px solid var(--blue)}
+.jv-list li.off{color:var(--muted);background:#f3f5f9}
+.jv-list li span{margin-left:auto;font-size:10.5px;font-weight:700;letter-spacing:.02em;color:var(--blue-dd);background:var(--blue-pale);border-radius:999px;padding:2px 8px}
 /* Bloc « outils » : cartes cliquables avec vignette */
 .jv-tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;grid-auto-rows:auto auto 1fr auto}
 .jv-tool{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;padding:20px;background:#fff;border:1px solid var(--line);border-radius:18px;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1),border-color .35s}
@@ -961,7 +945,7 @@ body.nav-open{overflow:hidden}
 .jv-tool:hover>em svg{transform:translateX(4px)}
 .jv-tool:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.jv-tool,.jv-tool>em svg{transition:none}.jv-tool:hover{transform:none}}
-@media(max-width:940px){.jv-grid{grid-template-columns:1fr;gap:34px 0}.jv-tgrid{grid-template-columns:1fr}}
+@media(max-width:940px){.jv-tgrid{grid-template-columns:1fr}}
 @media(max-width:560px){.jv-2col,.jv-res{grid-template-columns:1fr}.jv-2col>div+div,.jv-res>div+div{border-left:0;border-top:1px solid var(--line)}}
 /* Bloc « moments » sobre : trois cartes, pictogramme sur la ligne du titre, alignées ligne à ligne */
 .ws-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;grid-auto-rows:auto 1fr}

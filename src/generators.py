@@ -153,7 +153,7 @@ def who(titre, items):
 
 
 # ---------------------------------------------------------------- vignettes métier
-# Miniatures de l'interface Corrext pour les pages métier « visuelles ».
+# Miniatures de l'interface Corrext pour le bloc « outils » des pages métier.
 # Les textes affichés sont de vraies sorties récoltées dans l'application (septembre 2026).
 
 def _svg(d, w="2"):
@@ -173,28 +173,7 @@ def _win(titre, corps):
             f'<div class="jv-body">{corps}</div></div>')
 
 
-def _file(nom, pages):
-    return (f'<li><span class="jv-ext">PDF</span><span class="jv-fn">{nom}</span>'
-            f'<span class="jv-pg">{pages}</span><span class="jv-ok">{V_CHECK}</span></li>')
-
-
 VIGNETTES = {
-    "lot": lambda: _win("File translation",
-        '<div class="jv-chips"><span class="jv-chip">LexMachina</span>'
-        f'<span class="jv-chip dark">{V_LOCK}Highly sensitive</span></div>'
-        '<ul class="jv-files">' + _file("Pièces 1 à 12", "96 p.") + _file("Pièces 13 à 27", "148 p.")
-        + _file("Pièces 28 à 41", "156 p.") + '</ul>'
-        '<div class="jv-foot">400 pages, rendues dans leur format d\'origine</div>'),
-    "pret": lambda: _win("Translation project",
-        '<ol class="jv-time">'
-        '<li class="done"><i></i><span><b>Ce soir</b>Traduction machine du contrat de prêt</span></li>'
-        '<li class="done"><i></i><span><b>Ce soir</b>Full review commandée, délai affiché</span></li>'
-        '<li class="next"><i></i><span><b>Demain matin</b>Document prêt à signer</span></li>'
-        '</ol>'),
-    "sentence": lambda: _win("Alternatives",
-        '<div class="jv-alt"><p lang="en">… in accordance with art. 186 <mark>PILA</mark>, and the award may be appealed …</p><em>LexMachina</em></div>'
-        '<div class="jv-alt other"><p lang="en">… in accordance with Article 186 of the <mark>LDIP</mark>, and the award may be appealed …</p><em>DeepL Pro</em></div>'
-        f'<div class="jv-src">{V_BOOK}CHnell : « PILA », abréviation anglaise officielle de la LDIP</div>'),
     "outil-texte": lambda: _win("Fast translation",
         '<div class="jv-langs">French → English <span>LexMachina</span></div>'
         '<div class="jv-2col"><div lang="fr">Le débiteur en demeure doit des intérêts moratoires au taux de 5% l\'an …</div>'
@@ -209,18 +188,27 @@ VIGNETTES = {
         '<div class="jv-res"><div lang="de">… den fehlenden Betrag zuzüglich <mark>Verzugszins</mark> nicht mehr nachbelasten …</div>'
         '<div lang="fr">… prélever le montant manquant avec l\'<mark>intérêt moratoire</mark> …</div></div>'
         f'<div class="jv-src">{V_BOOK}Feuille fédérale</div>'),
+    # Même illustration que la page API : pas une documentation, le contrat d'interface fait foi.
+    "outil-api": lambda: _win("API REST",
+        '<div class="jv-code"><span class="m">POST</span> /v1/translate\n{\n'
+        '  <span class="k">"source_language"</span>: "de",\n  <span class="k">"target_language"</span>: "fr",\n'
+        '  <span class="k">"engine"</span>: "lexmachina",\n  <span class="k">"domain"</span>: "banking"\n}</div>'
+        '<div class="jv-foot">Illustration · le contrat d\'interface est remis au cadrage</div>'),
+    # Parcours auszug-hr.ch, données de démonstration de la page Extraits.
+    "outil-extraits": lambda: _win("Commercial register extract",
+        f'<div class="jv-search">{V_SEARCH}<b>Muster AG</b><span>CHE-000.000.000</span></div>'
+        '<ul class="jv-list"><li><i></i>Corrext Certification</li><li><i></i>Notarized Certification</li>'
+        '<li class="on"><i></i>Notarized &amp; Apostilled</li></ul>'),
+    # Mode Highly sensitive : seul le moteur suisse reste sélectionnable, les autres sont grisés.
+    "outil-lexmachina": lambda: _win("Translation engine",
+        f'<div class="jv-chips"><span class="jv-chip dark">{V_LOCK}Highly sensitive</span></div>'
+        '<ul class="jv-list"><li class="on"><i></i>LexMachina<span>Suisse</span></li>'
+        '<li class="off"><i></i>DeepL Pro</li><li class="off"><i></i>Azure OpenAI GPT</li></ul>'),
 }
 OUTIL_VIS = {"fr/corrext/traduction-texte-et-document/": "outil-texte",
-             "fr/corrext/gestion-de-projet/": "outil-projet", "fr/corrext/chnell/": "outil-chnell"}
-
-
-def who_visuel(titre, items):
-    ws = "".join(f'<article class="jv-item">{VIGNETTES[w["vis"]]()}'
-                 f'<h3><span class="pn">{w["a"]}.</span> {w["t"]}</h3><p>{w["p"]}</p></article>'
-                 for w in items)
-    return ('<section class="who who-v">\n  <div class="container">\n'
-            f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
-            f'    <div class="jv-grid">{ws}</div>\n  </div>\n</section>')
+             "fr/corrext/gestion-de-projet/": "outil-projet", "fr/corrext/chnell/": "outil-chnell",
+             "fr/corrext/api-on-premises/": "outil-api",
+             "fr/corrext/extraits-registre-commerce/": "outil-extraits", "fr/lexmachina/": "outil-lexmachina"}
 
 
 def outils_visuel(titre, items):
@@ -231,11 +219,33 @@ def outils_visuel(titre, items):
             f'    <h2>{titre}</h2>\n    <div class="jv-tgrid">{ss}</div>\n  </div>\n</section>')
 
 
-WS_ICONS = {
-    "lot": _svg('<path d="M9 3h7l4 4v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3v4h4"/><path d="M4 7v12a2 2 0 0 0 2 2h9"/>', "1.9"),
-    "pret": _svg('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>', "1.9"),
-    "sentence": _svg('<path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0z"/><path d="m19 7-3 6a3 3 0 0 0 6 0z"/>', "1.9"),
-}
+# Pictogrammes du bloc « moments », un par situation métier
+WS_ICONS = {k: _svg(v, "1.9") for k, v in {
+    # Cabinets d'avocats
+    "lot": '<path d="M9 3h7l4 4v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3v4h4"/><path d="M4 7v12a2 2 0 0 0 2 2h9"/>',
+    "pret": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    "sentence": '<path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0z"/><path d="m19 7-3 6a3 3 0 0 0 6 0z"/>',
+    # Banques et finance
+    "bouclier": '<path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/>',
+    "signature": '<path d="M15 5l4 4L8 20H4v-4z"/><path d="M13 7l4 4"/><path d="M14 20h6"/>',
+    "rapport": '<path d="M4 20h16"/><path d="M7 16v-4M12 16V7M17 16v-6"/>',
+    # Directions juridiques
+    "jauge": '<path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 3.5-5.5"/><path d="M12 17h.01"/>',
+    "courriel": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/><path d="M4 3l16 18"/>',
+    "memoire": '<ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13"/><path d="M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/>',
+    # Autorités et administration
+    "marteau": '<path d="m14 13-8.4 8.4a2 2 0 0 1-2.8-2.8L11.2 10"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/>',
+    "institution": '<path d="M3 21h18"/><path d="M5 21V11M9.5 21V11M14.5 21V11M19 21V11"/><path d="M12 3 3 8h18z"/>',
+    "globe": '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/>',
+    # Fiduciaires et conseil
+    "societe": '<rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/>',
+    "audit": '<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
+    "fiscal": '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8"/><path d="M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
+    # LegalTechs et éditeurs
+    "base": '<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>',
+    "code": '<path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/>',
+    "echange": '<path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/>',
+}.items()}
 
 
 def who_sobre(titre, items):
@@ -398,10 +408,10 @@ def gen_solutions(src):
             hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
                      "Ce métier, en trois points"),
             facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
-            (who_sobre if d.get("visuel") else who)(d["who_titre"], d["who"]),
+            who_sobre(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
-            (outils_visuel if d.get("visuel") else siblings)("Les outils que ce métier utilise le plus", d["outils"]),
-            temoignage(d.get("temoignage")) if d.get("visuel") else "",
+            outils_visuel("Les outils que ce métier utilise le plus", d["outils"]),
+            temoignage(d.get("temoignage")),
             faq(d["faq_titre"], d["faq"]),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
         ])

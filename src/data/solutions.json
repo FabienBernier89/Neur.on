@@ -158,7 +158,6 @@
     ],
     "cta_t": "Voyez Corrext sur vos propres pièces",
     "cta_p": "Une démonstration avec un spécialiste du droit suisse, sur vos formats, vos langues et votre terminologie.",
-    "visuel": true,
     "temoignage": {
       "exemple": true,
       "citation": "Quatre cents pages de pièces en allemand sont arrivées dix jours avant l'audience. Avec Corrext, l'équipe a lu le dossier en français dès le lendemain, et chaque terme douteux se vérifiait dans CHnell sans quitter le document. Que rien ne sorte de Suisse n'était pas négociable pour notre client : ce point a emporté la décision.",
@@ -240,19 +239,22 @@
     "who_titre": "Trois situations de conformité",
     "who": [
       {
+        "vis": "bouclier",
         "a": "Compliance",
-        "t": "Répondre à une demande de l'autorité en trois langues",
+        "t": "Répondre à l'autorité en trois langues",
         "p": "Le texte de référence est traduit avec la terminologie de la surveillance, les alternatives par moteur montrent les formulations possibles, et chaque terme se vérifie dans sa source officielle avant envoi."
       },
       {
+        "vis": "signature",
         "a": "Juridique",
-        "t": "Un contrat-cadre à faire signer par une contrepartie alémanique",
-        "p": "Traduction machine puis Full review par un traducteur juridique, délai affiché avant validation. Le document part relu, pas brut."
+        "t": "Un contrat-cadre à signer en allemand",
+        "p": "Traduction machine puis Full review par un traducteur juridique, délai affiché avant validation. La contrepartie alémanique reçoit un document relu, pas une version brute."
       },
       {
+        "vis": "rapport",
         "a": "Communication financière",
-        "t": "Un rapport annuel en français, allemand et italien",
-        "p": "Le projet est créé une fois, les trois langues cibles sont sélectionnées ensemble, et la relecture externe est commandée au niveau exigé par une publication."
+        "t": "Un rapport en trois langues",
+        "p": "Le rapport annuel devient un projet unique, les trois langues cibles sont sélectionnées ensemble, et la relecture externe est commandée au niveau qu'exige une publication."
       }
     ],
     "gov_q": "Le secret bancaire survit-il à une traduction automatique ?",
@@ -320,7 +322,13 @@
       }
     ],
     "cta_t": "Voyez Corrext sur vos documents réglementaires",
-    "cta_p": "Une démonstration avec un spécialiste, sur vos circulaires, vos prospectus et votre terminologie."
+    "cta_p": "Une démonstration avec un spécialiste, sur vos circulaires, vos prospectus et votre terminologie.",
+    "temoignage": {
+      "exemple": true,
+      "citation": "La demande de l'autorité est arrivée en allemand un vendredi, avec une réponse attendue en français et en italien. Les versions de travail étaient prêtes dans l'heure, et chaque terme prudentiel a été vérifié dans sa source officielle avant l'envoi. Pour notre direction, que les documents restent stockés en Suisse était la condition de départ.",
+      "auteur": "Responsable compliance",
+      "fonction": "Banque privée, Zurich"
+    }
   },
   {
     "slug": "directions-juridiques",
@@ -395,19 +403,22 @@
     "who_titre": "Trois chantiers d'une direction juridique",
     "who": [
       {
+        "vis": "jauge",
         "a": "Pilotage",
-        "t": "Savoir ce que la traduction coûte vraiment en temps",
+        "t": "Mesurer le temps que coûte une traduction",
         "p": "Le devis affiche le délai de préparation, de relecture interne et de relecture externe avant validation. Vous arbitrez sur des données, pas sur une impression."
       },
       {
+        "vis": "courriel",
         "a": "Conformité",
-        "t": "Arrêter la circulation de documents sensibles par courriel",
+        "t": "Plus de pièces sensibles par courriel",
         "p": "Un environnement unique, un stockage suisse, des droits jusqu'au document et un avertissement dès qu'un moteur étranger est choisi."
       },
       {
+        "vis": "memoire",
         "a": "Capitalisation",
-        "t": "Ne pas retraduire deux fois la même clause",
-        "p": "Les projets Standard constituent la mémoire de l'entreprise, et la terminologie se vérifie dans un concordancier sourcé plutôt que dans les souvenirs de chacun."
+        "t": "Ne plus retraduire la même clause",
+        "p": "Les corrections validées dans les projets Standard alimentent la mémoire de l'entreprise pour les traductions suivantes, et la terminologie se vérifie dans un concordancier sourcé plutôt que dans les souvenirs de chacun."
       }
     ],
     "gov_q": "Comment garder la maîtrise sans ralentir les équipes ?",
@@ -475,7 +486,13 @@
       }
     ],
     "cta_t": "Reprenez le contrôle de vos traductions",
-    "cta_p": "Une démonstration sur vos volumes, vos langues et vos règles de confidentialité."
+    "cta_p": "Une démonstration sur vos volumes, vos langues et vos règles de confidentialité.",
+    "temoignage": {
+      "exemple": true,
+      "citation": "Nous ne savions pas combien de temps la traduction coûtait à l'équipe. Le devis affiche désormais la préparation, la relecture interne et la relecture externe avant chaque validation : nous arbitrons sur des chiffres. Et les clauses déjà corrigées ne repartent plus de zéro.",
+      "auteur": "Directeur juridique",
+      "fonction": "Groupe industriel, Suisse romande"
+    }
   },
   {
     "slug": "autorites-administration",
@@ -549,19 +566,22 @@
     "who_titre": "Trois usages dans le secteur public",
     "who": [
       {
+        "vis": "marteau",
         "a": "Tribunaux",
-        "t": "Notifier une décision dans la langue de la partie",
+        "t": "Notifier dans la langue de la partie",
         "p": "Le texte est traduit avec la terminologie de la procédure, vérifié terme par terme dans les sources officielles, puis relu par un traducteur juridique avant notification."
       },
       {
+        "vis": "institution",
         "a": "Administrations",
-        "t": "Publier un rapport dans les trois langues officielles",
-        "p": "Un projet, trois langues cibles, un niveau de relecture unique et un délai affiché avant validation."
+        "t": "Publier en trois langues officielles",
+        "p": "Un rapport devient un projet : trois langues cibles, un niveau de relecture unique et un délai affiché avant validation."
       },
       {
-        "a": "Entraide et relations internationales",
-        "t": "Transmettre un dossier à une autorité étrangère",
-        "p": "La traduction certifiée, notariée et apostillée se commande en ligne, avec le niveau exigé par l'autorité destinataire."
+        "vis": "globe",
+        "a": "Entraide",
+        "t": "Transmettre un dossier à l'étranger",
+        "p": "Les pièces passent en projet avec la relecture et la certification qu'exige l'autorité destinataire. Les extraits du registre du commerce se commandent certifiés, notariés ou apostillés en ligne."
       }
     ],
     "gov_q": "Une administration peut-elle utiliser un service de traduction en ligne ?",
@@ -629,7 +649,13 @@
       }
     ],
     "cta_t": "Voyez Corrext sur vos documents officiels",
-    "cta_p": "Une démonstration avec un spécialiste du droit suisse, dans vos langues et selon vos règles de confidentialité."
+    "cta_p": "Une démonstration avec un spécialiste du droit suisse, dans vos langues et selon vos règles de confidentialité.",
+    "temoignage": {
+      "exemple": true,
+      "citation": "Nos décisions doivent être notifiées dans la langue de la partie, souvent en quelques jours. Le greffe part maintenant d'une version vérifiée terme par terme dans les textes publiés, puis relue par un traducteur juridique. Que rien ne quitte la Suisse a simplifié la validation par notre service informatique.",
+      "auteur": "Greffier en chef",
+      "fonction": "Tribunal de première instance, canton bilingue"
+    }
   },
   {
     "slug": "fiduciaires-conseil",
@@ -703,18 +729,21 @@
     "who_titre": "Trois demandes récurrentes",
     "who": [
       {
+        "vis": "societe",
         "a": "Corporate housekeeping",
-        "t": "Un extrait du registre pour une filiale à l'étranger",
+        "t": "Un extrait pour l'étranger",
         "p": "La société se cherche par nom ou par IDE, le niveau de certification se choisit selon l'autorité destinataire, et la commande se termine en ligne."
       },
       {
+        "vis": "audit",
         "a": "Audit",
         "t": "Des annexes à lire vite avant une revue",
-        "p": "Le lot part en Traduction texte et document, revient dans son format, et les termes comptables se vérifient dans le concordancier."
+        "p": "Le lot part en Traduction texte et document, revient dans son format d'origine, et les termes comptables se vérifient dans le concordancier."
       },
       {
+        "vis": "fiscal",
         "a": "Fiscalité",
-        "t": "Un dossier à présenter à une administration cantonale",
+        "t": "Un dossier pour l'administration cantonale",
         "p": "Traduction dans la langue du canton, relecture par un traducteur juridique, et terminologie fiscale vérifiée dans les textes publiés."
       }
     ],
@@ -783,7 +812,13 @@
       }
     ],
     "cta_t": "Voyez Corrext sur vos documents d'entreprise",
-    "cta_p": "Une démonstration sur vos statuts, vos extraits et vos rapports, dans les langues de vos destinataires."
+    "cta_p": "Une démonstration sur vos statuts, vos extraits et vos rapports, dans les langues de vos destinataires.",
+    "temoignage": {
+      "exemple": true,
+      "citation": "Un client ouvrait une filiale en Allemagne, et la banque exigeait un extrait du registre traduit et apostillé. La commande s'est faite en ligne en quelques minutes, au bon niveau de certification. Pour les annexes d'audit, nous lisons désormais la traduction le jour même.",
+      "auteur": "Expert fiduciaire",
+      "fonction": "Société fiduciaire, Lausanne"
+    }
   },
   {
     "slug": "editeurs-legaltech",
@@ -858,19 +893,22 @@
     "who_titre": "Trois formes d'intégration",
     "who": [
       {
+        "vis": "base",
         "a": "Éditeurs juridiques",
-        "t": "Proposer une base multilingue à vos abonnés",
-        "p": "Le moteur traduit vos contenus avec la terminologie officielle, et le concordancier permet à vos lecteurs de remonter à la source de chaque terme."
+        "t": "Votre base en quatre langues",
+        "p": "Le moteur traduit vos contenus en allemand, français, italien et anglais avec la terminologie officielle, et le concordancier permet à vos abonnés de remonter à la source de chaque terme."
       },
       {
+        "vis": "code",
         "a": "LegalTechs",
-        "t": "Ajouter la traduction à votre produit sans construire un moteur",
-        "p": "Une API REST, un modèle spécialisé et un argument de souveraineté que vos concurrents génériques ne peuvent pas répliquer."
+        "t": "Traduire sans construire de moteur",
+        "p": "Une API REST, un moteur entraîné sur le droit suisse et exécuté en Suisse, sous votre marque si le contrat le prévoit."
       },
       {
+        "vis": "echange",
         "a": "Prestataires linguistiques",
-        "t": "Livrer en Trados ou MemoQ tout en travaillant dans un flux gouverné",
-        "p": "Les traducteurs et juristes-linguistes livrent dans leurs outils habituels et collaborent dans Word."
+        "t": "Livrer en Trados ou memoQ",
+        "p": "Les traducteurs juridiques travaillent dans leurs outils habituels et livrent dans la chaîne du projet, où la relecture se fait dans l'éditeur Corrext ou dans Word."
       }
     ],
     "gov_q": "Qu'est-ce qui différencie un moteur spécialisé d'un moteur généraliste ?",
@@ -938,6 +976,12 @@
       }
     ],
     "cta_t": "Cadrons votre intégration",
-    "cta_p": "Un échange technique avec notre équipe pour définir les volumes, les langues et le mode de déploiement."
+    "cta_p": "Un échange technique avec notre équipe pour définir les volumes, les langues et le mode de déploiement.",
+    "temoignage": {
+      "exemple": true,
+      "citation": "Nos abonnés lisent désormais la jurisprudence dans leur langue, et chaque terme renvoie à son usage dans les textes officiels. Nous avons branché le moteur par l'API, sans construire de modèle nous-mêmes. L'argument qui a convaincu nos clients : le traitement reste en Suisse.",
+      "auteur": "Directrice produit",
+      "fonction": "Éditeur juridique, Zurich"
+    }
   }
 ]
