@@ -6,8 +6,8 @@
     "title": "Traduction juridique de l'allemand au français · Neur.on",
     "description": "L'allemand juridique suisse vers le français : abréviations OR, ZGB, SchKG converties, orthographe suisse reconnue, documents traités en Suisse.",
     "lede": "Allemand vers français.",
-    "h1": "La paire qui fait circuler le droit suisse d'une rive à l'autre",
-    "lead": "Un jugement zurichois à lire à Genève, un contrat bâlois à signer en Suisse romande : cette paire porte l'essentiel du droit suisse en circulation. Elle demande de lire l'allemand juridique suisse et ses abréviations, puis de retrouver le mot français du même texte de loi.",
+    "h1": "Le droit suisse d'une rive à l'autre",
+    "lead": "Un jugement zurichois à lire à Genève, un contrat bâlois à signer en Suisse romande. Il faut lire l'allemand juridique suisse et ses abréviations, puis retrouver le mot français du même texte de loi.",
     "promesses": [
       {"t": "Allemand suisse", "d": "ss au lieu de ß, milliers en 15'000, guillemets « »"},
       {"t": "Abréviations", "d": "OR devient CO, ZGB devient CC, SchKG devient LP"},
@@ -53,14 +53,14 @@
       }
     ],
     "termes": [
-      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interesse moratorio", "en": "default interest", "ref": "art. 104 CO"},
+      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interessi moratori", "en": "default interest", "ref": "art. 104 CO"},
       {"de": "Betreibung", "fr": "poursuite", "it": "esecuzione", "en": "debt enforcement", "ref": "art. 38 LP"},
       {"de": "Rechtsvorschlag", "fr": "opposition", "it": "opposizione", "en": "objection", "ref": "art. 74 LP"},
       {"de": "Grundbuch", "fr": "registre foncier", "it": "registro fondiario", "en": "land register", "ref": "art. 942 CC"},
       {"de": "Verfügung", "fr": "décision", "it": "decisione", "en": "ruling", "ref": "art. 5 PA"},
       {"de": "Handelsregister", "fr": "registre du commerce", "it": "registro di commercio", "en": "commercial register", "ref": "art. 927 CO"}
     ],
-    "termes_note": "Six termes que l'allemand et le français du droit suisse désignent chacun à leur manière, avec l'article qui fixe l'équivalence.",
+    "termes_note": "Six termes que l'allemand et le français du droit suisse désignent chacun à leur manière, avec l'article qui fixe l'équivalence. La colonne anglaise reprend la traduction publiée par la Confédération sur Fedlex quand elle existe, sans force de loi, et la formulation d'usage sinon.",
     "who_titre": "Trois situations où cette paire décide de la journée",
     "who": [
       {
@@ -121,8 +121,8 @@
     "title": "Traduction juridique du français vers l'allemand · Neur.on",
     "description": "Du français juridique suisse vers l'allemand : termes des lois fédérales, ss et apostrophe des milliers, abréviations CO, LP, LDIP converties.",
     "lede": "Français vers allemand.",
-    "h1": "Écrire le droit suisse pour un lecteur alémanique",
-    "lead": "Un mémoire romand qui part devant une instance alémanique, des conditions générales à publier dans toute la Suisse. Le texte allemand n'a pas à être élégant : il doit employer les mots des lois fédérales, dans leur orthographe suisse, sinon il perd sa force devant le lecteur qu'il vise.",
+    "h1": "Écrire pour un lecteur alémanique",
+    "lead": "Un mémoire romand devant une instance alémanique, des conditions générales pour toute la Suisse. Le texte allemand doit employer les mots des lois fédérales, dans leur orthographe suisse.",
     "promesses": [
       {"t": "Allemand suisse", "d": "ss partout, jamais de ß, apostrophe dans les milliers"},
       {"t": "Abréviations", "d": "CO devient OR, LP devient SchKG, LDIP devient IPRG"},
@@ -172,9 +172,9 @@
       {"de": "Generalversammlung", "fr": "assemblée générale", "it": "assemblea generale", "en": "general meeting", "ref": "art. 698 CO"},
       {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "auditor", "ref": "art. 727 CO"},
       {"de": "Bürgschaft", "fr": "cautionnement", "it": "fideiussione", "en": "contract of surety", "ref": "art. 492 CO"},
-      {"de": "Schadenersatz", "fr": "dommages-intérêts", "it": "risarcimento del danno", "en": "damages", "ref": "art. 97 CO"}
+      {"de": "Schadenersatz", "fr": "dommages-intérêts", "it": "risarcimento del danno", "en": "damages", "ref": "art. 107 CO"}
     ],
-    "termes_note": "Le vocabulaire des sociétés et des contrats, dans la forme exacte des versions allemande, française et italienne du Code des obligations.",
+    "termes_note": "Le vocabulaire des sociétés et des contrats, dans la forme exacte des versions allemande, française et italienne du Code des obligations. La colonne anglaise reprend la traduction publiée par la Confédération sur Fedlex quand elle existe, sans force de loi, et la formulation d'usage sinon.",
     "who_titre": "Trois moments où la version allemande est attendue",
     "who": [
       {
@@ -235,8 +235,8 @@
     "title": "Traduction juridique de l'allemand vers l'anglais · Neur.on",
     "description": "Le droit suisse alémanique en anglais : les versions anglaises des lois n'ont pas force de loi, et les notions suisses gardent leur terme d'origine.",
     "lede": "Allemand vers anglais.",
-    "h1": "Rendre le droit suisse intelligible sans le déformer",
-    "lead": "Une due diligence pilotée depuis Londres, un rapport destiné à une maison mère américaine, un arrêt à produire dans un arbitrage. Le lecteur ne connaît pas le Code des obligations et l'anglais n'a aucun terme officiel suisse : la traduction doit expliquer sans inventer un droit qui n'existe pas.",
+    "h1": "Rendre le droit suisse intelligible",
+    "lead": "Une due diligence pilotée depuis Londres, un rapport pour une maison mère américaine. L'anglais n'a aucun terme officiel suisse : la traduction explique sans inventer un droit qui n'existe pas.",
     "promesses": [
       {"t": "Langue non officielle", "d": "les versions anglaises des lois suisses sont informatives"},
       {"t": "Notions sans équivalent", "d": "Betreibung et Verfügung gardent leur terme d'origine"},
@@ -348,8 +348,8 @@
     "title": "Traduction juridique de l'anglais vers l'allemand · Neur.on",
     "description": "Contrats rédigés en anglais et soumis au droit suisse : la version allemande ancre chaque clause sur les notions exactes du Code des obligations.",
     "lede": "Anglais vers allemand.",
-    "h1": "Faire atterrir un contrat anglo-saxon dans le droit suisse",
-    "lead": "Un contrat d'acquisition ou un accord de financement est souvent rédigé en anglais alors qu'il est soumis au droit suisse. La version allemande est celle que lira une autorité ou une contrepartie alémanique : chaque clause doit se rattacher à une notion du Code des obligations.",
+    "h1": "Ramener le contrat au droit suisse",
+    "lead": "Un contrat d'acquisition rédigé en anglais mais soumis au droit suisse : la version allemande, celle que lira l'autorité, rattache chaque clause à une notion du Code des obligations.",
     "promesses": [
       {"t": "Ancrage légal", "d": "chaque clause ramenée aux notions de l'Obligationenrecht"},
       {"t": "Allemand suisse", "d": "ss, apostrophe dans les milliers, sigles suisses conservés"},
@@ -394,13 +394,13 @@
     ],
     "termes": [
       {"de": "Schiedsgericht", "fr": "tribunal arbitral", "it": "tribunale arbitrale", "en": "arbitral tribunal", "ref": "art. 176 LDIP"},
-      {"de": "Zuständigkeit", "fr": "compétence", "it": "competenza", "en": "jurisdiction", "ref": "art. 1 CPC"},
-      {"de": "Konventionalstrafe", "fr": "peine conventionnelle", "it": "pena convenzionale", "en": "contractual penalty", "ref": "art. 160 CO"},
+      {"de": "Zuständigkeit", "fr": "compétence", "it": "competenza", "en": "jurisdiction", "ref": "titre 2 CPC"},
+      {"de": "Konventionalstrafe", "fr": "clause pénale", "it": "pena convenzionale", "en": "contractual penalty", "ref": "art. 160 CO"},
       {"de": "Abtretung", "fr": "cession de créance", "it": "cessione del credito", "en": "assignment of a claim", "ref": "art. 164 CO"},
       {"de": "Verjährung", "fr": "prescription", "it": "prescrizione", "en": "prescription", "ref": "art. 127 CO"},
-      {"de": "Solidarhaftung", "fr": "responsabilité solidaire", "it": "responsabilità solidale", "en": "joint and several liability", "ref": "art. 143 CO"}
+      {"de": "Solidarschuld", "fr": "solidarité passive", "it": "debito solidale", "en": "joint and several liability", "ref": "art. 143 CO"}
     ],
-    "termes_note": "Les notions qu'une clause anglaise doit retrouver en droit suisse, avec l'article qui les régit.",
+    "termes_note": "Les notions qu'une clause anglaise doit retrouver en droit suisse, avec l'article qui les régit. La colonne anglaise reprend la traduction publiée par la Confédération sur Fedlex quand elle existe, sans force de loi, et la formulation d'usage sinon.",
     "who_titre": "Trois contrats qui arrivent en anglais",
     "who": [
       {
@@ -430,7 +430,7 @@
       },
       {
         "q": "Comment rendre une clause qui n'a pas d'équivalent suisse ?",
-        "r": "En traduisant l'effet recherché avec les notions du droit suisse plutôt que la formule d'origine. Une clause d'indemnisation s'exprime en termes de responsabilité et de garantie, une liquidated damages clause en peine conventionnelle. Ce choix relève du juriste : la traduction machine prépare le texte, la relecture juridique tranche."
+        "r": "En traduisant l'effet recherché avec les notions du droit suisse plutôt que la formule d'origine. Une clause d'indemnisation s'exprime en termes de responsabilité et de garantie ; une liquidated damages clause devient une clause pénale. Ce choix relève du juriste : la traduction machine prépare le texte, la relecture juridique tranche."
       },
       {
         "q": "Faut-il garder les termes anglais définis dans le contrat ?",
@@ -461,8 +461,8 @@
     "title": "Traduction juridique du français vers l'anglais · Neur.on",
     "description": "Le droit suisse romand en anglais : arbitrage, arrêts du Tribunal fédéral et conformité, avec des versions anglaises informatives qui ne font pas foi.",
     "lede": "Français vers anglais.",
-    "h1": "Porter un dossier romand devant un lecteur international",
-    "lead": "Genève et Lausanne travaillent en français et plaident souvent en anglais : arbitrages internationaux, organisations de l'arc lémanique, sociétés cotées. La traduction doit rendre le droit suisse compréhensible pour ce lecteur, en rappelant qu'aucune version anglaise d'une loi suisse ne fait foi.",
+    "h1": "Le dossier romand à l'international",
+    "lead": "Genève et Lausanne travaillent en français et plaident souvent en anglais. La traduction rend le droit suisse compréhensible, en rappelant qu'aucune version anglaise d'une loi suisse ne fait foi.",
     "promesses": [
       {"t": "Langue non officielle", "d": "les versions anglaises des lois sont informatives"},
       {"t": "Arbitrage", "d": "le vocabulaire du chapitre 12 de la LDIP, terme par terme"},
@@ -509,7 +509,7 @@
       {"de": "Schiedsgericht", "fr": "tribunal arbitral", "it": "tribunale arbitrale", "en": "arbitral tribunal", "ref": "art. 176 LDIP"},
       {"de": "Bundesgericht", "fr": "Tribunal fédéral", "it": "Tribunale federale", "en": "Federal Supreme Court", "ref": "art. 188 Cst."},
       {"de": "Beschwerde", "fr": "recours", "it": "ricorso", "en": "appeal", "ref": "art. 72 LTF"},
-      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interesse moratorio", "en": "default interest", "ref": "art. 104 CO"},
+      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interessi moratori", "en": "default interest", "ref": "art. 104 CO"},
       {"de": "Bankgeheimnis", "fr": "secret bancaire", "it": "segreto bancario", "en": "banking secrecy", "ref": "art. 47 LB"},
       {"de": "Konkurs", "fr": "faillite", "it": "fallimento", "en": "bankruptcy", "ref": "art. 197 LP"}
     ],
@@ -574,8 +574,8 @@
     "title": "Traduction juridique de l'italien au français · Neur.on",
     "description": "L'italien juridique suisse vers le français : ricorso, precetto esecutivo, Tribunale federale et les termes du Tessin, distincts de l'italien d'Italie.",
     "lede": "Italien vers français.",
-    "h1": "La troisième langue officielle, avec son vocabulaire propre",
-    "lead": "Le Tessin et les vallées italophones des Grisons rendent la justice en italien, et la Confédération publie ses lois dans cette langue. L'italien juridique suisse n'est pourtant pas celui d'Italie : il a ses institutions et ses procédures, qu'un moteur généraliste remplace volontiers par le vocabulaire de la péninsule.",
+    "h1": "La troisième langue officielle, à part entière",
+    "lead": "Le Tessin rend la justice en italien et la Confédération publie ses lois dans cette langue. L'italien juridique suisse n'est pas celui d'Italie : un moteur généraliste le remplace volontiers.",
     "promesses": [
       {"t": "Italien de Suisse", "d": "ricorso, precetto esecutivo, Tribunale federale"},
       {"t": "Version qui fait foi", "d": "l'italien est l'une des trois langues officielles des lois"},
@@ -623,10 +623,10 @@
       {"de": "Bundesgericht", "fr": "Tribunal fédéral", "it": "Tribunale federale", "en": "Federal Supreme Court", "ref": "art. 188 Cst."},
       {"de": "Zahlungsbefehl", "fr": "commandement de payer", "it": "precetto esecutivo", "en": "summons for payment", "ref": "art. 69 LP"},
       {"de": "Strafbefehl", "fr": "ordonnance pénale", "it": "decreto d'accusa", "en": "summary penalty order", "ref": "art. 352 CPP"},
-      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interesse moratorio", "en": "default interest", "ref": "art. 104 CO"},
-      {"de": "Mängelrüge", "fr": "avis des défauts", "it": "avviso dei difetti", "en": "notice of defects", "ref": "art. 201 CO"}
+      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interessi moratori", "en": "default interest", "ref": "art. 104 CO"},
+      {"de": "Mängelrüge", "fr": "avis au vendeur", "it": "avviso al venditore", "en": "notice of defects", "ref": "art. 201 CO"}
     ],
-    "termes_note": "Six termes où l'italien de Suisse suit sa propre voie, avec l'article fédéral qui fixe les quatre versions.",
+    "termes_note": "Six termes où l'italien de Suisse suit sa propre voie, avec l'article fédéral qui fixe les quatre versions. La colonne anglaise reprend la traduction publiée par la Confédération sur Fedlex quand elle existe, sans force de loi, et la formulation d'usage sinon.",
     "who_titre": "Trois dossiers qui viennent du Tessin",
     "who": [
       {

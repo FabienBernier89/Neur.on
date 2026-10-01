@@ -791,6 +791,8 @@ body.nav-open{overflow:hidden}
 .thero-law .thero-grid{align-items:center}
 .thero-law h1{color:var(--ink)}
 .thero-law h1 em{color:var(--blue-d)}
+@media (min-width:1280px){.thero-law .lead{min-height:3lh}}
+@media (min-width:1024px) and (max-width:1279px){.thero-law .lead{min-height:4lh}}
 .thero-law .lead{color:var(--text)}
 .thero-law .btn-ghost{color:var(--ink);border:1px solid var(--line-2);background:#fff}
 .thero-law .btn-ghost:hover{border-color:var(--ink);background:#fff}

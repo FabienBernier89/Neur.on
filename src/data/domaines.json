@@ -71,8 +71,8 @@
     "title": "Traduction en droit des sociétés suisse, DE FR IT · Neur.on",
     "description": "Statuts, convocations, procès-verbaux d'assemblée, extraits du registre du commerce : la terminologie du droit suisse des sociétés en quatre langues.",
     "lede": "Droit des sociétés.",
-    "h1": "Statuts, assemblées et registre du commerce dans les quatre langues",
-    "lead": "Une société suisse vit en plusieurs langues : statuts déposés en allemand, procès-verbaux tenus en français, extrait du registre demandé en italien. Corrext traduit ces pièces avec les termes que le Code des obligations emploie lui-même, et l'extrait certifié se commande dans le même environnement.",
+    "h1": "Statuts et procès-verbaux traduits",
+    "lead": "Statuts déposés en allemand, procès-verbaux tenus en français, extrait du registre demandé en italien : une société suisse vit en plusieurs langues. Corrext emploie les termes du Code des obligations lui-même.",
     "promesses": [
       {"t": "Termes du registre", "d": "Verwaltungsrat, Handelsregister, Statuten et leurs équivalents officiels"},
       {"t": "Pièces récurrentes", "d": "les statuts d'une année sur l'autre alimentent votre mémoire de traduction"},
@@ -136,8 +136,8 @@
     "title": "Traduction pour fusions et acquisitions en Suisse · Neur.on",
     "description": "Data room, due diligence, contrat de fusion, closing : traduire des milliers de pages sans que la transaction quitte la Suisse, terminologie LFus.",
     "lede": "Fusions et acquisitions.",
-    "h1": "Des milliers de pages à comprendre avant le closing",
-    "lead": "Une data room mêle contrats, comptes, baux, brevets et procès-verbaux, souvent dans deux ou trois langues. L'équipe doit lire vite pour repérer les risques, puis produire quelques documents engageants au mot près. Corrext sépare ces deux gestes et garde la transaction sur des serveurs suisses.",
+    "h1": "Lire la data room avant le closing",
+    "lead": "Une data room mêle contrats, comptes, baux et procès-verbaux en deux ou trois langues. Il faut lire vite, puis rendre au mot près quelques documents engageants. Corrext sépare ces deux gestes, en Suisse.",
     "promesses": [
       {"t": "Volume", "d": "jusqu'à 25 fichiers de 50 Mo par envoi, format d'origine conservé"},
       {"t": "Discrétion", "d": "mode Highly sensitive content : stockage et traitement exclusivement en Suisse"},
@@ -201,8 +201,8 @@
     "title": "Traduction juridique pour contentieux et arbitrage · Neur.on",
     "description": "Mémoires, bordereaux de pièces, sentences arbitrales, recours au Tribunal fédéral : traduire avec la terminologie du CPC et de la LDIP en Suisse.",
     "lede": "Contentieux et arbitrage.",
-    "h1": "Traduire ce qui sera lu par un juge ou un arbitre",
-    "lead": "Une procédure suisse se plaide dans la langue officielle du for, mais les pièces arrivent dans toutes les langues. Il faut comprendre vite des centaines de pages, puis produire des traductions citables au mot près. Corrext traite les deux, sans sortir le dossier de Suisse.",
+    "h1": "Ce que lira un juge ou un arbitre",
+    "lead": "Une procédure suisse se plaide dans la langue du for, mais les pièces arrivent dans toutes les langues. Il faut comprendre vite, puis produire des traductions citables. Corrext fait les deux, en Suisse.",
     "promesses": [
       {"t": "Volume de pièces", "d": "jusqu'à 25 fichiers de 50 Mo par envoi, mise en page conservée"},
       {"t": "Citations exactes", "d": "la formulation des textes officiels, article par article"},
@@ -266,8 +266,8 @@
     "title": "Traduction juridique et financière pour les banques · Neur.on",
     "description": "Contrats de crédit, prospectus, documentation de fonds : traduire sans que la donnée quitte la Suisse, avec la terminologie de la LB et de la LSFin.",
     "lede": "Banque et finance.",
-    "h1": "Le lexique bancaire suisse, du crédit au prospectus",
-    "lead": "Une banque suisse produit chaque semaine des documents contraints : contrats de crédit, conditions générales, documentation de fonds, communications aux clients. Ils circulent en quatre langues et tombent sous le secret bancaire. Corrext les traite sur des serveurs suisses, avec la terminologie des textes de surveillance.",
+    "h1": "Du contrat de crédit au prospectus",
+    "lead": "Contrats de crédit, conditions générales, documentation de fonds, messages aux clients : ces documents circulent en quatre langues sous le secret bancaire. Corrext les traite en Suisse, avec les termes officiels.",
     "promesses": [
       {"t": "Secret bancaire", "d": "mode Highly sensitive content : stockage et traitement en Suisse"},
       {"t": "Documents récurrents", "d": "conditions générales et documentation de fonds en mémoire de traduction"},
@@ -330,8 +330,8 @@
     "title": "Traduction réglementaire, compliance et FINMA · Neur.on",
     "description": "Directives internes, dossiers de diligence, rapports à l'autorité de surveillance : traduire la conformité suisse avec la terminologie de la LBA.",
     "lede": "Compliance et FINMA.",
-    "h1": "La documentation de conformité, dans la langue de l'autorité",
-    "lead": "Un service compliance écrit pour trois publics : ses propres collaborateurs, l'autorité de surveillance et l'auditeur. Directives, dossiers de clients, rapports et correspondance doivent dire exactement la même chose dans chaque langue. Corrext les traite sur des serveurs suisses, avec le vocabulaire des textes applicables.",
+    "h1": "Écrire dans la langue de l'autorité",
+    "lead": "Directives, dossiers de clients, rapports : un service compliance écrit pour ses équipes, l'autorité et l'auditeur, et chaque langue doit dire la même chose. Corrext le fait en Suisse, avec les termes des lois.",
     "promesses": [
       {"t": "Vocabulaire de la LBA", "d": "diligence, ayant droit économique, obligation de communiquer"},
       {"t": "Traitement en Suisse", "d": "LexMachina ou mode Highly sensitive content"},
@@ -394,8 +394,8 @@
     "title": "Traduction des rapports annuels et comptes suisses · Neur.on",
     "description": "Rapport de gestion, comptes annuels, annexe, rapport de révision : traduire la clôture en quatre langues avec les libellés du Code des obligations.",
     "lede": "Rapports annuels.",
-    "h1": "La clôture en quatre langues, sans réécrire les tableaux",
-    "lead": "Le rapport annuel arrive toujours en même temps que les délais : comptes, annexe, rapport de l'organe de révision et texte de gestion, à publier dans plusieurs langues à date fixe. Corrext traite les fichiers dans leur format d'origine, avec le vocabulaire comptable du Code des obligations.",
+    "h1": "La clôture en quatre langues, à date fixe",
+    "lead": "Comptes annuels, annexe, rapport de révision et rapport de gestion se publient à date fixe, en plusieurs langues. Corrext garde les fichiers dans leur format, avec le vocabulaire comptable du CO.",
     "promesses": [
       {"t": "Tableaux préservés", "d": "fichiers .xls et .xlsx traités comme les documents Word"},
       {"t": "Vocabulaire du CO", "d": "bilan, compte de résultat, annexe : les libellés officiels"},
@@ -460,7 +460,7 @@
     "description": "Décisions de taxation, réclamations, correspondance avec l'administration : traduire la fiscalité suisse avec les termes de la LIFD et de la LTVA.",
     "lede": "Fiscalité.",
     "h1": "Trois niveaux d'impôt, trois langues officielles",
-    "lead": "La fiscalité suisse se joue à la fois au niveau fédéral, cantonal et communal, et chaque canton travaille dans sa langue officielle. Une décision de taxation en allemand, une réclamation en français et une note interne en anglais parlent pourtant des mêmes notions. Corrext les traduit avec les termes des lois fiscales.",
+    "lead": "L'impôt suisse se joue au niveau fédéral, cantonal et communal, chaque canton dans sa langue. Une taxation en allemand et une réclamation en français parlent des mêmes notions, celles des lois fiscales.",
     "promesses": [
       {"t": "Termes des lois fiscales", "d": "impôt fédéral direct, impôt anticipé, TVA, revenu imposable"},
       {"t": "Trois niveaux", "d": "fédéral, cantonal et communal, dans la langue du canton"},
@@ -525,7 +525,7 @@
     "description": "Conditions générales, polices, déclarations de sinistre : traduire en assurance privée avec la terminologie de la loi suisse sur le contrat d'assurance.",
     "lede": "Assurance.",
     "h1": "Des conditions générales aux dossiers de sinistre",
-    "lead": "Un assureur suisse publie ses conditions générales dans plusieurs langues, reçoit des déclarations de sinistre dans toutes, et doit répondre dans celle de l'assuré. Les mêmes notions reviennent à chaque dossier, définies par la loi sur le contrat d'assurance. Corrext les traduit avec la formulation du texte officiel.",
+    "lead": "Un assureur suisse publie ses conditions générales en plusieurs langues, reçoit des sinistres dans toutes et répond dans celle de l'assuré. Corrext suit la loi sur le contrat d'assurance.",
     "promesses": [
       {"t": "Vocabulaire de la LCA", "d": "preneur d'assurance, réticence, sinistre, prime"},
       {"t": "Documents répétitifs", "d": "conditions générales et polices en mémoire de traduction"},
@@ -588,8 +588,8 @@
     "title": "Traduction de brevets, marques et droit d'auteur · Neur.on",
     "description": "Demandes de brevet, dépôts de marque, licences, oppositions : traduire des titres opposables avec la terminologie suisse de la LBI, la LPM et la LDA.",
     "lede": "Propriété intellectuelle.",
-    "h1": "Traduire des titres qui seront opposés à un tiers",
-    "lead": "Une revendication de brevet, une liste de produits et services, une clause de cession de droits : en propriété intellectuelle, la traduction devient le titre lui-même. Le moindre écart de formulation change la portée de la protection. Corrext s'appuie sur les termes des lois suisses et les affiche avec leur source.",
+    "h1": "Des titres opposables à un tiers",
+    "lead": "Une revendication de brevet, une liste de produits et services, une cession de droits : la traduction devient le titre lui-même, et un écart change la protection. Corrext s'appuie sur les termes des lois suisses.",
     "promesses": [
       {"t": "Termes des lois suisses", "d": "brevet, invention, marque, œuvre, indication de provenance"},
       {"t": "Portée préservée", "d": "Full review ou Double review certifiée pour les pièces déposées"},
@@ -654,7 +654,7 @@
     "description": "Contrats de travail, règlements, lettres de résiliation, certificats : traduire les documents RH avec la terminologie du Code des obligations suisse.",
     "lede": "Droit du travail.",
     "h1": "Du contrat d'embauche au certificat de travail",
-    "lead": "Une entreprise suisse embauche à Zurich, à Lausanne et à Lugano, avec les mêmes règlements et des collaborateurs qui ne lisent pas la même langue. Contrats, avenants, lettres de résiliation et certificats doivent dire exactement la même chose partout. Corrext s'appuie sur le vocabulaire du Code des obligations.",
+    "lead": "Une entreprise embauche à Zurich, à Lausanne et à Lugano. Contrats, avenants, congés et certificats doivent dire la même chose partout : Corrext emploie le vocabulaire du Code des obligations.",
     "promesses": [
       {"t": "Termes du CO", "d": "résiliation, congé abusif, prohibition de faire concurrence"},
       {"t": "Documents en série", "d": "contrats et certificats standardisés, en mémoire de traduction"},
@@ -719,7 +719,7 @@
     "description": "Ordonnances pénales, actes d'accusation, dossiers d'instruction, entraide : traduire une procédure pénale suisse avec les termes du CP et du CPP.",
     "lede": "Droit pénal.",
     "h1": "Les actes d'une procédure pénale, d'une langue à l'autre",
-    "lead": "Une procédure pénale suisse se conduit dans la langue du canton, mais les prévenus, les témoins et les pièces ne la parlent pas toujours. Dossiers d'instruction, ordonnances pénales, actes d'accusation et demandes d'entraide circulent donc traduits. Corrext les traite sur des serveurs suisses, avec les termes du Code de procédure pénale.",
+    "lead": "Une procédure pénale se conduit dans la langue du canton, mais prévenus, témoins et pièces ne la parlent pas toujours. Dossiers et ordonnances pénales circulent traduits, et Corrext les traite en Suisse.",
     "promesses": [
       {"t": "Termes du CPP", "d": "ordonnance pénale, acte d'accusation, détention provisoire"},
       {"t": "Dossiers volumineux", "d": "jusqu'à 25 fichiers de 50 Mo par envoi, format d'origine conservé"},
