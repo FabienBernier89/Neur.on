@@ -152,6 +152,85 @@ def who(titre, items):
 </section>'''
 
 
+# ---------------------------------------------------------------- vignettes métier
+# Miniatures de l'interface Corrext pour les pages métier « visuelles ».
+# Les textes affichés sont de vraies sorties récoltées dans l'application (septembre 2026).
+
+def _svg(d, w="2"):
+    return (f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{w}" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{d}</svg>')
+
+
+V_CHECK = _svg('<path d="M20 6 9 17l-5-5"/>', "2.6")
+V_LOCK = _svg('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>', "2.2")
+V_SEARCH = _svg('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', "2.2")
+V_BOOK = _svg('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/>', "2")
+
+
+def _win(titre, corps):
+    return (f'<div class="jv-win" aria-hidden="true"><div class="jv-bar"><span class="d"></span>'
+            f'<span class="d"></span><span class="d"></span><b>{titre}</b></div>'
+            f'<div class="jv-body">{corps}</div></div>')
+
+
+def _file(nom, pages):
+    return (f'<li><span class="jv-ext">PDF</span><span class="jv-fn">{nom}</span>'
+            f'<span class="jv-pg">{pages}</span><span class="jv-ok">{V_CHECK}</span></li>')
+
+
+VIGNETTES = {
+    "lot": lambda: _win("File translation",
+        '<div class="jv-chips"><span class="jv-chip">LexMachina</span>'
+        f'<span class="jv-chip dark">{V_LOCK}Highly sensitive</span></div>'
+        '<ul class="jv-files">' + _file("Pièces 1 à 12", "96 p.") + _file("Pièces 13 à 27", "148 p.")
+        + _file("Pièces 28 à 41", "156 p.") + '</ul>'
+        '<div class="jv-foot">400 pages, rendues dans leur format d\'origine</div>'),
+    "pret": lambda: _win("Translation project",
+        '<ol class="jv-time">'
+        '<li class="done"><i></i><span><b>Ce soir</b>Traduction machine du contrat de prêt</span></li>'
+        '<li class="done"><i></i><span><b>Ce soir</b>Full review commandée, délai affiché</span></li>'
+        '<li class="next"><i></i><span><b>Demain matin</b>Document prêt à signer</span></li>'
+        '</ol>'),
+    "sentence": lambda: _win("Alternatives",
+        '<div class="jv-alt"><p lang="en">… in accordance with art. 186 <mark>PILA</mark>, and the award may be appealed …</p><em>LexMachina</em></div>'
+        '<div class="jv-alt other"><p lang="en">… in accordance with Article 186 of the <mark>LDIP</mark>, and the award may be appealed …</p><em>DeepL Pro</em></div>'
+        f'<div class="jv-src">{V_BOOK}CHnell : « PILA », abréviation anglaise officielle de la LDIP</div>'),
+    "outil-texte": lambda: _win("Fast translation",
+        '<div class="jv-langs">French → English <span>LexMachina</span></div>'
+        '<div class="jv-2col"><div lang="fr">Le débiteur en demeure doit des intérêts moratoires au taux de 5% l\'an …</div>'
+        '<div lang="en">The debtor in default shall owe default interest at the rate of 5% per annum …</div></div>'),
+    "outil-projet": lambda: _win("Translation project",
+        f'<div class="jv-steps"><span class="ok">{V_CHECK}Set-up</span><i></i>'
+        f'<span class="ok">{V_CHECK}File overview</span><i></i><span class="cur">Quotes</span></div>'
+        '<div class="jv-opts"><div class="jv-opt on"><b>Internal review</b><span>par vos équipes</span></div>'
+        '<div class="jv-opt"><b>Custom workflow</b><span>traducteur juridique</span></div></div>'),
+    "outil-chnell": lambda: _win("CHnell",
+        f'<div class="jv-search">{V_SEARCH}<b>Verzugszins</b><span>German → French</span></div>'
+        '<div class="jv-res"><div lang="de">… den fehlenden Betrag zuzüglich <mark>Verzugszins</mark> nicht mehr nachbelasten …</div>'
+        '<div lang="fr">… prélever le montant manquant avec l\'<mark>intérêt moratoire</mark> …</div></div>'
+        f'<div class="jv-src">{V_BOOK}Feuille fédérale</div>'),
+}
+OUTIL_VIS = {"fr/corrext/traduction-texte-et-document/": "outil-texte",
+             "fr/corrext/gestion-de-projet/": "outil-projet", "fr/corrext/chnell/": "outil-chnell"}
+
+
+def who_visuel(titre, items):
+    ws = "".join(f'<article class="jv-item">{VIGNETTES[w["vis"]]()}'
+                 f'<h3><span class="pn">{w["a"]}.</span> {w["t"]}</h3><p>{w["p"]}</p></article>'
+                 for w in items)
+    return ('<section class="who who-v">\n  <div class="container">\n'
+            f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
+            f'    <div class="jv-grid">{ws}</div>\n  </div>\n</section>')
+
+
+def outils_visuel(titre, items):
+    ss = "".join(f'<a class="jv-tool" href="{{{{ROOT}}}}{s["href"]}">{VIGNETTES[OUTIL_VIS[s["href"]]]()}'
+                 f'<b>{s["t"]}</b><span>{s["d"]}</span><em>Découvrir l\'outil {ARROW}</em></a>'
+                 for s in items)
+    return ('<section class="siblings jv-tools">\n  <div class="container">\n'
+            f'    <h2>{titre}</h2>\n    <div class="jv-tgrid">{ss}</div>\n  </div>\n</section>')
+
+
 def gov(question, texte, lien, etapes):
     es = "".join(f'<div>{ICONS[i % 3]}<span><b>{e["t"]}</b> {e["d"]}</span></div>'
                  for i, e in enumerate(etapes))
@@ -282,9 +361,9 @@ def gen_solutions(src):
             hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
                      "Ce métier, en trois points"),
             facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
-            who(d["who_titre"], d["who"]),
+            (who_visuel if d.get("visuel") else who)(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
-            siblings("Les outils que ce métier utilise le plus", d["outils"]),
+            (outils_visuel if d.get("visuel") else siblings)("Les outils que ce métier utilise le plus", d["outils"]),
             faq(d["faq_titre"], d["faq"]),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
         ])
