@@ -645,14 +645,16 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 /* Outils voisins : bande de liens, pas de cartes */
 .siblings{padding:0 0 84px}
 .siblings h2{font-size:22px;margin-bottom:18px}
-.siblings-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.siblings-row a{padding:24px 26px;border-right:1px solid var(--line);display:block;transition:background .2s}
-.siblings-row a:last-child{border-right:0}
-.siblings-row a:hover{background:rgba(49,123,255,.04)}
-.siblings-row b{display:block;font-size:15.5px;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
-.siblings-row span{font-size:13.5px;color:var(--muted);line-height:1.5;display:block}
-.siblings-row svg{width:16px;height:16px;color:var(--blue-d);margin-top:12px;transition:transform .2s}
+/* Liens vers des pages sœurs : cartes blanches alignées ligne à ligne, comme les domaines voisins */
+.siblings-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;grid-auto-rows:auto 1fr auto}
+.siblings-row a{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;padding:22px 24px;background:#fff;border:1px solid var(--line);border-radius:18px;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1),border-color .35s}
+.siblings-row a:hover{transform:translateY(-3px);border-color:#d3def0;box-shadow:0 22px 44px -28px rgba(0,27,76,.38)}
+.siblings-row a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.siblings-row b{display:block;font-size:16.5px;color:var(--ink);margin-bottom:6px;letter-spacing:-.015em}
+.siblings-row span{font-size:14px;color:var(--muted);line-height:1.6;display:block}
+.siblings-row svg{width:16px;height:16px;color:var(--blue-d);margin-top:16px;transition:transform .25s cubic-bezier(.16,1,.3,1)}
 .siblings-row a:hover svg{transform:translateX(4px)}
+@media(prefers-reduced-motion:reduce){.siblings-row a,.siblings-row svg{transition:none}.siblings-row a:hover{transform:none}}
 
 @media(max-width:940px){
   .thero-grid{grid-template-columns:1fr;gap:26px;padding-bottom:34px}
@@ -667,9 +669,7 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
   .facts-grid{grid-template-columns:1fr;gap:34px}
   .facts-lead h2{max-width:none}
   .gov-box{grid-template-columns:1fr;gap:26px;padding:30px 26px}
-  .siblings-row{grid-template-columns:1fr}
-  .siblings-row a{border-right:0;border-bottom:1px solid var(--line)}
-  .siblings-row a:last-child{border-bottom:0}
+  .siblings-row{grid-template-columns:1fr;gap:16px}
 }
 @media(max-width:560px){
   .fact{grid-template-columns:1fr;gap:4px;padding:14px 0}
@@ -790,10 +790,6 @@ body.nav-open{overflow:hidden}
 .thero-law{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);color:var(--text);border-bottom:1px solid var(--line)}
 .thero-law .thero-grid{align-items:center}
 .thero-law h1{color:var(--ink)}
-/* Même hauteur que le hero métier : la grille réserve la colonne de texte d'un hero métier
-   (titre sur 3 lignes, paragraphe sur 4 lignes, 5 entre 1024 et 1279 px, boutons de 58 px, marge basse de 44 px moins la bordure de 1 px) */
-@media (min-width:1280px){.thero-law .thero-grid{min-height:calc(3.36 * clamp(33px,4.5vw,52px) + 18px + 4 * 1.62 * 18.5px + 32px + 58px + 43px)}}
-@media (min-width:1024px) and (max-width:1279px){.thero-law .thero-grid{min-height:calc(3.36 * clamp(33px,4.5vw,52px) + 18px + 5 * 1.62 * 18.5px + 32px + 58px + 43px)}}
 .thero-law h1 em{color:var(--blue-d)}
 .thero-law .lead{color:var(--text)}
 .thero-law .btn-ghost{color:var(--ink);border:1px solid var(--line-2);background:#fff}
@@ -823,18 +819,17 @@ body.nav-open{overflow:hidden}
 
 /* D · Documentation : compact, la réponse plutôt que la promesse */
 .thero-help{background:var(--bg);border-bottom:1px solid var(--line);padding:62px 0 66px;color:var(--text)}
-.thero-help .thero-grid{grid-template-columns:1.35fr .65fr;gap:44px;align-items:end;padding-bottom:0}
-.thero-help h1{color:var(--ink);font-size:clamp(25px,3.1vw,36px);max-width:24ch;margin-bottom:14px}
+.thero-help .thero-grid{align-items:center}
+.thero-help h1{color:var(--ink);font-size:clamp(30px,4.1vw,46px);max-width:22ch;margin-bottom:18px}
 .thero-help h1 em{color:var(--blue-d)}
-.thero-help .lead{color:var(--text);font-size:16.5px;max-width:64ch;margin-bottom:0}
-.thero-help .htags{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
-.thero-help .htags span{font-size:12px;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:50px;padding:6px 13px}
-.thero-help .htags span b{color:var(--muted);font-weight:600}
+.thero-help .lead{color:var(--text);font-size:18px;max-width:54ch}
+.thero-help .btn-ghost{color:var(--ink);border:1px solid var(--line-2);background:#fff}
+.thero-help .btn-ghost:hover{border-color:var(--ink);background:#fff}
+.thero-help .law-spec .sr{grid-template-columns:96px 1fr}
 
 @media(max-width:940px){
   .thero-law .thero-grid,.thero-help .thero-grid{grid-template-columns:1fr;gap:28px;align-items:start}
   .thero-law{padding-bottom:44px}
-  .thero-help .htags{justify-content:flex-start}
 }
 /* Registre éditorial : les repères passent en ligne sous le chapô, sans filet vertical */
 .thero-read .thero-promise{flex-direction:row;flex-wrap:wrap;gap:12px 28px;border-left:0;border-top:1px solid var(--line);padding:18px 0 0;margin-top:26px;font-size:13px;color:var(--muted)}
@@ -987,3 +982,16 @@ body.nav-open{overflow:hidden}
 .vn-card:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.vn-card,.vn-card>em svg{transition:none}.vn-card:hover{transform:none}}
 @media(max-width:940px){.vn{padding:64px 0}.vn-grid{grid-template-columns:1fr;gap:16px}}
+
+/* ============ Hauteur commune des heros (toutes les pages sauf l'accueil) ============
+   Référence : le hero métier, titre sur 3 lignes, chapeau sur 4 lignes (5 entre 1024 et 1279 px),
+   boutons de 58 px. Les autres heros prennent cette hauteur et centrent leur contenu.
+   Hero avec démonstration : la démonstration commence exactement à cette hauteur. */
+@media (min-width:1024px){:root{--hero-h:calc(240px + 3.36 * clamp(33px,4.5vw,52px) + 18px + 5 * 1.62 * 18.5px + 32px + 58px)}}
+@media (min-width:1280px){:root{--hero-h:calc(240px + 3.36 * clamp(33px,4.5vw,52px) + 18px + 4 * 1.62 * 18.5px + 32px + 58px)}}
+@media (min-width:1024px){
+  .thero:not(.thero-job):not(.thero-demo){min-height:var(--hero-h);display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
+  .thero:not(.thero-job)>.container{width:100%}
+  .thero:not(.thero-job):not(.thero-demo) .thero-grid{padding-bottom:0}
+  .thero-demo{min-height:calc(var(--hero-h) + 236px);display:flex;flex-direction:column;justify-content:center}
+}

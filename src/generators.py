@@ -105,17 +105,22 @@ def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt="Ce que Corrext a
 </section>'''
 
 
-def hero_help(rubrique, titre, reponse, tags):
-    """Hero de documentation : la réponse d'abord, la promesse nulle part."""
-    ts = "".join(f'<span><b>{t["k"]} :</b> {t["v"]}</span>' for t in tags)
+def hero_help(rubrique, titre, reponse, tags, ancre="#etapes", ancre_txt="Voir les étapes"):
+    """Hero de documentation : la réponse d'abord, puis la fiche de l'article (outil, étapes, vérification)."""
+    rows = "".join(f'<div class="sr{" first" if i == 0 else ""}"><i>{t["k"]}</i><b>{t["v"]}</b></div>'
+                   for i, t in enumerate(tags))
     return f'''<section class="thero thero-help">
   <div class="container">
     <div class="thero-grid">
       <div>
         <h1><em>{rubrique}.</em> {titre}</h1>
         <p class="lead">{reponse}</p>
+        <div class="thero-cta">
+          <a href="{ancre}" class="btn btn-blue">{ancre_txt} {ARROW}</a>
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-ghost">Demander une démo</a>
+        </div>
       </div>
-      <div class="htags">{ts}</div>
+      <div class="law-spec"><div class="sh"><b>En bref</b><span>Centre d'aide</span></div>{rows}</div>
     </div>
   </div>
 </section>'''
@@ -444,20 +449,17 @@ def gen_solutions(src):
                  "chacun, avec les mêmes garanties de confidentialité.",
                  [{"t": "Six métiers", "d": "des usages documentés, pas des promesses génériques"},
                   {"t": "Un socle commun", "d": "stockage en Suisse, moteurs au choix, relecture à la carte"},
-                  {"t": "Treize domaines", "d": "du contrat au droit administratif, avec la terminologie officielle"}],
+                  {"t": "Douze domaines", "d": "du contrat au droit pénal, avec la terminologie officielle"}],
                  "#metiers", "Voir les six métiers"),
             f'''<section class="siblings" id="metiers" style="padding:84px 0">
   <div class="container"><h2>Par métier</h2>
     <div class="siblings-row solutions-row">{cards}</div></div>
 </section>
 <style>.solutions-row{{grid-template-columns:repeat(3,1fr)}}
-.solutions-row a{{border-bottom:1px solid var(--line)}}
-.solutions-row a:nth-child(3n){{border-right:0}}
-.solutions-row a:nth-last-child(-n+3){{border-bottom:0}}
 @media(max-width:940px){{.solutions-row{{grid-template-columns:1fr}}}}</style>''',
             siblings("Explorer autrement", [
                 {"href": "fr/traduction/", "t": "Par domaine du droit",
-                 "d": "Treize domaines, leur terminologie et leurs textes de référence"},
+                 "d": "Douze domaines, leur terminologie et leurs textes de référence"},
                 {"href": "fr/comparatif/", "t": "Par comparaison",
                  "d": "Corrext face à DeepL, aux LLM généralistes et à l'agence externe"},
                 {"href": "fr/corrext/", "t": "Par outil",
@@ -493,11 +495,11 @@ def gen_domaines(src):
             laws_block(d.get("lois_titre", "Les textes de référence, cités au quotidien"), d["lois_intro"], d["lois"]),
             who(d["who_titre"], d["who"]),
             faq(d["faq_titre"], d["faq"]),
-            voisins("Domaines voisins",
+            voisins("Autres domaines",
                     [{"href": f'fr/traduction/{v["slug"]}/', "t": v["short"], "d": v["resume"],
                       "terme": v["termes"][0]} for v in vois] or
                     [{"href": "fr/traduction/", "t": "Tous les domaines",
-                      "d": "Les treize domaines couverts"}]),
+                      "d": "Les douze domaines couverts"}]),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": "Tous les domaines"}),
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',
@@ -549,7 +551,7 @@ def gen_traduction_hub(src):
              "l'allemand juridique suisse n'est pas l'allemand de Berlin. Chaque page ci-dessous "
              "donne la terminologie officielle, les textes de référence et la façon dont Corrext "
              "les traite.",
-             [{"t": "Treize domaines", "d": "du contrat au droit administratif, terminologie à l'appui"},
+             [{"t": "Douze domaines", "d": "du contrat au droit pénal, terminologie à l'appui"},
               {"t": "Sources officielles", "d": "Fedlex, Feuille fédérale, FINMA, jurisprudence du Tribunal fédéral"},
               {"t": "Quatre langues natives", "d": "allemand, français, italien et anglais avec LexMachina"}],
              "#domaines", "Voir les domaines"),
@@ -562,9 +564,7 @@ def gen_traduction_hub(src):
     <div class="siblings-row grid3">{pcards}</div></div>
 </section>
 <style>.grid3{{grid-template-columns:repeat(3,1fr)}}
-.grid3 a{{border-bottom:1px solid var(--line)}}
-.grid3 a:nth-child(3n){{border-right:0}}
-@media(max-width:940px){{.grid3{{grid-template-columns:1fr}}.grid3 a{{border-right:0}}}}</style>''',
+@media(max-width:940px){{.grid3{{grid-template-columns:1fr}}}}</style>''',
         cta("Votre domaine n'est pas dans la liste ?",
             "Corrext couvre 30 domaines dans son concordancier et 30 langues sur la plateforme. "
             "Dites-nous ce que vous traduisez.",
@@ -572,7 +572,7 @@ def gen_traduction_hub(src):
     ])
     return [("fr/traduction/", {
         "title": "Traduction juridique par domaine et par langue · Neur.on",
-        "description": "Treize domaines du droit suisse et les principales paires de langues : "
+        "description": "Douze domaines du droit suisse et les principales paires de langues : "
                        "terminologie officielle en allemand, français, italien et anglais, textes "
                        "de référence et traitement dans Corrext.",
         "short": "Traduction", "nav": "solutions"}, body)]
@@ -745,7 +745,7 @@ def gen_aide(src):
                           [{"k": "Outil", "v": rub["outil"]},
                            {"k": "Étapes", "v": str(len(art["etapes"]))},
                            {"k": "Vérifié", "v": "septembre 2026"}]),
-                f'''<section class="hsteps">
+                f'''<section class="hsteps" id="etapes">
   <div class="container">
     <div class="hsteps-grid">
       <div><h2>Les étapes</h2>
@@ -780,15 +780,13 @@ def gen_aide(src):
             hero_help(rub["titre"], rub["h1"], rub["lead"],
                       [{"k": "Outil", "v": rub["outil"]},
                        {"k": "Articles", "v": str(len(rub["articles"]))},
-                       {"k": "Vérifié", "v": "septembre 2026"}]),
+                       {"k": "Vérifié", "v": "septembre 2026"}], "#articles", "Voir les articles"),
             f'''<section class="siblings" id="articles" style="padding:84px 0">
   <div class="container"><h2>Les articles de cette rubrique</h2>
     <div class="siblings-row grid2">{cards}</div></div>
 </section>
 <style>.grid2{{grid-template-columns:repeat(2,1fr)}}
-.grid2 a{{border-bottom:1px solid var(--line)}}
-.grid2 a:nth-child(2n){{border-right:0}}
-@media(max-width:940px){{.grid2{{grid-template-columns:1fr}}.grid2 a{{border-right:0}}}}</style>''',
+@media(max-width:940px){{.grid2{{grid-template-columns:1fr}}}}</style>''',
             cta("Besoin d'un accompagnement ?",
                 "Une démo personnalisée vaut souvent mieux qu'une page d'aide.",
                 {"href": "fr/aide/", "txt": "Centre d'aide"}),
@@ -808,15 +806,13 @@ def gen_aide(src):
                   "sans promesse. Chaque procédure a été vérifiée dans Corrext en septembre 2026.",
                   [{"k": "Rubriques", "v": str(len(data))},
                    {"k": "Articles", "v": str(total)},
-                   {"k": "Vérifié", "v": "septembre 2026"}]),
+                   {"k": "Vérifié", "v": "septembre 2026"}], "#rubriques", "Voir les rubriques"),
         f'''<section class="siblings" id="rubriques" style="padding:84px 0">
   <div class="container"><h2>Les rubriques</h2>
     <div class="siblings-row grid2">{blocks}</div></div>
 </section>
 <style>.grid2{{grid-template-columns:repeat(2,1fr)}}
-.grid2 a{{border-bottom:1px solid var(--line)}}
-.grid2 a:nth-child(2n){{border-right:0}}
-@media(max-width:940px){{.grid2{{grid-template-columns:1fr}}.grid2 a{{border-right:0}}}}</style>''',
+@media(max-width:940px){{.grid2{{grid-template-columns:1fr}}}}</style>''',
         cta("Vous ne trouvez pas votre réponse ?",
             "Demandez une démo : un spécialiste vous montre le geste sur vos propres documents.",
             {"href": "fr/corrext/", "txt": "Voir la plateforme"}),

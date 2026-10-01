@@ -248,7 +248,7 @@
     ],
     "cta_t": "Voyez Corrext sur un bordereau de pièces",
     "cta_p": "Une démonstration sur vos propres dossiers, avec un spécialiste du droit suisse.",
-    "voisins": ["droit-penal", "contrats", "droit-administratif-public"]
+    "voisins": ["droit-penal", "contrats", "droit-des-societes"]
   },
   {
     "slug": "banque-finance",
@@ -494,7 +494,7 @@
     ],
     "cta_t": "Vos dossiers fiscaux, lisibles dans toutes les langues du pays",
     "cta_p": "Une démonstration avec un spécialiste de la terminologie fiscale suisse.",
-    "voisins": ["rapports-annuels-financiers", "droit-administratif-public", "droit-des-societes"]
+    "voisins": ["rapports-annuels-financiers", "banque-finance", "droit-des-societes"]
   },
   {
     "slug": "assurance",
@@ -679,7 +679,7 @@
     ],
     "cta_t": "Vos documents RH, cohérents dans toute la Suisse",
     "cta_p": "Une démonstration sur vos contrats types et vos règlements d'entreprise.",
-    "voisins": ["contrats", "assurance", "droit-administratif-public"]
+    "voisins": ["contrats", "assurance", "contentieux-arbitrage"]
   },
   {
     "slug": "droit-penal",
@@ -741,68 +741,6 @@
     ],
     "cta_t": "Vos dossiers pénaux, traités sans quitter la Suisse",
     "cta_p": "Une démonstration sur vos propres pièces, avec un spécialiste du droit suisse.",
-    "voisins": ["contentieux-arbitrage", "compliance-finma", "droit-administratif-public"]
-  },
-  {
-    "slug": "droit-administratif-public",
-    "short": "Droit administratif",
-    "resume": "Décisions, recours, consultations : la langue des autorités suisses.",
-    "title": "Traduction en droit administratif et public suisse · Neur.on",
-    "description": "Décisions, recours, rapports et consultations : traduire pour les autorités suisses avec la terminologie de la PA et de la Constitution fédérale.",
-    "lede": "Droit administratif.",
-    "h1": "La langue des autorités, d'un canton à l'autre",
-    "lead": "Une administration suisse rend des décisions, instruit des recours, publie des rapports et répond à des consultations, le tout dans une ou plusieurs langues officielles. Le vocabulaire est fixé par la procédure administrative et par la Constitution. Corrext traduit ces actes sur des serveurs suisses, avec les termes du texte applicable.",
-    "promesses": [
-      {"t": "Termes de la PA", "d": "décision, recours, délai de recours, droit d'être entendu"},
-      {"t": "Publications officielles", "d": "rapports et consultations, mise en page conservée"},
-      {"t": "Souveraineté", "d": "stockage suisse dans tous les cas, traitement en Suisse sur demande"}
-    ],
-    "definition": "Traduire en droit administratif suisse, c'est transposer les actes par lesquels une autorité exerce la puissance publique : décisions, écritures de recours, rapports, projets mis en consultation. Les notions clés viennent de la loi fédérale sur la procédure administrative et de la Constitution, publiées en allemand, en français et en italien, et les mêmes règles valent au niveau cantonal.",
-    "facts": [
-      {"k": "Décision administrative", "v": "Une décision indique les voies de droit et les délais : la traduction doit reprendre ces mentions à l'identique, sans les reformuler."},
-      {"k": "Recours", "v": "L'écriture déposée devant l'autorité de recours engage l'administré : elle passe en Full review par un traducteur juridique."},
-      {"k": "Rapports publiés", "v": "Un rapport destiné au public est diffusé dans plusieurs langues officielles : le document revient dans sa mise en page, annexes comprises."},
-      {"k": "Consultations", "v": "Les prises de position doivent être comparables entre elles : la mémoire de traduction maintient un vocabulaire stable d'une réponse à l'autre."},
-      {"k": "Documents d'un service", "v": "Directives, formulaires et notices se traduisent dans leurs formats d'origine, jusqu'à 25 fichiers de 50 Mo par envoi."},
-      {"k": "Données des administrés", "v": "Les dossiers contiennent des données personnelles : le mode Highly sensitive content garde stockage et traitement exclusivement en Suisse."},
-      {"k": "Terminologie sourcée", "v": "Les domaines Administrative Law et Constitution & Publ. Internat. Law du concordancier CHnell donnent l'usage officiel de chaque terme."},
-      {"k": "Droit des étrangers", "v": "Les dossiers de séjour et de travail relèvent d'un vocabulaire propre, couvert par le domaine Migration Law du concordancier."}
-    ],
-    "termes": [
-      {"de": "Verfügung", "fr": "décision", "it": "decisione", "en": "ruling", "ref": "art. 5 PA"},
-      {"de": "Beschwerde", "fr": "recours", "it": "ricorso", "en": "appeal", "ref": "art. 44 PA"},
-      {"de": "Beschwerdefrist", "fr": "délai de recours", "it": "termine di ricorso", "en": "time limit for appeal", "ref": "art. 50 PA"},
-      {"de": "rechtliches Gehör", "fr": "droit d'être entendu", "it": "diritto di essere sentito", "en": "right to be heard", "ref": "art. 29 Cst."},
-      {"de": "Öffentlichkeitsprinzip", "fr": "principe de transparence", "it": "principio di trasparenza", "en": "principle of transparency", "ref": "art. 6 LTrans"},
-      {"de": "Personendaten", "fr": "données personnelles", "it": "dati personali", "en": "personal data", "ref": "art. 5 LPD"},
-      {"de": "Bundesverwaltungsgericht", "fr": "Tribunal administratif fédéral", "it": "Tribunale amministrativo federale", "en": "Federal Administrative Court", "ref": "art. 1 LTAF"}
-    ],
-    "termes_note": "La décision au sens de l'art. 5 PA est une notion technique, distincte d'une simple lettre de l'administration : les trois versions officielles de la loi permettent de vérifier quel acte est réellement désigné.",
-    "lois_intro": "La procédure administrative fédérale est réglée par une loi unique, complétée par les lois d'organisation des tribunaux et par les garanties constitutionnelles. Les cantons appliquent leurs propres lois de procédure, sur le même modèle.",
-    "lois": [
-      {"abbr": "PA", "nom": "Loi fédérale sur la procédure administrative", "note": "Elle définit la décision, le droit d'être entendu, les délais et les voies de recours ; VwVG en allemand, PA en italien."},
-      {"abbr": "Cst.", "nom": "Constitution fédérale de la Confédération suisse", "note": "Elle garantit les droits procéduraux fondamentaux, dont le droit d'être entendu de son art. 29 ; BV en allemand, Cost. en italien."},
-      {"abbr": "LTAF", "nom": "Loi sur le Tribunal administratif fédéral", "note": "Elle organise l'instance qui juge la plupart des recours contre les décisions fédérales ; VGG en allemand."},
-      {"abbr": "LTrans", "nom": "Loi fédérale sur le principe de la transparence dans l'administration", "note": "Elle ouvre l'accès aux documents officiels de l'administration fédérale ; BGÖ en allemand."},
-      {"abbr": "LPD", "nom": "Loi fédérale sur la protection des données", "note": "Elle encadre le traitement des données personnelles par les organes fédéraux et les personnes privées ; DSG en allemand, LPD en italien."}
-    ],
-    "who_titre": "Trois usages administratifs de la traduction",
-    "who": [
-      {"a": "Autorité", "t": "Une décision à notifier dans la langue de l'administré", "p": "La décision est rédigée dans la langue du service et notifiée à un administré d'une autre région. Les mentions de voies de droit et de délais doivent être reprises à l'identique, et la relecture se concentre sur ces passages."},
-      {"a": "Administré", "t": "Un recours à déposer dans un délai bref", "p": "Le délai de recours court dès la notification. La traduction immédiate permet de comprendre la décision le jour même, puis l'écriture déposée passe en Full review par un traducteur juridique, avec le délai affiché avant validation."},
-      {"a": "Service fédéral", "t": "Un rapport à publier en plusieurs langues", "p": "Le rapport et ses annexes sont diffusés en allemand, français et italien à la même date. Les documents reviennent dans leur mise en page, et la mémoire de traduction assure la continuité avec les publications précédentes."}
-    ],
-    "faq_titre": "Questions fréquentes sur la traduction pour les autorités",
-    "faq": [
-      {"q": "Une administration peut-elle utiliser une plateforme de traduction en ligne ?", "r": "La question porte moins sur l'outil que sur le lieu de traitement des données. Le stockage se fait sur des serveurs suisses dans tous les cas, et le traitement reste en Suisse avec LexMachina ou en mode Highly sensitive content. Les moteurs hébergés à l'étranger sont signalés avant tout envoi."},
-      {"q": "Comment traduire les mentions de voies de droit ?", "r": "En reprenant les formulations de la loi de procédure applicable, fédérale ou cantonale, qui existe dans les langues officielles concernées. Le concordancier affiche ces occurrences avec leur source dans le domaine Administrative Law, ce qui évite les reformulations approximatives. Ces mentions gagnent à passer par une relecture humaine."},
-      {"q": "Les dossiers d'administrés peuvent-ils être traités ?", "r": "Oui, avec le mode adapté. Un dossier contenant des données personnelles relève du mode Highly sensitive content, qui impose un stockage et un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire de traduction. Le mode se choisit à la création du projet, avant le dépôt des fichiers."},
-      {"q": "Quel niveau de relecture pour une publication officielle ?", "r": "Une Full review par un traducteur juridique pour un texte publié, une Light review pour un document de travail interne. L'Internal review permet aussi de confier la relecture à vos propres collaborateurs, le tunnel projet chiffrant le temps à partir du nombre de pages détecté."},
-      {"q": "Le vocabulaire du droit des étrangers est-il couvert ?", "r": "Oui, le concordancier comprend un domaine Migration Law, en plus des domaines Administrative Law et Constitution & Publ. Internat. Law. Chaque terme s'ouvre en contexte avec sa source officielle, ce qui est utile pour les décisions de séjour et de travail."},
-      {"q": "Peut-on traiter les documents dans leur format d'origine ?", "r": "Oui. Les formats .pdf, .doc, .docx, .xls, .xlsx, .ppt et .pptx sont pris en charge, jusqu'à 25 fichiers de 50 Mo par envoi, et les documents reviennent dans leur mise en page. Pour un PDF scanné, l'onglet PDF to Word produit d'abord un fichier éditable."}
-    ],
-    "cta_t": "Vos décisions et vos publications, dans quatre langues",
-    "cta_p": "Une démonstration avec un spécialiste de la terminologie administrative suisse.",
-    "voisins": ["fiscalite", "contentieux-arbitrage", "droit-penal"]
+    "voisins": ["contentieux-arbitrage", "compliance-finma", "banque-finance"]
   }
 ]
