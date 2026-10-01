@@ -64,18 +64,21 @@
     "who_titre": "Trois situations où cette paire décide de la journée",
     "who": [
       {
+        "vis": "marteau",
         "a": "Contentieux",
-        "t": "Un jugement alémanique à exploiter en Suisse romande",
+        "t": "Un jugement alémanique à exploiter",
         "p": "Le jugement part en traduction avec LexMachina, revient dans sa mise en page, et les considérants se lisent d'affilée. Les termes sensibles se vérifient d'un surlignage dans Fast lookup CHnell, qui affiche l'usage officiel du mot et sa source."
       },
       {
+        "vis": "signature",
         "a": "Transactions",
-        "t": "Des conditions générales rédigées à Zurich, signées à Genève",
+        "t": "Des CGV de Zurich signées à Genève",
         "p": "La version française doit employer les termes du Code des obligations, pas leur paraphrase. La relecture Full par un traducteur juridique se commande dans Gestion de projet, avec le délai affiché avant validation."
       },
       {
+        "vis": "institution",
         "a": "Autorités",
-        "t": "Une décision cantonale à notifier dans l'autre langue",
+        "t": "Une décision à notifier en français",
         "p": "Le vocabulaire de la procédure administrative est fixé : Verfügung donne décision, Einsprache donne opposition, Rechtsmittelbelehrung donne indication des voies de droit. Corrext garde ces choix constants d'un document à l'autre."
       }
     ],
@@ -175,18 +178,21 @@
     "who_titre": "Trois moments où la version allemande est attendue",
     "who": [
       {
+        "vis": "marteau",
         "a": "Contentieux",
-        "t": "Un mémoire romand déposé devant une instance alémanique",
+        "t": "Un mémoire romand en allemand",
         "p": "Les conclusions et les citations d'arrêts sont converties d'abord : ATF devient BGE, CO devient OR. La relecture juridique porte ensuite sur l'argumentation, qui doit se lire comme un texte rédigé en allemand."
       },
       {
+        "vis": "societe",
         "a": "Entreprises",
-        "t": "Des conditions générales valables dans toute la Suisse",
+        "t": "Des CGV pour toute la Suisse",
         "p": "Une clause de for, une clause de prescription et une clause pénale n'ont pas de marge d'interprétation : elles reprennent les termes de l'Obligationenrecht. La cohérence entre les deux versions se vérifie ligne à ligne."
       },
       {
+        "vis": "envoi",
         "a": "Autorités",
-        "t": "Une communication cantonale destinée aux deux régions linguistiques",
+        "t": "Un communiqué pour deux régions",
         "p": "Le texte allemand doit paraître le même jour, avec le même niveau de langue. Gestion de projet organise la relecture interne et chiffre le temps nécessaire à partir du nombre de pages standard détecté."
       }
     ],
@@ -285,18 +291,21 @@
     "who_titre": "Trois dossiers qui passent par l'anglais",
     "who": [
       {
+        "vis": "loupe",
         "a": "M&A",
-        "t": "Une data room alémanique ouverte à un acquéreur étranger",
+        "t": "Une data room pour un acquéreur étranger",
         "p": "Les statuts, les contrats et les extraits du registre du commerce partent par lots et reviennent dans leur format. Les notions suisses gardent leur terme d'origine, expliqué une fois, ce qui évite les allers-retours de l'équipe acheteuse."
       },
       {
+        "vis": "bouclier",
         "a": "Banques",
-        "t": "Un rapport de conformité destiné à une maison mère",
+        "t": "Un rapport de conformité pour le groupe",
         "p": "Le vocabulaire de la surveillance et du secret bancaire doit rester stable d'un trimestre à l'autre. Le mode Highly sensitive content garde l'ensemble du traitement en Suisse pendant que le rapport circule."
       },
       {
+        "vis": "sentence",
         "a": "Arbitrage",
-        "t": "Des pièces alémaniques produites dans une procédure en anglais",
+        "t": "Des pièces alémaniques en anglais",
         "p": "Le tribunal arbitral lit en anglais mais tranche sur le droit suisse. Les alternatives proposées par plusieurs moteurs montrent les formulations concurrentes, et le conseil choisit celle qu'il assume devant le tribunal."
       }
     ],
@@ -395,18 +404,21 @@
     "who_titre": "Trois contrats qui arrivent en anglais",
     "who": [
       {
+        "vis": "signature",
         "a": "M&A",
-        "t": "Un contrat d'acquisition soumis au droit suisse",
+        "t": "Un contrat d'acquisition suisse",
         "p": "Les déclarations et garanties, la clause d'indemnisation et les seuils chiffrés se rendent par les notions du Code des obligations. La relecture Full par un traducteur juridique porte d'abord sur ces clauses, pas sur les annexes descriptives."
       },
       {
+        "vis": "financement",
         "a": "Financement",
-        "t": "Un accord de crédit signé avec un prêteur étranger",
+        "t": "Un crédit avec un prêteur étranger",
         "p": "Les sûretés, la cession de créances et la solidarité des emprunteurs sont des notions précises en droit suisse. Un terme flottant dans la version allemande devient une incertitude au moment de l'exécution."
       },
       {
+        "vis": "verrou",
         "a": "Direction juridique",
-        "t": "Un modèle d'accord de confidentialité à décliner en interne",
+        "t": "Un NDA type en allemand",
         "p": "Une fois la version allemande arrêtée, elle sert de référence pour tous les contrats suivants. Les termes validés se retrouvent dans Fast lookup CHnell, avec vos propres ressources à côté des sources officielles."
       }
     ],
@@ -505,18 +517,21 @@
     "who_titre": "Trois dossiers romands qui passent en anglais",
     "who": [
       {
+        "vis": "sentence",
         "a": "Arbitrage",
-        "t": "Un mémoire genevois dans une procédure en anglais",
+        "t": "Un mémoire genevois plaidé en anglais",
         "p": "Les citations d'arrêts et d'articles restent en français, accompagnées de leur traduction. Le reste du mémoire se lit en anglais, avec un vocabulaire d'arbitrage constant du premier échange à la sentence."
       },
       {
+        "vis": "bouclier",
         "a": "Banques",
-        "t": "Un dossier de conformité destiné à un régulateur étranger",
+        "t": "Un dossier pour un régulateur étranger",
         "p": "Le secret bancaire, la lutte contre le blanchiment et les obligations de diligence ont des termes fixes. Le mode Highly sensitive content garde le traitement en Suisse pendant que le dossier circule."
       },
       {
-        "a": "Organisations internationales",
-        "t": "Un texte réglementaire à diffuser dans les deux langues",
+        "vis": "globe",
+        "a": "Organisations",
+        "t": "Un texte publié en deux langues",
         "p": "Les deux versions sortent ensemble et doivent rester alignées, paragraphe par paragraphe. Gestion de projet organise la relecture et affiche le délai avant validation."
       }
     ],
@@ -615,18 +630,21 @@
     "who_titre": "Trois dossiers qui viennent du Tessin",
     "who": [
       {
+        "vis": "marteau",
         "a": "Contentieux",
-        "t": "Une décision tessinoise à exploiter en Suisse romande",
+        "t": "Une décision tessinoise à exploiter",
         "p": "La procédure décrite est fédérale, seule la langue change. Les termes de procédure sont convertis à partir de la version française du même article, et non d'un dictionnaire italien-français généraliste."
       },
       {
+        "vis": "dossier",
         "a": "Poursuites",
-        "t": "Un precetto esecutivo dans un dossier romand",
+        "t": "Un precetto esecutivo à traduire",
         "p": "Commandement de payer, opposition, mainlevée : la chaîne de la poursuite a un vocabulaire fixe dans les trois langues officielles. Une approximation à cette étape coûte un délai, parfois le droit lui-même."
       },
       {
+        "vis": "societe",
         "a": "Entreprises",
-        "t": "Des contrats tessinois à intégrer dans une société romande",
+        "t": "Des contrats tessinois à intégrer",
         "p": "Les extraits du registre du commerce, les statuts et les contrats se traduisent avec les termes du Code des obligations. Les raisons sociales et les formes juridiques inscrites restent telles quelles."
       }
     ],

@@ -222,6 +222,14 @@ WS_ICONS = {k: _svg(v, "1.9") for k, v in {
     # Domaine Contrats
     "immeuble": '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v12h14V9"/><path d="M10 21v-6h4v6"/>',
     "financement": '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9.5h.01M18 14.5h.01"/>',
+    # Domaines du droit
+    "reseau": '<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6.5 17M12 11.5l5.5 5.5"/>',
+    "envoi": '<path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/>',
+    "calendrier": '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+    "alerte": '<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/>',
+    "ampoule": '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+    "etiquette": '<path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/>',
+    "certificat": '<circle cx="12" cy="9" r="6"/><path d="m9 14.5-1.5 6.5L12 19l4.5 2-1.5-6.5"/>',
     # Pages produit et sécurité
     "loupe": '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
     "equipe": '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/>',
@@ -265,13 +273,14 @@ def who(titre, items):
 
 
 def voisins(titre, items, lien="Voir le domaine"):
-    """Pages voisines en cartes : le terme phare (allemand, français) quand il existe, puis le nom et le résumé."""
+    """Pages voisines en cartes : le terme phare dans deux langues (allemand et français par défaut), puis le nom et le résumé."""
     def terme(v):
         t = v.get("terme")
         if not t:
             return ""
-        return (f'<span class="vn-term"><span><i>DE</i><b lang="de">{t["de"]}</b></span>'
-                f'<span><i>FR</i><b>{t["fr"]}</b></span></span>')
+        langues = v.get("langues", ("de", "fr"))
+        return ('<span class="vn-term">' + "".join(
+            f'<span><i>{l.upper()}</i><b lang="{l}">{t[l]}</b></span>' for l in langues) + '</span>')
     cs = "".join(
         f'<a class="vn-card" href="{{{{ROOT}}}}{v["href"]}">{terme(v)}<b class="vn-t">{v["t"]}</b>'
         f'<span class="vn-d">{v["d"]}</span><em>{lien} {ARROW}</em></a>' for v in items)
@@ -508,8 +517,12 @@ def gen_domaines(src):
     return pages
 
 
+LANGUES = {"allemand": "de", "francais": "fr", "italien": "it", "anglais": "en"}
+
+
 def gen_paires(src):
     pages, data = [], load(src, "paires")
+    par_slug = {p["slug"]: p for p in data}
     for d in data:
         t0 = d["termes"][0]
         spec = {"titre": "Un terme, quatre langues", "compte": f'{len(d["termes"])} termes',
@@ -524,9 +537,11 @@ def gen_paires(src):
             terms_table(d["termes"], d["termes_note"]),
             who(d["who_titre"], d["who"]),
             faq(d["faq_titre"], d["faq"]),
-            siblings("Autres paires de langues",
-                     [{"href": f'fr/traduction/{v}/', "t": t, "d": r}
-                      for v, t, r in d["voisins"]]),
+            voisins("Autres paires de langues",
+                    [{"href": f'fr/traduction/{v}/', "t": t, "d": r,
+                      "terme": par_slug[v]["termes"][0] if v in par_slug else None,
+                      "langues": tuple(LANGUES[x] for x in v.split("-"))}
+                     for v, t, r in d["voisins"]], "Voir la paire"),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": "Traduction par domaine"}),
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',
