@@ -5,7 +5,7 @@ le socle CSS. build_all() renvoie une liste de (chemin logique, front-matter, co
 Aucune donnée inventée : le contenu vient de PRODUCT.md, du carnet d'audit de l'application et
 des textes de loi suisses publiés dans les langues officielles.
 """
-import json, os
+import json, os, re
 
 ARROW = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" '
          'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
@@ -744,123 +744,119 @@ def gen_glossaire(src):
 
 
 def gen_aide(src):
-    pages, data = [], load(src, "aide")
+    """Centre d'aide : accueil avec recherche, deux espaces (utilisateurs, administrateurs),
+    une page par rubrique avec ses questions en accordéon (ancre par question)."""
+    data = load(src, "aide")
     if not data:
         return []
-    css = """<style>
-.hsteps{padding:70px 0}
-.hsteps-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
-.hsteps-grid > div:first-child{position:sticky;top:96px;align-self:start}
-.hanswer{font-size:18px;line-height:1.6;color:var(--ink);max-width:52ch}
-.hol{counter-reset:s;border-top:1px solid var(--line)}
-.hol li{counter-increment:s;list-style:none;display:grid;grid-template-columns:30px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.6;color:var(--text)}
-.hol li > span{display:block}
-.hol li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:800}
-.hol li b{color:var(--ink)}
-.hnote{padding:0 0 84px}
-.hnote-box{background:var(--tint);border:1px solid var(--line);border-radius:18px;padding:30px 32px}
-.hnote-box h2{font-size:20px;margin-bottom:14px}
-.hnote-box ul{list-style:none}
-.hnote-box li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:9px 0;font-size:14.5px;line-height:1.55;color:var(--text)}
-.hnote-box li svg{width:17px;height:17px;color:var(--blue-d);margin-top:3px}
-@media(max-width:940px){.hsteps-grid{grid-template-columns:1fr;gap:30px}.hsteps-grid > div:first-child{position:static}}
-</style>"""
-    for rub in data:
-        for art in rub["articles"]:
-            steps = "".join(f"<li><span>{e}</span></li>" for e in art["etapes"])
-            notes = "".join(
-                f'<li>{ICONS[i % 3]}<span>{n}</span></li>' for i, n in enumerate(art.get("savoir", [])))
-            ld = {"@context": "https://schema.org", "@type": "HowTo", "name": art["titre"],
-                  "description": art["reponse"],
-                  "step": [{"@type": "HowToStep", "position": i + 1,
-                            "text": s.replace("<b>", "").replace("</b>", "")}
-                           for i, s in enumerate(art["etapes"])]}
-            autres = [a for a in rub["articles"] if a["slug"] != art["slug"]][:3]
-            body = "\n".join([css,
-                '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
-                hero_help(rub["titre"], art["titre"], art["reponse"],
-                          [{"k": "Outil", "v": rub["outil"]},
-                           {"k": "Étapes", "v": str(len(art["etapes"]))},
-                           {"k": "Vérifié", "v": "septembre 2026"}]),
-                f'''<section class="hsteps" id="etapes">
+    ESPACES = (("utilisateur", "Utiliser Corrext", "Traduire, faire relire, vérifier un terme : les gestes du quotidien dans l'application."),
+               ("admin", "Administrer Corrext", "Pour les administrateurs : membres et rôles, politique de moteurs, mémoires et terminologie de l'organisation."))
+    plat = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h)).strip()
+
+    def reponse(x):
+        h = f'<p>{x["reponse"]}</p>'
+        if x["etapes"]:
+            h += '<ol class="hc-steps">' + "".join(f"<li>{e}</li>" for e in x["etapes"]) + "</ol>"
+        if x.get("savoir"):
+            h += '<div class="hc-know"><b>À savoir</b><ul>' + "".join(f"<li>{s}</li>" for s in x["savoir"]) + "</ul></div>"
+        return h
+
+    index = [{"q": x["question"], "t": plat(" ".join([x["reponse"]] + x["etapes"] + x.get("savoir", []))),
+              "r": r["titre"], "e": "Administrateurs" if r["espace"] == "admin" else "Utilisateurs",
+              "u": f'{{{{ROOT}}}}fr/aide/{r["slug"]}/#{x["slug"]}'} for r in data for x in r["articles"]]
+    recherche = lambda grande: f'''<form class="hc-search{" big" if grande else ""}" action="{{{{ROOT}}}}fr/aide/" role="search">
+  <label class="sr-only" for="hc-q">Rechercher dans le centre d'aide</label>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+  <input id="hc-q" name="q" type="search" autocomplete="off" placeholder="Rechercher une question (ex : traduire un fichier, devis, ajouter un membre)">
+  {'<div class="hc-results" id="hc-results" role="listbox" hidden></div>' if grande else ''}
+</form>'''
+    side = lambda courant: '<nav class="hc-side" aria-label="Rubriques du centre d\'aide">' + "".join(
+        f'<p class="hc-side-t">{titre}</p><ul>' + "".join(
+            f'<li><a href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"{" aria-current=\"page\"" if r["slug"] == courant else ""}>'
+            f'<span class="ws-ic">{WS_ICONS[r["icone"]]}</span>{r["titre"]}</a></li>' for r in data if r["espace"] == esp) + "</ul>"
+        for esp, titre, _ in ESPACES) + "</nav>"
+    contact = cta("Vous ne trouvez pas votre réponse ?",
+                  "Notre équipe vous répond en français, allemand, italien et anglais, à team@corrext.com, et vous accompagne dans la prise en main de Corrext.",
+                  {"href": "fr/contact/", "txt": "Contacter l'équipe"})
+    script_ancre = """<script>(function(){function o(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;var d=document.getElementById(h);if(d&&d.tagName==='DETAILS'){d.open=true;d.scrollIntoView({block:'start'});}}window.addEventListener('hashchange',o);o();})();</script>"""
+
+    pages = []
+    for r in data:
+        n = len(r["articles"])
+        qs = "".join(f'<details class="faq-item hc-q" id="{x["slug"]}"><summary>{x["question"].replace(" ?", "\u00a0?")}</summary><div class="hc-a">{reponse(x)}</div></details>'
+                     for x in r["articles"])
+        ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": x["question"], "acceptedAnswer": {"@type": "Answer", "text": plat(reponse(x))}} for x in r["articles"]]}
+        espace = "Administrateurs" if r["espace"] == "admin" else "Utilisateurs"
+        body = "\n".join([
+            '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
+            hero_help(r["titre"], r["h1"], r["lead"],
+                      [{"k": "Espace", "v": espace}, {"k": "Questions", "v": str(n)},
+                       {"k": "Outil", "v": r["outil"]}, {"k": "Vérifié", "v": "septembre 2026"}],
+                      "#questions", "Voir les questions"),
+            f'''<section class="hc" id="questions">
   <div class="container">
-    <div class="hsteps-grid">
-      <div><h2>Les étapes</h2>
-        <p class="hanswer">{len(art["etapes"])} étapes dans l'application. Les libellés entre
-          guillemets sont ceux affichés par Corrext, en anglais.</p>
-        <a class="feat-link" href="{{{{ROOT}}}}fr/aide/{rub["slug"]}/">Tous les articles
-          « {rub["titre"]} » {ARROW}</a></div>
-      <div><ol class="hol">{steps}</ol></div>
+    <div class="hc-grid">
+      {side(r["slug"])}
+      <div class="hc-main">
+        {recherche(False)}
+        <p class="hc-kicker">{espace} · {n} questions</p>
+        <h2 class="hc-h2">{r["titre"]}</h2>
+        <div class="faq-list hc-list">{qs}</div>
+      </div>
     </div>
   </div>
 </section>''',
-                (f'''<section class="hnote">
-  <div class="container"><div class="hnote-box"><h2>À savoir</h2><ul>{notes}</ul></div></div>
-</section>''' if notes else ""),
-                siblings("Autres articles de cette rubrique",
-                         [{"href": f'fr/aide/{rub["slug"]}/{a["slug"]}/', "t": a["titre"],
-                           "d": a["reponse"][:96] + "…"} for a in autres] or
-                         [{"href": "fr/aide/", "t": "Centre d'aide", "d": "Toutes les rubriques"}]),
-                cta("Une question que cet article ne couvre pas ?",
-                    "Nos spécialistes répondent en français, allemand, italien et anglais.",
-                    {"href": "fr/aide/", "txt": "Parcourir le centre d'aide"}),
-            ])
-            pages.append((f'fr/aide/{rub["slug"]}/{art["slug"]}/', {
-                "title": art["title"], "description": art["description"],
-                "short": art["titre"], "nav": "ressources", "hero": "help"}, body))
-
-        # index de rubrique
-        cards = "".join(
-            f'<a href="{{{{ROOT}}}}fr/aide/{rub["slug"]}/{a["slug"]}/"><b>{a["titre"]}</b>'
-            f'<span>{a["reponse"][:110]}…</span>{ARROW}</a>' for a in rub["articles"])
-        body = "\n".join([
-            hero_help(rub["titre"], rub["h1"], rub["lead"],
-                      [{"k": "Outil", "v": rub["outil"]},
-                       {"k": "Articles", "v": str(len(rub["articles"]))},
-                       {"k": "Vérifié", "v": "septembre 2026"}], "#articles", "Voir les articles"),
-            f'''<section class="siblings" id="articles" style="padding:84px 0">
-  <div class="container"><h2>Les articles de cette rubrique</h2>
-    <div class="siblings-row grid2">{cards}</div></div>
-</section>
-<style>.grid2{{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:940px){{.grid2{{grid-template-columns:1fr}}}}</style>''',
-            cta("Besoin d'un accompagnement ?",
-                "Une démo personnalisée vaut souvent mieux qu'une page d'aide.",
-                {"href": "fr/aide/", "txt": "Centre d'aide"}),
+            contact, script_ancre,
         ])
-        pages.append((f'fr/aide/{rub["slug"]}/', {
-            "title": rub["title"], "description": rub["description"],
-            "short": rub["titre"], "nav": "ressources", "hero": "help"}, body))
+        pages.append((f'fr/aide/{r["slug"]}/', {"title": r["title"], "description": r["description"],
+                                                 "short": r["titre"], "nav": "ressources", "hero": "help"}, body))
 
-    # index général du centre d'aide
-    blocks = "".join(
-        f'<a href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"><b>{r["titre"]}</b>'
-        f'<span>{r["lead"][:110]}…</span>{ARROW}</a>' for r in data)
     total = sum(len(r["articles"]) for r in data)
+    blocs = "".join(
+        f'''<section class="hc-space{" admin" if esp == "admin" else ""}" id="{esp}">
+  <div class="container">
+    <div class="hc-space-head"><span class="hc-badge">{"Administrateurs" if esp == "admin" else "Utilisateurs"}</span><h2>{titre}</h2><p>{texte}</p></div>
+    <div class="hc-cards">''' + "".join(
+            f'<a class="hc-card" href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"><span class="ws-ic">{WS_ICONS[r["icone"]]}</span>'
+            f'<b>{r["titre"]}</b><span class="d">{r["lead"]}</span><em>{len(r["articles"])} questions {ARROW}</em></a>'
+            for r in data if r["espace"] == esp) + '''</div>
+  </div>
+</section>''' for esp, titre, texte in ESPACES)
+    tags = "".join(f'<a href="{{{{ROOT}}}}fr/aide/{u}">{t}</a>' for t, u in (
+        ("Traduire des fichiers", "traduction-texte-et-document/#traduire-des-fichiers"), ("Mode Highly sensitive", "premiers-pas/#mode-highly-sensitive"),
+        ("Obtenir un devis", "gestion-de-projet/#devis-et-delai"), ("Ajouter un membre", "admin-organisation/#ajouter-un-membre")))
+    moteur = """<script>(function(){var I=window.HC_INDEX||[],f=document.querySelector('.hc-search.big'),q=document.getElementById('hc-q'),box=document.getElementById('hc-results');if(!f||!q||!box)return;
+function n(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9' ]+/g,' ');}
+var V=I.map(function(x){return {x:x,q:n(x.q),t:n(x.t),r:n(x.r)};});
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function cherche(v){var m=n(v).split(' ').filter(function(w){return w.length>1;});if(!m.length){box.hidden=true;box.innerHTML='';return [];}
+var r=V.map(function(o){var s=0;m.forEach(function(w){if(o.q.indexOf(w)>-1)s+=4;if(o.r.indexOf(w)>-1)s+=2;if(o.t.indexOf(w)>-1)s+=1;});return {o:o,s:s};}).filter(function(a){return a.s>0;}).sort(function(a,b){return b.s-a.s;}).slice(0,8);
+box.innerHTML=r.length?r.map(function(a){return '<a role="option" href="'+a.o.x.u+'"><b>'+esc(a.o.x.q)+'</b><span>'+esc(a.o.x.e)+' · '+esc(a.o.x.r)+'</span></a>';}).join(''):'<p class="none">Aucune réponse pour « '+esc(v)+' ». Essayez un autre mot, ou contactez l\\'équipe.</p>';box.hidden=false;return r;}
+q.addEventListener('input',function(){cherche(q.value);});
+f.addEventListener('submit',function(e){e.preventDefault();var r=cherche(q.value);if(r.length)location.href=r[0].o.x.u;});
+var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;cherche(p);}})();</script>"""
     body = "\n".join([
-        hero_help("Centre d'aide Corrext", "Comment faire, étape par étape",
-                  f"{total} articles tirés de l'application telle qu'elle fonctionne, sans jargon et "
-                  "sans promesse. Chaque procédure a été vérifiée dans Corrext en septembre 2026.",
-                  [{"k": "Rubriques", "v": str(len(data))},
-                   {"k": "Articles", "v": str(total)},
-                   {"k": "Vérifié", "v": "septembre 2026"}], "#rubriques", "Voir les rubriques"),
-        f'''<section class="siblings" id="rubriques" style="padding:84px 0">
-  <div class="container"><h2>Les rubriques</h2>
-    <div class="siblings-row grid2">{blocks}</div></div>
-</section>
-<style>.grid2{{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:940px){{.grid2{{grid-template-columns:1fr}}}}</style>''',
-        cta("Vous ne trouvez pas votre réponse ?",
-            "Demandez une démo : un spécialiste vous montre le geste sur vos propres documents.",
-            {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
+        f'''<section class="thero thero-help thero-hc">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <p class="hc-kicker">Centre d'aide Corrext</p>
+        <h1>Comment pouvons-nous vous aider ?</h1>
+        <p class="lead">{total} réponses vérifiées dans l'application, de votre première traduction à l'administration de votre organisation.</p>
+        {recherche(True)}
+        <div class="hc-tags"><span>Recherches fréquentes :</span>{tags}</div>
+        <div class="hc-spaces"><a href="#utilisateur">Je l'utilise</a><a href="#admin">Je l'administre</a></div>
+      </div>
+    </div>
+  </div>
+</section>''',
+        blocs, contact,
+        "<script>window.HC_INDEX=" + json.dumps(index, ensure_ascii=False).replace("</", "<\\/") + ";</script>", moteur,
     ])
-    pages.append(("fr/aide/", {
-        "hero": "help",
-        "title": "Centre d'aide Corrext · Neur.on",
-        "description": "Prendre en main Corrext : traduire un texte ou des fichiers, créer un "
-                       "projet de traduction, obtenir un devis, chercher un terme dans CHnell, "
-                       "commander un extrait certifié, comprendre où vont vos données.",
-        "short": "Centre d'aide", "nav": "ressources"}, body))
+    pages.append(("fr/aide/", {"hero": "help", "title": "Centre d'aide Corrext · Neur.on",
+                               "description": f"{total} réponses sur Corrext, vérifiées dans l'application : traduire, faire relire, vérifier un terme, sécurité, et administration de votre organisation.",
+                               "short": "Centre d'aide", "nav": "ressources"}, body))
     return pages
 
 

@@ -1,75 +1,94 @@
-"""Visuel du hero LexMachina : réseau neuronal entraîné, rendu en PNG à fond transparent.
+"""Visuel du hero LexMachina : un réseau neuronal en forme de galaxie spirale, rendu en PNG à fond transparent.
 
 Usage : python3 outils/visuel_lexmachina.py
-Produit assets/img/lexmachina-reseau.png (1040 × 660 px, affiché en 520 × 330).
-Le dessin est déterministe : mêmes poids, même image à chaque exécution.
+Produit assets/img/lexmachina-reseau.png (1040 × 800 px, affiché en 520 × 400).
+Le dessin est déterministe (graine fixe) : même image à chaque exécution.
 """
-import math, os, subprocess, tempfile
+import math, os, random, subprocess, tempfile
 
-W, H = 520, 330
-ENTREES = ["ATF / BGE", "FINMA", "Codes et lois"]
-SORTIES = ["Deutsch", "Français", "Italiano", "English"]
+W, H = 520, 400
 ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "..", "assets", "img", "lexmachina-reseau.png")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+rnd = random.Random(230)
 
 
-def poids(a, b, k):
-    return ((a * 37 + b * 91 + k * 53 + a * b * 7) % 100) / 100
+def projeter(x, y):
+    """Galaxie vue de biais : aplatissement vertical puis légère rotation."""
+    y *= .58
+    a = math.radians(-16)
+    return W / 2 + x * math.cos(a) - y * math.sin(a), H / 2 + x * math.sin(a) + y * math.cos(a)
 
 
-def colonne(n, haut, bas):
-    return [haut + i * (bas - haut) / (n - 1) for i in range(n)]
+BRAS = 3
 
 
-def courbe(x1, y1, x2, y2):
-    dx = (x2 - x1) * .5
-    return f"M{x1:.1f} {y1:.1f} C{x1 + dx:.1f} {y1:.1f} {x2 - dx:.1f} {y2:.1f} {x2:.1f} {y2:.1f}"
+def spirale(b, t, jr=0.0, ja=0.0):
+    r = 16 + 215 * t ** .9 + jr
+    th = b * 2 * math.pi / BRAS + 3.4 * math.pi * t ** .75 + ja
+    return projeter(r * math.cos(th), r * math.sin(th))
+
+
+def points():
+    """Neurones le long des bras (dans l'ordre du bras) et au cœur."""
+    bras = []
+    for b in range(BRAS):
+        ligne = []
+        for i in range(84):
+            t = (i + rnd.random() * .6) / 84
+            x, y = spirale(b, t, rnd.gauss(0, 3 + 9 * t), rnd.gauss(0, .045))
+            ligne.append((x, y, 1 - t))
+        bras.append(ligne)
+    coeur = []
+    for _ in range(26):
+        r = abs(rnd.gauss(0, 13)); th = rnd.random() * 2 * math.pi
+        coeur.append((*projeter(r * math.cos(th), r * math.sin(th)), 1.0))
+    return bras, coeur
 
 
 def svg():
-    xe, xs = 148, 390
-    couches = [(xe, colonne(3, 72, 258))] + [(x, colonne(7, 34, 296)) for x in (208, 268, 328)] + [(xs, colonne(4, 52, 278))]
-    fils, forts = [], []
-    for k in range(len(couches) - 1):
-        (xa, ya), (xb, yb) = couches[k], couches[k + 1]
-        for i, a in enumerate(ya):
-            for j, b in enumerate(yb):
-                w = poids(i, j, k)
-                if w < .28:
-                    continue
-                d = courbe(xa, a, xb, b)
-                fils.append(f'<path d="{d}" stroke="url(#fil)" stroke-opacity="{.16 + w * .5:.2f}" stroke-width="{.5 + w * 1.3:.2f}" fill="none"/>')
-                if (i * 3 + j + k) % 4 == 0 and w > .5:
-                    forts.append(f'<path d="{d}" stroke="#bcd5ff" stroke-width="1.6" fill="none" filter="url(#lueur)" stroke-opacity=".85"/>')
-    # Flux de données : segments qui entrent dans le réseau depuis chaque source
-    flux = []
-    for i, y in enumerate(couches[0][1]):
-        for s in range(4):
-            t = s / 4
-            x = 2 + t * 26
-            dy = math.sin(s * 1.7 + i) * 7 * (1 - t)
-            flux.append(f'<rect x="{x:.1f}" y="{y + dy - 2:.1f}" width="{4 + (s % 2) * 3}" height="4" rx="2" fill="#9cc2ff" fill-opacity="{.15 + t * .5:.2f}"/>')
+    bras, coeur = points()
+    pts = [p for ligne in bras for p in ligne] + coeur
+    fils = []
+    def fil(p, q, o, w, c="url(#fil)"):
+        fils.append(f'<line x1="{p[0]:.1f}" y1="{p[1]:.1f}" x2="{q[0]:.1f}" y2="{q[1]:.1f}" stroke="{c}" stroke-opacity="{o:.2f}" stroke-width="{w:.2f}"/>')
+    for ligne in bras:
+        for k in range(len(ligne) - 1):
+            p, q = ligne[k], ligne[k + 1]
+            fil(p, q, .25 + .55 * p[2], .5 + 1.1 * p[2])
+            if k + 3 < len(ligne) and rnd.random() < .35:
+                fil(p, ligne[k + 3], .12 + .3 * p[2], .5)
+    # Liaisons transverses entre voisins proches : la toile du réseau
+    vus = set()
+    for i, p in enumerate(pts):
+        for j in sorted(range(len(pts)), key=lambda j: (pts[j][0] - p[0]) ** 2 + (pts[j][1] - p[1]) ** 2)[1:3]:
+            d = math.dist(p[:2], pts[j][:2]); cle = tuple(sorted((i, j)))
+            if d < 30 and cle not in vus:
+                vus.add(cle); fil(p, pts[j], .1 + .35 * max(p[2], pts[j][2]), .45)
+    for _ in range(14):
+        i, j = rnd.randrange(len(pts)), rnd.randrange(len(pts))
+        if 80 < math.dist(pts[i][:2], pts[j][:2]) < 180:
+            fil(pts[i], pts[j], .16, .5, "#bcd5ff")
+    poussiere = []
+    for _ in range(420):
+        b, t = rnd.randrange(BRAS), rnd.random()
+        x, y = spirale(b, t, rnd.gauss(0, 10 + 22 * t), rnd.gauss(0, .14))
+        poussiere.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rnd.uniform(.35, 1):.2f}" fill="#d6e5ff" fill-opacity="{rnd.uniform(.1, .55):.2f}"/>')
     noeuds = []
-    for k, (x, col) in enumerate(couches[1:-1]):
-        for i, y in enumerate(col):
-            actif = (i * 2 + k) % 3 == 0
-            noeuds.append(f'<circle cx="{x}" cy="{y:.1f}" r="{13 if actif else 9}" fill="url(#halo)" fill-opacity="{1 if actif else .55}"/>')
-            noeuds.append(f'<circle cx="{x}" cy="{y:.1f}" r="{4.6 if actif else 3.6}" fill="{"#ffffff" if actif else "#7fb0ff"}"/>')
-    def pastille(x, y, w, texte, align):
-        return (f'<rect x="{x}" y="{y - 15}" width="{w}" height="30" rx="15" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".26"/>'
-                f'<text x="{x + w / 2}" y="{y + 4.5}" text-anchor="middle" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#ffffff">{texte}</text>')
-    entrees = "".join(pastille(32, y, 108, t, "c") + f'<circle cx="{xe}" cy="{y:.1f}" r="12" fill="url(#halo)"/><circle cx="{xe}" cy="{y:.1f}" r="4.2" fill="#ffffff"/>'
-                      for t, y in zip(ENTREES, couches[0][1]))
-    sorties = "".join(f'<circle cx="{xs}" cy="{y:.1f}" r="12" fill="url(#halo)"/><circle cx="{xs}" cy="{y:.1f}" r="4.2" fill="#ffffff"/>' + pastille(xs + 16, y, 100, t, "c")
-                      for t, y in zip(SORTIES, couches[-1][1]))
+    for x, y, e in pts:
+        brillant = rnd.random() < .16 or e > .93
+        noeuds.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{3 + 5 * e + (3 if brillant else 0):.1f}" fill="url(#halo)" fill-opacity="{.25 + .45 * e:.2f}"/>')
+        noeuds.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{.9 + 1.5 * e + (.7 if brillant else 0):.2f}" fill="{"#ffffff" if brillant else "#a9c8ff"}"/>')
+    cx, cy = projeter(0, 0)
+    fond = (f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="150" ry="82" fill="url(#coeur)" transform="rotate(-16 {cx:.1f} {cy:.1f})"/>'
+            f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="22" fill="url(#halo)"/>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">
 <defs>
-  <linearGradient id="fil" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7fb0ff"/><stop offset="1" stop-color="#317bff"/></linearGradient>
-  <radialGradient id="halo"><stop offset="0" stop-color="#cfe0ff" stop-opacity=".95"/><stop offset=".45" stop-color="#7fb0ff" stop-opacity=".35"/><stop offset="1" stop-color="#317bff" stop-opacity="0"/></radialGradient>
-  <filter id="lueur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="fil" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfe0ff"/><stop offset="1" stop-color="#5b8fe6"/></linearGradient>
+  <radialGradient id="halo"><stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset=".35" stop-color="#9cc2ff" stop-opacity=".35"/><stop offset="1" stop-color="#317bff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="coeur"><stop offset="0" stop-color="#cfe0ff" stop-opacity=".5"/><stop offset=".45" stop-color="#5b8fe6" stop-opacity=".16"/><stop offset="1" stop-color="#317bff" stop-opacity="0"/></radialGradient>
 </defs>
-{"".join(flux)}{"".join(fils)}{"".join(forts)}{"".join(noeuds)}{entrees}{sorties}
+{fond}{"".join(poussiere)}{"".join(fils)}{"".join(noeuds)}
 </svg>'''
 
 
