@@ -871,3 +871,9 @@ body.nav-open{overflow:hidden}
 /* Logos officiels Corrext et CHnell (fichiers de l'application) */
 .cx-logo .cx-brand{height:26px;width:auto;display:block}
 .cx-chnell .logo .cx-brand{height:40px;width:auto;display:block;margin:0 auto}
+/* Bandeau de consentement (production uniquement) */
+.ck-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:200;max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 50px rgba(0,27,76,.18);padding:18px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+.ck-bar p{flex:1 1 320px;margin:0;font-size:14.5px;line-height:1.55;color:var(--ink)}
+.ck-bar a{color:var(--blue-d);font-weight:600}
+.ck-btns{display:flex;gap:10px;flex-wrap:wrap}
+.ck-pref{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:2px}

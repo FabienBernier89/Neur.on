@@ -18,7 +18,7 @@ canonical: https://neur-on.ai/fr/contact/
   "name": "Neur.on",
   "legalName": "Neur.on AI Solutions SA",
   "url": "https://neur-on.ai/",
-  "email": "contact@neur-on.ai",
+  "email": "team@corrext.com",
   "address": {
    "@type": "PostalAddress",
    "streetAddress": "Place de la Gare 15",
@@ -30,7 +30,7 @@ canonical: https://neur-on.ai/fr/contact/
   "contactPoint": {
    "@type": "ContactPoint",
    "contactType": "Demande de démonstration",
-   "email": "contact@neur-on.ai",
+   "email": "team@corrext.com",
    "areaServed": "CH",
    "availableLanguage": ["fr", "de", "it", "en"]
   }
@@ -167,6 +167,9 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
   .cf-form{padding:22px 18px 20px}
   .cf-check{width:100%}
 }
+.cf-status{margin-top:16px;padding:14px 16px;border-radius:12px;background:rgba(49,123,255,.07);color:var(--ink);font-size:14.5px;line-height:1.55}
+.cf-status.err{background:rgba(220,38,38,.07)}
+.cf-status a{color:var(--blue-d);font-weight:600}
 </style>
 
 <!-- HERO -->
@@ -199,7 +202,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
     <div class="cf-grid">
 
       <!-- À CÂBLER : action du formulaire (HubSpot, Formspree ou endpoint Neur.on) -->
-      <form class="cf-form" id="demande" method="post" action="#" aria-labelledby="cf-title">
+      <form class="cf-form" id="demande" method="post" action="#" aria-labelledby="cf-title" data-endpoint="" data-mailto="team@corrext.com" novalidate>
         <h2 id="cf-title">Demander une démonstration</h2>
         <p class="cf-intro">Les champs marqués d'un astérisque sont obligatoires. Plus vous décrivez votre contexte, plus la démonstration sera proche de votre pratique.</p>
 
@@ -297,8 +300,10 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
             Envoyer ma demande
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </button>
-          <span class="cf-hint">Vous préférez écrire ? <a href="mailto:contact@neur-on.ai" style="color:var(--blue-d);font-weight:600">contact@neur-on.ai</a></span>
+          <span class="cf-hint">Vous préférez écrire ? <a href="mailto:team@corrext.com" style="color:var(--blue-d);font-weight:600">team@corrext.com</a></span>
         </div>
+
+        <p class="cf-status" id="cf-status" role="status" aria-live="polite" hidden></p>
 
         <p class="cf-usage">Ces informations ne servent qu'à traiter votre demande de démonstration et à préparer l'échange. Elles ne sont ni revendues, ni cédées à des tiers, et n'entraînent aucune inscription automatique à une lettre d'information.</p>
       </form>
@@ -320,7 +325,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
             <b>Neur.on AI Solutions SA</b><br>
             Place de la Gare 15<br>
             1700 Fribourg, Suisse<br>
-            <a href="mailto:contact@neur-on.ai">contact@neur-on.ai</a>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
           </address>
           <h3 style="margin-top:20px">Langues d'échange</h3>
           <div class="cf-langs">
@@ -377,8 +382,8 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
       <h2>Une question avant de nous écrire ?</h2>
       <p>Si votre sujet ne rentre pas dans un formulaire, un message suffit. Nous répondons en français, en allemand, en italien ou en anglais.</p>
       <div class="final-cta-btns">
-        <a href="mailto:contact@neur-on.ai" class="btn btn-blue">
-          contact@neur-on.ai
+        <a href="mailto:team@corrext.com" class="btn btn-blue">
+          team@corrext.com
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
         <a href="#demande" class="btn-outline">Revenir au formulaire</a>
@@ -387,3 +392,49 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
     </div>
   </div>
 </section>
+
+<script>
+/* Formulaire de demande de démo.
+   Si data-endpoint est renseigné (production), la demande y est envoyée en POST.
+   Sinon, ou en cas d'échec, la messagerie du visiteur s'ouvre avec la demande prête à partir vers data-mailto. */
+(function(){
+  var f=document.getElementById('demande'); if(!f){return;}
+  var endpoint=f.getAttribute('data-endpoint')||'';
+  var to=f.getAttribute('data-mailto')||'team@corrext.com';
+  var st=document.getElementById('cf-status');
+  function label(el){var l=f.querySelector('label[for="'+el.id+'"]');return l?l.textContent.replace(/\*/g,'').trim():el.name;}
+  function show(html,err){st.innerHTML=html;st.classList.toggle('err',!!err);st.hidden=false;st.scrollIntoView({block:'nearest'});}
+  function lines(){
+    var out=[],seen={};
+    Array.prototype.forEach.call(f.elements,function(el){
+      if(!el.name||el.type==='submit'||el.name==='consentement'||seen[el.name]){return;}
+      if(el.type==='checkbox'){
+        seen[el.name]=1;
+        var v=Array.prototype.filter.call(f.querySelectorAll('input[name="'+el.name+'"]:checked'),function(c){return true;}).map(function(c){return c.parentNode.textContent.trim();});
+        if(v.length){out.push('Langues : '+v.join(', '));}
+        return;
+      }
+      var val=el.tagName==='SELECT'?(el.value?el.options[el.selectedIndex].text:''):el.value.trim();
+      if(val){out.push(label(el)+' : '+val);}
+    });
+    return out;
+  }
+  function mailto(){
+    var org=(f.elements.organisation&&f.elements.organisation.value.trim())||'';
+    var subject='Demande de démo Corrext'+(org?' · '+org:'');
+    var body=lines().join('\n')+'\n\nConsentement au traitement des données : oui';
+    window.location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    show('Votre messagerie s\'ouvre avec la demande prête à envoyer à <a href="mailto:'+to+'">'+to+'</a>. Si rien ne s\'ouvre, écrivez-nous directement à cette adresse.');
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();show('Merci de remplir les champs obligatoires, marqués d\'un astérisque.',true);return;}
+    if(!endpoint){mailto();return;}
+    var btn=f.querySelector('[type=submit]');btn.disabled=true;
+    fetch(endpoint,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){if(!r.ok){throw new Error(r.status);} f.reset(); show('Merci, votre demande est bien partie. Nous revenons vers vous pour fixer l\'échange de cadrage.');})
+      .catch(function(){mailto();})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>

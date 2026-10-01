@@ -32,17 +32,18 @@
         "titre": "Les quatre outils de l'accueil",
         "title": "Les quatre outils de la page d'accueil de Corrext · Neur.on",
         "description": "Traduction texte et document, Gestion de projet, Fast lookup et Commercial register extract : à quoi sert chacune des quatre cartes de l'accueil de Corrext.",
-        "reponse": "L'accueil de Corrext regroupe quatre outils sous le titre « My translation tools » : Traduction texte et document pour traduire immédiatement un texte ou des fichiers, Gestion de projet pour faire estimer un délai et commander une relecture, Fast lookup pour chercher un terme en contexte dans CHnell, et Commercial register extract pour commander une traduction certifiée d'extrait du registre du commerce. Vos projets en cours apparaissent plus bas, sous « My projects ».",
+        "reponse": "L'accueil de Corrext regroupe quatre outils sous le titre « My translation tools » : Traduction texte et document (carte « Fast translation ») pour traduire immédiatement un texte ou des fichiers, Gestion de projet (carte « Translation project ») pour faire estimer un délai et commander une relecture, Fast lookup pour chercher un terme en contexte dans CHnell, et Commercial register extract pour commander une traduction certifiée d'extrait du registre du commerce. Vos projets en cours apparaissent plus bas, sous « My projects ».",
         "etapes": [
           "Connectez-vous : l'accueil s'affiche directement après la connexion, ou par le lien « Home » de l'en-tête.",
           "Repérez la section <b>« My translation tools »</b> : elle contient quatre cartes, chacune avec un bouton fléché sur la droite.",
-          "Choisissez <b>« Traduction texte et document »</b> pour traduire un texte ou des fichiers tout de suite, comparer des alternatives et reformuler.",
-          "Choisissez <b>« Gestion de projet »</b> pour estimer un temps de relecture, obtenir un devis et commander une relecture externe.",
+          "Choisissez <b>« Fast translation »</b>, notre Traduction texte et document, pour traduire un texte ou des fichiers tout de suite, comparer des alternatives et reformuler.",
+          "Choisissez <b>« Translation project »</b>, notre Gestion de projet, pour estimer un temps de relecture, obtenir un devis et commander une relecture externe.",
           "Choisissez <b>« Fast lookup »</b> pour chercher un terme en contexte et trouver des synonymes dans l'outil CHnell.",
           "Choisissez <b>« Commercial register extract »</b> pour commander une traduction certifiée, avec notarisation et apostille si nécessaire.",
           "Descendez jusqu'à <b>« My projects »</b> pour retrouver vos projets ; tant qu'il n'y en a aucun, l'écran propose « Create project »."
         ],
         "savoir": [
+          "L'application s'affiche en anglais : « Fast translation » correspond à Traduction texte et document, et « Translation project » à Gestion de projet, les noms employés sur ce site.",
           "La carte « Commercial register extract » ouvre un service en ligne distinct de la plateforme : vous quittez l'interface Corrext.",
           "L'en-tête reste identique sur tous les écrans : logo Corrext, lien « Home », cloche de notifications et avatar à vos initiales.",
           "Fast lookup s'utilise seul, mais aussi depuis une traduction en cours : un mot surligné ouvre la recherche sur ce mot en contexte."

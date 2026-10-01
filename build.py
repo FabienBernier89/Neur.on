@@ -18,6 +18,11 @@ SITE = "https://neur-on.ai"
 LANG = "fr"
 PRODUCTION = "--production" in sys.argv
 TODAY = datetime.date.today().isoformat()
+# Mesure d'audience, active seulement avec --production.
+# GA4 repris du site WordPress actuel ; le script Google ne se charge qu'après consentement (consent.js).
+GA4_ID = "G-H128S2PTKN"
+# Jeton de vérification Google Search Console (balise HTML), à renseigner si la vérification DNS n'est pas retenue.
+GSC_TOKEN = ""
 def _asset_version():
     import hashlib
     h = hashlib.sha1()
@@ -218,12 +223,16 @@ def build_page(path, meta, body):
         head.append("<style>" + st.strip() + "</style>")
     for ld in lds:
         head.append('<script type="application/ld+json">' + ld.strip() + "</script>")
+    if PRODUCTION and GSC_TOKEN:
+        head.append(f'<meta name="google-site-verification" content="{GSC_TOKEN}">')
     head.append("</head>")
 
     nav = render_nav_footer(read(os.path.join(SRC, "partials", "nav.html")), path, navkey)
     foot = render_nav_footer(read(os.path.join(SRC, "partials", "footer.html")), path, navkey)
 
     scripts = [f'<script src="{root}assets/nav.js?v={ASSET_V}" defer></script>']
+    if PRODUCTION and GA4_ID:
+        scripts.append(f'<script src="{root}assets/consent.js?v={ASSET_V}" data-ga4="{GA4_ID}" defer></script>')
     for a in meta.get("assets", []) or []:
         scripts.append(f'<script src="{root}assets/{a}?v={ASSET_V}"></script>')
 
