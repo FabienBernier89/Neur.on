@@ -41,7 +41,7 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
    "name": "Un LLM généraliste invente-t-il des articles de loi ?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Il peut produire une référence ou une juridiction plausible mais fausse, et rien dans sa réponse ne signale l'erreur. Ce risque ne vise pas un fournisseur en particulier : nous l'avons documenté sur notre propre moteur, le 14 septembre 2026, sur une phrase d'arbitrage rendue en allemand avec Bundesgerichtshof, la juridiction suprême allemande, là où il fallait le Bundesgericht suisse. C'est précisément pourquoi Corrext affiche plusieurs alternatives attribuées à leur moteur et donne accès au concordancier."
+    "text": "Il peut produire une référence, une juridiction ou un terme plausibles mais faux, et rien dans sa réponse ne signale l'erreur. Ce risque ne vise pas un fournisseur en particulier : nous l'avons documenté sur notre propre moteur, le 14 septembre 2026, sur une clause de demeure rendue en allemand avec Kündigung, qui désigne la résiliation, là où il fallait l'échéance convenue. C'est précisément pourquoi Corrext affiche plusieurs alternatives attribuées à leur moteur et donne accès au concordancier."
    }
   },
   {
@@ -79,17 +79,20 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
 
 /* Deux registres honnêtes */
 .cp-fair{padding:72px 0 0;background:#fff}
-.cp-fair-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+/* Deux colonnes alignées ligne à ligne : titre, chapeau, puis chaque point à la même hauteur */
+.cp-fair-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;grid-template-rows:repeat(6,auto)}
+.cp-col{display:grid;grid-row:1 / span 6;grid-template-rows:subgrid}
 .cp-col h2{font-size:clamp(22px,2.4vw,28px);margin-bottom:14px}
 .cp-col > p{color:var(--muted);font-size:15.5px;line-height:1.65;margin-bottom:22px;max-width:44ch}
-.cp-pts{list-style:none;border-top:1px solid var(--line)}
+.cp-pts{display:grid;grid-row:span 4;grid-template-rows:subgrid;list-style:none;border-top:1px solid var(--line)}
 .cp-pts li{padding:15px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--text);line-height:1.6}
 .cp-pts li b{display:block;color:var(--ink);font-size:13px;margin-bottom:4px;letter-spacing:-.01em}
-.cp-links{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.cp-pts a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px}
+.cp-pts a:hover{text-decoration-color:currentColor}
 
 /* Exemple d'erreur documentée */
 .cp-ex{padding:80px 0 0;background:#fff}
-.cp-ex .sec-head{text-align:left;margin:0 0 28px;max-width:720px}
+.cp-ex .sec-head{text-align:center;margin:0 auto 28px;max-width:760px}
 .cp-ex-src{max-width:980px;margin:0 auto 20px;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
 .cp-ex-lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .cp-ex-src p{font-size:15px;color:var(--ink);line-height:1.6}
@@ -106,7 +109,8 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
 .cp-ex-cap{max-width:980px;margin:14px auto 0;font-size:12.5px;color:var(--muted);line-height:1.55}
 
 @media(max-width:940px){
-  .cp-fair-grid{grid-template-columns:1fr;gap:36px}
+  .cp-fair-grid{grid-template-columns:1fr;grid-template-rows:none;row-gap:36px}
+  .cp-col,.cp-pts{display:block;grid-row:auto}
   .cp-col > p{max-width:none}
   .cp-ex-grid{grid-template-columns:1fr}
   .cp-answer .box{padding:24px 22px}
@@ -162,15 +166,11 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
         <h2>Ce qu'ils ne peuvent pas prouver seuls</h2>
         <p>Le problème n'est pas la qualité de la langue : elle est excellente. Le problème est qu'aucune de leurs affirmations ne remonte à une source que vous pouvez montrer à un confrère ou à une autorité.</p>
         <ul class="cp-pts">
-          <li><b>Pas de terminologie suisse sourcée</b>Un terme est rendu de manière plausible, sans que rien n'indique comment la Feuille fédérale ou fedlex.admin.ch le rend effectivement.</li>
+          <li><b>Pas de terminologie suisse sourcée</b>Un terme est rendu de manière plausible, sans que rien n'indique comment la Feuille fédérale ou fedlex.admin.ch le rend effectivement. Dans Corrext, c'est le rôle de <a href="{{ROOT}}fr/corrext/chnell/">Fast lookup CHnell</a>.</li>
           <li><b>Pas de garantie sur les références légales</b>Un article, une abréviation ou une juridiction peuvent être produits avec aplomb et faux, sans aucun signal dans la réponse.</li>
-          <li><b>Pas d'interface de relecture</b>Aucune chaîne de validation : pas de niveau de relecture, pas de traducteur juridique commandé, pas de certification possible.</li>
+          <li><b>Pas d'interface de relecture</b>Aucune chaîne de validation : pas de niveau de relecture, pas de traducteur juridique commandé, pas de certification possible. Dans Corrext, elle se commande dans <a href="{{ROOT}}fr/corrext/gestion-de-projet/">Gestion de projet</a>.</li>
           <li><b>Pas de devis, pas de délai, pas de gouvernance</b>Rien qui permette d'arbitrer entre comprendre vite et faire relire, et rien qui rappelle la politique du cabinet avant d'envoyer un document hors de Suisse.</li>
         </ul>
-        <div class="cp-links">
-          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Gestion de projet : la relecture humaine commandée dans l'outil <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="{{ROOT}}fr/corrext/chnell/" class="feat-link">Fast lookup CHnell : le concordancier du droit suisse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-        </div>
       </div>
     </div>
   </div>
@@ -269,24 +269,24 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
   <div class="container">
     <div class="sec-head">
       <h2>Un exemple d'erreur, et c'est la nôtre</h2>
-      <p>Une phrase d'arbitrage traduite du français vers l'allemand dans Corrext. La sortie principale et l'alternative proposée dans le même panneau ne disent pas la même chose, et l'une des deux se trompe de pays.</p>
+      <p>Une clause de droit des contrats traduite du français vers l'allemand dans Corrext. Deux alternatives du même panneau ne disent pas la même chose, et l'une des deux change le sens de la clause.</p>
     </div>
     <div class="cp-ex-src">
       <p class="cp-ex-lbl">Source · français</p>
-      <p>Le tribunal arbitral statue sur sa propre compétence conformément à l'art. 186 LDIP, et la sentence peut faire l'objet d'un recours au Tribunal fédéral.</p>
+      <p>Le débiteur en demeure doit des intérêts moratoires au taux de 5% l'an, conformément à l'art. 104 al. 1 CO, sans qu'une mise en demeure formelle soit nécessaire lorsqu'un terme a été convenu.</p>
     </div>
     <div class="cp-ex-grid">
       <div class="cp-ex-card bad">
         <span class="cp-ex-eng">Sortie fautive · LexMachina</span>
-        <p lang="de">Das Schiedsgericht entscheidet über seine Zuständigkeit gemäss Art. 186 IPRG und der Entscheid kann beim <mark>Bundesgerichtshof</mark> angefochten werden.</p>
+        <p lang="de">Der säumige Schuldner schuldet gemäss Art. 104 Abs. 1 OR Verzugszinsen in Höhe von 5% p.a., ohne dass eine förmliche Mahnung erforderlich wäre, wenn eine <mark>Kündigung</mark> vereinbart worden ist.</p>
       </div>
       <div class="cp-ex-card good">
-        <span class="cp-ex-eng">Alternative affichée dans le même panneau</span>
-        <p lang="de">Das Schiedsgericht entscheidet über seine Zuständigkeit nach Artikel 186 IPRG und kann mit Beschwerde beim <mark>Bundesgericht</mark> angefochten werden.</p>
+        <span class="cp-ex-eng">Alternative du même panneau · Azure OpenAI GPT</span>
+        <p lang="de">Der Schuldner im Verzug schuldet Verzugszinsen zum Satz von 5% pro Jahr gemäss Art. 104 Abs. 1 OR, ohne dass eine förmliche Mahnung erforderlich ist, wenn eine <mark>Frist</mark> vereinbart wurde.</p>
       </div>
     </div>
-    <p class="cp-ex-note">Le Bundesgerichtshof est la juridiction suprême allemande ; le Tribunal fédéral suisse est le Bundesgericht. L'erreur vient de notre propre moteur, pas d'un concurrent, et elle illustre exactement ce que nous soutenons ici : aucun moteur, généraliste ou spécialisé, n'est une source de droit. Ce qui protège le lecteur, ce n'est pas la promesse d'un modèle infaillible, ce sont les alternatives affichées côte à côte, le concordancier qui remonte à la source officielle, et la relecture humaine avant toute transmission.</p>
-    <p class="cp-ex-cap">Sorties réelles obtenues dans Corrext le 14 septembre 2026, sur cette phrase précise, en français vers l'allemand. Exemple ponctuel et daté, pas une mesure : ce type d'erreur se rencontre chez tous les moteurs, et une autre génération donnerait un autre résultat. Nous l'avons gardé tel quel plutôt que de le régénérer, parce qu'il documente le risque réel.</p>
+    <p class="cp-ex-note">Kündigung désigne la résiliation du contrat, alors que le « terme » convenu est une échéance, que le traducteur juridique vérifie dans le texte allemand du CO. L'erreur vient de notre propre moteur, pas d'un concurrent, et elle illustre exactement ce que nous soutenons ici : aucun moteur, généraliste ou spécialisé, n'est une source de droit. Ce qui protège le lecteur, ce n'est pas la promesse d'un modèle infaillible, ce sont les alternatives affichées côte à côte, le concordancier qui remonte à la source officielle, et la relecture humaine avant toute transmission.</p>
+    <p class="cp-ex-cap">Sorties réelles obtenues dans Corrext le 14 septembre 2026, sur cette phrase précise, en français vers l'allemand, dans le panneau Alternatives. Exemple ponctuel et daté, pas une mesure : ce type d'erreur se rencontre chez tous les moteurs, et une autre génération donnerait un autre résultat. Nous l'avons gardé tel quel plutôt que de le régénérer, parce qu'il documente le risque réel.</p>
   </div>
 </section>
 
@@ -309,13 +309,12 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
 </section>
 
 <!-- LIENS VOISINS -->
-<section class="siblings" style="padding:0 0 84px">
+<section class="vn">
   <div class="container">
     <h2>Les autres comparatifs</h2>
-    <div class="siblings-row">
-      <a href="{{ROOT}}fr/comparatif/deepl-traduction-juridique/"><b>Corrext et DeepL</b><span>Un excellent moteur générique, et ce que le cadre autour change pour un dossier suisse.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/comparatif/agence-ou-plateforme/"><b>Agence de traduction ou plateforme</b><span>Deux modèles de travail comparés, et comment Corrext commande la relecture externe.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/lexmachina/"><b>LexMachina</b><span>Le moteur suisse entraîné sur plus de 15 millions de segments juridiques et financiers.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    <div class="vs-grid">
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/deepl-traduction-juridique/" aria-label="Comparatif Corrext et DeepL Pro"><span class="vs-duo" aria-hidden="true"><b>Corrext</b><i></i><b>DeepL Pro</b></span><em>Lire le comparatif <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" aria-label="Comparatif agence de traduction ou plateforme"><span class="vs-duo" aria-hidden="true"><b>Agence</b><i></i><b>Plateforme</b></span><em>Lire le comparatif <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
     </div>
   </div>
 </section>
@@ -341,7 +340,7 @@ canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
       </details>
       <details class="faq-item">
         <summary>Un LLM généraliste invente-t-il des articles de loi ?</summary>
-        <p>Il peut produire une référence ou une juridiction plausible mais fausse, et rien dans sa réponse ne signale l'erreur. Ce risque ne vise pas un fournisseur en particulier : nous l'avons documenté sur notre propre moteur, le 14 septembre 2026, sur une phrase d'arbitrage rendue en allemand avec Bundesgerichtshof, la juridiction suprême allemande, là où il fallait le Bundesgericht suisse. C'est précisément pourquoi Corrext affiche plusieurs alternatives attribuées à leur moteur et donne accès au concordancier.</p>
+        <p>Il peut produire une référence, une juridiction ou un terme plausibles mais faux, et rien dans sa réponse ne signale l'erreur. Ce risque ne vise pas un fournisseur en particulier : nous l'avons documenté sur notre propre moteur, le 14 septembre 2026, sur une clause de demeure rendue en allemand avec Kündigung, qui désigne la résiliation, là où il fallait l'échéance convenue. C'est précisément pourquoi Corrext affiche plusieurs alternatives attribuées à leur moteur et donne accès au concordancier.</p>
       </details>
       <details class="faq-item">
         <summary>Mes échanges avec un assistant IA grand public sont-ils confidentiels ?</summary>

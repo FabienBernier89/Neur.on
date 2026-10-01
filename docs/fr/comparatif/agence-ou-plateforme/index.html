@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" href="../../../assets/img/neuron-mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/neuron-mark-180.png">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=fc07be64">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=d7ed84ed">
 <style>/* Hero compact */
 
 
@@ -45,7 +45,6 @@
 .cp-model h3 .pn{color:var(--blue-d)}
 .cp-model p{font-size:14.5px;color:var(--text);line-height:1.62;margin-bottom:12px}
 .cp-model .tag{display:inline-block;font-size:11.5px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:6px;padding:4px 9px}
-.cp-links{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px}
 
 /* Les trois niveaux de relecture externe, texte de l'application */
 .cp-lev{padding:82px 0 0;background:#fff}
@@ -62,7 +61,9 @@
   .cp-model,.cp-model+.cp-model{padding:20px 0;border-right:0}
   .cp-lev-item{grid-template-columns:1fr;gap:8px}
   .cp-answer .box{padding:24px 22px}
-}</style>
+}
+.cp-model p a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px}
+.cp-model p a:hover{text-decoration-color:currentColor}</style>
 <script type="application/ld+json">{
  "@context": "https://schema.org",
  "@type": "FAQPage",
@@ -354,13 +355,9 @@
       </div>
       <div class="cp-model">
         <h3><span class="pn">Corrext.</span> L'immédiateté d'abord, la relecture humaine ensuite</h3>
-        <p>La traduction machine est disponible en permanence, dans un environnement suisse et gouverné. La relecture humaine se commande depuis la même interface, fichier par fichier, avec son délai et son devis, interne ou externe.</p>
+        <p><a href="../../../fr/corrext/traduction-texte-et-document/">La traduction machine</a> est disponible en permanence, dans un environnement suisse et gouverné. <a href="../../../fr/corrext/gestion-de-projet/">La relecture humaine</a> se commande depuis la même interface, fichier par fichier, avec son délai et son devis, interne ou externe.</p>
         <p class="tag">Le pari : arbitrer document par document</p>
       </div>
-    </div>
-    <div class="cp-links">
-      <a href="../../../fr/corrext/traduction-texte-et-document/" class="feat-link">Traduction texte et document : comprendre une pièce tout de suite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="../../../fr/lexmachina/" class="feat-link">LexMachina : le moteur entraîné sur le droit suisse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
@@ -492,13 +489,12 @@
 </section>
 
 <!-- LIENS VOISINS -->
-<section class="siblings" style="padding:0 0 84px">
+<section class="vn">
   <div class="container">
     <h2>Les autres comparatifs</h2>
-    <div class="siblings-row">
-      <a href="../../../fr/comparatif/deepl-traduction-juridique/"><b>Corrext et DeepL</b><span>Un excellent moteur générique, et ce que le cadre autour change pour un dossier suisse.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="../../../fr/comparatif/chatgpt-traduction-juridique/"><b>Corrext et les LLM généralistes</b><span>ChatGPT, Azure OpenAI GPT, Claude : excellents pour reformuler, à encadrer pour engager.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="../../../fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Stockage suisse, mode Highly sensitive, ISO 27001, gouvernance des moteurs tiers.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    <div class="vs-grid">
+      <a class="vs-card" href="../../../fr/comparatif/deepl-traduction-juridique/" aria-label="Comparatif Corrext et DeepL Pro"><span class="vs-duo" aria-hidden="true"><b>Corrext</b><i></i><b>DeepL Pro</b></span><em>Lire le comparatif <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vs-card" href="../../../fr/comparatif/chatgpt-traduction-juridique/" aria-label="Comparatif Corrext et les LLM généralistes"><span class="vs-duo" aria-hidden="true"><b>Corrext</b><i></i><b>LLM généralistes</b></span><em>Lire le comparatif <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
     </div>
   </div>
 </section>
@@ -626,6 +622,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=fc07be64" defer></script>
+<script src="../../../assets/nav.js?v=d7ed84ed" defer></script>
 </body>
 </html>

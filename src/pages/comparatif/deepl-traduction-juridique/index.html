@@ -79,17 +79,20 @@ canonical: https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/
 
 /* Ce que l'autre fait bien / ce que nous ajoutons */
 .cp-fair{padding:72px 0 0;background:#fff}
-.cp-fair-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+/* Deux colonnes alignées ligne à ligne : titre, chapeau, puis chaque point à la même hauteur */
+.cp-fair-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;grid-template-rows:repeat(6,auto)}
+.cp-col{display:grid;grid-row:1 / span 6;grid-template-rows:subgrid}
 .cp-col h2{font-size:clamp(22px,2.4vw,28px);margin-bottom:14px}
 .cp-col > p{color:var(--muted);font-size:15.5px;line-height:1.65;margin-bottom:22px;max-width:44ch}
-.cp-pts{list-style:none;border-top:1px solid var(--line)}
+.cp-pts{display:grid;grid-row:span 4;grid-template-rows:subgrid;list-style:none;border-top:1px solid var(--line)}
 .cp-pts li{padding:15px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--text);line-height:1.6}
 .cp-pts li b{display:block;color:var(--ink);font-size:13px;margin-bottom:4px;letter-spacing:-.01em}
-.cp-links{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.cp-pts a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px}
+.cp-pts a:hover{text-decoration-color:currentColor}
 
 /* Exemple daté : deux sorties réelles côte à côte */
 .cp-ex{padding:80px 0 0;background:#fff}
-.cp-ex .sec-head{text-align:left;margin:0 0 28px;max-width:720px}
+.cp-ex .sec-head{text-align:center;margin:0 auto 28px;max-width:760px}
 .cp-ex-src{max-width:980px;margin:0 auto 20px;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
 .cp-ex-lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .cp-ex-src p{font-size:15px;color:var(--ink);line-height:1.6}
@@ -103,7 +106,8 @@ canonical: https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/
 .cp-ex-cap{max-width:980px;margin:14px auto 0;font-size:12.5px;color:var(--muted);line-height:1.55}
 
 @media(max-width:940px){
-  .cp-fair-grid{grid-template-columns:1fr;gap:36px}
+  .cp-fair-grid{grid-template-columns:1fr;grid-template-rows:none;row-gap:36px}
+  .cp-col,.cp-pts{display:block;grid-row:auto}
   .cp-col > p{max-width:none}
   .cp-ex-grid{grid-template-columns:1fr}
   .cp-answer .box{padding:24px 22px}
@@ -162,12 +166,8 @@ canonical: https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/
           <li><b>Le lieu de traitement, décidé par vous</b>Stockage sur des serveurs suisses dans tous les cas ; traitement exclusivement en Suisse avec LexMachina ou en mode Highly sensitive content, en allemand, français, italien et anglais.</li>
           <li><b>Un avertissement au bon moment</b>Choisir un moteur hébergé à l'étranger affiche l'avis Attorney-Client privilege de votre organisation, dans l'outil, au moment du choix, pas dans une charte oubliée.</li>
           <li><b>La terminologie suisse, sourcée</b>Le concordancier CHnell montre le terme dans des segments alignés tirés de la Feuille fédérale, de fedlex.admin.ch ou d'autres sources officielles, avec son domaine.</li>
-          <li><b>La suite du travail</b>Alternatives comparées par moteur, relecture Light, Full ou Double review commandée dans l'outil, devis et délai, traduction certifiée, notariée ou apostillée.</li>
+          <li><b>La suite du travail</b><a href="{{ROOT}}fr/corrext/traduction-texte-et-document/">Alternatives comparées par moteur</a>, <a href="{{ROOT}}fr/corrext/gestion-de-projet/">relecture Light, Full ou Double review commandée dans l'outil</a>, devis et délai, traduction certifiée, notariée ou apostillée.</li>
         </ul>
-        <div class="cp-links">
-          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Gestion de projet : la relecture humaine commandée dans l'outil <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">Traduction texte et document : choisir son moteur et comparer les alternatives <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-        </div>
       </div>
     </div>
   </div>
@@ -260,25 +260,25 @@ canonical: https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/
 <section class="cp-ex" id="exemple">
   <div class="container">
     <div class="sec-head">
-      <h2>Un exemple, sur un article du Code des obligations</h2>
-      <p>Une phrase de droit des contrats, traduite du français vers l'allemand dans Corrext, mode Highly sensitive content activé. Les deux sorties ci-dessous ont été récoltées le même jour, dans la même interface.</p>
+      <h2>Un exemple, sur un article de la loi sur les banques</h2>
+      <p>Une phrase de droit bancaire, traduite du français vers l'allemand dans Corrext. Les deux sorties ci-dessous ont été récoltées le même jour, dans le même panneau d'alternatives.</p>
     </div>
     <div class="cp-ex-src">
       <p class="cp-ex-lbl">Source · français</p>
-      <p>Le débiteur en demeure doit des intérêts moratoires au taux de 5% l'an, conformément à l'art. 104 al. 1 CO, sans qu'une mise en demeure formelle soit nécessaire lorsqu'un terme a été convenu.</p>
+      <p>L'établissement assujetti veille au respect du secret bancaire au sens de l'art. 47 LB et met en œuvre les exigences de la FINMA en matière de lutte contre le blanchiment d'argent.</p>
     </div>
     <div class="cp-ex-grid">
       <div class="cp-ex-card own">
         <span class="cp-ex-eng"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg> LexMachina</span>
-        <p lang="de">Der säumige Schuldner schuldet gemäss <mark>Art. 104 Abs. 1 OR</mark> Verzugszinsen von 5 % pro Jahr; eine förmliche Mahnung ist nicht erforderlich, wenn ein <mark>Termin</mark> vereinbart wurde.</p>
+        <p lang="de">Das <mark>beaufsichtigte</mark> Institut sorgt für die Einhaltung des Bankgeheimnisses nach <mark>Artikel 47 BankG</mark> und setzt die Anforderungen der FINMA zur Bekämpfung der Geldwäscherei um.</p>
       </div>
       <div class="cp-ex-card">
         <span class="cp-ex-eng">DeepL Pro</span>
-        <p lang="de">Der in Verzug befindliche Schuldner schuldet gemäss <mark>Art. 104 Abs. 1 OR</mark> Verzugszinsen in Höhe von 5 % pro Jahr, ohne dass eine förmliche Mahnung erforderlich ist, sofern eine <mark>Frist</mark> vereinbart wurde.</p>
+        <p lang="de">Das <mark>unterstellte</mark> Institut sorgt für die Einhaltung des Bankgeheimnisses im Sinne von <mark>Art. 47 BankG</mark> und setzt die Anforderungen der FINMA zur Bekämpfung der Geldwäscherei um.</p>
       </div>
     </div>
-    <p class="cp-ex-note">Les deux sorties sont justes : chacune nomme correctement l'art. 104 al. 1 OR et respecte la graphie suisse en ss. Elles divergent sur un point qu'un traducteur juridique tranchera contre le texte allemand du CO, et non à l'oreille : la manière de rendre le « terme » convenu, Termin d'un côté, Frist de l'autre.</p>
-    <p class="cp-ex-cap">Sorties réelles obtenues dans Corrext le 14 septembre 2026, sur cette phrase précise, en français vers l'allemand. Il s'agit d'un exemple ponctuel et daté, pas d'une mesure : une autre phrase, une autre paire de langues ou une autre génération donneraient un autre résultat. C'est justement pourquoi Corrext affiche les alternatives attribuées à leur moteur et permet de vérifier chaque terme dans CHnell avant de décider.</p>
+    <p class="cp-ex-note">Les deux sorties sont justes : chacune cite l'art. 47 BankG, l'abréviation allemande de la loi sur les banques, et emploie le terme suisse Geldwäscherei plutôt que Geldwäsche. Elles divergent sur un point qu'un traducteur juridique tranchera contre le texte allemand applicable, et non à l'oreille : la manière de rendre l'« établissement assujetti », beaufsichtigt d'un côté, unterstellt de l'autre.</p>
+    <p class="cp-ex-cap">Sorties réelles obtenues dans Corrext le 14 septembre 2026, sur cette phrase précise, en français vers l'allemand, dans le panneau Alternatives. Il s'agit d'un exemple ponctuel et daté, pas d'une mesure : une autre phrase, une autre paire de langues ou une autre génération donneraient un autre résultat. C'est justement pourquoi Corrext affiche les alternatives attribuées à leur moteur et permet de vérifier chaque terme dans CHnell avant de décider.</p>
   </div>
 </section>
 
@@ -301,13 +301,12 @@ canonical: https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/
 </section>
 
 <!-- LIENS VOISINS -->
-<section class="siblings" style="padding:0 0 84px">
+<section class="vn">
   <div class="container">
     <h2>Les autres comparatifs</h2>
-    <div class="siblings-row">
-      <a href="{{ROOT}}fr/comparatif/chatgpt-traduction-juridique/"><b>Corrext et les LLM généralistes</b><span>ChatGPT, Azure OpenAI GPT, Claude : excellents pour reformuler, à encadrer pour engager.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/comparatif/agence-ou-plateforme/"><b>Agence de traduction ou plateforme</b><span>Deux modèles de travail comparés, et comment Corrext commande la relecture externe.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Traduction texte et document</b><span>L'outil dans lequel se choisit le moteur, s'ouvrent les alternatives et se vérifie un terme.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    <div class="vs-grid">
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/chatgpt-traduction-juridique/" aria-label="Comparatif Corrext et les LLM généralistes"><span class="vs-duo" aria-hidden="true"><b>Corrext</b><i></i><b>LLM généralistes</b></span><em>Lire le comparatif <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" aria-label="Comparatif agence de traduction ou plateforme"><span class="vs-duo" aria-hidden="true"><b>Agence</b><i></i><b>Plateforme</b></span><em>Lire le comparatif <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
     </div>
   </div>
 </section>
