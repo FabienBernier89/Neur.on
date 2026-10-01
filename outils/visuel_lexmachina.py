@@ -1,256 +1,107 @@
-"""Visuel du hero LexMachina : un réseau de neurones en forme de galaxie spirale.
+"""Visuel du hero LexMachina : réseau de neurones épuré, en perspective, en cours d'entraînement.
 
-Chaque étoile des bras est un neurone : corps cellulaire lumineux, arbre de dendrites ramifiées,
-axone courbé qui suit le sens de rotation de la galaxie et se termine par des boutons synaptiques.
-Le dessin se fait sur un canvas dans Chrome sans interface (mélange additif, halo lumineux par flou),
-puis Python écrit l'image et la couche animée des influx nerveux.
+SVG animé (SMIL), fond transparent, sans texte. Quelques signaux traversent les couches
+(propagation avant) puis reviennent (rétropropagation) ; les connexions respirent ; l'ensemble flotte.
+Les animations sont coupées si l'utilisateur limite les mouvements (prefers-reduced-motion).
 
 Usage : python3 outils/visuel_lexmachina.py
-Produit :
-  assets/img/lexmachina-reseau.webp (1040 × 800 px, affiché en 520 × 400, fond transparent)
-  la couche des influx qui parcourent quelques axones (SVG animé en SMIL), écrite directement dans
-  src/pages/lexmachina/index.html entre les marqueurs <!-- influx:debut --> et <!-- influx:fin -->
-Le dessin est déterministe (graine fixe) : même image à chaque exécution.
+Écrit le SVG directement dans src/pages/lexmachina/index.html, entre <!-- reseau:debut --> et
+<!-- reseau:fin --> (au premier passage, remplace l'ancienne image WebP et sa couche d'influx).
+Dessin déterministe (graine fixe) : même image à chaque exécution.
 """
-import base64, html, io, json, os, re, subprocess, tempfile
+import os, re
+import random
+random.seed(41)
+W,H,T=520,400,10.0
+X=[70,197,323,450]; N=[4,6,6,3]; CY=200; GAP=54
+ys=lambda n:[CY+(i-(n-1)/2)*GAP for i in range(n)]
+nodes=[[(X[l],y) for y in ys(N[l])] for l in range(4)]
+f=lambda v:f"{v:.1f}"
+import math
+# Perspective : le plan du réseau pivote en 3D (rotation Y puis X), le fond s'éloigne
+AY,AX,D,K=math.radians(-34),math.radians(14),700,1.06
+def pr(x,y):
+    u,v=x-260,y-200
+    x1,z=u*math.cos(AY),u*math.sin(AY)
+    y1,z1=v*math.cos(AX)-z*math.sin(AX),v*math.sin(AX)+z*math.cos(AX)
+    sc=D/(D+z1)
+    return (238+x1*sc*K,200+y1*sc*K,sc)
 
-from PIL import Image
+kt=lambda v:f"{max(0,min(1,v/T)):.4f}"
+def curve(a,b):
+    dx=(b[0]-a[0])*.5
+    p=[pr(*a),pr(a[0]+dx,a[1]),pr(b[0]-dx,b[1]),pr(*b)]
+    return f"M{f(p[0][0])} {f(p[0][1])}C{f(p[1][0])} {f(p[1][1])} {f(p[2][0])} {f(p[2][1])} {f(p[3][0])} {f(p[3][1])}"
+o=[f'<svg class="nnviz" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Réseau de neurones en cours d’entraînement : des signaux traversent les couches puis reviennent pour ajuster les connexions" xmlns="http://www.w3.org/2000/svg">']
+o.append('<defs>'
+ '<radialGradient id="nnh"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".35" stop-color="#96BCFF" stop-opacity=".45"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>'
+ '<radialGradient id="nnbg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#317BFF" stop-opacity=".22"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>'
+ f'<linearGradient id="nne" x1="0" y1="0" x2="{W}" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7FB0FF"/><stop offset=".5" stop-color="#317BFF"/><stop offset="1" stop-color="#96BCFF"/></linearGradient>'
+ '<linearGradient id="nnn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f5fd6"/><stop offset="1" stop-color="#06246b"/></linearGradient>'
+ '</defs>')
+o.append('<g><animateTransform class="nn-anim" attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/>')
+o.append(f'<ellipse cx="{W/2}" cy="{CY}" rx="250" ry="185" fill="url(#nnbg)"/>')
+# Connexions : courbes douces, poids qui respirent
+o.append('<g fill="none" stroke="url(#nne)" stroke-linecap="round">')
+E={}
+for l in range(3):
+    for i,a in enumerate(nodes[l]):
+        for j,b in enumerate(nodes[l+1]):
+            d=curve(a,b); E[(l,i,j)]=d
+            op=.10+.22*random.random()**1.5; o2=.08+.32*random.random()
+            du=random.uniform(3,7); bg=random.uniform(0,du)
+            o.append(f'<path d="{d}" stroke-width=".9" stroke-opacity="{op:.2f}"><animate class="nn-anim" attributeName="stroke-opacity" values="{op:.2f};{o2:.2f};{op:.2f}" dur="{du:.1f}s" begin="-{bg:.1f}s" repeatCount="indefinite"/></path>')
+o.append('</g>')
+# Deux passes par cycle : propagation avant, puis retour (rétropropagation)
+def route(): return [random.randrange(n) for n in N]
+FW0,FG,FD=.3,.75,.7
+BW0,BG,BD=2.9,.6,.55
+anim=[];act={}
+for t0 in (0,T/2):
+    rs=[route() for _ in range(3)]
+    segs=sorted({(l,r[l],r[l+1]) for r in rs for l in range(3)})
+    for r in rs:
+        for l in range(4): act.setdefault((l,r[l]),[]).append(t0+FW0+l*FG)
+    for (l,i,j) in segs:
+        d=E[(l,i,j)]
+        s=t0+FW0+l*FG+.05; e=s+FD
+        # trait lumineux qui suit l'influx
+        anim.append(f'<path d="{d}" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;{kt(s)};{kt(e)};{kt(e+.6)};1" dur="{T}s" repeatCount="indefinite"/></path>')
+        anim.append(f'<g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="{d}" dur="{T}s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;{kt(s)};{kt(e)};1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;{kt(s)};{kt(s+.08)};{kt(e-.06)};{kt(e)};1" dur="{T}s" repeatCount="indefinite"/></g>')
+        # retour plus discret
+        s=t0+BW0+(2-l)*BG; e=s+BD
+        anim.append(f'<g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="{d}" dur="{T}s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;{kt(s)};{kt(e)};1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;{kt(s)};{kt(s+.08)};{kt(e-.06)};{kt(e)};1" dur="{T}s" repeatCount="indefinite"/></g>')
+o.append('<g class="nn-anim">'+"".join(anim)+'</g>')
+# Neurones : disque, anneau, noyau ; halo au passage de l'influx
+for l in range(4):
+    for i,(x0,y0) in enumerate(nodes[l]):
+        x,y,sc=pr(x0,y0); R=lambda r:f"{r*sc:.2f}"; dim=min(1,.55+.6*(sc-.8)/.4)
+        o.append(f'<g opacity="{dim:.2f}">')
+        o.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="{R(9)}" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="{f(x)}" cy="{f(y)}" r="{R(3)}" fill="#96BCFF" fill-opacity=".75"/>')
+        ts=act.get((l,i))
+        if ts:
+            v=["0"];k=["0"];fin=-1
+            # Instants dédoublonnés ; deux activations qui se chevauchent ne font qu'une lueur (keyTimes croissants)
+            for t in sorted(set(ts)):
+                if t-.03<=fin: continue
+                for dt,val in ((-.03,0),(.15,1),(1.1,0)): k.append(kt(t+dt)); v.append(str(val))
+                fin=t+1.1
+            k.append("1"); v.append("0")
+            o.append(f'<g class="nn-anim" opacity="0"><circle cx="{f(x)}" cy="{f(y)}" r="{R(24)}" fill="url(#nnh)"/><circle cx="{f(x)}" cy="{f(y)}" r="{R(9)}" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="{f(x)}" cy="{f(y)}" r="{R(3.4)}" fill="#fff"/><animate attributeName="opacity" values="{";".join(v)}" keyTimes="{";".join(k)}" dur="{T}s" repeatCount="indefinite"/></g>')
+        o.append('</g>')
+o.append('</g></svg>')
+svg="".join(o).replace('role="img"','role="img" focusable="false"')
+svg=svg.replace('<defs>','<style>@media (prefers-reduced-motion:reduce){.nnviz .nn-anim{display:none}}</style><defs>',1)
 
-ICI = os.path.dirname(os.path.abspath(__file__))
-IMG = os.path.join(ICI, "..", "assets", "img")
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-
-DESSIN = r"""
-const W=520,H=400,S=2;
-function toile(){const c=document.createElement('canvas');c.width=W*S;c.height=H*S;const x=c.getContext('2d');x.setTransform(S,0,0,S,0,0);return [c,x];}
-let graine=230;
-const R=()=>{graine|=0;graine=graine+0x6D2B79F5|0;let t=Math.imul(graine^graine>>>15,1|graine);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};
-const U=(a,b)=>a+(b-a)*R();
-const G=()=>{let u=0;while(!u)u=R();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*R());};
-const TAU=Math.PI*2;
-
-// Galaxie vue de biais : disque incliné puis tourné
-const CX=W/2,CY=H/2+2,K=224,INC=.56,ROT=-17*Math.PI/180,cr=Math.cos(ROT),sr=Math.sin(ROT);
-const P=(u,v)=>[CX+K*(u*cr-v*INC*sr),CY+K*(u*sr+v*INC*cr)];
-const PV=(du,dv)=>{const x=du*cr-dv*INC*sr,y=du*sr+dv*INC*cr,l=Math.hypot(x,y)||1;return [x/l,y/l];};
-// Les arbres de dendrites sont moins aplatis que le disque, pour rester lisibles
-const LINC=.74;
-const L=(x,y,du,dv)=>[x+du*cr-dv*LINC*sr,y+du*sr+dv*LINC*cr];
-
-// Bras en spirale logarithmique : deux bras majeurs, deux bras secondaires
-const PAS=Math.tan(15*Math.PI/180),R0=.11;
-const BRAS=[{t0:0,r1:.13,r2:.99,w:1},{t0:Math.PI,r1:.13,r2:.99,w:1},{t0:Math.PI*.5+.55,r1:.34,r2:.86,w:.5},{t0:Math.PI*1.5+.55,r1:.38,r2:.8,w:.42}];
-function surBras(b,r,dec){
-  const th=b.t0+Math.log(r/R0)/PAS,u=r*Math.cos(th),v=r*Math.sin(th);
-  const er=[Math.cos(th),Math.sin(th)],et=[-Math.sin(th),Math.cos(th)];
-  return [u+er[0]*dec,v+er[1]*dec];
-}
-// Sens de l'écoulement le long des bras (vers l'extérieur), en tout point du disque
-function flux(u,v){const r=Math.hypot(u,v)||1,er=[u/r,v/r],et=[-v/r,u/r],sp=Math.sin(15*Math.PI/180),cp=Math.cos(15*Math.PI/180);return [er[0]*sp+et[0]*cp,er[1]*sp+et[1]*cp];}
-
-const [cScene,scene]=toile(),[cLoin,loin]=toile();
-const neurones=[];
-function neurone(u,v,o){
-  const [x,y]=P(u,v),r=Math.hypot(u,v),pres=Math.max(-1,Math.min(1,v));
-  const n=Object.assign({u,v,x,y,r,pres,ctx:pres<-.38?loin:scene,b:(.74+.26*(pres+1)/2)*(1-.18*r)},o);
-  neurones.push(n);return n;
-}
-
-// 1 · Neurones le long des bras
-const parBras=BRAS.map((b,i)=>{
-  const l=[];let r=b.r1*U(1,1.08);
-  while(r<b.r2){
-    const [u,v]=surBras(b,r,G()*.022);
-    const pivot=R()<(b.w>.9?.17:.08);
-    l.push(neurone(u,v,{bras:i,s:pivot?U(2.7,3.5):U(1.15,2.2)*(b.w>.9?1:.85),pivot,dl:(4+16*Math.pow(Math.min(1,r/.7),1.3))*(pivot?1.25:1)*(b.w>.9?1:.8),k:pivot?6+(R()*3|0):(r<.3?3:4)+(R()*3|0)}));
-    r*=1+U(.075,.11);
-  }
-  return l;
-});
-// 2 · Bulbe central : petits neurones serrés
-const coeur=[];
-for(let i=0;i<20;i++){const r=Math.abs(G())*.07+.018,a=R()*TAU;coeur.push(neurone(r*Math.cos(a),r*Math.sin(a),{bras:-1,s:U(.8,1.4),pivot:false,dl:U(3,5.5),k:3+(R()*2|0)}));coeur[coeur.length-1].b*=.6;}
-// 3 · Neurones isolés entre les bras, plus discrets
-const isoles=[];
-for(let i=0;i<18;i++){const r=U(.3,.92),a=R()*TAU;const n=neurone(r*Math.cos(a),r*Math.sin(a),{bras:-2,s:U(.9,1.4),pivot:false,dl:U(5,9),k:3+(R()*2|0)});n.b*=.62;isoles.push(n);}
-
-// ---------- Fond : disque, nébuleuse des bras, poussière d'étoiles, bulbe ----------
-scene.globalCompositeOperation='lighter';loin.globalCompositeOperation='lighter';
-function ellipse(ctx,rad,stops){ctx.save();ctx.translate(CX,CY);ctx.rotate(ROT);ctx.scale(1,INC);const g=ctx.createRadialGradient(0,0,0,0,0,rad);stops.forEach(s=>g.addColorStop(s[0],s[1]));ctx.fillStyle=g;ctx.fillRect(-rad,-rad,rad*2,rad*2);ctx.restore();}
-ellipse(scene,K*1.04,[[0,'rgba(120,165,255,.16)'],[.35,'rgba(49,123,255,.07)'],[1,'rgba(49,123,255,0)']]);
-function tache(ctx,x,y,rad,c,a){const g=ctx.createRadialGradient(x,y,0,x,y,rad);g.addColorStop(0,`rgba(${c},${a})`);g.addColorStop(1,`rgba(${c},0)`);ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,rad,0,TAU);ctx.fill();}
-BRAS.forEach(b=>{for(let r=b.r1*.8;r<b.r2*1.04;r+=.006){const [u,v]=surBras(b,r,G()*.03);const [x,y]=P(u,v);const f=Math.min(1,(r-b.r1*.8)/.08)*Math.min(1,(b.r2*1.04-r)/.12);tache(scene,x,y,(7+17*r)*U(.7,1.25),'49,123,255',.05*b.w*f);if(R()<.35)tache(scene,x,y,(3+6*r)*U(.6,1.2),'156,194,255',.05*b.w*f);}});
-// Poussière : la matière des bras, plus quelques étoiles du disque
-for(let i=0;i<11000;i++){
-  let u,v,r;
-  if(R()<.8){const b=BRAS[R()<.82?(R()*2|0):2+(R()*2|0)];r=b.r1*.7+(b.r2*1.05-b.r1*.7)*Math.pow(R(),1.25);[u,v]=surBras(b,r,G()*(.014+.05*r));}
-  else{r=-Math.log(1-R()*.98)*.28;const a=R()*TAU;u=r*Math.cos(a);v=r*Math.sin(a);}
-  if(r>1.1)continue;
-  const [x,y]=P(u,v),pres=Math.max(-1,Math.min(1,v)),a=U(.12,.72)*(.75+.25*(pres+1)/2)*Math.min(1,(1.1-r)/.2);
-  const c=r<.3?'232,241,255':(R()<.5?'188,213,255':'140,182,255');
-  scene.fillStyle=`rgba(${c},${a.toFixed(3)})`;
-  const z=R()<.06?U(.55,.9):U(.22,.48);
-  scene.beginPath();scene.arc(x,y,z,0,TAU);scene.fill();
-}
-// Bulbe : cœur lumineux et halo
-ellipse(scene,K*.34,[[0,'rgba(255,255,255,.7)'],[.05,'rgba(232,241,255,.5)'],[.16,'rgba(150,190,255,.26)'],[.42,'rgba(70,135,255,.1)'],[1,'rgba(49,123,255,0)']]);
-for(let i=0;i<900;i++){const r=Math.abs(G())*.09,a=R()*TAU;const [x,y]=P(r*Math.cos(a),r*Math.sin(a));scene.fillStyle=`rgba(232,241,255,${U(.1,.42).toFixed(2)})`;scene.beginPath();scene.arc(x,y,U(.2,.5),0,TAU);scene.fill();}
-
-// ---------- Axones ----------
-const axones=[];
-function bez(p,t){const m=1-t;return [m*m*m*p[0][0]+3*m*m*t*p[1][0]+3*m*t*t*p[2][0]+t*t*t*p[3][0],m*m*m*p[0][1]+3*m*m*t*p[1][1]+3*m*t*t*p[2][1]+t*t*t*p[3][1]];}
-function axone(A,B,genre){
-  if(A===B)return;
-  const p0=[A.x,A.y],p3=[B.x+G()*1.2,B.y+G()*1.2],d=Math.hypot(p3[0]-p0[0],p3[1]-p0[1]);if(d<4)return;
-  let fa=flux(A.u,A.v),fb=flux(B.u,B.v);
-  const ch=[p3[0]-p0[0],p3[1]-p0[1]];
-  let ta=PV(fa[0],fa[1]),tb=PV(fb[0],fb[1]);
-  if(ta[0]*ch[0]+ta[1]*ch[1]<0)ta=[-ta[0],-ta[1]];
-  if(tb[0]*ch[0]+tb[1]*ch[1]<0)tb=[-tb[0],-tb[1]];
-  const k=d*(genre==='long'?.42:.36);
-  const p=[p0,[p0[0]+ta[0]*k,p0[1]+ta[1]*k],[p3[0]-tb[0]*k,p3[1]-tb[1]*k],p3];
-  const ctx=(A.ctx===loin&&B.ctx===loin)?loin:scene;
-  const b=Math.min(A.b,B.b)*(genre==='long'?.5:genre==='coeur'?.85:1);
-  axones.push({p,d,b,genre,ctx,A,B});
-}
-parBras.forEach(l=>{for(let i=0;i<l.length;i++){if(i+1<l.length&&R()<.94)axone(l[i],l[i+1],'bras');if(i+2<l.length&&R()<.3)axone(l[i],l[i+2],'bras');}});
-const tous=neurones.filter(n=>n.bras>=0);
-tous.forEach(n=>{if(R()<.3){const c=tous.filter(m=>m.bras!==n.bras).map(m=>[m,Math.hypot(m.x-n.x,m.y-n.y)]).filter(e=>e[1]>26&&e[1]<92).sort((a,b)=>a[1]-b[1]);if(c.length)axone(n,c[R()*Math.min(2,c.length)|0][0],'travers');}});
-tous.forEach(n=>{if(n.r<.48&&R()<.38)axone(n,coeur[R()*coeur.length|0],'coeur');});
-parBras.forEach(l=>{if(l.length)axone(coeur[R()*coeur.length|0],l[0],'coeur');});
-coeur.forEach(n=>{const c=coeur.filter(m=>m!==n).sort((a,b)=>Math.hypot(a.x-n.x,a.y-n.y)-Math.hypot(b.x-n.x,b.y-n.y));axone(n,c[R()*3|0],'coeur');});
-isoles.forEach(n=>{const c=tous.map(m=>[m,Math.hypot(m.x-n.x,m.y-n.y)]).sort((a,b)=>a[1]-b[1]);axone(n,c[0][0],'bras');if(R()<.6)axone(c[1][0],n,'bras');});
-for(let i=0,essais=0;i<7&&essais<400;essais++){const A=tous[R()*tous.length|0],B=tous[R()*tous.length|0];const d=Math.hypot(A.x-B.x,A.y-B.y);if(d>120&&d<230&&A.bras!==B.bras){axone(A,B,'long');i++;}}
-
-function tracerAxone(a){
-  const {p,ctx,b}=a;
-  ctx.beginPath();ctx.moveTo(...p[0]);ctx.bezierCurveTo(...p[1],...p[2],...p[3]);
-  ctx.lineCap='round';
-  ctx.strokeStyle=`rgba(49,123,255,${(.07*b).toFixed(3)})`;ctx.lineWidth=2.8;ctx.stroke();
-  ctx.strokeStyle=`rgba(160,195,255,${(.36*b).toFixed(3)})`;ctx.lineWidth=a.genre==='long'?.45:U(.55,.85);ctx.stroke();
-  // Cône d'émergence : l'axone part plus épais du corps cellulaire
-  ctx.beginPath();ctx.moveTo(...p[0]);const q=bez(p,.08);ctx.lineTo(...q);ctx.strokeStyle=`rgba(210,226,255,${(.4*b).toFixed(3)})`;ctx.lineWidth=1.2;ctx.stroke();
-  // Arborisation terminale et boutons synaptiques
-  const e=p[3],f=bez(p,.97),dir=Math.atan2(e[1]-f[1],e[0]-f[0]),nb=3+(R()*3|0);
-  for(let i=0;i<nb;i++){
-    const an=dir+(i/(nb-1)-.5)*U(1.6,2.4)+G()*.15,lg=U(2.5,6);
-    const m=[e[0]+Math.cos(an)*lg*.5+G()*.6,e[1]+Math.sin(an)*lg*.5+G()*.6],t=[e[0]+Math.cos(an)*lg,e[1]+Math.sin(an)*lg];
-    ctx.beginPath();ctx.moveTo(...e);ctx.quadraticCurveTo(...m,...t);ctx.strokeStyle=`rgba(169,200,255,${(.38*b).toFixed(3)})`;ctx.lineWidth=.4;ctx.stroke();
-    tache(ctx,t[0],t[1],2.2,'156,194,255',.35*b);
-    ctx.fillStyle=`rgba(236,244,255,${(.85*b).toFixed(3)})`;ctx.beginPath();ctx.arc(t[0],t[1],.55,0,TAU);ctx.fill();
-  }
-  // Quelques influx figés en plein trajet, avec leur traînée
-  if(a.genre!=='long'&&a.d>30&&R()<.2){
-    const t0=U(.3,.78);
-    for(let j=0;j<14;j++){const t=t0-j*.012;if(t<0)break;const q=bez(p,t);ctx.fillStyle=`rgba(214,230,255,${(.5*(1-j/14)*b).toFixed(3)})`;ctx.beginPath();ctx.arc(q[0],q[1],1.05*(1-j/18),0,TAU);ctx.fill();}
-    const q=bez(p,t0);tache(ctx,q[0],q[1],7,'120,170,255',.45*b);tache(ctx,q[0],q[1],2.6,'255,255,255',.85*b);
-  }
-}
-axones.forEach(tracerAxone);
-
-// ---------- Dendrites ----------
-function pousser(x,y,a,lg,w,d,out){
-  const pas=Math.max(3,Math.round(lg/1.7)),pts=[[x,y]];let c=G()*.05;
-  for(let i=0;i<pas;i++){c+=G()*.045;a+=c+G()*.11;x+=Math.cos(a)*lg/pas;y+=Math.sin(a)*lg/pas;pts.push([x,y]);}
-  const w1=Math.max(.2,w*.58);out.push({pts,w0:w,w1,d});
-  if(d<3&&lg>2.2){const nb=R()<.22?3:(R()<.9?2:1),ec=U(.32,.66);
-    for(let j=0;j<nb;j++){const o=nb===1?G()*.3:(j/(nb-1)-.5)*2*ec;pousser(x,y,a+o+G()*.08,lg*U(.48,.72),w1*.88,d+1,out);}}
-}
-const ALPHA=[.56,.42,.3,.21],TEINTE=['214,229,255','170,201,255','132,176,255','110,160,255'];
-function tracerNeurone(n){
-  const ctx=n.ctx,br=[];
-  const a0=R()*TAU;for(let i=0;i<n.k;i++)pousser(0,0,a0+i*TAU/n.k+G()*.28,n.dl*U(.55,1.05),n.s*.95,0,br);
-  br.forEach(rm=>{
-    const pts=rm.pts.map(q=>L(n.x,n.y,q[0],q[1])),m=pts.length,g=[],dr=[];
-    for(let i=0;i<m;i++){const A=pts[Math.max(0,i-1)],B=pts[Math.min(m-1,i+1)];let nx=-(B[1]-A[1]),ny=B[0]-A[0];const l=Math.hypot(nx,ny)||1;nx/=l;ny/=l;const w=(rm.w0+(rm.w1-rm.w0)*i/(m-1))/2;g.push([pts[i][0]+nx*w,pts[i][1]+ny*w]);dr.push([pts[i][0]-nx*w,pts[i][1]-ny*w]);}
-    ctx.fillStyle=`rgba(${TEINTE[rm.d]},${(ALPHA[rm.d]*n.b).toFixed(3)})`;
-    ctx.beginPath();ctx.moveTo(...g[0]);for(let i=1;i<m;i++)ctx.lineTo(...g[i]);ctx.arc(pts[m-1][0],pts[m-1][1],rm.w1/2,0,TAU);for(let i=m-1;i>=0;i--)ctx.lineTo(...dr[i]);ctx.closePath();ctx.fill();
-    // Épines dendritiques
-    if(rm.d>=1)for(let i=1;i<m;i++)if(R()<.16){const A=pts[i-1],B=pts[i];let nx=-(B[1]-A[1]),ny=B[0]-A[0];const l=Math.hypot(nx,ny)||1,sg=R()<.5?-1:1,o=rm.w1/2+U(.4,.9);ctx.fillStyle=`rgba(200,222,255,${(.55*n.b).toFixed(3)})`;ctx.beginPath();ctx.arc(B[0]+nx/l*o*sg,B[1]+ny/l*o*sg,.26,0,TAU);ctx.fill();}
-  });
-  // Corps cellulaire : halo, membrane, noyau
-  const s=n.s;
-  tache(ctx,n.x,n.y,s*(n.pivot?7:4.6),'49,123,255',(n.pivot?.32:.2)*n.b);
-  tache(ctx,n.x,n.y,s*2.2,'156,194,255',.34*n.b);
-  ctx.save();ctx.translate(n.x,n.y);ctx.rotate(ROT+R()*.6-.3);ctx.scale(1,U(.78,.95));
-  const g=ctx.createRadialGradient(-s*.2,-s*.2,0,0,0,s*1.15);g.addColorStop(0,`rgba(255,255,255,${(.98*n.b).toFixed(3)})`);g.addColorStop(.5,`rgba(214,230,255,${(.85*n.b).toFixed(3)})`);g.addColorStop(1,`rgba(120,170,255,${(.25*n.b).toFixed(3)})`);
-  ctx.fillStyle=g;ctx.beginPath();ctx.arc(0,0,s*1.15,0,TAU);ctx.fill();ctx.restore();
-  ctx.fillStyle=`rgba(255,255,255,${(.95*n.b).toFixed(3)})`;ctx.beginPath();ctx.arc(n.x,n.y,s*.42,0,TAU);ctx.fill();
-}
-neurones.slice().sort((a,b)=>a.pres-b.pres).forEach(tracerNeurone);
-
-// ---------- Composition : profondeur de champ, halo lumineux, fondu des bords ----------
-const [cBase,base]=toile(),[cFin,fin]=toile();
-base.setTransform(1,0,0,1,0,0);fin.setTransform(1,0,0,1,0,0);
-base.globalCompositeOperation='lighter';
-base.filter='blur(1.6px)';base.globalAlpha=.9;base.drawImage(cLoin,0,0);
-base.filter='none';base.globalAlpha=1;base.drawImage(cScene,0,0);
-fin.globalCompositeOperation='lighter';
-fin.filter='blur(26px)';fin.globalAlpha=.3;fin.drawImage(cBase,0,0);
-fin.filter='blur(7px)';fin.globalAlpha=.3;fin.drawImage(cBase,0,0);
-fin.filter='blur(1.2px)';fin.globalAlpha=.18;fin.drawImage(cBase,0,0);
-fin.filter='none';fin.globalAlpha=1;fin.drawImage(cBase,0,0);
-fin.globalCompositeOperation='destination-in';
-fin.save();fin.translate(W*S/2,H*S/2);fin.scale(1,H/W);
-const m=fin.createRadialGradient(0,0,0,0,0,W*S/2);m.addColorStop(0,'#000');m.addColorStop(.8,'#000');m.addColorStop(1,'rgba(0,0,0,0)');
-fin.fillStyle=m;fin.fillRect(-W*S,-W*S,W*S*2,W*S*2);fin.restore();
-
-// Influx animés : quelques axones bien visibles, répartis sur toute la galaxie
-const choisis=[];
-axones.filter(a=>a.genre!=='long'&&a.ctx===scene&&a.d>48).sort(()=>R()-.5).forEach(a=>{const c=bez(a.p,.5);if(choisis.length<9&&choisis.every(o=>Math.hypot(o.c[0]-c[0],o.c[1]-c[1])>62))choisis.push({a,c});});
-const f=v=>v.toFixed(1);
-const influx=choisis.map(({a})=>({d:`M${f(a.p[0][0])} ${f(a.p[0][1])}C${f(a.p[1][0])} ${f(a.p[1][1])} ${f(a.p[2][0])} ${f(a.p[2][1])} ${f(a.p[3][0])} ${f(a.p[3][1])}`,l:Math.round(a.d)}));
-document.getElementById('o').textContent=JSON.stringify({png:cFin.toDataURL('image/png'),influx,neurones:neurones.length,axones:axones.length});
-"""
-
-
-def svg_influx(influx):
-    """Couche animée : un influx parcourt chaque axone choisi, puis s'éteint ; les départs sont décalés."""
-    elems = []
-    for i, a in enumerate(influx):
-        trajet = round(1.6 + a["l"] / 55, 2)
-        cycle = round(trajet + 2.4 + (i * 1.37) % 3.2, 2)
-        k = round(trajet / cycle, 3)
-        debut = round((i * 2.13) % cycle, 2)
-        # La tête de l'influx, puis deux points de traînée qui la suivent avec un léger retard
-        for j, (halo, point, opa) in enumerate(((8, 1.6, 1), (5, 1.1, .5), (3.5, .8, .25))):
-            dep = round(debut + j * .07, 2)
-            elems.append(
-                f'<g opacity="0"><circle r="{halo}" fill="url(#nlinflux)" opacity="{opa}"/><circle r="{point}" fill="#fff" opacity="{opa}"/>'
-                f'<animateMotion path="{a["d"]}" dur="{cycle}s" begin="{dep}s" repeatCount="indefinite" '
-                f'keyPoints="0;1;1" keyTimes="0;{k};1" calcMode="spline" keySplines=".4 0 .6 1;0 0 1 1"/>'
-                f'<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;{round(k * .12, 3)};{round(k * .82, 3)};{k};1" '
-                f'dur="{cycle}s" begin="{dep}s" repeatCount="indefinite"/></g>')
-    return ('<svg class="nlviz-influx" viewBox="0 0 520 400" width="520" height="400" aria-hidden="true" focusable="false">'
-            '<defs><radialGradient id="nlinflux"><stop offset="0" stop-color="#fff" stop-opacity=".95"/>'
-            '<stop offset=".3" stop-color="#cfe0ff" stop-opacity=".55"/><stop offset="1" stop-color="#317bff" stop-opacity="0"/>'
-            f'</radialGradient></defs>{"".join(elems)}</svg>')
-
-
-def main():
-    page = f'<!doctype html><html><head><meta charset="utf-8"></head><body><pre id="o"></pre><script>{DESSIN}</script></body></html>'
-    with tempfile.TemporaryDirectory() as d:
-        chemin = os.path.join(d, "v.html")
-        open(chemin, "w").write(page)
-        sortie = subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--virtual-time-budget=30000", "--dump-dom",
-                                 "file://" + chemin], check=True, capture_output=True, text=True).stdout
-    brut = re.search(r'<pre id="o">(.*?)</pre>', sortie, re.S)
-    if not brut or not brut.group(1).strip():
-        raise SystemExit("Le dessin n'a rien renvoyé (erreur JavaScript ?)")
-    data = json.loads(html.unescape(brut.group(1)))
-    img = Image.open(io.BytesIO(base64.b64decode(data["png"].split(",", 1)[1]))).convert("RGBA")
-    img.save(os.path.join(IMG, "lexmachina-reseau.webp"), quality=86, method=6, alpha_quality=90)
-    src = os.path.join(ICI, "..", "src", "pages", "lexmachina", "index.html")
-    page_src = open(src).read()
-    page_src, n = re.subn(r"<!-- influx:debut -->.*?<!-- influx:fin -->",
-                          lambda m: "<!-- influx:debut -->" + svg_influx(data["influx"]) + "<!-- influx:fin -->", page_src, flags=re.S)
-    if n != 1:
-        raise SystemExit("Marqueurs influx introuvables dans la page LexMachina")
-    open(src, "w").write(page_src)
-    for nom in ("lexmachina-reseau.webp",):
-        print(f"écrit : assets/img/{nom} ({os.path.getsize(os.path.join(IMG, nom)) // 1024} Ko)")
-    print(f"{data['neurones']} neurones, {data['axones']} axones, {len(data['influx'])} influx animés")
-
-
-if __name__ == "__main__":
-    main()
+ICI=os.path.dirname(os.path.abspath(__file__))
+SRC=os.path.join(ICI,"..","src","pages","lexmachina","index.html")
+page=open(SRC,encoding="utf-8").read()
+bloc="<!-- reseau:debut -->"+svg+"<!-- reseau:fin -->"
+page,n=re.subn(r"<!-- reseau:debut -->.*?<!-- reseau:fin -->",lambda m:bloc,page,flags=re.S)
+if n==0:
+    # Premier passage : remplace l'image galaxie et la couche d'influx
+    page,n=re.subn(r'<img src="\{\{ROOT\}\}assets/img/lexmachina-reseau\.webp"[^>]*>\s*<!-- influx:debut -->.*?<!-- influx:fin -->',lambda m:bloc,page,flags=re.S)
+if n!=1:
+    raise SystemExit("Emplacement du visuel introuvable dans la page LexMachina")
+open(SRC,"w",encoding="utf-8").write(page)
+print(f"visuel écrit dans la page LexMachina ({len(svg)//1024} Ko)")
