@@ -77,19 +77,34 @@
         "a": "Contentieux",
         "t": "Quatre cents pages de pièces avant l'audience",
         "p": "Le lot part en File translation avec LexMachina et le mode Highly sensitive, revient dans le format d'origine, et l'équipe lit au lieu de déchiffrer. Les termes douteux se vérifient d'un surlignage.",
-        "vis": "lot"
+        "vis": "lot",
+        "fonctions": [
+          "File translation",
+          "LexMachina",
+          "Highly sensitive",
+          "Fast Lookup"
+        ]
       },
       {
         "a": "Transactions",
         "t": "Un contrat de prêt à livrer demain matin",
         "p": "Traduction machine le soir, Full review par un traducteur juridique commandée dans la foulée, délai affiché avant de valider. Le client reçoit un document prêt à signer, pas un brouillon.",
-        "vis": "pret"
+        "vis": "pret",
+        "fonctions": [
+          "Translation project",
+          "Full review",
+          "Délai affiché"
+        ]
       },
       {
         "a": "Arbitrage",
         "t": "Une sentence à citer au mot près",
         "p": "Les alternatives par moteur montrent les formulations concurrentes, CHnell donne l'usage officiel du terme dans la loi et la jurisprudence, et l'associé tranche en connaissance de cause.",
-        "vis": "sentence"
+        "vis": "sentence",
+        "fonctions": [
+          "Alternatives",
+          "CHnell"
+        ]
       }
     ],
     "gov_q": "Un cabinet peut-il confier un dossier à un outil de traduction en ligne ?",
@@ -158,7 +173,12 @@
     ],
     "cta_t": "Voyez Corrext sur vos propres pièces",
     "cta_p": "Une démonstration avec un spécialiste du droit suisse, sur vos formats, vos langues et votre terminologie.",
-    "visuel": true
+    "visuel": true,
+    "temoignage": {
+      "citation": "",
+      "auteur": "",
+      "fonction": ""
+    }
   },
   {
     "slug": "banques-finance",

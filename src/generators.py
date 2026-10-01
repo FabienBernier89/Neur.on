@@ -231,6 +231,43 @@ def outils_visuel(titre, items):
             f'    <h2>{titre}</h2>\n    <div class="jv-tgrid">{ss}</div>\n  </div>\n</section>')
 
 
+WS_ICONS = {
+    "lot": _svg('<path d="M9 3h7l4 4v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3v4h4"/><path d="M4 7v12a2 2 0 0 0 2 2h9"/>', "1.9"),
+    "pret": _svg('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>', "1.9"),
+    "sentence": _svg('<path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0z"/><path d="m19 7-3 6a3 3 0 0 0 6 0z"/>', "1.9"),
+}
+
+
+def who_sobre(titre, items):
+    """Bloc « moments » sobre : pictogramme, titre, texte, et les fonctions Corrext utilisées."""
+    ws = "".join(
+        f'<article class="ws-item"><span class="ws-ic">{WS_ICONS[w["vis"]]}</span>'
+        f'<h3><span class="pn">{w["a"]}.</span> {w["t"]}</h3><p>{w["p"]}</p>'
+        '<div class="ws-tools"><span class="ws-l">Dans Corrext</span>'
+        + "".join(f'<span class="ws-t">{o}</span>' for o in w["fonctions"]) + '</div></article>'
+        for w in items)
+    return ('<section class="who who-s">\n  <div class="container">\n'
+            f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
+            f'    <div class="ws-grid">{ws}</div>\n  </div>\n</section>')
+
+
+def temoignage(t):
+    """Citation client. Sans citation fournie, l'emplacement s'affiche comme « à fournir » : jamais de texte inventé."""
+    if not t or not t.get("citation"):
+        return ('<section class="temo temo-todo" aria-label="Emplacement du témoignage client à fournir">\n'
+                '  <div class="container"><figure class="temo-fig">\n'
+                '    <span class="temo-mark" aria-hidden="true">«</span>\n'
+                '    <blockquote><p>Témoignage client à fournir : deux ou trois phrases d\'un associé ou d\'une '
+                'associée sur un dossier concret traité avec Corrext, publiées avec son accord écrit.</p></blockquote>\n'
+                '    <figcaption><b>Prénom Nom</b><span>Fonction, cabinet</span></figcaption>\n'
+                '  </figure></div>\n</section>')
+    return ('<section class="temo">\n  <div class="container"><figure class="temo-fig">\n'
+            '    <span class="temo-mark" aria-hidden="true">«</span>\n'
+            f'    <blockquote><p>{t["citation"]}</p></blockquote>\n'
+            f'    <figcaption><b>{t["auteur"]}</b><span>{t["fonction"]}</span></figcaption>\n'
+            '  </figure></div>\n</section>')
+
+
 def gov(question, texte, lien, etapes):
     es = "".join(f'<div>{ICONS[i % 3]}<span><b>{e["t"]}</b> {e["d"]}</span></div>'
                  for i, e in enumerate(etapes))
@@ -361,9 +398,10 @@ def gen_solutions(src):
             hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
                      "Ce métier, en trois points"),
             facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
-            (who_visuel if d.get("visuel") else who)(d["who_titre"], d["who"]),
+            (who_sobre if d.get("visuel") else who)(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
             (outils_visuel if d.get("visuel") else siblings)("Les outils que ce métier utilise le plus", d["outils"]),
+            temoignage(d.get("temoignage")) if d.get("visuel") else "",
             faq(d["faq_titre"], d["faq"]),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
         ])
