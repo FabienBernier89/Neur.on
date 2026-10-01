@@ -141,17 +141,6 @@ def facts(titre, intro, liens, lignes, ident="faits"):
 </section>'''
 
 
-def who(titre, items):
-    ws = "".join(f'<div class="who-item"><h3><span class="pn">{w["a"]}.</span> {w["t"]}</h3>'
-                 f'<p>{w["p"]}</p></div>' for w in items)
-    return f'''<section class="who">
-  <div class="container">
-    <div class="sec-head"><h2>{titre}</h2></div>
-    <div class="who-grid">{ws}</div>
-  </div>
-</section>'''
-
-
 # ---------------------------------------------------------------- vignettes métier
 # Miniatures de l'interface Corrext pour le bloc « outils » des pages métier.
 # Les textes affichés sont de vraies sorties récoltées dans l'application (septembre 2026).
@@ -225,6 +214,15 @@ WS_ICONS = {k: _svg(v, "1.9") for k, v in {
     "lot": '<path d="M9 3h7l4 4v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3v4h4"/><path d="M4 7v12a2 2 0 0 0 2 2h9"/>',
     "pret": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
     "sentence": '<path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0z"/><path d="m19 7-3 6a3 3 0 0 0 6 0z"/>',
+    # Domaine Contrats
+    "immeuble": '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v12h14V9"/><path d="M10 21v-6h4v6"/>',
+    "financement": '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9.5h.01M18 14.5h.01"/>',
+    # Pages produit et sécurité
+    "loupe": '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+    "equipe": '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/>',
+    "verrou": '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    "dossier": '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+    "portail": '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/>',
     # Banques et finance
     "bouclier": '<path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/>',
     "signature": '<path d="M15 5l4 4L8 20H4v-4z"/><path d="M13 7l4 4"/><path d="M14 20h6"/>',
@@ -248,15 +246,32 @@ WS_ICONS = {k: _svg(v, "1.9") for k, v in {
 }.items()}
 
 
-def who_sobre(titre, items):
-    """Bloc « moments » sobre : pictogramme sur la ligne du titre, puis le texte."""
+def who(titre, items):
+    """Bloc « situations » en cartes : pictogramme facultatif (clé vis) sur la ligne du titre, puis le texte."""
+    def ic(w):
+        return f'<span class="ws-ic">{WS_ICONS[w["vis"]]}</span>' if w.get("vis") else ""
     ws = "".join(
-        f'<article class="ws-item"><h3><span class="ws-ic">{WS_ICONS[w["vis"]]}</span>'
+        f'<article class="ws-item"><h3>{ic(w)}'
         f'<span><span class="pn">{w["a"]}.</span> {w["t"]}</span></h3><p>{w["p"]}</p></article>'
         for w in items)
     return ('<section class="who who-s">\n  <div class="container">\n'
             f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
             f'    <div class="ws-grid">{ws}</div>\n  </div>\n</section>')
+
+
+def voisins(titre, items, lien="Voir le domaine"):
+    """Pages voisines en cartes : le terme phare (allemand, français) quand il existe, puis le nom et le résumé."""
+    def terme(v):
+        t = v.get("terme")
+        if not t:
+            return ""
+        return (f'<span class="vn-term"><span><i>DE</i><b lang="de">{t["de"]}</b></span>'
+                f'<span><i>FR</i><b>{t["fr"]}</b></span></span>')
+    cs = "".join(
+        f'<a class="vn-card" href="{{{{ROOT}}}}{v["href"]}">{terme(v)}<b class="vn-t">{v["t"]}</b>'
+        f'<span class="vn-d">{v["d"]}</span><em>{lien} {ARROW}</em></a>' for v in items)
+    return ('<section class="vn">\n  <div class="container">\n'
+            f'    <h2>{titre}</h2>\n    <div class="vn-grid">{cs}</div>\n  </div>\n</section>')
 
 
 def temoignage(t):
@@ -340,13 +355,13 @@ def cta(titre, texte, second=None):
 </section>'''
 
 
-def terms_table(termes, caption):
+def terms_table(termes, caption, titre="Les équivalences officielles, dans les quatre langues"):
     rows = "".join(
         f'<tr><td><b>{t["de"]}</b></td><td>{t["fr"]}</td><td>{t["it"]}</td><td>{t["en"]}</td>'
         f'<td class="ref">{t["ref"]}</td></tr>' for t in termes)
     return f'''<section class="tterms">
   <div class="container">
-    <div class="sec-head"><h2>La terminologie de ce domaine, dans les quatre langues</h2>
+    <div class="sec-head"><h2>{titre}</h2>
       <p>{caption}</p></div>
     <div class="compare-wrap">
       <table class="cmp tterms-table">
@@ -368,7 +383,7 @@ TERMS_CSS = """<style>
 .tterms-table td{font-size:14px}
 .tterms-table td b{color:var(--navy)}
 .tterms-table td.ref{font-size:13px;color:var(--muted);white-space:nowrap}
-.tterms-note{margin-top:16px;font-size:13.5px;color:var(--muted);max-width:70ch}
+.tterms-note{margin:18px auto 0;font-size:13.5px;color:var(--muted);max-width:72ch;text-align:center;text-wrap:balance}
 .tterms-note a{color:var(--blue-d);font-weight:600}
 .tlaws{padding:84px 0}
 .tlaws-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
@@ -408,9 +423,9 @@ def gen_solutions(src):
             hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
                      "Ce métier, en trois points"),
             facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
-            who_sobre(d["who_titre"], d["who"]),
+            who(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
-            outils_visuel("Les outils que ce métier utilise le plus", d["outils"]),
+            outils_visuel(d["outils_titre"], d["outils"]),
             temoignage(d.get("temoignage")),
             faq(d["faq_titre"], d["faq"]),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
@@ -470,19 +485,19 @@ def gen_domaines(src):
         body = "\n".join([
             TERMS_CSS,
             hero_law(d["lede"], d["h1"], d["lead"], spec),
-            facts("Traduire ce domaine, concrètement", d["definition"],
+            facts(d.get("facts_titre", "Concrètement, dans Corrext"), d["definition"],
                   [{"href": "fr/corrext/traduction-texte-et-document/", "txt": "Traduire un document maintenant"},
                    {"href": "fr/corrext/gestion-de-projet/", "txt": "Commander une relecture juridique"}],
                   d["facts"]),
-            terms_table(d["termes"], d["termes_note"]),
-            laws_block("Les textes que ce domaine cite tous les jours", d["lois_intro"], d["lois"]),
+            terms_table(d["termes"], d["termes_note"], d.get("termes_titre", "La terminologie officielle, dans les quatre langues")),
+            laws_block(d.get("lois_titre", "Les textes de référence, cités au quotidien"), d["lois_intro"], d["lois"]),
             who(d["who_titre"], d["who"]),
             faq(d["faq_titre"], d["faq"]),
-            siblings("Domaines voisins",
-                     [{"href": f'fr/traduction/{v["slug"]}/', "t": v["short"], "d": v["resume"]}
-                      for v in vois] or
-                     [{"href": "fr/traduction/", "t": "Tous les domaines",
-                       "d": "Les treize domaines couverts"}]),
+            voisins("Domaines voisins",
+                    [{"href": f'fr/traduction/{v["slug"]}/', "t": v["short"], "d": v["resume"],
+                      "terme": v["termes"][0]} for v in vois] or
+                    [{"href": "fr/traduction/", "t": "Tous les domaines",
+                      "d": "Les treize domaines couverts"}]),
             cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": "Tous les domaines"}),
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',

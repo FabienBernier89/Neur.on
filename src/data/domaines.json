@@ -6,8 +6,8 @@
     "title": "Traduction juridique de contrats suisses, DE FR IT · Neur.on",
     "description": "Baux, contrats de travail, CGV, prêts : traduire avec la terminologie du Code des obligations suisse et la relecture d'un traducteur juridique.",
     "lede": "Contrats.",
-    "h1": "La terminologie du Code des obligations, d'une langue à l'autre",
-    "lead": "Un bail commercial, des conditions générales, un contrat de prêt : chaque clause renvoie à une notion que le Code des obligations définit en allemand, en français et en italien. Corrext rend le document dans sa mise en page d'origine et montre, terme par terme, la formulation retenue par le texte officiel.",
+    "h1": "Le Code des obligations, d'une langue à l'autre",
+    "lead": "Bail, conditions générales, contrat de prêt : chaque clause renvoie à une notion du Code des obligations, publié en allemand, en français et en italien. Corrext garde la mise en page et la formulation du texte officiel.",
     "promesses": [
       {"t": "Terminologie du CO", "d": "les équivalences des textes officiels, pas des traductions d'usage"},
       {"t": "Mise en page conservée", "d": "articles, alinéas et renvois reviennent à leur place"},
@@ -26,15 +26,15 @@
     ],
     "termes": [
       {"de": "Konventionalstrafe", "fr": "clause pénale", "it": "pena convenzionale", "en": "contractual penalty", "ref": "art. 160 CO"},
-      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interesse moratorio", "en": "default interest", "ref": "art. 104 CO"},
-      {"de": "Schuldnerverzug", "fr": "demeure du débiteur", "it": "mora del debitore", "en": "debtor's default", "ref": "art. 102 CO"},
-      {"de": "Schadenersatz", "fr": "dommages-intérêts", "it": "risarcimento del danno", "en": "damages", "ref": "art. 97 CO"},
-      {"de": "Verjährung", "fr": "prescription", "it": "prescrizione", "en": "limitation period", "ref": "art. 127 CO"},
+      {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interessi moratori", "en": "default interest", "ref": "art. 104 CO"},
+      {"de": "Verzug des Schuldners", "fr": "demeure du débiteur", "it": "mora del debitore", "en": "default of obligor", "ref": "art. 102 CO"},
+      {"de": "Schadenersatz", "fr": "dommages-intérêts", "it": "risarcimento del danno", "en": "damages", "ref": "art. 107 CO"},
+      {"de": "Verjährung", "fr": "prescription", "it": "prescrizione", "en": "prescription", "ref": "art. 127 CO"},
       {"de": "wesentlicher Irrtum", "fr": "erreur essentielle", "it": "errore essenziale", "en": "fundamental error", "ref": "art. 23 CO"},
-      {"de": "Gewährleistung", "fr": "garantie des défauts", "it": "garanzia per i difetti", "en": "warranty for defects", "ref": "art. 197 CO"},
-      {"de": "Mietvertrag", "fr": "contrat de bail", "it": "contratto di locazione", "en": "lease agreement", "ref": "art. 253 CO"}
+      {"de": "Gewährleistung wegen Mängel", "fr": "garantie en raison des défauts", "it": "garanzia per i difetti", "en": "warranty of quality and fitness", "ref": "art. 197 CO"},
+      {"de": "Mietvertrag", "fr": "bail à loyer", "it": "locazione", "en": "lease", "ref": "art. 253 CO"}
     ],
-    "termes_note": "Les équivalences allemande, française et italienne sont celles des trois versions officielles du Code des obligations, à l'article indiqué ; la colonne anglaise donne la formulation d'usage, le droit suisse n'étant pas publié en anglais.",
+    "termes_note": "Les équivalences allemande, française et italienne sont celles des trois versions officielles du Code des obligations, à l'article indiqué ; la colonne anglaise reprend la traduction publiée par la Confédération sur Fedlex, qui n'a pas force de loi.",
     "lois_intro": "Le Code des obligations porte l'essentiel du vocabulaire contractuel suisse. Mais un contrat en cite d'autres dès qu'il touche la propriété, le défaut de paiement ou une partie établie à l'étranger.",
     "lois": [
       {"abbr": "CO", "nom": "Code des obligations", "note": "Il régit la formation, l'exécution et l'extinction des contrats ainsi que le droit des sociétés ; OR en allemand, CO en italien."},
@@ -44,9 +44,9 @@
     ],
     "who_titre": "Trois situations où la traduction d'un contrat se complique",
     "who": [
-      {"a": "Bail commercial", "t": "Un immeuble à Zurich, un locataire romand", "p": "Le bail est rédigé en allemand, la régie répond en français et les deux parties citent les mêmes articles du CO. La traduction reprend la formulation officielle de chaque notion plutôt qu'un équivalent approximatif, et le document revient dans sa mise en page."},
-      {"a": "Financement", "t": "Un contrat de prêt à signer demain matin", "p": "La version machine part le soir avec LexMachina, la Full review est commandée dans la foulée et le délai s'affiche avant validation. L'emprunteur reçoit un texte relu par un traducteur juridique, pas un brouillon à corriger."},
-      {"a": "International", "t": "Un contrat soumis au droit suisse, négocié en anglais", "p": "L'anglais des parties n'a pas de version officielle : chaque notion doit être rattachée au terme allemand, français ou italien du CO. CHnell affiche l'article d'origine, la fonction Alternatives montre jusqu'à quatre formulations concurrentes et le juriste tranche."}
+      {"a": "Bail commercial", "t": "Bailleur zurichois, locataire romand", "p": "Le bail est rédigé en allemand, la régie répond en français et les deux parties citent les mêmes articles du CO. La traduction reprend la formulation officielle de chaque notion plutôt qu'un équivalent approximatif, et le document revient dans sa mise en page.", "vis": "immeuble"},
+      {"a": "Financement", "t": "Un contrat de prêt à signer demain matin", "p": "La version machine part le soir avec LexMachina, la Full review est commandée dans la foulée et le délai s'affiche avant validation. L'emprunteur reçoit un texte relu par un traducteur juridique, pas un brouillon à corriger.", "vis": "financement"},
+      {"a": "International", "t": "Droit suisse, négociation en anglais", "p": "L'anglais des parties n'a pas de version officielle : chaque notion doit être rattachée au terme allemand, français ou italien du CO. CHnell affiche l'article d'origine, la fonction Alternatives montre jusqu'à quatre formulations concurrentes et le juriste tranche.", "vis": "globe"}
     ],
     "faq_titre": "Questions fréquentes sur la traduction de contrats",
     "faq": [
@@ -59,7 +59,10 @@
     ],
     "cta_t": "Voyez Corrext sur l'un de vos contrats",
     "cta_p": "Une démonstration sur vos propres clauses, avec un spécialiste du droit suisse.",
-    "voisins": ["droit-des-societes", "droit-du-travail", "contentieux-arbitrage"]
+    "voisins": ["droit-des-societes", "droit-du-travail", "contentieux-arbitrage"],
+    "facts_titre": "Traduire un contrat, concrètement",
+    "termes_titre": "Le vocabulaire des contrats, dans les quatre langues",
+    "lois_titre": "Les textes qu'un contrat cite tous les jours"
   },
   {
     "slug": "droit-des-societes",

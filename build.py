@@ -156,6 +156,12 @@ def build_page(path, meta, body):
         return m.group(0)
     body = re.sub(r'href="([a-z0-9\-]+\.html)(#[^"]*)?"', legacy, body)
     body = body.replace('href="{{ROOT}}', 'href="' + root).replace("{{ROOT}}", root)
+    # pictogrammes partagés : {{ICONE:nom}} renvoie au jeu WS_ICONS de src/generators.py
+    if "{{ICONE:" in body:
+        if SRC not in sys.path:
+            sys.path.insert(0, SRC)
+        import generators
+        body = re.sub(r"\{\{ICONE:([a-z]+)\}\}", lambda m: generators.WS_ICONS[m.group(1)], body)
     body = neutralize_links(body)
 
     # FAQPage automatique : toute page qui pose des questions le déclare aux moteurs

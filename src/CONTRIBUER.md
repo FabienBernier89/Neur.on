@@ -37,7 +37,7 @@ générateur. N'y mettez jamais de `BreadcrumbList` : il est généré.
 |---|---|
 | Section standard | `section` + `.container`, en-tête `.sec-head` (h2 + p) |
 | Registre de faits | `.facts` > `.facts-grid` > `.facts-lead` (h2, p, `.links`) + `.facts-list` > `.fact` (b + p, `small` pour la précision) |
-| Trois situations | `.who` > `.sec-head` + `.who-grid` > `.who-item` (h3 avec `<span class="pn">Audience.</span>`, p) |
+| Trois situations | `.who.who-s` > `.sec-head` + `.ws-grid` > `article.ws-item` (h3 : `<span class="ws-ic">{{ICONE:nom}}</span>` puis `<span><span class="pn">Audience.</span> Titre sur deux lignes</span>`, p). Pictogrammes : `WS_ICONS` dans generators.py |
 | Encadré à question | `.gov` > `.gov-box` (div avec h2 + p + `.feat-link`) + `.gov-steps` > div (svg + span avec `<b>`) |
 | Bande de liens | `.siblings` > h2 + `.siblings-row` > a (b + span + svg flèche) |
 | Bloc fonctionnalité | `.feature` (+ `.rev` pour inverser) > `.feat-txt` (h3, p, `.feat-list` > li > `.chk`, `.feat-link`) + `.feat-visual` > `.win` |

@@ -112,6 +112,7 @@
         "d": "L'avis Attorney-Client privilege s'affiche dès qu'un moteur tiers est sélectionné."
       }
     ],
+    "outils_titre": "Les outils les plus utilisés par les avocats",
     "outils": [
       {
         "href": "fr/corrext/traduction-texte-et-document/",
@@ -277,6 +278,7 @@
         "d": "Les documents clients ne servent pas à entraîner les modèles de Neur.on."
       }
     ],
+    "outils_titre": "Les outils les plus utilisés par les établissements financiers",
     "outils": [
       {
         "href": "fr/corrext/gestion-de-projet/",
@@ -441,6 +443,7 @@
         "d": "Droits jusqu'au document, synchronisés avec vos annuaires."
       }
     ],
+    "outils_titre": "Les outils les plus utilisés par les directions juridiques",
     "outils": [
       {
         "href": "fr/corrext/gestion-de-projet/",
@@ -604,6 +607,7 @@
         "d": "Déploiement on-premises pour les environnements les plus sensibles."
       }
     ],
+    "outils_titre": "Les outils les plus utilisés par les autorités et les administrations",
     "outils": [
       {
         "href": "fr/corrext/gestion-de-projet/",
@@ -767,6 +771,7 @@
         "d": "Apostille de la Chancellerie d'État, pour les États parties à la Convention de La Haye."
       }
     ],
+    "outils_titre": "Les outils les plus utilisés par les fiduciaires",
     "outils": [
       {
         "href": "fr/corrext/extraits-registre-commerce/",
@@ -931,6 +936,7 @@
         "d": "Chaque terme s'ouvre en contexte, avec la source officielle qui le porte."
       }
     ],
+    "outils_titre": "Les outils les plus utilisés par les éditeurs et les LegalTechs",
     "outils": [
       {
         "href": "fr/corrext/api-on-premises/",
