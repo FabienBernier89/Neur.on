@@ -11,7 +11,7 @@
     "promesses": [
       {"t": "Allemand suisse", "d": "ss au lieu de ß, milliers en 15'000, guillemets « »"},
       {"t": "Abréviations", "d": "OR devient CO, ZGB devient CC, SchKG devient LP"},
-      {"t": "Deux langues natives", "d": "la paire est traitée directement par Neur.on LLM"}
+      {"t": "Deux langues natives", "d": "la paire est traitée directement par LexMachina"}
     ],
     "definition": "Les lois fédérales sont adoptées et publiées en allemand, en français et en italien, et les trois versions font également foi. Traduire de l'allemand vers le français ne consiste donc pas à inventer un équivalent, mais à retrouver le mot que le législateur a lui-même écrit dans la version française du même article.",
     "facts": [
@@ -44,7 +44,7 @@
       },
       {
         "k": "Moteur entraîné sur le droit suisse",
-        "v": "Neur.on LLM a été entraîné sur des textes juridiques et financiers suisses, plus de 15 millions de segments multilingues, codes et jurisprudence fédérale inclus."
+        "v": "LexMachina a été entraîné sur des textes juridiques et financiers suisses, plus de 15 millions de segments multilingues, codes et jurisprudence fédérale inclus."
       },
       {
         "k": "Confidentialité",
@@ -66,7 +66,7 @@
       {
         "a": "Contentieux",
         "t": "Un jugement alémanique à exploiter en Suisse romande",
-        "p": "Le jugement part en traduction avec Neur.on LLM, revient dans sa mise en page, et les considérants se lisent d'affilée. Les termes sensibles se vérifient d'un surlignage dans Fast lookup CHnell, qui affiche l'usage officiel du mot et sa source."
+        "p": "Le jugement part en traduction avec LexMachina, revient dans sa mise en page, et les considérants se lisent d'affilée. Les termes sensibles se vérifient d'un surlignage dans Fast lookup CHnell, qui affiche l'usage officiel du mot et sa source."
       },
       {
         "a": "Transactions",
@@ -99,7 +99,7 @@
       },
       {
         "q": "Le texte peut-il rester en Suisse de bout en bout ?",
-        "r": "Oui. Les projets sont stockés sur des serveurs suisses dans tous les cas, et le mode Highly sensitive content ou le moteur Neur.on LLM garantissent en plus un traitement exclusivement en Suisse. Si un collaborateur choisit un moteur tiers hébergé à l'étranger, l'avis Attorney-Client privilege s'affiche avant tout envoi."
+        "r": "Oui. Les projets sont stockés sur des serveurs suisses dans tous les cas, et le mode Highly sensitive content ou le moteur LexMachina garantissent en plus un traitement exclusivement en Suisse. Si un collaborateur choisit un moteur tiers hébergé à l'étranger, l'avis Attorney-Client privilege s'affiche avant tout envoi."
       }
     ],
     "cta_t": "Essayez cette paire sur un de vos propres documents",
@@ -155,7 +155,7 @@
       },
       {
         "k": "Deux langues natives",
-        "v": "Le français et l'allemand sont deux des quatre langues natives de Neur.on LLM, entraîné sur plus de 15 millions de segments juridiques et financiers suisses.",
+        "v": "Le français et l'allemand sont deux des quatre langues natives de LexMachina, entraîné sur plus de 15 millions de segments juridiques et financiers suisses.",
         "s": "Ce sont aussi les seules langues, avec l'italien et l'anglais, disponibles en Highly sensitive content."
       },
       {
@@ -198,7 +198,7 @@
       },
       {
         "q": "Comment éviter les termes du droit allemand ou autrichien ?",
-        "r": "En partant des textes suisses plutôt que d'un corpus généraliste. Neur.on LLM est entraîné sur le droit suisse, et chaque terme douteux se vérifie dans Fast lookup CHnell, qui affiche le segment officiel, sa langue source et sa référence. Un terme qui n'apparaît dans aucun texte suisse n'a pas sa place dans le document."
+        "r": "En partant des textes suisses plutôt que d'un corpus généraliste. LexMachina est entraîné sur le droit suisse, et chaque terme douteux se vérifie dans Fast lookup CHnell, qui affiche le segment officiel, sa langue source et sa référence. Un terme qui n'apparaît dans aucun texte suisse n'a pas sa place dans le document."
       },
       {
         "q": "Les deux versions d'un contrat peuvent-elles faire foi ?",
@@ -210,7 +210,7 @@
       },
       {
         "q": "Où le document est-il traité ?",
-        "r": "Le stockage est en Suisse dans tous les cas. Avec Neur.on LLM ou en mode Highly sensitive content, le traitement l'est aussi et le contenu n'est pas réutilisé en mémoire de traduction. Les moteurs tiers, hébergés à l'étranger, déclenchent l'avis Attorney-Client privilege et supposent un document pseudonymisé."
+        "r": "Le stockage est en Suisse dans tous les cas. Avec LexMachina ou en mode Highly sensitive content, le traitement l'est aussi et le contenu n'est pas réutilisé en mémoire de traduction. Les moteurs tiers, hébergés à l'étranger, déclenchent l'avis Attorney-Client privilege et supposent un document pseudonymisé."
       }
     ],
     "cta_t": "Faites relire votre version allemande par un juriste-linguiste",
@@ -316,11 +316,11 @@
       },
       {
         "q": "Les traductions anglaises sont-elles moins précises que les autres paires ?",
-        "r": "L'anglais est l'une des quatre langues natives de Neur.on LLM, entraîné sur des textes juridiques et financiers suisses. Ce qui change n'est pas la qualité de la langue, c'est le statut du texte produit : informatif, parce que le droit suisse ne s'écrit pas en anglais."
+        "r": "L'anglais est l'une des quatre langues natives de LexMachina, entraîné sur des textes juridiques et financiers suisses. Ce qui change n'est pas la qualité de la langue, c'est le statut du texte produit : informatif, parce que le droit suisse ne s'écrit pas en anglais."
       },
       {
         "q": "Le document peut-il rester en Suisse alors que le destinataire est à l'étranger ?",
-        "r": "Oui. Le lieu de traitement ne dépend pas du destinataire mais du moteur choisi. Avec Neur.on LLM ou en mode Highly sensitive content, stockage et traitement restent exclusivement en Suisse. Le fichier traduit est ensuite transmis par vos propres canaux."
+        "r": "Oui. Le lieu de traitement ne dépend pas du destinataire mais du moteur choisi. Avec LexMachina ou en mode Highly sensitive content, stockage et traitement restent exclusivement en Suisse. Le fichier traduit est ensuite transmis par vos propres canaux."
       }
     ],
     "cta_t": "Montrez-nous un dossier alémanique à ouvrir en anglais",
@@ -344,7 +344,7 @@
     "promesses": [
       {"t": "Ancrage légal", "d": "chaque clause ramenée aux notions de l'Obligationenrecht"},
       {"t": "Allemand suisse", "d": "ss, apostrophe dans les milliers, sigles suisses conservés"},
-      {"t": "Traitement en Suisse", "d": "les deux langues sont natives dans Neur.on LLM"}
+      {"t": "Traitement en Suisse", "d": "les deux langues sont natives dans LexMachina"}
     ],
     "definition": "Un contrat rédigé en anglais peut parfaitement être soumis au droit suisse : les parties choisissent la langue, la loi applicable est une autre question. La traduction allemande sert alors à la lecture par une contrepartie, une autorité ou un tribunal suisse, et doit employer les notions du Code des obligations.",
     "facts": [
@@ -430,7 +430,7 @@
       },
       {
         "q": "Où le contrat est-il traité ?",
-        "r": "Sur des serveurs suisses dans tous les cas. Avec Neur.on LLM ou en mode Highly sensitive content, le traitement reste lui aussi exclusivement en Suisse et le contenu n'alimente aucune mémoire. Si un moteur tiers hébergé à l'étranger est sélectionné, l'avis Attorney-Client privilege s'affiche avant l'envoi."
+        "r": "Sur des serveurs suisses dans tous les cas. Avec LexMachina ou en mode Highly sensitive content, le traitement reste lui aussi exclusivement en Suisse et le contenu n'alimente aucune mémoire. Si un moteur tiers hébergé à l'étranger est sélectionné, l'avis Attorney-Client privilege s'affiche avant l'envoi."
       }
     ],
     "cta_t": "Soumettez-nous une clause difficile",
@@ -454,7 +454,7 @@
     "promesses": [
       {"t": "Langue non officielle", "d": "les versions anglaises des lois sont informatives"},
       {"t": "Arbitrage", "d": "le vocabulaire du chapitre 12 de la LDIP, terme par terme"},
-      {"t": "Traitement en Suisse", "d": "français et anglais sont natifs dans Neur.on LLM"}
+      {"t": "Traitement en Suisse", "d": "français et anglais sont natifs dans LexMachina"}
     ],
     "definition": "Les lois suisses font foi en allemand, en français et en italien ; leurs versions anglaises sont publiées à titre informatif et n'ont pas force de loi. Une traduction française vers anglais sert donc à comprendre, à négocier ou à plaider, et renvoie toujours au texte français lorsqu'une citation doit engager.",
     "facts": [
@@ -540,7 +540,7 @@
       },
       {
         "q": "Où les pièces sont-elles traitées ?",
-        "r": "Sur des serveurs suisses dans tous les cas. Avec Neur.on LLM ou le mode Highly sensitive content, le traitement reste exclusivement en Suisse et le contenu n'est pas réutilisé en mémoire. Les moteurs tiers hébergés à l'étranger déclenchent l'avis Attorney-Client privilege et supposent une pseudonymisation préalable."
+        "r": "Sur des serveurs suisses dans tous les cas. Avec LexMachina ou le mode Highly sensitive content, le traitement reste exclusivement en Suisse et le contenu n'est pas réutilisé en mémoire. Les moteurs tiers hébergés à l'étranger déclenchent l'avis Attorney-Client privilege et supposent une pseudonymisation préalable."
       }
     ],
     "cta_t": "Testez la paire sur un mémoire ou un prospectus",
@@ -564,7 +564,7 @@
     "promesses": [
       {"t": "Italien de Suisse", "d": "ricorso, precetto esecutivo, Tribunale federale"},
       {"t": "Version qui fait foi", "d": "l'italien est l'une des trois langues officielles des lois"},
-      {"t": "Langue native", "d": "l'italien est l'une des quatre langues de Neur.on LLM"}
+      {"t": "Langue native", "d": "l'italien est l'une des quatre langues de LexMachina"}
     ],
     "definition": "L'italien est l'une des trois langues dans lesquelles les lois fédérales sont publiées et font foi. La terminologie juridique italienne de Suisse vient donc de ces textes, pas de l'usage italien : les mêmes mots peuvent exister des deux côtés de la frontière en désignant des institutions et des procédures différentes.",
     "facts": [
@@ -595,7 +595,7 @@
       },
       {
         "k": "Langue native",
-        "v": "L'italien est l'une des quatre langues natives de Neur.on LLM, avec l'allemand, le français et l'anglais, et l'une des seules disponibles en Highly sensitive content.",
+        "v": "L'italien est l'une des quatre langues natives de LexMachina, avec l'allemand, le français et l'anglais, et l'une des seules disponibles en Highly sensitive content.",
         "s": "La plateforme couvre par ailleurs 30 langues pour les pièces étrangères d'un dossier."
       },
       {

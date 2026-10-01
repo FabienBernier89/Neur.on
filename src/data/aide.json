@@ -53,8 +53,8 @@
         "slug": "choisir-un-moteur",
         "titre": "Choisir un moteur de traduction",
         "title": "Comment choisir un moteur de traduction dans Corrext · Neur.on",
-        "description": "Corrext vous laisse choisir le moteur de traduction. Moteurs suisses de Neur.on ou moteurs tiers hébergés à l'étranger : ce que change votre choix.",
-        "reponse": "Dans Traduction texte et document, une liste déroulante placée à droite des langues vous laisse choisir le moteur qui traduit votre texte ou vos fichiers. Elle propose les moteurs suisses de Neur.on, dont Neur.on LLM, et des moteurs tiers hébergés à l'étranger : « DeepL Pro », « Azure OpenAI GPT » et « Claude ». Le choix d'un moteur tiers fait apparaître un avis Attorney-Client privilege, que vous devez lire avant d'envoyer quoi que ce soit.",
+        "description": "Corrext vous laisse choisir le moteur de traduction. LexMachina, le moteur suisse de Neur.on, ou moteurs tiers hébergés à l'étranger : ce que change votre choix.",
+        "reponse": "Dans Traduction texte et document, une liste déroulante placée à droite des langues vous laisse choisir le moteur qui traduit votre texte ou vos fichiers. Elle propose LexMachina, le moteur suisse de Neur.on, et des moteurs tiers hébergés à l'étranger : « DeepL Pro », « Azure OpenAI GPT » et « Claude ». Le choix d'un moteur tiers fait apparaître un avis Attorney-Client privilege, que vous devez lire avant d'envoyer quoi que ce soit.",
         "etapes": [
           "Ouvrez <b>« Traduction texte et document »</b> depuis l'accueil, puis restez sur l'onglet « Text translation » ou passez sur « File translation ».",
           "Repérez la liste déroulante du moteur, à droite des deux listes de langues, dans la barre de configuration.",
@@ -64,7 +64,6 @@
           "Sur l'onglet « File translation », le moteur se choisit en même temps que la langue cible, sous « Choose a translation engine and a target language »."
         ],
         "savoir": [
-          "L'onglet « Rephrasing » utilise Neur.on LLM par défaut : la reformulation reste donc sur un moteur suisse.",
           "Le panneau « Alternatives » permet de comparer plusieurs moteurs sur la même phrase sans changer votre réglage principal.",
           "Le moteur choisi ne modifie pas le lieu de stockage : vos données restent sur des serveurs suisses. Il modifie le lieu de traitement."
         ]
@@ -103,7 +102,7 @@
         ],
         "savoir": [
           "L'avis est une règle d'organisation appliquée dans l'outil, pas un simple message d'information : il engage votre responsabilité.",
-          "Les moteurs concernés sont les moteurs tiers, « DeepL Pro », « Azure OpenAI GPT » et « Claude ». Les moteurs suisses de Neur.on ne déclenchent pas cet avis.",
+          "Les moteurs concernés sont les moteurs tiers, « DeepL Pro », « Azure OpenAI GPT » et « Claude ». LexMachina, le moteur suisse de Neur.on, ne déclenche pas cet avis.",
           "Le stockage reste suisse quel que soit le moteur. C'est le traitement, donc l'envoi du texte au moteur, qui sort de Suisse."
         ]
       },
@@ -240,7 +239,7 @@
         "titre": "Reformuler un texte",
         "title": "Reformuler un texte avec Rephrasing dans Corrext · Neur.on",
         "description": "L'onglet Rephrasing réécrit un texte jusqu'à 5'000 caractères, avec cinq styles dont Formal legal et Simplified, et une option de raccourcissement.",
-        "reponse": "L'onglet « Rephrasing » de Traduction texte et document réécrit un texte dans le style que vous choisissez, sans changer de langue. Il fonctionne avec le moteur suisse Neur.on LLM par défaut et accepte jusqu'à 5'000 caractères. Une liste « Settings » donne accès à cinq styles, dont « Formal legal » et « Simplified », et à une option « Shorten » qui raccourcit le texte. Les mots modifiés sont soulignés dans le résultat.",
+        "reponse": "L'onglet « Rephrasing » de Traduction texte et document réécrit un texte dans le style que vous choisissez, sans changer de langue. Il fonctionne avec le moteur suisse LexMachina par défaut et accepte jusqu'à 5'000 caractères. Une liste « Settings » donne accès à cinq styles, dont « Formal legal » et « Simplified », et à une option « Shorten » qui raccourcit le texte. Les mots modifiés sont soulignés dans le résultat.",
         "etapes": [
           "Ouvrez « Traduction texte et document », puis cliquez sur l'onglet <b>« Rephrasing »</b>.",
           "Collez votre texte dans le volet de gauche : le compteur indique le nombre de caractères utilisés sur 5'000.",
@@ -431,18 +430,18 @@
         "titre": "Choisir le moteur du projet",
         "title": "Choisir le moteur de traduction d'un projet Corrext · Neur.on",
         "description": "Dernière étape avant la traduction : choisir le moteur du projet, suisse ou tiers. Ce que disent les cartes, et ce que change votre choix pour vos données.",
-        "reponse": "Après la terminologie, l'écran « Choose a machine translation engine » présente les moteurs sous forme de cartes. Le moteur suisse recommandé est présélectionné. Les moteurs de Neur.on, dont Neur.on LLM, garantissent un traitement 100 % suisse. Les moteurs tiers affichent un rappel : votre politique interne peut exiger une pseudonymisation préalable. Un clic sur « Next » lance la traduction automatique et ouvre le tableau de bord du projet.",
+        "reponse": "Après la terminologie, l'écran « Choose a machine translation engine » présente les moteurs sous forme de cartes. Le moteur suisse recommandé est présélectionné. LexMachina, le moteur de Neur.on, garantit un traitement 100 % suisse. Les moteurs tiers affichent un rappel : votre politique interne peut exiger une pseudonymisation préalable. Un clic sur « Next » lance la traduction automatique et ouvre le tableau de bord du projet.",
         "etapes": [
           "Depuis « Project terminology », cliquez sur « Next » : l'écran <b>« Choose a machine translation engine »</b> s'affiche.",
           "Repérez la carte marquée <b>« Recommended »</b> : c'est le moteur suisse présélectionné.",
-          "Lisez la description de chaque carte : les moteurs de Neur.on portent la mention « 100% Swiss Data Processing ».",
+          "Lisez la description de chaque carte : la carte de LexMachina porte la mention « 100% Swiss Data Processing ».",
           "Pour un moteur tiers, « DeepL Pro », « Azure OpenAI GPT » ou « Claude », lisez le rappel sur la pseudonymisation avant de le choisir.",
           "Cliquez sur <b>« Next »</b> : la traduction démarre et le tableau de bord du projet s'ouvre."
         ],
         "savoir": [
           "Votre administrateur peut restreindre la liste des moteurs autorisés pour votre organisation.",
-          "En mode « Highly sensitive content », seuls les moteurs suisses restent disponibles.",
-          "D'après leurs cartes, le moteur recommandé colle au plus près du texte source, tandis que Neur.on LLM privilégie des tournures plus naturelles."
+          "En mode « Highly sensitive content », seul LexMachina, le moteur suisse, reste disponible.",
+          "D'après sa carte, LexMachina, le moteur recommandé, reste au plus près du texte source."
         ]
       },
       {
@@ -825,10 +824,10 @@
         "titre": "Quels moteurs traitent hors de Suisse",
         "title": "Quels moteurs de Corrext traitent hors de Suisse · Neur.on",
         "description": "DeepL Pro, Azure OpenAI GPT et Claude sont hébergés à l'étranger et déclenchent l'avis Attorney-Client privilege. Les moteurs de Neur.on restent suisses.",
-        "reponse": "Corrext distingue deux familles de moteurs. Les moteurs suisses de Neur.on, dont Neur.on LLM, traitent le contenu en Suisse. Les moteurs tiers, « DeepL Pro », « Azure OpenAI GPT » et « Claude », sont hébergés à l'étranger : les sélectionner fait apparaître l'avis « Attorney-Client privilege notice », qui impose de pseudonymiser entièrement le document et interdit leur usage pour une affaire sensible.",
+        "reponse": "Corrext distingue deux familles de moteurs. LexMachina, le moteur suisse de Neur.on, traite le contenu en Suisse. Les moteurs tiers, « DeepL Pro », « Azure OpenAI GPT » et « Claude », sont hébergés à l'étranger : les sélectionner fait apparaître l'avis « Attorney-Client privilege notice », qui impose de pseudonymiser entièrement le document et interdit leur usage pour une affaire sensible.",
         "etapes": [
           "Ouvrez la liste des moteurs dans « Traduction texte et document » et identifiez celui qui est sélectionné.",
-          "Retenez que les moteurs suisses de Neur.on traitent en Suisse, y compris pour la reformulation.",
+          "Retenez que LexMachina traite le contenu en Suisse.",
           "Retenez que <b>« DeepL Pro »</b>, <b>« Azure OpenAI GPT »</b> et <b>« Claude »</b> sont hébergés à l'étranger.",
           "Lisez l'avis « Attorney-Client privilege notice » dès qu'il apparaît : il signale un traitement hors de Suisse.",
           "Pseudonymisez entièrement le document avant tout envoi à un moteur tiers, ou revenez à un moteur suisse."

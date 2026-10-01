@@ -409,7 +409,7 @@ def gen_traduction_hub(src):
              "les traite.",
              [{"t": "Treize domaines", "d": "du contrat au droit administratif, terminologie à l'appui"},
               {"t": "Sources officielles", "d": "Fedlex, Feuille fédérale, FINMA, jurisprudence du Tribunal fédéral"},
-              {"t": "Quatre langues natives", "d": "allemand, français, italien et anglais avec Neur.on LLM"}],
+              {"t": "Quatre langues natives", "d": "allemand, français, italien et anglais avec LexMachina"}],
              "#domaines", "Voir les domaines"),
         f'''<section class="siblings" id="domaines" style="padding:84px 0">
   <div class="container"><h2>Par domaine du droit et de la finance</h2>

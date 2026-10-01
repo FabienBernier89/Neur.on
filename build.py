@@ -43,7 +43,7 @@ LEGACY = {
     "corrext-chnell.html": "fr/corrext/chnell/",
     "corrext-extraits-registre.html": "fr/corrext/extraits-registre-commerce/",
     "securite-souverainete.html": "fr/securite-souverainete/",
-    "neuron-llm.html": "fr/neuron-llm/",
+    "neuron-llm.html": "fr/lexmachina/",
     "contact.html": "fr/contact/",
     "a-propos.html": "fr/a-propos/",
 }
@@ -346,7 +346,7 @@ p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:30px}
     head = read(os.path.join(SRC, "partials", "llms-head.md"))
     groups = [
         ("Produit : la plateforme Corrext", ["fr/corrext/"]),
-        ("Le moteur et la sécurité", ["fr/neuron-llm/", "fr/securite-souverainete/",
+        ("Le moteur et la sécurité", ["fr/lexmachina/", "fr/securite-souverainete/",
                                       "fr/niveaux-de-qualite/", "fr/langues-et-formats/"]),
         ("Solutions par métier", ["fr/solutions/"]),
         ("Traduction par domaine et par langue", ["fr/traduction/"]),

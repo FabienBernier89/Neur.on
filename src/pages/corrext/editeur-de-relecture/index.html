@@ -380,7 +380,7 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
               <div id="cxeAiRP" role="tabpanel" aria-labelledby="cxeAiR" hidden>
                 <div id="cxeRWrap">
                   <div class="cxe-rrow">
-                    <select class="cx-sel" id="cxeREng" aria-label="Moteur de reformulation"><option>Neur.on LLM</option></select>
+                    
                     <button type="button" class="cxe-setb" id="cxeSet" aria-expanded="false" aria-controls="cxePop">Settings <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
                   </div>
                   <div class="cx-set-pop cxe-pop" id="cxePop">
@@ -488,14 +488,14 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
         <p>La relecture est une étape d'un projet Corrext. Voici le parcours complet, dans l'ordre de l'application. Les quatre premières étapes se font à la création du projet.</p>
         <div class="cxe-links">
           <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Gestion de projet, étape par étape <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="{{ROOT}}fr/neuron-llm/" class="feat-link">Neur.on LLM, le moteur 100 % suisse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/lexmachina/" class="feat-link">LexMachina, le moteur 100 % suisse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
         </div>
       </div>
       <div class="ledger">
         <div class="ledger-row"><span class="ty">01</span><span class="tn">Création du projet<small>Nom, langues cibles, niveau de confidentialité, traduction ou non des commentaires du document.</small></span><span class="tb">Projet</span></div>
         <div class="ledger-row"><span class="ty">02</span><span class="tn">Analyse des fichiers<small>Chaque fichier est compté en pages standard. Une page standard compte 1 800 caractères, espaces compris.</small></span><span class="tb">Projet</span></div>
         <div class="ledger-row"><span class="ty">03</span><span class="tn">Terminologie du projet<small>Corrext extrait lui-même les termes candidats du document. Vous fixez leur traduction, ou vous ajoutez vos propres termes.</small></span><span class="tb">Projet</span></div>
-        <div class="ledger-row"><span class="ty">04</span><span class="tn">Choix du moteur<small>Neur.on LLM, 100 % suisse, ou un moteur tiers autorisé par votre organisation : DeepL Pro, Azure OpenAI GPT, Claude. Les moteurs tiers sont hébergés à l'étranger.</small></span><span class="tb">Projet</span></div>
+        <div class="ledger-row"><span class="ty">04</span><span class="tn">Choix du moteur<small>LexMachina, 100 % suisse, ou un moteur tiers autorisé par votre organisation : DeepL Pro, Azure OpenAI GPT, Claude. Les moteurs tiers sont hébergés à l'étranger.</small></span><span class="tb">Projet</span></div>
         <div class="ledger-row"><span class="ty">05</span><span class="tn">Traduction automatique<small>Le moteur choisi traduit le document. Les termes fixés à l'étape 3 sont repris tels quels.</small></span><span class="tb">Moteur</span></div>
         <div class="ledger-row"><span class="ty">06</span><span class="tn">Relecture dans l'éditeur<small>Open in CAT : vous relisez, corrigez et confirmez chaque phrase, seul ou à plusieurs.</small></span><span class="tb">Éditeur</span></div>
         <div class="ledger-row"><span class="ty">07</span><span class="tn">Validation<small>Le fichier relu est validé depuis le tableau de bord du projet.</small></span><span class="tb">Tableau de bord</span></div>
@@ -660,15 +660,15 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 
   /* ---------- Données de démonstration ---------- */
   var ALT=[
-    [{e:'Neur.on LLM',t:'Mandatsvertrag (fiktives Beispiel)'},{e:'DeepL Pro',t:'Auftragsvertrag (fiktives Beispiel)'},{e:'Azure OpenAI GPT',t:'Auftragsvertrag (fiktives Beispiel)'}],
-    [{e:'Neur.on LLM',t:'Artikel 1 · Gegenstand'},{e:'DeepL Pro',t:'Artikel 1 · Gegenstand'},{e:'Azure OpenAI GPT',t:'Artikel 1 · Gegenstand'}],
-    [{e:'Neur.on LLM',t:'Die Beauftragte erbringt der Auftraggeberin Beratungsleistungen im Bereich Regulatory Compliance gemäss den beiliegenden Leistungsbeschreibungen.'},
+    [{e:'LexMachina',t:'Mandatsvertrag (fiktives Beispiel)'},{e:'DeepL Pro',t:'Auftragsvertrag (fiktives Beispiel)'},{e:'Azure OpenAI GPT',t:'Auftragsvertrag (fiktives Beispiel)'}],
+    [{e:'LexMachina',t:'Artikel 1 · Gegenstand'},{e:'DeepL Pro',t:'Artikel 1 · Gegenstand'},{e:'Azure OpenAI GPT',t:'Artikel 1 · Gegenstand'}],
+    [{e:'LexMachina',t:'Die Auftragnehmerin erbringt der Auftraggeberin gemäss beiliegendem Leistungsverzeichnis beratende Dienstleistungen in regulatorischer Hinsicht.'},
      {e:'DeepL Pro',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der Einhaltung gesetzlicher Vorschriften gemäss dem im Anhang beigefügten Lastenheft.'},
      {e:'Azure OpenAI GPT',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der regulatorischen Compliance gemäss dem beigefügten Pflichtenheft.'}],
-    [{e:'Neur.on LLM',t:'Jede zum Fälligkeitszeitpunkt nicht bezahlte Rechnung zieht Verzugszinsen von 5% pro Jahr nach sich.'},
+    [{e:'LexMachina',t:'Jede bei Fälligkeit offene Rechnung wird mit einem Verzugszins von 5% p.a. verzinst.'},
      {e:'DeepL Pro',t:'Für jede Rechnung, die bei Fälligkeit noch nicht beglichen ist, fallen Verzugszinsen in Höhe von 5 % pro Jahr an.'},
      {e:'Azure OpenAI GPT',t:'Jede bei Fälligkeit unbezahlte Rechnung trägt einen Verzugszins von 5 % pro Jahr.'}],
-    [{e:'Neur.on LLM',t:'Dieser Vertrag untersteht dem schweizerischen Recht und insbesondere dem Obligationenrecht. Gerichtsstand ist ausschliesslich Freiburg.'},
+    [{e:'LexMachina',t:'Dieser Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.'},
      {e:'DeepL Pro',t:'Der vorliegende Vertrag unterliegt schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.'},
      {e:'Azure OpenAI GPT',t:'Dieser Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Der ausschliessliche Gerichtsstand ist in Freiburg.'}]
   ];
@@ -887,7 +887,6 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   $('cxeReset').addEventListener('click',function(){pStyle=null;pShort=false;syncChips();});
   $('cxeSetOk').addEventListener('click',function(){style=pStyle;shorten=pShort;openPop(false);setB.focus();renderReph(true);say('Reformulation régénérée.');});
   $('cxeRegen').addEventListener('click',function(){renderReph(true);});
-  $('cxeREng').addEventListener('change',function(){renderReph(true);});
   $('cxeRApply').addEventListener('click',function(){if(REPH[sel]){setT(sel,rOut.textContent,'Reformulation appliquée au segment '+sel+'.');}});
   $('cxeGo4').addEventListener('click',function(){select(4);rows[4].scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'});setB.focus();});
 

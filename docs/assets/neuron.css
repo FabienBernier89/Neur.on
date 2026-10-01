@@ -690,7 +690,7 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 .nav[data-active="corrext"] .nav-item[data-key="corrext"] > *,
 .nav[data-active="solutions"] .nav-item[data-key="solutions"] > *,
 .nav[data-active="ressources"] .nav-item[data-key="ressources"] > *,
-.nav[data-active="neuron-llm"] .nav-item[data-key="neuron-llm"] > *{color:var(--navy);font-weight:600}
+.nav[data-active="lexmachina"] .nav-item[data-key="lexmachina"] > *{color:var(--navy);font-weight:600}
 
 .mega{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 30px 60px -28px rgba(8,24,68,.2);padding:34px 0 36px;opacity:0;transform:translateY(-8px);transition:opacity .18s ease,transform .18s ease}
 .mega[hidden]{display:none}
