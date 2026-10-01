@@ -850,6 +850,34 @@ SHARE = {
 }
 
 
+BLOG_OUTILS = [
+    ("jauge", "Corrext ou DeepL", "Le comparatif pour le droit suisse : lieu de traitement, terminologie, chaîne de relecture.", "fr/comparatif/deepl-traduction-juridique/"),
+    ("bouclier", "Sécurité et souveraineté", "Serveurs suisses, mode Highly sensitive content, ISO 27001, nLPD et RGPD.", "fr/securite-souverainete/"),
+    ("etiquette", "Glossaire quadrilingue", "Les termes du droit suisse en allemand, français, italien et anglais, avec leurs sources.", "fr/ressources/glossaire/"),
+    ("rapport", "Guides", "Des méthodes longues et applicables : organiser la traduction, préparer un rapport annuel multilingue.", "fr/ressources/guides/"),
+    ("loupe", "Centre d'aide", "Guides pas à pas et réponses : traduire, faire relire, vérifier un terme, administrer Corrext.", "fr/aide/"),
+    ("calendrier", "Actualités", "Prix, conférences, partenariats et presse : toutes les brèves de Neur.on depuis 2020.", "fr/ressources/blog/actualites/"),
+]
+LINKEDIN = "https://www.linkedin.com/company/neur-on"
+A_PROPOS = ('<aside class="ar-about"><b>À propos de Neur.on</b><p>Neur.on AI Solutions SA, à Fribourg, édite <a href="{{ROOT}}fr/corrext/">Corrext</a>, '
+            'la plateforme suisse de traduction juridique et financière, et son moteur de traduction neuronale '
+            '<a href="{{ROOT}}fr/lexmachina/">LexMachina</a>, entraîné sur la donnée juridique et financière suisse.</p></aside>')
+
+
+def blog_outils():
+    cartes = "".join(f'<a class="bl-seg-card" href="{{{{ROOT}}}}{u}"><span class="ws-ic">{WS_ICONS[ic]}</span><b>{t}</b><span>{d}</span></a>'
+                     for ic, t, d, u in BLOG_OUTILS)
+    return ('<section class="bl-seg"><div class="container"><div class="sec-head"><span class="bl-k">Ressources et outils</span>'
+            '<h2>Au-delà du blog, tout pour aller plus loin</h2><p>Comparatif, sécurité, glossaire, guides, centre d\'aide et actualités : '
+            f'les ressources clés de Neur.on, réunies au même endroit.</p></div><div class="bl-seg-grid">{cartes}</div></div></section>')
+
+
+def blog_linkedin():
+    return ('<section class="bl-li"><div class="container"><div class="bl-li-band"><div><span class="bl-k">LinkedIn</span>'
+            '<h2>Les nouveaux articles et actualités, dès leur parution</h2>'
+            '<p>Neur.on publie ses articles, ses conférences et ses actualités sur sa page LinkedIn. Suivez-la pour ne rien manquer.</p></div>'
+            f'<a class="btn btn-blue" href="{LINKEDIN}" target="_blank" rel="noopener">Suivre Neur.on sur LinkedIn {ARROW}</a></div></div></section>')
+
 def date_fr(iso):
     a, m, j = iso.split("-")
     return f'{int(j)}{"er" if j == "01" else ""} {MOIS[int(m) - 1]} {a}'
@@ -866,7 +894,7 @@ def blog_url(a):
 
 def blog_visuel(a, une=False):
     """Bandeau de carte : photo de l'article si elle existe, sinon dégradé bleu nuit ; catégorie et signature."""
-    img = a.get("image")
+    img = a.get("vignette") or a.get("image")
     tag = (f'<span class="bl-tag">{BLOG_IC["une"]}À la une</span>' if une else f'<span class="bl-tag">{a["categorie"]}</span>')
     photo = (f'<img src="{{{{ROOT}}}}{img["src"]}" alt="" width="{img["w"]}" height="{img["h"]}" loading="lazy" decoding="async">'
              if img else "")
@@ -890,7 +918,7 @@ def blog_entete(src, slug, mots):
     maj = f' · mis à jour le {date_fr(a["maj"])}' if a.get("maj") and a["maj"] != a["date"] else ""
     return f'''<section class="ar-head">
   <div class="container"><div class="ar-col">
-    <p class="bl-k">{a["categorie"]}</p>
+    <p class="bl-k">{a["categorie"]}{" · " + a["sous_categorie"] if a.get("sous_categorie") else ""}</p>
     <h1>{a.get("h1", a["titre"])}</h1>
     <div class="ar-meta">
       <span>{BLOG_IC["auteur"]} <b>{a["auteur"]}</b></span>
@@ -903,7 +931,10 @@ def blog_entete(src, slug, mots):
 
 
 def blog_recents(src, slug):
-    autres = [a for a in blog_articles(src) if a["slug"] != slug][:3]
+    tous = [a for a in blog_articles(src) if a["slug"] != slug]
+    cat = next((a["categorie"] for a in load(src, "blog") if a["slug"] == slug), None)
+    meme = [a for a in tous if a["categorie"] == cat]
+    autres = (meme + [a for a in tous if a not in meme])[:3]
     return ('<section class="ar-latest"><div class="container"><h2>Les derniers articles</h2><div class="bl-grid">'
             + "".join(blog_carte(a) for a in autres) + "</div></div></section>")
 
@@ -928,8 +959,8 @@ BLOG_HERO = """<section class="thero thero-read">
   <div class="container">
     <div class="thero-grid">
       <div>
-        <h1><em>Blog.</em> Droit suisse, traduction juridique et intelligence artificielle</h1>
-        <p class="lead">Des articles de fond sur la traduction juridique en Suisse, écrits pour des juristes et vérifiés dans des sources officielles, et les actualités de Neur.on : conférences, événements et presse.</p>
+        <h1><em>Blog.</em> Tout pour traduire le droit suisse sans rien laisser au hasard</h1>
+        <p class="lead">Guides pratiques, analyses et bonnes pratiques sur la traduction juridique et financière en Suisse, la confidentialité des documents et la LegalTech, et les actualités de Neur.on. Rédigés par l'équipe juridique et linguistique de Neur.on.</p>
         <div class="thero-cta">
           <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
             Demander une démo
@@ -947,18 +978,7 @@ BLOG_HERO = """<section class="thero thero-read">
   </div>
 </section>"""
 
-BLOG_FIN = """<section class="siblings">
-  <div class="container">
-    <h2>Les autres ressources</h2>
-    <div class="siblings-row">
-      <a href="{{ROOT}}fr/ressources/guides/"><b>Guides</b><span>Méthodes de fond, structurées et longues : organiser la traduction, préparer un rapport annuel.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/ressources/etudes/"><b>Études et benchmarks</b><span>Nos protocoles de mesure sur corpus de droit suisse, méthode publiée avant les résultats.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse : sources officielles, 30 domaines, segments alignés.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta">
+BLOG_FIN = """<section class="final-cta">
   <div class="container">
     <div class="final-cta-inner">
       <h2>Ces sujets se voient mieux sur vos documents</h2>
@@ -1000,6 +1020,7 @@ def gen_blog(src):
     <div class="art-wrap">
       <div class="ar-brief"><b>En bref</b><p>{a["bref"]}</p></div>
       {corps}
+      {A_PROPOS}
     </div>
   </div>
 </section>''',
@@ -1011,12 +1032,12 @@ def gen_blog(src):
         pages.append((blog_url(a), {"title": a["title"], "description": a["description"], "short": a.get("court", a["titre"]),
                                     "nav": "ressources", "hero": "aide"}, body))
 
-    une, reste = arts[0], arts[1:]
+    une = arts[0]
     cats = []
     for a in arts:
         if a["categorie"] not in cats:
             cats.append(a["categorie"])
-    n = lambda c: sum(1 for a in reste if a["categorie"] == c)
+    n = lambda c: sum(1 for a in arts if a["categorie"] == c)
     filtres = ('<button type="button" class="bl-chip" aria-pressed="true" data-f="">Tous les articles</button>'
                + "".join(f'<button type="button" class="bl-chip" aria-pressed="false" data-f="{c}">{c}<em>{n(c)}</em></button>' for c in cats if n(c)))
     une_html = f'''<section class="bl-feat" aria-label="Article à la une">
@@ -1040,16 +1061,67 @@ b.forEach(function(e){e.addEventListener('click',function(){f(e.getAttribute('da
              "blogPost": [{"@type": "BlogPosting", "headline": a["titre"], "datePublished": a["date"], "url": f"{SITE}/{blog_url(a)}"} for a in arts]}
     body = "\n".join([
         '<script type="application/ld+json">' + json.dumps(liste, ensure_ascii=False) + "</script>",
-        BLOG_HERO, une_html,
+        BLOG_HERO, une_html, blog_outils(),
         f'<section class="bl-filters" id="articles" aria-label="Filtrer par catégorie"><div class="container">{filtres}</div></section>',
-        f'<section class="bl-list"><div class="container"><div class="bl-grid">{"".join(blog_carte(a) for a in reste)}</div><p class="bl-empty" hidden>Aucun article dans cette catégorie pour le moment.</p></div></section>',
-        BLOG_FIN, script,
+        f'<section class="bl-list"><div class="container"><div class="bl-grid">{"".join(blog_carte(a) for a in arts)}</div><p class="bl-empty" hidden>Aucun article dans cette catégorie pour le moment.</p></div></section>',
+        ('<section class="bl-actu"><div class="container"><a class="bl-actu-card" href="{{ROOT}}fr/ressources/blog/actualites/">'
+         f'<span class="bl-k">Actualités</span><b>Toutes les brèves de Neur.on, année par année</b><span>Prix, conférences, partenariats et presse depuis 2020. {ARROW}</span></a></div></section>')
+        if load(src, "actualites") else "",
+        blog_linkedin(), BLOG_FIN, script,
     ])
     pages.append(("fr/ressources/blog/", {"title": "Blog Neur.on · Droit suisse, traduction juridique et actualités",
                                            "description": "Articles de fond sur la traduction juridique en Suisse (terminologie, devis, secret professionnel) et actualités de Neur.on : conférences, événements, presse.",
                                            "short": "Blog", "nav": "ressources", "hero": "read",
                                            "canonical": f"{SITE}/fr/ressources/blog/"}, body))
     return pages
+
+
+
+def gen_actualites(src):
+    """Actualités : toutes les brèves de Neur.on depuis 2020 sur une page, classées par année."""
+    data = sorted(load(src, "actualites"), key=lambda x: x["date"], reverse=True)
+    if not data:
+        return []
+    annees = []
+    for x in data:
+        if x["date"][:4] not in annees:
+            annees.append(x["date"][:4])
+    def item(x):
+        img = x.get("image")
+        vis = (f'<img class="ac-img" src="{{{{ROOT}}}}{img["src"]}" alt="" width="{img["w"]}" height="{img["h"]}" loading="lazy" decoding="async">' if img else "")
+        lien = x.get("lien_principal")
+        btn = (f'<a class="ac-lien" href="{lien["url"]}" target="_blank" rel="noopener">{lien["libelle"]} {ARROW}</a>' if lien else "")
+        return (f'<article class="ac-item" id="actu-{x["num"]}">{vis}<div class="ac-txt">'
+                f'<p class="ac-meta"><time datetime="{x["date"]}">{date_fr(x["date"])}</time><span>{x["categorie"]}</span></p>'
+                f'<h3>{x["titre"]}</h3><div class="ac-corps">{x["texte"]}</div>{btn}</div></article>')
+    blocs = "".join(f'<section class="ac-annee" id="annee-{an}" aria-labelledby="t-{an}"><h2 id="t-{an}">{an}<em>{sum(1 for x in data if x["date"][:4] == an)} actualités</em></h2>'
+                    + "".join(item(x) for x in data if x["date"][:4] == an) + "</section>" for an in annees)
+    nav = "".join(f'<a class="bl-chip" href="#annee-{an}">{an}</a>' for an in annees)
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Actualités de Neur.on",
+          "url": f"{SITE}/fr/ressources/blog/actualites/", "inLanguage": "fr-CH",
+          "about": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+          "mainEntity": {"@type": "ItemList", "numberOfItems": len(data), "itemListElement": [
+              {"@type": "ListItem", "position": i + 1, "item": {"@type": "NewsArticle", "headline": x["titre"], "datePublished": x["date"],
+                                                               "url": f'{SITE}/fr/ressources/blog/actualites/#actu-{x["num"]}'}}
+              for i, x in enumerate(data)]}}
+    body = "\n".join([
+        '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
+        f'''<section class="ar-head">
+  <div class="container"><div class="ar-col">
+    <p class="bl-k">Actualités</p>
+    <h1>Toutes les actualités de Neur.on depuis {annees[-1]}</h1>
+    <p class="ac-lead">Prix, conférences, partenariats, presse et recherche : {len(data)} brèves, de la plus récente à la plus ancienne. Les articles complets se trouvent dans le <a href="{{{{ROOT}}}}fr/ressources/blog/">blog</a>.</p>
+    <nav class="ac-nav" aria-label="Aller à une année">{nav}</nav>
+  </div></div>
+</section>''',
+        f'<section class="ac"><div class="container"><div class="ar-col">{blocs}</div></div></section>',
+        cta("Voyez Corrext sur vos propres documents",
+            "Une démonstration avec un spécialiste du droit suisse : terminologie, niveaux de relecture et modes de confidentialité, sur vos fichiers.",
+            {"href": "fr/contact/", "txt": "Demander une démo"}),
+    ])
+    return [("fr/ressources/blog/actualites/", {"title": "Actualités de Neur.on depuis 2020 · Neur.on",
+                                                 "description": f"{len(data)} brèves de Neur.on depuis {annees[-1]} : prix et distinctions, conférences, partenariats, presse et recherche, classés par année.",
+                                                 "short": "Actualités", "nav": "ressources", "hero": "aide"}, body)]
 
 
 def build_all(src):
@@ -1061,4 +1133,5 @@ def build_all(src):
     pages += gen_glossaire(src)
     pages += gen_aide(src)
     pages += gen_blog(src)
+    pages += gen_actualites(src)
     return pages

@@ -2,7 +2,7 @@
  {
   "slug": "traduire-contrat-droit-suisse",
   "page": "manuelle",
-  "categorie": "Terminologie",
+  "categorie": "Droit suisse",
   "titre": "Traduire un contrat en droit suisse : ce que change le quadrilinguisme légal",
   "date": "2026-09-15",
   "maj": "2026-09-15",
@@ -16,7 +16,7 @@
  {
   "slug": "comprendre-devis-traduction-juridique",
   "page": "manuelle",
-  "categorie": "Achat et devis",
+  "categorie": "Bonnes pratiques",
   "titre": "Pages standard, niveaux de relecture, délais : comprendre un devis de traduction juridique",
   "date": "2026-09-15",
   "maj": "2026-09-15",
@@ -40,5 +40,1595 @@
   "title": "Secret professionnel et outils de traduction IA · Neur.on",
   "description": "Stocker n'est pas traiter : ce que vaut une pseudonymisation, pourquoi un avertissement dans l'outil bat une charte, et quoi demander à un fournisseur.",
   "court": "Secret professionnel"
+ },
+ {
+  "slug": "paula-reichenberg-pitch-epfl-investor-day-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Paula Reichenberg, CEO de Neur.on, pitche à l’EPFL Investor Day 2024",
+  "date": "2024-12-11",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Trois minutes sur scène et un conseil inattendu reçu en masterclass : retirer la diapositive consacrée à l’équipe. Paula Reichenberg l’a appliqué dès l’après-midi, pour un pitch plus détendu et, espérons-le, plus convaincant.",
+  "bref": "Paula Reichenberg, CEO de Neur.on, a pitché à l’EPFL Investor Day, le plus grand rendez-vous d’investisseurs de Suisse romande. Avant de monter sur scène, elle a suivi une masterclass de pitch animée par Jordi Montserrat. Elle en a retenu un conseil inattendu : retirer la diapositive sur l’équipe, car l’énergie dégagée sur scène compte davantage.",
+  "title": "Paula Reichenberg à l’EPFL Investor Day 2024 · Neur.on",
+  "description": "Paula Reichenberg, CEO de Neur.on, a pitché à l’EPFL Investor Day, le plus grand rendez-vous d’investisseurs de Suisse romande, avec un conseil inattendu.",
+  "court": "Paula Reichenberg, CEO de Neur.on, pitche à l’EPFL Investor Day 2024",
+  "corps": "<p>Que retirer de son pitch deck quand on ne dispose que de 3 minutes sur scène ?</p><p>Avant de monter sur scène, tous les participants ont été invités à suivre une masterclass consacrée au pitch, animée par l’un des esprits les plus brillants en la matière, <a href=\"https://www.linkedin.com/in/jordimontserrat/\" rel=\"noopener\" target=\"_blank\">Jordi Montserrat</a>.</p><p>L’une de ses remarques a vraiment surpris Paula. La discussion portait sur ce qu’il faut retirer de son pitch quand il ne tient pas dans le temps imparti. Selon l’avis général, la feuille de route à 5 ans ou les données financières pouvaient légitimement passer à la trappe.</p><p>Mais Jordi a dit : retirez l’équipe.</p><p>L’équipe ? La colonne vertébrale de l’entreprise en matière d’expertise et de personnalité ? Impossible que cela passe auprès d’investisseurs potentiels.</p><p>Mais le raisonnement de Jordi était limpide : « Sur scène, vous incarnez l’énergie de votre entreprise. Si elle est bonne, elle vaut plus que la diapositive consacrée à l’équipe. »</p><p>Et vous savez quoi ? Paula a appliqué ce conseil à son pitch de l’après-midi. Elle a ainsi gagné 2 à 3 pauses pour respirer, pour une présentation plus détendue et (espérons-le) plus convaincante.</p><p>Elle sait bien qu’elle n’abandonne pas son équipe pour autant. Après tout, face à des investisseurs intéressés, il ne lui faut de toute façon jamais 3 minutes pour commencer à s’extasier sur <a href=\"{{ROOT}}fr/a-propos/\">ses cofondateurs et son équipe</a>.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-pitch-epfl-investor-day-2024.webp",
+   "w": 680,
+   "h": 1100,
+   "alt": "Une intervenante, micro en main, sur la scène de l’EPFL Investor Day, devant le grand panneau de l’événement",
+   "legende": "Sur la scène de l’EPFL Investor Day 2024"
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-pitch-epfl-investor-day-2024-v.webp",
+   "w": 396,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Event",
+    "EPFL Investor Day"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Person",
+    "Jordi Montserrat"
+   ],
+   [
+    "Organization",
+    "EPFL"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 19
+ },
+ {
+  "slug": "neuron-swisscom-collaboration-kickstart-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Partenariats",
+  "titre": "Neur.on et Swisscom annoncent une collaboration pour les secteurs juridique et bancaire",
+  "date": "2024-11-29",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Un PoC pour offrir aux banques et aux cabinets d’avocats suisses une boîte à outils sécurisée de traduction et de rédaction, hébergée en Suisse. Neur.on figure parmi les premières entreprises à déployer sur la nouvelle infrastructure GPU NVIDIA de Swisscom.",
+  "bref": "Swisscom et Neur.on ont officiellement annoncé une collaboration lors de la cérémonie de clôture de Kickstart Innovation 2024. Les deux entreprises lancent un PoC : une boîte à outils sécurisée de traduction et de rédaction juridiques et financières pour les banques et les cabinets d’avocats suisses, hébergée dans un environnement 100 % suisse.",
+  "title": "Swisscom et Neur.on annoncent une collaboration · Neur.on",
+  "description": "À la clôture de Kickstart Innovation 2024, Swisscom et Neur.on ont lancé un PoC de traduction et de rédaction juridiques et financières hébergé en Suisse.",
+  "court": "Neur.on et Swisscom annoncent une collaboration pour les secteurs juridique et bancaire",
+  "corps": "<p>Une très grande nouvelle pour les cabinets d’avocats et les banques suisses.</p><p>Hier soir, lors de la cérémonie de clôture de <a href=\"https://www.linkedin.com/company/kickstart-innovation/\" rel=\"noopener\" target=\"_blank\">Kickstart Innovation</a> 2024, <a href=\"https://www.linkedin.com/in/kollerstefan/\" rel=\"noopener\" target=\"_blank\">Stefan Koller</a> de <a href=\"https://www.linkedin.com/company/swisscom/\" rel=\"noopener\" target=\"_blank\">Swisscom</a> et Neur.on ont officiellement annoncé une collaboration pour mieux servir les secteurs juridique et bancaire. Ensemble, nous lançons un PoC (preuve de concept) pour construire la boîte à outils de traduction et de rédaction juridiques et financières la plus sécurisée pour les avocats et les professionnels de la finance en Suisse.</p><p>La solution doit permettre aux banques et aux cabinets d’avocats suisses d’exploiter la puissance des LLM spécialisés de Neur.on, à la fois avec leurs propres données (stockées de manière entièrement sécurisée) et avec les jeux de données multilingues uniques de Neur.on, spécifiques à ces domaines et soigneusement sélectionnés. Le tout hébergé dans un <a href=\"{{ROOT}}fr/securite-souverainete/\">environnement 100 % suisse</a>.</p><p>Merci, Swisscom, et en particulier <a href=\"https://www.linkedin.com/in/silvan-lohri/\" rel=\"noopener\" target=\"_blank\">Silvan Lohri</a> et <a href=\"https://www.linkedin.com/in/danieldobos/\" rel=\"noopener\" target=\"_blank\">Daniel Dobos</a>, pour l’honneur de compter parmi les premières entreprises à déployer sur votre toute nouvelle infrastructure GPU <a href=\"https://www.linkedin.com/company/nvidia/\" rel=\"noopener\" target=\"_blank\">NVIDIA</a> de pointe. Nos ingénieurs sont enthousiasmés par sa puissance de calcul et par le large éventail de possibilités de calibrage de la sécurité.</p><p>Un grand merci également à <a href=\"https://www.linkedin.com/in/katkaletzing/\" rel=\"noopener\" target=\"_blank\">Katka Letzing</a>, à <a href=\"https://www.linkedin.com/in/elisabettachiarantoni14/\" rel=\"noopener\" target=\"_blank\">Elisabetta Maria Chiarantoni</a> et à toute l’équipe de Kickstart pour avoir accéléré le lancement de notre PoC.</p><p>Et ce n’est que le début.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-swisscom-collaboration-kickstart-2024.webp",
+   "w": 658,
+   "h": 1100,
+   "alt": "Un homme et une femme tiennent des chevrons bleus sur la scène Kickstart, avec les logos Swisscom et Neur.on",
+   "legende": "Cérémonie de clôture de Kickstart Innovation 2024"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-swisscom-collaboration-kickstart-2024-v.webp",
+   "w": 383,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Organization",
+    "Swisscom"
+   ],
+   [
+    "Event",
+    "Kickstart Innovation 2024"
+   ],
+   [
+    "Person",
+    "Stefan Koller"
+   ],
+   [
+    "Organization",
+    "NVIDIA"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 22
+ },
+ {
+  "slug": "neuron-tltf-summit-2024-miami-startups-showcase",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Neur.on parmi les 24 start-up du Startups Showcase du TLTF Summit 2024 à Miami",
+  "date": "2024-11-11",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Des centaines de candidatures, 24 invitations : Neur.on présentera sa suite d’IA de traduction juridique en décembre devant des investisseurs, des géants du secteur et des leaders de la LegalTech réunis sur invitation.",
+  "bref": "Neur.on fait partie des 24 start-up invitées au « Startups Showcase » du TLTF Summit, sur des centaines de candidatures venues du monde entier. Neur.on a ainsi été sélectionnée pour présenter sa suite d’IA de traduction juridique lors de la troisième édition, en décembre 2024 à Miami, devant des investisseurs et des leaders de la LegalTech.",
+  "title": "Neur.on au Startups Showcase du TLTF Summit 2024 · Neur.on",
+  "description": "Neur.on fait partie des 24 start-up retenues, sur des centaines de candidatures, pour le Startups Showcase du TLTF Summit, en décembre 2024 à Miami.",
+  "court": "Neur.on parmi les 24 start-up du Startups Showcase du TLTF Summit 2024 à Miami",
+  "corps": "<p>En décembre, le <a href=\"https://www.linkedin.com/company/tltfsummit/\" rel=\"noopener\" target=\"_blank\">TLTF Summit</a> revient pour sa troisième édition. Surnommé « l’événement à la sélection rigoureuse pour les innovateurs qui transforment le monde du droit », ce symposium a reçu les candidatures de centaines de start-up en phase de démarrage, venues des quatre coins de la planète, pour la liste restreinte du « Startups Showcase ». Seules 24 ont été invitées, et Neur.on en fait partie !</p><p>Nous présenterons <a href=\"{{ROOT}}fr/corrext/\">notre suite d’IA de traduction juridique</a> en décembre à un groupe choisi d’investisseurs, de géants du secteur et de pairs chevronnés, comme <a href=\"https://www.linkedin.com/in/druarmstrong/\" rel=\"noopener\" target=\"_blank\">Dru Armstrong</a> d’<a href=\"https://www.linkedin.com/company/affinipay/\" rel=\"noopener\" target=\"_blank\">AffiniPay</a>, <a href=\"https://www.linkedin.com/in/wendy-butler-curtis/\" rel=\"noopener\" target=\"_blank\">Wendy Butler Curtis</a> d’<a href=\"https://www.linkedin.com/company/orrick/\" rel=\"noopener\" target=\"_blank\">Orrick, Herrington &amp; Sutcliffe LLP</a> ou Jay Greenberg de LexShares, pour n’en citer que quelques-uns.</p><p>Vous vous demandez peut-être : « Qu’est-ce que le TLTF Summit ? » Il s’agit d’un événement sur invitation uniquement, qui réunit une sélection de leaders innovants de la LegalTech. On y trouvera des membres de directions générales, des présidents et des associés gérants de cabinets d’avocats, des directeurs juridiques et des responsables Legal Ops, des investisseurs (capital-risque, capital-investissement, financement de litiges), des fondateurs d’entreprises, de la start-up au grand groupe, des doyens de facultés de droit et des universitaires. Autrement dit : impossible de faire cinq mètres sans être happé par une conversation fructueuse, un discours éclairant ou un networking à forte valeur ajoutée.</p><p>Quelle belle façon de clore cette année bien remplie.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-tltf-summit-2024-miami-startups-showcase.webp",
+   "w": 798,
+   "h": 516,
+   "alt": "Visuel « We’re going to Miami » : gratte-ciel en bord de plage, logos du TLTF Summit 2024 et de Neur.on",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-tltf-summit-2024-miami-startups-showcase-v.webp",
+   "w": 640,
+   "h": 414
+  },
+  "mentions": [
+   [
+    "Event",
+    "TLTF Summit 2024"
+   ],
+   [
+    "Place",
+    "Miami"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ],
+   [
+    "Organization",
+    "AffiniPay"
+   ],
+   [
+    "Organization",
+    "Orrick, Herrington & Sutcliffe LLP"
+   ],
+   [
+    "Organization",
+    "LexShares"
+   ]
+  ],
+  "source_num": 26
+ },
+ {
+  "slug": "legaltechtalk-2024-londres-enseignements",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Les enseignements clés de la conférence LegalTechTalk 2024 à Londres",
+  "date": "2024-06-13",
+  "auteur": "Équipe Neur.on",
+  "extrait": "« Je refuse de payer pour des informations que j’ai déjà. » Directeurs juridiques et cabinets d’avocats ont confronté leurs points de vue sur la confiance, l’efficacité et la place de la technologie dans les services juridiques.",
+  "bref": "Neur.on rapporte les échanges de la conférence LegalTechTalk 2024, tenue à Londres. Des directeurs juridiques y ont défendu une relation de confiance et un partage de connaissances avec leurs cabinets d’avocats externes. Les cabinets ont mis en avant des équipes sur mesure, l’analyse des processus fondée sur les données et leur rôle de conseil technologique, y compris en traduction juridique.",
+  "title": "LegalTechTalk 2024 à Londres : enseignements clés · Neur.on",
+  "description": "Neur.on livre les enseignements de LegalTechTalk 2024 à Londres : attentes des directeurs juridiques, confiance avec les cabinets et rôle de la LegalTech.",
+  "court": "Les enseignements clés de la conférence LegalTechTalk 2024 à Londres",
+  "corps": "<h2>Qu’attendent les directeurs juridiques de leurs cabinets d’avocats ?</h2><p>« Je refuse de payer pour des informations que j’ai déjà », s’exclame le directeur juridique d’une entreprise du secteur de l’énergie, interrogé sur ses principaux critères pour mandater des cabinets d’avocats externes.</p><p>« C’est une vision simpliste, et certainement pas une base solide pour construire une relation durable et fructueuse avec les cabinets d’avocats référencés », rétorque le directeur juridique d’une multinationale, chargé de gérer les fonctions juridiques de plus de 15 pays. « Si vous attendez d’un cabinet qu’il apporte de la valeur ajoutée et des conseils opérationnels directement applicables, juristes d’entreprise et avocats externes doivent partager leurs connaissances et construire un terrain d’entente. Cela demande de l’investissement et de la confiance des deux côtés. »</p><p>« “Confiant” n’est pas le premier adjectif qui vient à l’esprit pour décrire les avocats : ils ont été formés à rester sur leurs gardes et à faire preuve de scepticisme pour mieux protéger leurs clients. Changer de posture ne va pas de soi », répond un responsable de l’innovation juridique d’un cabinet d’avocats d’affaires.</p><p>« Ils doivent comprendre que les directeurs juridiques n’attendent pas toujours une exactitude garantie : obtenir leur avis le plus éclairé dans les dossiers urgents est la priorité, et les prévisions qui se révèlent fausses font partie de la vie des affaires. Donner aux cabinets que vous avez référencés des indications claires sur le type et le volume de travail qu’ils peuvent attendre de votre entreprise aide aussi à instaurer la confiance : si les avocats peuvent investir suffisamment pour comprendre votre entreprise et vos attentes, ils proposeront d’eux-mêmes des solutions pour gagner en efficacité. »</p><h2>Comment les cabinets d’avocats s’organisent-ils pour y répondre ?</h2><p>« Lorsque nous travaillons avec des directeurs juridiques, l’objectif de nos avocats est d’agir comme le prolongement de leur équipe », confirme le directeur de l’innovation d’un cabinet d’avocats d’Europe continentale. « À l’arrivée d’un nouveau client, notre priorité est de trouver des interlocuteurs dont le style de travail et de communication correspond à celui du directeur juridique. Pour traiter chacune de ses problématiques, nous constituons ensuite des équipes ad hoc qui réunissent le bon dosage d’expertise métier, de parcours de formation et de niveaux d’ancienneté. »</p><h2>Pourquoi la technologie devient-elle un livrable des cabinets d’avocats ?</h2><p>« En plus de la bonne équipe, l’analyse des processus fondée sur les données est essentielle pour fournir des services juridiques de manière efficace », ajoute <a href=\"https://www.linkedin.com/in/jordan-lee-427567111/\" rel=\"noopener\" target=\"_blank\">Jordan Lee</a>, Chief Strategy Officer de Pogust Goodhead, un cabinet d’avocats spécialisé dans les recours collectifs. « Dès que l’on identifie une étape automatisable ou des schémas répétitifs qui peuvent être rationalisés, l’équipe technique peut intervenir et capter même les plus petits gains marginaux. Mis bout à bout, ils se traduisent vite par d’importantes économies et une hausse de la qualité. »</p><p>« On observe une nette tendance : les clients attendent de leurs avocats qu’ils jouent aussi le rôle de conseillers technologiques dès qu’une optimisation des processus juridiques est possible. Par exemple, dans le domaine d’expertise de Neur.on, tout client confronté à d’importants défis de traduction dans une affaire juridique attend de ses avocats qu’ils aient une solution économique et sécurisée à disposition. Les tests, l’analyse comparative et la co-création d’outils LegalTech font désormais partie des livrables des cabinets d’avocats. »</p><p>Voilà quelques enseignements de la conférence. Notez déjà l’édition de l’année prochaine dans vos agendas ! Un grand merci à <a href=\"https://www.linkedin.com/in/bradleycentaurcollins/\" rel=\"noopener\" target=\"_blank\">Bradley Collins</a>, <a href=\"https://www.linkedin.com/in/charlotte-johnstone0000/\" rel=\"noopener\" target=\"_blank\">Charlotte Johnstone</a> et <a href=\"https://www.linkedin.com/in/merlin-beyts-652ab0168/\" rel=\"noopener\" target=\"_blank\">Merlin Beyts</a> pour cette brillante organisation.</p>",
+  "image": {
+   "src": "assets/img/blog/legaltechtalk-2024-londres-enseignements.webp",
+   "w": 1039,
+   "h": 609,
+   "alt": "Une femme et un homme en pleine discussion devant une bannière LegalTechTalk, avec vue sur des gratte-ciel londoniens",
+   "legende": "Conférence LegalTechTalk 2024, Londres"
+  },
+  "vignette": {
+   "src": "assets/img/blog/legaltechtalk-2024-londres-enseignements-v.webp",
+   "w": 640,
+   "h": 375
+  },
+  "mentions": [
+   [
+    "Event",
+    "LegalTechTalk 2024"
+   ],
+   [
+    "Place",
+    "Londres"
+   ],
+   [
+    "Organization",
+    "Pogust Goodhead"
+   ],
+   [
+    "Person",
+    "Jordan Lee"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 41
+ },
+ {
+  "slug": "table-ronde-ia-juridique-slta-zurich-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "IA et secteur juridique : Paula Reichenberg en table ronde le 17 avril 2024 à Zurich",
+  "date": "2024-04-10",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Effets, opportunités et risques de l’IA pour le droit : Paula Reichenberg, CEO de Neur.on et vice-présidente de la SLTA, débat avec un professeur de l’Université de Zurich et deux avocats, collaborateurs chez Homburger et CMS Switzerland.",
+  "bref": "Neur.on a annoncé la participation de sa CEO, Paula Reichenberg, à une table ronde sur l’IA dans le secteur juridique, le 17 avril 2024 à Zurich. Organisé par le SLTA Student Chapter Zurich, le débat portait sur les effets, les opportunités et les risques de l’IA. Paula Reichenberg est aussi vice-présidente de la Swiss LegalTech Association.",
+  "title": "L’IA dans le secteur juridique : table ronde SLTA · Neur.on",
+  "description": "Le 17 avril 2024 à Zurich, Paula Reichenberg, CEO de Neur.on, débat de l’IA dans le secteur juridique à une table ronde du SLTA Student Chapter Zurich.",
+  "court": "IA et secteur juridique : Paula Reichenberg en table ronde le 17 avril 2024 à Zurich",
+  "corps": "<p>Comment l’IA a-t-elle déjà transformé le secteur juridique ? Quels sont les avantages et les inconvénients de cette technologie ?</p><p>Rejoignez <a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg</a>, CEO de Neur.on et vice-présidente de la SLTA, pour débattre des effets, des opportunités et des risques de l’IA dans le secteur juridique.</p><p><strong>Détails de l’événement :</strong></p><ul><li><strong>Date :</strong> 17 avril 2024</li><li><strong>Heure :</strong> 18 h 30</li><li><strong>Lieu :</strong> Zurich</li><li><strong>Organisation :</strong> SLTA Student Chapter Zurich</li></ul><p><strong>Thèmes de la discussion :</strong></p><ul><li>Les changements que l’IA a apportés au secteur juridique</li><li>Les applications de l’IA dans le droit et la pratique</li><li>Les avantages et les inconvénients de la technologie de l’IA</li><li>Les considérations juridiques, économiques et éthiques</li><li>Les transformations futures du secteur juridique sous l’effet de l’IA</li></ul><p><strong>Intervenants :</strong></p><ul><li><strong>Prof. Dr Dr Yoan Hermstrüwer :</strong> titulaire de la chaire de Legal Tech, Law and Economics et droit public, Université de Zurich</li><li><strong>Dr Alexander Wherlock, avocat :</strong> collaborateur chez Homburger</li><li><strong>Paula Reichenberg :</strong> avocate, CEO et fondatrice de Neur.on AI, vice-présidente de la Swiss LegalTech Association</li><li><strong>Roxana Sharifi :</strong> avocate, collaboratrice chez CMS Switzerland</li></ul><p>Cliquez <a href=\"https://pretix.eu/SLTAZH/Podium/\" rel=\"noopener\" target=\"_blank\">ici</a> pour vous inscrire.</p><p>Nous nous réjouissons de vous accueillir pour cette discussion passionnante !</p>",
+  "image": {
+   "src": "assets/img/blog/table-ronde-ia-juridique-slta-zurich-2024.webp",
+   "w": 1095,
+   "h": 1100,
+   "alt": "Visuel du SLTA Student Chapter Zurich présentant les quatre intervenants : portraits, noms et fonctions en allemand",
+   "legende": "Crédit photo : SLTA Student Chapter Zurich"
+  },
+  "vignette": {
+   "src": "assets/img/blog/table-ronde-ia-juridique-slta-zurich-2024-v.webp",
+   "w": 637,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Organization",
+    "SLTA Student Chapter Zurich"
+   ],
+   [
+    "Organization",
+    "Swiss LegalTech Association"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Person",
+    "Yoan Hermstrüwer"
+   ],
+   [
+    "Organization",
+    "Université de Zurich"
+   ],
+   [
+    "Place",
+    "Zurich"
+   ]
+  ],
+  "source_num": 48
+ },
+ {
+  "slug": "kilian-marty-rejoint-conseil-consultatif-neuron",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Entreprise",
+  "titre": "Kilian Marty rejoint le conseil consultatif de Neur.on comme expert en cybersécurité",
+  "date": "2023-08-30",
+  "auteur": "Équipe Neur.on",
+  "extrait": "À la tête du département Cybersécurité de CertX AG, Kilian Marty apporte le regard d’un auditeur chevronné sur chaque aspect du dispositif de sécurité de Neur.on, aux côtés de Jean Hennebert et de Brian Firlit.",
+  "bref": "En août 2023, Neur.on a accueilli Kilian Marty au sein de son conseil consultatif, en tant qu’expert en cybersécurité. Il dirigeait alors le département Cybersécurité de CertX AG, premier organisme suisse accrédité de certification et d’inspection pour l’IA, la cybersécurité et la sécurité fonctionnelle. Il y rejoint Jean Hennebert et Brian Firlit.",
+  "title": "Kilian Marty rejoint le conseil consultatif · Neur.on",
+  "description": "En août 2023, Kilian Marty, responsable du département Cybersécurité de CertX AG, rejoint le conseil consultatif de Neur.on comme expert en cybersécurité.",
+  "court": "Kilian Marty rejoint le conseil consultatif de Neur.on comme expert en cybersécurité",
+  "corps": "<p>Le parcours remarquable de Kilian à la tête du département Cybersécurité de CertX AG (premier organisme suisse accrédité de certification et d’inspection pour l’IA, la cybersécurité et la sécurité fonctionnelle) fait de lui une vigie idéale en matière de cybersécurité.</p><p>En tant qu’auditeur et évaluateur, il a approfondi son expertise des pratiques de sécurité IT/OT de pointe. Il joue aujourd’hui un rôle central dans les services de formation et de certification du premier organisme suisse de certification pour la sécurité fonctionnelle et la cybersécurité. Fort d’une vaste expérience de consultant en cybersécurité dans des secteurs variés, notamment l’automobile, le ferroviaire, l’énergie et la santé, Kilian apporte une expérience concrète de la mise en œuvre de systèmes de management de la cybersécurité, de l’évaluation des processus associés et de la détection des faiblesses et des écarts par rapport aux bonnes pratiques de sécurité.</p><p>Outre Kilian, nous avons le privilège de compter deux autres membres exceptionnels au sein de notre conseil consultatif (Advisory Board).</p><p>Jean Hennebert, notre conseiller Recherche et IA, et Brian Firlit, notre conseiller Croissance et stratégie, ont joué un rôle déterminant dans les progrès, l’innovation et l’orientation sectorielle de Neur.on.</p><p>Alors que Neur.on fête son premier anniversaire, nous sommes fiers d’affirmer que <a href=\"{{ROOT}}fr/securite-souverainete/\">la cybersécurité</a> fait partie intégrante de notre développement logiciel, de notre environnement DevOps et de la conception de nos processus depuis le premier jour.</p><p>Avec l’arrivée de Kilian dans <a href=\"{{ROOT}}fr/a-propos/\">notre équipe</a>, nous entendons désormais bénéficier de l’examen sans relâche d’un expert chevronné, qui remettra en question chaque aspect de notre dispositif de sécurité.</p>",
+  "image": {
+   "src": "assets/img/blog/kilian-marty-rejoint-conseil-consultatif-neuron.webp",
+   "w": 400,
+   "h": 400,
+   "alt": "Portrait d’un jeune homme aux cheveux châtains et à la barbe courte, en polo foncé, sur fond blanc",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/kilian-marty-rejoint-conseil-consultatif-neuron-v.webp",
+   "w": 400,
+   "h": 400
+  },
+  "mentions": [
+   [
+    "Person",
+    "Kilian Marty"
+   ],
+   [
+    "Organization",
+    "CertX AG"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ],
+   [
+    "Person",
+    "Jean Hennebert"
+   ],
+   [
+    "Person",
+    "Brian Firlit"
+   ]
+  ],
+  "source_num": 70
+ },
+ {
+  "slug": "ai-act-grand-challenge-universite-saint-gall",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Recherche et innovation",
+  "titre": "Les start-up de l’IA doivent-elles craindre l’AI Act ? Les leçons du Grand Challenge",
+  "date": "2023-07-20",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Huit solutions d’IA passées au crible du projet d’AI Act : Neur.on en tire trois enseignements, dont un levier de conformité peu coûteux pour les start-up aux finances tendues.",
+  "bref": "Des représentants de Neur.on, d’iCoSys et de CertX ont participé au premier Grand Challenge de l’Université de Saint-Gall consacré à l’AI Act de l’UE. Ils ont évalué la conformité de 8 solutions d’IA au projet de règlement. Selon Neur.on, la sensibilisation aux risques de l’IA et une culture de la conformité apportent beaucoup de valeur sans dépenses importantes.",
+  "title": "Les start-up doivent-elles craindre l’AI Act ? · Neur.on",
+  "description": "En 2023, Neur.on, iCoSys et CertX ont évalué 8 solutions d’IA au regard du projet d’AI Act lors du Grand Challenge de l’Université de Saint-Gall.",
+  "court": "Les start-up de l’IA doivent-elles craindre l’AI Act ? Les leçons du Grand Challenge",
+  "corps": "<h2>En quoi consistait le Grand Challenge de l’Université de Saint-Gall sur l’AI Act ?</h2><p>Nous avons eu l’honneur de voir des représentants de <a href=\"https://www.linkedin.com/company/neur-on/\" rel=\"noopener\" target=\"_blank\">Neur.on</a>, d’<a href=\"https://www.linkedin.com/company/icosys/\" rel=\"noopener\" target=\"_blank\">iCoSys</a> et de <a href=\"https://www.linkedin.com/company/certx-com/\" rel=\"noopener\" target=\"_blank\">CertX</a>, aux côtés d’autres spécialistes reconnus de l’IA venus du monde entier, participer à <a href=\"https://www.linkedin.com/company/the-first-university-of-st-gallen-grand-challenge-the-eu-ai-act/\" rel=\"noopener\" target=\"_blank\">The First University of St. Gallen Grand Challenge: The EU AI ACT</a>. Lors de cet événement, nous nous sommes concentrés sur l’évaluation de la conformité de 8 solutions d’IA de pointe au projet actuel de l’AI Act. Ces solutions couvraient la robotique, la gestion des processus et l’analytique NLP. Notre équipe, aux profils variés, réunissait des experts en apprentissage automatique, en droit et en certification ISO 27001.</p><p><strong><a href=\"https://www.srf.ch/play/tv/tagesschau/video/hsg-was-darf-kuenstliche-intelligenz-was-nicht?urn=urn:srf:video:73f91b72-fb62-4b3a-b928-da1a7e398a71\" rel=\"noopener\" target=\"_blank\">Cliquez ici pour en savoir plus</a> dans le journal télévisé national suisse !</strong></p><h2>Les start-up de l’IA doivent-elles craindre l’AI Act ?</h2><p>Voici nos principaux enseignements :</p><ul><li>Les principes fondamentaux de l’AI Act de l’UE (notamment l’action et le contrôle humains, la robustesse technique et la sécurité, le respect de la vie privée et la gouvernance des données, la transparence, la diversité, la non-discrimination et l’équité, ainsi que l’impact social et environnemental) sont bien conçus, jugés justes et essentiels pour bâtir une acceptation et une confiance largement partagées envers l’intelligence artificielle.</li><li>Cependant, pour des start-up aux finances tendues, se conformer aux exigences de l’AI Act peut s’apparenter à une épée de Damoclès, qui consomme des ressources et ralentit le développement.</li><li>Heureusement, comme nous l’avons observé lors du Grand Challenge, un aspect de la conformité n’exige pas de dépenses importantes tout en apportant une valeur considérable : la SENSIBILISATION aux risques de l’IA et une CULTURE D’ENTREPRISE qui donne la priorité à la conformité et à une croissance responsable.</li></ul><p>Œuvrons ensemble pour une industrie de l’IA qui embrasse la conformité, le développement responsable et une culture de la confiance.</p><p>Merci à <a href=\"https://www.linkedin.com/in/ACoAAEO0QOMBHLEqtxIGZKgy--Sd5Wz3nbG110o\" rel=\"noopener\" target=\"_blank\">Thomas Burri</a> d’avoir organisé un défi aussi spectaculaire, merci à <a href=\"https://www.linkedin.com/company/schweizer-radio-und-fernsehen/\" rel=\"noopener\" target=\"_blank\">SRF (Schweizer Radio und Fernsehen)</a> d’avoir couvert l’événement, et merci à tous les membres de notre équipe : <a href=\"https://www.linkedin.com/in/ACoAAABGhi4Bafd07Gq4jLsDhlik5my2FvqRm0U\" rel=\"noopener\" target=\"_blank\">Jean Hennebert</a>, <a href=\"https://www.linkedin.com/in/ACoAAD8PD-kBs3re4rj1MWkJRsu87M7eFRbc38I\" rel=\"noopener\" target=\"_blank\">Orane Laeri</a>, <a href=\"https://www.linkedin.com/in/ACoAAC92Y0sBK-mxrvCYB1cDjwrKmaMk8pColZw\" rel=\"noopener\" target=\"_blank\">Yael Iseli</a>, <a href=\"https://www.linkedin.com/in/ACoAAAtX600BtPDSDYcaq1nk4rpE54jJfH7V3L4\" rel=\"noopener\" target=\"_blank\">Arman Iranfar</a> et <a href=\"https://www.linkedin.com/in/ACoAADPDm3YBWV_b07Qym_qycsB57_IHAyRchSQ\" rel=\"noopener\" target=\"_blank\">Marco Repetto Ph. D.</a></p>",
+  "image": {
+   "src": "assets/img/blog/ai-act-grand-challenge-universite-saint-gall.webp",
+   "w": 780,
+   "h": 515,
+   "alt": "Aperçu du reportage Tagesschau de SRF : ordinateur portable, modèle de cerveau, enceinte connectée et smartphone sur un bureau",
+   "legende": "Le reportage de SRF consacré à l’événement"
+  },
+  "vignette": {
+   "src": "assets/img/blog/ai-act-grand-challenge-universite-saint-gall-v.webp",
+   "w": 640,
+   "h": 423
+  },
+  "mentions": [
+   [
+    "Event",
+    "The First University of St. Gallen Grand Challenge: The EU AI ACT"
+   ],
+   [
+    "Organization",
+    "iCoSys"
+   ],
+   [
+    "Organization",
+    "CertX"
+   ],
+   [
+    "Organization",
+    "SRF"
+   ],
+   [
+    "Person",
+    "Thomas Burri"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 74
+ },
+ {
+  "slug": "paula-reichenberg-pwc-legaltech-fund-londres",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Paula Reichenberg présente Neur.on à l’événement PwC et The LegalTech Fund de Londres",
+  "date": "2025-05-23",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Lors d’un événement londonien sur invitation, la CEO de Neur.on a présenté la solution devant des acteurs de la legaltech. Elle en est repartie avec trois « prix » inattendus, dont un constat : la demande de traduction juridique multilingue grandit.",
+  "bref": "Paula Reichenberg, CEO de Neur.on, a présenté Neur.on lors d’un événement sur invitation consacré à l’innovation juridique, organisé à Londres par PwC et The LegalTech Fund. Ses échanges avec des dirigeants de la legaltech du monde entier ont confirmé la demande croissante de flux de traduction juridique multilingues dans les grandes organisations internationales.",
+  "title": "PwC et The LegalTech Fund : pitch à Londres · Neur.on",
+  "description": "Paula Reichenberg, CEO de Neur.on, a présenté Neur.on à Londres lors d’un événement sur invitation organisé par PwC et The LegalTech Fund.",
+  "court": "Paula Reichenberg présente Neur.on à l’événement PwC et The LegalTech Fund de Londres",
+  "corps": "<p>La CEO de Neur.on, <a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg</a>, a récemment participé à un événement sur invitation consacré à l’innovation juridique, organisé par <strong>PwC</strong> et <strong>The LegalTech Fund</strong> à Londres. Soigneusement préparée par Sandeep Agrawal, Zach Posner et Rebecca Engel, la rencontre a réuni certaines des solutions legaltech les plus prometteuses et des leaders du secteur.</p><p>Paula a présenté Neur.on lors de l’événement. Elle a gagné la reconnaissance des organisateurs et des participants, mais elle est aussi repartie avec <strong>trois « prix » inattendus</strong> :</p><ul><li>D’abord, l’honneur d’être invitée à présenter Neur.on au sein d’un groupe restreint de fournisseurs legaltech tournés vers l’avenir.</li><li>Ensuite, un gain au tirage au sort, avec une variété de cadeaux attentionnés et amusants, grâce au format de réseautage créatif imaginé par les hôtes.</li><li>Enfin, et c’est le plus important : des échanges éclairants avec des dirigeants de la legaltech du monde entier. Ils ont confirmé la demande croissante de <strong>flux de traduction juridique multilingues</strong> dans les grandes organisations internationales.</li></ul><p>L’événement a souligné l’importance stratégique de la mission de Neur.on. Les acteurs clés de la legaltech reconnaissent de plus en plus la complexité et le caractère critique d’une <a href=\"{{ROOT}}fr/corrext/\">traduction juridique de haute qualité à grande échelle</a>.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-pwc-legaltech-fund-londres.webp",
+   "w": 773,
+   "h": 1100,
+   "alt": "Une femme à lunettes pose derrière des cadeaux aux logos PwC, TLTF, ContractPodAi, Agiloft et Conga",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-pwc-legaltech-fund-londres-v.webp",
+   "w": 450,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Organization",
+    "PwC"
+   ],
+   [
+    "Organization",
+    "The LegalTech Fund"
+   ],
+   [
+    "Place",
+    "Londres"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 5
+ },
+ {
+  "slug": "neuron-ai-days-2025-geneve-llm-traduction",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Neur.on aux AI Days 2025 à Genève : comment entraîner un LLM à bien traduire",
+  "date": "2025-01-27",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Que faut-il pour qu’un LLM devienne un excellent traducteur de textes juridiques et financiers ? Eloi Eynard, data scientist chez Neur.on, présente les méthodes de l’équipe aux AI Days 2025, et l’origine du nom « TheGoose ».",
+  "bref": "Neur.on annonçait l’intervention de son data scientist Eloi Eynard aux AI Days 2025 à Genève, le mardi 28 janvier 2025 à 11 h 30. Il devait montrer aux PME présentes comment Neur.on entraîne des LLM à mieux traduire les textes techniques juridiques et financiers, et pourquoi ses nouveaux modèles d’IA s’appellent « TheGoose ».",
+  "title": "AI Days 2025 Genève : entraîner un LLM à traduire · Neur.on",
+  "description": "Le 28 janvier 2025 aux AI Days de Genève, Eloi Eynard, data scientist chez Neur.on, montre comment Neur.on entraîne des LLM à mieux traduire.",
+  "court": "Neur.on aux AI Days 2025 à Genève : comment entraîner un LLM à bien traduire",
+  "corps": "<p>Tout le monde parle d’IA, même nos grands-mères. Mais qui comprend vraiment ce qu’il faut pour entraîner un LLM et en faire un excellent traducteur ?</p><p>C’est précisément ce que notre data scientist, <a href=\"https://www.linkedin.com/in/eloi-eynard/\" rel=\"noopener\" target=\"_blank\">Eloi Eynard</a>, vous montrera demain aux <a href=\"https://ai-days.swiss-ai-center.ch/\" rel=\"noopener\" target=\"_blank\">AI Days 2025</a> à Genève.</p><p>Chez NEUR.ON, nous poussons les LLM jusqu’aux limites de leurs capacités. Le but : leur apprendre à mieux traduire, une compétence très recherchée pour les textes techniques des domaines juridique et financier. Eloi montrera aux PME présentes comment fonctionnent nos processus, et si nous entraînons aussi des modèles supplémentaires pour contrôler nos <a href=\"{{ROOT}}fr/lexmachina/\">modèles de traduction</a>.</p><p>D’autres ont leurs GOAT. Mais pourquoi appelons-nous « TheGoose » tous les nouveaux modèles d’IA développés sous la supervision d’Eloi ? Découvrez cette particularité insolite, et bien plus encore, en passant nous voir demain, mardi 28 janvier, à 11 h 30. (Lieu : Balexert Pathé, Av. Louis-Casai 27, 1209 Vernier)</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-ai-days-2025-geneve-llm-traduction.webp",
+   "w": 1200,
+   "h": 965,
+   "alt": "Un jeune homme tient l’affiche scientifique de Neur.on sur la traduction automatique par LLM, signée Eloi Eynard",
+   "legende": "AI Days@HES-SO 2025, Genève, 28 janvier 2025"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-ai-days-2025-geneve-llm-traduction-v.webp",
+   "w": 640,
+   "h": 515
+  },
+  "mentions": [
+   [
+    "Event",
+    "AI Days 2025"
+   ],
+   [
+    "Person",
+    "Eloi Eynard"
+   ],
+   [
+    "Place",
+    "Genève"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 15
+ },
+ {
+  "slug": "ejustice-40-ans-kamingesprach-neuron",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "40 ans d’eJustice.ch : la CEO de Neur.on débat du « Swiss Justice Base Model »",
+  "date": "2025-01-21",
+  "auteur": "Équipe Neur.on",
+  "extrait": "L’association eJustice.ch inaugure une série de discussions en petit comité entre droit et technologie. Parmi les sujets attendus au premier rendez-vous : souveraineté de l’IA, propriété intellectuelle, sécurité des données et philosophie du droit.",
+  "bref": "Pour ses 40 ans, l’association eJustice.ch lance le 23 janvier 2025 les « Kamingespräche », des discussions en petit comité entre droit et technologie. La CEO de Neur.on est invitée au premier rendez-vous pour débattre du « Swiss Justice Base Model » avec des représentants de l’Office fédéral de la justice, du Tribunal fédéral, de SwissAI et de Swisslex.",
+  "title": "eJustice.ch, 40 ans : premier Kamingespräch · Neur.on",
+  "description": "Pour ses 40 ans, eJustice.ch lance les Kamingespräche. Le 23 janvier 2025, la CEO de Neur.on y débat du « Swiss Justice Base Model ».",
+  "court": "40 ans d’eJustice.ch : la CEO de Neur.on débat du « Swiss Justice Base Model »",
+  "corps": "<p>Le 23 janvier de cette année, l’organisation eJustice.ch fête ses 40 ans et lance une nouvelle série de discussions baptisée « Kamingespräche » (discussions au coin du feu).</p><p>Ces discussions visent à réunir des personnes issues du droit et de la technologie dans une atmosphère plutôt intime, devant un public restreint. Elles promettent des échanges fructueux et ciblés, où chacun s’inspire des autres.</p><p>La première de ces discussions aura lieu le 23 janvier, dans le cadre des célébrations du 40e anniversaire de l’association <a href=\"http://ejustice.ch/\" rel=\"noopener\" target=\"_blank\">eJustice.ch</a>. <a href=\"{{ROOT}}fr/a-propos/\">Notre CEO</a> s’en réjouit beaucoup, car on lui a demandé de débattre du thème « Swiss Justice Base Model » avec Michael Schöll, directeur de l’Office fédéral de la justice ; <a href=\"https://www.linkedin.com/in/daniel-brunner-06668937/\" rel=\"noopener\" target=\"_blank\">Daniel Brunner</a>, chef des services informatiques du Tribunal fédéral ; <a href=\"https://www.linkedin.com/in/martinjaggi/\" rel=\"noopener\" target=\"_blank\">Martin Jaggi</a>, professeur associé au Machine Learning and Optimization Laboratory, pour <a href=\"https://www.linkedin.com/company/swissai-org/\" rel=\"noopener\" target=\"_blank\">SwissAI</a> ; et <a href=\"https://www.linkedin.com/in/hayo-iversen-2483b03/\" rel=\"noopener\" target=\"_blank\">Hayo Iversen</a>, CEO de <a href=\"https://www.linkedin.com/company/swisslex-sa/\" rel=\"noopener\" target=\"_blank\">Swisslex - Banque suisse de données juridiques SA</a>.</p><p>Nous aurions aimé vous inviter toutes et tous, mais cet événement est réservé aux membres de l’association Verein eJustice.ch. (Si vous souhaitez <a href=\"https://ejustice.ch/mitgliedschaft/\" rel=\"noopener\" target=\"_blank\">devenir membre : cliquez ici</a>.)</p><p>Petit avant-goût des sujets qui pourraient susciter des débats animés : que signifie la <a href=\"{{ROOT}}fr/securite-souverainete/\">souveraineté de l’IA</a> en matière de droits de propriété intellectuelle et de sécurité des données, mais aussi de logique juridique, d’éthique et (sans vouloir paraître pédant) d’interprétation suisse sous-jacente de la philosophie du droit ?</p>",
+  "image": {
+   "src": "assets/img/blog/ejustice-40-ans-kamingesprach-neuron.webp",
+   "w": 1200,
+   "h": 675,
+   "alt": "Cinq intervenants assis sur scène devant un écran montrant un feu de cheminée et le logo eJustice.ch",
+   "legende": "Kamingespräch de l’association eJustice.ch, janvier 2025"
+  },
+  "vignette": {
+   "src": "assets/img/blog/ejustice-40-ans-kamingesprach-neuron-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Organization",
+    "eJustice.ch"
+   ],
+   [
+    "Event",
+    "Kamingespräche"
+   ],
+   [
+    "Person",
+    "Michael Schöll"
+   ],
+   [
+    "Organization",
+    "Office fédéral de la justice"
+   ],
+   [
+    "Organization",
+    "SwissAI"
+   ],
+   [
+    "Organization",
+    "Swisslex"
+   ]
+  ],
+  "source_num": 16
+ },
+ {
+  "slug": "panel-ai-in-business-zurich-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "IA et études d’avocats : Paula Reichenberg au panel « AI in Business » de Zurich en 2024",
+  "date": "2024-09-01",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Les investissements dans l’IA en valent-ils la peine pour les études d’avocats et les PME ? Avant le panel « AI in Business » de Zurich, Paula Reichenberg pose la question du retour sur investissement et des recettes qui fonctionnent.",
+  "bref": "Paula Reichenberg, de Neur.on, annonçait sa participation au panel « AI in Business » du 16 septembre 2024 au Google Campus de Zurich. Avec des intervenants de Squirro, iteo, Unit8 et Sielva Management SA, elle devait aborder les écueils des projets d’IA, les recettes de succès éprouvées et le retour sur investissement de l’IA pour les PME.",
+  "title": "IA et études d’avocats : panel AI in Business · Neur.on",
+  "description": "Le 16 septembre 2024 au Google Campus de Zurich, Paula Reichenberg (Neur.on) débat du retour sur investissement de l’IA pour les PME.",
+  "court": "IA et études d’avocats : Paula Reichenberg au panel « AI in Business » de Zurich en 2024",
+  "corps": "<p>Au moment où vous lisez ces lignes, les études d’avocats se pressent pour tester et adopter des solutions d’IA. Elles veulent éviter de prendre du retard dans la révolution technologique la plus marquante du secteur à ce jour.</p><p>Mais ces investissements (en coûts de licence comme en ressources humaines) en valent-ils vraiment la peine ?</p><p>Les PME peuvent-elles obtenir un excellent retour sur investissement grâce à l’IA en 2024, dans l’univers LegalTech comme en dehors ?</p><p>Parlons des secrets, et de la manière de s’assurer que les gains d’efficacité et/ou les revenus supplémentaires justifient une telle démarche :</p><p>Rejoignez-moi le 16 septembre au panel « AI in Business », au Google Campus de Zurich. Avec <a href=\"https://www.linkedin.com/in/dselz/\" rel=\"noopener\" target=\"_blank\">Dorian Selz</a> de <a href=\"https://www.linkedin.com/company/squirroag/\" rel=\"noopener\" target=\"_blank\">Squirro</a>, <a href=\"https://www.linkedin.com/in/mierzwakarol/\" rel=\"noopener\" target=\"_blank\">Karol Mierzwa</a> d’<a href=\"https://www.linkedin.com/company/iteo-software-house/\" rel=\"noopener\" target=\"_blank\">iteo</a>, <a href=\"https://www.linkedin.com/in/michal-rachtan/\" rel=\"noopener\" target=\"_blank\">Michal Rachtan</a> d’<a href=\"https://www.linkedin.com/company/unit8/\" rel=\"noopener\" target=\"_blank\">Unit8</a> et notre modérateur, <a href=\"https://www.linkedin.com/in/silvanandermatt/\" rel=\"noopener\" target=\"_blank\">Silvan Andermatt</a> de <a href=\"https://www.linkedin.com/company/sielva-management-sa/\" rel=\"noopener\" target=\"_blank\">Sielva Management SA</a>, nous parlerons des écueils de projets d’IA célèbres (ou tristement célèbres), des recettes de succès éprouvées et des conseils et astuces d’experts. Objectif : tirer le meilleur parti du paysage actuel de l’IA, qui alimente la peur de passer à côté (FOMO).</p><p> Au plaisir de vous y retrouver.</p><p><a href=\"https://www.paih.gov.pl/en/conferences/registration-business-technology-society_in_flux-hi-tech_solutions_switzerland-poland-eu/\" rel=\"noopener\" target=\"_blank\">Cliquez ici</a> pour réserver votre billet !</p>",
+  "image": {
+   "src": "assets/img/blog/panel-ai-in-business-zurich-2024.webp",
+   "w": 1200,
+   "h": 627,
+   "alt": "Visuel d’annonce « I’m speaking @ » avec le portrait de Paula Reichenberg, conférence du 16 septembre à Zurich",
+   "legende": "Conférence « Business, technology & the society in flux », Zurich, 16 septembre 2024"
+  },
+  "vignette": {
+   "src": "assets/img/blog/panel-ai-in-business-zurich-2024-v.webp",
+   "w": 640,
+   "h": 335
+  },
+  "mentions": [
+   [
+    "Event",
+    "AI in Business"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Place",
+    "Google Campus Zurich"
+   ],
+   [
+    "Organization",
+    "Squirro"
+   ],
+   [
+    "Organization",
+    "Unit8"
+   ],
+   [
+    "Organization",
+    "Sielva Management SA"
+   ]
+  ],
+  "source_num": 33
+ },
+ {
+  "slug": "neuron-gen-ai-summit-2024-lausanne",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Neur.on au GEN AI Summit 2024 de Lausanne : les défis de l’IA en traduction juridique",
+  "date": "2024-05-29",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Pourquoi des outils comme DeepL peinent-ils sur les textes juridiques et financiers spécialisés ? Au GEN AI Summit 2024, la CEO de Neur.on a évoqué les nuances entre systèmes juridiques, les barrières culturelles et l’avenir de l’IA en traduction.",
+  "bref": "Le 29 mai 2024, Paula Reichenberg, CEO de Neur.on, est intervenue au GEN AI Summit 2024 à Lausanne, dans la session « Domain Specific Innovation ». Elle a présenté les limites d’outils comme DeepL pour les traductions juridiques et financières spécialisées, les défis culturels et linguistiques de la traduction juridique et les progrès attendus de l’IA dans ce domaine.",
+  "title": "GEN AI Summit 2024 Lausanne : IA et traduction · Neur.on",
+  "description": "Le 29 mai 2024 au GEN AI Summit de Lausanne, Paula Reichenberg, CEO de Neur.on, a parlé des limites de la traduction automatique juridique.",
+  "court": "Neur.on au GEN AI Summit 2024 de Lausanne : les défis de l’IA en traduction juridique",
+  "corps": "<p>Le GEN AI Summit 2024, à Lausanne, a réuni des leaders du secteur et des innovateurs pour façonner l’avenir de la technologie. Nous sommes fiers d’annoncer que notre CEO, <a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg</a>, comptait parmi les intervenants du sommet le 29 mai. Elle y a partagé son regard sur l’univers dynamique de l’IA générative.</p><p>Lors du sommet, les discussions sont allées au-delà des grandes annonces de géants de la tech comme OpenAI et Google. Les participants ont pu explorer divers cas d’usage avec panoramai.ch. Ces exemples ont montré la valeur réelle de l’IA générative et ont donné aux participants des pistes concrètes pour leurs propres projets.</p><p>Paula a participé à la session « Domain Specific Innovation », aux côtés d’intervenants de renom comme Raphaël Briner, Pascal Wicht, Romain Rosay (CTO d’Amplify) et Deepak Tewari (CEO de Privately). <strong>Cette session a exploré les subtilités de l’IA et de la technologie dans différents secteurs.</strong></p><h2>Points clés de l’intervention de Paula</h2><ul><li><strong>Limites des outils actuels de traduction automatique :</strong> Paula a souligné les difficultés liées à l’utilisation d’outils comme DeepL pour des <a href=\"{{ROOT}}fr/lexmachina/\">traductions juridiques et financières spécialisées</a>. Elle a insisté sur la difficulté de rendre les nuances entre différents systèmes juridiques.</li><li><strong>Défis culturels et linguistiques :</strong> elle a évoqué les importantes barrières culturelles et linguistiques qui compliquent l’obtention de traductions exactes, un enjeu essentiel en contexte juridique.</li><li><strong>Ambitions futures de l’IA en traduction juridique :</strong> Paula a présenté les améliorations progressives et les objectifs futurs de l’IA pour mieux servir le domaine de la traduction juridique.</li></ul><h2>Impact plus large de l’IA</h2><p>La session a également abordé les effets plus larges de l’IA sur la société, notamment les suppressions d’emplois possibles et les enjeux éthiques de ses applications. Les questions du public ont soulevé des problèmes concrets, comme la précision de la détection de l’âge selon les origines ethniques ou la gestion des deepfakes. Les intervenants ont rassuré le public sur les efforts en cours pour affiner ces technologies et garantir leur conformité aux normes réglementaires.</p><p><strong>Pour regarder l’intégralité de la discussion, <a href=\"https://www.youtube.com/watch?v=HnWR2oHOW14&amp;t=775s\" rel=\"noopener\" target=\"_blank\">cliquez ici</a>.</strong></p>",
+  "image": {
+   "src": "assets/img/blog/neuron-gen-ai-summit-2024-lausanne.webp",
+   "w": 1200,
+   "h": 675,
+   "alt": "Visuel de l’événement PANORAMAI, le 29 mai à Lausanne, avec l’organisateur Sand et l’hôte Unlimitrust",
+   "legende": "Visuel PANORAMAI, Lausanne, 29 mai. Crédit photo : panoramai.ch"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-gen-ai-summit-2024-lausanne-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Event",
+    "GEN AI Summit 2024"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Place",
+    "Lausanne"
+   ],
+   [
+    "Organization",
+    "Amplify"
+   ],
+   [
+    "Organization",
+    "Privately"
+   ],
+   [
+    "Organization",
+    "DeepL"
+   ]
+  ],
+  "source_num": 45
+ },
+ {
+  "slug": "neuron-quatre-finalistes-swiss-fintech-awards-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Prix et distinctions",
+  "titre": "Neur.on parmi les 4 finalistes des Swiss FinTech Awards 2024",
+  "date": "2024-05-24",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Comment une plateforme de traduction peut-elle concourir dans une compétition FinTech ? Pour les banques, une langue précise est l’écrin de leur expertise. Le jury des Swiss FinTech Awards l’a bien compris.",
+  "bref": "Neur.on figure parmi les 4 finalistes des Swiss FinTech Awards 2024. Le jury reconnaît ainsi qu’une terminologie exacte et une formulation convaincante comptent bien au-delà du domaine juridique, notamment pour les banques. La finale était annoncée pour le 11 juin 2024, lors de la conférence « FinTech 2024 » au GDI Gottlieb Duttweiler Institute de Rüschlikon.",
+  "title": "Finaliste des Swiss FinTech Awards 2024 · Neur.on",
+  "description": "Neur.on, plateforme SaaS de traduction par IA, figure parmi les 4 finalistes des Swiss FinTech Awards 2024. Finale le 11 juin à Rüschlikon.",
+  "court": "Neur.on parmi les 4 finalistes des Swiss FinTech Awards 2024",
+  "corps": "<p>NEUR.ON fait partie des 4 finalistes des Swiss FinTech Awards 2024.</p><p>Vous pensez qu’il y a erreur ?</p><p>« Mais comment une <a href=\"{{ROOT}}fr/corrext/\">plateforme SaaS de traduction propulsée par l’IA</a> pourrait-elle être considérée comme une FinTech ? », vous demanderez-vous peut-être. Surtout si vous nous avez rencontrés lors des innombrables événements LegalTech auxquels nous avons participé.</p><p>Le jury des Swiss FinTech Awards a pourtant compris qu’une terminologie exacte et une formulation convaincante dépassent largement le domaine juridique.</p><p>Pour les banques, un langage précis et une communication percutante sont l’écrin de luxe dans lequel elles livrent leur expertise.</p><p>Imaginez que vous receviez une brochure sur papier glacé censée contenir une analyse pertinente de votre portefeuille par votre banquier privé. Vous commencez à lire. Après quelques phrases seulement, il est évident que l’ensemble a été traduit automatiquement, et mal qui plus est. Les formulations sonnent faux, les incohérences de contexte se multiplient, et vous voyez bien que le résultat final n’a même jamais été relu par une personne de langue maternelle.</p><p>Une langue médiocre fait inévitablement naître un soupçon d’incompétence et, pire encore peut-être, de manque de respect envers vos lecteurs. Impensable dans l’univers de la « haute horlogerie financière » suisse.</p><p>Pour en savoir plus sur les 4 finalistes, lisez <a href=\"https://fintechnews.ch/fintech/the-finalists-of-the-swiss-fintech-awards-2024/70811/\" rel=\"noopener\" target=\"_blank\">Fintechnews Switzerland</a> et <a href=\"https://www.fuw.ch/fintech-awards-finale-der-besten-fintechs-steht-fest-129774611612\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a>.</p><p>Rejoignez-nous le 11 juin à « FinTech 2024 », la conférence fintech phare organisée par Finanz und Wirtschaft Forum au GDI Gottlieb Duttweiler Institute de Rüschlikon, pour une finale passionnante.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-quatre-finalistes-swiss-fintech-awards-2024.webp",
+   "w": 1200,
+   "h": 675,
+   "alt": "Visuel des finalistes Swiss Fintech Awards : Climada Technologies et Neur.on (Early Stage), GenTwo et Payrexx (Growth Stage)",
+   "legende": "Crédit photo : fintechnews"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-quatre-finalistes-swiss-fintech-awards-2024-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Event",
+    "Swiss FinTech Awards 2024"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ],
+   [
+    "Event",
+    "FinTech 2024"
+   ],
+   [
+    "Organization",
+    "Finanz und Wirtschaft"
+   ],
+   [
+    "Place",
+    "GDI Gottlieb Duttweiler Institute"
+   ],
+   [
+    "Place",
+    "Rüschlikon"
+   ]
+  ],
+  "source_num": 46
+ },
+ {
+  "slug": "trust-valley-day-2023-risques-cyber-pme",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Trust Valley Day 2023 : Neur.on au panel sur les risques cyber des PME",
+  "date": "2023-10-09",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Les prestataires informatiques, porte d’entrée vers les grandes organisations, deviennent des cibles de choix. Au Trust Valley Day, la CEO de Neur.on a plaidé pour des infrastructures adaptées aux PME suisses qui veulent explorer l’IA en toute sécurité.",
+  "bref": "Le 5 octobre 2023, Paula Reichenberg, CEO de Neur.on, a participé à la table ronde « Risques cyber : les PME sous pression » du Trust Valley Day. Elle a souligné l’importance de tester les solutions d’IA avec des données locales et a appelé à soutenir des infrastructures adaptées aux PME suisses, avec une sécurité maximale des données.",
+  "title": "Trust Valley Day : risques cyber et PME · Neur.on",
+  "description": "Le 5 octobre 2023 au Trust Valley Day, Paula Reichenberg, CEO de Neur.on, a appelé à tester l’IA avec des données locales pour les PME suisses.",
+  "court": "Trust Valley Day 2023 : Neur.on au panel sur les risques cyber des PME",
+  "corps": "<p>Paula, <a href=\"{{ROOT}}fr/a-propos/\">CEO de Neur.on</a>, a participé le 5 octobre à la table ronde du Trust Valley Day : « Risques cyber : les PME sous pression ».</p><p>Face à la montée des cybermenaces qui visent les petites et moyennes entreprises, nous observons une tendance croissante : les prestataires de services informatiques, souvent la porte d’entrée vers des organisations plus grandes, deviennent des cibles de choix. Les PME se retrouvent prises entre les risques de cyberattaques et le besoin pressant de renforcer leur maturité en cybersécurité.</p><p>Lors de l’événement, Paula a souligné l’importance cruciale de tester les solutions d’IA avec des données locales. Elle a appelé à soutenir le développement d’infrastructures adaptées aux PME suisses désireuses d’explorer l’IA tout en garantissant une <a href=\"{{ROOT}}fr/securite-souverainete/\">sécurité maximale des données</a>.</p><p>En résumé, cette discussion a mis en évidence le besoin crucial de renforcer la cybersécurité des PME. L’appel à l’action est sans équivoque : unir nos forces, partager nos connaissances et collaborer étroitement pour bâtir un écosystème plus sûr et plus résilient.</p><p>Regardez l’intervention de Paula en <a href=\"https://www.youtube.com/watch?v=XW0b3ne0N3s&amp;t=1012s\" rel=\"noopener\" target=\"_blank\">cliquant ici</a> !</p>",
+  "image": {
+   "src": "assets/img/blog/trust-valley-day-2023-risques-cyber-pme.webp",
+   "w": 602,
+   "h": 280,
+   "alt": "Visuel Trust Valley du panel « Risques cyber : les PME sous pression », avec sept intervenants dont Paula Reichenberg",
+   "legende": "Trust Valley Day, 5 octobre 2023"
+  },
+  "vignette": {
+   "src": "assets/img/blog/trust-valley-day-2023-risques-cyber-pme-v.webp",
+   "w": 602,
+   "h": 280
+  },
+  "mentions": [
+   [
+    "Event",
+    "Trust Valley Day"
+   ],
+   [
+    "Organization",
+    "Trust Valley"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 64
+ },
+ {
+  "slug": "legaltech-avocats-allies-ou-concurrents",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "LegalTech et avocats, alliés ou concurrents ? Leçons de la journée de l’étude digitale",
+  "date": "2023-09-29",
+  "auteur": "Équipe Neur.on",
+  "extrait": "La plupart des outils LegalTech veulent servir les avocats, pas les concurrencer. Leur adoption reste pourtant difficile. Adéquation aux processus de travail, interface intuitive et service clientèle réactif : trois clés pour réussir.",
+  "bref": "La fondatrice de Neur.on a participé à la table ronde « LegalTech » de la journée de l’étude digitale organisée par la Conférence latine des bâtonniers, le 29 septembre 2023. Son constat : la clé du succès d’un outil LegalTech est sa facilité d’utilisation, avec une interface intuitive, une adéquation aux processus des avocats et un service clientèle réactif.",
+  "title": "LegalTech et avocats : alliés ou concurrents ? · Neur.on",
+  "description": "À la table ronde LegalTech de la Conférence latine des bâtonniers en 2023, la fondatrice de Neur.on explique pourquoi la simplicité d’usage prime.",
+  "court": "LegalTech et avocats, alliés ou concurrents ? Leçons de la journée de l’étude digitale",
+  "corps": "<p>Contrairement à ce que pourraient craindre certain·e·s avocat·e·s, la majeure partie des outils LegalTech créés ces dernières années ont pour but de servir les professionnel·le·s du droit plutôt que de leur faire concurrence. Or, on entend autant d’entrepreneur·e·s LegalTech déçu·e·s de la réserve avec laquelle leur public cible accueille leurs solutions que d’avocat·e·s qui déplorent le manque d’adéquation des nouveaux outils qui leur sont proposés.</p><h2>Comment rapprocher les startups LegalTech et les métiers juridiques ?</h2><p>La nécessité de créer une passerelle entre la ferveur innovatrice des startups et les besoins concrets des métiers juridiques a poussé le barreau bruxellois, sous l’égide de Vinciane Gillet, à créer un incubateur sur mesure. En Suisse, il nous faut compter sur le soutien de la Swiss LegalTech Association et l’engagement de certaines études de pointe, qui acceptent la responsabilité de cocréation avec des LegalTech et investissent le temps et les ressources nécessaires à tester de nouveaux outils (merci Bär Karrer, Bratschi Ltd., Kellerhals Carrard, Jacquemoud Stanislas, pour n’en citer que quelques-unes).</p><p>Ce fut l’un des thèmes abordés lors de la table ronde « LegalTech » de la journée de l’étude digitale organisée par la Conférence latine des bâtonniers, à laquelle j’ai eu le plaisir de participer aux côtés de Vinciane Gillet (GILLET-LEX), Ariel Ben Hattar (Lenz &amp; Staehelin) et Camille Auberson (Approovd).</p><h2>Quelle est la clé du succès d’un outil de technologie juridique ?</h2><p>Interrogée par Juliette Ancelle (id est avocats) et Stéphanie Chuffart-Finsterwald (sigma legal) sur les enseignements tirés en tant qu’entrepreneure LegalTech fondatrice de <a href=\"{{ROOT}}fr/a-propos/\">NEUR.ON</a>, je dirais que la clé du succès d’un outil de technologie juridique est sa facilité d’utilisation. Les agendas surchargés des avocat·e·s ne laissent en effet pas de place à des formations techniques « en anticipation d’un besoin futur ». Par exemple, les besoins de traduction juridique d’une étude variant grandement d’une année à l’autre, une formation « hors contexte » des assistant·e·s ou stagiaires à un outil de traduction serait une perte de temps. Les solutions doivent ainsi être suffisamment intuitives et logiques pour que l’avocat·e puisse obtenir le résultat escompté dès la première utilisation, en quelques clics, ou faire appel à un service clientèle réactif comblant les éventuelles lacunes de connaissances « ad hoc ».</p><p>Pour conclure avec un jeu de mots un peu facile, les maîtres mots pour une solution adaptée aux mains de maîtres sont donc :</p><ul><li>Adéquation avec les processus de travail des avocat·e·s, sans aucune ambition de les changer ;</li><li>Interface intuitive, ne nécessitant aucune formation préalable ;</li><li>Service clientèle adapté, y compris aux horaires de la profession et aux situations d’urgence.</li></ul>",
+  "image": {
+   "src": "assets/img/blog/legaltech-avocats-allies-ou-concurrents.webp",
+   "w": 1200,
+   "h": 900,
+   "alt": "Six intervenants en table ronde sur scène, devant l’écran « L’étude digitale : défis et solutions »",
+   "legende": "Journée de l’étude digitale de la Conférence latine des bâtonniers, 29 septembre 2023"
+  },
+  "vignette": {
+   "src": "assets/img/blog/legaltech-avocats-allies-ou-concurrents-v.webp",
+   "w": 640,
+   "h": 480
+  },
+  "mentions": [
+   [
+    "Organization",
+    "Conférence latine des bâtonniers"
+   ],
+   [
+    "Event",
+    "Journée de l’étude digitale"
+   ],
+   [
+    "Organization",
+    "Swiss LegalTech Association"
+   ],
+   [
+    "Person",
+    "Vinciane Gillet"
+   ],
+   [
+    "Organization",
+    "Neur.on"
+   ]
+  ],
+  "source_num": 67
+ },
+ {
+  "slug": "paula-reichenberg-female-founder-project-ubs-2025",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Entreprise",
+  "titre": "Paula Reichenberg, CEO de Neur.on, fait partie du Female Founder Project 2025 d’UBS",
+  "date": "2025-04-14",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Les fondatrices ne reçoivent pas les mêmes questions que les fondateurs lors des levées de fonds. Paula Reichenberg, CEO de Neur.on, a choisi de s’y préparer avec le programme d’UBS, et elle espère des questions vraiment retorses.",
+  "bref": "Paula Reichenberg, CEO de Neur.on, fait partie du Female Founder Project 2025 d’UBS. Ce programme prépare les fondatrices à la rencontre avec les investisseurs. Selon la Harvard Business Review, les questions posées aux entrepreneuses portent surtout sur les risques, ce qui peut les desservir. Paula Reichenberg veut donc arriver préparée.",
+  "title": "Paula Reichenberg au Female Founder Project 2025 · Neur.on",
+  "description": "Paula Reichenberg, CEO de Neur.on, fait partie du Female Founder Project 2025 d’UBS, un programme qui prépare les fondatrices aux investisseurs.",
+  "court": "Paula Reichenberg, CEO de Neur.on, fait partie du Female Founder Project 2025 d’UBS",
+  "corps": "<p>On dit que les fondatrices reçoivent d’autres questions. <a href=\"{{ROOT}}fr/a-propos/\">Notre CEO</a> Paula Reichenberg a d’autres réponses.</p><p>Selon la Harvard Business Review, parmi les nombreuses raisons, complexes et mystérieuses, pour lesquelles les femmes obtiennent beaucoup moins de capital-risque (1,8 % du capital-risque total en 2024), figure la manière dont les questions sont posées aux fondateurs et aux fondatrices pendant les levées de fonds.</p><p>Apparemment, 67 % des questions posées aux entrepreneurs sont orientées vers la promotion (espoirs, réussites, progression), tandis que 66 % des questions posées aux entrepreneuses sont orientées vers la prévention (sécurité, responsabilité, risques potentiels).</p><p>Qu’est-ce que cela change ? Si l’on ne connaît pas ces schémas, on répond inévitablement dans le registre de motivation de la question. Pour une femme, cela peut donner une image plus conservatrice et plus réticente à prendre des risques, et donc celle d’une opportunité d’investissement moins intéressante.</p><p>Le fait d’être une femme, Paula « s’en moque ». Pas plus que de son signe du zodiaque. Elle ne se plaint jamais que le monde soit injuste et ne perd pas de temps à se voir comme la victime de quoi que ce soit. Elle fait de son mieux avec les cartes qu’elle a en main.</p><p>Mais cela suppose d’arriver préparée, que ce soit lors d’une levée de fonds ou dans toute autre situation professionnelle. C’est pourquoi elle remercie <a href=\"https://www.linkedin.com/company/ubs/\" rel=\"noopener\" target=\"_blank\"><strong>UBS</strong></a> de l’avoir intégrée au programme Female Founder de cette année. Il s’agit d’une approche moderne pour accélérer la réussite des fondatrices, au moyen d’un programme global de préparation à la rencontre avec les investisseurs.</p><p>Elle espère que cette préparation comportera beaucoup de questions vraiment retorses.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-female-founder-project-ubs-2025.webp",
+   "w": 733,
+   "h": 1100,
+   "alt": "Portrait d’une femme à lunettes, logo UBS et mention « I’m part of Project Female Founder 2025 »",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-female-founder-project-ubs-2025-v.webp",
+   "w": 427,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Organization",
+    "UBS"
+   ],
+   [
+    "Organization",
+    "Harvard Business Review"
+   ],
+   [
+    "Organization",
+    "Neur.on AI Solutions SA"
+   ]
+  ],
+  "source_num": 8
+ },
+ {
+  "slug": "paula-reichenberg-panel-gilw25-geneve-ia",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Geneva International Legal Week 2025 : un panel sur l’IA rentable avec Paula Reichenberg",
+  "date": "2025-02-28",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Les coûts initiaux de l’IA ne sont-ils que des « frais de formation » ? Pour qui maîtrise son budget, l’IA doit améliorer le retour sur investissement. À Genève, un panel partage des conseils concrets pour l’utiliser de façon rentable.",
+  "bref": "Neur.on a annoncé que sa CEO, Paula Reichenberg, interviendrait le 12 mars 2025 dans une table ronde de la Geneva International Legal Week (GILW25), organisée du 10 au 12 mars par la Geneva International Legal Association. Le panel devait livrer des conseils concrets aux cabinets d’avocats et aux directions juridiques pour utiliser l’IA de manière rentable.",
+  "title": "GILW25 : Paula Reichenberg et l’IA rentable · Neur.on",
+  "description": "Neur.on annonce la participation de Paula Reichenberg à un panel sur l’usage rentable de l’IA, le 12 mars 2025, à la Geneva International Legal Week.",
+  "court": "Geneva International Legal Week 2025 : un panel sur l’IA rentable avec Paula Reichenberg",
+  "corps": "<p>Les coûts initiaux élevés de l’intégration de l’IA ne sont-ils vraiment que des « frais de formation » ?</p><p>C’est du moins ainsi que les désignent, par euphémisme, certains responsables de l’innovation de cabinets d’avocats et de directions juridiques pionniers en la matière.</p><p>Mais pour quiconque maîtrise son budget, il faut un signe clair que l’IA améliore son retour sur investissement.</p><p>Vous l’avez sans doute entendu cent fois ces 24 derniers mois : utiliser l’IA maximise votre productivité, améliore la qualité de votre travail et réduit le risque de conséquences juridiques et de retards. Elle peut aussi générer bien plus de profit tout en rendant le système judiciaire accessible à davantage de personnes.</p><p>Ce que vous n’avez peut-être pas entendu, c’est COMMENT y parvenir.</p><p>Si le sujet vous intéresse, nous vous invitons cordialement à rejoindre <a href=\"{{ROOT}}fr/a-propos/\">notre CEO</a> à l’édition de cette année de la Geneva International Legal Week, organisée par la <a href=\"https://www.linkedin.com/company/geneva-international-legal-association/\" rel=\"noopener\" target=\"_blank\">Geneva International Legal Association (GILA)</a>. Le 12 mars, Paula Reichenberg participera à une table ronde qui débutera à 10 h 45, aux côtés de <a href=\"https://www.linkedin.com/in/karin-m%C3%BClchi-77757097/\" rel=\"noopener\" target=\"_blank\">Karin Mülchi</a> (<a href=\"https://www.linkedin.com/company/bridgelegalgroup/\" rel=\"noopener\" target=\"_blank\">Bridge Legal Group AG</a>), <a href=\"https://www.linkedin.com/in/vanessaruegger/\" rel=\"noopener\" target=\"_blank\">Prof. Dr Vanessa Rüegger</a> (<a href=\"https://www.linkedin.com/company/universite-de-geneve/\" rel=\"noopener\" target=\"_blank\">Université de Genève</a>) et <a href=\"https://www.linkedin.com/in/mvallat/\" rel=\"noopener\" target=\"_blank\">Morgan Vallat</a> (<a href=\"https://www.linkedin.com/company/ernstandyoung/\" rel=\"noopener\" target=\"_blank\">EY</a>). La discussion sera modérée par <a href=\"https://www.linkedin.com/in/nicolastorrent/\" rel=\"noopener\" target=\"_blank\">Nicolas Torrent</a>. Ensemble, nous partagerons nos analyses et des conseils concrets pour utiliser l’IA de manière rentable.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-panel-gilw25-geneve-ia.webp",
+   "w": 1200,
+   "h": 628,
+   "alt": "Visuel GILW25 : portrait de Paula Reichenberg, logo Neur.on et vue de Genève avec son jet d’eau",
+   "legende": "Geneva International Legal Week 2025, Genève, du 10 au 12 mars 2025"
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-panel-gilw25-geneve-ia-v.webp",
+   "w": 640,
+   "h": 335
+  },
+  "mentions": [
+   [
+    "Event",
+    "Geneva International Legal Week 2025 (GILW25)"
+   ],
+   [
+    "Organization",
+    "Geneva International Legal Association"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Place",
+    "Genève"
+   ],
+   [
+    "Organization",
+    "Université de Genève"
+   ],
+   [
+    "Organization",
+    "EY"
+   ]
+  ],
+  "source_num": 12
+ },
+ {
+  "slug": "paula-reichenberg-conseil-strategique-hes-so",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Entreprise",
+  "titre": "Paula Reichenberg désignée au Conseil stratégique de la HES-SO pour 2025-2028",
+  "date": "2024-11-28",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Planter des arbres pour que les générations futures en récoltent les fruits : Paula Reichenberg siégera dans un organe consultatif de la HES-SO, aux côtés de personnalités de l’économie, de la santé, du social et de la culture.",
+  "bref": "La HES-SO Haute école spécialisée de Suisse occidentale a désigné Paula Reichenberg, CEO de Neur.on, membre de son Conseil stratégique de 2025 à 2028. Cet organe consultatif réunit des experts du monde académique, de l’économie, de la santé, du social et de la culture. Paula Reichenberg entend contribuer à la formation des générations futures.",
+  "title": "Paula Reichenberg au Conseil stratégique HES-SO · Neur.on",
+  "description": "La HES-SO a désigné Paula Reichenberg, CEO de Neur.on, membre de son Conseil stratégique de 2025 à 2028, un organe consultatif aux profils variés.",
+  "court": "Paula Reichenberg désignée au Conseil stratégique de la HES-SO pour 2025-2028",
+  "corps": "<p>Planter des arbres pour que les générations futures puissent en récolter les fruits.</p><p>La <a href=\"https://www.linkedin.com/company/university-of-applied-sciences-western-switzerland/\" rel=\"noopener\" target=\"_blank\">HES-SO Haute école spécialisée de Suisse occidentale</a> a désigné <a href=\"{{ROOT}}fr/a-propos/\">notre CEO</a> Paula Reichenberg comme membre de son Conseil stratégique de 2025 à 2028.</p><h2>Qu’est-ce que le Conseil stratégique de la HES-SO ?</h2><p>Cet organe consultatif réunit des experts aux parcours variés : monde académique, économie, santé, action sociale et culture. Sa composition reflète toujours les domaines étudiés au sein de la haute école.</p><h2>Pourquoi les hautes écoles sont-elles essentielles à l’innovation en Suisse ?</h2><p>Paula est honorée que la HES-SO lui permette de contribuer à la formation des générations futures. Face aux mutations géopolitiques, sociétales et technologiques actuelles, il est essentiel de préparer l’avenir de la Suisse comme terrain de jeu attractif et marché florissant pour les start-up et les innovateurs.</p><p>L’EPFL et l’EPFZ travaillent sur la deeptech et sur des technologies révolutionnaires qui permettent des changements fondamentaux. Le rôle des écoles d’ingénieurs et des « hautes écoles » en Suisse est tout aussi fondamental : amener la technologie du laboratoire au marché et convaincre les entreprises, sociétés cotées ou PME, pour qu’au final la révolution atteigne les consommateurs et crée de la valeur pour eux.</p><p>Mère de deux enfants, dirigeante et administratrice de plusieurs sociétés, Paula dispose sans doute d’un temps libre compté.</p><p>Notre CEO est pourtant convaincue qu’avoir voix au chapitre sur l’avenir de la formation sera à la fois stimulant, une leçon d’humilité et une source d’inspiration. Elle siégera aux côtés de personnalités expertes, notamment :</p><ul><li><a href=\"https://www.linkedin.com/in/pascal-crittin-77468971/\" rel=\"noopener\" target=\"_blank\">Pascal Crittin</a>, directeur de la radio et de la télévision chez <a href=\"https://www.linkedin.com/company/schweizer-radio-und-fernsehen/\" rel=\"noopener\" target=\"_blank\">SRF Schweizer Radio und Fernsehen</a> ;</li><li><a href=\"https://www.linkedin.com/in/emilie-dellecker/\" rel=\"noopener\" target=\"_blank\">Emilie Dellecker</a>, directrice de <a href=\"https://www.linkedin.com/company/hackgroup/\" rel=\"noopener\" target=\"_blank\">HackGroup</a> ;</li><li><a href=\"https://www.linkedin.com/in/fdubois/\" rel=\"noopener\" target=\"_blank\">François Dubois</a>, directeur de <a href=\"https://www.linkedin.com/company/prosenectute-arcjurassien/\" rel=\"noopener\" target=\"_blank\">Pro Senectute Arc Jurassien</a> ;</li><li><a href=\"https://www.linkedin.com/in/annina-grob-311424160/\" rel=\"noopener\" target=\"_blank\">Annina Grob</a>, co-secrétaire d’<a href=\"https://www.linkedin.com/company/avenir-social/\" rel=\"noopener\" target=\"_blank\">AVENIR SOCIAL</a> ;</li><li><a href=\"https://www.linkedin.com/in/elisabeth-gutjahr-03b3aab1/\" rel=\"noopener\" target=\"_blank\">Elisabeth Gutjahr</a>, rectrice de la <a href=\"https://www.linkedin.com/company/mozarteum-university-salzburg/\" rel=\"noopener\" target=\"_blank\">Mozarteum University Salzburg</a> ;</li><li><a href=\"https://www.linkedin.com/in/olivier-haegeli-1954111/\" rel=\"noopener\" target=\"_blank\">Olivier Haegeli</a>, directeur général de Willemin-Macodel et vice-président de la <a href=\"https://www.linkedin.com/company/cci-du-jura/\" rel=\"noopener\" target=\"_blank\">CCI du Jura</a> ;</li><li><a href=\"https://www.linkedin.com/in/pierre-henri-jaccaud-6a404032/\" rel=\"noopener\" target=\"_blank\">Pierre-Henri Jaccaud</a>, directeur de Skopia Art Contemporain, à Genève ;</li><li><a href=\"https://www.linkedin.com/in/christian-leumann-8380828/\" rel=\"noopener\" target=\"_blank\">Christian Leumann</a>, CEO ad interim de l’Inselspital de Berne ;</li><li><a href=\"https://www.linkedin.com/in/raphaelleluisier/\" rel=\"noopener\" target=\"_blank\">Raphaëlle Luisier</a>, cheffe de groupe à l’<a href=\"https://www.linkedin.com/company/idiap-research-institute/\" rel=\"noopener\" target=\"_blank\">Idiap Research Institute</a> ;</li><li><a href=\"https://www.linkedin.com/in/brigitte-rorive-647b688/\" rel=\"noopener\" target=\"_blank\">Brigitte Rorive</a>, présidente de l’<a href=\"https://www.linkedin.com/in/h%C3%B4pital-riviera-chablais-11677329b/\" rel=\"noopener\" target=\"_blank\">Hôpital Riviera-Chablais</a> ;</li><li><a href=\"https://www.linkedin.com/in/patrickrosset/\" rel=\"noopener\" target=\"_blank\">Patrick Rosset</a>, directeur senior de la stratégie des opérations chez <a href=\"https://www.linkedin.com/company/medtronic/\" rel=\"noopener\" target=\"_blank\">Medtronic</a>.</li></ul>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-conseil-strategique-hes-so.webp",
+   "w": 1200,
+   "h": 676,
+   "alt": "Paula Reichenberg souriante, bras croisés, à côté d’un encadré annonçant sa nomination au Strategy Council 2025-2028 de la HES-SO",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-conseil-strategique-hes-so-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Organization",
+    "HES-SO Haute école spécialisée de Suisse occidentale"
+   ],
+   [
+    "Organization",
+    "EPFL"
+   ],
+   [
+    "Organization",
+    "EPFZ"
+   ],
+   [
+    "Place",
+    "Suisse"
+   ]
+  ],
+  "source_num": 24
+ },
+ {
+  "slug": "neuron-cohorte-kickstart-innovation-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Prix et distinctions",
+  "titre": "Neur.on intègre la cohorte 2024 de Kickstart Innovation, verticale Finance & Insurance",
+  "date": "2024-08-26",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Plus de 310 preuves de concept et accords commerciaux, plus de CHF 2,5 milliards levés par ses alumni : Kickstart Innovation accueille Neur.on dans sa promotion 2024, aux côtés de partenaires comme Swisscom, PostFinance, AXA et MSD.",
+  "bref": "Neur.on fait partie des 42 scale-ups sélectionnées pour le programme 2024 de Kickstart Innovation en Suisse, dans la verticale « Finance & Insurance ». Le programme permet de collaborer avec plus de 100 partenaires et innovateurs, dont Swisscom, PostFinance, AXA et MSD. CB Insights classe Kickstart parmi les 25 meilleurs accélérateurs de start-up au monde.",
+  "title": "Kickstart Innovation 2024 : 42 scale-ups retenues · Neur.on",
+  "description": "Neur.on figure parmi les 42 scale-ups retenues pour le programme 2024 de Kickstart Innovation en Suisse, dans la verticale Finance & Insurance.",
+  "court": "Neur.on intègre la cohorte 2024 de Kickstart Innovation, verticale Finance & Insurance",
+  "corps": "<p>Nous avons été sélectionnés parmi les 42 scale-ups qui rejoignent le programme 2024 de <a href=\"https://www.linkedin.com/company/kickstart-innovation/\" rel=\"noopener\" target=\"_blank\">Kickstart Innovation</a> en Suisse. C’est une belle occasion de collaborer avec plus de 100 partenaires et autres innovateurs de secteurs variés, dont la finance, l’assurance et le commerce de détail.</p><p>À ce jour, plus de 310 preuves de concept et accords commerciaux ont été conclus, et les alumni de Kickstart ont levé plus de CHF 2,5 milliards. La plateforme américaine d’études de marché <a href=\"https://www.linkedin.com/company/cb-insights/\" rel=\"noopener\" target=\"_blank\">CB Insights</a> classe même Kickstart parmi les 25 meilleurs accélérateurs de start-up au monde.</p><p>Cette année, Neur.on est reconnaissante et fière d’avoir été retenue dans la promotion 2024, dans la verticale « Finance &amp; Insurance ». Nous nous réjouissons de l’élan que cette nouvelle occasion de réseautage et de perfectionnement donnera à <a href=\"{{ROOT}}fr/corrext/\">notre produit</a>.</p><p>Un grand merci à l’équipe de Kickstart, aux plus de 170 jurés, experts et partenaires engagés comme <a href=\"https://www.linkedin.com/company/swisscom/\" rel=\"noopener\" target=\"_blank\">Swisscom</a>, <a href=\"https://www.linkedin.com/company/postfinance/\" rel=\"noopener\" target=\"_blank\">PostFinance</a>, <a href=\"https://www.linkedin.com/company/axa/\" rel=\"noopener\" target=\"_blank\">AXA</a> Suisse, <a href=\"https://www.linkedin.com/company/msd-global/\" rel=\"noopener\" target=\"_blank\">MSD</a> et bien d’autres, qui croient au pouvoir de la collaboration et de l’innovation.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-cohorte-kickstart-innovation-2024.webp",
+   "w": 602,
+   "h": 760,
+   "alt": "Visuel Kickstart présentant les logos des start-up de la verticale Finance & Insurance, dont celui de Neur.on",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-cohorte-kickstart-innovation-2024-v.webp",
+   "w": 507,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Organization",
+    "Kickstart Innovation"
+   ],
+   [
+    "Organization",
+    "CB Insights"
+   ],
+   [
+    "Organization",
+    "Swisscom"
+   ],
+   [
+    "Organization",
+    "PostFinance"
+   ],
+   [
+    "Organization",
+    "AXA"
+   ],
+   [
+    "Organization",
+    "MSD"
+   ]
+  ],
+  "source_num": 34
+ },
+ {
+  "slug": "legaltechtalk-2024-londres-modele-operationnel-cabinets",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "LegalTechTalk 2024 à Londres : réinventer le modèle opérationnel des cabinets d’avocats",
+  "date": "2024-06-07",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Pourquoi les cabinets d’avocats ont-ils intérêt à changer de modèle, et comment s’y prendre ? James Lane, Line Lolk Thomsen et Jordan Lee partagent leur expérience dans un panel modéré par Paula Reichenberg.",
+  "bref": "Neur.on a annoncé que sa CEO, Paula Reichenberg, modérerait au LegalTechTalk 2024 à Londres un panel sur la transformation des modèles opérationnels des cabinets d’avocats. James Lane (Stericycle), Line Lolk Thomsen (Plesner) et Jordan Lee (Pogust Goodhead) devaient y expliquer pourquoi et comment changer pour mieux servir les directeurs juridiques.",
+  "title": "LegalTechTalk 2024 : réinventer les cabinets · Neur.on",
+  "description": "Au LegalTechTalk 2024 à Londres, Paula Reichenberg, CEO de Neur.on, modère un panel sur la transformation des modèles opérationnels des cabinets.",
+  "court": "LegalTechTalk 2024 à Londres : réinventer le modèle opérationnel des cabinets d’avocats",
+  "corps": "<p>Rejoignez-nous pour une session instructive sur la transformation des modèles opérationnels des cabinets d’avocats, avec un objectif : mieux servir les directeurs juridiques. Nos panélistes expliqueront POURQUOI il vaut la peine d’accepter le changement et COMMENT le mettre en œuvre efficacement.</p><h2>Qui sont les intervenants du panel ?</h2><p><a href=\"https://www.linkedin.com/in/james-lane-a7074111/\" rel=\"noopener\" target=\"_blank\">James Lane</a>, directeur juridique régional de Stericycle, leader mondial des services d’élimination des déchets médicaux et de destruction de documents, partagera sa longue expérience de collaboration avec les cabinets d’avocats de son panel. Responsable de la fonction juridique en Europe, au Moyen-Orient et en Asie-Pacifique, James dirige une équipe juridique transfrontalière répartie dans plus d’une douzaine de pays. L’une de ses premières missions chez Stericycle a été de créer une fonction juridique interne et de mener une revue complète des cabinets du panel. James présentera ses critères pour choisir les conseils les plus efficaces et sa stratégie pour entretenir de bonnes relations de travail.</p><p><a href=\"https://www.linkedin.com/in/line-lolk-thomsen-22197812/\" rel=\"noopener\" target=\"_blank\">Line Lolk Thomsen</a>, responsable des projets et de l’innovation chez Plesner, l’un des plus grands cabinets d’avocats du Danemark, apporte l’expertise acquise dans l’innovation et le développement commercial. Titulaire d’un master de la Copenhagen Business School, elle a travaillé en Amérique latine et en Asie. Line travaille aujourd’hui chez Plesner sur des sujets comme la gestion des processus et la digitalisation. Elle expliquera comment des équipes pluridisciplinaires, qui collaborent au-delà de leurs disciplines, font avancer l’innovation.</p><p><a href=\"https://www.linkedin.com/in/jordan-lee-427567111/\" rel=\"noopener\" target=\"_blank\">Jordan Lee</a>, directeur de la stratégie de Pogust Goodhead, cabinet pionnier de l’action collective qui fonctionne selon un modèle « No-Win, No-Fee » (pas d’honoraires sans succès) financé par des fonds spéculatifs, présentera des cas d’usage concrets et des exemples qui illustrent l’impact de leur approche fondée sur l’innovation. Chargé à la fois d’exiger et de piloter l’innovation, Jordan montrera comment ce modèle gagne en rapidité et en concentration, ce qui améliore au final le taux de succès des dossiers et réduit les coûts.</p><p>Paula Reichenberg, vice-présidente de la <a href=\"https://www.linkedin.com/company/swiss-legaltech-association/\" rel=\"noopener\" target=\"_blank\">Swiss LegalTech Association</a> et fondatrice et CEO de <a href=\"https://www.linkedin.com/company/neur-on/\" rel=\"noopener\" target=\"_blank\">Neur.on</a>, modérera le panel. Neur.on est la première LegalTech à proposer aux cabinets d’avocats, aux directions juridiques d’entreprise et aux prestataires de services financiers une <a href=\"{{ROOT}}fr/corrext/\">plateforme adaptée à leur secteur pour des traductions juridiques et financières précises</a>. À ce double titre, Paula suit de près les attentes croissantes des cabinets et des directions juridiques en matière de gains d’efficacité permis par la technologie.</p><h2>Quels thèmes seront abordés ?</h2><p>Les thèmes abordés comprendront :</p><ul><li>le conseil guidé par la stratégie ;</li><li>la valeur ajoutée des équipes pluridisciplinaires ;</li><li>les attentes des clients concernant l’utilisation d’outils LegalTech ;</li><li>les avantages de l’analyse de données pour identifier des gains d’efficacité potentiels.</li></ul><h2>À qui s’adresse cette session ?</h2><p>Cette session s’adresse aux cabinets d’avocats qui veulent garder une longueur d’avance dans un environnement concurrentiel. Elle permet de bénéficier de l’éclairage de leaders qui sont à l’avant-garde de l’innovation juridique.</p>",
+  "image": {
+   "src": "assets/img/blog/legaltechtalk-2024-londres-modele-operationnel-cabinets.webp",
+   "w": 1099,
+   "h": 1100,
+   "alt": "Visuel LegalTechTalk 2024 à Londres présentant Paula Reichenberg, CEO et fondatrice de Neur.on, comme intervenante du panel",
+   "legende": "LegalTechTalk 2024, Londres, 13 et 14 juin 2024"
+  },
+  "vignette": {
+   "src": "assets/img/blog/legaltechtalk-2024-londres-modele-operationnel-cabinets-v.webp",
+   "w": 640,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Event",
+    "LegalTechTalk 2024"
+   ],
+   [
+    "Place",
+    "Londres"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Person",
+    "James Lane"
+   ],
+   [
+    "Person",
+    "Line Lolk Thomsen"
+   ],
+   [
+    "Person",
+    "Jordan Lee"
+   ]
+  ],
+  "source_num": 43
+ },
+ {
+  "slug": "neuron-amld-epfl-2024-lausanne",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Neur.on à l’AMLD EPFL 2024, du 23 au 26 mars au SwissTech Convention Center de Lausanne",
+  "date": "2024-03-06",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Start-up, PME ou grand groupe comme Swisscom : à quoi ressemble un projet d’IA selon la taille de l’entreprise ? Neur.on partage ses défis et son optimisme lors d’une session organisée par la Vice-présidence pour l’innovation de l’EPFL.",
+  "bref": "Neur.on a annoncé sa participation à l’AMLD EPFL 2024, qui se tenait du 23 au 26 mars au SwissTech Convention Center de Lausanne. Le 26 mars à 14 h, la session « AI-Powered Projects: Your Innovation Journey » devait réunir Neur.on, Consulto, Swisscom et Amplify autour du déploiement concret de l’intelligence artificielle.",
+  "title": "AMLD EPFL 2024 : AI-Powered Projects à Lausanne · Neur.on",
+  "description": "Neur.on intervient le 26 mars 2024 à l’AMLD EPFL, à Lausanne, dans une session sur le déploiement concret de l’IA avec Swisscom, Consulto et Amplify.",
+  "court": "Neur.on à l’AMLD EPFL 2024, du 23 au 26 mars au SwissTech Convention Center de Lausanne",
+  "corps": "<p>Ne manquez pas notre session intitulée « AI-Powered Projects: Your Innovation Journey », le 26 mars à 14 h.</p><p>Neur.on participera à une discussion consacrée au déploiement concret de l’intelligence artificielle. À quoi ressemble ce parcours pour une start-up, une PME et une grande entreprise comme Swisscom ? Quel soutien pouvons-nous obtenir de l’écosystème swisstech, d’Innosuisse, du monde académique et des autres acteurs de l’innovation pour accélérer notre transformation ?</p><p>Organisée par l’Industry Liaison Office de la Vice-présidence pour l’innovation (VPI) de l’EPFL, notre session réunira les points de vue de 4 entreprises issues de la <a href=\"{{ROOT}}fr/a-propos/\">LegalTech multilingue (Neur.on)</a>, de la santé (<a href=\"https://www.linkedin.com/company/consulto-virtual-clinic/\" rel=\"noopener\" target=\"_blank\">Consulto</a>), des télécommunications (<a href=\"https://www.linkedin.com/company/swisscom/\" rel=\"noopener\" target=\"_blank\">Swisscom</a>) et de la publicité (<a href=\"https://www.linkedin.com/company/weareamplify/\" rel=\"noopener\" target=\"_blank\">Amplify</a>). Chacune se trouve à une étape différente de son parcours d’innovation. Nous partagerons nos défis entrepreneuriaux et de recherche, mais aussi les raisons de notre enthousiasme et de notre optimisme. Nous espérons ainsi en « contaminer » beaucoup parmi vous et vous encourager à vous lancer dans votre propre transformation.</p><p><a href=\"https://www.linkedin.com/in/robert-van-kommer-60621a5/\" rel=\"noopener\" target=\"_blank\">Robert van Kommer</a>, d’<a href=\"https://www.linkedin.com/company/alliance-innovation/\" rel=\"noopener\" target=\"_blank\">Alliance-innovation</a>, présentera les véhicules, les partenariats et les programmes de soutien disponibles en Suisse pour créer une start-up, trouver l’adéquation produit-marché (product-market fit) et se développer à l’international.</p><p><a href=\"https://lnkd.in/g3ZX47ey\" rel=\"noopener\" target=\"_blank\">Cliquez ici</a> pour obtenir vos billets.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-amld-epfl-2024-lausanne.webp",
+   "w": 1200,
+   "h": 627,
+   "alt": "Visuel AMLD EPFL annonçant la session « AI-Powered Projects: Your Innovation Journey », sur fond de salle de conférence",
+   "legende": "AMLD EPFL, SwissTech Convention Center, Lausanne, 26 mars 2024"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-amld-epfl-2024-lausanne-v.webp",
+   "w": 640,
+   "h": 334
+  },
+  "mentions": [
+   [
+    "Event",
+    "AMLD EPFL 2024 (Applied Machine Learning Days)"
+   ],
+   [
+    "Place",
+    "SwissTech Convention Center, Lausanne"
+   ],
+   [
+    "Organization",
+    "EPFL"
+   ],
+   [
+    "Organization",
+    "Swisscom"
+   ],
+   [
+    "Organization",
+    "Innosuisse"
+   ],
+   [
+    "Person",
+    "Robert van Kommer"
+   ]
+  ],
+  "source_num": 51
+ },
+ {
+  "slug": "orane-laeri-parcours-orientation-ch",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Presse et médias",
+  "titre": "Sur orientation.ch, Orane Laeri, COO de Neur.on, retrace son parcours en linguistique",
+  "date": "2023-08-24",
+  "auteur": "Équipe Neur.on",
+  "extrait": "De ses études de traduction à l’Université de Genève à la direction des opérations d’une start-up LegalTech, Orane Laeri raconte son parcours. Pour elle, la machine ne remplace pas l’humain : elle rend le travail plus intéressant.",
+  "bref": "Orane Laeri, COO de Neur.on, fait l’objet d’un portrait sur orientation.ch. Après des études de traduction à l’Université de Genève, elle y retrace son parcours, d’un stage en traduction juridique à la direction des opérations d’une start-up LegalTech spécialisée en traduction automatique neuronale. Elle conseille aux étudiants d’allier technologie et linguistique.",
+  "title": "Le parcours d’Orane Laeri sur orientation.ch · Neur.on",
+  "description": "Orane Laeri, COO de Neur.on, partage sur orientation.ch son parcours en traduction et en linguistique, de l’Université de Genève à la LegalTech.",
+  "court": "Sur orientation.ch, Orane Laeri, COO de Neur.on, retrace son parcours en linguistique",
+  "corps": "<p>Nous sommes fiers de mettre en lumière le parcours remarquable d’Orane Laeri, COO de Neur.on. Le site orientation.ch lui consacre un article, dans lequel elle raconte son parcours dans les sciences du langage, la linguistique et la linguistique computationnelle.</p><p>Son parcours universitaire a conduit Orane à l’Université de Genève, où elle a étudié la traduction. Aujourd’hui, elle se distingue comme responsable des opérations au sein d’une start-up LegalTech dynamique, spécialisée dans la <a href=\"{{ROOT}}fr/lexmachina/\">traduction automatique neuronale</a>.</p><p>Face aux progrès rapides de la technologie, Orane souligne que l’objectif de Neur.on n’est pas de remplacer l’humain par la machine, mais de lui donner des outils sur mesure. Elle le relève à juste titre : « Il y a de quoi se réjouir : la machine est un outil qui rend notre travail plus intéressant. »</p><p>Revenant sur ses débuts dans la vie professionnelle, Orane raconte son chemin, d’un stage en traduction juridique jusqu’à son poste de direction actuel.</p><p>Son conseil aux étudiants : adopter la fusion entre technologie et linguistique, et s’adapter à l’évolution du métier. Que l’on soit attiré par les finesses de la langue ou par le lien entre l’humain et la linguistique, il existe un créneau qui n’attend que d’être maîtrisé.</p><p>Je vous invite à découvrir plus en détail le parcours d’Orane en lisant <a href=\"https://www.orientation.ch/dyn/show/142567\" rel=\"noopener\" target=\"_blank\">l’article complet</a>.</p>",
+  "image": {
+   "src": "assets/img/blog/orane-laeri-parcours-orientation-ch.webp",
+   "w": 799,
+   "h": 533,
+   "alt": "Une femme assise à un bureau, travaillant sur un ordinateur portable et un grand écran, dans un bureau lumineux",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/orane-laeri-parcours-orientation-ch-v.webp",
+   "w": 640,
+   "h": 427
+  },
+  "mentions": [
+   [
+    "Person",
+    "Orane Laeri"
+   ],
+   [
+    "Organization",
+    "orientation.ch"
+   ],
+   [
+    "Organization",
+    "Université de Genève"
+   ],
+   [
+    "Organization",
+    "Neur.on AI Solutions SA"
+   ]
+  ],
+  "source_num": 72
+ },
+ {
+  "slug": "etat-fribourg-soutien-neuron-traduction-juridique-ia",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Recherche et innovation",
+  "titre": "L’État de Fribourg renforce son soutien à Neur.on pour la traduction juridique par IA",
+  "date": "2022-12-02",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Déjà soutenu par Innosuisse, le projet de recherche de Neur.on mené avec l’institut iCoSys reçoit l’appui de l’État de Fribourg. La subvention financera la R&D, de nouveaux recrutements et le développement international.",
+  "bref": "L’État de Fribourg a accordé à Neur.on un soutien supplémentaire pour simplifier la traduction juridique grâce à l’IA. Il s’ajoute à celui d’Innosuisse au projet de recherche mené avec iCoSys, l’Institut des systèmes complexes de la Haute école d’ingénierie et d’architecture de Fribourg. La subvention financera la R&D, de nouveaux recrutements et le développement international.",
+  "title": "Soutien de l’État de Fribourg à la traduction IA · Neur.on",
+  "description": "L’État de Fribourg accorde à Neur.on un soutien supplémentaire pour la traduction juridique par IA : R&D, recrutements et expansion internationale.",
+  "court": "L’État de Fribourg renforce son soutien à Neur.on pour la traduction juridique par IA",
+  "corps": "<p>Le projet de recherche innovant de Neur.on, mené en collaboration avec <a href=\"https://www.linkedin.com/company/icosys/\" rel=\"noopener\" target=\"_blank\">iCoSys</a>, l’Institut des systèmes complexes de la <a href=\"https://www.linkedin.com/company/heiafr/\" rel=\"noopener\" target=\"_blank\">Haute école d’ingénierie et d’architecture de Fribourg</a>, bénéficie du soutien d’Innosuisse. Il est désormais aussi soutenu par l’État de Fribourg.</p><p>Nous avons le plaisir d’annoncer que l’État de Fribourg nous accorde un soutien supplémentaire pour <a href=\"{{ROOT}}fr/lexmachina/\">simplifier la traduction juridique grâce à l’IA</a>. Cette subvention servira à la R&amp;D, à de nouveaux recrutements et au développement international.</p><p>Neur.on est reconnaissante de ce précieux soutien et fière de faire partie de l’écosystème dynamique des start-up fribourgeoises.</p><p>Avec le plus grand centre de compétences de Suisse en analyse de documents par traitement automatique du langage (NLP), un vivier d’ingénieurs NLP multilingues talentueux et une faculté de droit renommée, Fribourg offre des conditions optimales à une start-up LegalTech centrée sur la langue comme Neur.on.</p><p>Imaginée et conçue à Fribourg, <a href=\"{{ROOT}}fr/a-propos/\">Neur.on</a> se réjouit d’utiliser cette nouvelle subvention pour porter l’IA suisse vers de nouveaux sommets.</p>",
+  "image": {
+   "src": "assets/img/blog/etat-fribourg-soutien-neuron-traduction-juridique-ia.webp",
+   "w": 1200,
+   "h": 675,
+   "alt": "Visuel réunissant le logo Neur.on, l’écusson fribourgeois et le logo de la Promotion économique de l’État de Fribourg",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/etat-fribourg-soutien-neuron-traduction-juridique-ia-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Organization",
+    "État de Fribourg"
+   ],
+   [
+    "Organization",
+    "Innosuisse"
+   ],
+   [
+    "Organization",
+    "iCoSys"
+   ],
+   [
+    "Organization",
+    "Haute école d’ingénierie et d’architecture de Fribourg"
+   ],
+   [
+    "Place",
+    "Fribourg"
+   ]
+  ],
+  "source_num": 95
+ },
+ {
+  "slug": "registre-commerce-schwyz-traduction-ia-extraits-anglais",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Partenariats",
+  "titre": "Registre du commerce de Schwyz : des extraits traduits en anglais par l’IA de Neur.on",
+  "date": "2024-11-25",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Chaque mois, des centaines de personnes demandaient au registre du commerce de Schwyz une traduction anglaise fiable d’un extrait. Retour sur un projet né dans l’Innovation Sandbox du canton de Zurich, et sur les pièges des notions juridiques suisses.",
+  "bref": "Le registre du commerce du canton de Schwyz propose des traductions en anglais de ses extraits réalisées par IA, ce qu’aucun autre canton n’offre. Neur.on a développé le modèle de traduction via l’Innovation Sandbox for Artificial Intelligence du canton de Zurich. DV Bern AG, responsable de zefix.ch, a assuré la mise en œuvre côté autorités.",
+  "title": "Schwyz : extraits du registre traduits par IA · Neur.on",
+  "description": "Schwyz est le seul canton dont le registre du commerce propose des traductions d’extraits en anglais par IA, avec un modèle développé par Neur.on.",
+  "court": "Registre du commerce de Schwyz : des extraits traduits en anglais par l’IA de Neur.on",
+  "corps": "<p>Le canton de Schwyz fait figure de pionnier en matière d’IA.</p><p>Le registre du commerce de Schwyz propose désormais ce qu’aucun autre canton n’offre : des <a href=\"{{ROOT}}fr/corrext/extraits-registre-commerce/\">traductions d’extraits en anglais</a> réalisées par IA.</p><p>Schwyz n’est pas seulement le berceau pittoresque de la Suisse, à laquelle il a donné son nom. Le canton vient aussi de mettre en place une application très pragmatique de l’IA pour les entreprises établies sur son territoire.</p><h2>Comment est né le projet de traduction des extraits ?</h2><p>Auparavant, des centaines de personnes appelaient chaque mois le registre du commerce de Schwyz avec une seule et même demande : « J’ai besoin d’une traduction anglaise fiable d’un extrait. Pouvez-vous m’aider, s’il vous plaît ? »</p><p><a href=\"https://www.linkedin.com/in/othmar-aeschi-a21a716b/\" rel=\"noopener\" target=\"_blank\">Othmar Aeschi</a>, du Handelsregister Schwyz, connu pour son rôle moteur en matière d’innovation, a eu l’intuition éclairée que l’IA pourrait aider. Il a pris contact avec <a href=\"https://www.linkedin.com/in/raphael-von-thiessen-921882105/\" rel=\"noopener\" target=\"_blank\">Raphael von Thiessen</a>, de la division Promotion économique de l’<a href=\"https://www.linkedin.com/company/amt-fuer-wirtschaft-zh/\" rel=\"noopener\" target=\"_blank\">Amt für Wirtschaft, Kanton Zürich</a>. Raphael a intégré ce défi à l’Innovation Sandbox for Artificial Intelligence de l’office et a mis NEUR.ON en relation avec le registre du commerce de Schwyz. <strong>Et nous avons développé le modèle de traduction le plus exact pour cet usage précis.</strong> Du côté des autorités, le projet a ensuite été mis en œuvre avec le soutien de <a href=\"https://www.linkedin.com/company/dv-bern-ag/\" rel=\"noopener\" target=\"_blank\">DV Bern AG</a>, l’entreprise informatique spécialisée responsable de la plateforme en ligne du registre du commerce, <a href=\"http://zefix.ch/\" rel=\"noopener\" target=\"_blank\">zefix.ch</a>.</p><h2>Pourquoi les notions juridiques suisses sont-elles difficiles à traduire en anglais ?</h2><p><strong>Le défi ne relevait pas seulement de l’ingénierie du traitement automatique du langage. La question, plus importante encore, était de savoir comment traduire avec exactitude en anglais des notions juridiques typiquement suisses, en évitant les malentendus (voire les maladresses) dans les relations transfrontalières.</strong></p><ul><li>Prokurist ?</li><li>Kollektivunterschrift zu zweien ?</li><li>Gesellschafter (einer GmbH vs. einer Kommanditgesellschaft) ?</li><li>Streichung vs. Löschung ?</li><li>Stimmrechtsaktien vs. Vorzugsaktien ?</li></ul><p>Si vous vous êtes déjà demandé comment traduire correctement chacun de ces termes dans son contexte, vous savez à quel point une traduction médiocre peut tomber loin de la cible.</p><p>Cerise sur le gâteau pour les juristes-linguistes, nous avons aussi pu aborder les traductions épicènes, en particulier pour les fonctions au sein du conseil d’administration qui, il y a 50 ans, étaient exclusivement occupées par des hommes.</p><p>Comme vous le voyez, les projets d’IA de pointe exigent, pour réussir, une vaste expertise humaine du domaine.</p><h2>Qui a contribué au projet ?</h2><p>Un chaleureux merci à toutes les parties prenantes du projet, en particulier pour les innombrables heures investies par Othmar Aeschi du Handelsregister Schwyz, Raphael von Thiessen de l’Amt für Wirtschaft, ainsi que <a href=\"https://www.linkedin.com/in/thierry-coita-ba53615/\" rel=\"noopener\" target=\"_blank\">Thierry Coita</a> et Michael Gillmann de DV Bern AG. Merci également à <a href=\"https://www.linkedin.com/in/carmen-walker-sp%C3%A4h-b75221231/\" rel=\"noopener\" target=\"_blank\">Carmen Walker Späh</a> pour son soutien infatigable à <a href=\"https://www.linkedin.com/company/innovation-zurich/\" rel=\"noopener\" target=\"_blank\">Innovation Zurich</a>.</p>",
+  "image": {
+   "src": "assets/img/blog/registre-commerce-schwyz-traduction-ia-extraits-anglais.webp",
+   "w": 1200,
+   "h": 625,
+   "alt": "Visuel « Building Digital Bridges » : ponton sur un lac face aux montagnes, avec les logos de Zurich, Neur.on et Schwyz",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/registre-commerce-schwyz-traduction-ia-extraits-anglais-v.webp",
+   "w": 640,
+   "h": 333
+  },
+  "mentions": [
+   [
+    "Organization",
+    "Handelsregister Schwyz"
+   ],
+   [
+    "Organization",
+    "Amt für Wirtschaft, Kanton Zürich"
+   ],
+   [
+    "Organization",
+    "DV Bern AG"
+   ],
+   [
+    "Person",
+    "Othmar Aeschi"
+   ],
+   [
+    "Person",
+    "Raphael von Thiessen"
+   ],
+   [
+    "Place",
+    "Canton de Schwyz"
+   ]
+  ],
+  "source_num": 25
+ },
+ {
+  "slug": "paula-reichenberg-jury-weblaw-forum-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Paula Reichenberg, CEO de Neur.on, au jury de l’Elevator Pitch Competition du Weblaw Forum 2024",
+  "date": "2024-06-18",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Lauréate de l’édition précédente, Neur.on passe de l’autre côté de la table. Paula Reichenberg évaluera les pitchs selon les critères d’investissement LegalTech de Julia Maltby, dont trois sont présentés ici.",
+  "bref": "Paula Reichenberg, CEO de Neur.on, est membre du jury de l’Elevator Pitch Competition du Weblaw Forum 2024, organisé à Zurich le 20 juin. Neur.on avait remporté la première place de ce concours l’année précédente. Paula Reichenberg évalue les pitchs selon les « 10 critères pour investir dans la LegalTech » de l’investisseuse Julia Maltby.",
+  "title": "Weblaw Forum 2024 : Paula Reichenberg au jury · Neur.on",
+  "description": "Le 20 juin 2024 à Zurich, Paula Reichenberg, CEO de Neur.on, rejoint le jury de l’Elevator Pitch Competition du Weblaw Forum, gagnée par Neur.on en 2023.",
+  "court": "Paula Reichenberg, CEO de Neur.on, au jury de l’Elevator Pitch Competition du Weblaw Forum 2024",
+  "corps": "<p>Nous avons le plaisir d’annoncer que <a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg, CEO de Neur.on</a>, sera membre du jury de l’Elevator Pitch Competition lors du Weblaw Forum 2024, le 20 juin.</p><p>L’an dernier, NEUR.ON a remporté la 1re place de ce prestigieux concours. L’entrepreneuse aux côtés de Paula sur la photo est <a href=\"https://www.linkedin.com/in/bmuery/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BY5zM6qtfQna7zon93Kl6eg%3D%3D\" rel=\"noopener\" target=\"_blank\">Barbara Müry</a>, CEO de Herlock, qui a décroché la 2e place.</p><p><strong>Découvrez les critères du jury :</strong></p><p>Connaître les critères qu’utilisent les membres du jury pour évaluer les pitchs peut vous donner un avantage concurrentiel. Paula évaluera les pitchs sur la base des « 10 critères pour investir dans la LegalTech » de <a href=\"https://www.linkedin.com/in/juliamaltby/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BY5zM6qtfQna7zon93Kl6eg%3D%3D\" rel=\"noopener\" target=\"_blank\">Julia Maltby</a>. Julia est investisseuse en phase d’amorçage chez Flybridge et X-Factor Ventures. <a href=\"https://jvmaltby.medium.com/legal-ai-10-things-we-look-for-3a753294442c\" rel=\"noopener\" target=\"_blank\">Consultez sa liste complète ici</a>.</p><p><strong>Voici 3 critères représentatifs parmi ces 10 :</strong></p><ol><li><strong>Aller au-delà de la tarification par utilisateur :</strong> le marché juridique est hyperfragmenté, avec de nombreux petits praticiens. Des modèles de tarification innovants, comme le prélèvement d’un pourcentage des économies réalisées, sont plus attrayants qu’une simple tarification SaaS.</li><li><strong>Éviter les solutions d’automatisation « boîte noire » :</strong> les avocats ont besoin de visibilité sur les résultats de l’IA et préfèrent un « humain dans la boucle », pour vérifier facilement les faits et la logique.</li><li><strong>Une vitesse multipliée par 10 pour les tâches non facturables :</strong> les produits qui accélèrent les fonctions juridiques non facturables se vendent plus facilement, car ils améliorent nettement la productivité.</li></ol><p>Nous espérons que ces éclairages vous aideront à mieux comprendre le processus d’évaluation du jury.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-jury-weblaw-forum-2024.webp",
+   "w": 1090,
+   "h": 727,
+   "alt": "Paula Reichenberg et Barbara Müry posent en extérieur, avec le bandeau « Neur.on wins the 2023 Weblaw LegalTech Pitching Competition »",
+   "legende": "Concours de pitch Weblaw 2023, remporté par Neur.on"
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-jury-weblaw-forum-2024-v.webp",
+   "w": 640,
+   "h": 427
+  },
+  "mentions": [
+   [
+    "Event",
+    "Weblaw Forum 2024"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Person",
+    "Barbara Müry"
+   ],
+   [
+    "Person",
+    "Julia Maltby"
+   ],
+   [
+    "Organization",
+    "Herlock"
+   ],
+   [
+    "Place",
+    "Zurich"
+   ]
+  ],
+  "source_num": 39
+ },
+ {
+  "slug": "neuron-finaliste-early-stage-swiss-fintech-awards-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Prix et distinctions",
+  "titre": "Neur.on finaliste des Swiss Fintech Awards 2024 dans la catégorie Early Stage",
+  "date": "2024-06-04",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Neur.on face à ChatGPT ou Gemini, un duel de David contre Goliath ? Pas vraiment. L’image du moteur à combustion et des fusées sur mesure éclaire le positionnement de Corrext, à lire aussi dans Finanz und Wirtschaft.",
+  "bref": "Neur.on figure parmi les finalistes des Swiss Fintech Awards 2024 dans la catégorie Early Stage. Neur.on compare les LLM généralistes, comme ChatGPT ou Gemini, à un moteur à combustion autour duquel elle construit des outils sur mesure. Sa plateforme Corrext est présentée comme le premier SaaS de traduction juridique et financière.",
+  "title": "Finaliste des Swiss Fintech Awards 2024 · Neur.on",
+  "description": "Neur.on, finaliste des Swiss Fintech Awards 2024 en Early Stage, bâtit sa plateforme Corrext sur les LLM les plus performants pour le droit et la finance.",
+  "court": "Neur.on finaliste des Swiss Fintech Awards 2024 dans la catégorie Early Stage",
+  "corps": "<p>Opposer le logiciel de traduction par IA de Neur.on à de grands acteurs comme ChatGPT ou Gemini ne relève en aucun cas d’un scénario David contre Goliath.</p><p>Il serait plus juste de comparer ces LLM généralistes à l’invention du moteur à combustion : une prouesse brillante, aux applications multiples, du tracteur agricole au yacht à grande vitesse.</p><p>Nous avons ensuite pris ce moteur à combustion (autrement dit les LLM les plus puissants et les plus efficaces) pour construire autour de lui des fusées sur mesure, qui propulsent les professionnels du droit et de la finance vers de nouveaux sommets. Nous avons baptisé notre flotte « <a href=\"{{ROOT}}fr/corrext/\">Corrext</a> ». C’est le premier SaaS de traduction juridique et financière.</p><p>Pourquoi Neur.on se réjouit-elle des milliards de dollars que les géants de la tech investissent actuellement dans l’IA ? Et pourquoi sommes-nous convaincus que nos clients en profiteront à l’avenir ? Pour en savoir plus, lisez l’article de <a href=\"https://www.linkedin.com/in/lea-f%C3%A4h-89b530124/\" rel=\"noopener\" target=\"_blank\">Lea Fäh</a> dans le dossier <a href=\"https://www.linkedin.com/feed/hashtag/?keywords=fintech&amp;highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7203302412386783233\" rel=\"noopener\" target=\"_blank\">fintech</a> de ce week-end de <a href=\"https://www.linkedin.com/company/finanz-und-wirtschaft/\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a>.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-finaliste-early-stage-swiss-fintech-awards-2024.webp",
+   "w": 1079,
+   "h": 666,
+   "alt": "Coupure de presse de Finanz und Wirtschaft « So wollen die Finalisten gewinnen », passage consacré à Neur.on surligné",
+   "legende": "Article de Lea Fäh paru dans Finanz und Wirtschaft"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-finaliste-early-stage-swiss-fintech-awards-2024-v.webp",
+   "w": 640,
+   "h": 395
+  },
+  "mentions": [
+   [
+    "Event",
+    "Swiss Fintech Awards 2024"
+   ],
+   [
+    "Organization",
+    "Finanz und Wirtschaft"
+   ],
+   [
+    "Person",
+    "Lea Fäh"
+   ],
+   [
+    "Organization",
+    "Neur.on AI Solutions SA"
+   ]
+  ],
+  "source_num": 44
+ },
+ {
+  "slug": "neuron-top-10-startups-fintech-suisses-2024",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Prix et distinctions",
+  "titre": "Neur.on dans le Top 10 des start-up fintech suisses des Swiss Fintech Awards 2024",
+  "date": "2024-04-19",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Sur 100 dossiers déposés, un panel de 20 experts a retenu cinq start-up par catégorie. Neur.on en fait partie en Early Stage, avec à la clé un atelier fintech et la Swiss FinTech Awards Night.",
+  "bref": "Neur.on figure parmi les 10 start-up fintech suisses retenues aux Swiss Fintech Awards 2024, dans la catégorie « Early Stage Start-up of the Year ». Un panel de 20 experts a examiné plus de 60 candidatures, sur 100 dossiers, pour retenir cinq entreprises par catégorie. Neur.on participe ainsi à un atelier fintech et à la Swiss FinTech Awards Night.",
+  "title": "Top 10 des Swiss Fintech Awards 2024 · Neur.on",
+  "description": "Neur.on figure dans le Top 10 des Swiss Fintech Awards 2024, en catégorie Early Stage. Un panel de 20 experts a examiné plus de 60 candidatures.",
+  "court": "Neur.on dans le Top 10 des start-up fintech suisses des Swiss Fintech Awards 2024",
+  "corps": "<p>Nous sommes fiers d’annoncer que Neur.on figure dans le Top 10 des start-up fintech suisses des prestigieux Swiss Fintech Awards 2024. En lice dans la catégorie « Early Stage Start-up of the Year », nous voyons dans cette distinction la reconnaissance de notre capacité d’innovation et de notre potentiel, dans un paysage fintech en évolution rapide.</p><p>Le processus de sélection a été rigoureux : un panel de 20 experts du secteur a examiné minutieusement plus de 60 candidatures, sur un total de 100 dossiers déposés. Leur mission : identifier les cinq entreprises les plus prometteuses dans chacune des catégories « Early Stage Start-up of the Year » et « Growth Stage Start-up of the Year ».</p><p>Dans le cadre de cette nomination, nous nous réjouissons de participer au principal atelier fintech et à la Swiss FinTech Awards Night. Ces événements offrent l’occasion de développer notre réseau, d’apprendre et de présenter notre technologie aux leaders du secteur et à des investisseurs potentiels.</p><p>D’autres nouvelles suivront : nous poursuivons notre chemin vers l’innovation et l’excellence dans la fintech.</p><p>Pour en savoir plus, consultez <a href=\"https://fintechnews.ch/fintech/swiss-fintech-awards-2024-announce-top-10-fintech-startups/70323/\" rel=\"noopener\" target=\"_blank\">l’annonce des Swiss Fintech Awards 2024</a>.</p>",
+  "image": {
+   "src": "assets/img/blog/neuron-top-10-startups-fintech-suisses-2024.webp",
+   "w": 1200,
+   "h": 675,
+   "alt": "Visuel Swiss Fintech Awards avec les logos des dix start-up sélectionnées, dont Neur.on, et le titre de l’annonce",
+   "legende": "Visuel : fintechnews.ch"
+  },
+  "vignette": {
+   "src": "assets/img/blog/neuron-top-10-startups-fintech-suisses-2024-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Event",
+    "Swiss Fintech Awards 2024"
+   ],
+   [
+    "Event",
+    "Swiss FinTech Awards Night"
+   ],
+   [
+    "Organization",
+    "Neur.on AI Solutions SA"
+   ],
+   [
+    "Organization",
+    "fintechnews.ch"
+   ]
+  ],
+  "source_num": 47
+ },
+ {
+  "slug": "cybersecurite-souverainete-donnees-pme-trust-valley",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Trust Valley 2023 : cybersécurité et souveraineté des données, une tradition suisse durable ?",
+  "date": "2023-10-05",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Les projets de traduction juridique sont un maillon faible, souvent négligé, de la sécurité des données. Invitée par la Trust Valley, Neur.on partage les enseignements d’un panel sur les PME et pose la question d’une sandbox suisse à CHF 2,5 millions.",
+  "bref": "Neur.on a participé à un panel lors de la journée Trust Valley au Rolex Learning Center de l’EPFL, en 2023. Le panel portait sur la pression que la sécurité numérique fait peser sur les PME et les start-up. Neur.on y a relayé la demande de ses clients : une infrastructure 100 % suisse, non soumise au CLOUD Act, pour tester l’IA générative.",
+  "title": "Souveraineté des données en Suisse : Trust Valley · Neur.on",
+  "description": "À la journée Trust Valley 2023 à l’EPFL, Neur.on a témoigné sur la sécurité des données des PME et relayé l’appel à une infrastructure 100 % suisse.",
+  "court": "Trust Valley 2023 : cybersécurité et souveraineté des données, une tradition suisse durable ?",
+  "corps": "<p>La journée de la <a href=\"https://www.linkedin.com/company/trust-valley/\" rel=\"noopener\" target=\"_blank\">Trust Valley</a> au <a href=\"https://www.linkedin.com/company/rolex-learning-center---epfl/\" rel=\"noopener\" target=\"_blank\">Rolex Learning Center de l’EPFL</a> a réuni des acteurs de la politique, du monde académique, de la cybersécurité et du secteur privé, en particulier des PME, pour débattre des défis concrets auxquels l’économie de notre pays est confrontée.</p><p>NEUR.ON sert des cabinets d’avocats, des banques et des administrations publiques suisses. Elle répond à l’un de leurs maillons les plus faibles en matière de <a href=\"{{ROOT}}fr/securite-souverainete/\">sécurité des données</a> (oui, les projets de traduction juridique représentent un risque important, mais souvent négligé !). <a href=\"https://www.linkedin.com/in/ACoAAAB2aBIBSfQd2Le8FFz93hLXczD2Su7JPBo\" rel=\"noopener\" target=\"_blank\">Lennig Pedron</a> nous a donc aimablement invités à partager notre expérience de start-up LegalTech qui place la sécurité numérique au cœur de son activité.</p><h2>Quelles pressions la sécurité numérique fait-elle peser sur les PME ?</h2><p>Voici quelques enseignements clés du panel consacré à la pression qui pèse sur les PME et les start-up :</p><ul><li>Une sécurité numérique à la pointe exige des investissements importants : infrastructure, processus, documentation et, surtout, une culture d’entreprise à la hauteur, partagée à tous les niveaux et dans tous les services. Le total atteint souvent un montant à six chiffres par an.</li><li>Les cabinets d’avocats et les autres PME extérieures au secteur des TIC manquent souvent des ressources et des compétences nécessaires pour évaluer correctement le niveau de sécurité de leurs fournisseurs. Il ne leur reste alors qu’à « faire confiance » ou à « espérer que tout se passe bien ».</li><li>Des prestataires TIC spécialisés, comme Neur.on, peuvent prendre en charge certaines étapes précises du processus, mais la connaissance et la vigilance d’ensemble restent du ressort de la PME.</li><li>Des programmes et des associations comme Trust4SMEs, le Swiss AI Center for SMEs de la <a href=\"https://www.linkedin.com/company/university-of-applied-sciences-western-switzerland/\" rel=\"noopener\" target=\"_blank\">HES-SO Haute école spécialisée de Suisse occidentale</a> et la <a href=\"https://www.linkedin.com/company/swiss-legaltech-association/\" rel=\"noopener\" target=\"_blank\">Swiss LegalTech Association</a> sont là pour aider, avec des guides, des livres blancs et des formations.</li></ul><h2>Que demandent les PME suisses au secteur public ?</h2><p>Toutefois, le message principal de nos clients et des acteurs de la LegalTech s’adresse au secteur public suisse et aux programmes d’innovation :</p><p>Les PME et les start-up suisses sont impatientes d’explorer le potentiel de l’IA générative pour leur secteur. Pour cela, elles doivent pouvoir utiliser leurs propres données avec des LLM, sans craindre de fuite de données ni de flux de données incontrôlés. Elles demandent de toute urgence une infrastructure 100 % suisse, non soumise au CLOUD Act ni au Patriot Act américains, pour tester différentes technologies en toute sécurité.</p><p>Qui est prêt à aider à réunir les CHF 2,5 millions nécessaires à une sandbox suisse pour les PME ?</p><p>La Suisse est-elle prête à jouer un rôle dans la course à la numérisation ?</p><p>Rejoignez Neur.on dans son engagement pour la sécurité et la réussite des entreprises suisses sur ce chemin.</p>",
+  "image": {
+   "src": "assets/img/blog/cybersecurite-souverainete-donnees-pme-trust-valley.webp",
+   "w": 1080,
+   "h": 596,
+   "alt": "Une femme pose près d’un panneau « Trust Valley Welcome 2023 », trois joueurs de cor des Alpes en arrière-plan",
+   "legende": "Journée Trust Valley 2023 au Rolex Learning Center de l’EPFL"
+  },
+  "vignette": {
+   "src": "assets/img/blog/cybersecurite-souverainete-donnees-pme-trust-valley-v.webp",
+   "w": 640,
+   "h": 353
+  },
+  "mentions": [
+   [
+    "Event",
+    "Journée Trust Valley 2023"
+   ],
+   [
+    "Organization",
+    "Trust Valley"
+   ],
+   [
+    "Place",
+    "Rolex Learning Center, EPFL"
+   ],
+   [
+    "Person",
+    "Lennig Pedron"
+   ],
+   [
+    "Organization",
+    "HES-SO Haute école spécialisée de Suisse occidentale"
+   ],
+   [
+    "Organization",
+    "Swiss LegalTech Association"
+   ]
+  ],
+  "source_num": 65
+ },
+ {
+  "slug": "paula-reichenberg-conference-mids-geneve-2023",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Conférence MIDS 2023 à Genève : Paula Reichenberg sur l’adoption de l’IA générative",
+  "date": "2023-09-22",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Plus de 200 avocats et arbitres réunis pour les 15 ans du Master in International Dispute Settlement. Aux côtés du professeur Jacques de Werra, Paula Reichenberg a mis en parallèle l’IA générative et la traduction automatique.",
+  "bref": "Paula Reichenberg, CEO de Neur.on, a été panéliste à la 3e conférence des alumni du Master in International Dispute Settlement (MIDS), à Genève, en septembre 2023. L’événement célébrait les 15 ans du programme et réunissait plus de 200 spécialistes de l’arbitrage. Paula Reichenberg y a comparé les phases d’adoption de l’IA générative et de la traduction automatique.",
+  "title": "Conférence MIDS 2023 à Genève : IA générative · Neur.on",
+  "description": "À Genève en septembre 2023, Paula Reichenberg (Neur.on) a comparé l’adoption de l’IA générative à celle de la traduction automatique aux 15 ans du MIDS.",
+  "court": "Conférence MIDS 2023 à Genève : Paula Reichenberg sur l’adoption de l’IA générative",
+  "corps": "<p><a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg, CEO de Neur.on</a>, et le professeur Jacques de Werra, figure éminente du droit des contrats et du droit de la propriété intellectuelle à la Faculté de droit de l’Université de Genève et directeur du Digital Law Center de Genève, ont été panélistes à la 3e conférence des alumni du réputé programme Master in International Dispute Settlement (« MIDS »). Elle s’est tenue à Genève en septembre 2023.</p><p>Cet événement a réuni plus de 200 avocats spécialisés en arbitrage et arbitres venus du monde entier, pour débattre d’aspects essentiels du règlement des différends internationaux et renforcer les liens au sein de la communauté MIDS élargie. L’édition de cette année revêtait une importance particulière, puisqu’elle célébrait le 15e anniversaire du programme MIDS.</p><p>Paula Reichenberg et le professeur Jacques de Werra sont intervenus activement en tant que panélistes, tandis que la discussion était animée avec brio par Sean McCarthy, consultant en arbitrage international.</p><p>Les interventions de Paula ont porté sur les phases d’adoption de l’IA générative et sur leurs remarquables parallèles avec les phases d’adoption de la traduction automatique au cours des cinq dernières années.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-conference-mids-geneve-2023.webp",
+   "w": 1200,
+   "h": 675,
+   "alt": "Visuel Neur.on « Back to the future » et « AI Unleashed » avec une balance de la justice sur fond numérique bleu",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-conference-mids-geneve-2023-v.webp",
+   "w": 640,
+   "h": 360
+  },
+  "mentions": [
+   [
+    "Event",
+    "Conférence « Back to the Future » du MIDS 2023"
+   ],
+   [
+    "Organization",
+    "Master in International Dispute Settlement (MIDS)"
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Person",
+    "Jacques de Werra"
+   ],
+   [
+    "Person",
+    "Sean McCarthy"
+   ],
+   [
+    "Place",
+    "Genève"
+   ]
+  ],
+  "source_num": 68
+ },
+ {
+  "slug": "paula-reichenberg-digital-shaper-2023-bilanz",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Prix et distinctions",
+  "titre": "Paula Reichenberg, CEO et fondatrice de Neur.on, nommée « Digital Shaper 2023 » par BILANZ",
+  "date": "2023-08-25",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Une distinction qui revient à toute l’équipe. Neur.on y voit l’occasion de rappeler trois convictions sur la numérisation du droit : une technologie au service des avocats, la transparence et l’expertise humaine.",
+  "bref": "Paula Reichenberg, CEO et fondatrice de Neur.on, a été nommée « Digital Shaper 2023 » par BILANZ Wirtschaftsmagazin, digitalswitzerland, PME, HANDELSZEITUNG et Innosuisse. Neur.on attribue cette distinction à l’engagement de toute son équipe. L’entreprise défend une numérisation du droit qui respecte le travail des avocats, mise sur la transparence et valorise l’expertise humaine.",
+  "title": "Paula Reichenberg, Digital Shaper 2023 · Neur.on",
+  "description": "Paula Reichenberg, CEO et fondatrice de Neur.on, est nommée « Digital Shaper 2023 » par BILANZ, digitalswitzerland, PME, HANDELSZEITUNG et Innosuisse.",
+  "court": "Paula Reichenberg, CEO et fondatrice de Neur.on, nommée « Digital Shaper 2023 » par BILANZ",
+  "corps": "<p>Cette distinction témoigne de l’engagement remarquable et de l’esprit collaboratif de <a href=\"{{ROOT}}fr/a-propos/\">toute l’équipe de Neur.on</a>.</p><p>Dans le domaine du « digital shaping », la réussite est le fruit d’un effort collectif. C’est particulièrement vrai dans le secteur juridique, où les principes de Confiance, d’Exactitude et d’Éthique priment sur des notions passagères comme la Rentabilité, le Risque entrepreneurial… et parfois l’Innovation.</p><p>Chez Neur.on, nous sommes convaincus qu’une véritable numérisation réussit lorsque :</p><ul><li>La technologie renforce sans écraser : notre approche consiste à aligner la technologie de manière fluide sur les méthodes de travail et les exigences professionnelles des avocats. Il s’agit d’harmoniser l’innovation avec l’essence de la pratique juridique, sans imposer de changements inutiles.</li><li>La transparence est la pierre angulaire : nous tenons au principe de transparence. Nous nous abstenons de toute vantardise creuse et fournissons plutôt aux avocats des informations exactes sur la fiabilité de nos résultats. Une information honnête leur permet d’agir en connaissance de cause.</li><li>L’expertise humaine est renforcée : si la technologie est une alliée puissante, elle ne pourra jamais remplacer la profondeur et l’étendue de l’expertise humaine. Nous défendons le rôle des avocats, qui savent naviguer dans la complexité, et nous reconnaissons qu’aucun algorithme ne peut reproduire leur compréhension nuancée de situations diverses.</li></ul><p>Ensemble, nous nous engageons à transformer notre secteur pour qu’il apporte de la joie à toutes ses parties prenantes.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-digital-shaper-2023-bilanz.webp",
+   "w": 891,
+   "h": 1100,
+   "alt": "Visuel BILANZ « Digital Shapers 2023 » et « The AI Generators » : mosaïque de dix portraits",
+   "legende": ""
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-digital-shaper-2023-bilanz-v.webp",
+   "w": 518,
+   "h": 640
+  },
+  "mentions": [
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Organization",
+    "BILANZ Wirtschaftsmagazin"
+   ],
+   [
+    "Organization",
+    "digitalswitzerland"
+   ],
+   [
+    "Organization",
+    "PME"
+   ],
+   [
+    "Organization",
+    "HANDELSZEITUNG"
+   ],
+   [
+    "Organization",
+    "Innosuisse"
+   ]
+  ],
+  "source_num": 71
+ },
+ {
+  "slug": "paula-reichenberg-table-ronde-bdu-2022",
+  "page": "generee",
+  "categorie": "Actualités",
+  "sous_categorie": "Événements",
+  "titre": "Conférence BDÜ 2022 : Paula Reichenberg sur la collaboration entre avocats et traducteurs",
+  "date": "2022-11-02",
+  "auteur": "Équipe Neur.on",
+  "extrait": "Les bonnes traductions naissent d’une communication ouverte entre avocats et traducteurs. Retour sur une table ronde de la conférence du BDÜ, et sur les attentes de chacun face à la traduction automatique.",
+  "bref": "Paula Reichenberg, CEO de Neur.on, a participé en 2022 à une table ronde de la conférence du BDÜ e.V. consacrée au travail dans et avec les cabinets d’avocats. Elle y a souligné que les avocats attendent des traducteurs qu’ils ne nient pas le potentiel de la traduction automatique, et que les traducteurs souhaitent que les avocats ne le surestiment pas.",
+  "title": "Conférence BDÜ 2022 : avocats et traducteurs · Neur.on",
+  "description": "Paula Reichenberg, CEO de Neur.on, a participé en 2022 à une table ronde de la conférence du BDÜ sur le travail dans et avec les cabinets d’avocats.",
+  "court": "Conférence BDÜ 2022 : Paula Reichenberg sur la collaboration entre avocats et traducteurs",
+  "corps": "<p><a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg, notre CEO</a>, a eu le privilège de participer à une table ronde consacrée au travail dans et avec les cabinets d’avocats, lors de la conférence du <a href=\"https://www.linkedin.com/company/bd%C3%BC-e-v---die-qualifizierten-dolmetscher-und-%C3%BCbersetzer/\" rel=\"noopener\" target=\"_blank\">BDÜ e.V. - die qualifizierten Dolmetscher und Übersetzer</a>, aux côtés de <a href=\"https://www.linkedin.com/in/karenrueckert/\" rel=\"noopener\" target=\"_blank\">Karen Rückert</a> et de Dirk Poppendieck. La discussion était animée par Richard Delaney.</p><p>Pour Karen, le principal enseignement de la table ronde est le suivant : « Les bonnes traductions sont le fruit d’une communication ouverte entre avocats et traducteurs. Mais cela ne signifie pas que les avocats doivent lire dans les pensées. Les traducteurs doivent avoir suffisamment d’assurance pour poser les bonnes questions, afin d’obtenir les informations nécessaires à une traduction adaptée à sa finalité. Et ils doivent les poser de manière à ce que les avocats comprennent pourquoi il vaut la peine de consacrer du temps à y répondre. Traducteurs et avocats doivent se rencontrer à l’interface du droit et de la langue, afin que les clients obtiennent le service qu’ils veulent et dont ils ont besoin. »</p><p>Paula a ajouté à cette synthèse que les avocats attendent des traducteurs qu’ils ne nient pas le potentiel de la traduction automatique, tandis que les traducteurs souhaiteraient que les avocats ne le surestiment pas.</p>",
+  "image": {
+   "src": "assets/img/blog/paula-reichenberg-table-ronde-bdu-2022.webp",
+   "w": 750,
+   "h": 563,
+   "alt": "Quatre intervenants, deux femmes et deux hommes, assis dans des fauteuils sur scène lors d’une table ronde",
+   "legende": "Table ronde de la conférence du BDÜ, 2022"
+  },
+  "vignette": {
+   "src": "assets/img/blog/paula-reichenberg-table-ronde-bdu-2022-v.webp",
+   "w": 640,
+   "h": 480
+  },
+  "mentions": [
+   [
+    "Organization",
+    "BDÜ e.V."
+   ],
+   [
+    "Person",
+    "Paula Reichenberg"
+   ],
+   [
+    "Person",
+    "Karen Rückert"
+   ],
+   [
+    "Person",
+    "Dirk Poppendieck"
+   ],
+   [
+    "Person",
+    "Richard Delaney"
+   ]
+  ],
+  "source_num": 101
  }
 ]
