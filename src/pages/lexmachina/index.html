@@ -31,13 +31,37 @@ canonical: https://neur-on.ai/fr/lexmachina/
 .nlex-cap{max-width:980px;margin:18px auto 0;padding-left:22px;font-size:12.5px;color:var(--muted);line-height:1.55}
 
 /* Registre de faits et bande de liens : ces sections n'ont pas de marge haute par défaut */
-.nlfacts{padding-top:84px}
-.nlsib{padding-top:80px}
+
 
 @media(max-width:940px){
 
   .nlex-cols{grid-template-columns:1fr}
 }
+
+/* Ce qu'est LexMachina : quatre chiffres clés, trois tuiles, une ligne de pied */
+.nlspec{padding:84px 0;background:#fff}
+.nlspec .sec-head{text-align:left;margin:0 0 34px;max-width:760px}
+.nls-kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;grid-auto-rows:auto auto 1fr}
+.nls-k{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;padding:26px 24px;background:var(--bg);border:1px solid var(--line);border-radius:18px}
+.nls-k b{font-size:clamp(34px,3.4vw,44px);font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--navy)}
+.nls-k span{margin:10px 0 12px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--blue-d)}
+.nls-k p{font-size:14px;line-height:1.6;color:var(--text)}
+.nls-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px;grid-auto-rows:auto auto 1fr}
+.nls-t{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;padding:24px;background:#fff;border:1px solid var(--line);border-radius:18px}
+.nls-t h3{font-size:16.5px;letter-spacing:-.015em;margin-bottom:14px}
+.nls-chips{display:flex;flex-wrap:wrap;gap:7px;align-content:start;margin-bottom:14px}
+.nls-chips span{font-size:12.5px;font-weight:600;color:var(--navy);background:var(--blue-pale);border-radius:999px;padding:5px 11px}
+.nls-t p{font-size:13.5px;line-height:1.6;color:var(--muted);align-self:end}
+.nls-foot{margin-top:22px;font-size:13.5px;color:var(--muted);line-height:1.6}
+.nls-foot a{color:var(--blue-d);font-weight:600}
+/* Piliers : pictogramme à gauche du titre, de la hauteur de ses deux lignes */
+.pillars-grid{grid-auto-rows:auto 1fr}
+.pillars .pillar{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0}
+.pillars .pillar h3{display:flex;align-items:center;gap:14px;line-height:1.3;margin-bottom:14px}
+.pillars .pillar .ws-ic svg{width:22px;height:22px}
+@media(min-width:1024px) and (max-width:1179px){.pillars-grid{gap:16px}.pillars .pillar{padding:28px 22px}.pillars .pillar h3{font-size:17px;gap:12px}}
+@media(max-width:1023px){.nls-kpi{grid-template-columns:repeat(2,1fr)}.nls-row{grid-template-columns:1fr}}
+@media(max-width:560px){.nls-kpi{grid-template-columns:1fr}}
 </style>
 
 <script type="application/ld+json">
@@ -133,42 +157,38 @@ canonical: https://neur-on.ai/fr/lexmachina/
     <div class="nlex-cols">
       <div class="nlex-card brand">
         <div class="eng"><i aria-hidden="true"></i> LEXMACHINA · ANGLAIS</div>
-        <p lang="en">The arbitral tribunal shall decide on its own jurisdiction in accordance with art. 186 <mark>PILA</mark>, and the award may be appealed to the Federal Tribunal.</p>
+        <p lang="en">The arbitral tribunal shall decide on its own jurisdiction in accordance with art. 186 <mark>PILA</mark>, and the award may be appealed to the <mark class="oth">Federal Tribunal</mark>.</p>
       </div>
       <div class="nlex-card">
         <div class="eng"><i aria-hidden="true"></i> DEEPL PRO · ANGLAIS</div>
-        <p lang="en">The arbitral tribunal shall rule on its own jurisdiction in accordance with Article 186 of the <mark class="oth">LDIP</mark>, and the award may be appealed to the Federal Supreme Court.</p>
+        <p lang="en">The arbitral tribunal shall rule on its own jurisdiction in accordance with Article 186 of the <mark class="oth">LDIP</mark>, and the award may be appealed to the <mark>Federal Supreme Court</mark>.</p>
       </div>
     </div>
 
-    <p class="nlex-note">Les deux phrases se lisent. L'une cite l'article sous sa forme anglaise officielle, <b>PILA</b>, l'abréviation retenue par la Confédération pour la loi fédérale sur le droit international privé. L'autre conserve l'abréviation française <b>LDIP</b> dans un texte anglais : sur un mémoire destiné à un tribunal ou à une partie anglophone, c'est la ligne qu'un associé reprend à la main. Sur cette même phrase, Azure OpenAI GPT rend lui aussi PILA : aucun moteur n'a raison à tous les coups, et c'est précisément pour cela que Corrext les compare devant vous au lieu d'en imposer un.</p>
-    <p class="nlex-cap">Sorties réelles obtenues dans Corrext le 14 septembre 2026, reproduites mot pour mot, panneau Alternatives. Les sorties d'un moteur varient d'une génération à l'autre : jugez sur vos propres textes, pas sur un exemple choisi.</p>
+    <p class="nlex-note">Les deux phrases se lisent. L'une cite l'article sous sa forme anglaise officielle, <b>PILA</b>, l'abréviation retenue par la Confédération pour la loi fédérale sur le droit international privé. L'autre conserve l'abréviation française <b>LDIP</b> dans un texte anglais : sur un mémoire destiné à un tribunal ou à une partie anglophone, c'est la ligne qu'un associé reprend à la main. Sur la juridiction, c'est l'inverse : DeepL Pro emploie le nom officiel du Tribunal fédéral en anglais, <b>Federal Supreme Court</b>, là où LexMachina écrit <b>Federal Tribunal</b>. Sur cette même phrase, Azure OpenAI GPT rend lui aussi PILA : aucun moteur n'a raison à tous les coups, et c'est précisément pour cela que Corrext les compare devant vous au lieu d'en imposer un.</p>
+    <p class="nlex-cap">Sorties réelles obtenues dans Corrext le 14 septembre 2026, reproduites mot pour mot, panneau Alternatives. PILA et Federal Supreme Court sont les formes des traductions anglaises publiées sur Fedlex, vérifiées dans CHnell. Les sorties d'un moteur varient d'une génération à l'autre : jugez sur vos propres textes, pas sur un exemple choisi.</p>
   </div>
 </section>
 
 <!-- CE QU'EST LE MODÈLE -->
-<section class="facts nlfacts" id="faits">
+<section class="nlspec" id="faits">
   <div class="container">
-    <div class="facts-grid">
-      <div class="facts-lead">
-        <h2>Ce qu'est LexMachina, exactement</h2>
-        <p>Un moteur de traduction spécialisé, développé en Suisse, disponible dans Corrext au même titre que les moteurs du marché. Voici ce qu'il contient, ce qu'il couvre et où il tourne.</p>
-        <div class="links">
-          <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">L'essayer dans la démo Traduction texte et document <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Où vos données sont traitées <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-      <div class="facts-list">
-        <div class="fact"><b>Données d'entraînement</b><p>Plus de 15 millions de segments juridiques et financiers multilingues : arrêts du Tribunal fédéral (ATF/BGE), publications de la FINMA, codes et lois fédérales.<small>Des corpus suisses, jamais les documents des clients.</small></p></div>
-        <div class="fact"><b>Langues</b><p>Allemand, français, italien et anglais en natif, dans toutes les paires. La plateforme Corrext propose 30 langues au total ; au-delà des quatre, la traduction passe par un moteur tiers.</p></div>
-        <div class="fact"><b>Matières</b><p>Droit des contrats (CO), droit bancaire (LB) et surveillance FINMA, arbitrage international (LDIP), droit des sociétés, fiscalité, procédure.<small>La terminologie se vérifie en contexte dans CHnell, qui couvre 30 domaines.</small></p></div>
-        <div class="fact"><b>Dans Corrext</b><p>Moteur disponible dans Traduction texte et document, pour le texte comme pour les fichiers, moteur par défaut de Rephrasing, et moteur sélectionnable à la création d'un projet de traduction.</p></div>
-        <div class="fact"><b>Alternatives</b><p>Le panneau Alternatives affiche jusqu'à quatre propositions pour la même phrase, chacune attribuée à son moteur, avec « Generate more » pour en obtenir d'autres.</p></div>
-        <div class="fact"><b>Exécution en Suisse</b><p>Le modèle est hébergé et exécuté en Suisse. Le choisir suffit à garder le traitement sur le territoire, même en dehors du mode Highly sensitive content.</p></div>
-        <div class="fact"><b>Model-agnostic</b><p>Corrext n'impose pas son moteur : DeepL Pro, Azure OpenAI GPT et Claude restent disponibles dans la même interface, avec l'avis de pseudonymisation qui s'affiche pour les moteurs hébergés à l'étranger.</p></div>
-        <div class="fact"><b>Recherche</b><p>Projet d'innovation soutenu par Innosuisse, mené avec l'institut iCoSys de la HEIA-FR.<small>La qualité d'un moteur est un chantier continu, pas un état acquis.</small></p></div>
-      </div>
+    <div class="sec-head">
+      <h2>Ce qu'est LexMachina, exactement</h2>
+      <p>Un moteur de traduction spécialisé, développé en Suisse, disponible dans Corrext au même titre que les moteurs du marché.</p>
     </div>
+    <div class="nls-kpi">
+      <div class="nls-k"><b>15 M+</b><span>segments d'entraînement</span><p>Arrêts du Tribunal fédéral (ATF/BGE), publications de la FINMA, codes et lois fédérales. Jamais les documents des clients.</p></div>
+      <div class="nls-k"><b>4</b><span>langues natives</span><p>Allemand, français, italien et anglais, dans toutes les paires. Au-delà, Corrext passe par un moteur tiers.</p></div>
+      <div class="nls-k"><b>CH</b><span>exécuté en Suisse</span><p>Le choisir suffit à garder le traitement sur le territoire, même hors du mode Highly sensitive content.</p></div>
+      <div class="nls-k"><b>4</b><span>alternatives par phrase</span><p>Chacune attribuée à son moteur, avec « Generate more » pour en obtenir d'autres.</p></div>
+    </div>
+    <div class="nls-row">
+      <div class="nls-t"><h3>Les matières</h3><div class="nls-chips"><span>CO · contrats</span><span>LB · banque</span><span>FINMA</span><span>LDIP · arbitrage</span><span>Sociétés</span><span>Fiscalité</span><span>Procédure</span></div><p>La terminologie se vérifie dans CHnell, qui couvre 30 domaines.</p></div>
+      <div class="nls-t"><h3>Dans Corrext</h3><div class="nls-chips"><span>Traduction de texte</span><span>Traduction de fichiers</span><span>Projets de traduction</span></div><p><a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">L'essayer dans la démo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></p></div>
+      <div class="nls-t"><h3>Les autres moteurs restent là</h3><div class="nls-chips"><span>DeepL Pro</span><span>Azure OpenAI GPT</span><span>Claude</span></div><p>Dans la même interface, avec l'avis de pseudonymisation pour les moteurs hébergés à l'étranger.</p></div>
+    </div>
+    <p class="nls-foot">Recherche : projet d'innovation soutenu par Innosuisse, mené avec l'institut iCoSys de la HEIA-FR. La qualité d'un moteur est un chantier continu, pas un état acquis. <a href="{{ROOT}}fr/securite-souverainete/">Où vos données sont traitées</a></p>
   </div>
 </section>
 
@@ -181,18 +201,15 @@ canonical: https://neur-on.ai/fr/lexmachina/
     </div>
     <div class="pillars-grid">
       <div class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-        <h3>La terminologie officielle existe déjà</h3>
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span>La terminologie officielle existe déjà</span></h3>
         <p>La Confédération publie ses lois en allemand, en français et en italien, et une large part de ses textes en anglais. Un modèle entraîné sur ces corpus ne cherche pas un équivalent plausible : il reprend celui qui fait foi. « Verzugszins » devient « intérêt moratoire », le terme des textes fédéraux.</p>
       </div>
       <div class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
-        <h3>Les références légales ont une structure</h3>
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span><span>Les références légales ont une structure</span></h3>
         <p>« Art. 104 al. 1 CO » s'écrit « Art. 104 Abs. 1 OR » en allemand et « Art. 104 para. 1 CO » en anglais ; LDIP devient IPRG puis PILA. Un modèle qui a vu des millions de ces correspondances les restitue sous leur forme officielle au lieu de traduire l'abréviation mot à mot.</p>
       </div>
       <div class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 1 3 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
-        <h3>La cohérence tient sur la longueur</h3>
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 1 3 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span><span>La cohérence tient sur la longueur</span></h3>
         <p>Sur un contrat de 60 pages, une notion doit porter le même nom de la première à la dernière page. C'est le rôle d'un vocabulaire appris sur des corpus cohérents, et celui du panneau Alternatives, qui vous laisse arrêter une formulation et vous y tenir ensuite.</p>
       </div>
     </div>
@@ -200,13 +217,13 @@ canonical: https://neur-on.ai/fr/lexmachina/
 </section>
 
 <!-- POUR ALLER PLUS LOIN -->
-<section class="siblings nlsib">
+<section class="vn">
   <div class="container">
     <h2>Pour aller plus loin</h2>
-    <div class="siblings-row">
-      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Traduction texte et document</b><span>Essayez le moteur sur de vrais articles de loi et comparez les alternatives, dans la démo.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/securite-souverainete/"><b>Sécurité et souveraineté</b><span>Où va votre document selon le mode et le moteur retenus, sans arrondi.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse : sources officielles, 30 domaines, vos propres ressources.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    <div class="vn-grid">
+      <a class="vn-card" href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><span class="vn-term vn-kv"><span><i>Texte</i><b>jusqu'à 10'000 caractères</b></span><span><i>Fichiers</i><b>25 fichiers de 50 Mo</b></span></span><b class="vn-t">Traduction texte et document</b><span class="vn-d">Essayez le moteur sur de vrais articles de loi et comparez les alternatives, dans la démo.</span><em>Découvrir l'outil <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vn-card" href="{{ROOT}}fr/securite-souverainete/"><span class="vn-term vn-kv"><span><i>Stockage</i><b>en Suisse</b></span><span><i>Norme</i><b>ISO 27001</b></span></span><b class="vn-t">Sécurité et souveraineté</b><span class="vn-d">Où va votre document selon le mode et le moteur retenus, sans arrondi.</span><em>Voir la page <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vn-card" href="{{ROOT}}fr/corrext/chnell/"><span class="vn-term vn-kv"><span><i>Documents</i><b>plus de 20 000</b></span><span><i>Domaines</i><b>30, filtrables</b></span></span><b class="vn-t">Fast lookup CHnell</b><span class="vn-d">Le concordancier du droit suisse : sources officielles, 30 domaines, vos propres ressources.</span><em>Découvrir l'outil <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
     </div>
   </div>
 </section>

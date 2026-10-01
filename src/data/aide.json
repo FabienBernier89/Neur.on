@@ -239,7 +239,7 @@
         "titre": "Reformuler un texte",
         "title": "Reformuler un texte avec Rephrasing dans Corrext · Neur.on",
         "description": "L'onglet Rephrasing réécrit un texte jusqu'à 5'000 caractères, avec cinq styles dont Formal legal et Simplified, et une option de raccourcissement.",
-        "reponse": "L'onglet « Rephrasing » de Traduction texte et document réécrit un texte dans le style que vous choisissez, sans changer de langue. Il fonctionne avec le moteur suisse LexMachina par défaut et accepte jusqu'à 5'000 caractères. Une liste « Settings » donne accès à cinq styles, dont « Formal legal » et « Simplified », et à une option « Shorten » qui raccourcit le texte. Les mots modifiés sont soulignés dans le résultat.",
+        "reponse": "L'onglet « Rephrasing » de Traduction texte et document réécrit un texte dans le style que vous choisissez, sans changer de langue. Il accepte jusqu'à 5'000 caractères. Une liste « Settings » donne accès à cinq styles, dont « Formal legal » et « Simplified », et à une option « Shorten » qui raccourcit le texte. Les mots modifiés sont soulignés dans le résultat.",
         "etapes": [
           "Ouvrez « Traduction texte et document », puis cliquez sur l'onglet <b>« Rephrasing »</b>.",
           "Collez votre texte dans le volet de gauche : le compteur indique le nombre de caractères utilisés sur 5'000.",
