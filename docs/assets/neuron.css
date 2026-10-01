@@ -1263,3 +1263,13 @@ body.nav-open{overflow:hidden}
 @media(max-width:640px){.bl-seg-grid{grid-template-columns:1fr}.bl-actu-card{grid-template-columns:1fr;gap:6px}.bl-li-band{padding:28px 24px}.ac-item{grid-template-columns:96px 1fr;gap:14px}.ac-img{width:96px;height:72px}}
 .ac-item h3 a{color:inherit;text-decoration:none}
 .ac-item h3 a:hover{color:var(--blue-d)}
+
+/* Blog : héro centré (titre, texte, boutons, puis les trois engagements sur une ligne) */
+.thero-read.thero-centre .thero-grid{max-width:none;justify-items:center;text-align:center}
+.thero-centre h1{max-width:20ch;margin-left:auto;margin-right:auto}
+.thero-centre .lead{max-width:62ch;margin-left:auto;margin-right:auto}
+.thero-centre .thero-cta{justify-content:center}
+.thero-read.thero-centre .thero-promise{width:100%;max-width:980px;margin-left:auto;margin-right:auto;justify-content:center;flex-wrap:nowrap;gap:16px 36px}
+.thero-read.thero-centre .thero-promise>span{flex:1 1 0;max-width:30ch;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.thero-centre .thero-promise svg{margin-top:0;width:18px;height:18px}
+@media(max-width:760px){.thero-read.thero-centre .thero-promise{flex-wrap:wrap}.thero-read.thero-centre .thero-promise>span{flex-basis:100%;max-width:40ch}}

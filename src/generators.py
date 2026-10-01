@@ -955,7 +955,7 @@ def blog_ld(a, mots):
     return '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"
 
 
-BLOG_HERO = """<section class="thero thero-read">
+BLOG_HERO = """<section class="thero thero-read thero-centre">
   <div class="container">
     <div class="thero-grid">
       <div>
