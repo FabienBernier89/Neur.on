@@ -72,14 +72,13 @@ canonical: https://neur-on.ai/fr/comparatif/agence-ou-plateforme/
 /* Trois modèles de travail, en registre */
 .cp-models{padding:72px 0 0;background:#fff}
 .cp-models .sec-head{text-align:left;margin:0 0 34px;max-width:760px}
-.cp-models-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-2)}
-.cp-model{padding:26px 28px 26px 0;border-bottom:1px solid var(--line-2);border-right:1px solid var(--line-2)}
-.cp-model+.cp-model{padding-left:28px}
-.cp-model:last-child{border-right:0;padding-right:0}
-.cp-model h3{font-size:17px;margin-bottom:10px;letter-spacing:-.015em}
+/* Trois cartes, pictogramme de la hauteur des deux premières lignes du titre, alignées ligne à ligne */
+.cp-models-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;grid-auto-rows:auto 1fr auto}
+.cp-model{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;padding:34px 32px 36px;background:#fff;border:1px solid var(--line);border-radius:18px}
+.cp-model h3{display:flex;align-items:flex-start;gap:14px;font-size:17px;line-height:1.3;margin-bottom:16px;letter-spacing:-.015em}
 .cp-model h3 .pn{color:var(--blue-d)}
 .cp-model p{font-size:14.5px;color:var(--text);line-height:1.62;margin-bottom:12px}
-.cp-model .tag{display:inline-block;font-size:11.5px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:6px;padding:4px 9px}
+.cp-model .tag{justify-self:start;align-self:end;margin:8px 0 0;font-size:11.5px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:6px;padding:4px 9px}
 
 /* Les trois niveaux de relecture externe, texte de l'application */
 .cp-lev{padding:82px 0 0;background:#fff}
@@ -93,7 +92,8 @@ canonical: https://neur-on.ai/fr/comparatif/agence-ou-plateforme/
 
 @media(max-width:940px){
   .cp-models-grid{grid-template-columns:1fr}
-  .cp-model,.cp-model+.cp-model{padding:20px 0;border-right:0}
+  .cp-models-grid{gap:16px}
+  .cp-model{padding:26px 24px 28px}
   .cp-lev-item{grid-template-columns:1fr;gap:8px}
   .cp-answer .box{padding:24px 22px}
 }
@@ -141,17 +141,17 @@ canonical: https://neur-on.ai/fr/comparatif/agence-ou-plateforme/
     </div>
     <div class="cp-models-grid">
       <div class="cp-model">
-        <h3><span class="pn">Agence externe seule.</span> Un engagement, et quelqu'un au bout du fil</h3>
+        <h3><span class="ws-ic">{{ICONE:equipe}}</span><span><span class="pn">Agence externe seule.</span> Un engagement, et quelqu'un au bout du fil</span></h3>
         <p>C'est le seul modèle qui apporte une responsabilité contractuelle sur le résultat, un traducteur juridique identifié, une relation qui dure et une certification opposable. Sur un acte qui engage, rien ne remplace cela.</p>
         <p class="tag">Le revers : une commande pour chaque lecture</p>
       </div>
       <div class="cp-model">
-        <h3><span class="pn">Outil générique seul.</span> Comprendre maintenant, sans rien demander à personne</h3>
+        <h3><span class="ws-ic">{{ICONE:eclair}}</span><span><span class="pn">Outil générique seul.</span> Comprendre maintenant, sans rien demander à personne</span></h3>
         <p>Il répond au besoin le plus fréquent d'un cabinet : savoir ce que dit une pièce, tout de suite, à minuit, sans processus. C'est un vrai gain, et c'est pourquoi les équipes l'utilisent quoi qu'on leur dise.</p>
         <p class="tag">Le revers : aucun cadre, aucune trace</p>
       </div>
       <div class="cp-model">
-        <h3><span class="pn">Corrext.</span> L'immédiateté d'abord, la relecture humaine ensuite</h3>
+        <h3><span class="ws-ic">{{ICONE:bouclier}}</span><span><span class="pn">Corrext.</span> L'immédiateté d'abord, la relecture humaine ensuite</span></h3>
         <p><a href="{{ROOT}}fr/corrext/traduction-texte-et-document/">La traduction machine</a> est disponible en permanence, dans un environnement suisse et gouverné. <a href="{{ROOT}}fr/corrext/gestion-de-projet/">La relecture humaine</a> se commande depuis la même interface, fichier par fichier, avec son délai et son devis, interne ou externe.</p>
         <p class="tag">Le pari : arbitrer document par document</p>
       </div>
