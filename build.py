@@ -155,6 +155,14 @@ def build_page(path, meta, body):
             return 'href="%s%s%s"' % (root, LEGACY[href], anchor)
         return m.group(0)
     body = re.sub(r'href="([a-z0-9\-]+\.html)(#[^"]*)?"', legacy, body)
+    # blog : en-tête et « derniers articles » des articles écrits à la main, tirés de src/data/blog.json
+    if "{{BLOG:" in body:
+        if SRC not in sys.path:
+            sys.path.insert(0, SRC)
+        import generators
+        mots = len(re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[\s\S]*?</\1>", "", body)).split())
+        body = re.sub(r"\{\{BLOG:entete:([a-z0-9-]+)\}\}", lambda m: generators.blog_entete(SRC, m.group(1), mots), body)
+        body = re.sub(r"\{\{BLOG:recents:([a-z0-9-]+)\}\}", lambda m: generators.blog_recents(SRC, m.group(1)), body)
     body = body.replace('href="{{ROOT}}', 'href="' + root).replace("{{ROOT}}", root)
     # pictogrammes partagés : {{ICONE:nom}} renvoie au jeu WS_ICONS de src/generators.py
     if "{{ICONE:" in body:

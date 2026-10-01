@@ -1109,3 +1109,107 @@ body.nav-open{overflow:hidden}
 .hc-a a{color:var(--blue-d);font-weight:600}
 @media(max-width:1023px){.hc-cards{grid-template-columns:repeat(2,1fr)}.hc-grid{grid-template-columns:1fr;gap:28px}.hc-main{order:1}.hc-side{order:2;position:static;border-top:1px solid var(--line);padding-top:24px}.hc-side ul{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.hc-side a{padding:6px 12px 6px 6px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:13.5px}.hc-side a .ws-ic{width:22px;height:22px;border-radius:999px}.hc-side a .ws-ic svg{width:13px;height:13px}.hc-side-t{margin:0 0 10px}}
 @media(max-width:620px){.hc-cards{grid-template-columns:1fr}}
+
+/* ============ BLOG · liste (modèle lexamt.com/ressources#articles) ============ */
+.bl-feat{padding:64px 0 8px}
+.bl-feat-card{display:grid;grid-template-columns:1.05fr 1fr;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 34px 70px -46px rgba(8,24,68,.35);transition:box-shadow .35s cubic-bezier(.16,1,.3,1),border-color .35s}
+.bl-feat-card:hover{box-shadow:0 40px 80px -40px rgba(8,24,68,.42);border-color:#d3def0}
+.bl-vis{position:relative;overflow:hidden;background:radial-gradient(620px 360px at 18% 0%,rgba(127,176,255,.32),transparent 60%),var(--navy-grad)}
+.bl-vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.bl-vis.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,18,51,.55) 0%,rgba(0,18,51,0) 46%,rgba(0,18,51,.35) 100%)}
+.bl-feat-card:hover .bl-vis img,.bl-card:hover .bl-vis img{transform:scale(1.035)}
+.bl-feat-card .bl-vis{min-height:320px}
+.bl-tag{position:absolute;z-index:1;display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:5px 12px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.bl-tag svg{width:13px;height:13px}
+.bl-mark{position:absolute;z-index:1;font-weight:800;letter-spacing:.04em;color:rgba(255,255,255,.86)}
+.bl-mark span{color:#9cc2ff}
+.bl-feat-card .bl-tag{left:26px;bottom:26px;font-size:11.5px;padding:7px 14px}
+.bl-feat-card .bl-mark{top:24px;left:26px;font-size:18px}
+.bl-feat-body{padding:38px 40px;display:flex;flex-direction:column;justify-content:center}
+.bl-k{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue-d);margin-bottom:12px}
+.bl-feat-body h2{font-size:clamp(23px,2.6vw,30px);line-height:1.22;letter-spacing:-.02em;color:var(--ink);margin-bottom:14px;text-wrap:balance}
+.bl-feat-body p{font-size:15.5px;color:var(--muted);line-height:1.65;margin-bottom:20px}
+.bl-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px;font-size:12.5px;color:var(--muted)}
+.bl-meta span{display:inline-flex;align-items:center;gap:6px}
+.bl-meta svg{width:14px;height:14px;color:var(--blue)}
+.bl-filters{padding:56px 0 0}
+.bl-filters .container{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.bl-chip{font:inherit;font-size:13px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line-2);border-radius:999px;padding:9px 18px;cursor:pointer;transition:border-color .2s,color .2s,background .2s}
+.bl-chip:hover{border-color:var(--blue);color:var(--blue-d)}
+.bl-chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.bl-chip em{font-style:normal;opacity:.6;margin-left:6px;font-weight:500}
+.bl-list{padding:30px 0 88px}
+.bl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.bl-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1),border-color .35s}
+.bl-card:hover{transform:translateY(-4px);box-shadow:0 30px 60px -32px rgba(8,24,68,.38);border-color:#d3def0}
+.bl-card[hidden]{display:none}
+.bl-card .bl-vis{height:150px}
+.bl-card .bl-tag{top:16px;left:16px}
+.bl-card .bl-mark{bottom:13px;right:16px;font-size:13.5px}
+.bl-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex-grow:1}
+.bl-body h3{font-size:17px;line-height:1.34;letter-spacing:-.012em;color:var(--ink);margin-bottom:10px}
+.bl-body p{font-size:14px;color:var(--muted);line-height:1.6;flex-grow:1;margin-bottom:16px}
+.bl-date{font-size:12.5px;color:var(--muted);margin-bottom:12px}
+.bl-more{display:inline-flex;align-items:center;gap:6px;margin-top:auto;font-size:13px;font-weight:600;color:var(--blue-d)}
+.bl-more svg{width:15px;height:15px;transition:transform .2s}
+.bl-card:hover .bl-more svg,.bl-feat-card:hover .feat-link svg{transform:translateX(3px)}
+.bl-empty{text-align:center;color:var(--muted);font-size:15px;padding:30px 0}
+
+/* ============ BLOG · article (modèle lexamt.com, page d'article) ============ */
+.ar-head{padding:48px 0 26px;background:#fff}
+.ar-col{max-width:760px;margin:0 auto}
+.ar-head h1{font-size:clamp(30px,3.8vw,46px);line-height:1.18;letter-spacing:-.03em;color:var(--ink);margin-bottom:20px;text-wrap:balance}
+.ar-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);padding-top:18px;border-top:1px solid var(--line)}
+.ar-meta span{display:inline-flex;align-items:center;gap:7px}
+.ar-meta svg{width:15px;height:15px;color:var(--blue)}
+.ar-meta b{font-weight:600;color:var(--ink)}
+.ar-share{display:flex;align-items:center;gap:10px;margin-top:22px;flex-wrap:wrap}
+.ar-share span{font-size:13px;font-weight:600;color:var(--muted);margin-right:2px}
+.ar-share a{width:38px;height:38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);color:var(--navy);background:#fff;transition:transform .2s,background .2s,border-color .2s,color .2s}
+.ar-share a:hover{transform:translateY(-2px);border-color:transparent;color:#fff}
+.ar-share a svg{width:16px;height:16px}
+.ar-share a.sh-li:hover{background:#0A66C2}
+.ar-share a.sh-x:hover{background:#0f1419}
+.ar-share a.sh-mail:hover{background:var(--blue-d)}
+.ar-hero-img{margin:30px 0 0;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--bg)}
+.ar-hero-img img{display:block;width:100%;height:auto}
+.ar-hero-img figcaption{padding:10px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.ar-brief{margin:0 0 34px;padding:22px 26px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;box-shadow:0 24px 50px -36px rgba(8,24,68,.35)}
+.ar-brief b,.art-wrap .ar-brief>b{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-d);margin-bottom:8px}
+.ar-brief p{font-size:16px!important;line-height:1.65!important;color:var(--text);margin:0!important}
+/* Corps d'article commun (les trois articles de fond l'avaient en style de page) */
+.art{padding:8px 0 30px}
+.art-wrap{max-width:760px;margin:0 auto}
+.art-wrap h2{font-size:clamp(23px,2.6vw,30px);margin:46px 0 14px;letter-spacing:-.022em;line-height:1.25;scroll-margin-top:96px}
+.art-wrap h3{font-size:19px;margin:30px 0 10px;letter-spacing:-.015em;scroll-margin-top:96px}
+.art-wrap p{font-size:16.5px;line-height:1.75;margin-bottom:18px}
+.art-wrap ul,.art-wrap ol{margin:0 0 20px;padding-left:22px}
+.art-wrap li{font-size:16.5px;line-height:1.7;margin-bottom:9px;padding-left:4px}
+.art-wrap li::marker{color:var(--blue-d)}
+.art-wrap strong,.art-wrap b{color:var(--ink);font-weight:700}
+.art-wrap a:not(.feat-link):not(.btn){color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px;overflow-wrap:anywhere}
+.art-wrap a:not(.feat-link):not(.btn):hover{text-decoration-color:var(--blue-d)}
+.art-wrap blockquote{margin:26px 0;padding:20px 24px;background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:0 14px 14px 0}
+.art-wrap blockquote p{font-size:16.5px;color:var(--ink);margin-bottom:8px}
+.art-wrap blockquote p:last-child{margin-bottom:0}
+.art-wrap .art-lead{font-size:19px;line-height:1.62;color:var(--ink);margin-bottom:26px}
+.art-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 14px 14px 0;padding:22px 26px;margin:28px 0}
+.art-note p{font-size:15.5px;margin-bottom:10px}
+.art-note p:last-child{margin-bottom:0}
+.art-tbl{overflow-x:auto;margin:26px 0;border:1px solid var(--line);border-radius:14px}
+.art-tbl table{width:100%;border-collapse:collapse;font-size:15px;min-width:560px}
+.art-tbl th,.art-tbl td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.art-tbl th{background:var(--bg);color:var(--ink);font-weight:700;font-size:13px;letter-spacing:.02em}
+.art-tbl tr:last-child td{border-bottom:0}
+.art-tbl td b{color:var(--ink)}
+.art-end{margin-top:54px;padding-top:26px;border-top:1px solid var(--line)}
+.art-end p{font-size:15.5px}
+.art-fig{margin:28px 0}
+.art-fig img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.art-fig figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+.art-src{margin-top:38px;padding:16px 20px;background:var(--bg);border:1px solid var(--line);border-radius:12px;font-size:14px!important;color:var(--muted)}
+.ar-latest{padding:74px 0;background:var(--bg);border-top:1px solid var(--line)}
+.ar-latest h2{font-size:clamp(24px,2.8vw,32px);letter-spacing:-.02em;color:var(--ink);margin-bottom:28px}
+@media(max-width:1023px){.bl-grid{grid-template-columns:repeat(2,1fr)}.bl-feat-card{grid-template-columns:1fr}.bl-feat-card .bl-vis{min-height:220px}}
+@media(max-width:640px){.bl-grid{grid-template-columns:1fr}.bl-feat{padding-top:40px}.bl-feat-body{padding:26px 22px}.ar-head{padding-top:34px}.art-wrap p,.art-wrap li{font-size:16px}.ar-latest{padding:54px 0}}
+@media(prefers-reduced-motion:reduce){.bl-card,.bl-feat-card,.bl-vis img{transition:none}.bl-card:hover{transform:none}.bl-feat-card:hover .bl-vis img,.bl-card:hover .bl-vis img{transform:none}}

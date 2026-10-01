@@ -827,6 +827,231 @@ var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;cherche(p);}
     return pages
 
 
+# ============ BLOG ============
+# Source unique : src/data/blog.json. Chaque entrée décrit un article ; "page": "manuelle" pour les
+# articles de fond écrits à la main dans src/pages (ils appellent {{BLOG:entete:slug}} et
+# {{BLOG:recents:slug}}), "page": "generee" pour les articles dont le corps est dans le JSON.
+SITE = "https://neur-on.ai"
+MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+BLOG_IC = {
+    "auteur": _SVG + '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+    "date": _SVG + '<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+    "duree": _SVG + '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
+    "une": _SVG + '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>',
+}
+SHARE = {
+    "li": ('Partager sur LinkedIn', 'https://www.linkedin.com/sharing/share-offsite/?url={u}',
+           '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>'),
+    "x": ('Partager sur X', 'https://twitter.com/intent/tweet?url={u}&amp;text={t}',
+          '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg>'),
+    "mail": ('Envoyer par e-mail', 'mailto:?subject={t}&amp;body={u}',
+             _SVG + '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>'),
+}
+
+
+def date_fr(iso):
+    a, m, j = iso.split("-")
+    return f'{int(j)}{"er" if j == "01" else ""} {MOIS[int(m) - 1]} {a}'
+
+
+def blog_articles(src):
+    """Articles triés du plus récent au plus ancien."""
+    return sorted(load(src, "blog"), key=lambda a: a["date"], reverse=True)
+
+
+def blog_url(a):
+    return f'fr/ressources/blog/{a["slug"]}/'
+
+
+def blog_visuel(a, une=False):
+    """Bandeau de carte : photo de l'article si elle existe, sinon dégradé bleu nuit ; catégorie et signature."""
+    img = a.get("image")
+    tag = (f'<span class="bl-tag">{BLOG_IC["une"]}À la une</span>' if une else f'<span class="bl-tag">{a["categorie"]}</span>')
+    photo = (f'<img src="{{{{ROOT}}}}{img["src"]}" alt="" width="{img["w"]}" height="{img["h"]}" loading="lazy" decoding="async">'
+             if img else "")
+    return (f'<div class="bl-vis{" photo" if img else ""}">{photo}{tag}'
+            f'<span class="bl-mark" aria-hidden="true">NEUR<span>.ON</span></span></div>')
+
+
+def blog_carte(a):
+    return (f'<a class="bl-card" href="{{{{ROOT}}}}{blog_url(a)}" data-cat="{a["categorie"]}">{blog_visuel(a)}'
+            f'<div class="bl-body"><span class="bl-date"><time datetime="{a["date"]}">{date_fr(a["date"])}</time></span>'
+            f'<h3>{a["titre"]}</h3><p>{a["extrait"]}</p><span class="bl-more">Lire l\'article {ARROW}</span></div></a>')
+
+
+def blog_entete(src, slug, mots):
+    """En-tête d'article : catégorie, titre, auteur, date, temps de lecture, partage."""
+    a = next(x for x in load(src, "blog") if x["slug"] == slug)
+    from urllib.parse import quote
+    u, t = quote(f"{SITE}/{blog_url(a)}", safe=""), quote(a["titre"], safe="")
+    partage = "".join(f'<a class="sh-{k}" href="{h.format(u=u, t=t)}"{"" if k == "mail" else " target=\"_blank\" rel=\"noopener\""} aria-label="{l}">{svg}</a>'
+                      for k, (l, h, svg) in SHARE.items())
+    maj = f' · mis à jour le {date_fr(a["maj"])}' if a.get("maj") and a["maj"] != a["date"] else ""
+    return f'''<section class="ar-head">
+  <div class="container"><div class="ar-col">
+    <p class="bl-k">{a["categorie"]}</p>
+    <h1>{a.get("h1", a["titre"])}</h1>
+    <div class="ar-meta">
+      <span>{BLOG_IC["auteur"]} <b>{a["auteur"]}</b></span>
+      <span>{BLOG_IC["date"]} <time datetime="{a["date"]}">{date_fr(a["date"])}</time>{maj}</span>
+      <span>{BLOG_IC["duree"]} {max(1, round(mots / 220))} min de lecture</span>
+    </div>
+    <div class="ar-share" aria-label="Partager cet article"><span>Partager</span>{partage}</div>
+  </div></div>
+</section>'''
+
+
+def blog_recents(src, slug):
+    autres = [a for a in blog_articles(src) if a["slug"] != slug][:3]
+    return ('<section class="ar-latest"><div class="container"><h2>Les derniers articles</h2><div class="bl-grid">'
+            + "".join(blog_carte(a) for a in autres) + "</div></div></section>")
+
+
+def blog_ld(a, mots):
+    ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": a["titre"],
+          "description": a["description"], "datePublished": a["date"], "dateModified": a.get("maj", a["date"]),
+          "inLanguage": "fr-CH", "wordCount": mots, "articleSection": a["categorie"],
+          "mainEntityOfPage": f"{SITE}/{blog_url(a)}",
+          "author": ({"@type": "Person", "name": a["auteur_personne"]} if a.get("auteur_personne")
+                     else {"@type": "Organization", "name": "Neur.on AI Solutions SA"}),
+          "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA", "url": SITE,
+                        "logo": {"@type": "ImageObject", "url": f"{SITE}/assets/img/neuron-logo.png"}}}
+    if a.get("image"):
+        ld["image"] = f'{SITE}/{a["image"]["src"]}'
+    if a.get("mentions"):
+        ld["about"] = [{"@type": t, "name": n} for t, n in a["mentions"]]
+    return '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"
+
+
+BLOG_HERO = """<section class="thero thero-read">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Blog.</em> Droit suisse, traduction juridique et intelligence artificielle</h1>
+        <p class="lead">Des articles de fond sur la traduction juridique en Suisse, écrits pour des juristes et vérifiés dans des sources officielles, et les actualités de Neur.on : conférences, événements et presse.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Demander une démo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#articles" class="btn btn-ghost">Voir les articles</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span><b>Utile d'abord :</b> terminologie, devis, secret professionnel, des réponses que l'on peut appliquer</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span><b>Sources vérifiables :</b> textes officiels suisses, ou observations datées dans l'application</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>Signé par l'équipe :</b> juristes et linguistes de Neur.on, en français, allemand, italien et anglais</span></span>
+      </div>
+    </div>
+  </div>
+</section>"""
+
+BLOG_FIN = """<section class="siblings">
+  <div class="container">
+    <h2>Les autres ressources</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/ressources/guides/"><b>Guides</b><span>Méthodes de fond, structurées et longues : organiser la traduction, préparer un rapport annuel.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/etudes/"><b>Études et benchmarks</b><span>Nos protocoles de mesure sur corpus de droit suisse, méthode publiée avant les résultats.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Le concordancier du droit suisse : sources officielles, 30 domaines, segments alignés.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Ces sujets se voient mieux sur vos documents</h2>
+      <p>Une démo avec un spécialiste du droit suisse : terminologie, niveaux de relecture, modes de confidentialité, sur vos propres fichiers.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Demander une démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/" class="btn-outline">Découvrir Corrext</a>
+      </div>
+      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+    </div>
+  </div>
+</section>"""
+
+
+def gen_blog(src):
+    """Blog : liste filtrable (article à la une, filtres, grille) et pages des articles générés."""
+    arts = blog_articles(src)
+    if not arts:
+        return []
+    pages = []
+    for a in arts:
+        if a.get("page") != "generee":
+            continue
+        corps = a["corps"]
+        mots = len(re.sub(r"<[^>]+>", " ", corps).split())
+        fig = ""
+        if a.get("image"):
+            i = a["image"]
+            fig = (f'<figure class="ar-hero-img"><img src="{{{{ROOT}}}}{i["src"]}" alt="{i["alt"]}" width="{i["w"]}" height="{i["h"]}" fetchpriority="high">'
+                   + (f'<figcaption>{i["legende"]}</figcaption>' if i.get("legende") else "") + "</figure>")
+        body = "\n".join([
+            blog_ld(a, mots),
+            blog_entete(src, a["slug"], mots).replace("</div></div>\n</section>", f"{fig}</div></div>\n</section>", 1),
+            f'''<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <div class="ar-brief"><b>En bref</b><p>{a["bref"]}</p></div>
+      {corps}
+    </div>
+  </div>
+</section>''',
+            blog_recents(src, a["slug"]),
+            cta("Voyez Corrext sur vos propres documents",
+                "Une démonstration avec un spécialiste du droit suisse : terminologie, niveaux de relecture et modes de confidentialité, sur vos fichiers.",
+                {"href": "fr/contact/", "txt": "Demander une démo"}),
+        ])
+        pages.append((blog_url(a), {"title": a["title"], "description": a["description"], "short": a.get("court", a["titre"]),
+                                    "nav": "ressources", "hero": "aide"}, body))
+
+    une, reste = arts[0], arts[1:]
+    cats = []
+    for a in arts:
+        if a["categorie"] not in cats:
+            cats.append(a["categorie"])
+    n = lambda c: sum(1 for a in reste if a["categorie"] == c)
+    filtres = ('<button type="button" class="bl-chip" aria-pressed="true" data-f="">Tous les articles</button>'
+               + "".join(f'<button type="button" class="bl-chip" aria-pressed="false" data-f="{c}">{c}<em>{n(c)}</em></button>' for c in cats if n(c)))
+    une_html = f'''<section class="bl-feat" aria-label="Article à la une">
+  <div class="container">
+    <a class="bl-feat-card" href="{{{{ROOT}}}}{blog_url(une)}">{blog_visuel(une, une=True)}
+      <div class="bl-feat-body">
+        <span class="bl-k">{une["categorie"]}</span>
+        <h2>{une["titre"]}</h2>
+        <p>{une["extrait"]}</p>
+        <span class="feat-link">Lire l\'article {ARROW}</span>
+        <div class="bl-meta"><span>{BLOG_IC["date"]} <time datetime="{une["date"]}">{date_fr(une["date"])}</time></span><span>{BLOG_IC["auteur"]} {une["auteur"]}</span></div>
+      </div>
+    </a>
+  </div>
+</section>'''
+    script = """<script>(function(){var b=document.querySelectorAll('.bl-chip'),c=document.querySelectorAll('.bl-grid .bl-card'),v=document.querySelector('.bl-empty');
+function f(x){b.forEach(function(e){e.setAttribute('aria-pressed',e.getAttribute('data-f')===x?'true':'false');});var k=0;c.forEach(function(e){var o=!x||e.getAttribute('data-cat')===x;e.hidden=!o;if(o)k++;});if(v)v.hidden=k>0;}
+b.forEach(function(e){e.addEventListener('click',function(){f(e.getAttribute('data-f'));});});})();</script>"""
+    liste = {"@context": "https://schema.org", "@type": "Blog", "name": "Blog Neur.on", "url": f"{SITE}/fr/ressources/blog/", "inLanguage": "fr-CH",
+             "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+             "blogPost": [{"@type": "BlogPosting", "headline": a["titre"], "datePublished": a["date"], "url": f"{SITE}/{blog_url(a)}"} for a in arts]}
+    body = "\n".join([
+        '<script type="application/ld+json">' + json.dumps(liste, ensure_ascii=False) + "</script>",
+        BLOG_HERO, une_html,
+        f'<section class="bl-filters" id="articles" aria-label="Filtrer par catégorie"><div class="container">{filtres}</div></section>',
+        f'<section class="bl-list"><div class="container"><div class="bl-grid">{"".join(blog_carte(a) for a in reste)}</div><p class="bl-empty" hidden>Aucun article dans cette catégorie pour le moment.</p></div></section>',
+        BLOG_FIN, script,
+    ])
+    pages.append(("fr/ressources/blog/", {"title": "Blog Neur.on · Droit suisse, traduction juridique et actualités",
+                                           "description": "Articles de fond sur la traduction juridique en Suisse (terminologie, devis, secret professionnel) et actualités de Neur.on : conférences, événements, presse.",
+                                           "short": "Blog", "nav": "ressources", "hero": "read",
+                                           "canonical": f"{SITE}/fr/ressources/blog/"}, body))
+    return pages
+
+
 def build_all(src):
     pages = []
     pages += gen_solutions(src)
@@ -835,4 +1060,5 @@ def build_all(src):
     pages += gen_traduction_hub(src)
     pages += gen_glossaire(src)
     pages += gen_aide(src)
+    pages += gen_blog(src)
     return pages
