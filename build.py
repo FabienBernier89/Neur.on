@@ -372,13 +372,17 @@ p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:30px}
 
 
 def main():
+    pages = collect_sources() + collect_generated()
+    if PRODUCTION:
+        exemples = [path for path, _m, body in pages if "temo-ex" in body]
+        if exemples:
+            sys.exit("Production refusée : témoignage d'exemple à remplacer sur " + ", ".join(exemples))
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT, exist_ok=True)
     shutil.copytree(os.path.join(BASE, "assets"), os.path.join(OUT, "assets"),
                     ignore=shutil.ignore_patterns("*.map"))
 
-    pages = collect_sources() + collect_generated()
     for path, meta, _body in pages:
         PAGES[path] = {"short": meta.get("short", path), "title": meta.get("title", "")}
 

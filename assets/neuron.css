@@ -964,18 +964,15 @@ body.nav-open{overflow:hidden}
 @media(max-width:940px){.jv-grid{grid-template-columns:1fr;gap:34px 0}.jv-tgrid{grid-template-columns:1fr}}
 @media(max-width:560px){.jv-2col,.jv-res{grid-template-columns:1fr}.jv-2col>div+div,.jv-res>div+div{border-left:0;border-top:1px solid var(--line)}}
 /* Bloc « moments » sobre : pictogramme, titre, texte, fonctions Corrext, alignés ligne à ligne */
-.ws-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:auto auto 1fr auto;border-top:1px solid var(--line-2)}
-.ws-item{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;padding:28px 28px 26px 0;border-right:1px solid var(--line-2)}
+.ws-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:auto 1fr;border-top:1px solid var(--line-2)}
+.ws-item{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0;padding:28px 28px 28px 0;border-right:1px solid var(--line-2)}
 .ws-item+.ws-item{padding-left:28px}
 .ws-item:last-child{border-right:0;padding-right:0}
-.ws-ic{display:grid;place-items:center;width:40px;height:40px;margin-bottom:18px;border-radius:11px;background:#fff;border:1px solid var(--line);color:var(--blue-d)}
-.ws-ic svg{width:20px;height:20px}
-.ws-item h3{font-size:17px;margin-bottom:10px;letter-spacing:-.015em}
+.ws-ic{display:grid;place-items:center;flex-shrink:0;width:34px;height:34px;margin-top:-5px;border-radius:10px;background:#fff;border:1px solid var(--line);color:var(--blue-d)}
+.ws-ic svg{width:18px;height:18px}
+.ws-item h3{display:flex;align-items:flex-start;gap:12px;font-size:17px;margin-bottom:12px;letter-spacing:-.015em}
 .ws-item h3 .pn{color:var(--blue-d)}
 .ws-item p{font-size:14.5px;color:var(--text);line-height:1.62}
-.ws-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line-2)}
-.ws-l{font-size:12px;font-weight:600;color:var(--muted);margin-right:2px}
-.ws-t{font-size:12px;font-weight:600;color:var(--ink);padding:3px 9px;background:#fff;border:1px solid var(--line-2);border-radius:999px}
 @media(max-width:940px){.ws-grid{grid-template-columns:1fr}.ws-item,.ws-item+.ws-item{padding:26px 0;border-right:0;border-bottom:1px solid var(--line-2)}.ws-item:last-child{border-bottom:0}}
 /* Témoignage client */
 .temo{padding:92px 0}
@@ -991,3 +988,4 @@ body.nav-open{overflow:hidden}
 .temo-todo blockquote p{color:var(--muted)}
 .temo-todo .temo-mark{color:var(--line-2)}
 @media(max-width:560px){.temo{padding:64px 0}.temo-todo .temo-fig{padding:32px 20px}}
+.temo-tag{display:inline-block;margin-bottom:18px;padding:3px 11px;font-size:11.5px;font-weight:600;color:var(--muted);border:1px dashed var(--line-2);border-radius:999px}

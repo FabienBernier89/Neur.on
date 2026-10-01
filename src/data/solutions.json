@@ -77,34 +77,19 @@
         "a": "Contentieux",
         "t": "Quatre cents pages de pièces avant l'audience",
         "p": "Le lot part en File translation avec LexMachina et le mode Highly sensitive, revient dans le format d'origine, et l'équipe lit au lieu de déchiffrer. Les termes douteux se vérifient d'un surlignage.",
-        "vis": "lot",
-        "fonctions": [
-          "File translation",
-          "LexMachina",
-          "Highly sensitive",
-          "Fast Lookup"
-        ]
+        "vis": "lot"
       },
       {
         "a": "Transactions",
         "t": "Un contrat de prêt à livrer demain matin",
         "p": "Traduction machine le soir, Full review par un traducteur juridique commandée dans la foulée, délai affiché avant de valider. Le client reçoit un document prêt à signer, pas un brouillon.",
-        "vis": "pret",
-        "fonctions": [
-          "Translation project",
-          "Full review",
-          "Délai affiché"
-        ]
+        "vis": "pret"
       },
       {
         "a": "Arbitrage",
         "t": "Une sentence à citer au mot près",
         "p": "Les alternatives par moteur montrent les formulations concurrentes, CHnell donne l'usage officiel du terme dans la loi et la jurisprudence, et l'associé tranche en connaissance de cause.",
-        "vis": "sentence",
-        "fonctions": [
-          "Alternatives",
-          "CHnell"
-        ]
+        "vis": "sentence"
       }
     ],
     "gov_q": "Un cabinet peut-il confier un dossier à un outil de traduction en ligne ?",
@@ -175,9 +160,10 @@
     "cta_p": "Une démonstration avec un spécialiste du droit suisse, sur vos formats, vos langues et votre terminologie.",
     "visuel": true,
     "temoignage": {
-      "citation": "",
-      "auteur": "",
-      "fonction": ""
+      "exemple": true,
+      "citation": "Quatre cents pages de pièces en allemand sont arrivées dix jours avant l'audience. Avec Corrext, l'équipe a lu le dossier en français dès le lendemain, et chaque terme douteux se vérifiait dans CHnell sans quitter le document. Que rien ne sorte de Suisse n'était pas négociable pour notre client : ce point a emporté la décision.",
+      "auteur": "Associée, département contentieux",
+      "fonction": "Cabinet d'affaires, Genève"
     }
   },
   {

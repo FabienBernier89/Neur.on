@@ -239,12 +239,10 @@ WS_ICONS = {
 
 
 def who_sobre(titre, items):
-    """Bloc « moments » sobre : pictogramme, titre, texte, et les fonctions Corrext utilisées."""
+    """Bloc « moments » sobre : pictogramme sur la ligne du titre, puis le texte."""
     ws = "".join(
-        f'<article class="ws-item"><span class="ws-ic">{WS_ICONS[w["vis"]]}</span>'
-        f'<h3><span class="pn">{w["a"]}.</span> {w["t"]}</h3><p>{w["p"]}</p>'
-        '<div class="ws-tools"><span class="ws-l">Dans Corrext</span>'
-        + "".join(f'<span class="ws-t">{o}</span>' for o in w["fonctions"]) + '</div></article>'
+        f'<article class="ws-item"><h3><span class="ws-ic">{WS_ICONS[w["vis"]]}</span>'
+        f'<span><span class="pn">{w["a"]}.</span> {w["t"]}</span></h3><p>{w["p"]}</p></article>'
         for w in items)
     return ('<section class="who who-s">\n  <div class="container">\n'
             f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
@@ -261,8 +259,10 @@ def temoignage(t):
                 'associée sur un dossier concret traité avec Corrext, publiées avec son accord écrit.</p></blockquote>\n'
                 '    <figcaption><b>Prénom Nom</b><span>Fonction, cabinet</span></figcaption>\n'
                 '  </figure></div>\n</section>')
-    return ('<section class="temo">\n  <div class="container"><figure class="temo-fig">\n'
-            '    <span class="temo-mark" aria-hidden="true">«</span>\n'
+    ex = t.get("exemple")
+    return (f'<section class="temo{" temo-ex" if ex else ""}">\n  <div class="container"><figure class="temo-fig">\n'
+            + ('    <span class="temo-tag">Exemple, à remplacer par un témoignage réel</span>\n' if ex else "")
+            + '    <span class="temo-mark" aria-hidden="true">«</span>\n'
             f'    <blockquote><p>{t["citation"]}</p></blockquote>\n'
             f'    <figcaption><b>{t["auteur"]}</b><span>{t["fonction"]}</span></figcaption>\n'
             '  </figure></div>\n</section>')
