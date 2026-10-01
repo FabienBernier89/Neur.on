@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" href="../../../assets/img/neuron-mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/neuron-mark-180.png">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=eb532d83">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=fc07be64">
 <style>/* Page API et on-premises · styles propres (préfixe .api-) */
 
 .api-int{padding:88px 0 90px;background:#fff}
@@ -271,7 +271,7 @@
 
 <main id="main">
 <!-- HERO -->
-<section class="thero api-hero">
+<section class="thero api-hero thero-carte">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -285,11 +285,13 @@
           <a href="#disponible" class="btn btn-ghost">Ce qui est disponible</a>
         </div>
       </div>
-      <div class="thero-promise">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span><b>API REST</b> pour vos systèmes de gestion documentaire, intranets et workflows</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Déploiement on-premises</b> pour les environnements les plus sensibles</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Mêmes règles de souveraineté</b> qu'en interface : stockage suisse, traitement suisse avec LexMachina</span></span>
-      </div>
+      <div class="law-spec hcarte"><div class="sh"><b>API REST</b><span>Illustration</span></div><div class="hcode"><span class="m">POST</span> /v1/translate
+{
+  <span class="k">"source_language"</span>: "de",
+  <span class="k">"target_language"</span>: "fr",
+  <span class="k">"engine"</span>: "lexmachina",
+  <span class="k">"domain"</span>: "banking"
+}</div><div class="sf">Le contrat d'interface réel est remis lors du cadrage</div></div>
     </div>
   </div>
 </section>
@@ -526,6 +528,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=eb532d83" defer></script>
+<script src="../../../assets/nav.js?v=fc07be64" defer></script>
 </body>
 </html>

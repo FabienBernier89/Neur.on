@@ -162,6 +162,12 @@ def build_page(path, meta, body):
             sys.path.insert(0, SRC)
         import generators
         body = re.sub(r"\{\{ICONE:([a-z]+)\}\}", lambda m: generators.WS_ICONS[m.group(1)], body)
+    # cartes de hero partagées : {{CARTE:nom}} renvoie à src/data/cartes.json
+    if "{{CARTE:" in body:
+        if SRC not in sys.path:
+            sys.path.insert(0, SRC)
+        import generators
+        body = re.sub(r"\{\{CARTE:([a-z-]+)\}\}", lambda m: generators.carte(m.group(1)), body)
     body = neutralize_links(body)
 
     # FAQPage automatique : toute page qui pose des questions le déclare aux moteurs

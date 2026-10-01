@@ -35,11 +35,37 @@ def load(src, name):
 
 # ---------------------------------------------------------------- briques
 
-def hero(h1_lede, h1_rest, lead, promesses, ancre="#faits", ancre_txt="Voir le détail"):
-    ps = "".join(
-        f'<span>{ICONS[i % 3]}<span><b>{p["t"]} :</b> {p["d"]}</span></span>'
-        for i, p in enumerate(promesses))
-    return f'''<section class="thero">
+_CARTES = None
+SYMB = {"y": '<span class="cmp-y">✓</span> ', "p": '<span class="cmp-p">⚠</span> ', "n": '<span class="cmp-n">✕</span> '}
+
+
+def carte(nom):
+    """Carte de droite des heros (src/data/cartes.json) : fiche, terme en quatre langues, extrait de tableau ou code."""
+    global _CARTES
+    if _CARTES is None:
+        _CARTES = json.load(open(os.path.join(os.path.dirname(__file__), "data", "cartes.json"), encoding="utf-8"))
+    c = _CARTES[nom]
+    tete = f'<div class="sh"><b>{c["titre"]}</b><span>{c["droite"]}</span></div>'
+    pied = f'<div class="sf">{c["pied"]}</div>' if c.get("pied") else ""
+    if c["type"] == "terme":
+        corps = "".join(f'<div class="sr{" first" if i == 0 else ""}"><i>{lab}</i><b lang="{k}">{c["mots"][k]}</b></div>'
+                        for i, (k, lab) in enumerate((("de", "Allemand"), ("fr", "Français"), ("it", "Italien"), ("en", "Anglais"))))
+        return f'<div class="law-spec hcarte">{tete}{corps}{pied}</div>'
+    if c["type"] == "tableau":
+        val = lambda v: SYMB[v[0]] + v[2:]
+        corps = (f'<div class="tr hd"><span></span><span>{c["colonnes"][0]}</span><span class="c">{c["colonnes"][1]}</span></div>'
+                 + "".join(f'<div class="tr"><span class="l">{l}</span><span>{val(x)}</span><span class="c">{val(y)}</span></div>'
+                           for l, x, y in c["lignes"]))
+        return f'<div class="law-spec hcarte htab">{tete}{corps}{pied}</div>'
+    if c["type"] == "code":
+        code = "".join(f'<span class="{k}">{v}</span>' if k != "t" else v for k, v in c["code"])
+        return f'<div class="law-spec hcarte">{tete}<div class="hcode">{code}</div>{pied}</div>'
+    corps = "".join(f'<div class="sr"><i>{k}</i><b>{v}</b></div>' for k, v in c["lignes"])
+    return f'<div class="law-spec hcarte">{tete}{corps}{pied}</div>'
+
+
+def hero(h1_lede, h1_rest, lead, nom_carte, ancre="#faits", ancre_txt="Voir le détail"):
+    return f'''<section class="thero thero-carte">
   <div class="container">
     <div class="thero-grid">
       <div>
@@ -50,7 +76,7 @@ def hero(h1_lede, h1_rest, lead, promesses, ancre="#faits", ancre_txt="Voir le d
           <a href="{ancre}" class="btn btn-ghost">{ancre_txt}</a>
         </div>
       </div>
-      <div class="thero-promise">{ps}</div>
+      {carte(nom_carte)}
     </div>
   </div>
 </section>'''
@@ -456,9 +482,7 @@ def gen_solutions(src):
                  "Un cabinet d'avocats, une banque et une autorité cantonale ne traduisent ni les "
                  "mêmes documents, ni pour les mêmes raisons. Voici ce que Corrext change pour "
                  "chacun, avec les mêmes garanties de confidentialité.",
-                 [{"t": "Six métiers", "d": "des usages documentés, pas des promesses génériques"},
-                  {"t": "Un socle commun", "d": "stockage en Suisse, moteurs au choix, relecture à la carte"},
-                  {"t": "Douze domaines", "d": "du contrat au droit pénal, avec la terminologie officielle"}],
+                 "solutions",
                  "#metiers", "Voir les six métiers"),
             f'''<section class="siblings" id="metiers" style="padding:84px 0">
   <div class="container"><h2>Par métier</h2>
@@ -566,9 +590,7 @@ def gen_traduction_hub(src):
              "l'allemand juridique suisse n'est pas l'allemand de Berlin. Chaque page ci-dessous "
              "donne la terminologie officielle, les textes de référence et la façon dont Corrext "
              "les traite.",
-             [{"t": "Douze domaines", "d": "du contrat au droit pénal, terminologie à l'appui"},
-              {"t": "Sources officielles", "d": "Fedlex, Feuille fédérale, FINMA, jurisprudence du Tribunal fédéral"},
-              {"t": "Quatre langues natives", "d": "allemand, français, italien et anglais avec LexMachina"}],
+             "traduction",
              "#domaines", "Voir les domaines"),
         f'''<section class="siblings" id="domaines" style="padding:84px 0">
   <div class="container"><h2>Par domaine du droit et de la finance</h2>
@@ -696,9 +718,7 @@ def gen_glossaire(src):
              "Les lois suisses sont publiées en allemand, en français et en italien : les "
              "équivalences ci-dessous ne sont pas des traductions d'usage, ce sont les termes des "
              "textes officiels. Chacun renvoie à son article et à sa source.",
-             [{"t": "Quatre langues", "d": "allemand, français, italien et anglais pour chaque terme"},
-              {"t": "Sources officielles", "d": "Fedlex, Feuille fédérale, administrations fédérales"},
-              {"t": "Vérifiable", "d": "chaque terme s'ouvre en contexte dans Fast lookup CHnell"}],
+             "glossaire",
              "#liste", "Voir les termes"),
         f'''<section class="glist" id="liste">
   <div class="container">

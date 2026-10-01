@@ -997,3 +997,16 @@ body.nav-open{overflow:hidden}
   .thero:not(.thero-job) .thero-grid>:first-child{align-self:start}
   .thero-demo{min-height:calc(var(--hero-h) + 236px)}
 }
+
+/* Carte de droite des heros : même composant que la fiche terminologique de Contrats */
+.thero-carte .thero-grid{align-items:center}
+.hcarte .sr{grid-template-columns:112px 1fr}
+.hcarte .sr b{font-size:14.5px;line-height:1.45}
+.htab .tr{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:12px;align-items:baseline;padding:12px 20px;border-bottom:1px solid var(--line);font-size:13px;line-height:1.4;color:var(--ink)}
+.htab .tr.hd{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.htab .tr .l{font-weight:600}
+.htab .tr .c{color:var(--navy);font-weight:700}
+.htab .tr:last-of-type{border-bottom:0}
+.hcode{margin:16px 20px;padding:14px 16px;background:var(--navy);color:#dbe6ff;border-radius:10px;font:500 12.5px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre;overflow:hidden}
+.hcode .m{color:#8fb6ff;font-weight:700}
+.hcode .k{color:#a9cdff}
