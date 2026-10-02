@@ -47,7 +47,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
    "name": "Che cos'è una valutazione alla cieca dei motori di traduzione?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "È una valutazione in cui il valutatore non sa quale motore ha prodotto il risultato che sta giudicando. I risultati sono anonimizzati, mescolati e presentati in ordine casuale. Senza questa cecità, il nome del motore influenza il giudizio, in entrambe le direzioni: indulgenza verso il motore che si conosce, severità verso quello di cui si diffida."
+    "text": "È una valutazione in cui il valutatore non sa quale motore ha prodotto il risultato che sta giudicando. I risultati sono anonimizzati, mescolati e presentati in ordine casuale. Senza anonimato, il nome del motore influenza il giudizio, in entrambe le direzioni: indulgenza verso il motore che si conosce, severità verso quello di cui si diffida."
    }
   },
   {
@@ -238,14 +238,14 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
         <li><strong>Replicare.</strong> Ripetete un sottoinsieme del corpus a qualche settimana di distanza, con gli stessi parametri, per misurare la varianza nel tempo.</li>
       </ol>
 
-      <p>Quest'ultimo punto non è teorico. In una sessione di osservazione, rigenerare alcuni segmenti ha prodotto risultati <strong>rigorosamente identici</strong>, mentre altri segmenti variavano da una generazione all'altra. Una campagna che non misura questa varianza non può dire se uno scarto tra due motori è uno scarto di qualità o un caso della generazione.</p>
+      <p>Quest'ultimo punto non è teorico. In una sessione di osservazione, rigenerare alcuni segmenti ha prodotto risultati <strong>rigorosamente identici</strong>, mentre altri segmenti variavano da una generazione all'altra. Una campagna che non misura questa varianza non può dire se uno scarto tra due motori è uno scarto di qualità o una casualità della generazione.</p>
 
       <h2 id="pieges">5. Sette insidie metodologiche</h2>
 
       <ol>
         <li><strong>Giudicare su una frase.</strong> È l'insidia più comune e la più costosa. Una frase ben tradotta non dice nulla del comportamento di un motore su un documento di sessanta pagine, dove la coerenza diventa il primo criterio.</li>
         <li><strong>Confondere scorrevolezza ed esattezza.</strong> I motori recenti producono frasi gradevoli. Un risultato scorrevole che cita un testo inesistente è più pericoloso di un risultato goffo, perché non invita alla verifica. Nella stessa sessione di osservazione, un risultato ha reso il nome dell'autorità giudiziaria suprema svizzera con quello di un tribunale straniero, in una frase per il resto costruita perfettamente.</li>
-        <li><strong>Dimenticare la varianza tra generazioni.</strong> Confrontare un risultato di ciascun motore equivale a confrontare due estrazioni a sorte. Senza replica, lo scarto misurato può essere dovuto interamente al caso della generazione.</li>
+        <li><strong>Dimenticare la varianza tra generazioni.</strong> Confrontare un risultato di ciascun motore equivale a confrontare due estrazioni a sorte. Senza replica, lo scarto misurato può essere dovuto interamente alla casualità della generazione.</li>
         <li><strong>Aggregare le direzioni di traduzione.</strong> Un punteggio medio tra tedesco-italiano e italiano-tedesco nasconde esattamente l'informazione che vi interessa.</li>
         <li><strong>Lasciar vedere il nome del motore.</strong> Il valutatore che sa che cosa sta giudicando non giudica più il risultato: giudica la sua opinione del motore.</li>
         <li><strong>Mescolare gravità e preferenza.</strong> Contare nello stesso totale un riferimento legale sbagliato e una scelta stilistica discutibile produce una cifra che nessuno sa interpretare.</li>
@@ -253,7 +253,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
       </ol>
 
       <div class="art-note">
-        <p><b>Un'ottava insidia, organizzativa.</b> Far valutare la persona che ha scelto il motore. Separate sempre chi decide e chi valuta; altrimenti, la valutazione alla cieca è l'unica protezione che resta.</p>
+        <p><b>Un'ottava insidia, organizzativa.</b> Affidare la valutazione alla persona che ha scelto il motore. Separate sempre chi decide e chi valuta; altrimenti, la valutazione alla cieca è l'unica protezione che resta.</p>
       </div>
 
       <h2 id="rendre">6. Presentare i risultati</h2>
@@ -276,7 +276,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
 
       <p>Stiamo applicando questo metodo a un primo corpus di diritto svizzero, costruito secondo i requisiti descritti al punto 3 e che copre le combinazioni delle lingue nazionali. <strong>I risultati saranno pubblicati su questa pagina</strong>, con la composizione del corpus, la griglia utilizzata, i tassi di accordo tra valutatori e i limiti dell'esercizio.</p>
 
-      <p>Fino ad allora qui non si avanza alcuna cifra: un metodo non dimostra nulla da solo, e pubblicare un punteggio prima di aver pubblicato il protocollo sarebbe esattamente ciò che questo documento sconsiglia.</p>
+      <p>Fino ad allora non pubblichiamo qui alcuna cifra: un metodo non dimostra nulla da solo, e pubblicare un punteggio prima di aver pubblicato il protocollo sarebbe esattamente ciò che questo documento sconsiglia.</p>
 
       <div class="art-end">
         <p>Se volete applicare questo metodo ai vostri documenti, il confronto dei risultati è disponibile direttamente nell'applicazione: la funzione Alternatives di <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/">Traduzione di testi e documenti</a> mostra fino a quattro proposte, ciascuna attribuita al suo motore, e permette così di costituire un corpus di valutazione a partire dai vostri testi reali. Il funzionamento del motore svizzero è descritto alla pagina <a href="{{ROOT}}fr/lexmachina/">LexMachina</a>, e un <a href="{{ROOT}}fr/comparatif/">confronto ragionato degli approcci</a> completa la lettura.</p>
@@ -312,7 +312,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
       </details>
       <details class="faq-item">
         <summary>Che cos'è una valutazione alla cieca dei motori di traduzione?</summary>
-        <p>È una valutazione in cui il valutatore non sa quale motore ha prodotto il risultato che sta giudicando. I risultati sono anonimizzati, mescolati e presentati in ordine casuale. Senza questa cecità, il nome del motore influenza il giudizio, in entrambe le direzioni: indulgenza verso il motore che si conosce, severità verso quello di cui si diffida.</p>
+        <p>È una valutazione in cui il valutatore non sa quale motore ha prodotto il risultato che sta giudicando. I risultati sono anonimizzati, mescolati e presentati in ordine casuale. Senza anonimato, il nome del motore influenza il giudizio, in entrambe le direzioni: indulgenza verso il motore che si conosce, severità verso quello di cui si diffida.</p>
       </details>
       <details class="faq-item">
         <summary>Bisogna valutare lo stesso segmento una volta sola o più volte?</summary>
