@@ -68,7 +68,7 @@
   "titre": "Extract from the table",
   "droite": "9 criteria",
   "colonnes": [
-   "Agency only",
+   "Agency alone",
    "Corrext"
   ],
   "lignes": [
@@ -105,19 +105,19 @@
    "it": "pena convenzionale",
    "en": "contractual penalty"
   },
-  "pied": "art. 160 CO · verifiable in fast lookup CHnell"
+  "pied": "Art. 160 CO · verifiable in Fast lookup CHnell"
  },
  "traduction": {
   "type": "terme",
   "titre": "One term, four languages",
-  "droite": "12 domains · 6 pairs",
+  "droite": "12 areas · 6 pairs",
   "mots": {
    "de": "Verzugszins",
    "fr": "intérêt moratoire",
    "it": "interessi moratori",
    "en": "default interest"
   },
-  "pied": "art. 104 CO · verifiable in fast lookup CHnell"
+  "pied": "Art. 104 CO · verifiable in Fast lookup CHnell"
  },
  "ressources": {
   "type": "fiche",
@@ -126,7 +126,7 @@
   "lignes": [
    [
     "Blog",
-    "34 Articles"
+    "34 articles"
    ],
    [
     "Guides",
@@ -134,35 +134,35 @@
    ],
    [
     "Studies",
-    "1 Valuation method"
+    "1 evaluation method"
    ],
    [
     "Glossary",
-    "52 terms of Swiss law"
+    "52 Swiss legal terms"
    ],
    [
-    "Helpdesk",
-    "71 articles, 13 headings"
+    "Help Centre",
+    "71 articles, 13 sections"
    ]
   ],
-  "pied": "Each statement refers to an official text or to the application"
+  "pied": "Every claim points to an official text or to the app"
  },
  "solutions": {
   "type": "fiche",
-  "titre": "Six professions",
-  "droite": "A common foundation",
+  "titre": "Six sectors",
+  "droite": "One shared foundation",
   "lignes": [
    [
-    "Attorneys",
-    "Translating a file without leaving Switzerland"
+    "Lawyers",
+    "Translate a case file without it leaving Switzerland"
    ],
    [
     "Banks",
-    "Supervisory vocabulary, dealt with in Switzerland"
+    "Prudential vocabulary, processed in Switzerland"
    ],
    [
-    "Executive boards",
-    "Measurable Translation"
+    "Legal departments",
+    "Translation you can measure"
    ],
    [
     "Authorities",
@@ -170,18 +170,18 @@
    ],
    [
     "Fiduciaries",
-    "Translated and certified corporate documents"
+    "Company documents, translated and certified"
    ],
    [
-    "Legaltechs",
-    "Our motor in your product"
+    "LegalTechs",
+    "Our engine in your product"
    ]
   ],
-  "pied": "Storage in Switzerland, drivers of choice, on-the-spot review"
+  "pied": "Storage in Switzerland, engines of your choice, review as needed"
  },
  "a-propos": {
   "type": "fiche",
-  "titre": "Identity sheet",
+  "titre": "Company profile",
   "droite": "Fribourg",
   "lignes": [
    [
@@ -194,7 +194,7 @@
    ],
    [
     "Infrastructure",
-    "INFOMANIAK, in Switzerland"
+    "Infomaniak, in Switzerland"
    ],
    [
     "Certification",
@@ -202,15 +202,15 @@
    ],
    [
     "Engine",
-    "LexMachina, more than 15 million segments"
+    "LexMachina, over 15 million segments"
    ]
   ],
-  "pied": "Public facts, verifiable"
+  "pied": "Public, verifiable facts"
  },
  "api": {
   "type": "code",
   "titre": "REST API",
-  "droite": "Illustration",
+  "droite": "Example",
   "code": [
    [
     "m",
@@ -218,66 +218,66 @@
    ],
    [
     "t",
-    "/v 1/translate\n{"
+    " /v1/translate\n{\n  "
    ],
    [
     "k",
-    "“source_language”"
+    "\"source_language\""
    ],
    [
     "t",
-    ": “DE”,"
+    ": \"de\",\n  "
    ],
    [
     "k",
-    "“target_language”"
+    "\"target_language\""
    ],
    [
     "t",
-    ": “FR”,"
+    ": \"fr\",\n  "
    ],
    [
     "k",
-    "“Engine”"
+    "\"engine\""
    ],
    [
     "t",
-    ": “lexmachina”,"
+    ": \"lexmachina\",\n  "
    ],
    [
     "k",
-    "“domain”"
+    "\"domain\""
    ],
    [
     "t",
-    ": “banking”\n}"
+    ": \"banking\"\n}"
    ]
   ],
-  "pied": "The real interface contract is delivered when framing"
+  "pied": "The actual API contract is provided at the scoping stage"
  },
  "contact": {
   "type": "fiche",
-  "titre": "Your demonstration",
+  "titre": "Your demo",
   "droite": "On your documents",
   "lignes": [
    [
     "Documents",
-    "Formats, language pairs, terminology"
+    "Your formats, language pairs and terminology"
    ],
    [
     "Languages",
-    "French, German, Italian, English"
+    "German, French, Italian, English"
    ],
    [
     "Confidentiality",
-    "High sensitive Mode if your rooms so require"
+    "Highly sensitive mode if your documents require it"
    ],
    [
-    "Accommodation",
-    "ISO 27001 in Switzerland"
+    "Hosting",
+    "In Switzerland, ISO 27001"
    ]
   ],
-  "pied": "With a specialist in Swiss law"
+  "pied": "With a Swiss law specialist"
  },
  "langues-formats": {
   "type": "fiche",
@@ -286,10 +286,10 @@
   "lignes": [
    [
     "Formats",
-    ". PDF. Doc. Docx. xlsx. ppt. pptx"
+    ".pdf .doc .docx .xls .xlsx .ppt .pptx"
    ],
    [
-    "By sending",
+    "Per upload",
     "25 files of 50 MB"
    ],
    [
@@ -301,7 +301,7 @@
     "German, French, Italian, English"
    ]
   ],
-  "pied": "Values displayed in the application"
+  "pied": "Values shown in the app"
  },
  "niveaux": {
   "type": "fiche",
@@ -310,26 +310,26 @@
   "lignes": [
    [
     "Level 1",
-    "Machine translation for quick understanding"
+    "Machine translation, for quick understanding"
    ],
    [
     "Level 2",
-    "Post-editing: light or full review"
+    "Post-editing: Light or Full review"
    ],
    [
     "Level 3",
-    "Double review and certified translation"
+    "Double review & certified translation"
    ],
    [
     "Level 4",
     "Swiss notary, then apostille"
    ]
   ],
-  "pied": "Time and quotations displayed before order"
+  "pied": "Delivery time and quote shown before you order"
  },
  "presse": {
   "type": "fiche",
-  "titre": "Press sheet",
+  "titre": "Press fact sheet",
   "droite": "Up to date",
   "lignes": [
    [
@@ -338,7 +338,7 @@
    ],
    [
     "Awards",
-    "Swiss fintech Awards 2024, BILANZ 2024, Digital Shapers 2023"
+    "Swiss FinTech Awards 2024, BILANZ 2024, Digital Shapers 2023"
    ],
    [
     "Research",
@@ -349,24 +349,24 @@
     "team@corrext.com"
    ]
   ],
-  "pied": "In French, German, Italian or English"
+  "pied": "In German, French, Italian or English"
  },
  "securite": {
   "type": "fiche",
-  "titre": "The history of a document",
+  "titre": "A document's journey",
   "droite": "Switzerland",
   "lignes": [
    [
     "Storage",
-    "INFOMANIAK, in Switzerland"
+    "Infomaniak, in Switzerland"
    ],
    [
-    "Treatment",
-    "In Switzerland with LexMachina or in Highly sensitive Mode"
+    "Processing",
+    "In Switzerland with LexMachina or in Highly sensitive mode"
    ],
    [
-    "Foreign motor",
-    "Attorney-Client Notice privilege before dispatch"
+    "Foreign engine",
+    "Attorney-Client privilege notice before sending"
    ],
    [
     "Standard",
@@ -374,23 +374,23 @@
    ],
    [
     "Framework",
-    "nLPD and GDPR, outside the US CLOUD act"
+    "Revised FADP and GDPR, outside the US CLOUD Act"
    ]
   ],
-  "pied": "For all projects, regardless of the engine"
+  "pied": "For every project, whatever the engine"
  },
  "chnell": {
   "type": "fiche",
-  "titre": "The composition officer",
+  "titre": "The concordancer",
   "droite": "Fast lookup",
   "lignes": [
    [
     "Documents",
-    "Over 20,000 official sources"
+    "Over 20,000, from official sources"
    ],
    [
-    "Areas",
-    "30, filtrable and combinable"
+    "Domains",
+    "30, filterable and combinable"
    ],
    [
     "Languages",
@@ -398,54 +398,54 @@
    ],
    [
     "Resources",
-    "Shared, and specific to your organization"
+    "Shared, and specific to your organisation"
    ]
   ],
-  "pied": "Each result quotes its source"
+  "pied": "Every result cites its source"
  },
  "editeur": {
   "type": "fiche",
-  "titre": "In the publisher",
+  "titre": "In the editor",
   "droite": "Open in CAT",
   "lignes": [
    [
-    "Memorandum",
-    "Your corrections to the following project"
+    "Memory",
+    "Your corrections carried into the next project"
    ],
    [
     "CHnell",
-    "Fast Lookup without leaving text"
+    "Fast Lookup without leaving the text"
    ],
    [
     "Team",
-    "Multiple Replay, then Validation"
+    "Review by several people, then approval"
    ],
    [
     "Sensitive",
-    "No reuse in memory"
+    "No reuse in translation memory"
    ]
   ],
-  "pied": "Export and reimport Word into the same project"
+  "pied": "Word export and re-import in the same project"
  },
  "gestion-projet": {
   "type": "fiche",
   "titre": "Three steps",
-  "droite": "Translation Project",
+  "droite": "Translation project",
   "lignes": [
    [
     "Set-up",
     "Languages, files and confidentiality"
    ],
    [
-    "Overview queue",
+    "File overview",
     "Standard pages and legal category"
    ],
    [
     "Quotes",
-    "Cost estimate, time period and review level"
+    "Quote, delivery time and review level"
    ]
   ],
-  "pied": "The quote appears before any validation"
+  "pied": "The quote is shown before you confirm anything"
  },
  "extraits": {
   "type": "fiche",
@@ -462,33 +462,33 @@
    ],
    [
     "Apostilled",
-    "Apostille of the State Chancellery, Hague Convention"
+    "Apostille from the State Chancellery, Hague Convention"
    ]
   ],
-  "pied": "Order on auszug-hr.ch, more than 30 target languages"
+  "pied": "Order on auszug-hr.ch, over 30 target languages"
  },
  "traduction-texte": {
   "type": "fiche",
-  "titre": "Four motors, one interface",
+  "titre": "Four engines, one interface",
   "droite": "Alternatives",
   "lignes": [
    [
     "LexMachina",
-    "Swiss motor, executed in Switzerland"
+    "Swiss engine, run in Switzerland"
    ],
    [
     "DeepL Pro",
-    "Choose, with Attorney-Client advice"
+    "Optional, with the Attorney-Client notice"
    ],
    [
     "Azure OpenAI",
-    "Choose, with Attorney-Client advice"
+    "Optional, with the Attorney-Client notice"
    ],
    [
     "Claude",
-    "Choose, with Attorney-Client advice"
+    "Optional, with the Attorney-Client notice"
    ]
   ],
-  "pied": "Up to four formulations compared"
+  "pied": "Up to four renderings compared"
  }
 }
