@@ -1273,3 +1273,4 @@ body.nav-open{overflow:hidden}
 .thero-read.thero-centre .thero-promise>span{flex:1 1 0;max-width:30ch;flex-direction:column;align-items:center;gap:8px;text-align:center}
 .thero-centre .thero-promise svg{margin-top:0;width:18px;height:18px}
 @media(max-width:760px){.thero-read.thero-centre .thero-promise{flex-wrap:wrap}.thero-read.thero-centre .thero-promise>span{flex-basis:100%;max-width:40ch}}
+.thero-centre .rmeta{justify-content:center}
