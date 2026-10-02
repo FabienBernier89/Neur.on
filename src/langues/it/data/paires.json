@@ -808,7 +808,7 @@
   "faq": [
    {
     "q": "Si può citare una legge svizzera in inglese in un atto scritto?",
-    "r": "La si può citare in inglese per facilitarne la lettura, ma non le si può far dire qualcosa. L'inglese non è una lingua ufficiale della Confederazione e le versioni inglesi delle leggi sono pubblicate a titolo informativo. La prassi sicura è citare il testo francese, tedesco o italiano, poi darne la traduzione inglese."
+    "r": "Si può citarla in inglese per facilitare la lettura, ma non se ne può trarre un argomento giuridico. L'inglese non è una lingua ufficiale della Confederazione e le versioni inglesi delle leggi sono pubblicate a titolo informativo. La prassi sicura è citare il testo francese, tedesco o italiano, poi darne la traduzione inglese."
    },
    {
     "q": "Come si cita in inglese una sentenza del Tribunale federale?",
@@ -883,7 +883,7 @@
    },
    {
     "k": "Le istituzioni",
-    "v": "Il Tribunale federale è la massima giurisdizione svizzera, ed è a lui che si rivolge il ricorso. Nessun rinvio a una giurisdizione italiana ha senso in un documento svizzero."
+    "v": "Il Tribunale federale è la massima giurisdizione svizzera, ed è a questo tribunale che si rivolge il ricorso. Nessun rinvio a una giurisdizione italiana ha senso in un documento svizzero."
    },
    {
     "k": "Abbreviazioni proprie",
@@ -899,7 +899,7 @@
    },
    {
     "k": "Lingua nativa",
-    "v": "L'italiano è una delle quattro lingue native di LexMachina, con il tedesco, il francese e l'inglese, e una delle sole lingue disponibili in Highly sensitive content.",
+    "v": "L'italiano è una delle quattro lingue native di LexMachina, con il tedesco, il francese e l'inglese, ed è tra le sole lingue disponibili in Highly sensitive content.",
     "s": "La piattaforma copre inoltre 30 lingue per i documenti stranieri di un dossier."
    },
    {

@@ -326,7 +326,7 @@
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "I titoli 23-32 disciplinano la società semplice, la società in nome collettivo, la società anonima, la società a garanzia limitata, la società cooperativa, il registro di commercio, le ditte commerciali e la contabilità commerciale; OR in tedesco, CO in francese."
+    "note": "I titoli 23-32 disciplinano la società semplice, la società in nome collettivo, la società in accomandita, la società anonima, la società in accomandita per azioni, la società a garanzia limitata, la società cooperativa, il registro di commercio, le ditte commerciali, la contabilità commerciale e la presentazione dei conti; OR in tedesco, CO in francese."
    },
    {
     "abbr": "ORC",
@@ -388,7 +388,7 @@
     "r": "Tedesco, francese, italiano e inglese sono lingue native, in tutte le combinazioni, e la piattaforma copre 30 lingue in totale. È utile quando un azionista estero chiede una versione di lavoro dello statuto o di un verbale. Le quattro lingue native coprono tutte le regioni linguistiche svizzere."
    },
    {
-    "q": "Posso far rivedere la traduzione dai nostri giuristi?",
+    "q": "Possiamo far rivedere la traduzione ai nostri giuristi?",
     "r": "Sì. La modalità Internal review, nel percorso di creazione del progetto, organizza la revisione da parte dei vostri team e calcola il tempo necessario in base al numero di pagine standard rilevato nei file caricati. La revisione esterna da parte di un traduttore giuridico resta disponibile in parallelo."
    }
   ],
@@ -424,7 +424,7 @@
    }
   ],
   "facts_titre": "Tradurre un'operazione, in concreto",
-  "definition": "Tradurre un'operazione di fusione o di acquisizione significa trattare due insiemi di documenti molto diversi: migliaia di pagine di due diligence da capire in fretta, e pochi atti che vincolano le parti, dal contratto di fusione alla decisione di fusione dell'assemblea generale. Il vocabolario viene dalla legge sulla fusione e dal Codice delle obbligazioni, nelle loro tre versioni ufficiali.",
+  "definition": "Tradurre un'operazione di fusione o di acquisizione significa trattare due insiemi di documenti molto diversi: migliaia di pagine di due diligence da capire in fretta, e pochi atti che vincolano le parti, dal contratto di fusione alle decisioni dell'assemblea generale. Il vocabolario viene dalla legge sulla fusione e dal Codice delle obbligazioni, nelle loro tre versioni ufficiali.",
   "facts": [
    {
     "k": "Data room",
@@ -578,7 +578,7 @@
    },
    {
     "q": "Tutti i documenti di un'operazione meritano una revisione da parte di specialisti?",
-    "r": "No, ed è proprio il vantaggio di separare le due fasi. I documenti letti per capire passano in traduzione automatica. Gli atti che vincolano le parti, a cominciare dal contratto e dalla decisione di fusione, passano in Full review o in Double review e traduzione certificata, scelte documento per documento."
+    "r": "No, ed è proprio il vantaggio di separare le due fasi. I documenti letti per capire passano in traduzione automatica. Gli atti che vincolano le parti, a cominciare dal contratto di fusione e dalle decisioni societarie, passano in Full review o in Double review e traduzione certificata, scelte documento per documento."
    },
    {
     "q": "I documenti dell'operazione alimentano una banca dati condivisa?",
@@ -1347,7 +1347,7 @@
     "vis": "lot"
    },
    {
-    "a": "Società di revisione",
+    "a": "Impresa di revisione",
     "t": "Una relazione di revisione dalla formulazione stabile",
     "p": "La formulazione cambia poco da un anno all'altro e da un cliente all'altro. La memoria di traduzione la riprende così com'è, e la revisione della traduzione si concentra sui passaggi davvero nuovi.",
     "vis": "audit"
@@ -1396,7 +1396,7 @@
   "description": "Decisioni di tassazione, reclami, corrispondenza con l'amministrazione: tradurre la fiscalità svizzera con i termini della LIFD e della LIVA.",
   "lede": "Fiscalità.",
   "h1": "Tre livelli d'imposta, tre lingue ufficiali",
-  "lead": "In Svizzera l'imposta si decide a livello federale, cantonale e comunale, e ogni Cantone usa la sua lingua. Una decisione di tassazione in tedesco e un reclamo in francese parlano delle stesse nozioni: quelle delle leggi fiscali.",
+  "lead": "In Svizzera l'imposta si articola su tre livelli, federale, cantonale e comunale, e ogni Cantone usa la sua lingua. Una decisione di tassazione in tedesco e un reclamo in francese parlano delle stesse nozioni: quelle delle leggi fiscali.",
   "promesses": [
    {
     "t": "Termini delle leggi fiscali",
@@ -1407,7 +1407,7 @@
     "d": "federale, cantonale e comunale, nella lingua del Cantone"
    },
    {
-    "t": "Termini di consegna brevi",
+    "t": "Termini brevi",
     "d": "traduzione immediata di un testo incollato, revisione ordinata in una sola schermata"
    }
   ],
@@ -2346,7 +2346,7 @@
   "faq": [
    {
     "q": "Una traduzione automatica si può produrre agli atti?",
-    "r": "Serve anzitutto a capire. Un documento prodotto davanti all'autorità penale deve essere affidabile e, secondo i casi, attestato: passa allora da una Full review di un traduttore giuridico, o da una Double review e traduzione certificata quando il tribunale esige una traduzione certificata."
+    "r": "Serve anzitutto a capire. Un documento prodotto davanti all'autorità penale deve essere affidabile e, secondo i casi, attestato: passa allora da una Full review di un traduttore giuridico, o da una Double review e traduzione certificata quando il tribunale esige una traduzione attestata."
    },
    {
     "q": "Come proteggere il segreto dell'istruzione?",
