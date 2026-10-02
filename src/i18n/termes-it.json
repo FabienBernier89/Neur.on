@@ -1368,10 +1368,10 @@
  },
  {
   "fr": "devis",
-  "it": "preventivo",
+  "it": "offerta",
   "source": "art. 375 CO : FR « Dépassement de devis » = IT « Recesso per sorpasso del preventivo » (Fedlex) ; vocabulaire du site, traduction maison à valider",
   "type": "metier",
-  "note": "« offerta » est aussi l'usage commercial suisse (Offerte) ; « preventivo » désigne en outre le budget de la Confédération (art. 167 Cost. : « ne adotta il preventivo »). Choix à confirmer."
+  "note": "Décision du 2026-10-02 : « offerta » (usage suisse, parallèle à « Offerte »). « preventivo » (art. 375 CO) admis comme synonyme dans le title et la description de l'article sur les devis."
  },
  {
   "fr": "page standard",
