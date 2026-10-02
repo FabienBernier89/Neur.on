@@ -86,6 +86,20 @@ def serve(lang):
             self._entetes(204)
 
         def do_GET(self):
+            if self.path.startswith("/relais"):
+                # page chargée en cadre par l'onglet Corrext : elle parle au pont (même origine) et au parent par messages
+                page = ("<!doctype html><meta charset=utf-8><script>"
+                        "addEventListener('message',async e=>{if(e.origin!=='" + ORIGINE + "')return;const m=e.data||{};"
+                        "let r;try{if(m.op==='lot')r=await (await fetch('/lot?n='+(m.n||25))).json();"
+                        "else if(m.op==='etat')r=await (await fetch('/etat')).json();"
+                        "else if(m.op==='resultat')r=await (await fetch('/resultat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(m.donnees)})).json();"
+                        "}catch(x){r={err:String(x)}}parent.postMessage({id:m.id,r},'" + ORIGINE + "')});"
+                        "parent.postMessage({pret:true},'" + ORIGINE + "');</script>")
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(page.encode())
+                return
             if self.path.startswith("/lot"):
                 n = int(re.search(r"n=(\d+)", self.path).group(1)) if "n=" in self.path else 25
                 maintenant, lot, taille = time.time(), [], 0
