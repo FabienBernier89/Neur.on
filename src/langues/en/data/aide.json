@@ -14,7 +14,7 @@
     "slug": "qu-est-ce-que-corrext",
     "titre": "What Corrext is",
     "question": "What is Corrext?",
-    "reponse": "Corrext is Neur.on's legal and financial translation platform. It brings together four tools, all available from the home page. Text and document translation translates straight away. Translation projects has your documents reviewed and certified. Fast lookup CHnell checks a term in Swiss official texts. Commercial register extracts lets you order a certified translation online.",
+    "reponse": "Corrext is Neur.on's legal and financial translation platform. It brings together four tools, all available from the home page. Text and document translation gives you a translation straight away. With Translation projects, you have your documents reviewed and certified. Fast lookup CHnell checks a term in Swiss official texts. Commercial register extracts lets you order a certified translation online.",
     "etapes": [],
     "savoir": [
      "Your documents are stored in Switzerland, whichever engine you choose.",
@@ -59,7 +59,7 @@
     "slug": "prix",
     "titre": "How much it costs",
     "question": "How much does it cost?",
-    "reponse": "Prices are not published: they depend on volumes, languages and the review level. In the app, the quote and the delivery time appear before you confirm anything. They are calculated from the number of standard pages and the legal category detected in your files. The terms are agreed during a demo.",
+    "reponse": "Prices are not published: they depend on volumes, languages and the review level. In the app, the quote and the delivery time appear before you confirm anything. They are calculated from the number of standard pages and the legal category detected in your files. Your needs are scoped during a demo.",
     "etapes": [],
     "savoir": []
    },
@@ -158,7 +158,7 @@
     "titre": "Highly sensitive content mode",
     "title": "Corrext Highly sensitive content mode explained · Neur.on",
     "description": "What the Highly sensitive content toggle changes: storage and processing in Switzerland, no reuse in translation memory, four languages available.",
-    "reponse": "‘Highly sensitive content’ mode ensures that your data is stored and processed exclusively in Switzerland, and that the translated content feeds no translation memory for your future projects. In Text and document translation, it is a toggle to the right of the tabs. In Translation projects, it is one of the two confidentiality cards. It is available for German, French, Italian and English.",
+    "reponse": "‘Highly sensitive content’ mode ensures that your data is stored and processed exclusively in Switzerland, and that the translated content does not feed into any translation memory for your future projects. In Text and document translation, it is a toggle to the right of the tabs. In Translation projects, it is one of the two confidentiality cards. It is available for German, French, Italian and English.",
     "etapes": [
      "In <b>Text and document translation</b>, find the <b>Highly sensitive content</b> toggle, to the right of the row of tabs.",
      "Switch it on before you enter your text or upload your files: it stays on when you move to the ‘File translation’ tab.",
@@ -262,7 +262,7 @@
      "Wait until each file has been processed before you leave the tab."
     ],
     "savoir": [
-     "Always prefer the original format, .docx or .xlsx rather than PDF: the layout is better preserved.",
+     "Where you can, always use the original format (.docx or .xlsx rather than PDF): the layout is better preserved.",
      "A scan or a non-editable PDF should go through the ‘PDF to Word’ tab first, which makes it editable.",
      "To have your files reviewed by a legal translator, use Translation projects rather than Text and document translation."
     ],
@@ -283,7 +283,7 @@
     ],
     "savoir": [
      "The ‘Highly sensitive content’ toggle is greyed out on this tab: it does not apply to PDF to Word conversion.",
-     "When the original file exists in .docx or .xlsx, use it directly: converting from a PDF is always a reconstruction.",
+     "When the original file exists in .docx or .xlsx, use it directly: converting from a PDF is still a reconstruction.",
      "Conversion does not translate: it makes the document editable. You then translate it on another tab or in a project."
     ],
     "question": "How do I convert a PDF to Word?"
@@ -314,7 +314,7 @@
     "titre": "Launch Fast Lookup from a translation",
     "title": "Launch Fast Lookup from a Corrext translation · Neur.on",
     "description": "Highlight a word in Text and document translation and a Fast Lookup button appears: it opens CHnell on that word, in context, without leaving your translation.",
-    "reponse": "When a word looks doubtful in Text and document translation, highlight it: a floating ‘Fast Lookup’ button appears just above the selection. It opens the CHnell tool on that exact word, with bilingual segments taken from official Swiss sources. It is the quickest way to check the meaning or usage of a term without leaving your translation.",
+    "reponse": "When you are unsure about a word in Text and document translation, highlight it: a floating ‘Fast Lookup’ button appears just above the selection. It opens the CHnell tool on that exact word, with bilingual segments taken from official Swiss sources. It is the quickest way to check the meaning or usage of a term without leaving your translation.",
     "etapes": [
      "Translate your text in the ‘Text translation’ tab of Text and document translation.",
      "Double-click the word you want to check in the source pane, or select it with the mouse.",
@@ -365,7 +365,7 @@
      "Use the button at the bottom right of the target pane to open the alternatives, or to regenerate a rephrasing."
     ],
     "savoir": [
-     "Clearing the source pane also clears the target pane: the translation is redone with each entry, without a confirm button.",
+     "Clearing the source pane also clears the target pane: the translation updates as you type, with no confirm button.",
      "The target pane is not a free editing area: to rework a text, use the ‘Rephrasing’ tab.",
      "If the target pane shows ‘Identical source and target languages’, change the target language: nothing is translated while it is the same as the source."
     ],
@@ -401,7 +401,7 @@
     "savoir": [
      "The project is created when you move to the ‘File overview’ step: it then has its own address.",
      "You can select several target languages for the same project: the quote then shows them file by file.",
-     "The settings button at the bottom of the workflow displayed nothing during the audit of the app: its function is not documented here."
+     "The settings button at the bottom of the workflow showed nothing when the app was audited: its function is not documented here."
     ],
     "question": "How do I create a translation project?"
    },
@@ -409,7 +409,7 @@
     "slug": "options-du-set-up",
     "titre": "What the Set-up step asks for",
     "question": "What does the Set-up step ask me for?",
-    "reponse": "The project name, the target languages and the confidentiality level, then two further questions: one related to insider dealing, the other about translating the comments in the document.",
+    "reponse": "The project name, the target languages and the confidentiality level, then two further questions: one related to insider trading, the other about translating the comments in the document.",
     "etapes": [],
     "savoir": [
      "The target languages cannot be changed once the project has been created: check them before you move to the next step.",
@@ -421,7 +421,7 @@
     "titre": "Choose the confidentiality level",
     "title": "Choose the confidentiality level of a project · Neur.on",
     "description": "Standard confidentiality or Highly sensitive content: where your data is processed, and which of the two modes feeds your translation memory.",
-    "reponse": "At the ‘Set-up’ step, Corrext asks you to choose between two cards. ‘Standard confidentiality’ saves the project on Corrext's Swiss servers and processes it in or outside Switzerland, depending on the engine you choose. The project can then serve as a translation memory, for you alone. ‘Highly sensitive content’ stores and processes exclusively in Switzerland, with no reuse in memory, for German, French, Italian and English.",
+    "reponse": "At the ‘Set-up’ step, Corrext asks you to choose between two cards. ‘Standard confidentiality’ saves the project on Corrext's Swiss servers and processes it in or outside Switzerland, depending on the engine you choose. The project can then serve as a translation memory, for you alone. ‘Highly sensitive content’ stores and processes the project exclusively in Switzerland, with no reuse in memory, for German, French, Italian and English.",
     "etapes": [
      "At the <b>Set-up</b> step, find the question ‘How confidential are the project and the uploaded files?’",
      "Choose <b>Standard confidentiality</b> for an everyday project: storage on Corrext's Swiss servers, processing according to the engine you choose.",
@@ -431,8 +431,8 @@
     ],
     "savoir": [
      "With standard confidentiality, projects are kept on Corrext's Swiss servers and can be reused as translation memory by you alone.",
-     "In sensitive mode, no translated content feeds a translation memory for future projects.",
-     "The confidentiality setting does not replace care over the engine: a third-party engine hosted abroad triggers the Attorney-Client privilege notice."
+     "In sensitive mode, no translated content feeds into a translation memory for future projects.",
+     "The confidentiality setting is no substitute for care in choosing the engine: a third-party engine hosted abroad triggers the Attorney-Client privilege notice."
     ],
     "question": "Which confidentiality level should I choose for a project?"
    },
@@ -444,7 +444,7 @@
     "reponse": "The second step, ‘File overview’, accepts your documents in .pdf, .doc, .docx, .xls, .xlsx, .ppt and .pptx format, up to 50 MB each. Each uploaded file shows its name, its number of standard pages, its detected language and its detected legal category, for example 2.5 standard pages for a short document. You can change the language and the category: check them, because the quote is based on them.",
     "etapes": [
      "At the <b>File overview</b> step, click the upload area or drag your documents onto it.",
-     "Prefer the original format, .docx or .xlsx rather than PDF, as the upload area advises.",
+     "Use the original format where possible (.docx or .xlsx rather than PDF), as the upload area advises.",
      "Check the number of <b>standard pages</b> calculated for each file: it is the unit for the quote and the delivery time.",
      "Check <b>Detected language</b> and correct it if the detection was wrong.",
      "Check <b>Detected category</b>, the detected legal category, and adjust it if it does not match the document.",
@@ -464,15 +464,15 @@
     "reponse": "A standard page has 1,800 characters, including spaces. Corrext counts the standard pages of each file at the File overview step. This unit, together with the detected legal category, is used for the quote and the delivery time.",
     "etapes": [],
     "savoir": [
-     "Two short documents can count fewer standard pages than a single dense document."
+     "Two short documents can add up to fewer standard pages than a single dense document."
     ]
    },
    {
     "slug": "relecture-interne-ou-workflow",
     "titre": "Choose between internal review and a custom workflow",
     "title": "Internal review or custom workflow in Corrext · Neur.on",
-    "description": "At the Quotes step, Corrext offers two options: value your own review, or order an external review file by file, with a due date.",
-    "reponse": "The third step, ‘Quotes’, opens on two tab cards. ‘Internal review’ estimates the review time you will do yourselves and ends with the ‘Create project’ button. ‘Custom workflow’ adds an external review: you set a due date, an order of priority and, for each file, an internal or external review type and a level. The button then becomes ‘Generate quote’.",
+    "description": "At the Quotes step, Corrext offers two options: put a value on your own review, or order an external review file by file, with a due date.",
+    "reponse": "The third step, ‘Quotes’, opens on two tab cards. ‘Internal review’ estimates the time needed for the review you carry out yourselves and ends with the ‘Create project’ button. ‘Custom workflow’ adds an external review: you set a due date, an order of priority and, for each file, an internal or external review type and a level. The button then becomes ‘Generate quote’.",
     "etapes": [
      "At the <b>Quotes</b> step, choose the <b>Internal review</b> card if you review the machine translation yourself.",
      "Fill in the ‘Internal review specifications’ block: the number of standard pages to review and the price per standard page you charge.",
@@ -483,7 +483,7 @@
      "Click <b>Generate quote</b>, which becomes active once you have entered a due date and a review level."
     ],
     "savoir": [
-     "The price per standard page field in the internal review is used to value your own work in the estimate: the figure is yours to set.",
+     "The price per standard page field in the internal review is used to put a value on your own work in the estimate: the figure is yours to set.",
      "In the file table, the ‘Review’ column distinguishes ‘External’ and ‘Internal’: a single project can mix both.",
      "The ‘Contact us for an earlier delivery date’ link lets you request an earlier due date than the one offered."
     ],
@@ -525,7 +525,7 @@
      "Click <b>Generate quote</b> for the quote of a custom workflow, or <b>Create project</b> for an internal review."
     ],
     "savoir": [
-     "The unit of calculation is the standard page, not the file: two short documents can count less than a single dense document.",
+     "The unit of calculation is the standard page, not the file: two short documents can add up to less than a single dense document.",
      "The cost shown excludes tax. Corrext states this explicitly in the estimate box.",
      "‘Generate quote’ sends the request to the agency in charge of the external review: only click it when your settings are final."
     ],
@@ -548,7 +548,7 @@
     "savoir": [
      "The translation you set applies to the exact form of the term. A related word, such as the verb ‘résilier’ (to terminate), is not affected.",
      "The suggested terms come from your own documents: the list changes from one project to another.",
-     "For terminology shared by all projects, your administrator can import a termbase in TBX or XML format at organisation level."
+     "For terminology shared by all projects, your administrator can import a term base in TBX or XML format at organisation level."
     ],
     "question": "How do I set the terminology for a project?"
    },
@@ -626,7 +626,7 @@
     "reponse": "The editor's side panel brings together four tools, available from the icons on the right of the screen: translation memories, Fast Lookup, the AI assistant and Sync. They work on the selected sentence and change nothing until you click ‘Apply’.",
     "etapes": [
      "Select a sentence in the editor.",
-     "<b>Translation memories</b> tab: look up previously validated translations close to the sentence, and apply one with ‘Apply’.",
+     "<b>Translation memories</b> tab: look up previously validated translations similar to the sentence, and apply one with ‘Apply’.",
      "<b>Fast Lookup</b> tab: search for a word in the memories and in CHnell, on the ‘Source’ or the ‘Target’ side.",
      "<b>AI Assistant</b> tab, ‘Alternatives’ section: compare the sentence as translated by several engines, and get more with ‘Generate more’.",
      "<b>Rephrasing</b> section: choose a style in ‘Settings’ (Formal legal, Financial, Simplified, Formal, Informal) or the ‘Shorten’ option, then click ‘Apply’.",
@@ -664,7 +664,7 @@
      "Save the document, then reimport it into the project with <b>Reimport docx</b>."
     ],
     "savoir": [
-     "The add-in only opens on a document exported with ‘Export docx’: a file from fast translation is rejected.",
+     "The add-in only opens on a document exported with ‘Export docx’: a file from Text and document translation is rejected.",
      "You must be a member of the project and have Word 2021 or Microsoft 365.",
      "While a long document is loading, do not close the panel or the file. You can already start working, then resolve conflicts in ‘Sync’."
     ],
@@ -698,7 +698,7 @@
   "h1": "Check a term in official sources",
   "lead": "CHnell is a bilingual concordancer: it shows how a term is actually translated in Swiss official texts, segment by segment, with its source and its domain. Here is how to search, filter and read a result.",
   "outil": "Fast lookup CHnell",
-  "title": "Fast lookup CHnell: search a term in context · Neur.on",
+  "title": "Fast lookup CHnell: search for a term in context · Neur.on",
   "description": "Search for a term in CHnell, use the operators, filter by domain and by source, tell the resource types apart and read a segment in context.",
   "articles": [
    {
@@ -736,7 +736,7 @@
      "If the query is too broad, add an operator or use the domain and source filters."
     ],
     "savoir": [
-     "The app lists the three operators without explaining how to use them on screen. Their full definition is in the information tooltip, and it is not repeated here because it was not observed.",
+     "The app lists the three operators without explaining how to use them on screen. Their full definition is in the information tooltip. It is not reproduced here because it was not observed when the app was audited.",
      "Operators do not replace filters: to restrict results to a domain or a source, use ‘Advanced search’ or the ‘Filters’ panel.",
      "Check the language pair before you conclude that a term has no results: sometimes swapping the languages is enough."
     ],
@@ -778,7 +778,7 @@
      "Run the search with ‘Search’ and check the number of results, which varies widely with this filter."
     ],
     "savoir": [
-     "Adding and managing own resources was not observed from a standard user account: this administration is not documented here. Ask your administrator.",
+     "Adding and managing own resources could not be observed from a standard user account, so these tasks are not documented here. Ask your administrator.",
      "If ‘Own resources’ returns no results, your organisation probably has no own resources linked to it yet.",
      "Shared resources come from public Swiss texts: their source is shown below each segment, which makes them citable."
     ],
@@ -835,7 +835,7 @@
     "savoir": [
      "The service is designed for official use: translations intended for authorities, banks or publication.",
      "The terminology of the extracts is handled by translation models trained specifically on Swiss commercial register extracts.",
-     "The confidentiality of the service relies on ISO 27001 certification, the Swiss Data Protection Act, the GDPR and Swiss infrastructure."
+     "The confidentiality of the service relies on ISO 27001 certification, the Swiss Data Protection Act (FADP), the GDPR and Swiss infrastructure."
     ],
     "question": "How do I order a certified translation of a commercial register extract?"
    },
@@ -844,7 +844,7 @@
     "titre": "Choose the certification level",
     "title": "Choose the certification level for an extract · Neur.on",
     "description": "Standard, notarised, or notarised and apostilled certification: which level to request, depending on the authority that will receive the document.",
-    "reponse": "Three certification levels are offered for the translation of a commercial register extract. Standard certification provides a signed and stamped certificate that accompanies the translation. Notarised certification adds the involvement of a Swiss notary. Notarised and apostilled certification also adds the apostille issued by the State Chancellery under the Hague Apostille Convention, which is required for many uses abroad.",
+    "reponse": "Three certification levels are offered for the translation of a commercial register extract. Standard certification provides a signed and stamped certificate that accompanies the translation. Notarised certification adds the involvement of a Swiss notary. Notarised and apostilled certification also adds the apostille issued by the cantonal State Chancellery under the Hague Apostille Convention, which is required for many uses abroad.",
     "etapes": [
      "Once you have found the company, go to the step where you select the certification level.",
      "Choose <b>Standard Corrext Certification</b> for a signed and stamped certificate that accompanies the translation.",
@@ -874,7 +874,7 @@
      "Confirm the order with the <b>Order a translation</b> button."
     ],
     "savoir": [
-     "A notarisation or an apostille exists on paper: allow time in your schedule for delivery by post or courier.",
+     "A notarisation or an apostille is applied to a paper document: allow time in your schedule for delivery by post or courier.",
      "The express delivery time is also available for international shipments, with the corresponding shipping options.",
      "If you have a specific need, the ‘Contact us’ button lets you ask before you confirm the order."
     ],
@@ -887,7 +887,7 @@
  {
   "slug": "formats-et-langues",
   "titre": "Formats and languages",
-  "h1": "What Corrext accepts, and up to what limit",
+  "h1": "What Corrext accepts, and its limits",
   "lead": "File formats, number and size of uploads, character limits, available languages: all the platform's limits in one place, as they appear in the app.",
   "outil": "Toute la plateforme",
   "title": "File formats and languages accepted by Corrext · Neur.on",
@@ -901,7 +901,7 @@
     "reponse": "Corrext accepts seven file formats for translation: .pdf, .doc, .docx, .xls, .xlsx, .ppt and .pptx. This list applies both to the ‘File translation’ tab of Text and document translation and to the ‘File overview’ step of a translation project. The ‘PDF to Word’ tab is the exception: it only accepts .pdf, since its purpose is to convert that format.",
     "etapes": [
      "Check your file's extension before you upload it: .pdf, .doc, .docx, .xls, .xlsx, .ppt or .pptx.",
-     "Prefer the original format, <b>.docx or .xlsx rather than PDF</b>, as the upload area of a project reminds you.",
+     "Use the original format where possible, <b>.docx or .xlsx rather than PDF</b>, as the upload area of a project reminds you.",
      "To convert a PDF into an editable Word document, use the <b>PDF to Word</b> tab, which only accepts .pdf.",
      "Convert any file in another format beforehand: the app will not accept it as it is.",
      "Read the text of the upload areas: they show the exact list of formats accepted in each place."
@@ -962,7 +962,7 @@
     "etapes": [
      "Open the target language list in Text and document translation, or the ‘Select target languages’ button in a project.",
      "Use the search field of the list to find a language without scrolling through all 30 entries.",
-     "Prefer the four native languages, German, French, Italian and English, for Swiss legal work.",
+     "For Swiss legal work, choose one of the four native languages where you can: German, French, Italian or English.",
      "Check the ‘Highly sensitive content’ toggle if a language you expect does not appear: it limits the choice to EN, FR, IT and DE.",
      "In a translation project, tick several target languages at once: each one then appears as a tag."
     ],
@@ -1073,7 +1073,7 @@
     ],
     "savoir": [
      "The memory built from your standard projects is used exclusively by your organisation: it is never shared with other clients.",
-     "Your administrator manages the organisation's memories: they can import memories in TMX format and termbases in TBX or XML format, up to 5 MB per file.",
+     "Your administrator manages the organisation's memories: they can import memories in TMX format and term bases in TBX or XML format, up to 5 MB per file.",
      "Not to be confused with CHnell, which searches collections of official texts, not your translation memory."
     ],
     "question": "How do translation memories work?"
@@ -1177,7 +1177,7 @@
     "titre": "My file is rejected",
     "title": "My file was rejected by Corrext: what to do · Neur.on",
     "description": "A rejected file is almost always due to its format, a size over 50 MB or the number of files uploaded at once, which is limited to 25.",
-    "reponse": "When Corrext rejects a file, the cause is almost always one of three things. The format is not on the accepted list, the file is larger than 50 MB, or more than 25 files were uploaded at once. The ‘PDF to Word’ tab adds its own restriction, since it only accepts .pdf. The upload areas show these limits on screen, just below the upload button.",
+    "reponse": "When Corrext rejects a file, the cause is almost always one of three things: the format is not on the accepted list, the file is larger than 50 MB, or more than 25 files were uploaded at once. The ‘PDF to Word’ tab adds its own restriction, since it only accepts .pdf. The upload areas show these limits on screen, just below the upload button.",
     "etapes": [
      "Check the extension: only .pdf, .doc, .docx, .xls, .xlsx, .ppt and .pptx are accepted for translation.",
      "Check that you are not on the <b>PDF to Word</b> tab, which only accepts .pdf.",
@@ -1188,7 +1188,7 @@
     ],
     "savoir": [
      "Format and size are quicker to check than content: always start with these two points.",
-     "A very heavy scanned PDF should be converted to Word with the ‘PDF to Word’ tab before anything else.",
+     "A very large scanned PDF should be converted to Word with the ‘PDF to Word’ tab before anything else.",
      "The limits are the same in Text and document translation and in Translation projects: a file rejected by one will be rejected by the other."
     ],
     "question": "Why was my file rejected?"
@@ -1309,10 +1309,10 @@
   "espace": "admin",
   "icone": "memoire",
   "outil": "Administration",
-  "h1": "Import your memories, termbases and resources",
-  "lead": "Your organisation's own translation memories, termbases and CHnell resources, so that Corrext starts from your vocabulary.",
-  "title": "Corrext translation memory and termbase import · Neur.on",
-  "description": "Administering Corrext: import TMX translation memories and TBX or XML termbases, and add your organisation's own resources to CHnell.",
+  "h1": "Import your memories, term bases and resources",
+  "lead": "Your organisation's own translation memories, term bases and CHnell resources, so that Corrext starts from your vocabulary.",
+  "title": "Corrext translation memory and term base import · Neur.on",
+  "description": "Administering Corrext: import TMX translation memories and TBX or XML term bases, and add your organisation's own resources to CHnell.",
   "articles": [
    {
     "slug": "importer-memoires",
@@ -1327,12 +1327,12 @@
    },
    {
     "slug": "importer-base-terminologique",
-    "titre": "How to import a termbase",
-    "question": "How do we import a termbase?",
-    "reponse": "The organisation's termbases are managed in ‘Manage term bases’. The ‘Create’ button accepts .tbx or .xml files, up to 5 MB per file.",
+    "titre": "How to import a term base",
+    "question": "How do we import a term base?",
+    "reponse": "The organisation's term bases are managed in ‘Manage term bases’. The ‘Create’ button accepts .tbx or .xml files, up to 5 MB per file.",
     "etapes": [],
     "savoir": [
-     "To impose a term in a specific project, use the terminology step of that project.",
+     "To set the translation of a term for one specific project, use that project's ‘Project terminology’ screen.",
      "Who does this: your organisation's administrator, or the Neur.on team during set-up."
     ]
    },
