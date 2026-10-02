@@ -7,14 +7,14 @@
   "h1": "Che cos'è Corrext e che cosa fa per voi",
   "outil": "Toute la plateforme",
   "lead": "Le risposte alle domande che ci si pone prima di iniziare: gli strumenti della piattaforma, il motore LexMachina, la revisione, il prezzo e la messa in funzione.",
-  "title": "Scoprire Corrext: funzionalità · Centro assistenza · Neur.on",
+  "title": "Scoprire Corrext · Centro assistenza · Neur.on",
   "description": "Che cos'è Corrext: i quattro strumenti, il motore LexMachina, gli altri motori disponibili, la revisione, il prezzo, la prova e la messa in funzione.",
   "articles": [
    {
     "slug": "qu-est-ce-que-corrext",
     "titre": "Che cos'è Corrext",
     "question": "Che cos'è Corrext?",
-    "reponse": "Corrext è la piattaforma di traduzione giuridica e finanziaria di Neur.on. Riunisce quattro strumenti, accessibili dalla pagina iniziale. Traduzione di testi e documenti traduce subito. Gestione dei progetti permette di ordinare una revisione e una certificazione. Fast lookup CHnell verifica un termine nei testi ufficiali svizzeri. Estratti del registro di commercio permette di ordinare in linea una traduzione certificata.",
+    "reponse": "Corrext è la piattaforma di traduzione giuridica e finanziaria di Neur.on. Riunisce quattro strumenti, accessibili dalla pagina iniziale. Traduzione di testi e documenti traduce subito. Gestione dei progetti serve a far rivedere e certificare le traduzioni. Fast lookup CHnell verifica un termine nei testi ufficiali svizzeri. Estratti del registro di commercio permette di ordinare in linea una traduzione certificata.",
     "etapes": [],
     "savoir": [
      "I vostri documenti sono archiviati in Svizzera, qualunque sia il motore scelto.",
@@ -41,7 +41,7 @@
    },
    {
     "slug": "autres-moteurs",
-    "titre": "Posso usare DeepL o un modello generalista",
+    "titre": "Posso usare DeepL o un modello generalista in Corrext",
     "question": "Posso usare DeepL o un modello generalista in Corrext?",
     "reponse": "Sì. Nell'interfaccia sono disponibili DeepL Pro, Azure OpenAI GPT e Claude, con l'avviso di pseudonimizzazione che compare al momento della scelta. La funzione Alternatives confronta fino a quattro proposte, ciascuna attribuita al suo motore.",
     "etapes": [],
@@ -51,7 +51,7 @@
     "slug": "qui-relit",
     "titre": "Chi rivede le traduzioni",
     "question": "Chi rivede le traduzioni?",
-    "reponse": "Nella revisione interna rivedono i vostri team. Nella Light review e nella Full review rivede un traduttore giuridico. Nella Double review e traduzione certificata intervengono due traduttori e un'agenzia specializzata. Il livello si sceglie documento per documento nel <a href=\"{{ROOT}}fr/corrext/gestion-de-projet/\">percorso del progetto</a>, e il termine di consegna compare prima della conferma.",
+    "reponse": "Nella revisione interna, le traduzioni sono rivedute dai vostri team. Nella Light review o nella Full review, da un traduttore giuridico. Nella Double review e traduzione certificata intervengono due traduttori e un'agenzia specializzata. Il livello si sceglie documento per documento nella <a href=\"{{ROOT}}fr/corrext/gestion-de-projet/\">procedura guidata del progetto</a>, e il termine di consegna compare prima della conferma.",
     "etapes": [],
     "savoir": []
    },
@@ -75,7 +75,7 @@
     "slug": "mise-en-place",
     "titre": "Quanto tempo richiede la messa in funzione",
     "question": "Quanto tempo richiede la messa in funzione?",
-    "reponse": "L'applicazione web non richiede alcuna installazione: basta un account, con accesso tramite password o tramite single sign-on di Microsoft. Un'integrazione nei vostri sistemi tramite API, o un'installazione sui vostri server, si definisce in un colloquio tecnico.",
+    "reponse": "L'applicazione web non richiede alcuna installazione: basta un account, con accesso tramite password o tramite single sign-on di Microsoft. Un'integrazione nei vostri sistemi tramite API, o un'installazione sui vostri server, si definisce durante un incontro tecnico.",
     "etapes": [],
     "savoir": []
    }
@@ -98,7 +98,7 @@
     "reponse": "Corrext si apre da corrext.com, che rimanda alla pagina di autenticazione della piattaforma. Accedete con il vostro indirizzo e-mail e la vostra password, lunga almeno dodici caratteri, o con il pulsante di single sign-on Microsoft, se la vostra organizzazione l'ha attivato. Dopo l'accesso arrivate alla pagina iniziale, che elenca i vostri strumenti di traduzione.",
     "etapes": [
      "Aprite «corrext.com» nel browser: la pagina vi rimanda alla schermata di accesso della piattaforma.",
-     "Inserite il vostro indirizzo e-mail professionale, poi la password, che conta almeno 12 caratteri.",
+     "Inserite il vostro indirizzo e-mail professionale, poi la password, di almeno 12 caratteri.",
      "Oppure cliccate su <b>«Log in with Microsoft single sign-on»</b> per accedere con il single sign-on della vostra organizzazione.",
      "Password dimenticata: cliccate su «Forgot your password ?» sotto il modulo per avviare la reimpostazione della password.",
      "Arrivate alla pagina iniziale, intitolata «Home | Corrext», dove i vostri strumenti sono raggruppati sotto «My translation tools»."
@@ -164,7 +164,7 @@
      "Attivatelo prima di inserire il testo o di caricare i file: resta attivo quando passate alla scheda «File translation».",
      "Verificate la lingua di arrivo: in modalità Highly sensitive sono proposte solo le lingue EN, FR, IT e DE.",
      "In <b>«Gestione dei progetti»</b>, scegliete il riquadro <b>«Highly sensitive content»</b> alla domanda «How confidential are the project and the uploaded files?».",
-     "Proseguite normalmente nel percorso: la scelta di riservatezza vale per tutti i file del progetto."
+     "Proseguite normalmente con la procedura guidata: la scelta di riservatezza vale per tutti i file del progetto."
     ],
     "savoir": [
      "Nella scheda «PDF to Word» l'interruttore è grigio e non si può attivare: la conversione da PDF a Word non avviene in questa modalità.",
@@ -183,7 +183,7 @@
      "Aprite l'elenco dei motori in «Traduzione di testi e documenti» e selezionate un motore di terzi, per esempio «DeepL Pro».",
      "Leggete il messaggio <b>«Attorney-Client privilege notice»</b> che compare sopra l'area di lavoro.",
      "Togliete dal testo o dai file i nomi dei clienti, delle parti correlate e ogni indicazione che permetta di identificare la pratica.",
-     "Non usate questi motori per una pratica di grande visibilità o suscettibile di influenzare i corsi di borsa: la vostra organizzazione lo vieta.",
+     "Non usate questi motori per una pratica di grande visibilità o atta a influenzare il corso di valori mobiliari: la vostra organizzazione lo vieta.",
      "Se la pseudonimizzazione non è possibile, tornate a un motore svizzero di Neur.on o attivate la modalità «Highly sensitive content»."
     ],
     "savoir": [
@@ -230,7 +230,7 @@
     "slug": "traduire-un-texte",
     "titre": "Tradurre un testo",
     "title": "Tradurre un testo in Corrext, passo per passo · Neur.on",
-    "description": "Incollate un testo in Traduzione di testi e documenti, scegliete lingue e motore e leggete la traduzione mentre scrivete, fino a 10'000 caratteri.",
+    "description": "Incollate un testo in Traduzione di testi e documenti, scegliete lingue e motore e leggete la traduzione che compare mentre scrivete, fino a 10'000 caratteri.",
     "reponse": "In Traduzione di testi e documenti, la scheda «Text translation» traduce mentre scrivete: non c'è un pulsante da premere. Il testo incollato nel riquadro di sinistra viene tradotto in quello di destra, entro il limite di 10'000 caratteri indicato dal contatore sotto l'area di inserimento. Un pulsante di copia, in alto nel riquadro di destra, recupera il risultato.",
     "etapes": [
      "Aprite «Traduzione di testi e documenti» dalla pagina iniziale, poi restate sulla scheda <b>«Text translation»</b>.",
@@ -379,10 +379,10 @@
   "slug": "gestion-de-projet",
   "titre": "Gestione dei progetti",
   "h1": "Far rivedere una traduzione e conoscerne il costo",
-  "lead": "Gestione dei progetti prevede tre fasi d'ordine (impostazione del progetto, controllo dei file, offerta), poi la terminologia, la scelta del motore e la revisione nell'editor. Ecco come creare un progetto, fissare i vostri termini, rivedere la traduzione e convalidarla.",
+  "lead": "Gestione dei progetti prevede tre fasi di ordinazione (impostazione del progetto, controllo dei file, offerta), poi la terminologia, la scelta del motore e la revisione nell'editor. Ecco come creare un progetto, fissare i vostri termini, rivedere la traduzione e convalidarla.",
   "outil": "Gestion de projet",
   "title": "Gestione dei progetti Corrext: revisione e offerta · Neur.on",
-  "description": "Creare un progetto, fissare la terminologia, scegliere il motore, rivedere nell'editor o in Word, ottenere l'offerta (preventivo) e convalidare la traduzione.",
+  "description": "Creare un progetto, fissare la terminologia, scegliere il motore, rivedere nell'editor o in Word, ottenere un'offerta e convalidare la traduzione.",
   "articles": [
    {
     "slug": "creer-un-projet",
@@ -401,7 +401,7 @@
     "savoir": [
      "Il progetto viene creato quando passate alla fase «File overview»: da quel momento ha un indirizzo proprio.",
      "Potete selezionare più lingue di arrivo per uno stesso progetto: l'offerta le distingue poi file per file.",
-     "Il pulsante delle impostazioni in fondo al percorso non ha mostrato nulla durante la verifica dell'applicazione: la sua funzione non è documentata qui."
+     "Il pulsante delle impostazioni in fondo alla procedura guidata non ha mostrato nulla durante la verifica dell'applicazione: la sua funzione non è documentata qui."
     ],
     "question": "Come creo un progetto di traduzione?"
    },
@@ -427,7 +427,7 @@
      "Scegliete <b>«Standard confidentiality»</b> per un progetto ordinario: archiviazione sui server svizzeri di Corrext, trattamento secondo il motore scelto.",
      "Scegliete <b>«Highly sensitive content»</b> per un dossier riservato: archiviazione e trattamento esclusivamente in Svizzera.",
      "Verificate le lingue: in modalità Highly sensitive sono disponibili solo EN, FR, IT e DE.",
-     "Proseguite nel percorso: la scelta vale per tutti i file caricati nel progetto."
+     "Proseguite con la procedura guidata: la scelta vale per tutti i file caricati nel progetto."
     ],
     "savoir": [
      "Con la riservatezza standard, i progetti sono conservati sui server svizzeri di Corrext e riutilizzabili come memoria di traduzione esclusivamente da voi.",
@@ -461,7 +461,7 @@
     "slug": "page-standard",
     "titre": "Come si calcola una pagina standard",
     "question": "Come si calcola una pagina standard?",
-    "reponse": "Una pagina standard conta 1'800 caratteri, spazi inclusi. Corrext conta le pagine standard di ogni file nella fase File overview: questa unità, insieme alla categoria giuridica riconosciuta, serve per l'offerta e per il termine di consegna.",
+    "reponse": "Una pagina standard corrisponde a 1'800 caratteri, spazi inclusi. Corrext conta le pagine standard di ogni file nella fase File overview: questa unità, insieme alla categoria giuridica riconosciuta, serve per l'offerta e per il termine di consegna.",
     "etapes": [],
     "savoir": [
      "Due documenti brevi possono contare meno pagine standard di un unico documento denso."
@@ -478,14 +478,14 @@
      "Compilate la sezione «Internal review specifications»: numero di pagine standard da rivedere e prezzo per pagina standard che fatturate.",
      "Leggete il riquadro «Estimated time», che riassume il tempo di revisione stimato, poi cliccate su <b>«Create project»</b>.",
      "Oppure scegliete il riquadro <b>«Custom workflow»</b> per affidare la revisione a un traduttore giuridico o a un'agenzia.",
-     "Fissate una data di consegna in «Due date»: il calendario esclude i fine settimana e compare un tempo di revisione stimato.",
+     "Fissate una data di consegna in «Due date»: nel calendario i fine settimana sono in grigio e compare un tempo di revisione stimato.",
      "Rispondete alla domanda sull'ordine di priorità dei file, poi impostate la tabella dei file: colonne File, Languages, Review e Review level.",
      "Cliccate su <b>«Generate quote»</b>, che si attiva non appena indicate una data di consegna e un livello di revisione."
     ],
     "savoir": [
      "Il campo del prezzo per pagina standard della revisione interna serve a valorizzare il vostro lavoro nella stima: spetta a voi compilarlo.",
-     "Nella tabella dei file, la colonna «Review» distingue «External» e «Internal»: uno stesso progetto può combinare le due.",
-     "Il link «Contact us for an earlier delivery date» permette di chiedere una data di consegna più vicina di quella proposta."
+     "Nella tabella dei file, la colonna «Review» distingue «External» e «Internal»: uno stesso progetto può combinare i due tipi di revisione.",
+     "Il link «Contact us for an earlier delivery date» permette di chiedere una data di consegna anteriore a quella proposta."
     ],
     "question": "Revisione interna o flusso di lavoro personalizzato: che cosa scelgo?"
    },
@@ -574,8 +574,8 @@
    },
    {
     "slug": "equipe-du-projet",
-    "titre": "Come lavorare in più persone su un progetto",
-    "question": "Come si lavora in più persone sullo stesso progetto?",
+    "titre": "Come lavorare in team su un progetto",
+    "question": "Come si lavora in team sullo stesso progetto?",
     "reponse": "Il cruscotto del progetto comprende una sezione dedicata al team, che gestisce i collaboratori del progetto. Nell'editor, la scheda «Sync» del pannello laterale riunisce poi il lavoro di ciascuno: conflitti tra versioni, modifiche in arrivo da un collega e decisioni di propagazione sui segmenti ripetuti.",
     "etapes": [],
     "savoir": [
@@ -655,10 +655,10 @@
     "titre": "Rivedere in Word",
     "title": "Rivedere una traduzione Corrext in Word · Neur.on",
     "description": "Esportate il file del progetto, rivedetelo in Word con il componente aggiuntivo Corrext (assistente IA, Fast Lookup, memorie, Sync), poi reimportatelo.",
-    "reponse": "Se preferite rivedere in Word, esportate il file dal cruscotto con «Export docx», apritelo in Word e aprite il componente aggiuntivo Corrext dalla barra multifunzione. Il suo pannello riprende l'assistente IA, Fast Lookup, le corrispondenze della memoria e Sync. Terminata la revisione, reimportate il file nel progetto con «Reimport docx».",
+    "reponse": "Se preferite rivedere in Word, esportate il file dal cruscotto con «Export docx», apritelo in Word e visualizzate il componente aggiuntivo Corrext dalla barra multifunzione. Il suo pannello riprende l'assistente IA, Fast Lookup, le corrispondenze della memoria e Sync. Terminata la revisione, reimportate il file nel progetto con «Reimport docx».",
     "etapes": [
      "Nel cruscotto del progetto, cliccate su <b>«Export docx»</b> per il file da rivedere.",
-     "Aprite il file esportato in Word, poi cliccate sul pulsante <b>«Corrext»</b> della barra multifunzione per aprire il pannello «Corrext editor».",
+     "Aprite il file esportato in Word, poi cliccate sul pulsante <b>«Corrext»</b> della barra multifunzione per visualizzare il pannello «Corrext editor».",
      "Accedete con <b>«Log in»</b> se il pannello lo chiede.",
      "Rivedete aiutandovi con le schede «AI Assistant», «Fast Lookup», «Matches» e «Sync».",
      "Salvate il documento, poi reimportatelo nel progetto con <b>«Reimport docx»</b>."
@@ -731,7 +731,7 @@
     "etapes": [
      "Aprite «Fast lookup» e individuate la riga <b>«Supported search operators»</b> sotto il campo di ricerca.",
      "Passate con il mouse o cliccate sull'icona informativa accanto a questa riga per leggere la sintassi esatta nell'applicazione.",
-     "Inserite la ricerca con l'operatore voluto direttamente nel campo di ricerca.",
+     "Inserite i termini da cercare, con l'operatore desiderato, direttamente nel campo di ricerca.",
      "Cliccate su <b>«Search»</b> per avviare la ricerca, poi verificate il numero di risultati indicato nell'intestazione.",
      "Se la ricerca è troppo ampia, aggiungete un operatore o usate i filtri per settore e per fonte."
     ],
@@ -759,9 +759,9 @@
     "savoir": [
      "Il settore di ogni segmento compare in maiuscolo sopra il testo: è il modo più rapido per giudicare se un risultato è pertinente.",
      "Filtrare per fonte è utile quando più autorità usano formulazioni diverse per uno stesso concetto.",
-     "L'elenco completo dei 30 settori si apre nell'applicazione: copre sia il diritto societario sia il diritto penale o la fiscalità."
+     "L'elenco completo dei 30 settori si apre nell'applicazione: copre il diritto societario, ma anche il diritto penale o la fiscalità."
     ],
-    "question": "Come filtro per settore del diritto e per fonte?"
+    "question": "Come filtro i risultati per settore del diritto e per fonte?"
    },
    {
     "slug": "ressources-partagees-et-propres",
@@ -775,7 +775,7 @@
      "Scegliete <b>«All resources»</b> per cercare sia nelle raccolte condivise sia in quelle della vostra organizzazione.",
      "Scegliete <b>«Shared resources»</b> per tenere solo le raccolte condivise, utili per citare un uso ufficiale.",
      "Scegliete <b>«Own resources»</b> per cercare solo nelle risorse proprie della vostra organizzazione.",
-     "Avviate la ricerca con «Search» e verificate il numero di risultati, che varia molto secondo questo filtro."
+     "Avviate la ricerca con «Search» e verificate il numero di risultati, che varia molto a seconda di questo filtro."
     ],
     "savoir": [
      "L'aggiunta e la gestione delle risorse proprie non sono state osservate da un account utente standard: questa amministrazione non è documentata qui, chiedetela al vostro amministratore.",
@@ -843,7 +843,7 @@
     "slug": "niveau-de-certification",
     "titre": "Scegliere il livello di certificazione",
     "title": "Scegliere la certificazione di un estratto · Neur.on",
-    "description": "Certificazione standard, autenticazione notarile o autenticazione notarile con apostille: quale livello chiedere secondo l'autorità che riceverà il documento.",
+    "description": "Certificazione standard, autenticazione notarile o autenticazione notarile con apostille: quale livello chiedere a seconda dell'autorità destinataria.",
     "reponse": "Per la traduzione di un estratto del registro di commercio sono proposti tre livelli di certificazione. La certificazione standard fornisce un'attestazione firmata e timbrata che accompagna la traduzione. L'autenticazione notarile aggiunge l'intervento di un notaio svizzero. L'autenticazione notarile con apostille aggiunge inoltre l'apostille rilasciata dalla Cancelleria dello Stato ai sensi della Convenzione dell'Aia, richiesta per molti usi all'estero.",
     "etapes": [
      "Dopo aver trovato la società, passate alla fase di selezione del livello di certificazione.",
@@ -863,18 +863,18 @@
     "slug": "livraison-et-delai",
     "titre": "Scegliere la consegna e il termine",
     "title": "Scegliere consegna e termine per un estratto · Neur.on",
-    "description": "Consegna per e-mail o per e-mail e posta, termine standard o express, in Svizzera come all'estero: le ultime due fasi dell'ordine, passo per passo.",
+    "description": "Consegna per e-mail o per e-mail e posta, termine standard o express, in Svizzera come all'estero: le ultime due fasi dell'ordine.",
     "reponse": "Le ultime due fasi dell'ordine riguardano la consegna del documento. Prima scegliete la modalità di consegna: solo per e-mail, oppure per e-mail con un invio cartaceo per posta o per corriere. Poi fissate il termine di consegna, standard o express, in Svizzera come all'estero. L'invio cartaceo è indispensabile quando occorre produrre una firma originale, un'autenticazione notarile o un'apostille.",
     "etapes": [
      "Dopo la scelta del livello di certificazione, passate alla fase della modalità di consegna.",
      "Scegliete la consegna per e-mail se al destinatario basta una versione elettronica.",
-     "Scegliete la consegna per e-mail e per posta cartacea, con la posta o con un corriere, quando serve un originale firmato.",
+     "Scegliete la consegna per e-mail e in forma cartacea, per posta o per corriere, quando serve un originale firmato.",
      "Passate alla fase del termine di consegna e scegliete tra termine standard e termine express.",
      "Indicate la destinazione, Svizzera o estero, da cui dipendono le opzioni di spedizione.",
      "Confermate l'ordine con il pulsante <b>«Order a translation»</b>."
     ],
     "savoir": [
-     "Un'autenticazione notarile o un'apostille si concretizzano su un documento cartaceo: prevedete l'invio postale o il corriere nella vostra pianificazione.",
+     "Un'autenticazione notarile o un'apostille figurano su un documento cartaceo: prevedete l'invio postale o il corriere nella vostra pianificazione.",
      "Il termine di consegna express esiste anche per gli invii all'estero, con le relative opzioni di spedizione.",
      "Per un'esigenza particolare, il pulsante «Contact us» permette di porre la domanda prima di confermare l'ordine."
     ],
@@ -898,12 +898,12 @@
     "titre": "Formati di file accettati",
     "title": "Quali formati di file accetta Corrext · Neur.on",
     "description": "Corrext accetta i formati .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. La scheda PDF to Word accetta solo il PDF. Preferite il formato originale.",
-    "reponse": "Per la traduzione sono accettati sette formati di file: .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. L'elenco vale sia per la scheda «File translation» di Traduzione di testi e documenti sia per la fase «File overview» di un progetto di traduzione. Fa eccezione la scheda «PDF to Word»: accetta solo il formato .pdf, perché serve proprio a convertirlo.",
+    "reponse": "Corrext accetta sette formati di file per la traduzione: .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. L'elenco vale sia per la scheda «File translation» di Traduzione di testi e documenti sia per la fase «File overview» di un progetto di traduzione. Fa eccezione la scheda «PDF to Word»: accetta solo il formato .pdf, perché serve proprio a convertirlo.",
     "etapes": [
      "Verificate l'estensione del file prima di caricarlo: .pdf, .doc, .docx, .xls, .xlsx, .ppt o .pptx.",
      "Preferite il formato originale, <b>.docx o .xlsx anziché un PDF</b>, come ricorda la zona di caricamento di un progetto.",
      "Per convertire un PDF in un documento Word modificabile, usate la scheda <b>«PDF to Word»</b>, che accetta solo il .pdf.",
-     "Un file in un altro formato va convertito prima: l'applicazione non lo accetta così com'è.",
+     "Convertite prima i file in altri formati: l'applicazione non li accetta così come sono.",
      "Rileggete il testo delle zone di caricamento: ricordano l'elenco esatto dei formati accettati in ogni punto."
     ],
     "savoir": [
@@ -927,7 +927,7 @@
      "Rileggete i limiti indicati nella zona di caricamento della scheda o della fase in corso: vi figurano sempre."
     ],
     "savoir": [
-     "Un file rifiutato dipende più spesso dal formato o dal peso che dal contenuto: verificate prima questi due punti.",
+     "Se un file viene rifiutato, la causa è più spesso il formato o il peso che il contenuto: verificate prima questi due punti.",
      "Per un progetto di traduzione, l'offerta si calcola in pagine standard: il numero di file conta meno della loro densità.",
      "Preferire il formato originale spesso alleggerisce il file e al tempo stesso migliora l'impaginazione."
     ],
@@ -948,7 +948,7 @@
     ],
     "savoir": [
      "Il contatore si aggiorna mentre scrivete: mostra subito se un testo incollato supera il limite.",
-     "Il limite della riformulazione è inferiore a quello della traduzione: un testo traducibile in un'unica volta non sarà per forza riformulabile in un'unica volta.",
+     "Il limite della riformulazione è inferiore a quello della traduzione: un testo che si può tradurre in un solo blocco non si può per forza riformulare in un solo blocco.",
      "Dividere un testo lungo fa perdere il contesto da una frase all'altra: la traduzione di file dà un risultato più coerente."
     ],
     "question": "Quali sono i limiti di caratteri?"
@@ -997,7 +997,7 @@
    {
     "slug": "hebergement-et-traitement",
     "titre": "Dove sono ospitati e trattati i miei dati",
-    "title": "Dove sono ospitati e trattati i vostri dati Corrext · Neur.on",
+    "title": "Corrext: dove sono ospitati e trattati i vostri dati · Neur.on",
     "description": "L'archiviazione è svizzera in ogni caso. Il trattamento resta in Svizzera in modalità Highly sensitive content o con un motore svizzero di Neur.on.",
     "reponse": "Archiviazione e trattamento sono due cose distinte. I progetti sono registrati in ogni caso sui server svizzeri di Corrext. Il trattamento invece dipende dalla vostra scelta. Resta esclusivamente in Svizzera in modalità «Highly sensitive content» o con un motore svizzero di Neur.on. Può avvenire fuori dalla Svizzera se scegliete un motore di terzi ospitato all'estero.",
     "etapes": [
@@ -1108,8 +1108,8 @@
   "h1": "Quando Corrext non fa ciò che vi aspettate",
   "lead": "Un pulsante disattivato, una lingua assente, una traduzione che non parte, un file rifiutato: quattro blocchi frequenti, la loro causa esatta nell'applicazione e il modo di risolverli.",
   "outil": "Toute la plateforme",
-  "title": "Risolvere un problema in Corrext · Neur.on",
-  "description": "Next inattivo, lingua di arrivo assente, traduzione che non parte, file rifiutato: le cause reali di questi blocchi e il modo di risolverli, passo per passo.",
+  "title": "Problemi con Corrext: pulsante grigio, lingua, file · Neur.on",
+  "description": "Next inattivo, lingua di arrivo assente, traduzione che non parte, file rifiutato: le cause reali di questi blocchi e il modo di risolverli.",
   "articles": [
    {
     "slug": "bouton-next-grise",
@@ -1176,13 +1176,13 @@
     "slug": "fichier-refuse",
     "titre": "Il mio file viene rifiutato",
     "title": "File rifiutato da Corrext: che cosa fare · Neur.on",
-    "description": "Un file rifiutato dipende quasi sempre dal formato, da un peso superiore a 50 MB o dal numero di file caricati in una volta, limitato a 25.",
+    "description": "Se un file viene rifiutato, la causa è quasi sempre il formato, un peso superiore a 50 MB o il numero di file caricati in una volta, limitato a 25.",
     "reponse": "Corrext rifiuta un file quasi sempre per una di tre cause: formato non accettato, peso superiore a 50 MB, invio di più di 25 file in una volta. La scheda «PDF to Word» aggiunge un vincolo proprio, perché accetta solo il formato .pdf. Le zone di caricamento ricordano questi limiti sullo schermo, appena sotto il pulsante di invio.",
     "etapes": [
      "Verificate l'estensione: per la traduzione sono accettati solo .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx.",
      "Verificate di non essere nella scheda <b>«PDF to Word»</b>, che accetta solo il formato .pdf.",
      "Verificate il peso del file: il limite è di 50 MB per file.",
-     "Contate i file dell'insieme: il limite è di 25 file per invio.",
+     "Contate i file da caricare: il limite è di 25 file per invio.",
      "Ripartite dal file originale, .docx o .xlsx anziché un PDF: spesso è più leggero e viene trattato meglio.",
      "Rileggete il testo della zona di caricamento, che indica l'elenco esatto dei formati e la dimensione massima consentita."
     ],
@@ -1212,7 +1212,7 @@
     "slug": "roles",
     "titre": "Quali ruoli si possono assegnare in un'organizzazione",
     "question": "Quali ruoli si possono assegnare in un'organizzazione?",
-    "reponse": "Esistono tre ruoli: Admin, Project manager e Member. Il ruolo si sceglie quando si aggiunge un membro, singolarmente o per un intero dominio e-mail.",
+    "reponse": "In Corrext esistono tre ruoli: Admin, Project manager e Member. Il ruolo si sceglie quando si aggiunge un membro, singolarmente o per un intero dominio e-mail.",
     "etapes": [],
     "savoir": [
      "Il dettaglio dei diritti legati a ogni ruolo vi viene presentato durante la messa in funzione.",
@@ -1241,7 +1241,7 @@
     "reponse": "La sezione «Email domain memberships» associa un intero dominio e-mail a un ruolo, con il pulsante «Add domain». Chiunque acceda con un indirizzo di questo dominio entra nell'organizzazione con quel ruolo.",
     "etapes": [],
     "savoir": [
-     "Utile per uno studio legale o un intero servizio: ogni nuovo arrivato è collegato fin dal primo accesso.",
+     "Utile per uno studio legale o un intero servizio: ogni nuovo collaboratore viene associato all'organizzazione fin dal primo accesso.",
      "Chi se ne occupa: l'amministratore della vostra organizzazione."
     ]
    },
@@ -1294,7 +1294,7 @@
     "slug": "cles-api",
     "titre": "Possiamo usare i nostri contratti DeepL, Claude o GPT",
     "question": "Possiamo usare i nostri contratti con DeepL, Claude o GPT?",
-    "reponse": "Sì. Per impostazione predefinita, la piattaforma usa le proprie chiavi di accesso a questi motori. Un'organizzazione può fornire le proprie chiavi API per DeepL, Claude e GPT, affinché le chiamate passino per i suoi contratti con questi fornitori.",
+    "reponse": "Sì. Per impostazione predefinita, Corrext usa le proprie chiavi di accesso a questi motori. Un'organizzazione può fornire le proprie chiavi API per DeepL, Claude e GPT, affinché le chiamate passino attraverso i suoi contratti con questi fornitori.",
     "etapes": [],
     "savoir": [
      "Il trattamento da parte di questi motori resta fuori dalla Svizzera: l'avviso di riservatezza si applica allo stesso modo.",
@@ -1310,7 +1310,7 @@
   "icone": "memoire",
   "outil": "Administration",
   "h1": "Importare le vostre memorie, basi terminologiche e risorse",
-  "lead": "Le memorie di traduzione, le basi terminologiche e le risorse CHnell proprie della vostra organizzazione, perché la piattaforma parta dal vostro vocabolario.",
+  "lead": "Le memorie di traduzione, le basi terminologiche e le risorse CHnell proprie della vostra organizzazione, perché Corrext parta dal vostro vocabolario.",
   "title": "Corrext: memorie di traduzione e terminologia · Neur.on",
   "description": "Amministrare Corrext: importare memorie di traduzione TMX, basi terminologiche TBX o XML, e aggiungere risorse proprie in CHnell.",
   "articles": [
