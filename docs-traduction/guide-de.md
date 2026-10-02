@@ -71,6 +71,11 @@ Métier de la traduction :
 - devis : **Offerte** ; page standard : **Normseite** ; délai de livraison : **Lieferfrist** ;
 - relecture juridique : **juristisches Lektorat** ; post-édition : **Post-Editing** ;
 - traduction certifiée : **beglaubigte Übersetzung** ; notariée : **notariell beglaubigt** ; apostillée : **mit Apostille** ;
+- niveau 3 de relecture (convention du site, fixée le 2 octobre 2026) :
+  - le libellé exact de l'application reste en anglais : « Double review & certified translation », partout où le FR le cite ainsi (titres, tableaux, vignettes) ;
+  - dans le texte courant, quand le FR écrit « Double review et traduction certifiée », « Double review avec certificat » ou « Double review certifiée » : **Double review und beglaubigte Übersetzung** (jamais « Doppeltes Lektorat », « mit Zertifikat » ni « and certified translation ») ;
+  - le document signé par l'agence, qui atteste l'exactitude : **Bescheinigung** (pas « Zertifikat », réservé à la certification ISO 27001) ;
+  - le niveau 4 : **Beglaubigung und Apostille**, notarielle Beglaubigung de la signature puis Apostille ;
 - juriste-linguiste : **Rechtslinguistin, Rechtslinguist** ; traducteur juridique : **juristische Übersetzerin, juristischer Übersetzer** ;
 - mémoire de traduction : **Translation Memory**.
 
