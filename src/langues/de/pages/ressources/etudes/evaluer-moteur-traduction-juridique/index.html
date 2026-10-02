@@ -1,0 +1,344 @@
+<!--page
+title: Maschinelle Übersetzung im Recht evaluieren · Neur.on
+description: Sechs messbare Kriterien, ein doppelblindes Protokoll und sieben Fallstricke, die Vergleiche von Übersetzungsmotoren an Schweizer Rechtstexten verfälschen.
+short: Übersetzungsmotor evaluieren
+nav: ressources
+hero: read
+canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-juridique/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Wie man einen Übersetzungsmotor an Schweizer Rechtstexten evaluiert",
+ "description": "Eine Methode zur Evaluation von Übersetzungsmotoren an Schweizer Rechtstexten: messbare Kriterien, Aufbau des Korpus, doppelblindes Protokoll und methodische Fallstricke.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "de-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Warum genügen automatische Scores für einen Rechtstext nicht?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Weil sie eine oberflächliche Nähe zu einer Referenzübersetzung messen, nicht die Richtigkeit eines Gesetzesverweises. Ein Satz, der den falschen Artikel oder das falsche Gericht zitiert, kann einen sehr guten automatischen Score erhalten: Er ist flüssig, nahe an der Referenz und rechtlich falsch. Bei Rechtstexten müssen Menschen bewerten, nach binären, im Voraus festgelegten Kriterien."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie viele Segmente braucht es, um einen juristischen Übersetzungsmotor zu bewerten?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Es gibt keine allgemeingültige Zahl: Der Umfang hängt von der Anzahl Kriterien, der Seltenheit der beobachteten Phänomene und der angestrebten Genauigkeit ab. Die nützliche Regel liegt anderswo: Das Korpus muss jedes Rechtsgebiet, jede Übersetzungsrichtung und jeden Dokumenttyp abdecken, den Sie tatsächlich bearbeiten, mit genügend Segmenten pro Zelle, damit eine Abweichung nicht an einem einzigen Satz hängt. Ein unausgewogenes Korpus liefert unabhängig von seiner Grösse ein falsches Ergebnis."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Was ist eine Blindbewertung von Übersetzungsmotoren?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Eine Bewertung, bei der die bewertende Person nicht weiss, welcher Motor die bewertete Ausgabe erzeugt hat. Die Ausgaben werden anonymisiert, gemischt und in zufälliger Reihenfolge vorgelegt. Ohne diese Verblindung beeinflusst der Name des Motors die Bewertung in beide Richtungen: Nachsicht gegenüber dem bekannten Motor, Strenge gegenüber dem verdächtigten."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Sollte man dasselbe Segment einmal oder mehrmals bewerten?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Mehrmals, zu verschiedenen Zeitpunkten. Eine Ausgabe kann von einer Generierung zur nächsten variieren oder im Gegenteil exakt gleich bleiben. In einer Beobachtungssitzung ergab die erneute Generierung desselben Satzes bei einigen Segmenten exakt identische Ausgaben, während andere variierten. Eine einmalige Messung sagt nicht, ob die beobachtete Abweichung ein Qualitätsunterschied oder eine Schwankung der Generierung ist."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Welche Kriterien sollte man an Texten des Schweizer Rechts messen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sechs Kriterien lassen sich binär und damit reproduzierbar bewerten: die Richtigkeit des Gesetzesverweises, die terminologische Übereinstimmung mit den amtlichen Texten, die Kohärenz innerhalb eines Dokuments, die Behandlung der Namen von Gerichten und Behörden, der Umgang mit Beträgen und Daten im Schweizer Format sowie die Vollständigkeit des Segments, also keine Auslassung, keine Hinzufügung und kein Störzeichen."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+.meta{font-size:13.5px;color:var(--muted);margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.art{padding:66px 0 26px}
+.art-wrap{max-width:768px;margin:0 auto}
+.art-wrap h2{font-size:clamp(22px,2.6vw,29px);margin:56px 0 16px;letter-spacing:-.022em;scroll-margin-top:96px}
+.art-wrap h3{font-size:18.5px;margin:32px 0 10px;letter-spacing:-.015em}
+.art-wrap p{font-size:17px;line-height:1.72;margin-bottom:18px}
+.art-wrap .art-lead{font-size:19.5px;line-height:1.62;color:var(--ink);margin-bottom:26px}
+.art-wrap ul,.art-wrap ol{margin:0 0 20px;padding-left:22px}
+.art-wrap li{font-size:17px;line-height:1.7;margin-bottom:9px;padding-left:4px}
+.art-wrap li::marker{color:var(--blue-d)}
+.art-wrap strong{color:var(--ink);font-weight:700}
+.art-wrap a:not(.feat-link){color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.art-wrap a:not(.feat-link):hover{color:var(--navy)}
+.toc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 30px;margin:0 0 46px}
+.toc b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;font-weight:700}
+.toc ol{margin:0;padding-left:20px}
+.toc li{font-size:16px;margin-bottom:9px;line-height:1.5;padding-left:2px}
+.toc li::marker{color:var(--blue-d);font-weight:700}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-2)}
+.toc a:hover{color:var(--blue-d);border-color:var(--blue)}
+.art-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 var(--r-bloc) var(--r-bloc) 0;padding:22px 26px;margin:28px 0}
+.art-note p{font-size:15.5px;margin-bottom:10px}
+.art-note p:last-child{margin-bottom:0}
+.crit{border:1px solid var(--line-2);border-radius:var(--r-bloc);padding:22px 26px;margin:18px 0;background:#fff}
+.crit .cn{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-d);margin-bottom:10px}
+.crit .cn i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:block}
+.crit h3{margin:0 0 10px;font-size:18px}
+.crit p{font-size:16px;margin-bottom:12px}
+.crit .q{font-size:14.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin:0}
+.crit .q b{color:var(--ink)}
+.art-end{margin-top:54px;padding-top:26px;border-top:1px solid var(--line)}
+.art-end p{font-size:15.5px}
+@media(max-width:560px){.art{padding:44px 0 18px}.art-wrap p,.art-wrap li{font-size:16.5px}.toc,.crit{padding:22px 20px}}
+</style>
+
+<section class="thero thero-read thero-centre">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Studie.</em> Wie man einen Übersetzungsmotor an Schweizer Rechtstexten evaluiert</h1>
+        <p class="lead">Diese Seite veröffentlicht keine Rangliste, sondern eine Methode: die Kriterien, die sich messen lassen, das Protokoll, das vor Irrtümern schützt, und die Denkfehler, die zu voreiligen Schlüssen führen. Die Ergebnisse eines ersten Korpus werden hier veröffentlicht.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#sommaire" class="btn btn-ghost">Zur Methode</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Sechs binäre Kriterien</b>, so definiert, dass zwei Bewertende zum selben Urteil kommen</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg><span><b>Ein Blindprotokoll</b>: Korpus, Anonymisierung, doppelte Bewertung, Replikation</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><span><b>Sieben methodische Fallstricke</b>, die die meisten veröffentlichten Vergleiche entwerten</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <p class="meta">Vom Rechts- und Sprachteam von Neur.on · 15. September 2026 · Aktualisiert am 15. September 2026</p>
+
+      <p class="art-lead">Die Frage «Welcher Übersetzungsmotor ist der beste für das Schweizer Recht?» hat keine Antwort, solange nicht geklärt ist, an welchen Texten, in welcher Übersetzungsrichtung, nach welchen Kriterien und mit welcher Fehlermarge gemessen wird. Dieses Dokument schlägt eine Methode vor, die jede Rechtsabteilung ohne Labor anwenden und die jede Person Punkt für Punkt anfechten kann.</p>
+
+      <nav class="toc" id="sommaire" aria-label="Inhaltsverzeichnis der Studie">
+        <b>Inhalt</b>
+        <ol>
+          <li><a href="#pourquoi">Warum automatische Scores nicht genügen</a></li>
+          <li><a href="#criteres">Sechs messbare Kriterien</a></li>
+          <li><a href="#corpus">Das Korpus aufbauen</a></li>
+          <li><a href="#protocole">Das Bewertungsprotokoll</a></li>
+          <li><a href="#pieges">Sieben methodische Fallstricke</a></li>
+          <li><a href="#rendre">Über die Ergebnisse berichten</a></li>
+          <li><a href="#suite">Was auf dieser Seite veröffentlicht wird</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="pourquoi">1. Warum automatische Scores nicht genügen</h2>
+
+      <p>Automatische Übersetzungsmetriken vergleichen eine Ausgabe mit einer Referenzübersetzung und messen, wie nahe beide beieinanderliegen. Sie helfen, die Entwicklung eines Systems über mehrere Versionen zu verfolgen. Für einen juristischen Entscheid sind sie irreführend, und zwar aus einem strukturellen Grund: <strong>Sie unterscheiden nicht zwischen einer Nuance der Formulierung und einem Rechtsfehler</strong>.</p>
+
+      <p>Ein Satz, der alle Wörter korrekt wiedergibt, aber einen nicht existierenden Artikel zitiert oder einem ausländischen Gericht eine Zuständigkeit zuweist, bleibt nahe an der Referenz und erhält einen guten Score. Ein völlig korrekter Satz, der anders formuliert ist als die Referenz, wird bestraft. Für Juristinnen und Juristen ist das genau das Gegenteil dessen, was zählt.</p>
+
+      <p>Die Bewertung eines Motors an Rechtstexten muss deshalb <strong>durch Menschen erfolgen, nach binären, im Voraus festgelegten Kriterien</strong>. Binär, weil eine Note auf einer Zehnerskala vor allem die Laune der bewertenden Person misst. Eine geschlossene Frage wie «Ist der zitierte Gesetzesverweis korrekt?» ergibt dagegen bei zwei verschiedenen Personen dasselbe Urteil.</p>
+
+      <h2 id="criteres">2. Sechs messbare Kriterien</h2>
+
+      <p>Jedes Kriterium wird Segment für Segment als konform oder nicht konform bewertet. Ist ein Kriterium auf ein Segment nicht anwendbar, wird es als nicht anwendbar markiert und fällt für dieses Segment aus dem Nenner.</p>
+
+      <div class="crit">
+        <span class="cn"><i></i> Kriterium 1</span>
+        <h3>Richtigkeit des Gesetzesverweises</h3>
+        <p>Zitiert die Ausgabe den richtigen Erlass, mit der Abkürzung der Zielsprache, der richtigen Artikelnummer und der richtigen Untergliederung?</p>
+        <p class="q"><b>Nicht konform, wenn:</b> die Abkürzung jene der Ausgangssprache bleibt, die Abkürzung zu einem anderen Erlass gehört, sich die Artikelnummer oder der Absatz ändert oder die Untergliederung nicht der Nomenklatur der Zielsprache folgt.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Kriterium 2</span>
+        <h3>Terminologische Übereinstimmung mit den amtlichen Texten</h3>
+        <p>Steht der gewählte Begriff in der amtlichen Fassung des zitierten Erlasses oder in einer amtlichen Quelle des Fachgebiets?</p>
+        <p class="q"><b>Nicht konform, wenn:</b> der Begriff ein korrektes Synonym ist, aber in den amtlichen Texten fehlt, aus einer anderen Rechtsordnung entlehnt ist oder einen Begriff wörtlich übersetzt, für den es bereits eine etablierte gesetzliche Entsprechung gibt.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Kriterium 3</span>
+        <h3>Kohärenz innerhalb des Dokuments</h3>
+        <p>Wird ein Ausgangsbegriff im ganzen Dokument, einschliesslich Titeln, Fussnoten und Anhängen, mit demselben Zielbegriff wiedergegeben?</p>
+        <p class="q"><b>Messung:</b> Dieses Kriterium wird nicht pro Segment, sondern pro Dokument bewertet. Erfassen Sie jeden zentralen Ausgangsbegriff, zählen Sie seine verschiedenen Wiedergaben und bewerten Sie mit nicht konform, sobald ein zentraler Begriff ohne Begründung mehr als eine Wiedergabe erhält.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Kriterium 4</span>
+        <h3>Namen von Gerichten und Behörden</h3>
+        <p>Werden die erwähnten Gerichte, Behörden und Register in der Zielsprache mit ihrem Schweizer Namen bezeichnet?</p>
+        <p class="q"><b>Nicht konform, wenn:</b> ein Schweizer Gericht mit dem Namen eines ausländischen Gerichts wiedergegeben wird, ein Behördenname wörtlich übersetzt wird, obwohl eine amtliche Bezeichnung besteht, oder sich die Instanz ändert.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Kriterium 5</span>
+        <h3>Beträge, Daten und Einheiten im Schweizer Format</h3>
+        <p>Sind die Zahlenangaben korrekt und entsprechen sie den Schreibkonventionen der Zielsprache in der Schweiz?</p>
+        <p class="q"><b>Nicht konform, wenn:</b> eine Zahl, ein Zinssatz oder eine Frist von der Quelle abweicht, das Tausendertrennzeichen nicht der Apostroph ist, die Währung einen anderen Code erhält oder ein Datum in der englischen Fassung mehrdeutig wird.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Kriterium 6</span>
+        <h3>Vollständigkeit des Segments</h3>
+        <p>Enthält die Ausgabe den ganzen Inhalt der Quelle und nichts anderes?</p>
+        <p class="q"><b>Nicht konform, wenn:</b> ein Satzteil fehlt, Inhalt hinzugefügt wird, am Anfang oder am Ende der Ausgabe ein Anführungszeichen oder ein Störzeichen erscheint oder die Ausgabe abgeschnitten ist.</p>
+      </div>
+
+      <p>Diese sechs Kriterien wiegen nicht gleich schwer, und man sollte auf keinen Fall einen Durchschnitt daraus bilden. <strong>Trennen Sie disqualifizierende Fehler von Präferenzabweichungen.</strong> Ein falscher Gesetzesverweis und eine Auslassung machen ein Segment unbrauchbar; ein korrekter, aber in den amtlichen Texten fehlender Begriff verlangt eine Korrektur, mehr nicht. Veröffentlichen Sie deshalb zwei getrennte Quoten: den Anteil der Segmente mit mindestens einem disqualifizierenden Fehler und den Anteil der Segmente mit mindestens einer zu korrigierenden Abweichung.</p>
+
+      <h2 id="corpus">3. Das Korpus aufbauen</h2>
+
+      <p>Das Korpus bestimmt das Ergebnis stärker als die Motoren. Vier Anforderungen.</p>
+
+      <h3>Repräsentativität</h3>
+      <p>Das Korpus muss abbilden, was Sie tatsächlich bearbeiten, nicht das, was leicht zu sammeln ist. Kombinieren Sie drei Dimensionen: das Rechtsgebiet (Verträge, Prozessführung, Gesellschaftsrecht, Finanzmarktregulierung, Verwaltungsrecht), den Dokumenttyp (Urkunde, Rechtsschrift, Entscheid, Korrespondenz, Musterklausel) und die Übersetzungsrichtung. <strong>Ein Motor, der von Deutsch nach Französisch gut übersetzt, tut dies von Französisch nach Deutsch nicht unbedingt</strong>: Beide Richtungen werden getrennt gezählt, nie zusammengefasst.</p>
+
+      <h3>Umfang</h3>
+      <p>Es gibt keine magische Zahl von Segmenten: Der sinnvolle Umfang hängt von der Anzahl Kriterien, der Seltenheit der beobachteten Phänomene und der gewünschten Genauigkeit ab. Die praktische Regel lautet, in Zellen zu denken: Jede Kombination aus Rechtsgebiet und Übersetzungsrichtung muss genügend Segmente enthalten, damit eine Abweichung nicht auf einem oder zwei Sätzen beruht. Ein kleines, ausgewogenes Korpus ist besser als ein grosses, das sich auf ein einziges Rechtsgebiet konzentriert.</p>
+
+      <h3>Dichte der Phänomene</h3>
+      <p>Stellen Sie einen Teil des Korpus bewusst aus Segmenten zusammen, die enthalten, was Sie messen wollen: Gesetzesverweise, Gerichtsnamen, Beträge, Daten, regulatorische Begriffe. Ein Korpus aus neutralen Sätzen misst nichts Nützliches, weil alle Motoren daran bestehen.</p>
+
+      <h3>Rückverfolgbarkeit und Vertraulichkeit</h3>
+      <p>Jedes Segment muss seine Herkunft tragen, damit die Richtigkeit in der amtlichen Quelle überprüft werden kann. Verwenden Sie interne Dokumente, pseudonymisieren Sie diese vor jeder Übermittlung an den Motor eines Drittanbieters und dokumentieren Sie diese Bearbeitung: Ein Bewertungskorpus ist eine Datenbearbeitung wie jede andere. Mehr dazu in unserem Artikel über den <a href="{{ROOT}}fr/ressources/blog/secret-professionnel-outils-traduction/">Ort der Verarbeitung</a>.</p>
+
+      <div class="art-note">
+        <p><b>Frieren Sie das Korpus ein und versionieren Sie es.</b> Ein Korpus, das sich zwischen zwei Kampagnen verändert, macht die Ergebnisse unvergleichbar. Geben Sie ihm eine Versionsnummer und ein Datum, und bewahren Sie es für die nächste Kampagne unverändert auf.</p>
+      </div>
+
+      <h2 id="protocole">4. Das Bewertungsprotokoll</h2>
+
+      <ol>
+        <li><strong>Parameter festlegen.</strong> Dasselbe Sprachpaar, dieselben Einstellungen, derselbe Vertraulichkeitsmodus und für alle Motoren dasselbe Glossar oder gar keines. Ein Unterschied in der Konfiguration macht den ganzen Vergleich ungültig.</li>
+        <li><strong>In einem einzigen Zeitfenster generieren</strong> und Datum und Uhrzeit jeder Ausgabe festhalten. Motoren entwickeln sich weiter; eine Ausgabe ohne Datum ist kein Datenpunkt.</li>
+        <li><strong>Ausgaben anonymisieren.</strong> Entfernen Sie jeden Hinweis auf den Motor, auch Formatierungsmerkmale, die ihn verraten, und vergeben Sie eine neutrale Kennung.</li>
+        <li><strong>Die Reihenfolge zufällig bestimmen</strong>, für jede bewertende Person anders, damit sich Ermüdung und Reihenfolgeeffekte nicht auf denselben Motor konzentrieren.</li>
+        <li><strong>Von zwei unabhängigen Personen bewerten lassen</strong>, ohne Austausch untereinander, nach demselben Raster.</li>
+        <li><strong>Die Übereinstimmung zwischen den Bewertenden messen</strong>, bevor Sie die Ergebnisse ansehen. Eine geringe Übereinstimmung zeigt, dass das Raster mehrdeutig ist, nicht dass die Bewertenden schlecht sind: Dann müssen die Definitionen präzisiert und die Bewertung wiederholt werden.</li>
+        <li><strong>Meinungsverschiedenheiten von einer dritten Person entscheiden lassen</strong>, die die Herkunft der Ausgaben ebenfalls nicht kennt, und die daraus abgeleitete Regel für künftige Fälle festhalten.</li>
+        <li><strong>Replizieren.</strong> Wiederholen Sie einen Teil des Korpus im Abstand von einigen Wochen mit denselben Parametern, um die Streuung über die Zeit zu messen.</li>
+      </ol>
+
+      <p>Dieser letzte Punkt ist nicht theoretisch. In einer Beobachtungssitzung ergab die erneute Generierung bestimmter Segmente <strong>exakt identische</strong> Ausgaben, während andere Segmente von einer Generierung zur nächsten variierten. Eine Kampagne, die diese Streuung nicht misst, kann nicht sagen, ob eine Abweichung zwischen zwei Motoren ein Qualitätsunterschied oder ein Zufall der Generierung ist.</p>
+
+      <h2 id="pieges">5. Sieben methodische Fallstricke</h2>
+
+      <ol>
+        <li><strong>Nach einem einzigen Satz urteilen.</strong> Das ist die häufigste und teuerste Falle. Ein gut übersetzter Satz sagt nichts darüber aus, wie sich ein Motor bei einem Dokument von sechzig Seiten verhält, bei dem die Kohärenz zum wichtigsten Kriterium wird.</li>
+        <li><strong>Flüssigkeit mit Genauigkeit verwechseln.</strong> Neuere Motoren erzeugen angenehm lesbare Sätze. Eine flüssige Ausgabe, die einen nicht existierenden Text zitiert, ist gefährlicher als eine holprige, weil sie nicht zur Überprüfung anregt. In derselben Beobachtungssitzung gab eine Ausgabe den Namen des obersten Schweizer Gerichts mit dem eines ausländischen Gerichts wieder, in einem ansonsten tadellos gebauten Satz.</li>
+        <li><strong>Die Streuung zwischen Generierungen vergessen.</strong> Wer eine einzige Ausgabe pro Motor vergleicht, vergleicht zwei Ziehungen. Ohne Replikation kann die gemessene Abweichung vollständig auf den Zufall der Generierung zurückgehen.</li>
+        <li><strong>Übersetzungsrichtungen zusammenfassen.</strong> Ein Durchschnitt aus Deutsch nach Französisch und Französisch nach Deutsch verdeckt genau die Information, die Sie interessiert.</li>
+        <li><strong>Den Namen des Motors sichtbar lassen.</strong> Wer weiss, was bewertet wird, bewertet nicht mehr die Ausgabe, sondern die eigene Meinung über den Motor.</li>
+        <li><strong>Schwere und Präferenz vermischen.</strong> Wer einen falschen Gesetzesverweis und eine diskutable Stilentscheidung in derselben Summe zählt, erhält eine Zahl, die niemand deuten kann.</li>
+        <li><strong>An weit verbreiteten öffentlichen Texten bewerten.</strong> Die meistzitierten Gesetzestexte sind in den Trainingsdaten generalistischer Modelle reichlich vorhanden. Gute Ergebnisse an ihnen sagen nichts über die Leistung an Ihren Dokumenten voraus. Behalten Sie einige davon zur Kontrolle, aber bauen Sie den Kern des Korpus aus weniger exponierten Texten auf.</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>Eine achte Falle, organisatorischer Art.</b> Die Person bewerten lassen, die den Motor ausgewählt hat. Trennen Sie immer, wer entscheidet und wer bewertet; andernfalls bleibt die Blindbewertung der einzige Schutz.</p>
+      </div>
+
+      <h2 id="rendre">6. Über die Ergebnisse berichten</h2>
+
+      <p>Ein glaubwürdiger Bewertungsbericht veröffentlicht alles, was nötig ist, um ihn anzufechten.</p>
+
+      <ul>
+        <li><strong>Die Zusammensetzung des Korpus</strong>: Anzahl Segmente pro Rechtsgebiet und Übersetzungsrichtung, Herkunft, Erstellungsdatum, Version.</li>
+        <li><strong>Die genauen Parameter</strong> jeder Generierung und ihr Datum.</li>
+        <li><strong>Das Kriterienraster</strong> mit den verwendeten Definitionen für Nichtkonformität.</li>
+        <li><strong>Die Übereinstimmungsquote zwischen den Bewertenden</strong> vor der Schlichtung.</li>
+        <li><strong>Die Ergebnisse pro Kriterium und pro Zelle</strong>, nie ein einziger Gesamtscore.</li>
+        <li><strong>Die gemessene Streuung</strong> bei der Replikation.</li>
+        <li><strong>Die Grenzen</strong>, ausdrücklich benannt: was das Korpus nicht abdeckt und was die Methode nicht misst.</li>
+      </ul>
+
+      <p>Und eine Vorsichtsregel: <strong>Verwenden Sie eine Rangliste von Motoren nie als Verkaufsargument</strong>, auch nicht Ihre eigene. Eine Rangliste gilt für ein Korpus, ein Datum und eine Konfiguration. Was sich ehrlich weitergeben lässt, sind Methode und Daten, nicht das Podest.</p>
+
+      <h2 id="suite">7. Was auf dieser Seite veröffentlicht wird</h2>
+
+      <p>Wir wenden diese Methode derzeit auf ein erstes Korpus des Schweizer Rechts an. Es ist nach den Anforderungen unter Punkt 3 aufgebaut und deckt die Sprachpaare der Landessprachen ab. <strong>Die Ergebnisse werden auf dieser Seite veröffentlicht</strong>, mit der Zusammensetzung des Korpus, dem verwendeten Raster, den Übereinstimmungsquoten zwischen den Bewertenden und den Grenzen der Untersuchung.</p>
+
+      <p>Bis dahin nennen wir hier keine Zahl: Eine Methode beweist für sich allein nichts, und einen Score vor dem Protokoll zu veröffentlichen, wäre genau das, wovon dieses Dokument abrät.</p>
+
+      <div class="art-end">
+        <p>Möchten Sie diese Methode auf Ihre eigenen Dokumente anwenden, finden Sie den Vergleich von Ausgaben direkt in der Anwendung: Die Funktion Alternatives von <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/">Text- und Dokumentübersetzung</a> zeigt bis zu vier Vorschläge, jeweils mit dem Motor, der sie erzeugt hat. So bauen Sie ein Bewertungskorpus aus Ihren realen Texten auf. Die Funktionsweise des Schweizer Übersetzungsmotors beschreibt die Seite <a href="{{ROOT}}fr/lexmachina/">LexMachina</a>, und ein <a href="{{ROOT}}fr/comparatif/">begründeter Vergleich der Ansätze</a> ergänzt die Lektüre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="siblings">
+  <div class="container">
+    <h2>Weiterlesen</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/ressources/blog/traduire-contrat-droit-suisse/"><b>Die Viersprachigkeit des Schweizer Rechts</b><span>Warum Terminologie keine Geschmackssache ist und wo Sie sie prüfen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/blog/secret-professionnel-outils-traduction/"><b>Berufsgeheimnis und Ort der Verarbeitung</b><span>Was Sie wissen müssen, bevor Sie ein Korpus dem Motor eines Drittanbieters anvertrauen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/guides/organiser-traduction-cabinet/"><b>Übersetzungen in der Kanzlei organisieren</b><span>Regeln, Rollen und Kennzahlen, um die juristische Übersetzung zu steuern.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Warum genügen automatische Scores für einen Rechtstext nicht?</summary>
+        <p>Weil sie eine oberflächliche Nähe zu einer Referenzübersetzung messen, nicht die Richtigkeit eines Gesetzesverweises. Ein Satz, der den falschen Artikel oder das falsche Gericht zitiert, kann einen sehr guten automatischen Score erhalten: Er ist flüssig, nahe an der Referenz und rechtlich falsch. Bei Rechtstexten müssen Menschen bewerten, nach binären, im Voraus festgelegten Kriterien.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie viele Segmente braucht es, um einen juristischen Übersetzungsmotor zu bewerten?</summary>
+        <p>Es gibt keine allgemeingültige Zahl: Der Umfang hängt von der Anzahl Kriterien, der Seltenheit der beobachteten Phänomene und der angestrebten Genauigkeit ab. Die nützliche Regel liegt anderswo: Das Korpus muss jedes Rechtsgebiet, jede Übersetzungsrichtung und jeden Dokumenttyp abdecken, den Sie tatsächlich bearbeiten, mit genügend Segmenten pro Zelle, damit eine Abweichung nicht an einem einzigen Satz hängt. Ein unausgewogenes Korpus liefert unabhängig von seiner Grösse ein falsches Ergebnis.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was ist eine Blindbewertung von Übersetzungsmotoren?</summary>
+        <p>Eine Bewertung, bei der die bewertende Person nicht weiss, welcher Motor die bewertete Ausgabe erzeugt hat. Die Ausgaben werden anonymisiert, gemischt und in zufälliger Reihenfolge vorgelegt. Ohne diese Verblindung beeinflusst der Name des Motors die Bewertung in beide Richtungen: Nachsicht gegenüber dem bekannten Motor, Strenge gegenüber dem verdächtigten.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Sollte man dasselbe Segment einmal oder mehrmals bewerten?</summary>
+        <p>Mehrmals, zu verschiedenen Zeitpunkten. Eine Ausgabe kann von einer Generierung zur nächsten variieren oder im Gegenteil exakt gleich bleiben. In einer Beobachtungssitzung ergab die erneute Generierung desselben Satzes bei einigen Segmenten exakt identische Ausgaben, während andere variierten. Eine einmalige Messung sagt nicht, ob die beobachtete Abweichung ein Qualitätsunterschied oder eine Schwankung der Generierung ist.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Kriterien sollte man an Texten des Schweizer Rechts messen?</summary>
+        <p>Sechs Kriterien lassen sich binär und damit reproduzierbar bewerten: die Richtigkeit des Gesetzesverweises, die terminologische Übereinstimmung mit den amtlichen Texten, die Kohärenz innerhalb eines Dokuments, die Behandlung der Namen von Gerichten und Behörden, der Umgang mit Beträgen und Daten im Schweizer Format sowie die Vollständigkeit des Segments, also keine Auslassung, keine Hinzufügung und kein Störzeichen.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Diese Methode auf Ihre eigenen Dokumente anwenden</h2>
+      <p>Eine Demo mit einer Fachperson für Schweizer Recht: ein Korpus aus Ihren Texten aufbauen, Ausgaben vergleichen, Abweichungen deuten.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/ressources/etudes/" class="btn-outline">Alle Studien</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>

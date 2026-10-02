@@ -1,0 +1,1019 @@
+[
+  {
+    "slug": "allemand-francais",
+    "short": "Deutsch-Französisch",
+    "resume": "Schweizer Rechtsdeutsch ins Französische, ohne Umweg über Berlin.",
+    "title": "Juristische Übersetzung Deutsch-Französisch · Neur.on",
+    "description": "Schweizer Rechtsdeutsch ins Französische übersetzen: OR, ZGB und SchKG richtig umgesetzt, Schweizer Schreibweise erkannt, Verarbeitung in der Schweiz.",
+    "lede": "Übersetzung Deutsch-Französisch.",
+    "h1": "Schweizer Recht über die Sprachgrenze",
+    "lead": "Ein Zürcher Urteil, das in Genf gelesen wird. Ein Basler Vertrag, der in der Romandie unterzeichnet wird. Dafür braucht es zwei Schritte: das Schweizer Rechtsdeutsch samt Abkürzungen verstehen, dann das französische Wort desselben Gesetzes finden.",
+    "promesses": [
+      {
+        "t": "Schweizer Hochdeutsch",
+        "d": "ss statt ß, Tausender als 15'000, Anführungszeichen «»"
+      },
+      {
+        "t": "Abkürzungen",
+        "d": "aus OR wird CO, aus ZGB CC, aus SchKG LP"
+      },
+      {
+        "t": "Zwei Kernsprachen",
+        "d": "LexMachina übersetzt dieses Sprachpaar direkt"
+      }
+    ],
+    "definition": "Die Bundesgesetze werden auf Deutsch, Französisch und Italienisch erlassen und veröffentlicht, und alle drei Fassungen sind gleichermassen verbindlich. Eine Übersetzung vom Deutschen ins Französische erfindet also keine Entsprechung. Sie findet das Wort, das der Gesetzgeber selbst in der französischen Fassung desselben Artikels geschrieben hat.",
+    "facts": [
+      {
+        "k": "Drei Fassungen, gleicher Rang",
+        "v": "Ein Bundesgesetz liegt auf Deutsch, Französisch und Italienisch vor, und alle drei Texte sind verbindlich. Übersetzen heisst hier, die amtliche französische Fassung zu finden, nicht eine neue zu schreiben.",
+        "s": "Systematische Sammlung des Bundesrechts: SR auf Deutsch, RS auf Französisch und auf Italienisch."
+      },
+      {
+        "k": "Abkürzungen umsetzen",
+        "v": "Aus OR wird CO, aus ZGB CC, aus StGB CP, aus SchKG LP, aus IPRG LDIP. Eine deutsche Abkürzung in einem französischen Text fällt beim ersten Lesen auf."
+      },
+      {
+        "k": "Schweizer Schreibweise",
+        "v": "Das Deutsch der Schweiz kennt kein ß und schreibt immer ss. Ein Dokument mit ß stammt nicht aus der Schweiz, und das ändert oft das anwendbare Recht.",
+        "s": "Ein nützliches Indiz, um in einem Aktenstapel von mehreren hundert Seiten ein ausländisches Dokument zu erkennen."
+      },
+      {
+        "k": "Zahlen und Beträge",
+        "v": "Tausender werden mit Apostroph geschrieben: 15'000. Das Format muss die Übersetzung überstehen, im Fliesstext ebenso wie in Tabellen und im Zahlenanhang."
+      },
+      {
+        "k": "Rechtsprechung des Bundes",
+        "v": "Ein Bundesgerichtsentscheid, auf Deutsch als BGE zitiert, heisst auf Französisch ATF und auf Italienisch DTF, mit derselben Band-, Teil- und Seitenzahl. Die Fundstelle wird umgesetzt, nicht übersetzt."
+      },
+      {
+        "k": "Deutsche Komposita",
+        "v": "Schadenersatzpflicht, Rechtsmittelbelehrung, Handelsregisteramt: Ein deutsches Wort wird auf Französisch zu drei oder vier Wörtern. Der Text wird länger, und das Layout muss den Unterschied auffangen.",
+        "s": "Corrext liefert die Datei im Originalformat zurück, Tabellen und Textfelder inbegriffen."
+      },
+      {
+        "k": "Auf Schweizer Recht trainiert",
+        "v": "LexMachina wurde mit Schweizer Rechts- und Finanztexten trainiert: über 15 Millionen mehrsprachige Segmente, darunter Gesetzbücher und die Rechtsprechung des Bundes."
+      },
+      {
+        "k": "Vertraulichkeit",
+        "v": "Der Modus Highly sensitive content verlangt Speicherung und Verarbeitung ausschliesslich in der Schweiz. Er umfasst Deutsch, Französisch, Italienisch und Englisch, also auch dieses Sprachpaar.",
+        "s": "Im Ausland gehostete Übersetzungsmotoren bleiben verfügbar, mit dem Hinweis Attorney-Client privilege."
+      }
+    ],
+    "termes": [
+      {
+        "de": "Verzugszins",
+        "fr": "intérêt moratoire",
+        "it": "interessi moratori",
+        "en": "default interest",
+        "ref": "Art. 104 OR"
+      },
+      {
+        "de": "Betreibung",
+        "fr": "poursuite",
+        "it": "esecuzione",
+        "en": "debt enforcement",
+        "ref": "Art. 38 SchKG"
+      },
+      {
+        "de": "Rechtsvorschlag",
+        "fr": "opposition",
+        "it": "opposizione",
+        "en": "objection",
+        "ref": "Art. 74 SchKG"
+      },
+      {
+        "de": "Grundbuch",
+        "fr": "registre foncier",
+        "it": "registro fondiario",
+        "en": "land register",
+        "ref": "Art. 942 ZGB"
+      },
+      {
+        "de": "Verfügung",
+        "fr": "décision",
+        "it": "decisione",
+        "en": "ruling",
+        "ref": "Art. 5 VwVG"
+      },
+      {
+        "de": "Handelsregister",
+        "fr": "registre du commerce",
+        "it": "registro di commercio",
+        "en": "commercial register",
+        "ref": "Art. 927 OR"
+      }
+    ],
+    "termes_note": "Sechs Begriffe, die das Schweizer Recht auf Deutsch und auf Französisch je eigen benennt, mit dem Artikel, der die Entsprechung festlegt. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "who_titre": "Drei Situationen, in denen dieses Sprachpaar den Tag bestimmt",
+    "who": [
+      {
+        "vis": "marteau",
+        "a": "Prozessführung",
+        "t": "Ein Deutschschweizer Urteil auswerten",
+        "p": "Das Urteil geht mit LexMachina in die Übersetzung, kommt im ursprünglichen Layout zurück, und die Erwägungen lassen sich am Stück lesen. Heikle Begriffe prüfen Sie per Markierung in Fast lookup CHnell: Es zeigt den amtlichen Gebrauch des Wortes und seine Quelle."
+      },
+      {
+        "vis": "signature",
+        "a": "Transaktionen",
+        "t": "AGB aus Zürich, in Genf unterzeichnet",
+        "p": "Die französische Fassung muss die Begriffe des Obligationenrechts verwenden, nicht deren Umschreibung. Die Full review durch eine juristische Übersetzerin oder einen juristischen Übersetzer bestellen Sie im Projektmanagement, mit der Lieferfrist vor der Freigabe."
+      },
+      {
+        "vis": "institution",
+        "a": "Behörden",
+        "t": "Eine Verfügung, die auf Französisch zu eröffnen ist",
+        "p": "Das Vokabular des Verwaltungsverfahrens ist festgelegt: Verfügung heisst «décision», Einsprache heisst «opposition», Rechtsmittelbelehrung heisst «indication des voies de droit». Corrext hält diese Wahl von Dokument zu Dokument konstant."
+      }
+    ],
+    "faq_titre": "Häufige Fragen zur Übersetzung Deutsch-Französisch",
+    "faq": [
+      {
+        "q": "Unterscheidet sich Schweizer Rechtsdeutsch wirklich vom Deutsch in Deutschland?",
+        "r": "Ja, und nicht nur in der Schreibweise. Das ß gibt es in der Schweiz nicht, Tausender stehen mit Apostroph, und als Anführungszeichen dienen Guillemets. Vor allem verweist der Wortschatz auf andere Gesetze: SchKG, OR und ZGB haben in Deutschland keine direkte Entsprechung. Ein Übersetzungsmotor, der mit Texten aus Deutschland trainiert wurde, erzeugt Begriffe, die es im Schweizer Recht nicht gibt."
+      },
+      {
+        "q": "Wie werden Gesetzesabkürzungen behandelt?",
+        "r": "Sie werden umgesetzt, nie abgeschrieben. Aus OR wird CO, aus ZGB CC, aus StGB CP, aus SchKG LP und aus IPRG LDIP. Lässt der Zusammenhang Zweifel offen, steht der volle Name des Gesetzes statt einer ungefähren Abkürzung."
+      },
+      {
+        "q": "Werden auch Fundstellen der Rechtsprechung umgesetzt?",
+        "r": "Ja. Ein BGE wird auf Französisch als ATF zitiert, mit demselben Band und derselben Seite. Das Bundesblatt heisst auf Deutsch BBl und auf Französisch FF, die Systematische Sammlung wird von SR zu RS. Diese Umsetzungen sind mechanisch. Erst sie machen eine Rechtsschrift vor einer Westschweizer Behörde zitierfähig."
+      },
+      {
+        "q": "Bleibt das Layout bei langen Dokumenten erhalten?",
+        "r": "Ja, die Übersetzung wird im Originalformat geliefert. Die Text- und Dokumentübersetzung nimmt bis zu 25 Dateien zu je 50 MB pro Versand an, in den Formaten .pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx. Der Reiter PDF to Word wandelt einen Scan vorab in ein bearbeitbares Dokument um."
+      },
+      {
+        "q": "Kann der Text durchgehend in der Schweiz bleiben?",
+        "r": "Ja. Die Projekte werden in jedem Fall auf Schweizer Servern gespeichert. Der Modus Highly sensitive content oder der Übersetzungsmotor LexMachina garantieren zusätzlich eine Verarbeitung ausschliesslich in der Schweiz. Wählt jemand im Team einen Drittanbieter-Motor mit Hosting im Ausland, erscheint vor jedem Versand der Hinweis Attorney-Client privilege."
+      }
+    ],
+    "cta_t": "Testen Sie dieses Sprachpaar an einem Ihrer eigenen Dokumente",
+    "cta_p": "Eine Demo mit einer Fachperson für Schweizer Recht, mit Ihren Formaten und Ihrer Terminologie.",
+    "voisins": [
+      [
+        "francais-allemand",
+        "Français vers allemand",
+        "Le sens inverse, avec ses propres pièges"
+      ],
+      [
+        "allemand-anglais",
+        "Allemand vers anglais",
+        "Le droit suisse expliqué à un lecteur de common law"
+      ],
+      [
+        "italien-francais",
+        "Italien vers français",
+        "La troisième langue officielle, et ses termes propres"
+      ]
+    ]
+  },
+  {
+    "slug": "francais-allemand",
+    "short": "Französisch-Deutsch",
+    "resume": "Schweizer Rechtsfranzösisch in ein Deutsch, wie man es in Zürich, Bern oder Chur liest.",
+    "title": "Übersetzung Französisch-Deutsch im Schweizer Recht · Neur.on",
+    "description": "Schweizer Rechtsfranzösisch ins Deutsche: Begriffe der Bundesgesetze, ss und Apostroph bei Tausendern, aus CO, LP und LDIP werden OR, SchKG und IPRG.",
+    "lede": "Übersetzung Französisch-Deutsch.",
+    "h1": "Rechtstexte für die Deutschschweiz",
+    "lead": "Eine Westschweizer Rechtsschrift vor einer Deutschschweizer Instanz, AGB für die ganze Schweiz. Der deutsche Text muss die Wörter der Bundesgesetze verwenden, in Schweizer Schreibweise.",
+    "promesses": [
+      {
+        "t": "Schweizer Hochdeutsch",
+        "d": "überall ss, nie ß, Apostroph bei Tausendern"
+      },
+      {
+        "t": "Abkürzungen",
+        "d": "aus CO wird OR, aus LP SchKG, aus LDIP IPRG"
+      },
+      {
+        "t": "Feste Terminologie",
+        "d": "die Wörter der amtlichen deutschen Fassung, keine Synonyme"
+      }
+    ],
+    "definition": "In den meisten Kantonen wird auf Deutsch Recht gesprochen. Eine Rechtsschrift, AGB oder eine Verfügung auf Französisch brauchen deshalb eine deutsche Fassung mit den Begriffen der Bundesgesetze: jenen, die man in der Deutschschweiz kennt, und jenen, die das Gericht zitieren wird.",
+    "facts": [
+      {
+        "k": "Das Wort gibt es schon",
+        "v": "Jeder Begriff des Obligationenrechts hat einen amtlichen deutschen Ausdruck, in der Fassung, die neben dem französischen Text veröffentlicht ist. Die Übersetzung wählt nicht unter mehreren Synonymen: Sie übernimmt genau diesen Ausdruck.",
+        "s": "Beide Fassungen lassen sich in Fast lookup CHnell nebeneinander lesen, mit Fundstelle."
+      },
+      {
+        "k": "Abkürzungen umsetzen",
+        "v": "Aus CO wird OR, aus CC ZGB, aus CP StGB, aus LP SchKG, aus LDIP IPRG. Das Bankengesetz wird mit BankG abgekürzt, nicht mit einer improvisierten Kurzform."
+      },
+      {
+        "k": "Nie ß",
+        "v": "Das Schweizer Hochdeutsch schreibt immer ss: Strasse, Massnahme, gemäss. Ein Text mit ß zeigt sofort, dass er nicht für die Schweiz geschrieben wurde.",
+        "s": "Das gilt auch für Kopfzeilen, Tabellen und Dateinamen."
+      },
+      {
+        "k": "Beträge und Daten",
+        "v": "Tausender behalten den Apostroph, 15'000, und Beträge bleiben in Schweizer Franken. Formatumstellungen beschädigen Finanztabellen häufiger als Fehler im Wortschatz."
+      },
+      {
+        "k": "Falsche Freunde aus der Romandie",
+        "v": "Der «for» eines Vertrags ist ein Gerichtsstand, kein Ort. Ein «recours de droit administratif» ist nicht in allen Verfahren ein Rekurs. Solche Verschiebungen stammen aus dem Französisch Frankreichs oder aus kantonalem Sprachgebrauch."
+      },
+      {
+        "k": "Komposita bilden",
+        "v": "Wo das Französische vier Wörter aneinanderreiht, erwartet das Deutsche ein einziges Kompositum: Aus «obligation de réparer le dommage» wird Schadenersatzpflicht. Eine Wort-für-Wort-Übertragung liest sich wie eine Übersetzung."
+      },
+      {
+        "k": "Zwei Kernsprachen",
+        "v": "Französisch und Deutsch sind zwei der vier Kernsprachen von LexMachina, trainiert mit über 15 Millionen Segmenten aus Schweizer Rechts- und Finanztexten.",
+        "s": "Mit Italienisch und Englisch sind es auch die einzigen Sprachen, die im Modus Highly sensitive content verfügbar sind."
+      },
+      {
+        "k": "Kohärenz über die Zeit",
+        "v": "Ein Begriff muss im Vertrag samt Anhang und in den Nachträgen, die sechs Monate später unterzeichnet werden, gleich wiedergegeben werden. Die terminologischen Ressourcen von CHnell tragen diese Entscheidungen von einem Projekt ins nächste."
+      }
+    ],
+    "termes": [
+      {
+        "de": "Aktiengesellschaft",
+        "fr": "société anonyme",
+        "it": "società anonima",
+        "en": "company limited by shares",
+        "ref": "Art. 620 OR"
+      },
+      {
+        "de": "Verwaltungsrat",
+        "fr": "conseil d'administration",
+        "it": "consiglio d'amministrazione",
+        "en": "board of directors",
+        "ref": "Art. 707 OR"
+      },
+      {
+        "de": "Generalversammlung",
+        "fr": "assemblée générale",
+        "it": "assemblea generale",
+        "en": "general meeting",
+        "ref": "Art. 698 OR"
+      },
+      {
+        "de": "Revisionsstelle",
+        "fr": "organe de révision",
+        "it": "ufficio di revisione",
+        "en": "auditor",
+        "ref": "Art. 727 OR"
+      },
+      {
+        "de": "Bürgschaft",
+        "fr": "cautionnement",
+        "it": "fideiussione",
+        "en": "contract of surety",
+        "ref": "Art. 492 OR"
+      },
+      {
+        "de": "Schadenersatz",
+        "fr": "dommages-intérêts",
+        "it": "risarcimento del danno",
+        "en": "damages",
+        "ref": "Art. 107 OR"
+      }
+    ],
+    "termes_note": "Der Wortschatz des Gesellschafts- und Vertragsrechts, in der genauen Form der deutschen, französischen und italienischen Fassung des Obligationenrechts. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "who_titre": "Drei Momente, in denen die deutsche Fassung gefragt ist",
+    "who": [
+      {
+        "vis": "marteau",
+        "a": "Prozessführung",
+        "t": "Eine Westschweizer Rechtsschrift auf Deutsch",
+        "p": "Zuerst werden Rechtsbegehren und Entscheidzitate umgesetzt: Aus ATF wird BGE, aus CO wird OR. Das juristische Lektorat prüft danach die Argumentation, die sich wie ein auf Deutsch verfasster Text lesen muss."
+      },
+      {
+        "vis": "societe",
+        "a": "Unternehmen",
+        "t": "AGB für die ganze Schweiz",
+        "p": "Gerichtsstandsklausel, Verjährungsklausel und Konventionalstrafe lassen keinen Auslegungsspielraum: Sie übernehmen die Begriffe des Obligationenrechts. Die Übereinstimmung der beiden Fassungen wird Zeile für Zeile geprüft."
+      },
+      {
+        "vis": "envoi",
+        "a": "Behörden",
+        "t": "Eine Medienmitteilung für zwei Sprachregionen",
+        "p": "Der deutsche Text muss am selben Tag erscheinen, auf demselben Sprachniveau. Das Projektmanagement organisiert das interne Lektorat und berechnet den Zeitaufwand aus der erkannten Zahl der Normseiten."
+      }
+    ],
+    "faq_titre": "Häufige Fragen zur Übersetzung Französisch-Deutsch",
+    "faq": [
+      {
+        "q": "Schreibt man auf Hochdeutsch oder auf Schweizerdeutsch?",
+        "r": "Auf Hochdeutsch, in der Schweizer Variante. Schweizerdeutsch ist eine gesprochene Sprache: Kein Rechtstext wird im Dialekt verfasst. Die Schweizer Variante des Hochdeutschen verlangt ss anstelle von ß, den Apostroph bei Tausendern, Guillemets als Anführungszeichen und den Wortschatz der Bundesgesetze."
+      },
+      {
+        "q": "Wie vermeidet man Begriffe aus dem deutschen oder österreichischen Recht?",
+        "r": "Indem man von Schweizer Texten ausgeht statt von einem allgemeinen Korpus. LexMachina ist auf Schweizer Recht trainiert. Jeder zweifelhafte Begriff lässt sich in Fast lookup CHnell prüfen: Es zeigt das amtliche Segment, seine Ausgangssprache und seine Fundstelle. Ein Begriff, der in keinem Schweizer Text vorkommt, hat im Dokument nichts verloren."
+      },
+      {
+        "q": "Können beide Fassungen eines Vertrags massgebend sein?",
+        "r": "Die Parteien können das vereinbaren, und bei einem zweisprachigen Schweizer Vertrag ist das häufig. Dann müssen beide Fassungen Begriff für Begriff abgeglichen werden, denn eine Abweichung im Wortschatz wird zu einer Abweichung im Recht. Für diesen Fall ist die Double review mit Zertifikat vorgesehen."
+      },
+      {
+        "q": "Lässt sich die firmeneigene Terminologie vorgeben?",
+        "r": "Ja. Fast lookup CHnell deckt 30 Fachgebiete aus amtlichen Quellen ab, und Ihre eigenen Ressourcen kommen hinzu, privat oder geteilt. Ihre Hausbegriffe erscheinen dann in den folgenden Übersetzungen, mit ihrem Kontext."
+      },
+      {
+        "q": "Wo wird das Dokument verarbeitet?",
+        "r": "Gespeichert wird in jedem Fall in der Schweiz. Mit LexMachina oder im Modus Highly sensitive content gilt das auch für die Verarbeitung, und der Inhalt wird nicht als Translation Memory wiederverwendet. Drittanbieter-Motoren mit Hosting im Ausland lösen den Hinweis Attorney-Client privilege aus und setzen ein pseudonymisiertes Dokument voraus."
+      }
+    ],
+    "cta_t": "Lassen Sie Ihre deutsche Fassung von einer Rechtslinguistin oder einem Rechtslinguisten prüfen",
+    "cta_p": "Eine Demo mit Ihren Dokumenten, der Terminologie und den Formaten Ihrer Organisation.",
+    "voisins": [
+      [
+        "allemand-francais",
+        "Allemand vers français",
+        "Le sens inverse, avec ses propres pièges"
+      ],
+      [
+        "francais-anglais",
+        "Français vers anglais",
+        "Le même texte pour un dossier international"
+      ],
+      [
+        "italien-francais",
+        "Italien vers français",
+        "La troisième langue officielle, et ses termes propres"
+      ]
+    ]
+  },
+  {
+    "slug": "allemand-anglais",
+    "short": "Deutsch-Englisch",
+    "resume": "Schweizer Recht auf Deutsch, lesbar gemacht für Leserinnen und Leser aus dem Common Law.",
+    "title": "Juristische Übersetzung Deutsch-Englisch · Neur.on",
+    "description": "Juristische Übersetzung Deutsch-Englisch: Englische Gesetzesfassungen sind unverbindlich, Schweizer Rechtsbegriffe behalten ihre Originalbezeichnung.",
+    "lede": "Übersetzung Deutsch-Englisch.",
+    "h1": "Schweizer Recht verständlich machen",
+    "lead": "Eine Due Diligence, die von London aus geführt wird. Ein Bericht für eine Muttergesellschaft in den USA. Auf Englisch gibt es keine amtlichen Schweizer Begriffe: Die Übersetzung erklärt, ohne ein Recht zu erfinden, das es nicht gibt.",
+    "promesses": [
+      {
+        "t": "Keine Amtssprache",
+        "d": "englische Fassungen Schweizer Gesetze dienen nur der Information"
+      },
+      {
+        "t": "Begriffe ohne Entsprechung",
+        "d": "Betreibung und Verfügung behalten ihre Originalbezeichnung"
+      },
+      {
+        "t": "Verarbeitung in der Schweiz",
+        "d": "Englisch gehört zu den vier Kernsprachen"
+      }
+    ],
+    "definition": "Englisch ist keine Amtssprache des Bundes. Die Bundesgesetze sind auf Deutsch, Französisch und Italienisch verbindlich. Ihre englischen Fassungen sind Übersetzungen zu Informationszwecken, ohne rechtliche Wirkung. Ein englisches Dokument dient also dem Verständnis und der Entscheidung, nie als Grundlage einer Auslegung vor einer Schweizer Behörde.",
+    "facts": [
+      {
+        "k": "Keine verbindliche Fassung",
+        "v": "Die englischen Übersetzungen der Bundesgesetze werden zu Informationszwecken bereitgestellt und haben keine Gesetzeskraft. Massgebend bleibt der deutsche, französische oder italienische Text.",
+        "s": "Dieser Vorbehalt steht auf den vom Bund veröffentlichten englischen Übersetzungen."
+      },
+      {
+        "k": "Begriffe ohne Entsprechung",
+        "v": "Die Betreibung ist keine «debt collection» im angelsächsischen Sinn, und die Verfügung ist keine «decision» des Common Law. Üblich ist, den Schweizer Begriff beizubehalten und ihn einmal zu erklären."
+      },
+      {
+        "k": "Die umgekehrte Falle",
+        "v": "Consideration, trust, estoppel, discovery: Diese Begriffe haben im Schweizer Recht kein Gegenstück. Wer sie für ein Schweizer Konzept verwendet, erzeugt einen Sinnfehler, der beim Lesen nicht auffällt."
+      },
+      {
+        "k": "Gesellschaften",
+        "v": "Aktiengesellschaft wird in den Texten des Bundes mit «company limited by shares» wiedergegeben, nicht mit «corporation». Das Kürzel AG bleibt im Firmennamen stehen, der nie übersetzt wird.",
+        "s": "Eine im Handelsregister eingetragene Firma behält ihre eingetragene Schreibweise."
+      },
+      {
+        "k": "Gesetzliche Fundstellen",
+        "v": "Ein Artikelzitat bleibt im Original: Art. 104 OR oder Art. 104 CO, gefolgt vom vollen Namen des Gesetzes. Ein erfundenes englisches Kürzel macht die Quelle für die Empfängerseite unauffindbar."
+      },
+      {
+        "k": "Finanzen und Compliance",
+        "v": "FINMA-Berichte, Prospekte und Compliance-Dokumente zirkulieren auf Englisch. Die Schweizer Finanzterminologie findet sich in CHnell, das 30 Fachgebiete aus amtlichen Quellen abdeckt."
+      },
+      {
+        "k": "Umfang einer Due Diligence",
+        "v": "Die Text- und Dokumentübersetzung nimmt bis zu 25 Dateien zu je 50 MB pro Versand an, und der Reiter PDF to Word macht aus einem Scan ein bearbeitbares Dokument. Das zählt, wenn ein grosser Teil der Unterlagen eingescannt ankommt."
+      },
+      {
+        "k": "Vertraulichkeit",
+        "v": "Englisch gehört zu den vier Sprachen des Modus Highly sensitive content: Speicherung und Verarbeitung ausschliesslich in der Schweiz, ohne Wiederverwendung des Inhalts als Translation Memory."
+      }
+    ],
+    "termes": [
+      {
+        "de": "Bankgeheimnis",
+        "fr": "secret bancaire",
+        "it": "segreto bancario",
+        "en": "banking secrecy",
+        "ref": "Art. 47 BankG"
+      },
+      {
+        "de": "Geldwäscherei",
+        "fr": "blanchiment d'argent",
+        "it": "riciclaggio di denaro",
+        "en": "money laundering",
+        "ref": "Art. 305bis StGB"
+      },
+      {
+        "de": "Verwaltungsrat",
+        "fr": "conseil d'administration",
+        "it": "consiglio d'amministrazione",
+        "en": "board of directors",
+        "ref": "Art. 707 OR"
+      },
+      {
+        "de": "Revisionsstelle",
+        "fr": "organe de révision",
+        "it": "ufficio di revisione",
+        "en": "auditor",
+        "ref": "Art. 727 OR"
+      },
+      {
+        "de": "Aktiengesellschaft",
+        "fr": "société anonyme",
+        "it": "società anonima",
+        "en": "company limited by shares",
+        "ref": "Art. 620 OR"
+      },
+      {
+        "de": "Konkurs",
+        "fr": "faillite",
+        "it": "fallimento",
+        "en": "bankruptcy",
+        "ref": "Art. 197 SchKG"
+      }
+    ],
+    "termes_note": "Die deutsche, die französische und die italienische Spalte stammen aus den amtlichen Fassungen. Die englische Spalte folgt den Übersetzungen, die der Bund zu Informationszwecken veröffentlicht.",
+    "who_titre": "Drei Dossiers, die über das Englische laufen",
+    "who": [
+      {
+        "vis": "loupe",
+        "a": "M&A",
+        "t": "Ein Datenraum für einen ausländischen Käufer",
+        "p": "Statuten, Verträge und Handelsregisterauszüge gehen stapelweise in die Übersetzung und kommen in ihrem Format zurück. Schweizer Begriffe behalten ihre Originalbezeichnung und werden einmal erklärt. Das erspart dem Käuferteam Rückfragen."
+      },
+      {
+        "vis": "bouclier",
+        "a": "Banken",
+        "t": "Ein Compliance-Bericht für den Konzern",
+        "p": "Der Wortschatz der Aufsicht und des Bankgeheimnisses muss von Quartal zu Quartal stabil bleiben. Der Modus Highly sensitive content hält die gesamte Verarbeitung in der Schweiz, während der Bericht zirkuliert."
+      },
+      {
+        "vis": "sentence",
+        "a": "Schiedsverfahren",
+        "t": "Deutschschweizer Akten auf Englisch",
+        "p": "Das Schiedsgericht liest Englisch, entscheidet aber nach Schweizer Recht. Die Alternativen mehrerer Übersetzungsmotoren zeigen die konkurrierenden Formulierungen, und die Rechtsvertretung wählt jene, die sie vor dem Schiedsgericht vertreten kann."
+      }
+    ],
+    "faq_titre": "Häufige Fragen zur Übersetzung Deutsch-Englisch",
+    "faq": [
+      {
+        "q": "Hat die englische Übersetzung eines Schweizer Gesetzes rechtliche Wirkung?",
+        "r": "Nein. Englisch ist keine Amtssprache des Bundes. Die Bundesgesetze sind auf Deutsch, Französisch und Italienisch verbindlich. Die englischen Fassungen dienen der Information, und vor einer Schweizer Behörde kann man sich nicht auf sie berufen. Für ein verbindliches Zitat wird die deutsche, französische oder italienische Fassung übernommen, bei Bedarf mit Übersetzung."
+      },
+      {
+        "q": "Soll man Schweizer Begriffe übersetzen oder beibehalten?",
+        "r": "Beides, in dieser Reihenfolge. Der Schweizer Begriff bleibt stehen, wird beim ersten Vorkommen erklärt und danach unverändert verwendet. Nur so lassen sich Betreibung oder Verfügung wiedergeben, ohne sie in Begriffe des Common Law umzuwandeln, die nicht dasselbe bedeuten."
+      },
+      {
+        "q": "Wie geht man mit Firmennamen und Kürzeln um?",
+        "r": "Sie werden nicht übersetzt. Eine Gesellschaft, die im Handelsregister als AG oder GmbH eingetragen ist, behält diese Form im ganzen Dokument. Nur die Rechtsform kann einmal erklärt werden, zum Beispiel «company limited by shares» für die Aktiengesellschaft."
+      },
+      {
+        "q": "Sind englische Übersetzungen weniger präzise als andere Sprachpaare?",
+        "r": "Englisch ist eine der vier Kernsprachen von LexMachina, das mit Schweizer Rechts- und Finanztexten trainiert wurde. Anders ist nicht die Qualität der Sprache, sondern der Status des Textes: Er dient der Information, weil Schweizer Recht nicht auf Englisch geschrieben wird."
+      },
+      {
+        "q": "Kann das Dokument in der Schweiz bleiben, wenn der Empfänger im Ausland sitzt?",
+        "r": "Ja. Der Ort der Verarbeitung hängt nicht vom Empfänger ab, sondern vom gewählten Übersetzungsmotor. Mit LexMachina oder im Modus Highly sensitive content bleiben Speicherung und Verarbeitung ausschliesslich in der Schweiz. Die übersetzte Datei versenden Sie danach über Ihre eigenen Kanäle."
+      }
+    ],
+    "cta_t": "Zeigen Sie uns ein Deutschschweizer Dossier, das auf Englisch gelesen werden muss",
+    "cta_p": "Eine Demo mit Ihren echten Unterlagen und der Terminologie Ihrer Branche.",
+    "voisins": [
+      [
+        "anglais-allemand",
+        "Anglais vers allemand",
+        "Le sens inverse, pour les contrats de droit suisse"
+      ],
+      [
+        "allemand-francais",
+        "Allemand vers français",
+        "La même source, pour la Suisse romande"
+      ],
+      [
+        "francais-anglais",
+        "Français vers anglais",
+        "Le droit suisse romand pour un dossier international"
+      ]
+    ]
+  },
+  {
+    "slug": "anglais-allemand",
+    "short": "Englisch-Deutsch",
+    "resume": "Auf Englisch verfasste Verträge, sicher im Schweizer Recht verankert.",
+    "title": "Verträge Englisch-Deutsch übersetzen · Neur.on",
+    "description": "Englische Verträge unter Schweizer Recht ins Deutsche übersetzen: Die deutsche Fassung verankert jede Klausel in den genauen Begriffen des Obligationenrechts.",
+    "lede": "Übersetzung Englisch-Deutsch.",
+    "h1": "Den Vertrag im Schweizer Recht verankern",
+    "lead": "Ein Unternehmenskaufvertrag, auf Englisch verfasst, aber Schweizer Recht unterstellt. Die deutsche Fassung, die die Behörde lesen wird, ordnet jede Klausel einem Begriff des Obligationenrechts zu.",
+    "promesses": [
+      {
+        "t": "Gesetzliche Verankerung",
+        "d": "jede Klausel auf die Begriffe des Obligationenrechts zurückgeführt"
+      },
+      {
+        "t": "Schweizer Hochdeutsch",
+        "d": "ss, Apostroph bei Tausendern, Schweizer Kürzel beibehalten"
+      },
+      {
+        "t": "Verarbeitung in der Schweiz",
+        "d": "beide Sprachen sind Kernsprachen von LexMachina"
+      }
+    ],
+    "definition": "Ein englischer Vertrag kann ohne Weiteres Schweizer Recht unterstehen: Die Parteien wählen die Sprache, das anwendbare Recht ist eine andere Frage. Die deutsche Übersetzung dient dann der Gegenpartei, einer Behörde oder einem Schweizer Gericht als Lesefassung. Sie muss die Begriffe des Obligationenrechts verwenden.",
+    "facts": [
+      {
+        "k": "Sprache und anwendbares Recht",
+        "v": "Die Sprache des Vertrags und das Recht, dem er untersteht, sind zwei getrennte Entscheidungen. Ein englischer Text unter Schweizer Recht wird nach dem Obligationenrecht ausgelegt, nicht nach den Gepflogenheiten des Common Law."
+      },
+      {
+        "k": "Klauseln ohne Entsprechung",
+        "v": "Indemnify and hold harmless, best efforts, representations and warranties: Für diese Formeln gibt es keine genaue Entsprechung. Sie werden mit den Schweizer Begriffen der Gewährleistung, der Sorgfalt und der Haftung wiedergegeben, nicht Wort für Wort."
+      },
+      {
+        "k": "Konventionalstrafe",
+        "v": "Eine «liquidated damages clause» wird im Schweizer Recht als Konventionalstrafe gelesen, mit der Regelung von Art. 160 OR und der Möglichkeit für das Gericht, eine übermässig hohe Strafe herabzusetzen."
+      },
+      {
+        "k": "Internationale Schiedsgerichtsbarkeit",
+        "v": "Eine Schiedsklausel mit Sitz in der Schweiz fällt unter das Kapitel über die internationale Schiedsgerichtsbarkeit im Bundesgesetz über das Internationale Privatrecht, kurz IPRG.",
+        "s": "Das Schiedsgericht entscheidet selbst über seine Zuständigkeit, Art. 186 IPRG."
+      },
+      {
+        "k": "Schreibweise und Format",
+        "v": "Die deutsche Fassung folgt den Schweizer Konventionen: ss und nie ß, Tausender als 15'000, Beträge in Schweizer Franken. Daten und Querverweise müssen mit dem Original übereinstimmen."
+      },
+      {
+        "k": "Vertragsdefinitionen",
+        "v": "Ein angelsächsischer Vertrag beginnt mit einer langen Liste definierter Begriffe. Jeder definierte Begriff braucht genau eine deutsche Entsprechung, ohne Abweichung im ganzen Dokument samt Anhang.",
+        "s": "Die terminologischen Ressourcen von CHnell tragen diese Entscheidungen von Anhang zu Anhang."
+      },
+      {
+        "k": "Umfang und Anhang",
+        "v": "Der Anhang mit Zahlen, Übertragungstabellen und Vertragslisten macht oft den grössten Teil der Seiten aus. Corrext liefert Word-, Excel- und PowerPoint-Dateien im Originalformat zurück."
+      },
+      {
+        "k": "Vertraulichkeit",
+        "v": "Englisch und Deutsch gehören zu den vier Sprachen des Modus Highly sensitive content: Speicherung und Verarbeitung ausschliesslich in der Schweiz, ohne Wiederverwendung als Translation Memory."
+      }
+    ],
+    "termes": [
+      {
+        "de": "Schiedsgericht",
+        "fr": "tribunal arbitral",
+        "it": "tribunale arbitrale",
+        "en": "arbitral tribunal",
+        "ref": "Art. 176 IPRG"
+      },
+      {
+        "de": "Zuständigkeit",
+        "fr": "compétence",
+        "it": "competenza",
+        "en": "jurisdiction",
+        "ref": "2. Titel ZPO"
+      },
+      {
+        "de": "Konventionalstrafe",
+        "fr": "clause pénale",
+        "it": "pena convenzionale",
+        "en": "contractual penalty",
+        "ref": "Art. 160 OR"
+      },
+      {
+        "de": "Abtretung",
+        "fr": "cession de créance",
+        "it": "cessione del credito",
+        "en": "assignment of a claim",
+        "ref": "Art. 164 OR"
+      },
+      {
+        "de": "Verjährung",
+        "fr": "prescription",
+        "it": "prescrizione",
+        "en": "prescription",
+        "ref": "Art. 127 OR"
+      },
+      {
+        "de": "Solidarschuld",
+        "fr": "solidarité passive",
+        "it": "debito solidale",
+        "en": "joint and several liability",
+        "ref": "Art. 143 OR"
+      }
+    ],
+    "termes_note": "Die Begriffe, die eine englische Klausel im Schweizer Recht wiederfinden muss, mit dem Artikel, der sie regelt. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "who_titre": "Drei Verträge, die auf Englisch eintreffen",
+    "who": [
+      {
+        "vis": "signature",
+        "a": "M&A",
+        "t": "Ein Schweizer Unternehmenskaufvertrag",
+        "p": "Zusicherungen und Gewährleistungen, Freistellungsklausel und Schwellenwerte werden mit den Begriffen des Obligationenrechts wiedergegeben. Die Full review durch eine juristische Übersetzerin oder einen juristischen Übersetzer gilt zuerst diesen Klauseln, nicht dem beschreibenden Anhang."
+      },
+      {
+        "vis": "financement",
+        "a": "Finanzierung",
+        "t": "Ein Kredit mit einem ausländischen Kreditgeber",
+        "p": "Sicherheiten, Abtretung von Forderungen und Solidarschuld der Kreditnehmer sind im Schweizer Recht präzise Begriffe. Ein schwankender Begriff in der deutschen Fassung wird bei der Durchsetzung zur Unsicherheit."
+      },
+      {
+        "vis": "verrou",
+        "a": "Rechtsabteilung",
+        "t": "Ein Standard-NDA auf Deutsch",
+        "p": "Ist die deutsche Fassung einmal festgelegt, dient sie als Referenz für alle folgenden Verträge. Die freigegebenen Begriffe finden sich in Fast lookup CHnell, Ihre eigenen Ressourcen neben den amtlichen Quellen."
+      }
+    ],
+    "faq_titre": "Häufige Fragen zur Übersetzung Englisch-Deutsch",
+    "faq": [
+      {
+        "q": "Ist ein Vertrag auf Englisch nach Schweizer Recht gültig?",
+        "r": "Ja. Die Parteien können die Vertragssprache frei wählen, und Schweizer Recht kann auf einen englischen Text anwendbar sein. Die Schwierigkeit ist praktischer Natur: Vor einer Behörde oder einem Gericht in der Deutschschweiz wird die deutsche Fassung gelesen, und die angelsächsischen Begriffe müssen ohnehin dem Obligationenrecht zugeordnet werden."
+      },
+      {
+        "q": "Wie übersetzt man eine Klausel ohne Schweizer Entsprechung?",
+        "r": "Man übersetzt die angestrebte Wirkung mit den Begriffen des Schweizer Rechts, nicht die ursprüngliche Formel. Eine Freistellungsklausel wird mit Haftung und Gewährleistung ausgedrückt, eine «liquidated damages clause» wird zur Konventionalstrafe. Diese Wahl trifft die Juristin oder der Jurist: Die maschinelle Übersetzung bereitet den Text vor, das juristische Lektorat entscheidet."
+      },
+      {
+        "q": "Soll man die englischen Begriffsdefinitionen des Vertrags beibehalten?",
+        "r": "Bei Begriffen, die nur diese Transaktion betreffen, ist das üblich, sofern die Wahl konsequent und kenntlich ist. Jeder definierte Begriff braucht eine einzige Behandlung, identisch übernommen im Anhang und in den Nachträgen. Abweichungen von einem Dokument zum anderen sind die häufigste Quelle von Auslegungsstreitigkeiten."
+      },
+      {
+        "q": "Können beide Fassungen gleichzeitig massgebend sein?",
+        "r": "Die Parteien können das vorsehen, aber es ist eine folgenreiche Wahl: Jede Abweichung zwischen den Fassungen wird zur Auslegungsfrage. Einfacher ist eine Vorrangklausel, die festlegt, welche Fassung gilt. Sind beide Fassungen massgebend, ist die Double review mit Zertifikat die passende Kontrollstufe."
+      },
+      {
+        "q": "Wo wird der Vertrag verarbeitet?",
+        "r": "In jedem Fall auf Schweizer Servern. Mit LexMachina oder im Modus Highly sensitive content bleibt auch die Verarbeitung ausschliesslich in der Schweiz, und der Inhalt fliesst in kein Translation Memory. Wird ein Drittanbieter-Motor mit Hosting im Ausland gewählt, erscheint vor dem Versand der Hinweis Attorney-Client privilege."
+      }
+    ],
+    "cta_t": "Legen Sie uns eine schwierige Klausel vor",
+    "cta_p": "Eine Demo mit Ihren eigenen Verträgen, mit einer Fachperson für Schweizer Obligationenrecht.",
+    "voisins": [
+      [
+        "allemand-anglais",
+        "Allemand vers anglais",
+        "Le sens inverse, pour un lecteur de common law"
+      ],
+      [
+        "francais-anglais",
+        "Français vers anglais",
+        "Le droit suisse romand pour un dossier international"
+      ],
+      [
+        "allemand-francais",
+        "Allemand vers français",
+        "La paire interne la plus demandée"
+      ]
+    ]
+  },
+  {
+    "slug": "francais-anglais",
+    "short": "Französisch-Englisch",
+    "resume": "Westschweizer Recht, lesbar gemacht für ein internationales Dossier.",
+    "title": "Juristische Übersetzung Französisch-Englisch · Neur.on",
+    "description": "Westschweizer Recht auf Englisch: Schiedsverfahren, Bundesgerichtsentscheide und Compliance, mit englischen Gesetzesfassungen, die nur informieren.",
+    "lede": "Übersetzung Französisch-Englisch.",
+    "h1": "Das Westschweizer Dossier, international lesbar",
+    "lead": "In Genf und Lausanne wird auf Französisch gearbeitet und oft auf Englisch plädiert. Die Übersetzung macht das Schweizer Recht verständlich und hält fest, dass keine englische Fassung eines Schweizer Gesetzes verbindlich ist.",
+    "promesses": [
+      {
+        "t": "Keine Amtssprache",
+        "d": "englische Gesetzesfassungen dienen nur der Information"
+      },
+      {
+        "t": "Schiedsverfahren",
+        "d": "der Wortschatz des 12. Kapitels IPRG, Begriff für Begriff"
+      },
+      {
+        "t": "Verarbeitung in der Schweiz",
+        "d": "Französisch und Englisch sind Kernsprachen von LexMachina"
+      }
+    ],
+    "definition": "Schweizer Gesetze sind auf Deutsch, Französisch und Italienisch verbindlich. Ihre englischen Fassungen dienen der Information und haben keine Gesetzeskraft. Eine Übersetzung aus dem Französischen ins Englische dient also dem Verständnis, der Verhandlung oder dem Plädoyer. Muss ein Zitat verbindlich sein, verweist sie immer auf den französischen Text.",
+    "facts": [
+      {
+        "k": "Keine englische Fassung ist verbindlich",
+        "v": "Die englischen Übersetzungen der Bundesgesetze werden zu Informationszwecken bereitgestellt. Das verbindliche Zitat bleibt auf Französisch, Deutsch oder Italienisch, allenfalls gefolgt von seiner Übersetzung.",
+        "s": "Dieser Vorbehalt steht auf den vom Bund veröffentlichten englischen Übersetzungen."
+      },
+      {
+        "k": "Internationale Schiedsgerichtsbarkeit",
+        "v": "Ein Schiedssitz in der Schweiz fällt unter das Kapitel über die internationale Schiedsgerichtsbarkeit im Bundesgesetz über das Internationale Privatrecht. Zuständigkeit, Schiedsspruch und Beschwerde haben dort je einen festen Begriff.",
+        "s": "Die Beschwerde gegen einen Schiedsspruch geht an das Bundesgericht."
+      },
+      {
+        "k": "Einen Entscheid zitieren",
+        "v": "Ein ATF (auf Deutsch BGE) bleibt im englischen Text ein ATF, mit Band, Teil und Seite. Wer ihn in eine angelsächsische Fundstelle umwandelt, macht den Entscheid für die Gegenpartei wie für das Gericht unauffindbar."
+      },
+      {
+        "k": "Das Bundesgericht",
+        "v": "In den englischen Texten des Bundes heisst die Institution Federal Supreme Court. Supreme Court allein kann mit anderen Gerichten verwechselt werden."
+      },
+      {
+        "k": "Begriffe ohne Entsprechung",
+        "v": "Poursuite, séquestre, ordonnance pénale (Betreibung, Arrest, Strafbefehl): Diese Begriffe haben im Common Law kein genaues Gegenstück. Sie werden erst erklärt und dann im ganzen Dossier mit einem festen Begriff wiedergegeben."
+      },
+      {
+        "k": "Finanzen und Reporting",
+        "v": "Prospekte, Geschäftsberichte und Compliance-Dokumente zirkulieren auf Englisch. Die Schweizer Finanzterminologie lässt sich in CHnell prüfen, das 30 Fachgebiete aus amtlichen Quellen abdeckt."
+      },
+      {
+        "k": "Umfang eines Schiedsverfahrens",
+        "v": "Die Akten kommen zu Hunderten von Seiten und oft als PDF. Die Text- und Dokumentübersetzung nimmt bis zu 25 Dateien zu je 50 MB pro Versand an und wandelt einen Scan vorab in ein bearbeitbares Word-Dokument um."
+      },
+      {
+        "k": "Vertraulichkeit",
+        "v": "Französisch und Englisch gehören zu den vier Sprachen des Modus Highly sensitive content: Speicherung und Verarbeitung ausschliesslich in der Schweiz, ohne Wiederverwendung als Translation Memory."
+      }
+    ],
+    "termes": [
+      {
+        "de": "Schiedsgericht",
+        "fr": "tribunal arbitral",
+        "it": "tribunale arbitrale",
+        "en": "arbitral tribunal",
+        "ref": "Art. 176 IPRG"
+      },
+      {
+        "de": "Bundesgericht",
+        "fr": "Tribunal fédéral",
+        "it": "Tribunale federale",
+        "en": "Federal Supreme Court",
+        "ref": "Art. 188 BV"
+      },
+      {
+        "de": "Beschwerde",
+        "fr": "recours",
+        "it": "ricorso",
+        "en": "appeal",
+        "ref": "Art. 72 BGG"
+      },
+      {
+        "de": "Verzugszins",
+        "fr": "intérêt moratoire",
+        "it": "interessi moratori",
+        "en": "default interest",
+        "ref": "Art. 104 OR"
+      },
+      {
+        "de": "Bankgeheimnis",
+        "fr": "secret bancaire",
+        "it": "segreto bancario",
+        "en": "banking secrecy",
+        "ref": "Art. 47 BankG"
+      },
+      {
+        "de": "Konkurs",
+        "fr": "faillite",
+        "it": "fallimento",
+        "en": "bankruptcy",
+        "ref": "Art. 197 SchKG"
+      }
+    ],
+    "termes_note": "Die deutsche, die französische und die italienische Spalte stammen aus den amtlichen Fassungen. Die englische Spalte folgt den Übersetzungen, die der Bund zu Informationszwecken veröffentlicht.",
+    "who_titre": "Drei Westschweizer Dossiers, die ins Englische gehen",
+    "who": [
+      {
+        "vis": "sentence",
+        "a": "Schiedsverfahren",
+        "t": "Eine Genfer Rechtsschrift, auf Englisch plädiert",
+        "p": "Entscheid- und Gesetzeszitate bleiben auf Französisch, begleitet von ihrer Übersetzung. Der Rest der Rechtsschrift liest sich auf Englisch, mit einem einheitlichen Schiedsvokabular vom ersten Schriftenwechsel bis zum Schiedsspruch."
+      },
+      {
+        "vis": "bouclier",
+        "a": "Banken",
+        "t": "Ein Dossier für eine ausländische Aufsichtsbehörde",
+        "p": "Bankgeheimnis, Geldwäschereibekämpfung und Sorgfaltspflichten haben feste Begriffe. Der Modus Highly sensitive content hält die Verarbeitung in der Schweiz, während das Dossier zirkuliert."
+      },
+      {
+        "vis": "globe",
+        "a": "Organisationen",
+        "t": "Ein Text, zweisprachig veröffentlicht",
+        "p": "Beide Fassungen erscheinen gleichzeitig und müssen Absatz für Absatz übereinstimmen. Das Projektmanagement organisiert das Lektorat und zeigt die Lieferfrist vor der Freigabe an."
+      }
+    ],
+    "faq_titre": "Häufige Fragen zur Übersetzung Französisch-Englisch",
+    "faq": [
+      {
+        "q": "Darf man ein Schweizer Gesetz in einer Rechtsschrift auf Englisch zitieren?",
+        "r": "Zum Verständnis ja, als verbindlicher Beleg nein. Englisch ist keine Amtssprache des Bundes, und die englischen Gesetzesfassungen dienen nur der Information. Sicher ist es, den französischen, deutschen oder italienischen Text zu zitieren und dann die englische Übersetzung anzufügen."
+      },
+      {
+        "q": "Wie zitiert man einen Bundesgerichtsentscheid auf Englisch?",
+        "r": "Die Fundstelle wird nicht übersetzt: Ein ATF (BGE) behält seine Form mit Band, Teil und Seite, und die Institution heisst Federal Supreme Court. Übersetzt wird nur die zitierte Passage, mit dem Hinweis, dass es sich um eine nichtamtliche Übersetzung handelt."
+      },
+      {
+        "q": "Bleibt das Vokabular der Schiedsgerichtsbarkeit von Dossier zu Dossier stabil?",
+        "r": "Vor allem innerhalb desselben Dossiers muss es stabil sein. Zuständigkeit, Schiedsspruch, Beschwerde und vorsorgliche Massnahmen erhalten je einen einzigen Begriff, der in allen Eingaben gleich bleibt. Fast lookup CHnell zeigt den amtlichen Gebrauch jedes Begriffs, und Ihre eigenen Ressourcen ergänzen die öffentlichen Quellen."
+      },
+      {
+        "q": "Was tun mit Begriffen, die es im Common Law nicht gibt?",
+        "r": "Beibehalten und erklären. Poursuite, séquestre oder ordonnance pénale (Betreibung, Arrest, Strafbefehl) haben kein genaues Gegenstück: Der Schweizer Begriff bleibt stehen, wird beim ersten Vorkommen erklärt und dann unverändert verwendet. Ein ähnlicher angelsächsischer Begriff erzeugt einen Sinnfehler, den beim Lesen niemand bemerkt."
+      },
+      {
+        "q": "Wo werden die Akten verarbeitet?",
+        "r": "In jedem Fall auf Schweizer Servern. Mit LexMachina oder im Modus Highly sensitive content bleibt die Verarbeitung ausschliesslich in der Schweiz, und der Inhalt wird nicht als Translation Memory wiederverwendet. Drittanbieter-Motoren mit Hosting im Ausland lösen den Hinweis Attorney-Client privilege aus und setzen eine vorgängige Pseudonymisierung voraus."
+      }
+    ],
+    "cta_t": "Testen Sie das Sprachpaar an einer Rechtsschrift oder einem Prospekt",
+    "cta_p": "Eine Demo mit einer Fachperson für Schweizer Recht, mit Ihren Formaten und Lieferfristen.",
+    "voisins": [
+      [
+        "anglais-allemand",
+        "Anglais vers allemand",
+        "Les contrats anglais soumis au droit suisse"
+      ],
+      [
+        "allemand-francais",
+        "Allemand vers français",
+        "La paire interne la plus demandée"
+      ],
+      [
+        "italien-francais",
+        "Italien vers français",
+        "La troisième langue officielle, et ses termes propres"
+      ]
+    ]
+  },
+  {
+    "slug": "italien-francais",
+    "short": "Italienisch-Französisch",
+    "resume": "Schweizer Rechtsitalienisch, das sich vom Italienisch Italiens unterscheidet, auf Französisch.",
+    "title": "Juristische Übersetzung Italienisch-Französisch · Neur.on",
+    "description": "Schweizer Rechtsitalienisch ins Französische: ricorso, precetto esecutivo, Tribunale federale und die Begriffe des Tessins, anders als in Italien.",
+    "lede": "Übersetzung Italienisch-Französisch.",
+    "h1": "Die dritte Amtssprache, vollwertig behandelt",
+    "lead": "Im Tessin wird auf Italienisch Recht gesprochen, und der Bund veröffentlicht seine Gesetze auch in dieser Sprache. Schweizer Rechtsitalienisch ist nicht das Italienisch Italiens: Ein allgemeiner Übersetzungsmotor ersetzt das eine gern durch das andere.",
+    "promesses": [
+      {
+        "t": "Schweizer Italienisch",
+        "d": "ricorso, precetto esecutivo, Tribunale federale"
+      },
+      {
+        "t": "Verbindliche Fassung",
+        "d": "Italienisch ist eine der drei Amtssprachen der Bundesgesetze"
+      },
+      {
+        "t": "Kernsprache",
+        "d": "Italienisch ist eine der vier Sprachen von LexMachina"
+      }
+    ],
+    "definition": "Italienisch ist eine der drei Sprachen, in denen die Bundesgesetze veröffentlicht werden und verbindlich sind. Die italienische Rechtsterminologie der Schweiz stammt daher aus diesen Texten, nicht aus dem Sprachgebrauch Italiens. Dieselben Wörter können auf beiden Seiten der Grenze vorkommen und verschiedene Institutionen und Verfahren bezeichnen.",
+    "facts": [
+      {
+        "k": "Eine verbindliche Fassung",
+        "v": "Die italienische Fassung eines Bundesgesetzes hat denselben Rang wie die deutsche und die französische. Sie ist keine Übersetzung zur Information, sondern ein massgebender Text."
+      },
+      {
+        "k": "Schweiz oder Italien",
+        "v": "Ricorso, precetto esecutivo und decreto d'accusa bezeichnen in der Schweiz bestimmte Verfahrenshandlungen. Ein auf italienisches Recht trainierter Übersetzungsmotor ersetzt sie durch Begriffe aus Italien, die nicht denselben Regeln folgen.",
+        "s": "Der Fehler bleibt unbemerkt: Der Text liest sich flüssig, beschreibt aber ein anderes Verfahren."
+      },
+      {
+        "k": "Die Institutionen",
+        "v": "Das Tribunale federale, also das Bundesgericht, ist das oberste Gericht der Schweiz. An dieses geht der ricorso. Ein Verweis auf ein italienisches Gericht ergibt in einem Schweizer Dokument keinen Sinn."
+      },
+      {
+        "k": "Eigene Abkürzungen",
+        "v": "Das Schuldbetreibungs- und Konkursrecht heisst auf Italienisch LEF, auf Französisch LP und auf Deutsch SchKG. Das Obligationenrecht heisst auf Italienisch wie auf Französisch CO, auf Deutsch aber OR."
+      },
+      {
+        "k": "Rechtsprechung",
+        "v": "Ein publizierter Entscheid wird auf Italienisch als DTF, auf Französisch als ATF und auf Deutsch als BGE zitiert, mit derselben Band- und Seitenzahl. Die Systematische Sammlung heisst auf Italienisch wie auf Französisch RS, auf Deutsch SR."
+      },
+      {
+        "k": "Kantonale Dokumente",
+        "v": "Akten, Verfügungen und Formulare des Kantons Tessin folgen der italienischen Terminologie des Bundes. Sie ist die Grundlage, bevor ins Französische übertragen wird."
+      },
+      {
+        "k": "Kernsprache",
+        "v": "Italienisch ist mit Deutsch, Französisch und Englisch eine der vier Kernsprachen von LexMachina und eine der wenigen Sprachen im Modus Highly sensitive content.",
+        "s": "Für ausländische Akten eines Dossiers deckt die Plattform zudem 30 Sprachen ab."
+      },
+      {
+        "k": "Prüfung im Kontext",
+        "v": "Jeder italienische Begriff erscheint in Fast lookup CHnell mit seinem Ursprungssegment und seiner Fundstelle, neben der französischen und der deutschen Fassung desselben Artikels."
+      }
+    ],
+    "termes": [
+      {
+        "de": "Beschwerde",
+        "fr": "recours",
+        "it": "ricorso",
+        "en": "appeal",
+        "ref": "Art. 72 BGG"
+      },
+      {
+        "de": "Bundesgericht",
+        "fr": "Tribunal fédéral",
+        "it": "Tribunale federale",
+        "en": "Federal Supreme Court",
+        "ref": "Art. 188 BV"
+      },
+      {
+        "de": "Zahlungsbefehl",
+        "fr": "commandement de payer",
+        "it": "precetto esecutivo",
+        "en": "summons for payment",
+        "ref": "Art. 69 SchKG"
+      },
+      {
+        "de": "Strafbefehl",
+        "fr": "ordonnance pénale",
+        "it": "decreto d'accusa",
+        "en": "summary penalty order",
+        "ref": "Art. 352 StPO"
+      },
+      {
+        "de": "Verzugszins",
+        "fr": "intérêt moratoire",
+        "it": "interessi moratori",
+        "en": "default interest",
+        "ref": "Art. 104 OR"
+      },
+      {
+        "de": "Mängelrüge",
+        "fr": "avis au vendeur",
+        "it": "avviso al venditore",
+        "en": "notice of defects",
+        "ref": "Art. 201 OR"
+      }
+    ],
+    "termes_note": "Sechs Begriffe, bei denen das Italienisch der Schweiz eigene Wege geht, mit dem Artikel des Bundesrechts, der die vier Fassungen festlegt. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "who_titre": "Drei Dossiers aus dem Tessin",
+    "who": [
+      {
+        "vis": "marteau",
+        "a": "Prozessführung",
+        "t": "Einen Tessiner Entscheid auswerten",
+        "p": "Das beschriebene Verfahren ist bundesrechtlich geregelt, nur die Sprache ist eine andere. Die Verfahrensbegriffe werden aus der französischen Fassung desselben Artikels übernommen, nicht aus einem allgemeinen Wörterbuch Italienisch-Französisch."
+      },
+      {
+        "vis": "dossier",
+        "a": "Betreibungen",
+        "t": "Einen precetto esecutivo übersetzen",
+        "p": "Zahlungsbefehl, Rechtsvorschlag, Rechtsöffnung: Die Kette der Betreibung hat in den drei Amtssprachen einen festen Wortschatz. Eine Ungenauigkeit an dieser Stelle kostet eine Frist, manchmal das Recht selbst."
+      },
+      {
+        "vis": "societe",
+        "a": "Unternehmen",
+        "t": "Tessiner Verträge integrieren",
+        "p": "Handelsregisterauszüge, Statuten und Verträge werden mit den Begriffen des Obligationenrechts übersetzt. Firmennamen und eingetragene Rechtsformen bleiben unverändert."
+      }
+    ],
+    "faq_titre": "Häufige Fragen zur Übersetzung Italienisch-Französisch",
+    "faq": [
+      {
+        "q": "Unterscheidet sich Schweizer Rechtsitalienisch vom Italienisch Italiens?",
+        "r": "Ja, und zwar im Wesentlichen: bei Institutionen und Verfahren. Der Schweizer ricorso geht an das Tribunale federale, der precetto esecutivo gehört zum bundesrechtlichen Betreibungsverfahren, und der decreto d'accusa ist eine Handlung nach der Schweizerischen Strafprozessordnung. Dieselben Wörter gibt es teils auch in Italien, mit anderer Bedeutung."
+      },
+      {
+        "q": "Ist die italienische Fassung eines Bundesgesetzes verbindlich?",
+        "r": "Ja, im gleichen Rang wie die deutsche und die französische. Deshalb lassen sich die terminologischen Entsprechungen direkt in den amtlichen Texten ablesen: Die drei Fassungen eines Artikels liefern die drei genauen Begriffe, ohne Umweg über eine Übersetzung aus der Praxis."
+      },
+      {
+        "q": "Wie werden Gesetzesabkürzungen umgesetzt?",
+        "r": "Je nach Zielsprache. Das Schuldbetreibungs- und Konkursrecht heisst auf Italienisch LEF, auf Französisch LP und auf Deutsch SchKG. Das Internationale Privatrecht heisst in beiden Sprachen LDIP, auf Deutsch aber IPRG. Das Obligationenrecht bleibt auf Italienisch und Französisch CO, auf Deutsch OR. Im Zweifel steht der volle Name des Gesetzes."
+      },
+      {
+        "q": "Übersetzen Sie auch aus dem Französischen ins Italienische?",
+        "r": "Ja, die vier Kernsprachen funktionieren in allen Kombinationen und in beide Richtungen. Es sind auch die einzigen Sprachen im Modus Highly sensitive content. Für ausländische Akten deckt die Plattform zudem 30 Sprachen ab."
+      },
+      {
+        "q": "Tessiner Dokumente kommen oft als Scan. Ist das ein Problem?",
+        "r": "Nein. Der Reiter PDF to Word in der Text- und Dokumentübersetzung wandelt einen Scan vor der Übersetzung in ein bearbeitbares Word-Dokument um. So bleibt die Struktur erhalten, und Sie können danach annotieren. Die Dateien gehen im Originalformat zurück."
+      }
+    ],
+    "cta_t": "Lassen Sie ein Tessiner Dossier von einer Rechtslinguistin oder einem Rechtslinguisten prüfen",
+    "cta_p": "Eine Demo mit Ihren Dokumenten, mit der amtlichen Terminologie der drei Sprachen.",
+    "voisins": [
+      [
+        "allemand-francais",
+        "Allemand vers français",
+        "La paire interne la plus demandée"
+      ],
+      [
+        "francais-allemand",
+        "Français vers allemand",
+        "Le français romand pour un lecteur alémanique"
+      ],
+      [
+        "francais-anglais",
+        "Français vers anglais",
+        "Le droit suisse romand pour un dossier international"
+      ]
+    ]
+  }
+]

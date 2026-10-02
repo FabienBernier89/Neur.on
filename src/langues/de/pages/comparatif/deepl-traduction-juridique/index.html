@@ -1,0 +1,366 @@
+<!--page
+title: DeepL Pro und juristische Übersetzung: Was Corrext verändert
+description: DeepL Pro, ein ausgezeichneter generischer Motor, bleibt in Corrext verfügbar. Was sich ändert: Verarbeitungsort, Terminologie des Schweizer Rechts, Lektorat.
+short: Corrext und DeepL
+nav: ressources
+assets: []
+canonical: https://neur-on.ai/fr/comparatif/deepl-traduction-juridique/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Darf ich DeepL für ein Dokument verwenden, das unter das Berufsgeheimnis fällt?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Entscheidend ist nicht die Qualität des Motors, sondern die Übermittlung des Dokuments ins Ausland. Wählen Sie in Corrext DeepL Pro, erscheint der Hinweis Attorney-Client privilege: Die Organisation verlangt, dass das Dokument vollständig pseudonymisiert ist, und untersagt diese Motoren für heikle Dossiers. Für ein nicht pseudonymisiertes Dokument wählen Sie LexMachina oder den Modus Highly sensitive content: Beide schreiben eine Verarbeitung ausschliesslich in der Schweiz vor. Verbindlich für Sie bleibt die Regel Ihrer Kanzlei und Ihrer Aufsichtsbehörde."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Verarbeitet DeepL meine Daten in der Schweiz?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. DeepL ist ein deutsches Unternehmen, und seine Infrastruktur liegt ausserhalb der Schweiz. In Corrext gilt DeepL Pro deshalb als Motor eines Drittanbieters mit Hosting im Ausland und löst den Hinweis zur Pseudonymisierung aus. Für Speicherung und Verarbeitung ausschliesslich in der Schweiz wählen Sie LexMachina oder aktivieren den Modus Highly sensitive content, verfügbar auf Deutsch, Französisch, Italienisch und Englisch."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ersetzt Corrext DeepL?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein: Corrext kann DeepL Pro nutzen. Den Motor wählen Sie bei jedem Versand, neben LexMachina, Azure OpenAI GPT und Claude, und der Bereich Alternatives vergleicht bis zu vier Vorschläge mit ihrem jeweiligen Motor. Corrext fügt keinen weiteren Motor hinzu, sondern den Rahmen darum: Speicherung in der Schweiz, Hinweis vor dem Versand, die Konkordanz CHnell, das im Tool bestellte menschliche Lektorat, die Offerte und die Beglaubigung."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Was bringt ein Übersetzungsmotor, der auf Schweizer Recht trainiert ist?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "LexMachina ist mit über 15 Millionen mehrsprachigen Segmenten aus dem Schweizer Recht und Finanzwesen trainiert. Konkret kennt der Übersetzungsmotor die Abkürzungen und Konventionen des Landes: CO und OR, LB und BankG, LDIP und IPRG, die Schweizer Schreibung mit ss, das Bundesgericht statt eines ausländischen Gerichts. Unfehlbar ist er deshalb nicht: Kein Motor ist eine Rechtsquelle. Darum zeigt Corrext die Alternativen und die Konkordanz an."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Speichert DeepL Pro meine Texte?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "DeepL gibt öffentlich an, dass die Texte seiner Pro-Kundschaft nach der Übersetzung gelöscht und nicht zum Training seiner Modelle verwendet werden. Das ist eine ernsthafte Zusage, und wir haben keinen Grund, daran zu zweifeln. Offen bleibt bei einem Dossier unter Berufsgeheimnis nicht die Aufbewahrung, sondern die Übermittlung des Dokuments ins Ausland und das Fehlen eines Hinweises beim Versand."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie prüfe ich einen Schweizer Rechtsbegriff nach der Übersetzung?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Markieren Sie in Corrext das Wort im Ausgangstext und klicken Sie auf Fast Lookup. Die Konkordanz CHnell zeigt alignierte Segmente aus amtlichen Schweizer Quellen, mit Fachgebiet und Quelle jedes Treffers und dem Link Show in context. «Verzugszins» liefert so über 300 Treffer, «Bankgeheimnis» über 400. Diese Nachvollziehbarkeit bietet ein Übersetzungsmotor allein nicht."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+/* Hero compact */
+
+
+
+
+/* Réponse directe, en tête de page */
+.cp-answer{padding:56px 0 0;background:#fff}
+.cp-answer .box{max-width:860px;margin:0 auto;background:var(--tint);border:1px solid var(--line);border-radius:var(--r-bloc);padding:30px 34px}
+.cp-answer h2{font-size:20px;margin-bottom:12px}
+.cp-answer p{font-size:16.5px;color:var(--text);line-height:1.68}
+.cp-answer .src{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* Ce que l'autre fait bien / ce que nous ajoutons */
+.cp-fair{padding:72px 0 0;background:#fff}
+/* Deux colonnes alignées ligne à ligne : titre, chapeau, puis chaque point à la même hauteur */
+.cp-fair-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;grid-template-rows:repeat(6,auto)}
+.cp-col{display:grid;grid-row:1 / span 6;grid-template-rows:subgrid}
+.cp-col h2{font-size:clamp(22px,2.4vw,28px);margin-bottom:14px}
+.cp-col > p{color:var(--muted);font-size:15.5px;line-height:1.65;margin-bottom:22px;max-width:44ch}
+.cp-pts{display:grid;grid-row:span 4;grid-template-rows:subgrid;list-style:none;border-top:1px solid var(--line)}
+.cp-pts li{padding:15px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--text);line-height:1.6}
+.cp-pts li b{display:block;color:var(--ink);font-size:13px;margin-bottom:4px;letter-spacing:-.01em}
+.cp-pts a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px}
+.cp-pts a:hover{text-decoration-color:currentColor}
+
+/* Exemple daté : deux sorties réelles côte à côte */
+.cp-ex{padding:80px 0 0;background:#fff}
+.cp-ex .sec-head{text-align:center;margin:0 auto 28px;max-width:760px}
+.cp-ex-src{max-width:980px;margin:0 auto 20px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:18px 22px}
+.cp-ex-lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cp-ex-src p{font-size:15px;color:var(--ink);line-height:1.6}
+.cp-ex-grid{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cp-ex-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:20px 22px}
+.cp-ex-card.own{border-color:var(--blue);box-shadow:0 26px 54px -38px rgba(8,24,68,.32)}
+.cp-ex-eng{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:50px;padding:5px 11px;margin-bottom:12px}
+.cp-ex-card p{font-size:14.5px;color:var(--ink);line-height:1.62}
+.cp-ex-card mark{background:#fff2a8;color:inherit;padding:0 2px;border-radius:3px}
+.cp-ex-note{max-width:980px;margin:22px auto 0;font-size:14.5px;color:var(--text);line-height:1.68}
+.cp-ex-cap{max-width:980px;margin:14px auto 0;font-size:12.5px;color:var(--muted);line-height:1.55}
+
+@media(max-width:940px){
+  .cp-fair-grid{grid-template-columns:1fr;grid-template-rows:none;row-gap:36px}
+  .cp-col,.cp-pts{display:block;grid-row:auto}
+  .cp-col > p{max-width:none}
+  .cp-ex-grid{grid-template-columns:1fr}
+  .cp-answer .box{padding:24px 22px}
+}
+</style>
+
+<!-- HERO -->
+<section class="thero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Corrext und DeepL.</em> Derselbe Motor, in einem Rahmen, der das Berufsgeheimnis schützt</h1>
+        <p class="lead">DeepL Pro ist ein sehr guter generischer Übersetzungsmotor, und er ist in Corrext verfügbar. Diese Seite will Sie nicht davon abbringen. Sie zeigt, was er gut macht, und wo genau der Unterschied für ein juristisches Dossier in der Schweiz liegt.</p>
+        <div class="thero-cta">
+          <a href="contact.html" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#tableau" class="btn btn-ghost">Zur Tabelle</a>
+        </div>
+      </div>
+      {{CARTE:comparatif-deepl}}
+    </div>
+  </div>
+</section>
+
+<!-- RÉPONSE DIRECTE -->
+<section class="cp-answer">
+  <div class="container">
+    <div class="box">
+      <h2>Die kurze Antwort</h2>
+      <p>Ja, DeepL Pro kann einen juristischen Text übersetzen: Er ist schnell und flüssig. In Corrext bleibt er verfügbar, aber unter der Governance Ihrer Organisation. Der Unterschied liegt nicht in der Flüssigkeit, sondern im Ort der Datenverarbeitung, in der Terminologie des Schweizer Rechts und im Lektorat.</p>
+      <p class="src">Suchanfragen, die diese Seite beantwortet: DeepL juristische Übersetzung · DeepL Berufsgeheimnis Anwalt · Schweizer Alternative zu DeepL.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUE CHACUN FAIT BIEN -->
+<section class="cp-fair">
+  <div class="container">
+    <div class="cp-fair-grid">
+      <div class="cp-col">
+        <h2>Was DeepL Pro gut kann</h2>
+        <p>Alles andere zu behaupten, wäre unredlich: DeepL Pro ist einer der besten generischen Übersetzungsmotoren auf dem Markt, und viele Juristinnen und Juristen nutzen ihn täglich mit Gewinn.</p>
+        <ul class="cp-pts">
+          <li><b>Flüssige Texte</b>Seine Ausgaben lesen sich natürlich, auch bei langen, verschachtelten Sätzen, wie sie in Gesetzen und Verträgen alltäglich sind.</li>
+          <li><b>Formate</b>Er übersetzt Office-Dokumente und PDF und behält dabei das Layout weitgehend bei. So müssen Sie ein Dokument nicht von Hand neu aufbauen.</li>
+          <li><b>Glossare</b>Sie können eigene Begriffspaare festlegen, damit ein bestimmtes Wort von Dokument zu Dokument einheitlich übersetzt wird.</li>
+          <li><b>Eine öffentliche Zusage zu den Daten</b>DeepL gibt an, dass die Texte seiner Pro-Kundschaft nach der Übersetzung gelöscht und nicht zum Training seiner Modelle verwendet werden. Wir haben keinen Grund, daran zu zweifeln.</li>
+        </ul>
+      </div>
+      <div class="cp-col">
+        <h2>Was Corrext darum herum ergänzt</h2>
+        <p>Corrext ist kein weiterer Motor. Es ist die Umgebung, in der ein Motor, auch DeepL Pro, für ein Dossier unter Berufsgeheimnis nutzbar wird.</p>
+        <ul class="cp-pts">
+          <li><b>Der Ort der Verarbeitung, von Ihnen bestimmt</b>Speicherung auf Schweizer Servern in jedem Fall; Verarbeitung ausschliesslich in der Schweiz mit LexMachina oder im Modus Highly sensitive content, auf Deutsch, Französisch, Italienisch und Englisch.</li>
+          <li><b>Ein Hinweis im richtigen Moment</b>Wer einen im Ausland gehosteten Motor wählt, sieht den Hinweis Attorney-Client privilege Ihrer Organisation, im Tool und im Moment der Wahl, nicht in einem vergessenen Reglement.</li>
+          <li><b>Schweizer Terminologie mit Quellen</b>Die Konkordanz CHnell zeigt den Begriff in alignierten Segmenten aus dem Bundesblatt, aus fedlex.admin.ch oder anderen amtlichen Quellen, mit Fachgebiet.</li>
+          <li><b>Die weiteren Schritte</b><a href="{{ROOT}}fr/corrext/traduction-texte-et-document/">Alternativen im Vergleich nach Motor</a>, <a href="{{ROOT}}fr/corrext/gestion-de-projet/">Lektorat in Light, Full oder Double review, direkt im Tool bestellt</a>, Offerte und Lieferfrist, beglaubigte Übersetzung, notariell oder mit Apostille.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABLEAU -->
+<section class="compare" id="tableau">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Elf Kriterien, auf beiden Seiten überprüfbar</h2>
+    </div>
+    <p class="compare-note">Was wir über DeepL Pro sagen, beschränkt sich auf öffentliche und dauerhafte Angaben: ein generischer Übersetzungsmotor, eine Infrastruktur ausserhalb der Schweiz, kein integriertes juristisches Lektorat, keine Konkordanz des Schweizer Rechts mit Quellen. In allem anderen hält DeepL Pro, was er verspricht, und zwar gut.</p>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">&nbsp;</th>
+            <th>DeepL Pro allein</th>
+            <th class="brand">Corrext (kann DeepL Pro nutzen)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Speicherort der Dokumente</th>
+            <td><span class="cmp-n">✕</span> Ausserhalb der Schweiz</td>
+            <td class="brand"><span class="cmp-y">✓</span> Schweizer Server, in jedem Fall</td>
+          </tr>
+          <tr>
+            <th>Ort der Textverarbeitung</th>
+            <td><span class="cmp-n">✕</span> Ausserhalb der Schweiz</td>
+            <td class="brand"><span class="cmp-y">✓</span> Ausschliesslich in der Schweiz mit LexMachina oder im Modus Highly sensitive content; ausserhalb der Schweiz, wenn Sie DeepL Pro wählen</td>
+          </tr>
+          <tr>
+            <th>Hinweis vor dem Versand eines Dokuments</th>
+            <td><span class="cmp-n">✕</span> Keiner</td>
+            <td class="brand"><span class="cmp-y">✓</span> Hinweis Attorney-Client privilege bei der Wahl des Motors</td>
+          </tr>
+          <tr>
+            <th>Terminologie des Schweizer Rechts im Kontext</th>
+            <td><span class="cmp-p">⚠</span> Glossare, die Sie selbst aufbauen</td>
+            <td class="brand"><span class="cmp-y">✓</span> CHnell: alignierte Segmente, 30 Fachgebiete, amtliche Quellen</td>
+          </tr>
+          <tr>
+            <th>Schweizer Gesetzesverweise (Art. 104 OR, Art. 47 BankG, Art. 186 IPRG)</th>
+            <td><span class="cmp-p">⚠</span> Generischer Motor, im Einzelfall zu prüfen</td>
+            <td class="brand"><span class="cmp-y">✓</span> LexMachina, trainiert auf Schweizer Recht, Prüfung mit einem Klick in CHnell</td>
+          </tr>
+          <tr>
+            <th>Vergleich mehrerer Motoren für denselben Satz</th>
+            <td><span class="cmp-n">✕</span> Ein einziger Motor</td>
+            <td class="brand"><span class="cmp-y">✓</span> Bis zu vier Alternativen, jede ihrem Motor zugeordnet</td>
+          </tr>
+          <tr>
+            <th>Im Tool bestelltes menschliches Lektorat</th>
+            <td><span class="cmp-n">✕</span> Nein</td>
+            <td class="brand"><span class="cmp-y">✓</span> Light review, Full review, Double review, intern oder extern</td>
+          </tr>
+          <tr>
+            <th>Offerte und Lieferfrist vor dem Start</th>
+            <td><span class="cmp-n">✕</span> Nein</td>
+            <td class="brand"><span class="cmp-y">✓</span> Im Tool berechnet, aus den Normseiten und der erkannten Rechtskategorie</td>
+          </tr>
+          <tr>
+            <th>Beglaubigte Übersetzung, notariell oder mit Apostille</th>
+            <td><span class="cmp-n">✕</span> Nein</td>
+            <td class="brand"><span class="cmp-y">✓</span> Double review mit Beglaubigung; Handelsregisterauszüge bis zur Apostille</td>
+          </tr>
+          <tr>
+            <th>Formate und Layout erhalten</th>
+            <td><span class="cmp-y">✓</span> Ja, Office-Dokumente und PDF</td>
+            <td class="brand"><span class="cmp-y">✓</span> Ja, bis zu 25 Dateien zu 50 MB, Originalformat, dazu PDF in Word</td>
+          </tr>
+          <tr>
+            <th>Betrieb on-premises</th>
+            <td><span class="cmp-p">⚠</span> Je nach Unternehmensangebot</td>
+            <td class="brand"><span class="cmp-y">✓</span> Möglich, mit REST-API für DMS und Workflows</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span><span class="cmp-y">✓</span> Verfügbar und beobachtet</span>
+      <span><span class="cmp-p">⚠</span> Teilweise oder je nach Angebot</span>
+      <span><span class="cmp-n">✕</span> Fehlt</span>
+    </div>
+    <p class="cmp-mention">Vergleich zum Zeitpunkt der Veröffentlichung dieser Seite, auf Grundlage öffentlicher Angaben der Anbieter und unserer Beobachtungen in Corrext. Die verglichenen Produkte entwickeln sich weiter: Massgebend ist allein ihre offizielle Dokumentation.</p>
+  </div>
+</section>
+
+<!-- EXEMPLE RÉEL -->
+<section class="cp-ex" id="exemple">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Ein Beispiel mit einem Artikel aus dem Bankengesetz</h2>
+      <p>Ein bankrechtlicher Satz, in Corrext vom Französischen ins Deutsche übersetzt. Beide Ausgaben unten stammen vom selben Tag, aus demselben Bereich Alternatives.</p>
+    </div>
+    <div class="cp-ex-src">
+      <p class="cp-ex-lbl">Ausgangstext · Französisch</p>
+      <p lang="fr">L'établissement assujetti veille au respect du secret bancaire au sens de l'art. 47 LB et met en œuvre les exigences de la FINMA en matière de lutte contre le blanchiment d'argent.</p>
+    </div>
+    <div class="cp-ex-grid">
+      <div class="cp-ex-card own">
+        <span class="cp-ex-eng"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg> LexMachina</span>
+        <p lang="de">Das <mark>beaufsichtigte</mark> Institut sorgt für die Einhaltung des Bankgeheimnisses nach <mark>Artikel 47 BankG</mark> und setzt die Anforderungen der FINMA zur Bekämpfung der Geldwäscherei um.</p>
+      </div>
+      <div class="cp-ex-card">
+        <span class="cp-ex-eng">DeepL Pro</span>
+        <p lang="de">Das <mark>unterstellte</mark> Institut sorgt für die Einhaltung des Bankgeheimnisses im Sinne von <mark>Art. 47 BankG</mark> und setzt die Anforderungen der FINMA zur Bekämpfung der Geldwäscherei um.</p>
+      </div>
+    </div>
+    <p class="cp-ex-note">Beide Ausgaben sind korrekt: Jede nennt Art. 47 BankG, die deutsche Abkürzung des Bankengesetzes, und verwendet den Schweizer Begriff Geldwäscherei statt Geldwäsche. Sie unterscheiden sich in einem Punkt, den eine juristische Fachperson anhand des anwendbaren deutschen Textes entscheidet und nicht nach Gehör: die Wiedergabe von «établissement assujetti», hier beaufsichtigt, dort unterstellt.</p>
+    <p class="cp-ex-cap">Echte Ergebnisse aus Corrext für genau diesen Satz, vom Französischen ins Deutsche, im Bereich Alternatives. Ein einzelnes, datiertes Beispiel, keine Messung: Ein anderer Satz, ein anderes Sprachpaar oder eine neue Generierung ergäben ein anderes Resultat. Genau deshalb zeigt Corrext die Alternativen mit ihrem jeweiligen Motor an und lässt Sie jeden Begriff in CHnell prüfen, bevor Sie entscheiden.</p>
+  </div>
+</section>
+
+<!-- GOUVERNANCE -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Soll eine Kanzlei auf DeepL verzichten?</h2>
+        <p>Nein, und ein Verbot funktioniert nicht: Die wilden Übersetzungen gehen am nächsten Tag weiter, in einem Browser-Tab, den niemand sieht. Corrext geht vom Gegenteil aus. DeepL Pro bleibt verfügbar, neben LexMachina, Azure OpenAI GPT und Claude. Seine Wahl unterliegt aber der Richtlinie Ihrer Organisation: Pseudonymisierung verlangt, heikle Dossiers ausgeschlossen, Hinweis beim Versand. Ihre Teams behalten das Tool, das sie schätzen, und Ihr Berufsgeheimnis behält seinen Rahmen.</p>
+        <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Sicherheit und Datensouveränität <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><b>Der Hinweis erscheint im Tool.</b> Der Text der Richtlinie erscheint bei der Wahl des Motors, nicht in einem Anhang.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>Pseudonymisierung verlangt.</b> Namen der Klientschaft, Parteien und Gegenstand des Dossiers werden vor jedem Versand an einen ausländischen Motor entfernt.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Modus Highly sensitive content.</b> Speicherung und Verarbeitung ausschliesslich in der Schweiz, auf Deutsch, Französisch, Italienisch und Englisch.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="vn">
+  <div class="container">
+    <h2>Die anderen Vergleiche</h2>
+    <div class="vs-grid">
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/chatgpt-traduction-juridique/" aria-label="Vergleich Corrext und generalistische Sprachmodelle"><span class="vs-duo" aria-hidden="true"><b>Corrext</b><i></i><b>Generische LLM</b></span><em>Vergleich lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" aria-label="Vergleich Übersetzungsbüro oder Plattform"><span class="vs-duo" aria-hidden="true"><b>Agentur</b><i></i><b>Plattform</b></span><em>Vergleich lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu DeepL und juristischer Übersetzung</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Darf ich DeepL für ein Dokument verwenden, das unter das Berufsgeheimnis fällt?</summary>
+        <p>Entscheidend ist nicht die Qualität des Motors, sondern die Übermittlung des Dokuments ins Ausland. Wählen Sie in Corrext DeepL Pro, erscheint der Hinweis Attorney-Client privilege: Die Organisation verlangt, dass das Dokument vollständig pseudonymisiert ist, und untersagt diese Motoren für heikle Dossiers. Für ein nicht pseudonymisiertes Dokument wählen Sie LexMachina oder den Modus Highly sensitive content: Beide schreiben eine Verarbeitung ausschliesslich in der Schweiz vor. Verbindlich für Sie bleibt die Regel Ihrer Kanzlei und Ihrer Aufsichtsbehörde.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Verarbeitet DeepL meine Daten in der Schweiz?</summary>
+        <p>Nein. DeepL ist ein deutsches Unternehmen, und seine Infrastruktur liegt ausserhalb der Schweiz. In Corrext gilt DeepL Pro deshalb als Motor eines Drittanbieters mit Hosting im Ausland und löst den Hinweis zur Pseudonymisierung aus. Für Speicherung und Verarbeitung ausschliesslich in der Schweiz wählen Sie LexMachina oder aktivieren den Modus Highly sensitive content, verfügbar auf Deutsch, Französisch, Italienisch und Englisch.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Ersetzt Corrext DeepL?</summary>
+        <p>Nein: Corrext kann DeepL Pro nutzen. Den Motor wählen Sie bei jedem Versand, neben LexMachina, Azure OpenAI GPT und Claude, und der Bereich Alternatives vergleicht bis zu vier Vorschläge mit ihrem jeweiligen Motor. Corrext fügt keinen weiteren Motor hinzu, sondern den Rahmen darum: Speicherung in der Schweiz, Hinweis vor dem Versand, die Konkordanz CHnell, das im Tool bestellte menschliche Lektorat, die Offerte und die Beglaubigung.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was bringt ein Übersetzungsmotor, der auf Schweizer Recht trainiert ist?</summary>
+        <p>LexMachina ist mit über 15 Millionen mehrsprachigen Segmenten aus dem Schweizer Recht und Finanzwesen trainiert. Konkret kennt der Übersetzungsmotor die Abkürzungen und Konventionen des Landes: CO und OR, LB und BankG, LDIP und IPRG, die Schweizer Schreibung mit ss, das Bundesgericht statt eines ausländischen Gerichts. Unfehlbar ist er deshalb nicht: Kein Motor ist eine Rechtsquelle. Darum zeigt Corrext die Alternativen und die Konkordanz an.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Speichert DeepL Pro meine Texte?</summary>
+        <p>DeepL gibt öffentlich an, dass die Texte seiner Pro-Kundschaft nach der Übersetzung gelöscht und nicht zum Training seiner Modelle verwendet werden. Das ist eine ernsthafte Zusage, und wir haben keinen Grund, daran zu zweifeln. Offen bleibt bei einem Dossier unter Berufsgeheimnis nicht die Aufbewahrung, sondern die Übermittlung des Dokuments ins Ausland und das Fehlen eines Hinweises beim Versand.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie prüfe ich einen Schweizer Rechtsbegriff nach der Übersetzung?</summary>
+        <p>Markieren Sie in Corrext das Wort im Ausgangstext und klicken Sie auf Fast Lookup. Die Konkordanz CHnell zeigt alignierte Segmente aus amtlichen Schweizer Quellen, mit Fachgebiet und Quelle jedes Treffers und dem Link Show in context. «Verzugszins» liefert so über 300 Treffer, «Bankgeheimnis» über 400. Diese Nachvollziehbarkeit bietet ein Übersetzungsmotor allein nicht.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Vergleichen Sie die Motoren selbst, mit Ihren Dokumenten</h2>
+      <p>In der Demo übersetzen Sie Ihren eigenen Text, öffnen die Alternativen und sehen, was jeder Motor aus Ihren Gesetzesverweisen gemacht hat.</p>
+      <div class="final-cta-btns">
+        <a href="contact.html" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/lexmachina/" class="btn-outline">LexMachina verstehen</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Speicherung zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>

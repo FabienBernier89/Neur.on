@@ -13,6 +13,7 @@ FR_TRAD = """<!--page
 title: Traduction juridique · Neur.on
 description: Page de test sur la traduction juridique, pour vérifier les liens localisés et les alternates hreflang.
 short: Traduction
+canonical: https://neur-on.ai/fr/traduction/
 -->
 <section><h1>Traduction</h1><p><a href="{{ROOT}}fr/">Accueil</a></p></section>"""
 DE_ACCUEIL = FR_ACCUEIL.replace("Bienvenue", "Willkommen").replace("Accueil de test", "Startseite Test")
@@ -71,6 +72,11 @@ class TestBuildMultilingue(unittest.TestCase):
             self.assertIn('hreflang="fr-CH" href="https://neur-on.ai/fr/traduction/"', h)
             self.assertIn('hreflang="de-CH" href="https://neur-on.ai/de/uebersetzung/"', h)
             self.assertIn('hreflang="x-default" href="https://neur-on.ai/"', h)
+
+    def test_canonical_dans_la_langue(self):
+        # le canonical du front-matter FR, recopié dans la traduction, ne doit pas pointer vers la page FR
+        self.assertIn('<link rel="canonical" href="https://neur-on.ai/de/uebersetzung/">', self.lire("de/uebersetzung/index.html"))
+        self.assertIn('<link rel="canonical" href="https://neur-on.ai/fr/traduction/">', self.lire("fr/traduction/index.html"))
 
     def test_lien_localise(self):
         self.assertIn('href="../../de/"', self.lire("de/uebersetzung/index.html"))

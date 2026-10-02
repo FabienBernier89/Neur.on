@@ -1,0 +1,352 @@
+<!--page
+title: Mehrsprachiger Geschäftsbericht in der Schweiz · Neur.on
+description: Rückwärtszeitplan, eingefrorener Ausgangstext, gemeinsame Terminologie, kohärente Sprachfassungen, Freigabe und Publikation eines Schweizer Geschäftsberichts.
+short: Mehrsprachiger Geschäftsbericht
+nav: ressources
+hero: read
+canonical: https://neur-on.ai/fr/ressources/guides/rapport-annuel-multilingue/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Einen mehrsprachigen Geschäftsbericht vorbereiten",
+ "description": "Ein Leitfaden in sieben Schritten, um einen Geschäftsbericht in mehreren Sprachen zu erstellen: Rückwärtszeitplan, Einfrieren des Ausgangstextes, Terminologie, Kohärenz zwischen den Sprachen, Lektorat, Freigabe und Publikation.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "de-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Warum muss der Ausgangstext eines Geschäftsberichts eingefroren werden?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Weil jede Änderung nach dem Start der Übersetzungen in alle Sprachen übertragen, in jeder Sprache lektoriert und im Layout erneut geprüft werden muss. Die Kosten einer späten Korrektur hängen nicht von der Zahl der geänderten Wörter ab, sondern von der Zahl der Sprachen, multipliziert mit der Zahl der bereits durchlaufenen Schritte. Ein formelles, datiertes und kommuniziertes Einfrieren ist die rentabelste Massnahme des Projekts."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie erstellt man den Zeitplan für einen mehrsprachigen Geschäftsbericht?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Rückwärts vom Publikationsdatum aus. Setzen Sie zuerst die Publikation und arbeiten Sie sich dann zurück: Schlussfreigabe, Layout und Fahnenkorrektur, sprachliches Lektorat, Übersetzung, Einfrieren des Ausgangstextes, festgelegte Terminologie, Redaktion. Jeder frühere Meilenstein wird durch den folgenden bestimmt, und vom Einfrieren des Ausgangstextes hängen alle anderen ab."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie stellt man die Kohärenz zwischen den Sprachfassungen eines Berichts sicher?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Indem Sie die Terminologie vor dem ersten übersetzten Satz festlegen, pro Sprache eine verantwortliche Person bestimmen und wiederkehrende Abschnitte jedes Jahr auf Grundlage der zuvor veröffentlichten Fassungen bearbeiten. Unveränderte Textblöcke werden nicht neu übersetzt: Sie werden übernommen und dann geprüft."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wer sollte die übersetzten Fassungen eines Geschäftsberichts freigeben?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Pro Sprache eine fachlich verantwortliche Person, die den Inhalt beurteilen kann und nicht dieselbe ist wie die Person, die das sprachliche Lektorat übernimmt. Die Freigabe muss sich auf eine bezeichnete und datierte Fassung beziehen und mit einer schriftlichen Zustimmung enden. Eine kollektive Freigabe ohne namentlich bestimmte verantwortliche Person erzeugt widersprüchliche Anmerkungen, über die niemand entscheiden darf."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Welche Schweizer Formate sollte man vor der Publikation prüfen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Den Apostroph als Tausendertrennzeichen, die Währung in CHF, kein ß im Deutsch der Schweiz, eindeutig geschriebene Daten in den englischen Fassungen, die Gesetzesabkürzungen jeder Amtssprache und die Übereinstimmung jeder Zahl zwischen Tabellen und Fliesstext, in jeder Fassung."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+.meta{font-size:13.5px;color:var(--muted);margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.art{padding:66px 0 26px}
+.art-wrap{max-width:768px;margin:0 auto}
+.art-wrap h2{font-size:clamp(22px,2.6vw,29px);margin:56px 0 16px;letter-spacing:-.022em;scroll-margin-top:96px}
+.art-wrap h3{font-size:18.5px;margin:32px 0 10px;letter-spacing:-.015em}
+.art-wrap p{font-size:17px;line-height:1.72;margin-bottom:18px}
+.art-wrap .art-lead{font-size:19.5px;line-height:1.62;color:var(--ink);margin-bottom:26px}
+.art-wrap ul,.art-wrap ol{margin:0 0 20px;padding-left:22px}
+.art-wrap li{font-size:17px;line-height:1.7;margin-bottom:9px;padding-left:4px}
+.art-wrap li::marker{color:var(--blue-d)}
+.art-wrap strong{color:var(--ink);font-weight:700}
+.art-wrap a:not(.feat-link){color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.art-wrap a:not(.feat-link):hover{color:var(--navy)}
+.toc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 30px;margin:0 0 46px}
+.toc b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;font-weight:700}
+.toc ol{margin:0;padding-left:20px}
+.toc li{font-size:16px;margin-bottom:9px;line-height:1.5;padding-left:2px}
+.toc li::marker{color:var(--blue-d);font-weight:700}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-2)}
+.toc a:hover{color:var(--blue-d);border-color:var(--blue)}
+.art-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 var(--r-bloc) var(--r-bloc) 0;padding:22px 26px;margin:28px 0}
+.art-note p{font-size:15.5px;margin-bottom:10px}
+.art-note p:last-child{margin-bottom:0}
+.jal{list-style:none;margin:26px 0;padding:0;border-left:2px solid var(--line-2)}
+.jal li{position:relative;padding:0 0 22px 26px;margin:0;font-size:16.5px;line-height:1.62}
+.jal li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--blue);border:2px solid #fff}
+.jal li:last-child{padding-bottom:0}
+.jal b{display:block;color:var(--ink);font-size:15px;letter-spacing:.01em;margin-bottom:4px}
+.art-end{margin-top:54px;padding-top:26px;border-top:1px solid var(--line)}
+.art-end p{font-size:15.5px}
+@media(max-width:560px){.art{padding:44px 0 18px}.art-wrap p,.art-wrap li{font-size:16.5px}.toc{padding:22px 22px}}
+</style>
+
+<section class="thero thero-read thero-centre">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Leitfaden.</em> Einen mehrsprachigen Geschäftsbericht vorbereiten</h1>
+        <p class="lead">Ein Geschäftsbericht in drei oder vier Sprachen ist kein Dokument, das dreimal übersetzt wird. Er ist ein einziges Dokument, das überall dasselbe sagen muss, am selben Datum und mit denselben Zahlen. Dieser Leitfaden beschreibt die einzige Methode, die hält: von der Publikation ausgehen und rückwärts planen.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#sommaire" class="btn btn-ghost">Zum Inhalt</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span><b>Ein Rückwärtszeitplan</b>, in dem jeder Meilenstein den vorherigen bestimmt</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>Das Einfrieren des Ausgangstextes</b>: der rentabelste Entscheid des Projekts</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg><span><b>Die Schweizer Formate</b>, die vor der Publikation zu prüfen sind, Sprache für Sprache</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <p class="meta">Vom Rechts- und Sprachteam von Neur.on · 15. September 2026 · Aktualisiert am 15. September 2026</p>
+
+      <p class="art-lead">Mehrsprachige Geschäftsberichte scheitern selten an der Übersetzung. Sie scheitern am Zeitplan, an einem Ausgangstext, der sich weiter verändert, und an Zahlen, die zwischen zwei Fassungen nicht mehr übereinstimmen. Die folgenden sieben Schritte behandeln diese drei Ursachen in der Reihenfolge, in der sie auftreten.</p>
+
+      <nav class="toc" id="sommaire" aria-label="Inhaltsverzeichnis des Leitfadens">
+        <b>Inhalt</b>
+        <ol>
+          <li><a href="#rebours">Von der Publikation ausgehen und rückwärts planen</a></li>
+          <li><a href="#gel">Den Ausgangstext einfrieren</a></li>
+          <li><a href="#terminologie">Die Terminologie vor dem ersten übersetzten Satz festlegen</a></li>
+          <li><a href="#traduire">Übersetzen: wer was macht, in welcher Reihenfolge</a></li>
+          <li><a href="#coherence">Die Kohärenz zwischen den Sprachen sichern</a></li>
+          <li><a href="#validation">Lektorat und Freigabe</a></li>
+          <li><a href="#publication">Layout, Formate und Publikation</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="rebours">1. Von der Publikation ausgehen und rückwärts planen</h2>
+
+      <p>Das Publikationsdatum ist die einzige nicht verhandelbare Grösse des Projekts: Es wird durch die Generalversammlung, eine regulatorische Pflicht oder den Kalender der Finanzkommunikation bestimmt. Alles andere ergibt sich daraus. Erstellen Sie den Zeitplan deshalb rückwärts, Meilenstein für Meilenstein, vom Ende her.</p>
+
+      <ul class="jal">
+        <li><b>Publikation</b> Gleichzeitige Veröffentlichung aller Sprachfassungen. Die Gleichzeitigkeit ist kein Komfort: Eine vorzeitig veröffentlichte Fassung schafft ein Informationsgefälle.</li>
+        <li><b>Gut zum Druck</b> Schriftliche Zustimmung der freigebenden Person jeder Sprache zu einer bezeichneten und datierten Fassung. Danach keine Änderungen mehr.</li>
+        <li><b>Fahnenkorrektur</b> Kontrolle am gesetzten Dokument, nicht an der Übersetzungsdatei: Silbentrennung, Textüberläufe, Tabellen, Verweise, Inhaltsverzeichnis.</li>
+        <li><b>Layout</b> Übernahme der freigegebenen Texte ins Layout, in jeder Sprache. Rechnen Sie damit, dass die Sprachen unterschiedlich lang sind.</li>
+        <li><b>Sprachliches Lektorat</b> Lektorat durch Fachleute der Übersetzung oder der Rechtslinguistik, auf der für jeden Abschnitt gewählten Stufe.</li>
+        <li><b>Übersetzung</b> Nach dem Einfrieren des Ausgangstextes, nie vorher.</li>
+        <li><b>Einfrieren des Ausgangstextes</b> Der Wendepunkt des Projekts. Siehe Schritt 2.</li>
+        <li><b>Festgelegte Terminologie</b> Glossar verabschiedet und an alle Beteiligten verteilt.</li>
+        <li><b>Redaktion und Zahlenabschluss</b> Erstellung des Ausgangstextes und Festlegung der Zahlen.</li>
+      </ul>
+
+      <p>Zwei Planungsregeln sind mehr wert als jede Schätzung der Dauer.</p>
+
+      <ul>
+        <li><strong>Ein Schritt kann erst beginnen, wenn der vorherige abgeschlossen ist</strong>, ausser dem Layout, das mit bereits freigegebenen Abschnitten starten kann.</li>
+        <li><strong>Mit jeder zusätzlichen Sprache wächst der Zeitbedarf nicht linear.</strong> Die Übersetzung lässt sich parallelisieren, aber Freigabe, Layout und Fahnenkorrektur vervielfachen sich. Rechnen Sie mit dem Koordinationsaufwand, nicht nur mit dem Übersetzungsaufwand.</li>
+      </ul>
+
+      <p>Um die Übersetzungs- und Lektoratsschritte zu beziffern, stützen Sie sich auf das Volumen in Normseiten und auf die gewählte Lektoratsstufe statt auf einen Eindruck: So wird eine Offerte berechnet. Unser Artikel über <a href="{{ROOT}}fr/ressources/blog/comprendre-devis-traduction-juridique/">das Lesen einer Offerte</a> erklärt, was jede Stufe umfasst.</p>
+
+      <h2 id="gel">2. Den Ausgangstext einfrieren</h2>
+
+      <p>Das ist der rentabelste Entscheid des Projekts und der am schwierigsten durchzuhaltende. Den Ausgangstext einfrieren heisst: Ab einem bestimmten Datum ändert sich das Referenzdokument nicht mehr, und jede spätere Änderung durchläuft ein ausdrückliches Verfahren.</p>
+
+      <p>Der Grund ist arithmetisch. Wird nach dem Start der Übersetzungen ein Satz korrigiert, muss die Korrektur in jede Sprache übertragen, in jeder lektoriert, ins Layout übernommen und auf der Fahne erneut geprüft werden. <strong>Die Kosten einer späten Korrektur hängen nicht von der Zahl der Wörter ab, sondern von der Zahl der Sprachen, multipliziert mit der Zahl der bereits durchlaufenen Schritte.</strong></p>
+
+      <p>Damit das Einfrieren hält, braucht es drei Bedingungen.</p>
+
+      <ol>
+        <li><strong>Es wird datiert und im Voraus angekündigt</strong>, beim Projektstart, an alle Personen, die eine Änderung vorschlagen könnten, die Geschäftsleitung eingeschlossen.</li>
+        <li><strong>Ihm geht ein Zeitfenster für das Lektorat des Ausgangstextes voraus</strong>, das gross genug ist, damit alle tatsächlich mitwirken konnten. Ein Einfrieren ohne vorheriges Zeitfenster wird nicht halten.</li>
+        <li><strong>Es sieht seine eigene Ausnahme vor.</strong> Legen Sie fest, was eine Änderung nach dem Einfrieren rechtfertigt (ein sachlicher Fehler, eine regulatorische Änderung, ein Ereignis nach dem Bilanzstichtag), wer sie bewilligt und über welchen Ablauf sie in alle Sprachen gelangt. Ohne vorgesehene Ausnahme zerstört der erste Notfall die Regel.</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>Das Änderungsprotokoll.</b> Führen Sie eine Liste der Änderungen nach dem Einfrieren: Datum, Abschnitt, Grund, nachgeführte Sprachen, freigebende Person. Sie dient zweimal: um zu prüfen, dass keine Sprache vergessen wurde, und um im folgenden Jahr zu zeigen, was das späte Einfrieren gekostet hat.</p>
+      </div>
+
+      <h2 id="terminologie">3. Die Terminologie vor dem ersten übersetzten Satz festlegen</h2>
+
+      <p>Ein Geschäftsbericht beruht auf einem begrenzten, wiederkehrenden Wortschatz: Bezeichnungen der Organe, Funktionstitel, Namen der Gesellschaften, Positionen der Jahresrechnung, regulatorische Bezeichnungen. Wird dieser Wortschatz nicht vor der Übersetzung festgelegt, legt ihn jede Übersetzerin und jeder Übersetzer stillschweigend fest, und zwar unterschiedlich.</p>
+
+      <p>Erstellen Sie ein Projektglossar mit folgenden Angaben pro Eintrag: Ausgangsbegriff, gewählter Begriff in jeder Zielsprache, Quelle des Entscheids und Datum. Drei Arten von Einträgen verdienen besondere Aufmerksamkeit.</p>
+
+      <ul>
+        <li><strong>Die amtlichen Bezeichnungen</strong>: Firma, Gesellschaften des Konsolidierungskreises, statutarische Organe. Sie werden nicht frei übersetzt; übernehmen Sie die im Handelsregister eingetragene Form und die bereits veröffentlichten Gepflogenheiten.</li>
+        <li><strong>Die regulatorischen und gesetzlichen Begriffe.</strong> In der Schweiz existieren sie bereits in den drei Amtssprachen, in den veröffentlichten Texten: Dort holt man sie, nirgends sonst. Die Gesetzesabkürzungen ändern sich je nach Sprache, wie unser Artikel über <a href="{{ROOT}}fr/ressources/blog/traduire-contrat-droit-suisse/">die Viersprachigkeit des Rechts</a> zeigt.</li>
+        <li><strong>Die wiederkehrenden Formulierungen des Unternehmens</strong>: Name einer Strategie, eines Programms, ein Slogan. Entscheiden Sie einmal, ob sie übersetzt werden, und halten Sie diesen Entscheid im ganzen Dokument durch.</li>
+      </ul>
+
+      <p>Eine zweisprachige Konkordanz auf Grundlage öffentlicher Quellen wie <a href="{{ROOT}}fr/corrext/chnell/">Fast lookup CHnell</a> ersetzt den manuellen Wechsel zwischen Portalen. So prüfen Sie einen Begriff des Schweizer Rechts in seinem amtlichen Kontext statt in einem Wörterbuch.</p>
+
+      <h2 id="traduire">4. Übersetzen: wer was macht, in welcher Reihenfolge</h2>
+
+      <p>Nicht alle Abschnitte eines Geschäftsberichts stellen dieselben Anforderungen. Wer sie alle gleich behandelt, zahlt entweder zu viel oder geht ein Risiko ein. Teilen Sie das Dokument auf.</p>
+
+      <ul>
+        <li><strong>Wiederkehrende, stabile Abschnitte</strong> (Corporate Governance, Beschreibung der Geschäftstätigkeit, rechtliche Hinweise): Sie werden nicht neu übersetzt. Übernehmen Sie die im Vorjahr veröffentlichten Fassungen und lassen Sie nur die geänderten Passagen prüfen.</li>
+        <li><strong>Redaktionelle Abschnitte</strong> (Vorwort der Geschäftsleitung, Rückblick auf das Geschäftsjahr): Sie tragen einen Ton und eine Absicht. Sie verlangen ein vollständiges Lektorat mit Blick auf Stil und Register.</li>
+        <li><strong>Finanzielle und regulatorische Abschnitte</strong>: Sie verlangen strikte terminologische und zahlenmässige Genauigkeit und eine Prüfung durch eine Person, die den anwendbaren Rechnungslegungsstandard kennt.</li>
+        <li><strong>Abschnitte für eine Behörde oder eine amtliche Publikation</strong>: Sie können ein doppeltes Lektorat und eine Bescheinigung erfordern. Das muss lange im Voraus geplant werden, weil Dritte beteiligt sind.</li>
+      </ul>
+
+      <p>Zur Reihenfolge zwei Empfehlungen. <strong>Beginnen Sie mit den stabilen Abschnitten</strong>: Sie lassen sich bearbeiten, ohne das vollständige Einfrieren abzuwarten, und schaffen Zeit für den Rest. Und <strong>übersetzen Sie Tabellen und ihre Anmerkungen zusammen mit dem Fliesstext</strong>, der sie kommentiert: Getrennt bearbeitet, laufen sie unweigerlich auseinander.</p>
+
+      <h2 id="coherence">5. Die Kohärenz zwischen den Sprachen sichern</h2>
+
+      <p>Die Kohärenz eines mehrsprachigen Berichts entscheidet sich auf vier Ebenen, und es lohnt sich, sie getrennt zu prüfen.</p>
+
+      <h3>Terminologische Kohärenz</h3>
+      <p>Derselbe Ausgangsbegriff wird überall mit demselben Zielbegriff wiedergegeben, auch in Titeln, Legenden, Inhaltsverzeichnis und Anhängen. Diese Ebene lässt sich am leichtesten mit Tools unterstützen und wird in den Anhängen am häufigsten vernachlässigt.</p>
+
+      <h3>Kohärenz der Zahlen</h3>
+      <p>Jede Zahl im Fliesstext muss der Tabelle entsprechen, die sie kommentiert, in jeder Sprache. Eine Korrektur an einer Tabelle nach der Übersetzung hinterlässt fast immer einen verwaisten Satz in einer Fassung. Prüfen Sie Zahl für Zahl, Sprache für Sprache, nach dem Layout.</p>
+
+      <h3>Strukturelle Kohärenz</h3>
+      <p>Gleiche Anzahl Abschnitte, gleiche Reihenfolge, gleiche Nummerierung, gleiche interne Verweise. Ein Abschnitt, der in einer Fassung gestrichen und in einer anderen beibehalten wurde, ist ein Fehler, der sich nach der Publikation nur schwer beheben lässt.</p>
+
+      <h3>Kohärenz des Tons</h3>
+      <p>Ein Vorwort, das auf Französisch zupackend und auf Deutsch zurückhaltend klingt, erzählt zwei Geschichten. Lassen Sie die redaktionellen Abschnitte aller Sprachen vor der Freigabe von derselben zweisprachigen Person parallel lesen.</p>
+
+      <div class="art-note">
+        <p><b>Eine Kontrolle, die zehn Minuten dauert.</b> Vergleichen Sie am Schluss die Inhaltsverzeichnisse aller Fassungen nebeneinander. Abweichungen in Struktur, Nummerierung und Titeln fallen sofort auf, während sie unsichtbar bleiben, wenn man eine Fassung nach der anderen liest.</p>
+      </div>
+
+      <h2 id="validation">6. Lektorat und Freigabe</h2>
+
+      <p>Lektorat und Freigabe sind zwei verschiedene Vorgänge. Wer sie verwechselt, löst die meisten endlosen Korrekturschlaufen aus.</p>
+
+      <p><strong>Das Lektorat beurteilt die Sprache</strong>: Richtigkeit, Terminologie, Kohärenz, Stil. Es wird von Fachleuten der Übersetzung oder der Rechtslinguistik vorgenommen, auf der für den Abschnitt gewählten Stufe.</p>
+
+      <p><strong>Die Freigabe beurteilt den Inhalt</strong>: Sagt der Text wirklich, was das Unternehmen sagen will? Sie erfolgt durch eine fachlich verantwortliche Person, eine pro Sprache, die beim Projektstart namentlich bestimmt wird.</p>
+
+      <p>Vier Regeln machen diese Phase praktikabel.</p>
+
+      <ol>
+        <li><strong>Eine namentlich bestimmte freigebende Person pro Sprache</strong>, kein Gremium. Eine kollektive Freigabe ohne verantwortliche Person erzeugt widersprüchliche Anmerkungen, über die niemand entscheiden darf.</li>
+        <li><strong>Eine bezeichnete und datierte Fassung.</strong> Die Anmerkungen müssen sich auf ein Dokument beziehen, von dem alle wissen, dass es das richtige ist.</li>
+        <li><strong>Eine angekündigte Frist für die Freigabe</strong>, nach deren Ablauf Schweigen als Zustimmung gilt. Ohne diese Klausel wird die Freigabe zum Engpass des Projekts.</li>
+        <li><strong>Eine einzige Runde von Anmerkungen pro freigebender Person.</strong> Anmerkungen einer zweiten Runde sind nur zulässig, wenn sie eine zwischenzeitliche Änderung betreffen.</li>
+      </ol>
+
+      <p>Für die Wahl der Lektoratsstufe pro Abschnitt gilt dieselbe Überlegung wie für jedes juristische Dokument: Sie hängt von den Empfängern ab. Die <a href="{{ROOT}}fr/niveaux-de-qualite/">Qualitätsstufen</a> reichen vom Lektorat wesentlicher Fehler bis zum doppelten, von einem spezialisierten Übersetzungsbüro beglaubigten Lektorat.</p>
+
+      <h2 id="publication">7. Layout, Formate und Publikation</h2>
+
+      <p>Im letzten Schritt werden die Fehler sichtbar, weil sie endlich im realen Dokument erscheinen.</p>
+
+      <h3>Was das Layout zeigt</h3>
+      <ul>
+        <li><strong>Unterschiedliche Längen.</strong> Die Sprachen brauchen nicht gleich viel Platz. Planen Sie den nötigen Weissraum schon bei der Gestaltung des Layouts ein, statt in letzter Minute in einer einzigen Fassung die Schriftgrösse zu verkleinern.</li>
+        <li><strong>Die Silbentrennung.</strong> Das Deutsche erzeugt lange Wörter und manchmal fehlerhafte Trennungen; prüfen Sie sie von Auge, eine automatische Korrektur erkennt sie nicht.</li>
+        <li><strong>Verweise und Seitenzahlen.</strong> Inhaltsverzeichnis, Register, interne Verweise und Querverweise werden in jeder Fassung neu berechnet.</li>
+      </ul>
+
+      <h3>Die Schweizer Formate, die zu prüfen sind</h3>
+      <ul>
+        <li>Apostroph als Tausendertrennzeichen, Währung in CHF.</li>
+        <li>Kein ß im Deutsch der Schweiz: immer ss.</li>
+        <li>Eindeutig geschriebene Daten in den englischen Fassungen, Monat ausgeschrieben.</li>
+        <li>Gesetzesabkürzungen der jeweiligen Amtssprache.</li>
+        <li>Schweizer Namen von Behörden und Gerichten, nie ihre ausländischen Namensvettern.</li>
+      </ul>
+
+      <h3>Publizieren, dann das Wissen sichern</h3>
+      <p>Ist der Bericht veröffentlicht, bereiten zwei Schritte das folgende Jahr vor. Sie dauern nur einen halben Tag.</p>
+
+      <ol>
+        <li><strong>Archivieren Sie die Schlussfassungen in allen Sprachen, Abschnitt für Abschnitt ausgerichtet.</strong> Sie bilden die Grundlage für die wiederkehrenden Abschnitte des nächsten Geschäftsjahres.</li>
+        <li><strong>Übernehmen Sie das Projektglossar</strong> mit den Quellen in das ständige Glossar der Organisation. Nur so werden die Entscheide dieses Jahres im nächsten Jahr nicht erneut diskutiert.</li>
+      </ol>
+
+      <p>Ziehen Sie zum Schluss mit den Beteiligten eine kurze Bilanz: Wann wurde der Text tatsächlich eingefroren, wie viele Änderungen kamen danach, und welche hätten sich vermeiden lassen? Diese eine Seite ist der beste Ausgangspunkt für die nächste Planung.</p>
+
+      <div class="art-end">
+        <p>Auf der Tool-Seite verlangt ein mehrsprachiger Geschäftsbericht drei Dinge: eine verlässliche Zählung des Volumens für die Planung, eine ausdrückliche Lektoratsstufe pro Abschnitt und eine Terminologie, die sich in amtlichen Quellen überprüfen lässt. Das decken <a href="{{ROOT}}fr/corrext/gestion-de-projet/">Projektmanagement</a> für Projektablauf und Offerte, <a href="{{ROOT}}fr/corrext/chnell/">Fast lookup CHnell</a> für die Terminologie und die unterstützten <a href="{{ROOT}}fr/langues-et-formats/">Sprachen und Formate</a> für den Rest ab.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="siblings">
+  <div class="container">
+    <h2>Weiterlesen</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/ressources/guides/organiser-traduction-cabinet/"><b>Übersetzungen in der Kanzlei organisieren</b><span>Bedarf erfassen, Entscheide verteilen, Wirkung messen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/blog/traduire-contrat-droit-suisse/"><b>Die Viersprachigkeit des Schweizer Rechts</b><span>Abkürzungen, falsche Freunde, Formate: was das Gesetz einer Übersetzung vorgibt.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/blog/comprendre-devis-traduction-juridique/"><b>Eine Übersetzungsofferte verstehen</b><span>Normseiten, Lektoratsstufen, Lieferfristen: jede Zeile lesen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Warum muss der Ausgangstext eines Geschäftsberichts eingefroren werden?</summary>
+        <p>Weil jede Änderung nach dem Start der Übersetzungen in alle Sprachen übertragen, in jeder Sprache lektoriert und im Layout erneut geprüft werden muss. Die Kosten einer späten Korrektur hängen nicht von der Zahl der geänderten Wörter ab, sondern von der Zahl der Sprachen, multipliziert mit der Zahl der bereits durchlaufenen Schritte. Ein formelles, datiertes und kommuniziertes Einfrieren ist die rentabelste Massnahme des Projekts.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie erstellt man den Zeitplan für einen mehrsprachigen Geschäftsbericht?</summary>
+        <p>Rückwärts vom Publikationsdatum aus. Setzen Sie zuerst die Publikation und arbeiten Sie sich dann zurück: Schlussfreigabe, Layout und Fahnenkorrektur, sprachliches Lektorat, Übersetzung, Einfrieren des Ausgangstextes, festgelegte Terminologie, Redaktion. Jeder frühere Meilenstein wird durch den folgenden bestimmt, und vom Einfrieren des Ausgangstextes hängen alle anderen ab.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie stellt man die Kohärenz zwischen den Sprachfassungen eines Berichts sicher?</summary>
+        <p>Indem Sie die Terminologie vor dem ersten übersetzten Satz festlegen, pro Sprache eine verantwortliche Person bestimmen und wiederkehrende Abschnitte jedes Jahr auf Grundlage der zuvor veröffentlichten Fassungen bearbeiten. Unveränderte Textblöcke werden nicht neu übersetzt: Sie werden übernommen und dann geprüft.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wer sollte die übersetzten Fassungen eines Geschäftsberichts freigeben?</summary>
+        <p>Pro Sprache eine fachlich verantwortliche Person, die den Inhalt beurteilen kann und nicht dieselbe ist wie die Person, die das sprachliche Lektorat übernimmt. Die Freigabe muss sich auf eine bezeichnete und datierte Fassung beziehen und mit einer schriftlichen Zustimmung enden. Eine kollektive Freigabe ohne namentlich bestimmte verantwortliche Person erzeugt widersprüchliche Anmerkungen, über die niemand entscheiden darf.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Schweizer Formate sollte man vor der Publikation prüfen?</summary>
+        <p>Den Apostroph als Tausendertrennzeichen, die Währung in CHF, kein ß im Deutsch der Schweiz, eindeutig geschriebene Daten in den englischen Fassungen, die Gesetzesabkürzungen jeder Amtssprache und die Übereinstimmung jeder Zahl zwischen Tabellen und Fliesstext, in jeder Fassung.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Ihr nächstes Geschäftsjahr mit einer Fachperson vorbereiten</h2>
+      <p>Eine Demo mit Ihren eigenen Abschnitten: Volumen in Normseiten, Lektoratsstufe pro Teil, Terminologie geprüft in amtlichen Schweizer Quellen.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/ressources/guides/" class="btn-outline">Alle Leitfäden</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>

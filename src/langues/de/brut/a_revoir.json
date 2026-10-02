@@ -1,0 +1,206 @@
+[
+ {
+  "fichier": "src/pages/comparatif/deepl-traduction-juridique/index.html",
+  "segment": "34",
+  "probleme": "marqueurs {3}…{/3} absents, en double ou inversés",
+  "source": "<b>La suite du travail</b><a href=\"{{ROOT}}fr/corrext/traduction-texte-et-document/\">Alternatives comparées par moteur</a>, <a href=\"{{ROOT}}fr/corrext/gestion-de-projet/\">relecture Light, Full ou Double review commandée dans l'outil</a>, devis et délai, traduction certifiée, notariée ou apostillée."
+ },
+ {
+  "fichier": "src/pages/comparatif/index.html",
+  "segment": "115",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<span class=\"vn-term vn-kv\"><span><i>Stockage</i><b>en Suisse</b></span><span><i>Norme</i><b>ISO 27001</b></span></span><b class=\"vn-t\">Sécurité et souveraineté</b><span class=\"vn-d\">Stockage suisse, mode Highly sensitive, ISO 27001, gouvernance des moteurs tiers.</span><em>Voir la page"
+ },
+ {
+  "fichier": "src/pages/corrext/api-on-premises/index.html",
+  "segment": "60",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<span><b>Niveau de confidentialité.</b> Vos règles internes imposent-elles le mode Highly sensitive content, un moteur suisse, ou un déploiement dans votre réseau ?</span>"
+ },
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "13",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "Back</span>\n            <span class=\"cxe-tools\" aria-hidden=\"true\">\n              <span class=\"cxe-tag\">&lt;tag&gt;</span><span class=\"cxe-tag\">&lt;/tag&gt;</span><span class=\"cxe-tag\">&lt;tag/&gt;</span>\n              <span class=\"cxe-f b\">B</span><span class=\"cxe-f i\">I</span><span class=\"cxe-f u\">U</span>\n            </span>\n            <span class=\"cxe-sep\" aria-hidden=\"true\"></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "33",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<span class=\"cxe-ind\" title=\"Machine translation\"><b>MT</b><span class=\"cxe-gauge\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span class=\"cxe-sr\">Traduction automatique, qualité haute</span></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "39",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<span class=\"cxe-ind\" title=\"Machine translation\"><b>MT</b><span class=\"cxe-gauge\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span class=\"cxe-sr\">Traduction automatique, qualité haute</span></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "45",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<span class=\"cxe-ind\" title=\"Machine translation\"><b>MT</b><span class=\"cxe-gauge\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i></span><span class=\"cxe-sr\">Traduction automatique, qualité moyenne</span></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "57",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<span class=\"cxe-ind\" title=\"Machine translation\"><b>MT</b><span class=\"cxe-gauge\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span class=\"cxe-sr\">Traduction automatique, qualité haute</span></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "65",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<span class=\"cxe-ind\" title=\"Machine translation\"><b>MT</b><span class=\"cxe-gauge\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span class=\"cxe-sr\">Traduction automatique, qualité haute</span></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/extraits-registre-commerce/index.html",
+  "segment": "102",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Traduction accompagnée d'un certificat <strong class=\"kf\">signé et tamponné par Corrext</strong>.<small>En règle générale : usage interne, partenaires et tiers privés.</small>"
+ },
+ {
+  "fichier": "src/pages/corrext/gestion-de-projet/index.html",
+  "segment": "154",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Les projets en Standard confidentiality sont enregistrés sur les serveurs suisses de Corrext et réutilisables <strong class=\"kf\">exclusivement par vous</strong> comme mémoire de traduction pour vos projets futurs. <strong class=\"kf\">Rien n'est réutilisé en mode Highly sensitive</strong>."
+ },
+ {
+  "fichier": "src/pages/corrext/index.html",
+  "segment": "87",
+  "probleme": "marqueurs {3}…{/3} absents, en double ou inversés",
+  "source": "<span class=\"ptrust-t\"><b>Droits d'accès jusqu'au document</b><span>Gérés via SharePoint et Active Directory</span></span>"
+ },
+ {
+  "fichier": "src/pages/corrext/traduction-texte-et-document/index.html",
+  "segment": "61",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO."
+ },
+ {
+  "fichier": "src/pages/index.html",
+  "segment": "66",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO."
+ },
+ {
+  "fichier": "src/pages/lexmachina/index.html",
+  "segment": "61",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<span class=\"vn-term vn-kv\"><span><i>Stockage</i><b>en Suisse</b></span><span><i>Norme</i><b>ISO 27001</b></span></span><b class=\"vn-t\">Sécurité et souveraineté</b><span class=\"vn-d\">Où va votre document selon le mode et le moteur retenus, sans arrondi.</span><em>Voir la page"
+ },
+ {
+  "fichier": "src/pages/ressources/blog/secret-professionnel-outils-traduction/index.html",
+  "segment": "35",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Les plateformes de traduction professionnelles sont aujourd'hui multi-moteurs : elles orchestrent plusieurs modèles, dont certains sont exploités par des tiers hors de Suisse. C'est une bonne chose, parce que les moteurs n'ont pas les mêmes forces, et c'est un point de vigilance, parce que <strong>le lieu de traitement change avec le moteur sélectionné, à chaque envoi</strong>."
+ },
+ {
+  "fichier": "src/pages/ressources/etudes/evaluer-moteur-traduction-juridique/index.html",
+  "segment": "110",
+  "probleme": "marqueurs {3}…{/3} absents, en double ou inversés",
+  "source": "Si vous souhaitez appliquer cette méthode à vos propres documents, la comparaison de sorties est accessible directement dans l'application : la fonction Alternatives de <a href=\"{{ROOT}}fr/corrext/traduction-texte-et-document/\">Traduction texte et document</a> affiche jusqu'à quatre propositions, chacune attribuée à son moteur, ce qui permet de constituer un corpus d'évaluation à partir de vos textes réels. Le fonctionnement du moteur suisse est décrit sur la page <a href=\"{{ROOT}}fr/lexmachina/\">LexMachina</a>, et une <a href=\"{{ROOT}}fr/comparatif/\">comparaison raisonnée des approches</a> complète la lecture."
+ },
+ {
+  "fichier": "src/pages/ressources/etudes/index.html",
+  "segment": "26",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<span class=\"vn-term\"><span><i>DE</i><b lang=\"de\">IPRG</b></span><span><i>FR</i><b lang=\"fr\">LDIP</b></span></span><b class=\"vn-t\">LexMachina</b><span class=\"vn-d\">Les données d'entraînement du moteur et ce qu'il sait du droit suisse.</span><em>Voir la page"
+ },
+ {
+  "fichier": "src/pages/ressources/etudes/index.html",
+  "segment": "28",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<span class=\"vn-term\"><span><i>DE</i><b lang=\"de\">Konventionalstrafe</b></span><span><i>FR</i><b lang=\"fr\">clause pénale</b></span></span><b class=\"vn-t\">Glossaire juridique</b><span class=\"vn-d\">Les termes officiels dans les quatre langues, avec leur source.</span><em>Voir le glossaire"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:2/texte",
+  "probleme": "marqueurs {8}…{/8} absents, en double ou inversés",
+  "source": "<p>Notre CEO, <strong>Paula Reichenberg</strong>, a rejoint des professionnels du droit venus de toute la Suisse au <strong>12e Anwaltskongress</strong> à Lucerne, événement phare organisé par la Fédération Suisse des Avocats.</p><p>Le congrès de cette année était consacré à la <strong>transformation numérique du droit</strong>, avec des sessions sur <strong>Justitia 4.0</strong>, les <strong>outils d’IA</strong> et l’évolution du paysage legaltech. Paula en a profité pour échanger avec des études d’avocats, des fournisseurs de technologies et des responsables institutionnels, et pour positionner <strong>la plateforme de traduction juridique par IA de Neur.on</strong> comme une solution clé dans un écosystème juridique en pleine numérisation.</p><p>Le vif intérêt suscité par les flux de travail multilingues et les gains d’efficacité permis par la technologie confirme une demande croissante dans l’ensemble du secteur juridique suisse, ce qui conforte la mission de Neur.on et sa dynamique sur le marché.</p>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:20/texte",
+  "probleme": "marqueurs {6}…{/6} absents, en double ou inversés",
+  "source": "<p>Nous avons officiellement fait notre entrée dans la cohorte Kickstart Innovation de cette année, au sein de notre verticale Finance &amp; Insurance.</p><p>Lors de la cérémonie d’ouverture, mardi, l’esprit d’entreprise était palpable, et j’ai eu le plaisir de présenter Neur.on aux partenaires du programme, aux investisseurs et à mes pairs.</p><p>S’ensuit une semaine de conférences et de rencontres à Zurich et à Fribourg avec des partenaires de collaboration nationaux et internationaux, des mentors expérimentés, des spécialistes du domaine et des collègues qui partagent nos objectifs.</p><p>Quel est le but de tout cela ? <a href=\"https://www.linkedin.com/company/kickstart-innovation/\" rel=\"noopener\" target=\"_blank\">Kickstart Innovation</a> nous permet de trouver de nouveaux clients en les mettant en relation avec nos cohortes respectives et en amorçant le dialogue. Le tout sous l’œil attentif de l’équipe Kickstart, et en particulier de <a href=\"https://www.linkedin.com/in/katkaletzing/\" rel=\"noopener\" target=\"_blank\">Katka Letzing</a>, dont la phrase préférée est : « Si vous ne signez pas d’accords de PoC d’ici la fin du mois, je vous retrouverai. »</p><p>Les personnes très motivées qui m’entourent sont <a href=\"https://www.linkedin.com/in/pascal-sollberger/\" rel=\"noopener\" target=\"_blank\">Pascal Sollberger</a> et <a href=\"https://www.linkedin.com/in/tobiaswegmueller/\" rel=\"noopener\" target=\"_blank\">Tobias Wegmüller</a> (tous deux chez <a href=\"https://www.linkedin.com/company/join-hypt/\" rel=\"noopener\" target=\"_blank\">hypt</a>), <a href=\"https://www.linkedin.com/in/markus-geissler/\" rel=\"noopener\" target=\"_blank\">Markus Geissler</a> et <a href=\"https://www.linkedin.com/in/elisabettachiarantoni14/\" rel=\"noopener\" target=\"_blank\">Elisabetta Maria Chiarantoni</a> (tous deux chez <a href=\"https://www.linkedin.com/company/kickstart-innovation/\" rel=\"noopener\" target=\"_blank\">Kickstart Innovation</a>), <a href=\"https://www.linkedin.com/in/ravinamutha/\" rel=\"noopener\" target=\"_blank\">Ravina Mutha</a>, d’enterprisebot, et <a href=\"https://www.linkedin.com/in/mathias-hoellerl/\" rel=\"noopener\" target=\"_blank\">Mathias Höllerl</a>, de <a href=\"https://www.linkedin.com/company/keylesstech/\" rel=\"noopener\" target=\"_blank\">Keyless</a>.</p>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:35/texte",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>Nous sommes reconnaissants d’avoir pu prendre part à l’Investor Summit Liechtenstein ! Ce fut une belle occasion pour nous, qui nous a permis de nouer des contacts précieux.</p><p>Félicitations également à toutes les autres start-up participantes !</p><ul><li><a href=\"https://www.linkedin.com/company/aimorphous-health/\" rel=\"noopener\" target=\"_blank\">AiMorphous Health</a></li><li><a href=\"https://www.linkedin.com/company/healthyourself/\" rel=\"noopener\" target=\"_blank\">Health Yourself</a></li><li><a href=\"https://www.linkedin.com/company/mind-metrix/\" rel=\"noopener\" target=\"_blank\">myflow by MindMetrix AG</a></li><li><a href=\"https://www.linkedin.com/company/phaseform/\" rel=\"noopener\" target=\"_blank\">Phaseform</a></li><li><a href=\"https://www.linkedin.com/company/qcella/\" rel=\"noopener\" target=\"_blank\">qCella</a></li><li><a href=\"https://www.linkedin.com/company/tantumpay/\" rel=\"noopener\" target=\"_blank\">TantumPay</a></li><li><a href=\"https://www.linkedin.com/company/vigilitech/\" rel=\"noopener\" target=\"_blank\">Vigilitech</a></li></ul>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:37/texte",
+  "probleme": "marqueurs {3}…{/3} absents, en double ou inversés",
+  "source": "<p>La CEO de Neur.on a été nommée par Le Temps membre du « Forum des 100 », qui distingue 100 personnalités influentes ayant largement contribué à faire rayonner la Suisse romande en 2023.</p><p>En nommant notre CEO, Paula Reichenberg, parmi les 100 personnalités qui contribuent au rayonnement de la Suisse romande, <a href=\"https://www.linkedin.com/company/le-temps/\" rel=\"noopener\" target=\"_blank\">Le Temps</a> souligne l’importance de solutions de traduction juridique efficaces et de grande qualité pour la compétitivité et la forme numérique de notre pays.</p><p>Dans un monde de plus en plus multipolaire, une compréhension précise et fiable des concepts et de la documentation juridiques étrangers est déterminante pour la réussite économique et politique.</p><p>La souveraineté et la sécurité des données suisses sont essentielles à des négociations impartiales et à une défense proactive face aux luttes de pouvoir entre services de renseignement.</p><p>Aujourd’hui, au SwissTech Convention Center de l’EPFL (École polytechnique fédérale de Lausanne), <a href=\"https://www.linkedin.com/in/ACoAAAABPnYBD3Uoin_LOGlh0rTI6AcZkWNJVVM\" rel=\"noopener\" target=\"_blank\">Dominique Mégret</a>, de <a href=\"https://www.linkedin.com/company/swisscom/\" rel=\"noopener\" target=\"_blank\">Swisscom</a> Ventures, a souligné l’ADN « horlogerie de luxe » de la Suisse, présent dans tous les secteurs. Partout où sont requises une grande précision, la capacité à décrypter la complexité et la compréhension de la diversité mondiale, nous disposons d’un avantage naturel. Tirons parti de cette force en investissant les ressources humaines et financières nécessaires pour que l’innovation numérique suisse s’impose à l’échelle mondiale !</p>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:50/texte",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>La profession juridique est confrontée à une multitude de changements de paradigme, provoqués par de nouvelles technologies disruptives, une société en mutation et un marché du travail toujours plus concurrentiel.</p><p>Les prestataires de services juridiques doivent accepter ce changement pour survivre, et Neur.on est prêt à les accompagner dans cette adaptation grâce à sa plateforme de traduction pilotée par l’IA, conçue de A à Z pour répondre aux exigences pointues des professionnels du droit et de la finance.</p><p>Notre fondatrice, Paula Reichenberg, a été invitée à intervenir lors de la session « The future of the legal field » de l’<a href=\"https://www.linkedin.com/company/university-of-st-gallen/\" rel=\"noopener\" target=\"_blank\">Université de Saint-Gall (HSG)</a>, le 4 mai à Zurich. Paula a rejoint des experts de tous les horizons du droit suisse pour partager sa vision du rôle de la LegalTech dans l’étude d’avocats de demain.</p>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:68/texte",
+  "probleme": "marqueurs {5}…{/5} absents, en double ou inversés",
+  "source": "<p>Qu’attendent de la LegalTech les juristes actifs dans la gestion d’actifs ? Quelles sont les stratégies les plus efficaces pour sélectionner et mettre en œuvre des solutions d’IA utiles au sein d’un service juridique ?</p><p>Être juriste dans la gestion d’actifs exige une multitude de talents et une bonne dose de résilience, en particulier lorsque l’on constitue à soi seul tout le service juridique. Face à un environnement réglementaire en constante évolution et à des définitions floues en matière de conformité, et jonglant entre travail contractuel et questions juridiques internes, les juristes en gestion d’actifs auraient bien besoin de toute l’aide que la technologie peut leur apporter.</p><p>Quels outils LegalTech peuvent-ils mettre en place immédiatement pour obtenir des résultats meilleurs, plus rapides et plus économiques ?</p><p>À l’invitation d’<a href=\"https://www.linkedin.com/in/ACoAAADj9rIBiRk1rc6UcZHxmfMtovUc7_ojF3Q\" rel=\"noopener\" target=\"_blank\">Andreas Hinsen</a> et de <a href=\"https://www.linkedin.com/in/ACoAAAGHnogBoQCkYHSETAErAnuy_5ZUN-z-DT4\" rel=\"noopener\" target=\"_blank\">Julien Cayet</a>, de <a href=\"https://www.linkedin.com/company/loyens-&amp;-loeff/\" rel=\"noopener\" target=\"_blank\">Loyens &amp; Loeff</a>, notre CEO, <a href=\"https://www.linkedin.com/in/ACoAAAAdUpYBDDUs3QOlIU_Kfuro2a2X5lsyK1s\" rel=\"noopener\" target=\"_blank\">Paula Reichenberg</a>, et <a href=\"https://www.linkedin.com/in/ACoAAABZfH8Bl_dlWXsHzt4KjecZ0Kyb3p3Jx9I\" rel=\"noopener\" target=\"_blank\">Jordan Urstadt</a>, de <a href=\"https://www.linkedin.com/company/partnervine/\" rel=\"noopener\" target=\"_blank\">PartnerVine</a>, ont présenté des solutions et des cas d’usage concrets lors de la conférence inaugurale Lawyers in Asset Management (LAM), coorganisée avec <a href=\"https://www.linkedin.com/in/ACoAAABMakkBZlDVXIxm-od_qonthoHnVtx1FxI\" rel=\"noopener\" target=\"_blank\">Aruna Arasu</a>, d’<a href=\"https://www.linkedin.com/company/alpha-associates/\" rel=\"noopener\" target=\"_blank\">Alpha Associates</a>, et <a href=\"https://www.linkedin.com/in/ACoAACEtVBQBPC1EZrbMCghWoCz7uH50Lvsh1Vs\" rel=\"noopener\" target=\"_blank\">Nicky Walsh</a>, d’<a href=\"https://www.linkedin.com/company/astra-legal1/\" rel=\"noopener\" target=\"_blank\">Astra Legal</a>.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:5/corps",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>En décembre, le <a href=\"https://www.linkedin.com/company/tltfsummit/\" rel=\"noopener\" target=\"_blank\">TLTF Summit</a> revient pour sa troisième édition. Surnommé « l’événement à la sélection rigoureuse pour les innovateurs qui transforment le monde du droit », ce symposium a reçu les candidatures de centaines de start-up en phase de démarrage, venues des quatre coins de la planète, pour la liste restreinte du « Startups Showcase ». Seules 24 ont été invitées, et Neur.on en fait partie !</p><p>Nous présenterons <a href=\"{{ROOT}}fr/corrext/\">notre suite d’IA de traduction juridique</a> en décembre à un groupe choisi d’investisseurs, de géants du secteur et de pairs chevronnés, comme <a href=\"https://www.linkedin.com/in/druarmstrong/\" rel=\"noopener\" target=\"_blank\">Dru Armstrong</a> d’<a href=\"https://www.linkedin.com/company/affinipay/\" rel=\"noopener\" target=\"_blank\">AffiniPay</a>, <a href=\"https://www.linkedin.com/in/wendy-butler-curtis/\" rel=\"noopener\" target=\"_blank\">Wendy Butler Curtis</a> d’<a href=\"https://www.linkedin.com/company/orrick/\" rel=\"noopener\" target=\"_blank\">Orrick, Herrington &amp; Sutcliffe LLP</a> ou Jay Greenberg de LexShares, pour n’en citer que quelques-uns.</p><p>Vous vous demandez peut-être : « Qu’est-ce que le TLTF Summit ? » Il s’agit d’un événement sur invitation uniquement, qui réunit une sélection de leaders innovants de la LegalTech. On y trouvera des membres de directions générales, des présidents et des associés gérants de cabinets d’avocats, des directeurs juridiques et des responsables Legal Ops, des investisseurs (capital-risque, capital-investissement, financement de litiges), des fondateurs d’entreprises, de la start-up au grand groupe, des doyens de facultés de droit et des universitaires. Autrement dit : impossible de faire cinq mètres sans être happé par une conversation fructueuse, un discours éclairant ou un networking à forte valeur ajoutée.</p><p>Quelle belle façon de clore cette année bien remplie.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:6/corps",
+  "probleme": "marqueurs {8}…{/8} absents, en double ou inversés",
+  "source": "<h2>Qu’attendent les directeurs juridiques de leurs cabinets d’avocats ?</h2><p>« Je refuse de payer pour des informations que j’ai déjà », s’exclame le directeur juridique d’une entreprise du secteur de l’énergie, interrogé sur ses principaux critères pour mandater des cabinets d’avocats externes.</p><p>« C’est une vision simpliste, et certainement pas une base solide pour construire une relation durable et fructueuse avec les cabinets d’avocats référencés », rétorque le directeur juridique d’une multinationale, chargé de gérer les fonctions juridiques de plus de 15 pays. « Si vous attendez d’un cabinet qu’il apporte de la valeur ajoutée et des conseils opérationnels directement applicables, juristes d’entreprise et avocats externes doivent partager leurs connaissances et construire un terrain d’entente. Cela demande de l’investissement et de la confiance des deux côtés. »</p><p>« “Confiant” n’est pas le premier adjectif qui vient à l’esprit pour décrire les avocats : ils ont été formés à rester sur leurs gardes et à faire preuve de scepticisme pour mieux protéger leurs clients. Changer de posture ne va pas de soi », répond un responsable de l’innovation juridique d’un cabinet d’avocats d’affaires.</p><p>« Ils doivent comprendre que les directeurs juridiques n’attendent pas toujours une exactitude garantie : obtenir leur avis le plus éclairé dans les dossiers urgents est la priorité, et les prévisions qui se révèlent fausses font partie de la vie des affaires. Donner aux cabinets que vous avez référencés des indications claires sur le type et le volume de travail qu’ils peuvent attendre de votre entreprise aide aussi à instaurer la confiance : si les avocats peuvent investir suffisamment pour comprendre votre entreprise et vos attentes, ils proposeront d’eux-mêmes des solutions pour gagner en efficacité. »</p><h2>Comment les cabinets d’avocats s’organisent-ils pour y répondre ?</h2><p>« Lorsque nous travaillons avec des directeurs juridiques, l’objectif de nos avocats est d’agir comme le prolongement de leur équipe », confirme le directeur de l’innovation d’un cabinet d’avocats d’Europe continentale. « À l’arrivée d’un nouveau client, notre priorité est de trouver des interlocuteurs dont le style de travail et de communication correspond à celui du directeur juridique. Pour traiter chacune de ses problématiques, nous constituons ensuite des équipes ad hoc qui réunissent le bon dosage d’expertise métier, de parcours de formation et de niveaux d’ancienneté. »</p><h2>Pourquoi la technologie devient-elle un livrable des cabinets d’avocats ?</h2><p>« En plus de la bonne équipe, l’analyse des processus fondée sur les données est essentielle pour fournir des services juridiques de manière efficace », ajoute <a href=\"https://www.linkedin.com/in/jordan-lee-427567111/\" rel=\"noopener\" target=\"_blank\">Jordan Lee</a>, Chief Strategy Officer de Pogust Goodhead, un cabinet d’avocats spécialisé dans les recours collectifs. « Dès que l’on identifie une étape automatisable ou des schémas répétitifs qui peuvent être rationalisés, l’équipe technique peut intervenir et capter même les plus petits gains marginaux. Mis bout à bout, ils se traduisent vite par d’importantes économies et une hausse de la qualité. »</p><p>« On observe une nette tendance : les clients attendent de leurs avocats qu’ils jouent aussi le rôle de conseillers technologiques dès qu’une optimisation des processus juridiques est possible. Par exemple, dans le domaine d’expertise de Neur.on, tout client confronté à d’importants défis de traduction dans une affaire juridique attend de ses avocats qu’ils aient une solution économique et sécurisée à disposition. Les tests, l’analyse comparative et la co-création d’outils LegalTech font désormais partie des livrables des cabinets d’avocats. »</p><p>Voilà quelques enseignements de la conférence. Notez déjà l’édition de l’année prochaine dans vos agendas ! Un grand merci à <a href=\"https://www.linkedin.com/in/bradleycentaurcollins/\" rel=\"noopener\" target=\"_blank\">Bradley Collins</a>, <a href=\"https://www.linkedin.com/in/charlotte-johnstone0000/\" rel=\"noopener\" target=\"_blank\">Charlotte Johnstone</a> et <a href=\"https://www.linkedin.com/in/merlin-beyts-652ab0168/\" rel=\"noopener\" target=\"_blank\">Merlin Beyts</a> pour cette brillante organisation.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:10/corps",
+  "probleme": "marqueurs {13}…{/13} absents, en double ou inversés",
+  "source": "<p>La CEO de Neur.on, <a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg</a>, a récemment participé à un événement sur invitation consacré à l’innovation juridique, organisé par <strong>PwC</strong> et <strong>The LegalTech Fund</strong> à Londres. Soigneusement préparée par Sandeep Agrawal, Zach Posner et Rebecca Engel, la rencontre a réuni certaines des solutions legaltech les plus prometteuses et des leaders du secteur.</p><p>Paula a présenté Neur.on lors de l’événement. Elle a gagné la reconnaissance des organisateurs et des participants, mais elle est aussi repartie avec <strong>trois « prix » inattendus</strong> :</p><ul><li>D’abord, l’honneur d’être invitée à présenter Neur.on au sein d’un groupe restreint de fournisseurs legaltech tournés vers l’avenir.</li><li>Ensuite, un gain au tirage au sort, avec une variété de cadeaux attentionnés et amusants, grâce au format de réseautage créatif imaginé par les hôtes.</li><li>Enfin, et c’est le plus important : des échanges éclairants avec des dirigeants de la legaltech du monde entier. Ils ont confirmé la demande croissante de <strong>flux de traduction juridique multilingues</strong> dans les grandes organisations internationales.</li></ul><p>L’événement a souligné l’importance stratégique de la mission de Neur.on. Les acteurs clés de la legaltech reconnaissent de plus en plus la complexité et le caractère critique d’une <a href=\"{{ROOT}}fr/corrext/\">traduction juridique de haute qualité à grande échelle</a>.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:15/corps",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>NEUR.ON fait partie des 4 finalistes des Swiss FinTech Awards 2024.</p><p>Vous pensez qu’il y a erreur ?</p><p>« Mais comment une <a href=\"{{ROOT}}fr/corrext/\">plateforme SaaS de traduction propulsée par l’IA</a> pourrait-elle être considérée comme une FinTech ? », vous demanderez-vous peut-être. Surtout si vous nous avez rencontrés lors des innombrables événements LegalTech auxquels nous avons participé.</p><p>Le jury des Swiss FinTech Awards a pourtant compris qu’une terminologie exacte et une formulation convaincante dépassent largement le domaine juridique.</p><p>Pour les banques, un langage précis et une communication percutante sont l’écrin de luxe dans lequel elles livrent leur expertise.</p><p>Imaginez que vous receviez une brochure sur papier glacé censée contenir une analyse pertinente de votre portefeuille par votre banquier privé. Vous commencez à lire. Après quelques phrases seulement, il est évident que l’ensemble a été traduit automatiquement, et mal qui plus est. Les formulations sonnent faux, les incohérences de contexte se multiplient, et vous voyez bien que le résultat final n’a même jamais été relu par une personne de langue maternelle.</p><p>Une langue médiocre fait inévitablement naître un soupçon d’incompétence et, pire encore peut-être, de manque de respect envers vos lecteurs. Impensable dans l’univers de la « haute horlogerie financière » suisse.</p><p>Pour en savoir plus sur les 4 finalistes, lisez <a href=\"https://fintechnews.ch/fintech/the-finalists-of-the-swiss-fintech-awards-2024/70811/\" rel=\"noopener\" target=\"_blank\">Fintechnews Switzerland</a> et <a href=\"https://www.fuw.ch/fintech-awards-finale-der-besten-fintechs-steht-fest-129774611612\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a>.</p><p>Rejoignez-nous le 11 juin à « FinTech 2024 », la conférence fintech phare organisée par Finanz und Wirtschaft Forum au GDI Gottlieb Duttweiler Institute de Rüschlikon, pour une finale passionnante.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:23/corps",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>Ne manquez pas notre session intitulée « AI-Powered Projects: Your Innovation Journey », le 26 mars à 14 h.</p><p>Neur.on participera à une discussion consacrée au déploiement concret de l’intelligence artificielle. À quoi ressemble ce parcours pour une start-up, une PME et une grande entreprise comme Swisscom ? Quel soutien pouvons-nous obtenir de l’écosystème swisstech, d’Innosuisse, du monde académique et des autres acteurs de l’innovation pour accélérer notre transformation ?</p><p>Organisée par l’Industry Liaison Office de la Vice-présidence pour l’innovation (VPI) de l’EPFL, notre session réunira les points de vue de 4 entreprises issues de la <a href=\"{{ROOT}}fr/a-propos/\">LegalTech multilingue (Neur.on)</a>, de la santé (<a href=\"https://www.linkedin.com/company/consulto-virtual-clinic/\" rel=\"noopener\" target=\"_blank\">Consulto</a>), des télécommunications (<a href=\"https://www.linkedin.com/company/swisscom/\" rel=\"noopener\" target=\"_blank\">Swisscom</a>) et de la publicité (<a href=\"https://www.linkedin.com/company/weareamplify/\" rel=\"noopener\" target=\"_blank\">Amplify</a>). Chacune se trouve à une étape différente de son parcours d’innovation. Nous partagerons nos défis entrepreneuriaux et de recherche, mais aussi les raisons de notre enthousiasme et de notre optimisme. Nous espérons ainsi en « contaminer » beaucoup parmi vous et vous encourager à vous lancer dans votre propre transformation.</p><p><a href=\"https://www.linkedin.com/in/robert-van-kommer-60621a5/\" rel=\"noopener\" target=\"_blank\">Robert van Kommer</a>, d’<a href=\"https://www.linkedin.com/company/alliance-innovation/\" rel=\"noopener\" target=\"_blank\">Alliance-innovation</a>, présentera les véhicules, les partenariats et les programmes de soutien disponibles en Suisse pour créer une start-up, trouver l’adéquation produit-marché (product-market fit) et se développer à l’international.</p><p><a href=\"https://lnkd.in/g3ZX47ey\" rel=\"noopener\" target=\"_blank\">Obtenir vos billets</a>.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:24/corps",
+  "probleme": "marqueurs {8}…{/8} absents, en double ou inversés",
+  "source": "<p>Nous sommes fiers de mettre en lumière le parcours remarquable d’Orane Laeri, COO de Neur.on. Le site orientation.ch lui consacre un article, dans lequel elle raconte son parcours dans les sciences du langage, la linguistique et la linguistique computationnelle.</p><p>Son parcours universitaire a conduit Orane à l’Université de Genève, où elle a étudié la traduction. Aujourd’hui, elle se distingue comme responsable des opérations au sein d’une start-up LegalTech dynamique, spécialisée dans la <a href=\"{{ROOT}}fr/lexmachina/\">traduction automatique neuronale</a>.</p><p>Face aux progrès rapides de la technologie, Orane souligne que l’objectif de Neur.on n’est pas de remplacer l’humain par la machine, mais de lui donner des outils sur mesure. Elle le relève à juste titre : « Il y a de quoi se réjouir : la machine est un outil qui rend notre travail plus intéressant. »</p><p>Revenant sur ses débuts dans la vie professionnelle, Orane raconte son chemin, d’un stage en traduction juridique jusqu’à son poste de direction actuel.</p><p>Son conseil aux étudiants : adopter la fusion entre technologie et linguistique, et s’adapter à l’évolution du métier. Que l’on soit attiré par les finesses de la langue ou par le lien entre l’humain et la linguistique, il existe un créneau qui n’attend que d’être maîtrisé.</p><p>Je vous invite à découvrir plus en détail le parcours d’Orane en lisant <a href=\"https://www.orientation.ch/dyn/show/142567\" rel=\"noopener\" target=\"_blank\">l’article complet</a>.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:25/corps",
+  "probleme": "marqueurs {5}…{/5} absents, en double ou inversés",
+  "source": "<p>Le projet de recherche innovant de Neur.on, mené en collaboration avec <a href=\"https://www.linkedin.com/company/icosys/\" rel=\"noopener\" target=\"_blank\">iCoSys</a>, l’Institut des systèmes complexes de la <a href=\"https://www.linkedin.com/company/heiafr/\" rel=\"noopener\" target=\"_blank\">Haute école d’ingénierie et d’architecture de Fribourg</a>, bénéficie du soutien d’Innosuisse. Il est désormais aussi soutenu par l’État de Fribourg.</p><p>Nous avons le plaisir d’annoncer que l’État de Fribourg nous accorde un soutien supplémentaire pour <a href=\"{{ROOT}}fr/lexmachina/\">simplifier la traduction juridique grâce à l’IA</a>. Cette subvention servira à la R&amp;D, à de nouveaux recrutements et au développement international.</p><p>Neur.on est reconnaissante de ce précieux soutien et fière de faire partie de l’écosystème dynamique des start-up fribourgeoises.</p><p>Avec le plus grand centre de compétences de Suisse en analyse de documents par traitement automatique du langage (NLP), un vivier d’ingénieurs NLP multilingues talentueux et une faculté de droit renommée, Fribourg offre des conditions optimales à une start-up LegalTech centrée sur la langue comme Neur.on.</p><p>Imaginée et conçue à Fribourg, <a href=\"{{ROOT}}fr/a-propos/\">Neur.on</a> se réjouit d’utiliser cette nouvelle subvention pour porter l’IA suisse vers de nouveaux sommets.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:26/corps",
+  "probleme": "marqueurs {11}…{/11} absents, en double ou inversés",
+  "source": "<p>Le canton de Schwyz fait figure de pionnier en matière d’IA.</p><p>Le registre du commerce de Schwyz propose désormais ce qu’aucun autre canton n’offre : des <a href=\"{{ROOT}}fr/corrext/extraits-registre-commerce/\">traductions d’extraits en anglais</a> réalisées par IA.</p><p>Schwyz n’est pas seulement le berceau pittoresque de la Suisse, à laquelle il a donné son nom. Le canton vient aussi de mettre en place une application très pragmatique de l’IA pour les entreprises établies sur son territoire.</p><h2>Comment est né le projet de traduction des extraits ?</h2><p>Auparavant, des centaines de personnes appelaient chaque mois le registre du commerce de Schwyz avec une seule et même demande : « J’ai besoin d’une traduction anglaise fiable d’un extrait. Pouvez-vous m’aider, s’il vous plaît ? »</p><p><a href=\"https://www.linkedin.com/in/othmar-aeschi-a21a716b/\" rel=\"noopener\" target=\"_blank\">Othmar Aeschi</a>, du Handelsregister Schwyz, connu pour son rôle moteur en matière d’innovation, a eu l’intuition éclairée que l’IA pourrait aider. Il a pris contact avec <a href=\"https://www.linkedin.com/in/raphael-von-thiessen-921882105/\" rel=\"noopener\" target=\"_blank\">Raphael von Thiessen</a>, de la division Promotion économique de l’<a href=\"https://www.linkedin.com/company/amt-fuer-wirtschaft-zh/\" rel=\"noopener\" target=\"_blank\">Amt für Wirtschaft, Kanton Zürich</a>. Raphael a intégré ce défi à l’Innovation Sandbox for Artificial Intelligence de l’office et a mis NEUR.ON en relation avec le registre du commerce de Schwyz. <strong>Et nous avons développé le modèle de traduction le plus exact pour cet usage précis.</strong> Du côté des autorités, le projet a ensuite été mis en œuvre avec le soutien de <a href=\"https://www.linkedin.com/company/dv-bern-ag/\" rel=\"noopener\" target=\"_blank\">DV Bern AG</a>, l’entreprise informatique spécialisée responsable de la plateforme en ligne du registre du commerce, <a href=\"http://zefix.ch/\" rel=\"noopener\" target=\"_blank\">zefix.ch</a>.</p><h2>Pourquoi les notions juridiques suisses sont-elles difficiles à traduire en anglais ?</h2><p><strong>Le défi ne relevait pas seulement de l’ingénierie du traitement automatique du langage. La question, plus importante encore, était de savoir comment traduire avec exactitude en anglais des notions juridiques typiquement suisses, en évitant les malentendus (voire les maladresses) dans les relations transfrontalières.</strong></p><ul><li>Prokurist ?</li><li>Kollektivunterschrift zu zweien ?</li><li>Gesellschafter (einer GmbH vs. einer Kommanditgesellschaft) ?</li><li>Streichung vs. Löschung ?</li><li>Stimmrechtsaktien vs. Vorzugsaktien ?</li></ul><p>Si vous vous êtes déjà demandé comment traduire correctement chacun de ces termes dans son contexte, vous savez à quel point une traduction médiocre peut tomber loin de la cible.</p><p>Cerise sur le gâteau pour les juristes-linguistes, nous avons aussi pu aborder les traductions épicènes, en particulier pour les fonctions au sein du conseil d’administration qui, il y a 50 ans, étaient exclusivement occupées par des hommes.</p><p>Comme vous le voyez, les projets d’IA de pointe exigent, pour réussir, une vaste expertise humaine du domaine.</p><h2>Qui a contribué au projet ?</h2><p>Un chaleureux merci à toutes les parties prenantes du projet, en particulier pour les innombrables heures investies par Othmar Aeschi du Handelsregister Schwyz, Raphael von Thiessen de l’Amt für Wirtschaft, ainsi que <a href=\"https://www.linkedin.com/in/thierry-coita-ba53615/\" rel=\"noopener\" target=\"_blank\">Thierry Coita</a> et Michael Gillmann de DV Bern AG. Merci également à <a href=\"https://www.linkedin.com/in/carmen-walker-sp%C3%A4h-b75221231/\" rel=\"noopener\" target=\"_blank\">Carmen Walker Späh</a> pour son soutien infatigable à <a href=\"https://www.linkedin.com/company/innovation-zurich/\" rel=\"noopener\" target=\"_blank\">Innovation Zurich</a>.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:28/corps",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<p>Opposer le logiciel de traduction par IA de Neur.on à de grands acteurs comme ChatGPT ou Gemini ne relève en aucun cas d’un scénario David contre Goliath.</p><p>Il serait plus juste de comparer ces LLM généralistes à l’invention du moteur à combustion : une prouesse brillante, aux applications multiples, du tracteur agricole au yacht à grande vitesse.</p><p>Nous avons ensuite pris ce moteur à combustion (autrement dit les LLM les plus puissants et les plus efficaces) pour construire autour de lui des fusées sur mesure, qui propulsent les professionnels du droit et de la finance vers de nouveaux sommets. Nous avons baptisé notre flotte « <a href=\"{{ROOT}}fr/corrext/\">Corrext</a> ». C’est le premier SaaS de traduction juridique et financière.</p><p>Pourquoi Neur.on se réjouit-elle des milliards de dollars que les géants de la tech investissent actuellement dans l’IA ? Et pourquoi sommes-nous convaincus que nos clients en profiteront à l’avenir ? Pour en savoir plus, lisez l’article de <a href=\"https://www.linkedin.com/in/lea-f%C3%A4h-89b530124/\" rel=\"noopener\" target=\"_blank\">Lea Fäh</a> dans le dossier <a href=\"https://www.linkedin.com/feed/hashtag/?keywords=fintech&amp;highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7203302412386783233\" rel=\"noopener\" target=\"_blank\">fintech</a> de ce week-end de <a href=\"https://www.linkedin.com/company/finanz-und-wirtschaft/\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a>.</p>"
+ }
+]

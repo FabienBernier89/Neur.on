@@ -238,7 +238,8 @@ def build_page(path, meta, body, lang="fr"):
     root = "../" * depth
     title = meta.get("title", meta.get("short", "Neur.on"))
     desc = meta.get("description", "")
-    canonical = meta.get("canonical") or f"{SITE}/{out}"
+    # le canonical du front-matter est une adresse FR : hors FR, chaque page est sa propre canonique
+    canonical = (meta.get("canonical") if lang == "fr" else None) or f"{SITE}/{out}"
     navkey = meta.get("nav", "")
     short = meta.get("short", title)
 

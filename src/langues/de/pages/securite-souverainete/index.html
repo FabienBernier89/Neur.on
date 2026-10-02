@@ -1,0 +1,325 @@
+<!--page
+title: Datensouveränität Schweiz und Sicherheit · Neur.on Corrext
+description: Wo Corrext Ihre Dokumente speichert und verarbeitet: Schweizer Server von Infomaniak, Modus Highly sensitive content, ISO 27001, nDSG, DSGVO, kein CLOUD Act.
+short: Sicherheit und Datensouveränität
+nav:
+canonical: https://neur-on.ai/fr/securite-souverainete/
+-->
+
+<style>
+/* Hero sans cadre de démonstration : on annule la réserve prévue pour l'application */
+
+/* Avis de gouvernance : la citation exacte de l'application, à côté de son explication */
+.svq{padding:86px 0;background:linear-gradient(180deg,var(--bg) 0%,#fff 46%)}
+.svq-grid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center}
+.svq h2{font-size:clamp(24px,2.8vw,32px);margin-bottom:14px;max-width:20ch}
+.svq .t{font-size:15.5px;color:var(--text);line-height:1.65;margin-bottom:20px}
+.svq-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 28px;box-shadow:0 30px 60px -38px rgba(8,24,68,.26)}
+.svq-card .h{display:flex;align-items:center;gap:10px;font-family:'Inter',sans-serif;font-weight:800;font-size:14px;color:var(--navy);margin-bottom:14px}
+.svq-card .h svg{width:18px;height:18px;color:var(--blue-d);flex-shrink:0}
+.svq-card blockquote{font-size:13.5px;color:var(--text);line-height:1.7}
+.svq-card figcaption{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.5}
+.svq .gov-steps{margin-top:22px}
+
+/* Registre de garanties : la section .facts n'a pas de marge haute par défaut */
+.svfacts{padding-top:84px}
+.svsib{padding-top:80px}
+.cmp-note{max-width:980px;margin:22px auto 0;font-size:13px;color:var(--muted);line-height:1.6;text-align:center}
+
+@media(max-width:940px){
+
+  .svq-grid{grid-template-columns:1fr;gap:30px}
+  .svq h2{max-width:none}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Wo werden meine Daten gehostet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Auf Servern in der Schweiz. Corrext nutzt die Infrastruktur von Infomaniak in der Schweiz. Dort werden Ihre Projekte und die hochgeladenen Dateien gespeichert, unabhängig vom gewählten Vertraulichkeitsmodus und Übersetzungsmotor."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Werden meine Daten in der Schweiz verarbeitet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Gespeichert werden sie in jedem Fall in der Schweiz. Verarbeitet werden sie nur dann ausschliesslich in der Schweiz, wenn der Modus Highly sensitive content aktiviert ist oder wenn Sie mit LexMachina übersetzen. Im Modus Standard mit dem Motor eines Drittanbieters verarbeitet ein im Ausland gehosteter Motor den Text: Die Anwendung weist Sie vor dem Versand darauf hin."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Darf ich DeepL oder ChatGPT für ein Dossier verwenden, das unter das Berufsgeheimnis fällt?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Technisch verbietet Corrext es Ihnen nicht. Die Plattform wendet aber die Richtlinie Ihrer Organisation an, sobald Sie den Motor wählen. Dann erscheint der Hinweis Attorney-Client privilege. Er hält fest, dass einem im Ausland gehosteten Motor nur vollständig pseudonymisierte Dokumente anvertraut werden dürfen und dass seine Nutzung für heikle oder kursrelevante Dossiers strikt untersagt ist. Für ein Dokument, das unter das Berufsgeheimnis fällt, ist LexMachina oder der Modus Highly sensitive content die sichere Wahl."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Werden meine Dokumente zum Training eines Modells verwendet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. LexMachina ist mit öffentlichen Schweizer Rechts- und Finanztexten trainiert, nicht mit Ihren Dossiers. Im Modus Standard fliessen Ihre Projekte in ein Translation Memory, das gemäss der Definition in Corrext ausschliesslich Ihnen zur Verfügung steht. Im Modus Highly sensitive content wird kein Translation Memory gespeist."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Was geschieht mit einem Projekt im Modus Highly sensitive content?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Es wird ausschliesslich in der Schweiz gespeichert und verarbeitet. Sein übersetzter Inhalt wird in den Translation Memorys späterer Projekte nicht wiederverwendet. Der Modus ist für Deutsch, Französisch, Italienisch und Englisch verfügbar. Sie aktivieren ihn mit einem Schalter in Text- und Dokumentübersetzung und wählen ihn beim Anlegen eines Übersetzungsprojekts."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Untersteht Neur.on dem CLOUD Act?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. Neur.on AI Solutions SA ist eine Schweizer Gesellschaft mit Sitz in Freiburg, und die Daten liegen in der Schweiz auf einer Schweizer Infrastruktur. Der US CLOUD Act zielt auf Anbieter, die der US-amerikanischen Gerichtsbarkeit unterstehen, und ist hier nicht anwendbar. Wählen Sie selbst den Motor eines Drittanbieters im Ausland, untersteht der Text, den Sie ihm senden, hingegen dem Recht, das für diesen Anbieter gilt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ist ein Betrieb auf unseren eigenen Servern möglich?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Corrext lässt sich on-premises in Ihrer eigenen Umgebung betreiben, wenn Ihre Sicherheitsrichtlinie oder Ihre Aufsichtsbehörde es verlangt. Über eine REST-API rufen Sie die Übersetzung zudem aus Ihrem DMS, Ihrem Intranet oder Ihren bestehenden Workflows auf. Welche Lösung passt, hängt von Ihrer Infrastruktur und Ihren Pflichten ab: Das besprechen wir in der Demo."
+   }
+  }
+ ]
+}
+</script>
+
+<!-- HERO -->
+<section class="thero svhero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Datensouveränität.</em> Wohin Ihr Dokument genau geht und wer es lesen kann</h1>
+        <p class="lead">«In Europa gehostet» sagt einer Kanzlei, die an das Berufsgeheimnis gebunden ist, nichts. Ebenso wenig einer Bank, für die Art. 47 BankG gilt. Hier sehen Sie, Modus für Modus und Motor für Motor, wo Ihr Dokument gespeichert und verarbeitet wird und was danach davon bleibt.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#ou-va-mon-document" class="btn btn-ghost">Zur Tabelle</a>
+        </div>
+      </div>
+      {{CARTE:securite}}
+    </div>
+  </div>
+</section>
+
+<!-- LE TABLEAU : la franchise, mode par mode -->
+<section class="compare" id="ou-va-mon-document">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Wohin Ihr Dokument geht, je nach Ihrer Wahl</h2>
+    </div>
+    <p class="compare-note">In Corrext wählen Sie einen Vertraulichkeitsmodus und einen Übersetzungsmotor. Die beiden Entscheidungen haben nicht dieselben Folgen. Hier sind sie ungeschönt: Die Tabelle gibt wieder, was die Anwendung anzeigt und umsetzt.</p>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">&nbsp;</th>
+            <th class="brand">Modus Highly sensitive content</th>
+            <th>Modus Standard mit LexMachina</th>
+            <th>Modus Standard mit dem Motor eines Drittanbieters<br>(DeepL Pro, Azure OpenAI GPT, Claude)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Speicherung von Projekt und Dateien</th>
+            <td class="brand"><span class="cmp-y">✓</span> Schweizer Server von Corrext</td>
+            <td><span class="cmp-y">✓</span> Schweizer Server von Corrext</td>
+            <td><span class="cmp-y">✓</span> Schweizer Server von Corrext</td>
+          </tr>
+          <tr>
+            <th>Verarbeitung des Textes durch den Motor</th>
+            <td class="brand"><span class="cmp-y">✓</span> Ausschliesslich in der Schweiz</td>
+            <td><span class="cmp-y">✓</span> In der Schweiz: Der Motor läuft dort</td>
+            <td><span class="cmp-n">✕</span> Ausserhalb der Schweiz: Motor im Ausland gehostet</td>
+          </tr>
+          <tr>
+            <th>Wiederverwendung im Translation Memory</th>
+            <td class="brand"><span class="cmp-y">✓</span> Keine</td>
+            <td><span class="cmp-p">⚠</span> Ja, in einem Translation Memory ausschliesslich für Sie</td>
+            <td><span class="cmp-p">⚠</span> Ja, in einem Translation Memory ausschliesslich für Sie</td>
+          </tr>
+          <tr>
+            <th>Hinweis vor dem Versand</th>
+            <td class="brand"><span class="cmp-y">✓</span> Keiner: Nichts verlässt die Schweiz</td>
+            <td><span class="cmp-y">✓</span> Keiner: Nichts verlässt die Schweiz</td>
+            <td><span class="cmp-p">⚠</span> Attorney-Client privilege notice</td>
+          </tr>
+          <tr>
+            <th>Verfügbare Sprachen</th>
+            <td class="brand"><span class="cmp-p">⚠</span> DE, FR, IT und EN</td>
+            <td><span class="cmp-p">⚠</span> Deutsch, Französisch, Italienisch, Englisch</td>
+            <td><span class="cmp-y">✓</span> Bis zu 30 Sprachen auf der Plattform</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span><span class="cmp-y">✓</span> Höchster Schutz</span>
+      <span><span class="cmp-p">⚠</span> Vor der Wahl zu beachten</span>
+      <span><span class="cmp-n">✕</span> Verlässt die Schweiz</span>
+    </div>
+    <p class="cmp-note">Den Vertraulichkeitsmodus stellen Sie in Text- und Dokumentübersetzung mit einem Schalter ein. In einem Übersetzungsprojekt wählen Sie ihn beim Anlegen. Den Motor wählen Sie bei jedem Versand. Keine der beiden Entscheidungen wird für Sie getroffen, und keine ist in einer Einstellung versteckt.</p>
+  </div>
+</section>
+
+<!-- L'AVIS AFFICHÉ DANS L'OUTIL -->
+<section class="svq">
+  <div class="container">
+    <div class="svq-grid">
+      <figure class="svq-card">
+        <div class="h">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Attorney-Client privilege notice
+        </div>
+        <blockquote lang="en">You have chosen to use third-party translation engines hosted abroad. Before uploading your file(s), your organization requires you to remove any references that could potentially disclose the identity of clients, any other related parties, or the subject matter at hand. Third-party translation engines hosted abroad may exclusively be used for documents that have been completely pseudonymized. The use of such engines for high-profile or price-sensitive matters is strictly prohibited.</blockquote>
+        <figcaption>Text, den Corrext auf Englisch anzeigt, sobald in Text- und Dokumentübersetzung der Motor eines Drittanbieters gewählt wird.</figcaption>
+      </figure>
+      <div>
+        <h2>Ihre Richtlinie greift im Moment der Wahl, nicht in einem vergessenen Reglement</h2>
+        <p class="t">Die meisten Vertraulichkeitsregeln stehen in einem Dokument, das niemand mehr öffnet. Corrext geht den umgekehrten Weg. Die Richtlinie Ihrer Organisation erscheint im Tool, sobald jemand einen im Ausland gehosteten Motor wählt, und zwar vor dem Hochladen einer Datei. Das ist keine Sperre, sondern eine persönliche Warnung: Niemand kann später sagen, er habe sie nicht gesehen.</p>
+        <div class="gov-steps">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><b>Im richtigen Moment.</b> Der Hinweis erscheint bei der Wahl des Motors, nicht erst nach dem Versand und nicht in einem Vertragsanhang.</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>Pseudonymisierung verlangt.</b> Identität der Klientschaft und der nahestehenden Parteien sowie Gegenstand des Dossiers: Vor jedem Versand an einen ausländischen Motor werden sie entfernt.</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Verbot für heikle Dossiers.</b> Exponierte oder kursrelevante Angelegenheiten bleiben bei einem Schweizer Motor.</span></div>
+        </div>
+        <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">Den Hinweis im Tool ansehen: Seite Text- und Dokumentübersetzung <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUE NEUR.ON GARANTIT -->
+<section class="facts svfacts" id="garanties">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Was Neur.on genau garantiert</h2>
+        <p>Eine nützliche Garantie lässt sich überprüfen: ein Rechtsträger, eine Infrastruktur, eine Zertifizierung, ein Gesetzestext. Hier ist die Liste, die Ihr Sicherheitsteam Zeile für Zeile mit seinem Fragebogen abgleichen kann.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/lexmachina/" class="feat-link">Der Schweizer Übersetzungsmotor: LexMachina <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Den Vertraulichkeitsmodus in einem Projekt wählen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Schweizer Rechtsträger</b><p>Neur.on AI Solutions SA, Place de la Gare 15, 1700 Fribourg. Eine Gesellschaft nach Schweizer Recht mit Sitz in der Schweiz und Ihre direkte Vertragspartnerin.</p></div>
+        <div class="fact"><b>Infrastruktur</b><p>Hosting bei Infomaniak in der Schweiz. Dort werden Ihre Projekte und Dateien gespeichert, unabhängig vom gewählten Motor.</p></div>
+        <div class="fact"><b>ISO 27001</b><p>Managementsystem für Informationssicherheit, ISO-27001-zertifiziert seit Februar 2024.<small>Zertifikat und Geltungsbereich erhalten Sie auf Anfrage für Ihr Lieferantendossier.</small></p></div>
+        <div class="fact"><b>nDSG und DSGVO</b><p>Datenbearbeitung gemäss dem Bundesgesetz über den Datenschutz (DSG) und der europäischen Datenschutz-Grundverordnung (DSGVO), mit den entsprechenden Verträgen zur Auftragsbearbeitung.</p></div>
+        <div class="fact"><b>Ausserhalb des CLOUD Act</b><p>Schweizer Unternehmen, Schweizer Infrastruktur: Die Speicherung Ihrer Projekte fällt nicht unter den US CLOUD Act.<small>Der Text, den Sie selbst an den Motor eines Drittanbieters senden, untersteht hingegen dem Recht, das für diesen Anbieter gilt.</small></p></div>
+        <div class="fact"><b>Kein Training mit Ihren Inhalten</b><p>LexMachina lernt aus öffentlichen Schweizer Rechts- und Finanztexten, nie aus Ihren Dossiers. Ihre Dokumente werden nicht zum Rohstoff eines Modells.</p></div>
+        <div class="fact"><b>Privates Translation Memory</b><p>Im Modus Standard fliessen Ihre Projekte in ein Translation Memory, das ausschliesslich Ihre Organisation nutzt und das nie geteilt wird. Im Modus Highly sensitive content wird kein Translation Memory gespeist.</p></div>
+        <div class="fact"><b>Zugriffsrechte</b><p>Granulare Rechte, synchronisiert mit SharePoint und Active Directory: Jede Person greift nur auf die Projekte und Dokumente zu, die sie betreffen.</p></div>
+        <div class="fact"><b>On-Premises</b><p>Corrext lässt sich in Ihrer eigenen Umgebung betreiben, wenn Ihre Sicherheitsrichtlinie oder Ihre Aufsichtsbehörde es verlangt.</p></div>
+        <div class="fact"><b>REST-API</b><p>Sie rufen die Übersetzung aus Ihrem DMS, Ihrem Intranet oder Ihren Workflows auf. Ihre Nutzerinnen und Nutzer bleiben in ihren gewohnten Tools.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TROIS SITUATIONS -->
+<section class="who who-s">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Drei Geheimhaltungspflichten, drei Arten, Corrext zu nutzen</h2>
+    </div>
+    <div class="ws-grid">
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:sentence}}</span><span><span class="pn">Berufsgeheimnis.</span> Das Aktenstück bleibt in der Schweiz</span></h3>
+        <p>Ein Verfahrensdokument nennt die Klientschaft schon in der ersten Zeile: Es zu pseudonymisieren kostet mehr, als es zu übersetzen. Mit dem Modus Highly sensitive content oder dem Übersetzungsmotor LexMachina stellt sich die Frage nicht mehr. Speicherung und Verarbeitung bleiben in der Schweiz, und im Modus für sensible Inhalte fliesst nichts in ein Translation Memory.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:verrou}}</span><span><span class="pn">Bankgeheimnis.</span> Eine strafbewehrte Pflicht</span></h3>
+        <p>Wer ein einer Bank anvertrautes Geheimnis offenbart, macht sich nach Art. 47 BankG strafbar. Die FINMA erwartet zudem, dass die Bearbeitungskette dokumentiert und beherrscht wird. Der Modus für sensible Inhalte gibt der Revision eine Antwort in drei Zeilen: ein Land, ein Rechtsträger, eine Zertifizierung.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:institution}}</span><span><span class="pn">Behörden.</span> Dokumente vor ihrer Veröffentlichung</span></h3>
+        <p>Ein Gesetzesentwurf, ein Bericht oder eine Verfügung vor der Veröffentlichung darf nicht über einen Dienst laufen, dessen Bearbeitungsland niemand kennt. Mit Corrext übersetzen Sie ein solches Dokument ins Deutsche, Französische, Italienische oder Englische, ohne dass es die Schweiz verlässt. Und Sie können nachvollziehen, wer darauf Zugriff hatte.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- POUR ALLER PLUS LOIN -->
+<section class="siblings svsib">
+  <div class="container">
+    <h2>Mehr zum Thema</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/lexmachina/"><b>LexMachina</b><span>Der Übersetzungsmotor, trainiert auf Schweizer Recht und Finanzwesen, gehostet und betrieben in der Schweiz.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/gestion-de-projet/"><b>Projektmanagement</b><span>Den Vertraulichkeitsmodus wählen Sie beim Anlegen des Projekts, noch bevor Sie eine Datei hochladen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Text- und Dokumentübersetzung</b><span>Der Schalter Highly sensitive content und die Wahl des Motors, im Werkzeug für den Alltag.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu Sicherheit und Datensouveränität</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Wo werden meine Daten gehostet?</summary>
+        <p>Auf Servern in der Schweiz. Corrext nutzt die Infrastruktur von Infomaniak in der Schweiz. Dort werden Ihre Projekte und die hochgeladenen Dateien gespeichert, unabhängig vom gewählten Vertraulichkeitsmodus und Übersetzungsmotor.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Werden meine Daten in der Schweiz verarbeitet?</summary>
+        <p>Gespeichert werden sie in jedem Fall in der Schweiz. Verarbeitet werden sie nur dann ausschliesslich in der Schweiz, wenn der Modus Highly sensitive content aktiviert ist oder wenn Sie mit LexMachina übersetzen. Im Modus Standard mit dem Motor eines Drittanbieters verarbeitet ein im Ausland gehosteter Motor den Text: Die Anwendung weist Sie vor dem Versand darauf hin.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Darf ich DeepL oder ChatGPT für ein Dossier verwenden, das unter das Berufsgeheimnis fällt?</summary>
+        <p>Technisch verbietet Corrext es Ihnen nicht. Die Plattform wendet aber die Richtlinie Ihrer Organisation an, sobald Sie den Motor wählen. Dann erscheint der Hinweis Attorney-Client privilege. Er hält fest, dass einem im Ausland gehosteten Motor nur vollständig pseudonymisierte Dokumente anvertraut werden dürfen und dass seine Nutzung für heikle oder kursrelevante Dossiers strikt untersagt ist. Für ein Dokument, das unter das Berufsgeheimnis fällt, ist LexMachina oder der Modus Highly sensitive content die sichere Wahl.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Werden meine Dokumente zum Training eines Modells verwendet?</summary>
+        <p>Nein. LexMachina ist mit öffentlichen Schweizer Rechts- und Finanztexten trainiert, nicht mit Ihren Dossiers. Im Modus Standard fliessen Ihre Projekte in ein Translation Memory, das gemäss der Definition in Corrext ausschliesslich Ihnen zur Verfügung steht. Im Modus Highly sensitive content wird kein Translation Memory gespeist.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was geschieht mit einem Projekt im Modus Highly sensitive content?</summary>
+        <p>Es wird ausschliesslich in der Schweiz gespeichert und verarbeitet. Sein übersetzter Inhalt wird in den Translation Memorys späterer Projekte nicht wiederverwendet. Der Modus ist für Deutsch, Französisch, Italienisch und Englisch verfügbar. Sie aktivieren ihn mit einem Schalter in Text- und Dokumentübersetzung und wählen ihn beim Anlegen eines Übersetzungsprojekts.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Untersteht Neur.on dem CLOUD Act?</summary>
+        <p>Nein. Neur.on AI Solutions SA ist eine Schweizer Gesellschaft mit Sitz in Freiburg, und die Daten liegen in der Schweiz auf einer Schweizer Infrastruktur. Der US CLOUD Act zielt auf Anbieter, die der US-amerikanischen Gerichtsbarkeit unterstehen, und ist hier nicht anwendbar. Wählen Sie selbst den Motor eines Drittanbieters im Ausland, untersteht der Text, den Sie ihm senden, hingegen dem Recht, das für diesen Anbieter gilt.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Ist ein Betrieb auf unseren eigenen Servern möglich?</summary>
+        <p>Ja. Corrext lässt sich on-premises in Ihrer eigenen Umgebung betreiben, wenn Ihre Sicherheitsrichtlinie oder Ihre Aufsichtsbehörde es verlangt. Über eine REST-API rufen Sie die Übersetzung zudem aus Ihrem DMS, Ihrem Intranet oder Ihren bestehenden Workflows auf. Welche Lösung passt, hängt von Ihrer Infrastruktur und Ihren Pflichten ab: Das besprechen wir in der Demo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Lassen Sie diese Angaben von Ihrem Sicherheitsteam prüfen</h2>
+      <p>Wir beantworten Lieferantenfragebogen, stellen Ihnen die Zertifizierung und ihren Geltungsbereich zur Verfügung und zeigen die Anwendung unter realen Bedingungen, mit Ihren eigenen Vorgaben.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/lexmachina/" class="btn-outline">LexMachina entdecken</a>
+      </div>
+      <p class="micro">Hosting in der Schweiz · ISO 27001 seit Februar 2024 · nDSG und DSGVO · On-Premises-Betrieb möglich</p>
+    </div>
+  </div>
+</section>

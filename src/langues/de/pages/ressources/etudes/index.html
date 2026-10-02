@@ -1,0 +1,123 @@
+<!--page
+title: Studien und Benchmarks zur maschinellen Übersetzung · Neur.on
+description: Wie wir Übersetzungsmotoren an Schweizer Rechtstexten bewerten: messbare Kriterien, Protokoll, methodische Fallstricke, Veröffentlichung der Ergebnisse.
+short: Studien und Benchmarks
+nav: ressources
+hero: read
+-->
+
+<style>
+.elist{padding:84px 0}
+.ecard{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;padding:32px 34px;border:1px solid var(--line);border-radius:var(--r-bloc);transition:border-color .2s,box-shadow .2s}
+.ecard:hover{border-color:var(--line-2);box-shadow:0 30px 60px -28px rgba(8,24,68,.2)}
+.ecard h3{font-size:21px;letter-spacing:-.02em;margin-bottom:10px;max-width:24ch}
+.ecard p{font-size:14.5px;color:var(--text);line-height:1.6;max-width:62ch}
+.ecard .meta{margin-top:16px;font-size:12.5px;color:var(--muted)}
+.ecard .go{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;color:var(--blue-d);white-space:nowrap;margin-top:6px}
+.ecard .go svg{width:15px;height:15px;transition:transform .2s}
+.ecard:hover .go svg{transform:translateX(3px)}
+.eprin{padding:0 0 84px}
+.eprin-box{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:36px 38px}
+.eprin-box h2{font-size:22px;margin-bottom:8px}
+.eprin-box > p{font-size:14.5px;color:var(--muted);margin-bottom:22px;max-width:70ch}
+.eprin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-2)}
+.eprin-grid div{padding:20px 24px 20px 0;border-right:1px solid var(--line-2)}
+.eprin-grid div:last-child{border-right:0;padding-right:0}
+.eprin-grid div + div{padding-left:24px}
+.eprin-grid b{display:block;font-size:15px;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
+.eprin-grid p{font-size:13.5px;color:var(--text);line-height:1.55}
+@media(max-width:940px){
+  .ecard{grid-template-columns:1fr;gap:16px;padding:26px 24px}
+  .eprin-grid{grid-template-columns:1fr}
+  .eprin-grid div,.eprin-grid div + div{padding:16px 0;border-right:0;border-bottom:1px solid var(--line-2)}
+  .eprin-grid div:last-child{border-bottom:0}
+}
+</style>
+
+<section class="thero thero-read thero-centre">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Studien und Benchmarks.</em> Messen statt behaupten</h1>
+        <p class="lead">Alle versprechen die beste Übersetzungsqualität. Kaum jemand veröffentlicht seine Methode. Wir beginnen genau dort: mit Kriterien, Protokoll und Fallstricken, noch vor den Ergebnissen.</p>
+        <div class="thero-cta">
+          <a href="#etudes" class="btn btn-blue">Zu den Publikationen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="{{ROOT}}fr/contact/" class="btn btn-ghost">Demo anfragen</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>Zuerst die Methode:</b> Das Protokoll erscheint vor den Ergebnissen, damit es kritisiert werden kann</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Schweizer Korpus:</b> Bundesgesetze, Rechtsprechung und Finanzpublikationen in den Amtssprachen</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Inklusive unserer Fehler:</b> Schwächen unseres eigenen Motors werden dokumentiert, nicht verborgen</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="elist" id="etudes">
+  <div class="container">
+    <div class="sec-head" style="text-align:left;max-width:none;margin-bottom:28px">
+      <h2>Publikationen</h2>
+      <p>Zuerst eine Bewertungsmethode, danach die Ergebnisse, die sie an einem Korpus des Schweizer Rechts liefern wird.</p>
+    </div>
+    <a class="ecard" href="{{ROOT}}fr/ressources/etudes/evaluer-moteur-traduction-juridique/">
+      <div>
+        <h3>Wie man einen Übersetzungsmotor an Schweizer Rechtstexten evaluiert</h3>
+        <p>Die messbaren Kriterien für einen Schweizer Rechtstext, das Bewertungsprotokoll mit doppelter Prüfung und die Fallstricke, die die meisten veröffentlichten Vergleiche verfälschen: nach einem einzigen Satz urteilen, Flüssigkeit mit Genauigkeit verwechseln, die Streuung zwischen zwei Generationen desselben Motors übersehen.</p>
+        <p class="meta">Methode · 15. September 2026</p>
+      </div>
+      <span class="go">Studie lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<section class="eprin">
+  <div class="container">
+    <div class="eprin-box">
+      <h2>Was wir uns verbieten</h2>
+      <p>Drei Regeln erklären, warum Sie hier keine spektakuläre Rangliste finden.</p>
+      <div class="eprin-grid">
+        <div>
+          <b>Kein Score ohne veröffentlichtes Korpus</b>
+          <p>Ein Prozentsatz ohne Korpus, Datum und Protokoll sagt nichts aus. Solange das Korpus nicht beschrieben ist, veröffentlichen wir keine Zahl.</p>
+        </div>
+        <div>
+          <b>Kein verdeckter Vergleich</b>
+          <p>Die verglichenen Motoren werden genannt und die Versionen datiert. Fehlerhafte Ausgaben unseres eigenen Motors erscheinen gleichberechtigt neben den anderen.</p>
+        </div>
+        <div>
+          <b>Keine reine Geschwindigkeitsmessung</b>
+          <p>Die Geschwindigkeit hängt von Auslastung und Netz ab. Über die Richtigkeit eines Gesetzesverweises sagt sie nichts, und nur dieses Kriterium zählt bei einem verbindlichen Dokument.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Même présentation que les cartes « Autres domaines » des pages domaine (classe vn) -->
+<section class="vn" style="padding-top:0">
+  <div class="container">
+    <h2>Weiterführende Seiten</h2>
+    <div class="vn-grid"><a class="vn-card" href="{{ROOT}}fr/lexmachina/"><span class="vn-term"><span><i>DE</i><b lang="de">IPRG</b></span><span><i>FR</i><b lang="fr">LDIP</b></span></span><b class="vn-t">LexMachina</b><span class="vn-d">Die Trainingsdaten des Motors und was er über das Schweizer Recht weiss.</span><em>Zur Seite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a><a class="vn-card" href="{{ROOT}}fr/comparatif/"><span class="vn-term"><span><i>DE</i><b lang="de">Bundesgericht</b></span><span><i>FR</i><b lang="fr">Tribunal fédéral</b></span></span><b class="vn-t">Vergleiche</b><span class="vn-d">Corrext im Vergleich mit DeepL Pro, mit generalistischen Modellen und mit dem Übersetzungsbüro.</span><em>Zu den Vergleichen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a><a class="vn-card" href="{{ROOT}}fr/ressources/glossaire/"><span class="vn-term"><span><i>DE</i><b lang="de">Konventionalstrafe</b></span><span><i>FR</i><b lang="fr">clause pénale</b></span></span><b class="vn-t">Rechtsglossar</b><span class="vn-d">Die amtlichen Begriffe in den vier Sprachen, mit Quelle.</span><em>Zum Glossar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a></div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Testen Sie LexMachina mit Ihren eigenen Texten</h2>
+      <p>Die einzige Messung, die für Sie zählt, erfolgt an Ihren Dokumenten, in Ihren Sprachen und mit Ihren Fundstellen.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/#demo" class="btn-outline">Demo ausprobieren</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>

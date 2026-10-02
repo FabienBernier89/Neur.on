@@ -1,0 +1,404 @@
+<!--page
+title: PDF übersetzen, Layout beibehalten · Corrext von Neur.on
+description: Die 30 Sprachen von Corrext, davon vier native, die akzeptierten Formate (.docx, .pdf, .xlsx, .pptx), 25 Dateien zu 50 MB, Layout bleibt erhalten.
+short: Sprachen und Formate
+nav: corrext
+assets: []
+canonical: https://neur-on.ai/fr/langues-et-formats/
+-->
+
+<style>
+/* Page Langues et formats · styles propres (préfixe .lf-) */
+
+/* Quatre langues natives */
+.lf-native{padding:80px 0 0;background:#fff}
+.lf-nat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.lf-nat{background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:22px;transition:border-color .25s ease,transform .25s ease}
+.lf-nat:hover{transform:translateY(-3px);border-color:var(--line-2)}
+.lf-nat b{display:block;font-family:'Inter',sans-serif;font-weight:800;font-size:19px;color:var(--ink);letter-spacing:-.02em}
+.lf-nat .en{display:block;font-size:12.5px;color:var(--muted);margin:3px 0 12px}
+.lf-nat .bd{display:inline-block;font-size:11px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:6px;padding:4px 9px}
+.lf-nat p{font-size:13.5px;color:var(--text);line-height:1.55;margin-top:12px}
+.lf-note{margin:26px auto 0;font-size:14.5px;color:var(--text);line-height:1.65;max-width:980px;text-align:center}
+.lf-note b{color:var(--ink)}
+/* Les 30 langues de la plateforme */
+.lf-all{padding:56px 0 60px;background:#fff}
+.lf-all h2{font-size:22px;margin-bottom:10px;text-align:center}
+.lf-all .intro{font-size:14.5px;color:var(--muted);line-height:1.65;max-width:980px;margin:0 auto 24px;text-align:center}
+.lf-langs{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.lf-langs li{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;padding:11px 16px 11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink)}
+.lf-langs li .en{font-size:12.5px;color:var(--muted)}
+.lf-langs li .nat{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);background:var(--blue-pale);border-radius:5px;padding:2px 7px}
+.lf-cap{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.6;max-width:none}
+/* Formats et mise en page */
+.lf-facts{padding:84px 0;background:linear-gradient(180deg,var(--bg) 0%,#fff 46%)}
+.lf-layout{padding:10px 0 90px;background:#fff}
+@media(max-width:940px){
+  .lf-nat-grid{grid-template-columns:repeat(2,1fr)}
+  .lf-langs{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .lf-nat-grid{grid-template-columns:1fr}
+  .lf-langs{grid-template-columns:1fr}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Welche Sprachen unterstützt Corrext nativ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Vier: Deutsch, Französisch, Italienisch und Englisch, in allen Sprachpaaren. In diesen Sprachen wurde LexMachina, der Schweizer Übersetzungsmotor, mit über 15 Millionen juristischen und finanziellen Segmenten trainiert. Nur sie sind im Modus Highly sensitive content verfügbar. Die ersten drei sind die Amtssprachen des Bundes, in denen das Bundesrecht veröffentlicht wird."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie viele Dateien kann ich auf einmal hochladen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Bis zu 25 Dateien pro Upload in File translation und in PDF to Word. In einem Übersetzungsprojekt laden Sie die Dateien im Schritt File overview hoch. Dort zeigt jede Datei ihre Anzahl Normseiten, die erkannte Sprache und die erkannte Rechtskategorie."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie gross darf eine Datei höchstens sein?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "50 MB pro Datei. Für Text, den Sie direkt ins Tool einfügen, liegt die Grenze bei 10'000 Zeichen für die Textübersetzung und bei 5'000 Zeichen für die Umformulierung. Für längere Texte laden Sie Dateien hoch oder legen ein Übersetzungsprojekt an."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kann ich ein gescanntes PDF hochladen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Das Format .pdf wird akzeptiert, auch als Scan. Der Reiter PDF to Word wandelt ein PDF in ein bearbeitbares Word-Dokument um, vor der Übersetzung oder für die interne Arbeit. Liegt die ursprüngliche Office-Datei vor, empfiehlt die Anwendung jedoch, diese statt der PDF-Version hochzuladen: Das Ergebnis ist besser und das Layout originalgetreuer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Bleibt das Layout erhalten?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Sie erhalten die Übersetzung im Originalformat zurück: eine .docx als .docx, eine .xlsx als .xlsx, eine .pptx als .pptx, mit der Struktur des Dokuments. Deshalb empfiehlt die Anwendung, das Originalformat hochzuladen statt eines daraus erzeugten PDF."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Sind alle Sprachen im Modus Highly sensitive content verfügbar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. Der Modus Highly sensitive content schreibt Speicherung und Verarbeitung ausschliesslich in der Schweiz vor und verbietet die Wiederverwendung des Inhalts im Translation Memory. Er ist für Deutsch, Französisch, Italienisch und Englisch verfügbar. Die übrigen Sprachen der Plattform nutzen Sie im Modus Standard: Gespeichert wird in jedem Fall in der Schweiz, die Verarbeitung hängt aber vom gewählten Motor ab."
+   }
+  }
+ ]
+}
+</script>
+
+<!-- HERO -->
+<section class="thero lf-hero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Sprachen und Formate.</em> Was Corrext annimmt und was Sie zurückerhalten</h1>
+        <p class="lead">Die Referenzseite, ohne Ungefähres: die vier nativen Sprachen und die dreissig Sprachen der Plattform, die akzeptierten Office-Formate, die Grenzen für Dateigrösse und Zeichenzahl und was mit dem Layout Ihres Dokuments geschieht.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#formats" class="btn btn-ghost">Akzeptierte Formate ansehen</a>
+        </div>
+      </div>
+      {{CARTE:langues-formats}}
+    </div>
+  </div>
+</section>
+
+<!-- QUATRE LANGUES NATIVES -->
+<section class="lf-native" id="langues">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Vier native Sprachen, in denen die Schweiz ihr Recht schreibt</h2>
+      <p>Nativ heisst hier: trainiert mit Schweizer Rechts- und Finanzdaten in dieser Sprache, über 15 Millionen Segmente, und verfügbar im Modus mit dem höchsten Schutz der Plattform.</p>
+    </div>
+    <div class="lf-nat-grid">
+      <div class="lf-nat">
+        <b>Deutsch</b><span class="en">German · DE</span>
+        <span class="bd">Nativ</span>
+        <p>Amtssprache des Bundes und erste Sprache des Schweizer Marktes. Schweizer Hochdeutsch: «ss», nie «ß».</p>
+      </div>
+      <div class="lf-nat">
+        <b>Französisch</b><span class="en">French · FR</span>
+        <span class="bd">Nativ</span>
+        <p>Amtssprache des Bundes. Terminologie der Romandie und des Bundes, im Kontext überprüfbar in CHnell.</p>
+      </div>
+      <div class="lf-nat">
+        <b>Italienisch</b><span class="en">Italian · IT</span>
+        <span class="bd">Nativ</span>
+        <p>Amtssprache des Bundes. Die Bundesgesetze sind in allen drei Amtssprachen verbindlich, auch auf Italienisch.</p>
+      </div>
+      <div class="lf-nat">
+        <b>Englisch</b><span class="en">English · EN</span>
+        <span class="bd">Nativ</span>
+        <p>Arbeitssprache für grenzüberschreitende Dossiers, internationale Schiedsverfahren und Finanzdokumentation.</p>
+      </div>
+    </div>
+    <p class="lf-note"><b>Alle Sprachpaare, in beide Richtungen.</b> Nur diese vier Sprachen sind auch im Modus Highly sensitive content verfügbar. Er schreibt Speicherung und Verarbeitung ausschliesslich in der Schweiz vor und verbietet die Wiederverwendung des Inhalts im Translation Memory. Rätoromanisch, die vierte Landessprache, gehört nicht zu den Sprachen der Plattform.</p>
+  </div>
+</section>
+
+<!-- LES 30 LANGUES -->
+<section class="lf-all">
+  <div class="container">
+    <h2>Die dreissig Sprachen der Plattform</h2>
+    <p class="intro">Die Zielsprachenauswahl von Corrext umfasst zweiunddreissig Einträge für dreissig verschiedene Sprachen: Chinesisch und Portugiesisch erscheinen je in zwei Varianten. Die Anwendung bezeichnet die Sprachen auf Englisch. Diese Bezeichnungen stehen hier bei jeder Sprache.</p>
+    <ul class="lf-langs">
+      <li>Deutsch <span class="en">German</span> <span class="nat">Nativ</span></li>
+      <li>Englisch <span class="en">English</span> <span class="nat">Nativ</span></li>
+      <li>Arabisch <span class="en">Arabic</span></li>
+      <li>Bulgarisch <span class="en">Bulgarian</span></li>
+      <li>Chinesisch (vereinfacht) <span class="en">Chinese (Simplified)</span></li>
+      <li>Chinesisch (traditionell) <span class="en">Chinese (Traditional)</span></li>
+      <li>Koreanisch <span class="en">Korean</span></li>
+      <li>Dänisch <span class="en">Danish</span></li>
+      <li>Spanisch <span class="en">Spanish</span></li>
+      <li>Estnisch <span class="en">Estonian</span></li>
+      <li>Finnisch <span class="en">Finnish</span></li>
+      <li>Französisch <span class="en">French</span> <span class="nat">Nativ</span></li>
+      <li>Griechisch <span class="en">Greek</span></li>
+      <li>Ungarisch <span class="en">Hungarian</span></li>
+      <li>Indonesisch <span class="en">Indonesian</span></li>
+      <li>Italienisch <span class="en">Italian</span> <span class="nat">Nativ</span></li>
+      <li>Japanisch <span class="en">Japanese</span></li>
+      <li>Lettisch <span class="en">Latvian</span></li>
+      <li>Litauisch <span class="en">Lithuanian</span></li>
+      <li>Niederländisch <span class="en">Dutch</span></li>
+      <li>Norwegisch (Bokmål) <span class="en">Norwegian Bokmål</span></li>
+      <li>Polnisch <span class="en">Polish</span></li>
+      <li>Portugiesisch (Brasilien) <span class="en">Portuguese (Brazil)</span></li>
+      <li>Portugiesisch (Portugal) <span class="en">Portuguese (Portugal)</span></li>
+      <li>Rumänisch <span class="en">Romanian</span></li>
+      <li>Russisch <span class="en">Russian</span></li>
+      <li>Slowakisch <span class="en">Slovak</span></li>
+      <li>Slowenisch <span class="en">Slovenian</span></li>
+      <li>Schwedisch <span class="en">Swedish</span></li>
+      <li>Tschechisch <span class="en">Czech</span></li>
+      <li>Türkisch <span class="en">Turkish</span></li>
+      <li>Ukrainisch <span class="en">Ukrainian</span></li>
+    </ul>
+    <p class="lf-cap">Ausserhalb der vier nativen Sprachen stützt sich die Übersetzung auf die Motoren, die in der Oberfläche verfügbar sind: LexMachina, DeepL Pro, Azure OpenAI GPT und Claude. Im Ausland gehostete Motoren lösen den Hinweis Attorney-Client privilege Ihrer Organisation aus und sind im Modus Highly sensitive content nicht verfügbar.</p>
+  </div>
+</section>
+
+<!-- QUADRILINGUISME SUISSE -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Warum eine Übersetzung für die Schweiz mehr ist als Deutsch, Französisch oder Italienisch</h2>
+        <p>Das Bundesrecht wird auf Fedlex in den drei Amtssprachen veröffentlicht, und alle drei Fassungen sind verbindlich. Wer einen Schweizer Rechtstext übersetzt, erfindet also keine Formulierung. Er sucht diejenige, die in der anderen Amtssprache bereits besteht. Dazu kommen Schreibkonventionen, an denen man eine anderswo erstellte Übersetzung sofort erkennt.</p>
+        <a href="{{ROOT}}fr/corrext/chnell/" class="feat-link">Einen Begriff in den amtlichen Quellen prüfen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg><span><b>Schweizer Hochdeutsch.</b> Das «ß» gibt es nicht: Man schreibt in jedem Fall «ss», also «Strasse» und nicht «Straße».</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V6M20 18V6M8 12h8"/></svg><span><b>Tausendertrennzeichen.</b> In der Schweiz schreibt man 15'000 mit Apostroph, in allen vier Sprachen, und nicht 15.000 oder 15 000.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M9 8h6M9 12h6"/></svg><span><b>Dreisprachige Gesetzestexte.</b> Fedlex veröffentlicht das Bundesrecht auf Deutsch, Französisch und Italienisch: Die Zielfassung existiert bereits. Sie wird zitiert, nicht neu übersetzt.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Abkürzungen je nach Sprache.</b> Dasselbe Gesetz wird auf Deutsch, Französisch und Italienisch nicht mit derselben Abkürzung zitiert.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABRÉVIATIONS -->
+<section class="compare" id="abreviations">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Dasselbe Gesetz, drei amtliche Abkürzungen</h2>
+    </div>
+    <p class="compare-note">Ein Schweizer Gesetz mit der Abkürzung einer anderen Sprache zu zitieren, ist der auffälligste Fehler in einer juristischen Übersetzung. Hier sind fünf der am häufigsten zitierten Erlasse, mit ihrer Abkürzung in jeder der drei Amtssprachen.</p>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">Erlass</th>
+            <th class="brand">Französisch</th>
+            <th>Deutsch</th>
+            <th>Italienisch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Obligationenrecht</th>
+            <td class="brand">CO</td>
+            <td>OR</td>
+            <td>CO</td>
+          </tr>
+          <tr>
+            <th scope="row">Zivilgesetzbuch</th>
+            <td class="brand">CC</td>
+            <td>ZGB</td>
+            <td>CC</td>
+          </tr>
+          <tr>
+            <th scope="row">Bankengesetz</th>
+            <td class="brand">LB</td>
+            <td>BankG</td>
+            <td>LBCR</td>
+          </tr>
+          <tr>
+            <th scope="row">Bundesgesetz über das Internationale Privatrecht</th>
+            <td class="brand">LDIP</td>
+            <td>IPRG</td>
+            <td>LDIP</td>
+          </tr>
+          <tr>
+            <th scope="row">Bundesgesetz über Schuldbetreibung und Konkurs</th>
+            <td class="brand">LP</td>
+            <td>SchKG</td>
+            <td>LEF</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span>Amtliche Abkürzungen, wie auf Fedlex veröffentlicht</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="facts lf-facts" id="formats">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Akzeptierte Formate und ihre Grenzen</h2>
+        <p>Corrext verarbeitet die Office-Formate der täglichen juristischen Arbeit: sieben Dateitypen, vom PDF bis zu PowerPoint, in Text- und Dokumentübersetzung ebenso wie im geführten Ablauf von Projektmanagement.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">Mit einem Schweizer Gesetzestext testen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Wo Ihre Dateien gespeichert und verarbeitet werden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Akzeptierte Formate</b><p>.pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx, in File translation ebenso wie im Schritt File overview eines Projekts.</p></div>
+        <div class="fact"><b>Anzahl Dateien</b><p>Bis zu 25 Dateien pro Upload, auf einmal ausgewählt oder in die Ablagezone gezogen.</p></div>
+        <div class="fact"><b>Maximale Grösse</b><p>50 MB pro Datei. Ein grösseres Dokument teilen Sie auf oder übersetzen es in einem Übersetzungsprojekt.</p></div>
+        <div class="fact"><b>Originalformat empfohlen</b><p>Die Anwendung empfiehlt, das Originalformat hochzuladen, wenn es vorliegt: eine .docx- oder .xlsx-Datei statt des daraus erzeugten PDF. Der Text wird dann direkt gelesen, ohne Zeichenerkennung.</p></div>
+        <div class="fact"><b>PDF, auch gescannt</b><p>Das PDF wird akzeptiert, auch als Scan. Der Reiter PDF to Word wandelt es in ein bearbeitbares Word-Dokument um, vor der Übersetzung oder für die interne Arbeit.<small>Auf diesem Reiter ist der Schalter Highly sensitive content ausgegraut: Die Umwandlung übersetzt nicht.</small></p></div>
+        <div class="fact"><b>Eingefügter Text</b><p>Höchstens 10'000 Zeichen für die Textübersetzung, 5'000 Zeichen für die Umformulierung. Ein Zähler zeigt den Stand in Echtzeit.</p></div>
+        <div class="fact"><b>Was Sie zurückerhalten</b><p>Die Übersetzung im Originalformat: Eine .docx kommt als .docx zurück, eine .xlsx als .xlsx, eine .pptx als .pptx.</p></div>
+        <div class="fact"><b>Was analysiert wird</b><p>In einem Projekt zeigt jede hochgeladene Datei ihre Anzahl Normseiten, die erkannte Sprache und die erkannte Rechtskategorie. Beide lassen sich ändern, bevor Sie weitergehen.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISE EN PAGE -->
+<section class="lf-layout">
+  <div class="container">
+    <div class="feature">
+      <div class="feat-txt">
+        <h3>Das Layout bleibt beim Übersetzen erhalten</h3>
+        <p>Ein Vertrag von hundert Seiten mit nummerierten Artikeln, eine Tabelle mit Covenants, ein Foliensatz für einen Ausschuss: Die Übersetzung kommt im Originalformat zurück, samt Struktur. Sie müssen nichts nachträglich neu formatieren.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Das Zieldokument behält Format und Struktur des Ausgangsdokuments</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Tabellen, nummerierte Listen und Abschnitte bleiben an ihrem Platz</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Ein gescanntes PDF geht zuerst durch PDF to Word und wird so wieder bearbeitbar</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Deshalb ist das Originalformat immer besser als ein PDF</li>
+        </ul>
+        <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">Zum Tool für die Dateiübersetzung <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="doc-body">
+            <div class="doc-paper">
+              <div class="doc-h"></div>
+              <div class="doc-l w95"></div><div class="doc-l w90"></div><div class="doc-l w75"></div>
+              <div class="doc-table">
+                <span class="hd"></span><span class="hd"></span><span class="hd"></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+              </div>
+              <div class="doc-l w90"></div><div class="doc-l w60"></div>
+              <div class="doc-page"><span>Darlehensvertrag_FR.docx</span><span>S. 14 / 100</span></div>
+            </div>
+            <div class="fmt-row">
+              <span class="fmt">PDF</span><span class="fmt">DOC</span><span class="fmt">DOCX</span><span class="fmt">XLS</span><span class="fmt">XLSX</span><span class="fmt">PPT</span><span class="fmt">PPTX</span><span class="fmt">PDF in Word</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Mehr zum Thema</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Text- und Dokumentübersetzung</b><span>Dateien hochladen, Motor wählen, Alternativen vergleichen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/securite-souverainete/"><b>Sicherheit und Datensouveränität</b><span>Wo Ihre Daten gespeichert und verarbeitet werden, und durch welchen Motor.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/niveaux-de-qualite/"><b>Qualitätsstufen</b><span>Von der maschinellen Übersetzung bis zur Beglaubigung: welche Stufe für welches Dokument.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu Sprachen und Formaten</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Welche Sprachen unterstützt Corrext nativ?</summary>
+        <p>Vier: Deutsch, Französisch, Italienisch und Englisch, in allen Sprachpaaren. In diesen Sprachen wurde LexMachina, der Schweizer Übersetzungsmotor, mit über 15 Millionen juristischen und finanziellen Segmenten trainiert. Nur sie sind im Modus Highly sensitive content verfügbar. Die ersten drei sind die Amtssprachen des Bundes, in denen das Bundesrecht veröffentlicht wird.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie viele Dateien kann ich auf einmal hochladen?</summary>
+        <p>Bis zu 25 Dateien pro Upload in File translation und in PDF to Word. In einem Übersetzungsprojekt laden Sie die Dateien im Schritt File overview hoch. Dort zeigt jede Datei ihre Anzahl Normseiten, die erkannte Sprache und die erkannte Rechtskategorie.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie gross darf eine Datei höchstens sein?</summary>
+        <p>50 MB pro Datei. Für Text, den Sie direkt ins Tool einfügen, liegt die Grenze bei 10'000 Zeichen für die Textübersetzung und bei 5'000 Zeichen für die Umformulierung. Für längere Texte laden Sie Dateien hoch oder legen ein Übersetzungsprojekt an.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kann ich ein gescanntes PDF hochladen?</summary>
+        <p>Ja. Das Format .pdf wird akzeptiert, auch als Scan. Der Reiter PDF to Word wandelt ein PDF in ein bearbeitbares Word-Dokument um, vor der Übersetzung oder für die interne Arbeit. Liegt die ursprüngliche Office-Datei vor, empfiehlt die Anwendung jedoch, diese statt der PDF-Version hochzuladen: Das Ergebnis ist besser und das Layout originalgetreuer.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Bleibt das Layout erhalten?</summary>
+        <p>Ja. Sie erhalten die Übersetzung im Originalformat zurück: eine .docx als .docx, eine .xlsx als .xlsx, eine .pptx als .pptx, mit der Struktur des Dokuments. Deshalb empfiehlt die Anwendung, das Originalformat hochzuladen statt eines daraus erzeugten PDF.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Sind alle Sprachen im Modus Highly sensitive content verfügbar?</summary>
+        <p>Nein. Der Modus Highly sensitive content schreibt Speicherung und Verarbeitung ausschliesslich in der Schweiz vor und verbietet die Wiederverwendung des Inhalts im Translation Memory. Er ist für Deutsch, Französisch, Italienisch und Englisch verfügbar. Die übrigen Sprachen der Plattform nutzen Sie im Modus Standard: Gespeichert wird in jedem Fall in der Schweiz, die Verarbeitung hängt aber vom gewählten Motor ab.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Ihre Sprachen, Ihre Formate, Ihre Dokumente</h2>
+      <p>Bringen Sie eine Datei mit, die für Ihren Alltag typisch ist: Wir übersetzen sie in der Demo mit Corrext, im Sprachpaar, das Sie interessiert.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="btn-outline">Online-Demo testen</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>

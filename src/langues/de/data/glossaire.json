@@ -1,0 +1,1249 @@
+[
+ {
+  "slug": "verzugszins",
+  "de": "Verzugszins",
+  "fr": "intérêt moratoire",
+  "it": "interesse moratorio",
+  "en": "default interest",
+  "resume": "Der Zins, den ein Schuldner zahlen muss, der mit einer Geldschuld in Verzug ist.",
+  "title": "Verzugszins: Definition und Übersetzung · Neur.on",
+  "description": "Verzugszins, intérêt moratoire, interesse moratorio, default interest: die Definition nach Art. 104 OR und der amtliche Begriff in allen vier Sprachen.",
+  "lead": "Der Verzugszins ist geschuldet, sobald der Schuldner mit der Zahlung einer Geldschuld in Verzug ist, unabhängig von einem nachgewiesenen Schaden. Der Begriff gehört zu den häufigsten in Mahnungen und Forderungsabrechnungen.",
+  "definition": "Der Verzugszins ist der Zins, den der Schuldner zahlen muss, wenn er mit der Zahlung einer Geldschuld in Verzug ist. Das Obligationenrecht setzt ihn auf 5 % pro Jahr fest, auch wenn der Vertrag einen tieferen Zins vorsieht. Ein höherer vertraglicher Zins bleibt anwendbar. Zu unterscheiden ist er vom Vertragszins, der die Nutzung des Kapitals entgilt, und vom Schadenersatz, der einen tatsächlichen Schaden ausgleicht.",
+  "base": "Art. 104 OR",
+  "domaine": "Obligationenrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Ist der Schuldner mit der Zahlung einer Geldschuld in Verzug, so hat er <mark>Verzugszinse</mark> zu fünf vom Hundert für das Jahr zu bezahlen, auch wenn die vertragsmässig bestimmten Zinse weniger betragen.",
+   "fr": "Le débiteur qui est en demeure pour le paiement d'une somme d'argent doit l'<mark>intérêt moratoire</mark> à 5 % l'an, même si un taux inférieur avait été fixé pour l'intérêt conventionnel."
+  },
+  "voisins": [
+   "verjaehrung",
+   "schadenersatz",
+   "betreibung"
+  ]
+ },
+ {
+  "slug": "verjaehrung",
+  "de": "Verjährung",
+  "fr": "prescription",
+  "it": "prescrizione",
+  "en": "prescription",
+  "resume": "Das Ende der gerichtlichen Durchsetzbarkeit einer Forderung nach Ablauf der gesetzlichen Frist.",
+  "title": "Verjährung: wann eine Forderung verjährt · Neur.on",
+  "description": "Verjährung, prescription, prescrizione, prescription: die ordentliche Frist von zehn Jahren nach Art. 127 OR und der genaue Begriff in allen vier Sprachen.",
+  "lead": "Die Verjährung lässt die Forderung nicht erlöschen. Sie nimmt dem Gläubiger aber das Recht, sie gerichtlich durchzusetzen, wenn der Schuldner die Einrede erhebt. Deshalb prüft man vor allem anderen das Datum der letzten Unterbrechung.",
+  "definition": "Die Verjährung ist der Zeitablauf, nach dem der Schuldner die Erfüllung einer Forderung verweigern kann. Die ordentliche Frist des Obligationenrechts beträgt zehn Jahre, soweit das Bundeszivilrecht nichts anderes bestimmt. Für bestimmte Forderungen gelten kürzere Fristen. Das Gericht berücksichtigt die Verjährung nicht von Amtes wegen: Der Schuldner muss sie geltend machen. Eine Betreibung oder eine Schuldanerkennung unterbricht die Frist, die dann neu zu laufen beginnt.",
+  "base": "Art. 127 OR",
+  "domaine": "Obligationenrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Mit Ablauf von zehn Jahren <mark>verjähren</mark> alle Forderungen, für die das Bundeszivilrecht nicht etwas anderes bestimmt.",
+   "fr": "Toutes les actions se <mark>prescrivent</mark> par dix ans, lorsque le droit civil fédéral n'en dispose pas autrement."
+  },
+  "voisins": [
+   "verzugszins",
+   "schadenersatz",
+   "konventionalstrafe"
+  ]
+ },
+ {
+  "slug": "schadenersatz",
+  "de": "Schadenersatz",
+  "fr": "dommages-intérêts",
+  "it": "risarcimento del danno",
+  "en": "damages",
+  "resume": "Der Ersatz des Schadens aus Nichterfüllung eines Vertrags oder aus unerlaubter Handlung.",
+  "title": "Schadenersatz: Haftung nach Obligationenrecht · Neur.on",
+  "description": "Schadenersatz, dommages-intérêts, risarcimento del danno, damages: der Ersatz des Schadens nach Obligationenrecht (Art. 97 OR), in allen vier Sprachen.",
+  "lead": "Schadenersatz gleicht einen tatsächlich erlittenen Schaden aus. Der Schaden muss deshalb nachgewiesen und beziffert werden. In der Schweiz schreibt man Schadenersatz, ohne Fugen-s. Auf Französisch steht dafür ein Ausdruck aus zwei verbundenen Wörtern: dommages-intérêts.",
+  "definition": "Schadenersatz ist der Ausgleich eines Schadens in Geld. Im Vertragsrecht muss der Schuldner, der eine Verpflichtung nicht oder nicht gehörig erfüllt, den daraus entstehenden Schaden ersetzen. Davon befreit ihn nur der Beweis, dass ihn kein Verschulden trifft. Ausservertraglich entsteht die Ersatzpflicht aus einer schuldhaften unerlaubten Handlung. Der Gläubiger muss den Schaden, den Kausalzusammenhang und je nach Fall das Verschulden nachweisen.",
+  "base": "Art. 97 OR",
+  "domaine": "Obligationenrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Kann die Erfüllung der Verbindlichkeit überhaupt nicht oder nicht gehörig bewirkt werden, so hat der Schuldner für den daraus entstehenden Schaden <mark>Ersatz</mark> zu leisten, sofern er nicht beweist, dass ihm keinerlei Verschulden zur Last falle.",
+   "fr": "Lorsque le créancier ne peut obtenir l'exécution de l'obligation ou ne peut l'obtenir qu'imparfaitement, le débiteur est tenu de <mark>réparer le dommage</mark> en résultant, à moins qu'il ne prouve qu'aucune faute ne lui est imputable."
+  },
+  "voisins": [
+   "verzugszins",
+   "konventionalstrafe",
+   "verjaehrung"
+  ]
+ },
+ {
+  "slug": "konventionalstrafe",
+  "de": "Konventionalstrafe",
+  "fr": "clause pénale",
+  "it": "pena convenzionale",
+  "en": "contractual penalty",
+  "resume": "Der im Voraus versprochene Betrag für den Fall, dass der Vertrag nicht erfüllt wird.",
+  "title": "Konventionalstrafe: Definition und Herabsetzung · Neur.on",
+  "description": "Konventionalstrafe, clause pénale, pena convenzionale, contractual penalty: die im Voraus vereinbarte Strafe nach Art. 160 OR, in allen vier Sprachen.",
+  "lead": "Die Konventionalstrafe ist die Antwort des Schweizer Rechts auf das, was ein angelsächsischer Vertrag liquidated damages nennt. Sie wird im Voraus vereinbart, und das Gericht kann eine übermässige Strafe herabsetzen.",
+  "definition": "Mit der Konventionalstrafe vereinbaren die Parteien eine Leistung, meist einen Geldbetrag, für den Fall der Nichterfüllung oder der nicht richtigen Erfüllung des Vertrags. Mangels anderer Abrede kann der Gläubiger nur die Erfüllung oder die Strafe fordern, nicht beides. Die Strafe ist auch ohne nachgewiesenen Schaden geschuldet. Das unterscheidet sie vom Schadenersatz. Übermässig hohe Strafen muss das Gericht herabsetzen.",
+  "base": "Art. 160 OR",
+  "domaine": "Obligationenrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Wenn für den Fall der Nichterfüllung oder der nicht richtigen Erfüllung eines Vertrages eine <mark>Konventionalstrafe</mark> versprochen ist, so ist der Gläubiger mangels anderer Abrede nur berechtigt, entweder die Erfüllung oder die Strafe zu fordern.",
+   "fr": "Lorsqu'une <mark>peine</mark> a été stipulée en vue de l'inexécution ou de l'exécution imparfaite du contrat, le créancier ne peut, sauf convention contraire, demander que l'exécution ou la peine convenue."
+  },
+  "voisins": [
+   "schadenersatz",
+   "verzugszins",
+   "buergschaft"
+  ]
+ },
+ {
+  "slug": "buergschaft",
+  "de": "Bürgschaft",
+  "fr": "cautionnement",
+  "it": "fideiussione",
+  "en": "contract of surety",
+  "resume": "Die Verpflichtung, gegenüber dem Gläubiger für die Schuld eines anderen einzustehen.",
+  "title": "Bürgschaft: Form und Wirkung nach OR · Neur.on",
+  "description": "Bürgschaft, cautionnement, fideiussione, contract of surety: das Einstehen für die Schuld eines Dritten nach Art. 492 OR, die Form und der Begriff in vier Sprachen.",
+  "lead": "Mit der Bürgschaft verpflichtet sich eine Person, für die Schuld einer anderen einzustehen. Ihre Gültigkeit hängt von strengen Formvorschriften ab. Deshalb darf man sie nie mit einer selbständigen Garantie verwechseln.",
+  "definition": "Mit der Bürgschaft verpflichtet sich eine Person gegenüber dem Gläubiger, für die Erfüllung der Schuld des Hauptschuldners einzustehen. Die Verpflichtung ist akzessorisch: Sie teilt das Schicksal der gesicherten Schuld. Das unterscheidet sie von der selbständigen Garantie. Das Obligationenrecht verlangt die schriftliche Form und die Angabe des Höchstbetrags der Haftung. Für natürliche Personen ist ab einem bestimmten Betrag die öffentliche Beurkundung vorgeschrieben.",
+  "base": "Art. 492 OR",
+  "domaine": "Obligationenrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Durch den <mark>Bürgschaftsvertrag</mark> verpflichtet sich der Bürge gegenüber dem Gläubiger des Hauptschuldners, für die Erfüllung der Schuld einzustehen.",
+   "fr": "Le <mark>cautionnement</mark> est un contrat par lequel une personne s'engage envers le créancier à garantir le paiement de la dette contractée par le débiteur."
+  },
+  "voisins": [
+   "abtretung",
+   "konventionalstrafe",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "abtretung",
+  "de": "Abtretung",
+  "fr": "cession de créance",
+  "it": "cessione del credito",
+  "en": "assignment of a claim",
+  "resume": "Die Übertragung einer Forderung auf einen Dritten, ohne Zustimmung des Schuldners.",
+  "title": "Abtretung: Forderungsabtretung nach OR · Neur.on",
+  "description": "Abtretung, cession de créance, cessione del credito, assignment of a claim: die Übertragung einer Forderung nach Art. 164 OR, in allen vier Sprachen.",
+  "lead": "Die Abtretung überträgt eine Forderung vom bisherigen Gläubiger auf einen Dritten. Der Schuldner muss nicht zustimmen. Sie steht im Zentrum von Finanzierungen, Forderungsportfolios und Sicherheiten.",
+  "definition": "Die Abtretung ist das Rechtsgeschäft, mit dem der Gläubiger seine Forderung auf einen Dritten überträgt. Die Einwilligung des Schuldners ist nicht nötig, soweit nicht Gesetz, Vereinbarung oder Natur des Rechtsverhältnisses entgegenstehen. Das Obligationenrecht verlangt für die Gültigkeit der Abtretung die schriftliche Form. Solange der Schuldner nichts von der Abtretung weiss, befreit er sich gültig durch Zahlung an den bisherigen Gläubiger.",
+  "base": "Art. 164 OR",
+  "domaine": "Obligationenrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Der Gläubiger kann eine ihm zustehende Forderung ohne Einwilligung des Schuldners an einen andern <mark>abtreten</mark>, soweit nicht Gesetz, Vereinbarung oder Natur des Rechtsverhältnisses entgegenstehen.",
+   "fr": "Le créancier peut <mark>céder</mark> son droit à un tiers sans le consentement du débiteur, à moins que la cession n'en soit interdite par la loi, la convention ou la nature de l'affaire."
+  },
+  "voisins": [
+   "buergschaft",
+   "verzugszins",
+   "betreibung"
+  ]
+ },
+ {
+  "slug": "konkurrenzverbot",
+  "de": "Konkurrenzverbot",
+  "fr": "prohibition de faire concurrence",
+  "it": "divieto di concorrenza",
+  "en": "prohibition of competition",
+  "resume": "Die Abrede, mit der sich der Arbeitnehmer verpflichtet, seinen früheren Arbeitgeber nicht zu konkurrenzieren.",
+  "title": "Konkurrenzverbot: Regeln im Arbeitsvertrag · Neur.on",
+  "description": "Konkurrenzverbot, prohibition de faire concurrence, divieto di concorrenza, prohibition of competition: die Abrede im Arbeitsvertrag nach Art. 340 OR.",
+  "lead": "Das Konkurrenzverbot beschränkt die Tätigkeit des Arbeitnehmers nach dem Ende des Arbeitsverhältnisses. Das Schweizer Recht verlangt die Schriftform und begrenzt das Verbot nach Ort, Zeit und Gegenstand.",
+  "definition": "Das Konkurrenzverbot ist die schriftliche Verpflichtung des handlungsfähigen Arbeitnehmers, seinen Arbeitgeber nach Beendigung des Arbeitsverhältnisses nicht zu konkurrenzieren. Es ist nur verbindlich, wenn das Arbeitsverhältnis Einblick in den Kundenkreis oder in Fabrikations- und Geschäftsgeheimnisse gewährt. Zudem muss die Verwendung dieser Kenntnisse den Arbeitgeber erheblich schädigen können. Ein übermässiges Verbot kann das Gericht einschränken.",
+  "base": "Art. 340 OR",
+  "domaine": "Arbeitsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Der handlungsfähige Arbeitnehmer kann sich gegenüber dem Arbeitgeber schriftlich verpflichten, nach Beendigung des Arbeitsverhältnisses sich jeder <mark>konkurrenzierenden Tätigkeit</mark> zu enthalten.",
+   "fr": "Le travailleur qui a l'exercice des droits civils peut s'engager par écrit envers l'employeur à s'abstenir, après la fin du contrat, de lui <mark>faire concurrence</mark> de quelque manière que ce soit."
+  },
+  "voisins": [
+   "ueberstunden",
+   "schadenersatz",
+   "konventionalstrafe"
+  ]
+ },
+ {
+  "slug": "ueberstunden",
+  "de": "Überstunden",
+  "fr": "heures de travail supplémentaires",
+  "it": "lavoro straordinario",
+  "en": "overtime",
+  "resume": "Die Arbeitsstunden, die über die vertraglich vereinbarte Arbeitszeit hinaus geleistet werden.",
+  "title": "Überstunden: Ausgleich und Zuschlag im OR · Neur.on",
+  "description": "Überstunden, heures de travail supplémentaires, lavoro straordinario, overtime: der Begriff nach Art. 321c OR und der Unterschied zur Überzeit.",
+  "lead": "Überstunden sind Arbeitsstunden über die vertraglich vereinbarte Arbeitszeit hinaus. Das Obligationenrecht nennt sie Überstundenarbeit. Davon unterscheidet das Schweizer Recht die Überzeit nach dem Arbeitsgesetz: zwei Begriffe, zwei Regelungen, zwei Rechtsgrundlagen.",
+  "definition": "Überstunden sind Arbeitsstunden über die Arbeitszeit hinaus, die Vertrag, Übung, Normalarbeitsvertrag oder Gesamtarbeitsvertrag vorsehen. Das Obligationenrecht spricht von Überstundenarbeit (Art. 321c OR). Der Arbeitnehmer muss sie leisten, soweit er dazu fähig ist und sie ihm nach Treu und Glauben zugemutet werden können. Sie werden durch Freizeit von mindestens gleicher Dauer ausgeglichen oder mit einem Zuschlag entschädigt, sofern nichts anderes schriftlich vereinbart ist.",
+  "base": "Art. 321c OR",
+  "domaine": "Arbeitsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Wird gegenüber dem vertraglich vereinbarten Umfang die Leistung von <mark>Überstundenarbeit</mark> notwendig, so ist der Arbeitnehmer dazu verpflichtet, soweit er sie zu leisten vermag und sie ihm nach Treu und Glauben zugemutet werden kann.",
+   "fr": "Si les circonstances exigent des heures de travail plus nombreuses que ne le prévoit le contrat, le travailleur est tenu d'exécuter ce <mark>travail supplémentaire</mark> dans la mesure où il peut s'en charger et où les règles de la bonne foi permettent de le lui demander."
+  },
+  "voisins": [
+   "konkurrenzverbot",
+   "schadenersatz",
+   "verjaehrung"
+  ]
+ },
+ {
+  "slug": "aktiengesellschaft",
+  "de": "Aktiengesellschaft",
+  "fr": "société anonyme",
+  "it": "società anonima",
+  "en": "company limited by shares",
+  "resume": "Die Kapitalgesellschaft, für deren Verbindlichkeiten nur das Gesellschaftsvermögen haftet.",
+  "title": "Aktiengesellschaft: die AG im Schweizer Recht · Neur.on",
+  "description": "Aktiengesellschaft, société anonyme, società anonima, company limited by shares: eine der häufigsten Gesellschaftsformen der Schweiz, Art. 620 OR.",
+  "lead": "Die Aktiengesellschaft ist eine der häufigsten Gesellschaftsformen der Schweiz. Ihre Abkürzung richtet sich nach der Sprache der Eintragung im Handelsregister: AG auf Deutsch, SA auf Französisch und Italienisch.",
+  "definition": "Die Aktiengesellschaft ist eine Kapitalgesellschaft mit eigener Firma. Ihr Kapital ist in Aktien zerlegt, und für ihre Verbindlichkeiten haftet nur das Gesellschaftsvermögen. Die Aktionäre haften nicht persönlich für die Verbindlichkeiten der Gesellschaft: Sie müssen nur ihre Aktien liberieren. Die Gesellschaft erlangt die Rechtspersönlichkeit mit der Eintragung ins Handelsregister. Sie hat drei gesetzlich vorgeschriebene Organe.",
+  "base": "Art. 620 OR",
+  "domaine": "Gesellschaftsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Die <mark>Aktiengesellschaft</mark> ist eine Gesellschaft mit eigener Firma, deren Kapital in Aktien zerlegt ist und für deren Verbindlichkeiten nur das Gesellschaftsvermögen haftet.",
+   "fr": "La <mark>société anonyme</mark> est une société dotée d'une raison sociale, dont le capital est divisé en actions et dont les dettes ne sont garanties que par l'actif social."
+  },
+  "voisins": [
+   "generalversammlung",
+   "verwaltungsrat",
+   "handelsregister"
+  ]
+ },
+ {
+  "slug": "generalversammlung",
+  "de": "Generalversammlung",
+  "fr": "assemblée générale",
+  "it": "assemblea generale",
+  "en": "general meeting",
+  "resume": "Das oberste Organ der Aktiengesellschaft, in dem die Aktionäre zusammenkommen.",
+  "title": "Generalversammlung: oberstes Organ der AG · Neur.on",
+  "description": "Generalversammlung, assemblée générale, assemblea generale, general meeting: das oberste Organ der Schweizer Aktiengesellschaft nach Art. 698 OR.",
+  "lead": "Die Generalversammlung der Aktionäre ist das oberste Organ der Aktiengesellschaft. Einberufungen, Protokolle und Beschlüsse gehören in einem mehrsprachigen Umfeld zu den am häufigsten übersetzten Dokumenten.",
+  "definition": "Die Generalversammlung vereinigt die Aktionäre und ist das oberste Organ der Aktiengesellschaft. Sie setzt die Statuten fest und ändert sie, wählt die Mitglieder des Verwaltungsrats und die Revisionsstelle. Zudem genehmigt sie die Jahresrechnung, beschliesst über die Verwendung des Bilanzgewinns und erteilt die Entlastung. Für bestimmte Beschlüsse braucht es eine qualifizierte Mehrheit. Das Protokoll hält die Beschlüsse und die Wahlergebnisse fest.",
+  "base": "Art. 698 OR",
+  "domaine": "Gesellschaftsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Oberstes Organ der Aktiengesellschaft ist die <mark>Generalversammlung</mark> der Aktionäre.",
+   "fr": "L'<mark>assemblée générale</mark> des actionnaires est le pouvoir suprême de la société."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "verwaltungsrat",
+   "revisionsstelle"
+  ]
+ },
+ {
+  "slug": "verwaltungsrat",
+  "de": "Verwaltungsrat",
+  "fr": "conseil d'administration",
+  "it": "consiglio d'amministrazione",
+  "en": "board of directors",
+  "resume": "Das Organ, das die Aktiengesellschaft leitet und ihre Organisation festlegt.",
+  "title": "Verwaltungsrat: Aufgaben und Pflichten · Neur.on",
+  "description": "Verwaltungsrat, conseil d'administration, consiglio d'amministrazione, board of directors: das Leitungsorgan der Aktiengesellschaft nach Art. 707 OR.",
+  "lead": "Der Verwaltungsrat hat die Oberleitung der Gesellschaft und trägt die Verantwortung für seine unübertragbaren Aufgaben. Auf Englisch entspricht ihm das board of directors. Seine Pflichten bestimmt aber das Obligationenrecht.",
+  "definition": "Der Verwaltungsrat ist das Leitungsorgan der Aktiengesellschaft und besteht aus einem oder mehreren Mitgliedern. Er hat die Oberleitung der Gesellschaft und legt ihre Organisation fest. Er bestimmt die Grundsätze des Rechnungswesens und der Finanzkontrolle. Er ist zuständig für die Ernennung und Abberufung der mit der Geschäftsführung betrauten Personen. Zudem übt er die Oberaufsicht aus und bereitet die Generalversammlung vor. Diese Aufgaben sind unübertragbar und unentziehbar.",
+  "base": "Art. 707 OR",
+  "domaine": "Gesellschaftsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Der <mark>Verwaltungsrat</mark> der Gesellschaft besteht aus einem oder mehreren Mitgliedern.",
+   "fr": "Le <mark>conseil d'administration</mark> de la société se compose d'un ou de plusieurs membres."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "generalversammlung",
+   "revisionsstelle"
+  ]
+ },
+ {
+  "slug": "revisionsstelle",
+  "de": "Revisionsstelle",
+  "fr": "organe de révision",
+  "it": "ufficio di revisione",
+  "en": "auditor",
+  "resume": "Das Organ, das die Jahresrechnung der Gesellschaft prüft.",
+  "title": "Revisionsstelle: Aufgaben und Revisionsarten · Neur.on",
+  "description": "Revisionsstelle, organe de révision, ufficio di revisione, auditor: das Prüforgan der Schweizer Aktiengesellschaft nach Art. 727 OR, in vier Sprachen.",
+  "lead": "Die Revisionsstelle prüft die Jahresrechnung und erstattet der Generalversammlung Bericht. Je nach Grösse der Gesellschaft gilt die ordentliche oder die eingeschränkte Revision, oder die Gesellschaft kann darauf verzichten.",
+  "definition": "Die Revisionsstelle prüft, ob die Jahresrechnung und gegebenenfalls die Konzernrechnung Gesetz und Statuten entsprechen. Das Obligationenrecht unterscheidet zwei Arten: die ordentliche Revision für Publikumsgesellschaften und für Gesellschaften ab bestimmten Schwellenwerten, und die eingeschränkte Revision. Kleine Unternehmen können mit Zustimmung sämtlicher Aktionäre auf die eingeschränkte Revision verzichten.",
+  "base": "Art. 727 OR",
+  "domaine": "Gesellschaftsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Die <mark>Revisionsstelle</mark> prüft, ob die Jahresrechnung dem Gesetz und den Statuten entspricht, und erstattet der Generalversammlung Bericht.",
+   "fr": "L'<mark>organe de révision</mark> vérifie que les comptes annuels sont conformes à la loi et aux statuts, et présente un rapport à l'assemblée générale."
+  },
+  "voisins": [
+   "verwaltungsrat",
+   "generalversammlung",
+   "aktiengesellschaft"
+  ]
+ },
+ {
+  "slug": "handelsregister",
+  "de": "Handelsregister",
+  "fr": "registre du commerce",
+  "it": "registro di commercio",
+  "en": "commercial register",
+  "resume": "Das öffentliche Register, in dem die Rechtseinheiten der Schweiz erfasst sind.",
+  "title": "Handelsregister: Eintragung und Wirkung · Neur.on",
+  "description": "Handelsregister, registre du commerce, registro di commercio, commercial register: das öffentliche Register der Schweizer Rechtseinheiten, Art. 927 OR.",
+  "lead": "Das Handelsregister macht die rechtlich relevanten Tatsachen einer Rechtseinheit öffentlich: Firma, Sitz, Organe, Zeichnungsberechtigungen. Der Handelsregisterauszug wird in fast jeder Transaktion verlangt.",
+  "definition": "Das Handelsregister bezweckt namentlich die Erfassung und die Offenlegung rechtlich relevanter Tatsachen über Rechtseinheiten. Es dient der Rechtssicherheit und dem Schutz Dritter. Die kantonalen Handelsregisterämter führen es unter der Aufsicht des Bundes. Kapitalgesellschaften erlangen mit der Eintragung die Rechtspersönlichkeit. Eingetragene Tatsachen können Dritten ab ihrer Bekanntmachung entgegengehalten werden.",
+  "base": "Art. 927 OR",
+  "domaine": "Gesellschaftsrecht",
+  "source": "Fedlex, Obligationenrecht",
+  "exemple": {
+   "de": "Das <mark>Handelsregister</mark> dient der Erfassung und der Offenlegung rechtlich relevanter Tatsachen von Rechtseinheiten und bezweckt die Rechtssicherheit sowie den Schutz Dritter.",
+   "fr": "Le <mark>registre du commerce</mark> sert à recenser et à publier les faits juridiquement pertinents relatifs aux entités juridiques ; il vise à garantir la sécurité du droit et la protection des tiers."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "verwaltungsrat",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "betreibung",
+  "de": "Betreibung",
+  "fr": "poursuite",
+  "it": "esecuzione",
+  "en": "debt enforcement",
+  "resume": "Das Verfahren der Zwangsvollstreckung für eine Geldforderung.",
+  "title": "Betreibung: Schuldbetreibung nach SchKG · Neur.on",
+  "description": "Betreibung, poursuite, esecuzione, debt enforcement: das Schweizer Verfahren der Zwangsvollstreckung für Geldforderungen nach Art. 38 SchKG, in vier Sprachen.",
+  "lead": "Die Betreibung ist ein Verfahren des Schweizer Rechts, für das es im Common Law keine genaue Entsprechung gibt. Ihr Name wechselt in den drei Amtssprachen, ebenso das Gesetz, das sie regelt: SchKG, LP, LEF.",
+  "definition": "Die Schuldbetreibung ist das Verfahren der Zwangsvollstreckung, das auf eine Geldzahlung oder eine Sicherheitsleistung gerichtet ist. Die Betreibungsämter führen sie auf Begehren des Gläubigers durch, ohne dass dieser seine Forderung vorab beweisen muss. Je nach Schuldner und Art der Forderung wird sie auf Pfändung, auf Pfandverwertung oder auf Konkurs fortgesetzt.",
+  "base": "Art. 38 SchKG",
+  "domaine": "Betreibung und Konkurs",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "exemple": {
+   "de": "Auf dem Wege der <mark>Schuldbetreibung</mark> werden die Zwangsvollstreckungen durchgeführt, welche auf eine Geldzahlung oder Sicherheitsleistung gerichtet sind.",
+   "fr": "L'exécution forcée ayant pour objet une somme d'argent ou des sûretés à fournir s'opère par la <mark>poursuite pour dettes</mark>."
+  },
+  "voisins": [
+   "zahlungsbefehl",
+   "rechtsvorschlag",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "zahlungsbefehl",
+  "de": "Zahlungsbefehl",
+  "fr": "commandement de payer",
+  "it": "precetto esecutivo",
+  "en": "summons for payment",
+  "resume": "Die Urkunde, die dem Schuldner zugestellt wird und mit der die Betreibung beginnt.",
+  "title": "Zahlungsbefehl: Inhalt und Fristen · Neur.on",
+  "description": "Zahlungsbefehl, commandement de payer, precetto esecutivo, summons for payment: der erste Schritt der Betreibung nach Art. 69 SchKG, in allen vier Sprachen.",
+  "lead": "Der Zahlungsbefehl wird dem Schuldner nach Eingang des Betreibungsbegehrens zugestellt. Mit der Zustellung beginnt die zehntägige Frist für den Rechtsvorschlag. Das Zustelldatum muss deshalb auf den Tag genau feststehen.",
+  "definition": "Der Zahlungsbefehl ist die Urkunde, die das Betreibungsamt nach Eingang des Betreibungsbegehrens erlässt und dem Schuldner zustellt. Er nennt den Gläubiger, den geforderten Betrag, die Forderungsurkunde und den Grund der Forderung. Er fordert den Schuldner auf, innert der gesetzlichen Frist zu zahlen. Zudem weist er ihn auf sein Recht hin, Rechtsvorschlag zu erheben, und auf die Folgen, wenn er nichts unternimmt.",
+  "base": "Art. 69 SchKG",
+  "domaine": "Betreibung und Konkurs",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "exemple": {
+   "de": "Nach Empfang des Betreibungsbegehrens erlässt das Betreibungsamt den <mark>Zahlungsbefehl</mark>.",
+   "fr": "Dès réception de la réquisition de poursuite, l'office rédige le <mark>commandement de payer</mark>."
+  },
+  "voisins": [
+   "betreibung",
+   "rechtsvorschlag",
+   "arrest"
+  ]
+ },
+ {
+  "slug": "rechtsvorschlag",
+  "de": "Rechtsvorschlag",
+  "fr": "opposition",
+  "it": "opposizione",
+  "en": "objection",
+  "resume": "Die Erklärung des Schuldners, welche die gegen ihn eingeleitete Betreibung einstellt.",
+  "title": "Rechtsvorschlag: Wirkung auf die Betreibung · Neur.on",
+  "description": "Rechtsvorschlag, opposition, opposizione, objection: die Erklärung, welche die Betreibung einstellt, nach Art. 74 SchKG und in allen vier Sprachen.",
+  "lead": "Der Rechtsvorschlag stellt die Betreibung ein: Solange er nicht beseitigt ist, geht das Verfahren nicht weiter. Mit einem Vorschlag hat der Begriff nichts zu tun. Auf Französisch heisst er opposition, und eine wörtliche Übersetzung ist ein klassischer Fehler in diesem Rechtsgebiet.",
+  "definition": "Der Rechtsvorschlag ist die Erklärung, mit der der Betriebene die Forderung bestreitet und die Betreibung zum Stillstand bringt. Er wird mündlich oder schriftlich erhoben: sofort beim Überbringer des Zahlungsbefehls oder innert zehn Tagen nach der Zustellung beim Betreibungsamt. Eine Begründung ist nicht nötig. Der Gläubiger muss danach die Rechtsöffnung erwirken oder auf Anerkennung der Forderung klagen.",
+  "base": "Art. 74 SchKG",
+  "domaine": "Betreibung und Konkurs",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "exemple": {
+   "de": "Will der Betriebene <mark>Recht vorschlagen</mark>, so hat er dies sofort dem Überbringer des Zahlungsbefehls oder innert zehn Tagen nach der Zustellung dem Betreibungsamt mündlich oder schriftlich zu erklären.",
+   "fr": "Le débiteur poursuivi qui entend former <mark>opposition</mark> doit, verbalement ou par écrit, en faire la déclaration immédiatement à celui qui lui remet le commandement de payer ou dans les dix jours à compter de la notification."
+  },
+  "voisins": [
+   "zahlungsbefehl",
+   "betreibung",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "konkurs",
+  "de": "Konkurs",
+  "fr": "faillite",
+  "it": "fallimento",
+  "en": "bankruptcy",
+  "resume": "Die Zwangsvollstreckung in das gesamte pfändbare Vermögen des Schuldners.",
+  "title": "Konkurs: Konkursmasse und Verfahren · Neur.on",
+  "description": "Konkurs, faillite, fallimento, bankruptcy: die Vollstreckung in das gesamte Vermögen nach Art. 197 SchKG, die Konkursmasse und die Befriedigung der Gläubiger.",
+  "lead": "Der Konkurs erfasst das ganze Vermögen des Schuldners: Alles, was pfändbar ist, bildet eine einzige Masse, die der gemeinsamen Befriedigung der Gläubiger dient. Das Gericht eröffnet den Konkurs, und er wird amtlich veröffentlicht.",
+  "definition": "Der Konkurs ist die Zwangsvollstreckung in das gesamte Vermögen eines Schuldners, die das Gericht eröffnet. Der Schuldner ist in der Regel im Handelsregister eingetragen. Sämtliches pfändbare Vermögen, das ihm bei der Konkurseröffnung gehört, bildet eine einzige Masse, gleichviel wo es sich befindet. Diese Masse dient der gemeinsamen Befriedigung der Gläubiger. Die Konkursverwaltung verwertet sie und verteilt den Erlös nach dem Kollokationsplan.",
+  "base": "Art. 197 SchKG",
+  "domaine": "Betreibung und Konkurs",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "exemple": {
+   "de": "Sämtliches pfändbare Vermögen, das dem Schuldner zur Zeit der <mark>Konkurseröffnung</mark> gehört, bildet, gleichviel wo es sich befindet, eine einzige Masse, die zur gemeinsamen Befriedigung der Gläubiger dient.",
+   "fr": "Tous les biens saisissables du <mark>failli</mark> au moment de l'ouverture de la faillite forment une seule masse, quel que soit le lieu où ils se trouvent, et sont affectés au paiement commun des créanciers."
+  },
+  "voisins": [
+   "betreibung",
+   "arrest",
+   "handelsregister"
+  ]
+ },
+ {
+  "slug": "arrest",
+  "de": "Arrest",
+  "fr": "séquestre",
+  "it": "sequestro",
+  "en": "attachment",
+  "resume": "Die Sicherungsmassnahme, die Vermögenswerte des Schuldners in der Schweiz vor der Vollstreckung blockiert.",
+  "title": "Arrest: Sicherung von Vermögen im Betreibungsrecht · Neur.on",
+  "description": "Arrest, séquestre, sequestro, attachment: die Sicherungsmassnahme des Betreibungsrechts nach Art. 271 SchKG, die Arrestgründe und der Begriff in vier Sprachen.",
+  "lead": "Der Arrest sperrt Vermögenswerte in der Schweiz, noch bevor die Forderung feststeht. Mit einer Verhaftung hat er nichts zu tun. Auf Französisch heisst er séquestre, auf Englisch attachment: In internationalen Dossiers ist die wörtliche Übersetzung ein gefährlicher falscher Freund.",
+  "definition": "Der Arrest ist eine Sicherungsmassnahme. Der Gläubiger einer fälligen Forderung, die nicht durch ein Pfand gedeckt ist, kann damit Vermögenswerte des Schuldners in der Schweiz sperren lassen. Das Gericht bewilligt ihn in den gesetzlich vorgesehenen Fällen. Dazu gehören namentlich Fälle, in denen der Schuldner keinen festen Wohnsitz hat, sich seinen Verbindlichkeiten zu entziehen versucht oder nicht in der Schweiz wohnt. Danach muss der Gläubiger Betreibung einleiten oder Klage einreichen (Arrestprosequierung).",
+  "base": "Art. 271 SchKG",
+  "domaine": "Betreibung und Konkurs",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "exemple": {
+   "de": "Der Gläubiger kann für eine fällige Forderung, soweit diese nicht durch ein Pfand gedeckt ist, Vermögensgegenstände des Schuldners, die sich in der Schweiz befinden, mit <mark>Arrest</mark> belegen lassen.",
+   "fr": "Le créancier d'une dette échue et non garantie par gage peut requérir le <mark>séquestre</mark> des biens du débiteur qui se trouvent en Suisse."
+  },
+  "voisins": [
+   "betreibung",
+   "zahlungsbefehl",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "bankgeheimnis",
+  "de": "Bankgeheimnis",
+  "fr": "secret bancaire",
+  "it": "segreto bancario",
+  "en": "banking secrecy",
+  "resume": "Das Berufsgeheimnis der Bank, das strafrechtlich geschützt ist.",
+  "title": "Bankgeheimnis: Schutz und Grenzen in der Schweiz · Neur.on",
+  "description": "Bankgeheimnis, secret bancaire, segreto bancario, banking secrecy: das Berufsgeheimnis der Bank nach Art. 47 BankG, mit dem Begriff in allen vier Sprachen.",
+  "lead": "Das Schweizer Bankgeheimnis ist keine Geschäftspraxis, sondern eine gesetzliche Pflicht: Wer es vorsätzlich verletzt, macht sich strafbar. Es bindet die Organe, die Angestellten und die Beauftragten der Bank.",
+  "definition": "Das Bankgeheimnis verpflichtet die Organe, Angestellten, Beauftragten und Liquidatoren einer Bank zur Verschwiegenheit. Es gilt für Geheimnisse, die ihnen in dieser Eigenschaft anvertraut wurden. Das Bankengesetz bestraft die vorsätzliche Verletzung, und auch die fahrlässige Verletzung ist strafbar. Gesetzlichen Meldepflichten, namentlich bei der Bekämpfung der Geldwäscherei, steht das Bankgeheimnis nicht entgegen.",
+  "base": "Art. 47 BankG",
+  "domaine": "Bankenrecht",
+  "source": "Fedlex, Bundesgesetz über die Banken und Sparkassen",
+  "exemple": {
+   "de": "Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer vorsätzlich ein <mark>Geheimnis</mark> offenbart, das ihm in seiner Eigenschaft als Organ, Angestellter, Beauftragter oder Liquidator einer Bank anvertraut worden ist.",
+   "fr": "Est puni d'une peine privative de liberté de trois ans au plus ou d'une peine pécuniaire celui qui, intentionnellement, révèle un <mark>secret</mark> à lui confié en sa qualité d'organe, d'employé, de mandataire ou de liquidateur d'une banque."
+  },
+  "voisins": [
+   "geldwaescherei",
+   "prospekt",
+   "personendaten"
+  ]
+ },
+ {
+  "slug": "geldwaescherei",
+  "de": "Geldwäscherei",
+  "fr": "blanchiment d'argent",
+  "it": "riciclaggio di denaro",
+  "en": "money laundering",
+  "resume": "Die Handlung, die geeignet ist, die Ermittlung der Herkunft von Vermögenswerten aus einem Verbrechen zu vereiteln.",
+  "title": "Geldwäscherei: Tatbestand nach Art. 305bis StGB · Neur.on",
+  "description": "Geldwäscherei, blanchiment d'argent, riciclaggio di denaro, money laundering: der Straftatbestand nach Art. 305bis StGB und der Begriff in allen vier Sprachen.",
+  "lead": "In der Schweiz heisst es Geldwäscherei, nicht Geldwäsche wie in Deutschland: Schon die Schreibweise verrät die Quelle eines Textes. Auf Französisch lautet der Begriff blanchiment d'argent. Der Tatbestand steht im Strafgesetzbuch.",
+  "definition": "Geldwäscherei ist eine Handlung, die geeignet ist, die Ermittlung der Herkunft, die Auffindung oder die Einziehung bestimmter Vermögenswerte zu vereiteln. Gemeint sind Vermögenswerte, von denen der Täter weiss oder annehmen muss, dass sie aus einem Verbrechen oder aus einem qualifizierten Steuervergehen herrühren. Der Tatbestand steht im Strafgesetzbuch. Hinzu kommen die Sorgfalts- und Meldepflichten der Finanzintermediäre.",
+  "base": "Art. 305bis StGB",
+  "domaine": "Wirtschaftsstrafrecht",
+  "source": "Fedlex, Schweizerisches Strafgesetzbuch",
+  "exemple": {
+   "de": "Wer eine Handlung vornimmt, die geeignet ist, die Ermittlung der Herkunft, die Auffindung oder die Einziehung von Vermögenswerten zu vereiteln, die aus einem Verbrechen herrühren, macht sich der <mark>Geldwäscherei</mark> schuldig.",
+   "fr": "Celui qui commet un acte propre à entraver l'identification de l'origine, la découverte ou la confiscation de valeurs patrimoniales provenant d'un crime se rend coupable de <mark>blanchiment d'argent</mark>."
+  },
+  "voisins": [
+   "bankgeheimnis",
+   "strafbefehl",
+   "prospekt"
+  ]
+ },
+ {
+  "slug": "prospekt",
+  "de": "Prospekt",
+  "fr": "prospectus",
+  "it": "prospetto",
+  "en": "prospectus",
+  "resume": "Das Dokument, das vor einem öffentlichen Angebot von Effekten veröffentlicht werden muss.",
+  "title": "Prospekt: Prospektpflicht nach FIDLEG · Neur.on",
+  "description": "Prospekt, prospectus (Französisch und Englisch), prospetto: das Pflichtdokument vor einem öffentlichen Angebot von Effekten in der Schweiz nach Art. 35 FIDLEG.",
+  "lead": "Vor jedem öffentlichen Angebot von Effekten in der Schweiz muss ein Prospekt veröffentlicht werden. Er gehört zu den am häufigsten übersetzten Finanzdokumenten, oft unter grossem Zeitdruck.",
+  "definition": "Der Prospekt ist das Dokument, das veröffentlichen muss, wer in der Schweiz Effekten öffentlich zum Erwerb anbietet. Dasselbe gilt bei einem Gesuch um Zulassung zum Handel auf einem Handelsplatz. Er enthält die wesentlichen Angaben zum Emittenten, zu den angebotenen Effekten und zu den Risiken. Den Inhalt regelt das Finanzdienstleistungsgesetz. Vor der Veröffentlichung prüft ihn in der Regel eine Prüfstelle.",
+  "base": "Art. 35 FIDLEG",
+  "domaine": "Finanzmarktrecht",
+  "source": "Fedlex, Bundesgesetz über die Finanzdienstleistungen",
+  "exemple": {
+   "de": "Wer in der Schweiz ein öffentliches Angebot zum Erwerb von Effekten unterbreitet, muss vorgängig einen <mark>Prospekt</mark> veröffentlichen.",
+   "fr": "Quiconque propose au public en Suisse d'acquérir des valeurs mobilières doit publier préalablement un <mark>prospectus</mark>."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "bankgeheimnis",
+   "revisionsstelle"
+  ]
+ },
+ {
+  "slug": "schiedsgericht",
+  "de": "Schiedsgericht",
+  "fr": "tribunal arbitral",
+  "it": "tribunale arbitrale",
+  "en": "arbitral tribunal",
+  "resume": "Das private Gericht, das die Parteien wählen, um einen Streit zu entscheiden.",
+  "title": "Schiedsgericht: Schiedssitz Schweiz nach IPRG · Neur.on",
+  "description": "Schiedsgericht, tribunal arbitral, tribunale arbitrale, arbitral tribunal: die internationale Schiedsgerichtsbarkeit mit Sitz in der Schweiz, Art. 176 IPRG.",
+  "lead": "Die Schweiz gehört zu den weltweit meistgenutzten Schiedssitzen. Für internationale Verfahren gilt das Kapitel des IPRG über die internationale Schiedsgerichtsbarkeit. Massgebend ist, dass der Sitz in der Schweiz liegt und mindestens eine Partei dort weder Wohnsitz noch gewöhnlichen Aufenthalt hat.",
+  "definition": "Das Schiedsgericht ist ein privates Gericht, das die Parteien mit einer Schiedsvereinbarung einsetzen, um ihren Streit anstelle der staatlichen Gerichte zu entscheiden. Das Bundesgesetz über das Internationale Privatrecht gilt, wenn zwei Bedingungen erfüllt sind: Der Sitz liegt in der Schweiz, und mindestens eine Partei hatte beim Abschluss der Schiedsvereinbarung weder Wohnsitz noch gewöhnlichen Aufenthalt noch Sitz in der Schweiz. Das Schiedsgericht entscheidet selbst über seine Zuständigkeit.",
+  "base": "Art. 176 IPRG",
+  "domaine": "Internationale Schiedsgerichtsbarkeit",
+  "source": "Fedlex, Bundesgesetz über das Internationale Privatrecht",
+  "exemple": {
+   "de": "Das <mark>Schiedsgericht</mark> entscheidet selbst über seine Zuständigkeit.",
+   "fr": "Le <mark>tribunal arbitral</mark> statue sur sa propre compétence."
+  },
+  "voisins": [
+   "beschwerde",
+   "verfuegung",
+   "konventionalstrafe"
+  ]
+ },
+ {
+  "slug": "beschwerde",
+  "de": "Beschwerde",
+  "fr": "recours",
+  "it": "ricorso",
+  "en": "appeal",
+  "resume": "Das Rechtsmittel, mit dem ein Entscheid an die obere Instanz weitergezogen wird.",
+  "title": "Beschwerde: Rechtsmittel ans Bundesgericht · Neur.on",
+  "description": "Beschwerde, recours, ricorso, appeal: das Rechtsmittel an das Schweizerische Bundesgericht nach Art. 72 BGG und der genaue Begriff in allen vier Sprachen.",
+  "lead": "Mit der Beschwerde wird ein Entscheid an eine obere Behörde weitergezogen, in letzter Instanz an das Bundesgericht. Auf Französisch heisst sie recours. Im Schweizer Italienisch sagt man ricorso, und das Gericht heisst Tribunale federale.",
+  "definition": "Die Beschwerde ist das Rechtsmittel, mit dem eine Partei einen Entscheid bei der oberen Instanz anficht. Vor dem Bundesgericht unterscheidet das Gesetz namentlich die Beschwerde in Zivilsachen, die Beschwerde in Strafsachen und die Beschwerde in öffentlich-rechtlichen Angelegenheiten. Für jede gelten eigene Eintretensvoraussetzungen. Sie richtet sich grundsätzlich gegen Entscheide letzter kantonaler Instanzen.",
+  "base": "Art. 72 BGG",
+  "domaine": "Verfahren und Rechtsmittel",
+  "source": "Fedlex, Bundesgesetz über das Bundesgericht",
+  "exemple": {
+   "de": "Das Bundesgericht beurteilt <mark>Beschwerden</mark> gegen Entscheide in Zivilsachen.",
+   "fr": "Le Tribunal fédéral connaît des <mark>recours</mark> contre les décisions rendues en matière civile."
+  },
+  "voisins": [
+   "schiedsgericht",
+   "verfuegung",
+   "strafbefehl"
+  ]
+ },
+ {
+  "slug": "strafbefehl",
+  "de": "Strafbefehl",
+  "fr": "ordonnance pénale",
+  "it": "decreto d'accusa",
+  "en": "summary penalty order",
+  "resume": "Der Entscheid, mit dem die Staatsanwaltschaft ohne vollständiges Gerichtsverfahren eine Strafe ausspricht.",
+  "title": "Strafbefehl: Verfahren und Einsprache · Neur.on",
+  "description": "Strafbefehl, ordonnance pénale, decreto d'accusa, summary penalty order: der Entscheid der Staatsanwaltschaft und die Einsprachefrist, Art. 352 StPO.",
+  "lead": "Mit dem Strafbefehl kann die Staatsanwaltschaft eine Strafe ohne Hauptverhandlung aussprechen. Der italienische Name decreto d'accusa hat in Italien keine direkte Entsprechung. Er ist damit ein Erkennungszeichen des Schweizer Rechts.",
+  "definition": "Der Strafbefehl ist der Entscheid, mit dem die Staatsanwaltschaft die beschuldigte Person ohne gerichtliches Verfahren verurteilt. Voraussetzung ist, dass die beschuldigte Person den Sachverhalt eingestanden hat oder dieser anderweitig ausreichend geklärt ist. Zudem muss die Strafe innerhalb der Grenzen der Strafprozessordnung bleiben. Die beschuldigte Person kann innert zehn Tagen Einsprache erheben. Sonst wird der Strafbefehl zum rechtskräftigen Urteil.",
+  "base": "Art. 352 StPO",
+  "domaine": "Strafrecht",
+  "source": "Fedlex, Schweizerische Strafprozessordnung",
+  "exemple": {
+   "de": "Hat die beschuldigte Person im Vorverfahren den Sachverhalt eingestanden oder ist dieser anderweitig ausreichend geklärt, so erlässt die Staatsanwaltschaft einen <mark>Strafbefehl</mark>.",
+   "fr": "Si le prévenu a admis les faits au cours de la procédure préliminaire ou que ceux-ci sont suffisamment établis, le ministère public rend une <mark>ordonnance pénale</mark>."
+  },
+  "voisins": [
+   "untersuchungshaft",
+   "beschwerde",
+   "geldwaescherei"
+  ]
+ },
+ {
+  "slug": "untersuchungshaft",
+  "de": "Untersuchungshaft",
+  "fr": "détention provisoire",
+  "it": "carcerazione preventiva",
+  "en": "remand (pre-trial detention)",
+  "resume": "Die Haft, die während der Untersuchung und vor der Anklageerhebung angeordnet wird.",
+  "title": "Untersuchungshaft: Voraussetzungen und Dauer · Neur.on",
+  "description": "Untersuchungshaft, détention provisoire, carcerazione preventiva, remand: die Zwangsmassnahme nach Art. 220 StPO, mit dem Begriff in allen vier Sprachen.",
+  "lead": "Die Untersuchungshaft ordnet das Zwangsmassnahmengericht an, nicht die Staatsanwaltschaft allein. Sie endet mit dem Eingang der Anklage beim Gericht. Ab dann heisst sie Sicherheitshaft.",
+  "definition": "Die Untersuchungshaft ist der Freiheitsentzug während der Untersuchung gegen eine beschuldigte Person, die eines Verbrechens oder Vergehens dringend verdächtig ist. Zusätzlich muss Flucht-, Kollusions- oder Wiederholungsgefahr bestehen. Das Zwangsmassnahmengericht ordnet sie auf Antrag der Staatsanwaltschaft an, befristet und verlängerbar. Sie endet spätestens mit dem Eingang der Anklage beim erstinstanzlichen Gericht.",
+  "base": "Art. 220 StPO",
+  "domaine": "Strafrecht",
+  "source": "Fedlex, Schweizerische Strafprozessordnung",
+  "exemple": {
+   "de": "Die <mark>Untersuchungshaft</mark> beginnt mit ihrer Anordnung durch das Zwangsmassnahmengericht und endet mit dem Eingang der Anklage beim erstinstanzlichen Gericht.",
+   "fr": "La <mark>détention provisoire</mark> commence au moment où le tribunal des mesures de contrainte l'ordonne et s'achève lorsque l'acte d'accusation est notifié au tribunal de première instance."
+  },
+  "voisins": [
+   "strafbefehl",
+   "beschwerde",
+   "geldwaescherei"
+  ]
+ },
+ {
+  "slug": "verrechnungssteuer",
+  "de": "Verrechnungssteuer",
+  "fr": "impôt anticipé",
+  "it": "imposta preventiva",
+  "en": "withholding tax",
+  "resume": "Die Bundessteuer, die an der Quelle auf Kapitalerträgen erhoben wird.",
+  "title": "Verrechnungssteuer: Abzug und Rückerstattung · Neur.on",
+  "description": "Verrechnungssteuer, impôt anticipé, imposta preventiva, withholding tax: die an der Quelle erhobene Bundessteuer auf Kapitalerträgen, Art. 1 VStG.",
+  "lead": "Die Verrechnungssteuer zieht der Schuldner der Leistung an der Quelle ab. Wer die Erträge ordnungsgemäss deklariert, erhält sie zurück. Der französische Name impôt anticipé sagt nichts über den Abzug an der Quelle: eine klassische Übersetzungsfalle.",
+  "definition": "Die Verrechnungssteuer ist eine Bundessteuer, die an der Quelle erhoben wird. Sie betrifft den Ertrag beweglichen Kapitalvermögens, namentlich Dividenden und Zinsen, sowie bestimmte weitere Leistungen. Der Schuldner der steuerbaren Leistung zieht sie ab und überweist sie dem Bund. Sie soll sicherstellen, dass diese Erträge deklariert werden: Wer in der Schweiz Wohnsitz hat und den Ertrag ordnungsgemäss deklariert, hat Anspruch auf Rückerstattung.",
+  "base": "Art. 1 VStG",
+  "domaine": "Steuerrecht",
+  "source": "Fedlex, Bundesgesetz über die Verrechnungssteuer",
+  "exemple": {
+   "de": "Der Bund erhebt eine <mark>Verrechnungssteuer</mark> auf dem Ertrag beweglichen Kapitalvermögens und auf bestimmten weiteren Leistungen.",
+   "fr": "La Confédération perçoit un <mark>impôt anticipé</mark> sur les revenus de capitaux mobiliers et sur certaines autres prestations."
+  },
+  "voisins": [
+   "mehrwertsteuer",
+   "verfuegung",
+   "aktiengesellschaft"
+  ]
+ },
+ {
+  "slug": "mehrwertsteuer",
+  "de": "Mehrwertsteuer",
+  "fr": "taxe sur la valeur ajoutée",
+  "it": "imposta sul valore aggiunto",
+  "en": "value added tax",
+  "resume": "Die allgemeine Verbrauchssteuer des Bundes mit Vorsteuerabzug.",
+  "title": "Mehrwertsteuer: MWST, TVA und IVA erklärt · Neur.on",
+  "description": "Mehrwertsteuer, taxe sur la valeur ajoutée, imposta sul valore aggiunto, value added tax: die MWST nach Art. 1 MWSTG und ihre Kürzel in den vier Sprachen.",
+  "lead": "Die Schweizer Mehrwertsteuer ist eine allgemeine Verbrauchssteuer, die auf jeder Stufe erhoben wird, mit Vorsteuerabzug. Die Abkürzung wechselt mit der Sprache: MWST auf Deutsch, TVA auf Französisch, IVA auf Italienisch. In einem französischen Text steht nie MWST.",
+  "definition": "Die Mehrwertsteuer ist eine allgemeine Verbrauchssteuer, die der Bund auf jeder Stufe der Produktion und des Vertriebs erhebt, mit Vorsteuerabzug. Sie erfasst die im Inland erbrachten Leistungen, den Bezug von Leistungen von Unternehmen mit Sitz im Ausland und die Einfuhr von Gegenständen. Die steuerpflichtige Person rechnet periodisch mit der Eidgenössischen Steuerverwaltung ab.",
+  "base": "Art. 1 MWSTG",
+  "domaine": "Steuerrecht",
+  "source": "Fedlex, Bundesgesetz über die Mehrwertsteuer",
+  "exemple": {
+   "de": "Der Bund erhebt eine allgemeine Verbrauchssteuer nach dem System der Netto-Allphasensteuer mit Vorsteuerabzug, die <mark>Mehrwertsteuer</mark>.",
+   "fr": "La Confédération perçoit, à chaque stade du processus de production et de distribution, un impôt général sur la consommation avec déduction de l'impôt préalable, la <mark>taxe sur la valeur ajoutée</mark>."
+  },
+  "voisins": [
+   "verrechnungssteuer",
+   "verfuegung",
+   "handelsregister"
+  ]
+ },
+ {
+  "slug": "verfuegung",
+  "de": "Verfügung",
+  "fr": "décision",
+  "it": "decisione",
+  "en": "ruling",
+  "resume": "Die Anordnung, mit der eine Behörde einen Einzelfall des öffentlichen Rechts regelt.",
+  "title": "Verfügung: Begriff im Verwaltungsverfahren · Neur.on",
+  "description": "Verfügung, décision, decisione, ruling: der Verwaltungsakt im Einzelfall nach Art. 5 VwVG, seine Merkmale und der Begriff in allen vier Sprachen.",
+  "lead": "Die Verfügung regelt einen Einzelfall im öffentlichen Recht des Bundes. Ob ein Schreiben als Verfügung gilt, ist nie neutral: Davon hängt ab, ob der Rechtsweg offensteht und die Beschwerdefrist läuft.",
+  "definition": "Verfügungen sind Anordnungen der Behörden im Einzelfall, die sich auf öffentliches Recht des Bundes stützen. Sie haben einen dieser Gegenstände: Rechte oder Pflichten begründen, ändern oder aufheben; das Bestehen oder den Umfang von Rechten oder Pflichten feststellen; Begehren abweisen oder darauf nicht eintreten. Eine Verfügung ist zu begründen und mit einer Rechtsmittelbelehrung zu versehen.",
+  "base": "Art. 5 VwVG",
+  "domaine": "Verwaltungsrecht",
+  "source": "Fedlex, Bundesgesetz über das Verwaltungsverfahren",
+  "exemple": {
+   "de": "Als <mark>Verfügungen</mark> gelten Anordnungen der Behörden im Einzelfall, die sich auf öffentliches Recht des Bundes stützen und Rechte oder Pflichten begründen, ändern oder aufheben.",
+   "fr": "Sont considérées comme <mark>décisions</mark> les mesures prises par les autorités dans des cas d'espèce, fondées sur le droit public fédéral et ayant pour objet de créer, de modifier ou d'annuler des droits ou des obligations."
+  },
+  "voisins": [
+   "beschwerde",
+   "mehrwertsteuer",
+   "personendaten"
+  ]
+ },
+ {
+  "slug": "personendaten",
+  "de": "Personendaten",
+  "fr": "données personnelles",
+  "it": "dati personali",
+  "en": "personal data",
+  "resume": "Alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen.",
+  "title": "Personendaten: Begriff nach dem Datenschutzgesetz · Neur.on",
+  "description": "Personendaten, données personnelles, dati personali, personal data: die Definition nach Art. 5 DSG und der amtliche Begriff in allen vier Sprachen.",
+  "lead": "Das Schweizer Datenschutzgesetz schützt nur noch natürliche Personen. Seine Definition der Personendaten bestimmt das gesamte Regelwerk, auch die Regeln für die Bearbeitung durch Auftragsbearbeiter.",
+  "definition": "Personendaten sind alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen. Das Gesetz unterscheidet zudem besonders schützenswerte Personendaten, für die strengere Regeln gelten. Dazu gehören etwa Daten über religiöse oder politische Ansichten, die Gesundheit, die Intimsphäre sowie über verwaltungs- und strafrechtliche Verfolgungen oder Sanktionen. Jede Bearbeitung muss rechtmässig, verhältnismässig und nach Treu und Glauben erfolgen.",
+  "base": "Art. 5 DSG",
+  "domaine": "Datenschutzrecht",
+  "source": "Fedlex, Bundesgesetz über den Datenschutz",
+  "exemple": {
+   "de": "<mark>Personendaten</mark> sind alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen.",
+   "fr": "Par <mark>données personnelles</mark>, on entend toutes les informations concernant une personne physique identifiée ou identifiable."
+  },
+  "voisins": [
+   "bankgeheimnis",
+   "verfuegung",
+   "beschwerde"
+  ]
+ },
+ {
+  "slug": "versicherungsvertrag",
+  "de": "Versicherungsvertrag",
+  "fr": "contrat d'assurance",
+  "it": "contratto d'assicurazione",
+  "en": "insurance contract",
+  "resume": "Der Vertrag, mit dem ein Versicherungsunternehmen gegen eine Prämie ein Risiko deckt.",
+  "title": "Versicherungsvertrag: Regeln nach VVG · Neur.on",
+  "description": "Versicherungsvertrag, contrat d'assurance, contratto d'assicurazione, insurance contract: der Vertrag nach dem Versicherungsvertragsgesetz, Art. 1 VVG.",
+  "lead": "Der private Versicherungsvertrag untersteht einem eigenen Bundesgesetz, getrennt vom Obligationenrecht. Am häufigsten übersetzt werden die Allgemeinen Versicherungsbedingungen. Dort wirken sich terminologische Abweichungen am stärksten aus.",
+  "definition": "Mit dem Versicherungsvertrag verpflichtet sich das Versicherungsunternehmen gegen eine Prämie, die vereinbarte Leistung zu erbringen, wenn das versicherte Ereignis eintritt. Er untersteht dem Bundesgesetz über den Versicherungsvertrag, ergänzend gilt das Obligationenrecht. Der Versicherungsnehmer muss die für die Beurteilung der Gefahr erheblichen Tatsachen anzeigen. Das Versicherungsunternehmen muss ihm die Allgemeinen Versicherungsbedingungen vor Vertragsabschluss übergeben.",
+  "base": "Art. 1 VVG",
+  "domaine": "Versicherungsrecht",
+  "source": "Fedlex, Bundesgesetz über den Versicherungsvertrag",
+  "exemple": {
+   "de": "Durch den <mark>Versicherungsvertrag</mark> verpflichtet sich das Versicherungsunternehmen, bei Eintritt des versicherten Ereignisses die vereinbarte Leistung zu erbringen.",
+   "fr": "Par le <mark>contrat d'assurance</mark>, l'entreprise d'assurance s'engage à fournir la prestation convenue lorsque survient l'événement assuré."
+  },
+  "voisins": [
+   "schadenersatz",
+   "verjaehrung",
+   "verzugszins"
+  ]
+ },
+ {
+  "slug": "kuendigung",
+  "de": "Kündigung",
+  "domaine": "Arbeitsrecht",
+  "base": "Art. 335 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die Erklärung, die einen unbefristeten Vertrag auf das Ende der Kündigungsfrist beendet.",
+  "lead": "Im Schweizer Arbeitsrecht beendet die Kündigung den unbefristeten Arbeitsvertrag auf das Ende der Kündigungsfrist. Auf Französisch spricht das Obligationenrecht von résiliation, aber auch von congé. Eine Begründung ist nur nötig, wenn die andere Partei sie verlangt.",
+  "definition": "Ein unbefristeter Arbeitsvertrag kann von jeder Partei gekündigt werden. Die Kündigung ist eine einseitige Erklärung. Sie wird mit Ablauf der gesetzlichen oder vertraglichen Kündigungsfrist wirksam. Die kündigende Partei muss die Kündigung schriftlich begründen, wenn die andere Partei dies verlangt. Das Obligationenrecht schützt den Arbeitnehmer zudem vor missbräuchlicher Kündigung und vor Kündigung zur Unzeit.",
+  "voisins": [
+   "fristlose-kuendigung",
+   "arbeitsvertrag",
+   "mietvertrag"
+  ],
+  "fr": "résiliation",
+  "it": "disdetta",
+  "en": "termination",
+  "title": "Kündigung: was das OR zum Arbeitsvertrag regelt · Neur.on",
+  "description": "Kündigung, résiliation, disdetta, termination: die Kündigung des unbefristeten Arbeitsvertrags nach Art. 335 OR, mit Fristen und Begründung.",
+  "exemple": {
+   "de": "Ein unbefristetes Arbeitsverhältnis kann von jeder Vertragspartei <mark>gekündigt</mark> werden.",
+   "fr": "Le contrat de durée indéterminée peut être <mark>résilié</mark> par chacune des parties."
+  }
+ },
+ {
+  "slug": "fristlose-kuendigung",
+  "de": "fristlose Kündigung",
+  "domaine": "Arbeitsrecht",
+  "base": "Art. 337 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die Beendigung des Arbeitsverhältnisses ohne Kündigungsfrist, aus wichtigen Gründen.",
+  "lead": "Arbeitgeber wie Arbeitnehmer können das Arbeitsverhältnis aus wichtigen Gründen jederzeit fristlos auflösen. Ob solche Gründe vorliegen, entscheidet das Gericht nach seinem Ermessen.",
+  "definition": "Als wichtige Gründe gelten alle Umstände, bei denen dem Kündigenden nach Treu und Glauben die Fortsetzung des Arbeitsverhältnisses nicht mehr zugemutet werden darf. Das Obligationenrecht spricht von fristloser Auflösung (Art. 337 OR). Wer das Arbeitsverhältnis fristlos auflöst, muss dies auf Verlangen der anderen Partei schriftlich begründen. Auch eine ungerechtfertigte fristlose Kündigung beendet das Arbeitsverhältnis. Der Arbeitgeber muss dann aber ersetzen, was der Arbeitnehmer bis zum Ablauf der Kündigungsfrist verdient hätte, und das Gericht kann zusätzlich eine Entschädigung zusprechen.",
+  "voisins": [
+   "kuendigung",
+   "arbeitsvertrag",
+   "ueberstunden"
+  ],
+  "fr": "résiliation immédiate",
+  "it": "risoluzione immediata",
+  "en": "termination with immediate effect",
+  "title": "Fristlose Kündigung: wichtige Gründe nach Art. 337 OR · Neur.on",
+  "description": "Fristlose Kündigung, résiliation immédiate, risoluzione immediata, termination with immediate effect: fristlose Auflösung aus wichtigen Gründen, Art. 337 OR.",
+  "exemple": {
+   "de": "Aus wichtigen Gründen kann der Arbeitgeber wie der Arbeitnehmer jederzeit das Arbeitsverhältnis <mark>fristlos auflösen</mark>; er muss die fristlose Vertragsauflösung schriftlich begründen, wenn die andere Partei dies verlangt.",
+   "fr": "L’employeur et le travailleur peuvent <mark>résilier immédiatement</mark> le contrat en tout temps pour de justes motifs; la partie qui résilie immédiatement le contrat doit motiver sa décision par écrit si l’autre partie le demande."
+  }
+ },
+ {
+  "slug": "arbeitsvertrag",
+  "de": "Arbeitsvertrag",
+  "domaine": "Arbeitsrecht",
+  "base": "Art. 319 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Der Vertrag, mit dem sich der Arbeitnehmer verpflichtet, gegen Lohn im Dienst des Arbeitgebers zu arbeiten.",
+  "lead": "Der Arbeitsvertrag ist der Grundvertrag des Schweizer Arbeitsrechts. Das Obligationenrecht regelt ihn in den Artikeln 319 ff., mit zahlreichen zwingenden Bestimmungen zum Schutz des Arbeitnehmers.",
+  "definition": "Durch den Einzelarbeitsvertrag verpflichtet sich der Arbeitnehmer auf bestimmte oder unbestimmte Zeit zur Arbeit im Dienst des Arbeitgebers. Der Arbeitgeber verpflichtet sich zur Entrichtung eines Lohnes, der nach Zeitabschnitten oder nach der geleisteten Arbeit bemessen wird. Der Vertrag bedarf grundsätzlich keiner besonderen Form. Das Unterordnungsverhältnis unterscheidet ihn vom Auftrag und vom Werkvertrag.",
+  "voisins": [
+   "kuendigung",
+   "konkurrenzverbot",
+   "ueberstunden"
+  ],
+  "fr": "contrat de travail",
+  "it": "contratto di lavoro",
+  "en": "employment contract",
+  "title": "Arbeitsvertrag: Einzelarbeitsvertrag nach OR · Neur.on",
+  "description": "Arbeitsvertrag, contrat de travail, contratto di lavoro, employment contract: der Einzelarbeitsvertrag nach Art. 319 OR, mit dem Begriff in vier Sprachen.",
+  "exemple": {
+   "de": "Wird es vom Gesetz nicht anders bestimmt, so bedarf der <mark>Einzelarbeitsvertrag</mark> zu seiner Gültigkeit keiner besonderen Form.",
+   "fr": "Sauf disposition contraire de la loi, le <mark>contrat individuel de travail</mark> n’est soumis à aucune forme spéciale."
+  }
+ },
+ {
+  "slug": "mietvertrag",
+  "de": "Mietvertrag",
+  "domaine": "Mietrecht",
+  "base": "Art. 253 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Der Vertrag, mit dem der Vermieter dem Mieter eine Sache gegen einen Mietzins zum Gebrauch überlässt.",
+  "lead": "Auf Französisch heisst der Mietvertrag im Schweizer Recht bail à loyer, nicht contrat de location. So lautet der Begriff im Obligationenrecht, das ihn von der Pacht (bail à ferme) unterscheidet.",
+  "definition": "Durch den Mietvertrag verpflichtet sich der Vermieter, dem Mieter eine Sache zum Gebrauch zu überlassen, und der Mieter, dafür einen Mietzins zu leisten. Für die Miete von Wohn- und Geschäftsräumen sieht das Obligationenrecht besondere Regeln vor: Schutz vor missbräuchlichen Mietzinsen, amtliches Formular für bestimmte Mitteilungen, Kündigungsschutz. Die Pacht dagegen betrifft eine nutzbare Sache, deren Früchte oder Erträge der Pächter bezieht.",
+  "voisins": [
+   "kuendigung",
+   "schadenersatz",
+   "grundbuch"
+  ],
+  "fr": "bail à loyer",
+  "it": "contratto di locazione",
+  "en": "lease",
+  "title": "Mietvertrag: Miete von Wohn- und Geschäftsräumen · Neur.on",
+  "description": "Mietvertrag, bail à loyer, contratto di locazione, lease: der Mietvertrag nach Art. 253 OR, die Regeln zum Mieterschutz und der Begriff in allen vier Sprachen.",
+  "exemple": {
+   "de": "Durch den <mark>Mietvertrag</mark> verpflichtet sich der Vermieter, dem Mieter eine Sache zum Gebrauch zu überlassen, und der Mieter, dem Vermieter dafür einen Mietzins zu leisten.",
+   "fr": "Le <mark>bail à loyer</mark> est un contrat par lequel le bailleur s’oblige à céder l’usage d’une chose au locataire, moyennant un loyer."
+  }
+ },
+ {
+  "slug": "schuldnerverzug",
+  "de": "Schuldnerverzug",
+  "domaine": "Obligationenrecht",
+  "base": "Art. 102 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die Lage des Schuldners, der eine fällige Verbindlichkeit trotz Mahnung des Gläubigers nicht erfüllt.",
+  "lead": "Der Verzug ist der Schlüsselbegriff für die verspätete Erfüllung im Schweizer Recht. Er löst den Verzugszins aus und gibt dem Gläubiger die Rechte nach den Artikeln 107 bis 109 des Obligationenrechts.",
+  "definition": "Ist eine Verbindlichkeit fällig, so wird der Schuldner durch Mahnung des Gläubigers in Verzug gesetzt. Wurde ein bestimmter Verfalltag verabredet oder ergibt er sich aus einer gehörig vorgenommenen Kündigung, kommt der Schuldner schon mit Ablauf dieses Tages in Verzug. Das Obligationenrecht spricht vom Verzug des Schuldners (Art. 102 OR). Der Verzug macht den Schuldner auch für Zufall haftbar und löst bei Geldschulden den Verzugszins aus. In zweiseitigen Verträgen kann der Gläubiger zudem eine Frist ansetzen und danach vom Vertrag zurücktreten.",
+  "voisins": [
+   "verzugszins",
+   "schadenersatz",
+   "konventionalstrafe"
+  ],
+  "fr": "demeure du débiteur",
+  "it": "mora del debitore",
+  "en": "default of the obligor",
+  "title": "Schuldnerverzug: Mahnung und Folgen nach OR · Neur.on",
+  "description": "Schuldnerverzug, demeure du débiteur, mora del debitore, default of the obligor: der Verzug des Schuldners nach Art. 102 OR und seine Wirkungen.",
+  "exemple": {
+   "de": "Ist eine Verbindlichkeit fällig, so wird der Schuldner durch Mahnung des Gläubigers <mark>in Verzug gesetzt</mark>.",
+   "fr": "Le débiteur d’une obligation exigible est <mark>mis en demeure</mark> par l’interpellation du créancier."
+  }
+ },
+ {
+  "slug": "gewaehrleistung",
+  "de": "Gewährleistung",
+  "domaine": "Obligationenrecht",
+  "base": "Art. 197 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die Haftung des Verkäufers für Mängel der Kaufsache und für zugesicherte Eigenschaften.",
+  "lead": "Die Gewährleistung schützt den Käufer vor einer Sache, die nicht hält, was vereinbart war. Sie setzt eine rasche Prüfung und eine sofortige Mängelrüge an den Verkäufer voraus.",
+  "definition": "Der Verkäufer haftet dem Käufer für die zugesicherten Eigenschaften. Er haftet auch für körperliche oder rechtliche Mängel, die den Wert der Sache oder ihre Tauglichkeit zum vorausgesetzten Gebrauch aufheben oder erheblich mindern. Der Käufer kann je nach Fall den Kauf rückgängig machen oder Ersatz des Minderwerts verlangen. Die Gewährleistung setzt voraus, dass der Käufer die Sache prüft und dem Verkäufer entdeckte Mängel sofort anzeigt.",
+  "voisins": [
+   "maengelruege",
+   "schadenersatz",
+   "verjaehrung"
+  ],
+  "fr": "garantie",
+  "it": "garanzia",
+  "en": "warranty",
+  "title": "Gewährleistung: Haftung für Mängel beim Kauf · Neur.on",
+  "description": "Gewährleistung, garantie, garanzia, warranty: die Haftung des Verkäufers für Mängel der Kaufsache nach Art. 197 OR, mit dem Begriff in allen vier Sprachen.",
+  "exemple": {
+   "de": "III. <mark>Gewährleistung</mark> wegen Mängel der Kaufsache",
+   "fr": "III. <mark>Garantie</mark> en raison des défauts de la chose"
+  }
+ },
+ {
+  "slug": "maengelruege",
+  "de": "Mängelrüge",
+  "domaine": "Obligationenrecht",
+  "base": "Art. 201 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die Anzeige, mit der der Käufer dem Verkäufer Mängel der empfangenen Sache sofort meldet.",
+  "lead": "Auf Französisch spricht das Obligationenrecht von avis au vendeur, die Praxis von avis des défauts. Ohne rechtzeitige Mängelrüge verliert der Käufer seine Gewährleistungsrechte. Das ist eine der folgenreichsten Regeln des Schweizer Kaufrechts.",
+  "definition": "Der Käufer muss die Beschaffenheit der empfangenen Sache prüfen, sobald es nach dem üblichen Geschäftsgang tunlich ist. Entdeckt er Mängel, für die der Verkäufer Gewähr zu leisten hat, muss er ihm sofort Anzeige machen. Versäumt er dies, gilt die Sache als genehmigt, ausser bei Mängeln, die bei der übungsgemässen Untersuchung nicht erkennbar waren. Solche versteckten Mängel sind sofort nach ihrer Entdeckung anzuzeigen.",
+  "voisins": [
+   "gewaehrleistung",
+   "verjaehrung",
+   "schadenersatz"
+  ],
+  "fr": "avis au vendeur (avis des défauts)",
+  "it": "avviso al venditore",
+  "en": "notice of defects",
+  "title": "Mängelrüge: prüfen und sofort anzeigen · Neur.on",
+  "description": "Mängelrüge, avis au vendeur oder avis des défauts, avviso al venditore, notice of defects: Prüfung der Kaufsache und sofortige Anzeige, Art. 201 OR.",
+  "exemple": {
+   "de": "Der Käufer soll, sobald es nach dem üblichen Geschäftsgange tunlich ist, die Beschaffenheit der empfangenen Sache prüfen und, falls sich Mängel ergeben, für die der Verkäufer Gewähr zu leisten hat, diesem <mark>sofort Anzeige machen</mark>.",
+   "fr": "L’acheteur a l’obligation de vérifier l’état de la chose reçue aussitôt qu’il le peut d’après la marche habituelle des affaires; s’il découvre des défauts dont le vendeur est garant, il doit <mark>l’en aviser sans délai</mark>."
+  }
+ },
+ {
+  "slug": "vollmacht",
+  "de": "Vollmacht",
+  "domaine": "Obligationenrecht",
+  "base": "Art. 32 bis 34 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die vom Vertretenen erteilte Befugnis, ihn zu vertreten, und die Urkunde darüber.",
+  "lead": "Auf Französisch hat die Vollmacht zwei Namen: pouvoirs für die Befugnis selbst, procuration für die Urkunde, mit der sie erteilt wird. Der französische Text des Obligationenrechts spricht vor allem von pouvoirs.",
+  "definition": "Schliesst ein ermächtigter Vertreter im Namen einer anderen Person einen Vertrag ab, so wird der Vertretene und nicht der Vertreter berechtigt und verpflichtet. Ist die Ermächtigung durch Rechtsgeschäft eingeräumt, so richtet sich ihr Umfang nach dessen Inhalt. Der Vollmachtgeber kann die erteilte Vollmacht jederzeit beschränken oder widerrufen.",
+  "voisins": [
+   "abtretung",
+   "handelsregister",
+   "verwaltungsrat"
+  ],
+  "fr": "pouvoirs (procuration)",
+  "it": "procura",
+  "en": "authority (power of attorney)",
+  "title": "Vollmacht: Stellvertretung nach OR · Neur.on",
+  "description": "Vollmacht, pouvoirs oder procuration, procura, authority: die Vertretungsbefugnis nach Art. 32 bis 34 OR und die Urkunde, mit der sie erteilt wird.",
+  "exemple": {
+   "de": "Solange das Erlöschen der <mark>Vollmacht</mark> dem Bevollmächtigten nicht bekannt geworden ist, berechtigt und verpflichtet er den Vollmachtgeber oder dessen Rechtsnachfolger, wie wenn die Vollmacht noch bestehen würde.",
+   "fr": "Aussi longtemps que le représentant n’a pas connaissance de l’extinction de ses <mark>pouvoirs</mark>, le représenté ou ses ayants cause deviennent par son fait créanciers ou débiteurs comme si les pouvoirs existaient encore."
+  }
+ },
+ {
+  "slug": "gmbh",
+  "de": "Gesellschaft mit beschränkter Haftung",
+  "domaine": "Gesellschaftsrecht",
+  "base": "Art. 772 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Die Kapitalgesellschaft, deren Stammkapital in Stammanteile zerlegt ist und für deren Verbindlichkeiten nur ihr Vermögen haftet.",
+  "lead": "GmbH auf Deutsch, Sàrl auf Französisch, Sagl auf Italienisch: Die Gesellschaft mit beschränkter Haftung ist die bevorzugte Rechtsform der Schweizer KMU. Das Stammkapital beträgt mindestens 20'000 Franken.",
+  "definition": "Die Gesellschaft mit beschränkter Haftung ist eine personenbezogene Kapitalgesellschaft, an der eine oder mehrere Personen oder Handelsgesellschaften beteiligt sind. Ihr Stammkapital wird in den Statuten festgelegt, und für ihre Verbindlichkeiten haftet nur das Gesellschaftsvermögen. Das Stammkapital muss mindestens 20'000 Franken betragen. Die Statuten können die Gesellschafter zu Nachschüssen oder Nebenleistungen verpflichten.",
+  "voisins": [
+   "aktiengesellschaft",
+   "statuten",
+   "handelsregister"
+  ],
+  "fr": "société à responsabilité limitée",
+  "it": "società a garanzia limitata",
+  "en": "limited liability company",
+  "title": "GmbH: die Gesellschaft mit beschränkter Haftung · Neur.on",
+  "description": "GmbH, société à responsabilité limitée, società a garanzia limitata, limited liability company: die Gesellschaft mit beschränkter Haftung, Art. 772 OR.",
+  "exemple": {
+   "de": "Ohne Zustimmung der übrigen Gesellschafter darf ein Gesellschafter in dem Geschäftszweige der Gesellschaft weder für eigene noch für fremde Rechnung Geschäfte machen, noch an einer andern Unternehmung als unbeschränkt haftender Gesellschafter, als Kommanditär oder als Mitglied einer <mark>Gesellschaft mit beschränkter Haftung</mark> teilnehmen.",
+   "fr": "Aucun des associés ne peut, dans la branche exploitée par la société et sans le consentement des autres, faire des opérations pour son compte personnel ou pour le compte d’un tiers, ni s’intéresser à une autre entreprise à titre d’associé indéfiniment responsable ou de commanditaire, ni faire partie d’une <mark>société à responsabilité limitée</mark>."
+  }
+ },
+ {
+  "slug": "statuten",
+  "de": "Statuten",
+  "domaine": "Gesellschaftsrecht",
+  "base": "Art. 626 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Das grundlegende Regelwerk einer Gesellschaft, die namentlich Firma, Sitz, Zweck und Kapital festlegt.",
+  "lead": "Die Statuten bilden die rechtliche Grundlage einer Aktiengesellschaft, einer GmbH oder einer Genossenschaft. Das Obligationenrecht legt ihren Mindestinhalt fest und regelt, wie sie geändert werden.",
+  "definition": "Die Statuten werden bei der Gründung der Gesellschaft festgelegt und mit ihr ins Handelsregister eingetragen. Bei der Aktiengesellschaft enthalten sie mindestens: Firma, Sitz und Zweck der Gesellschaft, die Höhe des Aktienkapitals und der Einlagen sowie Anzahl, Nennwert und Art der Aktien. Statutenänderungen beschliesst die Generalversammlung, und der Beschluss muss öffentlich beurkundet werden.",
+  "voisins": [
+   "aktiengesellschaft",
+   "generalversammlung",
+   "aktienkapital"
+  ],
+  "fr": "statuts",
+  "it": "statuto",
+  "en": "articles of association",
+  "title": "Statuten: Mindestinhalt nach Art. 626 OR · Neur.on",
+  "description": "Statuten, statuts, statuto, articles of association: das grundlegende Regelwerk der Aktiengesellschaft und sein gesetzlicher Mindestinhalt nach Art. 626 OR.",
+  "exemple": {
+   "de": "Sind alle Voraussetzungen der Herabsetzung des Aktienkapitals erfüllt, so ändert der Verwaltungsrat die <mark>Statuten</mark> und stellt dabei fest, dass die Anforderungen des Gesetzes, der Statuten und des Generalversammlungsbeschlusses im Zeitpunkt der Feststellungen erfüllt sind und dass ihm die Belege, die der Kapitalherabsetzung zugrunde liegen, vorgelegen haben.",
+   "fr": "Lorsque toutes les conditions de la réduction du capital-actions sont réunies, le conseil d’administration modifie les <mark>statuts</mark> et constate que la transaction répond, au moment des constatations, aux conditions fixées par la loi, par les statuts et par la décision de l’assemblée générale et que les pièces sur lesquelles se fonde la réduction de capital lui ont été présentées."
+  }
+ },
+ {
+  "slug": "aktienkapital",
+  "de": "Aktienkapital",
+  "domaine": "Gesellschaftsrecht",
+  "base": "Art. 621 OR",
+  "source": "Fedlex, Obligationenrecht",
+  "resume": "Das Kapital einer Aktiengesellschaft, das in den Statuten festgelegt und in Aktien zerlegt ist.",
+  "lead": "Das Aktienkapital einer Schweizer Aktiengesellschaft beträgt mindestens 100'000 Franken. Seit 2023 kann es auch auf eine Fremdwährung lauten, die für die Geschäftstätigkeit wesentlich ist.",
+  "definition": "Das Aktienkapital ist das in den Statuten einer Aktiengesellschaft festgelegte und in Aktien zerlegte Kapital. Es beträgt mindestens 100'000 Franken. Seit der Revision des Aktienrechts, die am 1. Januar 2023 in Kraft trat, kann es auch auf eine ausländische Währung lauten. Bei der Gründung muss jede Aktie zu mindestens 20 % ihres Nennwerts liberiert sein, und die Einlagen müssen insgesamt mindestens 50'000 Franken betragen.",
+  "voisins": [
+   "aktiengesellschaft",
+   "statuten",
+   "revisionsstelle"
+  ],
+  "fr": "capital-actions",
+  "it": "capitale azionario",
+  "en": "share capital",
+  "title": "Aktienkapital: Mindestbetrag und Liberierung · Neur.on",
+  "description": "Aktienkapital, capital-actions, capitale azionario, share capital: das Kapital der Schweizer Aktiengesellschaft nach Art. 621 OR, in allen vier Sprachen.",
+  "exemple": {
+   "de": "Als Einlagen in Geld gelten Einzahlungen in der Währung, auf die das <mark>Aktienkapital</mark> lautet, sowie Einzahlungen in anderen zum Aktienkapital frei konvertierbaren Währungen.",
+   "fr": "Ont qualité d’apports en espèces les versements effectués dans la monnaie dans laquelle le <mark>capital-actions</mark> est libellé, ainsi que les versements effectués dans une monnaie librement convertible autre que celle dans laquelle est fixé le capital-actions."
+  }
+ },
+ {
+  "slug": "grundbuch",
+  "de": "Grundbuch",
+  "domaine": "Sachenrecht",
+  "base": "Art. 942 ZGB",
+  "source": "Fedlex, Schweizerisches Zivilgesetzbuch",
+  "resume": "Das öffentliche Register, das Auskunft über die Rechte an Grundstücken gibt.",
+  "lead": "In der Schweiz wird Eigentum an einem Grundstück grundsätzlich durch die Eintragung im Grundbuch erworben. Das Grundbuch ist öffentlich und schützt, wer sich in gutem Glauben darauf verlässt.",
+  "definition": "Das Grundbuch gibt Auskunft über die Rechte an den Grundstücken. Es besteht aus dem Hauptbuch und den das Hauptbuch ergänzenden Plänen, Liegenschaftsverzeichnissen, Belegen, Liegenschaftsbeschreibungen und dem Tagebuch. Eigentum und andere dingliche Rechte an Grundstücken werden grundsätzlich durch die Eintragung erworben. Wer gestützt auf einen Eintrag in gutem Glauben solche Rechte erwirbt, ist geschützt. Wer ein Interesse glaubhaft macht, kann Einsicht in das Grundbuch verlangen.",
+  "voisins": [
+   "handelsregister",
+   "mietvertrag"
+  ],
+  "fr": "registre foncier",
+  "it": "registro fondiario",
+  "en": "land register",
+  "title": "Grundbuch: Eintragung und öffentlicher Glaube · Neur.on",
+  "description": "Grundbuch, registre foncier, registro fondiario, land register: das Register der Rechte an Grundstücken nach Art. 942 ZGB, mit dem Begriff in vier Sprachen.",
+  "exemple": {
+   "de": "Entstehen gesetzliche Pfandrechte im Betrag von über 1000 Franken aufgrund des kantonalen Rechts ohne Eintragung im <mark>Grundbuch</mark> und werden sie nicht innert vier Monaten nach der Fälligkeit der zugrunde liegenden Forderung, spätestens jedoch innert zwei Jahren seit der Entstehung der Forderung in das Grundbuch eingetragen, so können sie nach Ablauf der Eintragungsfrist Dritten, die sich in gutem Glauben auf das Grundbuch verlassen, nicht mehr entgegengehalten werden.",
+   "fr": "Si des hypothèques légales dépassant 1000 francs naissent sans inscription au <mark>registre foncier</mark> en vertu du droit cantonal et qu’elles ne sont pas inscrites au registre foncier dans les quatre mois à compter de l’exigibilité de la créance sur laquelle elles se fondent ou au plus tard dans les deux ans à compter de la naissance de la créance, elles ne peuvent être opposées, après le délai d’inscription, aux tiers qui se sont fondés de bonne foi sur le registre foncier."
+  }
+ },
+ {
+  "slug": "pflichtteil",
+  "de": "Pflichtteil",
+  "domaine": "Erbrecht",
+  "base": "Art. 470 und 471 ZGB",
+  "source": "Fedlex, Schweizerisches Zivilgesetzbuch",
+  "resume": "Der Teil des Nachlasses, den das Gesetz bestimmten Erben sichert und der ihnen nicht entzogen werden kann.",
+  "lead": "Auf Französisch heisst der Pflichtteil réserve. Seit dem 1. Januar 2023 ist er kleiner: Für die Nachkommen beträgt er nur noch die Hälfte ihres gesetzlichen Erbanspruchs, und die Eltern haben keinen Pflichtteil mehr.",
+  "definition": "Der Pflichtteil ist der Teil des Nachlasses, der bestimmten Erben weder durch Testament noch durch Erbvertrag entzogen werden kann, ausser durch Enterbung. Seit der Revision des Erbrechts, in Kraft seit dem 1. Januar 2023, beträgt er die Hälfte des gesetzlichen Erbanspruchs. Das gilt für die Nachkommen wie für den überlebenden Ehegatten und die eingetragene Partnerin oder den eingetragenen Partner. Die Eltern haben keinen Pflichtteil mehr. Über den Rest, die verfügbare Quote, verfügt der Erblasser frei.",
+  "voisins": [
+   "willensvollstrecker",
+   "grundbuch",
+   "schadenersatz"
+  ],
+  "fr": "réserve",
+  "it": "porzione legittima",
+  "en": "statutory entitlement",
+  "title": "Pflichtteil: Erbrecht seit der Revision 2023 · Neur.on",
+  "description": "Pflichtteil, réserve, porzione legittima, statutory entitlement: der geschützte Anteil am Nachlass nach Art. 470 und 471 ZGB, in allen vier Sprachen.",
+  "exemple": {
+   "de": "Die Erben, die dem Werte nach weniger als ihren <mark>Pflichtteil</mark> erhalten, können die Herabsetzung der folgenden Erwerbungen und Zuwendungen verlangen, bis der Pflichtteil hergestellt ist:",
+   "fr": "Les héritiers qui reçoivent en valeur un montant inférieur à leur <mark>réserve</mark> ont l’action en réduction, jusqu’à ce que la réserve soit reconstituée, contre:"
+  }
+ },
+ {
+  "slug": "willensvollstrecker",
+  "de": "Willensvollstrecker",
+  "domaine": "Erbrecht",
+  "base": "Art. 517 und 518 ZGB",
+  "source": "Fedlex, Schweizerisches Zivilgesetzbuch",
+  "resume": "Die Person, die der Erblasser mit der Vollstreckung seines letzten Willens beauftragt.",
+  "lead": "Der Willensvollstrecker wird durch letztwillige Verfügung bestimmt. Er verwaltet den Nachlass und führt ihn bis zur Teilung, unter der Aufsicht der Behörde.",
+  "definition": "Der Erblasser kann durch letztwillige Verfügung eine oder mehrere handlungsfähige Personen mit der Vollstreckung seines Willens beauftragen. Die Behörde teilt dem Willensvollstrecker den Auftrag von Amtes wegen mit. Er hat vierzehn Tage Zeit, um zu erklären, ob er ihn annimmt. Er verwaltet die Erbschaft, bezahlt die Schulden, richtet die Vermächtnisse aus und nimmt die Teilung nach den Anordnungen des Erblassers oder nach Gesetz vor. Er hat Anspruch auf eine angemessene Vergütung.",
+  "voisins": [
+   "pflichtteil",
+   "vollmacht",
+   "grundbuch"
+  ],
+  "fr": "exécuteur testamentaire",
+  "it": "esecutore testamentario",
+  "en": "executor",
+  "title": "Willensvollstrecker: Aufgaben und Befugnisse · Neur.on",
+  "description": "Willensvollstrecker, exécuteur testamentaire, esecutore testamentario, executor: Ernennung und Befugnisse nach Art. 517 und 518 ZGB, in vier Sprachen.",
+  "exemple": {
+   "de": "Hat der Erblasser einen <mark>Willensvollstrecker</mark> bezeichnet, so ist diesem die Verwaltung zu übergeben.",
+   "fr": "S’il y a un <mark>exécuteur testamentaire</mark> désigné, l’administration de l’hérédité lui est remise."
+  }
+ },
+ {
+  "slug": "rechtsoeffnung",
+  "de": "Rechtsöffnung",
+  "domaine": "Betreibung und Konkurs",
+  "base": "Art. 80 bis 84 SchKG",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "resume": "Der Entscheid des Gerichts, der den Rechtsvorschlag des Schuldners beseitigt und die Fortsetzung der Betreibung erlaubt.",
+  "lead": "Nach einem Rechtsvorschlag gegen den Zahlungsbefehl steht die Betreibung still. Die definitive oder provisorische Rechtsöffnung ist der schnelle Weg, sie wieder in Gang zu setzen.",
+  "definition": "Hat der Schuldner gegen den Zahlungsbefehl Rechtsvorschlag erhoben, kann der Gläubiger die Rechtsöffnung verlangen, damit die Betreibung weitergeht. Die definitive Rechtsöffnung erhält, wer sich auf einen vollstreckbaren gerichtlichen Entscheid oder einen gleichgestellten Titel stützt. Die provisorische Rechtsöffnung wird erteilt, wenn die Forderung auf einer durch öffentliche Urkunde festgestellten oder durch Unterschrift bekräftigten Schuldanerkennung beruht. Das gilt nicht, wenn der Schuldner sofort Einwendungen glaubhaft macht, welche die Schuldanerkennung entkräften. Das Gericht entscheidet im summarischen Verfahren.",
+  "voisins": [
+   "rechtsvorschlag",
+   "zahlungsbefehl",
+   "betreibung"
+  ],
+  "fr": "mainlevée",
+  "it": "rigetto dell'opposizione",
+  "en": "setting aside of an objection",
+  "title": "Rechtsöffnung: definitiv oder provisorisch · Neur.on",
+  "description": "Rechtsöffnung, mainlevée, rigetto dell'opposizione, setting aside of an objection: die definitive und die provisorische Rechtsöffnung, Art. 80 bis 84 SchKG.",
+  "exemple": {
+   "de": "Beruht die Forderung auf einem vollstreckbaren gerichtlichen Entscheid, so kann der Gläubiger beim Richter die Aufhebung des Rechtsvorschlags (definitive <mark>Rechtsöffnung</mark>) verlangen.",
+   "fr": "Le créancier qui est au bénéfice d’un jugement exécutoire peut requérir du juge la <mark>mainlevée</mark> définitive de l’opposition."
+  }
+ },
+ {
+  "slug": "nachlassstundung",
+  "de": "Nachlassstundung",
+  "domaine": "Betreibung und Konkurs",
+  "base": "Art. 293 bis 298 SchKG",
+  "source": "Fedlex, Bundesgesetz über Schuldbetreibung und Konkurs",
+  "resume": "Die Frist, die das Gericht einem Schuldner in Schwierigkeiten gewährt, um sich zu sanieren oder einen Nachlassvertrag abzuschliessen.",
+  "lead": "Die Nachlassstundung ist das Sanierungsinstrument des Schweizer Rechts. Sie schützt den Schuldner vor Betreibungen, während er unter der Aufsicht eines Sachwalters mit seinen Gläubigern verhandelt.",
+  "definition": "Der Schuldner oder ein Gläubiger, der ein Konkursbegehren stellen kann, kann beim Nachlassgericht eine Nachlassstundung beantragen. Das Gericht bewilligt zunächst eine provisorische Stundung von höchstens vier Monaten und setzt einen Sachwalter ein. Danach folgt die definitive Stundung für vier bis sechs Monate. Sie kann auf zwölf Monate verlängert werden, in besonders komplexen Fällen auf 24 Monate. Während der Stundung kann gegen den Schuldner grundsätzlich keine Betreibung eingeleitet oder fortgesetzt werden.",
+  "voisins": [
+   "konkurs",
+   "betreibung",
+   "rechtsoeffnung"
+  ],
+  "fr": "sursis concordataire",
+  "it": "moratoria concordataria",
+  "en": "debt restructuring moratorium",
+  "title": "Nachlassstundung: Sanierung nach SchKG · Neur.on",
+  "description": "Nachlassstundung, sursis concordataire, moratoria concordataria, debt restructuring moratorium: das Nachlassverfahren nach Art. 293 bis 298 SchKG.",
+  "exemple": {
+   "de": "Wurde vor der Bewilligung der <mark>Nachlassstundung</mark> die Abtretung einer künftigen Forderung vereinbart, entfaltet diese Abtretung keine Wirkung, wenn die Forderung erst nach der Bewilligung der Nachlassstundung entsteht.",
+   "fr": "La cession de créance future conclue avant l’octroi d’un <mark>sursis concordataire</mark> ne déploie pas d’effets si la créance cédée prend naissance après l’octroi du sursis."
+  }
+ },
+ {
+  "slug": "vorsorgliche-massnahmen",
+  "de": "vorsorgliche Massnahmen",
+  "domaine": "Verfahren und Rechtsmittel",
+  "base": "Art. 261 bis 265 ZPO",
+  "source": "Fedlex, Zivilprozessordnung",
+  "resume": "Die Massnahmen, die das Gericht vor oder während des Prozesses anordnet, um ein gefährdetes Recht zu schützen.",
+  "lead": "Vorsorgliche Massnahmen schützen ein Recht, bevor das Gericht in der Sache entscheidet. Bei besonderer Dringlichkeit kann das Gericht sie anordnen, ohne die Gegenpartei anzuhören.",
+  "definition": "Das Gericht trifft die notwendigen vorsorglichen Massnahmen, wenn die gesuchstellende Partei zweierlei glaubhaft macht. Erstens ist ein ihr zustehender Anspruch verletzt, oder eine Verletzung ist zu befürchten. Zweitens droht ihr daraus ein nicht leicht wiedergutzumachender Nachteil. Das Gericht kann insbesondere ein Verbot aussprechen, die Beseitigung eines rechtswidrigen Zustands oder eine sichernde Massnahme anordnen. Bei besonderer Dringlichkeit kann es die Massnahmen sofort und ohne Anhörung der Gegenpartei anordnen.",
+  "voisins": [
+   "arrest",
+   "schiedsgericht",
+   "beschwerde"
+  ],
+  "fr": "mesures provisionnelles",
+  "it": "provvedimenti cautelari",
+  "en": "interim measures",
+  "title": "Vorsorgliche Massnahmen: Voraussetzungen nach ZPO · Neur.on",
+  "description": "Vorsorgliche Massnahmen, mesures provisionnelles, provvedimenti cautelari, interim measures: Voraussetzungen und Arten nach Art. 261 bis 265 ZPO.",
+  "exemple": {
+   "de": "Für Schadenersatzklagen wegen ungerechtfertigter <mark>vorsorglicher Massnahmen</mark> ist das Gericht am Wohnsitz oder Sitz der beklagten Partei oder an dem Ort, an dem die vorsorgliche Massnahme angeordnet wurde, zuständig.",
+   "fr": "Le tribunal du domicile ou du siège du défendeur ou celui du lieu où les mesures ont été ordonnées est compétent pour statuer sur les actions en dommages-intérêts consécutives à des <mark>mesures provisionnelles</mark> injustifiées."
+  }
+ },
+ {
+  "slug": "bundesgericht",
+  "de": "Bundesgericht",
+  "domaine": "Verfahren und Rechtsmittel",
+  "base": "Art. 188 BV und Art. 1 BGG",
+  "source": "Fedlex, Bundesgesetz über das Bundesgericht",
+  "resume": "Die oberste rechtsprechende Behörde des Bundes, mit Sitz in Lausanne und Luzern.",
+  "lead": "Dasselbe Urteil des Bundesgerichts wird auf Deutsch als BGE zitiert, auf Französisch als ATF und auf Italienisch als DTF. Für das Englische gibt es keine amtliche Abkürzung.",
+  "definition": "Das Bundesgericht ist die oberste rechtsprechende Behörde des Bundes. Es hat seinen Sitz in Lausanne; die sozialrechtlichen Abteilungen sind in Luzern. Es beurteilt namentlich Beschwerden in Zivilsachen, in Strafsachen und in öffentlich-rechtlichen Angelegenheiten. Seine in der amtlichen Sammlung veröffentlichten Urteile werden auf Deutsch als BGE zitiert, auf Französisch als ATF und auf Italienisch als DTF.",
+  "voisins": [
+   "beschwerde",
+   "schiedsgericht",
+   "verfuegung"
+  ],
+  "fr": "Tribunal fédéral",
+  "it": "Tribunale federale",
+  "en": "Federal Supreme Court",
+  "title": "Bundesgericht: das oberste Gericht der Schweiz · Neur.on",
+  "description": "Bundesgericht, Tribunal fédéral, Tribunale federale, Federal Supreme Court: die oberste rechtsprechende Behörde des Bundes, Art. 188 BV und Art. 1 BGG.",
+  "exemple": {
+   "de": "Die Kantone setzen als unmittelbare Vorinstanzen des <mark>Bundesgerichts</mark> obere Gerichte ein, soweit nicht nach einem anderen Bundesgesetz Entscheide anderer richterlicher Behörden der Beschwerde an das Bundesgericht unterliegen.",
+   "fr": "Les cantons instituent des tribunaux supérieurs qui statuent comme autorités précédant immédiatement le <mark>Tribunal fédéral</mark>, sauf dans les cas où une autre loi fédérale prévoit qu’une décision d’une autre autorité judiciaire peut faire l’objet d’un recours devant le Tribunal fédéral."
+  }
+ },
+ {
+  "slug": "wirtschaftlich-berechtigte-person",
+  "de": "wirtschaftlich berechtigte Person",
+  "domaine": "Bankenrecht",
+  "base": "Art. 4 GwG",
+  "source": "Fedlex, Geldwäschereigesetz",
+  "resume": "Die natürliche Person, die Vermögenswerte letztlich kontrolliert oder daraus Nutzen zieht.",
+  "lead": "Die wirtschaftlich berechtigte Person steht im Zentrum der Sorgfaltspflichten der Schweizer Banken. Hinter jedem Konto muss klar sein, wem es tatsächlich dient.",
+  "definition": "Der Finanzintermediär muss die wirtschaftlich berechtigte Person mit der nach den Umständen gebotenen Sorgfalt feststellen. Er verlangt von der Vertragspartei eine schriftliche Erklärung darüber, wer an den Vermögenswerten wirtschaftlich berechtigt ist. Bei einer operativ tätigen juristischen Person stellt er die natürlichen Personen fest, die sie letztlich kontrollieren. Bestehen Zweifel, muss er die Feststellung wiederholen.",
+  "voisins": [
+   "sorgfaltspflichten",
+   "geldwaescherei",
+   "bankgeheimnis"
+  ],
+  "fr": "ayant droit économique",
+  "it": "avente economicamente diritto",
+  "en": "beneficial owner",
+  "title": "Wirtschaftlich berechtigte Person: Begriff im GwG · Neur.on",
+  "description": "Wirtschaftlich berechtigte Person, ayant droit économique, avente economicamente diritto, beneficial owner: die Feststellung nach Art. 4 GwG.",
+  "exemple": {
+   "de": "Der Finanzintermediär muss mit der nach den Umständen gebotenen Sorgfalt die <mark>wirtschaftlich berechtigte Person</mark> feststellen und deren Identität überprüfen, um sich zu vergewissern, wer die wirtschaftlich berechtigte Person ist.",
+   "fr": "L’intermédiaire financier doit, avec la diligence requise par les circonstances, identifier l’<mark>ayant droit économique</mark> et vérifier son identité, afin de s’assurer de savoir qui est l’ayant droit économique."
+  }
+ },
+ {
+  "slug": "sorgfaltspflichten",
+  "de": "Sorgfaltspflichten",
+  "domaine": "Bankenrecht",
+  "base": "Art. 3 bis 8 GwG",
+  "source": "Fedlex, Geldwäschereigesetz",
+  "resume": "Die Pflichten, die das Geldwäschereigesetz den Finanzintermediären vor und während einer Geschäftsbeziehung auferlegt.",
+  "lead": "Die Sorgfaltspflichten des GwG bestehen aus konkreten Schritten: identifizieren, prüfen, abklären, dokumentieren. Sie gehen der Meldepflicht voraus.",
+  "definition": "Das Geldwäschereigesetz auferlegt den Finanzintermediären Sorgfaltspflichten. Sie müssen die Vertragspartei identifizieren, die wirtschaftlich berechtigte Person feststellen und diese Prüfungen bei Zweifeln wiederholen. Sie müssen die Hintergründe und den Zweck ungewöhnlicher Transaktionen oder Geschäftsbeziehungen abklären und die Belege aufbewahren. Dazu kommt die Meldepflicht: Begründete Verdachtsfälle sind der Meldestelle für Geldwäscherei zu melden.",
+  "voisins": [
+   "wirtschaftlich-berechtigte-person",
+   "geldwaescherei",
+   "bankgeheimnis"
+  ],
+  "fr": "obligations de diligence",
+  "it": "obblighi di diligenza",
+  "en": "due diligence obligations",
+  "title": "Sorgfaltspflichten: was das GwG verlangt · Neur.on",
+  "description": "Sorgfaltspflichten, obligations de diligence, obblighi di diligenza, due diligence obligations: die Pflichten der Finanzintermediäre nach Art. 3 bis 8 GwG.",
+  "exemple": {
+   "de": "Das Reglement konkretisiert für die angeschlossenen Finanzintermediäre deren <mark>Sorgfaltspflichten</mark> nach dem zweiten Kapitel und legt fest, wie diese zu erfüllen sind.",
+   "fr": "Dans ce règlement, ils précisent à l’intention des intermédiaires financiers qui leur sont affiliés les <mark>obligations de diligence</mark> définies au chap. 2 et règlent les modalités d’application."
+  }
+ },
+ {
+  "slug": "steuerhinterziehung",
+  "de": "Steuerhinterziehung",
+  "domaine": "Steuerrecht",
+  "base": "Art. 175 DBG",
+  "source": "Fedlex, Bundesgesetz über die direkte Bundessteuer",
+  "resume": "Die Widerhandlung der steuerpflichtigen Person, die vorsätzlich oder fahrlässig bewirkt, dass eine Veranlagung unterbleibt oder unvollständig ist.",
+  "lead": "Die Steuerhinterziehung wird mit einer Busse bestraft. Sie ist nicht mit dem Steuerbetrug zu verwechseln, der den Gebrauch gefälschter, verfälschter oder inhaltlich unwahrer Urkunden voraussetzt. Auf Französisch heisst dieser escroquerie fiscale.",
+  "definition": "Mit Busse bestraft wird die steuerpflichtige Person, die vorsätzlich oder fahrlässig bewirkt, dass eine Veranlagung zu Unrecht unterbleibt. Dasselbe gilt, wenn eine rechtskräftige Veranlagung dadurch unvollständig ist. Die Busse beträgt in der Regel das Einfache der hinterzogenen Steuer. Bei leichtem Verschulden kann sie bis auf einen Drittel ermässigt, bei schwerem Verschulden bis auf das Dreifache erhöht werden.",
+  "voisins": [
+   "verrechnungssteuer",
+   "quellensteuer",
+   "mehrwertsteuer"
+  ],
+  "fr": "soustraction d'impôt",
+  "it": "sottrazione d'imposta",
+  "en": "tax evasion",
+  "title": "Steuerhinterziehung: Abgrenzung zum Steuerbetrug · Neur.on",
+  "description": "Steuerhinterziehung, soustraction d'impôt, sottrazione d'imposta, tax evasion: der Tatbestand nach Art. 175 DBG und der Unterschied zum Steuerbetrug.",
+  "exemple": {
+   "de": "Wer vorsätzlich zu einer <mark>Steuerhinterziehung</mark> anstiftet, Hilfe leistet oder als Vertreter des Steuerpflichtigen eine Steuerhinterziehung bewirkt oder an einer solchen mitwirkt, wird ohne Rücksicht auf die Strafbarkeit des Steuerpflichtigen mit Busse bestraft und haftet überdies solidarisch für die hinterzogene Steuer.",
+   "fr": "Celui qui, intentionnellement, incite à une <mark>soustraction d’impôt</mark>, y prête son assistance, la commet en qualité de représentant du contribuable ou y participe, sera puni d’une amende fixée indépendamment de la peine encourue par le contribuable; en outre, il répond solidairement de l’impôt soustrait."
+  }
+ },
+ {
+  "slug": "quellensteuer",
+  "de": "Quellensteuer",
+  "domaine": "Steuerrecht",
+  "base": "Art. 83 bis 101 DBG",
+  "source": "Fedlex, Bundesgesetz über die direkte Bundessteuer",
+  "resume": "Die Steuer, die der Arbeitgeber bei bestimmten Arbeitnehmenden direkt vom Lohn abzieht.",
+  "lead": "Die Quellensteuer ist nicht mit der Verrechnungssteuer zu verwechseln. Die erste erfasst das Erwerbseinkommen bestimmter Arbeitnehmender, die zweite den Ertrag aus Kapitalvermögen.",
+  "definition": "Ausländische Arbeitnehmende ohne Niederlassungsbewilligung, die in der Schweiz Wohnsitz oder Aufenthalt haben, unterliegen für ihr Erwerbseinkommen einem Steuerabzug an der Quelle. Der Arbeitgeber zieht die Steuer vom Lohn ab und überweist sie der Steuerbehörde. Auch bestimmte Personen mit Wohnsitz im Ausland unterliegen ihr, etwa Grenzgängerinnen und Grenzgänger oder Mitglieder von Verwaltungsräten.",
+  "voisins": [
+   "verrechnungssteuer",
+   "steuerhinterziehung",
+   "mehrwertsteuer"
+  ],
+  "fr": "impôt à la source",
+  "it": "imposta alla fonte",
+  "en": "tax at source",
+  "title": "Quellensteuer: Abzug vom Lohn nach DBG · Neur.on",
+  "description": "Quellensteuer, impôt à la source, imposta alla fonte, tax at source: der Steuerabzug durch den Schuldner der steuerbaren Leistung nach Art. 83 ff. DBG.",
+  "exemple": {
+   "de": "Die steuerpflichtige Person kann von der Veranlagungsbehörde zur Nachzahlung der von ihr geschuldeten <mark>Quellensteuer</mark> verpflichtet werden, wenn die ausbezahlte steuerbare Leistung nicht oder nicht vollständig um die Quellensteuer gekürzt wurde und ein Nachbezug beim Schuldner der steuerbaren Leistung nicht möglich ist.",
+   "fr": "Lorsque le débiteur de la prestation imposable a opéré une retenue insuffisante ou n’en a effectué aucune et que l’autorité de taxation n’est pas en mesure de recouvrer ultérieurement cet impôt auprès du débiteur, elle peut obliger le contribuable à acquitter l’<mark>impôt à la source</mark> dû."
+  }
+ }
+]

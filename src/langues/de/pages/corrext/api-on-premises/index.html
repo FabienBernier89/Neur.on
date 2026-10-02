@@ -1,0 +1,246 @@
+<!--page
+title: Übersetzungs-API und On-Premises · Corrext von Neur.on
+description: Den Schweizer Übersetzungsmotor für Recht in Ihre DMS, Intranets und Produkte integrieren: REST-API, Installation on-premises, Planung der Integration.
+short: API und On-Premises
+nav: corrext
+assets: []
+canonical: https://neur-on.ai/fr/corrext/api-on-premises/
+-->
+
+<style>
+/* Page API et on-premises · styles propres (préfixe .api-) */
+
+.api-int{padding:88px 0 90px;background:#fff}
+.api-int .code{max-width:100%;overflow-x:auto}
+.api-illus{margin-top:14px;display:flex;align-items:flex-start;gap:9px;font-size:12.5px;color:var(--muted);line-height:1.5}
+.api-illus svg{width:15px;height:15px;color:var(--blue-d);flex-shrink:0;margin-top:2px}
+.api-facts{padding:0 0 88px;background:#fff}
+.api-ask{padding:0 0 90px;background:#fff}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Bieten Sie eine API an, um die Übersetzung in unsere Tools zu integrieren?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Über eine REST-API rufen Sie den Übersetzungsmotor aus Ihren eigenen Systemen auf: Dokumentenmanagement, Intranet, Fachworkflows. Eine öffentlich zugängliche technische Dokumentation veröffentlichen wir nicht. Schnittstellenvereinbarung, Authentifizierung und Umfang der Aufrufe legen wir bei der Projektdefinition fest, gemeinsam mit Ihrer IT-Abteilung und unserem technischen Team."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Können wir die Lösung in unserer eigenen Infrastruktur betreiben?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Eine Installation on-premises ist für besonders sensible Umgebungen möglich, also wenn Ihre internen Regeln verlangen, dass nichts Ihr Netzwerk verlässt. Das ist ein eigenständiges Integrationsprojekt, das wir mit Ihrer IT-Abteilung planen: Architektur, Dimensionierung, Updates und Betrieb werden vor jeder Verpflichtung festgelegt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Lassen sich unsere Zugriffsrechte aus SharePoint oder Active Directory übernehmen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Das ist im Rahmen eines Integrationsprojekts vorgesehen. Die Zugriffsrechte lassen sich mit Ihrem Verzeichnisdienst und Ihren Dokumentablagen synchronisieren, damit alle in Corrext denselben Umfang vorfinden wie bei Ihnen. Diese Synchronisation ist keine Selfservice-Einstellung der Webanwendung: Sie wird mit Ihrer IT-Abteilung eingerichtet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Können wir den Übersetzungsmotor als White Label in unser eigenes Produkt integrieren?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Das ist der Anwendungsfall von LegalTechs und juristischen Verlagen: Die Übersetzung wird zu einer Funktion Ihres Produkts, per API aufgerufen, ohne dass Ihre Nutzerinnen und Nutzer das Tool wechseln. Funktionsumfang, angezeigte Marke und Konditionen werden bei der Projektdefinition vertraglich festgelegt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wo werden die Daten bei einem API-Aufruf verarbeitet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Es gelten dieselben Regeln wie in der Oberfläche: Die Speicherung erfolgt in jedem Fall auf Schweizer Servern. Die Verarbeitung erfolgt ausschliesslich in der Schweiz mit LexMachina oder im Modus Highly sensitive content, verfügbar für Deutsch, Französisch, Italienisch und Englisch. Die Drittmotoren DeepL Pro, Azure OpenAI GPT und Claude sind im Ausland gehostet und lösen den Pseudonymisierungshinweis aus, den Ihre Organisation festgelegt hat. Bei einer Installation on-premises ist der Verarbeitungsbereich Ihre eigene Infrastruktur."
+   }
+  }
+ ]
+}
+</script>
+
+<!-- HERO -->
+<section class="thero api-hero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>API und On-Premises.</em> Den Übersetzungsmotor dort integrieren, wo bereits gearbeitet wird</h1>
+        <p class="lead">Ihre Juristinnen und Juristen sollten für eine Übersetzung nicht das Tool wechseln müssen. Den auf Schweizer Recht trainierten Übersetzungsmotor rufen Sie aus Ihrem Dokumentenmanagement, Ihrem Intranet oder Ihrem eigenen Produkt auf. Wenn Ihre internen Regeln es verlangen, läuft er in Ihrer eigenen Infrastruktur.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Integration planen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#disponible" class="btn btn-ghost">Was verfügbar ist</a>
+        </div>
+      </div>
+      {{CARTE:api}}
+    </div>
+  </div>
+</section>
+
+<!-- TROIS CAS D'INTÉGRATION -->
+<section class="who who-s" id="cas">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Drei Wege, Neur.on in Ihre IT-Landschaft zu integrieren</h2>
+    </div>
+    <div class="ws-grid">
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:dossier}}</span><span><span class="pn">Dokumentenmanagement.</span> Direkt aus dem DMS übersetzen</span></h3>
+        <p>Ein Dokument in Ihrem Dokumentenmanagement geht direkt aus seiner eigenen Ansicht in die Übersetzung. Die Zielfassung kommt neben das Original zurück, in dieselbe Ablage und mit denselben Rechten. Ihre Juristinnen und Juristen verlassen das Tool nicht, in dem sie ihre Dossiers bereits ablegen, und keine Kopie geht an einen unkontrollierten Online-Dienst.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:portail}}</span><span><span class="pn">Intranet.</span> Ein Übersetzungsdienst für alle</span></h3>
+        <p>Die Übersetzung wird zu einem Baustein Ihres Portals: ein internes Formular, eine Upload-Seite, eine Schaltfläche in einem Freigabe-Workflow. Teams, die nie eine Übersetzungsplattform öffnen würden, erhalten Zugang dort, wo sie arbeiten, mit den Sprachen und Motoren, die Sie festgelegt haben.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:code}}</span><span><span class="pn">LegalTechs und Verlage.</span> Der Übersetzungsmotor in Ihrem Produkt</span></h3>
+        <p>Sie entwickeln eine juristische Softwarelösung, und Ihre Schweizer Kunden möchten ihre Inhalte übersetzen lassen. Statt selbst einen Motor zu trainieren, rufen Sie unseren aus Ihrem Produkt auf: Die Funktion gehört Ihnen, Infrastruktur und Schweizer Terminologie liefern wir. Umfang und angezeigte Marke werden vertraglich festgelegt.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- APPEL TYPE -->
+<section class="api-int">
+  <div class="container">
+    <div class="feature">
+      <div class="feat-txt">
+        <h3>Ein Aufruf, dieselben Einstellungen wie in der Oberfläche</h3>
+        <p>Was Sie in Corrext am Bildschirm wählen, wählen Sie auch in einem Aufruf: Ausgangssprache, Zielsprache, Motor und Rechtsgebiet. So hält sich eine Integration an dieselbe Governance wie die Oberfläche, statt einen parallelen Kanal ohne Regeln zu schaffen.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Ausgangs- und Zielsprache, aus den Sprachen der Plattform</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Wahl des Motors, damit auch Wahl des Verarbeitungsorts</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Rechtsgebiet, für die erwartete Terminologie</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Text oder Datei, je nachdem, was Ihr System sendet</li>
+        </ul>
+        <a href="{{ROOT}}fr/contact/" class="feat-link">Schnittstellenvereinbarung anfordern <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="doc-body">
+            <div class="code"><span class="k">POST</span> /v1/translate<br><span class="m">"source_language"</span>: <span class="s">"de"</span>,<br><span class="m">"target_language"</span>: <span class="s">"fr"</span>,<br><span class="m">"engine"</span>: <span class="s">"lexmachina"</span>,<br><span class="m">"domain"</span>: <span class="s">"banking"</span></div>
+            <p class="api-illus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>Illustration, keine Dokumentation. Die tatsächlichen Pfade, Feldnamen und die Authentifizierung werden in der Schnittstellenvereinbarung festgelegt, die Sie bei der Projektdefinition erhalten.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUI EST DISPONIBLE -->
+<section class="facts api-facts" id="disponible">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Was verfügbar ist, und in welcher Form</h2>
+        <p>Wir unterscheiden zwei Dinge: was Sie heute in der Webanwendung finden und ab Kontoeröffnung nutzen können, und was zu einem Integrationsprojekt gehört, das wir mit Ihrer IT-Abteilung planen. Jede Zeile gibt das an.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/corrext/" class="feat-link">Die Plattform Corrext <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Sicherheit und Datensouveränität <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>REST-API</b><p>Aufruf des Übersetzungsmotors aus Ihren eigenen Systemen, mit denselben Einstellungen wie in der Oberfläche.<small>Integrationsfähigkeit: Schnittstellenvereinbarung, Authentifizierung und Umfang werden bei der Projektdefinition festgelegt. Keine öffentliche Dokumentation.</small></p></div>
+        <div class="fact"><b>Installation on-premises</b><p>Installation in Ihrer Infrastruktur, für Umgebungen, in denen nichts Ihr Netzwerk verlassen darf.<small>Im Rahmen eines Integrationsprojekts, nach einer Prüfung von Architektur und Dimensionierung.</small></p></div>
+        <div class="fact"><b>Synchronisierte Zugriffsrechte</b><p>Übernahme Ihrer Rechte aus SharePoint und Active Directory, damit alle den Umfang vorfinden, den sie bei Ihnen bereits haben.<small>Im Rahmen eines Integrationsprojekts; keine Selfservice-Einstellung der Webanwendung.</small></p></div>
+        <div class="fact"><b>Lieferung durch Übersetzende</b><p>Juristische Übersetzerinnen und Übersetzer sowie Übersetzungsbüros arbeiten in ihren eigenen Tools, Trados oder memoQ, und liefern direkt in den Ablauf des Projekts.<small>Produktionskette der Projekte mit externem Lektorat, ohne Aufwand für Sie.</small></p></div>
+        <div class="fact"><b>Zusammenarbeit in Word</b><p>Das Lektorat eines übersetzten Dokuments erfolgt im Schreibprogramm Ihrer Teams statt in einer zusätzlichen Oberfläche.<small>Im Rahmen eines Integrationsprojekts zu planen: Der genaue Umfang wird vor jeder Verpflichtung mit dem Team bestätigt.</small></p></div>
+        <div class="fact"><b>Die vier Tools der Plattform</b><p>Text- und Dokumentübersetzung, Projektmanagement, Fast lookup CHnell und beglaubigte Handelsregisterauszüge.<small>Heute in der Webanwendung verfügbar, ab Kontoeröffnung.</small></p></div>
+        <div class="fact"><b>Wahl des Motors</b><p>LexMachina, DeepL Pro, Azure OpenAI GPT und Claude, bei jedem Upload gewählt und durch die Richtlinie Ihrer Organisation geregelt.<small>Heute in der Webanwendung verfügbar.</small></p></div>
+        <div class="fact"><b>Datensouveränität in beiden Fällen</b><p>Speicherung auf Schweizer Servern in jedem Fall; Verarbeitung ausschliesslich in der Schweiz mit LexMachina oder im Modus Highly sensitive content. On-premises ist der Verarbeitungsbereich Ihre eigene Infrastruktur.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CADRAGE -->
+<section class="gov api-ask">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Was wir wissen müssen, bevor wir eine Integration planen</h2>
+        <p>Eine Integration wird anhand von Fakten dimensioniert, nicht anhand einer Absicht. Fünf Antworten genügen, um zu sagen, ob es um einen API-Aufruf in wenigen Tagen geht, um einen neuen Konnektor oder um eine Installation in Ihrer Infrastruktur. Sie können die Antworten vor dem ersten Gespräch vorbereiten. Wir gehen davon aus und sagen Ihnen, was realistisch ist.</p>
+        <a href="{{ROOT}}fr/contact/" class="feat-link">Diese Angaben übermitteln <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 16v-5M13 16V8M18 16v-3"/></svg><span><b>Volumen.</b> Wie viele Seiten oder Dokumente pro Monat, mit welchen Spitzen und für wie viele Nutzerinnen und Nutzer?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><b>Formate.</b> Was erzeugen Ihre Systeme tatsächlich: Office-Dateien, gescannte PDF, reinen Text?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Sprachen.</b> Welche Sprachpaare, in welchem Verhältnis, und mit welchem Anteil an Sprachen ausserhalb der vier nativen?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>Vertraulichkeitsniveau.</b> Verlangen Ihre internen Regeln den Modus Highly sensitive content, einen Schweizer Motor oder eine Installation in Ihrem Netzwerk?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Bestehende Systeme.</b> Welches DMS, welcher Verzeichnisdienst, welches Portal, und wer betreibt sie, bei Ihnen oder bei Ihrem Dienstleister?</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Die weiteren Seiten der Plattform</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Text- und Dokumentübersetzung</b><span>Das Tool für den Alltag: Text, Dateien, PDF in Word, Umformulierung.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/langues-et-formats/"><b>Sprachen und Formate</b><span>30 Sprachen, davon vier nativ, sieben Office-Formate und ihre Grenzen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/securite-souverainete/"><b>Sicherheit und Datensouveränität</b><span>Speicherung, Verarbeitung, Motoren und Governance, klar erklärt.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu API und On-Premises</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Bieten Sie eine API an, um die Übersetzung in unsere Tools zu integrieren?</summary>
+        <p>Ja. Über eine REST-API rufen Sie den Übersetzungsmotor aus Ihren eigenen Systemen auf: Dokumentenmanagement, Intranet, Fachworkflows. Eine öffentlich zugängliche technische Dokumentation veröffentlichen wir nicht. Schnittstellenvereinbarung, Authentifizierung und Umfang der Aufrufe legen wir bei der Projektdefinition fest, gemeinsam mit Ihrer IT-Abteilung und unserem technischen Team.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Können wir die Lösung in unserer eigenen Infrastruktur betreiben?</summary>
+        <p>Eine Installation on-premises ist für besonders sensible Umgebungen möglich, also wenn Ihre internen Regeln verlangen, dass nichts Ihr Netzwerk verlässt. Das ist ein eigenständiges Integrationsprojekt, das wir mit Ihrer IT-Abteilung planen: Architektur, Dimensionierung, Updates und Betrieb werden vor jeder Verpflichtung festgelegt.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Lassen sich unsere Zugriffsrechte aus SharePoint oder Active Directory übernehmen?</summary>
+        <p>Das ist im Rahmen eines Integrationsprojekts vorgesehen. Die Zugriffsrechte lassen sich mit Ihrem Verzeichnisdienst und Ihren Dokumentablagen synchronisieren, damit alle in Corrext denselben Umfang vorfinden wie bei Ihnen. Diese Synchronisation ist keine Selfservice-Einstellung der Webanwendung: Sie wird mit Ihrer IT-Abteilung eingerichtet.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Können wir den Übersetzungsmotor als White Label in unser eigenes Produkt integrieren?</summary>
+        <p>Das ist der Anwendungsfall von <a href="{{ROOT}}fr/solutions/editeurs-legaltech/">LegalTechs und juristischen Verlagen</a>: Die Übersetzung wird zu einer Funktion Ihres Produkts, per API aufgerufen, ohne dass Ihre Nutzerinnen und Nutzer das Tool wechseln. Funktionsumfang, angezeigte Marke und Konditionen werden bei der Projektdefinition vertraglich festgelegt.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wo werden die Daten bei einem API-Aufruf verarbeitet?</summary>
+        <p>Es gelten dieselben Regeln wie in der Oberfläche: Die Speicherung erfolgt in jedem Fall auf Schweizer Servern. Die Verarbeitung erfolgt ausschliesslich in der Schweiz mit LexMachina oder im Modus Highly sensitive content, verfügbar für Deutsch, Französisch, Italienisch und Englisch. Die Drittmotoren DeepL Pro, Azure OpenAI GPT und Claude sind im Ausland gehostet und lösen den Pseudonymisierungshinweis aus, den Ihre Organisation festgelegt hat. Bei einer Installation on-premises ist der Verarbeitungsbereich Ihre eigene Infrastruktur.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Planen wir Ihre Integration</h2>
+      <p>Volumen, Formate, Sprachen, Vertraulichkeitsniveau, bestehende Systeme: Ein Gespräch mit unserem technischen Team genügt, um zu sagen, was realistisch ist und in welcher Reihenfolge.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Integration planen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/" class="btn-outline">Zurück zur Plattform Corrext</a>
+      </div>
+      <p class="micro">Technisches Gespräch · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>

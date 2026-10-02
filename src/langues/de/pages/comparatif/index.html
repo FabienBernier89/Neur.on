@@ -1,0 +1,350 @@
+<!--page
+title: DeepL-Alternative Schweiz: Corrext im Vergleich · Neur.on
+description: Drei ehrliche Vergleiche: Corrext und DeepL Pro, Corrext und generalistische Sprachmodelle, Übersetzungsbüro oder Plattform. Was jede Lösung gut kann.
+short: Vergleiche
+nav: ressources
+assets: []
+canonical: https://neur-on.ai/fr/comparatif/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Sind diese Vergleiche neutral?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein, und das sagen wir offen: Neur.on, die Anbieterin von Corrext, hat sie geschrieben. Genau deshalb beschränken sie sich auf Kriterien, die Sie selbst überprüfen können: Ort der Speicherung und Verarbeitung der Daten, Terminologie des Schweizer Rechts im Kontext, Umgang mit Gesetzesverweisen, Vorhandensein eines Lektorats, einer Offerte und einer Beglaubigung. Preise und reine Geschwindigkeit vergleichen wir nicht."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kann Corrext DeepL Pro, Azure OpenAI GPT oder Claude nutzen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Diese Motoren sind in Corrext neben LexMachina verfügbar und werden bei jedem Versand gewählt. Da sie im Ausland gehostet sind, löst ihre Wahl den Hinweis Attorney-Client privilege Ihrer Organisation aus. Er verlangt eine vollständige Pseudonymisierung des Dokuments. Wir schlagen also nicht vor, auf diese Motoren zu verzichten, sondern sie in einem Rahmen zu nutzen, der Ihr Berufsgeheimnis schützt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Worauf stützen sich diese Vergleiche?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Alles, was wir über Corrext sagen, wurde in der Anwendung beobachtet. Was wir über andere Lösungen sagen, beschränkt sich auf öffentliche und dauerhafte Angaben. Die Übersetzungsbeispiele sind echte Einzelergebnisse, nie statistische Messungen."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+/* Hero centré : titre, texte et boutons au milieu, sans colonne de repères */
+.thero-grid{grid-template-columns:1fr;justify-items:center;text-align:center;padding-bottom:0}
+.thero-grid>div{display:flex;flex-direction:column;align-items:center}
+.thero h1{max-width:24ch;text-wrap:balance}
+.thero .lead{max-width:76ch;text-wrap:balance}
+.thero-cta{justify-content:center}
+
+/* Tableau de synthèse : cases reprises des trois tableaux détaillés */
+.cph-synth table.cmp{min-width:900px}
+.cph-synth table.cmp td{font-size:12.5px;line-height:1.45}
+.cmp-na{color:var(--muted);font-weight:500}
+.cph-synth .cmp-links{display:flex;gap:10px 28px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+
+/* Repères chiffrés des cartes « Pour aller plus loin » */
+.vn-kv>span{grid-template-columns:92px 1fr}
+
+/* Trois comparatifs en blocs fonctionnalité */
+.cph-feats{padding:78px 0 82px;background:#fff}
+.cph-feats .sec-head{text-align:left;margin:0 0 54px;max-width:760px}
+.cphv-top{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--bg)}
+.cphv-top .d{width:10px;height:10px;border-radius:50%;background:#d4ddee}
+.cphv-top .t{margin-left:10px;font-size:12px;font-weight:600;color:var(--muted)}
+.cphv-body{padding:8px 20px 18px}
+.cphv-row{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:12px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.cphv-row:last-child{border-bottom:0}
+.cphv-row.hd{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.cphv-row .l{color:var(--ink);font-weight:600}
+.cphv-row .a{color:var(--muted)}
+.cphv-row .b{color:var(--navy);font-weight:700}
+.cphv-foot{padding:12px 20px 16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);background:var(--bg)}
+
+/* Méthode : registre de faits en deux colonnes */
+.cph-method{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cph-method .facts-grid{align-items:start}
+
+@media(max-width:940px){
+  .cphv-row{grid-template-columns:1fr;gap:3px}
+  .cphv-row.hd{display:none}
+  .cphv-row .a::before{content:var(--la);color:var(--muted);font-weight:600}
+  .cphv-row .b::before{content:"Corrext: ";color:var(--muted);font-weight:400}
+  .cphv-body.v-deepl{--la:"DeepL Pro allein: "}
+  .cphv-body.v-llm{--la:"LLM allein: "}
+  .cphv-body.v-agence{--la:"Büro allein: "}
+}
+</style>
+
+<!-- HERO -->
+<section class="thero">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Vergleiche.</em> Was andere Lösungen gut machen und was Corrext ergänzt</h1>
+        <p class="lead">Drei Vergleiche für Juristinnen und Juristen, die die Zeile lesen, die sie interessiert, und den Rest prüfen. Wir sagen, was DeepL Pro, generalistische Sprachmodelle und Übersetzungsbüros gut machen. Dann zeigen wir genau, wo der Unterschied liegt: beim Ort der Datenverarbeitung, bei der Terminologie des Schweizer Rechts und beim Lektorat.</p>
+        <div class="thero-cta">
+          <a href="contact.html" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#comparatifs" class="btn btn-ghost">Zu den drei Vergleichen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LES TROIS COMPARATIFS -->
+<section class="cph-feats" id="comparatifs">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Drei Vergleiche, drei verschiedene Fragen</h2>
+      <p>Der erste betrifft einen Übersetzungsmotor, der zweite einen Schreibassistenten, der dritte ein Arbeitsmodell. Die Antworten fallen unterschiedlich aus.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feat-txt">
+        <h3><span class="pn">Corrext und DeepL.</span> Derselbe Motor, in einem Rahmen, der das Berufsgeheimnis schützt</h3>
+        <p>DeepL Pro ist ein ausgezeichneter generischer Übersetzungsmotor: schnell, flüssig, sicher im Umgang mit Office-Dokumenten und PDF. Er bleibt in Corrext verfügbar. Was sich ändert, ist der Rahmen um ihn herum.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was DeepL Pro gut kann: flüssige Texte, Formate, eigene Glossare, eine öffentliche Zusage, die Texte seiner Pro-Kundschaft zu löschen.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was er allein nicht bietet: eine Verarbeitung in der Schweiz, eine Konkordanz des Schweizer Rechts mit Quellenangaben, ein juristisches Lektorat.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Unsere Position: Verzichten Sie nicht auf DeepL Pro. Nutzen Sie ihn unter der Governance Ihrer Organisation.</li>
+        </ul>
+        <a href="{{ROOT}}fr/comparatif/deepl-traduction-juridique/" class="feat-link">Zum Vergleich Corrext und DeepL <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Auszug aus der Tabelle</span></div>
+          <div class="cphv-body v-deepl">
+            <div class="cphv-row hd"><span></span><span class="a">DeepL Pro allein</span><span class="b">Corrext</span></div>
+            <div class="cphv-row"><span class="l">Ort der Verarbeitung</span><span class="a">Ausserhalb der Schweiz</span><span class="b">Schweiz, nach Wahl</span></div>
+            <div class="cphv-row"><span class="l">Hinweis vor dem Versand</span><span class="a">Keiner</span><span class="b">Attorney-Client privilege</span></div>
+            <div class="cphv-row"><span class="l">Schweizer Terminologie mit Quellen</span><span class="a">Glossare selbst erstellen</span><span class="b">CHnell, 30 Fachgebiete</span></div>
+            <div class="cphv-row"><span class="l">Formate und Layout</span><span class="a">Ja</span><span class="b">Ja</span></div>
+          </div>
+          <div class="cphv-foot">Die vollständige Tabelle hat elf Zeilen</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature rev">
+      <div class="feat-txt">
+        <h3><span class="pn">Corrext und generalistische Sprachmodelle.</span> Stark beim Verstehen, allein ungenügend für verbindliche Texte</h3>
+        <p>ChatGPT, Azure OpenAI GPT und Claude formulieren um, fassen zusammen und erklären eine juristische Passage mit einer Leichtigkeit, die kein klassischer Übersetzungsmotor erreicht. Das Problem liegt anderswo: in dem, was sie nicht belegen können.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was sie gut können: umformulieren, zusammenfassen, erklären, sich dem Register anpassen, die Mehrdeutigkeit einer Klausel herausarbeiten.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was sie allein nicht bieten: Schweizer Terminologie mit Quellen, einen überprüfbaren Gesetzesverweis, eine Offerte, ein bestelltes Lektorat.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Eine Tatsache, die wir dokumentieren: Kein Motor ist eine Rechtsquelle, auch unserer nicht.</li>
+        </ul>
+        <a href="{{ROOT}}fr/comparatif/chatgpt-traduction-juridique/" class="feat-link">Zum Vergleich Corrext und generalistische Sprachmodelle <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Auszug aus der Tabelle</span></div>
+          <div class="cphv-body v-llm">
+            <div class="cphv-row hd"><span></span><span class="a">LLM allein</span><span class="b">Corrext</span></div>
+            <div class="cphv-row"><span class="l">Umformulieren, erklären</span><span class="a">Ausgezeichnet</span><span class="b">Rephrasing, 5 Stile</span></div>
+            <div class="cphv-row"><span class="l">Überprüfbarer Gesetzesverweis</span><span class="a">Ohne Quelle</span><span class="b">Konkordanz mit Quellen</span></div>
+            <div class="cphv-row"><span class="l">Motoren vergleichen</span><span class="a">Nur einer</span><span class="b">4 Alternativen</span></div>
+            <div class="cphv-row"><span class="l">Bestelltes Lektorat</span><span class="a">Nein</span><span class="b">Light, Full, Double</span></div>
+          </div>
+          <div class="cphv-foot">Azure OpenAI GPT und Claude sind in Corrext verfügbar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feat-txt">
+        <h3><span class="pn">Übersetzungsbüro oder Plattform.</span> Zwei Arbeitsmodelle, keine zwei Lager</h3>
+        <p>Ein juristisches Übersetzungsbüro bietet, was keine Software ersetzt: vertragliche Haftung, eine namentlich bekannte Fachperson, eine Beglaubigung. Corrext will es nicht ersetzen. Gerade dieses externe Lektorat bestellen Sie im Projektablauf.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was ein Übersetzungsbüro bietet: Haftung, persönliche Betreuung, Beglaubigung, Erfahrung mit verbindlichen Dokumenten.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was ein generisches Tool bietet: sofortige Verfügbarkeit, um zu lesen und zu verstehen.</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Was Corrext verbindet: zuerst die sofortige Übersetzung, das menschliche Lektorat nur für die Dokumente, die es verlangen.</li>
+        </ul>
+        <a href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" class="feat-link">Zum Vergleich Übersetzungsbüro oder Plattform <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="cphv-top"><span class="d"></span><span class="d"></span><span class="d"></span><span class="t">Auszug aus der Tabelle</span></div>
+          <div class="cphv-body v-agence">
+            <div class="cphv-row hd"><span></span><span class="a">Büro allein</span><span class="b">Corrext</span></div>
+            <div class="cphv-row"><span class="l">Vorlaufzeit</span><span class="a">Offerte, Bestellung</span><span class="b">Sofort</span></div>
+            <div class="cphv-row"><span class="l">Qualität bei verbindlichen Dokumenten</span><span class="a">Seine Kernaufgabe</span><span class="b">Bestelltes Lektorat</span></div>
+            <div class="cphv-row"><span class="l">Beglaubigte Übersetzung</span><span class="a">Ja</span><span class="b">Ja</span></div>
+            <div class="cphv-row"><span class="l">Kontrolle über den Ablauf</span><span class="a">Ausserhalb Ihres Hauses</span><span class="b">In der Plattform</span></div>
+          </div>
+          <div class="cphv-foot">Das externe Lektorat übernehmen juristische Übersetzerinnen und Übersetzer sowie zertifizierte Übersetzungsbüros</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section class="cph-method" id="methode">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Unsere Vergleichsmethode</h2>
+        <p>Diese Seiten stammen von Neur.on, der Anbieterin von Corrext. Wir behaupten also nicht, neutral zu sein. Wir verpflichten uns aber, überprüfbar zu sein. Jede Zeile jeder Tabelle betrifft ein Kriterium, das Sie in beiden Tools selbst kontrollieren können, ohne uns aufs Wort zu glauben.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Wo Ihre Daten gespeichert und verarbeitet werden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/lexmachina/" class="feat-link">Was LexMachina ist und was nicht <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Was wir vergleichen</b><p>Den Ort der Speicherung und den Ort der Verarbeitung der Daten, einen allfälligen Hinweis vor dem Versand eines Dokuments, die im Kontext abrufbare Terminologie des Schweizer Rechts, den Umgang mit Schweizer Gesetzesverweisen, die Möglichkeit, mehrere Motoren zu vergleichen, das im Tool bestellte menschliche Lektorat, Offerte und Lieferfrist, die beglaubigte Übersetzung, die Formate und das Betriebsmodell.</p></div>
+        <div class="fact"><b>Was wir nicht vergleichen</b><p>Die Preise: Sie hängen von Ihrem Volumen, Ihren Sprachen und Ihrer Lektoratsstufe ab, und eine Vergleichstabelle wäre ohne Kontext sinnlos. Die reine Geschwindigkeit: Alle genannten Motoren übersetzen in wenigen Sekunden, der Unterschied entscheidet nichts. Die Qualität «im Allgemeinen»: Sie lässt sich nicht an einem Satz messen.</p></div>
+        <div class="fact"><b>Was wir über andere sagen</b><p>Nur, was zum Zeitpunkt der Prüfung öffentlich und dauerhaft ist: den generischen Charakter eines Motors, den Standort seiner Infrastruktur, das Fehlen eines integrierten juristischen Lektorats, das Fehlen einer Konkordanz des Schweizer Rechts mit Quellen.<small>Wo uns ein Punkt unsicher schien, haben wir ihn relativiert statt entschieden.</small></p></div>
+        <div class="fact"><b>Was wir über Corrext sagen</b><p>Nur, was in der Anwendung beobachtet wurde. Funktionen, die in der Oberfläche nicht zu sehen waren, werden auf dieser Website nicht versprochen.<small>Produktangaben direkt in Corrext erhoben.</small></p></div>
+        <div class="fact"><b>Die Übersetzungsbeispiele</b><p>Es sind echte Ergebnisse, an einem bestimmten Datum in Corrext erzeugt, mit öffentlichen Artikeln aus Schweizer Gesetzen. Sie zeigen einen Unterschied, sie messen nichts: Eine andere Generierung an einem anderen Tag ergäbe ein anderes Resultat.<small>Diese Seiten nennen keine bezifferten Leistungsunterschiede.</small></p></div>
+        <div class="fact"><b>Letzte Überprüfung</b><p>September 2026. Wir überarbeiten diese Seiten bei jeder wesentlichen Änderung von Corrext oder der verglichenen Lösungen.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABLEAU DE SYNTHÈSE -->
+<section class="compare cph-synth" id="synthese">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Die drei Vergleiche in einer Tabelle</h2>
+      <p>Jedes Feld stammt aus der detaillierten Tabelle der jeweiligen Seite. «Nicht verglichen» bezeichnet ein Kriterium, das dieser Vergleich nicht behandelt.</p>
+    </div>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">&nbsp;</th>
+            <th>DeepL Pro allein</th>
+            <th>Generalistisches LLM allein</th>
+            <th>Externes Übersetzungsbüro allein</th>
+            <th class="brand">Corrext</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Start</th>
+            <td><span class="cmp-y">✓</span> Sofort</td>
+            <td><span class="cmp-y">✓</span> Sofort</td>
+            <td><span class="cmp-p">⚠</span> Offerte, Bestellung, Planung</td>
+            <td class="brand"><span class="cmp-y">✓</span> Sofort für die Übersetzung; Lektorat mit wenigen Klicks bestellt</td>
+          </tr>
+          <tr>
+            <th>Speicherung und Verarbeitung der Dokumente</th>
+            <td><span class="cmp-n">✕</span> Ausserhalb der Schweiz</td>
+            <td><span class="cmp-n">✕</span> Ausserhalb der Schweiz</td>
+            <td><span class="cmp-p">⚠</span> Je nach Kanal: E-Mail, Portal, Unterauftragnehmer</td>
+            <td class="brand"><span class="cmp-y">✓</span> Speicherung in der Schweiz; Verarbeitung in der Schweiz mit LexMachina oder im Modus Highly sensitive content</td>
+          </tr>
+          <tr>
+            <th>Terminologie des Schweizer Rechts</th>
+            <td><span class="cmp-p">⚠</span> Glossare, die Sie selbst aufbauen</td>
+            <td><span class="cmp-n">✕</span> Keine Quelle angezeigt</td>
+            <td><span class="cmp-p">⚠</span> Glossar übermittelt, von der Übersetzerin oder dem Übersetzer angewendet</td>
+            <td class="brand"><span class="cmp-y">✓</span> CHnell: alignierte Segmente, 30 Fachgebiete, amtliche Quellen</td>
+          </tr>
+          <tr>
+            <th>Mehrere Motoren für denselben Satz</th>
+            <td><span class="cmp-n">✕</span> Ein einziger Motor</td>
+            <td><span class="cmp-n">✕</span> Ein einziges Modell</td>
+            <td><span class="cmp-na">Nicht verglichen</span></td>
+            <td class="brand"><span class="cmp-y">✓</span> Bis zu vier Alternativen, jede ihrem Motor zugeordnet</td>
+          </tr>
+          <tr>
+            <th>Qualität bei einem verbindlichen Dokument</th>
+            <td><span class="cmp-n">✕</span> Kein bestelltes Lektorat</td>
+            <td><span class="cmp-n">✕</span> Kein bestelltes Lektorat</td>
+            <td><span class="cmp-y">✓</span> Seine Kernaufgabe</td>
+            <td class="brand"><span class="cmp-y">✓</span> Light, Full oder Double review durch juristische Übersetzerinnen und Übersetzer oder ein zertifiziertes Übersetzungsbüro</td>
+          </tr>
+          <tr>
+            <th>Beglaubigte Übersetzung, notariell oder mit Apostille</th>
+            <td><span class="cmp-n">✕</span> Nein</td>
+            <td><span class="cmp-n">✕</span> Nein</td>
+            <td><span class="cmp-y">✓</span> Ja</td>
+            <td class="brand"><span class="cmp-y">✓</span> Double review mit Beglaubigung; Handelsregisterauszüge bis zur Apostille</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span><span class="cmp-y">✓</span> Verfügbar und beobachtet</span>
+      <span><span class="cmp-p">⚠</span> Teilweise oder je nach Angebot</span>
+      <span><span class="cmp-n">✕</span> Fehlt</span>
+    </div>
+    <div class="cmp-links">
+      <a href="{{ROOT}}fr/comparatif/deepl-traduction-juridique/" class="feat-link">Vollständige Tabelle zu DeepL <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/comparatif/chatgpt-traduction-juridique/" class="feat-link">Vollständige Tabelle zu den Sprachmodellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" class="feat-link">Vollständige Tabelle Übersetzungsbüro oder Plattform <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+    <p class="cmp-mention">Vergleich zum Zeitpunkt der Veröffentlichung dieser Seite, auf Grundlage öffentlicher Angaben der Anbieter und unserer Beobachtungen in Corrext. Die verglichenen Produkte entwickeln sich weiter: Massgebend ist allein ihre offizielle Dokumentation.</p>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="vn">
+  <div class="container">
+    <h2>Mehr zum Thema</h2>
+    <div class="vn-grid">
+      <a class="vn-card" href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><span class="vn-term vn-kv"><span><i>Text</i><b>bis 10'000 Zeichen</b></span><span><i>Dateien</i><b>25 Dateien zu 50 MB</b></span></span><b class="vn-t">Text- und Dokumentübersetzung</b><span class="vn-d">Einen Text oder mehrere Dateien übersetzen, Motoren vergleichen, einen Begriff im Kontext prüfen.</span><em>Zum Tool <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vn-card" href="{{ROOT}}fr/corrext/gestion-de-projet/"><span class="vn-term vn-kv"><span><i>Lektorat</i><b>Light, Full, Double</b></span><span><i>Offerte</i><b>vor der Freigabe angezeigt</b></span></span><b class="vn-t">Projektmanagement</b><span class="vn-d">Internes oder externes Lektorat in drei Stufen, Offerte und Lieferfrist im Tool berechnet.</span><em>Zum Tool <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vn-card" href="{{ROOT}}fr/securite-souverainete/"><span class="vn-term vn-kv"><span><i>Speicherung</i><b>in der Schweiz</b></span><span><i>Norm</i><b>ISO 27001</b></span></span><b class="vn-t">Sicherheit und Datensouveränität</b><span class="vn-d">Speicherung in der Schweiz, Modus für hochsensible Inhalte, ISO 27001, Governance der Drittmotoren.</span><em>Zur Seite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu diesen Vergleichen</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Sind diese Vergleiche neutral?</summary>
+        <p>Nein, und das sagen wir offen: Neur.on, die Anbieterin von Corrext, hat sie geschrieben. Genau deshalb beschränken sie sich auf Kriterien, die Sie selbst überprüfen können: Ort der Speicherung und Verarbeitung der Daten, Terminologie des Schweizer Rechts im Kontext, Umgang mit Gesetzesverweisen, Vorhandensein eines Lektorats, einer Offerte und einer Beglaubigung. Preise und reine Geschwindigkeit vergleichen wir nicht.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kann Corrext DeepL Pro, Azure OpenAI GPT oder Claude nutzen?</summary>
+        <p>Ja. Diese Motoren sind in Corrext neben LexMachina verfügbar und werden bei jedem Versand gewählt. Da sie im Ausland gehostet sind, löst ihre Wahl den Hinweis Attorney-Client privilege Ihrer Organisation aus. Er verlangt eine vollständige Pseudonymisierung des Dokuments. Wir schlagen also nicht vor, auf diese Motoren zu verzichten, sondern sie in einem Rahmen zu nutzen, der Ihr Berufsgeheimnis schützt.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Worauf stützen sich diese Vergleiche?</summary>
+        <p>Alles, was wir über Corrext sagen, wurde in der Anwendung beobachtet. Was wir über andere Lösungen sagen, beschränkt sich auf öffentliche und dauerhafte Angaben. Die Übersetzungsbeispiele sind echte Einzelergebnisse, nie statistische Messungen.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Der beste Vergleich gelingt mit Ihren eigenen Dokumenten</h2>
+      <p>Eine Demo mit einer Fachperson für Schweizer Recht, mit Ihren Formaten, Ihren Sprachen und Ihrer Terminologie. Sie vergleichen die Motoren selbst, direkt in der Oberfläche.</p>
+      <div class="final-cta-btns">
+        <a href="contact.html" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/" class="btn-outline">Die Plattform Corrext entdecken</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Speicherung zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>
