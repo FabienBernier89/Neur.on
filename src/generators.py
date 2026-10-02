@@ -510,7 +510,7 @@ def fedlex(cle):
         for nom, k in (("loi sur la poursuite pour dettes et la faillite", "LP"),
                        ("loi fédérale sur le tribunal fédéral", "LTF"), ("code civil suisse", "CC")):
             _FEDLEX[nom] = _FEDLEX[k]
-    v = _FEDLEX.get(cle) or _FEDLEX.get(cle.lower())
+    v = _FEDLEX.get(cle) or _FEDLEX.get(cle.lower()) or _alias_loi(cle)
     if not v:
         return None
     # version linguistique du texte : allemand et italien existent pour tout le droit fédéral ; l'anglais au cas par cas
@@ -522,8 +522,28 @@ def fedlex(cle):
     return v["url"]
 
 
+_ALIAS = {}
+
+
+def _alias_loi(nom):
+    """Nom d'une loi dans la langue de la page -> fiche Fedlex, d'après la base terminologique (src/i18n/termes-<lang>.json)."""
+    lang = i18n.langue()
+    if lang == "fr":
+        return None
+    if lang not in _ALIAS:
+        _ALIAS[lang] = {}
+        p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", f"termes-{lang}.json")
+        if os.path.exists(p):
+            for t in json.load(open(p, encoding="utf-8")):
+                fr, tr = (t.get("fr") or "").strip(), (t.get(lang) or "").strip()
+                v = _FEDLEX.get(fr) or _FEDLEX.get(fr.lower())
+                if v and tr:
+                    _ALIAS[lang][tr.lower()] = v
+    return _ALIAS[lang].get(nom.lower().strip())
+
+
 def lien_loi(nom, cle):
-    u = fedlex(cle)
+    u = fedlex(cle) or fedlex(nom)
     return f'<a href="{u}" rel="noopener" target="_blank">{nom}</a>' if u else nom
 
 
