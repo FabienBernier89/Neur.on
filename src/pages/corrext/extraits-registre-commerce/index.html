@@ -45,10 +45,10 @@ canonical: https://neur-on.ai/fr/corrext/extraits-registre-commerce/
 .cxr-in:disabled{color:var(--cx-muted);background:var(--cx-bg);cursor:default}
 .cxr-sel{border:1px solid var(--cx-line);border-radius:8px;padding:10px 32px 10px 12px}
 .cxr-field{margin-top:16px;max-width:360px}
-.cxr-shim{display:none;margin-top:12px;padding:14px;border:1px solid var(--cx-line);border-radius:10px;max-width:560px}
+.cxr-shim{display:none;margin-top:12px;padding:14px;border:1px solid var(--cx-line);border-radius:var(--r-btn);max-width:560px}
 .cxr-shim.on{display:block}
 .cxr-shim .cx-shim:last-child{width:55%;margin-bottom:0}
-.cxr-result{display:none;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid var(--cx-line);border-radius:10px;padding:12px 14px;margin-top:12px;max-width:560px}
+.cxr-result{display:none;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid var(--cx-line);border-radius:var(--r-btn);padding:12px 14px;margin-top:12px;max-width:560px}
 .cxr-result.on{display:flex;animation:cxrIn .28s ease both}
 .cxr-result.sel{border-color:var(--cx-indigo)}
 .cxr-tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cx-muted);background:var(--cx-bg);border:1px solid var(--cx-line);border-radius:8px;padding:3px 8px;white-space:nowrap}
@@ -63,8 +63,8 @@ canonical: https://neur-on.ai/fr/corrext/extraits-registre-commerce/
 .cxr-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .cxr-cards.two{grid-template-columns:repeat(2,1fr);max-width:560px}
 .cxr-list{display:grid;gap:10px;max-width:560px}
-.cxr-card{position:relative;border:1px solid var(--cx-line);border-radius:12px;padding:14px 14px 14px 40px;text-align:left;background:transparent;cursor:pointer;font-family:inherit;color:var(--cx-text);width:100%}
-.cxr-list .cxr-card{border-radius:10px;padding:12px 14px 12px 40px}
+.cxr-card{position:relative;border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 14px 14px 40px;text-align:left;background:transparent;cursor:pointer;font-family:inherit;color:var(--cx-text);width:100%}
+.cxr-list .cxr-card{border-radius:var(--r-btn);padding:12px 14px 12px 40px}
 .cxr-card:hover{border-color:var(--cx-dim)}
 .cxr-card[aria-checked="true"]{border-color:var(--cx-indigo);background:var(--cx-indigo-soft)}
 .cxr-card .rd{position:absolute;left:14px;top:15px;width:16px;height:16px;border-radius:50%;border:1px solid var(--cx-dim)}
@@ -75,7 +75,7 @@ canonical: https://neur-on.ai/fr/corrext/extraits-registre-commerce/
 .cxr-card span{display:block;font-size:12px;color:var(--cx-muted);line-height:1.5}
 .cxr-list .cxr-card b{margin-bottom:0}
 /* Récapitulatif et pied */
-.cxr-sum{border:1px solid var(--cx-line);border-radius:12px;padding:14px 16px;margin-top:18px;background:var(--cx-bg);max-width:560px}
+.cxr-sum{border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 16px;margin-top:18px;background:var(--cx-bg);max-width:560px}
 .cxr-sum dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0;font-size:12.5px}
 .cxr-sum dt{color:var(--cx-muted);font-weight:600}
 .cxr-sum dd{margin:0;color:var(--cx-ink);font-weight:600}
@@ -84,7 +84,7 @@ canonical: https://neur-on.ai/fr/corrext/extraits-registre-commerce/
 .cxr-foot .cx-btn{line-height:1.3}
 .cxr .cx-btn.ghost:disabled{background:transparent;border-color:var(--cx-dim-2);color:var(--cx-dim)}
 .cxr-foot a.cx-btn{display:inline-flex;align-items:center;text-decoration:none}
-.cxr-done{display:none;position:relative;margin-top:12px;padding:12px 14px 12px 40px;background:var(--cx-indigo-soft);border-radius:10px;font-size:12.5px;color:var(--cx-ink);line-height:1.5}
+.cxr-done{display:none;position:relative;margin-top:12px;padding:12px 14px 12px 40px;background:var(--cx-indigo-soft);border-radius:var(--r-btn);font-size:12.5px;color:var(--cx-ink);line-height:1.5}
 .cxr-done.on{display:block;animation:cxrIn .28s ease both}
 .cxr-done svg{position:absolute;left:14px;top:13px;width:16px;height:16px;color:var(--cx-ink)}
 .cxr-done a{color:var(--cx-indigo);font-weight:700}

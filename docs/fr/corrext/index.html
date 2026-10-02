@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" href="../../assets/img/neuron-mark.png">
 <link rel="apple-touch-icon" href="../../assets/img/neuron-mark-180.png">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../assets/neuron.css?v=f0449ba1">
+<link rel="stylesheet" href="../../assets/neuron.css?v=613ffca8">
 <style>/* ============ HERO DU HUB : deux colonnes, fenêtre débordante ============ */
 .phero{padding:92px 0 0;color:#fff;position:relative;background:radial-gradient(900px 480px at 82% 0%, rgba(127,176,255,.28), transparent 60%),radial-gradient(600px 420px at 6% 100%, rgba(49,123,255,.22), transparent 62%),var(--navy-grad)}
 .phero-txt{padding-top:10px;padding-bottom:64px}
@@ -39,7 +39,7 @@
 .phero-promise svg{width:15px;height:15px;color:var(--sky);flex-shrink:0}
 
 /* Fenêtre Corrext · vue tableau de bord (matériau principal) */
-.dash{position:relative;z-index:2;display:flex;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 44px 92px -42px rgba(8,24,68,.34);overflow:hidden;margin-top:12px;margin-bottom:-120px;min-height:620px;color:var(--text)}
+.dash{position:relative;z-index:2;display:flex;background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);box-shadow:0 44px 92px -42px rgba(8,24,68,.34);overflow:hidden;margin-top:12px;margin-bottom:-120px;min-height:620px;color:var(--text)}
 .dash .drail{width:62px}
 .dash .dwrap{flex:1;min-width:0;display:flex;flex-direction:column}
 .dash .dtop{flex-wrap:wrap;gap:10px}
@@ -72,7 +72,7 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .kpis{display:grid;grid-template-columns:repeat(3,max-content);column-gap:26px;row-gap:8px;padding:12px 22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);background:var(--bg)}
 .kpis b{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
 .qlist{display:flex;flex-direction:column;gap:9px}
-.qrow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:10px;transition:background .2s}
+.qrow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r-btn);transition:background .2s}
 .qrow:hover{background:rgba(49,123,255,.04)}
 .qrow b{font-size:13.5px;color:var(--ink)}
 .qrow small{display:block;font-size:12px;color:var(--muted);margin-top:3px}
@@ -803,6 +803,6 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
   </div>
 </footer>
 
-<script src="../../assets/nav.js?v=f0449ba1" defer></script>
+<script src="../../assets/nav.js?v=613ffca8" defer></script>
 </body>
 </html>

@@ -42,7 +42,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 .cxp-input:read-only{background:var(--cx-bg);color:var(--cx-text)}
 .cxp-input:disabled{background:var(--cx-bg);color:var(--cx-muted);cursor:default}
 .cxp-conf{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.cxp-card{text-align:left;border:1.5px solid var(--cx-line);border-radius:12px;padding:14px 16px;background:#fff;cursor:pointer;font-family:inherit;color:var(--cx-text);display:block;width:100%;transition:border-color .15s}
+.cxp-card{text-align:left;border:1.5px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 16px;background:#fff;cursor:pointer;font-family:inherit;color:var(--cx-text);display:block;width:100%;transition:border-color .15s}
 .cxp-card:hover{border-color:var(--cx-dim)}
 .cxp-card.on{border-color:var(--cx-indigo)}
 .cxp-card b{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--cx-ink);margin-bottom:6px}
@@ -53,14 +53,14 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 .cxp-langbtn{display:inline-flex;align-items:center;gap:8px}
 .cxp-langbtn svg{width:14px;height:14px}
 .cxp-langwrap .cx-chips{margin:0 0 10px}
-.cxp-pop{margin-top:10px;border:1px solid var(--cx-line);border-radius:10px;padding:10px;background:#fff;max-width:340px}
+.cxp-pop{margin-top:10px;border:1px solid var(--cx-line);border-radius:var(--r-btn);padding:10px;background:#fff;max-width:340px}
 .cxp-langlist{list-style:none;margin:8px 0 0;padding:0;max-height:186px;overflow:auto}
 .cxp-langlist label{display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:6px;font-size:12.5px;color:var(--cx-ink);cursor:pointer}
 .cxp-langlist label:hover{background:var(--cx-bg)}
 .cx input[type=checkbox]{accent-color:var(--cx-indigo);width:15px;height:15px;margin:0}
 .cx-drop:disabled{opacity:.55;cursor:default}
 .cx-drop:disabled:hover{background:#fff}
-.cxp-filecard{border:1px solid var(--cx-line);border-radius:10px;margin-top:12px}
+.cxp-filecard{border:1px solid var(--cx-line);border-radius:var(--r-btn);margin-top:12px}
 .cxp-filecard .cx-file{border:0;margin:0;padding:12px 14px}
 .cxp-filecard .fn,.cxp-filecard .fs{display:block}
 .cxp-file-act{display:inline-flex;gap:4px}
@@ -75,14 +75,14 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 .cxp-filemeta .cx-sel,.cxp-table .cx-sel{border:1px solid var(--cx-line);border-radius:8px;padding:7px 30px 7px 10px;font-size:12px;width:auto}
 /* Étape 3 · Quotes */
 .cxp-qtabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 16px}
-.cxp-qtab{text-align:left;border:1.5px solid var(--cx-line);border-radius:12px;padding:12px 14px;background:#fff;cursor:pointer;font-family:inherit;transition:border-color .15s}
+.cxp-qtab{text-align:left;border:1.5px solid var(--cx-line);border-radius:var(--r-bloc);padding:12px 14px;background:#fff;cursor:pointer;font-family:inherit;transition:border-color .15s}
 .cxp-qtab:hover{border-color:var(--cx-dim)}
 .cxp-qtab.on{border-color:var(--cx-indigo)}
 .cxp-qtab b{display:block;font-size:13px;color:var(--cx-ink)}
 .cxp-qtab.on b{color:var(--cx-indigo)}
 .cxp-qtab span{display:block;font-size:12px;color:var(--cx-muted);margin-top:2px}
 .cxp-qgrid{display:grid;grid-template-columns:1fr 272px;gap:16px;align-items:start}
-.cxp-block{border:1px solid var(--cx-line);border-radius:12px;padding:16px}
+.cxp-block{border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:16px}
 .cxp-spec{display:grid;gap:10px}
 .cxp-spec label,.cxp-lbl{display:block;font-size:12px;color:var(--cx-muted)}
 .cxp-spec label .cxp-input,.cxp-lbl .cxp-input{margin-top:5px}
@@ -92,7 +92,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 .cxp-yn-btn{border:0;background:#fff;padding:7px 18px;font-size:12.5px;font-weight:600;color:var(--cx-ink);cursor:pointer;font-family:inherit}
 .cxp-yn-btn+.cxp-yn-btn{border-left:1px solid var(--cx-line)}
 .cxp-yn-btn.on{background:var(--cx-indigo);color:#fff}
-.cxp-tablewrap{border:1px solid var(--cx-line);border-radius:12px;margin-top:14px;padding:0 0 4px}
+.cxp-tablewrap{border:1px solid var(--cx-line);border-radius:var(--r-bloc);margin-top:14px;padding:0 0 4px}
 .cxp-scroll{overflow-x:auto}
 .cxp-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:600px}
 .cxp-table th{text-align:left;font-size:11.5px;font-weight:600;color:var(--cx-muted);padding:10px 12px;border-bottom:1px solid var(--cx-line);white-space:nowrap}
@@ -102,12 +102,12 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 .cxp-infobtn{width:20px;height:20px;border:0;background:transparent;color:var(--cx-indigo);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;vertical-align:middle;margin-left:4px;border-radius:50%}
 .cxp-infobtn svg{width:15px;height:15px}
 .cxp-infobtn:hover{background:var(--cx-indigo-soft)}
-.cxp-info{margin:10px 12px 6px;padding:12px 14px;background:var(--cx-bg);border-radius:10px}
+.cxp-info{margin:10px 12px 6px;padding:12px 14px;background:var(--cx-bg);border-radius:var(--r-btn)}
 .cxp-info dl{margin:0;display:grid;gap:10px}
 .cxp-info dt{font-size:12px;font-weight:700;color:var(--cx-ink)}
 .cxp-info dd{margin:2px 0 0;font-size:12px;line-height:1.5;color:var(--cx-text)}
 .cxp-tablewrap .cx-note{padding:8px 12px 6px}
-.cxp-est{border:1px solid var(--cx-line);border-radius:12px;padding:16px;background:var(--cx-bg)}
+.cxp-est{border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:16px;background:var(--cx-bg)}
 .cxp-est dl{margin:0 0 14px}
 .cxp-est dl div{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--cx-line);font-size:12.5px;color:var(--cx-text)}
 .cxp-est dl div.tot{border-bottom:0;font-weight:700;color:var(--cx-ink)}

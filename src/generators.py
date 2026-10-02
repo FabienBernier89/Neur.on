@@ -607,13 +607,13 @@ def gen_glossaire(src):
 .gmeta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
 .gmeta span{font-size:12px;font-weight:700;background:var(--tint);color:var(--navy);border-radius:50px;padding:5px 12px}
 .glangs{border-top:1px solid var(--line)}
-.gnote{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:26px 28px}
+.gnote{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 28px}
 .gnote p{font-size:14.5px;color:var(--text);line-height:1.65;margin-bottom:16px}
 .glang{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .glang i{font-style:normal;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 .glang b{font-size:16px;color:var(--ink)}
 .gex{padding:0 0 84px}
-.gex-box{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:32px 34px}
+.gex-box{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:32px 34px}
 .gex-box h2{font-size:22px;margin-bottom:18px}
 .gex-row{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .gex-row div p{font-size:14.5px;line-height:1.6;color:var(--text)}
