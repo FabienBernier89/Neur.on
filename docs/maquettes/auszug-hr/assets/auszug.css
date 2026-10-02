@@ -89,7 +89,7 @@
 .az-about-head{margin:0 0 64px}
 .az-q{margin:20px auto 0;max-width:46ch;font-size:19px;font-weight:600;line-height:1.5;letter-spacing:-.01em;color:var(--ink)}
 .az-about-head .az-prose{margin-top:30px}
-.az-about-head .az-prose p{max-width:none;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.az-about-head .az-prose p{max-width:none;text-align:center;-webkit-hyphens:manual;hyphens:manual}
 .az-rows{border-top:1px solid var(--line)}
 .az-row{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:64px;padding:44px 0;border-bottom:1px solid var(--line)}
 .az-row-h{display:flex;align-items:flex-start;gap:16px}
@@ -195,7 +195,6 @@
   .az-sec{padding:72px 0}
   .az-about-head,.az-row,.az-cert-grid{grid-template-columns:minmax(0,1fr);gap:24px}
   .az-about-head{margin-bottom:44px}
-  .az-about-head .az-prose p{text-align:left;-webkit-hyphens:manual;hyphens:manual}
   .az-about-head .az-prose{padding-top:0}
   .az-row{padding:34px 0}
   .az-cert-grid{gap:32px}
@@ -228,7 +227,6 @@
   .az-levels li{grid-template-columns:minmax(0,1fr);gap:12px;padding:18px}
   .az-levels .az-gauge{margin-top:0}
   .az-how-head{margin-bottom:40px;text-align:left}
-  .az-about-head .az-prose{text-align:left}
   .az-how-head .az-sk::before{display:none}
   .az-how-head .az-h2{margin:0}
   .az-steps{grid-template-columns:minmax(0,1fr);gap:16px}
