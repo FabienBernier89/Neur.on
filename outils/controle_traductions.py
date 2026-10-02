@@ -33,7 +33,7 @@ STATUT = "statut_traduction"  # seule clé de front-matter propre à une page tr
 MOTS_OUTILS = {"le", "la", "les", "des", "une", "pour", "avec", "dans", "est", "sont", "qui", "que", "nous", "vous",
                "aux", "du", "au", "sur"}
 # mots outils français qui sont aussi des mots courants de la langue cible : non comptés dans cette langue
-AMBIGUS = {"de": {"des"}, "it": {"la", "le"}}
+AMBIGUS = {"de": {"des"}, "it": {"la", "le", "qui"}}
 # petits mots qui relient les éléments d'un nom propre (« Banque Cantonale du Valais »)
 LIAISONS = MOTS_OUTILS | {"de", "d", "l", "et"}
 SEUIL_MOTS, SEUIL_TAUX = 12, 0.08
