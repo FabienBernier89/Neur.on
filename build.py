@@ -415,6 +415,58 @@ def htaccess(redirections):
     return "\n".join(out)
 
 
+def reseau_404():
+    """« 404 » dessiné en réseau de neurones : nœuds le long du tracé des chiffres, liaisons entre voisins,
+    trois signaux qui parcourent les tracés (masqués si l'utilisateur réduit les animations)."""
+    import math, random
+    rnd = random.Random(404)
+    ox, oy, H = 18, 14, 140
+    traces = []
+    for k, x0 in enumerate((ox, ox + 142, ox + 284)):
+        if k == 1:  # le zéro : une ellipse
+            traces.append(([(x0 + 50 + 46 * math.cos(t / 30 * 2 * math.pi), oy + 70 + 68 * math.sin(t / 30 * 2 * math.pi))
+                            for t in range(31)], True))
+        else:       # un quatre : diagonale, traverse, jambage
+            traces.append(([(x0 + 72, oy + H), (x0 + 72, oy)], False))
+            traces.append(([(x0 + 72, oy), (x0, oy + 94), (x0 + 104, oy + 94)], False))
+    noeuds, liens, chemins = [], set(), []
+    def ajoute(x, y):
+        for i, (a, b) in enumerate(noeuds):
+            if (a - x) ** 2 + (b - y) ** 2 < 49:
+                return i
+        noeuds.append((x + rnd.uniform(-1.6, 1.6), y + rnd.uniform(-1.6, 1.6)))
+        return len(noeuds) - 1
+    for pts, ferme in traces:
+        echant = []
+        for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
+            n = max(1, round(math.hypot(x2 - x1, y2 - y1) / 13))
+            echant += [(x1 + (x2 - x1) * i / n, y1 + (y2 - y1) * i / n) for i in range(n)]
+        if not ferme:
+            echant.append(pts[-1])
+        ids = [ajoute(x, y) for x, y in echant]
+        for i, j in zip(ids, ids[1:] + ([ids[0]] if ferme else [])):
+            if i != j:
+                liens.add((min(i, j), max(i, j)))
+        chemins.append("M" + " L".join(f"{noeuds[i][0]:.1f} {noeuds[i][1]:.1f}" for i in ids) + (" Z" if ferme else ""))
+    # quelques liaisons transversales entre nœuds proches de tracés différents : l'effet « réseau »
+    for i, (x, y) in enumerate(noeuds):
+        proches = sorted((math.hypot(x - a, y - b), j) for j, (a, b) in enumerate(noeuds) if j != i)
+        for d, j in proches[2:4]:
+            if d < 30 and rnd.random() < .45:
+                liens.add((min(i, j), max(i, j)))
+    lignes = "".join(f'<line x1="{noeuds[i][0]:.1f}" y1="{noeuds[i][1]:.1f}" x2="{noeuds[j][0]:.1f}" y2="{noeuds[j][1]:.1f}"/>'
+                     for i, j in sorted(liens))
+    points = "".join(
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{3.3 if k % 5 == 0 else 2.2}" fill="{"#7FB0FF" if k % 5 == 0 else "#fff"}"'
+        f' fill-opacity="{1 if k % 5 == 0 else .62}"/>' for k, (x, y) in enumerate(noeuds))
+    signaux = "".join(
+        f'<circle class="sig" r="3.6" fill="#fff" opacity="0"><animateMotion dur="{d}s" begin="{b}s" repeatCount="indefinite" path="{chemins[c]}"/>'
+        f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.85;1" dur="{d}s" begin="{b}s" repeatCount="indefinite"/></circle>'
+        for c, d, b in ((1, 4.6, 0), (2, 7.5, 1.2), (4, 4.2, 2.4)))
+    return ('<svg class="net" viewBox="0 0 420 170" role="img" aria-label="Le nombre 404 dessiné en réseau de neurones">'
+            f'<g stroke="#96BCFF" stroke-opacity=".38" stroke-width="1">{lignes}</g><g>{points}</g><g>{signaux}</g></svg>')
+
+
 def write_annexes(paths):
     # redirection de la racine vers la langue par défaut
     write(os.path.join(OUT, "index.html"),
@@ -425,44 +477,18 @@ def write_annexes(paths):
           '<body><p>Redirection vers <a href="fr/">Neur.on</a>.</p>\n'
           '<script>location.replace("fr/");</script>\n</body>\n</html>\n' % SITE)
 
-    # page 404 : servie depuis n'importe quelle profondeur, donc styles en ligne
-    write(os.path.join(OUT, "404.html"),
-          """<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
-<title>Page introuvable · Neur.on</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:linear-gradient(152deg,#0c2f7a 0%,#001B4C 54%,#001233 100%);color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 24px;line-height:1.6}
-.w{max-width:620px;text-align:center}
-.lg{font-weight:900;font-size:26px;letter-spacing:-.03em;margin-bottom:34px;display:inline-block;color:#fff;text-decoration:none}
-.lg span{color:#317BFF}
-h1{font-size:clamp(28px,5vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1.15;margin-bottom:16px}
-p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:30px}
-.b{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;margin:0 6px 10px}
-.b1{background:#1f5fd6;color:#fff}
-.b2{border:1px solid rgba(255,255,255,.32);color:#fff}
-</style>
-</head>
-<body>
-<div class="w">
-<a class="lg" href="/fr/">Neur<span>.</span>on</a>
-<h1>Cette page n'existe pas</h1>
-<p>Le lien est peut-être ancien, ou la page n'a pas encore été publiée. Reprenez depuis l'accueil ou depuis la plateforme Corrext.</p>
-<a class="b b1" href="/fr/">Accueil</a><a class="b b2" href="/fr/corrext/">La plateforme Corrext</a>
-</div>
-<script>
-/* Sur un aperçu servi dans un sous-dossier, les liens absolus sont reprefixes */
-(function(){var m=location.pathname.match(/^\\/[^/]+\\//);
- if(m && m[0] !== "/fr/"){[].forEach.call(document.querySelectorAll("a[href^='/']"),function(a){
-   a.setAttribute("href", m[0].replace(/\\/$/,"") + a.getAttribute("href"));});}})();
-</script>
-</body>
-</html>
-""")
+    # page 404 : gabarit src/partials/404.html, servi depuis n'importe quelle profondeur (styles en ligne)
+    fleche = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" '
+              'stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>')
+    index = [[p, re.sub(r"\s*·\s*Neur\.on$", "", PAGES[p]["title"] or PAGES[p]["short"])] for p in sorted(paths)
+             if p not in ("fr/mentions-legales/", "fr/protection-des-donnees/")]
+    page404 = (read(os.path.join(SRC, "partials", "404.html"))
+               .replace("{{RESEAU}}", reseau_404())
+               .replace("{{FEDLEX_CO}}", load_json_data("fedlex")["CO"]["url"])
+               .replace("{{FLECHE_JS}}", json.dumps(fleche))
+               .replace("{{FLECHE}}", fleche)
+               .replace("{{INDEX}}", json.dumps(index, ensure_ascii=False).replace("</", "<\\/")))
+    write(os.path.join(OUT, "404.html"), page404)
 
     open(os.path.join(OUT, ".nojekyll"), "w").close()
 
