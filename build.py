@@ -9,6 +9,7 @@ Usage : python3 build.py [--production]
 En mode aperçu (défaut), chaque page porte noindex et robots.txt interdit tout :
 l'aperçu GitHub Pages ne doit jamais concurrencer neur-on.ai dans l'index.
 """
+import subprocess
 import json, os, re, shutil, sys, datetime
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -318,6 +319,39 @@ def build_page(path, meta, body):
 
 # ---------------------------------------------------------------- collecte
 
+# Pages générées : fichiers de données dont dépend leur contenu (le gabarit et les partiels n'en font pas partie)
+SOURCES_GENEREES = (("fr/ressources/blog/actualites/", ["src/data/actualites.json", "src/data/blog.json"]),
+                    ("fr/ressources/glossaire/", ["src/data/glossaire.json"]),
+                    ("fr/ressources/blog/", ["src/data/blog.json"]),
+                    ("fr/solutions/", ["src/data/solutions.json"]),
+                    ("fr/traduction/", ["src/data/domaines.json", "src/data/paires.json"]),
+                    ("fr/aide/", ["src/data/aide.json"]))
+_DATES = {}
+
+
+def sources_generees(path):
+    return next((f for pre, f in SOURCES_GENEREES if path.startswith(pre)), [])
+
+
+def date_contenu(fichiers):
+    """Date de dernière modification réelle du contenu, pour le sitemap : dernier commit des fichiers sources,
+    ou la date du jour s'ils ont des modifications non commitées. Sans source connue : date du jour."""
+    if not fichiers:
+        return TODAY
+    dates = []
+    for f in fichiers:
+        if f not in _DATES:
+            try:
+                sale = subprocess.run(["git", "status", "--porcelain", "--", f], cwd=BASE, capture_output=True, text=True).stdout.strip()
+                d = TODAY if sale else subprocess.run(["git", "log", "-1", "--format=%cs", "--", f], cwd=BASE,
+                                                     capture_output=True, text=True).stdout.strip()
+            except OSError:
+                d = ""
+            _DATES[f] = d or TODAY
+        dates.append(_DATES[f])
+    return max(dates)
+
+
 def collect_sources():
     """Pages rédigées à la main dans src/pages."""
     found = []
@@ -327,6 +361,7 @@ def collect_sources():
         rel_dir = os.path.relpath(dirpath, os.path.join(SRC, "pages"))
         path = "fr/" if rel_dir == "." else "fr/" + rel_dir.replace(os.sep, "/") + "/"
         meta, body = parse_front(read(os.path.join(dirpath, "index.html")))
+        meta.setdefault("_sources", [os.path.relpath(os.path.join(dirpath, "index.html"), BASE)])
         found.append((path, meta, body))
     return found
 
@@ -344,6 +379,41 @@ def collect_generated():
 
 
 # ---------------------------------------------------------------- annexes
+
+# Anciens fichiers de WordPress (Yoast) : leurs sitemaps et le flux renvoient vers les nouveaux équivalents
+REDIR_WP = (("sitemap_index.xml", "sitemap.xml"), ("post-sitemap.xml", "sitemap.xml"), ("page-sitemap.xml", "sitemap.xml"),
+            ("category-sitemap.xml", "sitemap.xml"), ("post_tag-sitemap.xml", "sitemap.xml"),
+            ("author-sitemap.xml", "sitemap.xml"), ("feed/", "fr/ressources/blog/"))
+
+
+def htaccess(redirections):
+    """Règles Apache (Infomaniak et la plupart des hébergeurs) : https sans www, racine vers /fr/,
+    301 des anciennes adresses de neur-on.ai, page 404. Un hébergeur Nginx reprend les mêmes règles."""
+    rx = lambda chemin: re.sub(r"([.+?()\[\]{}^$|])", r"\\\1", chemin.strip("/"))
+    out = ["# Généré par build.py --production : ne pas modifier à la main (source : src/data/redirections.json)",
+           "Options -MultiViews", "DirectorySlash On", "ErrorDocument 404 /404.html", "",
+           "<IfModule mod_rewrite.c>", "RewriteEngine On", "",
+           "# domaine sans www",
+           "RewriteCond %{HTTP_HOST} ^www\\. [NC]", f"RewriteRule ^ {SITE}%{{REQUEST_URI}} [R=301,L,NE]",
+           "# https (le second test évite une boucle derrière un proxy qui termine le TLS)",
+           "RewriteCond %{HTTPS} !=on", "RewriteCond %{HTTP:X-Forwarded-Proto} !=https",
+           f"RewriteRule ^ {SITE}%{{REQUEST_URI}} [R=301,L,NE]", "",
+           "# racine : version française", f"RewriteRule ^$ {SITE}/fr/ [R=301,L]", "",
+           "# anciens fichiers WordPress"]
+    out += [f"RewriteRule ^{rx(a)}/?$ {SITE}/{b} [R=301,L]" for a, b in REDIR_WP]
+    out += ["", "# anciennes pages de neur-on.ai (NE : garde le # des ancres)"]
+    out += [f'RewriteRule ^{rx(r["ancien"])}/?$ {SITE}/{r["nouveau"].lstrip("/")} [R=301,L,NE]' for r in redirections]
+    out += ["</IfModule>", "",
+            "# cache : feuilles de style et scripts versionnés (?v=), images et polices",
+            "<IfModule mod_expires.c>", "ExpiresActive On", 'ExpiresByType text/css "access plus 1 year"',
+            'ExpiresByType application/javascript "access plus 1 year"', 'ExpiresByType image/webp "access plus 1 month"',
+            'ExpiresByType image/jpeg "access plus 1 month"', 'ExpiresByType image/png "access plus 1 month"',
+            'ExpiresByType image/svg+xml "access plus 1 month"', 'ExpiresByType text/html "access plus 0 seconds"', "</IfModule>",
+            "<IfModule mod_deflate.c>",
+            "AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json text/plain application/xml",
+            "</IfModule>", ""]
+    return "\n".join(out)
+
 
 def write_annexes(paths):
     # redirection de la racine vers la langue par défaut
@@ -417,6 +487,8 @@ p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:30px}
               f'<meta http-equiv="refresh" content="0; url={racine}{nouveau}">'
               f'<script>location.replace("{racine}{nouveau}"+"")</script></head>'
               f'<body><p>Cette page a déménagé : <a href="{racine}{nouveau}">voir la nouvelle adresse</a>.</p></body></html>\n')
+    if PRODUCTION:
+        write(os.path.join(OUT, ".htaccess"), htaccess((red or {}).get("redirections", [])))
 
     # sitemap
     prio = {"fr/": "1.0"}
@@ -476,7 +548,8 @@ def main():
         shutil.copytree(os.path.join(BASE, "maquettes"), os.path.join(OUT, "maquettes"))
 
     for path, meta, _body in pages:
-        PAGES[path] = {"short": meta.get("short", path), "title": meta.get("title", ""), "lastmod": meta.get("lastmod")}
+        PAGES[path] = {"short": meta.get("short", path), "title": meta.get("title", ""),
+                       "lastmod": meta.get("lastmod") or date_contenu(meta.get("_sources") or sources_generees(path))}
 
     built = [build_page(p, m, b) for p, m, b in pages]
     write_annexes(built)

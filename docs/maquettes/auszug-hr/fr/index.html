@@ -9,9 +9,11 @@
 <meta name="theme-color" content="#001B4C">
 <!-- Favicon repris du site source (auszug-hr.ch/favicon.ico) -->
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
-<!-- Versions de langue (maquette : liens relatifs). Production : https://auszug-hr.ch/en · https://auszug-hr.ch/fr (hreflang en, fr, x-default vers /en) -->
+<!-- Versions de langue (maquette : liens relatifs). Production, en URL absolues : https://auszug-hr.ch/en · https://auszug-hr.ch/de · https://auszug-hr.ch/fr · https://auszug-hr.ch/it · x-default https://auszug-hr.ch/en -->
 <link rel="alternate" hreflang="en" href="../en/">
+<link rel="alternate" hreflang="de" href="../de/">
 <link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="it" href="../it/">
 <link rel="alternate" hreflang="x-default" href="../en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,17 +27,17 @@
 <!-- ============ EN-TÊTE DU SERVICE ============ -->
 <header class="nav az-nav">
   <div class="container nav-inner">
-    <a href="../fr/" class="az-logo"><img src="../assets/corrext.svg" alt="Logo Corrext" width="391" height="112"></a>
+    <a href="./" class="az-logo"><img src="../assets/corrext.svg" alt="Logo Corrext" width="391" height="112"></a>
 
     <div class="az-nav-r">
-      <!-- Sélecteur de langue en ligne (bureau). Deutsch et Italiano : pas de version sur le site source, affichés sans lien -->
+      <!-- Sélecteur de langue en ligne (grand écran) -->
       <nav class="lang-switch az-lang-inline" aria-label="Langue">
         <a href="../en/" hreflang="en" lang="en">English</a><span class="sep" aria-hidden="true">·</span>
-        <span class="az-soon" lang="de" aria-disabled="true">Deutsch</span><span class="sep" aria-hidden="true">·</span>
+        <a href="../de/" hreflang="de" lang="de">Deutsch</a><span class="sep" aria-hidden="true">·</span>
         <a class="on" aria-current="true" href="../fr/" hreflang="fr" lang="fr">Français</a><span class="sep" aria-hidden="true">·</span>
-        <span class="az-soon" lang="it" aria-disabled="true">Italiano</span>
+        <a href="../it/" hreflang="it" lang="it">Italiano</a>
       </nav>
-      <!-- Sélecteur de langue compact (tablette et mobile) -->
+      <!-- Sélecteur de langue compact (jusqu'à 1100 px) -->
       <details class="az-lang-menu">
         <summary aria-label="Langue: français">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>
@@ -44,9 +46,9 @@
         </summary>
         <ul>
           <li><a href="../en/" hreflang="en" lang="en">English</a></li>
-          <li><span class="az-soon" lang="de" aria-disabled="true">Deutsch</span></li>
+          <li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li>
           <li><a href="../fr/" hreflang="fr" lang="fr" aria-current="true">Français</a></li>
-          <li><span class="az-soon" lang="it" aria-disabled="true">Italiano</span></li>
+          <li><a href="../it/" hreflang="it" lang="it">Italiano</a></li>
         </ul>
       </details>
       <!-- Sur le site source, « Contact » ouvre une fenêtre qui affiche team [at] corrext.com -->
@@ -305,10 +307,9 @@
       <a href="./" class="az-logo"><img src="../assets/corrext.svg" alt="Logo Corrext" width="391" height="112"></a>
       <p>© Neur.on AI Solutions SA</p>
     </div>
-    <!-- Pages légales : une seule version, en anglais, sur le site source (liens du pied de page EN et FR) -->
     <nav aria-label="Informations légales">
-      <a href="../en/impressum/" hreflang="en">Conditions d’utilisation</a>
-      <a href="../en/privacy-policy/" hreflang="en">Protection des données</a>
+      <a href="../fr/impressum/">Conditions d’utilisation</a>
+      <a href="../fr/privacy-policy/">Protection des données</a>
     </nav>
   </div>
 </footer>
