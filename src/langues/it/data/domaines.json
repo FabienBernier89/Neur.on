@@ -2,62 +2,62 @@
  {
   "slug": "contrats",
   "short": "Contratti",
-  "resume": "Baux, CGV, contratti di mutuo: il vocabolario del Codice delle obbligazioni.",
-  "title": "Traduzioni legali di contratti svizzeri, FR IT · Neur.on",
-  "description": "Contratti di locazione, contratti di lavoro, CGV, prestiti: tradurre con la terminologia del Codice delle obbligazioni svizzero e la rilettura di un traduttore giuridico.",
+  "resume": "Locazioni, condizioni generali, mutui: il vocabolario del Codice delle obbligazioni.",
+  "title": "Traduzione contratti di diritto svizzero, DE FR IT · Neur.on",
+  "description": "Locazioni, contratti di lavoro, condizioni generali, mutui: traduzioni con la terminologia del Codice delle obbligazioni, riviste da un traduttore giuridico.",
   "lede": "Contratti.",
-  "h1": "Il Codice delle obbligazioni, da una lingua all’altra",
-  "lead": "Locazione, condizioni generali, contratto di mutuo: ogni clausola rimanda a una nozione del Codice delle obbligazioni, pubblicata in tedesco, francese e italiano. Corrext conserva il layout e la formulazione del testo ufficiale.",
+  "h1": "Tradurre un contratto con le parole del Codice delle obbligazioni",
+  "lead": "Locazione, condizioni generali, contratto di mutuo: ogni clausola rimanda a una nozione del Codice delle obbligazioni, pubblicato in tedesco, francese e italiano. Corrext conserva l'impaginazione e riprende la formulazione del testo ufficiale.",
   "promesses": [
    {
     "t": "Terminologia del CO",
-    "d": "equivalenze dei testi ufficiali, non traduzioni d’uso"
+    "d": "gli equivalenti del testo ufficiale, non traduzioni d'uso"
    },
    {
-    "t": "Layout conservato",
+    "t": "Impaginazione conservata",
     "d": "articoli, capoversi e rimandi tornano al loro posto"
    },
    {
-    "t": "Rilettura alla carta",
-    "d": "Light Review, Full Review o Double Review certificata"
+    "t": "Revisione a scelta",
+    "d": "Light review, Full review o Double review e traduzione certificata"
    }
   ],
-  "definition": "Tradurre un contratto nel diritto svizzero significa riportare in un’altra lingua obblighi giuridicamente efficaci: ogni termine rimanda a una nozione definita dal Codice delle obbligazioni, pubblicato in tedesco, francese e italiano. La traduzione mantiene la formulazione del testo ufficiale e lascia intatti i rimandi di articoli, i termini e gli importi.",
+  "definition": "Tradurre un contratto di diritto svizzero significa trasporre in un'altra lingua obblighi che producono effetti giuridici. Ogni termine rimanda a una nozione definita dal Codice delle obbligazioni, pubblicato in tedesco, francese e italiano. La traduzione riprende la formulazione del testo ufficiale e lascia intatti i rimandi agli articoli, i termini e gli importi.",
   "facts": [
    {
     "k": "Locazione e allegati",
-    "v": "Depositate la locazione, il suo stato d’avanzamento e le sue clausole aggiuntive in file Translation: ogni documento ritorna nel suo formato originale, rimandi al CO intatti.",
-    "s": "Formati. pdf. doc. docx. xls. xlsx. ppt. pptx, fino a 25 file da 50 MB per invio."
+    "v": "Caricate il contratto di locazione, il verbale sullo stato della cosa e le aggiunte in File translation: ogni documento torna nel suo formato originale, con i rimandi al CO intatti.",
+    "s": "Formati .pdf .doc .docx .xls .xlsx .ppt .pptx, fino a 25 file da 50 MB per invio."
    },
    {
     "k": "Condizioni generali",
-    "v": "Le CGV si riscrivono in blocchi da una versione all’altra. In confidenzialità standard, il progetto alimenta una memoria di traduzione riutilizzabile unicamente dalla vostra organizzazione."
+    "v": "Le condizioni generali si riscrivono a blocchi da una versione all'altra. Con la riservatezza Standard, il progetto alimenta una memoria di traduzione che solo la vostra organizzazione può riutilizzare."
    },
    {
-    "k": "Contratto quadro e clausole aggiuntive",
-    "v": "Una clausola addizionale deve riprendere parola per parola il vocabolario del contratto d’origine: il termine scelto la prima volta si ritrova con un’evidenziazione nel Fast Lookup CHnell."
+    "k": "Contratto quadro e aggiunte",
+    "v": "Un'aggiunta deve riprendere parola per parola il vocabolario del contratto originale: il termine scelto la prima volta si ritrova evidenziandolo in Fast lookup CHnell."
    },
    {
-    "k": "Clausole cifrate",
-    "v": "Tassi, termini di disdetta e importi sono vincolanti per le parti: la Full Review li verifica online con un traduttore giuridico.",
-    "s": "Il termine viene visualizzato prima della convalida del preventivo."
+    "k": "Clausole con cifre",
+    "v": "Tassi, termini di disdetta e importi vincolano le parti: con la Full review, un traduttore giuridico li verifica riga per riga.",
+    "s": "Il termine di consegna compare prima della conferma dell'offerta."
    },
    {
     "k": "Un termine, una definizione legale",
-    "v": "L’interesse di mora di cui all’articolo 104 CO non si traduce nella sentenza: CHnell mostra l’articolo nelle tre lingue ufficiali affiancate."
+    "v": "Gli interessi moratori dell'art. 104 CO non si traducono a occhio: CHnell mostra l'articolo nelle tre lingue ufficiali, una accanto all'altra."
    },
    {
-    "k": "Documento destinato al contraente",
-    "v": "Project Management ordina una revisione Light o Full da parte di un traduttore legale o una doppia revisione certificata quando il testo esce di casa."
+    "k": "Documento destinato alla controparte",
+    "v": "Da Gestione dei progetti ordinate una Light review o una Full review da parte di un traduttore giuridico, oppure una Double review e traduzione certificata quando il testo esce dall'azienda."
    },
    {
-    "k": "Negoziazione confidenziale",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione.",
+    "k": "Trattativa riservata",
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione.",
     "s": "Disponibile in tedesco, francese, italiano e inglese."
    },
    {
     "k": "Documento da allegare al contratto",
-    "v": "Quando una società firma, il contraente richiede spesso un estratto del registro di commercio: la versione certificata è ordinata online, compresa la notarizzazione e l’apostille."
+    "v": "Quando firma una società, la controparte chiede spesso un estratto del registro di commercio: la versione certificata si ordina in linea, autenticazione notarile e apostille comprese."
    }
   ],
   "termes": [
@@ -118,146 +118,146 @@
     "ref": "art. 253 CO"
    }
   ],
-  "termes_note": "Le equivalenze tedesca, francese e italiana sono quelle delle tre versioni ufficiali del Codice delle obbligazioni, all’articolo indicato; la colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, che non ha forza di legge.",
-  "lois_intro": "Il Codice delle obbligazioni contiene la maggior parte del vocabolario contrattuale svizzero. Ma un contratto ne cita altri non appena tocca la proprietà, il mancato pagamento o una parte stabilita all’estero.",
+  "termes_note": "Gli equivalenti tedesco, francese e italiano sono quelli delle tre versioni ufficiali del Codice delle obbligazioni, all'articolo indicato. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, che non ha forza di legge.",
+  "lois_intro": "Il Codice delle obbligazioni contiene gran parte del vocabolario contrattuale svizzero. Ma un contratto cita altri testi non appena tocca la proprietà, il mancato pagamento o una parte con sede all'estero.",
   "lois": [
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "Esso disciplina la formazione, l’esecuzione e l’estinzione dei contratti, come pure il diritto delle società; ORO in tedesco, CO in italiano."
+    "note": "Disciplina la conclusione, l'adempimento e l'estinzione dei contratti, nonché il diritto societario; OR in tedesco, CO in francese."
    },
    {
     "abbr": "CC",
     "nom": "Codice civile svizzero",
-    "note": "Esso stabilisce le nozioni di persona, di proprietà e di buona fede alle quali i contratti rinviano senza ridefinirle; ZGB in tedesco, CC in italiano."
+    "note": "Stabilisce le nozioni di persona, di proprietà e di buona fede a cui i contratti rinviano senza ridefinirle; ZGB in tedesco, CC in francese."
    },
    {
-    "abbr": "LP",
+    "abbr": "LEF",
     "nom": "Legge federale sulla esecuzione e sul fallimento",
-    "note": "Essa ordina quanto segue: un inadempimento, dal precetto esecutivo al fallimento; SchKG in tedesco; LEF in italiano."
+    "note": "Disciplina ciò che segue un mancato pagamento, dal precetto esecutivo al fallimento; SchKG in tedesco, LP in francese."
    },
    {
     "abbr": "LDIP",
     "nom": "Legge federale sul diritto internazionale privato",
-    "note": "Essa designa il diritto applicabile e il foro competente non appena una parte o una prestazione si trova all’estero; IPRG in tedesco, LDIP in italiano."
+    "note": "Designa il diritto applicabile e il foro competente non appena una parte o una prestazione si trova all'estero; IPRG in tedesco, LDIP in francese."
    }
   ],
   "who_titre": "Tre situazioni in cui la traduzione di un contratto si complica",
   "who": [
    {
     "a": "Locazione commerciale",
-    "t": "Locatore zurighese, Locatario romando",
-    "p": "La locazione è redatta in tedesco, la Regìa risponde in francese e le due parti citano gli stessi articoli del CO. La traduzione riprende la formulazione ufficiale di ogni nozione piuttosto che un equivalente approssimativo e il documento ritorna nel suo layout.",
+    "t": "Locatore zurighese, conduttore ticinese",
+    "p": "Il contratto è redatto in tedesco, l'amministrazione immobiliare risponde in italiano e le due parti citano gli stessi articoli del CO. La traduzione riprende la formulazione ufficiale di ogni nozione invece di un equivalente approssimativo, e il documento torna nella sua impaginazione.",
     "vis": "immeuble"
    },
    {
     "a": "Finanziamento",
-    "t": "Un contratto di mutuo da firmare domani mattina",
-    "p": "La versione machine parte la sera con LexMachina, la Full Review viene ordinata immediatamente e il termine viene visualizzato prima della convalida. Il mutuatario riceve un testo riprodotto da un traduttore giuridico, non una bozza da correggere.",
+    "t": "Un contratto di mutuo da firmare domattina",
+    "p": "La versione automatica parte la sera con LexMachina. La Full review si ordina subito dopo, e il termine di consegna compare prima della conferma. Il mutuatario riceve un testo rivisto da un traduttore giuridico, non una bozza da correggere.",
     "vis": "financement"
    },
    {
     "a": "Internazionale",
-    "t": "Diritto svizzero, negoziazione in inglese",
-    "p": "L’inglese delle parti non ha una versione ufficiale: ogni nozione deve ricollegarsi al termine tedesco, francese o italiano del CO. CHnell mostra l’articolo originale, la funzione alternative mostra fino a quattro formulazioni concorrenti e il giurista decide.",
+    "t": "Diritto svizzero, trattativa in inglese",
+    "p": "L'inglese delle parti non ha una versione ufficiale: ogni nozione va ricondotta al termine tedesco, francese o italiano del CO. CHnell mostra l'articolo di origine, la funzione Alternatives propone fino a quattro formulazioni diverse e il giurista decide.",
     "vis": "globe"
    }
   ],
   "faq_titre": "Domande frequenti sulla traduzione di contratti",
   "faq": [
    {
-    "q": "Perché non tradurre un contratto con uno strumento di consumo?",
-    "r": "Poiché il vocabolario contrattuale svizzero è fissato da un testo pubblicato in tre lingue e uno strumento generalista propone una traduzione plausibile piuttosto che la formulazione del Codice delle obbligazioni. A ciò si aggiunge la questione del luogo di trattamento: con Corrext, lo stoccaggio è sempre svizzero e il trattamento rimane in Svizzera con LexMachina o in modalità high sensitive content."
+    "q": "Perché non tradurre un contratto con uno strumento di traduzione generico?",
+    "r": "Perché il vocabolario contrattuale svizzero è fissato da un testo pubblicato in tre lingue, e uno strumento generico propone una traduzione plausibile anziché la formulazione del Codice delle obbligazioni. C'è poi la questione del luogo di trattamento: con Corrext l'archiviazione è sempre in Svizzera, e il trattamento resta in Svizzera con LexMachina o in modalità Highly sensitive content."
    },
    {
-    "q": "Il layout del contratto viene mantenuto?",
-    "r": "Sì, il documento ritorna nel suo formato originale con i suoi articoli, capoversi e allegati. L’applicazione raccomanda di depositare il file nativo, Word o Excel, invece di un PDF quando è disponibile. Per un contratto scansionato, la scheda PDF to Word produce dapprima un documento pubblicabile."
+    "q": "L'impaginazione del contratto viene conservata?",
+    "r": "Sì, il documento torna nel suo formato originale, con articoli, capoversi e allegati. Quando è disponibile, l'applicazione consiglia di caricare il file nativo, Word o Excel, anziché un PDF. Per un contratto scansionato, la scheda PDF to Word produce prima un documento modificabile."
    },
    {
-    "q": "Chi rilegge un contratto prima della firma?",
-    "r": "Un traduttore legale, in Light Review per un controllo di coerenza o in Full Review per una verifica online. Per un documento che impegna la società di fronte a un terzo, la doppia review mobilita due traduttori e un’agenzia specializzata, con certificato. Il livello viene scelto documento per documento."
+    "q": "Chi rivede un contratto prima della firma?",
+    "r": "Un traduttore giuridico: in Light review per un controllo di coerenza, in Full review per una verifica riga per riga. Per un documento che impegna la società verso terzi, la Double review e traduzione certificata coinvolge due traduttori e un'agenzia specializzata, che rilascia un'attestazione. Il livello si sceglie documento per documento."
    },
    {
-    "q": "I miei contratti servono ad azionare un motore?",
-    "r": "No. I contenuti dei clienti non servono ad azionare i motori. I progetti confidenziali standard possono alimentare una memoria di traduzione riutilizzabile esclusivamente dalla vostra organizzazione; i progetti in modalità «high sensitive content» non vengono mai riutilizzati nemmeno internamente."
+    "q": "I miei contratti servono ad addestrare un motore di traduzione?",
+    "r": "No. I contenuti dei clienti non servono ad addestrare i motori. I progetti con la riservatezza Standard possono alimentare una memoria di traduzione riutilizzabile solo dalla vostra organizzazione; i progetti in modalità Highly sensitive content non vengono mai riutilizzati, neppure internamente."
    },
    {
-    "q": "Come si può mantenere lo stesso termine da una clausola addizionale all’altra?",
-    "r": "Verificando il termine scelto la prima volta. Una parola evidenziata apre Fast Lookup CHnell su questa parola nel contesto, con la sua fonte ufficiale, e il concordante accetta le proprie risorse terminologiche oltre ai 30 settori già coperti. I progetti di confidenzialità standard forniscono inoltre una memoria di traduzione riutilizzabile dalla vostra unica organizzazione."
+    "q": "Come mantenere lo stesso termine da un'aggiunta all'altra?",
+    "r": "Verificando il termine scelto la prima volta. Una parola evidenziata apre Fast lookup CHnell su quella parola nel suo contesto, con la fonte ufficiale, e il concordanziere accetta le vostre risorse terminologiche oltre ai 30 settori già coperti. I progetti con la riservatezza Standard alimentano inoltre una memoria di traduzione riutilizzabile solo dalla vostra organizzazione."
    },
    {
-    "q": "Posso tradurre un estratto contratto senza depositare un file?",
-    "r": "Sì. La traduzione di testi di traduzione testo e documento accetta fino a 10’000 caratteri incollati direttamente, con la scelta del motore e fino a quattro alternative di formulazione. Questo è il gesto adatto a una singola clausola durante la negoziazione. Il risultato si copia direttamente nel documento in fase di redazione."
+    "q": "Posso tradurre un passaggio di contratto senza caricare un file?",
+    "r": "Sì. In Traduzione di testi e documenti, la traduzione di testo accetta fino a 10'000 caratteri incollati direttamente, con la scelta del motore e fino a quattro formulazioni alternative. È la soluzione adatta a una singola clausola durante una trattativa. Il risultato si copia direttamente nel documento in redazione."
    }
   ],
-  "cta_t": "Vedi Corrext su uno dei tuoi contratti",
-  "cta_p": "Una dimostrazione sulle proprie clausole, con uno specialista del diritto svizzero.",
+  "cta_t": "Vedete Corrext all'opera su un vostro contratto",
+  "cta_p": "Una dimostrazione sulle vostre clausole, con uno specialista del diritto svizzero.",
   "voisins": [
    "droit-des-societes",
    "droit-du-travail",
    "contentieux-arbitrage"
   ],
-  "facts_titre": "Concretamente tradurre un contratto",
+  "facts_titre": "Tradurre un contratto, in concreto",
   "termes_titre": "Il vocabolario dei contratti nelle quattro lingue",
-  "lois_titre": "I testi che un contratto cita quotidianamente"
+  "lois_titre": "I testi che un contratto cita ogni giorno"
  },
  {
   "slug": "droit-des-societes",
   "short": "Diritto societario",
-  "resume": "Statuto, verbali, estratti del registro: il vocabolario delle società.",
-  "title": "Traduzione in diritto societario svizzero DI FR IT · Neur.on",
-  "description": "Statuto, convocazioni, verbali d’assemblea, estratti del registro di commercio: la terminologia del diritto societario svizzero in quattro lingue.",
+  "resume": "Statuto, verbali, estratti del registro di commercio: il vocabolario delle società.",
+  "title": "Traduzione statuto di società e atti societari · Neur.on",
+  "description": "Statuto, convocazioni, verbali dell'assemblea generale, estratti del registro di commercio: la terminologia del diritto societario svizzero in quattro lingue.",
   "lede": "Diritto societario.",
-  "h1": "Statuto e verbali tradotti",
-  "lead": "Statuto depositato in tedesco, verbale tenuto in francese, estratto del registro richiesto in italiano: una società svizzera vive in più lingue. Corrext utilizza i termini del Codice delle obbligazioni stesso.",
+  "h1": "Statuto e verbali di una società, tradotti",
+  "lead": "Statuto depositato in tedesco, verbali tenuti in francese, estratto del registro richiesto in italiano: una società svizzera vive in più lingue. Corrext usa i termini del Codice delle obbligazioni stesso.",
   "promesses": [
    {
     "t": "Termini del registro",
-    "d": "Verwaltungsrat, Handelsregister, statuten e loro equivalenti ufficiali"
+    "d": "Verwaltungsrat, Handelsregister, Statuten e i loro equivalenti ufficiali"
    },
    {
     "t": "Documenti ricorrenti",
-    "d": "lo statuto da un anno all’altro arricchisce la memoria di traduzione"
+    "d": "lo statuto, da un anno all'altro, alimenta la vostra memoria di traduzione"
    },
    {
     "t": "Estratto certificato",
-    "d": "registro di commercio, con annotazione e apostille, ordinato online"
+    "d": "registro di commercio, con autenticazione notarile e apostille, ordinato in linea"
    }
   ],
-  "facts_titre": "Concretamente tradurre gli atti di una società",
-  "definition": "Tradurre nel diritto societario significa trasporre gli atti che descrivono la vita di una persona giuridica: statuto, regolamenti organizzativi, convocazioni, processi verbali, iscrizioni nel registro di commercio. Gli organi e le forme giuridiche portano un nome preciso in ciascuna delle tre lingue ufficiali e questo nome è quello che figura nel registro, non una traduzione libera.",
+  "facts_titre": "Tradurre gli atti di una società, in concreto",
+  "definition": "Tradurre nel diritto societario significa trasporre gli atti che descrivono la vita di una persona giuridica: statuto, regolamento d'organizzazione, convocazioni, verbali, iscrizioni nel registro di commercio. Gli organi e le forme giuridiche hanno un nome preciso in ciascuna delle tre lingue ufficiali. Quel nome è quello iscritto nel registro, non una traduzione libera.",
   "facts": [
    {
     "k": "Statuto",
-    "v": "Lo statuto riprende quasi letteralmente gli articoli del CO: la traduzione riprende la formulazione ufficiale di ogni nozione, dallo scopo sociale al capitale azionario."
+    "v": "Lo statuto riprende quasi alla lettera gli articoli del CO: la traduzione adotta la formulazione ufficiale di ogni nozione, dallo scopo della società al capitale azionario."
    },
    {
     "k": "Convocazione e ordine del giorno",
-    "v": "Una convocazione si svolge spesso lo stesso giorno in due lingue. La traduzione di testi di traduzione testi e documenti accetta fino a 10’000 caratteri incollati, senza passare per un file."
+    "v": "Una convocazione parte spesso lo stesso giorno in due lingue. In Traduzione di testi e documenti, la traduzione di testo accetta fino a 10'000 caratteri incollati, senza passare da un file."
    },
    {
-    "k": "Processi verbali",
-    "v": "Le deliberazioni dell’assemblea generale e del Consiglio d’amministrazione si traducono nel loro layout, con le maggioranze e le menzioni del quorum al loro posto."
+    "k": "Verbali",
+    "v": "Le deliberazioni dell'assemblea generale e le decisioni del consiglio d'amministrazione si traducono nella loro impaginazione, con maggioranze e quorum al loro posto."
    },
    {
     "k": "Iscrizione nel registro",
-    "v": "L’ufficio del registro di commercio lavora nella lingua ufficiale del Cantone: la versione depositata deve utilizzare i termini del registro, non i loro sinonimi."
+    "v": "L'ufficio del registro di commercio lavora nella lingua ufficiale del Cantone: la versione depositata deve usare i termini del registro, non i loro sinonimi."
    },
    {
     "k": "Estratto certificato",
-    "v": "L’estratto del registro di commercio può essere ordinato online con tre livelli di certificazione, fino alla notarizzazione e all’apostille per l’uso all’estero."
+    "v": "L'estratto del registro di commercio si ordina in linea con tre livelli di certificazione, fino all'autenticazione notarile e all'apostille per l'uso all'estero."
    },
    {
-    "k": "Terminologia sorpassata",
-    "v": "Fast Lookup CHnell copre 30 settori, tra cui Company Law e Articles of Association, con la fonte ufficiale di ogni evento."
+    "k": "Terminologia con fonti",
+    "v": "Fast lookup CHnell copre 30 settori, tra cui Company Law e Articles of Association, con la fonte ufficiale di ogni occorrenza."
    },
    {
     "k": "Documenti ripetitivi",
-    "v": "Statuti, regolamenti e procure cambiano raramente da un anno all’altro: in confidenzialità standard, la memoria di traduzione rende questi aggiornamenti molto più rapidi."
+    "v": "Statuto, regolamenti e procure cambiano poco da un anno all'altro: con la riservatezza Standard, la memoria di traduzione rende questi aggiornamenti molto più rapidi."
    },
    {
     "k": "Società collegate",
-    "v": "Lo stesso termine deve rimanere identico nello statuto di ogni filiale: il concordante accetta le proprie risorse terminologiche, condivise tra i propri team."
+    "v": "Uno stesso termine deve restare identico nello statuto di ogni filiale: il concordanziere accetta le vostre risorse terminologiche, condivise tra i vostri team."
    }
   ],
   "termes_titre": "Il vocabolario delle società nelle quattro lingue",
@@ -319,81 +319,81 @@
     "ref": "art. 927 CO"
    }
   ],
-  "termes_note": "Queste equivalenze sono quelle delle versioni tedesca, francese e italiana del Codice delle obbligazioni: sono anche i testi utilizzati dagli uffici del registro di commercio, il che li rende verificabili per atto. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi citati quotidianamente negli atti di società",
-  "lois_intro": "Il diritto societario svizzero è sancito nel Codice delle obbligazioni, completato dall’ordinanza che organizza il registro di commercio. Altri due testi entrano in gioco non appena una struttura cambia forma o una fondazione è in causa.",
+  "termes_note": "Questi equivalenti sono quelli delle versioni tedesca, francese e italiana del Codice delle obbligazioni. Sono anche le diciture usate dagli uffici del registro di commercio, e quindi si verificano atto per atto. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che gli atti societari citano ogni giorno",
+  "lois_intro": "Il diritto societario svizzero sta nel Codice delle obbligazioni, completato dall'ordinanza che organizza il registro di commercio. Altri due testi entrano in gioco quando una società cambia forma giuridica o quando è coinvolta una fondazione.",
   "lois": [
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "I suoi titoli 23-32 disciplinano la società semplice, la società in nome collettivo, la SA, la Sagl, la cooperativa, il registro di commercio, le ditte e la contabilità; ORO in tedesco, CO in italiano."
+    "note": "I titoli 23-32 disciplinano la società semplice, la società in nome collettivo, la società anonima, la società a garanzia limitata, la società cooperativa, il registro di commercio, le ditte commerciali e la contabilità commerciale; OR in tedesco, CO in francese."
    },
    {
     "abbr": "ORC",
     "nom": "Ordinanza sul registro di commercio",
-    "note": "Essa stabilisce il contenuto delle iscrizioni, delle notificazioni e degli estratti; HRegV in tedesco."
+    "note": "Stabilisce il contenuto delle iscrizioni, delle notificazioni e degli estratti; HRegV in tedesco, ORC in francese."
    },
    {
     "abbr": "LFus",
     "nom": "Legge federale sulla fusione, la scissione, la trasformazione e il trasferimento di patrimonio",
-    "note": "Essa disciplina qualsiasi cambiamento di struttura di una società o di una fondazione; FusG in tedesco."
+    "note": "Disciplina ogni cambiamento di struttura di una società o di una fondazione; FusG in tedesco, LFus in francese."
    },
    {
     "abbr": "CC",
     "nom": "Codice civile svizzero",
-    "note": "Esso disciplina le associazioni e le fondazioni, che il Codice delle obbligazioni non copre; ZGB in tedesco, CC in italiano."
+    "note": "Disciplina le associazioni e le fondazioni, che il Codice delle obbligazioni non copre; ZGB in tedesco, CC in francese."
    }
   ],
-  "who_titre": "Tre momenti della vita sociale che passano attraverso la traduzione",
+  "who_titre": "Tre momenti della vita di una società che passano dalla traduzione",
   "who": [
    {
     "a": "Costituzione",
-    "t": "Dello statuto nella lingua del Cantone",
-    "p": "Il fondatore redige in inglese, l’ufficio del registro attende il tedesco o il francese. La traduzione riprende le denominazioni del CO e ogni termine sospetto si verifica nel contesto di CHnell prima del deposito.",
+    "t": "Uno statuto nella lingua del Cantone",
+    "p": "Il fondatore scrive in inglese, l'ufficio del registro si aspetta la lingua ufficiale del Cantone. La traduzione riprende le diciture del CO, e ogni termine dubbio si verifica nel contesto in CHnell prima del deposito.",
     "vis": "societe"
    },
    {
     "a": "Assemblea generale",
     "t": "Il verbale da diffondere",
-    "p": "Il verbale è tenuto in una lingua e letto in tre. Il documento ritorna nel suo layout, con le menzioni del quorum e della maggioranza, e una light review è sufficiente nella maggior parte dei casi per una diffusione interna.",
+    "p": "Il verbale è tenuto in una lingua e letto in tre. Il documento torna nella sua impaginazione, con quorum e maggioranze al loro posto, e per una diffusione interna basta di solito una Light review.",
     "vis": "equipe"
    },
    {
-    "a": "Governance",
-    "t": "Regolamento per le filiali",
-    "p": "Lo stesso regolamento si applica a entità alemaniche, romande e ticinesi. Le risorse terminologiche condivise di CHnell mantengono un vocabolario identico da una versione all’altra, anno dopo anno.",
+    "a": "Governo societario",
+    "t": "Un regolamento per le filiali",
+    "p": "Lo stesso regolamento vale per filiali nella Svizzera tedesca, nella Svizzera romanda e in Ticino. Le risorse terminologiche condivise di CHnell mantengono lo stesso vocabolario da una versione all'altra, anno dopo anno.",
     "vis": "reseau"
    }
   ],
   "faq_titre": "Domande frequenti sui documenti societari",
   "faq": [
    {
-    "q": "Lo statuto deve essere tradotto nelle tre lingue ufficiali?",
-    "r": "La legge non impone le tre versioni: l’iscrizione avviene in una lingua ufficiale del Cantone. Le società che hanno azionisti o filiali in più regioni linguistiche diffondono invece una traduzione del lavoro, la quale deve utilizzare esattamente i testi del registro."
+    "q": "Lo statuto va tradotto nelle tre lingue ufficiali?",
+    "r": "La legge non impone le tre versioni: l'iscrizione avviene in una lingua ufficiale del Cantone. Le società con azionisti o filiali in più regioni linguistiche diffondono però una traduzione di lavoro, ed è questa che deve usare esattamente le diciture del registro."
    },
    {
-    "q": "Come ottenere un estratto del registro di commercio certificato?",
-    "r": "Si ordina online dalla piattaforma, con tre livelli di certificazione secondo l’uso previsto: estratto semplice, estratto autenticato, quindi notarizzazione e apostille per una produzione all’estero. L’ordine segue lo stesso circuito dei vostri progetti di traduzione."
+    "q": "Come ottenere un estratto certificato del registro di commercio?",
+    "r": "Si ordina in linea dalla piattaforma, con tre livelli di certificazione secondo l'uso previsto: estratto semplice, estratto certificato conforme, poi autenticazione notarile e apostille per l'uso all'estero. L'ordinazione segue lo stesso percorso dei vostri progetti di traduzione."
    },
    {
-    "q": "Un verbale confidenziale può essere tradotto senza rischi?",
-    "r": "Sì, a condizione di scegliere la moda giusta. Lo stoccaggio è sempre svizzero; la modalità «high sensitive content» impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in memoria di traduzione. I motori ospitati all’estero attivano un avvertimento prima di ogni invio."
+    "q": "Si può tradurre un verbale riservato senza rischi?",
+    "r": "Sì, a condizione di scegliere la modalità giusta. L'archiviazione è sempre in Svizzera; la modalità Highly sensitive content impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione. I motori ospitati all'estero fanno comparire un avviso prima di ogni invio."
    },
    {
-    "q": "Come mantenere lo stesso vocabolario da un anno all’altro?",
-    "r": "Dalla memoria di traduzione e dal concordato. In confidenzialità standard, un progetto alimenta una memoria riutilizzabile dalla vostra sola organizzazione e Fast Lookup CHnell accetta le vostre risorse terminologiche in aggiunta ai suoi 30 settori sorteggiati. Le risorse possono essere suddivise tra i team, evitando così che una filiale utilizzi un’etichetta diversa."
+    "q": "Come mantenere lo stesso vocabolario da un anno all'altro?",
+    "r": "Con la memoria di traduzione e con il concordanziere. Con la riservatezza Standard, un progetto alimenta una memoria riutilizzabile solo dalla vostra organizzazione, e Fast lookup CHnell accetta le vostre risorse terminologiche oltre ai suoi 30 settori con fonti. Le risorse si possono condividere tra i vostri team: così nessuna filiale usa una dicitura diversa."
    },
    {
     "q": "Quali lingue sono coperte per i documenti societari?",
-    "r": "Il tedesco, il francese, l’italiano e l’inglese sono nativi in tutte le coppie e la piattaforma copre complessivamente 30 lingue. Ciò è utile se un azionista estero chiede una versione di lavoro dello statuto o di un verbale. Le quattro lingue native coprono tutte le regioni linguistiche svizzere."
+    "r": "Tedesco, francese, italiano e inglese sono lingue native, in tutte le combinazioni, e la piattaforma copre 30 lingue in totale. È utile quando un azionista estero chiede una versione di lavoro dello statuto o di un verbale. Le quattro lingue native coprono tutte le regioni linguistiche svizzere."
    },
    {
-    "q": "Posso far rileggere dai miei giuristi?",
-    "r": "Sì. La modalità Internal Review del tunnel progetto organizza la rilettura da parte dei vostri team e cifra il tempo necessario a partire dal numero di pagine standard rilevato nei file depositati. La rivisitazione esterna da parte di un traduttore giuridico rimane disponibile parallelamente."
+    "q": "Posso far rivedere la traduzione dai nostri giuristi?",
+    "r": "Sì. La modalità Internal review, nel percorso di creazione del progetto, organizza la revisione da parte dei vostri team e calcola il tempo necessario in base al numero di pagine standard rilevato nei file caricati. La revisione esterna da parte di un traduttore giuridico resta disponibile in parallelo."
    }
   ],
-  "cta_t": "I suoi statuti e verbali, in Corrext",
-  "cta_p": "Una dimostrazione sui propri atti, con la terminologia del registro.",
+  "cta_t": "Il vostro statuto e i vostri verbali, in Corrext",
+  "cta_p": "Una dimostrazione sui vostri atti, con la terminologia del registro.",
   "voisins": [
    "fusions-acquisitions",
    "contrats",
@@ -403,62 +403,62 @@
  {
   "slug": "fusions-acquisitions",
   "short": "Fusioni e acquisizioni",
-  "resume": "Data room, contratto di fusione, closing: traduzioni rapide e senza perdite.",
-  "title": "Traduzioni per fusioni e acquisizioni in Svizzera · Neur.on",
-  "description": "Data room, due diligence, contratto di fusione, closing: tradurre migliaia di pagine senza lasciare la Svizzera, terminologia LFus.",
+  "resume": "Data room, contratto di fusione, closing: tradurre in fretta, senza fughe di informazioni.",
+  "title": "Traduzione M&A: fusioni e acquisizioni in Svizzera · Neur.on",
+  "description": "Data room, due diligence, contratto di fusione, closing: tradurre migliaia di pagine senza che l'operazione lasci la Svizzera, con la terminologia della LFus.",
   "lede": "Fusioni e acquisizioni.",
-  "h1": "Leggere la data room prima del closing",
-  "lead": "Una data room unisce contratti, conti, locazioni e verbali in due o tre lingue. Bisogna leggere rapidamente, poi restituire alla parola qualche documento impegnativo. Corrext separa questi due gesti, in Svizzera.",
+  "h1": "M&A: leggere la data room prima del closing",
+  "lead": "Una data room mescola contratti, conti, locazioni e verbali in due o tre lingue. Bisogna leggere in fretta, poi rendere alla lettera alcuni documenti vincolanti. Corrext tiene separate queste due fasi, in Svizzera.",
   "promesses": [
    {
     "t": "Volume",
     "d": "fino a 25 file da 50 MB per invio, formato originale conservato"
    },
    {
-    "t": "Discrezione",
-    "d": "modalità «High sensitive content»: stoccaggio ed elaborazione esclusivamente in Svizzera"
+    "t": "Riservatezza",
+    "d": "modalità Highly sensitive content: archiviazione e trattamento esclusivamente in Svizzera"
    },
    {
     "t": "Terminologia della LFus",
     "d": "fusione, scissione, trasformazione, trasferimento di patrimonio"
    }
   ],
-  "facts_titre": "Concretamente tradurre una transazione",
-  "definition": "Tradurre un’operazione di fusione o di acquisizione significa trattare due corpus molto diversi: migliaia di pagine di due diligence da comprendere rapidamente e una manciata di atti che vincolano le parti, dal contratto di fusione alle deliberazioni di assemblea. Il vocabolario deriva dalla legge sulla fusione e dal Codice delle obbligazioni nelle tre versioni ufficiali.",
+  "facts_titre": "Tradurre un'operazione, in concreto",
+  "definition": "Tradurre un'operazione di fusione o di acquisizione significa trattare due insiemi di documenti molto diversi: migliaia di pagine di due diligence da capire in fretta, e pochi atti che vincolano le parti, dal contratto di fusione alla decisione di fusione dell'assemblea generale. Il vocabolario viene dalla legge sulla fusione e dal Codice delle obbligazioni, nelle loro tre versioni ufficiali.",
   "facts": [
    {
     "k": "Data room",
-    "v": "Il lotto parte in file Translation e torna nel formato originale: il team legge invece di decifrare, senza copiare e incollare documenti in documenti.",
-    "s": "Fino a 25 file da 50 MB per invio, formati. pdf. doc. docx. xls. xlsx. ppt. pptx."
+    "v": "Il lotto parte in File translation e torna nel formato originale: il team legge invece di decifrare, senza copiare e incollare da un documento all'altro.",
+    "s": "Fino a 25 file da 50 MB per invio, formati .pdf .doc .docx .xls .xlsx .ppt .pptx."
    },
    {
-    "k": "Parti scansionate",
-    "v": "Parte dei contratti di una data room esiste solo in PDF scansionato: la scheda PDF to Word produce un documento modificabile prima della traduzione o dell’annotazione."
+    "k": "Documenti scansionati",
+    "v": "Una parte dei contratti di una data room esiste solo in PDF scansionato: la scheda PDF to Word produce un documento modificabile prima della traduzione o delle annotazioni."
    },
    {
     "k": "Rapporto di due diligence",
-    "v": "Il rapporto è redatto in una lingua e letto in un’altra dal comitato per gli investimenti: la Light Review è sufficiente per un documento interno."
+    "v": "Il rapporto si redige in una lingua e il comitato d'investimento lo legge in un'altra: per un documento interno basta la Light review."
    },
    {
     "k": "Contratto di fusione",
-    "v": "L’atto che vincola le parti passa in Full Review o in doppia Review certificata, con il termine indicato prima della convalida del preventivo."
+    "v": "L'atto che vincola le parti passa in Full review o in Double review e traduzione certificata, con il termine di consegna indicato prima della conferma dell'offerta."
    },
    {
-    "k": "Decisioni sociali",
-    "v": "Decisione di fusione, rapporto dell’ufficio di revisione e iscrizioni nel registro fondano i testi della LFus e del CO, non i loro sinonimi."
+    "k": "Decisioni societarie",
+    "v": "Decisione di fusione, rapporto dell'ufficio di revisione e iscrizioni nel registro usano le diciture della LFus e del CO, non i loro sinonimi."
    },
    {
-    "k": "Notifica alla concorrenza",
-    "v": "Una concentrazione soggetta a notifica è descritta nella lingua dell’autorità adita con il vocabolario della legge sui cartelli."
+    "k": "Notificazione di una concentrazione",
+    "v": "Una concentrazione soggetta a notificazione si descrive nella lingua dell'autorità adita, con il vocabolario della legge sui cartelli."
    },
    {
-    "k": "Riservatezza dell’operazione",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione.",
+    "k": "Riservatezza dell'operazione",
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione.",
     "s": "Disponibile in tedesco, francese, italiano e inglese."
    },
    {
-    "k": "Terminologia sorpassata",
-    "v": "Fast Lookup CHnell copre i domini M &amp; A e Company Law, con l’articolo o la pubblicazione originale in relazione a ciascuna occorrenza."
+    "k": "Terminologia con fonti",
+    "v": "Fast lookup CHnell copre i settori M&A e Company Law, con l'articolo o la pubblicazione di origine accanto a ogni occorrenza."
    }
   ],
   "termes_titre": "Il vocabolario delle ristrutturazioni nelle quattro lingue",
@@ -520,81 +520,81 @@
     "ref": "art. 4 LCart"
    }
   ],
-  "termes_note": "Le quattro operazioni di ristrutturazione portano un nome legale preciso nelle tre versioni ufficiali della legge sulla fusione: confonderli in una traduzione cambia la natura dell’atto descritto. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che una transazione cita quotidianamente",
-  "lois_intro": "Una transazione svizzera avviene in primo luogo con la legge sulla fusione e il Codice delle obbligazioni. Il diritto della concorrenza e il diritto internazionale privato vi si aggiungono non appena l’operazione supera determinati valori soglia o determinate frontiere.",
+  "termes_note": "Le quattro operazioni di ristrutturazione hanno un nome legale preciso nelle tre versioni ufficiali della legge sulla fusione: confonderle in una traduzione cambia la natura dell'atto descritto. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un'operazione cita ogni giorno",
+  "lois_intro": "Un'operazione svizzera si scrive anzitutto con la legge sulla fusione e il Codice delle obbligazioni. Il diritto della concorrenza e il diritto internazionale privato si aggiungono quando l'operazione supera certe soglie o certi confini.",
   "lois": [
    {
     "abbr": "LFus",
     "nom": "Legge federale sulla fusione, la scissione, la trasformazione e il trasferimento di patrimonio",
-    "note": "Essa definisce le quattro operazioni di ristrutturazione, i loro documenti obbligatori e le loro maggioranze; FusG in tedesco."
+    "note": "Definisce le quattro operazioni di ristrutturazione, i documenti obbligatori e le maggioranze richieste; FusG in tedesco, LFus in francese."
    },
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "Esso disciplina il contratto d’acquisto, gli organi decisionali e le iscrizioni nel registro di commercio; ORO in tedesco, CO in italiano."
+    "note": "Disciplina il contratto di acquisizione, gli organi che decidono e le iscrizioni nel registro di commercio; OR in tedesco, CO in francese."
    },
    {
     "abbr": "LCart",
-    "nom": "Legge federale sui cartelli e altre restrizioni della concorrenza",
-    "note": "Essa sottopone a notifica le concentrazioni di imprese che superano determinati valori soglia; KG in tedesco."
+    "nom": "Legge federale sui cartelli e altre limitazioni della concorrenza",
+    "note": "Sottopone a notificazione le concentrazioni di imprese che superano determinate soglie; KG in tedesco, LCart in francese."
    },
    {
     "abbr": "LDIP",
     "nom": "Legge federale sul diritto internazionale privato",
-    "note": "Essa disciplina le fusioni e i trasferimenti che coinvolgono una società estera; IPRG in tedesco, LDIP in italiano."
+    "note": "Disciplina le fusioni e i trasferimenti che coinvolgono una società estera; IPRG in tedesco, LDIP in francese."
    }
   ],
-  "who_titre": "Tre fasi di una transazione in cui il tempo si guadagna",
+  "who_titre": "Tre fasi di un'operazione in cui si guadagna tempo",
   "who": [
    {
     "a": "Due diligence",
     "t": "Una data room da leggere in fretta",
-    "p": "I lotti partono in file Translation con LexMachina e in modalità high sensitive content. I documenti ritornano nel loro formato originale e il team individua le clausole sensibili invece di passare le notti a decifrare.",
+    "p": "I lotti partono in File translation con LexMachina e la modalità Highly sensitive content. I documenti tornano nel formato originale, e il team individua le clausole sensibili invece di passare le notti a decifrare.",
     "vis": "loupe"
    },
    {
-    "a": "Negoziazione",
+    "a": "Trattativa",
     "t": "Un contratto che cambia tre volte al giorno",
-    "p": "Ogni versione riprende il vocabolario della precedente. La memoria di traduzione evita di tradurre ciò che non si è mosso e un termine evidenziato si apre nel contesto di CHnell con la sua fonte ufficiale.",
+    "p": "Ogni versione riprende il vocabolario della precedente. La memoria di traduzione evita di ritradurre ciò che non è cambiato, e un termine evidenziato si apre nel contesto in CHnell, con la sua fonte ufficiale.",
     "vis": "echange"
    },
    {
     "a": "Closing",
     "t": "Atti da depositare nel registro",
-    "p": "Decisione di fusione, contratto, rapporto dell’ufficio di revisione: questi documenti passano in Full Review o in Double Review certificata, poi l’estratto del registro si ordina online con il livello di certificazione richiesto.",
+    "p": "Decisione di fusione, contratto, rapporto dell'ufficio di revisione: questi documenti passano in Full review o in Double review e traduzione certificata. Poi l'estratto del registro si ordina in linea, con il livello di certificazione richiesto.",
     "vis": "signature"
    }
   ],
-  "faq_titre": "Domande frequenti sulla traduzione in M &amp; A",
+  "faq_titre": "Domande frequenti sulla traduzione nelle operazioni di M&A",
   "faq": [
    {
-    "q": "È possibile tradurre una data room senza lasciare la Svizzera?",
-    "r": "Sì. Lo stoccaggio avviene in ogni caso su server svizzeri e il trattamento rimane in Svizzera con LexMachina o in modalità high sensitive content. Se un collaboratore sceglie un motore ospitato all’estero, l’avviso Attorney-Cliente privilege viene visualizzato prima dell’invio e ricorda che è necessaria una pseudonimizzazione preliminare."
+    "q": "Si può tradurre una data room senza che i documenti lascino la Svizzera?",
+    "r": "Sì. L'archiviazione avviene sempre su server svizzeri, e il trattamento resta in Svizzera con LexMachina o in modalità Highly sensitive content. Se un collaboratore sceglie un motore ospitato all'estero, prima dell'invio compare l'avviso Attorney-Client privilege, che ricorda la necessità di una pseudonimizzazione preliminare."
    },
    {
-    "q": "Quanti documenti posso inviare in una volta?",
-    "r": "Fino a 25 file da 50 MB ciascuno per invio in traduzione testo e documento, nei formati. pdf,. doc,. docx,. xls,. xlsx,. ppt e. pptx. Per un lotto più grande, per un follow-up in lotti o per una rilettura umana, la porta d’ingresso giusta è la gestione del progetto."
+    "q": "Quanti documenti si possono inviare in una volta?",
+    "r": "Fino a 25 file da 50 MB ciascuno per invio in Traduzione di testi e documenti, nei formati .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. Per un lotto più grande, per seguire i lotti o per una revisione da parte di specialisti, il punto di partenza giusto è Gestione dei progetti."
    },
    {
-    "q": "Tutti i documenti di una transazione meritano una rilettura umana?",
-    "r": "No, è tutto nell’interesse di separare i due gesti. I documenti letti per comprendere passano in traduzione automatica. Gli atti che vincolano le parti, il contratto di fusione e le decisioni sociali in testa, passano in Full Review o in Double Review certificata, scelte documento per documento."
+    "q": "Tutti i documenti di un'operazione meritano una revisione da parte di specialisti?",
+    "r": "No, ed è proprio il vantaggio di separare le due fasi. I documenti letti per capire passano in traduzione automatica. Gli atti che vincolano le parti, a cominciare dal contratto e dalla decisione di fusione, passano in Full review o in Double review e traduzione certificata, scelte documento per documento."
    },
    {
-    "q": "I documenti dell’operazione forniscono una base comune?",
-    "r": "I progetti di confidenzialità standard possono alimentare una memoria di traduzione riutilizzabile esclusivamente dalla vostra organizzazione. I progetti in modalità «high sensitive content» non vengono mai riutilizzati in memoria, il che è indicato per operazioni ancora confidenziali. La scelta del modo avviene progetto per progetto, al momento della creazione."
+    "q": "I documenti dell'operazione alimentano una banca dati condivisa?",
+    "r": "I progetti con la riservatezza Standard possono alimentare una memoria di traduzione riutilizzabile solo dalla vostra organizzazione. I progetti in modalità Highly sensitive content non vengono mai riutilizzati nella memoria: è la scelta adatta alle operazioni ancora riservate. La modalità si sceglie progetto per progetto, al momento della creazione."
    },
    {
     "q": "Come tradurre il vocabolario della ristrutturazione?",
-    "r": "Riprendendo i termini della legge sulla fusione, che distingue quattro operazioni: fusione, scissione, trasformazione e trasferimento di patrimonio. Ciascuna ha un nome ufficiale in tedesco, francese e italiano, consultabile nel contesto nel Fast Lookup CHnell con il suo riferimento."
+    "r": "Riprendendo i termini della legge sulla fusione, che distingue quattro operazioni: fusione, scissione, trasformazione e trasferimento di patrimonio. Ognuna ha un nome ufficiale in tedesco, francese e italiano, che potete consultare nel contesto in Fast lookup CHnell, con il suo riferimento."
    },
    {
-    "q": "E per i documenti redatti in una lingua più rara?",
-    "r": "La piattaforma copre 30 lingue, con tedesco, francese, italiano e inglese nativo in tutte le coppie. Una filiale estera i cui contratti sono redatti in un’altra lingua rimane quindi leggibile per il team di transazione. I documenti ritornano nel loro formato originale, indipendentemente dalla lingua di partenza."
+    "q": "E per i documenti redatti in una lingua meno diffusa?",
+    "r": "La piattaforma copre 30 lingue, con tedesco, francese, italiano e inglese come lingue native in tutte le combinazioni. Una filiale estera con contratti redatti in un'altra lingua resta quindi leggibile per il team dell'operazione. I documenti tornano nel formato originale, qualunque sia la lingua di partenza."
    }
   ],
-  "cta_t": "Prova Corrext su una data room dimostrativa",
-  "cta_p": "Uno specialista vi mostra il circuito completo, dalla due diligence al closing.",
+  "cta_t": "Provate Corrext su una data room di prova",
+  "cta_p": "Uno specialista vi mostra il percorso completo, dalla due diligence al closing.",
   "voisins": [
    "droit-des-societes",
    "rapports-annuels-financiers",
@@ -604,64 +604,64 @@
  {
   "slug": "contentieux-arbitrage",
   "short": "Contenzioso e arbitrato",
-  "resume": "Memorie, documenti, lodi: tradurre ciò che sarà letto da un giudice.",
-  "title": "Traduzioni legali per contenzioso e arbitrato · Neur.on",
-  "description": "Memorie, distinte di documenti, lodi arbitrali, ricorso al Tribunale federale: tradurre con la terminologia del CPC e della LDIP in Svizzera.",
+  "resume": "Atti scritti, documenti, lodi: tradurre ciò che leggerà un giudice.",
+  "title": "Traduzione per arbitrato e contenzioso in Svizzera · Neur.on",
+  "description": "Atto scritto, elenco dei mezzi di prova, lodo arbitrale, ricorso al Tribunale federale: tradurre con la terminologia svizzera del CPC e della LDIP.",
   "lede": "Contenzioso e arbitrato.",
-  "h1": "Cosa leggerà un giudice o un arbitro",
-  "lead": "Una procedura svizzera si svolge nella lingua del foro, ma gli atti giungono in tutte le lingue. Bisogna capirlo rapidamente e poi produrre traduzioni citabili. Corrext fa entrambe le cose in Svizzera.",
+  "h1": "Ciò che leggerà un giudice o un arbitro",
+  "lead": "Un procedimento svizzero si svolge nella lingua del foro, ma i documenti arrivano in tutte le lingue. Bisogna capire in fretta, poi produrre traduzioni citabili. Corrext fa entrambe le cose, in Svizzera.",
   "promesses": [
    {
-    "t": "Volume di pezzi",
-    "d": "fino a 25 file da 50 MB per invio, layout conservato"
+    "t": "Volume di documenti",
+    "d": "fino a 25 file da 50 MB per invio, impaginazione conservata"
    },
    {
     "t": "Citazioni esatte",
-    "d": "la formulazione dei testi ufficiali, articolo per articolo"
+    "d": "la formulazione del testo ufficiale, articolo per articolo"
    },
    {
-    "t": "Segreto degli atti",
-    "d": "modalità «High sensitive content», archiviazione ed elaborazione in Svizzera"
+    "t": "Segreto del dossier",
+    "d": "modalità Highly sensitive content, archiviazione e trattamento in Svizzera"
    }
   ],
-  "facts_titre": "Concretamente tradurre una procedura",
-  "definition": "Tradurre per il contenzioso e l’arbitrato significa produrre due categorie di testi: i documenti da comprendere per costruire una strategia e le scritture o i lodi destinati ad essere letti, citati ed eseguiti. Il vocabolario deriva dal Codice di procedura civile, dalla legge sul diritto internazionale privato e dalla giurisprudenza del Tribunale federale.",
+  "facts_titre": "Tradurre un procedimento, in concreto",
+  "definition": "Tradurre per il contenzioso e l'arbitrato significa produrre due categorie di testi: documenti da capire per costruire una strategia, e atti scritti o lodi destinati a essere letti, citati ed eseguiti. Il vocabolario viene dal Codice di procedura civile, dalla legge sul diritto internazionale privato e dalla giurisprudenza del Tribunale federale.",
   "facts": [
    {
-    "k": "Distinte di pezzi",
-    "v": "L’intero lotto parte in file Translation e ritorna nel formato originale, numerazione intatta dei pezzi, pronto per essere letto dal team."
+    "k": "Elenco dei mezzi di prova",
+    "v": "L'intero lotto parte in File translation e torna nel formato originale, con la numerazione dei documenti intatta, pronto per la lettura del team."
    },
    {
-    "k": "Parti scansionate",
-    "v": "Gli allegati sono spesso disponibili in PDF scansionato: la scheda PDF to Word li trasforma in documenti modificabili prima della traduzione o dell’evidenziazione."
+    "k": "Documenti scansionati",
+    "v": "Gli allegati arrivano spesso in PDF scansionato: la scheda PDF to Word li trasforma in documenti modificabili prima della traduzione o dell'evidenziazione."
    },
    {
-    "k": "Memoria e conclusioni",
-    "v": "Le conclusioni vincolano la parte: esse passano in Full Review da parte di un traduttore giuridico o in Double Review certificata se il tribunale esige una traduzione certificata."
+    "k": "Atto scritto e conclusioni",
+    "v": "Le conclusioni impegnano la parte: passano in Full review da parte di un traduttore giuridico, o in Double review e traduzione certificata quando il tribunale esige una traduzione attestata."
    },
    {
     "k": "Lodo arbitrale",
-    "v": "Una sentenza si pronuncia con la parola appresso. La funzione alternative presenta fino a quattro formulazioni concorrenti attribuite al loro motore e decide il giurista."
+    "v": "Un lodo si cita alla lettera. La funzione Alternatives mostra fino a quattro formulazioni diverse, ciascuna con il motore che l'ha prodotta, e il giurista decide."
    },
    {
-    "k": "Terminologia procedurale",
-    "v": "I termini del CPC e della LDIP esistono in tre versioni ufficiali: CHnell li mostra nel contesto, con l’articolo accanto.",
-    "s": "Settori Litigation &amp; Enforcement e Arbitration du concordancier."
+    "k": "Terminologia processuale",
+    "v": "I termini del CPC e della LDIP esistono in tre versioni ufficiali: CHnell li mostra nel contesto, con l'articolo a fronte.",
+    "s": "Settori Litigation & Enforcement e Arbitration del concordanziere."
    },
    {
     "k": "Arbitrato internazionale",
-    "v": "Il tedesco, il francese, l’italiano e l’inglese sono nativi in tutte le coppie e la piattaforma copre 30 lingue per i documenti stranieri."
+    "v": "Tedesco, francese, italiano e inglese sono lingue native in tutte le combinazioni, e la piattaforma copre 30 lingue per i documenti esteri."
    },
    {
-    "k": "Segreto degli atti",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione."
+    "k": "Segreto del dossier",
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione."
    },
    {
     "k": "Esecuzione in Svizzera",
-    "v": "Il riconoscimento di una decisione straniera presuppone una traduzione fedele dei dispositivi: è determinante il vocabolario della LDIP e della LEF."
+    "v": "Il riconoscimento di una decisione straniera presuppone una traduzione fedele del dispositivo: il vocabolario della LDIP e della LEF è determinante."
    }
   ],
-  "termes_titre": "Il vocabolario della procedura, nelle quattro lingue",
+  "termes_titre": "Il vocabolario della procedura nelle quattro lingue",
   "termes": [
    {
     "de": "Schiedsgericht",
@@ -720,81 +720,81 @@
     "ref": "art. 188 Cost."
    }
   ],
-  "termes_note": "I rimedi giuridici cambiano nome a seconda dell’istanza: un appello cantonale e un ricorso al Tribunale federale non si esprimono nello stesso modo e le tre versioni ufficiali mantengono la distinzione. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che una procedura cita quotidianamente",
-  "lois_intro": "Dal 2011 la procedura civile svizzera è codificata in un testo unico, applicabile in tutti i Cantoni. L’arbitrato internazionale è retto da un capitolo a parte e l’esecuzione delle pretese pecuniarie da una legge ancora distinta.",
+  "termes_note": "I mezzi d'impugnazione cambiano nome secondo l'istanza: un appello cantonale e un ricorso al Tribunale federale non si chiamano allo stesso modo, e le tre versioni ufficiali mantengono la distinzione. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un procedimento cita ogni giorno",
+  "lois_intro": "Dal 2011 la procedura civile svizzera è codificata in un testo unico, applicabile in tutti i Cantoni. L'arbitrato internazionale ha un capitolo a sé, e l'esecuzione dei crediti pecuniari una legge ancora diversa.",
   "lois": [
    {
     "abbr": "CPC",
-    "nom": "Codice di procedura civile",
-    "note": "Esso disciplina le memorie scritte, le prove, i termini e i rimedi giuridici cantonali; ZPO in tedesco, CPC in italiano."
+    "nom": "Codice di diritto processuale civile svizzero",
+    "note": "Disciplina gli atti scritti, le prove, i termini e i mezzi d'impugnazione cantonali; ZPO in tedesco, CPC in francese."
    },
    {
     "abbr": "LDIP",
     "nom": "Legge federale sul diritto internazionale privato",
-    "note": "Il capitolo 12 è la sede dell’arbitrato internazionale in Svizzera; IPRG in tedesco, LDIP in italiano."
+    "note": "Il suo capitolo 12 disciplina l'arbitrato internazionale in Svizzera; IPRG in tedesco, LDIP in francese."
    },
    {
     "abbr": "LTF",
     "nom": "Legge sul Tribunale federale",
-    "note": "Essa stabilisce le condizioni per il ricorso dinanzi all’ultima istanza svizzera e la forma delle memorie; BGG in tedesco."
+    "note": "Stabilisce le condizioni del ricorso all'ultima istanza svizzera e la forma degli atti scritti; BGG in tedesco, LTF in francese."
    },
    {
-    "abbr": "LP",
+    "abbr": "LEF",
     "nom": "Legge federale sulla esecuzione e sul fallimento",
-    "note": "Essa ordina l’esecuzione delle pretese pecuniarie, dallo svincolo al fallimento; SchKG in tedesco, LEF in italiano."
+    "note": "Disciplina l'esecuzione dei crediti pecuniari, dal rigetto dell'opposizione al fallimento; SchKG in tedesco, LP in francese."
    }
   ],
-  "who_titre": "Tre momenti di una procedura in cui la traduzione pesa",
+  "who_titre": "Tre momenti di un procedimento in cui la traduzione pesa",
   "who": [
    {
-    "a": "Istruzione",
-    "t": "400 pagine di atti prima dell’udienza",
-    "p": "Il lotto parte in file translation con la modalità «high sensitive content» e ritorna nel formato originale. Il team legge, annota e identifica i passaggi utili, poi fa rileggere da un essere umano soltanto i pezzi che saranno prodotti.",
+    "a": "Istruttoria",
+    "t": "400 pagine di documenti prima dell'udienza",
+    "p": "Il lotto parte in File translation con la modalità Highly sensitive content e torna nel formato originale. Il team legge, annota e individua i passaggi utili, poi fa rivedere da un traduttore solo i documenti che saranno prodotti.",
     "vis": "lot"
    },
    {
-    "a": "Scritture",
+    "a": "Atti scritti",
     "t": "Conclusioni nella lingua del foro",
-    "p": "La memoria è redatta in inglese e deve essere depositata in tedesco. La Full Review da parte di un traduttore giuridico verifica le conclusioni online e la doppia review con certificato copre i casi in cui il tribunale richiede un’attestazione.",
+    "p": "L'atto scritto è redatto in inglese e va depositato in italiano. La Full review di un traduttore giuridico verifica le conclusioni riga per riga, e la Double review e traduzione certificata copre i casi in cui il tribunale esige un'attestazione.",
     "vis": "marteau"
    },
    {
     "a": "Arbitrato",
     "t": "Un lodo da far riconoscere in Svizzera",
-    "p": "Il riconoscimento si gioca sulla fedeltà del dispositivo. Le alternative per motore mostrano le possibili formulazioni, CHnell dà l’uso ufficiale del termine nella LDIP e il socio sceglie con cognizione di causa.",
+    "p": "Il riconoscimento dipende dalla fedeltà del dispositivo. Le alternative per motore mostrano le formulazioni possibili, CHnell indica l'uso ufficiale del termine nella LDIP, e il socio sceglie con cognizione di causa.",
     "vis": "sentence"
    }
   ],
-  "faq_titre": "Domande frequenti sulla traduzione procedurale",
+  "faq_titre": "Domande frequenti sulla traduzione nei procedimenti",
   "faq": [
    {
     "q": "Un tribunale svizzero accetta una traduzione automatica?",
-    "r": "I documenti presentati al giudice devono essere attendibili e, se del caso, comprovati. La traduzione automatica serve a comprendere l’incarto; ciò che viene depositato richiede una Full Review da parte di un traduttore giuridico o una doppia Review con certificato quando viene richiesta un’attestazione."
+    "r": "Un documento prodotto in giudizio deve essere affidabile e, secondo i casi, attestato. La traduzione automatica serve a capire il dossier; ciò che si deposita passa da una Full review di un traduttore giuridico, o da una Double review e traduzione certificata quando è richiesta un'attestazione."
    },
    {
-    "q": "In quale lingua devono essere tradotti i documenti?",
-    "r": "Nella lingua ufficiale del foro, che dipende dal Cantone e dall’autorità pignoratizia. Il tedesco, il francese e l’italiano sono nativi in tutte le coppie, l’inglese pure, ciò che copre anche le arbitrazioni internazionali condotte in inglese con pezzi germanofoni."
+    "q": "In quale lingua vanno tradotti i documenti?",
+    "r": "Nella lingua ufficiale del foro, che dipende dal Cantone e dall'autorità adita. Tedesco, francese e italiano sono lingue native in tutte le combinazioni, come l'inglese: così sono coperti anche gli arbitrati internazionali condotti in inglese con documenti in tedesco."
    },
    {
-    "q": "Come mantenere il segreto degli atti?",
-    "r": "Lo stoccaggio avviene in ogni caso su server svizzeri. La modalità «High sensitive content» impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione. I motori ospitati all’estero devono emettere un avvertimento prima della spedizione."
+    "q": "Come proteggere il segreto del dossier?",
+    "r": "L'archiviazione avviene sempre su server svizzeri. La modalità Highly sensitive content impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione. I motori ospitati all'estero mostrano un avviso prima di ogni invio."
    },
    {
-    "q": "È possibile confrontare più traduzioni dello stesso passaggio?",
-    "r": "Sì. La funzione alternative offre fino a quattro formulazioni, ciascuna attribuita al motore che l’ha prodotta. Ciò è utile per una citazione di lodo o di giurisprudenza, in cui due formulazioni accettabili non hanno la stessa portata dinanzi alla giurisdizione successiva. La scelta scelta può poi essere stabilita nelle vostre risorse terminologiche, per tutto il dossier."
+    "q": "Si possono confrontare più traduzioni dello stesso passaggio?",
+    "r": "Sì. La funzione Alternatives propone fino a quattro formulazioni, ciascuna attribuita al motore che l'ha prodotta. È utile per citare un lodo o la giurisprudenza, quando due formulazioni accettabili non hanno la stessa portata davanti all'istanza successiva. La scelta fatta si può poi fissare nelle vostre risorse terminologiche, per tutto il dossier."
    },
    {
-    "q": "Come si verifica un termine di procedura?",
-    "r": "Evidenziandolo: Fast Lookup CHnell lo apre nel contesto con la sua fonte ufficiale, nei settori Litigation &amp; Enforcement e Arbitration. Il concordato accetta gli operatori tra virgolette, il segno meno e l’operatore oro per indirizzare una determinata occorrenza."
+    "q": "Come verificare un termine di procedura?",
+    "r": "Evidenziandolo: Fast lookup CHnell lo apre nel contesto con la sua fonte ufficiale, nei settori Litigation & Enforcement e Arbitration. Il concordanziere accetta gli operatori tra virgolette, il segno meno e l'operatore or per trovare un'occorrenza precisa."
    },
    {
-    "q": "E i pezzi scansionati di scarsa qualità?",
-    "r": "La scheda PDF to Word di Traduzione testo e documento converte una scansione in documento Word modificabile prima della traduzione o dell’annotazione. Questa è spesso la prima tappa di un elenco, in cui una parte degli allegati esiste solo sotto forma di immagine. Il documento Word ottenuto si traduce quindi come qualsiasi file nativo."
+    "q": "E i documenti scansionati di cattiva qualità?",
+    "r": "La scheda PDF to Word di Traduzione di testi e documenti converte una scansione in un documento Word modificabile prima della traduzione o delle annotazioni. Spesso è il primo passo per un elenco dei mezzi di prova, dove una parte degli allegati esiste solo come immagine. Il documento Word ottenuto si traduce poi come qualsiasi file nativo."
    }
   ],
-  "cta_t": "Vedi Corrext su un tagliando",
-  "cta_p": "Una dimostrazione sui propri dossier, con uno specialista del diritto svizzero.",
+  "cta_t": "Vedete Corrext all'opera sui documenti di una causa",
+  "cta_p": "Una dimostrazione sui vostri dossier, con uno specialista del diritto svizzero.",
   "voisins": [
    "droit-penal",
    "contrats",
@@ -804,65 +804,65 @@
  {
   "slug": "banque-finance",
   "short": "Banca e finanza",
-  "resume": "Contratti di credito, prospetti, documentazione del fondo: il lessico bancario.",
-  "title": "Traduzioni legali e finanziarie per le banche · Neur.on",
-  "description": "Contratti di credito, prospetti, documentazione del fondo: tradurre senza lasciare la Svizzera con la terminologia della LBCR e della LSerFi.",
+  "resume": "Contratti di credito, prospetti, documentazione dei fondi: il lessico bancario.",
+  "title": "Traduzione finanziaria e giuridica per le banche · Neur.on",
+  "description": "Contratti di credito, prospetti, documentazione dei fondi: tradurre senza che i dati lascino la Svizzera, con la terminologia della LBCR e della LSerFi.",
   "lede": "Banca e finanza.",
-  "h1": "Dal contratto di credito al prospetto",
-  "lead": "Contratti di credito, condizioni generali, documentazione del fondo, messaggi ai clienti: questi documenti circolano in quattro lingue sotto il segreto bancario. Corrext li tratta in Svizzera, con i termini ufficiali.",
+  "h1": "Traduzione finanziaria, dal contratto di credito al prospetto",
+  "lead": "Contratti di credito, condizioni generali, documentazione dei fondi, comunicazioni ai clienti: questi documenti circolano in quattro lingue, sotto il segreto bancario. Corrext li tratta in Svizzera, con i termini ufficiali.",
   "promesses": [
    {
     "t": "Segreto bancario",
-    "d": "modalità «High sensitive content»: stoccaggio e trattamento in Svizzera"
+    "d": "modalità Highly sensitive content: archiviazione e trattamento in Svizzera"
    },
    {
     "t": "Documenti ricorrenti",
-    "d": "condizioni generali e documentazione del fondo in memoria di traduzione"
+    "d": "condizioni generali e documentazione dei fondi nella memoria di traduzione"
    },
    {
     "t": "Quattro lingue native",
-    "d": "tedesco, francese, italiano e inglese, tutte coppie"
+    "d": "tedesco, francese, italiano e inglese, in tutte le combinazioni"
    }
   ],
-  "facts_titre": "Concretamente tradurre documenti bancari",
-  "definition": "Tradurre nel diritto bancario svizzero significa manipolare un vocabolario riquadro dalla legge sulle banche, dalla legge sui servizi finanziari e dai testi della vigilanza: ogni nozione, dai fondi propri al prospetto, ha una definizione legale pubblicata in tedesco, francese e italiano.",
+  "facts_titre": "Tradurre documenti bancari, in concreto",
+  "definition": "Tradurre nel diritto bancario svizzero significa maneggiare un vocabolario fissato dalla legge sulle banche, dalla legge sui servizi finanziari e dai testi della vigilanza. Ogni nozione, dai fondi propri al prospetto, ha una definizione legale pubblicata in tedesco, francese e italiano.",
   "facts": [
    {
     "k": "Contratto di credito",
-    "v": "Un contratto di mutuo si traduce con i termini del CO: la Full Review verifica tassi, scadenze e garanzie riga per riga."
+    "v": "Un contratto di mutuo si traduce con i termini del CO: la Full review verifica tassi, scadenze e garanzie riga per riga."
    },
    {
     "k": "Condizioni generali",
-    "v": "In termini di confidenzialità standard, la memoria di traduzione rende gli aggiornamenti annuali molto più rapidi."
+    "v": "Cambiano poco da una versione all'altra: con la riservatezza Standard, la memoria di traduzione rende gli aggiornamenti annuali molto più rapidi."
    },
    {
-    "k": "Documentazione del fondo",
-    "v": "I prospetti e i documenti informativi si traducono nelle lingue di distribuzione con la terminologia della LICol e della LSerFi.",
-    "s": "Settori Fund Prospectuses e Banking &amp; Finance del concordato CHnell."
+    "k": "Documentazione dei fondi",
+    "v": "Prospetti e documenti informativi si traducono nelle lingue di distribuzione, con la terminologia della LICol e della LSerFi.",
+    "s": "Settori Fund Prospectuses e Banking & Finance del concordanziere CHnell."
    },
    {
     "k": "Dati dei clienti",
-    "v": "Un documento contenente i dati dei clienti rientra nel segreto bancario: la modalità «High-sensitive Content» conserva l’archiviazione e il trattamento esclusivamente in Svizzera."
+    "v": "Un documento con dati dei clienti rientra nel segreto bancario: la modalità Highly sensitive content mantiene archiviazione e trattamento esclusivamente in Svizzera."
    },
    {
     "k": "Motori esteri",
-    "v": "Se un collaboratore sceglie DeepL Pro, Azure OpenAI GPT o Claude, l’avviso Attorney-Client privilege ricorda la regola prima di ogni invio.",
-    "s": "Possono essere loro affidati soltanto documenti completamente pseudonimizzati."
+    "v": "Se un collaboratore sceglie DeepL Pro, Azure OpenAI GPT o Claude, l'avviso Attorney-Client privilege ricorda la regola prima di ogni invio.",
+    "s": "Si possono affidare loro solo documenti interamente pseudonimizzati."
    },
    {
-    "k": "Tabelle e allegati cifrati",
-    "v": "I file Excel e PowerPoint passano allo stesso titolo dei documenti Word, nel limite di 25 file di 50 MB per invio."
+    "k": "Tabelle e allegati con cifre",
+    "v": "I file Excel e PowerPoint si traducono come i documenti Word, entro il limite di 25 file da 50 MB per invio."
    },
    {
     "k": "Comunicazioni ai clienti",
-    "v": "Una lettera alla clientela parte spesso lo stesso giorno in quattro lingue: la traduzione di testi accetta fino a 10’000 caratteri incollati."
+    "v": "Una lettera alla clientela parte spesso lo stesso giorno in quattro lingue: la traduzione di testo accetta fino a 10'000 caratteri incollati."
    },
    {
-    "k": "Coerenza di spazio",
-    "v": "I termini del settore bancario svizzero si basano su CHnell con la fonte ufficiale di ogni caso."
+    "k": "Coerenza con l'uso della piazza",
+    "v": "I termini del settore bancario svizzero si verificano nel contesto in CHnell, con la fonte ufficiale di ogni occorrenza."
    }
   ],
-  "termes_titre": "Il vocabolario bancario, nelle quattro lingue",
+  "termes_titre": "Il vocabolario bancario nelle quattro lingue",
   "termes": [
    {
     "de": "Bankgeheimnis",
@@ -911,80 +911,80 @@
     "fr": "prospectus",
     "it": "prospetto",
     "en": "prospectus",
-    "ref": "art. 35 LS erFi"
+    "ref": "art. 35 LSerFi"
    }
   ],
-  "termes_note": "Queste equivalenze derivano dalle versioni tedesca, francese e italiana delle leggi citate: il termine ufficiale prevale sull’uso di spazio, che varia da uno stabilimento all’altro. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che la banca cita quotidianamente",
-  "lois_intro": "Il diritto bancario svizzero si articola su diversi piani: una legge storica sulle banche, un nuovo corpus sui servizi finanziari e gli istituti e il Codice delle obbligazioni per tutto ciò che resta contrattuale. A ciò si aggiungono le ordinanze e le circolari della vigilanza.",
+  "termes_note": "Questi equivalenti vengono dalle versioni tedesca, francese e italiana delle leggi citate: il termine ufficiale prevale sull'uso della piazza, che varia da un istituto all'altro. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che la banca cita ogni giorno",
+  "lois_intro": "Il diritto bancario svizzero si legge su più livelli: una legge storica sulle banche, un insieme recente di testi sui servizi finanziari e sugli istituti, e il Codice delle obbligazioni per tutto ciò che resta contrattuale. Si aggiungono le ordinanze e le circolari dell'autorità di vigilanza.",
   "lois": [
    {
     "abbr": "LBCR",
     "nom": "Legge federale sulle banche e le casse di risparmio",
-    "note": "Essa fonda l’autorizzazione ad esercitare, le esigenze di fondi propri e il segreto bancario del suo art. 47; BankG in tedesco, LBCR in italiano."
+    "note": "Fonda l'autorizzazione all'esercizio, i requisiti di fondi propri e, all'art. 47, il segreto bancario; BankG in tedesco, LB in francese."
    },
    {
     "abbr": "LSerFi",
     "nom": "Legge federale sui servizi finanziari",
-    "note": "Essa disciplina l’informazione al cliente, la classificazione degli investitori e il prospetto; FIDLEG in tedesco."
+    "note": "Disciplina l'informazione della clientela, la classificazione dei clienti e il prospetto; FIDLEG in tedesco, LSFin in francese."
    },
    {
-    "abbr": "LICOL",
+    "abbr": "LICol",
     "nom": "Legge federale sugli investimenti collettivi di capitale",
-    "note": "Essa disciplina i fondi, la loro documentazione e distribuzione; KAG in tedesco, licol in italiano."
+    "note": "Disciplina i fondi, la loro documentazione e la loro distribuzione; KAG in tedesco, LPCC in francese."
    },
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "Rimane il fondamento del credito, della fideiussione e dei titoli; ORO in tedesco, CO in italiano."
+    "note": "Resta la base del credito, della fideiussione e delle cartevalori; OR in tedesco, CO in francese."
    }
   ],
-  "who_titre": "Tre usi bancari in cui la traduzione è un passaggio obbligato",
+  "who_titre": "Tre situazioni bancarie in cui la traduzione è un passaggio obbligato",
   "who": [
    {
     "a": "Credito",
     "t": "Un contratto di mutuo in due lingue",
-    "p": "Il contratto è negoziato in inglese e firmato in tedesco da un mutuatario tedesco. La traduzione automatica serve alla negoziazione, la Full Review da parte di un traduttore giuridico garantisce la versione firmata, con il termine indicato prima della convalida.",
+    "p": "Il contratto è negoziato in inglese e firmato in italiano da un mutuatario ticinese. La traduzione automatica serve alla trattativa; la Full review di un traduttore giuridico mette al sicuro la versione firmata, con il termine di consegna indicato prima della conferma.",
     "vis": "financement"
    },
    {
     "a": "Fondi",
-    "t": "Documentazione in quattro lingue",
-    "p": "Nel prospetto e nei documenti allegati devono essere utilizzati i termini della LICol e della LSerFi. Le versioni successive si basano sulla memoria di traduzione e la terminologia si verifica nei settori Fund Prospectuses e Banking &amp; Finance.",
+    "t": "Una documentazione in quattro lingue",
+    "p": "Il prospetto e i documenti che lo accompagnano devono usare i termini della LICol e della LSerFi. Le versioni successive si appoggiano sulla memoria di traduzione, e la terminologia si verifica nei settori Fund Prospectuses e Banking & Finance.",
     "vis": "rapport"
    },
    {
-    "a": "Clienti",
+    "a": "Clientela",
     "t": "Un messaggio urgente a tutti i clienti",
-    "p": "Una modifica delle condizioni parte lo stesso giorno in tedesco, francese, italiano e inglese. Il testo si inserisce direttamente nella Traduzione testo e documento e una Light Review è sufficiente per un messaggio informativo che non vincola giuridicamente l’istituto.",
+    "p": "Una modifica delle condizioni parte lo stesso giorno in tedesco, francese, italiano e inglese. Il testo si incolla direttamente in Traduzione di testi e documenti, e per un messaggio informativo, che non impegna giuridicamente l'istituto, basta una Light review.",
     "vis": "envoi"
    }
   ],
   "faq_titre": "Domande frequenti sulla traduzione bancaria",
   "faq": [
    {
-    "q": "Il segreto bancario è compatibile con una traduzione automatica?",
-    "r": "Sì, a condizione di padroneggiare il luogo di trattamento. Lo stoccaggio avviene in ogni caso su server svizzeri e la modalità «High sensitive Content» impone un trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in memoria. I motori ospitati all’estero necessitano di una pseudonimizzazione preliminare e recano un avvertimento."
+    "q": "Il segreto bancario è compatibile con la traduzione automatica?",
+    "r": "Sì, a condizione di controllare il luogo di trattamento. L'archiviazione avviene sempre su server svizzeri, e la modalità Highly sensitive content impone un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria. I motori ospitati all'estero richiedono una pseudonimizzazione preliminare e mostrano un avviso."
    },
    {
-    "q": "Quali motori sono disponibili?",
-    "r": "LexMachina, il motore svizzero trainato dai dati giuridici e finanziari del Paese, così come DeepL Pro, Azure OpenAI GPT e Claude. Gli ultimi tre sono ospitati all’estero: l’applicazione lo segnala al momento della scelta, prima di inviare un documento."
+    "q": "Quali motori di traduzione sono disponibili?",
+    "r": "LexMachina, il motore svizzero addestrato sui dati giuridici e finanziari del Paese, e inoltre DeepL Pro, Azure OpenAI GPT e Claude. Questi ultimi tre sono ospitati all'estero: l'applicazione lo segnala al momento della scelta, prima di qualsiasi invio di documenti."
    },
    {
-    "q": "È possibile tradurre file Excel da tabelle finanziarie?",
-    "r": "Sì, i formati. xls e. xlsx sono supportati come Word, PowerPoint e PDF, nel limite di 25 file da 50 MB per invio. Il file ritorna nel suo formato originale, struttura della tabella conservata."
+    "q": "Si possono tradurre file Excel con tabelle finanziarie?",
+    "r": "Sì, i formati .xls e .xlsx sono supportati come Word, PowerPoint e PDF, entro il limite di 25 file da 50 MB per invio. Il file torna nel suo formato originale, con la struttura delle tabelle conservata."
    },
    {
-    "q": "Come garantire la coerenza tra versioni annuali?",
-    "r": "Dalla memoria di traduzione, alimentata dai progetti in confidenzialità standard e riutilizzabile esclusivamente dalla vostra organizzazione, e dalle risorse terminologiche proprie che Fast lookup CHnell accetta in aggiunta ai suoi 30 domini sorteggiati. I due meccanismi si combinano: la memoria per le frasi, il concordanziere per i termini."
+    "q": "Come garantire la coerenza tra le versioni annuali?",
+    "r": "Con la memoria di traduzione, alimentata dai progetti con la riservatezza Standard e riutilizzabile solo dalla vostra organizzazione, e con le risorse terminologiche proprie che Fast lookup CHnell accetta oltre ai suoi 30 settori con fonti. I due strumenti si combinano: la memoria per le frasi, il concordanziere per i termini."
    },
    {
-    "q": "Chi riproduce la documentazione destinata agli investitori?",
-    "r": "Un traduttore giuridico in Light Review o in Full Review a seconda della posta in gioco, oppure due traduttori e un’agenzia specializzata per una doppia review con certificato. Il livello viene scelto documento per documento e il termine viene visualizzato prima della convalida del preventivo."
+    "q": "Chi rivede una documentazione destinata agli investitori?",
+    "r": "Un traduttore giuridico, in Light review o in Full review secondo la posta in gioco, oppure due traduttori e un'agenzia specializzata per una Double review e traduzione certificata. Il livello si sceglie documento per documento, e il termine di consegna compare prima della conferma dell'offerta."
    },
    {
-    "q": "I documenti tradotti servono ad azionare un motore?",
-    "r": "No. I contenuti dei clienti non servono ad azionare i motori. I progetti di confidenzialità standard possono alimentare una memoria di traduzione, ma rimane separata dalla vostra organizzazione; nella modalità «High sensitive content» non viene effettuato alcun riutilizzo. Il modo è scelto al momento della creazione del progetto."
+    "q": "I documenti tradotti servono ad addestrare un motore di traduzione?",
+    "r": "No. I contenuti dei clienti non servono ad addestrare i motori. I progetti con la riservatezza Standard possono alimentare una memoria di traduzione, che resta però riservata alla vostra organizzazione; in modalità Highly sensitive content non avviene alcun riutilizzo. La modalità si sceglie alla creazione del progetto."
    }
   ],
   "cta_t": "I vostri documenti bancari, trattati in Svizzera",
@@ -998,61 +998,61 @@
  {
   "slug": "compliance-finma",
   "short": "Compliance e FINMA",
-  "resume": "Direttive interne, rapporti, corrispondenza con l’autorità di vigilanza.",
-  "title": "Traduzioni regolamentari, compliance e FINMA · Neur.on",
-  "description": "Direttive interne, incarti di diligenza, rapporti all’autorità di vigilanza: tradurre la conformità svizzera con la terminologia della LRD.",
+  "resume": "Direttive interne, rapporti, corrispondenza con l'autorità di vigilanza.",
+  "title": "Traduzione circolari FINMA e documenti di compliance · Neur.on",
+  "description": "Direttive interne, documentazione di diligenza, rapporti all'autorità di vigilanza: tradurre la compliance svizzera con la terminologia della LRD.",
   "lede": "Compliance e FINMA.",
-  "h1": "Scrivere nella lingua dell’autorità",
-  "lead": "Direttive, dossier dei clienti, rapporti: un servizio compliance scritto per i suoi team, l’autorità e l’uditore, e ogni lingua deve dire la stessa cosa. Corrext lo fa in Svizzera, coi termini delle leggi.",
+  "h1": "Scrivere nella lingua dell'autorità",
+  "lead": "Direttive, dossier dei clienti, rapporti: un servizio di compliance scrive per i suoi team, per l'autorità e per la società di audit, e ogni lingua deve dire la stessa cosa. Corrext lo fa in Svizzera, con i termini delle leggi.",
   "promesses": [
    {
     "t": "Vocabolario della LRD",
-    "d": "diligenza, avente diritto economico, obbligo di comunicazione"
+    "d": "diligenza, avente economicamente diritto, obbligo di comunicazione"
    },
    {
     "t": "Trattamento in Svizzera",
-    "d": "LexMachina o modalità «high sensitive content»"
+    "d": "LexMachina o modalità Highly sensitive content"
    },
    {
     "t": "Coerenza delle direttive",
     "d": "memoria di traduzione propria della vostra organizzazione"
    }
   ],
-  "facts_titre": "Concretamente tradurre la conformità",
-  "definition": "Tradurre in compliance significa trasporre obblighi di sorveglianza nella lingua di coloro che devono applicarli o controllarli: direttive interne, documentazione di diligenza, rapporti all’autorità. Il vocabolario è fissato dalla legge sul riciclaggio di denaro, dalla legge sulla vigilanza dei mercati finanziari e dalle relative ordinanze, pubblicate in tedesco, francese e italiano.",
+  "facts_titre": "Tradurre la compliance, in concreto",
+  "definition": "Tradurre nella compliance significa trasporre obblighi di vigilanza nella lingua di chi deve applicarli o controllarli: direttive interne, documentazione di diligenza, rapporti all'autorità. Il vocabolario è fissato dalla legge sul riciclaggio di denaro, dalla legge sulla vigilanza dei mercati finanziari e dalle relative ordinanze, pubblicate in tedesco, francese e italiano.",
   "facts": [
    {
     "k": "Direttive interne",
-    "v": "Una direttiva si applica a tutte le succursali: la traduzione deve essere identica da una regione linguistica all’altra, versione dopo versione."
+    "v": "Una direttiva vale per tutte le succursali: la traduzione deve essere identica da una regione linguistica all'altra, versione dopo versione."
    },
    {
-    "k": "Fascicoli di diligenza",
-    "v": "I documenti d’identificazione e la documentazione dell’avente diritto economico contengono dati personali: il modo «High sensitive Content» conserva tutto in Svizzera."
+    "k": "Dossier di diligenza",
+    "v": "I documenti d'identificazione e la documentazione sull'avente economicamente diritto contengono dati personali: la modalità Highly sensitive content tiene tutto in Svizzera."
    },
    {
-    "k": "Rapporti all’autorità",
-    "v": "Un rapporto si presenta in una lingua ufficiale: la terminologia deve essere quella dei testi di vigilanza, non quella dei supporti di formazione interni.",
-    "s": "Ambito Supervisory (FINMA) del concordato CHnell."
+    "k": "Rapporti all'autorità",
+    "v": "Un rapporto si deposita in una lingua ufficiale: la terminologia deve essere quella dei testi di vigilanza, non quella dei materiali di formazione interni.",
+    "s": "Settore Supervisory (FINMA) del concordanziere CHnell."
    },
    {
     "k": "Corrispondenza",
-    "v": "Gli scambi con l’autorità partono spesso di giorno: la traduzione di testi accetta fino a 10’000 caratteri incollati, motore a scelta."
+    "v": "Gli scambi con l'autorità partono spesso in giornata: la traduzione di testo accetta fino a 10'000 caratteri incollati, con il motore a scelta."
    },
    {
     "k": "Formazione dei team",
-    "v": "Supporti di formazione ed e-learning si traducono nei formati originali, inclusi. ppt e. pptx, fino a 25 file da 50 MB per invio."
+    "v": "Materiali di formazione ed e-learning si traducono nei formati originali, anche .ppt e .pptx, fino a 25 file da 50 MB per invio."
    },
    {
-    "k": "Procedimenti scritti",
-    "v": "Le procedure citano gli articoli della LRD: Fast Lookup CHnell mostra l’articolo nelle tre lingue ufficiali, con la sua fonte."
+    "k": "Procedure scritte",
+    "v": "Le procedure citano articoli della LRD: Fast lookup CHnell mostra l'articolo nelle tre lingue ufficiali, con la sua fonte."
    },
    {
     "k": "Tracciabilità",
-    "v": "La rilettura ordinata in gestione del progetto lascia una traccia del livello scelto e del termine convalidato, documento per documento."
+    "v": "La revisione ordinata in Gestione dei progetti lascia traccia del livello scelto e del termine di consegna confermato, documento per documento."
    },
    {
     "k": "Motori esteri",
-    "v": "La scelta di un motore ospitato all’estero innesca l’avviso Attorney-Cliente privilegiato prima di qualsiasi invio, il che rende la regola interna opponibile al momento del gesto."
+    "v": "La scelta di un motore ospitato all'estero fa comparire l'avviso Attorney-Client privilege prima di ogni invio: la regola interna diventa opponibile nel momento stesso in cui si agisce."
    }
   ],
   "termes_titre": "Il vocabolario della vigilanza nelle quattro lingue",
@@ -1062,7 +1062,7 @@
     "fr": "blanchiment d'argent",
     "it": "riciclaggio di denaro",
     "en": "money laundering",
-    "ref": "art. 305 bis CP"
+    "ref": "art. 305bis CP"
    },
    {
     "de": "Finanzintermediär",
@@ -1107,81 +1107,81 @@
     "ref": "art. 1 LFINMA"
    }
   ],
-  "termes_note": "Il vocabolario della conformità è quello delle leggi di vigilanza, pubblicate nelle tre lingue ufficiali: una direttiva interna che si scosta da questi termini diventa difficile da avvicinare al testo che applica. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che la conformità cita quotidianamente",
-  "lois_intro": "La conformità svizzera combina un testo penale, una legge di polizia amministrativa e una legge sull’organizzazione dell’autorità. Le ordinanze e le circolari precisano poi gli obblighi nelle stesse tre lingue.",
+  "termes_note": "Il vocabolario della compliance è quello delle leggi di vigilanza, pubblicate nelle tre lingue ufficiali: una direttiva interna che si allontana da questi termini diventa difficile da ricondurre al testo che applica. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che la compliance cita ogni giorno",
+  "lois_intro": "La compliance svizzera combina un testo penale, una legge di polizia amministrativa e una legge che organizza l'autorità. Ordinanze e circolari precisano poi gli obblighi, nelle stesse tre lingue.",
   "lois": [
    {
     "abbr": "LRD",
-    "nom": "Legge federale concernente la lotta contro il riciclaggio di denaro e il finanziamento del terrorismo",
-    "note": "Essa stabilisce gli obblighi di diligenza, di identificazione e di comunicazione degli intermediari finanziari; GwG in tedesco, LRD in italiano."
+    "nom": "Legge federale relativa alla lotta contro il riciclaggio di denaro e il finanziamento del terrorismo",
+    "note": "Stabilisce gli obblighi di diligenza, di identificazione e di comunicazione degli intermediari finanziari; GwG in tedesco, LBA in francese."
    },
    {
     "abbr": "LFINMA",
-    "nom": "Legge federale sull’autorità federale di vigilanza sui mercati finanziari",
-    "note": "Organizza l’autorità, i suoi strumenti di vigilanza e le sue procedure; FINMAG in tedesco."
+    "nom": "Legge federale concernente l'Autorità federale di vigilanza sui mercati finanziari",
+    "note": "Organizza l'autorità, i suoi strumenti di vigilanza e le sue procedure; FINMAG in tedesco, LFINMA in francese."
    },
    {
     "abbr": "LBCR",
     "nom": "Legge federale sulle banche e le casse di risparmio",
-    "note": "Condiziona l’attività bancaria a un’autorizzazione e impone requisiti prudenziali; BankG in tedesco, LBCR in italiano."
+    "note": "Subordina l'attività bancaria a un'autorizzazione e impone requisiti prudenziali; BankG in tedesco, LB in francese."
    },
    {
     "abbr": "CP",
     "nom": "Codice penale svizzero",
-    "note": "Il suo articolo 305 bis definisce il riciclaggio di denaro al quale rimanda tutto il dispositivo di conformità; StGB in tedesco, CP in italiano."
+    "note": "Il suo art. 305bis definisce il riciclaggio di denaro, a cui rinvia tutto l'impianto della compliance; StGB in tedesco, CP in francese."
    }
   ],
-  "who_titre": "Tre lavori di conformità che passano per la traduzione",
+  "who_titre": "Tre attività di compliance che passano dalla traduzione",
   "who": [
    {
     "a": "Direttive",
-    "t": "Una politica di diligenza unica",
-    "p": "La direttiva è redatta presso la sede e applicata a Ginevra, Zurigo e Lugano. La memoria di traduzione assicura che una revisione modifichi soltanto quanto è cambiato e che i termini della LRD rimangano identici da una versione linguistica all’altra.",
+    "t": "Un'unica politica di diligenza",
+    "p": "La direttiva è redatta presso la sede principale e applicata a Ginevra, Zurigo e Lugano. La memoria di traduzione garantisce che un aggiornamento modifichi solo ciò che è cambiato, e i termini della LRD restano identici da una versione linguistica all'altra.",
     "vis": "bouclier"
    },
    {
-    "a": "Sorveglianza",
-    "t": "Rapporto da presentare all’autorità",
-    "p": "Il rapporto è redatto dal team in inglese e deve essere presentato in una lingua ufficiale. La Full Review da parte di un traduttore giuridico verifica i passaggi che citano i testi applicabili e il termine è noto prima della convalida.",
+    "a": "Vigilanza",
+    "t": "Un rapporto da consegnare all'autorità",
+    "p": "Il team prepara il rapporto in inglese, ma va depositato in una lingua ufficiale. La Full review di un traduttore giuridico verifica i passaggi che citano i testi applicabili, e il termine di consegna è noto prima della conferma.",
     "vis": "institution"
    },
    {
-    "a": "Dossier clienti",
+    "a": "Dossier dei clienti",
     "t": "Una diligenza da ricostruire",
-    "p": "I documenti contengono dati personali e bancari. La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzo in memoria di traduzione.",
+    "p": "I documenti contengono dati personali e bancari. La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo nella memoria di traduzione.",
     "vis": "dossier"
    }
   ],
-  "faq_titre": "Domande frequenti sulla traduzione conforme",
+  "faq_titre": "Domande frequenti sulla traduzione nella compliance",
   "faq": [
    {
-    "q": "Un dato cliente può passare per un motore di traduzione?",
-    "r": "Dipende dal motore e dalla modalità. Lo stoccaggio rimane sempre svizzero; con LexMachina o in modalità high sensitive content lo è anche il trattamento. I motori ospitati all’estero recano un avvertimento e presuppongono documenti completamente pseudonimizzati."
+    "q": "I dati di un cliente possono passare da un motore di traduzione?",
+    "r": "Dipende dal motore e dalla modalità. L'archiviazione resta in Svizzera in ogni caso; con LexMachina o in modalità Highly sensitive content, anche il trattamento. I motori ospitati all'estero mostrano un avviso e presuppongono documenti interamente pseudonimizzati."
    },
    {
-    "q": "Come mantenere le stesse direttive in quattro lingue?",
-    "r": "Lavorando a partire da una memoria di traduzione propria della vostra organizzazione, alimentata dai progetti di confidenzialità standard, e fissando i termini sensibili nelle vostre risorse terminologiche, che Fast Lookup CHnell mostra accanto ai suoi 30 settori sorpassati."
+    "q": "Come mantenere identiche le direttive in quattro lingue?",
+    "r": "Lavorando con una memoria di traduzione propria della vostra organizzazione, alimentata dai progetti con la riservatezza Standard, e fissando i termini sensibili nelle vostre risorse terminologiche, che Fast lookup CHnell mostra accanto ai suoi 30 settori con fonti."
    },
    {
-    "q": "La terminologia di vigilanza è coperta?",
-    "r": "Sì. Il concordato comprende un settore Supervisory (FINMA) e un settore Banking &amp; Finance, alimentati da fonti ufficiali. Ogni caso si apre nel contesto del suo riferimento, il che permette di verificare un termine prima di fissarlo in una direttiva."
+    "q": "La terminologia della vigilanza è coperta?",
+    "r": "Sì. Il concordanziere comprende un settore Supervisory (FINMA) e un settore Banking & Finance, alimentati da fonti ufficiali. Ogni occorrenza si apre nel contesto con il suo riferimento: così potete verificare un termine prima di fissarlo in una direttiva."
    },
    {
-    "q": "È possibile tradurre un supporto di formazione in PowerPoint?",
-    "r": "Sì, i formati. ppt e. pptx sono supportati come Word, Excel e PDF, fino a 25 file da 50 MB per invio. Il supporto ritorna nel layout, evitando così di ricostruire le diapositive dopo la traduzione."
+    "q": "Si può tradurre un materiale di formazione in PowerPoint?",
+    "r": "Sì, i formati .ppt e .pptx sono supportati come Word, Excel e PDF, fino a 25 file da 50 MB per invio. Il materiale torna nella sua impaginazione, e non serve ricostruire le diapositive dopo la traduzione."
    },
    {
-    "q": "Qual è il livello di riproduzione di un documento consegnato all’autorità?",
-    "r": "Almeno una Full Review da parte di un traduttore giuridico, che verifica il testo riga per riga. Se è attesa un’attestazione, la doppia review coinvolge due traduttori e un’agenzia specializzata e rilascia un certificato. La scelta avviene documento per documento."
+    "q": "Quale livello di revisione per un documento consegnato all'autorità?",
+    "r": "Almeno una Full review da parte di un traduttore giuridico, che verifica il testo riga per riga. Quando ci si aspetta un'attestazione, la Double review e traduzione certificata coinvolge due traduttori e un'agenzia specializzata, che la rilascia. La scelta si fa documento per documento."
    },
    {
-    "q": "Le traduzioni lasciano tracce leggibili nella verifica?",
-    "r": "La galleria di gestione del progetto registra il livello di rivisitazione scelto e il termine convalidato per ciascun documento, il che documenta il gesto. La modalità di riservatezza scelta determina inoltre se il contenuto può o meno alimentare una memoria di traduzione."
+    "q": "Le traduzioni lasciano una traccia utilizzabile in un audit?",
+    "r": "Il percorso di Gestione dei progetti registra per ogni documento il livello di revisione scelto e il termine di consegna confermato, e documenta così l'operazione. La modalità di riservatezza scelta determina inoltre se il contenuto può alimentare o no una memoria di traduzione."
    }
   ],
-  "cta_t": "La sua documentazione di conformità, elaborata in Svizzera",
-  "cta_p": "Una dimostrazione delle vostre direttive e dei vostri rapporti con uno specialista.",
+  "cta_t": "La vostra documentazione di compliance, trattata in Svizzera",
+  "cta_p": "Una dimostrazione sulle vostre direttive e sui vostri rapporti, con uno specialista.",
   "voisins": [
    "banque-finance",
    "droit-penal",
@@ -1191,64 +1191,64 @@
  {
   "slug": "rapports-annuels-financiers",
   "short": "Rapporti annuali",
-  "resume": "Rapporto di gestione, conto annuale, allegato: tradurre la chiusura.",
-  "title": "Traduzioni dei rapporti annuali e dei conti svizzeri · Neur.on",
-  "description": "Rapporto di gestione, conto annuale, allegato, rapporto di revisione: tradurre la chiusura in quattro lingue con le redazioni del Codice delle obbligazioni.",
+  "resume": "Relazione sulla gestione, conto annuale, allegato: tradurre la chiusura dei conti.",
+  "title": "Traduzione rapporto annuale e conto annuale svizzero · Neur.on",
+  "description": "Relazione sulla gestione, conto annuale, allegato, relazione di revisione: il rapporto annuale in quattro lingue, con le diciture del Codice delle obbligazioni.",
   "lede": "Rapporti annuali.",
-  "h1": "Chiusura in quattro lingue, a data fissa",
-  "lead": "Il conto annuale, l’allegato, il rapporto di revisione e il rapporto di gestione sono pubblicati a data fissa, in diverse lingue. Corrext conserva i file nel loro formato, con il vocabolario contabile del CO.",
+  "h1": "Il rapporto annuale in quattro lingue, a data fissa",
+  "lead": "Conto annuale, allegato, relazione di revisione e relazione sulla gestione si pubblicano a data fissa, in più lingue. Corrext conserva i file nel loro formato, con il vocabolario contabile del CO.",
   "promesses": [
    {
-    "t": "Dipinti preservati",
-    "d": "file. xls e. xlsx trattati come documenti Word"
+    "t": "Tabelle preservate",
+    "d": "file .xls e .xlsx trattati come i documenti Word"
    },
    {
     "t": "Vocabolario del CO",
-    "d": "bilancio, conto economico, allegato: denominazioni ufficiali"
+    "d": "bilancio, conto economico, allegato: le diciture ufficiali"
    },
    {
-    "t": "Ripresa da un anno all’altro",
-    "d": "la memoria di traduzione evita di tradurre l’identico"
+    "t": "Ripresa da un anno all'altro",
+    "d": "la memoria di traduzione evita di ritradurre ciò che non cambia"
    }
   ],
-  "facts_titre": "Concretamente tradurre un rapporto annuale",
-  "definition": "Tradurre un rapporto annuale svizzero significa trattare insieme due temi: un testo di gestione liberamente redatto e dei bilanci di cui ogni voce reca un nome stabilito dal diritto contabile del Codice delle obbligazioni. Bilancio, conto economico e allegato hanno denominazioni ufficiali in tedesco, francese e italiano e la pubblicazione impegna la società.",
+  "facts_titre": "Tradurre un rapporto annuale, in concreto",
+  "definition": "Tradurre un rapporto annuale svizzero significa trattare insieme due materie: un testo sulla gestione redatto liberamente e conti in cui ogni voce ha un nome fissato dal diritto contabile del Codice delle obbligazioni. Bilancio, conto economico e allegato hanno diciture ufficiali in tedesco, francese e italiano, e la pubblicazione impegna la società.",
   "facts": [
    {
-    "k": "Rapporto di gestione",
-    "v": "La parte redatta si traduce dapprima in una macchina e poi in una Full Review: è il documento più letto e citato all’esterno."
+    "k": "Relazione sulla gestione",
+    "v": "La parte redatta si traduce prima in automatico, poi passa in Full review: è il documento più letto e più citato all'esterno."
    },
    {
     "k": "Conto annuale",
-    "v": "Bilancio, conto economico e allegato utilizzano le denominazioni del Codice delle obbligazioni: devono figurare loro, non i loro equivalenti d’uso."
+    "v": "Bilancio, conto economico e allegato usano le diciture del Codice delle obbligazioni: devono comparire queste, non i loro equivalenti d'uso."
    },
    {
     "k": "Tabelle Excel",
-    "v": "I file. xls e. xlsx sono supportati alla stessa stregua di Word e PowerPoint, che conservano la struttura della tabella.",
+    "v": "I file .xls e .xlsx sono supportati come Word e PowerPoint, con la struttura delle tabelle conservata.",
     "s": "Fino a 25 file da 50 MB per invio."
    },
    {
-    "k": "Rapporto di revisione",
-    "v": "Il rapporto dell’ufficio di revisione segue una formulazione molto stabile: la memoria di traduzione la riprende da una chiusura all’altra."
+    "k": "Relazione di revisione",
+    "v": "La relazione dell'ufficio di revisione segue una formulazione molto stabile: la memoria di traduzione la riprende da una chiusura all'altra."
    },
    {
     "k": "Allegato e note",
-    "v": "Le note contabili citano regole e metodi: la Light Review è sufficiente per un documento interno, la Full Review per una pubblicazione."
+    "v": "Le note contabili citano regole e metodi: per un documento interno basta la Light review, per una pubblicazione serve la Full review."
    },
    {
     "k": "Conto di gruppo",
-    "v": "Nel conto di gruppo è aggiunto il proprio vocabolario: il concordato permette di verificare ogni posto nel contesto, con la relativa fonte."
+    "v": "Il conto di gruppo aggiunge un vocabolario proprio: il concordanziere permette di verificare ogni voce nel contesto, con la sua fonte."
    },
    {
     "k": "Calendario di chiusura",
-    "v": "Il termine di riproduzione viene visualizzato prima della convalida del preventivo, il che consente di arbitrare tra livelli di riproduzione a data fissa."
+    "v": "Il termine di consegna compare prima della conferma dell'offerta: a data fissa, potete scegliere il livello di revisione della traduzione più adatto."
    },
    {
     "k": "Prima della pubblicazione",
-    "v": "Un rapporto non pubblicato è un’informazione sensibile: la modalità «High-sensitive Content» conserva lo stoccaggio e il trattamento esclusivamente in Svizzera."
+    "v": "Un rapporto non ancora pubblicato è un'informazione sensibile: la modalità Highly sensitive content mantiene archiviazione e trattamento esclusivamente in Svizzera."
    }
   ],
-  "termes_titre": "Il vocabolario contabile, nelle quattro lingue",
+  "termes_titre": "Il vocabolario contabile nelle quattro lingue",
   "termes": [
    {
     "de": "Geschäftsbericht",
@@ -1307,81 +1307,81 @@
     "ref": "art. 727a CO"
    }
   ],
-  "termes_note": "Le poste contabili sono nominate dal titolo 32 del Codice delle obbligazioni nelle sue tre versioni ufficiali: queste sono le denominazioni che l’ufficio di revisione e le autorità fiscali ritrovano da un esercizio all’altro. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi citati quotidianamente nel rapporto annuale",
-  "lois_intro": "Il diritto contabile svizzero si fonda sul Codice delle obbligazioni, che stabilisce la struttura minima dei conti e le soglie di revisione. Le società quotate e gli investimenti collettivi di capitale aggiungono i propri obblighi di pubblicazione.",
+  "termes_note": "Le voci contabili sono denominate dal titolo 32 del Codice delle obbligazioni, nelle sue tre versioni ufficiali: sono queste le diciture che l'ufficio di revisione e le autorità fiscali ritrovano da un esercizio all'altro. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un rapporto annuale cita ogni giorno",
+  "lois_intro": "Il diritto contabile svizzero sta nel Codice delle obbligazioni, che fissa la struttura minima dei conti e le soglie della revisione. Le società quotate e gli investimenti collettivi aggiungono i propri obblighi di pubblicazione.",
   "lois": [
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "Il titolo 32 disciplina la contabilità commerciale, la presentazione dei conti e il consolidamento; ORO in tedesco, CO in italiano."
+    "note": "Il titolo 32 disciplina la contabilità commerciale, la presentazione dei conti e il conto di gruppo; OR in tedesco, CO in francese."
    },
    {
     "abbr": "LSerFi",
     "nom": "Legge federale sui servizi finanziari",
-    "note": "Essa impone il prospetto e l’informazione da pubblicare in occasione di un’offerta al pubblico; FIDLEG in tedesco."
+    "note": "Impone il prospetto e le informazioni da pubblicare in caso di offerta pubblica; FIDLEG in tedesco, LSFin in francese."
    },
    {
-    "abbr": "LICOL",
+    "abbr": "LICol",
     "nom": "Legge federale sugli investimenti collettivi di capitale",
-    "note": "Essa definisce i rapporti periodici che i fondi devono pubblicare; KAG in tedesco, licol in italiano."
+    "note": "Stabilisce i rapporti periodici che i fondi devono pubblicare; KAG in tedesco, LPCC in francese."
    },
    {
     "abbr": "LIFD",
-    "nom": "Legge federale sull’imposta federale diretta",
-    "note": "Essa fa del conto annuale il punto di partenza dell’utile imponibile; DBG in tedesco, LIFD in italiano."
+    "nom": "Legge federale sull'imposta federale diretta",
+    "note": "Fa del conto annuale il punto di partenza dell'utile imponibile; DBG in tedesco, LIFD in francese."
    }
   ],
-  "who_titre": "Tre sfide per la stagione di chiusura",
+  "who_titre": "Tre vincoli tipici della stagione di chiusura",
   "who": [
    {
     "a": "Società",
-    "t": "Un rapporto da pubblicare a tempo determinato",
-    "p": "Contrariamente al testo, che circola fino all’ultimo momento, la data di pubblicazione non cambia. Le versioni successive si fondano sulla memoria di traduzione e solo i passaggi modificati passano alla rilettura umana.",
+    "t": "Un rapporto da pubblicare a data fissa",
+    "p": "La data di pubblicazione non si sposta; il testo invece circola fino all'ultimo momento. Le versioni successive si appoggiano sulla memoria di traduzione, e solo i passaggi modificati tornano in revisione da parte di specialisti.",
     "vis": "calendrier"
    },
    {
-    "a": "Fiduciario",
-    "t": "Recinzioni in serie, tutte diverse",
-    "p": "Ogni cliente ha le proprie denominazioni e i propri allegati. Le risorse terminologiche di CHnell possono essere proprie a ogni dossier, evitando così di confondere le convenzioni tra società.",
+    "a": "Fiduciaria",
+    "t": "Chiusure in serie, tutte diverse",
+    "p": "Ogni cliente ha le sue diciture e i suoi allegati. Le risorse terminologiche di CHnell possono essere proprie di ogni dossier: così le convenzioni di una società non si mescolano con quelle di un'altra.",
     "vis": "lot"
    },
    {
-    "a": "Uditore",
-    "t": "Rapporto di revisione redatto in forma stabile",
-    "p": "La formulazione varia raramente da un anno all’altro e da un cliente all’altro. La memoria di traduzione la riprende così com’è e la rilettura si concentra sui passaggi realmente nuovi.",
+    "a": "Società di revisione",
+    "t": "Una relazione di revisione dalla formulazione stabile",
+    "p": "La formulazione cambia poco da un anno all'altro e da un cliente all'altro. La memoria di traduzione la riprende così com'è, e la revisione della traduzione si concentra sui passaggi davvero nuovi.",
     "vis": "audit"
    }
   ],
   "faq_titre": "Domande frequenti sulla traduzione dei conti",
   "faq": [
    {
-    "q": "Le tabelle Excel vengono tradotte senza rompere la struttura?",
-    "r": "Sì, i file. xls e. xlsx sono supportati come gli altri formati burotica e ritornano nel loro formato originale, struttura della tabella conservata. Per un file complesso è meglio depositare il formato nativo anziché un’esportazione PDF."
+    "q": "Le tabelle Excel si traducono senza rompere la struttura?",
+    "r": "Sì, i file .xls e .xlsx sono supportati come gli altri formati d'ufficio e tornano nel loro formato originale, con la struttura delle tabelle conservata. Per un file complesso è meglio caricare il formato nativo anziché un'esportazione in PDF."
    },
    {
-    "q": "Quali denominazioni contabili devono essere utilizzate?",
-    "r": "Quelli del Titolo 32 del Codice delle obbligazioni, che nomina il bilancio, il conto economico e l’allegato nelle tre lingue ufficiali. Gli usi di spazio esistono, ma un rapporto pubblicato guadagna a riprendere il vocabolario legale, che il concordanziere mostra con la sua fonte."
+    "q": "Quali diciture contabili bisogna usare?",
+    "r": "Quelle del titolo 32 del Codice delle obbligazioni, che denomina il bilancio, il conto economico e l'allegato nelle tre lingue ufficiali. Esistono usi della piazza, ma un rapporto pubblicato ha tutto da guadagnare a riprendere il vocabolario legale, che il concordanziere mostra con la sua fonte."
    },
    {
     "q": "Un rapporto non ancora pubblicato è protetto?",
-    "r": "Lo stoccaggio avviene in ogni caso su server svizzeri. Per un rapporto sotto embargo, la modalità «high sensitive content» impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione. I motori ospitati all’estero devono emettere un avvertimento prima della spedizione."
+    "r": "L'archiviazione avviene sempre su server svizzeri. Per un rapporto sotto embargo, la modalità Highly sensitive content impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione. I motori ospitati all'estero mostrano un avviso prima di ogni invio."
    },
    {
-    "q": "Bisogna far rileggere tutto da un essere umano?",
-    "r": "Raramente. Il testo di gestione, che sarà letto e citato, giustifica una Full Review. Gli allegati molto standardizzati possono contentarsi di una Light Review o addirittura di un’Internal Review da parte dei vostri team, la cui galleria di progetto calcola il tempo a partire dal numero di pagine rilevato."
+    "q": "Bisogna far rivedere tutto da una persona?",
+    "r": "Raramente. Il testo sulla gestione, che sarà letto e citato, giustifica una Full review. Gli allegati molto standardizzati possono accontentarsi di una Light review, o anche di una Internal review da parte dei vostri team, il cui tempo è calcolato nel percorso di progetto in base al numero di pagine rilevato."
    },
    {
-    "q": "Come risparmiare tempo da una recinzione all’altra?",
-    "r": "Riutilizzando la memoria di traduzione costituita dai progetti in confidenzialità standard: i passaggi immutati non vengono tradotti e il lavoro si concentra sulle novità dell’esercizio. La memoria rimane riutilizzabile esclusivamente dalla vostra organizzazione. Il rapporto dell’ufficio di revisione, molto stabile, ne trae particolare vantaggio."
+    "q": "Come guadagnare tempo da una chiusura all'altra?",
+    "r": "Riutilizzando la memoria di traduzione costituita dai progetti con la riservatezza Standard: i passaggi invariati non si ritraducono, e il lavoro si concentra sulle novità dell'esercizio. La memoria resta riutilizzabile solo dalla vostra organizzazione. Ne beneficia in particolare la relazione dell'ufficio di revisione, molto stabile."
    },
    {
-    "q": "In quali lingue è possibile pubblicare?",
-    "r": "Il tedesco, il francese, l’italiano e l’inglese sono nativi in tutte le coppie, il che copre le esigenze di un rapporto svizzero. La piattaforma supporta complessivamente 30 lingue per le pubblicazioni destinate a investitori stranieri. La scelta delle lingue avviene documento per documento nella galleria progetto."
+    "q": "In quali lingue si può pubblicare?",
+    "r": "Tedesco, francese, italiano e inglese sono lingue native in tutte le combinazioni, e coprono le esigenze di un rapporto svizzero. La piattaforma supporta 30 lingue in totale per le pubblicazioni destinate a investitori esteri. Le lingue si scelgono documento per documento nel percorso di progetto."
    }
   ],
-  "cta_t": "Preparate la vostra prossima recinzione con Corrext",
-  "cta_p": "Una dimostrazione sui propri conti, tabelle comprese.",
+  "cta_t": "Preparate la prossima chiusura con Corrext",
+  "cta_p": "Una dimostrazione sui vostri conti, tabelle comprese.",
   "voisins": [
    "banque-finance",
    "fiscalite",
@@ -1391,12 +1391,12 @@
  {
   "slug": "fiscalite",
   "short": "Fiscalità",
-  "resume": "Decisioni di tassazione, reclami, scambi con l’amministrazione fiscale.",
-  "title": "Traduzioni legali e fiscali in diritto svizzero · Neur.on",
-  "description": "Decisioni di tassazione, reclami, corrispondenza con l’Amministrazione: tradurre la fiscalità svizzera con i termini della LIFD e della LIVA.",
+  "resume": "Decisioni di tassazione, reclami, scambi con l'amministrazione fiscale.",
+  "title": "Traduzione fiscale e diritto tributario svizzero · Neur.on",
+  "description": "Decisioni di tassazione, reclami, corrispondenza con l'amministrazione: tradurre la fiscalità svizzera con i termini della LIFD e della LIVA.",
   "lede": "Fiscalità.",
-  "h1": "Tre livelli d’imposta, tre lingue ufficiali",
-  "lead": "L’imposta svizzera si gioca a livello federale, cantonale e comunale, ogni Cantone nella sua lingua. Una tassazione in tedesco e un reclamo in francese parlano le stesse nozioni, quelle delle leggi fiscali.",
+  "h1": "Tre livelli d'imposta, tre lingue ufficiali",
+  "lead": "In Svizzera l'imposta si decide a livello federale, cantonale e comunale, e ogni Cantone usa la sua lingua. Una decisione di tassazione in tedesco e un reclamo in francese parlano delle stesse nozioni: quelle delle leggi fiscali.",
   "promesses": [
    {
     "t": "Termini delle leggi fiscali",
@@ -1407,44 +1407,44 @@
     "d": "federale, cantonale e comunale, nella lingua del Cantone"
    },
    {
-    "t": "Termini brevi",
-    "d": "traduzione immediata di un testo incollato, rivisitazione ordinata in uno schermo"
+    "t": "Termini di consegna brevi",
+    "d": "traduzione immediata di un testo incollato, revisione ordinata in una sola schermata"
    }
   ],
-  "facts_titre": "Concretamente tradurre un dossier fiscale",
-  "definition": "Tradurre in fiscalità svizzera significa manipolare concetti definiti a tre livelli: l’imposta federale diretta, le imposte cantonali armonizzate e le imposte indirette come l’IVA. Ogni legge è pubblicata in tedesco, francese e italiano, e una stessa parola corrente, del reddito da utili, vi prende una definizione precisa da cui dipende l’importo dovuto.",
+  "facts_titre": "Tradurre un dossier fiscale, in concreto",
+  "definition": "Tradurre nella fiscalità svizzera significa maneggiare nozioni definite su tre livelli: l'imposta federale diretta, le imposte cantonali armonizzate e le imposte indirette come l'IVA. Ogni legge è pubblicata in tedesco, francese e italiano. Una stessa parola corrente, dal reddito all'utile, vi assume una definizione precisa, da cui dipende l'importo dovuto.",
   "facts": [
    {
     "k": "Decisione di tassazione",
-    "v": "Una decisione giunge nella lingua ufficiale del Cantone: la traduzione serve a decidere un reclamo, spesso in tempi brevi."
+    "v": "Una decisione arriva nella lingua ufficiale del Cantone: la traduzione serve a decidere se presentare un reclamo, spesso entro un termine breve."
    },
    {
     "k": "Reclamo e ricorso",
-    "v": "La scrittura depositata impegna il contribuente: essa passa in Full Review da parte di un traduttore giuridico, con il termine indicato prima della convalida."
+    "v": "L'atto depositato impegna il contribuente: passa in Full review da parte di un traduttore giuridico, con il termine di consegna indicato prima della conferma."
    },
    {
     "k": "Corrispondenza amministrativa",
-    "v": "Gli scambi con l’Amministrazione si traducono nel furto: fino a 10’000 caratteri incollati nella traduzione di testi."
+    "v": "Gli scambi con l'amministrazione si traducono al volo: fino a 10'000 caratteri incollati nella traduzione di testo."
    },
    {
     "k": "Allegati contabili",
-    "v": "Gli allegati a una dichiarazione includono conti e tabelle: i formati. xls e. xlsx sono trattati come documenti Word."
+    "v": "I documenti allegati a una dichiarazione comprendono conti e tabelle: i formati .xls e .xlsx sono trattati come i documenti Word."
    },
    {
-    "k": "Terminologia sorpassata",
-    "v": "Il settore Tax &amp; Customs del concordanziere CHnell utilizza ufficialmente un termine fiscale con relativo riferimento."
+    "k": "Terminologia con fonti",
+    "v": "Il settore Tax & Customs del concordanziere CHnell indica l'uso ufficiale di un termine fiscale, con il suo riferimento a fronte."
    },
    {
-    "k": "Incarti di più Cantoni",
-    "v": "Lo stesso contribuente può provenire da due Cantoni di lingue diverse: le risorse terminologiche condivise conservano un vocabolario unico."
+    "k": "Dossier in più Cantoni",
+    "v": "Uno stesso contribuente può dipendere da due Cantoni di lingue diverse: le risorse terminologiche condivise mantengono un vocabolario unico."
    },
    {
     "k": "Dati del contribuente",
-    "v": "Un dossier fiscale contiene dati personali: la modalità «high sensitive content» impone l’archiviazione e il trattamento esclusivamente in Svizzera."
+    "v": "Un dossier fiscale contiene dati personali: la modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera."
    },
    {
     "k": "Contesto internazionale",
-    "v": "I documenti scambiati con un’amministrazione estera circolano spesso in inglese, mentre il riferimento resta il testo tedesco, francese o italiano."
+    "v": "I documenti scambiati con un'amministrazione estera circolano spesso in inglese, mentre il riferimento resta il testo tedesco, francese o italiano."
    }
   ],
   "termes_titre": "Il vocabolario fiscale nelle quattro lingue",
@@ -1506,77 +1506,77 @@
     "ref": "art. 1 LIP"
    }
   ],
-  "termes_note": "Il vocabolario fiscale svizzero è fuorviante da una lingua all’altra: l’imposta preventiva non è una ritenuta ordinaria e l’utile imponibile non si confonde con il risultato contabile. Le equivalenze di cui sopra sono quelle delle leggi stesse. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che un dossier fiscale cita quotidianamente",
-  "lois_intro": "La fiscalità svizzera sovrappone una legge federale, una legge di armonizzazione che disciplina i Cantoni e leggi cantonali proprie. Le imposte indirette sono disciplinate da testi separati, tutti pubblicati nelle tre lingue ufficiali.",
+  "termes_note": "Il vocabolario fiscale svizzero inganna da una lingua all'altra: l'imposta preventiva non è una ritenuta ordinaria, e l'utile imponibile non coincide con il risultato contabile. Gli equivalenti qui sopra sono quelli delle leggi stesse. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un dossier fiscale cita ogni giorno",
+  "lois_intro": "La fiscalità svizzera sovrappone una legge federale, una legge di armonizzazione che inquadra i Cantoni e leggi cantonali proprie. Le imposte indirette dipendono da testi separati, tutti pubblicati nelle tre lingue ufficiali.",
   "lois": [
    {
     "abbr": "LIFD",
-    "nom": "Legge federale sull’imposta federale diretta",
-    "note": "Essa definisce l’assoggettamento, il reddito e l’utile imponibili e la procedura di tassazione; DBG in tedesco, LIFD in italiano."
+    "nom": "Legge federale sull'imposta federale diretta",
+    "note": "Definisce l'assoggettamento, il reddito e l'utile imponibili e la procedura di tassazione; DBG in tedesco, LIFD in francese."
    },
    {
     "abbr": "LAID",
-    "nom": "Legge federale sull’armonizzazione delle imposte dirette dei Cantoni e dei Comuni",
-    "note": "Essa impone ai Cantoni una base comune di concetti e di procedure; StHG in tedesco, BRUTTO in italiano."
+    "nom": "Legge federale sull'armonizzazione delle imposte dirette dei Cantoni e dei Comuni",
+    "note": "Impone ai Cantoni una base comune di nozioni e di procedure; StHG in tedesco, LHID in francese."
    },
    {
     "abbr": "LIVA",
-    "nom": "Legge federale sull’imposta sul valore aggiunto",
-    "note": "Essa disciplina l’assoggettamento, le aliquote e il conteggio dell’IVA; MWSTG in tedesco, LIVA in italiano."
+    "nom": "Legge federale concernente l'imposta sul valore aggiunto",
+    "note": "Disciplina l'assoggettamento, le aliquote e il rendiconto dell'IVA; MWSTG in tedesco, LTVA in francese."
    },
    {
     "abbr": "LIP",
-    "nom": "Legge federale sull’imposta preventiva",
-    "note": "Essa organizza la riscossione alla fonte sui redditi di capitale e il relativo rimborso; VStG in tedesco."
+    "nom": "Legge federale sull'imposta preventiva",
+    "note": "Organizza la riscossione alla fonte sui redditi di capitali mobili e il relativo rimborso; VStG in tedesco, LIA in francese."
    }
   ],
-  "who_titre": "Tre situazioni fiscali in cui è determinante la traduzione",
+  "who_titre": "Tre situazioni fiscali in cui la traduzione è decisiva",
   "who": [
    {
     "a": "Impresa",
-    "t": "Tassazione in un’altra lingua",
-    "p": "La sede è romanda, la succursale germanica riceve la decisione in tedesco e decorre il termine di reclamo. La traduzione immediata permette di decidere rapidamente e solo il reclamo depositato passa alla rilettura da parte di un traduttore giuridico.",
+    "t": "Una decisione di tassazione in un'altra lingua",
+    "p": "La sede è in Ticino, la succursale di Zurigo riceve la decisione in tedesco, e il termine di reclamo decorre. La traduzione immediata permette di decidere in fretta, e solo il reclamo depositato passa in revisione da parte di un traduttore giuridico.",
     "vis": "societe"
    },
    {
-    "a": "Fiduciario",
-    "t": "Dossier in diversi Cantoni",
-    "p": "Lo stesso cliente appartiene a Cantoni di lingue diverse, con denominazioni che non si sovrappongono sempre. Le risorse terminologiche condivise di CHnell mantengono un vocabolario unico da un dossier all’altro.",
+    "a": "Fiduciaria",
+    "t": "Dossier in più Cantoni",
+    "p": "Uno stesso cliente dipende da Cantoni di lingue diverse, con diciture che non sempre coincidono. Le risorse terminologiche condivise di CHnell mantengono un vocabolario unico da un dossier all'altro.",
     "vis": "fiscal"
    },
    {
-    "a": "Gruppo",
-    "t": "Una posizione fiscale per l’estero",
-    "p": "La nota interna circola in inglese, ma il riferimento resta il testo tedesco, francese o italiano. Il concordato mostra l’articolo originale, evitando così di fondare un’argomentazione su una traduzione approssimativa.",
+    "a": "Multinazionale",
+    "t": "Una posizione fiscale per l'estero",
+    "p": "La nota interna circola in inglese, ma il riferimento resta il testo tedesco, francese o italiano. Il concordanziere mostra l'articolo di origine: così nessuno costruisce un'argomentazione su una traduzione approssimativa.",
     "vis": "globe"
    }
   ],
   "faq_titre": "Domande frequenti sulla traduzione fiscale",
   "faq": [
    {
-    "q": "In quale lingua comunica l’amministrazione fiscale?",
-    "r": "Nella lingua ufficiale del Cantone interessato, il che produce dossier plurilingui non appena una società ha stabilimenti in più regioni. Le quattro lingue di lavoro della piattaforma, tedesco, francese, italiano e inglese, sono native in tutte le coppie."
+    "q": "In quale lingua comunica l'amministrazione fiscale?",
+    "r": "Nella lingua ufficiale del Cantone interessato: ne nascono dossier multilingui non appena una società ha sedi in più regioni. Le quattro lingue di lavoro della piattaforma, tedesco, francese, italiano e inglese, sono native in tutte le combinazioni."
    },
    {
-    "q": "Una traduzione è sufficiente per rispondere a una decisione?",
-    "r": "La traduzione serve a comprendere e a decidere. La scrittura depositata, reclamo o ricorso, impegna il contribuente e giustifica una Full Review da parte di un traduttore giuridico. Se viene richiesta un’attestazione, rimane disponibile la doppia revisione con certificato. Il termine di revisione viene visualizzato prima della convalida del preventivo."
+    "q": "Basta una traduzione per rispondere a una decisione di tassazione?",
+    "r": "La traduzione serve a capire e a decidere. L'atto depositato, reclamo o ricorso, impegna il contribuente e giustifica una Full review da parte di un traduttore giuridico. Quando è richiesta un'attestazione, resta disponibile la Double review e traduzione certificata. Il termine di consegna della revisione compare prima della conferma dell'offerta."
    },
    {
-    "q": "Come si traducono i concetti fiscali che non hanno equivalenti?",
-    "r": "Partendo dal testo di legge piuttosto che dall’uso. L’imposta preventiva porta ad esempio un nome ufficiale nelle tre lingue e una definizione propria. Il settore Tax &amp; Customs del concordanziere mostra queste occorrenze nel contesto della loro fonte."
+    "q": "Come tradurre le nozioni fiscali senza equivalente?",
+    "r": "Partendo dal testo di legge anziché dall'uso. L'imposta preventiva, per esempio, ha un nome ufficiale nelle tre lingue e una definizione propria. Il settore Tax & Customs del concordanziere mostra queste occorrenze nel contesto, con la loro fonte."
    },
    {
     "q": "I dossier fiscali sono trattati in Svizzera?",
-    "r": "Lo stoccaggio avviene in ogni caso su server svizzeri e il trattamento rimane in Svizzera con LexMachina o in modalità high sensitive content. Un dossier contenente i dati dei contribuenti non dovrebbe partire verso un motore ospitato all’estero senza pseudonimizzazione preliminare."
+    "r": "L'archiviazione avviene sempre su server svizzeri, e il trattamento resta in Svizzera con LexMachina o in modalità Highly sensitive content. Un dossier con dati di contribuenti non dovrebbe partire verso un motore ospitato all'estero senza una pseudonimizzazione preliminare."
    },
    {
-    "q": "È possibile tradurre gli allegati contabili di una dichiarazione?",
-    "r": "Sì. I formati. xls e. xlsx sono supportati come Word, PowerPoint e PDF, fino a 25 file da 50 MB per invio, e i file ritornano nel loro formato originale con la loro struttura di tabella. Per un lotto più importante, la via è la gestione del progetto."
+    "q": "Si possono tradurre gli allegati contabili di una dichiarazione?",
+    "r": "Sì. I formati .xls e .xlsx sono supportati come Word, PowerPoint e PDF, fino a 25 file da 50 MB per invio, e i file tornano nel loro formato originale con la struttura delle tabelle. Per un lotto più grande, la via è Gestione dei progetti."
    },
    {
-    "q": "E per una semplice lettera all’Amministrazione?",
-    "r": "La traduzione di testi di traduzione testi e documenti accetta fino a 10’000 caratteri incollati, con scelta del motore e fino a quattro alternative di formulazione. È il gesto adatto a una lettera corta che bisogna inviare durante il giorno. Una Light Review può essere ordinata in seguito se la posta impegna la società."
+    "q": "E per una semplice lettera all'amministrazione?",
+    "r": "In Traduzione di testi e documenti, la traduzione di testo accetta fino a 10'000 caratteri incollati, con la scelta del motore e fino a quattro formulazioni alternative. È la soluzione adatta a una lettera breve da inviare in giornata. Se la lettera impegna la società, si può ordinare poi una Light review."
    }
   ],
   "cta_t": "I vostri dossier fiscali, leggibili in tutte le lingue del Paese",
@@ -1589,13 +1589,13 @@
  },
  {
   "slug": "assurance",
-  "short": "Assicurazione",
-  "resume": "Condizioni generali, polizze, dichiarazioni di sinistro: il vocabolario LCA.",
-  "title": "Traduzioni legali per assicurazioni in Svizzera · Neur.on",
-  "description": "Condizioni generali, polizze, dichiarazioni di sinistro: tradurre in assicurazione privata con la terminologia della legge svizzera sul contratto d’assicurazione.",
-  "lede": "Assicurazione.",
-  "h1": "Dalle condizioni generali agli atti di sinistro",
-  "lead": "Un assicuratore svizzero pubblica le sue condizioni generali in più lingue, riceve i sinistri in tutte le lingue e risponde in quella dell’assicurato. Corrext segue la legge sul contratto d’assicurazione.",
+  "short": "Assicurazioni",
+  "resume": "Condizioni generali, polizze, avvisi di sinistro: il vocabolario della LCA.",
+  "title": "Traduzione assicurativa e giuridica in Svizzera · Neur.on",
+  "description": "Condizioni generali, polizze, avvisi di sinistro: tradurre nell'assicurazione privata con la terminologia della legge sul contratto d'assicurazione.",
+  "lede": "Assicurazioni.",
+  "h1": "Dalle condizioni generali ai dossier di sinistro",
+  "lead": "Un assicuratore svizzero pubblica le sue condizioni generali in più lingue, riceve sinistri in tutte e risponde in quella dell'assicurato. Corrext segue la legge sul contratto d'assicurazione.",
   "promesses": [
    {
     "t": "Vocabolario della LCA",
@@ -1603,50 +1603,50 @@
    },
    {
     "t": "Documenti ripetitivi",
-    "d": "condizioni generali e polizze in memoria di traduzione"
+    "d": "condizioni generali e polizze nella memoria di traduzione"
    },
    {
     "t": "Dossier sensibili",
-    "d": "dati sanitari trattati, se necessario, esclusivamente in Svizzera"
+    "d": "dati sulla salute trattati esclusivamente in Svizzera, se necessario"
    }
   ],
-  "facts_titre": "Concretamente tradurre in assicurazione",
-  "definition": "Tradurre in assicurazione privata significa trasporre documenti che presuppongono una copertura: condizioni generali, proposta, polizza, dichiarazione di sinistro, corrispondenza di liquidazione. I concetti centrali sono definiti dalla legge sul contratto d’assicurazione, pubblicata in tedesco, francese e italiano, e lo scarto tra due formulazioni può spostare l’onere di un’obbligazione.",
+  "facts_titre": "Tradurre nelle assicurazioni, in concreto",
+  "definition": "Tradurre nell'assicurazione privata significa trasporre documenti in cui ogni parola condiziona una copertura: condizioni generali, proposta, polizza, avviso di sinistro, corrispondenza di liquidazione. Le nozioni centrali sono definite dalla legge sul contratto d'assicurazione, pubblicata in tedesco, francese e italiano. La differenza tra due formulazioni può spostare l'onere di un obbligo.",
   "facts": [
    {
     "k": "Condizioni generali",
-    "v": "Le condizioni generali d’assicurazione si ripubblicano a ogni revisione: la memoria di traduzione fa tradurre solo ciò che è cambiato."
+    "v": "Le condizioni generali d'assicurazione si ripubblicano a ogni aggiornamento: la memoria di traduzione fa ritradurre solo ciò che è cambiato."
    },
    {
-    "k": "Polizia e clausole aggiuntive",
-    "v": "La polizia riprende i termini delle condizioni generali: il concordato permette di verificare che una stessa parola non sia scivolata da una versione all’altra."
+    "k": "Polizza e appendici",
+    "v": "La polizza riprende i termini delle condizioni generali: il concordanziere permette di verificare che una stessa parola non sia scivolata da una versione all'altra."
    },
    {
-    "k": "Dichiarazione di sinistro",
-    "v": "Le dichiarazioni giungono nella lingua dell’assicurato, spesso manoscritte o scansionate: la scheda PDF to Word produce dapprima un documento pubblicabile."
+    "k": "Avviso di sinistro",
+    "v": "Gli avvisi arrivano nella lingua dell'assicurato, spesso scritti a mano o scansionati: la scheda PDF to Word produce prima un documento modificabile."
    },
    {
-    "k": "Rapporti di perizia",
-    "v": "Un rapporto tecnico o medico si traduce nel suo formato originale, fino a 25 file da 50 MB per invio."
+    "k": "Perizie",
+    "v": "Una perizia tecnica o medica si traduce nel suo formato originale, fino a 25 file da 50 MB per invio."
    },
    {
     "k": "Dati sulla salute",
-    "v": "Un dossier di sinistro del corpo contiene dati sensibili: la modalità «High-sensitive Content» conserva l’archiviazione e il trattamento esclusivamente in Svizzera."
+    "v": "Un dossier di sinistro con danni alla persona contiene dati degni di particolare protezione: la modalità Highly sensitive content mantiene archiviazione e trattamento esclusivamente in Svizzera."
    },
    {
     "k": "Corrispondenza di liquidazione",
-    "v": "Una lettera di rifiuto o di accettazione obbliga l’assicuratore: la Full Review da parte di un traduttore giuridico verifica la portata di ogni frase."
+    "v": "Una lettera di rifiuto o di accettazione impegna l'assicuratore: la Full review di un traduttore giuridico verifica la portata di ogni frase."
    },
    {
-    "k": "Terminologia sorpassata",
-    "v": "Il settore private Insurance del concordato CHnell mostra l’uso ufficiale di un termine assicurativo con il suo riferimento."
+    "k": "Terminologia con fonti",
+    "v": "Il settore Private Insurance del concordanziere CHnell mostra l'uso ufficiale di un termine assicurativo, con il suo riferimento."
    },
    {
     "k": "Assicurazioni sociali",
-    "v": "Spesso gli incarti combinano assicurazioni private e assicurazioni sociali: il concordato copre anche il settore Employment &amp; Social ins."
+    "v": "I dossier mescolano spesso assicurazione privata e assicurazioni sociali: il concordanziere copre anche il settore Employment & Social Ins."
    }
   ],
-  "termes_titre": "Il vocabolario assicurativo nelle quattro lingue",
+  "termes_titre": "Il vocabolario delle assicurazioni nelle quattro lingue",
   "termes": [
    {
     "de": "Versicherungsvertrag",
@@ -1695,32 +1695,32 @@
     "fr": "réassurance",
     "it": "riassicurazione",
     "en": "reinsurance",
-    "ref": "art. 2 LS A"
+    "ref": "art. 2 LSA"
    }
   ],
-  "termes_note": "La reticenza è l’esempio tipico del falso amico: il termine tedesco descrive la violazione di un obbligo di dichiarazione e la parola francese usata dalla legge non ha il suo senso comune. Queste equivalenze sono quelle del testo ufficiale. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che l’assicurazione cita quotidianamente",
-  "lois_intro": "L’assicurazione privata svizzera poggia su due testi complementari: uno disciplina il contratto tra assicuratore e assicurato, l’altro la sorveglianza delle imprese di assicurazione. Il Codice delle obbligazioni e il diritto della protezione dei dati si aggiungono alla quotidianità.",
+  "termes_note": "La reticenza è l'esempio tipico di falso amico: il termine tedesco descrive la violazione di un obbligo di dichiarazione, e la parola francese usata dalla legge non ha il suo senso corrente. Questi equivalenti sono quelli del testo ufficiale. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che le assicurazioni citano ogni giorno",
+  "lois_intro": "L'assicurazione privata svizzera si fonda su due testi complementari: uno disciplina il contratto tra assicuratore e assicurato, l'altro la sorveglianza delle imprese di assicurazione. Il Codice delle obbligazioni e il diritto della protezione dei dati si aggiungono nel lavoro quotidiano.",
   "lois": [
    {
     "abbr": "LCA",
-    "nom": "Legge federale sul contratto d’assicurazione",
-    "note": "Essa disciplina la proposta, la polizza, il premio, la dichiarazione del rischio e il sinistro; VVG in tedesco, LCA in italiano."
+    "nom": "Legge federale sul contratto d'assicurazione",
+    "note": "Disciplina la proposta, la polizza, il premio, la dichiarazione dei fatti rilevanti per il rischio e il sinistro; VVG in tedesco, LCA in francese."
    },
    {
     "abbr": "LSA",
     "nom": "Legge federale sulla sorveglianza delle imprese di assicurazione",
-    "note": "Essa sottopone gli assicuratori e i riassicuratori ad autorizzazione e sorveglianza; VAG in tedesco."
+    "note": "Sottopone gli assicuratori e i riassicuratori ad autorizzazione e a sorveglianza; VAG in tedesco, LSA in francese."
    },
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "Esso si applica a titolo complementare al contratto d’assicurazione, per tutto ciò che la LCA non disciplina; ORO in tedesco, CO in italiano."
+    "note": "Regge il contratto d'assicurazione «per tutto quanto non sia previsto» nella LCA (art. 100 cpv. 1 LCA); OR in tedesco, CO in francese."
    },
    {
     "abbr": "LPD",
     "nom": "Legge federale sulla protezione dei dati",
-    "note": "Disciplina il trattamento dei dati personali, in particolare sanitari, nelle cartelle dei sinistri; DSG in tedesco, LPD in italiano."
+    "note": "Disciplina il trattamento dei dati personali, in particolare dei dati concernenti la salute, nei dossier di sinistro; DSG in tedesco, LPD in francese."
    }
   ],
   "who_titre": "Tre momenti del ciclo assicurativo che richiedono una traduzione",
@@ -1728,51 +1728,51 @@
    {
     "a": "Sottoscrizione",
     "t": "Le condizioni generali",
-    "p": "Le condizioni generali sono riviste e ripubblicate in tedesco, francese e italiano. La memoria di traduzione limita il lavoro alle clausole modificate e una Full Review copre i passaggi che determinano la copertura.",
+    "p": "Le condizioni generali vengono riviste, poi ripubblicate in tedesco, francese e italiano. La memoria di traduzione limita il lavoro alle clausole modificate, e una Full review copre i passaggi che determinano la copertura.",
     "vis": "signature"
    },
    {
     "a": "Sinistro",
-    "t": "Dichiarazione in un’altra lingua",
-    "p": "La dichiarazione e i relativi allegati, spesso scansionati, vengono convertiti in documenti modificabili e tradotti. Il gestore comprende immediatamente il dossier senza attendere una traduzione esterna.",
+    "t": "Un avviso in un'altra lingua",
+    "p": "L'avviso e i suoi allegati, spesso scansionati, sono convertiti in documenti modificabili e poi tradotti. L'addetto ai sinistri capisce subito il dossier, senza attendere una traduzione esterna.",
     "vis": "alerte"
    },
    {
-    "a": "Regolamento",
-    "t": "Una decisione da notificare all’assicurato",
-    "p": "La lettera di rifiuto o di accettazione obbliga l’assicuratore e può essere prodotta in giudizio. Essa passa in Full Review da parte di un traduttore giuridico, con il termine noto prima della convalida del preventivo.",
+    "a": "Liquidazione",
+    "t": "Una decisione da comunicare all'assicurato",
+    "p": "La lettera di rifiuto o di accettazione impegna l'assicuratore e può essere prodotta in giudizio. Passa in Full review da parte di un traduttore giuridico, con il termine di consegna noto prima della conferma dell'offerta.",
     "vis": "envoi"
    }
   ],
-  "faq_titre": "Domande frequenti sulla traduzione assicurativa",
+  "faq_titre": "Domande frequenti sulla traduzione nelle assicurazioni",
   "faq": [
    {
     "q": "Le condizioni generali devono esistere in più lingue?",
-    "r": "Un assicuratore attivo in più regioni linguistiche li pubblica nelle lingue dei suoi assicurati. La difficoltà non risiede nella pubblicazione, bensì nella coerenza: la stessa parola deve coprire la stessa cosa in ogni versione, cosa che la memoria di traduzione e il concordato aiutano a tenere nel tempo."
+    "r": "Un assicuratore attivo in più regioni linguistiche le pubblica nelle lingue dei suoi assicurati. La difficoltà non è la pubblicazione ma la coerenza: la stessa parola deve coprire la stessa cosa in ogni versione. La memoria di traduzione e il concordanziere aiutano a mantenerla nel tempo."
    },
    {
-    "q": "Come trattare i dati sanitari di una cartella dei sinistri?",
-    "r": "Lo stoccaggio è sempre svizzero. Per i dati sensibili, la modalità «high sensitive content» impone un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione. I motori ospitati all’estero devono emettere un avvertimento prima della spedizione."
+    "q": "Come trattare i dati sulla salute di un dossier di sinistro?",
+    "r": "L'archiviazione è sempre in Svizzera. Per i dati sensibili, la modalità Highly sensitive content impone un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione. I motori ospitati all'estero mostrano un avviso prima di ogni invio."
    },
    {
-    "q": "Le dichiarazioni scansionate possono essere trattate?",
-    "r": "Sì. La scheda PDF to Word di Traduzione testo e documento converte un PDF scansionato in un documento Word modificabile, che può essere tradotto e annotato. Ciò è utile per le dichiarazioni fatte a mano e per i rapporti trasmessi a immagine. Il file ottenuto segue poi lo stesso circuito degli altri documenti."
+    "q": "Si possono trattare avvisi di sinistro scansionati?",
+    "r": "Sì. La scheda PDF to Word di Traduzione di testi e documenti converte un PDF scansionato in un documento Word modificabile, che si può poi tradurre e annotare. È utile per gli avvisi compilati a mano e per i rapporti trasmessi come immagine. Il file ottenuto segue poi lo stesso percorso degli altri documenti."
    },
    {
-    "q": "Qual è il livello di lettura di una lettera di rifiuto?",
-    "r": "Una Full Review da parte di almeno un traduttore giuridico, poiché la formulazione può essere opposta all’assicuratore. Per una comunicazione interna o una conferma di ricezione è sufficiente la Light Review. Il livello si sceglie documento per documento, con il termine indicato prima della convalida."
+    "q": "Quale livello di revisione per una lettera di rifiuto?",
+    "r": "Almeno una Full review da parte di un traduttore giuridico, perché la formulazione può essere opposta all'assicuratore. Per una comunicazione interna o una conferma di ricezione basta la Light review. Il livello si sceglie documento per documento, con il termine di consegna indicato prima della conferma."
    },
    {
-    "q": "Il vocabolario dell’assicurazione è coperto dal concordato?",
-    "r": "Sì, con un settore private Insurance e un settore Employment &amp; Social ins. per gli affari relativi alle assicurazioni sociali. Ogni caso si apre nel contesto con la sua fonte ufficiale, il che permette di decidere tra due formulazioni plausibili. A ciò si aggiungono le proprie risorse terminologiche."
+    "q": "Il concordanziere copre il vocabolario delle assicurazioni?",
+    "r": "Sì, con un settore Private Insurance e un settore Employment & Social Ins. per i dossier che toccano le assicurazioni sociali. Ogni occorrenza si apre nel contesto, con la sua fonte ufficiale: così potete scegliere tra due formulazioni plausibili. Si aggiungono le vostre risorse terminologiche."
    },
    {
-    "q": "Quanti documenti posso inviare per lo stesso sinistro?",
-    "r": "Fino a 25 file da 50 MB per invio in traduzione testo e documento, nei formati. pdf,. doc,. docx,. xls,. xlsx,. ppt e. pptx. Per un dossier più pesante o una rilettura umana, la via è la gestione del progetto. I documenti ritornano nel loro formato originale, allegati compresi."
+    "q": "Quanti documenti si possono inviare per uno stesso sinistro?",
+    "r": "Fino a 25 file da 50 MB per invio in Traduzione di testi e documenti, nei formati .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. Per un dossier più voluminoso o per una revisione da parte di specialisti, la via è Gestione dei progetti. I documenti tornano nel formato originale, allegati compresi."
    }
   ],
-  "cta_t": "I vostri dossier assicurativi trattati in quattro lingue",
-  "cta_p": "Una dimostrazione delle sue condizioni generali e dei suoi dossier di sinistro.",
+  "cta_t": "I vostri dossier assicurativi, trattati nelle quattro lingue",
+  "cta_p": "Una dimostrazione sulle vostre condizioni generali e sui vostri dossier di sinistro.",
   "voisins": [
    "droit-du-travail",
    "contrats",
@@ -1782,12 +1782,12 @@
  {
   "slug": "propriete-intellectuelle",
   "short": "Proprietà intellettuale",
-  "resume": "Brevetti, marchi, diritto d’autore: tradurre titoli opponibili.",
-  "title": "Traduzioni di brevetti, marchi e diritto d’autore · Neur.on",
-  "description": "Domande di brevetto, depositi di marchi, licenze, opposizioni: tradurre titoli opponibili con la terminologia svizzera della LBI, della LPM e della LDA.",
+  "resume": "Brevetti, marchi, diritto d'autore: tradurre titoli di protezione opponibili a terzi.",
+  "title": "Traduzione brevetti, marchi e diritto d'autore · Neur.on",
+  "description": "Domande di brevetto, depositi di marchio, licenze, opposizioni: tradurre titoli opponibili a terzi con la terminologia della LBI, della LPM e della LDA.",
   "lede": "Proprietà intellettuale.",
-  "h1": "Titoli opponibili a terzi",
-  "lead": "Una rivendicazione di brevetto, un elenco di prodotti e servizi, una cessione di diritti: la traduzione diventa il titolo stesso e una differenza cambia la protezione. Corrext si basa sui termini delle leggi svizzere.",
+  "h1": "Titoli di protezione opponibili a terzi",
+  "lead": "Una rivendicazione di brevetto, una lista dei prodotti e dei servizi, una cessione di diritti: la traduzione diventa il titolo stesso, e uno scarto cambia la protezione. Corrext si basa sui termini delle leggi svizzere.",
   "promesses": [
    {
     "t": "Termini delle leggi svizzere",
@@ -1795,47 +1795,47 @@
    },
    {
     "t": "Portata preservata",
-    "d": "Full Review o doppia review certificata per i documenti depositati"
+    "d": "Full review o Double review e traduzione certificata per i documenti depositati"
    },
    {
     "t": "Coerenza del portafoglio",
     "d": "le vostre risorse terminologiche applicate a tutti i depositi"
    }
   ],
-  "facts_titre": "Concretamente tradurre un brevetto o un marchio",
-  "definition": "Tradurre in proprietà intellettuale significa produrre un testo che definisce essa stessa l’estensione di un diritto: le rivendicazioni di un brevetto, l’elenco dei prodotti di un marchio, l’oggetto di una cessione di diritti d’autore. I concetti di base sono stabiliti dalle leggi svizzere sui brevetti, i marchi, i design e il diritto d’autore, pubblicate nelle tre lingue ufficiali.",
+  "facts_titre": "Tradurre un brevetto o un marchio, in concreto",
+  "definition": "Tradurre nella proprietà intellettuale significa produrre un testo che definisce esso stesso l'estensione di un diritto: le rivendicazioni di un brevetto, la lista dei prodotti di un marchio, l'oggetto di una cessione di diritti d'autore. Le nozioni di base sono fissate dalle leggi svizzere sui brevetti, sui marchi, sul design e sul diritto d'autore, pubblicate nelle tre lingue ufficiali.",
   "facts": [
    {
     "k": "Domanda di brevetto",
-    "v": "Rivendicazioni e descrizione devono essere coerenti tra loro: la Full Review da parte di un traduttore giuridico verifica ogni rivendicazione."
+    "v": "Rivendicazioni e descrizione devono restare coerenti tra loro: la Full review di un traduttore giuridico verifica ogni rivendicazione."
    },
    {
-    "k": "Deposito di marchi",
-    "v": "L’elenco dei prodotti e servizi condiziona la protezione: un termine approssimativo restringe o amplia involontariamente il deposito."
+    "k": "Deposito di marchio",
+    "v": "La lista dei prodotti e dei servizi condiziona la protezione: un termine approssimativo restringe o allarga involontariamente il deposito."
    },
    {
     "k": "Contratto di licenza",
-    "v": "Un contratto di licenza combina diritto dei contratti e diritto dei titoli: i termini del CO e quelli delle leggi sulla proprietà intellettuale vi si incrociano."
+    "v": "Un contratto di licenza combina diritto dei contratti e diritto dei titoli di protezione: vi si incrociano i termini del CO e quelli delle leggi sulla proprietà intellettuale."
    },
    {
     "k": "Opposizione e azione",
-    "v": "Le iscrizioni presentate davanti all’autorità o al tribunale passano in Full Review o in doppia review certificata quando viene chiesta un’attestazione."
+    "v": "Gli atti scritti prodotti davanti all'autorità o al tribunale passano in Full review, o in Double review e traduzione certificata quando è richiesta un'attestazione."
    },
    {
     "k": "Documenti tecnici",
-    "v": "Gli allegati tecnici sono disponibili in formato PDF, talvolta scansionati: la scheda PDF to Word li rende pubblicabili prima della traduzione."
+    "v": "Gli allegati tecnici arrivano in PDF, a volte scansionati: la scheda PDF to Word li rende modificabili prima della traduzione."
    },
    {
-    "k": "Terminologia sorpassata",
-    "v": "I domini Patent Law e Intellectual Property del concordato CHnell danno l’uso ufficiale di un termine con il suo riferimento."
+    "k": "Terminologia con fonti",
+    "v": "I settori Patent Law e Intellectual Property del concordanziere CHnell indicano l'uso ufficiale di un termine, con il suo riferimento."
    },
    {
     "k": "Portafoglio internazionale",
-    "v": "L’inglese è nativo al pari del tedesco, del francese e dell’italiano e la piattaforma copre 30 lingue per le estensioni all’estero."
+    "v": "L'inglese è lingua nativa come il tedesco, il francese e l'italiano, e la piattaforma copre 30 lingue per le estensioni all'estero."
    },
    {
     "k": "Invenzione non pubblicata",
-    "v": "Prima del deposito, un’invenzione è un segreto d’affari: la modalità «High-sensitive Content» conserva lo stoccaggio e il trattamento esclusivamente in Svizzera."
+    "v": "Prima del deposito, un'invenzione è un segreto commerciale: la modalità Highly sensitive content mantiene archiviazione e trattamento esclusivamente in Svizzera."
    }
   ],
   "termes_titre": "Il vocabolario della proprietà intellettuale nelle quattro lingue",
@@ -1897,81 +1897,81 @@
     "ref": "art. 162 CP"
    }
   ],
-  "termes_note": "Ogni titolo di proprietà intellettuale ha la sua legge e quindi il suo vocabolario proprio: le equivalenze di cui sopra derivano dalle versioni tedesca, francese e italiana di tali leggi, all’articolo indicato. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che un deposito cita quotidianamente",
-  "lois_intro": "La proprietà intellettuale svizzera è suddivisa in quattro leggi, una per tipo di titolo, alle quali si aggiungono i trattati internazionali applicabili. Tutte sono pubblicate in tedesco, francese e italiano, il che fornisce una base di equivalenze verificabile.",
+  "termes_note": "Ogni titolo di proprietà intellettuale ha la sua legge e quindi il suo vocabolario: gli equivalenti qui sopra vengono dalle versioni tedesca, francese e italiana di queste leggi, all'articolo indicato. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un deposito cita ogni giorno",
+  "lois_intro": "La proprietà intellettuale svizzera è ripartita in quattro leggi, una per tipo di titolo, a cui si aggiungono i trattati internazionali applicabili. Tutte sono pubblicate in tedesco, francese e italiano: una base di equivalenti verificabile.",
   "lois": [
    {
     "abbr": "LBI",
-    "nom": "Legge federale sui brevetti d’invenzione",
-    "note": "Essa definisce l’invenzione brevettabile, la portata delle rivendicazioni e le azioni del titolare; PatG in tedesco, LBI in italiano."
+    "nom": "Legge federale sui brevetti d'invenzione",
+    "note": "Definisce l'invenzione brevettabile, la portata delle rivendicazioni e le azioni del titolare; PatG in tedesco, LBI in francese."
    },
    {
     "abbr": "LPM",
     "nom": "Legge federale sulla protezione dei marchi e delle indicazioni di provenienza",
-    "note": "Essa disciplina il deposito, la protezione e l’uso dei marchi nonché le indicazioni di provenienza svizzere; MSchG in tedesco, LPM in italiano."
+    "note": "Disciplina il deposito, la protezione e l'uso dei marchi, nonché le indicazioni di provenienza svizzere; MSchG in tedesco, LPM in francese."
    },
    {
     "abbr": "LDA",
-    "nom": "Legge federale sul diritto d’autore e sui diritti affini",
-    "note": "Protegge le opere e ne disciplina l’utilizzazione e la gestione collettiva; URG in tedesco, LDA in italiano."
+    "nom": "Legge federale sul diritto d'autore e sui diritti di protezione affini",
+    "note": "Protegge le opere e ne disciplina l'utilizzazione e la gestione collettiva; URG in tedesco, LDA in francese."
    },
    {
     "abbr": "LDes",
-    "nom": "Legge federale sulla protezione dei design",
-    "note": "Protegge l’aspetto dei prodotti mediante un deposito separato del brevetto e del marchio; DESG in tedesco."
+    "nom": "Legge federale sulla protezione del design",
+    "note": "Protegge l'aspetto dei prodotti con un deposito distinto dal brevetto e dal marchio; DesG in tedesco, LDes in francese."
    }
   ],
-  "who_titre": "Tre depositi in cui la traduzione fa la portata del diritto",
+  "who_titre": "Tre depositi in cui la traduzione determina la portata del diritto",
   "who": [
    {
     "a": "Brevetti",
     "t": "Rivendicazioni intatte",
-    "p": "La rivendicazione delimita la protezione, la descrizione deve rimanere coerente con essa. La traduzione automatica serve a preparare il testo, la Full Review da parte di un traduttore giuridico fissa la versione depositata, termine tecnico per termine tecnico.",
+    "p": "La rivendicazione delimita la protezione, e la descrizione deve restare coerente con essa. La traduzione automatica serve a preparare il testo; la Full review di un traduttore giuridico fissa la versione depositata, termine tecnico per termine tecnico.",
     "vis": "ampoule"
    },
    {
     "a": "Marchi",
-    "t": "Un elenco di prodotti e servizi",
-    "p": "L’elenco determina cosa è protetto e cosa no. Il concordato mostra l’uso ufficiale di ciascun termine nel settore Intellectual Property, evitando così ampliamenti involontari.",
+    "t": "Una lista dei prodotti e dei servizi",
+    "p": "La lista determina che cosa è protetto e che cosa non lo è. Il concordanziere mostra l'uso ufficiale di ogni termine nel settore Intellectual Property, ed evita così allargamenti involontari.",
     "vis": "etiquette"
    },
    {
     "a": "Contratti",
-    "t": "Cessione di diritti in due lingue",
-    "p": "Il contratto interseca il vocabolario del Codice delle obbligazioni con quello della legge sul diritto d’autore. I termini dei due corpus si verificano nel contesto e la versione firmata passa in Full Review o in Double Review certificata.",
+    "t": "Una cessione di diritti in due lingue",
+    "p": "Il contratto incrocia il vocabolario del Codice delle obbligazioni e quello della legge sul diritto d'autore. I termini dei due ambiti si verificano nel contesto, e la versione firmata passa in Full review o in Double review e traduzione certificata.",
     "vis": "signature"
    }
   ],
-  "faq_titre": "Domande frequenti sulla traduzione in proprietà intellettuale",
+  "faq_titre": "Domande frequenti sulla traduzione nella proprietà intellettuale",
   "faq": [
    {
-    "q": "Per un deposito è sufficiente una traduzione automatica?",
-    "r": "No al testo depositato. La traduzione automatica prepara il lavoro e permette di comprendere lo stato della tecnica o un’opposizione contraria, ma un titolo opponibile a un terzo giustifica una Full Review da parte di un traduttore giuridico o addirittura una doppia Review con certificato quando è richiesta un’attestazione."
+    "q": "Basta una traduzione automatica per un deposito?",
+    "r": "Non per il testo depositato. La traduzione automatica prepara il lavoro e aiuta a capire lo stato della tecnica o un'opposizione avversaria. Un titolo opponibile a terzi giustifica però una Full review da parte di un traduttore giuridico, o una Double review e traduzione certificata quando è richiesta un'attestazione."
    },
    {
-    "q": "Come mantenere la stessa terminologia in un portafoglio?",
-    "r": "Fissando i termini contenuti nelle proprie risorse terminologiche, che Fast Lookup CHnell mostra accanto ai suoi 30 domini sorteggiati e lasciando che i progetti in confidenzialità standard alimentino una memoria di traduzione riutilizzabile unicamente dalla vostra organizzazione."
+    "q": "Come mantenere la stessa terminologia in tutto un portafoglio?",
+    "r": "Fissando i termini scelti nelle vostre risorse terminologiche, che Fast lookup CHnell mostra accanto ai suoi 30 settori con fonti, e lasciando che i progetti con la riservatezza Standard alimentino una memoria di traduzione riutilizzabile solo dalla vostra organizzazione."
    },
    {
-    "q": "Un’invenzione non depositata può essere tradotta senza rischi?",
-    "r": "Prima della pubblicazione, un’invenzione è un segreto d’affari tutelato in particolare dall’articolo 162 CP. La modalità «High sensitive content» impone lo stoccaggio e il trattamento esclusivamente in Svizzera, senza riutilizzo in memoria, il che è opportuno per un testo ancora confidenziale."
+    "q": "Si può tradurre senza rischi un'invenzione non ancora depositata?",
+    "r": "Prima della pubblicazione, un'invenzione è un segreto commerciale, protetto in particolare dall'art. 162 CP. La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo nella memoria: è la scelta adatta a un testo ancora riservato."
    },
    {
     "q": "I documenti tecnici scansionati sono supportati?",
-    "r": "Sì. La scheda PDF to Word converte un PDF scansionato in un documento Word modificabile prima della traduzione, il che è frequente per i documenti dello stato della tecnica e per gli allegati delle procedure di opposizione. I formati. pdf,. doc,. docx,. xls,. xlsx,. ppt e. pptx sono accettati, fino a 25 file da 50 MB per invio."
+    "r": "Sì. La scheda PDF to Word converte un PDF scansionato in un documento Word modificabile prima della traduzione: capita spesso con i documenti sullo stato della tecnica e con gli allegati delle procedure di opposizione. Sono accettati i formati .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx, fino a 25 file da 50 MB per invio."
    },
    {
-    "q": "Quali lingue per un’estensione all’estero?",
-    "r": "Il tedesco, il francese, l’italiano e l’inglese sono nativi in tutte le coppie e la piattaforma copre complessivamente 30 lingue. Il riferimento svizzero resta tuttavia il testo tedesco, francese o italiano delle leggi applicabili, che il concordato mostra con la sua fonte."
+    "q": "Quali lingue per un'estensione all'estero?",
+    "r": "Tedesco, francese, italiano e inglese sono lingue native in tutte le combinazioni, e la piattaforma copre 30 lingue in totale. Il riferimento svizzero resta però il testo tedesco, francese o italiano delle leggi applicabili, che il concordanziere mostra con la sua fonte."
    },
    {
-    "q": "È possibile confrontare più formulazioni di una rivendicazione?",
-    "r": "Sì. La funzione alternative offre fino a quattro traduzioni di un medesimo passaggio, ciascuna attribuita al motore che l’ha prodotta. Si tratta di un sostegno utile quando due formulazioni sono corrette dal punto di vista linguistico ma non hanno la stessa portata tecnica. Il giurista decide e il termine scelto può essere fissato per tutto il portafoglio."
+    "q": "Si possono confrontare più formulazioni di una rivendicazione?",
+    "r": "Sì. La funzione Alternatives propone fino a quattro traduzioni dello stesso passaggio, ciascuna attribuita al motore che l'ha prodotta. È un aiuto utile quando due formulazioni sono corrette sul piano linguistico ma non hanno la stessa portata tecnica. Il giurista decide, e il termine scelto si può fissare per tutto il portafoglio."
    }
   ],
-  "cta_t": "I vostri depositi e i vostri contratti di licenza, in Corrext",
-  "cta_p": "Una dimostrazione sulle proprie rivendicazioni e liste di prodotti.",
+  "cta_t": "I vostri depositi e contratti di licenza, in Corrext",
+  "cta_p": "Una dimostrazione sulle vostre rivendicazioni e sulle vostre liste dei prodotti.",
   "voisins": [
    "contrats",
    "contentieux-arbitrage",
@@ -1981,12 +1981,12 @@
  {
   "slug": "droit-du-travail",
   "short": "Diritto del lavoro",
-  "resume": "Contratti di lavoro, regolamenti, certificati: il vocabolario del CO e della LL.",
-  "title": "Traduzioni legali in diritto del lavoro svizzero · Neur.on",
-  "description": "Contratti di lavoro, regolamenti, lettere di disdetta, certificati: tradurre i documenti HR con la terminologia del Codice delle obbligazioni svizzero.",
+  "resume": "Contratti di lavoro, regolamenti, attestati: il vocabolario del CO e della LL.",
+  "title": "Traduzione contratto di lavoro e diritto del lavoro · Neur.on",
+  "description": "Contratti di lavoro, regolamenti, lettere di disdetta, attestati: tradurre i documenti del personale con la terminologia del Codice delle obbligazioni.",
   "lede": "Diritto del lavoro.",
-  "h1": "Dal contratto di assunzione al certificato di lavoro",
-  "lead": "Un’impresa assume a Zurigo, Lausanne e Lugano. Contratti, clausole aggiuntive, congedi e certificati devono dire la stessa cosa ovunque: Corrext usa il vocabolario del Codice delle obbligazioni.",
+  "h1": "Dal contratto di lavoro all'attestato di lavoro",
+  "lead": "Un'impresa assume a Zurigo, a Losanna e a Lugano. Contratti, aggiunte, disdette e attestati devono dire la stessa cosa ovunque: Corrext usa il vocabolario del Codice delle obbligazioni.",
   "promesses": [
    {
     "t": "Termini del CO",
@@ -1994,50 +1994,50 @@
    },
    {
     "t": "Documenti in serie",
-    "d": "contratti e certificati standardizzati, in memoria di traduzione"
+    "d": "contratti e attestati standardizzati, nella memoria di traduzione"
    },
    {
     "t": "Dati del personale",
-    "d": "trattamento esclusivamente in Svizzera in modalità «high sensitive content»"
+    "d": "trattamento esclusivamente in Svizzera in modalità Highly sensitive content"
    }
   ],
-  "facts_titre": "Tradurre un documento HR, concretamente",
-  "definition": "Tradurre nel diritto del lavoro svizzero significa trasporre documenti che incorniciano una relazione duratura: contratto individuale, regolamento d’impresa, clausole aggiuntive, disdetta, certificato di lavoro. I concetti derivano dal Codice delle obbligazioni e dalla legge sul lavoro, pubblicati in tedesco, francese e italiano, e la formulazione scelta può decidere la validità di una disdetta.",
+  "facts_titre": "Tradurre un documento del personale, in concreto",
+  "definition": "Tradurre nel diritto del lavoro svizzero significa trasporre documenti che regolano un rapporto duraturo: contratto individuale, regolamento aziendale, aggiunte, disdetta, attestato di lavoro. Le nozioni vengono dal Codice delle obbligazioni e dalla legge sul lavoro, pubblicati in tedesco, francese e italiano. La formulazione scelta può decidere della validità di una disdetta.",
   "facts": [
    {
     "k": "Contratto individuale",
-    "v": "I contratti normali cambiano poco da un collaboratore all’altro: la memoria di traduzione rende quasi immediata ogni nuova assunzione."
+    "v": "I contratti tipo cambiano poco da un collaboratore all'altro: la memoria di traduzione rende quasi immediata ogni nuova assunzione."
    },
    {
-    "k": "Regolamento d’impresa",
-    "v": "Un regolamento si applica a tutti i siti: la traduzione deve essere identica a Zurigo, Lausanne e Lugano, revisione dopo revisione."
+    "k": "Regolamento aziendale",
+    "v": "Un regolamento vale per tutte le sedi: la traduzione deve essere identica a Zurigo, Losanna e Lugano, aggiornamento dopo aggiornamento."
    },
    {
     "k": "Lettera di disdetta",
-    "v": "La formulazione di una disdetta può essere discussa in un tribunale: la Full Review da parte di un traduttore giuridico la verifica prima dell’invio."
+    "v": "La formulazione di una disdetta può essere contestata davanti a un tribunale: la Full review di un traduttore giuridico la verifica prima dell'invio."
    },
    {
-    "k": "Certificato di lavoro",
-    "v": "Il certificato segue formule consacrate: il concordato permette di verificare il senso esatto di una curvatura prima di riprenderla."
+    "k": "Attestato di lavoro",
+    "v": "L'attestato segue formule consolidate: il concordanziere permette di verificare il senso esatto di un'espressione prima di riprenderla."
    },
    {
-    "k": "Clausola di non concorrenza",
-    "v": "Il divieto di concorrenza ha una precisa definizione legale: la sua traduzione non può essere lasciata all’uso corrente."
+    "k": "Divieto di concorrenza",
+    "v": "Il divieto di concorrenza ha una definizione legale precisa: la sua traduzione non si può lasciare all'uso corrente."
    },
    {
     "k": "Contratto collettivo",
-    "v": "I contratti collettivi di lavoro esistono in diverse lingue ufficiali: i loro termini si basano sul contesto nel settore Employment &amp; Social ins."
+    "v": "I contratti collettivi esistono in più lingue ufficiali: i loro termini si verificano nel contesto nel settore Employment & Social Ins."
    },
    {
     "k": "Dati del personale",
-    "v": "Un dossier HR contiene dati personali: la modalità «high sensitive content» impone l’archiviazione e il trattamento esclusivamente in Svizzera."
+    "v": "Un dossier del personale contiene dati personali: la modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera."
    },
    {
     "k": "Collaboratori stranieri",
-    "v": "I documenti relativi al permesso di lavoro sono disciplinati da un altro testo, la legge sugli stranieri e l’integrazione, con un proprio vocabolario."
+    "v": "I documenti legati al permesso di lavoro dipendono da un altro testo, la legge sugli stranieri e la loro integrazione, con il suo vocabolario."
    }
   ],
-  "termes_titre": "Il vocabolario del lavoro, nelle quattro lingue",
+  "termes_titre": "Il vocabolario del lavoro nelle quattro lingue",
   "termes": [
    {
     "de": "Einzelarbeitsvertrag",
@@ -2096,81 +2096,81 @@
     "ref": "art. 356 CO"
    }
   ],
-  "termes_note": "Le tre forme di cessazione del rapporto di lavoro portano nomi diversi nelle tre versioni ufficiali del Codice delle obbligazioni: confonderle in una lettera tradotta può costare la validità della disdetta. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che un contratto di lavoro cita quotidianamente",
-  "lois_intro": "Il diritto del lavoro svizzero è suddiviso in una parte contrattuale, nel Codice delle obbligazioni, e una parte di polizia, nella legge sul lavoro. I dati del personale e i permessi sono disciplinati da altri testi.",
+  "termes_note": "Le tre forme di fine del rapporto hanno nomi distinti nelle tre versioni ufficiali del Codice delle obbligazioni: confonderle in una lettera tradotta può costare la validità della disdetta. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un contratto di lavoro cita ogni giorno",
+  "lois_intro": "Il diritto del lavoro svizzero si divide tra una parte contrattuale, nel Codice delle obbligazioni, e una parte di diritto pubblico, nella legge sul lavoro. I dati del personale e i permessi dipendono da altri testi ancora.",
   "lois": [
    {
     "abbr": "CO",
     "nom": "Codice delle obbligazioni",
-    "note": "I suoi articoli 319 e seguenti disciplinano il contratto individuale, la disdetta, il certificato e il contratto collettivo; ORO in tedesco, CO in italiano."
+    "note": "I suoi art. 319 segg. disciplinano il contratto individuale di lavoro, la disdetta, l'attestato e il contratto collettivo; OR in tedesco, CO in francese."
    },
    {
     "abbr": "LL",
-    "nom": "Legge federale sul lavoro nell’industria, nell’artigianato e nel commercio",
-    "note": "Essa stabilisce la durata del lavoro, il riposo e la protezione della salute; arg. in tedesco."
+    "nom": "Legge federale sul lavoro nell'industria, nell'artigianato e nel commercio",
+    "note": "Stabilisce la durata del lavoro e del riposo e la protezione della salute; ArG in tedesco, LTr in francese."
    },
    {
-    "abbr": "LEI",
-    "nom": "Legge federale sugli stranieri e l’integrazione",
-    "note": "Condiziona l’impiego di collaboratori stranieri e i permessi di dimora e di lavoro; AIG in tedesco, LStrI in italiano."
+    "abbr": "LStrI",
+    "nom": "Legge federale sugli stranieri e la loro integrazione",
+    "note": "Condiziona l'impiego di collaboratori stranieri e disciplina i permessi di dimora e per l'esercizio di un'attività lucrativa; AIG in tedesco, LEI in francese."
    },
    {
     "abbr": "LPD",
     "nom": "Legge federale sulla protezione dei dati",
-    "note": "Disciplina il trattamento dei dati del personale da parte del datore di lavoro; DSG in tedesco, LPD in italiano."
+    "note": "Disciplina il trattamento dei dati del personale da parte del datore di lavoro; DSG in tedesco, LPD in francese."
    }
   ],
-  "who_titre": "Tre documenti RU che circolano in più lingue",
+  "who_titre": "Tre documenti del personale che circolano in più lingue",
   "who": [
    {
     "a": "Assunzione",
-    "t": "Contratto normale in tre sedi",
-    "p": "Il contratto normale è convalidato presso la sede e firmato in tre regioni linguistiche. La memoria di traduzione rende immediata ogni declinazione e solo le clausole realmente nuove passano davanti a un traduttore giuridico.",
+    "t": "Un contratto tipo per tre sedi",
+    "p": "Il contratto tipo è approvato presso la sede principale e poi firmato in tre regioni linguistiche. La memoria di traduzione rende immediata ogni variante, e solo le clausole davvero nuove tornano a un traduttore giuridico.",
     "vis": "equipe"
    },
    {
-    "a": "Fine del contratto",
-    "t": "Disdetta senza errori",
-    "p": "Una disdetta ordinaria, abusiva o immediata non si dice nello stesso modo e la cambiale può essere prodotta davanti a un tribunale. La Full Review verifica la formulazione prima dell’invio con il termine indicato in anticipo.",
+    "a": "Fine del rapporto",
+    "t": "Una disdetta senza errori",
+    "p": "Disdetta ordinaria, disdetta abusiva e risoluzione immediata non si chiamano allo stesso modo, e la lettera può essere prodotta davanti a un tribunale. La Full review verifica la formulazione prima dell'invio, con il termine di consegna indicato in anticipo.",
     "vis": "envoi"
    },
    {
     "a": "Partenza",
-    "t": "Certificato di lavoro da redigere",
-    "p": "Il certificato segue formulari dedicati la cui portata è nota ai reclutatori. Il concordato presenta queste caratteristiche nel contesto, evitando così che una traduzione letterale modifichi il messaggio.",
+    "t": "Un attestato di lavoro da redigere",
+    "p": "L'attestato segue formule consolidate, di cui chi recluta conosce la portata. Il concordanziere mostra queste espressioni nel contesto: così una traduzione letterale non cambia il messaggio.",
     "vis": "certificat"
    }
   ],
-  "faq_titre": "Domande frequenti sulla traduzione in diritto del lavoro",
+  "faq_titre": "Domande frequenti sulla traduzione nel diritto del lavoro",
   "faq": [
    {
-    "q": "Un contratto di lavoro deve essere redatto nella lingua del collaboratore?",
-    "r": "La legge non impone una lingua in particolare per il contratto individuale, ma un datore di lavoro che vuole un impiego compreso e opponibile ha interesse a fornire una versione nella lingua di lavoro del collaboratore. Le quattro lingue della piattaforma (tedesco, francese, italiano e inglese) coprono questo fabbisogno."
+    "q": "Il contratto di lavoro va redatto nella lingua del collaboratore?",
+    "r": "La legge non impone una lingua precisa per il contratto individuale. Ma un datore di lavoro che vuole un impegno compreso e opponibile ha interesse a fornire una versione nella lingua di lavoro del collaboratore. Le quattro lingue della piattaforma (tedesco, francese, italiano e inglese) coprono questa esigenza."
    },
    {
-    "q": "Come tradurre una lettera di disdetta priva di rischi?",
-    "r": "Distinguendo i tre regimi del Codice delle obbligazioni: disdetta ordinaria, disdetta abusiva e disdetta immediata per gravi motivi. I termini ufficiali sono disponibili in tutte e tre le lingue e la lettera stessa giustifica una Full Review da parte di un traduttore giuridico prima dell’invio."
+    "q": "Come tradurre senza rischi una lettera di disdetta?",
+    "r": "Distinguendo i tre regimi del Codice delle obbligazioni: disdetta ordinaria, disdetta abusiva e risoluzione immediata per cause gravi. I termini ufficiali esistono nelle tre lingue, e la lettera stessa giustifica una Full review da parte di un traduttore giuridico prima dell'invio."
    },
    {
-    "q": "I dossier del personale possono passare attraverso la piattaforma?",
-    "r": "Sì, con la moda giusta. Lo stoccaggio è in ogni caso svizzero e la modalità «high sensitive content» impone un trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in memoria. I motori ospitati all’estero devono emettere un avvertimento prima della spedizione."
+    "q": "I dossier del personale possono passare dalla piattaforma?",
+    "r": "Sì, con la modalità giusta. L'archiviazione è sempre in Svizzera, e la modalità Highly sensitive content impone un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria. I motori ospitati all'estero mostrano un avviso prima di ogni invio."
    },
    {
-    "q": "Come mantenere la stessa regolamentazione su tutti i siti?",
-    "r": "Con la memoria di traduzione, che limita il lavoro ai passaggi modificati in occasione di una revisione, e con risorse terminologiche proprie della vostra organizzazione, che Fast Lookup CHnell mostra oltre ai suoi 30 settori sorpassati. Ogni termine si apre nel contesto con la sua fonte prima di essere fisso."
+    "q": "Come mantenere identico un regolamento in tutte le sedi?",
+    "r": "Con la memoria di traduzione, che limita il lavoro ai passaggi modificati a ogni aggiornamento, e con risorse terminologiche proprie della vostra organizzazione, che Fast lookup CHnell mostra oltre ai suoi 30 settori con fonti. Ogni termine si apre nel contesto con la sua fonte prima di essere fissato."
    },
    {
-    "q": "I contratti collettivi sono coperti?",
-    "r": "Il loro vocabolario appartiene al settore Employment &amp; Social ins. del concordato, con fonti ufficiali. Ogni termine si apre nel contesto del suo riferimento, il che permette di verificare una nozione prima di riprenderla in un contratto o in un regolamento."
+    "q": "I contratti collettivi di lavoro sono coperti?",
+    "r": "Il loro vocabolario rientra nel settore Employment & Social Ins. del concordanziere, con fonti ufficiali. Ogni termine si apre nel contesto con il suo riferimento: così potete verificare una nozione prima di riprenderla in un contratto o in un regolamento."
    },
    {
-    "q": "È possibile tradurre rapidamente una semplice nota di servizio?",
-    "r": "Sì. La traduzione di testi di traduzione testo e documento accetta fino a 10’000 caratteri incollati, con la scelta del motore e fino a quattro alternative di formulazione. Per una comunicazione interna è generalmente sufficiente una light review. Per un documento consegnato a un collaboratore che può essere prodotto successivamente, è meglio una Full Review."
+    "q": "Si può tradurre in fretta una semplice comunicazione interna?",
+    "r": "Sì. In Traduzione di testi e documenti, la traduzione di testo accetta fino a 10'000 caratteri incollati, con la scelta del motore e fino a quattro formulazioni alternative. Per una comunicazione interna basta di solito una Light review. Per un documento consegnato a un collaboratore, che potrebbe essere prodotto più tardi, è meglio una Full review."
    }
   ],
-  "cta_t": "Documenti HR coerenti in tutta la Svizzera",
-  "cta_p": "Una dimostrazione dei vostri contratti tipo e dei vostri regolamenti aziendali.",
+  "cta_t": "I vostri documenti del personale, coerenti in tutta la Svizzera",
+  "cta_p": "Una dimostrazione sui vostri contratti tipo e sui vostri regolamenti aziendali.",
   "voisins": [
    "contrats",
    "assurance",
@@ -2180,61 +2180,61 @@
  {
   "slug": "droit-penal",
   "short": "Diritto penale",
-  "resume": "Ordinanze penali, atti d’accusa, assistenza giudiziaria: tradurre un procedimento.",
-  "title": "Traduzioni in diritto penale e procedura penale svizzera · Neur.on",
-  "description": "Ordinanze penali, atti d’accusa, incarti istruttori, assistenza giudiziaria: tradurre un procedimento penale svizzero con i termini del CP e del CPP.",
+  "resume": "Decreto d'accusa, atto d'accusa, assistenza giudiziaria: tradurre un procedimento.",
+  "title": "Traduzione diritto penale e procedura penale · Neur.on",
+  "description": "Decreto d'accusa, atto d'accusa, dossier d'istruzione, assistenza giudiziaria: tradurre un procedimento penale svizzero con i termini del CP e del CPP.",
   "lede": "Diritto penale.",
-  "h1": "Gli atti di un procedimento penale, da una lingua all’altra",
-  "lead": "Un procedimento penale si svolge nella lingua del Cantone, ma gli imputati, i testimoni e gli atti non sempre la parlano. Gli incarti e le ordinanze penali circolano tradotti e Corrext li tratta in Svizzera.",
+  "h1": "Gli atti di un procedimento penale, da una lingua all'altra",
+  "lead": "Un procedimento penale si svolge nella lingua del Cantone, ma imputati, testimoni e documenti non sempre la parlano. Dossier e decreti d'accusa circolano tradotti, e Corrext li tratta in Svizzera.",
   "promesses": [
    {
     "t": "Termini del CPP",
-    "d": "decreto d’accusa, accusa, carcerazione preventiva"
+    "d": "decreto d'accusa, atto d'accusa, carcerazione preventiva"
    },
    {
-    "t": "Voluminosi dossier",
+    "t": "Dossier voluminosi",
     "d": "fino a 25 file da 50 MB per invio, formato originale conservato"
    },
    {
-    "t": "Segreto dell’istruzione",
-    "d": "modalità «High sensitive content»: stoccaggio e trattamento in Svizzera"
+    "t": "Segreto dell'istruzione",
+    "d": "modalità Highly sensitive content: archiviazione e trattamento in Svizzera"
    }
   ],
-  "facts_titre": "Concretamente tradurre un procedimento penale",
-  "definition": "Tradurre nel diritto penale svizzero significa trasporre atti procedurali la cui natura giuridica è precisa: decreto d’accusa, atto d’accusa, ordine di abbandono, decisione di carcerazione. Il Codice penale e il Codice di procedura penale sono pubblicati in tedesco, francese e italiano e ogni atto reca un nome ufficiale in ciascuna di queste lingue.",
+  "facts_titre": "Tradurre un procedimento penale, in concreto",
+  "definition": "Tradurre nel diritto penale svizzero significa trasporre atti procedurali dalla natura giuridica precisa: decreto d'accusa, atto d'accusa, decreto di abbandono, decisione di carcerazione. Il Codice penale e il Codice di procedura penale sono pubblicati in tedesco, francese e italiano, e ogni atto ha un nome ufficiale in ciascuna di queste lingue.",
   "facts": [
    {
-    "k": "Fascicolo d’istruzione",
-    "v": "Il dossier parte in file Translation per lotti e ritorna nel formato originale, paginazione e numerazione dei documenti conservati."
+    "k": "Dossier d'istruzione",
+    "v": "Il dossier parte a lotti in File translation e torna nel formato originale, con l'impaginazione e la numerazione dei documenti conservate."
    },
    {
-    "k": "Verbali di audizione",
-    "v": "Un’audizione svolta in una lingua è letta in un’altra dalla difesa: la traduzione serve a preparare, la rilettura umana a produrre."
+    "k": "Verbali d'interrogatorio",
+    "v": "Un interrogatorio condotto in una lingua viene letto in un'altra dalla difesa: la traduzione serve a prepararsi, la revisione da parte di specialisti a produrre gli atti."
    },
    {
-    "k": "Decreto d’accusa",
-    "v": "Il termine di opposizione è breve: la traduzione immediata del testo incollato permette di decidere senza indugio.",
-    "s": "Fino a 10’000 caratteri per traduzione di testi."
+    "k": "Decreto d'accusa",
+    "v": "Il termine per l'opposizione è breve: la traduzione immediata del testo incollato permette di decidere senza attendere.",
+    "s": "Fino a 10'000 caratteri per traduzione di testo."
    },
    {
-    "k": "Atto d’accusa",
-    "v": "L’atto delimita l’oggetto del processo: la sua traduzione passa in Full Review o in Double Review certificata se è richiesta un’attestazione."
+    "k": "Atto d'accusa",
+    "v": "L'atto delimita l'oggetto del processo: la sua traduzione passa in Full review, o in Double review e traduzione certificata se è richiesta un'attestazione."
    },
    {
     "k": "Assistenza internazionale",
-    "v": "Una domanda di assistenza giudiziaria si rivolge a un’autorità estera e deve utilizzare il suo vocabolario quanto il vocabolario svizzero."
+    "v": "Una domanda di assistenza giudiziaria si rivolge a un'autorità estera e deve usare il suo vocabolario tanto quanto quello svizzero."
    },
    {
     "k": "Documenti finanziari",
-    "v": "Le cartelle economiche sono composte da estratti, contratti e rapporti: i formati. xls e. xlsx sono trattati come i documenti Word."
+    "v": "I dossier economici mescolano estratti conto, contratti e rapporti: i formati .xls e .xlsx sono trattati come i documenti Word."
    },
    {
-    "k": "Segreto dell’istruzione",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzo del contenuto in memoria."
+    "k": "Segreto dell'istruzione",
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria."
    },
    {
-    "k": "Terminologia sorpassata",
-    "v": "I settori Criminal Law e Litigation &amp; Enforcement del concordato CHnell danno l’uso ufficiale di ogni termine, con la sua fonte."
+    "k": "Terminologia con fonti",
+    "v": "I settori Criminal Law e Litigation & Enforcement del concordanziere CHnell indicano l'uso ufficiale di ogni termine, con la sua fonte."
    }
   ],
   "termes_titre": "Il vocabolario penale nelle quattro lingue",
@@ -2296,81 +2296,81 @@
     "ref": "art. 158 CP"
    }
   ],
-  "termes_note": "Gli atti processuali portano nomi che l’italiano non ricalca sul francese: il decreto d’accusa si autodefinisce decreto d’accusa e l’atto d’accusa atto d’accusa. Queste equivalenze sono quelle del testo ufficiale. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "lois_titre": "I testi che un procedimento penale cita quotidianamente",
-  "lois_intro": "Il diritto penale svizzero si fonda su un codice di merito e un codice di procedura unificato dal 2011. L’assistenza internazionale e la lotta contro il riciclaggio di denaro aggiungono testi e vocabolari propri.",
+  "termes_note": "Gli atti di procedura hanno nomi che l'italiano non ricalca sul francese: l'«ordonnance pénale» è il decreto d'accusa, l'«acte d'accusation» l'atto d'accusa. Questi equivalenti sono quelli del testo ufficiale. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, senza forza di legge; altrimenti la formulazione d'uso.",
+  "lois_titre": "I testi che un procedimento penale cita ogni giorno",
+  "lois_intro": "Il diritto penale svizzero si fonda su un codice sostanziale e su un codice di procedura unificato dal 2011. L'assistenza internazionale e la lotta contro il riciclaggio di denaro aggiungono i propri testi e il proprio vocabolario.",
   "lois": [
    {
     "abbr": "CP",
     "nom": "Codice penale svizzero",
-    "note": "Esso definisce i reati e le pene, le lesioni patrimoniali al riciclaggio di denaro; StGB in tedesco, CP in italiano."
+    "note": "Definisce i reati e le pene, dai reati contro il patrimonio al riciclaggio di denaro; StGB in tedesco, CP in francese."
    },
    {
     "abbr": "CPP",
-    "nom": "Codice di procedura penale svizzero",
-    "note": "Esso disciplina l’istruzione, gli atti processuali, la carcerazione e la sentenza in tutti i Cantoni; StPO in tedesco, CPP in italiano."
+    "nom": "Codice di diritto processuale penale svizzero",
+    "note": "Disciplina l'istruzione, gli atti procedurali, la carcerazione e il giudizio in tutti i Cantoni; StPO in tedesco, CPP in francese."
    },
    {
     "abbr": "AIMP",
-    "nom": "Legge federale sull’assistenza internazionale in materia penale",
-    "note": "Essa disciplina le domande indirizzate alla Svizzera o dalla Svizzera a uno Stato estero; IRSG in tedesco."
+    "nom": "Legge federale sull'assistenza internazionale in materia penale",
+    "note": "Disciplina le domande rivolte alla Svizzera o dalla Svizzera a uno Stato estero; IRSG in tedesco, EIMP in francese."
    },
    {
     "abbr": "LRD",
-    "nom": "Legge federale concernente la lotta contro il riciclaggio di denaro e il finanziamento del terrorismo",
-    "note": "Essa fonda gli obblighi la cui violazione alimenta numerosi procedimenti economici; GwG in tedesco, LRD in italiano."
+    "nom": "Legge federale relativa alla lotta contro il riciclaggio di denaro e il finanziamento del terrorismo",
+    "note": "Fonda gli obblighi la cui violazione alimenta molti procedimenti penali economici; GwG in tedesco, LBA in francese."
    }
   ],
   "who_titre": "Tre momenti di un procedimento penale che richiedono una traduzione",
   "who": [
    {
     "a": "Difesa",
-    "t": "Istruzione in un’altra lingua",
-    "p": "Gli atti sono istruiti in tedesco e l’imputato è difeso da un avvocato romando. I lotti partono in file Translation con la modalità «high sensitive content» e la difesa legge il tutto prima di scegliere i pezzi da riprodurre.",
+    "t": "Un'istruzione in un'altra lingua",
+    "p": "L'istruzione si svolge in tedesco e l'imputato è difeso da un avvocato ticinese. I lotti partono in File translation con la modalità Highly sensitive content, e la difesa legge tutto prima di scegliere i documenti da far rivedere.",
     "vis": "dossier"
    },
    {
     "a": "Termine",
-    "t": "Dieci giorni per impugnare un’ordinanza",
-    "p": "Il termine di opposizione non permette di attendere una traduzione esterna. Il testo si iscrive direttamente nella traduzione testo e documento, la decisione si prende il giorno stesso e solo l’opposizione depositata passa per un traduttore giuridico.",
+    "t": "Dieci giorni per impugnare un decreto d'accusa",
+    "p": "Il termine per l'opposizione non lascia il tempo di attendere una traduzione esterna. Il testo si incolla direttamente in Traduzione di testi e documenti, la decisione si prende in giornata, e solo l'opposizione depositata passa da un traduttore giuridico.",
     "vis": "pret"
    },
    {
     "a": "Internazionale",
-    "t": "Una domanda di assistenza",
-    "p": "La domanda deve essere compresa da un’autorità estera pur restando fedele alle qualifiche del diritto svizzero. Il concordato presenta i termini del CP e del CPP nel contesto e la versione trasmessa passa in Full Review.",
+    "t": "Una domanda di assistenza giudiziaria",
+    "p": "La domanda deve essere compresa da un'autorità estera pur restando fedele alle qualificazioni del diritto svizzero. Il concordanziere mostra i termini del CP e del CPP nel contesto, e la versione trasmessa passa in Full review.",
     "vis": "globe"
    }
   ],
   "faq_titre": "Domande frequenti sulla traduzione nel diritto penale",
   "faq": [
    {
-    "q": "Può essere presentata agli atti una traduzione automatica?",
-    "r": "Serve innanzitutto a capire. Un documento presentato all’autorità penale deve essere attendibile e, a seconda dei casi, attestato: in tal caso, essa passa per una Full Review da parte di un traduttore giuridico o per una doppia Review con certificato se il tribunale esige una traduzione certificata."
+    "q": "Una traduzione automatica si può produrre agli atti?",
+    "r": "Serve anzitutto a capire. Un documento prodotto davanti all'autorità penale deve essere affidabile e, secondo i casi, attestato: passa allora da una Full review di un traduttore giuridico, o da una Double review e traduzione certificata quando il tribunale esige una traduzione certificata."
    },
    {
-    "q": "Come tutelare il segreto d’istruzione?",
-    "r": "Lo stoccaggio avviene in ogni caso su server svizzeri. La modalità «High sensitive content» impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in memoria di traduzione, e i motori ospitati all’estero visualizzano un avviso prima di ogni invio."
+    "q": "Come proteggere il segreto dell'istruzione?",
+    "r": "L'archiviazione avviene sempre su server svizzeri. La modalità Highly sensitive content impone inoltre un trattamento esclusivamente in Svizzera, senza riutilizzare il contenuto nella memoria di traduzione, e i motori ospitati all'estero mostrano un avviso prima di ogni invio."
    },
    {
-    "q": "I nomi degli atti processuali sono armonizzati?",
-    "r": "Dal 2011 il Codice di procedura penale è unificato e pubblicato nelle tre lingue ufficiali, il che stabilisce il nome di ogni atto. Il concordato mostra queste occorrenze nel contesto, con la loro fonte, nei settori Criminal Law e Litigation &amp; Enforcement."
+    "q": "I nomi degli atti procedurali sono armonizzati?",
+    "r": "Il Codice di procedura penale è unificato dal 2011 e pubblicato nelle tre lingue ufficiali, e fissa così il nome di ogni atto. Il concordanziere mostra queste occorrenze nel contesto, con la loro fonte, nei settori Criminal Law e Litigation & Enforcement."
    },
    {
-    "q": "È possibile trattare un dossier di diverse migliaia di pagine?",
-    "r": "Sì, in batch: fino a 25 file da 50 MB per invio in traduzione testo e documento o tramite un progetto di traduzione per un monitoraggio completo con preventivo e rilettura. I documenti ritornano nel loro formato originale, il che preserva la numerazione degli atti."
+    "q": "Si può trattare un dossier di diverse migliaia di pagine?",
+    "r": "Sì, a lotti: fino a 25 file da 50 MB per invio in Traduzione di testi e documenti, oppure con un progetto di traduzione per seguire l'insieme, con offerta e revisione. I documenti tornano nel formato originale, e la numerazione degli atti resta intatta."
    },
    {
-    "q": "E i pezzi scansionati o di scarsa qualità?",
-    "r": "La scheda PDF to Word converte un PDF scansionato in un documento Word modificabile prima della traduzione o dell’annotazione. Ciò accade frequentemente per i documenti sequestrati, le vecchie lettere e gli allegati trasmessi a immagine da un’autorità estera. Il documento ottenuto si traduce quindi in un file nativo."
+    "q": "E i documenti scansionati o di cattiva qualità?",
+    "r": "La scheda PDF to Word converte un PDF scansionato in un documento Word modificabile prima della traduzione o delle annotazioni. Capita spesso con i documenti sequestrati, la corrispondenza datata e gli allegati trasmessi come immagine da un'autorità estera. Il documento ottenuto si traduce poi come un file nativo."
    },
    {
-    "q": "Quali lingue per una procedura internazionale?",
-    "r": "Il tedesco, il francese, l’italiano e l’inglese sono nativi in tutte le coppie e la piattaforma copre complessivamente 30 lingue. Le qualificazioni restano tuttavia quelle del diritto svizzero, che il concordato permette di verificare articolo per articolo. I documenti ritornano nel loro formato originale, indipendentemente dalla lingua di partenza."
+    "q": "Quali lingue per un procedimento internazionale?",
+    "r": "Tedesco, francese, italiano e inglese sono lingue native in tutte le combinazioni, e la piattaforma copre 30 lingue in totale. Le qualificazioni restano però quelle del diritto svizzero, che il concordanziere permette di verificare articolo per articolo. I documenti tornano nel formato originale, qualunque sia la lingua di partenza."
    }
   ],
-  "cta_t": "Penalmente trattati senza lasciare la Svizzera",
-  "cta_p": "Una dimostrazione sui propri pezzi, con uno specialista del diritto svizzero.",
+  "cta_t": "I vostri dossier penali, trattati senza lasciare la Svizzera",
+  "cta_p": "Una dimostrazione sui vostri documenti, con uno specialista del diritto svizzero.",
   "voisins": [
    "contentieux-arbitrage",
    "compliance-finma",
