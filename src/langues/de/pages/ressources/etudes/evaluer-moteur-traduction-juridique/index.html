@@ -47,7 +47,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
    "name": "Was ist eine Blindbewertung von Übersetzungsmotoren?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Eine Bewertung, bei der die bewertende Person nicht weiss, welcher Motor die bewertete Ausgabe erzeugt hat. Die Ausgaben werden anonymisiert, gemischt und in zufälliger Reihenfolge vorgelegt. Ohne diese Verblindung beeinflusst der Name des Motors die Bewertung in beide Richtungen: Nachsicht gegenüber dem bekannten Motor, Strenge gegenüber dem verdächtigten."
+    "text": "Eine Bewertung, bei der die bewertende Person nicht weiss, welcher Motor die bewertete Ausgabe erzeugt hat. Die Ausgaben werden anonymisiert, gemischt und in zufälliger Reihenfolge vorgelegt. Ohne diese Verblindung beeinflusst der Name des Motors die Bewertung in beide Richtungen: Nachsicht gegenüber dem bekannten Motor, Strenge gegenüber dem, dem man misstraut."
    }
   },
   {
@@ -63,7 +63,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
    "name": "Welche Kriterien sollte man an Texten des Schweizer Rechts messen?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Sechs Kriterien lassen sich binär und damit reproduzierbar bewerten: die Richtigkeit des Gesetzesverweises, die terminologische Übereinstimmung mit den amtlichen Texten, die Kohärenz innerhalb eines Dokuments, die Behandlung der Namen von Gerichten und Behörden, der Umgang mit Beträgen und Daten im Schweizer Format sowie die Vollständigkeit des Segments, also keine Auslassung, keine Hinzufügung und kein Störzeichen."
+    "text": "Sechs Kriterien lassen sich binär und damit reproduzierbar bewerten: die Richtigkeit des Gesetzesverweises, die terminologische Übereinstimmung mit den amtlichen Texten, die Kohärenz innerhalb eines Dokuments, die Behandlung der Namen von Gerichten und Behörden, der Umgang mit Beträgen und Datumsangaben im Schweizer Format sowie die Vollständigkeit des Segments, also keine Auslassung, keine Hinzufügung und kein Störzeichen."
    }
   }
  ]
@@ -191,7 +191,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
 
       <div class="crit">
         <span class="cn"><i></i> Kriterium 5</span>
-        <h3>Beträge, Daten und Einheiten im Schweizer Format</h3>
+        <h3>Beträge, Datumsangaben und Einheiten im Schweizer Format</h3>
         <p>Sind die Zahlenangaben korrekt und entsprechen sie den Schreibkonventionen der Zielsprache in der Schweiz?</p>
         <p class="q"><b>Nicht konform, wenn:</b> eine Zahl, ein Zinssatz oder eine Frist von der Quelle abweicht, das Tausendertrennzeichen nicht der Apostroph ist, die Währung einen anderen Code erhält oder ein Datum in der englischen Fassung mehrdeutig wird.</p>
       </div>
@@ -216,10 +216,10 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
       <p>Es gibt keine magische Zahl von Segmenten: Der sinnvolle Umfang hängt von der Anzahl Kriterien, der Seltenheit der beobachteten Phänomene und der gewünschten Genauigkeit ab. Die praktische Regel lautet, in Zellen zu denken: Jede Kombination aus Rechtsgebiet und Übersetzungsrichtung muss genügend Segmente enthalten, damit eine Abweichung nicht auf einem oder zwei Sätzen beruht. Ein kleines, ausgewogenes Korpus ist besser als ein grosses, das sich auf ein einziges Rechtsgebiet konzentriert.</p>
 
       <h3>Dichte der Phänomene</h3>
-      <p>Stellen Sie einen Teil des Korpus bewusst aus Segmenten zusammen, die enthalten, was Sie messen wollen: Gesetzesverweise, Gerichtsnamen, Beträge, Daten, regulatorische Begriffe. Ein Korpus aus neutralen Sätzen misst nichts Nützliches, weil alle Motoren daran bestehen.</p>
+      <p>Stellen Sie einen Teil des Korpus bewusst aus Segmenten zusammen, die enthalten, was Sie messen wollen: Gesetzesverweise, Gerichtsnamen, Beträge, Datumsangaben, regulatorische Begriffe. Ein Korpus aus neutralen Sätzen misst nichts Nützliches, weil alle Motoren daran bestehen.</p>
 
       <h3>Rückverfolgbarkeit und Vertraulichkeit</h3>
-      <p>Jedes Segment muss seine Herkunft tragen, damit die Richtigkeit in der amtlichen Quelle überprüft werden kann. Verwenden Sie interne Dokumente, pseudonymisieren Sie diese vor jeder Übermittlung an den Motor eines Drittanbieters und dokumentieren Sie diese Bearbeitung: Ein Bewertungskorpus ist eine Datenbearbeitung wie jede andere. Mehr dazu in unserem Artikel über den <a href="{{ROOT}}fr/ressources/blog/secret-professionnel-outils-traduction/">Ort der Verarbeitung</a>.</p>
+      <p>Bei jedem Segment muss die Herkunft vermerkt sein, damit die Richtigkeit in der amtlichen Quelle überprüft werden kann. Verwenden Sie interne Dokumente, pseudonymisieren Sie diese vor jeder Übermittlung an den Motor eines Drittanbieters und dokumentieren Sie diese Bearbeitung: Ein Bewertungskorpus ist eine Datenbearbeitung wie jede andere. Mehr dazu in unserem Artikel über den <a href="{{ROOT}}fr/ressources/blog/secret-professionnel-outils-traduction/">Ort der Verarbeitung</a>.</p>
 
       <div class="art-note">
         <p><b>Frieren Sie das Korpus ein und versionieren Sie es.</b> Ein Korpus, das sich zwischen zwei Kampagnen verändert, macht die Ergebnisse unvergleichbar. Geben Sie ihm eine Versionsnummer und ein Datum, und bewahren Sie es für die nächste Kampagne unverändert auf.</p>
@@ -312,7 +312,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
       </details>
       <details class="faq-item">
         <summary>Was ist eine Blindbewertung von Übersetzungsmotoren?</summary>
-        <p>Eine Bewertung, bei der die bewertende Person nicht weiss, welcher Motor die bewertete Ausgabe erzeugt hat. Die Ausgaben werden anonymisiert, gemischt und in zufälliger Reihenfolge vorgelegt. Ohne diese Verblindung beeinflusst der Name des Motors die Bewertung in beide Richtungen: Nachsicht gegenüber dem bekannten Motor, Strenge gegenüber dem verdächtigten.</p>
+        <p>Eine Bewertung, bei der die bewertende Person nicht weiss, welcher Motor die bewertete Ausgabe erzeugt hat. Die Ausgaben werden anonymisiert, gemischt und in zufälliger Reihenfolge vorgelegt. Ohne diese Verblindung beeinflusst der Name des Motors die Bewertung in beide Richtungen: Nachsicht gegenüber dem bekannten Motor, Strenge gegenüber dem, dem man misstraut.</p>
       </details>
       <details class="faq-item">
         <summary>Sollte man dasselbe Segment einmal oder mehrmals bewerten?</summary>
@@ -320,7 +320,7 @@ canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-jur
       </details>
       <details class="faq-item">
         <summary>Welche Kriterien sollte man an Texten des Schweizer Rechts messen?</summary>
-        <p>Sechs Kriterien lassen sich binär und damit reproduzierbar bewerten: die Richtigkeit des Gesetzesverweises, die terminologische Übereinstimmung mit den amtlichen Texten, die Kohärenz innerhalb eines Dokuments, die Behandlung der Namen von Gerichten und Behörden, der Umgang mit Beträgen und Daten im Schweizer Format sowie die Vollständigkeit des Segments, also keine Auslassung, keine Hinzufügung und kein Störzeichen.</p>
+        <p>Sechs Kriterien lassen sich binär und damit reproduzierbar bewerten: die Richtigkeit des Gesetzesverweises, die terminologische Übereinstimmung mit den amtlichen Texten, die Kohärenz innerhalb eines Dokuments, die Behandlung der Namen von Gerichten und Behörden, der Umgang mit Beträgen und Datumsangaben im Schweizer Format sowie die Vollständigkeit des Segments, also keine Auslassung, keine Hinzufügung und kein Störzeichen.</p>
       </details>
     </div>
   </div>
