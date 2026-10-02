@@ -630,7 +630,13 @@ def gen_glossaire(src):
              "mots": {k: d[k] for k in ("de", "fr", "it", "en")},
              "pied": f'{d["base"]} · source : {d["source"]}'},
             "#definition", "Lire la définition")
-        body = "\n".join([css, body_hero,
+        # Données structurées : le terme allemand, ses équivalents officiels et sa source
+        ld_terme = {"@context": "https://schema.org", "@type": "DefinedTerm", "name": d["de"], "inLanguage": "de-CH",
+                    "alternateName": [d["fr"], d["it"], d["en"]], "description": d["resume"],
+                    "termCode": d["base"], "url": f'{SITE}/fr/ressources/glossaire/{d["slug"]}/',
+                    "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "Glossaire juridique suisse",
+                                         "url": f"{SITE}/fr/ressources/glossaire/"}}
+        body = "\n".join([css, '<script type="application/ld+json">' + json.dumps(ld_terme, ensure_ascii=False) + "</script>", body_hero,
             f'''<section class="gterm" id="definition">
   <div class="container">
     <div class="gterm-grid">
@@ -703,9 +709,10 @@ def gen_glossaire(src):
 @media(max-width:940px){.ghead{display:none}.grow2{grid-template-columns:1fr 1fr;gap:6px 14px}.grow2 .dom{grid-column:1 / -1}}
 </style>""",
         hero("Glossaire juridique suisse.", "Chaque terme dans les quatre langues, avec sa source",
-             "Les lois suisses sont publiées en allemand, en français et en italien : les "
-             "équivalences ci-dessous ne sont pas des traductions d'usage, ce sont les termes des "
-             "textes officiels. Chacun renvoie à son article et à sa source.",
+             "Les lois suisses sont publiées en allemand, en français et en italien : dans ces "
+             "trois langues, les équivalences ci-dessous sont les termes des textes officiels. "
+             "L'anglais suit les traductions publiées sur Fedlex, qui n'ont pas force de loi. "
+             "Chaque terme renvoie à son article et à sa source.",
              "glossaire",
              "#liste", "Voir les termes"),
         f'''<section class="glist" id="liste">
@@ -720,11 +727,15 @@ def gen_glossaire(src):
             "CHnell couvre 30 domaines et vos propres ressources s'y ajoutent.",
             {"href": "fr/corrext/chnell/", "txt": "Découvrir CHnell"}),
     ])
+    ld_set = {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Glossaire juridique suisse",
+              "inLanguage": ["de-CH", "fr-CH", "it-CH", "en"], "url": f"{SITE}/fr/ressources/glossaire/",
+              "hasDefinedTerm": [{"@type": "DefinedTerm", "name": d["de"], "alternateName": [d["fr"], d["it"], d["en"]],
+                                  "url": f'{SITE}/fr/ressources/glossaire/{d["slug"]}/'} for d in data]}
+    body = '<script type="application/ld+json">' + json.dumps(ld_set, ensure_ascii=False) + "</script>\n" + body
     pages.append(("fr/ressources/glossaire/", {
         "title": "Glossaire juridique suisse en quatre langues · Neur.on",
-        "description": "La terminologie du droit suisse dans les quatre langues, avec la base "
-                       "légale et la source officielle de chaque terme. Vérifiable en contexte "
-                       "dans le concordancier CHnell de Corrext.",
+        "description": "52 termes du droit suisse en allemand, français, italien et anglais, avec "
+                       "la base légale, la source officielle et un exemple tiré de la loi.",
         "short": "Glossaire", "nav": "ressources"}, body))
     return pages
 
