@@ -58,11 +58,15 @@
     fr:{bientot:" (démo : bientôt)",lookup:"Démo : Fast Lookup est disponible sur les extraits « Contrat » et « Banque ».",
         reph:"Démo : choisissez l'extrait « Contrat · art. 104 CO » pour la réécriture.",
         style:"Démo : le style « {0} » n'est pas disponible sur cet extrait ; réglage par défaut appliqué. Styles réels de Corrext : Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
-        rnote:tx.rnote},
+        rnote:"Démo : réécriture disponible sur l'extrait « Contrat · art. 104 CO », avec le réglage par défaut et le style Simplified."},
     de:{bientot:" (Demo: bald verfügbar)",lookup:"Demo: Fast Lookup ist bei den Auszügen «Vertrag» und «Bank» verfügbar.",
         reph:"Demo: Wählen Sie für die Umformulierung den Auszug «Vertrag · Art. 104 OR».",
         style:"Demo: Der Stil «{0}» ist bei diesem Auszug nicht verfügbar, es gilt die Standardeinstellung. Stile in Corrext: Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
-        rnote:"Demo: Umformulierung beim Auszug «Vertrag · Art. 104 OR» verfügbar, mit der Standardeinstellung und dem Stil Simplified."}
+        rnote:"Demo: Umformulierung beim Auszug «Vertrag · Art. 104 OR» verfügbar, mit der Standardeinstellung und dem Stil Simplified."},
+    it:{bientot:" (demo: presto disponibile)",lookup:"Demo: Fast Lookup è disponibile per gli estratti «Contratto» e «Banca».",
+        reph:"Demo: per la riformulazione scegliete l'estratto «Contratto · art. 104 CO».",
+        style:"Demo: lo stile «{0}» non è disponibile per questo estratto; si applica l'impostazione predefinita. Stili reali di Corrext: Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
+        rnote:"Demo: riformulazione disponibile per l'estratto «Contratto · art. 104 CO», con l'impostazione predefinita e lo stile Simplified."}
   };
   var tx=TX[(document.documentElement.lang||"fr").slice(0,2)]||TX.fr;
   var $=function(id){return document.getElementById(id);};
