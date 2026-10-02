@@ -1,0 +1,246 @@
+<!--page
+title: API e on-premises · Corrext per Neur.on: integrazioni
+description: Integrare il motore di traduzione legale svizzero nelle DMS, Intranet e prodotti: API REST, implementazione on-premises, inquadramento di un’integrazione.
+short: API e on-premises
+nav: corrext
+assets: []
+canonical: https://neur-on.ai/fr/corrext/api-on-premises/
+-->
+
+<style>
+/* Page API et on-premises · styles propres (préfixe .api-) */
+
+.api-int{padding:88px 0 90px;background:#fff}
+.api-int .code{max-width:100%;overflow-x:auto}
+.api-illus{margin-top:14px;display:flex;align-items:flex-start;gap:9px;font-size:12.5px;color:var(--muted);line-height:1.5}
+.api-illus svg{width:15px;height:15px;color:var(--blue-d);flex-shrink:0;margin-top:2px}
+.api-facts{padding:0 0 88px;background:#fff}
+.api-ask{padding:0 0 90px;background:#fff}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Offrite un’API per integrare la traduzione nei nostri strumenti?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì, un’API REST permette di chiamare il motore dai propri sistemi: gestione documentale, Intranet, flusso di lavoro aziendale. Non pubblichiamo documentazione tecnica ad accesso libero: il contratto di interfaccia, l’autenticazione e il perimetro delle chiamate si fissano al momento dell’inquadramento, con la vostra DSI e il nostro team tecnico."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "La soluzione può essere implementata nella nostra infrastruttura?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Una distribuzione on-premises è possibile per gli ambienti più sensibili, vale a dire quando le vostre regole interne impongono che nulla esca dalla vostra rete. Si tratta di un progetto d’integrazione a sé stante, in linea con la vostra DSI: architettura, dimensionamento, aggiornamenti e gestione sono definiti prima di ogni impiego."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "I nostri diritti di accesso possono essere ripresi da SharePoint o da Active Directory?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nel quadro di un progetto d’integrazione sono previsti: i diritti d’accesso possono essere sincronizzati con la vostra rubrica e i vostri spazi documentari, affinché ognuno ritrovi in Corrext il perimetro che ha già a casa vostra. Questa sincronizzazione non è un’impostazione self-service dell’interfaccia web, bensì avviene con la vostra DSI."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Il motore può essere integrato nel nostro prodotto con un marchio bianco?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Questo è il caso per i legaltech e gli editori legali: la traduzione diventa una funzione del vostro prodotto, chiamata API, senza che i vostri utenti cambino strumento. Il perimetro funzionale, il marchio visualizzato e le condizioni si definiscono contrattualmente al momento dell’inquadramento."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Dove vengono trattati i dati in caso di richiamo all’API?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Si applicano le stesse regole dell’interfaccia: lo stoccaggio avviene in ogni caso su server svizzeri. Il trattamento è esclusivamente svizzero con LexMachina o in modalità high sensitive content, disponibile per inglese, francese, italiano e tedesco. I motori terzi, DeepL Pro, Azure OpenAI GPT e Claude, sono alloggiati all’estero e attivano l’avviso di pseudonimizzazione definito dalla vostra organizzazione. Nell’implementazione on-premises, il perimetro di elaborazione è quello della vostra infrastruttura."
+   }
+  }
+ ]
+}
+</script>
+
+<!-- HERO -->
+<section class="thero api-hero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>API e on-premises.</em> integrare il motore laddove il lavoro avviene già</h1>
+        <p class="lead">I giuristi non dovrebbero cambiare strumento per tradurre. Il motore trainato dal diritto svizzero si chiama dalla vostra gestione documentale, dalla vostra Intranet o dal vostro prodotto e si dispiega nella vostra infrastruttura quando le vostre norme interne lo esigono.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Inquadrare un’integrazione
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#disponible" class="btn btn-ghost">Cosa è disponibile</a>
+        </div>
+      </div>
+      {{CARTE:api}}
+    </div>
+  </div>
+</section>
+
+<!-- TROIS CAS D'INTÉGRATION -->
+<section class="who who-s" id="cas">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Tre modi per integrare Neur.on nel proprio sistema d’informazione</h2>
+    </div>
+    <div class="ws-grid">
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:dossier}}</span> <span><span class="pn">gestione documentale.</span> Traduzione dal DMS</span></h3>
+        <p>Un documento depositato nella vostra gestione documentale parte alla traduzione dal proprio schermo e la versione target ritorna accanto all’originale, nella stessa struttura e sotto gli stessi diritti. I vostri giuristi non escono dallo strumento in cui archiviano già i loro incarti e nessuna copia parte verso un servizio online non governato.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:portail}}</span> <span><span class="pn">Intranet.</span> un servizio di traduzione per tutti</span></h3>
+        <p>La traduzione diventa un mattone del vostro portale: un modulo interno, una pagina di deposito, un pulsante in un flusso di lavoro di convalida. I team che non apriranno mai una piattaforma di traduzione vi hanno accesso dal luogo in cui lavorano, con il perimetro di lingue e di motori che avete deciso.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:code}}</span> <span><span class="pn">legaltech ed editori.</span> Il motore del vostro prodotto</span></h3>
+        <p>Create una soluzione giuridica e i vostri clienti svizzeri chiedono la traduzione dei loro contenuti. Invece di allenare un motore chiamate il nostro dal vostro prodotto: la funzione è vostra, l’infrastruttura e la terminologia svizzera sono nostre. Il perimetro e il marchio visualizzato si definiscono contrattualmente.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- APPEL TYPE -->
+<section class="api-int">
+  <div class="container">
+    <div class="feature">
+      <div class="feat-txt">
+        <h3>Una chiamata, le stesse impostazioni dell’interfaccia</h3>
+        <p>Ciò che si sceglie sullo schermo in Corrext si sceglie anche in una chiamata: la lingua sorgente, la lingua target, il motore e il settore giuridico. Questo consente a un’integrazione di rispettare la stessa governance dell’interfaccia, invece di creare un canale parallelo privo di regole.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Lingua sorgente e lingua target, tra le lingue della piattaforma</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Scelta del motore, quindi scelta del luogo di lavorazione</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Ambito giuridico, per la terminologia attesa</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Testo o file, a seconda di ciò che il sistema invia</li>
+        </ul>
+        <a href="{{ROOT}}fr/contact/" class="feat-link">Richiedere il contratto di interfaccia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="doc-body">
+            <div class="code"><span class="k">POST</span>/V 1/translate <br> <span class="m">«source_language»</span>: <span class="s">«de»</span>, <br> <span class="m">«target_language»</span>: <span class="s">«it»</span>, <br> <span class="m">«engine»</span>: <span class="s">«lexmachina»</span>, <br> <span class="m">«domain»</span>: <span class="s">«banking»</span></div>
+            <p class="api-illus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>Illustrazione, nessuna documentazione. I percorsi, i nomi dei campi e l’autenticazione effettivi sono definiti nel contratto di interfaccia consegnato al momento dell’inquadramento.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUI EST DISPONIBLE -->
+<section class="facts api-facts" id="disponible">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Che cosa è disponibile e in quale forma</h2>
+        <p>Distinguiamo due cose: ciò che trovate oggi nell’applicazione web, utilizzabile dall’apertura di un conto, e ciò che è un progetto d’integrazione, inquadrato con la vostra DSI. Ogni riga lo precisa.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/corrext/" class="feat-link">La piattaforma Corrext <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Sicurezza e sovranità dei dati <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>API REST</b><p>Richiamo del motore dai propri sistemi con le stesse impostazioni dell’interfaccia. <small>capacità d’integrazione: contratto d’interfaccia, autenticazione e perimetro fissati all’inquadramento. Nessuna documentazione pubblica.</small></p></div>
+        <div class="fact"><b>distribuzione on-premises</b><p>Installazione nella vostra infrastruttura, per gli ambienti in cui nulla deve uscire dalla rete. <small>fornito nell’ambito di un progetto di integrazione, dopo uno studio di architettura e di dimensionamento.</small></p></div>
+        <div class="fact"><b>diritti di accesso sincronizzati</b><p>Acquisizione dei diritti di SharePoint e Active Directory per consentire a tutti di ritrovare il perimetro già esistente. <small>fornito nell’ambito di un progetto di integrazione; non si tratta di un’impostazione self-service dell’interfaccia web.</small></p></div>
+        <div class="fact"><b>consegna dei traduttori</b><p>I traduttori legali e le agenzie lavorano nei loro tool, Trados o memoQ e consegnano nella catena del progetto. <small>catena di produzione progetti con revisione esterna, senza intervento da parte vostra.</small></p></div>
+        <div class="fact"><b>collaborazione in Word</b><p>La riproduzione di un documento tradotto avviene nello strumento di redazione dei team anziché in un’interfaccia aggiuntiva. <small>da inserire in un progetto di integrazione: il perimetro esatto viene confermato con il team prima di qualsiasi impiego.</small></p></div>
+        <div class="fact"><b>I quattro strumenti della piattaforma</b><p>Traduzioni di testo e documento, project management, Fast lookup CHnell e gli estratti del registro di commercio certificati. <small>disponibili oggi nell’applicazione web, dall’apertura di un conto.</small></p></div>
+        <div class="fact"><b>scelta del motore</b><p>LexMachina, DeepL Pro, Azure OpenAI GPT e Claude, selezionati a ogni invio e disciplinati dalla politica della vostra organizzazione. <small>disponibile oggi nell’applicazione web.</small></p></div>
+        <div class="fact"><b>sovranità, in entrambi i casi</b><p>Stoccaggio su server svizzeri in qualsiasi circostanza; trattamento esclusivamente in Svizzera con LexMachina o in modalità high sensitive content. In on-premises, il perimetro è quello della vostra infrastruttura.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CADRAGE -->
+<section class="gov api-ask">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Cosa dobbiamo sapere prima di avviare un’integrazione</h2>
+        <p>Un’integrazione si articola su fatti, non su un’intenzione. Cinque risposte sono sufficienti per dire se il tema riguarda una chiamata API in pochi giorni, un connettore da scrivere o una distribuzione nella vostra infrastruttura. Potete prepararli prima del primo scambio: partiamo da qui e vi diciamo cosa è realistico.</p>
+        <a href="{{ROOT}}fr/contact/" class="feat-link">Trasmetterci questi elementi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 16v-5M13 16V8M18 16v-3"/></svg><span><b>volumi.</b> Quante pagine o documenti al mese, con quali punte e per quanti utenti?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><b>formati.</b> Cosa producono realmente i vostri sistemi: file burocratici, PDF scansionati, testo normale?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>lingue.</b> Quali coppie, in quale proporzione e con quale percentuale di lingue al di fuori dei quattro nativi?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>livello di confidenzialità.</b> Le tue regole interne impongono la modalità «high sensitive content», un motore svizzero o una distribuzione nella tua rete?</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>sistemi esistenti.</b> quale DMS, quale elenco, quale portale e chi li gestisce presso l’utente o il fornitore di servizi?</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Altre pagine della piattaforma</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Traduzione di testo e documento</b> <span>Lo strumento quotidiano: testo, file, PDF in Word, riscrittura.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/langues-et-formats/"><b>lingue e formati</b> <span>30 lingue, quattro nativi, sette formati per ufficio e relativi limiti.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/securite-souverainete/"><b>sicurezza e sovranità</b> <span>archiviazione, elaborazione, motori e governance, spiegate senza indugio.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Domande frequenti su API e on-premises</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Offrite un’API per integrare la traduzione nei nostri strumenti?</summary>
+        <p>Sì, un’API REST permette di chiamare il motore dai propri sistemi: gestione documentale, Intranet, flusso di lavoro aziendale. Non pubblichiamo documentazione tecnica ad accesso libero: il contratto di interfaccia, l’autenticazione e il perimetro delle chiamate si fissano al momento dell’inquadramento, con la vostra DSI e il nostro team tecnico.</p>
+      </details>
+      <details class="faq-item">
+        <summary>La soluzione può essere implementata nella nostra infrastruttura?</summary>
+        <p>Una distribuzione on-premises è possibile per gli ambienti più sensibili, vale a dire quando le vostre regole interne impongono che nulla esca dalla vostra rete. Si tratta di un progetto d’integrazione a sé stante, in linea con la vostra DSI: architettura, dimensionamento, aggiornamenti e gestione sono definiti prima di ogni impiego.</p>
+      </details>
+      <details class="faq-item">
+        <summary>I nostri diritti di accesso possono essere ripresi da SharePoint o da Active Directory?</summary>
+        <p>Nel quadro di un progetto d’integrazione sono previsti: i diritti d’accesso possono essere sincronizzati con la vostra rubrica e i vostri spazi documentari, affinché ognuno ritrovi in Corrext il perimetro che ha già a casa vostra. Questa sincronizzazione non è un’impostazione self-service dell’interfaccia web, bensì avviene con la vostra DSI.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Il motore può essere integrato nel nostro prodotto con un marchio bianco?</summary>
+        <p>È il caso dei <a href="{{ROOT}}fr/solutions/editeurs-legaltech/">legaltech e degli editori legali</a>: la traduzione diventa una funzione del vostro prodotto, chiamata API, senza che i vostri utenti cambino strumento. Il perimetro funzionale, il marchio visualizzato e le condizioni si definiscono contrattualmente al momento dell’inquadramento.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Dove vengono trattati i dati in caso di richiamo all’API?</summary>
+        <p>Si applicano le stesse regole dell’interfaccia: lo stoccaggio avviene in ogni caso su server svizzeri. Il trattamento è esclusivamente svizzero con LexMachina o in modalità high sensitive content, disponibile per inglese, francese, italiano e tedesco. I motori terzi, DeepL Pro, Azure OpenAI GPT e Claude, sono alloggiati all’estero e attivano l’avviso di pseudonimizzazione definito dalla vostra organizzazione. Nell’implementazione on-premises, il perimetro di elaborazione è quello della vostra infrastruttura.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Quadrati la vostra integrazione</h2>
+      <p>Volumi, formati, lingue, livello di confidenzialità, sistemi esistenti: uno scambio con il nostro team tecnico è sufficiente per dire cosa è realistico e in quale ordine.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Inquadrare un’integrazione
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/" class="btn-outline">tornare alla piattaforma Corrext</a>
+      </div>
+      <p class="micro">Scambio tecnico · in francese, tedesco, italiano o inglese · alloggio 100% svizzero</p>
+    </div>
+  </div>
+</section>

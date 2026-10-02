@@ -1,0 +1,1019 @@
+[
+ {
+  "slug": "allemand-francais",
+  "short": "German to French",
+  "resume": "Swiss legal German to French, without any hesitation from Berlin.",
+  "title": "Legal translation from German to French · Neur.on",
+  "description": "Swiss legal German to French: abbreviations OR, ZGB, SchKG converts, recognised Swiss spelling, documents processed in Switzerland.",
+  "lede": "German to French.",
+  "h1": "Swiss law from bank to bank",
+  "lead": "A Zurich judgment to be read in Geneva, a Basel contract to be signed in French-speaking Switzerland. You have to read the Swiss legal German and its abbreviations, and then find the French word in the same legal text.",
+  "promesses": [
+   {
+    "t": "Swiss German",
+    "d": "and above, thousands in 15,000, quotation marks “”"
+   },
+   {
+    "t": "Abbreviations",
+    "d": "OR becomes CO, ZGB becomes CC, SchKG becomes LP"
+   },
+   {
+    "t": "Two native languages",
+    "d": "the pair is processed directly by LexMachina"
+   }
+  ],
+  "definition": "The federal acts shall be adopted and published in German, French and Italian, and the three versions shall also be authoritative. Translation from German to French therefore does not consist in inventing an equivalent but in reproducing the word that the legislature itself wrote in the French version of the same article.",
+  "facts": [
+   {
+    "k": "Three versions, same value",
+    "v": "A federal law exists in German, French and Italian, and the three texts are authoritative. The translation is to find the official French version, not to produce a new one.",
+    "s": "Systematic compilation of federal law: SR in French, SR in German, SR in Italian."
+   },
+   {
+    "k": "Abbreviations for conversion",
+    "v": "BECOMING CO, ZGB becomes CC, StGB becomes CP, SchKG becomes LP, IPRG becomes LDIP. An abbreviation remaining in German in a French text is to be seen from the first reading."
+   },
+   {
+    "k": "Swiss spelling",
+    "v": "Swiss German is unaware of the ss and always writes ff. a document containing ff. does not come from Switzerland, which often changes applicable law.",
+    "s": "Useful indication for detecting a foreign coin in a batch of several hundred pages."
+   },
+   {
+    "k": "Figures and amounts",
+    "v": "Thousands write with an apostrophe: 15,000. The format must survive translation, in the body of the text as well as in the encrypted tables and annexes."
+   },
+   {
+    "k": "Federal case law",
+    "v": "A judgment cited BGE in German cites ATF in French and DTF in Italian, with the same volume, part and page number. The reference converts; it does not translate."
+   },
+   {
+    "k": "German compounds",
+    "v": "Schadenersatzpflicht, Rechtsmittelbelehrung, Handelsregisteramt: a German word is split into three or four French words. The text grows and the layout must collect the difference.",
+    "s": "Corrext renders the file in its original format, including tables and text boxes."
+   },
+   {
+    "k": "Powered by Swiss Law",
+    "v": "LexMachina has been trained on Swiss legal and financial texts, including over 15 million multilingual segments, codes and federal case law."
+   },
+   {
+    "k": "Confidentiality",
+    "v": "Highly sensitive content requires storage and treatment exclusively in Switzerland. It covers German, French, Italian and English, so this pair.",
+    "s": "Engines hosted abroad remain available, with Attorney-Client privilege notification."
+   }
+  ],
+  "termes": [
+   {
+    "de": "Verzugszins",
+    "fr": "intérêt moratoire",
+    "it": "interessi moratori",
+    "en": "default interest",
+    "ref": "art. 104 CO"
+   },
+   {
+    "de": "Betreibung",
+    "fr": "poursuite",
+    "it": "esecuzione",
+    "en": "debt enforcement",
+    "ref": "art. 38 DEBA"
+   },
+   {
+    "de": "Rechtsvorschlag",
+    "fr": "opposition",
+    "it": "opposizione",
+    "en": "objection",
+    "ref": "art. 74 DEBA"
+   },
+   {
+    "de": "Grundbuch",
+    "fr": "registre foncier",
+    "it": "registro fondiario",
+    "en": "land register",
+    "ref": "art. 942 CC"
+   },
+   {
+    "de": "Verfügung",
+    "fr": "décision",
+    "it": "decisione",
+    "en": "ruling",
+    "ref": "art. 5 APA"
+   },
+   {
+    "de": "Handelsregister",
+    "fr": "registre du commerce",
+    "it": "registro di commercio",
+    "en": "commercial register",
+    "ref": "art. 927 CO"
+   }
+  ],
+  "termes_note": "Six terms that German and French under Swiss law each refer to in their own way, with the article that sets out equivalence. The English column reproduces the translation published by the Confederation on Fedlex when it exists, without force of law, and the wording used otherwise.",
+  "who_titre": "Three situations in which this pair decides on the day",
+  "who": [
+   {
+    "vis": "marteau",
+    "a": "Litigation",
+    "t": "German judgment to be used",
+    "p": "The judgment goes into translation with LexMachina, goes back to its layout, and the reasons are read in a row. Sensitive terms are highlighted in fast lookup CHnell, which shows the official use of the word and its source."
+   },
+   {
+    "vis": "signature",
+    "a": "Transactions",
+    "t": "Of the Zurich GTC signed in Geneva",
+    "p": "The French version should use the terms of the Swiss Code of obligations, not their initialling. Full reinterpretation by a legal translator is ordered in Project Management, with the time displayed before validation."
+   },
+   {
+    "vis": "institution",
+    "a": "Authorities",
+    "t": "A decision to be notified in French",
+    "p": "The wording of the administrative procedure shall be: Verfügung gives a decision, Einsprache gives an opposition, Rechtsmittelbelehrung gives an indication of the legal remedies. Corrext keeps these constant choices from one document to the next."
+   }
+  ],
+  "faq_titre": "Frequently asked questions about German to French",
+  "faq": [
+   {
+    "q": "Is Swiss legal German really different from German?",
+    "r": "Yes, and not just by spelling. The ss does not exist in Switzerland, thousands write with an apostrophe, and quotation marks are rafters. Above all, vocabulary refers to other laws: SchKG, GOLD and ZGB have no direct German equivalent, and an engine driven on German texts produces terms that do not exist under Swiss law."
+   },
+   {
+    "q": "How are abbreviations of laws handled?",
+    "r": "They are converted, never copied. BECOMING CO, ZGB becomes CC, StGB becomes CP, SchKG becomes LP and IPRG becomes LDIP. When the context leaves doubt, the full name of the law is written in words rather than an approximate abbreviation."
+   },
+   {
+    "q": "Are case law references also converted?",
+    "r": "Yes. A German BGE is referred to as ATF in French, with the same volume and page; the Federal Gazette is referred to as BBL in German and FF in French; the systematic Compilation changes from SR to RS. These conversions are mechanical, but it is they that make a memory citable before a French-speaking authority."
+   },
+   {
+    "q": "Does a long document keep its layout?",
+    "r": "Yes, the translation is delivered in the original format. Text translation and document accept up to 25 files of 50 MB per submission, in. PDF,. doc,. docx,. xls,. xlsx,. ppt and. pptx formats, and the PDF to Word tab converts a scan into an editable document before processing."
+   },
+   {
+    "q": "Can the text remain in Switzerland from end to end?",
+    "r": "Yes. Projects are stored on Swiss servers in all cases, while Highly sensitive content or the LexMachina engine also ensure processing exclusively in Switzerland. If an employee chooses a third party engine hosted abroad, the Attorney-Client privilege notice will be displayed before sending."
+   }
+  ],
+  "cta_t": "Try this pair on one of your own documents",
+  "cta_p": "A demonstration with a specialist in Swiss law about your formats and terminology.",
+  "voisins": [
+   [
+    "francais-allemand",
+    "French to German",
+    "The other way around, with its own pitfalls"
+   ],
+   [
+    "allemand-anglais",
+    "German to English",
+    "Swiss law explained to a common law reader"
+   ],
+   [
+    "italien-francais",
+    "Italian to French",
+    "The third official language, and its own terms"
+   ]
+  ]
+ },
+ {
+  "slug": "francais-allemand",
+  "short": "French to German",
+  "resume": "Swiss legal French to German read in Zurich, Bern or Chur.",
+  "title": "Legal translation from French to German · Neur.on",
+  "description": "From Swiss legal French to German: terms of federal laws, ss and apostrophe des thousand, abbreviations CO, LP, LDIP converted.",
+  "lede": "French to German.",
+  "h1": "Write for an German reader",
+  "lead": "A French-speaking brief before an German-speaking body, General terms and conditions for Switzerland as a whole. The German text must use the words of the federal acts in their Swiss spelling.",
+  "promesses": [
+   {
+    "t": "Swiss German",
+    "d": "ss everywhere, never from scratch, apostrophe in the thousands"
+   },
+   {
+    "t": "Abbreviations",
+    "d": "CO becomes GOLD, LP becomes SchKG, LDIP becomes IPRG"
+   },
+   {
+    "t": "Fixed terminology",
+    "d": "the words of the official German version, not synonyms"
+   }
+  ],
+  "definition": "Most Swiss cantons provide justice in German. A brief, general terms and conditions or a decision drafted in French must therefore exist in a German version which includes the terms of federal law: those that the German-speaking reader acknowledges and those that the court will cite.",
+  "facts": [
+   {
+    "k": "The word already exists",
+    "v": "Each notion of the Swiss Code of obligations has an official German term in the version published next to the French text. The translator does not choose between several synonyms, but adopts them.",
+    "s": "Both versions are read in parallel in fast Lookup CHnell, with their reference."
+   },
+   {
+    "k": "Abbreviations for conversion",
+    "v": "CO becomes GOLD, CC becomes ZGB, CP becomes StGB, LP becomes SchKG, LDIP becomes IPRG. The Banking Act becomes BankG, not Bankengesetz abbreviated to trial."
+   },
+   {
+    "k": "Never more",
+    "v": "The standard German from Switzerland always writes: Strasse, Abschluss, gemäss. A text delivered with seqq. immediately indicates that it was not drafted for Switzerland.",
+    "s": "The rule also applies to headers, tables, and file names."
+   },
+   {
+    "k": "Amounts and dates",
+    "v": "The thousands keep the apostrophe, 15,000, and the amounts remain in Swiss francs. Format conversions break financial tables more often than vowel mistakes."
+   },
+   {
+    "k": "Fake French-speaking friends",
+    "v": "The place of jurisdiction for the contract is a Gerichtsstand, not a place; an administrative appeal is not a Rekurs in all proceedings. These slides originate from French from France or from cantonal use."
+   },
+   {
+    "k": "Rebuilding compounds",
+    "v": "Where there are four words in French, German expects a single compound: liability for damages gives Schadenersatzpflicht. A word with a literal word reads like a translation."
+   },
+   {
+    "k": "Two native languages",
+    "v": "French and German are two of the four native languages of LexMachina, with over 15 million Swiss legal and financial segments.",
+    "s": "These are also the only languages, together with Italian and English, available in Highly sensitive content."
+   },
+   {
+    "k": "Consistency over time",
+    "v": "The same term must be given in the contract, its annexes and the supplementary agreements signed six months later. The terminology resources of CHnell make these choices from one project to the next."
+   }
+  ],
+  "termes": [
+   {
+    "de": "Aktiengesellschaft",
+    "fr": "société anonyme",
+    "it": "società anonima",
+    "en": "company limited by shares",
+    "ref": "art. 620 CO"
+   },
+   {
+    "de": "Verwaltungsrat",
+    "fr": "conseil d'administration",
+    "it": "consiglio d'amministrazione",
+    "en": "board of directors",
+    "ref": "art. 707 CO"
+   },
+   {
+    "de": "Generalversammlung",
+    "fr": "assemblée générale",
+    "it": "assemblea generale",
+    "en": "general meeting",
+    "ref": "art. 698 CO"
+   },
+   {
+    "de": "Revisionsstelle",
+    "fr": "organe de révision",
+    "it": "ufficio di revisione",
+    "en": "auditor",
+    "ref": "art. 727 CO"
+   },
+   {
+    "de": "Bürgschaft",
+    "fr": "cautionnement",
+    "it": "fideiussione",
+    "en": "contract of surety",
+    "ref": "art. 492 CO"
+   },
+   {
+    "de": "Schadenersatz",
+    "fr": "dommages-intérêts",
+    "it": "risarcimento del danno",
+    "en": "damages",
+    "ref": "art. 107 CO"
+   }
+  ],
+  "termes_note": "The vocabulary of companies and contracts, in the exact form of the German, French and Italian versions of the Swiss Code of obligations. The English column reproduces the translation published by the Confederation on Fedlex when it exists, without force of law, and the wording used otherwise.",
+  "who_titre": "Three moments when the German version is expected",
+  "who": [
+   {
+    "vis": "marteau",
+    "a": "Litigation",
+    "t": "A French-speaking memory in German",
+    "p": "The prayers for relief and summonses for judgments are converted first: ATF becomes BGE, CO becomes GOLD. The legal review then deals with the argument, which must be read as a text written in German."
+   },
+   {
+    "vis": "societe",
+    "a": "Corporates",
+    "t": "GTCs for Switzerland as a whole",
+    "p": "A jurisdiction clause, a limitation clause and a penalty clause have no room for interpretation: they repeat the terms of the Obligationenrecht. Consistency between the two versions is checked lineally."
+   },
+   {
+    "vis": "envoi",
+    "a": "Authorities",
+    "t": "Press release for two regions",
+    "p": "The German text must appear on the same day, with the same level of language. Project Management organizes internal review and numbers the time needed from the number of standard pages detected."
+   }
+  ],
+  "faq_titre": "Frequently asked questions about French to German",
+  "faq": [
+   {
+    "q": "Should I write in standard German or German Swiss?",
+    "r": "In standard German, in its Swiss version. German Swiss is a spoken language: no legal text is written in a dialect. The Swiss standard German version imposes the ss instead of the ss, the apostrophe in the thousands, the wrist quotation marks and the vocabulary of federal laws."
+   },
+   {
+    "q": "How can the terms of German or Austrian law be avoided?",
+    "r": "Based on Swiss texts rather than a general corpus. LexMachina is trained on Swiss law, and every dubious term is confirmed in fast Lookup CHnell, which displays the official segment, its source language and its reference. A term that does not appear in any Swiss text has no place in the document."
+   },
+   {
+    "q": "Can the two versions of a contract prevail?",
+    "r": "The parties may agree, and this is common for a bilingual Swiss contract. This requires a forward control of both versions, because a gap in vocabulary becomes a legal gap. A double review with a certificate is the level of review provided for this case."
+   },
+   {
+    "q": "Can internal company terminology be imposed?",
+    "r": "Yes. Fast lookup CHnell covers 30 areas from official sources, and your own resources are also available in private or shared access. The homemade terms are then found in the following translations, together with their context."
+   },
+   {
+    "q": "Where is the document processed?",
+    "r": "Storage is in Switzerland in all cases. With LexMachina or Highly sensitive content, processing is also processed and the content is not reused in translation memory. Third-party engines, hosted abroad, trigger the Attorney-Client privilege notice and assume a pseudonymized document."
+   }
+  ],
+  "cta_t": "Have your German version read by a lawyer-linguist",
+  "cta_p": "Demonstration on your documents, with your organization's terminology and formats.",
+  "voisins": [
+   [
+    "allemand-francais",
+    "German to French",
+    "The other way around, with its own pitfalls"
+   ],
+   [
+    "francais-anglais",
+    "French to English",
+    "The same text for an international case"
+   ],
+   [
+    "italien-francais",
+    "Italian to French",
+    "The third official language, and its own terms"
+   ]
+  ]
+ },
+ {
+  "slug": "allemand-anglais",
+  "short": "German to English",
+  "resume": "Swiss law in German, made readable for a common law reader.",
+  "title": "Legal translation from German to English · Neur.on",
+  "description": "German-speaking Swiss law: English versions of laws have no force of law, and Swiss concepts retain their original meaning.",
+  "lede": "German to English.",
+  "h1": "Making Swiss law comprehensible",
+  "lead": "A due diligence conducted from London, a report for an American parent company. English has no official Swiss term: the translation explains without inventing a right that does not exist.",
+  "promesses": [
+   {
+    "t": "Unofficial language",
+    "d": "English versions of Swiss laws are for information purposes only"
+   },
+   {
+    "t": "Concepts without equivalent",
+    "d": "Betreibung and Verfügung retain their original terms"
+   },
+   {
+    "t": "Treatment in Switzerland",
+    "d": "English is one of the four native languages"
+   }
+  ],
+  "definition": "English is not an official language of the Confederation. The federal acts prevail in German, French and Italian; their English versions are translations published for information purposes and have no legal effect. An English document is therefore used to understand and decide, never to base an interpretation before a Swiss authority.",
+  "facts": [
+   {
+    "k": "No authoritative version",
+    "v": "English translations of federal acts are made available for information purposes and have no force of law. The reference text remains German, French or Italian.",
+    "s": "This reservation is contained in the English translations published by the Confederation."
+   },
+   {
+    "k": "Concepts without equivalent",
+    "v": "Betreibung is not a debt collection in the Anglo-Saxon sense and Verfügung is not a common law decision. The chosen use is to keep the Swiss term and explain it once."
+   },
+   {
+    "k": "The reverse trap",
+    "v": "Consideration, trust, estoppel, discovery: these concepts have no counterpart under Swiss law. Using them to make a Swiss concept creates a counterpart that the reader does not detect."
+   },
+   {
+    "k": "Companies",
+    "v": "Aktiengesellschaft travels by company limited by shares in the federal texts, not by corporation. The acronym AG is retained in the company name, which is never translated.",
+    "s": "A business name entered in the commercial register shall remain in its registered form."
+   },
+   {
+    "k": "Legal references",
+    "v": "A quote from Article is clear: Art. 104 OR Art. 104 CO, followed by the full name of the law. Inventing an English acronym makes the source impossible for the recipient."
+   },
+   {
+    "k": "Finance and compliance",
+    "v": "FINMA reports, prospectuses and compliance documents are published in English. Swiss financial terminology is included in CHnell, which covers 30 areas from official sources."
+   },
+   {
+    "k": "Volume of due diligence",
+    "v": "Text translation and document accept up to 25 files of 50 MB per submission, and the PDF to Word tab converts a scan into an editable document, which counts when a significant portion of the parts arrive scanned."
+   },
+   {
+    "k": "Confidentiality",
+    "v": "English is one of the four languages of the Highly sensitive content Mode: storage and processing exclusively in Switzerland, without further use of the content in the translation memory."
+   }
+  ],
+  "termes": [
+   {
+    "de": "Bankgeheimnis",
+    "fr": "secret bancaire",
+    "it": "segreto bancario",
+    "en": "banking secrecy",
+    "ref": "art. 47 Banking Act"
+   },
+   {
+    "de": "Geldwäscherei",
+    "fr": "blanchiment d'argent",
+    "it": "riciclaggio di denaro",
+    "en": "money laundering",
+    "ref": "art. 305 bis SCC"
+   },
+   {
+    "de": "Verwaltungsrat",
+    "fr": "conseil d'administration",
+    "it": "consiglio d'amministrazione",
+    "en": "board of directors",
+    "ref": "art. 707 CO"
+   },
+   {
+    "de": "Revisionsstelle",
+    "fr": "organe de révision",
+    "it": "ufficio di revisione",
+    "en": "auditor",
+    "ref": "art. 727 CO"
+   },
+   {
+    "de": "Aktiengesellschaft",
+    "fr": "société anonyme",
+    "it": "società anonima",
+    "en": "company limited by shares",
+    "ref": "art. 620 CO"
+   },
+   {
+    "de": "Konkurs",
+    "fr": "faillite",
+    "it": "fallimento",
+    "en": "bankruptcy",
+    "ref": "art. 197 DEBA"
+   }
+  ],
+  "termes_note": "The German, French and Italian columns come from the official versions; the English column follows translations published by the Confederation for information purposes.",
+  "who_titre": "Three files that pass through English",
+  "who": [
+   {
+    "vis": "loupe",
+    "a": "M &amp; A",
+    "t": "Data room for a foreign buyer",
+    "p": "The articles of association, contracts and commercial register extracts shall be issued in batches and shall be reproduced in their format. Swiss concepts retain their original meaning, explained once, which prevents the buying team from going back and forth."
+   },
+   {
+    "vis": "bouclier",
+    "a": "Banks",
+    "t": "A compliance report for the group",
+    "p": "The vocabulary of banking supervision and secrecy should remain stable from quarter to quarter. Highly sensitive content keeps the entire treatment in Switzerland while the report circulates."
+   },
+   {
+    "vis": "sentence",
+    "a": "Arbitration",
+    "t": "German coins in English",
+    "p": "The arbitral tribunal reads in English but decides on Swiss law. The alternatives proposed by a number of motors show competing formulations, and the Council chooses the one it takes before the Court."
+   }
+  ],
+  "faq_titre": "Frequently asked questions about German to English",
+  "faq": [
+   {
+    "q": "Is an English translation of a Swiss law legally valid?",
+    "r": "No. English is not an official language of the Confederation. The federal acts shall prevail in German, French and Italian; English versions shall be published for information purposes and may not be opposed before a Swiss authority. For a writ of summons, the German, French or Italian version shall be reproduced, if necessary accompanied by a translation thereof."
+   },
+   {
+    "q": "Should Swiss terms be translated or retained?",
+    "r": "Both in this order. The Swiss term is retained, followed by an explanation of its first occurrence, and then re-used as is. This is the only way to make Betreibung or Verfügung without converting them into common law concepts that do not cover the same thing."
+   },
+   {
+    "q": "How do we deal with company names and initials?",
+    "r": "They do not translate. A company entered in the commercial register in the form AG or GmbH shall retain this form throughout the document. Only the legal nature can be explained once, for example company limited by shares for the Aktiengesellschaft."
+   },
+   {
+    "q": "Are English translations less precise than other pairs?",
+    "r": "English is one of the four native languages of LexMachina, trained in Swiss legal and financial texts. What does not change is the quality of the language is the status of the text produced: informative, because Swiss law is not written in English."
+   },
+   {
+    "q": "Can the document remain in Switzerland while the recipient is abroad?",
+    "r": "Yes. The place of treatment depends not on the recipient but on the engine selected. With LexMachina or Highly sensitive content, storage and treatment remain exclusively in Switzerland. The translated file is then transmitted via your own channels."
+   }
+  ],
+  "cta_t": "Show us an German folder to open in English",
+  "cta_p": "A demonstration of your real parts, using the terminology of your industry.",
+  "voisins": [
+   [
+    "anglais-allemand",
+    "English to German",
+    "The opposite is true for contracts under Swiss law"
+   ],
+   [
+    "allemand-francais",
+    "German to French",
+    "The same source for French-speaking Switzerland"
+   ],
+   [
+    "francais-anglais",
+    "French to English",
+    "French-speaking Swiss law for an international dossier"
+   ]
+  ]
+ },
+ {
+  "slug": "anglais-allemand",
+  "short": "English to German",
+  "resume": "Contracts drafted in English, to be incorporated into Swiss law.",
+  "title": "Legal translation from English to German · Neur.on",
+  "description": "Contracts drafted in English and governed by Swiss law: the German version anchors each clause on the exact terms of the Swiss Code of obligations.",
+  "lede": "English to German.",
+  "h1": "Bring the contract back to Swiss law",
+  "lead": "A procurement contract drafted in English but governed by Swiss law: the German version, which will be read by the authority, links each clause to a notion of the Swiss Code of obligations.",
+  "promesses": [
+   {
+    "t": "Legal anchor",
+    "d": "each clause referred to as the Obligationenrecht"
+   },
+   {
+    "t": "Swiss German",
+    "d": "ss, apostrophe in the thousands, Swiss initials preserved"
+   },
+   {
+    "t": "Treatment in Switzerland",
+    "d": "both languages are native in LexMachina"
+   }
+  ],
+  "definition": "A contract drafted in English may perfectly be governed by Swiss law: the parties choose the language; the applicable law is another issue. The German translation is then used for reading by a Swiss counterparty, authority or court and must use the concepts of the Swiss Code of obligations.",
+  "facts": [
+   {
+    "k": "Language and applicable law",
+    "v": "The language of the contract and the law governing it are two distinct choices. An English text governed by Swiss law is interpreted in accordance with the Swiss Code of obligations, not in accordance with common law."
+   },
+   {
+    "k": "Clauses without equivalent",
+    "v": "Indemnify and hold HARMLESS, best efforts, representations and Warranties: these formulae do not have an exact matching. They go through the Swiss concepts of guarantee, diligence and liability, not word for word."
+   },
+   {
+    "k": "Penalty clause",
+    "v": "A liquidated damages clause reads under Swiss law as a Konventionalstrafe, with the regime of art. 160 CO and the possibility for the judge to reduce an excessive penalty."
+   },
+   {
+    "k": "International arbitration",
+    "v": "An arbitration clause with its registered office in Switzerland falls within the chapter on international arbitration of the Swiss private International Law Act, IPRG in German.",
+    "s": "The arbitral tribunal itself rules on its jurisdiction, Art. 186 PILA."
+   },
+   {
+    "k": "Spelling and format",
+    "v": "The German version follows the Swiss Conventions: et seqq. and never et seqq., thousands in 15,000, amounts in Swiss francs. Dates and cross references should remain aligned with the original."
+   },
+   {
+    "k": "Contract Definitions",
+    "v": "An Anglo-Saxon contract opens with a long list of defined terms. Each defined term must be given a single German equivalent, reused unchanged throughout the document and its appendices.",
+    "s": "The terminology resources of CHnell make these choices from one annex to the next."
+   },
+   {
+    "k": "Volume and annexes",
+    "v": "Encrypted annexes, assignment tables, and contract schedules often account for most pages. Corrext returns Word, Excel, and PowerPoint files to their original format."
+   },
+   {
+    "k": "Confidentiality",
+    "v": "English and German are among the four languages of the Highly sensitive content Mode: storage and processing exclusively in Switzerland, without further use in translation memory."
+   }
+  ],
+  "termes": [
+   {
+    "de": "Schiedsgericht",
+    "fr": "tribunal arbitral",
+    "it": "tribunale arbitrale",
+    "en": "arbitral tribunal",
+    "ref": "art. 176 PILA"
+   },
+   {
+    "de": "Zuständigkeit",
+    "fr": "compétence",
+    "it": "competenza",
+    "en": "jurisdiction",
+    "ref": "title 2 CCP"
+   },
+   {
+    "de": "Konventionalstrafe",
+    "fr": "clause pénale",
+    "it": "pena convenzionale",
+    "en": "contractual penalty",
+    "ref": "art. 160 CO"
+   },
+   {
+    "de": "Abtretung",
+    "fr": "cession de créance",
+    "it": "cessione del credito",
+    "en": "assignment of a claim",
+    "ref": "art. 164 CO"
+   },
+   {
+    "de": "Verjährung",
+    "fr": "prescription",
+    "it": "prescrizione",
+    "en": "prescription",
+    "ref": "art. 127 CO"
+   },
+   {
+    "de": "Solidarschuld",
+    "fr": "solidarité passive",
+    "it": "debito solidale",
+    "en": "joint and several liability",
+    "ref": "art. 143 CO"
+   }
+  ],
+  "termes_note": "The concepts that an English clause must reproduce under Swiss law, with the article that governs them. The English column reproduces the translation published by the Confederation on Fedlex when it exists, without force of law, and the wording used otherwise.",
+  "who_titre": "Three contracts that arrive in English",
+  "who": [
+   {
+    "vis": "signature",
+    "a": "M &amp; A",
+    "t": "A Swiss purchase Agreement",
+    "p": "Representations and warranties, the indemnity clause and the numerical thresholds are governed by the notions of the Swiss Code of obligations. The full interpretation by a legal translator relates first to these clauses, not to descriptive appendices."
+   },
+   {
+    "vis": "financement",
+    "a": "Financing",
+    "t": "A loan with a foreign lender",
+    "p": "Security, assignment of claims and joint and several liability of borrowers are precise concepts under Swiss law. A floating term in the German version becomes an uncertainty at the time of Settlement."
+   },
+   {
+    "vis": "verrou",
+    "a": "Legal Department",
+    "t": "Typical NDA in German",
+    "p": "Once the German version has been finalized, it serves as a reference for all subsequent contracts. Validated terms can be found in fast Lookup CHnell, with your own resources next to official sources."
+   }
+  ],
+  "faq_titre": "Frequently asked questions about English to German",
+  "faq": [
+   {
+    "q": "Is a contract in English valid under Swiss law?",
+    "r": "Yes, the parties are free to choose the language of their contract, and Swiss law may apply to an English text. The difficulty is practical: before an German-speaking Swiss authority or court, the German version will be read, and the Anglo-Saxon concepts will in any case be linked to the Swiss Code of obligations."
+   },
+   {
+    "q": "How do you make a clause that has no Swiss equivalent?",
+    "r": "By translating the desired effect with the notions of Swiss law rather than the expression of origin. A indemnity clause is expressed in terms of liability and warranty; a liquidated damages clause becomes a criminal clause. This choice is a matter for the lawyer: machine translation prepares the text, legal review decides."
+   },
+   {
+    "q": "Should the English terms defined in the contract be retained?",
+    "r": "This is common for the terms specific to the transaction, provided that the choice is constant and reported. Each defined term must receive a single treatment, repeated identically in the annexes and addenda. Variations from one document to another are the main source of a dispute of interpretation."
+   },
+   {
+    "q": "Can both versions be authentic at the same time?",
+    "r": "The parties may foresee this, but it is a heavy choice: each difference between the two versions becomes a question of interpretation. A prevalence clause, which refers to the winning version, is simpler. Where both versions are authoritative, a double review with a certificate is the appropriate level of control."
+   },
+   {
+    "q": "Where is the contract processed?",
+    "r": "On Swiss servers in all cases. With LexMachina or Highly sensitive content, the processing also remains exclusively in Switzerland and the content does not feed any memory. If a third party engine hosted abroad is selected, the Attorney-Client privilege notice appears before dispatch."
+   }
+  ],
+  "cta_t": "Submit a difficult clause to us",
+  "cta_p": "A demonstration of your own contracts with a specialist in Swiss bond law.",
+  "voisins": [
+   [
+    "allemand-anglais",
+    "German to English",
+    "Conversely, for a common law reader"
+   ],
+   [
+    "francais-anglais",
+    "French to English",
+    "French-speaking Swiss law for an international dossier"
+   ],
+   [
+    "allemand-francais",
+    "German to French",
+    "Entre deux langues nationales"
+   ]
+  ]
+ },
+ {
+  "slug": "francais-anglais",
+  "short": "French to English",
+  "resume": "French-speaking Swiss law made readable in an international case.",
+  "title": "Legal translation from French to English · Neur.on",
+  "description": "French-speaking Swiss law in English: arbitration, decisions of the Swiss Federal Supreme Court and compliance with English versions of information that are not authoritative.",
+  "lede": "French to English.",
+  "h1": "The French-speaking world",
+  "lead": "Geneva and Lausanne work in French and often speak in English. The translation makes Swiss law understandable, recalling that no English version of a Swiss law is authoritative.",
+  "promesses": [
+   {
+    "t": "Unofficial language",
+    "d": "English versions of laws are for information purposes only"
+   },
+   {
+    "t": "Arbitration",
+    "d": "the vocabulary of Chapter 12 PILA, term by term"
+   },
+   {
+    "t": "Treatment in Switzerland",
+    "d": "French and English are native in LexMachina"
+   }
+  ],
+  "definition": "Swiss laws prevail in German, French and Italian; their English versions are published for information purposes and have no force of law. A French translation into English therefore serves to understand, negotiate or plead, and always refers to the French text when a summons must be issued.",
+  "facts": [
+   {
+    "k": "No English version shall prevail",
+    "v": "English translations of federal acts are available for information purposes. The summons shall remain in French, German or Italian, which may be followed by a translation thereof.",
+    "s": "The reservation is contained in the English translations published by the Confederation."
+   },
+   {
+    "k": "International arbitration",
+    "v": "The Swiss seat of arbitration falls within the chapter on international arbitration of the private International Law Act. Jurisdiction, award and appeal each have a fixed term.",
+    "s": "An appeal against an award must be filed with the Federal Supreme Court."
+   },
+   {
+    "k": "Cite a decision",
+    "v": "An ATF is referred to as ATF, with its volume, its portion and its page. Converting it into an English-Saxon style reference renders the judgment impossible for the opposing party and for the court."
+   },
+   {
+    "k": "The Federal Supreme Court",
+    "v": "The institution is called Federal Supreme Court in the English texts of the Confederation. Supreme Court alone is confusing with other jurisdictions."
+   },
+   {
+    "k": "Concepts without equivalent",
+    "v": "Prosecution, freezing order, summary penalty order: these notions have no exact counterpart in common law. They go through an explanation and then through a constant term throughout the file."
+   },
+   {
+    "k": "Finance and reporting",
+    "v": "Prospectuses, annual reports and compliance documents are available in English. Swiss financial terminology is verifiable in CHnell, covering 30 areas from official sources."
+   },
+   {
+    "k": "Volume of Arbitration",
+    "v": "The documents arrive in hundreds of pages and often in PDF form. Text translation and document accept up to 25 files of 50 MB per submission and convert a scan to Editable Word before processing."
+   },
+   {
+    "k": "Confidentiality",
+    "v": "French and English are among the four languages of the Highly sensitive content Mode: storage and processing exclusively in Switzerland, without further use in translation memory."
+   }
+  ],
+  "termes": [
+   {
+    "de": "Schiedsgericht",
+    "fr": "tribunal arbitral",
+    "it": "tribunale arbitrale",
+    "en": "arbitral tribunal",
+    "ref": "art. 176 PILA"
+   },
+   {
+    "de": "Bundesgericht",
+    "fr": "Tribunal fédéral",
+    "it": "Tribunale federale",
+    "en": "Federal Supreme Court",
+    "ref": "art. 188 CST."
+   },
+   {
+    "de": "Beschwerde",
+    "fr": "recours",
+    "it": "ricorso",
+    "en": "appeal",
+    "ref": "art. 72 FSCA"
+   },
+   {
+    "de": "Verzugszins",
+    "fr": "intérêt moratoire",
+    "it": "interessi moratori",
+    "en": "default interest",
+    "ref": "art. 104 CO"
+   },
+   {
+    "de": "Bankgeheimnis",
+    "fr": "secret bancaire",
+    "it": "segreto bancario",
+    "en": "banking secrecy",
+    "ref": "art. 47 Banking Act"
+   },
+   {
+    "de": "Konkurs",
+    "fr": "faillite",
+    "it": "fallimento",
+    "en": "bankruptcy",
+    "ref": "art. 197 DEBA"
+   }
+  ],
+  "termes_note": "The German, French and Italian columns come from the official versions; the English column follows translations published by the Confederation for information purposes.",
+  "who_titre": "Three files from French-speaking Switzerland that pass through English",
+  "who": [
+   {
+    "vis": "sentence",
+    "a": "Arbitration",
+    "t": "A Geneva Memory argued in English",
+    "p": "Citations of judgments and articles shall remain in French, accompanied by their translation. The rest of the brief reads in English, with a constant vocabulary of arbitration from the first exchange to the award."
+   },
+   {
+    "vis": "bouclier",
+    "a": "Banks",
+    "t": "A file for a foreign regulator",
+    "p": "Banking secrecy, combating money laundering and due diligence obligations have fixed terms. Highly sensitive content keeps the treatment in Switzerland while the folder circulates."
+   },
+   {
+    "vis": "globe",
+    "a": "Organizations",
+    "t": "A text published in two languages",
+    "p": "Both versions come out together and must remain aligned, paragraph by paragraph. Project Management organizes the review and displays the delay before validation."
+   }
+  ],
+  "faq_titre": "Frequently asked questions about French to English",
+  "faq": [
+   {
+    "q": "Can a Swiss law in English be cited in a brief?",
+    "r": "It can be quoted in English for reading, but not to have it say something. English is not an official language of the Confederation and English versions of the laws are published for information purposes. The secure use consists of citing the French, German or Italian text and then giving the English translation thereof."
+   },
+   {
+    "q": "How can I cite a Federal Supreme Court ruling in English?",
+    "r": "The reference is not translated as follows: an ATF retains its form, volume, part and page, and the institution is called Federal Supreme Court. Only the passage quoted is translated, specifying that it is a courtesy translation."
+   },
+   {
+    "q": "Is the wording of the arbitration stable from case to case?",
+    "r": "It must be in the same file first and foremost. Jurisdiction, award, appeal and provisional measures are given a single term, repeated in all exchanges. Fast Lookup CHnell shows the official usage of each term, and your own resources are in addition to public sources."
+   },
+   {
+    "q": "What should you do with terms that do not exist in common law?",
+    "r": "Keep them and explain them. The prosecution, the freezing order or the summary penalty order have no exact counterpart: the Swiss term is retained, explained at its first instance, and then re-used as is. Translation by an approaching Anglo-Saxon concept creates an invisible counterpart for the reader."
+   },
+   {
+    "q": "Where are the items processed?",
+    "r": "On Swiss servers in all cases. With LexMachina or Highly sensitive content, the processing remains exclusively in Switzerland and the content is not reused in memory. Third-party engines hosted abroad trigger the Attorney-Client privilege Opinion and presuppose pseudonymization."
+   }
+  ],
+  "cta_t": "Test the pair on a memorandum or prospectus",
+  "cta_p": "A demonstration with a specialist in Swiss law about your formats and deadlines.",
+  "voisins": [
+   [
+    "anglais-allemand",
+    "English to German",
+    "English contracts governed by Swiss law"
+   ],
+   [
+    "allemand-francais",
+    "German to French",
+    "Entre deux langues nationales"
+   ],
+   [
+    "italien-francais",
+    "Italian to French",
+    "The third official language, and its own terms"
+   ]
+  ]
+ },
+ {
+  "slug": "italien-francais",
+  "short": "Italian to French",
+  "resume": "Swiss legal Italian, distinct from Italian, issued in French.",
+  "title": "Legal translation from Italian to French · Neur.on",
+  "description": "Swiss legal Italian to French: ricorso, precetto esecutivo, Tribunale federale and the terms of Ticino, distinct from Italian.",
+  "lede": "Italian to French.",
+  "h1": "The third official language, in its own right",
+  "lead": "Ticino provides justice in Italian and the Confederation publishes its laws in Italian. Swiss legal Italian is not Italian: a generalist engine is happy to replace it.",
+  "promesses": [
+   {
+    "t": "Italian of Switzerland",
+    "d": "ricorso, precetto esecutivo, Federal Supreme Court"
+   },
+   {
+    "t": "Authoritative version",
+    "d": "Italian is one of the three official languages of the laws"
+   },
+   {
+    "t": "Native language",
+    "d": "Italian is one of four LexMachina languages"
+   }
+  ],
+  "definition": "Italian is one of the three languages in which federal legislation is published and authoritative. The Italian legal terminology of Switzerland therefore comes from these texts, not from Italian usage: the same words may exist on both sides of the border by designating different institutions and procedures.",
+  "facts": [
+   {
+    "k": "A version that is authoritative",
+    "v": "The Italian version of a federal act is as valid as the German version and the French version. This is not a courtesy translation: it is a reference text."
+   },
+   {
+    "k": "Switzerland or Italy",
+    "v": "Ricorso, precetto esecutivo, decreto d' accusa designate specific procedural acts in Switzerland. A motor driven by Italian law substitutes them for concepts of the peninsula which do not cover the same rules.",
+    "s": "The error is silent: the text remains fluid, but it describes another procedure."
+   },
+   {
+    "k": "The institutions",
+    "v": "The Federal Supreme Court is the supreme court of Switzerland; the casory goes to it. No reference to an Italian court makes sense in a Swiss document."
+   },
+   {
+    "k": "Own abbreviations",
+    "v": "Debt collection and bankruptcy are abbreviated to LEF in Italian, LP in French and SchKG in German. The Swiss Code of obligations remains CO in Italian and French, but becomes GOLD in German."
+   },
+   {
+    "k": "Case law",
+    "v": "A published judgment is cited as DTF in Italian, ATF in French and BGE in German, with the same volume and page number. The systematic Compilation is abbreviated as SR in Italian and French."
+   },
+   {
+    "k": "Cantonal documents",
+    "v": "The acts of the Canton of Ticino, its decisions and its forms shall be construed in accordance with Italian federal terminology. It serves as the basis for any adaptation in French."
+   },
+   {
+    "k": "Native language",
+    "v": "Italian is one of the four native languages of LexMachina, with German, French and English, and one of the only languages available in Highly sensitive content.",
+    "s": "The platform also covers 30 languages for foreign documents in a case file."
+   },
+   {
+    "k": "Background check",
+    "v": "Each Italian word is found in fast lookup CHnell with its original segment and reference, in addition to the French and German versions of the same article."
+   }
+  ],
+  "termes": [
+   {
+    "de": "Beschwerde",
+    "fr": "recours",
+    "it": "ricorso",
+    "en": "appeal",
+    "ref": "art. 72 FSCA"
+   },
+   {
+    "de": "Bundesgericht",
+    "fr": "Tribunal fédéral",
+    "it": "Tribunale federale",
+    "en": "Federal Supreme Court",
+    "ref": "art. 188 CST."
+   },
+   {
+    "de": "Zahlungsbefehl",
+    "fr": "commandement de payer",
+    "it": "precetto esecutivo",
+    "en": "summons for payment",
+    "ref": "art. 69 DEBA"
+   },
+   {
+    "de": "Strafbefehl",
+    "fr": "ordonnance pénale",
+    "it": "decreto d'accusa",
+    "en": "summary penalty order",
+    "ref": "art. 352 CrimPC"
+   },
+   {
+    "de": "Verzugszins",
+    "fr": "intérêt moratoire",
+    "it": "interessi moratori",
+    "en": "default interest",
+    "ref": "art. 104 CO"
+   },
+   {
+    "de": "Mängelrüge",
+    "fr": "avis au vendeur",
+    "it": "avviso al venditore",
+    "en": "notice of defects",
+    "ref": "art. 201 CO"
+   }
+  ],
+  "termes_note": "Six terms in which the Italian of Switzerland follows his own path, with the Federal Article laying down the four versions. The English column reproduces the translation published by the Confederation on Fedlex when it exists, without force of law, and the wording used otherwise.",
+  "who_titre": "Three files from Ticino",
+  "who": [
+   {
+    "vis": "marteau",
+    "a": "Litigation",
+    "t": "A Ticino Decision to use",
+    "p": "The procedure described is federal; only the language changes. The terms of the proceedings are converted from the French version of the same article, and not from a general Italian-French dictionary."
+   },
+   {
+    "vis": "dossier",
+    "a": "Prosecution",
+    "t": "A precetto esecutivo to translate",
+    "p": "Summons to pay, opposition, lifting of the objection: the debt enforcement proceeding has a fixed vocabulary in the three official languages. Approximation at this stage takes time, sometimes the right itself."
+   },
+   {
+    "vis": "societe",
+    "a": "Corporates",
+    "t": "Ticino contracts to be integrated",
+    "p": "Extracts from the commercial register, articles of association and contracts shall be translated into the terms of the Swiss Code of obligations. The registered company names and legal forms remain unchanged."
+   }
+  ],
+  "faq_titre": "Frequently asked questions about Italian to French",
+  "faq": [
+   {
+    "q": "Is Swiss legal Italian different from Italian?",
+    "r": "Yes, and the difference lies mainly in the institutions and procedures. The Swiss castor goes to the Swiss Federal Supreme Court; the precetto esecutivo belongs to the prosecution procedure provided for by federal law; the decreto d' accusa is an act of the Swiss Code of Criminal Procedure. The same words sometimes exist in Italy to designate something else."
+   },
+   {
+    "q": "Is the Italian version of a federal law authoritative?",
+    "r": "Yes, just like the German and French versions. For this reason, terminological equivalences can be read directly in official texts: the three versions of an article give the three exact terms, without going through a customary translation."
+   },
+   {
+    "q": "How are abbreviations of laws translated?",
+    "r": "Depending on the target language. Debt collection and bankruptcy are abbreviated by the FinSA in Italian and the DEBA in French; private international law is abbreviated by PILA in both languages, but IPRG in German; the Swiss Code of obligations remains CO in Italian and French. In case of doubt, the full name of the law shall be written in words."
+   },
+   {
+    "q": "Are you also processing French to Italian?",
+    "r": "Yes, the four native languages work in all combinations, one way or the other. These are also the only languages available in Highly sensitive content; the platform also covers 30 languages for foreign coins."
+   },
+   {
+    "q": "Ticino documents often arrive scanned, is that a problem?",
+    "r": "No. The text and document Translation PDF to Word tab converts a scan to an editable Word document before a translation, so that the structure is retained and annotated. The files return to their original format."
+   }
+  ],
+  "cta_t": "Have a Ticino file checked by a lawyer-linguist",
+  "cta_p": "A demonstration of your documents, using the official terminology of the three languages.",
+  "voisins": [
+   [
+    "allemand-francais",
+    "German to French",
+    "Entre deux langues nationales"
+   ],
+   [
+    "francais-allemand",
+    "French to German",
+    "French Romand for German-speaking readers"
+   ],
+   [
+    "francais-anglais",
+    "French to English",
+    "French-speaking Swiss law for an international dossier"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,265 @@
+<!--page
+title: Segreto professionale e strumenti di traduzione ai · Neur.on
+description: Archiviare non è trattare: cosa vale una pseudonimizzazione, perché un avvertimento nello strumento batte una carta e cosa chiedere a un fornitore.
+short: Segreto professionale
+nav: ressources
+hero: aide
+lastmod: 2026-09-15
+canonical: https://neur-on.ai/fr/ressources/blog/secret-professionnel-outils-traduction/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Segreto professionale e strumenti di traduzione: la questione del luogo di trattamento",
+ "description": "Distinguere tra archiviazione ed elaborazione, comprendere cosa protegge una pseudonimizzazione e porre a un fornitore di traduzioni le domande che impegnano realmente la confidenzialità di un dossier.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "fr-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Qual è la differenza tra archiviazione e trattamento dei dati?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Lo stoccaggio è il luogo in cui la collezione di dati riposa in modo duraturo. Il trattamento è il luogo in cui viene letto e calcolato, anche per qualche secondo. Uno strumento è in grado di conservare i documenti su server svizzeri e di inviare ogni frase a un motore ospitato all’estero per tradurla. Entrambe le risposte devono essere ottenute separatamente e la seconda dipende dal motore scelto per ciascuna spedizione."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "La pseudonimizzazione di un documento è sufficiente per ridurre il rischio?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, lo riduce senza sopprimerlo. La revoca dei nomi delle parti lascia il contesto: un’operazione singolare, una clausola inusuale, una combinazione di date e giurisdizioni possono bastare per riidentificare un dossier. La pseudonimizzazione è una misura di prudenza utile, non un’anonimizzazione, e non esonera mai dal sapere dove viene trattato il testo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Perché un avvertimento visualizzato nello strumento è meglio di una carta interna?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Perché appare al momento della decisione, alla persona che la prende. Una carta firmata all’arrivo viene dimenticata il giorno in cui bisogna tradurre quaranta documenti prima di un’udienza. In Corrext, la scelta di un motore ospitato all’estero fa apparire l’avviso Attorney-Cliente privilege, che ricorda l’obbligo di pseudonimizzare e il divieto di utilizzare questi motori per dossier sensibili."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quali domande porre a un traduttore sulla confidenzialità?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dove sono i server di stoccaggio e chi li gestisce, dove avviene il trattamento per ciascun motore proposto, quali subappaltatori intervengono, quali dati vengono riutilizzati e a quale scopo, per quanto tempo i contenuti vengono conservati e come vengono soppressi, quale certificazione è detenuta e su quale perimetro e quale diritto si applica al contratto."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Una certificazione ISO 27001 garantisce che i miei dati restino in Svizzera?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Una certificazione di sicurezza delle informazioni attesta l’esistenza di un sistema di gestione ed è stata verificata in un determinato perimetro. Di per sé non dice nulla sull’ubicazione dei trattamenti. Richiedete il certificato, la data, il perimetro esatto e ponete separatamente la questione del luogo di trattamento per ciascun motore proposto."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+.art-warn{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-bloc);padding:24px 28px;margin:26px 0}
+.art-warn .wh{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+.art-warn .wh svg{width:16px;height:16px;color:var(--blue-d);flex-shrink:0}
+.art-warn blockquote{font-size:14.5px;line-height:1.64;color:var(--muted);border-left:2px solid var(--line-2);padding-left:16px;margin:0}
+</style>
+
+{{BLOG:entete:secret-professionnel-outils-traduction}}
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <div class="ar-brief"><b>in breve</b><p>Sapere dove sono archiviati i tuoi documenti è quasi inutile. La questione che vincola realmente il segreto professionale è quella del luogo in cui il testo è letto e calcolato, motore per motore, invio per invio. Ecco come porre questa domanda e come interpretare la risposta.</p></div>
+
+      <p class="art-lead">Il segreto professionale dell’avvocato è retto dal diritto federale e la sua applicazione agli strumenti digitali non è disciplinata da una nota interna. Essa si basa su fatti verificabili: dove si fonda il testo, dove si calcola, chi vi accede, cosa se ne conserva. Questo articolo non dice cosa è permesso, ma cosa bisogna sapere prima di decidere.</p>
+
+      <h2 id="stocker-traiter">Archiviare non è elaborare</h2>
+
+      <p>È la distinzione che la maggior parte delle documentazioni commerciali non conosce e decide tutto.</p>
+
+      <div class="art-tbl">
+        <table>
+          <thead>
+            <tr><th>Domanda</th><th>Che cosa copre</th><th>Cosa non garantisce</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>dove sono archiviati i miei file?</b></td>
+              <td>Il luogo fisico in cui il documento si basa durevolmente: centro dati, Paese, gestore dell’infrastruttura.</td>
+              <td>Il contenuto non abbia mai lasciato il Paese durante il trattamento.</td>
+            </tr>
+            <tr>
+              <td><b>dove sono trattati i miei file?</b></td>
+              <td>Il luogo in cui il testo è effettivamente letto e calcolato da un motore, anche per qualche secondo.</td>
+              <td>In seguito, la collezione di dati deve essere conservata nello stesso luogo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Una piattaforma può ospitare i vostri documenti su server svizzeri e trasmettere ogni segmento a un motore ospitato altrove per tradurlo. Entrambe le affermazioni sono vere simultaneamente e solo il secondo conto per un dossier coperto dal segreto. <strong>un trattamento transitorio rimane un trattamento</strong>: il testo è stato trasmesso, letto, calcolato e rinviato, al di fuori della sua giurisdizione.</p>
+
+      <p>Ecco perché la formulazione da esigere da un fornitore non è mai «i vostri dati sono in Svizzera», ma una frase che separa i due: <em>stoccaggio in ogni caso su server in Svizzera; trattamento in Svizzera in tale configurazione, all’estero in tale altra</em>. Se il suo interlocutore non sa rispondere separatamente, non sa rispondere.</p>
+
+      <h2 id="moteur-etranger">Cosa succede quando si sceglie un motore ospitato all’estero</h2>
+
+      <p>Le piattaforme di traduzione professionali sono oggi multimotore: orchestrano diversi modelli, alcuni dei quali sono gestiti da terzi al di fuori della Svizzera. È una buona cosa, perché i motori non hanno le stesse forze, ed è un punto di attenzione, perché <strong>il luogo di elaborazione cambia con il motore selezionato, ad ogni invio</strong>.</p>
+
+      <p>A quel punto accadono tre cose, che bisogna avere in mente.</p>
+
+      <ul>
+        <li><strong>Il testo esce dal perimetro nazionale.</strong> viene trasmesso a un operatore soggetto a un altro diritto, in un Paese le cui autorità possono disporre di poteri d’accesso diversi dai suoi.</li>
+        <li><strong>sorge il problema del riutilizzo.</strong> un motore può conservare i contenuti inviati, utilizzarli per migliorare i propri modelli o registrarli. Le condizioni variano a seconda del contratto, dell’offerta e dell’ente aggiudicatore: è una domanda da porre per scritto per ciascun motore, non un’ipotesi.</li>
+        <li><strong>La catena di subappalto si allunga.</strong> tra te e il motore può esserci un integratore, un hosting provider, un provider di infrastruttura. Ogni anello supplementare è un punto di accesso in più da documentare.</li>
+      </ul>
+
+      <p>Per contro, un motore utilizzato nello stesso Paese dello stoccaggio sopprime questa interruzione. Questa è la logica della modalità più restrittiva di una piattaforma: in Corrext, l’opzione <em>«highly sensitive content</em>» impone un <strong>stoccaggio ed elaborazione esclusivamente in Svizzera</strong> per tedesco, francese, italiano e inglese e, secondo la definizione visualizzata dall’applicazione, il contenuto tradotto non viene riutilizzato in una memoria di traduzione per progetti futuri.</p>
+
+      <h2 id="pseudonymisation">La pseudonimizzazione: cosa protegge e cosa non protegge</h2>
+
+      <p>Pseudonimizzare un documento prima di inviarlo a un motore estero consiste nel rimuovere o sostituire gli elementi che identificano le persone e il caso: nomi delle parti, società, consigli, indirizzi, referenze agli atti e talvolta oggetto della controversia.</p>
+
+      <p>Questa è una seria misura di prudenza. Essa ha due limiti che occorre enunciare chiaramente.</p>
+
+      <ul>
+        <li><strong>non è anonimizzazione.</strong> Il legame con la persona sussiste presso di voi e il testo rimane contenuto negli atti. Il rischio di divulgazione viene ridotto, non viene eliminato.</li>
+        <li><strong>Il contesto riidentifica.</strong> un’operazione singolare, una clausola inusuale, una combinazione di date, giurisdizioni e settori possono bastare per riconoscere un caso noto, anche senza un solo nome proprio. Quanto più significativo è il dossier, tanto minore è la protezione della pseudonimizzazione.</li>
+      </ul>
+
+      <p>Occorre inoltre tenere conto dei costi pratici: la pseudonimizzazione corretta di quaranta parti in mano richiede tempo e una pseudonimizzazione parziale dà una falsa sicurezza che è peggio di una pseudonimizzazione del tutto, perché riduce la diligenza. <strong>per i dossier realmente sensibili, la risposta migliore non è quella di cavillare meglio: è non uscire dal Paese.</strong></p>
+
+      <div class="art-note">
+        <p><b>ordinamento in una sola frase.</b> Se l’unica misura che rende accettabile un invio è la pseudonimizzazione, chiedetevi cosa resterebbe del rischio se fosse imperfetto. Quando la risposta è «molto», scegliete un trattamento che non esca dalla Svizzera.</p>
+      </div>
+
+      <h2 id="avertissement">Perché un avvertimento nello strumento è meglio di una carta</h2>
+
+      <p>La maggior parte delle organizzazioni ha una politica di utilizzo degli strumenti digitali. Essa è firmata all’arrivo, archiviata in un’intranet, e dimenticata il giorno in cui un collaboratore deve comprendere quaranta documenti in tedesco prima dell’udienza del giorno seguente. Non è un problema di disciplina, è un problema di tempo.</p>
+
+      <p><strong>una regola è applicata solo se appare al momento della decisione, alla persona che la adotta.</strong> Questo è esattamente ciò che fa un avvertimento contestuale. In Corrext, la selezione di un motore ospitato all’estero fa apparire il seguente avviso, come visualizzato nell’applicazione:</p>
+
+      <div class="art-warn">
+        <span class="wh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Attorney-Cliente privilegio Foglio informativo</span>
+        <blockquote>«You have chosen to use third-party translation engines Hosted Abroad.» Before Uploading your file (s), your Organization requires you to remove any references that could potentially disclose the identity of clients, any other related parties, or the subject matter at hand. Third-party Translation engines Hosted Abroad May exclusively be used for documents that have been completely pseudonymized. «The use of such engines for high-profile or price-sensitive matters is strictly interdite».</blockquote>
+      </div>
+
+      <p>A prescindere dallo strumento, in questo dispositivo sono degni di nota tre aspetti.</p>
+
+      <ul>
+        <li><strong>L’avviso è generato da un atto, non da un calendario.</strong> L’avviso viene visualizzato solo quando appare il rischio, il che gli mantiene il suo valore di allerta.</li>
+        <li><strong>Esso enuncia la politica dell’organizzazione, non quella del fornitore.</strong> Spetta allo studio decidere cosa è vietato; lo strumento si limita a ricordarlo laddove è utile.</li>
+        <li><strong>non blocca.</strong> L’utente rimane responsabile e può ignorarlo con cognizione di causa. Uno strumento che vieta tutto finisce per essere aggirato da soluzioni di grande pubblico che non avvisano di niente.</li>
+      </ul>
+
+      <p>Quest’ultimo punto è più importante per una direzione giuridica. Il rischio principale non è che un collaboratore scelga un motore straniero in uno strumento governato: è che inserisce un paragrafo in un servizio online gratuito perché lo strumento approvato gli ha detto di no. <strong>una politica praticabile riduce il rischio più di una politica perfetta.</strong></p>
+
+      <h2 id="questions">Dodici domande da porre a un fornitore</h2>
+
+      <h3>Localizzazione</h3>
+      <ol>
+        <li>Dove sono i server di archiviazione, in quale Paese e chi li gestisce?</li>
+        <li>Dove avviene il trattamento per ogni motore proposto?</li>
+        <li>Esiste una configurazione in cui il trattamento non esce mai dal Paese e in che modo l’utente la innesca?</li>
+        <li>A quale diritto è soggetto il contratto e dinanzi a quale giurisdizione?</li>
+      </ol>
+
+      <h3>Intervenienti</h3>
+      <ol start="5">
+        <li>Quali subappaltatori intervengono sul canale e quali accedono al contenuto?</li>
+        <li>Chi può tecnicamente leggere un documento presso il fornitore e la consultazione è registrata?</li>
+        <li>I revisori umani sono dipendenti o indipendenti e da quale impegno di confidenzialità sono legati?</li>
+        <li>È prevista una notifica in caso di domanda di accesso da parte di un’autorità, nella misura in cui il diritto applicabile lo consenta?</li>
+      </ol>
+
+      <h3>Dati e prove</h3>
+      <ol start="9">
+        <li>Quali dati vengono riutilizzati, a quale scopo e possono essere disattivati per progetto?</li>
+        <li>Per quanto tempo vengono conservati i contenuti e secondo quale procedura vengono eliminati?</li>
+        <li>Quale certificazione è detenuta, da quale data e su quale perimetro esatto? Richiedete il certificato, non il logotipo.</li>
+        <li>Viene proposto un accordo di trattamento dei dati e prevede un diritto di audit realistico?</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>Come leggere le risposte.</b> una risposta precisa e limitata è meglio di una risposta rassicurante e generale. «Trattamento in Svizzera unicamente in questo modo, all’estero con questi motori» è una buona risposta. «I vostri dati sono protetti» non è una di queste.</p>
+      </div>
+
+      <h2 id="pratique">Cosa potete decidere questa settimana</h2>
+
+      <ul>
+        <li><strong>Classificate i vostri documenti in tre cesti</strong>: ciò che può essere tradotto con qualsiasi motore, che richiede un trattamento nazionale, cosa che non esce dallo studio. La maggior parte delle organizzazioni non ha mai fatto questo esercizio e si riunisce.</li>
+        <li><strong>assegnare uno strumento approvato di default.</strong> Fintanto che non esiste, il comportamento predefinito è il servizio online più vicino.</li>
+        <li><strong>scrivere la regola sotto forma di scelta, nessun divieto</strong>: in questo caso, questa modalità; in questo altro modo. Una regola che inizia con «è vietato» non dice cosa fare.</li>
+        <li><strong>Controlla una volta all’anno</strong> le risposte alle domande precedenti: i motori, i subappaltatori e le condizioni cambiano più rapidamente rispetto ai contratti.</li>
+      </ul>
+
+      <p>Infine, una parola sui testi. La protezione dei dati è disciplinata dalla legge federale sulla protezione dei dati e dal regolamento europeo nel caso di persone interessate dell’Unione; dal canto suo, il segreto professionale dell’avvocato è retto dal diritto penale federale e dalla regolamentazione professionale. Questi quadri non si sostituiscono gli uni agli altri e la loro applicazione a un determinato strumento dipende dalle circostanze. <strong>Il presente articolo descrive una pratica di prudenza; non sostituisce il parere del suo responsabile conformità o del suo ordine professionale.</strong></p>
+
+      <div class="art-end">
+        <p>Sul modo in cui questi principi sono applicati nella nostra piattaforma, vedi <a href="{{ROOT}}fr/securite-souverainete/">sicurezza e sovranità dei dati</a>, il funzionamento del motore svizzero <a href="{{ROOT}}fr/lexmachina/">LexMachina</a> e le modalità di riservatezza della galleria <a href="{{ROOT}}fr/corrext/gestion-de-projet/">gestione del progetto</a>. Lo stoccaggio avviene in ogni caso su server svizzeri; il trattamento rimane esclusivamente in Svizzera in modalità high sensitive content o con LexMachina.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Domande frequenti</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Qual è la differenza tra archiviazione e trattamento dei dati?</summary>
+        <p>Lo stoccaggio è il luogo in cui la collezione di dati riposa in modo duraturo. Il trattamento è il luogo in cui viene letto e calcolato, anche per qualche secondo. Uno strumento è in grado di conservare i documenti su server svizzeri e di inviare ogni frase a un motore ospitato all’estero per tradurla. Entrambe le risposte devono essere ottenute separatamente e la seconda dipende dal motore scelto per ciascuna spedizione.</p>
+      </details>
+      <details class="faq-item">
+        <summary>La pseudonimizzazione di un documento è sufficiente per ridurre il rischio?</summary>
+        <p>No, lo riduce senza sopprimerlo. La revoca dei nomi delle parti lascia il contesto: un’operazione singolare, una clausola inusuale, una combinazione di date e giurisdizioni possono bastare per riidentificare un dossier. La pseudonimizzazione è una misura di prudenza utile, non un’anonimizzazione, e non esonera mai dal sapere dove viene trattato il testo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Perché un avvertimento visualizzato nello strumento è meglio di una carta interna?</summary>
+        <p>Perché appare al momento della decisione, alla persona che la prende. Una carta firmata all’arrivo viene dimenticata il giorno in cui bisogna tradurre quaranta documenti prima di un’udienza. In Corrext, la scelta di un motore ospitato all’estero fa apparire l’avviso Attorney-Cliente privilege, che ricorda l’obbligo di pseudonimizzare e il divieto di utilizzare questi motori per dossier sensibili.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quali domande porre a un traduttore sulla confidenzialità?</summary>
+        <p>Dove sono i server di stoccaggio e chi li gestisce, dove avviene il trattamento per ciascun motore proposto, quali subappaltatori intervengono, quali dati vengono riutilizzati e a quale scopo, per quanto tempo i contenuti vengono conservati e come vengono soppressi, quale certificazione è detenuta e su quale perimetro e quale diritto si applica al contratto.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Una certificazione ISO 27001 garantisce che i miei dati restino in Svizzera?</summary>
+        <p>No. Una certificazione di sicurezza delle informazioni attesta l’esistenza di un sistema di gestione ed è stata verificata in un determinato perimetro. Di per sé non dice nulla sull’ubicazione dei trattamenti. Richiedete il certificato, la data, il perimetro esatto e ponete separatamente la questione del luogo di trattamento per ciascun motore proposto.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+{{BLOG:recents:secret-professionnel-outils-traduction}}
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Verificate le nostre risposte, domanda per domanda</h2>
+      <p>Una demo con uno specialista: luoghi di stoccaggio e di trattamento, modalità di riservatezza, certificazione e perimetro, sui vostri casi reali.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Richiedere una demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/securite-souverainete/" class="btn-outline">sicurezza e sovranità</a>
+      </div>
+      <p class="micro">Demo su misura · in francese, tedesco, italiano o inglese · alloggio 100% svizzero</p>
+    </div>
+  </div>
+</section>

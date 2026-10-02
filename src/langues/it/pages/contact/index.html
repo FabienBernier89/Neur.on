@@ -1,0 +1,433 @@
+<!--page
+title: Contatto e demo · Neur.on, traduzione giuridica in Svizzera
+description: Richiedete ad Neur.on una demo di Corrext: un esperto del diritto svizzero vi mostra da Friburgo i vostri documenti, le vostre lingue e la vostra terminologia.
+short: Contatto
+nav:
+canonical: https://neur-on.ai/fr/contact/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ContactPage",
+ "name": "Contatto e demo · Neur.on",
+ "url": "https://neur-on.ai/fr/contact/",
+ "inLanguage": "fr-CH",
+ "mainEntity": {
+  "@type": "Organization",
+  "name": "Neur.on",
+  "legalName": "Neur.on AI Solutions SA",
+  "url": "https://neur-on.ai/",
+  "email": "team@corrext.com",
+  "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Place de la Gare 15",
+   "postalCode": "1700",
+   "addressLocality": "Fribourg",
+   "addressRegion": "FR",
+   "addressCountry": "CH"
+  },
+  "contactPoint": {
+   "@type": "ContactPoint",
+   "contactType": "Demande de démonstration",
+   "email": "team@corrext.com",
+   "areaServed": "CH",
+   "availableLanguage": ["fr", "de", "it", "en"]
+  }
+ }
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Cosa succede dopo la mia richiesta?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un primo scambio di inquadrature: le vostre lingue, i vostri tipi di documenti, i vostri obblighi di confidenzialità e il modo in cui circolano oggi le vostre traduzioni. Vi è poi una dimostrazione di Corrext costruita su questo inquadramento e, se lo strumento corrisponde, una prova incorniciata con un perimetro, degli utenti e una durata definiti insieme."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "La demo avviene sui nostri documenti?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì, questo è il principio. Apportate documenti che rappresentano la vostra pratica e li trattiamo in Corrext durante la seduta, nelle vostre coppie linguistiche e con la vostra terminologia. Per i pezzi sensibili, la dimostrazione avviene in modalità «high sensitive content»: stoccaggio e trattamento esclusivamente in Svizzera. Un accordo di confidenzialità può essere firmato prima della seduta."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Esiste una prova gratuita self-service?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, ed è una scelta assunta. Corrext tratta documenti coperti dal segreto professionale o bancario: i diritti d’accesso, la politica dei motori, la terminologia e le memorie si parametrizzano con voi. Un modulo d’iscrizione self-service non consente né tale inquadramento né tale responsabilità. La prova esiste, ma è riportata e segue la dimostrazione."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "In quali lingue possiamo scambiarci?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In francese, tedesco, italiano e inglese, sia per iscritto che in seduta. Si tratta delle quattro lingue native di LexMachina e della prassi giuridica svizzera."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+/* ============ HERO DE CONVERSION : pas de cadre débordant, on referme le bas ============ */
+
+.cf-hero 
+
+/* ============ CORPS : formulaire + colonne de réassurance ============ */
+.cf{padding:74px 0 86px;background:linear-gradient(180deg,var(--bg) 0%,#fff 52%)}
+.cf-grid{display:grid;grid-template-columns:1.32fr 1fr;gap:56px;align-items:start}
+
+/* Formulaire */
+.cf-form{background:#fff;border:1px solid var(--line);border-radius:var(--r-btn);padding:34px 34px 30px;box-shadow:0 34px 76px -50px rgba(8,24,68,.34)}
+.cf-form h2{font-size:clamp(22px,2.4vw,27px);margin-bottom:8px}
+.cf-intro{font-size:14.5px;color:var(--muted);line-height:1.6;margin-bottom:26px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.cf-f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.cf-f label,.cf-set legend{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.cf-req{color:var(--blue-d);font-weight:700}
+.cf-in{
+  width:100%;font-family:inherit;font-size:14.5px;color:var(--ink);
+  background:#fff;border:1.5px solid var(--line-2);border-radius:var(--r-btn);
+  padding:11px 13px;transition:border-color .2s,box-shadow .2s;
+}
+select.cf-in{
+  appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:36px;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b6880' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;background-size:15px;
+}
+textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
+.cf-in:hover{border-color:var(--blue-pale)}
+.cf-in:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(49,123,255,.16)}
+.cf-in:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.cf-hint{font-size:12.5px;color:var(--muted);line-height:1.5}
+
+/* Cases à cocher : langues */
+.cf-set{border:0;margin-bottom:16px}
+.cf-set legend{padding:0;margin-bottom:10px}
+.cf-checks{display:flex;flex-wrap:wrap;gap:9px}
+.cf-check{
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+  border:1.5px solid var(--line-2);border-radius:var(--r-btn);padding:9px 14px 9px 12px;
+  font-size:14px;color:var(--ink);transition:border-color .2s,background .2s;
+}
+.cf-check:hover{border-color:var(--blue-pale);background:rgba(49,123,255,.04)}
+.cf-check input{width:16px;height:16px;accent-color:var(--blue-d);cursor:pointer;flex-shrink:0}
+.cf-check:has(input:checked){border-color:var(--blue);background:rgba(49,123,255,.06)}
+
+/* Consentement */
+.cf-consent{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;
+  border-top:1px solid var(--line);margin-top:22px;padding-top:20px}
+.cf-consent input{width:17px;height:17px;margin-top:2px;accent-color:var(--blue-d);cursor:pointer;flex-shrink:0}
+.cf-consent label{font-size:13.5px;color:var(--text);line-height:1.6;font-weight:400}
+.cf-consent a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.cf-send{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.cf-send .btn-blue{padding:15px 28px;font-size:15px}
+.cf-usage{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* Colonne de réassurance */
+.cf-side{display:flex;flex-direction:column;gap:30px;position:sticky;top:96px}
+.cf-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-btn);padding:26px 26px 24px}
+.cf-card h2{font-size:18.5px;margin-bottom:14px;letter-spacing:-.02em}
+.cf-card h3{font-size:13px;font-weight:700;color:var(--muted);text-transform:none;margin-bottom:8px}
+.cf-steps{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.cf-steps div{display:grid;grid-template-columns:auto 1fr;gap:13px;padding:14px 0;
+  border-bottom:1px solid var(--line);font-size:14px;color:var(--text);line-height:1.55;align-items:start}
+.cf-steps div:last-child{border-bottom:0;padding-bottom:0}
+.cf-steps .n{font-weight:800;font-size:13px;color:var(--blue-d);font-variant-numeric:tabular-nums;margin-top:1px}
+.cf-steps b{display:block;color:var(--ink);font-weight:700;margin-bottom:2px}
+.cf-adr{font-size:14.5px;color:var(--text);line-height:1.7;font-style:normal}
+.cf-adr b{color:var(--ink)}
+.cf-adr a{color:var(--blue-d);font-weight:600}
+.cf-adr a:hover{text-decoration:underline}
+.cf-langs{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.cf-langs span{font-size:13px;font-weight:600;color:var(--navy);background:var(--blue-pale);border-radius:var(--r-btn);padding:5px 11px}
+.cf-seal{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.cf-seal span{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--text);line-height:1.5}
+.cf-seal svg{width:16px;height:16px;color:var(--blue-d);flex-shrink:0;margin-top:2px}
+
+@media(max-width:940px){
+  .cf{padding:48px 0 62px}
+  .cf-grid{grid-template-columns:1fr;gap:34px}
+  .cf-row{grid-template-columns:1fr;gap:16px}
+  .cf-form{padding:26px 22px 24px}
+  .cf-side{position:static}
+}
+@media(max-width:560px){
+  .cf-form{padding:22px 18px 20px}
+  .cf-check{width:100%}
+}
+.cf-status{margin-top:16px;padding:14px 16px;border-radius:var(--r-bloc);background:rgba(49,123,255,.07);color:var(--ink);font-size:14.5px;line-height:1.55}
+.cf-status.err{background:rgba(220,38,38,.07)}
+.cf-status a{color:var(--blue-d);font-weight:600}
+</style>
+
+<!-- HERO -->
+<section class="thero cf-hero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>richiedete una demo.</em> Corrext, aperta sui vostri documenti</h1>
+        <p class="lead">Non si tratta di una visita guidata generica: un esperto che conosce il diritto svizzero apre la piattaforma sui vostri documenti, nelle vostre coppie linguistiche, con la vostra terminologia. Non esiste una prova gratuita self-service ed è una scelta assunta: uno strumento che tratta i documenti coperti dal segreto professionale si mette insieme a voi, non dietro un pulsante d’iscrizione.</p>
+        <div class="thero-cta">
+          <a href="#demande" class="btn btn-blue">
+            Vai al modulo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#suite" class="btn btn-ghost">Cosa succede dopo</a>
+        </div>
+      </div>
+      {{CARTE:contact}}
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAIRE + RÉASSURANCE -->
+<section class="cf">
+  <div class="container">
+    <div class="cf-grid">
+
+      <!-- À CÂBLER : action du formulaire (HubSpot, Formspree ou endpoint Neur.on) -->
+      <form class="cf-form" id="demande" method="post" action="#" aria-labelledby="cf-title" data-endpoint="" data-mailto="team@corrext.com" novalidate>
+        <h2 id="cf-title">Richiedere una dimostrazione</h2>
+        <p class="cf-intro">I campi contrassegnati con asterisco sono obbligatori. Più descrivete il vostro contesto, più la dimostrazione sarà vicina alla vostra pratica.</p>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-prenom">Nome <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="text" id="cf-prenom" name="prenom" autocomplete="given-name" required>
+          </div>
+          <div class="cf-f">
+            <label for="cf-nom">Cognome <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="text" id="cf-nom" name="nom" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-email">Email professionale <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="email" id="cf-email" name="email" autocomplete="email" inputmode="email" required>
+          </div>
+          <div class="cf-f">
+            <label for="cf-organisation">Organizzazione <span class="cf-req" aria-hidden="true">*</span></label>
+            <input class="cf-in" type="text" id="cf-organisation" name="organisation" autocomplete="organization" required>
+          </div>
+        </div>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-fonction">Funzione <span class="cf-req" aria-hidden="true">*</span></label>
+            <select class="cf-in" id="cf-fonction" name="fonction" autocomplete="organization-title" required>
+              <option value="">Scelga la sua funzione</option>
+              <option value="avocat">Avvocato o associato di studio</option>
+              <option value="juriste-entreprise">Giurista aziendale</option>
+              <option value="compliance">Compliance o rischio</option>
+              <option value="traduction">Traduzioni, terminologia o documentazione</option>
+              <option value="direction">Direzione o direzione generale</option>
+              <option value="autre">Altro</option>
+            </select>
+          </div>
+          <div class="cf-f">
+            <label for="cf-taille">Dimensioni dell’organizzazione</label>
+            <select class="cf-in" id="cf-taille" name="taille" autocomplete="off">
+              <option value="">Scelga una dimensione</option>
+              <option value="1-10">da 1 a 10 persone</option>
+              <option value="11-50">da 11 a 50 persone</option>
+              <option value="51-200">da 51 a 200 persone</option>
+              <option value="201-1000">201-1000 persone</option>
+              <option value="1000+">Oltre 1000 persone</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="cf-set">
+          <legend>Lingue interessate</legend>
+          <div class="cf-checks">
+            <label class="cf-check" for="cf-lang-de"><input type="checkbox" id="cf-lang-de" name="langues" value="allemand" autocomplete="off"><span>tedesco</span></label>
+            <label class="cf-check" for="cf-lang-fr"><input type="checkbox" id="cf-lang-fr" name="langues" value="francais" autocomplete="off"><span>francese</span></label>
+            <label class="cf-check" for="cf-lang-it"><input type="checkbox" id="cf-lang-it" name="langues" value="italien" autocomplete="off"><span>italiano</span></label>
+            <label class="cf-check" for="cf-lang-en"><input type="checkbox" id="cf-lang-en" name="langues" value="anglais" autocomplete="off"><span>inglese</span></label>
+            <label class="cf-check" for="cf-lang-autre"><input type="checkbox" id="cf-lang-autre" name="langues" value="autre" autocomplete="off"><span>altra lingua</span></label>
+          </div>
+        </fieldset>
+
+        <div class="cf-row">
+          <div class="cf-f">
+            <label for="cf-volume">Volume mensile approssimativo</label>
+            <select class="cf-in" id="cf-volume" name="volume" autocomplete="off">
+              <option value="">Scelga un ordine di grandezza</option>
+              <option value="ponctuel">Puntuale, qualche documento al mese</option>
+              <option value="moins-100">Meno di 100 pagine al mese</option>
+              <option value="100-500">100-500 pagine al mese</option>
+              <option value="500-2000">500-2000 pagine al mese</option>
+              <option value="plus-2000">Oltre 2000 pagine al mese</option>
+              <option value="inconnu">Non so ancora</option>
+            </select>
+          </div>
+          <div class="cf-f">
+            <label for="cf-sujet">Ciò che traducete più spesso</label>
+            <input class="cf-in" type="text" id="cf-sujet" name="sujet" autocomplete="off" placeholder="Contratti, atti processuali, rapporti FINMA...">
+          </div>
+        </div>
+
+        <div class="cf-f" style="margin-bottom:4px">
+          <label for="cf-message">Il suo messaggio</label>
+          <textarea class="cf-in" id="cf-message" name="message" autocomplete="off" placeholder="Il suo contesto, i suoi vincoli di riservatezza, gli strumenti già esistenti, i documenti che vorrebbe che fossero trattati durante la dimostrazione."></textarea>
+          <p class="cf-hint">Non inviate nessun documento confidenziale tramite questo modulo: i documenti della dimostrazione si trasmettono entro un quadro concordato congiuntamente.</p>
+        </div>
+
+        <div class="cf-consent">
+          <input type="checkbox" id="cf-consent" name="consentement" value="oui" autocomplete="off" required>
+          <label for="cf-consent">Accetto che Neur.on AI Solutions SA utilizzi tali informazioni per dare seguito alla mia richiesta secondo la sua <a href="{{ROOT}}fr/protection-des-donnees/">Informativa sulla protezione dei dati</a>. <span class="cf-req" aria-hidden="true">*</span></label>
+        </div>
+
+        <div class="cf-send">
+          <button type="submit" class="btn btn-blue">
+            Invia richiesta
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <span class="cf-hint">Preferisci scrivere? <a href="mailto:team@corrext.com" style="color:var(--blue-d);font-weight:600">team@corrext.com</a></span>
+        </div>
+
+        <p class="cf-status" id="cf-status" role="status" aria-live="polite" hidden></p>
+
+        <p class="cf-usage">Queste informazioni servono unicamente a evadere la sua richiesta di dimostrazione e a preparare lo scambio. Esse non sono né rivendute né cedute a terzi e non comportano alcuna iscrizione automatica in una newsletter.</p>
+      </form>
+
+      <!-- Colonne de réassurance -->
+      <div class="cf-side">
+        <div class="cf-card" id="suite">
+          <h2>Cosa succede dopo l’invio</h2>
+          <div class="cf-steps">
+            <div><span class="n">1</span> <span><b>uno scambio di inquadrature</b> le tue lingue, i tuoi tipi di documenti, i tuoi obblighi di confidenzialità e il modo in cui le traduzioni circolano oggi.</span></div>
+            <div><span class="n">2</span> <span><b>una dimostrazione sui tuoi documenti</b> Corrext aperta su parti rappresentative della tua pratica, con il motore, la modalità e la terminologia che corrispondono al tuo caso.</span></div>
+            <div><span class="n">3</span> <span><b>una prova riportata</b> Se lo strumento corrisponde, una prova con perimetro, utenti e durata definiti congiuntamente. Mai un accesso anonimo self-service.</span></div>
+          </div>
+        </div>
+
+        <div class="cf-card">
+          <h2>Scrivici, trovaci</h2>
+          <address class="cf-adr">
+            <b>Neur.on AI Solutions SA</b> <br>Piazza della Stazione 15 <br>1700 Friburgo, Svizzera <br><a href="mailto:team@corrext.com">team@corrext.com</a>
+          </address>
+          <h3 style="margin-top:20px">Lingue di scambio</h3>
+          <div class="cf-langs">
+            <span>italiano</span> <span>tedesco</span> <span>italiano</span> <span>inglese</span>
+          </div>
+        </div>
+
+        <div class="cf-card">
+          <h2>Il quadro, prima ancora della demo</h2>
+          <div class="cf-seal">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>certificazione ISO 27001 ottenuta nel febbraio 2024.</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9 6 9-6M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7M3 7l9-4 9 4"/></svg><span>alloggio in Svizzera presso Infomaniak.</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Accordo sulla protezione dei dati firmato prima della seduta, se richiesto dai tuoi documenti.</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>modalità «highly sensitive content»: archiviazione ed elaborazione esclusivamente in Svizzera.</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Prima di compilare il modulo</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Cosa succede dopo la mia richiesta?</summary>
+        <p>Un primo scambio di inquadrature: le vostre lingue, i vostri tipi di documenti, i vostri obblighi di confidenzialità e il modo in cui circolano oggi le vostre traduzioni. Vi è poi una dimostrazione di Corrext costruita su questo inquadramento e, se lo strumento corrisponde, una prova incorniciata con un perimetro, degli utenti e una durata definiti insieme.</p>
+      </details>
+      <details class="faq-item">
+        <summary>La demo avviene sui nostri documenti?</summary>
+        <p>Sì, questo è il principio. Apportate documenti che rappresentano la vostra pratica e li trattiamo in Corrext durante la seduta, nelle vostre coppie linguistiche e con la vostra terminologia. Per i pezzi sensibili, la dimostrazione avviene in modalità «high sensitive content»: stoccaggio e trattamento esclusivamente in Svizzera. Un accordo di confidenzialità può essere firmato prima della seduta.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Esiste una prova gratuita self-service?</summary>
+        <p>No, ed è una scelta assunta. Corrext tratta documenti coperti dal segreto professionale o bancario: i diritti d’accesso, la politica dei motori, la terminologia e le memorie si parametrizzano con voi. Un modulo d’iscrizione self-service non consente né tale inquadramento né tale responsabilità. La prova esiste, ma è riportata e segue la dimostrazione.</p>
+      </details>
+      <details class="faq-item">
+        <summary>In quali lingue possiamo scambiarci?</summary>
+        <p>In francese, tedesco, italiano e inglese, sia per iscritto che in seduta. Si tratta delle quattro lingue native di LexMachina e della prassi giuridica svizzera.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Una domanda prima di scriverci?</h2>
+      <p>Se l’argomento non rientra in un modulo, è sufficiente un messaggio. Rispondiamo in francese, tedesco, italiano o inglese.</p>
+      <div class="final-cta-btns">
+        <a href="mailto:team@corrext.com" class="btn btn-blue">
+          team@corrext.com
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#demande" class="btn-outline">tornare al modulo</a>
+      </div>
+      <p class="micro">Neur.on AI Solutions SA · Piazza della Stazione 15, 1700 Friburgo · ISO 27001 · alloggio in Svizzera</p>
+    </div>
+  </div>
+</section>
+
+<script>
+/* Formulaire de demande de démo.
+   Si data-endpoint est renseigné (production), la demande y est envoyée en POST.
+   Sinon, ou en cas d'échec, la messagerie du visiteur s'ouvre avec la demande prête à partir vers data-mailto. */
+(function(){
+  var f=document.getElementById('demande'); if(!f){return;}
+  var endpoint=f.getAttribute('data-endpoint')||'';
+  var to=f.getAttribute('data-mailto')||'team@corrext.com';
+  var st=document.getElementById('cf-status');
+  function label(el){var l=f.querySelector('label[for="'+el.id+'"]');return l?l.textContent.replace(/\*/g,'').trim():el.name;}
+  function show(html,err){st.innerHTML=html;st.classList.toggle('err',!!err);st.hidden=false;st.scrollIntoView({block:'nearest'});}
+  function lines(){
+    var out=[],seen={};
+    Array.prototype.forEach.call(f.elements,function(el){
+      if(!el.name||el.type==='submit'||el.name==='consentement'||seen[el.name]){return;}
+      if(el.type==='checkbox'){
+        seen[el.name]=1;
+        var v=Array.prototype.filter.call(f.querySelectorAll('input[name="'+el.name+'"]:checked'),function(c){return true;}).map(function(c){return c.parentNode.textContent.trim();});
+        if(v.length){out.push('Langues : '+v.join(', '));}
+        return;
+      }
+      var val=el.tagName==='SELECT'?(el.value?el.options[el.selectedIndex].text:''):el.value.trim();
+      if(val){out.push(label(el)+' : '+val);}
+    });
+    return out;
+  }
+  function mailto(){
+    var org=(f.elements.organisation&&f.elements.organisation.value.trim())||'';
+    var subject='Demande de démo Corrext'+(org?' · '+org:'');
+    var body=lines().join('\n')+'\n\nConsentement au traitement des données : oui';
+    window.location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    show('Votre messagerie s\'ouvre avec la demande prête à envoyer à <a href="mailto:'+to+'">'+to+'</a>. Si rien ne s\'ouvre, écrivez-nous directement à cette adresse.');
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();show('Merci de remplir les champs obligatoires, marqués d\'un astérisque.',true);return;}
+    if(!endpoint){mailto();return;}
+    var btn=f.querySelector('[type=submit]');btn.disabled=true;
+    fetch(endpoint,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){if(!r.ok){throw new Error(r.status);} f.reset(); show('Merci, votre demande est bien partie. Nous revenons vers vous pour fixer l\'échange de cadrage.');})
+      .catch(function(){mailto();})
+      .then(function(){btn.disabled=false;});
+  });
+})();
+</script>

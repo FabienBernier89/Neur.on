@@ -1,0 +1,44 @@
+[
+ {
+  "fichier": "src/pages/comparatif/index.html",
+  "segment": "113",
+  "probleme": "marqueurs {6}…{/6} absents, en double ou inversés",
+  "source": "<span class=\"vn-term vn-kv\"><span><i>Texte</i><b>jusqu'à 10'000 caractères</b></span><span><i>Fichiers</i><b>25 fichiers de 50 Mo</b></span></span><b class=\"vn-t\">Traduction texte et document</b><span class=\"vn-d\">Traduire un texte ou un lot de fichiers, comparer les moteurs, vérifier un terme en contexte.</span><em>Découvrir l'outil"
+ },
+ {
+  "fichier": "src/pages/corrext/traduction-texte-et-document/index.html",
+  "segment": "61",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO."
+ },
+ {
+  "fichier": "src/pages/index.html",
+  "segment": "66",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO."
+ },
+ {
+  "fichier": "src/pages/lexmachina/index.html",
+  "segment": "60",
+  "probleme": "marqueurs {6}…{/6} absents, en double ou inversés",
+  "source": "<span class=\"vn-term vn-kv\"><span><i>Texte</i><b>jusqu'à 10'000 caractères</b></span><span><i>Fichiers</i><b>25 fichiers de 50 Mo</b></span></span><b class=\"vn-t\">Traduction texte et document</b><span class=\"vn-d\">Essayez le moteur sur de vrais articles de loi et comparez les alternatives, dans la démo.</span><em>Découvrir l'outil"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:28/texte",
+  "probleme": "marqueurs {6}…{/6} absents, en double ou inversés",
+  "source": "<p>Retrouvez <strong><a href=\"https://www.linkedin.com/in/ACoAAAK10nABLjJaqkMLhUApUI0g5bZZEu_I1WQ\" rel=\"noopener\" target=\"_blank\">Loïs Siggen Lopez</a></strong> et notre CEO, Paula Reichenberg, pour une balade-discussion sur l’IA dans les jardins de l’Université, à Miséricorde.</p><p><a href=\"https://www.rts.ch/play/tv/basik/video/check--paula-reichenberg-fondatrice-de-neur-on?urn=urn%3Arts%3Avideo%3A14795759\" rel=\"noopener\" target=\"_blank\">Cliquez ici pour regarder l’interview réalisée pour basik !</a></p><p><strong>basik</strong> est un magazine de reportage hebdomadaire qui explore des sujets liés à l’économie, à l’argent, à l’énergie et au quotidien des habitants de Suisse romande.</p>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:30/texte",
+  "probleme": "marqueurs {7}…{/7} absents, en double ou inversés",
+  "source": "<p>De la directrice juridique groupe d’une entreprise internationale aux associées d’études d’avocats internationales, la Journée des Avocates (Tag der Anwältinnen), organisée à Berne par le Schweizerischer Anwaltsverband (SAV) le 5 février 2024, a réuni des femmes inspirantes de tous horizons.</p><p>Les avocates sont-elles plus sujettes aux « accidents professionnels » ?</p><p>Fait surprenant, un thème revenait souvent dans leurs remarquables carrières : attribuer leur réussite à des « accidents » (« un concours de circonstances » ou « Zufall »).</p><p>À l’écoute de leurs récits, il est pourtant apparu que l’excellence, l’audace, la saisie stratégique des opportunités et l’authenticité sont des explications bien plus plausibles.</p><p>Un grand merci à la formidable organisatrice, <strong><a href=\"https://www.linkedin.com/in/sandra-de-vito-bieri-12610b5/\" rel=\"noopener\" target=\"_blank\">Sandra De Vito Bieri</a></strong>, d’avoir mis sur pied cette occasion de mentorat. Merci également à <strong><a href=\"https://www.linkedin.com/in/birgit-sambeth-6a3a4718/\" rel=\"noopener\" target=\"_blank\">Birgit Sambeth</a></strong> d’avoir donné vie à la Journée des Avocates. À l’ensemble des modératrices, modérateurs et panélistes, merci pour vos récits sincères et vos précieux conseils.</p>"
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:60/texte",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<p>Neur.on a été ajouté à la carte de la Swiss LegalTech Association (SLTA) en tant que première entreprise de la catégorie « Linguistic Services / Translation &amp; Anonymization ».</p><p>Neur.on se réjouit que la catégorie « Linguistic Services / Translation &amp; Anonymization » ait été nouvellement créée pour inscrire sa solution SaaS de traduction pilotée par l’IA sur la carte de la <a href=\"https://www.linkedin.com/company/swiss-legaltech-association/\" rel=\"noopener\" target=\"_blank\">Swiss LegalTech Association</a>.</p><p>Neur.on utilise des modèles spécialisés de traitement automatique du langage naturel pour offrir aux professionnels du droit suisses un processus de traduction de bout en bout, conçu de A à Z pour répondre à leurs besoins.</p><p>Nous avons hâte d’être rejoints dans cette catégorie par d’autres start-up prometteuses : <a href=\"https://www.linkedin.com/in/ACoAAC2TqSwBWYFvPZDlLVnBepKISKy-vGQReUY\" rel=\"noopener\" target=\"_blank\">Andrea Schmidheiny Konic</a> et <a href=\"https://www.linkedin.com/in/ACoAAA9OICIBa7TeVR4Naut4IuEgJwq-yNcWTQo\" rel=\"noopener\" target=\"_blank\">Bojan Konic</a>.</p>"
+ }
+]

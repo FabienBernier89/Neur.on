@@ -1,0 +1,344 @@
+<!--page
+title: Assessing a translation engine on Swiss law · Neur.on
+description: Six measurable criteria, a double blind protocol and seven traps that distort engine comparisons on Swiss law.
+short: Assessing an engine
+nav: ressources
+hero: read
+canonical: https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-juridique/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "How to assess a translation engine on Swiss law",
+ "description": "A method of evaluating translation engines applied to Swiss legal texts: measurable criteria, corpus creation, double-blind protocol and methodological traps.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "fr-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Why are automatic scores not enough for a legal text?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Because they measure a surface proximity with a reference translation, not the accuracy of a legal reference. A sentence that cites the wrong article or wrong jurisdiction can get a very good automatic score: it is fluid, close to the reference, and legally false. On the law, the assessment must be carried out by humans, on binary criteria defined in advance."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How many segments do you need to evaluate a legal translation engine?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "There is no universal number: size depends on the number of criteria, the rarity of the observed phenomena and the precision sought. The helpful rule is elsewhere: the corpus must cover each domain, each translation meaning and each type of document that you actually process, with enough segments per case so that a difference does not stand for a sentence. An unbalanced corpus produces a false result, regardless of its size."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is a blind assessment for translation engines?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "This is an evaluation in which the assessor does not know which engine produced the output he notes. Exits are anonymised, mixed and presented in random order. Without this blind eye, the name of the engine influences the rating in both directions: indulgence towards the one you know, severity towards the one you suspect."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should the same segment be evaluated once or several times?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Several times, on different dates. An exit can vary from generation to generation, or on the contrary remain strictly the same. At one observation session, regeneration of the same sentence produced strictly identical outputs for some segments, while others varied. A one-time measurement does not indicate whether the observed deviation is a quality difference or a generation variation."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What criteria should be measured on Swiss legislation?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Six criteria are binary and therefore reproducible: the accuracy of the legal reference, terminology compliance with official texts, consistency within the same document, the treatment of the names of jurisdictions and authorities, the management of amounts and dates in Swiss format, and the integrity of the segment, i.e. the absence of omission, addition and parasitic character."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+.meta{font-size:13.5px;color:var(--muted);margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.art{padding:66px 0 26px}
+.art-wrap{max-width:768px;margin:0 auto}
+.art-wrap h2{font-size:clamp(22px,2.6vw,29px);margin:56px 0 16px;letter-spacing:-.022em;scroll-margin-top:96px}
+.art-wrap h3{font-size:18.5px;margin:32px 0 10px;letter-spacing:-.015em}
+.art-wrap p{font-size:17px;line-height:1.72;margin-bottom:18px}
+.art-wrap .art-lead{font-size:19.5px;line-height:1.62;color:var(--ink);margin-bottom:26px}
+.art-wrap ul,.art-wrap ol{margin:0 0 20px;padding-left:22px}
+.art-wrap li{font-size:17px;line-height:1.7;margin-bottom:9px;padding-left:4px}
+.art-wrap li::marker{color:var(--blue-d)}
+.art-wrap strong{color:var(--ink);font-weight:700}
+.art-wrap a:not(.feat-link){color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.art-wrap a:not(.feat-link):hover{color:var(--navy)}
+.toc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 30px;margin:0 0 46px}
+.toc b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;font-weight:700}
+.toc ol{margin:0;padding-left:20px}
+.toc li{font-size:16px;margin-bottom:9px;line-height:1.5;padding-left:2px}
+.toc li::marker{color:var(--blue-d);font-weight:700}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-2)}
+.toc a:hover{color:var(--blue-d);border-color:var(--blue)}
+.art-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 var(--r-bloc) var(--r-bloc) 0;padding:22px 26px;margin:28px 0}
+.art-note p{font-size:15.5px;margin-bottom:10px}
+.art-note p:last-child{margin-bottom:0}
+.crit{border:1px solid var(--line-2);border-radius:var(--r-bloc);padding:22px 26px;margin:18px 0;background:#fff}
+.crit .cn{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-d);margin-bottom:10px}
+.crit .cn i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:block}
+.crit h3{margin:0 0 10px;font-size:18px}
+.crit p{font-size:16px;margin-bottom:12px}
+.crit .q{font-size:14.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin:0}
+.crit .q b{color:var(--ink)}
+.art-end{margin-top:54px;padding-top:26px;border-top:1px solid var(--line)}
+.art-end p{font-size:15.5px}
+@media(max-width:560px){.art{padding:44px 0 18px}.art-wrap p,.art-wrap li{font-size:16.5px}.toc,.crit{padding:22px 20px}}
+</style>
+
+<section class="thero thero-read thero-centre">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>study.</em> How to evaluate a translation engine on Swiss law</h1>
+        <p class="lead">This page does not publish a ranking. It publishes a method: the criteria that are measured, the protocol that prevents mistakes from being made, and the errors in reasoning that lead to conclusions being drawn too quickly. The results of a first corpus will be published here.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Ask for a demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#sommaire" class="btn btn-ghost">See method</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>six binary criteria</b>, defined for two assessors to reach the same verdict</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg><span><b>blind protocol</b>: corpus, anonymisation, double evaluation, replication</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><span><b>seven methodological traps</b> that invalidate most published comparisons</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <p class="meta">By the legal and linguistic team of Neur.on · 15 September 2026 · updated on 15 September 2026</p>
+
+      <p class="art-lead">The question “which is the best translation engine for Swiss law?” has no answer until what, in what sense, according to what criteria and with what margin of error has been stated. This document proposes a method that any legal Directorate can apply without a laboratory, and that anyone can dispute point by point.</p>
+
+      <nav class="toc" id="sommaire" aria-label="Summary of the study">
+        <b>Summary</b>
+        <ol>
+          <li><a href="#pourquoi">Why Automatic scores are not enough</a></li>
+          <li><a href="#criteres">six measurable criteria</a></li>
+          <li><a href="#corpus">build up the corpus</a></li>
+          <li><a href="#protocole">Evaluation protocol</a></li>
+          <li><a href="#pieges">seven methodological traps</a></li>
+          <li><a href="#rendre">reporting on results</a></li>
+          <li><a href="#suite">What will be published on this page</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="pourquoi">1. Why Automatic scores are not enough</h2>
+
+      <p>Automatic translation metrics compare an output with a reference translation and measure their proximity. They are useful in tracking the evolution of a system over time. They are misleading to arbitrate a legal choice, for a structural reason: <strong>they do not distinguish a shade of wording from a legal error</strong>.</p>
+
+      <p>A sentence that correctly renders all words but cites a non-existent article, or assigns jurisdiction to a foreign jurisdiction, remains close to the reference and gets a good score. A sentence that is perfectly accurate but worded otherwise than the reference is penalised. For a lawyer, it's exactly the opposite of what counts.</p>
+
+      <p>The evaluation of an engine on the right must therefore be <strong>human, on binary criteria defined in advance</strong>. Binary, because every tenth rating primarily measures the assessor's mood, while a closed question of the type “is the legal reference cited correct?” gives the same verdict in two different people.</p>
+
+      <h2 id="criteres">2. Six measurable criteria</h2>
+
+      <p>Each criterion is rated as compliant or non-compliant, segment by segment. If a criterion does not apply to a segment, it is marked as not applicable and is removed from the denominator for that segment.</p>
+
+      <div class="crit">
+        <span class="cn"><i></i> criterion 1</span>
+        <h3>Accuracy of the legal reference</h3>
+        <p>Does the output quote the right text, with the abbreviation for the target language, the right item number, and the right subdivision?</p>
+        <p class="q"><b>not compliant if:</b> the abbreviation remains that of the source language, the abbreviation belongs to another text, the article number or the subparagraph changes, the subdivision nomenclature is not that of the target language.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> criterion 2</span>
+        <h3>Terminological compliance with official texts</h3>
+        <p>Does the term chosen appear in the official version of the text quoted, or in an official source of the field?</p>
+        <p class="q"><b>not compliant if:</b> the term is a correct but missing synonym of official texts, a borrowing to another legal order, or a literal translation of a term that already has an established legal equivalent.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> criterion 3</span>
+        <h3>Consistency within the document</h3>
+        <p>Is the same term source given by the same target term throughout the document, including headings, notes and appendices?</p>
+        <p class="q"><b>measure:</b> This criterion is not for the segment but for the document. Note each key source term, count its separate rendering, and note non-compliant as soon as a key term receives more than one rendering without justification.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> criterion 4</span>
+        <h3>Names of jurisdictions and authorities</h3>
+        <p>Are the jurisdictions, authorities and records mentioned by their Swiss names in the target language?</p>
+        <p class="q"><b>not compliant if:</b> a Swiss jurisdiction is rendered by the name of a foreign jurisdiction, an authority name is translated literally, while an official name exists, or the level of jurisdiction changes.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> criterion 5</span>
+        <h3>Amounts, dates and units in Swiss format</h3>
+        <p>Are the figures accurate and consistent with the written agreements of the target language in Switzerland?</p>
+        <p class="q"><b>not compliant if:</b> a figure, rate or time period differs from the source, the thousands separator is not the apostrophe, the code currency, or a date becomes ambiguous in the English language.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> criterion 6</span>
+        <h3>Segment integrity</h3>
+        <p>Does the output contain all the content of the source, and nothing else?</p>
+        <p class="q"><b>not compliant if:</b> a proposal is omitted, a content is added, a quotation mark or parasitic character appears at the top or end of output, or the output is truncated.</p>
+      </div>
+
+      <p>These six criteria are not of equal severity, and above all should not be averaged. <strong>avoid disqualifying errors of preference spreads.</strong> a false legal reference and omission make a segment unusable; a correct term that is absent from the official texts requires correction, no more. Therefore, publish two separate rates: the segment rate with at least one disqualifying error, and the segment rate with at least one deviation to correct.</p>
+
+      <h2 id="corpus">3. Building the corpus</h2>
+
+      <p>The body decides on the result more than motors. Four requirements.</p>
+
+      <h3>Representativeness</h3>
+      <p>The corpus should reflect what you're actually processing, not what's easy to collect. Cross three dimensions: the domain (contracts, litigation, company law, financial regulation, administrative law), the type of document (document, writing, decision, correspondence, standard clause), and the meaning of translation. <strong>a successful engine in German to French may not be successful in French to German</strong>: both senses must be counted separately and never aggregated.</p>
+
+      <h3>Size</h3>
+      <p>There is no magical number of segments: the useful size depends on the number of criteria, the rarity of the observed phenomena and the desired accuracy. The practical rule is to think by case: Each domain combination multiplied by translation sense must contain enough segments so that a difference is not based on one or two sentences. A small and balanced corpus is better than a large corpus focused on a single field.</p>
+
+      <h3>Density of phenomena</h3>
+      <p>Deliberately compose a portion of the corpus of segments that contain what you want to measure: legal references, names of jurisdictions, amounts, dates, regulatory terms. A body of neutral phrases is not helpful because all engines succeed.</p>
+
+      <h3>Traceability and confidentiality</h3>
+      <p>Each segment must be sourced so that the accuracy can be verified in the official source. If you are using internal documents, pseudonymize them before transmitting them to a third party engine, and document this processing: an evaluation corpus is a data processing like another. This point is developed in our article on <a href="{{ROOT}}fr/ressources/blog/secret-professionnel-outils-traduction/">the treatment location</a>.</p>
+
+      <div class="art-note">
+        <p><b>freeze the corpus and reverse it.</b> a corpus that moves between two campaigns makes the results incomparable. Assign a version number, date, and keep it unchanged for the next campaign.</p>
+      </div>
+
+      <h2 id="protocole">4. The assessment protocol</h2>
+
+      <ol>
+        <li><strong>Figuate settings.</strong> same pair of languages, same settings, same privacy method, same absence, or glossary for all engines. A configuration difference invalidates the full comparison.</li>
+        <li><strong>Generate in a single time window</strong> and save the date and time of each output. Engines are changing; an undated exit is not a data.</li>
+        <li><strong>anonymise the outputs.</strong> Remove any references to the engine, including formatting indicia that betray it, and assign a neutral identifier.</li>
+        <li><strong>randomize presentation order</strong>, differently for each assessor, so that fatigue and order effect do not focus on the same engine.</li>
+        <li><strong>have two independent</strong> evaluated, without communication between them, on the same grid.</li>
+        <li><strong>measure agreement between assessors</strong> before looking at the results. There is a weak agreement that the grid is ambiguous, not that the assessors are bad: in this case, definitions need to be clarified and again.</li>
+        <li><strong>resolve the disagreements by a third party arbitrator</strong>, who does not know the origin of the exits either, and record the rule reached in the following cases.</li>
+        <li><strong>Replicate.</strong> replay a subset of the corpus a few weeks apart, with the same parameters, to measure variance over time.</li>
+      </ol>
+
+      <p>This latter point is not theoretical. During one observation session, the regeneration of some segments produced <strong>outputs that were strictly identical</strong>, while other segments varied from generation to generation. A campaign that does not measure this variance cannot say whether a difference between two engines is a quality gap or a generation hazard.</p>
+
+      <h2 id="pieges">5. Seven methodological traps</h2>
+
+      <ol>
+        <li><strong>judging on a sentence.</strong> This is the most common and expensive trap. A well-translated phrase says nothing about the behavior of an engine on a sixty-page document, where consistency becomes the first criterion.</li>
+        <li><strong>confuse fluid with accuracy.</strong> recent engines produce appealing phrases. A smooth output that quotes non-existent text is more dangerous than a clumsy output, because it does not call for verification. At the same observation session, an exit made the name of the Swiss supreme court by the name of a foreign court, in a sentence that was also perfectly constructed.</li>
+        <li><strong>forgetting the generational variance.</strong> comparing an output from each engine is like comparing two drawings. Without replication, the measured deviation can be entirely due to generation coincidence.</li>
+        <li><strong>aggregate translation senses.</strong> an average score between German to French and French to German masks exactly the information you are interested in.</li>
+        <li><strong>allow the engine name to be seen.</strong> the assessor, who knows what he notes, shall note his opinion of the engine.</li>
+        <li><strong>mix severity and preference.</strong> counting in the same total a false legal reference and a questionable stylistic choice produces a figure that no one can interpret.</li>
+        <li><strong>evaluate on widely distributed public texts.</strong> the most cited laws are abundantly present in the training data of generalist models. Succeeding on them does not predict performance on your documents. Keep them for control, but build the core of the corpus on less exposed texts.</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>an eighth trap, organizational.</b> get assessed by the person who chose the engine. Always separate the person who decides and the person who scores; otherwise blind is the only protection that remains.</p>
+      </div>
+
+      <h2 id="rendre">6. Reporting on results</h2>
+
+      <p>A credible valuation report shall publish any grounds for disputing it.</p>
+
+      <ul>
+        <li><strong>corpus composition</strong>: number of segments per domain and per translation meaning, source, date of incorporation, version.</li>
+        <li><strong>accurate</strong> settings for each generation, and their date.</li>
+        <li><strong>the criteria grid</strong>, with the definitions of non-compliance used.</li>
+        <li><strong>the rate of agreement between assessors</strong>, before arbitration.</li>
+        <li><strong>results by criterion and by box</strong>, never a single overall score.</li>
+        <li><strong>the measured variance</strong> during replication.</li>
+        <li><strong>the limits</strong>, in words: what the corpus does not cover, which the method does not measure.</li>
+      </ul>
+
+      <p>And a rule of prudence: <strong>never use an engine ranking as a sales argument</strong>, including yours. A classification is valid for a corpus, date, and configuration. What happens honestly is the method and the data, not the podium.</p>
+
+      <h2 id="suite">7. What will be posted on this page</h2>
+
+      <p>We are currently applying this method to a first corpus of Swiss law, built according to the requirements described in point 3 and covering pairs of national languages. <strong>the results will be published on this page</strong>, with the composition of the corpus, the grid used, the rates of agreement between assessors and the limits of the exercise.</p>
+
+      <p>Until then, no figures have been put forward here: a method does not prove anything on its own, and publishing a score before publishing the protocol would be exactly what this document advises against.</p>
+
+      <div class="art-end">
+        <p>If you want to apply this method to your own documents, the output comparison is accessible directly in the application: the alternative feature of <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/">text translation and document</a> displays up to four proposals, each assigned to its engine, which makes it possible to build an evaluation corpus from your actual texts. The functioning of the Swiss engine is described on page <a href="{{ROOT}}fr/lexmachina/">LexMachina</a>, and a <a href="{{ROOT}}fr/comparatif/">reasoned comparison of</a> approaches completes the reading.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="siblings">
+  <div class="container">
+    <h2>To be read next</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/ressources/blog/traduire-contrat-droit-suisse/"><b>Swiss legal Quadrilingualism</b> <span>Why terminology is not a matter of taste, and where to verify it.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/blog/secret-professionnel-outils-traduction/"><b>Professional secrecy and place of processing</b> <span>What to know before entrusting a corpus to a third party engine.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/guides/organiser-traduction-cabinet/"><b>organize translation into practice</b> <span>Rules, roles and indicators to drive legal translation.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Frequently asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Why are automatic scores not enough for a legal text?</summary>
+        <p>Because they measure a surface proximity with a reference translation, not the accuracy of a legal reference. A sentence that cites the wrong article or wrong jurisdiction can get a very good automatic score: it is fluid, close to the reference, and legally false. On the law, the assessment must be carried out by humans, on binary criteria defined in advance.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many segments do you need to evaluate a legal translation engine?</summary>
+        <p>There is no universal number: size depends on the number of criteria, the rarity of the observed phenomena and the precision sought. The helpful rule is elsewhere: the corpus must cover each domain, each translation meaning and each type of document that you actually process, with enough segments per case so that a difference does not stand for a sentence. An unbalanced corpus produces a false result, regardless of its size.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is a blind assessment for translation engines?</summary>
+        <p>This is an evaluation in which the assessor does not know which engine produced the output he notes. Exits are anonymised, mixed and presented in random order. Without this blind eye, the name of the engine influences the rating in both directions: indulgence towards the one you know, severity towards the one you suspect.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Should the same segment be evaluated once or several times?</summary>
+        <p>Several times, on different dates. An exit can vary from generation to generation, or on the contrary remain strictly the same. At one observation session, regeneration of the same sentence produced strictly identical outputs for some segments, while others varied. A one-time measurement does not indicate whether the observed deviation is a quality difference or a generation variation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What criteria should be measured on Swiss legislation?</summary>
+        <p>Six criteria are binary and therefore reproducible: the accuracy of the legal reference, terminology compliance with official texts, consistency within the same document, the treatment of the names of jurisdictions and authorities, the management of amounts and dates in Swiss format, and the integrity of the segment, i.e. the absence of omission, addition and parasitic character.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Apply this method to your own documents</h2>
+      <p>A demo with a specialist in Swiss law: compilation of a corpus based on your texts, comparison of exits, reading of differences.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Ask for a demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/ressources/etudes/" class="btn-outline">all studies</a>
+      </div>
+      <p class="micro">Custom demo · in French, German, Italian or English · accommodation 100% Swiss</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,333 @@
+<!--page
+title: Four levels of translation quality · Corrext per Neur.on
+description: Machine translation, post-editing, legal review, certification: what level for which document, which links and where it is ordered in Corrext.
+short: Quality levels
+nav: corrext
+assets: []
+canonical: https://neur-on.ai/fr/niveaux-de-qualite/
+-->
+
+<style>
+/* Page Niveaux de qualité · styles propres (préfixe .nq-) */
+
+.nq-levels{padding-bottom:70px}
+/* Encadré des définitions exactes affichées dans l'application */
+.nq-defs{padding:78px 0 52px;background:#fff}
+.nq-defs .sec-head{text-align:left;max-width:none;margin:0 0 32px}
+.nq-defgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-2)}
+.nq-def{padding:24px 26px 24px 0;border-bottom:1px solid var(--line-2);border-right:1px solid var(--line-2)}
+.nq-def+.nq-def{padding-left:26px}
+.nq-def:last-child{border-right:0;padding-right:0}
+.nq-def h3{font-size:16px;margin-bottom:12px;letter-spacing:-.015em}
+.nq-def blockquote{background:var(--tint);border-left:2px solid var(--blue);border-radius:0 var(--r-btn) var(--r-btn) 0;padding:14px 16px;margin-bottom:13px;font-size:13px;color:var(--ink);line-height:1.6}
+.nq-def p{font-size:14.5px;color:var(--text);line-height:1.62}
+.nq-src{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.6;max-width:none}
+/* Registre de faits sur fond continu (la page n'a pas de démo au-dessus) */
+.nq-facts{padding:84px 0;background:linear-gradient(180deg,var(--bg) 0%,#fff 46%)}
+.nq-cell b{display:block;font-size:13px;color:var(--ink)}
+.nq-cell span{display:block;font-size:12.5px;font-weight:500;color:var(--muted);line-height:1.45;margin-top:3px}
+@media(max-width:940px){
+  .nq-defgrid{grid-template-columns:1fr}
+  .nq-def,.nq-def+.nq-def{padding:20px 0;border-right:0}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is the difference between post-editing and legal review?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The post-editing is the adoption of automatic translation by a legal translator: in light reviews, material errors, omissions and contradictions are corrected; in full review, the text is also adapted for consistency, idiomatic turns, style, and tone. The legal review of level 3 corresponds to the double review and certified translation: the document is fully reproduced by two qualified legal translators from a specialized agency, who issues a signed certificate attesting to the accuracy and impartiality of the translation."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is a certified translation in Switzerland?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It is a translation accompanied by a signed certificate certifying its accuracy and impartiality. In Corrext, this certificate is issued by the specialised agency in charge of the project, at the double review and certified translation level. According to the addressee, the certificate must then be authenticated by a Swiss notary, then accompanied by an apostille from the State Chancellery under the Hague Convention of 5 October 1961. The requirements vary from authority to canton: the recipient authority remains the judge of the required level."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I change my level during the project?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The level is chosen file by file in the Project Management quotes step, before generating the quote: you can compare levels and deadlines as often as necessary until the quote is generated. Once the project is launched, a level change is handled with the team, as it engages an external relector and a new time estimate."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Who are the reviewers?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "For the light Review and full Review, a legal translator. For the dual review and certified translation, a specialised translation agency that employs two qualified legal translators and signs the certificate. For extracts from the commercial register: legal translators specialising in corporate safekeeping. And if you choose Internal Review, it's your own teams, whose work is valued in the quote."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How long does each level take?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The delay depends on the number of standard pages, the legal category detected, the level of review, and the desired due date. Corrext displays it in the quote before any order, distinguishing preparation, internal review, and external review. Level 1, Machine-only Translation, is immediate in text and document Translation."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I have my own teams read?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. The Internal Review entrusts the review to your organization: you specify the number of standard pages concerned, the price per standard page charged by your team and its approximate hourly price, and Corrext values this work in the quote next to the estimated replay time. This is the way to compare internal and external reinterpretations on figures."
+   }
+  }
+ ]
+}
+</script>
+
+<!-- HERO -->
+<section class="thero nq-hero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>four quality levels.</em> Choose document finishing by document</h1>
+        <p class="lead">You do n't pay the certification for documents you just want to understand, and you do n't hand over a machine translation to an authority. In Corrext, the finish level is determined file by file, with the time and quote displayed before the command.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Ask for a demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#tableau" class="btn btn-ghost">See decision table</a>
+        </div>
+      </div>
+      {{CARTE:niveaux}}
+    </div>
+  </div>
+</section>
+
+<!-- LES QUATRE NIVEAUX -->
+<section class="levels nq-levels" id="niveaux">
+  <div class="container">
+    <div class="sec-head">
+      <h2>From the document you read to the document you submit to an authority</h2>
+      <p>Each level adds human intervention, time and cost. The lowest level corresponds to the actual use of the document.</p>
+    </div>
+    <div class="lev-grid">
+      <div class="lev l1">
+        <div class="ln">LEVEL 1</div>
+        <div class="gauge"><i></i><i></i><i></i><i></i></div>
+        <h3>Machine Translation</h3>
+        <p>To understand and work quickly: document review, internal reading, audience preparation. The engine alone, without reinterpretation, in text translation and document.</p>
+      </div>
+      <div class="lev l2">
+        <div class="ln">LEVEL 2</div>
+        <div class="gauge"><i></i><i></i><i></i><i></i></div>
+        <h3>Post-Edition</h3>
+        <p>Light Review for Internal Understanding and transmission, full Review for text ready for sharing with Third Parties. A legal translator takes over the drive.</p>
+      </div>
+      <div class="lev l3">
+        <div class="ln">LEVEL 3</div>
+        <div class="gauge"><i></i><i></i><i></i><i></i></div>
+        <h3>Legal review</h3>
+        <p>Double review and certified translation: two qualified legal translators from a specialised agency, and a signed certificate confirming accuracy and impartiality.</p>
+      </div>
+      <div class="lev l4">
+        <div class="ln">LEVEL 4</div>
+        <div class="gauge"><i></i><i></i><i></i><i></i></div>
+        <h3>Certification and apostille</h3>
+        <p>Certification authenticated by a Swiss notary, then apostille of the State Chancellery according to the Hague Convention, for files intended for the authorities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LES DÉFINITIONS EXACTES DE L'APPLICATION -->
+<section class="nq-defs" id="definitions">
+  <div class="container">
+    <div class="sec-head">
+      <h2>The three levels of external review, according to the terms of the application</h2>
+      <p>This is the exact text displayed in Corrext at the quotes stage of a translation project, followed by what it actually means.</p>
+    </div>
+    <div class="nq-defgrid">
+      <div class="nq-def">
+        <h3>Light Review (legal Translator)</h3>
+        <blockquote lang="en">The output of the machine translation is Reviewed by a Translator to correct any significant errors, omissions or mistranslations. The result is a complete and Semantically accurate translation of the document, recommended for Understanding and Internal transmission.</blockquote>
+        <p>A legal translator takes over the automatic translation and corrects significant errors, omissions and contradictions. You get complete and faithful text in the sense, recommended to understand a file and circulate it internally. The style is not reworked.</p>
+      </div>
+      <div class="nq-def">
+        <h3>Full review (legal translator)</h3>
+        <blockquote lang="en">The output of the machine translation is Reviewed by a Translator, adjusted and modified, with additional focus on consistency, idiomatic wording, style and tone. This ensures has good legal translation of your documents, ready to be shared with third parties.</blockquote>
+        <p>The same legal translator goes further: terminology consistency from one end to the next, idiomatic phrases, style and tone. This is the level expected as soon as a document leaves your organization, to a colleague, counterparty or client.</p>
+      </div>
+      <div class="nq-def">
+        <h3>Double Review &amp; Certified Translation</h3>
+        <blockquote lang="en">Full review of the documents by two qualified legal translators. A certificate signed by the Specialized Translation Agency in charge of the Project attests to the accuracy and impartiality of the translation. Suitable for documents intended for legal use, publication, or submission to authorities.</blockquote>
+        <p>Two qualified legal translators fully revise the document, and the specialised agency responsible for the project signs a certificate attesting to the accuracy and impartiality of the translation. This is the level of documents intended for legal use, publication or an authority.</p>
+      </div>
+    </div>
+    <p class="nq-src">Reproduced English text as shown in Corrext at Project Management quotes. The wording of the application remains in English; the above French translation is an explanation, not an official version.</p>
+  </div>
+</section>
+
+<!-- TABLEAU DE DÉCISION -->
+<section class="compare" id="tableau">
+  <div class="container">
+    <div class="sec-head">
+      <h2>What is the level for which document?</h2>
+    </div>
+    <p class="compare-note">This table gives the general rule, which is appropriate in the vast majority of cases. The level actually required always depends on the recipient: for an official document, the recipient authority determines the requirement and it is worth checking it with it before ordering.</p>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">Type of document</th>
+            <th class="brand">Recommended level</th>
+            <th>Linking together</th>
+            <th>In which Corrext tool</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Procedural documents to be read internally</th>
+            <td class="brand"><span class="cmp-y">1</span> Machine Translation</td>
+            <td class="nq-cell"><b>person</b> <span>You are reading engine output</span></td>
+            <td class="nq-cell"><b>text translation and document</b> <span>file translation, up to 25</span> files</td>
+          </tr>
+          <tr>
+            <th scope="row">Regular correspondence with a colleague or client</th>
+            <td class="brand"><span class="cmp-y">2</span> light Review</td>
+            <td class="nq-cell"><b>a legal translator</b> <span>or your team, in Internal Review</span></td>
+            <td class="nq-cell"><b>Project management</b> <span>quotes step, review choice</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Contract for a Third Party</th>
+            <td class="brand"><span class="cmp-y">2</span> full review</td>
+            <td class="nq-cell"><b>a legal translator</b> <span>consistency, style and tone</span></td>
+            <td class="nq-cell"><b>Project Management</b> <span>External Review</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Annual report or published document</th>
+            <td class="brand"><span class="cmp-y">3</span> Double Review</td>
+            <td class="nq-cell"><b>two legal translators</b> <span>specialized Agency, signed certificate</span></td>
+            <td class="nq-cell"><b>Project Management</b> <span>Double Review and certified translation</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Document for a Swiss authority</th>
+            <td class="brand"><span class="cmp-p">3 or 4</span> according to the authority</td>
+            <td class="nq-cell"><b>specialized agency</b> <span>Swiss notary if required by the authority</span></td>
+            <td class="nq-cell"><b>Project Management</b> <span>Register extracts for an extract</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Document addressed to a foreign authority</th>
+            <td class="brand"><span class="cmp-y">4</span> Certification and apostille</td>
+            <td class="nq-cell"><b>Agency, notary, Chancellery</b> <span>Hague Convention of 5 October 1961</span></td>
+            <td class="nq-cell"><b>Register extracts</b> <span>other documents: to be registered as project</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span><span class="cmp-y">1</span> Machine translation</span>
+<span><span class="cmp-y">2</span> post-Edition, light or full Review</span>
+<span><span class="cmp-y">3</span> legal review and certificate</span>
+<span><span class="cmp-y">4</span> notarized and apostille certification</span>
+    </div>
+  </div>
+</section>
+
+<!-- OÙ SE COMMANDE CHAQUE NIVEAU -->
+<section class="facts nq-facts" id="commander">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Where each level is ordered, and what is delivered</h2>
+        <p>The four levels do not pass through the same tool. The first uses itself; the second and third are ordered in a project with a cost estimate; the fourth is a certification project. All of the following has been observed in the application.</p>
+        <div class="links">
+          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">The Project Tunnel step by step <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/corrext/extraits-registre-commerce/" class="feat-link">Certified extracts from the register <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="feat-link">Try machine translation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>level 1 · where</b><p>In text translation and document, without going through a project: Text translation for a pass, file translation for a batch of files. <small>delivered: translation into original format immediately.</small></p></div>
+        <div class="fact"><b>level 1 · who</b><p>The engine you choose when sending: LexMachina, DeepL Pro, Azure OpenAI GPT or Claude. No human review. <small>engines hosted abroad trigger your organization's Attorney-Client privilege opinion.</small></p></div>
+        <div class="fact"><b>levels 2 and 3 · where</b><p>In a draft translation: Set-up file overview, then quotes, where the level is chosen file by file with quotation and delay. <small>delivered: the document relayed, with the certificate signed at the double review and certified translation level.</small></p></div>
+        <div class="fact"><b>level 2 · who</b><p>A legal translator, in the light Review or full Review. Or your own teams, if you hold the Internal Review.</p></div>
+        <div class="fact"><b>level 3 · who</b><p>A specialized translation agency, which employs two qualified legal translators and signs the certificate of accuracy and impartiality.</p></div>
+        <div class="fact"><b>level 4 · where</b><p>For an extract from the Swiss commercial Register, the dedicated online service, in four stages. For other documents, the certification takes place with the team at the time of the project. <small>delivered: certified translation into PDF, with one paper copy per post or courier if you so request.</small></p></div>
+        <div class="fact"><b>level 4 · who</b><p>Specialized legal translators, a Swiss notary for authentication, the State Chancellery for apostille provided for in the Hague Convention of 5 October 1961.</p></div>
+        <div class="fact"><b>quotations and time period</b><p>Calculated from the number of standard pages, legal category detected, level selected, and expiration date, and displayed before the order. <small>detail distinguishes preparation, internal review, and external review.</small></p></div>
+        <div class="fact"><b>confidentiality</b><p>Storage on Swiss Corrext servers regardless of level. In Highly sensitive content, storage and processing only in Switzerland, without further use in translation memory.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>To go further</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>text translation and document</b> <span>Self-service level 1: text, files, PDF to Word, rewriting.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/gestion-de-projet/"><b>Project management</b> <span>levels 2 and 3: internal or external review, quotation and instant delay.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/extraits-registre-commerce/"><b>Register extracts</b> <span>Online level 4: Corrext, notarized or apostised certification.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Frequently asked questions about quality levels</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is the difference between post-editing and legal review?</summary>
+        <p>The post-editing is the adoption of automatic translation by a legal translator: in light reviews, material errors, omissions and contradictions are corrected; in full review, the text is also adapted for consistency, idiomatic turns, style, and tone. The legal review of level 3 corresponds to the double review and certified translation: the document is fully reproduced by two qualified legal translators from a specialized agency, who issues a signed certificate attesting to the accuracy and impartiality of the translation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is a certified translation in Switzerland?</summary>
+        <p>It is a translation accompanied by a signed certificate certifying its accuracy and impartiality. In Corrext, this certificate is issued by the specialised agency in charge of the project, at the double review and certified translation level. According to the addressee, the certificate must then be authenticated by a Swiss notary, then accompanied by an apostille from the State Chancellery under the Hague Convention of 5 October 1961. The requirements vary from authority to canton: the recipient authority remains the judge of the required level.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I change my level during the project?</summary>
+        <p>The level is chosen file by file in the Project Management quotes step, before generating the quote: you can compare levels and deadlines as often as necessary until the quote is generated. Once the project is launched, a level change is handled with the team, as it engages an external relector and a new time estimate.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Who are the reviewers?</summary>
+        <p>For the light Review and full Review, a legal translator. For the dual review and certified translation, a specialised translation agency that employs two qualified legal translators and signs the certificate. For extracts from the commercial register: legal translators specialising in corporate safekeeping. And if you choose Internal Review, it's your own teams, whose work is valued in the quote.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does each level take?</summary>
+        <p>The delay depends on the number of standard pages, the legal category detected, the level of review, and the desired due date. Corrext displays it in the quote before any order, distinguishing preparation, internal review, and external review. Level 1, Machine-only Translation, is immediate in text and document Translation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I have my own teams read?</summary>
+        <p>Yes. The Internal Review entrusts the review to your organization: you specify the number of standard pages concerned, the price per standard page charged by your team and its approximate hourly price, and Corrext values this work in the quote next to the estimated replay time. This is the way to compare internal and external reinterpretations on figures.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Are you hesitant about the level? Let's take your actual documents</h2>
+      <p>A demo with an expert in Swiss law: your types of documents, their recipients and the level that is appropriate for everyone.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Ask for a demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="btn-outline">See Project Tunnel</a>
+      </div>
+      <p class="micro">Custom demo · in French, German, Italian or English · accommodation 100% Swiss</p>
+    </div>
+  </div>
+</section>

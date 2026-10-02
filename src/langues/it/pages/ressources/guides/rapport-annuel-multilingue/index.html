@@ -1,0 +1,352 @@
+<!--page
+title: Preparare un rapporto annuale multilingue in Svizzera · Neur.on
+description: Calendario alla rovescia, blocco del testo originale, terminologia condivisa, coerenza linguistica, convalida e pubblicazione di un rapporto annuale svizzero.
+short: Rapporto annuale multilingue
+nav: ressources
+hero: read
+canonical: https://neur-on.ai/fr/ressources/guides/rapport-annuel-multilingue/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Redigere un rapporto annuale multilingue",
+ "description": "Una guida in sette tappe per redigere un rapporto annuale in più lingue: calendario alla rovescia, blocco del testo sorgente, terminologia, coerenza interlinguistica, rilettura, convalida e pubblicazione.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "fr-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Perché è necessario congelare il testo di base di un rapporto annuale?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Poiché ogni modifica apportata dopo il lancio delle traduzioni deve essere riportata in tutte le lingue, rielaborata in ciascuna lingua e riverificata a livello di layout. Il costo di una correzione tardiva non è proporzionale al numero di parole cambiate, bensì al numero di lingue moltiplicato per il numero di tappe già superate. Un blocco formale, datato e comunicato è la misura più redditizia del progetto."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Come costruire il calendario di un rapporto annuale multilingue?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Alla rovescia della data di pubblicazione. Inserite prima la pubblicazione e poi risalite: convalida finale, layout e rivisitazione di testi, rivisitazione linguistica, traduzione, blocco del testo sorgente, terminologia fissa, redazione. Ogni tappa precedente è vincolata dal seguente e il blocco del testo sorgente è il punto che condiziona tutti gli altri."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Come garantire la coerenza tra le versioni linguistiche di un rapporto?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Fissando la terminologia prima della prima frase tradotta, designando una persona responsabile per lingua ed elaborando le sezioni ricorrenti da un anno all’altro a partire dalle versioni pubblicate in precedenza. I blocchi che non cambiano non devono essere ritradotti: devono essere ripresi e verificati."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Chi deve approvare le versioni tradotte di un rapporto annuale?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un validatore professionale per lingua, capace di giudicare il contenuto, distinto dal revisore linguistico che giudica la lingua. La convalida deve riguardare una versione identificata e datata e concludersi con un accordo scritto. Una convalida collettiva senza responsabile nominato produce osservazioni contraddittorie che nessuno ha il mandato di decidere."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quali formati svizzeri verificare prima della pubblicazione?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Il separatore di migliaia per apostrofo, la moneta in CHF, l’assenza di ss. in tedesco di Svizzera, le date scritte inequivocabilmente nelle versioni inglesi, le abbreviazioni di leggi proprie di ogni lingua ufficiale e la concordanza numerica tra le tabelle e il testo corrente, in ogni versione."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+.meta{font-size:13.5px;color:var(--muted);margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.art{padding:66px 0 26px}
+.art-wrap{max-width:768px;margin:0 auto}
+.art-wrap h2{font-size:clamp(22px,2.6vw,29px);margin:56px 0 16px;letter-spacing:-.022em;scroll-margin-top:96px}
+.art-wrap h3{font-size:18.5px;margin:32px 0 10px;letter-spacing:-.015em}
+.art-wrap p{font-size:17px;line-height:1.72;margin-bottom:18px}
+.art-wrap .art-lead{font-size:19.5px;line-height:1.62;color:var(--ink);margin-bottom:26px}
+.art-wrap ul,.art-wrap ol{margin:0 0 20px;padding-left:22px}
+.art-wrap li{font-size:17px;line-height:1.7;margin-bottom:9px;padding-left:4px}
+.art-wrap li::marker{color:var(--blue-d)}
+.art-wrap strong{color:var(--ink);font-weight:700}
+.art-wrap a:not(.feat-link){color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.art-wrap a:not(.feat-link):hover{color:var(--navy)}
+.toc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 30px;margin:0 0 46px}
+.toc b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;font-weight:700}
+.toc ol{margin:0;padding-left:20px}
+.toc li{font-size:16px;margin-bottom:9px;line-height:1.5;padding-left:2px}
+.toc li::marker{color:var(--blue-d);font-weight:700}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-2)}
+.toc a:hover{color:var(--blue-d);border-color:var(--blue)}
+.art-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 var(--r-bloc) var(--r-bloc) 0;padding:22px 26px;margin:28px 0}
+.art-note p{font-size:15.5px;margin-bottom:10px}
+.art-note p:last-child{margin-bottom:0}
+.jal{list-style:none;margin:26px 0;padding:0;border-left:2px solid var(--line-2)}
+.jal li{position:relative;padding:0 0 22px 26px;margin:0;font-size:16.5px;line-height:1.62}
+.jal li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--blue);border:2px solid #fff}
+.jal li:last-child{padding-bottom:0}
+.jal b{display:block;color:var(--ink);font-size:15px;letter-spacing:.01em;margin-bottom:4px}
+.art-end{margin-top:54px;padding-top:26px;border-top:1px solid var(--line)}
+.art-end p{font-size:15.5px}
+@media(max-width:560px){.art{padding:44px 0 18px}.art-wrap p,.art-wrap li{font-size:16.5px}.toc{padding:22px 22px}}
+</style>
+
+<section class="thero thero-read thero-centre">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Guida.</em> preparare un rapporto annuale multilingue</h1>
+        <p class="lead">Un rapporto annuale in tre o quattro lingue non è un documento tradotto tre volte: è un documento unico che deve dire la stessa cosa ovunque, alla stessa data, con le stesse cifre. Questa guida descrive l’unico metodo che tenga: partire dalla pubblicazione e risalire.</p>
+        <div class="thero-cta">
+          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+            Richiedere una demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#sommaire" class="btn btn-ghost">Vedi sommario</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span><b>Calendario alla rovescia</b> con ogni pietra miliare che vincola il precedente</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>blocco del testo sorgente</b>: la decisione più redditizia del progetto</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg><span><b>I formati svizzeri</b> da verificare prima della pubblicazione, lingua per lingua</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <p class="meta">Da parte del team giuridico e linguistico di Neur.on · 15 settembre 2026 · aggiornato il 15 settembre 2026</p>
+
+      <p class="art-lead">Raramente i rapporti annuali multilingue falliscono nella traduzione. Falliscono sul calendario, su un testo sorgente che continua a muoversi e su cifre che non corrispondono più tra due versioni. Le sette fasi successive trattano queste tre cause nell’ordine in cui si presentano.</p>
+
+      <nav class="toc" id="sommaire" aria-label="Sommario della guida">
+        <b>sommario</b>
+        <ol>
+          <li><a href="#rebours">dalla pubblicazione e risalire</a></li>
+          <li><a href="#gel">bloccare il testo sorgente</a></li>
+          <li><a href="#terminologie">definire la terminologia prima della prima frase tradotta</a></li>
+          <li><a href="#traduire">Traduzione: chi fa cosa, in quale ordine</a></li>
+          <li><a href="#coherence">coerenza tra le lingue</a></li>
+          <li><a href="#validation">riproduzione e convalida</a></li>
+          <li><a href="#publication">layout, formati e pubblicazione</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="rebours">1. Partire dalla pubblicazione e risalire</h2>
+
+      <p>La data di pubblicazione è l’unico dato non negoziabile del progetto: è fissata dall’assemblea generale, da un obbligo regolamentare o da un calendario di comunicazione finanziaria. Tutto il resto se ne deduce. Costruite quindi la pianificazione alla rovescia, pietra miliare, partendo dalla fine.</p>
+
+      <ul class="jal">
+        <li><b>Pubblicazione</b> distribuzione simultanea di tutte le versioni linguistiche. La simultaneità non è un comfort: una versione anticipata crea un’asimmetria informativa.</li>
+        <li><b>buono da trarre</b> Accordo scritto del validatore di ogni lingua su una versione identificata e datata. Nessuna modifica dopo questo punto.</li>
+        <li><b>riproduzione di prove</b> controllo sul documento impaginato, non sul file di traduzione: tagli, straripamenti, tabelle, rinvii, sommario.</li>
+        <li><b>layout</b> riporto dei testi convalidati nel facsimile, in ogni lingua. Prevedete che le lingue non abbiano la stessa lunghezza.</li>
+        <li><b>correzione linguistica</b> correzione da parte di traduttori o giuristi linguisti, al livello scelto per ogni sezione.</li>
+        <li><b>Traduzione</b> Dopo il blocco del testo sorgente, mai prima.</li>
+        <li><b>Gel del testo sorgente</b> punto di svolta del progetto. Vedi la tappa 2.</li>
+        <li><b>terminologia fissa</b> Glossario arrestato e diffuso a tutti gli oratori.</li>
+        <li><b>Redazione e chiusura dei dati</b> produzione del testo sorgente e determinazione dei dati cifrati.</li>
+      </ul>
+
+      <p>Due regole di costruzione valgono più di ogni stima della durata.</p>
+
+      <ul>
+        <li><strong>una fase non può iniziare prima della fine della precedente</strong>, tranne il layout, che può iniziare nelle sezioni già convalidate.</li>
+        <li><strong>Se si aggiunge una lingua, i tempi non si sommano linearmente.</strong> La traduzione è parallela, ma la convalida, il layout e la riproduzione delle prove si moltiplicano. Contate lo sforzo di coordinamento, non solo quello di traduzione.</li>
+      </ul>
+
+      <p>Per crittografare le fasi di traduzione e di riproduzione, si prega di utilizzare il volume in pagine standard e il livello di riproduzione scelto anziché la stampa: è così che si calcola un preventivo e il nostro articolo su <a href="{{ROOT}}fr/ressources/blog/comprendre-devis-traduction-juridique/">La lettura di un preventivo</a> spiega in dettaglio cosa copre ogni livello.</p>
+
+      <h2 id="gel">2. Blocca testo sorgente</h2>
+
+      <p>Questa è la decisione più redditizia e difficile da prendere. Il blocco del testo sorgente significa che a una data determinata il documento di riferimento non cambia più e che qualsiasi modifica successiva passa per una procedura esplicita.</p>
+
+      <p>La ragione è aritmetica. Una correzione di un periodo dopo il lancio delle traduzioni deve essere riportata in ogni lingua, rielaborata in ciascuna lingua, riportata nel facsimile e riverificata su prova. <strong>Il costo di una correzione tardiva non è proporzionale al numero di parole, ma al numero di lingue moltiplicato per il numero di tappe già superate.</strong></p>
+
+      <p>Affinché il congelamento tenga, tre condizioni.</p>
+
+      <ol>
+        <li><strong>è datato e annunciato in anticipo</strong>, al momento del lancio del progetto, a tutte le persone che possono proporre una modifica, compresa la direzione.</li>
+        <li><strong>è preceduto da una finestra di riproduzione dell’origine</strong> sufficientemente larga affinché ognuno possa effettivamente intervenire. Un gel senza finestra precedente è un gel che salta.</li>
+        <li><strong>Esso prevede una propria eccezione.</strong> Definisci cosa giustifica una modifica dopo il blocco (errore di fatto, modifica normativa, evento successivo alla chiusura), chi la autorizza e attraverso quale circuito viene propagata. Senza eccezioni previste, la prima urgenza distrugge la regola.</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>Registro delle modifiche.</b> tenere un elenco dei cambiamenti intervenuti dopo il blocco: data, sezione, motivo, lingua trasmessa, persona che ha effettuato la convalida. Serve due volte: per verificare che nessuna lingua sia stata dimenticata e per mostrare l’anno successivo quanto sia costato il blocco tardivo.</p>
+      </div>
+
+      <h2 id="terminologie">3. Definire la terminologia prima della prima frase tradotta</h2>
+
+      <p>Un rapporto annuale si basa su un vocabolario ristretto e ripetuto: denominazioni degli organi, denominazione delle funzioni, nomi delle entità, voci del bilancio, designazioni regolamentari. Se questo vocabolario non è interrotto prima della traduzione, sarà interrotto implicitamente da ciascun traduttore in modo diverso.</p>
+
+      <p>Allestite un glossario del progetto con, per ogni entrata, il termine sorgente, il termine scelto in ogni lingua target, la fonte della decisione e la data. Tre famiglie di ingressi meritano un’attenzione particolare.</p>
+
+      <ul>
+        <li><strong>denominazioni ufficiali</strong>: ragione sociale, entità del perimetro, organi statutari. Esse non si traducono liberamente; riprendete la forma iscritta nel registro e gli usi già pubblicati.</li>
+        <li><strong>I termini regolamentari e legali.</strong> in Svizzera esistono già nelle tre lingue ufficiali, nei testi pubblicati: è lì che vengono presi, e non altrove. Le abbreviazioni di leggi cambiano a seconda della lingua, come spiega il nostro articolo su <a href="{{ROOT}}fr/ressources/blog/traduire-contrat-droit-suisse/">il quadrilinguismo legale</a>.</li>
+        <li><strong>Le formulazioni ricorrenti dell’azienda</strong>: titolo di una strategia, nome di un programma, slogan. Decidete una volta se si traducono o meno, poi tenete la decisione in tutto il documento.</li>
+      </ul>
+
+      <p>Per verificare un termine del diritto svizzero nel suo contesto ufficiale anziché in un dizionario, un concordato bilingue appoggiato a fonti pubbliche, come <a href="{{ROOT}}fr/corrext/chnell/">Fast Lookup CHnell</a>, sostituisce vantaggiosamente l’andata e ritorno manuale tra portali.</p>
+
+      <h2 id="traduire">4. Tradurre: chi fa cosa, in quale ordine</h2>
+
+      <p>Non tutte le sezioni di un rapporto annuale hanno lo stesso requisito e trattarle uniformemente equivale a sovrapagare o ad assumersi un rischio. Tagliare il documento.</p>
+
+      <ul>
+        <li><strong>sezioni ricorrenti e stabili</strong> (governance, descrizione delle attività, note legali): non devono essere tradotte. Riprendete le versioni pubblicate l’anno precedente e fate verificare i soli passaggi modificati.</li>
+        <li><strong>sezioni redazionali</strong> (messaggio della direzione, verifica dell’esercizio): hanno un tono e un’intenzione. Richiedono una rilettura completa, con attenzione allo stile e al registro.</li>
+        <li><strong>sezioni finanziarie e regolamentari</strong>: esse richiedono una rigorosa precisione terminologica e quantificata e una verifica da parte di una persona che conosca il repertorio di dati contabili applicabile.</li>
+        <li><strong>sezioni destinate a un’autorità o a una pubblicazione ufficiale</strong>: possono richiedere una doppia rilettura e un’attestazione, il che è pianificato con largo anticipo perché il circuito coinvolge terzi.</li>
+      </ul>
+
+      <p>Sull’ordine di trattamento, due raccomandazioni. <strong>Iniziate dalle sezioni stabili</strong>, che si trattano senza attendere il congelamento completo e liberare tempo per il seguito. E <strong>traducete le tabelle e le relative note contemporaneamente al testo corrente</strong> che le commenta: separate, divergono immancabilmente.</p>
+
+      <h2 id="coherence">5. Mantenere la coerenza tra le lingue</h2>
+
+      <p>La coerenza di un rapporto multilingue si gioca su quattro piani ed è utile verificarli separatamente.</p>
+
+      <h3>Coerenza terminologica</h3>
+      <p>Un medesimo termine sorgente reso con lo stesso termine bersaglio ovunque, ivi compresi i titoli, le didascalie, il sommario e gli allegati. È il piano più facile da attrezzare e il più delle volte trascurato negli allegati.</p>
+
+      <h3>Coerenza cifrata</h3>
+      <p>Ogni cifra del testo corrente deve corrispondere alla tabella che esso commenta, in ogni lingua. Una correzione apportata a una tabella dopo la traduzione lascia quasi sempre una frase orfana in una versione. Controllate numericamente, lingua per lingua, dopo il layout.</p>
+
+      <h3>Coerenza strutturale</h3>
+      <p>Stesso numero di sezioni, stesso ordine, stessa numerazione, stessi rinvii interni. Una sezione cancellata in una versione e conservata in un’altra è un errore difficilmente recuperabile una volta pubblicato il documento.</p>
+
+      <h3>Coerenza del tono</h3>
+      <p>Un proattivo messaggio di direzione in francese e cauto in tedesco racconta due storie. Prima della convalida, fate leggere le sezioni redazionali delle singole lingue da una persona bilingue.</p>
+
+      <div class="art-note">
+        <p><b>un controllo che richiede dieci minuti.</b> confrontare i sommari di tutte le versioni affiancate, alla fine. Le differenze di struttura, di numerazione e di titoli appaiono immediatamente, mentre sono invisibili quando si ripete una versione dopo l’altra.</p>
+      </div>
+
+      <h2 id="validation">6. Rilettura e convalida</h2>
+
+      <p>Rilettura e convalida sono due operazioni distinte e confonderle è la causa principale dei viaggi interminabili.</p>
+
+      <p><strong>La rilettura valuta la lingua</strong>: esattezza, terminologia, coerenza, stile. Essa è fatta da un traduttore o da un giurista linguista, al livello scelto per la sezione.</p>
+
+      <p><strong>La convalida valuta il contenuto di</strong>: è questo ciò che intende l’azienda. È fatta da un responsabile professionale, uno per lingua, designato nominativamente al momento del lancio del progetto.</p>
+
+      <p>Quattro regole rendono questa fase praticabile.</p>
+
+      <ol>
+        <li><strong>un validatore nominato per lingua</strong> e non un comitato. Una convalida collettiva senza responsabile produce osservazioni contraddittorie che nessuno ha il mandato di decidere.</li>
+        <li><strong>una versione identificata e datata.</strong> Le osservazioni devono riguardare un documento di cui tutti sanno che è quello giusto.</li>
+        <li><strong>un termine di convalida annunciato</strong>, trascorso il quale l’assenza di risposta vale come accordo. Senza questa clausola, la convalida diventa il gillo del progetto.</li>
+        <li><strong>un solo passaggio di note per ogni validatore.</strong> Le osservazioni di secondo passaggio sono ammissibili soltanto se riguardano una modifica apportata nel frattempo.</li>
+      </ol>
+
+      <p>Per quanto riguarda la scelta del livello di lettura per sezione, il ragionamento è lo stesso che per qualsiasi documento giuridico: dipende dal destinatario. I <a href="{{ROOT}}fr/niveaux-de-qualite/">livelli di qualità</a> spaziano dalla lettura di errori importanti alla doppia lettura certificata da un’agenzia specializzata.</p>
+
+      <h2 id="publication">7. Layout, formati e pubblicazione</h2>
+
+      <p>L’ultima fase è quella in cui gli errori si vedono, perché finalmente si vedono sul documento reale.</p>
+
+      <h3>Cosa rivela il layout</h3>
+      <ul>
+        <li><strong>lunghezza diversa.</strong> lingue diverse. Prevedete di respirare nel modello già al momento del concepimento, invece di ridurre un corpo di testo all’ultimo minuto in una sola versione.</li>
+        <li><strong>Le cesura.</strong> Il tedesco produce parole lunghe e tagli talvolta errati; verificali visivamente, un correttore automatico non le vede.</li>
+        <li><strong>I rinvii e la paginazione.</strong> Indice, indici, rinvii interni e riferimenti incrociati vengono ricalcolati in ogni versione.</li>
+      </ul>
+
+      <h3>I formati svizzeri da verificare</h3>
+      <ul>
+        <li>Separatore di migliaia per apostrofo, moneta in CHF.</li>
+        <li>Nessun segg. in tedesco svizzero: sempre ss.</li>
+        <li>Date scritte inequivocabilmente nelle versioni inglese, mese per lettera.</li>
+        <li>Abbreviazioni di leggi proprie di ogni lingua ufficiale.</li>
+        <li>Nomi di autorità e di giurisdizioni svizzere, mai i loro omonimi stranieri.</li>
+      </ul>
+
+      <h3>Pubblicare e capitalizzare</h3>
+      <p>Una volta pubblicato il rapporto, due gesti preparano l’anno successivo e prendono solo mezza giornata.</p>
+
+      <ol>
+        <li><strong>archiviare le versioni finali in tutte le lingue, allineate sezione per sezione.</strong> Queste saranno le basi per le sezioni ricorrenti dell’esercizio successivo.</li>
+        <li><strong>Consolidare il glossario del progetto</strong> con le fonti nel glossario permanente dell’organizzazione. Solo così è possibile evitare che le arbitrazioni di quest’anno vengano nuovamente discusse il prossimo anno.</li>
+      </ol>
+
+      <p>Infine, fate un breve bilancio con gli oratori: quando è effettivamente avvenuto il blocco, quante modifiche sono intervenute dopo e quali avrebbero potuto essere evitate. Questa pagina è il punto di partenza migliore per la pianificazione successiva.</p>
+
+      <div class="art-end">
+        <p>Per quanto riguarda lo strumento, un rapporto annuale multilingue richiede tre elementi: un conteggio affidabile del volume per la pianificazione, un livello di riproduzione esplicito per sezione e una terminologia verificabile nelle fonti ufficiali. Questo è quanto prevedono <a href="{{ROOT}}fr/corrext/gestion-de-projet/">project management</a> per la galleria di progetto e di preventivo, <a href="{{ROOT}}fr/corrext/chnell/">Fast Lookup CHnell</a> per la terminologia e le <a href="{{ROOT}}fr/langues-et-formats/">lingue e formati</a> supportati per il resto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="siblings">
+  <div class="container">
+    <h2>Da leggere successivamente</h2>
+    <div class="siblings-row">
+      <a href="{{ROOT}}fr/ressources/guides/organiser-traduction-cabinet/"><b>organizzare la traduzione nello studio medico</b> <span>mappare le esigenze, suddividere le decisioni, misurare gli effetti.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/blog/traduire-contrat-droit-suisse/"><b>Il quadrilinguismo legale svizzero</b> <span>Abbreviazioni, falsi amici, formati: ciò che la legge impone a una traduzione.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/ressources/blog/comprendre-devis-traduction-juridique/"><b>includere un preventivo di traduzione</b> <span>pagine standard, livelli di riproduzione, termini: leggere ogni riga.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Domande frequenti</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Perché è necessario congelare il testo di base di un rapporto annuale?</summary>
+        <p>Poiché ogni modifica apportata dopo il lancio delle traduzioni deve essere riportata in tutte le lingue, rielaborata in ciascuna lingua e riverificata a livello di layout. Il costo di una correzione tardiva non è proporzionale al numero di parole cambiate, bensì al numero di lingue moltiplicato per il numero di tappe già superate. Un blocco formale, datato e comunicato è la misura più redditizia del progetto.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Come costruire il calendario di un rapporto annuale multilingue?</summary>
+        <p>Alla rovescia della data di pubblicazione. Inserite prima la pubblicazione e poi risalite: convalida finale, layout e rivisitazione di testi, rivisitazione linguistica, traduzione, blocco del testo sorgente, terminologia fissa, redazione. Ogni tappa precedente è vincolata dal seguente e il blocco del testo sorgente è il punto che condiziona tutti gli altri.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Come garantire la coerenza tra le versioni linguistiche di un rapporto?</summary>
+        <p>Fissando la terminologia prima della prima frase tradotta, designando una persona responsabile per lingua ed elaborando le sezioni ricorrenti da un anno all’altro a partire dalle versioni pubblicate in precedenza. I blocchi che non cambiano non devono essere ritradotti: devono essere ripresi e verificati.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Chi deve approvare le versioni tradotte di un rapporto annuale?</summary>
+        <p>Un validatore professionale per lingua, capace di giudicare il contenuto, distinto dal revisore linguistico che giudica la lingua. La convalida deve riguardare una versione identificata e datata e concludersi con un accordo scritto. Una convalida collettiva senza responsabile nominato produce osservazioni contraddittorie che nessuno ha il mandato di decidere.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quali formati svizzeri verificare prima della pubblicazione?</summary>
+        <p>Il separatore di migliaia per apostrofo, la moneta in CHF, l’assenza di ss. in tedesco di Svizzera, le date scritte inequivocabilmente nelle versioni inglesi, le abbreviazioni di leggi proprie di ogni lingua ufficiale e la concordanza numerica tra le tabelle e il testo corrente, in ogni versione.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Preparare il prossimo esercizio con uno specialista</h2>
+      <p>Una demo sulle proprie sezioni: volume in pagine standard, livello di riproduzione per parte, terminologia verificata nelle fonti ufficiali svizzere.</p>
+      <div class="final-cta-btns">
+        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
+          Richiedere una demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/ressources/guides/" class="btn-outline">Tutte le guide</a>
+      </div>
+      <p class="micro">Demo su misura · in francese, tedesco, italiano o inglese · alloggio 100% svizzero</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,1347 @@
+[
+ {
+  "slug": "verzugszins",
+  "de": "Verzugszins",
+  "fr": "intérêt moratoire",
+  "it": "interesse moratorio",
+  "en": "default interest",
+  "resume": "The interest payable by the debtor in default on payment of a sum of money.",
+  "title": "Verzugszins: default interest under Swiss law · Neur.on",
+  "description": "Verzugszins, interest on late payment, interest on late payment, default interest: the definition of art. 104 CO and the official term in the four languages.",
+  "lead": "Interest on late payment is payable as soon as the debtor is in default on payment of a sum of money, regardless of any proven loss or damage. This is one of the most common terms of default notices and debt statements.",
+  "definition": "Default interest is the interest owed by the debtor in default on the payment of money. The Swiss Code of obligations sets it at 5% per annum, even if the contract provides for a lower contractual rate; a higher contractual rate remains applicable. It differs from contractual interest, which compensates for the use of the capital, and compensation, which compensates for actual damage.",
+  "base": "art. 104 CO",
+  "domaine": "Law of obligations",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Ist der Schuldner mit der Zahlung einer Geldschuld in Verzug, so hat er <mark>Verzugszinse</mark> zu fünf vom Hundert für das Jahr zu bezahlen, selbst wenn die vertragsmässigen Zinse weniger betragen.",
+   "fr": "Le débiteur qui est en demeure pour le paiement d’une somme d’argent doit l’<mark>intérêt moratoire</mark> à 5 % l’an, même si un taux inférieur avait été fixé pour l’intérêt conventionnel.",
+   "it": "Il debitore in mora al pagamento di una somma di danaro deve pagare gli <mark>interessi moratori</mark> del cinque per cento all’anno, quand’anche gli interessi convenzionali fossero pattuiti in misura minore.",
+   "en": "A debtor in default on payment of a pecuniary debt must pay <mark>default interest</mark> of 5% per annum even where a lower rate of interest was stipulated by contract."
+  },
+  "voisins": [
+   "verjaehrung",
+   "schadenersatz",
+   "betreibung"
+  ]
+ },
+ {
+  "slug": "verjaehrung",
+  "de": "Verjährung",
+  "fr": "prescription",
+  "it": "prescrizione",
+  "en": "prescription",
+  "resume": "Lapse of the right to bring legal action after expiry of the statutory time limit.",
+  "title": "Verjährung: prescription of claims in Switzerland · Neur.on",
+  "description": "Verjährung, prescription, prescrizione: the standard ten-year time limit in CO Art. 127 and the exact term in the four languages of Swiss law.",
+  "lead": "The prescriptive period does not extinguish the claim; it deprives the creditor of the right to assert it in court if the debtor raises the defence. This is why the date of a disruptive act is verified before anything else.",
+  "definition": "Time barring is the passage of time that allows the debtor to refuse performance of a claim. Unless otherwise provided by federal civil law, the ordinary time limit under the Swiss Code of obligations is ten years; shorter time limits apply for certain claims. The court does not apply it ex officio; it must be invoked. An act of debt enforcement or acknowledgement of debt shall interrupt the limitation period, which shall begin to run again.",
+  "base": "art. 127 CO",
+  "domaine": "Law of obligations",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Mit Ablauf von zehn Jahren <mark>verjähren</mark> alle Forderungen, für die das Bundeszivilrecht nicht etwas anderes bestimmt.",
+   "fr": "Toutes les actions se <mark>prescrivent</mark> par dix ans, lorsque le droit civil fédéral n’en dispose pas autrement.",
+   "it": "Si <mark>prescrivono</mark> col decorso di dieci anni tutte le azioni per le quali il diritto civile federale non dispone diversamente.",
+   "en": "All claims <mark>prescribe</mark> after ten years unless otherwise provided by federal civil law."
+  },
+  "voisins": [
+   "verzugszins",
+   "schadenersatz",
+   "konventionalstrafe"
+  ]
+ },
+ {
+  "slug": "schadenersatz",
+  "de": "Schadenersatz",
+  "fr": "dommages-intérêts",
+  "it": "risarcimento del danno",
+  "en": "damages",
+  "resume": "Damages for non-performance or tort.",
+  "title": "Schadenersatz: damages in Switzerland · Neur.on",
+  "description": "Schadenersatz, damages, risarcimento del Danno, damages: compensation in accordance with the Swiss Code of obligations, in all four languages.",
+  "lead": "The damages compensate for the damage actually suffered, which requires it to be established and quantified. The German word is written in Schadenersatz in Switzerland, without any link, and is unfolded into two words linked in French.",
+  "definition": "Damages are compensation for loss or damage. In contractual matters, a debtor who fails to perform or defectively fulfils his obligation must make good any resulting loss or damage unless he can prove that he was not at fault. In tort matters, the obligation arises from a wrongful act. The creditor must prove the damage, causal link and, depending on the circumstances, fault.",
+  "base": "art. 97 CO",
+  "domaine": "Law of obligations",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Kann die Erfüllung der Verbindlichkeit überhaupt nicht oder nicht gehörig bewirkt werden, so hat der Schuldner für den daraus entstehenden Schaden <mark>Ersatz</mark> zu leisten, sofern er nicht beweist, dass ihm keinerlei Verschulden zur Last falle.",
+   "fr": "Lorsque le créancier ne peut obtenir l’exécution de l’obligation ou ne peut l’obtenir qu’imparfaitement, le débiteur est tenu de <mark>réparer le dommage</mark> en résultant, à moins qu’il ne prouve qu’aucune faute ne lui est imputable.",
+   "it": "Il debitore che non adempie l’obbligazione o non la adempie nel debito modo, è tenuto al <mark>risarcimento del danno</mark> derivatone, a meno che provi che nessuna colpa gli è imputabile.",
+   "en": "An obligor who fails to discharge an obligation at all or as required must <mark>make amends for the resulting damage</mark> unless he can prove that he was not at fault."
+  },
+  "voisins": [
+   "verzugszins",
+   "konventionalstrafe",
+   "verjaehrung"
+  ]
+ },
+ {
+  "slug": "konventionalstrafe",
+  "de": "Konventionalstrafe",
+  "fr": "clause pénale",
+  "it": "pena convenzionale",
+  "en": "contractual penalty",
+  "resume": "The amount promised in advance in the event that the contract is not performed.",
+  "title": "Konventionalstrafe: the penalty clause · Neur.on",
+  "description": "Konventionalstrafe, penalty clause, Pena convenzionale: the penalty agreed in advance under Swiss law pursuant to CO Art. 160, in all four languages.",
+  "lead": "The penalty clause is the answer under Swiss law to what an Anglo-Saxon contract calls liquidated damages. It shall stipulate in advance and the court may reduce the penalty if it is excessive.",
+  "definition": "The penalty clause sets out the benefit, usually a sum of money, that the parties agree to pay in the event of non-performance or improper performance of the contract. Unless otherwise agreed, the creditor may only request performance or the penalty, not both. The penalty is payable even without proven damage, which distinguishes it from damages, and the court must reduce penalties that it considers excessive.",
+  "base": "art. 160 CO",
+  "domaine": "Law of obligations",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Wenn für den Fall der Nichterfüllung oder der nicht richtigen Erfüllung eines Vertrages eine <mark>Konventionalstrafe</mark> versprochen ist, so ist der Gläubiger mangels anderer Abrede nur berechtigt, entweder die Erfüllung oder die Strafe zu fordern.",
+   "fr": "Lorsqu’une <mark>peine</mark> a été stipulée en vue de l’inexécution ou de l’exécution imparfaite du contrat, le créancier ne peut, sauf convention contraire, demander que l’exécution ou la peine convenue.",
+   "it": "Allorché fu pattuita una <mark>pena</mark> per l’inadempimento o l’imperfetto adempimento del contratto, il creditore non può pretendere, salvo patto contrario, che l’adempimento o la pena.",
+   "en": "Where a <mark>penalty</mark> is promised for non-performance or defective performance of a contract, unless otherwise agreed, the creditor may only compel performance or claim the penalty."
+  },
+  "voisins": [
+   "schadenersatz",
+   "verzugszins",
+   "buergschaft"
+  ]
+ },
+ {
+  "slug": "buergschaft",
+  "de": "Bürgschaft",
+  "fr": "cautionnement",
+  "it": "fideiussione",
+  "en": "contract of surety",
+  "resume": "A commitment to secure the debt of another debtor against the creditor.",
+  "title": "Bürgschaft: the guarantee under Swiss law · Neur.on",
+  "description": "Bürgschaft, Surety, fideiussione, contract of surety: the personal security of Swiss law, its form and term in all four languages.",
+  "lead": "The contract of surety binds one person to liability for the debt of another. Its validity depends on strict formal requirements, which makes it a term that should never be confused with an independent guarantee.",
+  "definition": "By means of a contract of surety, a person undertakes towards the creditor to guarantee payment of the principal debtor's obligation. The commitment is ancillary: it follows the outcome of the secured debt, which distinguishes it from the independent guarantee. The Swiss Code of obligations stipulates written form, an indication of the maximum amount and, for an individual, a public deed in excess of a certain amount.",
+  "base": "art. 492 CO",
+  "domaine": "Law of obligations",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Durch den <mark>Bürgschaftsvertrag</mark> verpflichtet sich der Bürge gegenüber dem Gläubiger des Hauptschuldners, für die Erfüllung der Schuld einzustehen.",
+   "fr": "Le <mark>cautionnement</mark> est un contrat par lequel une personne s’engage envers le créancier à garantir le paiement de la dette contractée par le débiteur.",
+   "it": "Mediante la <mark>fideiussione</mark> il fideiussore si fa garante verso il creditore del debitore principale per il soddisfacimento del debito.",
+   "en": "Under a <mark>contract of surety</mark>, the surety undertakes as against the creditor of the principal debtor to vouch for performance of the obligation."
+  },
+  "voisins": [
+   "abtretung",
+   "konventionalstrafe",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "abtretung",
+  "de": "Abtretung",
+  "fr": "cession de créance",
+  "it": "cessione del credito",
+  "en": "assignment of a claim",
+  "resume": "The assignment of a claim to a third party without the debtor's consent.",
+  "title": "Abtretung: the assignment of claims under Swiss law · Neur.on",
+  "description": "Abtretung, Assignment of claim, Cessione del credito, assignment of a claim: the transfer of claim pursuant to Art. 164 CO, in all four languages.",
+  "lead": "The assignment transfers a claim of the current creditor to a third party without the debtor's consent. It is at the heart of financing, debt portfolios and collateral.",
+  "definition": "Assignment of a claim is the act by which the creditor transfers his right to a third party. The consent of the debtor is not required unless this is contrary to the law, the agreement or the nature of the relationship. The Swiss Code of obligations requires written form for the validity of the assignment. Unless the debtor is aware of this fact, he is validly released by satisfying the former creditor.",
+  "base": "art. 164 CO",
+  "domaine": "Law of obligations",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Der Gläubiger kann eine ihm zustehende Forderung ohne Einwilligung des Schuldners an einen andern <mark>abtreten</mark>, soweit nicht Gesetz, Vereinbarung oder Natur des Rechtsverhältnisses entgegenstehen.",
+   "fr": "Le créancier peut <mark>céder</mark> son droit à un tiers sans le consentement du débiteur, à moins que la cession n’en soit interdite par la loi, la convention ou la nature de l’affaire.",
+   "it": "Il creditore può <mark>cedere</mark> ad altri il suo credito anche senza il consenso del debitore, se non vi osta la legge, la convenzione o la natura del rapporto giuridico.",
+   "en": "A creditor may <mark>assign</mark> a claim to which he is entitled to a third party without the debtor’s consent unless the assignment is forbidden by law or contract or prevented by the nature of the legal relationship."
+  },
+  "voisins": [
+   "buergschaft",
+   "verzugszins",
+   "betreibung"
+  ]
+ },
+ {
+  "slug": "konkurrenzverbot",
+  "de": "Konkurrenzverbot",
+  "fr": "prohibition de faire concurrence",
+  "it": "divieto di concorrenza",
+  "en": "prohibition of competition",
+  "resume": "A clause prohibiting the employee from competing with his former employer.",
+  "title": "Konkurrenzverbot: the non-compete clause · Neur.on",
+  "description": "Konkurrenzverbot, non-compete, divieto di concorrenza: the non-compete clause of the Swiss employment contract, in four languages.",
+  "lead": "The non-compete clause limits the employee's activity after termination of the employment relationship. Swiss law makes it subject to written form and to place, time and business limits.",
+  "definition": "A prohibition of competition is a written undertaking whereby the employee has the capacity to act and waives his right to compete with his employer after termination of the employment relationship. It is valid only if the employment relationship grants access to customers or to manufacturing or trade secrets and if its use may cause significant harm. The court may reduce the scope thereof.",
+  "base": "art. 340 CO",
+  "domaine": "Labor Law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Das <mark>Konkurrenzverbot</mark> ist nur verbindlich, wenn das Arbeitsverhältnis dem Arbeitnehmer Einblick in den Kundenkreis oder in Fabrikations- und Geschäftsgeheimnisse gewährt und die Verwendung dieser Kenntnisse den Arbeitgeber erheblich schädigen könnte.",
+   "fr": "La <mark>prohibition de faire concurrence</mark> n’est valable que si les rapports de travail permettent au travailleur d’avoir connaissance de la clientèle ou de secrets de fabrication ou d’affaires de l’employeur et si l’utilisation de ces renseignements est de nature à causer à l’employeur un préjudice sensible.",
+   "it": "Il <mark>divieto di concorrenza</mark> è valido soltanto se il rapporto di lavoro permette al lavoratore di avere cognizioni della clientela o dei segreti di fabbricazione e d’affari e se l’uso di tali conoscenze possa cagionare al datore di lavoro un danno considerevole.",
+   "en": "The <mark>prohibition of competition</mark> is binding only where the employment relationship allows the employee to have knowledge of the employer’s clientele or manufacturing and trade secrets and where the use of such knowledge might cause the employer substantial harm."
+  },
+  "voisins": [
+   "ueberstunden",
+   "schadenersatz",
+   "konventionalstrafe"
+  ]
+ },
+ {
+  "slug": "ueberstunden",
+  "de": "Überstunden",
+  "fr": "heures de travail supplémentaires",
+  "it": "lavoro straordinario",
+  "en": "overtime",
+  "resume": "Hours performed beyond the agreed duration.",
+  "title": "Überstunden: overtime in Switzerland · Neur.on",
+  "description": "Überstunden, Overtime, lavoro straordinario, overtime: the concept of Art. 321c CO and its distinction with the Überzeit.",
+  "lead": "Overtime is overtime that exceeds the contractually agreed duration. The Swiss German distinguishes them from the Überzeit, the concept of the Employment Act: two words, two regimes, two legal bases.",
+  "definition": "Overtime work is work performed beyond the duration specified in the contract, custom, standard contract or collective employment contract. The employee is obliged to carry out such work insofar as he can and may reasonably be expected to do so in good faith. They are offset by at least equal notice of termination or are paid with a supplement, unless otherwise agreed in writing.",
+  "base": "art. 321c CO",
+  "domaine": "Labor Law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Im Einverständnis mit dem Arbeitnehmer kann der Arbeitgeber die <mark>Überstundenarbeit</mark> innert eines angemessenen Zeitraumes durch Freizeit von mindestens gleicher Dauer ausgleichen.",
+   "fr": "L’employeur peut, avec l’accord du travailleur, compenser les <mark>heures de travail supplémentaires</mark> par un congé d’une durée au moins égale, qui doit être accordé au cours d’une période appropriée.",
+   "it": "Con il consenso del lavoratore, il datore di lavoro può compensare il <mark>lavoro straordinario</mark>, entro un periodo adeguato, mediante un congedo di durata almeno corrispondente.",
+   "en": "In consultation with the employee, the employer may compensate him within an appropriate period for the <mark>overtime</mark> worked by granting him time off in lieu of at least equal length."
+  },
+  "voisins": [
+   "konkurrenzverbot",
+   "schadenersatz",
+   "verjaehrung"
+  ]
+ },
+ {
+  "slug": "aktiengesellschaft",
+  "de": "Aktiengesellschaft",
+  "fr": "société anonyme",
+  "it": "società anonima",
+  "en": "company limited by shares",
+  "resume": "A corporation whose liabilities are limited to the company assets.",
+  "title": "Aktiengesellschaft: the Swiss stock corporation · Neur.on",
+  "description": "Aktiengesellschaft, société anonyme, società anonima, company limited by shares : l'une des formes de société les plus courantes en Suisse, en quatre langues.",
+  "lead": "A company limited by shares is one of the most common forms of company in Switzerland. Its initials follow the language of entry in the commercial register: AG in German, SA in French and Italian.",
+  "definition": "A company limited by shares is a company with a company name whose capital is divided into shares and whose liabilities are secured only by the company's assets. Shareholders are not personally liable for the company's commitments; they are only obliged to release their shares. It acquires legal personality through entry in the commercial register and has three mandatory bodies.",
+  "base": "art. 620 CO",
+  "domaine": "Company law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Die <mark>Aktiengesellschaft</mark> ist eine Kapitalgesellschaft, an der eine oder mehrere Personen oder Handelsgesellschaften beteiligt sind. Für ihre Verbindlichkeiten haftet nur das Gesellschaftsvermögen.",
+   "fr": "La <mark>société anonyme</mark> est une société de capitaux que forment une ou plusieurs personnes ou sociétés commerciales. Ses dettes ne sont garanties que par l’actif social.",
+   "it": "La <mark>società anonima</mark> è una società di capitali cui partecipano una o più persone o società commerciali. Per i debiti risponde soltanto il patrimonio sociale.",
+   "en": "The <mark>company limited by shares</mark> is a company in which one or more persons or commercial enterprises participate. It is liable for its obligations to the extent of the company’s assets."
+  },
+  "voisins": [
+   "generalversammlung",
+   "verwaltungsrat",
+   "handelsregister"
+  ]
+ },
+ {
+  "slug": "generalversammlung",
+  "de": "Generalversammlung",
+  "fr": "assemblée générale",
+  "it": "assemblea generale",
+  "en": "general meeting",
+  "resume": "The supreme governing body of a company limited by shares, convened by a general meeting.",
+  "title": "Generalversammlung: General Assembly in Switzerland · Neur.on",
+  "description": "Generalversammlung, General Meeting, Assemblea General, General Meeting: the supreme governing body of the Swiss company limited by shares, in all four languages.",
+  "lead": "The general meeting of shareholders is the supreme governing body of a company limited by shares. Its invitations, minutes and decisions are among the documents most often translated into a multilingual context.",
+  "definition": "The general meeting brings together the shareholders and constitutes the supreme governing body of the company limited by shares. It adopts and amends the articles of association, elects the members of the board of directors and the external auditor, approves the annual accounts, decides on the allocation of the balance sheet profit and grants discharge. Some of its decisions require a qualified majority. The minutes shall record the resolutions and the results of the votes.",
+  "base": "art. 698 CO",
+  "domaine": "Company law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Oberstes Organ der Aktiengesellschaft ist die <mark>Generalversammlung</mark> der Aktionäre.",
+   "fr": "L’<mark>assemblée générale</mark> des actionnaires est le pouvoir suprême de la société.",
+   "it": "L’<mark>assemblea generale</mark> degli azionisti costituisce l’organo supremo della società anonima.",
+   "en": "The supreme governing body of a company limited by shares is the <mark>general meeting</mark>."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "verwaltungsrat",
+   "revisionsstelle"
+  ]
+ },
+ {
+  "slug": "verwaltungsrat",
+  "de": "Verwaltungsrat",
+  "fr": "conseil d'administration",
+  "it": "consiglio d'amministrazione",
+  "en": "board of directors",
+  "resume": "The body that manages the company limited by shares and determines its organisation.",
+  "title": "Verwaltungsrat: the Swiss Board of Directors · Neur.on",
+  "description": "Verwaltungsrat, Board of Directors, Consiglio d' amministrazione, board of directors: the management body of the company limited by shares, in four languages.",
+  "lead": "The Board of Directors shall exercise overall management of the Company and shall be responsible for its non-transferable duties. The term German means the same body as the board of directors, but with duties defined by the Swiss Code of obligations.",
+  "definition": "The board of directors is the governing body of the company limited by shares and is made up of one or more members. It exercises overall management, determines the organisation, establishes the principles of accounting and financial control, appoints and removes the persons entrusted with management, exercises overall supervision and prepares the general meeting. These duties are non-transferable and inalienable.",
+  "base": "art. 707 CO",
+  "domaine": "Company law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Der <mark>Verwaltungsrat</mark> der Gesellschaft besteht aus einem oder mehreren Mitgliedern.",
+   "fr": "Le <mark>conseil d’administration</mark> de la société se compose d’un ou de plusieurs membres.",
+   "it": "Il <mark>consiglio d’amministrazione</mark> della società si compone di uno o più membri.",
+   "en": "The company’s <mark>board of directors</mark> comprises one or more members."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "generalversammlung",
+   "revisionsstelle"
+  ]
+ },
+ {
+  "slug": "revisionsstelle",
+  "de": "Revisionsstelle",
+  "fr": "organe de révision",
+  "it": "ufficio di revisione",
+  "en": "auditor",
+  "resume": "The body that audits the annual accounts of the company.",
+  "title": "Revision: the auditor in Switzerland · Neur.on",
+  "description": "Revisionsstelle, auditor, Ufficio di revisione, auditor: the auditor of the Swiss company limited by shares, in four languages.",
+  "lead": "The auditor examines the annual accounts and reports to the general meeting. Depending on the size of the company, control is ordinary, limited or the company may waive it.",
+  "definition": "The external auditor shall verify that the annual accounts and, if applicable, the consolidated accounts comply with the law and the articles of association. The Code of obligations distinguishes between ordinary control, reserved for companies that exceed certain thresholds or are open to the public, and limited control. Small businesses may waive the limited audit with the consent of all shareholders.",
+  "base": "art. 727 CO",
+  "domaine": "Company law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Folgende Gesellschaften müssen ihre Jahresrechnung und gegebenenfalls ihre Konzernrechnung durch eine <mark>Revisionsstelle</mark> ordentlich prüfen lassen: 1. Publikumsgesellschaften; als solche gelten Gesellschaften, die: a. Beteiligungspapiere an einer Börse kotiert haben, b. Anleihensobligationen ausstehend haben, c. mindestens 20 Prozent der Aktiven oder des Umsatzes zur Konzernrechnung einer Gesellschaft nach Buchstabe a oder b beitragen; 2. Gesellschaften, die zwei der nachstehenden Grössen in zwei aufeinander folgenden Geschäftsjahren überschreiten: a. Bilanzsumme von 20 Millionen Franken, b. Umsatzerlös von 40 Millionen Franken, c. 250 Vollzeitstellen im Jahresdurchschnitt; 3. Gesellschaften, die zur Erstellung einer Konzernrechnung verpflichtet sind.",
+   "fr": "Les sociétés suivantes sont tenues de soumettre leurs comptes annuels et, le cas échéant, leurs comptes consolidés au contrôle ordinaire d’un <mark>organe de révision</mark>: 1. les sociétés ouvertes au public, soit les sociétés: a. qui ont des titres de participation cotés en bourse, b. qui sont débitrices d’un emprunt par obligations, c. dont les actifs ou le chiffre d’affaires représentent 20 % au moins des actifs ou du chiffre d’affaires des comptes consolidés d’une société au sens des let. a et b; 2. les sociétés qui, au cours de deux exercices successifs, dépassent deux des valeurs suivantes: a. total du bilan: 20 millions de francs, b. chiffre d’affaires: 40 millions de francs, c. effectif: 250 emplois à plein temps en moyenne annuelle; 3. les sociétés qui ont l’obligation d’établir des comptes consolidés.",
+   "it": "Le seguenti società fanno verificare mediante revisione ordinaria effettuata da un <mark>ufficio di revisione</mark> il loro conto annuale ed eventualmente il loro conto di gruppo: 1. società con azioni quotate in borsa; sono considerate tali le società: a. i cui titoli di partecipazione sono quotati in borsa, b. che sono debitrici di un prestito in obbligazioni, c. che contribuiscono almeno per il 20 per cento degli attivi o della cifra d’affari al conto di gruppo di una società secondo la lettera a o b; 2. società che oltrepassano, per due esercizi consecutivi, due dei valori seguenti: a. somma di bilancio di 20 milioni di franchi, b. cifra dʼaffari di 40 milioni di franchi, c. 250 posti di lavoro a tempo pieno in media annua; 3. società obbligate ad allestire un conto di gruppo.",
+   "en": "The following companies must have their annual accounts and if applicable their consolidated accounts reviewed by an <mark>external auditor</mark> in an ordinary audit: 1. Publicly traded companies; these are companies that: a. have equity securities listed on a stock exchange, b. have bonds outstanding, c. contribute at least 20 per cent of the assets or of the turnover to the consolidated accounts of a company in terms of letter a or b; 2. Companies that exceed two of the following thresholds in two successive financial years: a. a balance sheet total of 20 million francs, b. sales revenue of 40 million francs, c. 250 full-time positions on annual average; 3. Companies that are required to prepare consolidated accounts."
+  },
+  "voisins": [
+   "verwaltungsrat",
+   "generalversammlung",
+   "aktiengesellschaft"
+  ]
+ },
+ {
+  "slug": "handelsregister",
+  "de": "Handelsregister",
+  "fr": "registre du commerce",
+  "it": "registro di commercio",
+  "en": "commercial register",
+  "resume": "The public register that registers Swiss legal entities.",
+  "title": "Handelsregister: Swiss commercial Register · Neur.on",
+  "description": "Handelsregister, commercial Register, Registro di commercio, commercial Register: the public register of Swiss legal entities and its effects.",
+  "lead": "The commercial register shall disclose legally relevant facts of an entity: company name, registered office, corporate bodies, signatures. The extract derived therefrom is the document requested in almost all transactions.",
+  "definition": "The commercial register serves to identify and publish legally relevant facts relating to legal entities in order to ensure legal certainty and the protection of third parties. It is managed by the cantonal offices under the supervision of the Confederation. The entry confers legal personality on the companies and the registered facts become effective against third parties as soon as they are published.",
+  "base": "art. 927 CO",
+  "domaine": "Company law",
+  "source": "Fedlex, Code of obligations",
+  "exemple": {
+   "de": "Das <mark>Handelsregister</mark> ist ein Verbund staatlich geführter Datenbanken. Es bezweckt namentlich die Erfassung und die Offenlegung rechtlich relevanter Tatsachen über Rechtseinheiten und dient der Rechtssicherheit sowie dem Schutz Dritter.",
+   "fr": "Le <mark>registre du commerce</mark> est un ensemble de bases de données gérées par l’État. Il vise notamment à enregistrer et à publier les faits juridiquement pertinents concernant des entités juridiques en vue de contribuer à la sécurité du droit et à la protection des tiers.",
+   "it": "Il <mark>registro di commercio</mark> è un insieme di banche dati tenute dallo Stato. Ha lo scopo, segnatamente, di registrare e di pubblicare i fatti giuridicamente rilevanti inerenti agli enti giuridici, così da garantire la certezza del diritto e la protezione dei terzi.",
+   "en": "The <mark>commercial register</mark> is a network of state-run databases. Its primary purpose is the recording and publication of legally relevant information about legal entities, which serves to provide legal certainty and protect third parties."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "verwaltungsrat",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "betreibung",
+  "de": "Betreibung",
+  "fr": "poursuite",
+  "it": "esecuzione",
+  "en": "debt enforcement",
+  "resume": "The debt enforcement proceedings relating to a sum of money.",
+  "title": "Betreibung: debt enforcement proceedings in Switzerland · Neur.on",
+  "description": "Betreibung, prosecution, esecuzione, debt enforcement: the Swiss enforcement proceedings for a sum of money, in all four languages.",
+  "lead": "Debt enforcement proceedings are specific to Swiss law and have no exact equivalent under common law. His name changes in the three official languages, and the law that also governs him: LP, SchKG, LEF.",
+  "definition": "Debt enforcement proceedings are debt collection proceedings that involve the payment of money or the provision of security. It is conducted by the debt enforcement offices at the request of the creditor, without the creditor having to prove his claim from the outset. It is continued by attachment, realisation of pledged assets or bankruptcy depending on the status of the debtor and the nature of the claim.",
+  "base": "art. 38 DEBA",
+  "domaine": "Debt enforcement and bankruptcy",
+  "source": "Fedlex, Federal debt enforcement and bankruptcy Act",
+  "exemple": {
+   "de": "Auf dem Wege der <mark>Schuldbetreibung</mark> werden die Zwangsvollstreckungen durchgeführt, welche auf eine Geldzahlung oder eine Sicherheitsleistung gerichtet sind.",
+   "fr": "L’exécution forcée ayant pour objet une somme d’argent ou des sûretés à fournir s’opère par la <mark>poursuite pour dettes</mark>.",
+   "it": "L’<mark>esecuzione</mark> ha per scopo di ottenere il pagamento di danaro o la prestazione di garanzie.",
+   "en": "<mark>Debt enforcement</mark> is an enforcement procedure carried out to secure the payment of money or the provision of security."
+  },
+  "voisins": [
+   "zahlungsbefehl",
+   "rechtsvorschlag",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "zahlungsbefehl",
+  "de": "Zahlungsbefehl",
+  "fr": "commandement de payer",
+  "it": "precetto esecutivo",
+  "en": "summons for payment",
+  "resume": "Service on the debtor initiating debt collection proceedings.",
+  "title": "Zahlungsbefehl: the Swiss summons to pay · Neur.on",
+  "description": "Zahlungsbefehl, summons to pay, precetto esecutivo: the first act of Swiss prosecution and its exact term in all four languages.",
+  "lead": "The debtor shall be notified of the summons to pay upon receipt of the application for enforcement. Its service runs the ten-day time limit for filing an opposition, which makes it an exhibit to be dated on the exact day.",
+  "definition": "The summons to pay is the instrument drawn up by the debt enforcement office upon receipt of the application for debt enforcement and serves notice on the debtor. It shall indicate the creditor, the amount claimed, the title and cause of the claim and call on the debtor to pay within the legal time limit. It shall also notify the applicant of its right to file an objection and of the consequences of failure to act.",
+  "base": "art. 69 DEBA",
+  "domaine": "Debt enforcement and bankruptcy",
+  "source": "Fedlex, Federal debt enforcement and bankruptcy Act",
+  "exemple": {
+   "de": "Nach Empfang des Betreibungsbegehrens erlässt das Betreibungsamt den <mark>Zahlungsbefehl</mark>.",
+   "fr": "Dès réception de la réquisition de poursuite, l’office rédige le <mark>commandement de payer</mark>.",
+   "it": "Ricevuta la domanda d’esecuzione, l’ufficio stende il <mark>precetto esecutivo</mark>.",
+   "en": "On receipt of the request for debt enforcement, the debt enforcement office shall issue a <mark>summons for payment</mark>."
+  },
+  "voisins": [
+   "betreibung",
+   "rechtsvorschlag",
+   "arrest"
+  ]
+ },
+ {
+  "slug": "rechtsvorschlag",
+  "de": "Rechtsvorschlag",
+  "fr": "opposition",
+  "it": "opposizione",
+  "en": "objection",
+  "resume": "The declaration of the debtor ordering debt enforcement proceedings against him.",
+  "title": "Rechtsvorschlag: Opposition to prosecution in Switzerland · Neur.on",
+  "description": "Rechtsvorschlag, Opposition, opposizione, objection: the statement suspending Swiss proceedings and its exact term in all four languages.",
+  "lead": "The opposition suspends the prosecution: as long as it is not lifted, the proceedings do not go any further. The German word has nothing to do with a proposal, a classic false friend of this subject.",
+  "definition": "Opposition is the statement by which the debtor against whom enforcement proceedings are sought contests the claim and stops the enforcement proceedings. It must be delivered verbally or in writing to the person issuing the summons to pay or to the Federal Office within ten days of service. It need not state reasons. The creditor must then obtain the lifting of the objection or bring an action on the merits.",
+  "base": "art. 74 DEBA",
+  "domaine": "Debt enforcement and bankruptcy",
+  "source": "Fedlex, Federal debt enforcement and bankruptcy Act",
+  "exemple": {
+   "de": "Will der Betriebene <mark>Rechtsvorschlag</mark> erheben, so hat er dies sofort dem Überbringer des Zahlungsbefehls oder innert zehn Tagen nach der Zustellung dem Betreibungsamt mündlich oder schriftlich zu erklären.",
+   "fr": "Le débiteur poursuivi qui entend former <mark>opposition</mark> doit, verbalement ou par écrit, en faire la déclaration immédiate à celui qui lui remet le commandement de payer ou à l’office dans les dix jours à compter de la notification du commandement de payer.",
+   "it": "Se l’escusso intende fare <mark>opposizione</mark>, deve dichiararlo verbalmente o per scritto, immediatamente a chi gli consegna il precetto o, entro dieci giorni dalla notificazione del precetto, all’ufficio d’esecuzione.",
+   "en": "If the debtor wishes to <mark>object</mark> to the summons for payment, he must do so immediately verbally or in writing to the person serving the summons or within ten days of service to the debt enforcement office."
+  },
+  "voisins": [
+   "zahlungsbefehl",
+   "betreibung",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "konkurs",
+  "de": "Konkurs",
+  "fr": "faillite",
+  "it": "fallimento",
+  "en": "bankruptcy",
+  "resume": "General enforcement of all seizable assets of the debtor.",
+  "title": "Konkurs: bankruptcy and bankruptcy under Swiss law · Neur.on",
+  "description": "Konkurs, bankruptcy, Fallimento, Bankruptcy: the general enforcement of Swiss law, the bankruptcy estate and satisfaction of creditors, in four languages.",
+  "lead": "Bankruptcy is a general measure of enforcement: all the debtor's sequestable assets form a single pool for the joint payment of creditors. It shall be pronounced by the court and published officially.",
+  "definition": "Bankruptcy is the general enforcement ordered by the court against a debtor, normally entered in the commercial register. All sequestable assets belonging to it at the time of commencement form a single pool of assets, regardless of their location, used for the satisfaction of the creditors jointly. The bankruptcy administrators carry out the liquidation and distribute the proceeds according to the schedule of claims.",
+  "base": "art. 197 DEBA",
+  "domaine": "Debt enforcement and bankruptcy",
+  "source": "Fedlex, Federal debt enforcement and bankruptcy Act",
+  "exemple": {
+   "de": "Sämtliches pfändbare Vermögen, das dem Schuldner zur Zeit der <mark>Konkurseröffnung</mark> gehört, bildet, gleichviel wo es sich befindet, eine einzige Masse (Konkursmasse), die zur gemeinsamen Befriedigung der Gläubiger dient.",
+   "fr": "Tous les biens saisissables du failli au moment de l’ouverture de la <mark>faillite</mark> forment une seule masse, quel que soit le lieu où ils se trouvent, et sont affectés au paiement des créanciers.",
+   "it": "Tutti i beni pignorabili spettanti al debitore al momento della dichiarazione di <mark>fallimento</mark> formano, dovunque si trovino, un’unica massa destinata al comune soddisfacimento dei creditori.",
+   "en": "All distrainable assets belonging to the debtor at the time that <mark>bankruptcy</mark> is declared, regardless of where they are located, form a single estate (the bankruptcy estate) which serves to satisfy the creditors jointly."
+  },
+  "voisins": [
+   "betreibung",
+   "arrest",
+   "handelsregister"
+  ]
+ },
+ {
+  "slug": "arrest",
+  "de": "Arrest",
+  "fr": "séquestre",
+  "it": "sequestro",
+  "en": "attachment",
+  "resume": "A measure that blocks the debtor's assets in Switzerland before performance.",
+  "title": "Arrest: the freezing order under Swiss debt enforcement law · Neur.on",
+  "description": "Arrest, freezing order, sequestro, attachment: the protective measure under Swiss debt enforcement law, its cases and its term in all four languages.",
+  "lead": "The freezing order blocks assets located in Switzerland even before the debt is established. The German word does not mean an arrest: it is a dreadful false friend in international cases.",
+  "definition": "A freezing order is a protective measure that enables the creditor of a debt that has fallen due and is not secured by collateral to have the debtor's assets located in Switzerland frozen. It is ordered by the court in the cases provided for by law, in particular if the debtor has no fixed place of residence, attempts to evade his obligations or does not reside in Switzerland. The creditor must then validate the freezing order by debt enforcement or action.",
+  "base": "art. 271 DEBA",
+  "domaine": "Debt enforcement and bankruptcy",
+  "source": "Fedlex, Federal debt enforcement and bankruptcy Act",
+  "exemple": {
+   "de": "Der Gläubiger kann für eine fällige Forderung, soweit diese nicht durch ein Pfand gedeckt ist, Vermögensstücke des Schuldners, die sich in der Schweiz befinden, mit <mark>Arrest</mark> belegen lassen: 1. wenn der Schuldner keinen festen Wohnsitz hat; 2. wenn der Schuldner in der Absicht, sich der Erfüllung seiner Verbindlichkeiten zu entziehen, Vermögensgegenstände beiseite schafft, sich flüchtig macht oder Anstalten zur Flucht trifft; 3. wenn der Schuldner auf der Durchreise begriffen ist oder zu den Personen gehört, welche Messen und Märkte besuchen, für Forderungen, die ihrer Natur nach sofort zu erfüllen sind; 4. wenn der Schuldner nicht in der Schweiz wohnt, kein anderer Arrestgrund gegeben ist, die Forderung aber einen genügenden Bezug zur Schweiz aufweist oder auf einer Schuldanerkennung im Sinne von Artikel 82 Absatz 1 beruht; 5. wenn der Gläubiger gegen den Schuldner einen provisorischen oder einen definitiven Verlustschein besitzt; 6. wenn der Gläubiger gegen den Schuldner einen definitiven Rechtsöffnungstitel besitzt.",
+   "fr": "Le créancier d’une dette échue et non garantie par gage peut requérir le <mark>séquestre</mark> des biens du débiteur qui se trouvent en Suisse: 1. lorsque le débiteur n’a pas de domicile fixe; 2. lorsque le débiteur, dans l’intention de se soustraire à ses obligations, fait disparaître ses biens, s’enfuit ou prépare sa fuite; 3. lorsque le débiteur est de passage ou rentre dans la catégorie des personnes qui fréquentent les foires et les marchés, si la créance est immédiatement exigible en raison de sa nature; 4. lorsque le débiteur n’habite pas en Suisse et qu’il n’y a pas d’autre cas de séquestre, pour autant que la créance ait un lien suffisant avec la Suisse ou qu’elle se fonde sur une reconnaissance de dette au sens de l’art. 82, al. 1; 5. lorsque le créancier possède contre le débiteur un acte de défaut de biens provisoire ou définitif; 6. lorsque le créancier possède contre le débiteur un titre de mainlevée définitive.",
+   "it": "Per i crediti scaduti, in quanto non siano garantiti da pegno, il creditore può chiedere il <mark>sequestro</mark> dei beni del debitore che si trovano in Svizzera: 1. quando il debitore non abbia domicilio fisso; 2. quando il debitore, nell’intenzione di sottrarsi all’adempimento delle sue obbligazioni, trafughi i suoi beni, si renda latitante o si prepari a prendere la fuga; 3. quando il debitore sia di passaggio o appartenga al ceto delle persone che frequentano le fiere ed i mercati e si tratti di crediti per loro natura immediatamente esigibili; 4. quando il debitore non dimori in Svizzera, se non vi è altra causa di sequestro, ma il credito abbia un legame sufficiente con la Svizzera o si fondi su un riconoscimento di debito ai sensi dell’articolo 82 capoverso 1; 5. quando al creditore sia stato rilasciato nei confronti del debitore un attestato provvisorio o definitivo di carenza di beni; 6. quando il creditore possieda nei confronti del debitore un titolo definitivo di rigetto dell’opposizione.",
+   "en": "The creditor may request that assets of a debtor that are located in Switzerland be <mark>attached</mark> for a debt that is due and not secured by a pledge: 1. if the debtor has no fixed domicile; 2. if the debtor, with the intention of evading the fulfilment of his obligations, removes assets, absconds or makes preparations to abscond; 3. if the debtor is travelling through or is a person who visits fairs and markets, for claims which by their nature must be settled immediately; 4. if the debtor does not reside in Switzerland, no other grounds for attachment exist, but the claim has a sufficient connection to Switzerland or is based on an acknowledgement of debt within the meaning of Article 82 paragraph 1; 5. if the creditor holds a provisional or definitive unpaid debt certificate against the debtor; 6. if the creditor has a court judgment or equivalent pursuant to Article 80."
+  },
+  "voisins": [
+   "betreibung",
+   "zahlungsbefehl",
+   "konkurs"
+  ]
+ },
+ {
+  "slug": "bankgeheimnis",
+  "de": "Bankgeheimnis",
+  "fr": "secret bancaire",
+  "it": "segreto bancario",
+  "en": "banking secrecy",
+  "resume": "Banking secrecy, protected by criminal law.",
+  "title": "Bankgeheimnis: banking secrecy under Swiss law · Neur.on",
+  "description": "Bankgeheimnis, banking secrecy, Segreto Bancario, banking secrecy: Swiss bank client confidentiality in accordance with article 47 BA, in four languages.",
+  "lead": "Swiss banking secrecy is not a commercial practice; it is an obligation whose wilful violation is a criminal offence. It is binding on the bank's governing bodies, employees and agents.",
+  "definition": "Banking secrecy is the obligation of the directors and officers, employees, agents and liquidators of a bank not to disclose the information entrusted to them in this capacity. Wilful violation is punishable under the Banking Act, and negligent violation is also punishable. It does not prevent the legal duties to report, in particular with regard to combating money laundering.",
+  "base": "art. 47 Banking Act",
+  "domaine": "Banking Law",
+  "source": "Fedlex, Federal Act on banks and savings banks",
+  "exemple": {
+   "de": "Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer vorsätzlich: a. ein <mark>Geheimnis</mark> offenbart, das ihm in seiner Eigenschaft als Organ, Angestellter, Beauftragter oder Liquidator einer Bank oder einer Person nach Artikel 1b oder als Organ oder Angestellter einer Prüfgesellschaft anvertraut worden ist oder das er in dieser Eigenschaft wahrgenommen hat; b. zu einer solchen Verletzung des Berufsgeheimnisses zu verleiten sucht; c. ein ihm nach Buchstabe a offenbartes Geheimnis weiteren Personen offenbart oder für sich oder einen anderen ausnützt.",
+   "fr": "Est puni d’une peine privative de liberté de trois ans au plus ou d’une peine pécuniaire celui qui, intentionnellement: a. révèle un <mark>secret</mark> à lui confié ou dont il a eu connaissance en sa qualité d’organe, d’employé, de mandataire ou de liquidateur d’une banque ou d’une personne au sens de l’art. 1b, ou encore d’organe ou d’employé d’une société d’audit; b. tente d’inciter autrui à commettre une telle violation du secret professionnel; c. révèle un secret qui lui a été confié au sens de la let. a ou exploite ce secret à son profit ou au profit d’un tiers.",
+   "it": "È punito con una pena detentiva sino a tre anni o con una pena pecuniaria chiunque, intenzionalmente: a. rivela un <mark>segreto</mark> che gli è confidato o di cui ha notizia nella sua qualità di membro di un organo, impiegato, mandatario o liquidatore di una banca o di una persona di cui all’articolo 1b, o di membro di un organo o impiegato di una società di audit; b. ovvero tenta di indurre a siffatta violazione del segreto professionale; c. divulga un segreto che gli è stato rivelato ai sensi della lettera a, oppure lo sfrutta per sé o per altri."
+  },
+  "voisins": [
+   "geldwaescherei",
+   "prospekt",
+   "personendaten"
+  ]
+ },
+ {
+  "slug": "geldwaescherei",
+  "de": "Geldwäscherei",
+  "fr": "blanchiment d'argent",
+  "it": "riciclaggio di denaro",
+  "en": "money laundering",
+  "resume": "Any act that hinders the identification of assets of criminal origin.",
+  "title": "Geldwäscherei: money laundering in Switzerland · Neur.on",
+  "description": "Geldwäscherei, money laundering, riciclaggio di denaro, money laundering: the violation of Article 305 bis SCC and its term in all four languages.",
+  "lead": "The Swiss German word is written Geldwäscherei, not Geldwäsche as in Germany: the variant is itself a marker of the source of the text. The offence is contained in the Criminal Code.",
+  "definition": "Money laundering is the act of frustrating the identification of the origin, the discovery or the forfeiture of assets that the perpetrator knew or must assume originate from a felony or aggravated tax misdemeanour. The offence is contained in the Swiss Criminal Code and is combined with the due diligence and reporting obligations imposed on financial intermediaries.",
+  "base": "art. 305 bis SCC",
+  "domaine": "Economic Criminal Law",
+  "source": "Fedlex, Swiss Criminal Code",
+  "exemple": {
+   "de": "Ein schwerer Fall liegt insbesondere vor, wenn der Täter: a. als Mitglied einer kriminellen oder terroristischen Organisation (Art. 260ter) handelt; b. als Mitglied einer Bande handelt, die sich zur fortgesetzten Ausübung der <mark>Geldwäscherei</mark> zusammengefunden hat; c. durch gewerbsmässige Geldwäscherei einen grossen Umsatz oder einen erheblichen Gewinn erzielt.",
+   "fr": "Le cas est grave, notamment lorsque le délinquant: a. agit comme membre d’une organisation criminelle ou terroriste (art. 260ter); b. agit comme membre d’une bande formée pour se livrer de manière systématique au <mark>blanchiment d’argent</mark>; c. réalise un chiffre d’affaires ou un gain importants en faisant métier de blanchir de l’argent.",
+   "it": "Vi è caso grave segnatamente se l’autore: a. agisce come membro di un’organizzazione criminale o terroristica (art. 260ter); b. agisce come membro di una banda costituitasi per esercitare sistematicamente il <mark>riciclaggio</mark>; c. realizza una grossa cifra d’affari o un guadagno considerevole facendo mestiere del riciclaggio.",
+   "en": "A serious case is constituted, in particular, where the offender: a. acts as a member of a criminal or terrorist organisation; b. acts as a member of a group that has been formed for the purpose of the continued conduct of <mark>money laundering</mark> activities; or c. achieves a large turnover or substantial profit through commercial money laundering."
+  },
+  "voisins": [
+   "bankgeheimnis",
+   "strafbefehl",
+   "prospekt"
+  ]
+ },
+ {
+  "slug": "prospekt",
+  "de": "Prospekt",
+  "fr": "prospectus",
+  "it": "prospetto",
+  "en": "prospectus",
+  "resume": "The document required prior to an offer to the public of securities.",
+  "title": "Prospekt: the financial market prospectus · Neur.on",
+  "description": "Prospekt, prospectus, prospetto: the mandatory document prior to an offer to the public of securities in Switzerland, in all four languages.",
+  "lead": "The prospectus must be published prior to any offer to the public of securities in Switzerland. It is one of the most translated financial documents, often subject to severe time constraints.",
+  "definition": "The prospectus is the document that must be published by any person who offers to the public in Switzerland to acquire securities or applies for admission to trading on a platform. It shall disclose the key information on the issuer, the securities offered and the risks in accordance with the content set out in the Financial Services Act. It is normally reviewed by an audit firm before publication.",
+  "base": "Article 35 FinSA",
+  "domaine": "Financial markets",
+  "source": "Fedlex, Federal Act on Financial Services",
+  "exemple": {
+   "de": "Wer in der Schweiz ein öffentliches Angebot zum Erwerb von Effekten unterbreitet oder wer um Zulassung von Effekten zum Handel auf einem Handelsplatz nach Artikel 26 Buchstabe a FinfraG ersucht, hat vorgängig einen <mark>Prospekt</mark> zu veröffentlichen.",
+   "fr": "Quiconque en Suisse soumet une offre au public en vue de l’acquisition de valeurs mobilières ou demande que des valeurs mobilières soient admises à la négociation sur une plate-forme de négociation au sens de l’art. 26, let. a, LIMF doit publier au préalable un <mark>prospectus</mark>.",
+   "it": "Chi, in Svizzera, offre al pubblico l’acquisto di valori mobiliari o fa richiesta di ammissione al commercio di valori mobiliari presso una sede di negoziazione secondo l’articolo 26 lettera a LInFi, deve pubblicare previamente un <mark>prospetto</mark>.",
+   "en": "Any person in Switzerland who makes a public offer for the acquisition of securities or any person who seeks the admission of securities to trading on a trading venue in accordance with Article 26 letter a of the FinMIA must first publish a <mark>prospectus</mark>."
+  },
+  "voisins": [
+   "aktiengesellschaft",
+   "bankgeheimnis",
+   "revisionsstelle"
+  ]
+ },
+ {
+  "slug": "schiedsgericht",
+  "de": "Schiedsgericht",
+  "fr": "tribunal arbitral",
+  "it": "tribunale arbitrale",
+  "en": "arbitral tribunal",
+  "resume": "The private court chosen by the parties to decide a dispute.",
+  "title": "Schiedsgericht: the arbitral tribunal in Switzerland · Neur.on",
+  "description": "Schiedsgericht, arbitral tribunal, arbitral tribunal, arbitral tribunal: the Swiss-registered international arbitration pursuant to the PILA, in four languages.",
+  "lead": "Switzerland is one of the most widely used arbitration seats in the world. Where the seat is in Switzerland and a party is neither domiciled nor resident there, the chapter on international arbitration of the PILA shall apply.",
+  "definition": "The arbitral tribunal is the private court appointed by the parties by an arbitration agreement to settle their dispute in place of the state courts. If its registered office is in Switzerland and at least one party had no domicile, habitual residence or seat at the time of conclusion of the agreement, the private International Law Act applies. The court shall decide on its own jurisdiction.",
+  "base": "art. 176 PILA",
+  "domaine": "International arbitration",
+  "source": "Fedlex, Federal Act on private International Law",
+  "exemple": {
+   "de": "Die Bestimmungen dieses Kapitels gelten für <mark>Schiedsgerichte</mark> mit Sitz in der Schweiz, sofern wenigstens eine Partei der Schiedsvereinbarung beim Abschluss ihren Wohnsitz, ihren gewöhnlichen Aufenthalt oder ihren Sitz nicht in der Schweiz hatte.",
+   "fr": "Les dispositions du présent chapitre s’appliquent à tout arbitrage si le siège du <mark>tribunal arbitral</mark> se trouve en Suisse et si au moins l’une des parties à la convention d’arbitrage n’avait, au moment de la conclusion de celle-ci, ni son domicile, ni sa résidence habituelle, ni son siège en Suisse.",
+   "it": "Le disposizioni del presente capitolo si applicano ai <mark>tribunali arbitrali</mark> con sede in Svizzera sempreché, al momento della stipulazione, almeno una parte al patto di arbitrato non avesse né domicilio, né dimora abituale, né sede in Svizzera.",
+   "en": "The provisions of this Chapter apply to <mark>arbitral tribunals</mark> that have their seat in Switzerland if, at the time that the arbitration agreement was concluded, at least one of the parties thereto did not have its domicile, its habitual residence or its seat in Switzerland."
+  },
+  "voisins": [
+   "beschwerde",
+   "verfuegung",
+   "konventionalstrafe"
+  ]
+ },
+ {
+  "slug": "beschwerde",
+  "de": "Beschwerde",
+  "fr": "recours",
+  "it": "ricorso",
+  "en": "appeal",
+  "resume": "The right of appeal to the higher authority.",
+  "title": "Beschwerde: the appeal before the Federal Supreme Court · Neur.on",
+  "description": "Beschwerde, appeal, ricorso, appeal: the legal remedy before the Swiss Federal Supreme Court, and the exact term used in the four languages.",
+  "lead": "An appeal is the legal remedy that brings a decision before a higher authority, most recently the Federal Supreme Court. The Italian of Switzerland is known as “ricorso”, and jurisdiction is referred to as “Tribunale federale”.",
+  "definition": "An appeal is the legal remedy by which a party challenges a decision before the higher court. Before the Federal Supreme Court, the law distinguishes between civil law appeal, criminal law appeal and public law appeal, each of which is subject to its own procedural requirements. It is normally directed against decisions made at the last cantonal instance.",
+  "base": "art. 72 FSCA",
+  "domaine": "Procedure and legal remedies",
+  "source": "Fedlex, Federal Act on the Federal Supreme Court",
+  "exemple": {
+   "de": "Das Bundesgericht beurteilt <mark>Beschwerden</mark> gegen Entscheide in Zivilsachen.",
+   "fr": "Le Tribunal fédéral connaît des <mark>recours</mark> contre les décisions rendues en matière civile.",
+   "it": "Il Tribunale federale giudica i <mark>ricorsi</mark> contro le decisioni pronunciate in materia civile."
+  },
+  "voisins": [
+   "schiedsgericht",
+   "verfuegung",
+   "strafbefehl"
+  ]
+ },
+ {
+  "slug": "strafbefehl",
+  "de": "Strafbefehl",
+  "fr": "ordonnance pénale",
+  "it": "decreto d'accusa",
+  "en": "summary penalty order",
+  "resume": "The decision of the public prosecutor to impose a sentence without a full hearing.",
+  "title": "Strafbefehl: the summary penalty order under Swiss law · Neur.on",
+  "description": "Strafbefehl, summary penalty order, decreto d' accusa: the decision of the Swiss public prosecutor and the time limit for filing an objection in all four languages.",
+  "lead": "The summary penalty order allows the public prosecutor to impose penalties without a hearing. Its Italian name, decreto d' accusa, has no direct equivalent in Italian, which makes it a marker of Swiss law.",
+  "definition": "Summary penalty order is the decision by which the public prosecutor convicts the accused without court proceedings if the accused has admitted the offence or if the facts are sufficiently established, and the sanction envisaged remains within the limits of the Code of Criminal Procedure. The accused may file an objection within ten days; otherwise, the order becomes a final judgment.",
+  "base": "art. 352 CrimPC",
+  "domaine": "Criminal Law",
+  "source": "Fedlex, Swiss Code of Criminal Procedure",
+  "exemple": {
+   "de": "Hat die beschuldigte Person im Vorverfahren den Sachverhalt eingestanden oder ist dieser anderweitig ausreichend geklärt, so erlässt die Staatsanwaltschaft einen <mark>Strafbefehl</mark>, wenn sie, unter Einrechnung einer allfällig zu widerrufenden bedingten Strafe oder bedingten Entlassung, eine der folgenden Strafen für ausreichend hält: a. eine Busse; b. eine Geldstrafe von höchstens 180 Tagessätzen; c. … d. eine Freiheitsstrafe von höchstens 6 Monaten.",
+   "fr": "Le ministère public rend une <mark>ordonnance pénale</mark> si, durant la procédure préliminaire, le prévenu a admis les faits ou que ceux-ci sont établis et que, incluant une éventuelle révocation d’un sursis ou d’une libération conditionnelle, il estime suffisante l’une des peines suivantes: a. une amende; b. une peine pécuniaire de 180 jours-amende au plus; c. … d. une peine privative de liberté de six mois au plus.",
+   "it": "Se nell’ambito della procedura preliminare i fatti sono stati ammessi dall’imputato oppure sono stati sufficientemente chiariti, il pubblico ministero emette un <mark>decreto d’accusa</mark> qualora, tenuto conto di un’eventuale revoca della sospensione condizionale di una pena o di un’eventuale revoca della liberazione condizionale, ritenga sufficiente una delle seguenti pene: a. una multa; b. una pena pecuniaria non superiore a 180 aliquote giornaliere; c. ... d. una pena detentiva non superiore a sei mesi.",
+   "en": "If the accused has accepted responsibility for the offence in the preliminary proceedings or if his or her responsibility has otherwise been satisfactorily established, the public prosecutor shall issue a <mark>summary penalty order</mark> if, having taken account of any suspended sentence or parole order that must be revoked, it regards any of the following sentences as appropriate: a. a fine; b. a monetary penalty of no more than 180 daily penalty units; c. … d. a custodial sentence of no more than 6 months."
+  },
+  "voisins": [
+   "untersuchungshaft",
+   "beschwerde",
+   "geldwaescherei"
+  ]
+ },
+ {
+  "slug": "untersuchungshaft",
+  "de": "Untersuchungshaft",
+  "fr": "détention provisoire",
+  "it": "carcerazione preventiva",
+  "en": "remand (pre-trial detention)",
+  "resume": "Detention ordered during the investigation, before charges are brought.",
+  "title": "Untersuchungshaft: Swiss remand · Neur.on",
+  "description": "Untersuchungshaft, pre-trial detention, carcerazione preventiva, Remand: the compulsory measure under Swiss law, in all four languages.",
+  "lead": "Remand is ordered by the compulsory measures court, not by the public prosecutor alone. It ends when the indictment is filed, when it becomes preventive detention.",
+  "definition": "Remand is the deprivation of liberty ordered during the investigation against an accused with a strong suspicion of a felony or misdemeanour if there is a risk of flight, collusion or recurrence. It shall be ordered by the compulsory measures court at the request of the public prosecutor for a limited and renewable period and shall expire at the latest when the indictment is filed.",
+  "base": "art. 220 CrimPC",
+  "domaine": "Criminal Law",
+  "source": "Fedlex, Swiss Code of Criminal Procedure",
+  "exemple": {
+   "de": "Die <mark>Untersuchungshaft</mark> beginnt mit ihrer Anordnung durch das Zwangsmassnahmengericht und endet mit dem Eingang der Anklage beim erstinstanzlichen Gericht, dem vorzeitigen Antritt einer freiheitsentziehenden Sanktion oder mit der Entlassung der beschuldigten Person während der Untersuchung.",
+   "fr": "La <mark>détention provisoire</mark> commence au moment où le tribunal des mesures de contrainte l’ordonne et s’achève lorsque l’acte d’accusation est notifié au tribunal de première instance, que le prévenu est libéré pendant l’instruction ou qu’il commence à purger sa sanction privative de liberté de manière anticipée.",
+   "it": "La <mark>carcerazione preventiva</mark> comincia quando è disposta dal giudice dei provvedimenti coercitivi e termina con il deposito dell’atto d’accusa presso il tribunale di primo grado, con l’inizio anticipato di una sanzione privativa della libertà o con la liberazione dell’imputato nel corso dell’istruzione.",
+   "en": "<mark>Remand</mark> begins when it is ordered by the compulsory measures court and ends with the receipt by the court of first instance of the indictment, the accelerated commencement of a custodial sanction or with the accused's release during the investigation."
+  },
+  "voisins": [
+   "strafbefehl",
+   "beschwerde",
+   "geldwaescherei"
+  ]
+ },
+ {
+  "slug": "verrechnungssteuer",
+  "de": "Verrechnungssteuer",
+  "fr": "impôt anticipé",
+  "it": "imposta preventiva",
+  "en": "withholding tax",
+  "resume": "Federal withholding tax on capital income.",
+  "title": "Verrechnungssteuer: withholding tax in Switzerland · Neur.on",
+  "description": "Verrechnungssteuer, withholding tax, imposta preventiva, Withholding tax: the federal withholding tax levied at source on returns on movable capital.",
+  "lead": "Withholding tax is levied at source by the supplier and refunded to the recipient who regularly declares his income. His French name does not say restraint: it is a classic translation trap.",
+  "definition": "Withholding tax is a federal withholding tax levied at source on investment income, in particular dividends and interest, as well as on certain services. The obligor of the supply shall withhold it and remit it it to the Confederation. It has a guarantee function: the beneficiary domiciled in Switzerland may obtain a refund if he correctly declares the income concerned.",
+  "base": "art. 1 WHTA",
+  "domaine": "Taxation",
+  "source": "Fedlex, Federal withholding tax Act",
+  "exemple": {
+   "de": "Der Bund erhebt eine <mark>Verrechnungssteuer</mark> auf dem Ertrag beweglichen Kapitalvermögens, auf Gewinnen aus Geldspielen im Sinne des Geldspielgesetzes vom 29. September 2017 (BGS), auf Gewinnen aus Lotterien und Geschicklichkeitsspielen zur Verkaufsförderung, die nach Artikel 1 Absatz 2 Buchstaben d und e BGS diesem nicht unterstehen, und auf Versicherungsleistungen; wo es das Gesetz vorsieht, tritt anstelle der Steuerentrichtung die Meldung der steuerbaren Leistung.",
+   "fr": "La Confédération perçoit un <mark>impôt anticipé</mark> sur les revenus de capitaux mobiliers, sur les gains provenant de jeux d’argent au sens de la loi fédérale du 29 septembre 2017 sur les jeux d’argent (LJAr), sur les gains provenant de jeux d’adresse ou de loteries destinés à promouvoir les ventes qui ne sont pas soumis à la LJAr selon l’art. 1, al. 2, let. d et e, de cette loi, ainsi que sur les prestations d’assurances; dans les cas prévus par la loi, la déclaration de la prestation imposable remplace le paiement de l’impôt.",
+   "it": "La Confederazione riscuote un’<mark>imposta preventiva</mark> sui redditi di capitali mobili, sulle vincite ai giochi in denaro secondo la legge federale del 29 settembre 2017 sui giochi in denaro (LGD), sulle vincite ai giochi di destrezza e alle lotterie destinati a promuovere le vendite che secondo l’articolo 1 capoverso 2 lettere d ed e LGD non sottostanno a quest’ultima e sulle prestazioni d’assicurazione; nei casi previsti dalla legge, la notifica della prestazione imponibile sostituisce il pagamento dell’imposta."
+  },
+  "voisins": [
+   "mehrwertsteuer",
+   "verfuegung",
+   "aktiengesellschaft"
+  ]
+ },
+ {
+  "slug": "mehrwertsteuer",
+  "de": "Mehrwertsteuer",
+  "fr": "taxe sur la valeur ajoutée",
+  "it": "imposta sul valore aggiunto",
+  "en": "value added tax",
+  "resume": "General consumption tax less input tax.",
+  "title": "Mehrwertsteuer: Swiss VAT in four languages · Neur.on",
+  "description": "Mehrwertsteuer, value added tax, imposta Sul valore aggiunto: the Swiss general consumption tax and its initials in all four languages.",
+  "lead": "Swiss VAT is a general consumption tax levied at each stage, less input tax. The acronyms change with the language, and the German acronym is never used in a French text.",
+  "definition": "Value added tax is a general consumption tax that the Confederation collects at each stage of the production and distribution process, less input tax. It applies to supplies made on Swiss territory, the acquisition of supplies from foreign companies and the import of goods. The taxable person must report this to the Federal tax Administration periodically.",
+  "base": "art. 1 VAT Act",
+  "domaine": "Taxation",
+  "source": "Fedlex, Federal Act on value added tax",
+  "exemple": {
+   "de": "Der Bund erhebt eine allgemeine Verbrauchssteuer nach dem System der Netto-Allphasensteuer mit Vorsteuerabzug (<mark>Mehrwertsteuer</mark>). Die Steuer bezweckt die Besteuerung des nicht unternehmerischen Endverbrauchs im Inland.",
+   "fr": "La Confédération perçoit, à chaque stade du processus de production et de distribution, un impôt général sur la consommation (<mark>taxe sur la valeur ajoutée</mark>, TVA), avec déduction de l’impôt préalable. La TVA a pour but d’imposer la consommation finale non entrepreneuriale sur le territoire suisse.",
+   "it": "La Confederazione riscuote in ogni fase del processo di produzione e di distribuzione un’imposta generale sul consumo con deduzione dell’imposta precedente (<mark>imposta sul valore aggiunto</mark>, IVA). Lo scopo dell’imposta è l’imposizione del consumo finale non imprenditoriale sul territorio svizzero.",
+   "en": "The Confederation shall levy a general consumption tax based on the system of net all-phase taxation with input tax deduction (<mark>Value Added Tax</mark>). The purpose of the tax is to tax non-business end use on Swiss territory."
+  },
+  "voisins": [
+   "verrechnungssteuer",
+   "verfuegung",
+   "handelsregister"
+  ]
+ },
+ {
+  "slug": "verfuegung",
+  "de": "Verfügung",
+  "fr": "décision",
+  "it": "decisione",
+  "en": "ruling",
+  "resume": "The act by which an authority regulates a specific case under public law.",
+  "title": "Verfügung: the Swiss administrative decision · Neur.on",
+  "description": "Verfügung, Decision, decisione, ruling: the individual administrative act of Swiss law, its elements and term in all four languages.",
+  "lead": "A decision is an act that regulates a particular case under federal public law. Describing a letter as a decision is never neutral: this opens up legal remedies and causes the time limit to appeal to run.",
+  "definition": "Rulings are measures taken by the authorities in individual cases based on federal public law, the purpose of which is to create, modify or cancel rights or obligations, to establish the existence or extent of rights or obligations, or to reject or declare inadmissible applications. A decision must contain a statement of the grounds and the rights of appeal.",
+  "base": "art. 5 APA",
+  "domaine": "Administrative Law",
+  "source": "Fedlex, Federal Act on Administrative Procedure",
+  "exemple": {
+   "de": "Als <mark>Verfügungen</mark> gelten Anordnungen der Behörden im Einzelfall, die sich auf öffentliches Recht des Bundes stützen und zum Gegenstand haben: a. Begründung, Änderung oder Aufhebung von Rechten oder Pflichten; b. Feststellung des Bestehens, Nichtbestehens oder Umfanges von Rechten oder Pflichten; c. Abweisung von Begehren auf Begründung, Änderung, Aufhebung oder Feststellung von Rechten oder Pflichten oder Nichteintreten auf solche Begehren.",
+   "fr": "Sont considérées comme <mark>décisions</mark> les mesures prises par les autorités dans des cas d’espèce, fondées sur le droit public fédéral et ayant pour objet: a. de créer, de modifier ou d’annuler des droits ou des obligations; b. de constater l’existence, l’inexistence ou l’étendue de droits ou d’obligations; c. de rejeter ou de déclarer irrecevables des demandes tendant à créer, modifier, annuler ou constater des droits ou obligations.",
+   "it": "Sono <mark>decisioni</mark> i provvedimenti delle autorità nel singolo caso, fondati sul diritto pubblico federale e concernenti: a. la costituzione, la modificazione o l’annullamento di diritti o di obblighi; b. l’accertamento dell’esistenza, dell’inesistenza o dell’estensione di diritti o di obblighi; c. il rigetto o la dichiarazione d’inammissibilità d’istanze dirette alla costituzione, alla modificazione, all’annullamento o all’accertamento di diritti o di obblighi.",
+   "en": "<mark>Rulings</mark> are decisions of the authorities in individual cases that are based on the public law of the Confederation and have as their subject matter the following: a. the establishment, amendment or withdrawal of rights or obligations; b. a finding of the existence, non-existence or extent of rights or obligations; c. the rejection of applications for the establishment, amendment, withdrawal or finding of rights or obligations, or the dismissal of such applications without entering into the substance of the case."
+  },
+  "voisins": [
+   "beschwerde",
+   "mehrwertsteuer",
+   "personendaten"
+  ]
+ },
+ {
+  "slug": "personendaten",
+  "de": "Personendaten",
+  "fr": "données personnelles",
+  "it": "dati personali",
+  "en": "personal data",
+  "resume": "Any information relating to an identifiable natural person.",
+  "title": "Personendaten: personal data in Switzerland · Neur.on",
+  "description": "Personendaten, Personal data, Dati personali, Personal data: the definition of the Swiss data Protection Act in all four languages.",
+  "lead": "The Swiss data Protection Act only protects natural persons. Its definition of personal data requires the entire system, including the rules applicable to the processing entrusted to third parties.",
+  "definition": "Personal data means all information concerning an identified or identifiable natural person. The law also distinguishes sensitive data, which require enhanced safeguards, such as those revealing religious or political views, health, privacy, or criminal and administrative prosecutions and sanctions. Processing must be lawful, proportionate and carried out in good faith.",
+  "base": "art. 5 FADP",
+  "domaine": "Data protection",
+  "source": "Fedlex, Federal Act on data Protection",
+  "exemple": {
+   "de": "In diesem Gesetz bedeuten: a. <mark>Personendaten</mark>: alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen;",
+   "fr": "On entend par: a. <mark>données personnelles</mark>: toutes les informations concernant une personne physique identifiée ou identifiable;",
+   "it": "Nella presente legge s’intende per: a. <mark>dati personali</mark>: tutte le informazioni concernenti una persona fisica identificata o identificabile;",
+   "en": "In this Act: a. <mark>personal data</mark> means any information relating to an identified or identifiable natural person;"
+  },
+  "voisins": [
+   "bankgeheimnis",
+   "verfuegung",
+   "beschwerde"
+  ]
+ },
+ {
+  "slug": "versicherungsvertrag",
+  "de": "Versicherungsvertrag",
+  "fr": "contrat d'assurance",
+  "it": "contratto d'assicurazione",
+  "en": "insurance contract",
+  "resume": "The contract whereby the insurer covers a risk against a premium.",
+  "title": "Versicherungsvertrag: the Swiss insurance contract · Neur.on",
+  "description": "Versicherungsvertrag, Insurance contract, Insurance contract: the contract governed by the Swiss Insurance contract Act.",
+  "lead": "The private insurance contract is governed by a federal act separate from the Swiss Code of obligations. The general terms and conditions of insurance form the part that is most translated and most sensitive to terminological differences.",
+  "definition": "The insurance contract is the contract whereby the insurance company undertakes, in return for a premium, to provide the agreed service when the insured event occurs. It is governed by the Federal Act on Insurance contracts, supplemented by the Swiss Code of obligations. The policyholder must disclose the facts relevant to the risk assessment and the insurer must submit the general terms and conditions before entering into the contract.",
+  "base": "art. 1 VVG",
+  "domaine": "Insurance Law",
+  "source": "Fedlex, Federal Act on Insurance policies",
+  "exemple": {
+   "de": "Wer dem Versicherungsunternehmen den Antrag zum Abschlusse eines <mark>Versicherungsvertrages</mark> gestellt und für die Annahme keine kürzere Frist gesetzt hat, bleibt 14 Tage gebunden.",
+   "fr": "Celui qui fait à l’entreprise d’assurance une proposition de <mark>contrat d’assurance</mark> est lié pendant quatorze jours s’il n’a pas fixé un délai plus court pour l’acceptation.",
+   "it": "Chi ha fatto all’assicuratore la proposta d’un <mark>contratto di assicurazione</mark> rimane vincolato per quattordici giorni, quando non abbia fissato un termine più breve per l’accettazione."
+  },
+  "voisins": [
+   "schadenersatz",
+   "verjaehrung",
+   "verzugszins"
+  ]
+ },
+ {
+  "slug": "kuendigung",
+  "de": "Kündigung",
+  "domaine": "Labor Law",
+  "base": "art. 335 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "A declaration that terminates an open-ended employment relationship on expiry of the notice period.",
+  "lead": "Under Swiss employment law, termination, which the Swiss Code of obligations also calls notice, terminates the contract of indefinite duration upon expiry of the notice period. It need not contain a statement of grounds, unless the other party so requests.",
+  "definition": "An open-ended employment contract may be terminated by either party. Termination is a unilateral declaration that takes effect on expiry of the statutory or contractual notice period. The party giving notice of termination must state his reasons in writing if the other party so requests. The Code of obligations also protects employees from wrongful termination and from termination at an inopportune juncture.",
+  "voisins": [
+   "fristlose-kuendigung",
+   "arbeitsvertrag",
+   "mietvertrag"
+  ],
+  "fr": "résiliation",
+  "it": "disdetta",
+  "en": "termination",
+  "title": "Kündigung: termination of employment contract · Neur.on",
+  "description": "Kündigung, termination, disdetta, termination: termination that terminates the employment contract of indefinite duration (CO Art. 335).",
+  "exemple": {
+   "de": "Ein unbefristetes Arbeitsverhältnis kann von jeder Vertragspartei <mark>gekündigt</mark> werden.",
+   "fr": "Le contrat de durée indéterminée peut être <mark>résilié</mark> par chacune des parties.",
+   "it": "Il rapporto di lavoro di durata indeterminata può essere <mark>disdetto</mark> da ciascuna delle parti.",
+   "en": "An employment relationship for an unlimited period may be <mark>terminated</mark> by either party."
+  }
+ },
+ {
+  "slug": "fristlose-kuendigung",
+  "de": "fristlose Kündigung",
+  "domaine": "Labor Law",
+  "base": "art. 337 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "Termination of the employment relationship without notice for good cause.",
+  "lead": "Both employer and employee may terminate the employment contract immediately at any time for good cause. The court determines at its discretion whether it exists.",
+  "definition": "Good cause is any circumstance which in good faith prevents the termination party from continuing the employment relationship. The terminating party must state his reasons in writing if the other party so requests. Termination without just cause ends the employment relationship but requires the employer to pay what the employee would have earned up to the end of the notice period and the court may add compensation thereto.",
+  "voisins": [
+   "kuendigung",
+   "arbeitsvertrag",
+   "ueberstunden"
+  ],
+  "fr": "résiliation immédiate",
+  "it": "risoluzione immediata",
+  "en": "termination with immediate effect",
+  "title": "fristlose Kündigung: immediate termination · Neur.on",
+  "description": "fristlose Kündigung, termination with immediate effect, Risoluzione immediately, termination with immediate effect: the good cause of Art. 337 CO.",
+  "exemple": {
+   "de": "Aus wichtigen Gründen kann der Arbeitgeber wie der Arbeitnehmer jederzeit das Arbeitsverhältnis <mark>fristlos auflösen</mark>; er muss die fristlose Vertragsauflösung schriftlich begründen, wenn die andere Partei dies verlangt.",
+   "fr": "L’employeur et le travailleur peuvent <mark>résilier immédiatement</mark> le contrat en tout temps pour de justes motifs; la partie qui résilie immédiatement le contrat doit motiver sa décision par écrit si l’autre partie le demande.",
+   "it": "Il datore di lavoro e il lavoratore possono in ogni tempo <mark>recedere immediatamente</mark> dal rapporto di lavoro per cause gravi; a richiesta dell’altra parte, la risoluzione immediata dev’essere motivata per scritto.",
+   "en": "Both employer and employee may <mark>terminate the employment relationship with immediate effect</mark> at any time for good cause; the party doing so must give his reasons in writing at the other party’s request."
+  }
+ },
+ {
+  "slug": "arbeitsvertrag",
+  "de": "Arbeitsvertrag",
+  "domaine": "Labor Law",
+  "base": "art. 319 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "A contract whereby the employee undertakes to work for the employer against salary.",
+  "lead": "The employment contract is the basic contract of Swiss employment law. The Code of obligations governs this in articles 319 et seqq., with numerous mandatory rules that protect the employee.",
+  "definition": "By individual employment contract, the employee undertakes, for a fixed or indefinite period, to work for the employer, who undertakes to pay him a salary fixed according to the time or the work performed. In principle, the contract is not subject to any special form. The subordination relationship distinguishes it from the mandate and the work contract.",
+  "voisins": [
+   "kuendigung",
+   "konkurrenzverbot",
+   "ueberstunden"
+  ],
+  "fr": "contrat de travail",
+  "it": "contratto di lavoro",
+  "en": "employment contract",
+  "title": "Arbeitsvertrag: the Swiss employment contract · Neur.on",
+  "description": "Arbeitsvertrag, employment contract, contratto di lavoro, Employment contract: the individual employment contract under CO Art. 319.",
+  "exemple": {
+   "de": "Durch den <mark>Einzelarbeitsvertrag</mark> verpflichtet sich der Arbeitnehmer auf bestimmte oder unbestimmte Zeit zur Leistung von Arbeit im Dienst des Arbeitgebers und dieser zur Entrichtung eines Lohnes, der nach Zeitabschnitten (Zeitlohn) oder nach der geleisteten Arbeit (Akkordlohn) bemessen wird.",
+   "fr": "Par le <mark>contrat individuel de travail</mark>, le travailleur s’engage, pour une durée déterminée ou indéterminée, à travailler au service de l’employeur et celui-ci à payer un salaire fixé d’après le temps ou le travail fourni (salaire aux pièces ou à la tâche).",
+   "it": "Il <mark>contratto individuale di lavoro</mark> è quello con il quale il lavoratore si obbliga a lavorare al servizio del datore di lavoro per un tempo determinato o indeterminato e il datore di lavoro a pagare un salario stabilito a tempo o a cottimo.",
+   "en": "By means of an <mark>individual employment contract</mark>, the employee undertakes to work in the service of the employer for a limited or unlimited period and the employer undertakes to pay him a salary based on the amount of time he works (time wage) or the tasks he performs (piece work)."
+  }
+ },
+ {
+  "slug": "mietvertrag",
+  "de": "Mietvertrag",
+  "domaine": "Law of the lease",
+  "base": "art. 253 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "A contract whereby the landlord or lessor transfers the use of an object to the tenant or lessee in exchange for rent.",
+  "lead": "Swiss legal French means a lease, not a rental contract: it is the term of the Swiss Code of obligations that distinguishes it from a farm lease.",
+  "definition": "A lease is a contract whereby the landlord or lessor undertakes to transfer the use of an object to the tenant or lessee in exchange for rent. The Code of obligations provides for special rules for leases of residential and commercial premises: protection against unfair rents, official form for certain notifications, protection against termination. The usufructuary lease relates to a productive object from which the lessee receives the fruit.",
+  "voisins": [
+   "kuendigung",
+   "schadenersatz",
+   "grundbuch"
+  ],
+  "fr": "bail à loyer",
+  "it": "contratto di locazione",
+  "en": "lease",
+  "title": "Mietvertrag: the lease under Swiss law · Neur.on",
+  "description": "Mietvertrag, Lease, contract di locazione, Lease: the Lease of Art. 253 CO, in all four Swiss languages.",
+  "exemple": {
+   "de": "Durch den <mark>Mietvertrag</mark> verpflichtet sich der Vermieter, dem Mieter eine Sache zum Gebrauch zu überlassen, und der Mieter, dem Vermieter dafür einen Mietzins zu leisten.",
+   "fr": "Le <mark>bail à loyer</mark> est un contrat par lequel le bailleur s’oblige à céder l’usage d’une chose au locataire, moyennant un loyer.",
+   "it": "La <mark>locazione</mark> è il contratto per cui il locatore si obbliga a concedere in uso una cosa al conduttore e questi a pagargli un corrispettivo (pigione per gli immobili e nolo per i mobili).",
+   "en": "<mark>Leases</mark> are contracts in which a landlord or lessor grants a tenant or lessee the use of an object in exchange for rent."
+  }
+ },
+ {
+  "slug": "schuldnerverzug",
+  "de": "Schuldnerverzug",
+  "domaine": "Law of obligations",
+  "base": "art. 102 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "The position of a debtor who fails to comply with an obligation due despite being contacted by the creditor.",
+  "lead": "Default is the key concept of delayed performance under Swiss law. It causes default interest to accrue and grants the creditor the rights set forth in Articles 107 to 109 of the Swiss Code of obligations.",
+  "definition": "Where an obligation falls due, the obligor must be notified by the obligee. Where the date of performance was agreed or set by regular warning, the obligor is in default on expiry of that day alone. Default renders the debtor liable even for accidental damage, causes default interest to accrue on the debts of money and, in bilateral contracts, enables the creditor to set a time limit and withdraw from the contract.",
+  "voisins": [
+   "verzugszins",
+   "schadenersatz",
+   "konventionalstrafe"
+  ],
+  "fr": "demeure du débiteur",
+  "it": "mora del debitore",
+  "en": "default of the obligor",
+  "title": "Schuldnerverzug: debtor's default · Neur.on",
+  "description": "Schuldnerverzug, debtor's default, Mora del debitore, default of the obligor: formal notice of Art. 102 CO and its effects.",
+  "exemple": {
+   "de": "Ist eine Verbindlichkeit fällig, so wird der Schuldner durch Mahnung des Gläubigers <mark>in Verzug gesetzt</mark>.",
+   "fr": "Le débiteur d’une obligation exigible est <mark>mis en demeure</mark> par l’interpellation du créancier.",
+   "it": "Se l’obbligazione è scaduta, il debitore è <mark>costituito in mora</mark> mediante l’interpellazione del creditore.",
+   "en": "Where an obligation is due, the obligor is <mark>in default</mark> as soon as he receives a formal reminder from the obligee."
+  }
+ },
+ {
+  "slug": "gewaehrleistung",
+  "de": "Gewährleistung",
+  "domaine": "Law of obligations",
+  "base": "art. 197 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "The seller's liability for defects in the object sold and for the promised qualities.",
+  "lead": "The warranty of defects protects the buyer against something that is not worth what was agreed. It requires prompt verification and immediate notification to the seller.",
+  "definition": "The seller is liable to the buyer for any defects that materially or legally impair or substantially impair the value or intended use of the object. Depending on the circumstances, the buyer may rescind the sale or demand a reduction in the price. Warranty requires the buyer to inspect the object and notify the seller immediately of any defects discovered.",
+  "voisins": [
+   "maengelruege",
+   "schadenersatz",
+   "verjaehrung"
+  ],
+  "fr": "garantie",
+  "it": "garanzia",
+  "en": "warranty",
+  "title": "Gewährleistung: liability for defects · Neur.on",
+  "description": "Gewährleistung, warranty, Garanzia, warranty: seller's warranty for defects in the object, art. 197 CO.",
+  "exemple": {
+   "de": "Liegt ein Fall der <mark>Gewährleistung</mark> wegen Mängel der Sache vor, so hat der Käufer die Wahl, mit der Wandelungsklage den Kauf rückgängig zu machen oder mit der Minderungsklage Ersatz des Minderwertes der Sache zu fordern.",
+   "fr": "Dans les cas de <mark>garantie</mark> en raison des défauts de la chose, l’acheteur a le choix ou de faire résilier la vente en exerçant l’action rédhibitoire, ou de réclamer par l’action en réduction de prix une indemnité pour la moins-value.",
+   "it": "Quando sia dovuta la <mark>garanzia</mark> pei difetti della cosa, il compratore ha la scelta di chiedere coll’azione redibitoria la risoluzione della vendita o coll’azione estimatoria il risarcimento pel minor valore della cosa.",
+   "en": "In claims for breach of <mark>warranty of quality and fitness</mark>, the buyer may sue either to rescind the contract of sale for breach of warranty or to have the sale price reduced by way of compensation for the decrease in the object’s value."
+  }
+ },
+ {
+  "slug": "maengelruege",
+  "de": "Mängelrüge",
+  "domaine": "Law of obligations",
+  "base": "art. 201 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "A notice by which the buyer notifies the seller immediately of defects in the object received.",
+  "lead": "The Code of obligations refers to notice to the seller, the practice of notifying defects. Without such timely notice, the buyer loses his warranty rights: this is one of the heaviest rules of Swiss sales law.",
+  "definition": "The buyer must inspect the condition of the purchased object as soon as feasible in the normal course of business and, if he discovers defects for which the seller is liable, notify him immediately. If he fails to do so, the object is deemed accepted except in the case of defects that could not be discovered due to normal inspection. In the case of hidden defects, notice must be given as soon as they are discovered.",
+  "voisins": [
+   "gewaehrleistung",
+   "verjaehrung",
+   "schadenersatz"
+  ],
+  "fr": "avis au vendeur (avis des défauts)",
+  "it": "avviso al venditore",
+  "en": "notice of defects",
+  "title": "Mängelrüge: Notice of defects under Swiss law · Neur.on",
+  "description": "Mängelrüge, Notice to Seller or Notice of defects, Notice of défauts, Notice of defects: Review and Notice without delay (Art. 201 CO).",
+  "exemple": {
+   "de": "Der Käufer soll, sobald es nach dem üblichen Geschäftsgange tunlich ist, die Beschaffenheit der empfangenen Sache prüfen und, falls sich Mängel ergeben, für die der Verkäufer Gewähr zu leisten hat, diesem <mark>sofort Anzeige machen</mark>.",
+   "fr": "L’acheteur a l’obligation de vérifier l’état de la chose reçue aussitôt qu’il le peut d’après la marche habituelle des affaires; s’il découvre des défauts dont le vendeur est garant, il doit <mark>l’en aviser sans délai</mark>.",
+   "it": "Il compratore deve esaminare lo stato della cosa ricevuta, tosto che l’ordinario andamento degli affari lo consenta, e, se vi scopre difetti di cui il venditore sia responsabile, <mark>dargliene subito notizia</mark>.",
+   "en": "The buyer must inspect the condition of the purchased object as soon as feasible in the normal course of business and, if he discovers defects for which the seller is liable under warranty, must <mark>notify him without delay</mark>."
+  }
+ },
+ {
+  "slug": "vollmacht",
+  "de": "Vollmacht",
+  "domaine": "Law of obligations",
+  "base": "art. 32-34 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "The authority of the principal to represent another and the document evidencing such authority.",
+  "lead": "Vollmacht goes by power of attorney or power of attorney depending on whether it is aimed at the power itself or the act conferring it. The Code of obligations mainly speaks of powers.",
+  "definition": "The rights and obligations arising from a contract made by an authorised representative in the name of another person pass to the principal. Where the right of representation is conferred by means of a transaction, its scope is determined by that transaction. The principal may restrict or revoke his or her authority at any time.",
+  "voisins": [
+   "abtretung",
+   "handelsregister",
+   "verwaltungsrat"
+  ],
+  "fr": "pouvoirs (procuration)",
+  "it": "procura",
+  "en": "authority (power of attorney)",
+  "title": "Vollmacht: powers and powers of attorney · Neur.on",
+  "description": "Vollmacht, powers or powers of attorney, procura, Authority: the power of representation under Articles 32 to 34 CO and the instrument conferring it.",
+  "exemple": {
+   "de": "Hat der Vertretene die <mark>Vollmacht</mark> ausdrücklich oder tatsächlich kundgegeben, so kann er deren gänzlichen oder teilweisen Widerruf gutgläubigen Dritten nur dann entgegensetzen, wenn er ihnen auch diesen Widerruf mitgeteilt hat.",
+   "fr": "Lorsque le représenté a fait connaître, soit en termes exprès, soit par ses actes, les <mark>pouvoirs</mark> qu’il a conférés, il ne peut en opposer aux tiers de bonne foi la révocation totale ou partielle que s’il a fait connaître également cette révocation.",
+   "it": "Il mandante che ha fatto conoscere in termini espressi o con fatti concludenti le <mark>facoltà</mark> da lui conferite, non può opporre ai terzi di buona fede la revoca totale o parziale, ove non l’abbia loro parimente fatta conoscere.",
+   "en": "Where the represented party has expressly or de facto announced the <mark>authority</mark> he has conferred, he may not invoke its total or partial revocation against a third party acting in good faith unless he has likewise announced such revocation."
+  }
+ },
+ {
+  "slug": "gmbh",
+  "de": "Gesellschaft mit beschränkter Haftung",
+  "domaine": "Company law",
+  "base": "art. 772 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "A corporation whose capital is divided into capital contributions and whose liabilities are secured only by its assets.",
+  "lead": "GmbH in German, Sàrl in French, Sagl in Italian: the limited liability company is the preferred form of Swiss SMEs, with a minimum capital of CHF 20,000.",
+  "definition": "A limited liability company is a corporation of a personal nature, formed by one or more persons or commercial companies. Its nominal capital is set out in the articles of association and its debts are secured only by its assets. The share capital must be at least CHF 20,000. The articles of association may require the company members to make additional financial or material contributions.",
+  "voisins": [
+   "aktiengesellschaft",
+   "statuten",
+   "handelsregister"
+  ],
+  "fr": "société à responsabilité limitée",
+  "it": "società a garanzia limitata",
+  "en": "limited liability company",
+  "title": "GmbH: limited liability company · Neur.on",
+  "description": "GmbH, limited liability company, partnera Garanzia limitata, limited liability Company: the Swiss limited liability company pursuant to CO Art. 772.",
+  "exemple": {
+   "de": "Die <mark>Gesellschaft mit beschränkter Haftung</mark> ist eine personenbezogene Kapitalgesellschaft, an der eine oder mehrere Personen oder Handelsgesellschaften beteiligt sind. Ihr Stammkapital ist in den Statuten festgelegt. Für ihre Verbindlichkeiten haftet nur das Gesellschaftsvermögen.",
+   "fr": "La <mark>société à responsabilité limitée</mark> est une société de capitaux à caractère personnel que forment une ou plusieurs personnes ou sociétés commerciales. Son capital social est fixé dans les statuts. Ses dettes ne sont garanties que par l’actif social.",
+   "it": "La <mark>società a garanzia limitata</mark> è una società di capitali di carattere personale cui partecipano una o più persone o società commerciali. Il capitale sociale è stabilito nello statuto. Per i debiti risponde soltanto il patrimonio sociale.",
+   "en": "A <mark>limited liability company</mark> is a company with separate legal personality in which one or more persons or commercial enterprises participate. Its nominal capital is specified in the articles of association. It is liable for its obligations to the extent of the company assets."
+  }
+ },
+ {
+  "slug": "statuten",
+  "de": "Statuten",
+  "domaine": "Company law",
+  "base": "art. 626 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "The basic deed of a company, in particular its name, registered office, purpose and capital.",
+  "lead": "The articles of association are the Charter of a company limited by shares, a limited liability company or a cooperative. The Code of obligations sets out their minimum content and how to amend them.",
+  "definition": "The articles of association are adopted when the company is established and entered in the commercial register with it. In the case of a company limited by shares, they must contain at least the company name, registered office, purpose of the company, share capital and contributions as well as the number, nominal value and nature of the shares. Their amendment is the responsibility of the general meeting and must be done as a public deed.",
+  "voisins": [
+   "aktiengesellschaft",
+   "generalversammlung",
+   "aktienkapital"
+  ],
+  "fr": "statuts",
+  "it": "statuto",
+  "en": "articles of association",
+  "title": "Statuten: the articles of association of a Swiss company · Neur.on",
+  "description": "Statuten, articles of association, articles of association: the deed of incorporation of a company limited by shares and its legal content (CO Art. 626).",
+  "exemple": {
+   "de": "Die <mark>Statuten</mark> müssen Bestimmungen enthalten über: 1. die Firma und den Sitz der Gesellschaft; 2. den Zweck der Gesellschaft; 3. die Höhe und die Währung des Aktienkapitals sowie den Betrag der darauf geleisteten Einlagen; 4. Anzahl, Nennwert und Art der Aktien; 5. und 6. … 7. die Form der Mitteilungen der Gesellschaft an ihre Aktionäre.",
+   "fr": "Les <mark>statuts</mark> doivent contenir des dispositions sur: 1. la raison sociale et le siège de la société; 2. le but de la société; 3. le montant du capital-actions, la monnaie dans laquelle il est fixé et le montant des apports effectués; 4. le nombre, la valeur nominale et l’espèce des actions; 5. et 6. … 7. la forme des communications de la société à ses actionnaires.",
+   "it": "Lo <mark>statuto</mark> deve contenere disposizioni sui punti seguenti: 1. la ditta e la sede della società; 2. lo scopo della società; 3. l’ammontare e la moneta del capitale azionario, nonché l’ammontare dei conferimenti effettuati; 4. il numero, il valore nominale e la specie delle azioni; 5. e 6. … 7. la forma delle comunicazioni della società agli azionisti.",
+   "en": "The <mark>articles of association</mark> must contain provisions concerning: 1. the business name and seat of the company; 2. the objects of the company; 3. the total share capital, its currency, and the extent to which it is paid up; 4. the number, nominal value and types of shares; 5. and 6. ... 7. the form of the company’s communications with its shareholders."
+  }
+ },
+ {
+  "slug": "aktienkapital",
+  "de": "Aktienkapital",
+  "domaine": "Company law",
+  "base": "art. 621 CO",
+  "source": "Fedlex, Code of obligations",
+  "resume": "The capital of a company limited by shares, divided into shares and set out in the articles of association.",
+  "lead": "The share capital of a Swiss company limited by shares is at least CHF 100,000. Since 2023, it has also been possible to set it in a foreign currency that is important for the company's business operations.",
+  "definition": "The share capital is the capital set out in the articles of association of a company limited by shares and divided into shares. It must be at least CHF 100,000; since the revision of the law on companies limited by shares, which came into force on 1 January 2023, it may also be denominated in a foreign currency. On foundation, each share must be paid up to at least 20% of its nominal value and the contributions must amount to a total of at least 50,000 francs.",
+  "voisins": [
+   "aktiengesellschaft",
+   "statuten",
+   "revisionsstelle"
+  ],
+  "fr": "capital-actions",
+  "it": "capitale azionario",
+  "en": "share capital",
+  "title": "Aktienkapital: share capital · Neur.on",
+  "description": "Aktienkapital, share capital, capital azionario, share capital: the capital of the Swiss stock corporation pursuant to art. 621 CO.",
+  "exemple": {
+   "de": "Das <mark>Aktienkapital</mark> beträgt mindestens 100 000 Franken.",
+   "fr": "Le <mark>capital-actions</mark> ne peut être inférieur à 100 000 francs.",
+   "it": "Il <mark>capitale azionario</mark> non può essere inferiore a 100 000 franchi.",
+   "en": "The <mark>share capital</mark> amounts to at least 100,000 francs."
+  }
+ },
+ {
+  "slug": "grundbuch",
+  "de": "Grundbuch",
+  "domaine": "Property Law",
+  "base": "art. 942 CC",
+  "source": "Fedlex, Civil Code",
+  "resume": "The public register that records the rights to immovable property.",
+  "lead": "In Switzerland, ownership of immovable property is generally acquired by entry in the land register. The register is open to the public and protects those relying on it in good faith.",
+  "definition": "Le registre foncier donne l'état des droits sur les immeubles. Il comprend le grand livre, les documents complémentaires (plan, rôle, pièces justificatives, état descriptif) et le journal. La propriété et les autres droits réels immobiliers s'acquièrent en principe par l'inscription, et celui qui acquiert de bonne foi en se fondant sur une inscription est protégé. Toute personne qui fait valoir un intérêt peut consulter le registre.",
+  "voisins": [
+   "handelsregister",
+   "mietvertrag"
+  ],
+  "fr": "registre foncier",
+  "it": "registro fondiario",
+  "en": "land register",
+  "title": "Grundbuch: the Swiss land register · Neur.on",
+  "description": "Grundbuch, Land Register, Registro Fondiario, Land Register: the Register of immovable Property Rights (Art. 942 CC).",
+  "exemple": {
+   "de": "Über die Rechte an den Grundstücken wird ein <mark>Grundbuch</mark> geführt.",
+   "fr": "Le <mark>registre foncier</mark> donne l’état des droits sur les immeubles.",
+   "it": "È istituito un <mark>registro</mark> dei diritti sui fondi.",
+   "en": "The <mark>land register</mark> is kept as a record of property rights."
+  }
+ },
+ {
+  "slug": "pflichtteil",
+  "de": "Pflichtteil",
+  "domaine": "Law of succession",
+  "base": "art. 470 and 471 CC",
+  "source": "Fedlex, Civil Code",
+  "resume": "The share of the estate that certain heirs are guaranteed by law and cannot be deprived of by the deceased.",
+  "lead": "Pflichtteil says it is reserved in Swiss French. Since 1 January 2023, the statutory entitlement has been smaller: the issue have only half of their statutory entitlement and the parents no longer have such entitlement.",
+  "definition": "The statutory entitlement is the portion of the estate that certain heirs cannot be deprived of by will or contract of succession, unless they are disinherited. Since the revision of inheritance law, which came into force on 1 January 2023, the statutory entitlement of the issue, such as that of the surviving spouse or registered partner, has been one-half of their inheritance rights, and the parents no longer have any statutory entitlement. The remainder constitutes the disposable part of the estate, which the deceased may freely dispose of.",
+  "voisins": [
+   "willensvollstrecker",
+   "grundbuch",
+   "schadenersatz"
+  ],
+  "fr": "réserve",
+  "it": "porzione legittima",
+  "en": "statutory entitlement",
+  "title": "Pflichtteil: the Swiss inheritance reserve · Neur.on",
+  "description": "Pflichtteil, Reserve, porzione legittima, entitlement statutory: the share of estate guaranteed by art. 470 and 471 CC.",
+  "exemple": {
+   "de": "Der <mark>Pflichtteil</mark> beträgt die Hälfte des gesetzlichen Erbanspruchs.",
+   "fr": "La <mark>réserve</mark> est de la moitié du droit de succession.",
+   "it": "La <mark>porzione legittima</mark> è della metà della quota ereditaria.",
+   "en": "The <mark>statutory entitlement</mark> is one-half of the statutory succession rights."
+  }
+ },
+ {
+  "slug": "willensvollstrecker",
+  "de": "Willensvollstrecker",
+  "domaine": "Law of succession",
+  "base": "art. 517 and 518 CC",
+  "source": "Fedlex, Civil Code",
+  "resume": "The testator instructs the testator to execute his or her will.",
+  "lead": "The executor is appointed by will. It manages the estate and conducts it until the estate is divided, under the supervision of the authority.",
+  "definition": "By testamentary disposition, the testator may entrust one or more persons with capacity to act with the execution of his or her last will and testament. The executor is informed ex officio of his mandate and has fourteen days to accept it. It manages the estate, pays the debts, pays the legacies and divides the estate in accordance with the deceased's instructions or the law. He is entitled to appropriate compensation.",
+  "voisins": [
+   "pflichtteil",
+   "vollmacht",
+   "grundbuch"
+  ],
+  "fr": "exécuteur testamentaire",
+  "it": "esecutore testamentario",
+  "en": "executor",
+  "title": "Willensvollstrecker: the executor of the will · Neur.on",
+  "description": "Willensvollstrecker, executor, esecutore testamentario, executor: his appointment and powers (Art. 517 and 518 CC).",
+  "exemple": {
+   "de": "Die <mark>Willensvollstrecker</mark> stehen, soweit der Erblasser nichts anderes verfügt, in den Rechten und Pflichten des amtlichen Erbschaftsverwalters.",
+   "fr": "Si le disposant n’en a ordonné autrement, les <mark>exécuteurs testamentaires</mark> ont les droits et les devoirs de l’administrateur officiel d’une succession.",
+   "it": "Salvo contraria disposizione del testatore, gli <mark>esecutori testamentari</mark> hanno gli stessi diritti e doveri dell’amministratore ufficiale di una successione.",
+   "en": "Unless otherwise provided by the testator, the <mark>executors</mark> have the same rights and duties as an official estate administrator."
+  }
+ },
+ {
+  "slug": "rechtsoeffnung",
+  "de": "Rechtsöffnung",
+  "domaine": "Debt enforcement and bankruptcy",
+  "base": "art. 80-84 DEBA",
+  "source": "Fedlex, debt enforcement and bankruptcy Act",
+  "resume": "The court's decision rejects the debtor's objection and allows the enforcement proceedings to continue.",
+  "lead": "After an opposition to the summons to pay, the debt enforcement proceedings are suspended. Final or provisional lifting of the objection is the quick way to unblock it.",
+  "definition": "Where the debtor has filed an objection to the summons to pay, the creditor may request that the summons be set aside. A final release from liability is granted to the creditor on the basis of an enforceable judgment or equivalent document. Provisional release from liability is granted if debt enforcement proceedings are based on an officially recorded or privately executed acknowledgement of debt, unless the debtor provides prima facie evidence of his release. The court decides in summary proceedings.",
+  "voisins": [
+   "rechtsvorschlag",
+   "zahlungsbefehl",
+   "betreibung"
+  ],
+  "fr": "mainlevée",
+  "it": "rigetto dell'opposizione",
+  "en": "setting aside of an objection",
+  "title": "Rechtsöffnung: lifting the opposition · Neur.on",
+  "description": "Rechtsöffnung, lifting of the objection, rigetto dell' opposizione, setting aside of an objection: the final or provisional lifting of the DEBA.",
+  "exemple": {
+   "de": "Beruht die Forderung auf einem vollstreckbaren gerichtlichen Entscheid, so kann der Gläubiger beim Richter die Aufhebung des Rechtsvorschlags (definitive <mark>Rechtsöffnung</mark>) verlangen.",
+   "fr": "Le créancier qui est au bénéfice d’un jugement exécutoire peut requérir du juge la <mark>mainlevée</mark> définitive de l’opposition.",
+   "it": "Se il credito è fondato su una decisione giudiziaria esecutiva, il creditore può chiedere in giudizio il <mark>rigetto</mark> definitivo dell’opposizione.",
+   "en": "If the claim is based on an enforceable court judgment, the creditor may request the court to dismiss the objection to the summons for payment (<mark>setting aside the objection</mark> definitively)."
+  }
+ },
+ {
+  "slug": "nachlassstundung",
+  "de": "Nachlassstundung",
+  "domaine": "Debt enforcement and bankruptcy",
+  "base": "art. 293-298 DEBA",
+  "source": "Fedlex, debt enforcement and bankruptcy Act",
+  "resume": "The time limit set by the court for a debtor in difficulty to rectify his or her situation or to conclude a composition agreement.",
+  "lead": "A debt restructuring moratorium is the restructuring tool under Swiss law: it protects the debtor from debt enforcement proceedings while negotiating with his creditors under the supervision of an administrator.",
+  "definition": "The debtor or a creditor entitled to apply for bankruptcy may apply to the composition court for a debt restructuring moratorium. The court shall first grant a temporary stay of up to four months and appoint an administrator. The definitive suspension is then granted for four to six months, and may be extended to twelve months or even twenty-four months in particularly complex cases. During the suspension of enforcement, no enforcement proceedings may in principle be initiated or continued against the debtor.",
+  "voisins": [
+   "konkurs",
+   "betreibung",
+   "rechtsoeffnung"
+  ],
+  "fr": "sursis concordataire",
+  "it": "moratoria concordataria",
+  "en": "debt restructuring moratorium",
+  "title": "Nachlassstundung: debt restructuring moratorium · Neur.on",
+  "description": "Nachlassstundung, moratoria concordataria, debt restructuring moratorium: the composition procedure under the DEBA.",
+  "exemple": {
+   "de": "Wurde vor der Bewilligung der <mark>Nachlassstundung</mark> die Abtretung einer künftigen Forderung vereinbart, entfaltet diese Abtretung keine Wirkung, wenn die Forderung erst nach der Bewilligung der Nachlassstundung entsteht.",
+   "fr": "La cession de créance future conclue avant l’octroi d’un <mark>sursis concordataire</mark> ne déploie pas d’effets si la créance cédée prend naissance après l’octroi du sursis.",
+   "it": "La cessione di crediti futuri convenuta prima della concessione della <mark>moratoria concordataria</mark> non esplica alcun effetto se il credito nasce dopo tale concessione.",
+   "en": "If the assignment of a future claim was agreed before the <mark>composition moratorium</mark> was authorised, this assignment shall have no effect if the claim only arises after the composition moratorium was authorised."
+  }
+ },
+ {
+  "slug": "vorsorgliche-massnahmen",
+  "de": "vorsorgliche Massnahmen",
+  "domaine": "Procedure and legal remedies",
+  "base": "art. 261-265 CPC",
+  "source": "Fedlex, Code of Civil Procedure",
+  "resume": "The measures that the court orders before or during the proceedings to protect a threatened right.",
+  "lead": "Interim measures protect a right before the court decides on the merits. In cases of particular urgency, they may be ordered without hearing the opposing party.",
+  "definition": "The court shall order the necessary interim measures if the applicant shows credibly that a claim of which he is the holder is the subject of or is at risk of being infringed and that such infringement is likely to cause him damage which is difficult to remedy. In particular, it may order a prohibition order, an end to an unlawful situation or a custodial measure. In cases of particular urgency, it may order them immediately, without hearing the opposing party.",
+  "voisins": [
+   "arrest",
+   "schiedsgericht",
+   "beschwerde"
+  ],
+  "fr": "mesures provisionnelles",
+  "it": "provvedimenti cautelari",
+  "en": "interim measures",
+  "title": "Vorsorgliche Massnahmen: precautionary measures · Neur.on",
+  "description": "Vorsorgliche Massnahmen, Interim measures, Provvedimenti cautelari, Interim measures: Art. 261-265 CPC.",
+  "exemple": {
+   "de": "Das Gericht trifft die notwendigen <mark>vorsorglichen Massnahmen</mark>, wenn die gesuchstellende Partei glaubhaft macht, dass: a. ein ihr zustehender Anspruch verletzt ist oder eine Verletzung zu befürchten ist; und b. ihr aus der Verletzung ein nicht leicht wieder gutzumachender Nachteil droht.",
+   "fr": "Le tribunal ordonne les <mark>mesures provisionnelles</mark> nécessaires lorsque le requérant rend vraisemblable qu’une prétention dont il est titulaire remplit les conditions suivantes: a. elle est l’objet d’une atteinte ou risque de l’être; b. cette atteinte risque de lui causer un préjudice difficilement réparable.",
+   "it": "Il giudice ordina i necessari <mark>provvedimenti cautelari</mark> quando l’instante rende verosimile che: a. un suo diritto è leso o è minacciato di esserlo; e b. la lesione è tale da arrecargli un pregiudizio difficilmente riparabile.",
+   "en": "The court shall order the <mark>interim measures</mark> required provided the applicant shows credibly that: a. a right to which he or she is entitled has been violated or a violation is anticipated; and b. the violation threatens to cause not easily reparable harm to the applicant."
+  }
+ },
+ {
+  "slug": "bundesgericht",
+  "de": "Bundesgericht",
+  "domaine": "Procedure and legal remedies",
+  "base": "art. 188 CST. and Art. 1 FSCA",
+  "source": "Fedlex, Federal Supreme Court Act",
+  "resume": "The supreme judicial authority of the Confederation, which is based in Lausanne and Lucerne.",
+  "lead": "The same judgment of the Federal Supreme Court is cited ATF in French, BGE in German and DTF in Italian. English has no official acronym.",
+  "definition": "The Federal Supreme Court is the supreme judicial authority of the Confederation. He sits in Lausanne; his law courses are in Lucerne. In particular, it decides on appeals in civil, criminal and public law matters. Its judgments published in the Official Compilation refer to ATF in French, BGE in German and DTF in Italian.",
+  "voisins": [
+   "beschwerde",
+   "schiedsgericht",
+   "verfuegung"
+  ],
+  "fr": "Tribunal fédéral",
+  "it": "Tribunale federale",
+  "en": "Federal Supreme Court",
+  "title": "Bundesgericht: the Swiss Federal Supreme Court · Neur.on",
+  "description": "Bundesgericht, Federal Supreme Court, Federal Supreme Court: the supreme judicial authority of the Confederation.",
+  "exemple": {
+   "de": "Das <mark>Bundesgericht</mark> ist die oberste rechtsprechende Behörde des Bundes.",
+   "fr": "Le <mark>Tribunal fédéral</mark> est l’autorité judiciaire suprême de la Confédération.",
+   "it": "Il <mark>Tribunale federale</mark> è l’autorità giudiziaria suprema della Confederazione.",
+   "en": "The <mark>Federal Supreme Court</mark> is the supreme judicial authority of the Confederation."
+  }
+ },
+ {
+  "slug": "wirtschaftlich-berechtigte-person",
+  "de": "wirtschaftlich berechtigte Person",
+  "domaine": "Banking Law",
+  "base": "art. 4 am LA",
+  "source": "Fedlex, Anti-money Laundering Act",
+  "resume": "The natural person who ultimately controls or benefits from the assets.",
+  "lead": "The beneficial owner is at the heart of the due diligence obligations of Swiss banks: behind every account you need to know who is actually being served.",
+  "definition": "The financial intermediary must identify the beneficial owner with due care in the circumstances. It shall obtain from its contracting partner a written declaration as to who is the beneficial owner of the assets. For an operating legal entity, it shall identify the natural persons who ultimately control it. In case of doubt, the identification must be repeated.",
+  "voisins": [
+   "sorgfaltspflichten",
+   "geldwaescherei",
+   "bankgeheimnis"
+  ],
+  "fr": "ayant droit économique",
+  "it": "avente economicamente diritto",
+  "en": "beneficial owner",
+  "title": "Beneficial owner: the concept of AMLA · Neur.on",
+  "description": "wirtschaftlich berechtigte Person, beneficial owner, economicamente diritto, beneficial owner: the identification required by AMLA Article 4.",
+  "exemple": {
+   "de": "Der Finanzintermediär muss mit der nach den Umständen gebotenen Sorgfalt die <mark>wirtschaftlich berechtigte Person</mark> feststellen und deren Identität überprüfen, um sich zu vergewissern, wer die wirtschaftlich berechtigte Person ist.",
+   "fr": "L’intermédiaire financier doit, avec la diligence requise par les circonstances, identifier l’<mark>ayant droit économique</mark> et vérifier son identité, afin de s’assurer de savoir qui est l’ayant droit économique.",
+   "it": "L’intermediario finanziario deve, con la diligenza richiesta dalle circostanze, accertare l’<mark>avente economicamente diritto</mark> e verificarne l’identità, per assicurarsi di sapere chi è l’avente economicamente diritto.",
+   "en": "The financial intermediary must identify the <mark>beneficial owner</mark> with the due diligence required in the circumstances and verify its identity in order to ensure that it knows who the beneficial owner is."
+  }
+ },
+ {
+  "slug": "sorgfaltspflichten",
+  "de": "Sorgfaltspflichten",
+  "domaine": "Banking Law",
+  "base": "art. 3 to 8 am LA",
+  "source": "Fedlex, Anti-money Laundering Act",
+  "resume": "The obligations that the money Laundering Act imposes on financial intermediaries before and during the business relationship.",
+  "lead": "The AMLA's due diligence obligations are described in precise terms: identify, verify, clarify, document. They precede the obligation to report.",
+  "definition": "The Anti-money Laundering Act imposes duties of due diligence on financial intermediaries: verify the identity of the contracting partner, identify the beneficial owner, repeat these verifications in case of doubt, clarify the background and purpose of unusual transactions or business relationships, and retain the documents. These obligations are in addition to the obligation to report well-founded suspicions to the money Laundering reporting Office Switzerland.",
+  "voisins": [
+   "wirtschaftlich-berechtigte-person",
+   "geldwaescherei",
+   "bankgeheimnis"
+  ],
+  "fr": "obligations de diligence",
+  "it": "obblighi di diligenza",
+  "en": "due diligence obligations",
+  "title": "Sorgfaltspflichten: due diligence obligations · Neur.on",
+  "description": "Sorgfaltspflichten, duties of due diligence, obblighi di diligenza, due diligence obligations: the duties of financial intermediaries (AMLA).",
+  "exemple": {
+   "de": "Der Finanzintermediär kann auf die Einhaltung der <mark>Sorgfaltspflichten</mark> (Art. 3-7) verzichten, wenn die Geschäftsbeziehung nur Vermögenswerte von geringem Wert betrifft und keine Verdachtsmomente für mögliche Geldwäscherei oder Terrorismusfinanzierung vorliegen.",
+   "fr": "L’intermédiaire financier n’est pas tenu de respecter les <mark>obligations de diligence</mark> (art. 3 à 7) si la relation d’affaires porte uniquement sur des valeurs patrimoniales de faible valeur et qu’il n’y pas d’indices de blanchiment d’argent ou de financement du terrorisme.",
+   "it": "L’intermediario finanziario può rinunciare ad adempiere gli <mark>obblighi di diligenza</mark> (art. 3-7) se la relazione d’affari concerne soltanto valori patrimoniali di poca entità e se non vi sono elementi di sospetto di un eventuale riciclaggio di denaro o finanziamento del terrorismo.",
+   "en": "The financial intermediary may dispense with complying with the <mark>duties of due diligence</mark> (Art. 3-7) if the business relationship only involves assets of low value and there is no suspicion of money laundering or terrorist financing."
+  }
+ },
+ {
+  "slug": "steuerhinterziehung",
+  "de": "Steuerhinterziehung",
+  "domaine": "Taxation",
+  "base": "art. 175 DFTA",
+  "source": "Fedlex, Federal Act on direct Federal taxation",
+  "resume": "An offence by a taxpayer who wilfully or negligently causes a tax to be omitted or incomplete.",
+  "lead": "Tax evasion is punishable by a fine. It does not confuse itself with tax fraud (Steuerbetrug), which presupposes the use of forged documents.",
+  "definition": "Any taxpayer who wilfully or negligently causes a tax not to be assessed when it is due or if a legally binding tax is incomplete shall be liable to a fine. As a rule, the fine is equal to the amount of the tax evaded; it may be reduced to a third in the case of minor negligence or tripled in the case of gross negligence.",
+  "voisins": [
+   "verrechnungssteuer",
+   "quellensteuer",
+   "mehrwertsteuer"
+  ],
+  "fr": "soustraction d'impôt",
+  "it": "sottrazione d'imposta",
+  "en": "tax evasion",
+  "title": "Steuerhinterziehung: tax evasion · Neur.on",
+  "description": "Steuerhinterziehung, tax evasion, sottrazione d' imposta, tax evasion: the violation of Art. 175 DFTA and its difference with tax evasion.",
+  "exemple": {
+   "de": "Zeigt die steuerpflichtige Person erstmals eine <mark>Steuerhinterziehung</mark> selbst an, so wird von einer Strafverfolgung abgesehen (straflose Selbstanzeige), wenn: a. die Hinterziehung keiner Steuerbehörde bekannt ist; b. sie die Verwaltung bei der Festsetzung der Nachsteuer vorbehaltlos unterstützt; und c. sie sich ernstlich um die Bezahlung der geschuldeten Nachsteuer bemüht.",
+   "fr": "Lorsque le contribuable dénonce spontanément et pour la première fois une <mark>soustraction d’impôt</mark>, il est renoncé à la poursuite pénale (dénonciation spontanée non punissable), à condition: a. qu’aucune autorité fiscale n’en ait connaissance; b. qu’il collabore sans réserve avec l’administration pour déterminer le montant du rappel d’impôt; c. qu’il s’efforce d’acquitter le rappel d’impôt dû.",
+   "it": "Se il contribuente denuncia spontaneamente per la prima volta una <mark>sottrazione d’imposta</mark>, si prescinde dall’aprire un procedimento penale (autodenuncia esente da pena), a condizione che: a. la sottrazione d’imposta non sia nota ad alcuna autorità fiscale; b. egli aiuti senza riserve l’amministrazione a determinare l’ammontare dell’imposta sottratta; e c. si adoperi seriamente per pagare l’imposta dovuta."
+  }
+ },
+ {
+  "slug": "quellensteuer",
+  "de": "Quellensteuer",
+  "domaine": "Taxation",
+  "base": "art. 83-101 DFTA",
+  "source": "Fedlex, Federal Act on direct Federal taxation",
+  "resume": "The tax levied directly on the salary of certain employees by their employer.",
+  "lead": "Withholding tax should not be confused with withholding tax: withholding tax is levied on the income from the activity of certain workers, while withholding tax is levied on capital income.",
+  "definition": "Foreign workers who do not hold a permanent residence permit but who are resident or resident in Switzerland are subject to withholding tax on income from their employment. The employer withholds the salary tax and pays it to the tax authority. Some people domiciled abroad, such as cross-border commuters or members of boards of directors, are also subject to the regulations.",
+  "voisins": [
+   "verrechnungssteuer",
+   "steuerhinterziehung",
+   "mehrwertsteuer"
+  ],
+  "fr": "impôt à la source",
+  "it": "imposta alla fonte",
+  "en": "tax at source",
+  "title": "Quellensteuer: Swiss withholding tax · Neur.on",
+  "description": "Quellensteuer, withholding tax, imposta alfonte, withholding tax: the withholding made by the supplier (Art. 83 et seq. DFTA).",
+  "exemple": {
+   "de": "Arbeitnehmer ohne Niederlassungsbewilligung, die in der Schweiz jedoch steuerrechtlichen Wohnsitz oder Aufenthalt haben, unterliegen für ihr Einkommen aus unselbstständiger Erwerbstätigkeit einer <mark>Quellensteuer</mark>.",
+   "fr": "Les travailleurs sans permis d’établissement qui sont domiciliés ou en séjour en Suisse au regard du droit fiscal sont soumis à un <mark>impôt à la source</mark> sur le revenu de leur activité lucrative dépendante.",
+   "it": "I lavoratori senza permesso di domicilio che hanno domicilio o dimora fiscale in Svizzera sono assoggettati a un’<mark>imposta alla fonte</mark> per il loro reddito da attività lucrativa dipendente."
+  }
+ }
+]

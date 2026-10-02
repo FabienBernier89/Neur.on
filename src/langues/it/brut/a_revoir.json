@@ -1,0 +1,98 @@
+[
+ {
+  "fichier": "src/pages/corrext/editeur-de-relecture/index.html",
+  "segment": "133",
+  "probleme": "marqueurs {2}…{/2} absents, en double ou inversés",
+  "source": "<span><b>Vous corrigez.</b> Dans l'éditeur, une phrase à la fois, face à l'original.</span>"
+ },
+ {
+  "fichier": "src/pages/corrext/index.html",
+  "segment": "105",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Relecture phrase par phrase dans l'<a href=\"{{ROOT}}fr/corrext/editeur-de-relecture/\">éditeur de relecture</a>, vos corrections rejoignent votre mémoire"
+ },
+ {
+  "fichier": "src/pages/corrext/traduction-texte-et-document/index.html",
+  "segment": "61",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO."
+ },
+ {
+  "fichier": "src/pages/index.html",
+  "segment": "66",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le débiteur en demeure doit des <mark>intérêts moratoires</mark> au taux de 5% l'an, conformément à l'art. 104 al. 1 CO."
+ },
+ {
+  "fichier": "src/pages/langues-et-formats/index.html",
+  "segment": "113",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Le PDF est accepté, scan compris. L'onglet PDF to Word le convertit en document Word éditable, avant traduction ou pour le travail interne.<small>Sur cet onglet, l'interrupteur Highly sensitive content est grisé : la conversion ne traduit pas.</small>"
+ },
+ {
+  "fichier": "src/pages/ressources/blog/comprendre-devis-traduction-juridique/index.html",
+  "segment": "57",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "Certains documents ne demandent pas seulement une traduction relue, mais une traduction <em>certifiée</em>, parfois notariée, parfois apostillée. Ces trois niveaux ne sont pas des degrés de soin : ce sont des formalités différentes, qui engagent des tiers différents."
+ },
+ {
+  "fichier": "src/pages/ressources/etudes/evaluer-moteur-traduction-juridique/index.html",
+  "segment": "91",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "<strong>Oublier la variance entre générations.</strong> Comparer une sortie de chaque moteur revient à comparer deux tirages. Sans réplication, l'écart mesuré peut être entièrement dû au hasard de génération."
+ },
+ {
+  "fichier": "src/pages/ressources/etudes/index.html",
+  "segment": "4",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "<em>Études et benchmarks.</em> Mesurer plutôt qu'affirmer"
+ },
+ {
+  "fichier": "src/pages/ressources/guides/organiser-traduction-cabinet/index.html",
+  "segment": "87",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "<strong>Une porte de sortie explicite.</strong> Pour les cas où l'outil ne suffit pas, indiquez qui appeler. L'absence de recours documenté est ce qui pousse à improviser."
+ },
+ {
+  "fichier": "src/pages/ressources/guides/organiser-traduction-cabinet/index.html",
+  "segment": "94",
+  "probleme": "marqueurs {1}…{/1} absents, en double ou inversés",
+  "source": "<strong>Exigez la source.</strong> Une entrée sans référence vérifiable sera contestée au premier désaccord, et vous recommencerez la discussion."
+ },
+ {
+  "fichier": "src/data/actualites.json",
+  "segment": "actualites.json:8/texte",
+  "probleme": "marqueurs {3}…{/3} absents, en double ou inversés",
+  "source": "<p>Il y a quelques jours, la CEO de Neur.on a partagé la scène avec notre responsable data science, <a href=\"https://www.linkedin.com/in/eloi-eynard/\" rel=\"noopener\" target=\"_blank\">Eloi Eynard</a>. Ensemble, ils ont présenté l’entraînement de LLM à des fins de traduction lors des AI Days de la <a href=\"https://www.linkedin.com/company/university-of-applied-sciences-western-switzerland/\" rel=\"noopener\" target=\"_blank\">HES-SO Haute école spécialisée de Suisse occidentale</a>.</p><p><a href=\"https://youtu.be/Icj7RYLjm9w?t=323\" rel=\"noopener\" target=\"_blank\">Regarder l’interview </a>!</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:10/corps",
+  "probleme": "marqueurs {13}…{/13} absents, en double ou inversés",
+  "source": "<p>La CEO de Neur.on, <a href=\"{{ROOT}}fr/a-propos/\">Paula Reichenberg</a>, a récemment participé à un événement sur invitation consacré à l’innovation juridique, organisé par <strong>PwC</strong> et <strong>The LegalTech Fund</strong> à Londres. Soigneusement préparée par Sandeep Agrawal, Zach Posner et Rebecca Engel, la rencontre a réuni certaines des solutions legaltech les plus prometteuses et des leaders du secteur.</p><p>Paula a présenté Neur.on lors de l’événement. Elle a gagné la reconnaissance des organisateurs et des participants, mais elle est aussi repartie avec <strong>trois « prix » inattendus</strong> :</p><ul><li>D’abord, l’honneur d’être invitée à présenter Neur.on au sein d’un groupe restreint de fournisseurs legaltech tournés vers l’avenir.</li><li>Ensuite, un gain au tirage au sort, avec une variété de cadeaux attentionnés et amusants, grâce au format de réseautage créatif imaginé par les hôtes.</li><li>Enfin, et c’est le plus important : des échanges éclairants avec des dirigeants de la legaltech du monde entier. Ils ont confirmé la demande croissante de <strong>flux de traduction juridique multilingues</strong> dans les grandes organisations internationales.</li></ul><p>L’événement a souligné l’importance stratégique de la mission de Neur.on. Les acteurs clés de la legaltech reconnaissent de plus en plus la complexité et le caractère critique d’une <a href=\"{{ROOT}}fr/corrext/\">traduction juridique de haute qualité à grande échelle</a>.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:15/corps",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>NEUR.ON fait partie des 4 finalistes des Swiss FinTech Awards 2024.</p><p>Vous pensez qu’il y a erreur ?</p><p>« Mais comment une <a href=\"{{ROOT}}fr/corrext/\">plateforme SaaS de traduction propulsée par l’IA</a> pourrait-elle être considérée comme une FinTech ? », vous demanderez-vous peut-être. Surtout si vous nous avez rencontrés lors des innombrables événements LegalTech auxquels nous avons participé.</p><p>Le jury des Swiss FinTech Awards a pourtant compris qu’une terminologie exacte et une formulation convaincante dépassent largement le domaine juridique.</p><p>Pour les banques, un langage précis et une communication percutante sont l’écrin de luxe dans lequel elles livrent leur expertise.</p><p>Imaginez que vous receviez une brochure sur papier glacé censée contenir une analyse pertinente de votre portefeuille par votre banquier privé. Vous commencez à lire. Après quelques phrases seulement, il est évident que l’ensemble a été traduit automatiquement, et mal qui plus est. Les formulations sonnent faux, les incohérences de contexte se multiplient, et vous voyez bien que le résultat final n’a même jamais été relu par une personne de langue maternelle.</p><p>Une langue médiocre fait inévitablement naître un soupçon d’incompétence et, pire encore peut-être, de manque de respect envers vos lecteurs. Impensable dans l’univers de la « haute horlogerie financière » suisse.</p><p>Pour en savoir plus sur les 4 finalistes, lisez <a href=\"https://fintechnews.ch/fintech/the-finalists-of-the-swiss-fintech-awards-2024/70811/\" rel=\"noopener\" target=\"_blank\">Fintechnews Switzerland</a> et <a href=\"https://www.fuw.ch/fintech-awards-finale-der-besten-fintechs-steht-fest-129774611612\" rel=\"noopener\" target=\"_blank\">Finanz und Wirtschaft</a>.</p><p>Rejoignez-nous le 11 juin à « FinTech 2024 », la conférence fintech phare organisée par Finanz und Wirtschaft Forum au GDI Gottlieb Duttweiler Institute de Rüschlikon, pour une finale passionnante.</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:16/corps",
+  "probleme": "marqueurs {4}…{/4} absents, en double ou inversés",
+  "source": "<p>Paula, <a href=\"{{ROOT}}fr/a-propos/\">CEO de Neur.on</a>, a participé le 5 octobre à la table ronde du Trust Valley Day : « Risques cyber : les PME sous pression ».</p><p>Face à la montée des cybermenaces qui visent les petites et moyennes entreprises, nous observons une tendance croissante : les prestataires de services informatiques, souvent la porte d’entrée vers des organisations plus grandes, deviennent des cibles de choix. Les PME se retrouvent prises entre les risques de cyberattaques et le besoin pressant de renforcer leur maturité en cybersécurité.</p><p>Lors de l’événement, Paula a souligné l’importance cruciale de tester les solutions d’IA avec des données locales. Elle a appelé à soutenir le développement d’infrastructures adaptées aux PME suisses désireuses d’explorer l’IA tout en garantissant une <a href=\"{{ROOT}}fr/securite-souverainete/\">sécurité maximale des données</a>.</p><p>En résumé, cette discussion a mis en évidence le besoin crucial de renforcer la cybersécurité des PME. L’appel à l’action est sans équivoque : unir nos forces, partager nos connaissances et collaborer étroitement pour bâtir un écosystème plus sûr et plus résilient.</p><p>Regardez l’intervention de Paula en <a href=\"https://www.youtube.com/watch?v=XW0b3ne0N3s&amp;t=1012s\" rel=\"noopener\" target=\"_blank\">cliquant ici</a> !</p>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:20/corps",
+  "probleme": "marqueurs {37}…{/37} absents, en double ou inversés",
+  "source": "<p>Planter des arbres pour que les générations futures puissent en récolter les fruits.</p><p>La <a href=\"https://www.linkedin.com/company/university-of-applied-sciences-western-switzerland/\" rel=\"noopener\" target=\"_blank\">HES-SO Haute école spécialisée de Suisse occidentale</a> a désigné <a href=\"{{ROOT}}fr/a-propos/\">notre CEO</a> Paula Reichenberg comme membre de son Conseil stratégique de 2025 à 2028.</p><h2>Qu’est-ce que le Conseil stratégique de la HES-SO ?</h2><p>Cet organe consultatif réunit des experts aux parcours variés : monde académique, économie, santé, action sociale et culture. Sa composition reflète toujours les domaines étudiés au sein de la haute école.</p><h2>Pourquoi les hautes écoles sont-elles essentielles à l’innovation en Suisse ?</h2><p>Paula est honorée que la HES-SO lui permette de contribuer à la formation des générations futures. Face aux mutations géopolitiques, sociétales et technologiques actuelles, il est essentiel de préparer l’avenir de la Suisse comme terrain de jeu attractif et marché florissant pour les start-up et les innovateurs.</p><p>L’EPFL et l’EPFZ travaillent sur la deeptech et sur des technologies révolutionnaires qui permettent des changements fondamentaux. Le rôle des écoles d’ingénieurs et des « hautes écoles » en Suisse est tout aussi fondamental : amener la technologie du laboratoire au marché et convaincre les entreprises, sociétés cotées ou PME, pour qu’au final la révolution atteigne les consommateurs et crée de la valeur pour eux.</p><p>Mère de deux enfants, dirigeante et administratrice de plusieurs sociétés, Paula dispose sans doute d’un temps libre compté.</p><p>Notre CEO est pourtant convaincue qu’avoir voix au chapitre sur l’avenir de la formation sera à la fois stimulant, une leçon d’humilité et une source d’inspiration. Elle siégera aux côtés de personnalités expertes, notamment :</p><ul><li><a href=\"https://www.linkedin.com/in/pascal-crittin-77468971/\" rel=\"noopener\" target=\"_blank\">Pascal Crittin</a>, directeur de la radio et de la télévision chez <a href=\"https://www.linkedin.com/company/schweizer-radio-und-fernsehen/\" rel=\"noopener\" target=\"_blank\">SRF Schweizer Radio und Fernsehen</a> ;</li><li><a href=\"https://www.linkedin.com/in/emilie-dellecker/\" rel=\"noopener\" target=\"_blank\">Emilie Dellecker</a>, directrice de <a href=\"https://www.linkedin.com/company/hackgroup/\" rel=\"noopener\" target=\"_blank\">HackGroup</a> ;</li><li><a href=\"https://www.linkedin.com/in/fdubois/\" rel=\"noopener\" target=\"_blank\">François Dubois</a>, directeur de <a href=\"https://www.linkedin.com/company/prosenectute-arcjurassien/\" rel=\"noopener\" target=\"_blank\">Pro Senectute Arc Jurassien</a> ;</li><li><a href=\"https://www.linkedin.com/in/annina-grob-311424160/\" rel=\"noopener\" target=\"_blank\">Annina Grob</a>, co-secrétaire d’<a href=\"https://www.linkedin.com/company/avenir-social/\" rel=\"noopener\" target=\"_blank\">AVENIR SOCIAL</a> ;</li><li><a href=\"https://www.linkedin.com/in/elisabeth-gutjahr-03b3aab1/\" rel=\"noopener\" target=\"_blank\">Elisabeth Gutjahr</a>, rectrice de la <a href=\"https://www.linkedin.com/company/mozarteum-university-salzburg/\" rel=\"noopener\" target=\"_blank\">Mozarteum University Salzburg</a> ;</li><li><a href=\"https://www.linkedin.com/in/olivier-haegeli-1954111/\" rel=\"noopener\" target=\"_blank\">Olivier Haegeli</a>, directeur général de Willemin-Macodel et vice-président de la <a href=\"https://www.linkedin.com/company/cci-du-jura/\" rel=\"noopener\" target=\"_blank\">CCI du Jura</a> ;</li><li><a href=\"https://www.linkedin.com/in/pierre-henri-jaccaud-6a404032/\" rel=\"noopener\" target=\"_blank\">Pierre-Henri Jaccaud</a>, directeur de Skopia Art Contemporain, à Genève ;</li><li><a href=\"https://www.linkedin.com/in/christian-leumann-8380828/\" rel=\"noopener\" target=\"_blank\">Christian Leumann</a>, CEO ad interim de l’Inselspital de Berne ;</li><li><a href=\"https://www.linkedin.com/in/raphaelleluisier/\" rel=\"noopener\" target=\"_blank\">Raphaëlle Luisier</a>, cheffe de groupe à l’<a href=\"https://www.linkedin.com/company/idiap-research-institute/\" rel=\"noopener\" target=\"_blank\">Idiap Research Institute</a> ;</li><li><a href=\"https://www.linkedin.com/in/brigitte-rorive-647b688/\" rel=\"noopener\" target=\"_blank\">Brigitte Rorive</a>, présidente de l’<a href=\"https://www.linkedin.com/in/h%C3%B4pital-riviera-chablais-11677329b/\" rel=\"noopener\" target=\"_blank\">Hôpital Riviera-Chablais</a> ;</li><li><a href=\"https://www.linkedin.com/in/patrickrosset/\" rel=\"noopener\" target=\"_blank\">Patrick Rosset</a>, directeur senior de la stratégie des opérations chez <a href=\"https://www.linkedin.com/company/medtronic/\" rel=\"noopener\" target=\"_blank\">Medtronic</a>.</li></ul>"
+ },
+ {
+  "fichier": "src/data/blog.json",
+  "segment": "blog.json:30/corps",
+  "probleme": "marqueurs {5}…{/5} absents, en double ou inversés",
+  "source": "<p>La journée de la <a href=\"https://www.linkedin.com/company/trust-valley/\" rel=\"noopener\" target=\"_blank\">Trust Valley</a> au <a href=\"https://www.linkedin.com/company/rolex-learning-center---epfl/\" rel=\"noopener\" target=\"_blank\">Rolex Learning Center de l’EPFL</a> a réuni des acteurs de la politique, du monde académique, de la cybersécurité et du secteur privé, en particulier des PME, pour débattre des défis concrets auxquels l’économie de notre pays est confrontée.</p><p>NEUR.ON sert des cabinets d’avocats, des banques et des administrations publiques suisses. Elle répond à l’un de leurs maillons les plus faibles en matière de <a href=\"{{ROOT}}fr/securite-souverainete/\">sécurité des données</a> (oui, les projets de traduction juridique représentent un risque important, mais souvent négligé !). <a href=\"https://www.linkedin.com/in/ACoAAAB2aBIBSfQd2Le8FFz93hLXczD2Su7JPBo\" rel=\"noopener\" target=\"_blank\">Lennig Pedron</a> nous a donc aimablement invités à partager notre expérience de start-up LegalTech qui place la sécurité numérique au cœur de son activité.</p><h2>Quelles pressions la sécurité numérique fait-elle peser sur les PME ?</h2><p>Voici quelques enseignements clés du panel consacré à la pression qui pèse sur les PME et les start-up :</p><ul><li>Une sécurité numérique à la pointe exige des investissements importants : infrastructure, processus, documentation et, surtout, une culture d’entreprise à la hauteur, partagée à tous les niveaux et dans tous les services. Le total atteint souvent un montant à six chiffres par an.</li><li>Les cabinets d’avocats et les autres PME extérieures au secteur des TIC manquent souvent des ressources et des compétences nécessaires pour évaluer correctement le niveau de sécurité de leurs fournisseurs. Il ne leur reste alors qu’à « faire confiance » ou à « espérer que tout se passe bien ».</li><li>Des prestataires TIC spécialisés, comme Neur.on, peuvent prendre en charge certaines étapes précises du processus, mais la connaissance et la vigilance d’ensemble restent du ressort de la PME.</li><li>Des programmes et des associations comme Trust4SMEs, le Swiss AI Center for SMEs de la <a href=\"https://www.linkedin.com/company/university-of-applied-sciences-western-switzerland/\" rel=\"noopener\" target=\"_blank\">HES-SO Haute école spécialisée de Suisse occidentale</a> et la <a href=\"https://www.linkedin.com/company/swiss-legaltech-association/\" rel=\"noopener\" target=\"_blank\">Swiss LegalTech Association</a> sont là pour aider, avec des guides, des livres blancs et des formations.</li></ul><h2>Que demandent les PME suisses au secteur public ?</h2><p>Toutefois, le message principal de nos clients et des acteurs de la LegalTech s’adresse au secteur public suisse et aux programmes d’innovation :</p><p>Les PME et les start-up suisses sont impatientes d’explorer le potentiel de l’IA générative pour leur secteur. Pour cela, elles doivent pouvoir utiliser leurs propres données avec des LLM, sans craindre de fuite de données ni de flux de données incontrôlés. Elles demandent de toute urgence une infrastructure 100 % suisse, non soumise au CLOUD Act ni au Patriot Act américains, pour tester différentes technologies en toute sécurité.</p><p>Qui est prêt à aider à réunir les CHF 2,5 millions nécessaires à une sandbox suisse pour les PME ?</p><p>La Suisse est-elle prête à jouer un rôle dans la course à la numérisation ?</p><p>Rejoignez Neur.on dans son engagement pour la sécurité et la réussite des entreprises suisses sur ce chemin.</p>"
+ }
+]

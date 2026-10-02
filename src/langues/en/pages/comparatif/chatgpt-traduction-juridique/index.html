@@ -1,0 +1,374 @@
+<!--page
+title: ChatGPT and legal translation: what Corrext brings
+description: Generalist models are reformulating well. What they do not provide alone: sourced Swiss terminology, verifiable references and treatment in Switzerland.
+short: Corrext and ChatGPT
+nav: ressources
+assets: []
+canonical: https://neur-on.ai/fr/comparatif/chatgpt-traduction-juridique/
+-->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Can a contract be translated by ChatGPT?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "To understand a clause, understand its scope or prepare a discussion, yes: a general LLM is doing very well. For a contract to be signed, forwarded to a third party or produced before an authority, no, not alone: it does not provide any sourced Swiss terminology, guarantee of legal references, reinterpretation by a legal translator, or data processing in Switzerland. In Corrext, these templates remain available, but the release that begins requires a light, full, or double review."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How can I verify a Swiss legal benchmark?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Don't ask the engine that just produced it: ask a source. In Corrext, follow the term or abbreviation in the source text and click fast Lookup. The CHnell concordance shows aligned segments drawn from official Swiss sources, with the domain, source and a Show in context link. Then you see how the term is actually rendered in the Federal Gazette or on the fedlex.admin.ch, and not how a model presupposes that it should be."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "does Corrext use general LLMs?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Azure OpenAI GPT and Claude are available in Corrext, alongside LexMachina and DeepL Pro, and choose for each shipment. As they are hosted abroad, their selection triggers the Attorney-Client privilege opinion of your organization, which requires full pseudonymization and prohibits these engines for sensitive files. The alternatives panel compares their proposals with those of the Swiss engine in the same sentence."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does a general LLM create legal provisions?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It may produce a plausible but false reference, jurisdiction or term, and nothing in its response indicates the error. This risk does not relate to a particular supplier: we documented it on our own engine, on a default clause issued in German with Kündigung, which refers to termination where the agreed maturity was required. This is precisely why Corrext has several engine-based alternatives and gives access to the concordance tree."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are my discussions with a general public IA assistant confidential?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The conditions vary from supplier to supplier and offer, and they change. Two things remain constant for a Swiss firm: the document is transferred outside of Switzerland, and nothing in the interface reminds the User of what his/her internal policy requires before sending it. In Corrext, Attorney-Client privilege is displayed when the engine is selected, and Highly sensitive content requires storage and processing exclusively in Switzerland."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "When is a general LLM the right tool?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "When you work on meaning rather than final form: summarize a long document, explain a contractual mechanism, reformulate a paragraph for a non-legal client, explore several editors of a clause. Corrext proposes its own rewriting function, Rephrasing, in five styles including Formal legal, Financial and simplified."
+   }
+  }
+ ]
+}
+</script>
+
+<style>
+/* Hero compact */
+
+
+
+
+/* Réponse directe */
+.cp-answer{padding:56px 0 0;background:#fff}
+.cp-answer .box{max-width:860px;margin:0 auto;background:var(--tint);border:1px solid var(--line);border-radius:var(--r-bloc);padding:30px 34px}
+.cp-answer h2{font-size:20px;margin-bottom:12px}
+.cp-answer p{font-size:16.5px;color:var(--text);line-height:1.68}
+.cp-answer .src{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* Deux registres honnêtes */
+.cp-fair{padding:72px 0 0;background:#fff}
+/* Deux colonnes alignées ligne à ligne : titre, chapeau, puis chaque point à la même hauteur */
+.cp-fair-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;grid-template-rows:repeat(6,auto)}
+.cp-col{display:grid;grid-row:1 / span 6;grid-template-rows:subgrid}
+.cp-col h2{font-size:clamp(22px,2.4vw,28px);margin-bottom:14px}
+.cp-col > p{color:var(--muted);font-size:15.5px;line-height:1.65;margin-bottom:22px;max-width:44ch}
+.cp-pts{display:grid;grid-row:span 4;grid-template-rows:subgrid;list-style:none;border-top:1px solid var(--line)}
+.cp-pts li{padding:15px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--text);line-height:1.6}
+.cp-pts li b{display:block;color:var(--ink);font-size:13px;margin-bottom:4px;letter-spacing:-.01em}
+.cp-pts a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px}
+.cp-pts a:hover{text-decoration-color:currentColor}
+
+/* Exemple d'erreur documentée */
+.cp-ex{padding:80px 0 0;background:#fff}
+.cp-ex .sec-head{text-align:center;margin:0 auto 28px;max-width:760px}
+.cp-ex-src{max-width:980px;margin:0 auto 20px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:18px 22px}
+.cp-ex-lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cp-ex-src p{font-size:15px;color:var(--ink);line-height:1.6}
+.cp-ex-grid{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cp-ex-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:20px 22px}
+.cp-ex-card.bad{border-color:#e2c4c0}
+.cp-ex-card.good{border-color:var(--blue);box-shadow:0 26px 54px -38px rgba(8,24,68,.32)}
+.cp-ex-eng{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:50px;padding:5px 11px;margin-bottom:12px}
+.cp-ex-card.bad .cp-ex-eng{color:#8d4a41;background:#fbeeec}
+.cp-ex-card p{font-size:14.5px;color:var(--ink);line-height:1.62}
+.cp-ex-card mark{background:#fff2a8;color:inherit;padding:0 2px;border-radius:3px}
+.cp-ex-card.bad mark{background:#fbdcd7}
+.cp-ex-note{max-width:980px;margin:22px auto 0;font-size:14.5px;color:var(--text);line-height:1.68}
+.cp-ex-cap{max-width:980px;margin:14px auto 0;font-size:12.5px;color:var(--muted);line-height:1.55}
+
+@media(max-width:940px){
+  .cp-fair-grid{grid-template-columns:1fr;grid-template-rows:none;row-gap:36px}
+  .cp-col,.cp-pts{display:block;grid-row:auto}
+  .cp-col > p{max-width:none}
+  .cp-ex-grid{grid-template-columns:1fr}
+  .cp-answer .box{padding:24px 22px}
+}
+</style>
+
+<!-- HERO -->
+<section class="thero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Corrext and general LLMs</em> useful to understand, frame and engage</h1>
+        <p class="lead">ChatGPT, Azure OpenAI GPT and Claude reformulate, summarize and explain a legal transition better than a conventional translation engine. This page shows what they have achieved, and what they do not prove alone on a Swiss document that is binding.</p>
+        <div class="thero-cta">
+          <a href="contact.html" class="btn btn-blue">
+            Ask for a demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#tableau" class="btn btn-ghost">See table</a>
+        </div>
+      </div>
+      {{CARTE:comparatif-llm}}
+    </div>
+  </div>
+</section>
+
+<!-- RÉPONSE DIRECTE -->
+<section class="cp-answer">
+  <div class="container">
+    <div class="box">
+      <h2>The short answer</h2>
+      <p>Yes, a general LLM translates and reformulates a legal passage very well. What he does not provide alone: sourced Swiss terminology, guaranteed legal reference, interpretation interface, quotation, and data processing in Switzerland. In Corrext, Azure OpenAI GPT and Claude remain available under the governance of your organization.</p>
+      <p class="src">Requests covered by this page: ChatGPT reliable legal translation · Translating a contract with the IA · verifying a Swiss legal reference.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUE CHACUN FAIT BIEN -->
+<section class="cp-fair">
+  <div class="container">
+    <div class="cp-fair-grid">
+      <div class="cp-col">
+        <h2>What general LLMs do remarkably well</h2>
+        <p>These are the best tools ever handed over to a lawyer to work on the meaning of a text. Saying so does not weaken our argument: that is the honest starting point for the comparison.</p>
+        <ul class="cp-pts">
+          <li><b>reformulate and simplify</b> transform a dense clause into a paragraph readable for a non-legal client, or vice versa, keeping the registry requested.</li>
+          <li><b>summarize and explain</b> distil the structure of a fifty-page brief, explain a contractual mechanism, isolate the obligations of each party.</li>
+          <li><b>hold ambiguity</b> propose several reads of an ambiguous formulation and explain what separates them, where a conventional translation engine writes without saying so.</li>
+          <li><b>Editorial Explorer</b> quickly produce multiple variations of a clause to feed an internal discussion before stopping the version that will be negotiated.</li>
+        </ul>
+      </div>
+      <div class="cp-col">
+        <h2>What they cannot prove on their own</h2>
+        <p>The problem is not the quality of the language; it is excellent. The problem is that none of their claims goes back to a source that you can show to a colleague or authority.</p>
+        <ul class="cp-pts">
+          <li><b>No sourced Swiss terminology</b> a term is rendered plausibly, without any indication of how the Federal or fedlex.admin.ch Gazette actually renders it. In Corrext, this is the role of <a href="{{ROOT}}fr/corrext/chnell/">fast lookup CHnell</a>.</li>
+          <li><b>No warranty of legal references</b> an article, abbreviation or jurisdiction may be produced with lead and forgery, without any signal in the response.</li>
+          <li><b>No preview interface</b> No validation string: no preview level, no ordered legal translator, no certification possible. In Corrext, it commands in <a href="{{ROOT}}fr/corrext/gestion-de-projet/">Project Management</a>.</li>
+          <li><b>No quotation, no deadline, no governance</b> There is nothing that makes it possible to make a distinction between understanding quickly and reading, and nothing that reminds the cabinet's policy before sending a document out of Switzerland.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABLEAU -->
+<section class="compare" id="tableau">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Twelve criteria, on the actual work of a file</h2>
+    </div>
+    <p class="compare-note">What we say about general LLMs is limited to what is public and stable: generic, noteworthy language models with no sourced Swiss law corpus, no revision chain or integrated certification, and whose public offerings process documents outside of Switzerland. In Corrext, Azure OpenAI GPT and Claude are configured as third-party engines hosted abroad.</p>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">&nbsp;</th>
+            <th>General LLM alone</th>
+            <th class="brand">Corrext (who can use Azure OpenAI GPT and Claude)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Reformulate, summarize, explain a passage</th>
+            <td><span class="cmp-y">excellent</span> ✓</td>
+            <td class="brand"><span class="cmp-y">✓</span> five-style Rephrasing, including Formal legal and Financial</td>
+          </tr>
+          <tr>
+            <th>Place of storage of documents</th>
+            <td><span class="cmp-n">✕</span> outside of Switzerland</td>
+            <td class="brand"><span class="cmp-y">✓</span> Swiss servers, in all cases</td>
+          </tr>
+          <tr>
+            <th>Place of text processing</th>
+            <td><span class="cmp-n">✕</span> outside of Switzerland</td>
+            <td class="brand"><span class="cmp-y">✓</span> exclusively in Switzerland with LexMachina or in high sensitive mode</td>
+          </tr>
+          <tr>
+            <th>Warning before sending a document</th>
+            <td><span class="cmp-n">✕</span> None</td>
+            <td class="brand"><span class="cmp-y">✓</span> Attorney-Client Notice privilege displayed at the option of the engine</td>
+          </tr>
+          <tr>
+            <th>Terminology of Swiss Law in context</th>
+            <td><span class="cmp-n">✕</span> No source displayed</td>
+            <td class="brand"><span class="cmp-y">✓</span> CHnell: aligned segments, 30 domains, official sources</td>
+          </tr>
+          <tr>
+            <th>Verifiable Swiss legal references</th>
+            <td><span class="cmp-n">plausible</span> ✕, never sourced</td>
+            <td class="brand"><span class="cmp-y">✓</span> verified in one click by fast Lookup, with “Show in context”</td>
+          </tr>
+          <tr>
+            <th>Comparison of several engines on the same sentence</th>
+            <td><span class="cmp-n">✕</span> a single model</td>
+            <td class="brand"><span class="cmp-y">✓</span> up to four alternatives, each attributed to its engine</td>
+          </tr>
+          <tr>
+            <th>Human review ordered in the tool</th>
+            <td><span class="cmp-n">✕</span> No</td>
+            <td class="brand"><span class="cmp-y">✓</span> light review, full review, double review, internal or external</td>
+          </tr>
+          <tr>
+            <th>Quotation and deadline before launch</th>
+            <td><span class="cmp-n">✕</span> No</td>
+            <td class="brand"><span class="cmp-y">✓</span> calculated based on standard pages and legal category detected</td>
+          </tr>
+          <tr>
+            <th>Certified, notarized or subordinated translation</th>
+            <td><span class="cmp-n">✕</span> No</td>
+            <td class="brand"><span class="cmp-y">✓</span> certified double review; commercial register extracts to the apostille</td>
+          </tr>
+          <tr>
+            <th>Batch files in their original format</th>
+            <td><span class="cmp-p">⚠</span> According to the offer, one file at a time</td>
+            <td class="brand"><span class="cmp-y">✓</span> up to 25 50 MB files, saved, plus PDF to Word</td>
+          </tr>
+          <tr>
+            <th>Organization-wide governance</th>
+            <td><span class="cmp-p">⚠</span> According to the Company offer</td>
+            <td class="brand"><span class="cmp-y">✓</span> engine policy applied in tool, sensitive mode, ISO 27001</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span><span class="cmp-y">✓</span> available and observed</span>
+<span><span class="cmp-p">⚠</span> partial or dependent on the offer</span>
+<span><span class="cmp-n">missing</span> ✕</span>
+    </div>
+    <p class="cmp-mention">Comparison made on the date this page is posted, based on public information from publishers and our comments in Corrext. The products under comparison are evolving: only their official documentation is authoritative.</p>
+  </div>
+</section>
+
+<!-- EXEMPLE : UNE ERREUR, LA NÔTRE -->
+<section class="cp-ex" id="exemple">
+  <div class="container">
+    <div class="sec-head">
+      <h2>An example of error, and that is our case</h2>
+      <p>A contract law clause translated from French to German in Corrext. Two alternatives in the same panel do not say the same thing, and one of them changes the meaning of the clause.</p>
+    </div>
+    <div class="cp-ex-src">
+      <p class="cp-ex-lbl">Source · French</p>
+      <p>The debtor in default shall owe default interest at the rate of 5% per annum in accordance with CO Art. 104 para. 1, without the need for formal notice when a term has been agreed.</p>
+    </div>
+    <div class="cp-ex-grid">
+      <div class="cp-ex-card bad">
+        <span class="cp-ex-eng">wrongful exit · LexMachina</span>
+        <p lang="de">Der säumige Schuldner schuldet gemäss Art. 104 ABS. 1 OR Verzugszinsen in Höhe von 5% p.a., ohne DASS eine förmliche Mahnung erforderlich wäre, wenn eine <mark>Kündigung</mark> vereinbart worden IST.</p>
+      </div>
+      <div class="cp-ex-card good">
+        <span class="cp-ex-eng">alternative of the same panel · Azure OpenAI GPT</span>
+        <p lang="de">Der Schuldner im Verzug schuldet Verzugszinsen zum Satz von 5% pro Jahr gemäss Art. 104 ABS. 1 OHNE DASS eine förmliche Mahnung erforderlich IST, wenn eine <mark>Frist</mark> vereinbart wurde.</p>
+      </div>
+    </div>
+    <p class="cp-ex-note">Kündigung refers to the termination of the contract, whereas the agreed “term” is a term, which the legal translator checks in the German text of the CO. The mistake comes from our own engine, not from a competitor, and it illustrates exactly what we support here: no generalist or specialized engine is a source of law. What protects the reader is not the promise of an infallible model, it is the alternatives displayed side by side, the concordage that goes back to the official source, and human reinterpretation before any transmission.</p>
+    <p class="cp-ex-cap">Actual exits obtained in Corrext, on this precise phrase, in French to German, in the alternatives panel. One-time, dated example, not a measure: this type of error occurs in all engines, and another generation would give another result. We kept it unchanged rather than regenerating it, because it documents the real risk.</p>
+  </div>
+</section>
+
+<!-- GOUVERNANCE -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Should ChatGPT be banned from the practice?</h2>
+        <p>Prohibit produces nothing more than invisible use: the pressured employee opens a tab, pastes an extract, and nobody will ever know anything. Corrext is taking the issue differently. Azure OpenAI GPT and Claude are offered internally, alongside LexMachina and DeepL Pro. Their choice displays the Attorney-Client privilege opinion of your organization: full pseudonymization required, files with a high reputation or price sensitive excluded. Your teams retain the power of these models, keeping track and rule.</p>
+        <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Security and data sovereignty <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><b>the model remains available.</b> the engine choice is made on each dispatch, without leaving the platform.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span><b>the notice appears before sending.</b> required pseudonymisation, excluded sensitive folders, text of your organization.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>the sensitive mode exists next to it.</b> LexMachina or hot sensitive content: everything remains in Switzerland, DE, FR, IT and.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="vn">
+  <div class="container">
+    <h2>Other comparatives</h2>
+    <div class="vs-grid">
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/deepl-traduction-juridique/" aria-label="Comparison Corrext and DeepL Pro"><span class="vs-duo" aria-hidden="true"><b>Corrext</b> <i></i> <b>DeepL Pro</b></span> <em> Read the comparison <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vs-card" href="{{ROOT}}fr/comparatif/agence-ou-plateforme/" aria-label="Comparison Translation Agency or Platform"><span class="vs-duo" aria-hidden="true"><b>Agency</b> <i></i> <b>Platform</b></span> <em> Read the comparison <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Frequently asked questions about general AML and Swiss law</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Can a contract be translated by ChatGPT?</summary>
+        <p>To understand a clause, understand its scope or prepare a discussion, yes: a general LLM is doing very well. For a contract to be signed, forwarded to a third party or produced before an authority, no, not alone: it does not provide any sourced Swiss terminology, guarantee of legal references, reinterpretation by a legal translator, or data processing in Switzerland. In Corrext, these templates remain available, but the release that begins requires a light, full, or double review.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How can I verify a Swiss legal benchmark?</summary>
+        <p>Don't ask the engine that just produced it: ask a source. In Corrext, follow the term or abbreviation in the source text and click fast Lookup. The CHnell concordance shows aligned segments drawn from official Swiss sources, with the domain, source and a Show in context link. Then you see how the term is actually rendered in the Federal Gazette or on the fedlex.admin.ch, and not how a model presupposes that it should be.</p>
+      </details>
+      <details class="faq-item">
+        <summary>does Corrext use general LLMs?</summary>
+        <p>Yes. Azure OpenAI GPT and Claude are available in Corrext, alongside LexMachina and DeepL Pro, and choose for each shipment. As they are hosted abroad, their selection triggers the Attorney-Client privilege opinion of your organization, which requires full pseudonymization and prohibits these engines for sensitive files. The alternatives panel compares their proposals with those of the Swiss engine in the same sentence.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does a general LLM create legal provisions?</summary>
+        <p>It may produce a plausible but false reference, jurisdiction or term, and nothing in its response indicates the error. This risk does not relate to a particular supplier: we documented it on our own engine, on a default clause issued in German with Kündigung, which refers to termination where the agreed maturity was required. This is precisely why Corrext has several engine-based alternatives and gives access to the concordance tree.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are my discussions with a general public IA assistant confidential?</summary>
+        <p>The conditions vary from supplier to supplier and offer, and they change. Two things remain constant for a Swiss firm: the document is transferred outside of Switzerland, and nothing in the interface reminds the User of what his/her internal policy requires before sending it. In Corrext, Attorney-Client privilege is displayed when the engine is selected, and Highly sensitive content requires storage and processing exclusively in Switzerland.</p>
+      </details>
+      <details class="faq-item">
+        <summary>When is a general LLM the right tool?</summary>
+        <p>When you work on meaning rather than final form: summarize a long document, explain a contractual mechanism, reformulate a paragraph for a non-legal client, explore several editors of a clause. Corrext proposes its own rewriting function, Rephrasing, in five styles including Formal legal, Financial and simplified.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Put the motors in front of your own clause</h2>
+      <p>As a demo, you paste a passage from your files, open the alternatives and check each legal reference in the composition agreement.</p>
+      <div class="final-cta-btns">
+        <a href="contact.html" class="btn btn-blue">
+          Ask for a demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/" class="btn-outline">See text translation and document</a>
+      </div>
+      <p class="micro">Custom demo · in French, German, Italian or English · Storage 100% Swiss</p>
+    </div>
+  </div>
+</section>

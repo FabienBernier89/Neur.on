@@ -1,0 +1,591 @@
+<!--page
+title: Extracts from the commercial register translated and certified
+description: Certified translation of extracts from the Swiss commercial Register ordered online: Corrext, notarized or apostised certification, more than 30 languages.
+short: Extracts from the commercial register
+nav: corrext
+assets: []
+canonical: https://neur-on.ai/fr/corrext/extraits-registre-commerce/
+-->
+
+<style>
+/* ============ DÉMO · parcours de commande auszug-hr.ch (préfixe .cxr-, couleurs via --cx-*) ============ */
+.cxr [hidden]{display:none!important}
+.cxr .cx-top .home{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.cxr-lang{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--cx-muted);margin-right:4px;white-space:nowrap}
+.cxr-lang b{color:var(--cx-indigo);font-weight:700}
+.cxr-lang i{font-style:normal;color:var(--cx-muted)}
+.cxr-body{padding:18px 18px 18px}
+.cxr .cx-h4{font-size:13px;font-weight:700;color:var(--cx-ink);margin:0 0 10px}
+.cxr .cxr-title{font-size:18px;line-height:1.3;letter-spacing:-.01em;margin:2px 0 18px;max-width:40ch}
+.cxr-help{font-size:12.5px;color:var(--cx-muted);margin:0 0 14px;line-height:1.5}
+/* Stepper */
+.cxr-steps{list-style:none;margin:0 0 20px;padding:0 0 16px;display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--cx-line)}
+.cxr-steps li{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--cx-muted);min-width:0;padding-right:10px}
+.cxr-steps li .n{width:26px;height:26px;border-radius:50%;border:1px solid var(--cx-dim-2);display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:700;color:var(--cx-muted);flex-shrink:0}
+.cxr-steps li .n svg{width:13px;height:13px;display:none}
+.cxr-steps li .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cxr-steps li::after{content:"";flex:1;height:1px;background:var(--cx-line);margin-left:6px;min-width:10px}
+.cxr-steps li:last-child::after{display:none}
+.cxr-steps li.cur,.cxr-steps li.done{color:var(--cx-ink)}
+.cxr-steps li.cur .n,.cxr-steps li.done .n{background:var(--cx-indigo);border-color:var(--cx-indigo);color:#fff}
+.cxr-steps li.done .n span{display:none}
+.cxr-steps li.done .n svg{display:block}
+/* Panneaux */
+.cxr-panel{display:none;outline:none}
+.cxr-panel.on{display:block;animation:cxrIn .28s ease both}
+@keyframes cxrIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+/* Étape 1 */
+.cxr-seg{display:inline-flex;background:var(--cx-bg);border:1px solid var(--cx-line);border-radius:8px;padding:3px;margin-bottom:14px}
+.cxr-seg button{border:1px solid transparent;background:transparent;font-size:12.5px;font-weight:600;color:var(--cx-ink);padding:6px 12px;border-radius:6px;cursor:pointer}
+.cxr-seg button.on{background:#fff;border-color:var(--cx-indigo);color:var(--cx-indigo)}
+.cxr-lbl{display:block;font-size:12px;font-weight:600;color:var(--cx-ink);margin-bottom:5px}
+.cxr-row{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:560px}
+.cxr-in{width:100%;border:1px solid var(--cx-line);border-radius:8px;padding:10px 12px;font-family:inherit;font-size:13px;color:var(--cx-ink);background:transparent;min-width:0}
+.cxr-in::placeholder{color:var(--cx-ph);opacity:1}
+.cxr-in:disabled{color:var(--cx-muted);background:var(--cx-bg);cursor:default}
+.cxr-sel{border:1px solid var(--cx-line);border-radius:8px;padding:10px 32px 10px 12px}
+.cxr-field{margin-top:16px;max-width:360px}
+.cxr-shim{display:none;margin-top:12px;padding:14px;border:1px solid var(--cx-line);border-radius:var(--r-btn);max-width:560px}
+.cxr-shim.on{display:block}
+.cxr-shim .cx-shim:last-child{width:55%;margin-bottom:0}
+.cxr-result{display:none;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid var(--cx-line);border-radius:var(--r-btn);padding:12px 14px;margin-top:12px;max-width:560px}
+.cxr-result.on{display:flex;animation:cxrIn .28s ease both}
+.cxr-result.sel{border-color:var(--cx-indigo)}
+.cxr-tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cx-muted);background:var(--cx-bg);border:1px solid var(--cx-line);border-radius:8px;padding:3px 8px;white-space:nowrap}
+.cxr-co{flex:1;min-width:180px}
+.cxr-co b{display:block;font-size:13px;color:var(--cx-ink)}
+.cxr-co span{display:block;font-size:12px;color:var(--cx-muted);margin-top:2px;line-height:1.45}
+.cxr-selected{display:none;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--cx-indigo)}
+.cxr-selected svg{width:14px;height:14px}
+.cxr-result.sel .cxr-selbtn{display:none}
+.cxr-result.sel .cxr-selected{display:inline-flex}
+/* Cartes radio */
+.cxr-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cxr-cards.two{grid-template-columns:repeat(2,1fr);max-width:560px}
+.cxr-list{display:grid;gap:10px;max-width:560px}
+.cxr-card{position:relative;border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 14px 14px 40px;text-align:left;background:transparent;cursor:pointer;font-family:inherit;color:var(--cx-text);width:100%}
+.cxr-list .cxr-card{border-radius:var(--r-btn);padding:12px 14px 12px 40px}
+.cxr-card:hover{border-color:var(--cx-dim)}
+.cxr-card[aria-checked="true"]{border-color:var(--cx-indigo);background:var(--cx-indigo-soft)}
+.cxr-card .rd{position:absolute;left:14px;top:15px;width:16px;height:16px;border-radius:50%;border:1px solid var(--cx-dim)}
+.cxr-list .cxr-card .rd{top:13px}
+.cxr-card[aria-checked="true"] .rd{border-color:var(--cx-indigo)}
+.cxr-card[aria-checked="true"] .rd::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--cx-indigo)}
+.cxr-card b{display:block;font-size:12.5px;color:var(--cx-ink);margin-bottom:4px;line-height:1.35}
+.cxr-card span{display:block;font-size:12px;color:var(--cx-muted);line-height:1.5}
+.cxr-list .cxr-card b{margin-bottom:0}
+/* Récapitulatif et pied */
+.cxr-sum{border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 16px;margin-top:18px;background:var(--cx-bg);max-width:560px}
+.cxr-sum dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0;font-size:12.5px}
+.cxr-sum dt{color:var(--cx-muted);font-weight:600}
+.cxr-sum dd{margin:0;color:var(--cx-ink);font-weight:600}
+.cxr-foot{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1px solid var(--cx-line)}
+.cxr-foot .grow{flex:1}
+.cxr-foot .cx-btn{line-height:1.3}
+.cxr .cx-btn.ghost:disabled{background:transparent;border-color:var(--cx-dim-2);color:var(--cx-dim)}
+.cxr-foot a.cx-btn{display:inline-flex;align-items:center;text-decoration:none}
+.cxr-done{display:none;position:relative;margin-top:12px;padding:12px 14px 12px 40px;background:var(--cx-indigo-soft);border-radius:var(--r-btn);font-size:12.5px;color:var(--cx-ink);line-height:1.5}
+.cxr-done.on{display:block;animation:cxrIn .28s ease both}
+.cxr-done svg{position:absolute;left:14px;top:13px;width:16px;height:16px;color:var(--cx-ink)}
+.cxr-done a{color:var(--cx-indigo);font-weight:700}
+.cxr-addr{display:none;margin-top:14px;max-width:560px}
+.cxr-addr.on{display:block}
+@media(prefers-reduced-motion:reduce){.cxr-panel.on,.cxr-result.on,.cxr-done.on{animation:none}}
+@media(max-width:940px){.cxr-cards{grid-template-columns:1fr}.cxr-cards.two{grid-template-columns:1fr 1fr;max-width:none}}
+@media(max-width:560px){
+  .cxr .cx-top{gap:10px;padding:12px 14px}
+  .cxr .cx-top .home{font-size:12px}
+  .cxr-lang{display:none}
+  .cxr-body{padding:14px}
+  .cxr .cxr-title{font-size:16px}
+  .cxr-steps{display:flex;gap:6px}
+  .cxr-steps li{flex:0 0 auto;padding-right:0}
+  .cxr-steps li.cur{flex:1;min-width:0}
+  .cxr-steps li .l{display:none}
+  .cxr-steps li.cur .l{display:block}
+  .cxr-steps li::after{min-width:8px}
+  .cxr-row{grid-template-columns:1fr}
+  .cxr-cards.two{grid-template-columns:1fr}
+  .cxr-foot{flex-wrap:wrap}
+  .cxr-sum dl{grid-template-columns:1fr;gap:2px 0}
+  .cxr-sum dd{margin-bottom:6px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Service",
+   "name": "Certified translation of commercial register extracts",
+   "provider": {
+    "@type": "Organization",
+    "name": "Neur.on AI Solutions SA",
+    "url": "https://neur-on.ai"
+   },
+   "areaServed": "CH",
+   "url": "https://auszug-hr.ch"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is apostille?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Apostille is the formality provided for in the Hague Convention of 5 October 1961: it authenticates the signature of the notary who certified the translation, so that the document may be recognized in the other States parties to the Convention. Upon auszug-hr.ch, it is issued by the State Chancellery at the notarized &amp; Apostilled certification level."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What level of certification does a foreign authority require?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the authority and the country. As a general rule, an authority of a State party to the Hague Convention requests a notarized and certified translation; a Swiss authority usually limits itself to notarial certification; internal usage or a private third party often accepts Corrext certification. Check with the recipient authority before placing an order: it determines the requirement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does a certified translation take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The deadline depends on the level of certification, the target language and the option chosen: standard or express, for Switzerland or the international community. It is selected at the fourth stage of the command and appears before validation. Notarized or subordinated certification adds the crossing by the notary, then by the State Chancellery."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "In which languages can the extract be translated?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "More than 30 target languages. At the first stage, the selector offers German, French, Italian, English and Spanish at the top of the list, followed by other languages available on the platform."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the service part of Corrext?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. auszug-hr.ch is the online Corrext service dedicated to commercial register extracts, which has also been accessible since the reception of the platform. The translations are carried out by legal translators specializing in corporate safekeeping, assisted by the language models that the Corrext team of legal experts and data scientists led to extracts from the Swiss commercial Register."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How can I order a certified translation of an extract?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In four steps, entirely online on the auszug-hr.ch: search the company by name or IDE and choose the target language; select the certification level. choose delivery, by email or with a paper copy by post or courier; set a standard or express deadline for Switzerland or the international community. Then validate with order a translation, or contact the team via Contact us."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<!-- HERO compact : la démo est l'objet -->
+<section class="thero thero-demo thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>commercial register extracts.</em> translated online</h1>
+        <p class="lead">Search the company by name or IDE, choose the certification level, delivery and time period. The translation is carried out by legal translators specializing in corporate safekeeping, assisted by models trained on extracts from the Swiss register, and the order is placed entirely online.</p>
+        <div class="thero-cta">
+          <a href="contact.html" class="btn btn-blue">
+            Ask for a demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#demo" class="btn btn-ghost">See command path</a>
+        </div>
+      </div>
+      <!-- visuel:debut --><figure class="tvis"><svg class="tvis-svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Illustration: an extract from the German commercial register and its certified French translation, with a seal and apostille" focusable="false"><style>@media (prefers-reduced-motion:reduce){.tvis-svg .anim{display:none}}</style><defs>
+<linearGradient id="vxg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+<linearGradient id="vxa" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#96BCFF"/><stop offset="1" stop-color="#317BFF"/></linearGradient>
+<radialGradient id="vxh"><stop offset="0" stop-color="#317BFF" stop-opacity=".55"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
+<radialGradient id="vxw"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".4" stop-color="#96BCFF" stop-opacity=".45"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
+<filter id="vxs" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000a24" flood-opacity=".45"/></filter>
+</defs><ellipse cx="260" cy="205" rx="250" ry="175" fill="url(#vxh)" opacity=".55"/><g transform="rotate(-6 170 200)"><rect x="70" y="70" width="190" height="250" rx="10" fill="url(#vxg)" stroke="#fff" stroke-opacity=".18" filter="url(#vxs)" /><rect x="92" y="110" width="120" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="128" width="96" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="146" width="136" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="164" width="88" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="182" width="110" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="84" width="34" height="20" rx="10" fill="rgba(255,255,255,.14)"/><text x="109" y="98" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#fff" letter-spacing=".04em">OF</text></g><rect x="200" y="56" width="220" height="286" rx="12" fill="url(#vxg)" stroke="#fff" stroke-opacity=".18" filter="url(#vxs)" /><rect x="200" y="56" width="220" height="44" rx="12" fill="url(#vxa)" fill-opacity=".9"/><rect x="218" y="68" width="34" height="20" rx="10" fill="rgba(255,255,255,.22)"/><text x="235" y="82" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#fff" letter-spacing=".04em">EN</text><rect x="262" y="74" width="92" height="6" rx="3.0" fill="#fff" fill-opacity=".85"/><rect x="220" y="118" width="170" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="136" width="150" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="154" width="176" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="172" width="132" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="196" width="180" height="58" rx="8" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".12"/><rect x="232" y="208" width="70" height="6" rx="3.0" fill="#fff" fill-opacity=".28"/><rect x="232" y="224" width="96" height="6" rx="3.0" fill="#fff" fill-opacity=".28"/><rect x="320" y="208" width="64" height="6" rx="3.0" fill="#96BCFF" fill-opacity=".5"/><rect x="320" y="224" width="50" height="6" rx="3.0" fill="#96BCFF" fill-opacity=".5"/><rect x="220" y="272" width="96" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="220" y="288" width="70" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><path d="M376 300l-12 46 18-10 10 18 8-44z" fill="#317BFF"/><path d="M404 300l12 46-18-10-10 18-8-44z" fill="#7FB0FF"/><circle cx="390" cy="292" r="36" fill="url(#vxa)" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><circle cx="390" cy="292" r="27" fill="none" stroke="#fff" stroke-opacity=".7" stroke-dasharray="2 3"/><path d="M378 292l8 8 16-17" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><g transform="rotate(8 458 140)"><rect x="428" y="118" width="62" height="44" rx="8" fill="url(#vxg)" stroke="#fff" stroke-opacity=".3"/><path d="M459 128l3.5 7 7.5 1-5.5 5.3 1.3 7.5-6.8-3.6-6.8 3.6 1.3-7.5-5.5-5.3 7.5-1z" fill="#96BCFF"/></g><g class="anim"><circle cx="390" cy="292" r="36" fill="none" stroke="#fff" stroke-width="2"><animate attributeName="r" values="36;52" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.8s" repeatCount="indefinite"/></circle></g></svg></figure><!-- visuel:fin -->
+    </div>
+  </div>
+</section>
+
+<!-- DÉMO : le parcours de commande en quatre étapes, dans le cadre Corrext -->
+<section class="tdemo demo" id="demo" style="padding:0;background:transparent">
+  <div class="container">
+    <div class="cx cxr" id="cx" aria-label="Demonstration of the auszug-hr.ch control path, Corrext service">
+      <div class="cx-top">
+        <span class="cx-logo"><img src="{{ROOT}}assets/img/corrext-logo.svg" alt="Corrext" class="cx-brand"></span>
+        <span class="home">commercial Register Extract</span>
+<span class="grow"></span>
+<span class="cxr-lang" aria-label="Langue du site auszug-hr.ch, anglais actif (démonstration)"><b>IN</b> <i>·</i> <span>OF</span> <i>·</i> <span>FR</span> <i>·</i> <span>IT</span></span>
+        <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <span class="cx-avatar" aria-hidden="true">AM</span>
+      </div>
+
+      <div class="cxr-body">
+        <p class="cx-h4 cxr-title">Order a Certified Translation of Swiss commercial Register Extracts</p>
+
+        <ol class="cxr-steps" id="cxrSteps" aria-label="Order stages">
+          <li class="cur" aria-current="step"><span class="n"><span>1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">ind the Company</span></li>
+          <li><span class="n"><span>2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">Select the certification level</span></li>
+          <li><span class="n"><span>3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">Choose the delivery method</span></li>
+          <li><span class="n"><span>4</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">set the delivery timeline</span></li>
+        </ol>
+
+        <!-- Étape 1 · Find the company -->
+        <div class="cxr-panel on" id="cxrP1" tabindex="-1" aria-label="Step 1, ind the Company">
+          <p class="cx-h4">Ind the Company</p>
+          <p class="cxr-help">Search the Swiss commercial Register by Company name or UID, select the Company, then choose the target language.</p>
+          <div class="cxr-seg" id="cxrSeg" role="group" aria-label="Search by">
+            <button type="button" class="on" aria-pressed="true" data-mode="name">Company Name</button>
+            <button type="button" aria-pressed="false" data-mode="uid">Company UID</button>
+          </div>
+          <label class="cxr-lbl" for="cxrQ" id="cxrQLbl">Company Name</label>
+          <div class="cxr-row">
+            <input class="cxr-in" id="cxrQ" type="text" value="Muster AG" autocomplete="off" spellcheck="false">
+            <button type="button" class="cx-btn" id="cxrSearch">Search</button>
+          </div>
+          <div class="cxr-shim" id="cxrShim" aria-hidden="true"><div class="cx-shim"></div><div class="cx-shim"></div></div>
+          <div class="cxr-result" id="cxrRes" role="status">
+            <span class="cxr-tag">demonstration data</span>
+<span class="cxr-co"><b>Muster AG</b> <span>UID CHE-000.000.000 · commercial register (demonstration canton)</span></span>
+            <button type="button" class="cx-btn ghost cxr-selbtn" id="cxrSelect">Select</button>
+            <span class="cxr-selected"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Selected</span>
+          </div>
+          <div class="cxr-field">
+            <label class="cxr-lbl" for="cxrTgt">Target language</label>
+            <select class="cx-sel cxr-sel" id="cxrTgt" disabled>
+              <option>German</option>
+              <option>French</option>
+              <option>Italian</option>
+              <option>English</option>
+              <option>Spanish</option>
+              <option disabled>+30 languages available</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Étape 2 · Select the certification level -->
+        <div class="cxr-panel" id="cxrP2" tabindex="-1" aria-label="Step 2, Select the Certification level">
+          <p class="cx-h4">Select the certification level</p>
+          <p class="cxr-help">Choose the level required by the recipient of the translation.</p>
+          <div class="cxr-cards" id="cxrLevels" role="radiogroup" aria-label="Level Certification">
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Standard Corrext Certification"><span class="rd" aria-hidden="true"></span> <b>Standard Corrext Certification</b> <span>Certified translation with a certificate signed and stamped by Corrext.</span></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Notarized Certification"><span class="rd" aria-hidden="true"></span> <b>registered certification</b> <span>Certified translation authorised by a Swiss notary.</span></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Notarized &amp; Apostilled Certification"><span class="rd" aria-hidden="true"></span> <b>Notarized &amp; Apostilled Certification</b> <span>Notarized translation with an apostille issued by the State Chancellery under the Hague Convention of 5 October 1961.</span></button>
+          </div>
+        </div>
+
+        <!-- Étape 3 · Choose the delivery method -->
+        <div class="cxr-panel" id="cxrP3" tabindex="-1" aria-label="Step 3, choose the delivery method">
+          <p class="cx-h4">Choose the delivery method</p>
+          <p class="cxr-help">The Certified Translation is always sent by email as a PDF. Add a paper copy if the recipient requires an original.</p>
+          <div class="cxr-list" id="cxrDeliv" role="radiogroup" aria-label="Delivery method">
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="E-mail (PDF)"><span class="rd" aria-hidden="true"></span> <b>E-mail (PDF)</b></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="E-mail + paper copy by post"><span class="rd" aria-hidden="true"></span> <b>E-mail + paper copy by post</b></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="E-mail + paper copy by courier"><span class="rd" aria-hidden="true"></span> <b>E-mail + paper copy by courier</b></button>
+          </div>
+          <div class="cxr-addr" id="cxrAddr">
+            <label class="cxr-lbl" for="cxrAddrIn">Postal address</label>
+            <input class="cxr-in" id="cxrAddrIn" type="text" disabled placeholder="Mailing address masked in demo">
+          </div>
+        </div>
+
+        <!-- Étape 4 · Set the delivery timeline -->
+        <div class="cxr-panel" id="cxrP4" tabindex="-1" aria-label="Step 4, set the delivery stamp">
+          <p class="cx-h4">Set the delivery timeline</p>
+          <p class="cxr-help">Choose the timeline and the delivery country, then review your order.</p>
+          <div class="cxr-cards two" id="cxrTime" role="radiogroup" aria-label="Delivery timeline">
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Standard"><span class="rd" aria-hidden="true"></span> <b>Standard</b> <span>Regular processing of the translation and certification.</span></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Express"><span class="rd" aria-hidden="true"></span> <b>express</b> <span>priority processing of the translation and certification.</span></button>
+          </div>
+          <div class="cxr-field">
+            <label class="cxr-lbl" for="cxrCountry">Delivery country</label>
+            <select class="cx-sel cxr-sel" id="cxrCountry">
+              <option>Switzerland</option>
+              <option>International</option>
+            </select>
+          </div>
+          <div class="cxr-sum" aria-live="polite">
+            <p class="cx-h4">Your order</p>
+            <dl>
+              <dt>Company</dt><dd id="cxrSumCo"></dd>
+              <dt>Target language</dt><dd id="cxrSumTgt"></dd>
+              <dt>Level Certification</dt><dd id="cxrSumLvl"></dd>
+              <dt>Delivery method</dt><dd id="cxrSumDel"></dd>
+              <dt>Delivery timeline</dt><dd id="cxrSumTl"></dd>
+              <dt>Delivery country</dt><dd id="cxrSumCty"></dd>
+            </dl>
+          </div>
+          <div class="cxr-done" id="cxrDone" role="status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Demo: No orders have been placed; actual service is on <a href="https://auszug-hr.ch" rel="noopener">auszug-hr.ch</a>.
+          </div>
+        </div>
+
+        <div class="cxr-foot">
+          <button type="button" class="cx-btn ghost" id="cxrPrev" disabled>Previous</button>
+          <span class="grow"></span>
+<a class="cx-btn ghost" id="cxrContact" href="contact.html" hidden>US Contact</a>
+          <button type="button" class="cx-btn" id="cxrOrder" disabled hidden>Order a translation</button>
+          <button type="button" class="cx-btn" id="cxrNext" disabled>Next</button>
+        </div>
+        <p class="cx-note">Demo: simulated journey, no data is transmitted.</p>
+      </div>
+    </div>
+
+    <p class="cx-caption">Track reproduced according to the auszug-hr.ch Corrext service · demonstration data · certification levels and steps as observed in the service.</p>
+  </div>
+</section>
+
+<!-- CE QUE COUVRE LE SERVICE : registre de faits observés -->
+<div class="tafter">
+<section class="facts" id="faits">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>What the service covers exactly</h2>
+        <p>Extracts from the commercial register is the online service of Corrext that issues a certified translation of an extract from the Swiss commercial register. The company searches for itself by name or IDE; the target language, certification level, delivery method and time limit are selected at the order, entirely online on auszug-hr.ch.</p>
+        <div class="links">
+          <a href="corrext-gestion-de-projet.html" class="feat-link">For other documents to be certified: Project management <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="https://auszug-hr.ch" rel="noopener" class="feat-link">Go to auszug-hr.ch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Search</b><p>By <strong class="kf">Company name</strong> or <strong class="kf">IDE</strong>, at the first step of the command. The target language is chosen in the same place, once the company has been selected.</p></div>
+        <div class="fact"><b>languages</b><p><strong class="kf">more than 30 target languages</strong>. German, French, Italian, English and Spanish lead the selector, followed by other languages available on the platform.</p></div>
+        <div class="fact"><b>level 1 · Standard Corrext Certification</b><p>Translation with certificate <strong class="kf">signed and stamped by Corrext</strong>. <small>as a rule: internal use, private partners and third parties.</small></p></div>
+        <div class="fact"><b>level 2 · registered Certification</b><p>Certified translation <strong class="kf">authenticated by a Swiss notary</strong>. <small>as a rule: Swiss authorities and courts.</small></p></div>
+        <div class="fact"><b>level 3 · Notarized &amp; Apostilled Certification</b><p>Notarized certification, then <strong class="kf">apostille</strong> issued by the State Chancellery according to the <strong class="kf">Hague Convention</strong> of 5 October 1961. <small>as a rule: foreign authorities of a State party to the Convention.</small></p></div>
+        <div class="fact"><b>delivery</b><p>By <strong class="kf">email (PDF)</strong>, or email and <strong class="kf">hard copy</strong> sent by post or courier. The mailing address is entered at the order.</p></div>
+        <div class="fact"><b>delay</b><p><strong class="kf">Standard or express</strong>, for Switzerland and international. The delay is selected in step four and appears before validation of the command.</p></div>
+        <div class="fact"><b>that translates</b><p><strong class="kf">professional legal translators</strong> specialized in corporate handling, assisted by the language models that the Corrext team of legal experts and data scientists led to extracts from the Swiss commercial register.</p></div>
+        <div class="fact"><b>confidentiality</b><p>Swiss infrastructure <strong class="kf">ISO 27001-certified</strong>. Treatment in accordance with Swiss FADP <strong class="kf">and GDPR</strong>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section class="who who-s">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Three situations in which the certified extract is required</h2>
+    </div>
+    <div class="ws-grid">
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:societe}}</span> <span><span class="pn">Trustees.</span> a foreign subsidiary or account</span></h3>
+        <p>As a rule, the foreign authority or bank requires an extract from Swiss society translated into its language, notarized and apostised when the State is a party to the Hague Convention. The registered &amp; posted Certification level is ordered online, with the paper copy sent by post or courier.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:loupe}}</span> <span><span class="pn">legal directions.</span> due diligence abroad</span></h3>
+        <p>A certified extract in English or in the language of the counterparty usually accompanies the file. Depending on the recipient, the Corrext certification is sufficient or a notarized certification is requested: the level is chosen at the second stage, without changing service provider.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic">{{ICONE:institution}}</span> <span><span class="pn">banks.</span> Documentate a company abroad</span></h3>
+        <p>At a KYC conducted by an institution or a correspondent abroad, the Swiss extract must generally be translated and certified. The level required depends on the counterparty: Corrext certification for a private third party, notarized or subordinated if an authority intervenes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NIVEAUX DE CERTIFICATION -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>What level of certification is for what purpose?</h2>
+        <p>As a rule: for internal use or a private third party, the Corrext certification is sufficient; the Swiss authorities and courts require notarial certification; the foreign authorities of a State party to the Hague Convention require notarized and apostilized certification. In any case, the recipient authority remains the judge of the required level: check with it before ordering.</p>
+        <a href="#demo" class="feat-link">Choose the level in the command path <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg><span><b>Standard Corrext certification.</b> Certificate signed and stamped by Corrext: internal usage, partners and private third parties.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>notarized certification.</b> Authentication by a Swiss notary: Swiss authorities and courts, as a rule.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Notarized &amp; Apostilled Certification.</b> Apostille of the State Chancellery, Hague Convention of 5 October 1961: Foreign authorities of States Parties.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTILS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Other Corrext tools</h2>
+    <div class="siblings-row">
+      <a href="corrext-traduction-texte-et-document.html"><b>text translation and document</b> <span>Instant translation of text and files, engine alternatives, five-style rewording.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="corrext-gestion-de-projet.html"><b>Project management</b> <span>three-stage project, internal or external three-level review, snapshot quotations and delay.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="corrext-chnell.html"><b>fast lookup CHnell</b> <span>the concordance of Swiss law: official sources, 30 domains, your own resources.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Frequently asked questions about certified extracts</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is apostille?</summary>
+        <p>Apostille is the formality provided for in the Hague Convention of 5 October 1961: it authenticates the signature of the notary who certified the translation, so that the document may be recognized in the other States parties to the Convention. Upon auszug-hr.ch, it is issued by the State Chancellery at the notarized &amp; Apostilled certification level.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What level of certification does a foreign authority require?</summary>
+        <p>It depends on the authority and the country. As a general rule, an authority of a State party to the Hague Convention requests a notarized and certified translation; a Swiss authority usually limits itself to notarial certification; internal usage or a private third party often accepts Corrext certification. Check with the recipient authority before placing an order: it determines the requirement.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does a certified translation take?</summary>
+        <p>The deadline depends on the level of certification, the target language and the option chosen: standard or express, for Switzerland or the international community. It is selected at the fourth stage of the command and appears before validation. Notarized or subordinated certification adds the crossing by the notary, then by the State Chancellery.</p>
+      </details>
+      <details class="faq-item">
+        <summary>In which languages can the extract be translated?</summary>
+        <p>More than 30 target languages. At the first stage, the selector offers German, French, Italian, English and Spanish at the top of the list, followed by other languages available on the platform.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is the service part of Corrext?</summary>
+        <p>Yes. auszug-hr.ch is the online Corrext service dedicated to commercial register extracts, which has also been accessible since the reception of the platform. The translations are carried out by legal translators specializing in corporate safekeeping, assisted by the language models that the Corrext team of legal experts and data scientists led to extracts from the Swiss commercial Register.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How can I order a certified translation of an extract?</summary>
+        <p>In four steps, entirely online on the auszug-hr.ch: search the company by name or IDE and choose the target language; select the certification level. choose delivery, by email or with a paper copy by post or courier; set a standard or express deadline for Switzerland or the international community. Then validate with order a translation, or contact the team via Contact us.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>An extract to be translated and certified?</h2>
+      <p>A demo of Corrext with an expert familiar with Swiss law or a direct order on the online service: the certification level is chosen with just a few clicks.</p>
+      <div class="final-cta-btns">
+        <a href="contact.html" class="btn btn-blue">
+          Ask for a demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://auszug-hr.ch" rel="noopener" class="btn-outline">order on auszug-hr.ch</a>
+      </div>
+      <p class="micro">Custom demo · in French, German, Italian or English · accommodation 100% Swiss</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+/* Démo · parcours de commande auszug-hr.ch en quatre étapes (simulation, aucune donnée transmise) */
+(function(){
+  'use strict';
+  var $=function(id){return document.getElementById(id);};
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var state={step:1,mode:'name',company:null,tgt:'German',level:'',delivery:'',timeline:'',country:'Switzerland'};
+  var stepEls=$('cxrSteps').querySelectorAll('li');
+  var panels=[$('cxrP1'),$('cxrP2'),$('cxrP3'),$('cxrP4')];
+  var prev=$('cxrPrev'),next=$('cxrNext'),order=$('cxrOrder'),contact=$('cxrContact'),done=$('cxrDone');
+  var q=$('cxrQ'),qLbl=$('cxrQLbl'),shim=$('cxrShim'),res=$('cxrRes'),tgt=$('cxrTgt');
+  var addr=$('cxrAddr'),country=$('cxrCountry');
+  var timer=null;
+
+  /* Le bouton Next ne s'active que lorsque l'étape courante est complète */
+  function canNext(){
+    if(state.step===1)return !!state.company;
+    if(state.step===2)return !!state.level;
+    if(state.step===3)return !!state.delivery;
+    return false;
+  }
+  function text(id,v){$(id).textContent=v;}
+  function summary(){
+    text('cxrSumCo',state.company?state.company.name+' · UID '+state.company.uid:'');
+    text('cxrSumTgt',state.tgt);
+    text('cxrSumLvl',state.level);
+    text('cxrSumDel',state.delivery);
+    text('cxrSumTl',state.timeline||'To be chosen');
+    text('cxrSumCty',state.country);
+  }
+  function render(focus){
+    var last=state.step===4;
+    for(var i=0;i<4;i++){
+      var n=i+1,li=stepEls[i];
+      li.classList.toggle('cur',n===state.step);
+      li.classList.toggle('done',n<state.step);
+      if(n===state.step)li.setAttribute('aria-current','step');else li.removeAttribute('aria-current');
+      panels[i].classList.toggle('on',n===state.step);
+    }
+    prev.disabled=state.step===1;
+    next.hidden=last;order.hidden=!last;contact.hidden=!last;
+    next.disabled=!canNext();
+    order.disabled=!state.timeline;
+    if(last)summary();
+    if(focus){try{panels[state.step-1].focus({preventScroll:true});}catch(e){panels[state.step-1].focus();}}
+  }
+  function go(n){state.step=Math.max(1,Math.min(4,n));done.classList.remove('on');render(true);}
+  prev.addEventListener('click',function(){go(state.step-1);});
+  next.addEventListener('click',function(){if(canNext())go(state.step+1);});
+
+  /* Étape 1 · recherche par nom ou IDE, résultat de démonstration, sélection */
+  var segBtns=$('cxrSeg').querySelectorAll('button');
+  function resetSearch(){
+    if(timer){clearTimeout(timer);timer=null;}
+    shim.classList.remove('on');res.classList.remove('on');res.classList.remove('sel');
+    state.company=null;tgt.disabled=true;render(false);
+  }
+  Array.prototype.forEach.call(segBtns,function(b){
+    b.addEventListener('click',function(){
+      var mode=b.getAttribute('data-mode');
+      if(mode===state.mode)return;
+      state.mode=mode;
+      Array.prototype.forEach.call(segBtns,function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on?'true':'false');});
+      qLbl.textContent=mode==='uid'?'Company UID':'Company Name';
+      q.value=mode==='uid'?'CHE-000.000.000':'Muster AG';
+      resetSearch();
+    });
+  });
+  $('cxrSearch').addEventListener('click',function(){
+    resetSearch();
+    shim.classList.add('on');
+    timer=setTimeout(function(){shim.classList.remove('on');res.classList.add('on');timer=null;},reduce?250:900);
+  });
+  q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();$('cxrSearch').click();}});
+  $('cxrSelect').addEventListener('click',function(){
+    state.company={name:'Muster AG',uid:'CHE-000.000.000'};
+    res.classList.add('sel');tgt.disabled=false;render(false);
+    try{tgt.focus({preventScroll:true});}catch(e){}
+  });
+  tgt.addEventListener('change',function(){state.tgt=tgt.options[tgt.selectedIndex].text;});
+
+  /* Cartes radio : clic, Entrée, Espace et flèches */
+  function radioGroup(id,onPick){
+    var items=$(id).querySelectorAll('[role="radio"]');
+    function pick(el){
+      Array.prototype.forEach.call(items,function(x){x.setAttribute('aria-checked',x===el?'true':'false');});
+      onPick(el.getAttribute('data-value'));
+      render(false);
+    }
+    Array.prototype.forEach.call(items,function(el,i){
+      el.addEventListener('click',function(){pick(el);});
+      el.addEventListener('keydown',function(e){
+        var d=0;
+        if(e.key==='ArrowRight'||e.key==='ArrowDown')d=1;
+        else if(e.key==='ArrowLeft'||e.key==='ArrowUp')d=-1;
+        if(!d)return;
+        e.preventDefault();
+        var t=items[(i+d+items.length)%items.length];
+        t.focus();pick(t);
+      });
+    });
+  }
+  radioGroup('cxrLevels',function(v){state.level=v;});
+  radioGroup('cxrDeliv',function(v){state.delivery=v;addr.classList.toggle('on',/paper/i.test(v));});
+  radioGroup('cxrTime',function(v){state.timeline=v;});
+  country.addEventListener('change',function(){state.country=country.value;summary();});
+
+  /* Étape 4 · la commande n'est jamais passée */
+  order.addEventListener('click',function(){done.classList.add('on');});
+
+  render(false);
+})();
+</script>
