@@ -82,11 +82,17 @@ def _autour(t, c):
 
 def _plat(texte):
     """Texte d'un segment sans marqueurs {n} ni jetons {{…}}."""
-    return " ".join(_MARQ.sub("", S.JETON.sub(" ", texte)).split())
+    # un marqueur peut venir d'un paragraphe (<p> dans une chaîne JSON) : il sépare les mots
+    return " ".join(_MARQ.sub(" ", S.JETON.sub(" ", texte)).split())
+
+
+_BLOC = re.compile(r"</?(?:p|div|li|ul|ol|h[1-6]|br|td|th|tr|table|section|article|header|footer|nav|dt|dd|dl|"
+                   r"blockquote|figcaption|summary|details|aside|main)\b[^>]*>", re.I)
 
 
 def _texte_fragment(fragment):
-    return _plat(html.unescape(re.sub(r"<[^>]+>", "", fragment)))
+    # une balise de bloc sépare deux mots ; une balise en ligne ne sépare rien (« Corr<b>ext</b> »)
+    return _plat(html.unescape(re.sub(r"<[^>]+>", "", _BLOC.sub(" ", fragment))))
 
 
 def _lieu(chemin, racine=None):
@@ -225,8 +231,12 @@ def _termes(paires, termes, fichier):
     """paires : [(lieu, texte FR, texte traduit)] de segments correspondants."""
     out = []
     for fr, eq in termes:
-        motif = re.compile(r"(?<![^\W\d_])" + r"[sx]?\s+".join(re.escape(m) for m in fr.split()) + r"[sx]?(?![^\W\d_])",
-                           re.I)
+        if fr.isupper() and len(fr) <= 6:
+            # sigle (CO, PA, FF) : mot entier, casse exacte, sans pluriel
+            motif = re.compile(r"(?<![^\W\d_])" + re.escape(fr) + r"(?![^\W\d_])")
+        else:
+            motif = re.compile(r"(?<![^\W\d_])" + r"[sx]?\s+".join(re.escape(m) for m in fr.split()) + r"[sx]?(?![^\W\d_])",
+                               re.I)
         mots = _MOT.findall(eq)
         prefixes = [m[:5].casefold() for m in ([m for m in mots if len(m) >= 3] or mots)]
         for lieu, a, b in paires:
