@@ -214,7 +214,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
     <div class="cx" id="cx" aria-label="Démonstration de l'interface Corrext, outil Gestion de projet">
       <div class="cx-top">
         <span class="cx-logo"><img src="{{ROOT}}assets/img/corrext-logo.svg" alt="Corrext" class="cx-brand"></span>
-        <span class="home">Home</span>
+        <span class="home">Accueil</span>
         <span class="grow"></span>
         <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
         <span class="cx-avatar" aria-hidden="true">AM</span>
@@ -222,85 +222,85 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 
       <!-- Stepper -->
       <ol class="cxp-stepper" aria-label="Étapes du projet">
-        <li class="on" aria-current="step"><span class="n"><span class="num">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Set-up</span></li>
-        <li><span class="n"><span class="num">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">File overview</span></li>
-        <li><span class="n"><span class="num">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Quotes</span></li>
+        <li class="on" aria-current="step"><span class="n"><span class="num">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Paramétrage</span></li>
+        <li><span class="n"><span class="num">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Fichiers</span></li>
+        <li><span class="n"><span class="num">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="l">Devis</span></li>
       </ol>
 
       <div class="cxp-body">
 
         <!-- Étape 1 · Set-up -->
         <div class="cxp-step on" id="cxpStep1">
-          <p class="cxp-title" tabindex="-1">Create a new project</p>
-          <p class="cxp-sub">Name your translation project and choose the target languages for your documents.</p>
+          <p class="cxp-title" tabindex="-1">Créer un projet</p>
+          <p class="cxp-sub">Nommez votre projet de traduction et choisissez les langues cibles de vos documents.</p>
 
           <div class="cxp-field">
             <div class="cxp-field-head">
-              <label for="cxpName">Project name</label>
-              <button type="button" class="cxp-switch" id="cxpDefault" aria-pressed="true"><i aria-hidden="true"></i> Use default name</button>
+              <label for="cxpName">Nom du projet</label>
+              <button type="button" class="cxp-switch" id="cxpDefault" aria-pressed="true"><i aria-hidden="true"></i> Utiliser le nom par défaut</button>
             </div>
             <input type="text" class="cxp-input" id="cxpName" value="2026-09-14_Organisation_Utilisateur" readonly>
           </div>
 
-          <p class="cxp-q" id="cxpConfQ">How confidential are the project and the uploaded files?</p>
+          <p class="cxp-q" id="cxpConfQ">Quel niveau de confidentialité pour le projet et les fichiers déposés ?</p>
           <div class="cxp-conf" role="radiogroup" aria-labelledby="cxpConfQ">
             <button type="button" class="cxp-card on" role="radio" aria-checked="true" data-conf="standard">
-              <b>Standard confidentiality</b>
-              <span>The data will be processed either inside or outside Switzerland according to your choice of machine translation engine. Projects will be saved on Corrext's Swiss servers and can be used exclusively by you as translation memory for future projects.</span>
+              <b>Confidentialité standard</b>
+              <span>Les données sont traitées en Suisse ou à l'étranger selon le moteur de traduction choisi. Les projets sont enregistrés sur les serveurs suisses de Corrext et peuvent vous servir, à vous seul, de mémoire de traduction pour vos futurs projets.</span>
             </button>
             <button type="button" class="cxp-card" role="radio" aria-checked="false" data-conf="sensitive">
-              <b>Highly sensitive content</b>
-              <span>The data will be stored and processed exclusively in Switzerland. Translated material will not be used in translation memories for future projects. This option is currently available for the following languages: EN, FR, IT, DE.</span>
+              <b>Contenu hautement sensible</b>
+              <span>Les données sont stockées et traitées exclusivement en Suisse. Les contenus traduits ne sont pas utilisés dans les mémoires de traduction des projets futurs. Cette option est disponible pour les langues suivantes : EN, FR, IT, DE.</span>
             </button>
           </div>
 
-          <p class="cxp-q">Translation target languages</p>
+          <p class="cxp-q">Langues cibles de la traduction</p>
           <div class="cxp-langwrap">
             <div class="cx-chips" id="cxpLangChips" hidden></div>
-            <button type="button" class="cx-btn ghost cxp-langbtn" id="cxpLangBtn" aria-expanded="false" aria-controls="cxpLangPop">Select target languages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <button type="button" class="cx-btn ghost cxp-langbtn" id="cxpLangBtn" aria-expanded="false" aria-controls="cxpLangPop">Choisir les langues cibles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
             <div class="cxp-pop" id="cxpLangPop" hidden>
-              <input type="search" class="cxp-input" id="cxpLangSearch" placeholder="Search" aria-label="Search languages" autocomplete="off">
+              <input type="search" class="cxp-input" id="cxpLangSearch" placeholder="Rechercher" aria-label="Rechercher une langue" autocomplete="off">
               <ul class="cxp-langlist" id="cxpLangList">
-                <li><label><input type="checkbox" value="German"> German</label></li>
-                <li><label><input type="checkbox" value="French"> French</label></li>
-                <li><label><input type="checkbox" value="Italian"> Italian</label></li>
-                <li><label><input type="checkbox" value="English"> English</label></li>
-                <li><label><input type="checkbox" value="Czech"> Czech</label></li>
-                <li><label><input type="checkbox" value="Hungarian"> Hungarian</label></li>
-                <li><label><input type="checkbox" value="Arabic"> Arabic</label></li>
-                <li><label><input type="checkbox" value="Bulgarian"> Bulgarian</label></li>
-                <li><label><input type="checkbox" value="Danish"> Danish</label></li>
-                <li><label><input type="checkbox" value="Greek"> Greek</label></li>
-                <li><label><input type="checkbox" value="Spanish"> Spanish</label></li>
-                <li><label><input type="checkbox" value="Dutch"> Dutch</label></li>
+                <li><label><input type="checkbox" value="Allemand"> Allemand</label></li>
+                <li><label><input type="checkbox" value="Français"> Français</label></li>
+                <li><label><input type="checkbox" value="Italien"> Italien</label></li>
+                <li><label><input type="checkbox" value="Anglais"> Anglais</label></li>
+                <li><label><input type="checkbox" value="Tchèque"> Tchèque</label></li>
+                <li><label><input type="checkbox" value="Hongrois"> Hongrois</label></li>
+                <li><label><input type="checkbox" value="Arabe"> Arabe</label></li>
+                <li><label><input type="checkbox" value="Bulgare"> Bulgare</label></li>
+                <li><label><input type="checkbox" value="Danois"> Danois</label></li>
+                <li><label><input type="checkbox" value="Grec"> Grec</label></li>
+                <li><label><input type="checkbox" value="Espagnol"> Espagnol</label></li>
+                <li><label><input type="checkbox" value="Néerlandais"> Néerlandais</label></li>
               </ul>
             </div>
           </div>
-          <p class="cx-note">Démo : choisissez au moins une langue cible pour activer Next.</p>
+          <p class="cx-note">Démo : choisissez au moins une langue cible pour activer Suivant.</p>
         </div>
 
         <!-- Étape 2 · File overview -->
         <div class="cxp-step" id="cxpStep2">
-          <p class="cxp-title" tabindex="-1">File overview</p>
-          <p class="cxp-sub">Upload the documents to translate. Corrext analyses each file before the quote.</p>
+          <p class="cxp-title" tabindex="-1">Fichiers</p>
+          <p class="cxp-sub">Déposez les documents à traduire. Corrext analyse chaque fichier avant le devis.</p>
           <button type="button" class="cx-drop" id="cxpDrop">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3-3 3 3"/></svg></span>
-            <span class="t"><b>Click to upload</b> or drag and drop files</span>
-            <span class="s">Supported file types: .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx<br>When available, preferably upload the original format (.docx or .xlsx rather than .pdf)<br>Max file size: 50MB</span>
+            <span class="t"><b>Cliquez pour déposer</b> ou glissez-déposez vos fichiers</span>
+            <span class="s">Formats acceptés : .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx<br>Si possible, déposez le format d'origine (.docx ou .xlsx plutôt que .pdf)<br>Taille maximale : 50 Mo</span>
           </button>
           <div class="cxp-filecard" id="cxpFileCard" hidden>
             <div class="cx-file show">
               <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
-              <span class="fm"><span class="fn">Contrat_assurance.docx</span><span class="fs" id="cxpFileSub" aria-live="polite">Analysing…</span><span class="bar"><i id="cxpFileBar"></i></span></span>
+              <span class="fm"><span class="fn">Contrat_assurance.docx</span><span class="fs" id="cxpFileSub" aria-live="polite">Analyse en cours…</span><span class="bar"><i id="cxpFileBar"></i></span></span>
               <span class="cxp-file-act">
                 <button type="button" class="cxp-ic" disabled aria-label="Télécharger Contrat_assurance.docx (indisponible en démo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><path d="M12 15V3"/></svg></button>
                 <button type="button" class="cxp-ic" id="cxpFileDel" aria-label="Supprimer Contrat_assurance.docx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
               </span>
             </div>
             <div class="cxp-filemeta" id="cxpFileMeta" hidden>
-              <span class="pg"><b>2.5</b> standard pages</span>
-              <label>Detected language <select class="cx-sel" id="cxpFileLang"><option selected>French</option><option>German</option><option>Italian</option><option>English</option></select></label>
-              <label>Detected category <select class="cx-sel" id="cxpFileCat"><option selected>Private Insurance</option><option>Banking &amp; Finance</option><option>Company Law</option><option>Litigation &amp; Enforcement</option><option>M&amp;A</option><option>Tax &amp; Customs</option><option>Other</option></select></label>
+              <span class="pg"><b>2,5</b> pages standard</span>
+              <label>Langue détectée <select class="cx-sel" id="cxpFileLang"><option selected>Français</option><option>Allemand</option><option>Italien</option><option>Anglais</option></select></label>
+              <label>Catégorie détectée <select class="cx-sel" id="cxpFileCat"><option selected>Assurance privée</option><option>Banque et finance</option><option>Droit des sociétés</option><option>Contentieux et exécution</option><option>Fusions et acquisitions</option><option>Fiscalité et douanes</option><option>Autre</option></select></label>
             </div>
           </div>
           <p class="cx-note">Démo : le dépôt est simulé, aucun fichier n'est envoyé.</p>
@@ -308,29 +308,29 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 
         <!-- Étape 3 · Quotes -->
         <div class="cxp-step" id="cxpStep3">
-          <p class="cxp-title" tabindex="-1">Quotes</p>
-          <p class="cxp-sub">Choose who reviews the machine translation, then get the estimated time and the quote.</p>
+          <p class="cxp-title" tabindex="-1">Devis</p>
+          <p class="cxp-sub">Choisissez qui relit la traduction automatique, puis obtenez le délai estimé et le devis.</p>
 
           <div class="cxp-qtabs" role="tablist" aria-label="Type de devis">
-            <button type="button" class="cxp-qtab on" role="tab" id="cxpTabInt" aria-selected="true" aria-controls="cxpPanInt"><b>Internal review</b><span>Internal review time: 1-2 hours</span></button>
-            <button type="button" class="cxp-qtab" role="tab" id="cxpTabCus" aria-selected="false" aria-controls="cxpPanCus" tabindex="-1"><b>Custom workflow</b><span>External review, due date and priority order</span></button>
+            <button type="button" class="cxp-qtab on" role="tab" id="cxpTabInt" aria-selected="true" aria-controls="cxpPanInt"><b>Relecture interne</b><span>Durée de la relecture interne : 1 à 2 heures</span></button>
+            <button type="button" class="cxp-qtab" role="tab" id="cxpTabCus" aria-selected="false" aria-controls="cxpPanCus" tabindex="-1"><b>Parcours personnalisé</b><span>Relecture externe, échéance et ordre de priorité</span></button>
           </div>
 
           <!-- Onglet Internal review -->
           <div class="cxp-qpanel" id="cxpPanInt" role="tabpanel" aria-labelledby="cxpTabInt">
             <div class="cxp-qgrid">
               <div class="cxp-block">
-                <p class="cx-h4">Internal review specifications</p>
+                <p class="cx-h4">Paramètres de la relecture interne</p>
                 <div class="cxp-spec">
-                  <label>Number of Standard Pages for internal review <input type="text" class="cxp-input" value="2.5" readonly></label>
-                  <label>Reviewing price per Standard Page charged by you <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
-                  <label>Approximate review price per hour <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
+                  <label>Nombre de pages standard en relecture interne <input type="text" class="cxp-input" value="2,5" readonly></label>
+                  <label>Prix de relecture par page standard, facturé par vous <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
+                  <label>Prix horaire approximatif de la relecture <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
                 </div>
               </div>
-              <aside class="cxp-est" aria-label="Estimated time">
-                <p class="cx-h4">Estimated time</p>
-                <dl><div class="tot"><dt>Review</dt><dd>1-2 hours</dd></div></dl>
-                <button type="button" class="cx-btn" id="cxpCreate">Create project</button>
+              <aside class="cxp-est" aria-label="Délai estimé">
+                <p class="cx-h4">Délai estimé</p>
+                <dl><div class="tot"><dt>Relecture</dt><dd>1 à 2 heures</dd></div></dl>
+                <button type="button" class="cx-btn" id="cxpCreate">Créer le projet</button>
                 <p class="cxp-banner" id="cxpCreateMsg" role="status" hidden>Démo : aucun projet n'est créé dans l'application.</p>
               </aside>
             </div>
@@ -341,14 +341,14 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
             <div class="cxp-qgrid">
               <div>
                 <div class="cxp-block">
-                  <p class="cx-h4">External review specifications</p>
-                  <label class="cxp-lbl" for="cxpDue">Due date</label>
+                  <p class="cx-h4">Paramètres de la relecture externe</p>
+                  <label class="cxp-lbl" for="cxpDue">Échéance</label>
                   <input type="date" class="cxp-input cxp-due" id="cxpDue" value="2026-09-24" min="2026-09-15" style="max-width:220px;margin-top:5px">
-                  <br><a href="contact.html" class="cxp-link">Contact us for an earlier delivery date</a>
-                  <p class="cxp-q" id="cxpPrioQ">Do you want to specify a priority order for processing your files?</p>
+                  <br><a href="contact.html" class="cxp-link">Contactez-nous pour une livraison plus rapide</a>
+                  <p class="cxp-q" id="cxpPrioQ">Souhaitez-vous fixer un ordre de priorité pour le traitement de vos fichiers ?</p>
                   <div class="cxp-yn" role="group" aria-labelledby="cxpPrioQ">
-                    <button type="button" class="cxp-yn-btn" aria-pressed="false" data-yn="yes">Yes</button>
-                    <button type="button" class="cxp-yn-btn on" aria-pressed="true" data-yn="no">No</button>
+                    <button type="button" class="cxp-yn-btn" aria-pressed="false" data-yn="yes">Oui</button>
+                    <button type="button" class="cxp-yn-btn on" aria-pressed="true" data-yn="no">Non</button>
                   </div>
                 </div>
                 <div class="cxp-tablewrap">
@@ -356,11 +356,11 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
                     <table class="cxp-table">
                       <thead>
                         <tr>
-                          <th scope="col"><label><input type="checkbox" id="cxpSelAll"> Select all</label></th>
-                          <th scope="col">File</th>
-                          <th scope="col">Languages</th>
-                          <th scope="col">Review</th>
-                          <th scope="col">Review level <button type="button" class="cxp-infobtn" id="cxpInfoBtn" aria-expanded="false" aria-controls="cxpInfo" aria-label="Définition des niveaux de relecture"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></button></th>
+                          <th scope="col"><label><input type="checkbox" id="cxpSelAll"> Tout sélectionner</label></th>
+                          <th scope="col">Fichier</th>
+                          <th scope="col">Langues</th>
+                          <th scope="col">Relecture</th>
+                          <th scope="col">Niveau de relecture <button type="button" class="cxp-infobtn" id="cxpInfoBtn" aria-expanded="false" aria-controls="cxpInfo" aria-label="Définition des niveaux de relecture"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></button></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -368,32 +368,32 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
                           <td><input type="checkbox" id="cxpRowBox" aria-label="Sélectionner Contrat_assurance.docx"></td>
                           <td class="fn">Contrat_assurance.docx</td>
                           <td>FR → DE</td>
-                          <td><select class="cx-sel" id="cxpRev" aria-label="Review"><option selected>External</option><option>Internal</option></select></td>
-                          <td><select class="cx-sel" id="cxpLevel" aria-label="Review level"><option value="" selected>Choose review</option><option value="light">Light review (Legal translator)</option><option value="full">Full review (Legal translator)</option><option value="double">Double review &amp; certified translation</option></select></td>
+                          <td><select class="cx-sel" id="cxpRev" aria-label="Relecture"><option selected>Externe</option><option>Interne</option></select></td>
+                          <td><select class="cx-sel" id="cxpLevel" aria-label="Niveau de relecture"><option value="" selected>Choisir la relecture</option><option value="light">Relecture légère (traducteur juridique)</option><option value="full">Relecture complète (traducteur juridique)</option><option value="double">Double relecture et traduction certifiée</option></select></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   <div class="cxp-info" id="cxpInfo" hidden>
                     <dl>
-                      <div><dt>Light review (Legal translator)</dt><dd>The output of the machine translation is reviewed by a translator to correct any significant errors, omissions or mistranslations. The result is a complete and semantically accurate translation of the document, recommended for understanding and internal transmission.</dd></div>
-                      <div><dt>Full review (Legal translator)</dt><dd>The output of the machine translation is reviewed by a translator, adapted and modified, with additional focus on consistency, idiomatic wording, style and tone. This ensures a good legal translation of your documents, ready to be shared with third parties.</dd></div>
-                      <div><dt>Double review &amp; certified translation</dt><dd>Full review of the documents by two qualified legal translators. A certificate signed by the specialized translation agency in charge of the project attests to the accuracy and impartiality of the translation. Suitable for documents intended for legal use, publication, or submission to authorities.</dd></div>
+                      <div><dt>Relecture légère (traducteur juridique)</dt><dd>La traduction automatique est relue par un traducteur, qui corrige les erreurs significatives, les omissions et les contresens. Le résultat est une traduction complète et fidèle au sens, recommandée pour comprendre le document et le transmettre en interne.</dd></div>
+                      <div><dt>Relecture complète (traducteur juridique)</dt><dd>La traduction automatique est relue par un traducteur, adaptée et retravaillée, avec une attention particulière à la cohérence, aux tournures idiomatiques, au style et au ton. Vous obtenez une bonne traduction juridique de vos documents, prête à être transmise à des tiers.</dd></div>
+                      <div><dt>Double relecture et traduction certifiée</dt><dd>Relecture complète des documents par deux traducteurs juridiques qualifiés. Un certificat signé par l'agence de traduction spécialisée en charge du projet atteste l'exactitude et l'impartialité de la traduction. Adaptée aux documents destinés à un usage légal, à la publication ou aux autorités.</dd></div>
                     </dl>
                   </div>
                   <p class="cx-note">Démo : les montants du devis ne sont pas affichés.</p>
                 </div>
               </div>
-              <aside class="cxp-est" aria-label="Estimated time">
-                <p class="cx-h4">Estimated time</p>
+              <aside class="cxp-est" aria-label="Délai estimé">
+                <p class="cx-h4">Délai estimé</p>
                 <dl aria-live="polite">
-                  <div><dt>Preparation</dt><dd id="cxpEstPrep">-</dd></div>
-                  <div><dt>Internal review</dt><dd id="cxpEstInt">-</dd></div>
-                  <div><dt>External review</dt><dd id="cxpEstExt">-</dd></div>
-                  <div class="tot"><dt>Estimated review time</dt><dd id="cxpEstTot">-</dd></div>
+                  <div><dt>Préparation</dt><dd id="cxpEstPrep">-</dd></div>
+                  <div><dt>Relecture interne</dt><dd id="cxpEstInt">-</dd></div>
+                  <div><dt>Relecture externe</dt><dd id="cxpEstExt">-</dd></div>
+                  <div class="tot"><dt>Durée estimée de la relecture</dt><dd id="cxpEstTot">-</dd></div>
                 </dl>
-                <p class="cx-note" id="cxpEstNote" hidden>Démo : seul le délai du niveau Full review a été relevé ; les autres délais s'affichent dans l'application.</p>
-                <button type="button" class="cx-btn" id="cxpQuote" disabled>Generate quote</button>
+                <p class="cx-note" id="cxpEstNote" hidden>Démo : seul le délai du niveau Relecture complète a été relevé ; les autres délais s'affichent dans l'application.</p>
+                <button type="button" class="cx-btn" id="cxpQuote" disabled>Générer le devis</button>
                 <p class="cxp-banner" id="cxpQuoteMsg" role="status" hidden>Démo : aucun devis n'est généré ni envoyé.</p>
               </aside>
             </div>
@@ -404,14 +404,14 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 
       <!-- Pied du tunnel -->
       <div class="cxp-foot">
-        <button type="button" class="cxp-gear" disabled aria-label="Settings (non reproduit dans la démo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+        <button type="button" class="cxp-gear" disabled aria-label="Réglages (non reproduit dans la démo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
         <span class="grow"></span>
-        <button type="button" class="cx-btn ghost" id="cxpPrev" disabled>Previous</button>
-        <button type="button" class="cx-btn" id="cxpNext" disabled>Next</button>
+        <button type="button" class="cx-btn ghost" id="cxpPrev" disabled>Précédent</button>
+        <button type="button" class="cx-btn" id="cxpNext" disabled>Suivant</button>
       </div>
     </div>
 
-    <p class="cx-caption">Interface reproduite d'après l'application Corrext · données de démonstration · textes des étapes et niveaux de relecture tels qu'affichés dans l'application.</p>
+    <p class="cx-caption">Interface reproduite d'après l'application Corrext, libellés traduits de l'anglais · données de démonstration · étapes et niveaux de relecture tels qu'affichés dans l'application.</p>
   </div>
 </section>
 
@@ -633,7 +633,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
   var drop=$('cxpDrop'),card=$('cxpFileCard'),bar=$('cxpFileBar'),sub=$('cxpFileSub'),meta=$('cxpFileMeta'),del=$('cxpFileDel'),tm;
   drop.addEventListener('click',function(){
     if(state.file||drop.disabled){return;}
-    drop.disabled=true;card.hidden=false;meta.hidden=true;sub.hidden=false;sub.textContent='Analysing…';
+    drop.disabled=true;card.hidden=false;meta.hidden=true;sub.hidden=false;sub.textContent='Analyse en cours…';
     bar.style.transition='none';bar.style.transform='scaleX(0)';
     void bar.offsetWidth;
     bar.style.transition='';
@@ -680,8 +680,8 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
     if(!lvl){setEst({prep:'-',inter:'-',ext:'-',tot:'-'});estNote.hidden=true;return;}
     for(var k in dd){if(dd.hasOwnProperty(k)){dd[k].innerHTML='<span class="cx-shim"></span>';}}
     et=setTimeout(function(){
-      if(r==='External'&&lvl==='full'&&d==='2026-09-24'){
-        setEst({prep:'1 day',inter:'0 hours',ext:'1 day',tot:'1 day'});estNote.hidden=true;
+      if(r==='Externe'&&lvl==='full'&&d==='2026-09-24'){
+        setEst({prep:'1 jour',inter:'0 heure',ext:'1 jour',tot:'1 jour'});estNote.hidden=true;
       }else{
         setEst({prep:'à calculer',inter:'à calculer',ext:'à calculer',tot:'à calculer'});estNote.hidden=false;
       }
