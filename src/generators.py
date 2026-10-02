@@ -1119,7 +1119,7 @@ def gen_actualites(src):
         f'''<section class="ar-head">
   <div class="container"><div class="ar-col">
     <p class="bl-k">Actualités</p>
-    <h1>Toutes les actualités de Neur.on depuis {annees[-1]}</h1>
+    <h1>Toutes les actualités de Neur.on</h1>
     <p class="ac-lead">Prix, conférences, partenariats, presse et recherche : {len(data)} actualités, de la plus récente à la plus ancienne, dont {len(articles)} à lire en article complet dans le <a href="{{{{ROOT}}}}fr/ressources/blog/">blog</a>.</p>
     <nav class="ac-nav" aria-label="Aller à une année">{nav}</nav>
   </div></div>
