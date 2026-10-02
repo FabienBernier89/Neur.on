@@ -1,7 +1,7 @@
 <!--page
-title: Editor di rilettura Corrext: tool di TAO giuridico svizzero
-description: Rileggete le traduzioni frase per frase in Corrext. Ogni correzione si aggiunge alla memoria, ospitata in Svizzera, e serve ai vostri progetti successivi.
-short: Editor di riproduzione
+title: Revisione di traduzioni giuridiche: l'editor di Corrext
+description: Rivedete le vostre traduzioni frase per frase in Corrext. Ogni correzione confluisce nella vostra memoria, ospitata in Svizzera, e serve ai progetti successivi.
+short: Editor di revisione
 nav: corrext
 assets: []
 canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
@@ -221,17 +221,17 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   <div class="container">
     <div class="thero-grid">
       <div>
-        <h1><em>Editore di rilettura.</em> Le correzioni vengono utilizzate per le traduzioni successive</h1>
-        <p class="lead">L’editor di rilettura è lo strumento di traduzione assistita da computer (Tao) integrato in Corrext. Presenta il suo documento frase per frase: l’originale a sinistra, la traduzione a destra. Corregge e poi conferma. Ogni correzione è conservata in memoria e ripresa nelle traduzioni successive.</p>
+        <h1><em>Editor di revisione.</em> Le vostre correzioni servono alle prossime traduzioni</h1>
+        <p class="lead">L'editor di revisione è lo strumento CAT (traduzione assistita dal computer) integrato in Corrext. Presenta il vostro documento frase per frase: l'originale a sinistra, la traduzione a destra. Correggete, poi confermate. Ogni correzione viene salvata nella memoria e ripresa nelle vostre traduzioni successive.</p>
         <div class="thero-cta">
           <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
             Richiedere una demo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="#demo" class="btn btn-ghost">prova l’editore</a>
+          <a href="#demo" class="btn btn-ghost">Provare l'editor</a>
         </div>
       </div>
-      <!-- visuel:debut --><figure class="tvis"><svg class="tvis-svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Illustrazione: un editor di rilettura in due colonne, segmenti confermati uno a uno, segmento in corso con proposte di riformulazione" focusable="false"><style>@media (prefers-reduced-motion:reduce){.tvis-svg .anim{display:none}}</style><defs>
+      <!-- visuel:debut --><figure class="tvis"><svg class="tvis-svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Illustrazione: un editor di revisione a due colonne, segmenti confermati uno per uno, segmento in corso con proposte di riformulazione" focusable="false"><style>@media (prefers-reduced-motion:reduce){.tvis-svg .anim{display:none}}</style><defs>
 <linearGradient id="veg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
 <linearGradient id="vea" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#96BCFF"/><stop offset="1" stop-color="#317BFF"/></linearGradient>
 <radialGradient id="veh"><stop offset="0" stop-color="#317BFF" stop-opacity=".55"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
@@ -245,11 +245,11 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 <!-- DÉMO : l'éditeur dans le cadre Corrext, débordant sous le hero -->
 <section class="tdemo demo" id="demo" style="padding:0;background:transparent">
   <div class="container">
-    <div class="cx" id="cx" aria-label="Dimostrazione dell’interfaccia Corrext, editor di rilettura">
+    <div class="cx" id="cx" aria-label="Dimostrazione dell'interfaccia Corrext, editor di revisione">
       <div class="cx-top">
         <span class="cx-logo"><img src="{{ROOT}}assets/img/corrext-logo.svg" alt="Corrext" class="cx-brand"></span>
         <span class="home">Home</span>
-<span class="grow"></span>
+        <span class="grow"></span>
         <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
         <span class="cx-avatar" aria-hidden="true">AM</span>
       </div>
@@ -259,68 +259,73 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
         <!-- Éditeur : barre d'outils et tableau des segments -->
         <div class="cxe-ed">
           <div class="cxe-tb">
-            <span class="cxe-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>Back </span> <span class="cxe-tools" aria-hidden="true"><span class="cxe-tag">&lt;tag&gt;</span> <span class="cxe-tag">&lt;/tag&gt;</span> <span class="cxe-tag">&lt;tag/&gt;</span> <span class="cxe-f b">B</span> <span class="cxe-f i">I</span> <span class="cxe-f u">U</span></span> <span class="cxe-sep" aria-hidden="true"></span>
-            <button type="button" class="cxe-copy" id="cxeCopy" aria-label="Copy Source: copiare la fonte nella traduzione del segmento scelto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5v14"/><path d="M8 12h12M15 7l5 5-5 5"/></svg></button>
-            <span class="cxe-prog"><span class="bar" aria-hidden="true"><i id="cxePBar"></i></span> <span id="cxePNum">0%</span> <span class="cxe-sr">dei segmenti confermati</span></span>
+            <span class="cxe-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>Back</span>
+            <span class="cxe-tools" aria-hidden="true">
+              <span class="cxe-tag">&lt;tag&gt;</span><span class="cxe-tag">&lt;/tag&gt;</span><span class="cxe-tag">&lt;tag/&gt;</span>
+              <span class="cxe-f b">B</span><span class="cxe-f i">I</span><span class="cxe-f u">U</span>
+            </span>
+            <span class="cxe-sep" aria-hidden="true"></span>
+            <button type="button" class="cxe-copy" id="cxeCopy" aria-label="Copy source: copiare il testo di partenza nella traduzione del segmento scelto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5v14"/><path d="M8 12h12M15 7l5 5-5 5"/></svg></button>
+            <span class="cxe-prog"><span class="bar" aria-hidden="true"><i id="cxePBar"></i></span><span id="cxePNum">0%</span><span class="cxe-sr"> dei segmenti confermati</span></span>
           </div>
           <div class="cxe-scroll">
             <table class="cxe-tab">
-              <caption class="cxe-sr">Segmenti del documento, fonte in francese e traduzione in tedesco</caption>
+              <caption class="cxe-sr">Segmenti del documento, testo di partenza in francese e traduzione in tedesco</caption>
               <colgroup><col class="c-id"><col><col><col class="c-ind"><col class="c-ok"></colgroup>
               <thead>
                 <tr>
                   <th scope="col">ID</th>
-                  <th scope="col"><span class="cxe-sr">fonte (francese)</span>
-                    <span class="cxe-filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeFs" placeholder="Filtro fonte" aria-label="Filtro fonte" autocomplete="off"><button type="button" class="cxe-clr" data-for="cxeFs" aria-label="Cancellare il filtro sorgente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
+                  <th scope="col"><span class="cxe-sr">Testo di partenza (francese)</span>
+                    <span class="cxe-filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeFs" placeholder="Filter source" aria-label="Filter source" autocomplete="off"><button type="button" class="cxe-clr" data-for="cxeFs" aria-label="Cancellare il filtro del testo di partenza"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
                   </th>
                   <th scope="col"><span class="cxe-sr">Traduzione (tedesco)</span>
-                    <span class="cxe-filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeFt" placeholder="Filtro target" aria-label="Filtro target" autocomplete="off"><button type="button" class="cxe-clr" data-for="cxeFt" aria-label="Cancellare il filtro Traduzione"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
+                    <span class="cxe-filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeFt" placeholder="Filter target" aria-label="Filter target" autocomplete="off"><button type="button" class="cxe-clr" data-for="cxeFt" aria-label="Cancellare il filtro della traduzione"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
                   </th>
-                  <th scope="col"><span class="cxe-sr">origine della traduzione</span></th>
+                  <th scope="col"><span class="cxe-sr">Origine della traduzione</span></th>
                   <th scope="col"><input type="checkbox" class="cxe-chk" id="cxeAll" aria-label="Confermare tutti i segmenti"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr data-i="0">
-                  <td class="id">0<span class="cxe-rep" title="Frase ripetuta al segmento 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span class="cxe-sr">frase ripetuta al segmento 5</span></span></td>
-                  <td class="cxe-src">Contratto di mandato (esempio fittizio)</td>
+                  <td class="id">0<span class="cxe-rep" title="Frase ripetuta nel segmento 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span class="cxe-sr">Frase ripetuta nel segmento 5</span></span></td>
+                  <td class="cxe-src" lang="fr">Contrat de mandat (exemple fictif)</td>
                   <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-label="Traduzione del segmento 0" lang="de" spellcheck="false">Auftragsvertrag (fiktives Beispiel)</div></td>
-                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b> <span class="cxe-gauge" aria-hidden="true"><i class="on"></i> <i class="on"></i> <i class="on"></i></span> <span class="cxe-sr">Traduzione automatica, alta qualità</span></span></td>
-                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Conferma segmento 0"></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Traduzione automatica, qualità alta</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Confermare il segmento 0"></td>
                 </tr>
                 <tr data-i="1">
                   <td class="id">1</td>
-                  <td class="cxe-src">Articolo 1 · Oggetto</td>
+                  <td class="cxe-src" lang="fr">Article 1 · Objet</td>
                   <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-label="Traduzione del segmento 1" lang="de" spellcheck="false">Artikel 1 · Gegenstand</div></td>
-                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b> <span class="cxe-gauge" aria-hidden="true"><i class="on"></i> <i class="on"></i> <i class="on"></i></span> <span class="cxe-sr">Traduzione automatica, alta qualità</span></span></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Traduzione automatica, qualità alta</span></span></td>
                   <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Confermare il segmento 1"></td>
                 </tr>
                 <tr data-i="2" class="sel">
                   <td class="id">2</td>
-                  <td class="cxe-src">Il mandatario fornisce alla committente servizi di consulenza in conformità alla normativa, conformemente al capitolato d’oneri allegato.</td>
+                  <td class="cxe-src" lang="fr">La Mandataire fournit à la Mandante des prestations de conseil en conformité réglementaire, conformément au cahier des charges annexé.</td>
                   <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Traduzione del segmento 2" lang="de" spellcheck="false">Die Auftragnehmerin erbringt der Auftraggeberin gemäss beiliegendem Leistungsverzeichnis beratende Dienstleistungen in regulatorischer Hinsicht.</div></td>
-                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b> <span class="cxe-gauge" aria-hidden="true"><i class="on"></i> <i class="on"></i> <i></i></span> <span class="cxe-sr">Traduzione automatica, qualità media</span></span></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><span class="cxe-sr">Traduzione automatica, qualità media</span></span></td>
                   <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Confermare il segmento 2"></td>
                 </tr>
                 <tr data-i="3">
                   <td class="id">3</td>
-                  <td class="cxe-src">Le fatture non pagate alla scadenza fruttano un interesse di mora annuo del 5%.</td>
-                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Traduzione del segmento 3" lang="de" spellcheck="false">Fee BEI Fälligkeit Unbezahlte Rechnung ist ein Verzugszins von 5% pro Jahr geschuldet.</div></td>
-                  <td class="ind"><span class="cxe-ind" title="Translation memory"><b>TM</b> <span class="cxe-sim">100%</span> <span class="cxe-sr">ripresa della memoria di traduzione, corrispondenza completa</span></span></td>
+                  <td class="cxe-src" lang="fr">Toute facture impayée à l'échéance porte intérêt moratoire à 5 % l'an.</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Traduzione del segmento 3" lang="de" spellcheck="false">Für jede bei Fälligkeit unbezahlte Rechnung ist ein Verzugszins von 5 % pro Jahr geschuldet.</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Translation memory"><b>TM</b><span class="cxe-sim">100%</span><span class="cxe-sr">Ripresa dalla memoria di traduzione, corrispondenza completa</span></span></td>
                   <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Confermare il segmento 3"></td>
                 </tr>
                 <tr data-i="4">
                   <td class="id">4</td>
-                  <td class="cxe-src">Il presente contratto è soggetto al diritto svizzero, in particolare al Codice delle obbligazioni. Foro competente esclusivo è Friburgo.</td>
-                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Traduzione del segmento 4" lang="de" spellcheck="false">Dieser Vertrag untersteht schweizerischem Recht, insbesondere DEM Obligationenrecht. Ausschliesslicher Gerichtsstand IST Freiburg.</div></td>
-                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b> <span class="cxe-gauge" aria-hidden="true"><i class="on"></i> <i class="on"></i> <i class="on"></i></span> <span class="cxe-sr">Traduzione automatica, alta qualità</span></span></td>
+                  <td class="cxe-src" lang="fr">Le présent contrat est soumis au droit suisse, en particulier au Code des obligations. Le for exclusif est à Fribourg.</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Traduzione del segmento 4" lang="de" spellcheck="false">Dieser Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Traduzione automatica, qualità alta</span></span></td>
                   <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Confermare il segmento 4"></td>
                 </tr>
                 <tr data-i="5">
-                  <td class="id">5<span class="cxe-rep" title="Frase ripetuta al segmento 0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span class="cxe-sr">frase ripetuta al segmento 0</span></span></td>
-                  <td class="cxe-src">Contratto di mandato (esempio fittizio)</td>
+                  <td class="id">5<span class="cxe-rep" title="Frase ripetuta nel segmento 0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span class="cxe-sr">Frase ripetuta nel segmento 0</span></span></td>
+                  <td class="cxe-src" lang="fr">Contrat de mandat (exemple fictif)</td>
                   <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-label="Traduzione del segmento 5" lang="de" spellcheck="false">Mandatsvertrag (fiktives Beispiel)</div></td>
-                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b> <span class="cxe-gauge" aria-hidden="true"><i class="on"></i> <i class="on"></i> <i class="on"></i></span> <span class="cxe-sr">Traduzione automatica, alta qualità</span></span></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Traduzione automatica, qualità alta</span></span></td>
                   <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Confermare il segmento 5"></td>
                 </tr>
                 <tr class="cxe-none" id="cxeNone" hidden><td colspan="5">Nessuna frase corrisponde al filtro.</td></tr>
@@ -332,14 +337,14 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
         <!-- Panneau latéral à quatre onglets -->
         <div class="cxe-side">
           <div class="cxe-head">
-            <p class="cxe-title" id="cxeTitle">Translation Memories</p>
-            <button type="button" class="cxe-fold" id="cxeFold" aria-expanded="true" aria-controls="cxeBody" aria-label="Piegare il pannello"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+            <p class="cxe-title" id="cxeTitle">Translation memories</p>
+            <button type="button" class="cxe-fold" id="cxeFold" aria-expanded="true" aria-controls="cxeBody" aria-label="Ridurre il pannello"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
           </div>
-          <div class="cxe-rail" role="tablist" aria-orientation="vertical" aria-label="Tabelloni del pannello">
-            <button type="button" class="cxe-rb" role="tab" id="cxeT0" aria-selected="true" aria-controls="cxeP0" data-title="Translation memories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span class="l">Translation Memories</span></button>
+          <div class="cxe-rail" role="tablist" aria-orientation="vertical" aria-label="Schede del pannello">
+            <button type="button" class="cxe-rb" role="tab" id="cxeT0" aria-selected="true" aria-controls="cxeP0" data-title="Translation memories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span class="l">Translation memories</span></button>
             <button type="button" class="cxe-rb" role="tab" id="cxeT1" aria-selected="false" aria-controls="cxeP1" data-title="Fast Lookup" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19V5a2 2 0 0 1 2-2h12v15H7a2 2 0 0 0-2 2 2 2 0 0 0 2 2h12"/><path d="M10 3v7l2.5-1.8L15 10V3"/></svg><span class="l">Fast Lookup</span></button>
-            <button type="button" class="cxe-rb" role="tab" id="cxeT2" aria-selected="false" aria-controls="cxeP2" data-title="AI Assistant" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4"/><circle cx="12" cy="3.5" r="1"/><path d="M9 13h.01M15 13h.01M9.5 16h5"/></svg><span class="l">AI procedura guidata</span></button>
-            <button type="button" class="cxe-rb" role="tab" id="cxeT3" aria-selected="false" aria-controls="cxeP3" data-title="Sync" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg><span class="l">Sync</span> <span class="cxe-dot" id="cxeDot" aria-hidden="true"></span> <span class="cxe-sr" id="cxeDotTxt">, 3 elementi in sospeso</span></button>
+            <button type="button" class="cxe-rb" role="tab" id="cxeT2" aria-selected="false" aria-controls="cxeP2" data-title="AI Assistant" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4"/><circle cx="12" cy="3.5" r="1"/><path d="M9 13h.01M15 13h.01M9.5 16h5"/></svg><span class="l">AI Assistant</span></button>
+            <button type="button" class="cxe-rb" role="tab" id="cxeT3" aria-selected="false" aria-controls="cxeP3" data-title="Sync" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg><span class="l">Sync</span><span class="cxe-dot" id="cxeDot" aria-hidden="true"></span><span class="cxe-sr" id="cxeDotTxt">, 3 elementi in sospeso</span></button>
           </div>
           <div class="cxe-body" id="cxeBody">
 
@@ -350,13 +355,13 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 
             <!-- Fast Lookup -->
             <div class="cxe-pan" id="cxeP1" role="tabpanel" aria-labelledby="cxeT1" tabindex="0" hidden>
-              <button type="button" class="cx-switch cxe-live" id="cxeLiveSw" aria-pressed="true"><i aria-hidden="true"></i> Live Search</button>
+              <button type="button" class="cx-switch cxe-live" id="cxeLiveSw" aria-pressed="true"><i aria-hidden="true"></i> Live search</button>
               <form class="cxe-q" id="cxeQForm" role="search" autocomplete="off">
                 <span class="cxe-qbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeQ" value="intérêt moratoire" aria-label="Cercare un termine nelle memorie e in CHnell"><button type="button" class="cxe-clr" id="cxeQClr" aria-label="Cancellare la ricerca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
-                <button type="submit" class="cx-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Ricerca</button>
+                <button type="submit" class="cx-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</button>
               </form>
-              <div class="cxe-seg" role="group" aria-label="Accanto alla ricerca">
-                <button type="button" class="on" data-side="src" aria-pressed="true">Fonte</button>
+              <div class="cxe-seg" role="group" aria-label="Lato della ricerca">
+                <button type="button" class="on" data-side="src" aria-pressed="true">Source</button>
                 <button type="button" data-side="tgt" aria-pressed="false">Target</button>
               </div>
               <div id="cxeLk"></div>
@@ -364,9 +369,9 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 
             <!-- AI Assistant -->
             <div class="cxe-pan" id="cxeP2" role="tabpanel" aria-labelledby="cxeT2" tabindex="0" hidden>
-              <div class="cxe-ai" role="tablist" aria-label="Funzioni dell’Assistente IA">
-                <button type="button" class="on" role="tab" id="cxeAiA" aria-selected="true" aria-controls="cxeAiAP">Alternative</button>
-                <button type="button" role="tab" id="cxeAiR" aria-selected="false" aria-controls="cxeAiRP" tabindex="-1">Fraseggio</button>
+              <div class="cxe-ai" role="tablist" aria-label="Funzioni dell'assistente IA">
+                <button type="button" class="on" role="tab" id="cxeAiA" aria-selected="true" aria-controls="cxeAiAP">Alternatives</button>
+                <button type="button" role="tab" id="cxeAiR" aria-selected="false" aria-controls="cxeAiRP" tabindex="-1">Rephrasing</button>
               </div>
               <div id="cxeAiAP" role="tabpanel" aria-labelledby="cxeAiA">
                 <div class="cxe-box">
@@ -381,15 +386,15 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
                     <button type="button" class="cxe-setb" id="cxeSet" aria-expanded="false" aria-controls="cxePop">Settings <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
                   </div>
                   <div class="cx-set-pop cxe-pop" id="cxePop">
-                    <p class="cx-h5" id="cxeStyH">Stili</p>
+                    <p class="cx-h5" id="cxeStyH">Styles</p>
                     <div class="cx-chips" role="group" aria-labelledby="cxeStyH">
-                      <button type="button" class="cx-chip" data-style="legal" aria-pressed="false">Formale legale</button>
+                      <button type="button" class="cx-chip" data-style="legal" aria-pressed="false">Formal legal</button>
                       <button type="button" class="cx-chip" data-style="fin" aria-pressed="false">Financial</button>
                       <button type="button" class="cx-chip" data-style="simp" aria-pressed="false">Simplified</button>
-                      <button type="button" class="cx-chip" data-style="formal" aria-pressed="false">Formale</button>
-                      <button type="button" class="cx-chip" data-style="inf" aria-pressed="false">Informativo</button>
+                      <button type="button" class="cx-chip" data-style="formal" aria-pressed="false">Formal</button>
+                      <button type="button" class="cx-chip" data-style="inf" aria-pressed="false">Informal</button>
                     </div>
-                    <p class="cx-h5" id="cxeOptH">Opzioni</p>
+                    <p class="cx-h5" id="cxeOptH">Options</p>
                     <div class="cx-chips" role="group" aria-labelledby="cxeOptH"><button type="button" class="cx-chip" id="cxeShort" aria-pressed="false">Shorten</button></div>
                     <div class="cx-set-act"><button type="button" class="rst" id="cxeReset">Reset</button><button type="button" class="cx-btn" id="cxeSetOk">Apply</button></div>
                   </div>
@@ -402,7 +407,7 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
                   </div>
                 </div>
                 <div class="cxe-rnote" id="cxeRNote" hidden>
-                  <p class="cxe-empty">Demo: la riformulazione è preparata nel segmento 4, la clausola di diritto applicabile.</p>
+                  <p class="cxe-empty">Demo: la riformulazione è preparata sul segmento 4, la clausola sul diritto applicabile.</p>
                   <button type="button" class="cx-btn ghost" id="cxeGo4">Scegliere il segmento 4</button>
                 </div>
               </div>
@@ -417,11 +422,11 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
         </div>
       </div>
 
-      <p class="cx-note cxe-note">Demo: cliccate su una frase, correggete la traduzione, confermatela e aprite le quattro schede del pannello. Non viene inviato nulla.</p>
+      <p class="cx-note cxe-note">Demo: cliccate su una frase, correggetene la traduzione, confermatela, poi aprite le quattro schede del pannello. Non viene inviato nulla.</p>
       <p class="cxe-sr" id="cxeLive" aria-live="polite"></p>
     </div>
 
-    <p class="cx-caption">Interfaccia riprodotta secondo l’applicazione Corrext · contratto fittizio · traduzioni, alternative e riformulazioni prodotte dai motori in Corrext · memoria e versioni di colleghi simulate · estratti CHnell dall’applicazione.</p>
+    <p class="cx-caption">Interfaccia riprodotta dall'applicazione Corrext · contratto fittizio · traduzioni, alternative e riformulazioni prodotte dai motori in Corrext · memoria e versioni dei colleghi simulate · estratti di CHnell tratti dall'applicazione.</p>
   </div>
 </section>
 
@@ -432,25 +437,25 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   <div class="container">
     <div class="facts-grid">
       <div class="facts-lead">
-        <h2>Cosa fa esattamente l’editore di revisione</h2>
-        <p>Un tool TAO suddivide il documento in segmenti. Un segmento è una frase o un titolo. Rileggi ogni segmento rispetto all’originale, lo correggi se necessario e lo confermi.</p>
-        <p>L’editore si apre dal cruscotto del progetto con il pulsante Open in CAT. Nell’applicazione è stato osservato quanto segue.</p>
+        <h2>Che cosa fa esattamente l'editor di revisione</h2>
+        <p>Uno strumento CAT suddivide il documento in segmenti. Un segmento è una frase o un titolo. Rivedete ogni segmento a fronte dell'originale, lo correggete se serve, poi lo confermate.</p>
+        <p>L'editor si apre dal cruscotto del progetto, con il pulsante Open in CAT. Tutto ciò che segue è stato osservato nell'applicazione.</p>
         <div class="links">
-          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Creare il progetto: gestione del progetto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="{{ROOT}}fr/corrext/chnell/" class="feat-link">Verificare un termine: Fast look CHnell <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Creare il progetto: Gestione dei progetti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/corrext/chnell/" class="feat-link">Verificare un termine: Fast lookup CHnell <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
         </div>
       </div>
       <div class="facts-list">
-        <div class="fact"><b>due colonne</b><p><strong class="kf">L’originale a sinistra, la traduzione a destra</strong>, segmento per segmento. Un filtro di ricerca sopra ogni colonna ritrova una frase lato sorgente o lato traduzione.</p></div>
-        <div class="fact"><b>origine di ogni frase</b><p>Un indicatore indica se la traduzione proviene <strong class="kf">dal motore o dalla memoria di traduzione</strong>. Per la traduzione automatica, un indicatore dà il <strong class="kf">livello di qualità</strong>: basso, medio o alto. <small>La memoria di traduzione riunisce le traduzioni già convalidate.</small></p></div>
-        <div class="fact"><b>conferma</b><p><strong class="kf">una casella per ogni segmento</strong> conferma la sua riproduzione. La progressione del documento appare <strong class="kf">in percentuale</strong>, in cima all’editore.</p></div>
-        <div class="fact"><b>barra degli strumenti</b><p><strong class="kf">Tag di formattazione</strong> (aperto, chiuso, autonomo), grassetto, corsivo, sottolineato e copia dell’origine nella traduzione. <small>I Tag segnano la formattazione del documento originale.</small></p></div>
-        <div class="fact"><b>controlli</b><p>L’editore individua le <strong class="kf">frasi ripetute</strong> e i <strong class="kf">tag incoerenti</strong>.</p></div>
-        <div class="fact"><b>Mémoires</b><p>Per la frase scelta, le <strong class="kf">traduzioni già convalidate più vicine</strong>. Un clic su Apply li riprende nella traduzione.</p></div>
-        <div class="fact"><b>Fast Lookup</b><p>Ricerca dal vivo in <strong class="kf">le vostre memorie e in CHnell</strong>, dal lato sorgente o dal lato target. Ogni risultato è bilingue, il termine è evidenziato su entrambi i lati ed è indicato il documento originale.</p></div>
-        <div class="fact"><b>Assistente IA</b><p>Alternative: la stessa frase tradotta da più motori, affiancati, e altri, su richiesta. Fraseggio: una riformulazione in <strong class="kf">cinque stili</strong> (legale formale, finanziario, semplificato, formale, informale), con un’opzione per abbreviare. <small>Le parole modificate dalla riformulazione sono sottolineate.</small></p></div>
-        <div class="fact"><b>Sync</b><p><strong class="kf">per rileggere a più</strong>: i conflitti tra due versioni da arbitrare, le modifiche di un collega da integrare e la propagazione di una correzione alle stesse frasi.</p></div>
-        <div class="fact"><b>cruscotto</b><p>Riservatezza, tipo di riproduzione, lingue, avanzamento, file di riferimento, istruzioni, memorie e team. Per ogni file: <strong class="kf">Open in CAT</strong>, Preview, Export docx, Reimport docx, <strong class="kf">Download TMX</strong> e Validate. <small>TMX è il formato standard di scambio delle memorie di traduzione.</small></p></div>
+        <div class="fact"><b>Due colonne</b><p><strong class="kf">L'originale a sinistra, la traduzione a destra</strong>, segmento per segmento. Un filtro di ricerca sopra ogni colonna ritrova una frase nel testo di partenza o nella traduzione.</p></div>
+        <div class="fact"><b>Origine di ogni frase</b><p>Un indicatore segnala se la traduzione proviene <strong class="kf">dal motore o dalla memoria di traduzione</strong>. Per la traduzione automatica, un indicatore a barre mostra il <strong class="kf">livello di qualità</strong>: basso, medio o alto.<small>La memoria di traduzione raccoglie le traduzioni già convalidate.</small></p></div>
+        <div class="fact"><b>Conferma</b><p><strong class="kf">Una casella per segmento</strong> ne conferma la revisione. L'avanzamento del documento è indicato <strong class="kf">in percentuale</strong>, in cima all'editor.</p></div>
+        <div class="fact"><b>Barra degli strumenti</b><p><strong class="kf">Tag di formattazione</strong> (di apertura, di chiusura, autonomi), grassetto, corsivo, sottolineato, e copia del testo di partenza nella traduzione.<small>I tag indicano la formattazione del documento originale.</small></p></div>
+        <div class="fact"><b>Controlli</b><p>L'editor individua le <strong class="kf">frasi ripetute</strong> e i <strong class="kf">tag incoerenti</strong>.</p></div>
+        <div class="fact"><b>Memorie</b><p>Per la frase scelta, le <strong class="kf">traduzioni già convalidate più simili</strong>. Un clic su Apply le riprende nella traduzione.</p></div>
+        <div class="fact"><b>Fast Lookup</b><p>Ricerca in tempo reale <strong class="kf">nelle vostre memorie e in CHnell</strong>, nel testo di partenza o in quello di arrivo. Ogni risultato è bilingue, il termine è evidenziato da entrambi i lati e il documento di origine è indicato.</p></div>
+        <div class="fact"><b>Assistente IA</b><p>Alternatives: la stessa frase tradotta da più motori, affiancate, e altre su richiesta. Rephrasing: una riformulazione in <strong class="kf">cinque stili</strong> (giuridico formale, finanziario, semplificato, formale, informale), con un'opzione per accorciare.<small>Le parole modificate dalla riformulazione sono sottolineate.</small></p></div>
+        <div class="fact"><b>Sync</b><p><strong class="kf">Per rivedere in più persone</strong>: i conflitti tra due versioni da risolvere, le modifiche di un collega da integrare e la propagazione di una correzione alle frasi identiche.</p></div>
+        <div class="fact"><b>Cruscotto</b><p>Riservatezza, tipo di revisione, lingue, avanzamento, file di riferimento, istruzioni, memorie e team. Per ogni file: <strong class="kf">Open in CAT</strong>, Preview, Export docx, Reimport docx, <strong class="kf">Download TMX</strong> e Validate.<small>TMX è il formato standard per lo scambio delle memorie di traduzione.</small></p></div>
       </div>
     </div>
   </div>
@@ -461,16 +466,16 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   <div class="container">
     <div class="gov-box">
       <div>
-        <h2>Le vostre correzioni sono utili per le vostre prossime traduzioni?</h2>
-        <p>Sì, con riservatezza standard. Ogni correzione fatta nell’editore è conservata nella sua memoria di traduzione. Al progetto successivo Corrext la riprende. La traduzione si adatta quindi, progetto dopo progetto, al vostro modo di scrivere. E lo stesso passo resta tradotto allo stesso modo da un progetto all’altro.</p>
-        <p>Un’eccezione, voluta: nella modalità contenuto altamente sensibile («High sensitive content»), le traduzioni non alimentano la memoria. I dati vengono quindi archiviati e trattati unicamente in Svizzera. Questa modalità è disponibile in francese, tedesco, italiano e inglese.</p>
+        <h2>Le vostre correzioni servono alle prossime traduzioni?</h2>
+        <p>Sì, con la riservatezza standard. Ogni correzione fatta nell'editor viene salvata nella vostra memoria di traduzione. Al progetto successivo, Corrext la riprende. Così la traduzione si adatta, progetto dopo progetto, al vostro modo di scrivere. E uno stesso passaggio resta tradotto allo stesso modo da un progetto all'altro.</p>
+        <p>Un'eccezione voluta: in modalità contenuto altamente sensibile (Highly sensitive content), le traduzioni non alimentano la memoria. I dati sono allora archiviati e trattati solo in Svizzera. Questa modalità è disponibile in tedesco, francese, italiano e inglese.</p>
         <a href="{{ROOT}}fr/securite-souverainete/" class="feat-link">Sicurezza e sovranità dei dati <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       </div>
       <div class="gov-steps">
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Correggi nell’editore una frase alla volta rispetto all’originale.</div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg><span><b>La correzione è conservata.</b> Il progetto è conservato sui server di Corrext svizzeri e funge da memoria per te.</span></div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span><b>Il seguente progetto lo riprende.</b> Le vostre formulazioni ritornano e le vostre traduzioni rimangono coerenti tra i progetti.</span></div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Salvo in modalità altamente sensibile.</b> archiviazione ed elaborazione solo in Svizzera, nessun riutilizzo in memoria.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>Correggete.</b> Nell'editor, una frase alla volta, a fronte dell'originale.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg><span><b>La correzione viene salvata.</b> Il progetto è conservato sui server svizzeri di Corrext e funge da memoria solo per voi.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span><b>Il progetto successivo la riprende.</b> Le vostre formulazioni ritornano e le vostre traduzioni restano coerenti tra un progetto e l'altro.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Tranne in modalità altamente sensibile.</b> Archiviazione e trattamento solo in Svizzera, nessun riutilizzo nella memoria.</span></div>
       </div>
     </div>
   </div>
@@ -481,22 +486,22 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   <div class="container">
     <div class="trust-grid">
       <div class="trust-lead">
-        <h2>Dal file depositato al documento convalidato</h2>
-        <p>La rilettura è una tappa di un progetto Corrext. Ecco il percorso completo, nell’ordine dell’applicazione. I primi quattro passi sono la realizzazione del progetto.</p>
+        <h2>Dal file caricato al documento convalidato</h2>
+        <p>La revisione è una fase di un progetto Corrext. Ecco il percorso completo, nell'ordine dell'applicazione. Le prime quattro fasi avvengono alla creazione del progetto.</p>
         <div class="cxe-links">
-          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Gestione dei progetti passo dopo passo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          <a href="{{ROOT}}fr/lexmachina/" class="feat-link">LexMachina, il motore 100% svizzero <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/corrext/gestion-de-projet/" class="feat-link">Gestione dei progetti, fase per fase <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="{{ROOT}}fr/lexmachina/" class="feat-link">LexMachina, il motore di traduzione al 100 % svizzero <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
         </div>
       </div>
       <div class="ledger">
-        <div class="ledger-row"><span class="ty">01</span> <span class="tn">Creazione del progetto <small>nome, lingua target, livello di confidenzialità, traduzione o meno dei commenti del documento.</small></span> <span class="tb">progetto</span></div>
-        <div class="ledger-row"><span class="ty">02</span> <span class="tn">analisi dei file <small>Ogni file è contato in pagine standard. Una pagina standard contiene 1800 caratteri, spazi inclusi.</small></span> <span class="tb">progetto</span></div>
-        <div class="ledger-row"><span class="ty">03</span> <span class="tn">terminologia del progetto <small>Corrext estrae i termini candidati dal documento stesso. Determini la traduzione o aggiungi i tuoi termini.</small></span> <span class="tb">progetto</span></div>
-        <div class="ledger-row"><span class="ty">04</span> <span class="tn">scelta del motore <small>LexMachina, 100% svizzero o di un motore terzo autorizzato dalla vostra organizzazione: DeepL Pro, Azure OpenAI GPT, Claude. I motori di terzi sono alloggiati all’estero.</small></span> <span class="tb">progetto</span></div>
-        <div class="ledger-row"><span class="ty">05</span> <span class="tn">Traduzione automatica <small>Il motore scelto traduce il documento. I termini stabiliti al passo 3 sono ripresi tali e quali.</small></span> <span class="tb">motore</span></div>
-        <div class="ledger-row"><span class="ty">06</span> <span class="tn">riproduzione nell’editore <small>Open in CAT: rileggi, correggi e confermi ogni frase da solo o da più parti.</small></span> <span class="tb">Editore</span></div>
-        <div class="ledger-row"><span class="ty">07</span> <span class="tn">Convalida <small>Il file riprodotto viene convalidato dal dashboard del progetto.</small></span> <span class="tb">Dashboard</span></div>
-        <div class="ledger-row"><span class="ty">08</span> <span class="tn">esportazione <small>Il documento tradotto viene esportato in Word. La memoria del file viene scaricata nel formato TMX.</small></span> <span class="tb">Dashboard</span></div>
+        <div class="ledger-row"><span class="ty">01</span><span class="tn">Creazione del progetto<small>Nome, lingue di arrivo, livello di riservatezza, traduzione o meno dei commenti del documento.</small></span><span class="tb">Progetto</span></div>
+        <div class="ledger-row"><span class="ty">02</span><span class="tn">Analisi dei file<small>Ogni file viene contato in pagine standard. Una pagina standard conta 1'800 caratteri, spazi inclusi.</small></span><span class="tb">Progetto</span></div>
+        <div class="ledger-row"><span class="ty">03</span><span class="tn">Terminologia del progetto<small>Corrext estrae da sé i termini candidati dal documento. Voi ne fissate la traduzione, o aggiungete i vostri termini.</small></span><span class="tb">Progetto</span></div>
+        <div class="ledger-row"><span class="ty">04</span><span class="tn">Scelta del motore<small>LexMachina, al 100 % svizzero, o un motore di terzi autorizzato dalla vostra organizzazione: DeepL Pro, Azure OpenAI GPT, Claude. I motori di terzi sono ospitati all'estero.</small></span><span class="tb">Progetto</span></div>
+        <div class="ledger-row"><span class="ty">05</span><span class="tn">Traduzione automatica<small>Il motore scelto traduce il documento. I termini fissati nella fase 3 vengono ripresi tali e quali.</small></span><span class="tb">Motore</span></div>
+        <div class="ledger-row"><span class="ty">06</span><span class="tn">Revisione nell'editor<small>Open in CAT: rivedete, correggete e confermate ogni frase, da soli o in più persone.</small></span><span class="tb">Editor</span></div>
+        <div class="ledger-row"><span class="ty">07</span><span class="tn">Convalida<small>Il file rivisto viene convalidato dal cruscotto del progetto.</small></span><span class="tb">Cruscotto</span></div>
+        <div class="ledger-row"><span class="ty">08</span><span class="tn">Esportazione<small>Il documento tradotto si esporta in Word. La memoria del file si scarica in formato TMX.</small></span><span class="tb">Cruscotto</span></div>
       </div>
     </div>
   </div>
@@ -506,20 +511,20 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 <section class="who who-s">
   <div class="container">
     <div class="sec-head">
-      <h2>Tre usi dell’editor di rilettura</h2>
+      <h2>Tre usi dell'editor di revisione</h2>
     </div>
     <div class="ws-grid">
       <article class="ws-item">
-        <h3><span class="ws-ic">{{ICONE:memoire}}</span> <span><span class="pn">Legal Ops.</span> stesse parole da un contratto all’altro</span></h3>
-        <p>I vostri giuristi correggono la prima traduzione di un contratto normale. Le seguenti traduzioni riprendono le loro formulazioni e i termini stabiliti sono rispettati. Il vocabolario della casa rimane stabile, progetto dopo progetto.</p>
+        <h3><span class="ws-ic">{{ICONE:memoire}}</span><span><span class="pn">Legal Ops.</span> Le stesse parole da un contratto all'altro</span></h3>
+        <p>I vostri giuristi correggono la prima traduzione di un contratto tipo. Le traduzioni successive riprendono le loro formulazioni, e i termini fissati vengono rispettati. Il vocabolario della casa resta stabile, progetto dopo progetto.</p>
       </article>
       <article class="ws-item">
-        <h3><span class="ws-ic">{{ICONE:equipe}}</span> <span><span class="pn">studi legali.</span> rileggere più volte prima dell’invio</span></h3>
-        <p>Due revisori si dividono il documento. La scheda Sync segnala i conflitti tra versioni e le modifiche dell’altra. Propone inoltre di ripercuotere una correzione sulle frasi identiche.</p>
+        <h3><span class="ws-ic">{{ICONE:equipe}}</span><span><span class="pn">Studi legali.</span> Rivedere in più persone prima di un invio</span></h3>
+        <p>Due revisori si dividono il documento. La scheda Sync segnala i conflitti tra versioni e le modifiche dell'altro. Propone anche di estendere una correzione alle frasi identiche.</p>
       </article>
       <article class="ws-item">
-        <h3><span class="ws-ic">{{ICONE:verrou}}</span> <span><span class="pn">compliance bancaria.</span> elaborare una cartella sensibile</span></h3>
-        <p>Il progetto è realizzato in modalità di contenuto altamente sensibile: stoccaggio e trattamento unicamente in Svizzera. Rileggete nello stesso editore e nessuna frase viene riutilizzata nella memoria.</p>
+        <h3><span class="ws-ic">{{ICONE:verrou}}</span><span><span class="pn">Compliance bancaria.</span> Trattare un dossier sensibile</span></h3>
+        <p>Il progetto viene creato in modalità contenuto altamente sensibile: archiviazione e trattamento solo in Svizzera. Rivedete nello stesso editor, e nessuna frase viene riutilizzata nella memoria.</p>
       </article>
     </div>
   </div>
@@ -530,21 +535,20 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   <div class="container">
     <div class="feature">
       <div class="feat-txt">
-        <h2><span class="pn">lavorare in Word.</span> Lo stesso pannello, nel vostro trattamento testi</h2>
-        <p>La riproduzione può avvenire anche in Microsoft Word. Esportate il documento dal cruscotto del progetto (Export docx). Aprilo in Word con il componente aggiuntivo Corrext: l’assistente ai, Fast Lookup, le memorie e Sync si trovano in un pannello laterale. Dopo la riproduzione, importate nuovamente il file (Reimport docx).</p>
+        <h2><span class="pn">Lavorare in Word.</span> Lo stesso pannello, nel vostro programma di videoscrittura</h2>
+        <p>La revisione si può fare anche in Microsoft Word. Esportate il documento dal cruscotto del progetto (Export docx). Apritelo in Word con il componente aggiuntivo Corrext: l'assistente IA, Fast Lookup, le memorie e Sync si trovano in un pannello laterale. Terminata la revisione, reimportate il file (Reimport docx).</p>
         <ul class="feat-list">
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Export docx, rilettura in Word, poi Reimport docx</li>
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Assistente ai, Fast Lookup, memorie e Sync nel supplemento</li>
-          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Login richiesto, riservato ai membri del progetto, Office 2021 o Microsoft 365</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Export docx, revisione in Word, poi Reimport docx</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Assistente IA, Fast Lookup, memorie e Sync nel componente aggiuntivo</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Accesso richiesto, riservato ai membri del progetto, Office 2021 o Microsoft 365</li>
         </ul>
-        <a href="{{ROOT}}fr/aide/" class="feat-link">Passo dopo passo nel centro d’aiuto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a href="{{ROOT}}fr/aide/" class="feat-link">Passo per passo nel Centro assistenza <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       </div>
       <div class="feat-visual">
-        <div class="win" role="img" aria-label="Schema: un documento aperto in Word, con la scheda Corrext del nastro e il pannello del complemento a destra">
+        <div class="win" role="img" aria-label="Schema: un documento aperto in Word, con la scheda Corrext della barra multifunzione e il pannello del componente aggiuntivo a destra">
           <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
           <div class="word-rib">
-            <span class="tabb">Home</span> <span>inserimento</span> <span>revisione</span>
-<span class="tabb brand">Corrext</span>
+            <span class="tabb">Home</span><span>Inserisci</span><span>Revisione</span> <span class="tabb brand">Corrext</span>
           </div>
           <div class="word-area">
             <div class="word-doc">
@@ -553,10 +557,10 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
               <div class="wl src w65"></div><div class="wl tgt w65"></div>
             </div>
             <div class="word-panel">
-              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg> Corrext Editor</div>
-              <div class="pbox on">AI Assistente</div>
+              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg> Corrext editor</div>
+              <div class="pbox on">AI Assistant</div>
               <div class="pbox">Fast Lookup</div>
-              <div class="pbox">Partite</div>
+              <div class="pbox">Matches</div>
               <div class="pbox">Sync</div>
             </div>
           </div>
@@ -569,11 +573,11 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 <!-- OUTILS VOISINS -->
 <section class="siblings">
   <div class="container">
-    <h2>Altri strumenti di Corrext</h2>
+    <h2>Gli altri strumenti di Corrext</h2>
     <div class="siblings-row">
-      <a href="{{ROOT}}fr/corrext/gestion-de-projet/"><b>gestione del progetto</b> <span>Il progetto in tre fasi: confidenzialità, file analizzati, revisione interna o esterna, preventivo e termine.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/corrext/chnell/"><b>Fast Lookup CHnell</b> <span>Il concordato del diritto svizzero: fonti ufficiali, 30 domini, risorse proprie.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Traduzione testo e documento</b> <span>testo o file tradotti immediatamente, alternative per motore, PDF in Word, riscrittura in cinque stili.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/gestion-de-projet/"><b>Gestione dei progetti</b><span>Il progetto in tre fasi: riservatezza, file analizzati, revisione interna o esterna, offerta e termine di consegna.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>Il concordanziere del diritto svizzero: fonti ufficiali, 30 settori, le vostre risorse.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="{{ROOT}}fr/corrext/traduction-texte-et-document/"><b>Traduzione di testi e documenti</b><span>Testo o file tradotto subito, alternative per motore, da PDF a Word, riformulazione in cinque stili.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
@@ -583,40 +587,40 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 <section class="faq" id="faq">
   <div class="container">
     <div class="faq-head">
-      <h2>Domande frequenti sull’editore di revisione</h2>
+      <h2>Domande frequenti sull'editor di revisione</h2>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Cos’è uno strumento TAO?</summary>
-        <p>TAO significa traduzione assistita da computer («CAT tool» in inglese). Un tale strumento suddivide il documento in segmenti, vale a dire in frasi o in titoli, e pone ciascuno di fronte alla propria traduzione. Il revisore corregge e conferma ogni segmento con l’ausilio delle memorie e della terminologia. In Corrext, questo strumento è chiamato editor di riproduzione.</p>
+        <summary>Che cos'è uno strumento CAT?</summary>
+        <p>CAT sta per «computer-assisted translation», in italiano traduzione assistita dal computer. Uno strumento di questo tipo suddivide il documento in segmenti, cioè in frasi o titoli, e mette ciascuno a fronte della sua traduzione. Il revisore corregge e poi conferma ogni segmento, con l'aiuto delle memorie e della terminologia. In Corrext questo strumento si chiama editor di revisione.</p>
       </details>
       <details class="faq-item">
-        <summary>Come aprire l’editore di revisione?</summary>
-        <p>Dal cruscotto di un progetto. Ogni file contiene un pulsante open in CAT che apre il documento nell’editore. Il progetto stesso si crea nella gestione del progetto: lingue, livello di confidenzialità, terminologia e motore di traduzione.</p>
+        <summary>Come si apre l'editor di revisione?</summary>
+        <p>Dal cruscotto di un progetto. Ogni file vi ha un pulsante Open in CAT, che apre il documento nell'editor. Il progetto stesso si crea in Gestione dei progetti: lingue, livello di riservatezza, terminologia e motore di traduzione.</p>
       </details>
       <details class="faq-item">
-        <summary>Le mie correzioni sono utili per le prossime traduzioni?</summary>
-        <p>Sì, con riservatezza standard. I suoi progetti sono conservati sui server svizzeri di Corrext e fungono da sola da memoria di traduzione. Una correzione fatta oggi è ripresa nei vostri progetti seguenti. La traduzione si adatta quindi alla vostra lingua e rimane coerente da un progetto all’altro.</p>
+        <summary>Le mie correzioni servono alle prossime traduzioni?</summary>
+        <p>Sì, con la riservatezza standard. I vostri progetti sono conservati sui server svizzeri di Corrext e servono da memoria di traduzione solo per voi. Una correzione fatta oggi viene ripresa nei vostri progetti successivi. Così la traduzione si adatta alla vostra lingua e resta coerente da un progetto all'altro.</p>
       </details>
       <details class="faq-item">
         <summary>E in modalità contenuto altamente sensibile?</summary>
-        <p>In questo modo («high sensitive content») le traduzioni non alimentano la memoria. I dati sono conservati e trattati unicamente in Svizzera. La modalità è disponibile in francese, tedesco, italiano e inglese. Lo scegliete al momento della creazione di ogni progetto.</p>
+        <p>In questa modalità (Highly sensitive content), le traduzioni non alimentano la memoria. I dati sono archiviati e trattati solo in Svizzera. La modalità è disponibile in tedesco, francese, italiano e inglese. La scegliete alla creazione di ogni progetto.</p>
       </details>
       <details class="faq-item">
-        <summary>È possibile rileggere più volte lo stesso documento?</summary>
-        <p>Sì. La scheda Sync gestisce il lavoro a più livelli. Esso presenta i conflitti tra due versioni di una stessa frase, da arbitrare. Elenca le modifiche di un collega da integrare. Propone infine di ripercuotere una correzione sulle frasi identiche del documento: «propagazione». Il team del progetto si gestisce dal cruscotto.</p>
+        <summary>Si può rivedere lo stesso documento in più persone?</summary>
+        <p>Sì. La scheda Sync gestisce il lavoro in più persone. Mostra i conflitti tra due versioni della stessa frase, da risolvere. Elenca le modifiche di un collega, da integrare. Propone infine di estendere una correzione alle frasi identiche del documento: è la propagazione. Il team del progetto si gestisce dal cruscotto.</p>
       </details>
       <details class="faq-item">
-        <summary>Microsoft Word è necessario per riprodurre?</summary>
-        <p>No. L’editor di riproduzione viene utilizzato direttamente in Corrext. Se preferite Word, esportate il documento dal cruscotto (Export docx), rileggetelo con il componente aggiuntivo Corrext e importatelo nuovamente (Reimport docx). Il componente aggiuntivo richiede una connessione, l’appartenenza al progetto e Office 2021 o Microsoft 365.</p>
+        <summary>Serve Microsoft Word per la revisione?</summary>
+        <p>No. L'editor di revisione si usa direttamente in Corrext. Se preferite Word, esportate il documento dal cruscotto (Export docx), rivedetelo con il componente aggiuntivo Corrext, poi reimportatelo (Reimport docx). Il componente aggiuntivo richiede un accesso, l'appartenenza al progetto e Office 2021 o Microsoft 365.</p>
       </details>
       <details class="faq-item">
-        <summary>I termini che fisso sono rispettati?</summary>
-        <p>Sì. Al momento della creazione del progetto, Corrext stesso estrae i termini candidati dal documento. Fissate la loro traduzione o aggiungete i vostri termini. Un termine fisso è ripreso tale e quale nella traduzione automatica, che rileggerete poi nell’editore.</p>
+        <summary>I termini che fisso vengono rispettati?</summary>
+        <p>Sì. Alla creazione del progetto, Corrext estrae da sé i termini candidati dal documento. Voi ne fissate la traduzione, o aggiungete i vostri termini. Un termine fissato viene ripreso tale e quale nella traduzione automatica, che poi rivedete nell'editor.</p>
       </details>
       <details class="faq-item">
-        <summary>Quali formati di file posso riprodurre?</summary>
-        <p>Quelli che depositate in un progetto:. pdf,. doc,. docx,. xls,. xlsx,. ppt e. pptx, fino a 50 MB per file. L’applicazione consiglia il formato originale anziché il PDF. Dal cruscotto, il documento riprodotto viene esportato in Word e la sua memoria viene scaricata nel formato TMX, il formato standard di scambio delle memorie di traduzione.</p>
+        <summary>Quali formati di file posso rivedere?</summary>
+        <p>Quelli che caricate in un progetto: .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx, fino a 50 MB per file. L'applicazione consiglia il formato originale anziché il PDF. Dal cruscotto, il documento rivisto si esporta in Word, e la sua memoria si scarica in formato TMX, il formato standard per lo scambio delle memorie di traduzione.</p>
       </details>
     </div>
   </div>
@@ -626,16 +630,16 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
 <section class="final-cta">
   <div class="container">
     <div class="final-cta-inner">
-      <h2>Guardate l’editor di revisione sui vostri documenti</h2>
-      <p>Una dimostrazione su misura, eseguita da uno specialista del diritto svizzero: uno dei vostri documenti, le vostre lingue target e la vostra terminologia.</p>
+      <h2>Vedete l'editor di revisione all'opera sui vostri documenti</h2>
+      <p>Una demo personalizzata, guidata da uno specialista del diritto svizzero: uno dei vostri documenti, le vostre lingue di arrivo e la vostra terminologia.</p>
       <div class="final-cta-btns">
         <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
           Richiedere una demo
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="{{ROOT}}fr/corrext/" class="btn-outline">tornare alla piattaforma Corrext</a>
+        <a href="{{ROOT}}fr/corrext/" class="btn-outline">Alla piattaforma Corrext</a>
       </div>
-      <p class="micro">Demo su misura · in francese, tedesco, italiano o inglese · alloggio 100% svizzero</p>
+      <p class="micro">Demo personalizzata · in tedesco, francese, italiano o inglese · hosting al 100 % in Svizzera</p>
     </div>
   </div>
 </section>
@@ -673,9 +677,9 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   ALT[5]=ALT[0];
   var MEM=[
     null,
-    {s:'Article 1 · Objet du contrat',t:'Artikel 1 · Vertragsgegenstand',n:'Démo : formulation validée lors d\'un projet précédent.'},
-    {s:'La Mandataire fournit à la Mandante des prestations de conseil en conformité réglementaire, conformément au cahier des charges annexé au présent contrat.',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der regulatorischen Compliance gemäss dem diesem Vertrag beigefügten Pflichtenheft.',n:'Démo : cette formulation a été corrigée et validée dans un projet précédent. Apply la reprend ici.'},
-    {s:'Toute facture impayée à l\'échéance porte intérêt moratoire à 5 % l\'an.',t:'Für jede bei Fälligkeit unbezahlte Rechnung ist ein Verzugszins von 5 % pro Jahr geschuldet.',n:'Démo : la traduction de ce segment a été reprise telle quelle de la mémoire.'},
+    {s:'Article 1 · Objet du contrat',t:'Artikel 1 · Vertragsgegenstand',n:'Demo: formulazione convalidata in un progetto precedente.'},
+    {s:'La Mandataire fournit à la Mandante des prestations de conseil en conformité réglementaire, conformément au cahier des charges annexé au présent contrat.',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der regulatorischen Compliance gemäss dem diesem Vertrag beigefügten Pflichtenheft.',n:'Demo: questa formulazione è stata corretta e convalidata in un progetto precedente. Apply la riprende qui.'},
+    {s:'Toute facture impayée à l\'échéance porte intérêt moratoire à 5 % l\'an.',t:'Für jede bei Fälligkeit unbezahlte Rechnung ist ein Verzugszins von 5 % pro Jahr geschuldet.',n:'Demo: la traduzione di questo segmento è stata ripresa tale e quale dalla memoria.'},
     null,
     null
   ];
@@ -725,8 +729,8 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
     pbar.style.transform='scaleX('+(p/100)+')';pnum.textContent=p+'%';
     all.checked=n===box.length;all.indeterminate=n>0&&n<box.length;
   }
-  box.forEach(function(b,i){b.addEventListener('change',function(){progress();say(b.checked?'Segment '+i+' confirmé.':'Segment '+i+' de nouveau à relire.');});});
-  all.addEventListener('change',function(){var v=all.checked;box.forEach(function(b){b.checked=v;});progress();say(v?'Tous les segments sont confirmés.':'Aucun segment confirmé.');});
+  box.forEach(function(b,i){b.addEventListener('change',function(){progress();say(b.checked?'Segmento '+i+' confermato.':'Segmento '+i+' di nuovo da rivedere.');});});
+  all.addEventListener('change',function(){var v=all.checked;box.forEach(function(b){b.checked=v;});progress();say(v?'Tutti i segmenti sono confermati.':'Nessun segmento confermato.');});
 
   /* Filtres source et traduction */
   var fs=$('cxeFs'),ft=$('cxeFt'),none=$('cxeNone');
@@ -747,7 +751,7 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
     if(!noProp){checkProp(i);}
     filter();
   }
-  $('cxeCopy').addEventListener('click',function(){setT(sel,src[sel],'Source copiée dans la traduction du segment '+sel+'.');});
+  $('cxeCopy').addEventListener('click',function(){setT(sel,src[sel],'Testo di partenza copiato nella traduzione del segmento '+sel+'.');});
 
   /* Saisie directe : texte brut, pas de retour à la ligne, la case de confirmation se décoche */
   var editT={};
@@ -773,7 +777,7 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   function setFold(on){
     app.classList.toggle('fold',on);
     fold.setAttribute('aria-expanded',on?'false':'true');
-    fold.setAttribute('aria-label',on?'Déplier le panneau':'Replier le panneau');
+    fold.setAttribute('aria-label',on?'Espandere il pannello':'Ridurre il pannello');
   }
   fold.addEventListener('click',function(){setFold(!app.classList.contains('fold'));});
   function tab(k,focus){
@@ -797,9 +801,9 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   var memBox=$('cxeMem');
   function renderMem(){
     var m=MEM[sel];
-    if(!m){memBox.innerHTML='<p class="cxe-empty">Démo : aucune traduction validée proche du segment '+sel+'. Choisissez le segment 1, 2 ou 3.</p>';return;}
+    if(!m){memBox.innerHTML='<p class="cxe-empty">Demo: nessuna traduzione convalidata simile al segmento '+sel+'. Scegliete il segmento 1, 2 o 3.</p>';return;}
     memBox.innerHTML='<div class="cxe-match"><p class="cxe-ml">From this project\'s TM</p><p class="cxe-ms">'+esc(m.s)+'</p><p class="cxe-mt" lang="de">'+esc(m.t)+'</p><div class="cxe-ma"><button type="button" class="cx-btn cxe-sm" id="cxeMemOk">Apply</button></div></div><p class="cx-note">'+esc(m.n)+'</p>';
-    $('cxeMemOk').addEventListener('click',function(){setT(sel,m.t,'Traduction de la mémoire appliquée au segment '+sel+'.');});
+    $('cxeMemOk').addEventListener('click',function(){setT(sel,m.t,'Traduzione della memoria applicata al segmento '+sel+'.');});
   }
 
   /* Onglet Fast Lookup : mémoires et CHnell, côté source ou cible */
@@ -817,9 +821,9 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
     if(v){hit=side==='src'?(v.indexOf('moratoire')>=0||v.indexOf('interet')>=0):(v.indexOf('verzug')>=0);}
     var h='<p class="cxe-h">Translation memories</p>'+(hit?block(LK.tm):'<p class="cxe-nr">No result</p>');
     h+='<p class="cxe-h">CHnell</p>'+(hit?block(LK.ch):'<p class="cxe-nr">No result</p>');
-    if(!hit&&v){h+='<p class="cx-note">Démo : essayez « intérêt moratoire » côté Source, ou « Verzugszins » côté Target.</p>';}
+    if(!hit&&v){h+='<p class="cx-note">Demo: provate «intérêt moratoire» in Source, o «Verzugszins» in Target.</p>';}
     lk.innerHTML=h;
-    if(announce){say(hit?'1 résultat dans les mémoires, 2 dans CHnell.':'Aucun résultat.');}
+    if(announce){say(hit?'1 risultato nelle memorie, 2 in CHnell.':'Nessun risultato.');}
   }
   $('cxeQForm').addEventListener('submit',function(e){e.preventDefault();lookup(true);});
   q.addEventListener('input',function(){if(liveSw.getAttribute('aria-pressed')==='true'){clearTimeout(lkT);lkT=setTimeout(function(){lookup(true);},400);}});
@@ -852,7 +856,7 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
     more.disabled=true;
     altBox.insertAdjacentHTML('beforeend','<p class="cxe-alt"><span class="cx-shim" style="display:block"></span><span class="cx-shim" style="display:block;width:60%"></span></p>');
     clearTimeout(gt);
-    gt=setTimeout(function(){shown=3;renderAlt();say('Alternative ajoutée : Azure OpenAI GPT.');},reduce?0:700);
+    gt=setTimeout(function(){shown=3;renderAlt();say('Alternativa aggiunta: Azure OpenAI GPT.');},reduce?0:700);
   });
 
   var style=null,shorten=false,pStyle=null,pShort=false,rt;
@@ -882,9 +886,9 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
   each(chips,function(c){c.addEventListener('click',function(){var s=c.getAttribute('data-style');pStyle=pStyle===s?null:s;syncChips();});});
   shortChip.addEventListener('click',function(){pShort=!pShort;syncChips();});
   $('cxeReset').addEventListener('click',function(){pStyle=null;pShort=false;syncChips();});
-  $('cxeSetOk').addEventListener('click',function(){style=pStyle;shorten=pShort;openPop(false);setB.focus();renderReph(true);say('Reformulation régénérée.');});
+  $('cxeSetOk').addEventListener('click',function(){style=pStyle;shorten=pShort;openPop(false);setB.focus();renderReph(true);say('Riformulazione rigenerata.');});
   $('cxeRegen').addEventListener('click',function(){renderReph(true);});
-  $('cxeRApply').addEventListener('click',function(){if(REPH[sel]){setT(sel,rOut.textContent,'Reformulation appliquée au segment '+sel+'.');}});
+  $('cxeRApply').addEventListener('click',function(){if(REPH[sel]){setT(sel,rOut.textContent,'Riformulazione applicata al segmento '+sel+'.');}});
   $('cxeGo4').addEventListener('click',function(){select(4);rows[4].scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'});setB.focus();});
 
   /* Onglet Sync : conflits, modifications entrantes, propagation */
@@ -902,7 +906,7 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
     var j=REP[i];
     if(tg[i].textContent!==tg[j].textContent){
       S.prop={from:i,to:j,text:tg[i].textContent};renderSync();
-      say('Le segment '+j+' est identique : une décision de propagation attend dans Sync.');
+      say('Il segmento '+j+' è identico: una decisione di propagazione attende in Sync.');
     }else if(S.prop){S.prop=null;renderSync();}
   }
   function renderSync(focusSel){
@@ -924,17 +928,17 @@ canonical: https://neur-on.ai/fr/corrext/editeur-de-relecture/
     h+='</div>';
     syncBox.innerHTML=h;
     var pend=(S.conflict?1:0)+(S.incoming?1:0)+(S.prop?1:0);
-    dot.hidden=!pend;dotTxt.textContent=pend?', '+pend+(pend>1?' éléments':' élément')+' en attente':'';
+    dot.hidden=!pend;dotTxt.textContent=pend?', '+pend+(pend>1?' elementi':' elemento')+' in sospeso':'';
     if(focusSel){var f=$(focusSel);if(f){f.focus();}}
   }
   syncBox.addEventListener('click',function(e){
     var b=e.target.closest('button[data-act]');if(!b){return;}
     var a=b.getAttribute('data-act');
-    if(a==='keep'){S.conflict=null;renderSync('cxeSh1');say('Conflit résolu : votre version est conservée.');}
-    else if(a==='applyall'){var c=S.conflict;S.conflict=null;setT(c.seg,c.last,'Conflit résolu : la dernière version est appliquée au segment '+c.seg+'.',true);renderSync('cxeSh1');}
-    else if(a==='incoming'){var n=S.incoming;S.incoming=null;setT(n.seg,n.text,'Modification du collègue appliquée au segment '+n.seg+'.',true);renderSync('cxeSh2');}
-    else if(a==='prop'){var p=S.prop,go=$('cxePropBox').checked;S.prop=null;if(go){setT(p.to,p.text,'Correction propagée au segment '+p.to+'.',true);}renderSync('cxeSh3');}
-    else if(a==='asis'){S.prop=null;renderSync('cxeSh3');say('Segment laissé tel quel.');}
+    if(a==='keep'){S.conflict=null;renderSync('cxeSh1');say('Conflitto risolto: la vostra versione viene mantenuta.');}
+    else if(a==='applyall'){var c=S.conflict;S.conflict=null;setT(c.seg,c.last,'Conflitto risolto: l\'ultima versione è applicata al segmento '+c.seg+'.',true);renderSync('cxeSh1');}
+    else if(a==='incoming'){var n=S.incoming;S.incoming=null;setT(n.seg,n.text,'Modifica del collega applicata al segmento '+n.seg+'.',true);renderSync('cxeSh2');}
+    else if(a==='prop'){var p=S.prop,go=$('cxePropBox').checked;S.prop=null;if(go){setT(p.to,p.text,'Correzione estesa al segmento '+p.to+'.',true);}renderSync('cxeSh3');}
+    else if(a==='asis'){S.prop=null;renderSync('cxeSh3');say('Segmento lasciato invariato.');}
   });
 
   /* État initial */
