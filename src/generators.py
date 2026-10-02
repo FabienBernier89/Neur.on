@@ -679,21 +679,28 @@ def gen_glossaire(src):
     # index du glossaire
     rows = "".join(
         f'<a href="{{{{ROOT}}}}fr/ressources/glossaire/{d["slug"]}/" class="grow2">'
-        f'<b>{d["de"]}</b><span class="fr">{d["fr"]}</span>'
-        f'<span class="it">{d["it"]}</span><span class="dom">{d["domaine"]}</span></a>'
+        f'<b lang="de">{d["de"]}</b><span class="fr">{d["fr"]}</span>'
+        f'<span class="it" lang="it">{d["it"]}</span><span class="en" lang="en">{d["en"]}</span><span class="dom"><em>{d["domaine"]}</em></span></a>'
         for d in sorted(data, key=lambda x: x["de"].lower()))
+    # En-tête de colonnes : chaque langue reste dans sa colonne, d'une ligne à l'autre
+    entete = ('<div class="ghead" aria-hidden="true"><span>Allemand</span><span>Français</span>'
+              '<span>Italien</span><span>Anglais</span><span>Domaine</span></div>')
     body = "\n".join([
         """<style>
 .glist{padding:84px 0}
 .glist-head{margin-bottom:28px}
-.grow2{display:grid;grid-template-columns:1.1fr 1.1fr 1.1fr auto;gap:18px;align-items:baseline;padding:15px 12px;margin:0 -12px;border-bottom:1px solid var(--line);transition:background .15s}
-.grow2:first-of-type{border-top:1px solid var(--line)}
+/* Colonnes de largeur fixe, identiques pour l'en-tête et chaque ligne : les termes s'alignent verticalement */
+.ghead,.grow2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) 196px;column-gap:22px;align-items:baseline;padding:0 12px;margin:0 -12px}
+.ghead{padding-bottom:10px;border-bottom:1px solid var(--line-2)}
+.ghead span{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.grow2{padding-top:15px;padding-bottom:15px;border-bottom:1px solid var(--line);transition:background .15s}
 .grow2:hover{background:rgba(49,123,255,.04)}
+.grow2>*{min-width:0;overflow-wrap:anywhere}
 .grow2 b{font-size:15.5px;color:var(--navy)}
 .grow2 .fr{font-size:14.5px;color:var(--ink)}
-.grow2 .it{font-size:14px;color:var(--muted)}
-.grow2 .dom{font-size:11.5px;font-weight:700;color:var(--blue-d);background:var(--tint);border-radius:50px;padding:4px 11px;white-space:nowrap}
-@media(max-width:940px){.grow2{grid-template-columns:1fr 1fr;gap:6px 14px}.grow2 .dom{grid-column:1 / -1;justify-self:start}}
+.grow2 .it,.grow2 .en{font-size:14px;color:var(--muted)}
+.grow2 .dom em{display:inline-block;font-style:normal;font-size:11.5px;font-weight:700;color:var(--blue-d);background:var(--tint);border-radius:50px;padding:4px 11px;white-space:nowrap}
+@media(max-width:940px){.ghead{display:none}.grow2{grid-template-columns:1fr 1fr;gap:6px 14px}.grow2 .dom{grid-column:1 / -1}}
 </style>""",
         hero("Glossaire juridique suisse.", "Chaque terme dans les quatre langues, avec sa source",
              "Les lois suisses sont publiées en allemand, en français et en italien : les "
@@ -706,7 +713,7 @@ def gen_glossaire(src):
     <div class="sec-head glist-head"><h2>Les termes</h2>
       <p>Classés par terme allemand. Le glossaire s'étoffe au fil des vérifications de nos
         juristes-linguistes.</p></div>
-    {rows}
+    {entete}{rows}
   </div>
 </section>''',
         cta("Votre terminologie, appliquée partout",
