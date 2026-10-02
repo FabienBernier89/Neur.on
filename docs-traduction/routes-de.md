@@ -1,5 +1,7 @@
 # Table des adresses allemandes (DE)
 
+**Table validée par Fabien le 2 octobre 2026.** Une adresse DE ne change plus une fois publiée en production.
+
 Logique des slugs :
 
 1. Chaque adresse DE suit la hiérarchie FR (`de/uebersetzung/` pour `fr/traduction/`, `de/hilfe/` pour `fr/aide/`), sans noms de produits traduits (`de/corrext/`, `de/lexmachina/`, `chnell`).
