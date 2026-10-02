@@ -170,7 +170,7 @@
       {"de": "Aktiengesellschaft", "fr": "société anonyme", "it": "società anonima", "en": "company limited by shares", "ref": "art. 620 CO"},
       {"de": "Verwaltungsrat", "fr": "conseil d'administration", "it": "consiglio d'amministrazione", "en": "board of directors", "ref": "art. 707 CO"},
       {"de": "Generalversammlung", "fr": "assemblée générale", "it": "assemblea generale", "en": "general meeting", "ref": "art. 698 CO"},
-      {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "auditor", "ref": "art. 727 CO"},
+      {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "external auditor", "ref": "art. 727 CO"},
       {"de": "Bürgschaft", "fr": "cautionnement", "it": "fideiussione", "en": "contract of surety", "ref": "art. 492 CO"},
       {"de": "Schadenersatz", "fr": "dommages-intérêts", "it": "risarcimento del danno", "en": "damages", "ref": "art. 107 CO"}
     ],
@@ -283,7 +283,7 @@
       {"de": "Bankgeheimnis", "fr": "secret bancaire", "it": "segreto bancario", "en": "banking secrecy", "ref": "art. 47 LB"},
       {"de": "Geldwäscherei", "fr": "blanchiment d'argent", "it": "riciclaggio di denaro", "en": "money laundering", "ref": "art. 305bis CP"},
       {"de": "Verwaltungsrat", "fr": "conseil d'administration", "it": "consiglio d'amministrazione", "en": "board of directors", "ref": "art. 707 CO"},
-      {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "auditor", "ref": "art. 727 CO"},
+      {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "external auditor", "ref": "art. 727 CO"},
       {"de": "Aktiengesellschaft", "fr": "société anonyme", "it": "società anonima", "en": "company limited by shares", "ref": "art. 620 CO"},
       {"de": "Konkurs", "fr": "faillite", "it": "fallimento", "en": "bankruptcy", "ref": "art. 197 LP"}
     ],

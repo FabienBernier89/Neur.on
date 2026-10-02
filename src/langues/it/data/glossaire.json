@@ -290,7 +290,7 @@
   "de": "Revisionsstelle",
   "fr": "organe de révision",
   "it": "ufficio di revisione",
-  "en": "auditor",
+  "en": "external auditor",
   "resume": "L’organo che controlla il conto annuale della società.",
   "title": "Revisionsstelle: l’ufficio di revisione in Svizzera · Neur.on",
   "description": "Revisionsstelle, ufficio di revisione, ufficio di revisione, Auditor: l’ufficio di revisione della società anonima svizzera, in quattro lingue.",
@@ -1180,7 +1180,7 @@
   ],
   "fr": "sursis concordataire",
   "it": "moratoria concordataria",
-  "en": "debt restructuring moratorium",
+  "en": "composition moratorium",
   "title": "Nachlassstundung: la moratoria concordataria · Neur.on",
   "description": "Nachlassstundung, moratoria concordataria, moratoria concordataria, debt Restructuring moratorium: la procedura concordataria della LEF.",
   "exemple": {

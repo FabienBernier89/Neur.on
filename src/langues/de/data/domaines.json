@@ -308,7 +308,7 @@
     "de": "Revisionsstelle",
     "fr": "organe de révision",
     "it": "ufficio di revisione",
-    "en": "auditor",
+    "en": "external auditor",
     "ref": "Art. 727 OR"
    },
    {
@@ -896,7 +896,7 @@
     "de": "Wertpapiere",
     "fr": "papiers-valeurs",
     "it": "cartevalori",
-    "en": "securities",
+    "en": "negotiable securities",
     "ref": "Art. 965 OR"
    },
    {

@@ -31,8 +31,7 @@
  },
  "LB": {
   "url": "https://www.fedlex.admin.ch/eli/cc/51/117_121_129/fr",
-  "nom": "loi fédérale sur les banques et les caisses d'épargne",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/51/117_121_129/en"
+  "nom": "loi fédérale sur les banques et les caisses d'épargne"
  },
  "LBA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1998/892_892_892/fr",
@@ -46,8 +45,7 @@
  },
  "LCA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/24/719_735_717/fr",
-  "nom": "loi fédérale sur le contrat d'assurance",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/24/719_735_717/en"
+  "nom": "loi fédérale sur le contrat d'assurance"
  },
  "LCart": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1996/546_546_546/fr",
@@ -81,23 +79,19 @@
  },
  "LFus": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2004/320/fr",
-  "nom": "loi sur la fusion",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/2004/320/en"
+  "nom": "loi sur la fusion"
  },
  "LHID": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/fr",
-  "nom": "loi sur l'harmonisation des impôts directs",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/en"
+  "nom": "loi sur l'harmonisation des impôts directs"
  },
  "LIA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/fr",
-  "nom": "loi fédérale sur l'impôt anticipé",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/en"
+  "nom": "loi fédérale sur l'impôt anticipé"
  },
  "LIFD": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/fr",
-  "nom": "loi fédérale sur l'impôt fédéral direct",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/en"
+  "nom": "loi fédérale sur l'impôt fédéral direct"
  },
  "LP": {
   "url": "https://www.fedlex.admin.ch/eli/cc/11/529_488_529/fr",
@@ -121,8 +115,7 @@
  },
  "LSA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2005/734/fr",
-  "nom": "loi sur la surveillance des assurances",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/2005/734/en"
+  "nom": "loi sur la surveillance des assurances"
  },
  "LSFin": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2019/758/fr",
@@ -131,8 +124,7 @@
  },
  "LTF": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2006/218/fr",
-  "nom": "loi sur le Tribunal fédéral",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/2006/218/en"
+  "nom": "loi sur le Tribunal fédéral"
  },
  "LTVA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2009/615/fr",
@@ -141,13 +133,11 @@
  },
  "LTr": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/fr",
-  "nom": "loi sur le travail",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/en"
+  "nom": "loi sur le travail"
  },
  "ORC": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2007/686/fr",
-  "nom": "ordonnance sur le registre du commerce",
-  "url_en": "https://www.fedlex.admin.ch/eli/cc/2007/686/en"
+  "nom": "ordonnance sur le registre du commerce"
  },
  "PA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1969/737_757_755/fr",

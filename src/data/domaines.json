@@ -98,7 +98,7 @@
       {"de": "Aktienkapital", "fr": "capital-actions", "it": "capitale azionario", "en": "share capital", "ref": "art. 621 CO"},
       {"de": "Generalversammlung", "fr": "assemblée générale", "it": "assemblea generale", "en": "general meeting", "ref": "art. 698 CO"},
       {"de": "Verwaltungsrat", "fr": "conseil d'administration", "it": "consiglio d'amministrazione", "en": "board of directors", "ref": "art. 707 CO"},
-      {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "auditor", "ref": "art. 727 CO"},
+      {"de": "Revisionsstelle", "fr": "organe de révision", "it": "ufficio di revisione", "en": "external auditor", "ref": "art. 727 CO"},
       {"de": "Handelsregister", "fr": "registre du commerce", "it": "registro di commercio", "en": "commercial register", "ref": "art. 927 CO"}
     ],
     "termes_note": "Ces équivalences sont celles des versions allemande, française et italienne du Code des obligations : ce sont aussi les libellés employés par les offices du registre du commerce, ce qui les rend vérifiables acte par acte. La colonne anglaise reprend la traduction publiée par la Confédération sur Fedlex quand elle existe, sans force de loi, et la formulation d'usage sinon.",
@@ -291,7 +291,7 @@
       {"de": "Eigenmittel", "fr": "fonds propres", "it": "fondi propri", "en": "own funds", "ref": "art. 4 LB"},
       {"de": "Darlehensvertrag", "fr": "prêt de consommation", "it": "mutuo", "en": "fixed-term loan", "ref": "art. 312 CO"},
       {"de": "Bürgschaft", "fr": "cautionnement", "it": "fideiussione", "en": "contract of surety", "ref": "art. 492 CO"},
-      {"de": "Wertpapiere", "fr": "papiers-valeurs", "it": "cartevalori", "en": "securities", "ref": "art. 965 CO"},
+      {"de": "Wertpapiere", "fr": "papiers-valeurs", "it": "cartevalori", "en": "negotiable securities", "ref": "art. 965 CO"},
       {"de": "Kollektive Kapitalanlagen", "fr": "placements collectifs de capitaux", "it": "investimenti collettivi di capitale", "en": "collective investment schemes", "ref": "art. 7 LPCC"},
       {"de": "Prospekt", "fr": "prospectus", "it": "prospetto", "en": "prospectus", "ref": "art. 35 LSFin"}
     ],
