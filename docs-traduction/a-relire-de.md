@@ -46,6 +46,6 @@
 
 ## Source FR à revoir
 
-- Centre d'aide : CHnell compte 26 domaines à un endroit, 30 à un autre.
+- ~~Centre d'aide : CHnell compte 26 domaines à un endroit, 30 à un autre.~~ Réglé le 2 octobre 2026 : la liste « Domains » de l'application en compte 30 (« Other » compris).
 - « Forgot your password ? » : vérifier l'espace dans le libellé réel de l'application.
 - Politique de confidentialité (déjà connu, à corriger avant la production avec l'accord de Fabien) : Privacy Shield invalidé depuis 2020, Lucky Orange plus utilisé, « Google Inc. » devenu Google LLC.
