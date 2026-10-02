@@ -25,7 +25,7 @@
 <style>/* ============ HERO DU HUB : deux colonnes, fenêtre débordante ============ */
 .phero{padding:92px 0 0;color:#fff;position:relative;background:radial-gradient(900px 480px at 82% 0%, rgba(127,176,255,.28), transparent 60%),radial-gradient(600px 420px at 6% 100%, rgba(49,123,255,.22), transparent 62%),var(--navy-grad)}
 .phero-txt{padding-top:10px;padding-bottom:64px}
-.phero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:52px;align-items:start}
+.phero-grid{display:grid;grid-template-columns:minmax(0,6.3fr) minmax(0,5.7fr);gap:52px;align-items:start}
 
 .phero h1{font-size:clamp(30px,4vw,46px);color:#fff;letter-spacing:-.03em;line-height:1.12;margin:0 0 18px;max-width:17ch;text-wrap:balance}
 .phero h1 em{font-style:normal;color:var(--sky)}
@@ -122,7 +122,6 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 @media(min-width:1024px){
   .phero{height:var(--hero-h);padding-top:92px}
   .phero-txt{padding-top:0;padding-bottom:0}
-  .dash::after{content:"";position:absolute;left:0;right:0;bottom:0;height:72px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none;z-index:3}
 }
 @media(min-width:1024px) and (max-width:1279px){.phero-grid{gap:40px}.phero-cta{gap:10px}.phero-cta .btn-blue,.phero-cta .btn-ghost{padding:16px 18px;font-size:14.5px}}
 @media(max-width:940px){
@@ -146,15 +145,22 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 }
 /* Fenêtre du héro : elle garde sa mise en page d'origine (140 % de la colonne) et se réduit à l'échelle pour tenir dans la colonne, sans déborder du héro */
 @media(min-width:941px){
-  .dash-fit{position:relative;min-width:0;height:446px}
-  .dash-fit .dash{width:140%;height:624px;min-height:0;margin:0;transform:scale(.7143);transform-origin:top left}
+  .dash-fit{position:relative;min-width:0;height:470px;margin-top:-26px}
+  .dash-fit .dash{width:140%;height:658px;min-height:0;margin:0;transform:scale(.7143);transform-origin:top left}
 }
-/* Bandeau des garanties, sous le héro */
-.ptrust{padding:22px 0;background:#fff;border-bottom:1px solid var(--line)}
-.ptrust-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 32px;list-style:none;margin:0;padding:0}
-.ptrust-list li{display:flex;align-items:flex-start;gap:11px;font-size:14px;line-height:1.5;color:var(--ink)}
-.ptrust-list svg{width:18px;height:18px;color:var(--blue-d);flex-shrink:0;margin-top:1px}
-@media(max-width:940px){.ptrust-list{grid-template-columns:1fr;gap:12px}}</style>
+/* Bandeau des garanties, sous le héro : trois colonnes séparées, pastille d'icône, titre court et détail */
+.ptrust{padding:26px 0;background:#fff;border-bottom:1px solid var(--line)}
+.ptrust-list{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);list-style:none;margin:0;padding:0}
+.ptrust-list li{display:flex;align-items:center;gap:14px;padding:4px 28px}
+.ptrust-list li:first-child{padding-left:0}
+.ptrust-list li:last-child{padding-right:0}
+.ptrust-list li+li{border-left:1px solid var(--line)}
+.ptrust-ic{display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;border-radius:var(--r-bloc);background:var(--blue-pale);color:var(--blue-d)}
+.ptrust-ic svg{width:20px;height:20px}
+.ptrust-t{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ptrust-t b{font-size:15px;line-height:1.3;color:var(--ink);letter-spacing:-.01em}
+.ptrust-t>span{font-size:13px;line-height:1.5;color:var(--muted)}
+@media(max-width:940px){.ptrust-list{grid-template-columns:1fr}.ptrust-list li{padding:14px 0}.ptrust-list li+li{border-left:0;border-top:1px solid var(--line)}}</style>
 <script type="application/ld+json">{
  "@type": "SoftwareApplication",
  "name": "Corrext",
@@ -474,9 +480,9 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 <section class="ptrust" aria-label="Garanties de Corrext">
   <div class="container">
     <ul class="ptrust-list">
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Hébergé en Suisse (Infomaniak) ; traité en Suisse en mode Highly sensitive ou avec LexMachina ; ISO&nbsp;27001, hors US CLOUD Act</span></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Droits d'accès jusqu'au document, via SharePoint&nbsp;/&nbsp;AD</span></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Dans MS Word ou dans le navigateur, API et <span style="white-space:nowrap">on-premises</span></span></li>
+      <li><span class="ptrust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span class="ptrust-t"><b>Hébergé en Suisse, chez Infomaniak</b><span>Traité en Suisse en mode Highly sensitive ou avec LexMachina · ISO&nbsp;27001 · hors US CLOUD Act</span></span></li>
+      <li><span class="ptrust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="ptrust-t"><b>Droits d'accès jusqu'au document</b><span>Gérés via SharePoint et Active Directory</span></span></li>
+      <li><span class="ptrust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="ptrust-t"><b>Dans MS Word ou dans le navigateur</b><span>Avec une API REST, ou en déploiement <span style="white-space:nowrap">on-premises</span></span></span></li>
     </ul>
   </div>
 </section>
