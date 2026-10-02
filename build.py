@@ -426,6 +426,9 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     shutil.copytree(os.path.join(BASE, "assets"), os.path.join(OUT, "assets"),
                     ignore=shutil.ignore_patterns("*.map"))
+    # Maquettes pour les développeurs (aperçu seulement, jamais en production)
+    if not PRODUCTION and os.path.isdir(os.path.join(BASE, "maquettes")):
+        shutil.copytree(os.path.join(BASE, "maquettes"), os.path.join(OUT, "maquettes"))
 
     for path, meta, _body in pages:
         PAGES[path] = {"short": meta.get("short", path), "title": meta.get("title", ""), "lastmod": meta.get("lastmod")}
