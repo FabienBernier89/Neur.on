@@ -215,7 +215,7 @@
    },
    {
     "k": "False friends from French-speaking Switzerland",
-    "v": "The ‘for’ of a contract, its place of jurisdiction, is a Gerichtsstand, not just a place. An administrative appeal is not a Rekurs in every procedure. These slips come from the French of France or from cantonal usage."
+    "v": "The ‘for’ of a contract (its place of jurisdiction) is a Gerichtsstand, not merely a place (Ort). An administrative appeal is not a Rekurs in every procedure. These slips come from the French of France or from cantonal usage."
    },
    {
     "k": "Compounds to rebuild",
@@ -363,7 +363,7 @@
     "d": "English is one of the four native languages"
    }
   ],
-  "definition": "English is not an official language of the Swiss Confederation. Federal acts are authoritative in German, French and Italian; their English versions are translations published for information only, with no legal force. An English document therefore helps you understand and decide. It never grounds an interpretation before a Swiss authority.",
+  "definition": "English is not an official language of the Swiss Confederation. Federal acts are authoritative in German, French and Italian; their English versions are translations published for information only, with no legal force. An English document therefore helps you understand and decide. It can never be the basis for an interpretation before a Swiss authority.",
   "facts": [
    {
     "k": "No authoritative version",
@@ -481,7 +481,7 @@
     "r": "They are not translated. A company entered in the commercial register as an AG or GmbH keeps that form throughout the document. Only the legal form may be explained once, for example company limited by shares for Aktiengesellschaft."
    },
    {
-    "q": "Are English translations less accurate than other pairs?",
+    "q": "Are English translations less accurate than those in other pairs?",
     "r": "English is one of the four native languages of LexMachina, which is trained on Swiss legal and financial texts. What changes is not the quality of the language but the status of the text produced: it is for information only, because Swiss law is not written in English."
    },
    {
@@ -731,7 +731,7 @@
    },
    {
     "k": "Volume in an arbitration",
-    "v": "Exhibits arrive by the hundreds of pages, often as PDFs. Text and document translation accepts up to 25 files of 50 MB per upload and converts a scan into editable Word before processing."
+    "v": "Exhibits run to hundreds of pages and often arrive as PDFs. Text and document translation accepts up to 25 files of 50 MB per upload and converts a scan into an editable Word document before processing."
    },
    {
     "k": "Confidentiality",
@@ -808,7 +808,7 @@
   "faq": [
    {
     "q": "Can I cite a Swiss act in English in a submission?",
-    "r": "You can cite it in English for the reader's benefit, but the English text cannot carry the legal meaning. English is not an official language of the Confederation, and the English versions of Swiss acts are published for information only. The safe approach is to cite the French, German or Italian text, then give its English translation."
+    "r": "You can cite it in English for the reader's benefit, but the English version cannot be relied on for what the law says. English is not an official language of the Confederation, and the English versions of Swiss acts are published for information only. The safe approach is to cite the French, German or Italian text, then give its English translation."
    },
    {
     "q": "How do I cite a Federal Supreme Court decision in English?",
@@ -899,7 +899,7 @@
    },
    {
     "k": "A native language",
-    "v": "Italian is one of the four native languages of LexMachina, with German, French and English, and one of the only languages available in Highly sensitive content mode.",
+    "v": "Italian is one of the four native languages of LexMachina, with German, French and English, and one of only four languages available in Highly sensitive content mode.",
     "s": "For the foreign documents in a case file, the platform covers 30 languages in total."
    },
    {
@@ -981,7 +981,7 @@
    },
    {
     "q": "Is the Italian version of a federal act authoritative?",
-    "r": "Yes, on the same footing as the German and French versions. That is why terminological equivalents can be read directly in the official texts. The three versions of an article give the three exact terms, with no need for a customary translation."
+    "r": "Yes, on the same footing as the German and French versions. That is why terminological equivalents can be read directly in the official texts. The three versions of an article give the three exact terms, without relying on a common-usage translation."
    },
    {
     "q": "How are abbreviations of Acts converted?",

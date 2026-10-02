@@ -256,7 +256,7 @@
     "v": "Articles of association, regulations and powers of attorney change little from one year to the next. In Standard confidentiality, the translation memory makes these updates much faster."
    },
    {
-    "k": "Group companies",
+    "k": "Affiliated companies",
     "v": "The same term must stay identical in the articles of association of every subsidiary. The concordancer accepts your own terminology resources, shared across your teams."
    }
   ],
@@ -326,7 +326,7 @@
    {
     "abbr": "CO",
     "nom": "Code of Obligations",
-    "note": "Its Titles 23 to 32 cover the simple, general and limited partnership, the company limited by shares, the partnership limited by shares, the limited liability company and the cooperative. They also govern the commercial register, business names and commercial accounting; OR in German, CO in French and Italian."
+    "note": "Titles 23 to 32 govern the simple partnership, the general partnership, the limited partnership, the company limited by shares, the partnership limited by shares, the limited liability company and the cooperative. They also cover the commercial register, business names and commercial accounting; OR in German, CO in French and Italian."
    },
    {
     "abbr": "HRegV",
@@ -373,7 +373,7 @@
    },
    {
     "q": "How do I get a certified translation of a commercial register extract?",
-    "r": "You order it online on auszug-hr.ch, the Corrext service available from the platform's home page, at one of three certification levels depending on its intended use: a certificate signed and stamped by Corrext, authentication by a Swiss notary, then an apostille from the cantonal State Chancellery for use abroad."
+    "r": "You order it online at auszug-hr.ch, the Corrext service accessible from the platform's home page. There are three certification levels, depending on the intended use: a certificate signed and stamped by Corrext, authentication by a Swiss notary, and then an apostille from the cantonal State Chancellery for use abroad."
    },
    {
     "q": "Can confidential minutes be translated safely?",
@@ -625,7 +625,7 @@
    }
   ],
   "facts_titre": "Translating proceedings, in practice",
-  "definition": "Translating for litigation and arbitration means producing two kinds of text. Exhibits to understand in order to build a strategy, and written submissions or awards meant to be read, cited and enforced. The vocabulary comes from the Civil Procedure Code (CPC), the Federal Act on Private International Law (PILA) and the case law of the Federal Supreme Court.",
+  "definition": "Translating for litigation and arbitration means producing two kinds of text: exhibits to understand in order to build a strategy, and written submissions or awards meant to be read, cited and enforced. The vocabulary comes from the Civil Procedure Code (CPC), the Federal Act on Private International Law (PILA) and the case law of the Federal Supreme Court.",
   "facts": [
    {
     "k": "List of exhibits",
@@ -727,7 +727,7 @@
    {
     "abbr": "CPC",
     "nom": "Swiss Civil Procedure Code",
-    "note": "It governs written submissions, evidence, time limits and the cantonal appellate remedies, appeal and objection; ZPO in German, CPC in French and Italian."
+    "note": "It governs written submissions, evidence, time limits and the cantonal appellate remedies; ZPO in German, CPC in French and Italian."
    },
    {
     "abbr": "PILA",
@@ -786,7 +786,7 @@
    },
    {
     "q": "How can I check a procedural term?",
-    "r": "Highlight it: Fast lookup CHnell opens it in context with its official source, in the Litigation & Enforcement and Arbitration domains. The concordancer accepts quotation marks, the minus sign and the or operator to target a precise occurrence."
+    "r": "Highlight it: Fast lookup CHnell opens it in context with its official source, in the Litigation & Enforcement and Arbitration domains. The concordancer accepts quotation marks, the minus sign and the ‘or’ operator to target a precise occurrence."
    },
    {
     "q": "What about poor-quality scanned exhibits?",
@@ -806,7 +806,7 @@
   "short": "Banking and finance",
   "resume": "Credit agreements, prospectuses, fund documentation: the language of banking.",
   "title": "Legal and financial translation for Swiss banks · Neur.on",
-  "description": "Financial translation in Switzerland: credit agreements, prospectuses and fund documents, with data kept in the country and Banking Act and FinSA terms.",
+  "description": "Financial translation in Switzerland for credit agreements, prospectuses and fund documents: data stays in the country, terms follow the Banking Act and FinSA.",
   "lede": "Banking and finance.",
   "h1": "From credit agreement to prospectus",
   "lead": "Credit agreements, general terms and conditions, fund documentation, client notices: these documents circulate in four languages under banking secrecy. Corrext processes them in Switzerland, with the official terms.",
@@ -846,7 +846,7 @@
    },
    {
     "k": "Foreign engines",
-    "v": "If a team member chooses DeepL Pro, Azure OpenAI GPT or Claude, the Attorney-Client privilege notice recalls the rule before anything is sent.",
+    "v": "If a team member chooses DeepL Pro, Azure OpenAI GPT or Claude, the Attorney-Client privilege notice reminds them of the rule before anything is sent.",
     "s": "Only fully pseudonymised documents may be entrusted to them."
    },
    {
@@ -1137,7 +1137,7 @@
    {
     "a": "Directives",
     "t": "A single due diligence policy",
-    "p": "The directive is drafted at head office and applied in Geneva, Zurich and Lugano. The translation memory ensures that a revision changes only what has moved, and the AMLA terms stay identical from one language version to the next.",
+    "p": "The directive is drafted at head office and applied in Geneva, Zurich and Lugano. The translation memory ensures that a revision touches only the passages that have changed, and the AMLA terms stay identical from one language version to the next.",
     "vis": "bouclier"
    },
    {
@@ -1177,7 +1177,7 @@
    },
    {
     "q": "Do translations leave a trail that can be used in an audit?",
-    "r": "The Translation projects workflow records the review level chosen and the delivery time approved for each document, which documents the process. The confidentiality mode chosen also determines whether the content may feed a translation memory."
+    "r": "The Translation projects workflow records the review level chosen and the delivery time approved for each document, so every step is on record. The confidentiality mode chosen also determines whether the content may feed a translation memory."
    }
   ],
   "cta_t": "Your compliance documentation, processed in Switzerland",
@@ -1208,11 +1208,11 @@
    },
    {
     "t": "Carried over each year",
-    "d": "the translation memory saves retranslating identical text"
+    "d": "the translation memory saves you retranslating identical text"
    }
   ],
   "facts_titre": "Translating an annual report, in practice",
-  "definition": "Translating a Swiss annual report means handling two things at once. A freely drafted management commentary, and financial statements in which every item has a name set by the accounting law of the Code of Obligations. The balance sheet, the profit and loss account and the notes have official labels in German, French and Italian, and publication binds the company.",
+  "definition": "Translating a Swiss annual report means handling two things at once: a freely drafted management commentary, and financial statements in which every item has a name set by the accounting law of the Code of Obligations. The balance sheet, the profit and loss account and the notes have official labels in German, French and Italian, and publication binds the company.",
   "facts": [
    {
     "k": "Annual report",
@@ -1412,7 +1412,7 @@
    }
   ],
   "facts_titre": "Translating a tax file, in practice",
-  "definition": "Translating in Swiss tax law means working with concepts defined at three levels: direct federal tax, harmonised cantonal taxes and indirect taxes such as VAT. Each act is published in German, French and Italian. There, an everyday word, from income to profit, takes on a precise definition on which the amount due depends.",
+  "definition": "Translating in Swiss tax law means working with concepts defined at three levels: direct federal tax, harmonised cantonal taxes and indirect taxes such as VAT. Each act is published in German, French and Italian. In these acts, an everyday word such as income or profit takes on a precise definition, and the amount due depends on it.",
   "facts": [
    {
     "k": "Tax assessment",
@@ -1489,7 +1489,7 @@
     "fr": "impôt sur le capital",
     "it": "imposta sul capitale",
     "en": "capital tax",
-    "ref": "Art. 29 Federal Act on the Harmonisation of Direct Taxes of the Cantons and Communes"
+    "ref": "Art. 29 StHG"
    },
    {
     "de": "Mehrwertsteuer",
@@ -1546,7 +1546,7 @@
     "vis": "fiscal"
    },
    {
-    "a": "Group",
+    "a": "Corporate group",
     "t": "A tax position for use abroad",
     "p": "The internal memo circulates in English, but the reference remains the German, French or Italian text. The concordancer shows the original article, so you do not build an argument on an approximate translation.",
     "vis": "globe"
@@ -1739,7 +1739,7 @@
    },
    {
     "a": "Settlement",
-    "t": "A decision to notify to the insured",
+    "t": "A decision to send to the insured",
     "p": "The letter declining or accepting the claim binds the insurer and may be produced in court. It goes through a Full review by a legal translator, with the delivery time known before you approve the quote.",
     "vis": "envoi"
    }
@@ -1784,7 +1784,7 @@
   "short": "Intellectual property",
   "resume": "Patents, trade marks, copyright: translating rights you can assert.",
   "title": "Patent and trade mark translation in Switzerland · Neur.on",
-  "description": "Patent applications, trade mark filings, copyright licences and oppositions: translate enforceable rights with the terms of the PatA, TmPA and CopA.",
+  "description": "Patent applications, trade mark filings, licences and oppositions: translate enforceable rights with the terms of the PatA, TmPA and CopA.",
   "lede": "Intellectual property.",
   "h1": "Rights you can assert against third parties",
   "lead": "A patent claim, a list of goods and services, an assignment of rights: the translation becomes the right itself, and any discrepancy changes the protection. Corrext relies on the terms of the Swiss acts.",
@@ -1803,7 +1803,7 @@
    }
   ],
   "facts_titre": "Translating a patent or a trade mark, in practice",
-  "definition": "Translating in intellectual property means producing a text that itself defines the extent of a right. This is true of patent claims, of the list of goods of a trade mark and of the subject matter of a copyright assignment. The basic concepts are set by the Swiss acts on patents, trade marks, designs and copyright, published in the three official languages.",
+  "definition": "Translating in intellectual property means producing a text that itself defines the extent of a right: the claims of a patent, the list of goods of a trade mark, the subject matter of a copyright assignment. The basic concepts are set by the Swiss acts on patents, trade marks, designs and copyright, published in the three official languages.",
   "facts": [
    {
     "k": "Patent application",
@@ -1947,7 +1947,7 @@
   "faq": [
    {
     "q": "Is a machine translation enough for a filing?",
-    "r": "Not for the text you file. Machine translation prepares the work and helps you understand the prior art or an opponent's opposition. But a right you will assert against third parties justifies a Full review by a legal translator, or even Double review & certified translation when an attestation is required."
+    "r": "Not for the text you file. Machine translation prepares the work and helps you understand the prior art or an opposition filed by the other side. But a right you will assert against third parties justifies a Full review by a legal translator, or even Double review & certified translation when an attestation is required."
    },
    {
     "q": "How do I keep the same terminology across a whole portfolio?",
@@ -2331,7 +2331,7 @@
    },
    {
     "a": "Time limit",
-    "t": "Ten days to challenge an order",
+    "t": "Ten days to contest a summary penalty order",
     "p": "The time limit for a rejection leaves no time to wait for an external translation. The text is pasted straight into Text and document translation, the decision is taken the same day, and only the rejection actually filed goes through a legal translator.",
     "vis": "pret"
    },
@@ -2346,7 +2346,7 @@
   "faq": [
    {
     "q": "Can a machine translation be filed in the case record?",
-    "r": "It serves first to understand. A document filed with the criminal justice authority must be reliable and, depending on the case, attested. It then goes through a Full review by a legal translator, or Double review & certified translation when the court requires a certified translation."
+    "r": "Its first purpose is to help you understand the case. A document filed with the criminal justice authority must be reliable and, depending on the case, attested. It then goes through a Full review by a legal translator, or Double review & certified translation when the court requires a certified translation."
    },
    {
     "q": "How do I protect the confidentiality of the investigation?",

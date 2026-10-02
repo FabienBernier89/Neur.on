@@ -142,7 +142,7 @@
    },
    {
     "q": "Is the layout of contracts preserved?",
-    "r": "Yes, the translation is delivered in the original format. When the original file is available, the application recommends uploading it, a Word or Excel file rather than a PDF."
+    "r": "Yes, the translation is delivered in the original format. When you have the original file (Word or Excel rather than PDF), the application recommends uploading it."
    },
    {
     "q": "Who reviews documents intended for third parties?",
@@ -327,7 +327,7 @@
   "cta_p": "A demo with a specialist, on your circulars, your prospectuses and your terminology.",
   "temoignage": {
    "exemple": true,
-   "citation": "The authority's request arrived in German on a Friday, with a reply expected in French and Italian. The working versions were ready within the hour, and every prudential term was checked against its official source before sending. For our management, keeping the documents stored in Switzerland was the starting condition.",
+   "citation": "The authority's request arrived in German on a Friday, with a reply expected in French and Italian. The working versions were ready within the hour, and every prudential term was checked against its official source before sending. For our management, keeping the documents stored in Switzerland was a precondition from the outset.",
    "auteur": "Head of Compliance",
    "fonction": "Private bank, Zurich"
   }
@@ -797,7 +797,7 @@
    },
    {
     "q": "What is the difference between certification, notarisation and an apostille?",
-    "r": "Certification is the provider's attestation that the translation is accurate. Notarisation adds the involvement of a Swiss notary. The apostille, issued by the State Chancellery under the Hague Convention of 5 October 1961, authenticates the notary's signature for states party to the Convention."
+    "r": "Certification is the provider's attestation that the translation is accurate. Notarisation adds the involvement of a Swiss notary. The apostille, issued by the cantonal State Chancellery under the Hague Convention of 5 October 1961, authenticates the notary's signature for states party to the Convention."
    },
    {
     "q": "Into which languages are extracts translated?",
@@ -892,7 +892,7 @@
    },
    {
     "k": "Research",
-    "v": "The engine comes from an innovation project supported by the Swiss Innovation Agency Innosuisse and carried out with the iCoSys institute at HEIA-FR."
+    "v": "The engine comes from an innovation project supported by the Swiss Innovation Agency Innosuisse and carried out with the iCoSys institute at the School of Engineering and Architecture of Fribourg (HEIA-FR)."
    }
   ],
   "who_titre": "Three forms of integration",
@@ -913,7 +913,7 @@
     "vis": "echange",
     "a": "Language service providers",
     "t": "Delivering in Trados or memoQ",
-    "p": "Legal translators work in their usual tools and deliver into the project chain, where review takes place in the Corrext editor or in Word."
+    "p": "Legal translators work in their usual tools and deliver into the project workflow, where review takes place in the Corrext editor or in Word."
    }
   ],
   "gov_q": "What sets a specialised engine apart from a general-purpose one?",
@@ -985,7 +985,7 @@
   "cta_p": "A technical discussion with our team to define volumes, languages and deployment mode.",
   "temoignage": {
    "exemple": true,
-   "citation": "Our subscribers now read case law in their own language, and each term links to its use in official texts. We connected the engine through the API, without building a model ourselves. The argument that won over our clients: processing stays in Switzerland.",
+   "citation": "Our subscribers now read case law in their own language, and each term links to its use in official texts. We connected the engine through the API, without building one ourselves. The argument that won over our clients: processing stays in Switzerland.",
    "auteur": "Head of Product",
    "fonction": "Legal publisher, Zurich"
   }
