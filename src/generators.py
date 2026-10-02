@@ -266,8 +266,29 @@ WS_ICONS = {k: _svg(v, "1.9") for k, v in {
 }.items()}
 
 
-def who(titre, items):
-    """Bloc « situations » en cartes : pictogramme facultatif (clé vis) sur la ligne du titre, puis le texte."""
+# Métiers concernés par chaque domaine : liens vers les pages Solutions, sous les situations
+METIERS = {"cabinets-avocats": "Cabinets d'avocats", "banques-finance": "Banques et finance",
+           "directions-juridiques": "Directions juridiques", "autorites-administration": "Autorités et administration",
+           "fiduciaires-conseil": "Fiduciaires et conseil", "editeurs-legaltech": "LegalTechs et éditeurs"}
+DOMAINE_METIERS = {
+    "contrats": ["cabinets-avocats", "directions-juridiques"],
+    "droit-des-societes": ["fiduciaires-conseil", "cabinets-avocats"],
+    "fusions-acquisitions": ["cabinets-avocats", "banques-finance"],
+    "contentieux-arbitrage": ["cabinets-avocats", "directions-juridiques"],
+    "banque-finance": ["banques-finance", "fiduciaires-conseil"],
+    "compliance-finma": ["banques-finance", "directions-juridiques"],
+    "rapports-annuels-financiers": ["fiduciaires-conseil", "banques-finance"],
+    "fiscalite": ["fiduciaires-conseil", "cabinets-avocats"],
+    "assurance": ["banques-finance", "directions-juridiques"],
+    "propriete-intellectuelle": ["cabinets-avocats", "directions-juridiques"],
+    "droit-du-travail": ["directions-juridiques", "cabinets-avocats"],
+    "droit-penal": ["cabinets-avocats", "autorites-administration"],
+}
+
+
+def who(titre, items, metiers=None):
+    """Bloc « situations » en cartes : pictogramme facultatif (clé vis) sur la ligne du titre, puis le texte.
+    metiers : slugs de pages Solutions à proposer sous les cartes."""
     def ic(w):
         return f'<span class="ws-ic">{WS_ICONS[w["vis"]]}</span>' if w.get("vis") else ""
     ws = "".join(
@@ -276,7 +297,11 @@ def who(titre, items):
         for w in items)
     return ('<section class="who who-s">\n  <div class="container">\n'
             f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
-            f'    <div class="ws-grid">{ws}</div>\n  </div>\n</section>')
+            f'    <div class="ws-grid">{ws}</div>\n'
+            + (f'    <p class="ws-metiers">Par métier : ' + " · ".join(
+                f'<a href="{{{{ROOT}}}}fr/solutions/{m}/">{METIERS[m]}</a>' for m in metiers) + "</p>\n"
+               if metiers else "")
+            + '  </div>\n</section>')
 
 
 def voisins(titre, items, lien="Voir le domaine"):
@@ -376,9 +401,28 @@ def cta(titre, texte, second=None):
 </section>'''
 
 
+_GLOSSAIRE = None
+
+
+def fiche_glossaire(de):
+    """Slug de la fiche du glossaire pour un terme allemand, s'il en a une."""
+    global _GLOSSAIRE
+    if _GLOSSAIRE is None:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "glossaire.json"), encoding="utf-8") as f:
+            _GLOSSAIRE = {x["de"].lower(): x["slug"] for x in json.load(f)}
+    # formes du texte de loi qui renvoient à une fiche nommée autrement
+    alias = {"verzug des schuldners": "schuldnerverzug", "gewährleistung wegen mängel": "gewaehrleistung",
+             "einzelarbeitsvertrag": "arbeitsvertrag", "fristlose auflösung": "fristlose-kuendigung",
+             "überstundenarbeit": "ueberstunden"}
+    return _GLOSSAIRE.get(de.lower()) or alias.get(de.lower())
+
+
 def terms_table(termes, caption, titre="Les équivalences officielles, dans les quatre langues"):
+    def terme(de):
+        s = fiche_glossaire(de)
+        return f'<a href="{{{{ROOT}}}}fr/ressources/glossaire/{s}/">{de}</a>' if s else de
     rows = "".join(
-        f'<tr><td><b>{t["de"]}</b></td><td>{t["fr"]}</td><td>{t["it"]}</td><td>{t["en"]}</td>'
+        f'<tr><td><b>{terme(t["de"])}</b></td><td>{t["fr"]}</td><td>{t["it"]}</td><td>{t["en"]}</td>'
         f'<td class="ref">{t["ref"]}</td></tr>' for t in termes)
     return f'''<section class="tterms">
   <div class="container">
@@ -403,6 +447,8 @@ TERMS_CSS = """<style>
 .tterms-table{min-width:760px}
 .tterms-table td{font-size:14px}
 .tterms-table td b{color:var(--navy)}
+.tterms-table td b a{color:inherit;text-decoration:underline;text-decoration-color:rgba(49,123,255,.45);text-underline-offset:3px}
+.tterms-table td b a:hover{color:var(--blue-d);text-decoration-color:currentColor}
 .tterms-table td.ref{font-size:13px;color:var(--muted);white-space:nowrap}
 .tterms-note{margin:18px auto 0;font-size:13.5px;color:var(--muted);max-width:72ch;text-align:center;text-wrap:balance}
 .tterms-note a{color:var(--blue-d);font-weight:600}
@@ -484,9 +530,8 @@ def gen_solutions(src):
         ])
         pages.append(("fr/solutions/", {
             "title": "Solutions par métier · Neur.on, traduction juridique suisse",
-            "description": "Cabinets d'avocats, banques, directions juridiques, autorités, "
-                           "fiduciaires, éditeurs : ce que Corrext change pour chaque métier, "
-                           "avec un stockage en Suisse et une relecture juridique à la carte.",
+            "description": "Avocats, banques, directions juridiques, autorités, fiduciaires, "
+                           "éditeurs : ce que Corrext change pour chaque métier, stockage en Suisse compris.",
             "short": "Solutions", "nav": "solutions"}, body))
     return pages
 
@@ -507,7 +552,7 @@ def gen_domaines(src):
                   d["facts"]),
             terms_table(d["termes"], d["termes_note"], d.get("termes_titre", "La terminologie officielle, dans les quatre langues")),
             laws_block(d.get("lois_titre", "Les textes de référence, cités au quotidien"), d["lois_intro"], d["lois"]),
-            who(d["who_titre"], d["who"]),
+            who(d["who_titre"], d["who"], DOMAINE_METIERS.get(d["slug"])),
             faq(d["faq_titre"], d["faq"]),
             voisins("Autres domaines",
                     [{"href": f'fr/traduction/{v["slug"]}/', "t": v["short"], "d": v["resume"],
@@ -591,8 +636,7 @@ def gen_traduction_hub(src):
     return [("fr/traduction/", {
         "title": "Traduction juridique par domaine et par langue · Neur.on",
         "description": "Douze domaines du droit suisse et les principales paires de langues : "
-                       "terminologie officielle en allemand, français, italien et anglais, textes "
-                       "de référence et traitement dans Corrext.",
+                       "la terminologie officielle en allemand, français, italien et anglais, et ses sources.",
         "short": "Traduction", "nav": "solutions"}, body)]
 
 
@@ -1048,7 +1092,8 @@ def gen_blog(src):
                 {"href": "fr/contact/", "txt": "Demander une démo"}),
         ])
         pages.append((blog_url(a), {"title": a["title"], "description": a["description"], "short": a.get("court", a["titre"]),
-                                    "nav": "ressources", "hero": "aide", "lastmod": a.get("maj", a["date"])}, body))
+                                    "nav": "ressources", "hero": "aide", "lastmod": a.get("maj", a["date"]),
+                                    "image": a.get("image", {}).get("src"), "image_alt": a.get("image", {}).get("alt")}, body))
 
     une = arts[0]
     cats = []
@@ -1087,7 +1132,7 @@ b.forEach(function(e){e.addEventListener('click',function(){f(e.getAttribute('da
         if load(src, "actualites") else "",
         blog_linkedin(), BLOG_FIN, script,
     ])
-    pages.append(("fr/ressources/blog/", {"title": "Blog Neur.on · Droit suisse, traduction juridique et actualités",
+    pages.append(("fr/ressources/blog/", {"title": "Blog Neur.on : droit suisse, traduction et actualités",
                                            "description": "Articles de fond sur la traduction juridique en Suisse (terminologie, devis, secret professionnel) et actualités de Neur.on : conférences, événements, presse.",
                                            "short": "Blog", "nav": "ressources", "hero": "read",
                                            "canonical": f"{SITE}/fr/ressources/blog/"}, body))

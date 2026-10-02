@@ -784,7 +784,7 @@
   "fr": "contrat de travail",
   "it": "contratto di lavoro",
   "en": "employment contract",
-  "title": "Arbeitsvertrag : le contrat de travail en droit suisse · Neur.on",
+  "title": "Arbeitsvertrag : le contrat de travail suisse · Neur.on",
   "description": "Arbeitsvertrag, contrat de travail, contratto di lavoro, employment contract : le contrat individuel de travail de l'art. 319 CO.",
   "exemple": {
    "de": "Wird es vom Gesetz nicht anders bestimmt, so bedarf der <mark>Einzelarbeitsvertrag</mark> zu seiner Gültigkeit keiner besonderen Form.",
@@ -877,11 +877,11 @@
    "verjaehrung",
    "schadenersatz"
   ],
-  "fr": "avis des défauts",
-  "it": "avviso dei difetti",
+  "fr": "avis au vendeur (avis des défauts)",
+  "it": "avviso al venditore",
   "en": "notice of defects",
   "title": "Mängelrüge : l'avis des défauts en droit suisse · Neur.on",
-  "description": "Mängelrüge, avis des défauts, avviso dei difetti, notice of defects : le devoir de vérifier et d'aviser de l'art. 201 CO.",
+  "description": "Mängelrüge, avis au vendeur ou avis des défauts, avviso al venditore, notice of defects : vérifier et aviser sans délai (art. 201 CO).",
   "exemple": {
    "de": "Der Käufer soll, sobald es nach dem üblichen Geschäftsgange tunlich ist, die Beschaffenheit der empfangenen Sache prüfen und, falls sich Mängel ergeben, für die der Verkäufer Gewähr zu leisten hat, diesem <mark>sofort Anzeige machen</mark>.",
    "fr": "L’acheteur a l’obligation de vérifier l’état de la chose reçue aussitôt qu’il le peut d’après la marche habituelle des affaires; s’il découvre des défauts dont le vendeur est garant, il doit <mark>l’en aviser sans délai</mark>."
@@ -905,7 +905,7 @@
   "it": "procura",
   "en": "authority (power of attorney)",
   "title": "Vollmacht : pouvoirs et procuration · Neur.on",
-  "description": "Vollmacht, pouvoirs ou procuration, procura, authority : le pouvoir de représentation des art. 32 à 34 CO.",
+  "description": "Vollmacht, pouvoirs ou procuration, procura, authority : le pouvoir de représentation des art. 32 à 34 CO et l'acte qui le confère.",
   "exemple": {
    "de": "Solange das Erlöschen der <mark>Vollmacht</mark> dem Bevollmächtigten nicht bekannt geworden ist, berechtigt und verpflichtet er den Vollmachtgeber oder dessen Rechtsnachfolger, wie wenn die Vollmacht noch bestehen würde.",
    "fr": "Aussi longtemps que le représentant n’a pas connaissance de l’extinction de ses <mark>pouvoirs</mark>, le représenté ou ses ayants cause deviennent par son fait créanciers ou débiteurs comme si les pouvoirs existaient encore."
@@ -1119,7 +1119,7 @@
   "fr": "mesures provisionnelles",
   "it": "provvedimenti cautelari",
   "en": "interim measures",
-  "title": "vorsorgliche Massnahmen : les mesures provisionnelles · Neur.on",
+  "title": "vorsorgliche Massnahmen : mesures provisionnelles · Neur.on",
   "description": "vorsorgliche Massnahmen, mesures provisionnelles, provvedimenti cautelari, interim measures : les art. 261 à 265 CPC.",
   "exemple": {
    "de": "Für Schadenersatzklagen wegen ungerechtfertigter <mark>vorsorglicher Massnahmen</mark> ist das Gericht am Wohnsitz oder Sitz der beklagten Partei oder an dem Ort, an dem die vorsorgliche Massnahme angeordnet wurde, zuständig.",

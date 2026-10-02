@@ -11,6 +11,8 @@
 <meta property="og:description" content="Contrats de crédit, prospectus, documentation de fonds : traduire sans que la donnée quitte la Suisse, avec la terminologie de la LB et de la LSFin.">
 <meta property="og:url" content="https://neur-on.ai/fr/traduction/banque-finance/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, traduction par IA pour le droit, la fiscalité et la finance">
 <meta property="og:site_name" content="Neur.on">
 <meta property="og:locale" content="fr_CH">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,12 +23,14 @@
 <link rel="icon" type="image/png" href="../../../assets/img/neuron-mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/neuron-mark-180.png">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=35a471a9">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=c89fc890">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
 .tterms-table td{font-size:14px}
 .tterms-table td b{color:var(--navy)}
+.tterms-table td b a{color:inherit;text-decoration:underline;text-decoration-color:rgba(49,123,255,.45);text-underline-offset:3px}
+.tterms-table td b a:hover{color:var(--blue-d);text-decoration-color:currentColor}
 .tterms-table td.ref{font-size:13px;color:var(--muted);white-space:nowrap}
 .tterms-note{margin:18px auto 0;font-size:13.5px;color:var(--muted);max-width:72ch;text-align:center;text-wrap:balance}
 .tterms-note a{color:var(--blue-d);font-weight:600}
@@ -43,6 +47,7 @@
 @media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Le secret bancaire est-il compatible avec une traduction automatique ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, à condition de maîtriser le lieu de traitement. Le stockage se fait sur des serveurs suisses dans tous les cas, et le mode Highly sensitive content impose un traitement exclusivement en Suisse, sans réutilisation du contenu en mémoire. Les moteurs hébergés à l'étranger exigent une pseudonymisation préalable et affichent un avertissement."}}, {"@type": "Question", "name": "Quels moteurs sont disponibles ?", "acceptedAnswer": {"@type": "Answer", "text": "LexMachina, le moteur suisse entraîné sur la donnée juridique et financière du pays, ainsi que DeepL Pro, Azure OpenAI GPT et Claude. Les trois derniers sont hébergés à l'étranger : l'application le signale au moment du choix, avant tout envoi de document."}}, {"@type": "Question", "name": "Peut-on traduire des fichiers Excel de tableaux financiers ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, les formats .xls et .xlsx sont pris en charge au même titre que Word, PowerPoint et PDF, dans la limite de 25 fichiers de 50 Mo par envoi. Le fichier revient dans son format d'origine, structure de tableau conservée."}}, {"@type": "Question", "name": "Comment assurer la cohérence entre versions annuelles ?", "acceptedAnswer": {"@type": "Answer", "text": "Par la mémoire de traduction, alimentée par les projets en confidentialité Standard et réutilisable exclusivement par votre organisation, et par les ressources terminologiques propres que Fast lookup CHnell accepte en plus de ses 30 domaines sourcés. Les deux mécanismes se combinent : la mémoire pour les phrases, le concordancier pour les termes."}}, {"@type": "Question", "name": "Qui relit une documentation destinée aux investisseurs ?", "acceptedAnswer": {"@type": "Answer", "text": "Un traducteur juridique en Light review ou en Full review selon l'enjeu, ou deux traducteurs et une agence spécialisée pour une Double review avec certificat. Le niveau se choisit document par document, et le délai s'affiche avant la validation du devis."}}, {"@type": "Question", "name": "Les documents traduits servent-ils à entraîner un moteur ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Les contenus clients ne servent pas à entraîner les moteurs. Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction, mais elle reste cloisonnée à votre organisation ; en mode Highly sensitive content, aucune réutilisation n'a lieu. Le mode se choisit à la création du projet."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://neur-on.ai/fr/"}, {"@type": "ListItem", "position": 2, "name": "Traduction", "item": "https://neur-on.ai/fr/traduction/"}, {"@type": "ListItem", "position": 3, "name": "Banque et finance", "item": "https://neur-on.ai/fr/traduction/banque-finance/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Banque et finance", "description": "Contrats de crédit, prospectus, documentation de fonds : traduire sans que la donnée quitte la Suisse, avec la terminologie de la LB et de la LSFin.", "serviceType": "Traduction juridique et financière", "url": "https://neur-on.ai/fr/traduction/banque-finance/", "provider": {"@type": "Organization", "@id": "https://neur-on.ai/#organisation", "name": "Neur.on", "url": "https://neur-on.ai/"}, "areaServed": {"@type": "Country", "name": "Suisse"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
@@ -274,7 +279,7 @@
     <div class="compare-wrap">
       <table class="cmp tterms-table">
         <thead><tr><th>Allemand</th><th>Français</th><th>Italien</th><th>Anglais</th><th>Référence</th></tr></thead>
-        <tbody><tr><td><b>Bankgeheimnis</b></td><td>secret bancaire</td><td>segreto bancario</td><td>banking secrecy</td><td class="ref">art. 47 LB</td></tr><tr><td><b>Eigenmittel</b></td><td>fonds propres</td><td>fondi propri</td><td>own funds</td><td class="ref">art. 4 LB</td></tr><tr><td><b>Darlehensvertrag</b></td><td>prêt de consommation</td><td>mutuo</td><td>fixed-term loan</td><td class="ref">art. 312 CO</td></tr><tr><td><b>Bürgschaft</b></td><td>cautionnement</td><td>fideiussione</td><td>contract of surety</td><td class="ref">art. 492 CO</td></tr><tr><td><b>Wertpapiere</b></td><td>papiers-valeurs</td><td>cartevalori</td><td>securities</td><td class="ref">art. 965 CO</td></tr><tr><td><b>Kollektive Kapitalanlagen</b></td><td>placements collectifs de capitaux</td><td>investimenti collettivi di capitale</td><td>collective investment schemes</td><td class="ref">art. 7 LPCC</td></tr><tr><td><b>Prospekt</b></td><td>prospectus</td><td>prospetto</td><td>prospectus</td><td class="ref">art. 35 LSFin</td></tr></tbody>
+        <tbody><tr><td><b><a href="../../../fr/ressources/glossaire/bankgeheimnis/">Bankgeheimnis</a></b></td><td>secret bancaire</td><td>segreto bancario</td><td>banking secrecy</td><td class="ref">art. 47 LB</td></tr><tr><td><b>Eigenmittel</b></td><td>fonds propres</td><td>fondi propri</td><td>own funds</td><td class="ref">art. 4 LB</td></tr><tr><td><b>Darlehensvertrag</b></td><td>prêt de consommation</td><td>mutuo</td><td>fixed-term loan</td><td class="ref">art. 312 CO</td></tr><tr><td><b><a href="../../../fr/ressources/glossaire/buergschaft/">Bürgschaft</a></b></td><td>cautionnement</td><td>fideiussione</td><td>contract of surety</td><td class="ref">art. 492 CO</td></tr><tr><td><b>Wertpapiere</b></td><td>papiers-valeurs</td><td>cartevalori</td><td>securities</td><td class="ref">art. 965 CO</td></tr><tr><td><b>Kollektive Kapitalanlagen</b></td><td>placements collectifs de capitaux</td><td>investimenti collettivi di capitale</td><td>collective investment schemes</td><td class="ref">art. 7 LPCC</td></tr><tr><td><b><a href="../../../fr/ressources/glossaire/prospekt/">Prospekt</a></b></td><td>prospectus</td><td>prospetto</td><td>prospectus</td><td class="ref">art. 35 LSFin</td></tr></tbody>
       </table>
     </div>
     <p class="tterms-note">Équivalences tirées des textes officiels suisses, publiés en allemand,
@@ -294,6 +299,7 @@
   <div class="container">
     <div class="sec-head"><h2>Trois usages bancaires où la traduction est un passage obligé</h2></div>
     <div class="ws-grid"><article class="ws-item"><h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9.5h.01M18 14.5h.01"/></svg></span><span><span class="pn">Crédit.</span> Un contrat de prêt en deux langues</span></h3><p>Le contrat est négocié en anglais et signé en allemand par un emprunteur alémanique. La traduction machine sert à la négociation, la Full review par un traducteur juridique sécurise la version signée, avec le délai affiché avant validation.</p></article><article class="ws-item"><h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 16v-4M12 16V7M17 16v-6"/></svg></span><span><span class="pn">Fonds.</span> Une documentation en quatre langues</span></h3><p>Le prospectus et les documents qui l'accompagnent doivent employer les termes de la LPCC et de la LSFin. Les versions successives s'appuient sur la mémoire de traduction, et la terminologie se vérifie dans les domaines Fund Prospectuses et Banking & Finance.</p></article><article class="ws-item"><h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg></span><span><span class="pn">Clientèle.</span> Un message urgent à tous les clients</span></h3><p>Une modification de conditions part le même jour en allemand, français, italien et anglais. Le texte se colle directement dans Traduction texte et document, et une Light review suffit pour un message informatif qui n'engage pas juridiquement l'établissement.</p></article></div>
+    <p class="ws-metiers">Par métier : <a href="../../../fr/solutions/banques-finance/">Banques et finance</a> · <a href="../../../fr/solutions/fiduciaires-conseil/">Fiduciaires et conseil</a></p>
   </div>
 </section>
 
@@ -396,6 +402,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=35a471a9" defer></script>
+<script src="../../../assets/nav.js?v=c89fc890" defer></script>
 </body>
 </html>

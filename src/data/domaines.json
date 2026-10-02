@@ -257,7 +257,7 @@
     ],
     "cta_t": "Voyez Corrext sur un bordereau de pièces",
     "cta_p": "Une démonstration sur vos propres dossiers, avec un spécialiste du droit suisse.",
-    "voisins": ["droit-penal", "contrats", "droit-des-societes"]
+    "voisins": ["droit-penal", "contrats", "propriete-intellectuelle"]
   },
   {
     "slug": "banque-finance",

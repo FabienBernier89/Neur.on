@@ -224,7 +224,7 @@
     "lead": "Traduction texte et document réunit quatre onglets : traduction de texte, traduction de fichiers, conversion de PDF en Word et reformulation. Voici le geste exact pour chacun, et la façon de comparer les moteurs sur une même phrase.",
     "outil": "Traduction texte et document",
     "title": "Traduction texte et document dans Corrext · Neur.on",
-    "description": "Traduire un texte, envoyer jusqu'à 25 fichiers, convertir un PDF en Word, comparer les moteurs et reformuler : les gestes de Traduction texte et document, pas à pas.",
+    "description": "Traduire un texte, envoyer jusqu'à 25 fichiers, convertir un PDF en Word, comparer les moteurs et reformuler : les gestes de base, pas à pas.",
     "articles": [
       {
         "slug": "traduire-un-texte",

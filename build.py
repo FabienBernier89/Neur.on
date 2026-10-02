@@ -138,6 +138,39 @@ def render_nav_footer(part, path, navkey):
     return neutralize_links(s)
 
 
+ORG_ID = f"{SITE}/#organisation"
+PAIRES_LANG = {"allemand": "de", "francais": "fr", "italien": "it", "anglais": "en"}
+
+
+def entites(path, meta, short, desc):
+    """Données d'entité : qui publie le site, ce que chaque page propose (accueil, à propos, services, moteur)."""
+    org = load_json_data("organisation")
+    ref = {"@type": "Organization", "@id": ORG_ID, "name": org["name"], "url": org["url"]}
+    out = []
+    if path == "fr/":
+        out.append({"@context": "https://schema.org", "@graph": [
+            org, {"@type": "WebSite", "@id": f"{SITE}/#site", "url": f"{SITE}/", "name": "Neur.on",
+                  "inLanguage": "fr-CH", "publisher": {"@id": ORG_ID}}]})
+    elif path == "fr/a-propos/":
+        out.append({"@context": "https://schema.org", "@graph": [
+            org, {"@type": "AboutPage", "url": f"{SITE}/{path}", "name": meta.get("title", short),
+                  "inLanguage": "fr-CH", "about": {"@id": ORG_ID}, "mainEntity": {"@id": ORG_ID}}]})
+    elif path == "fr/lexmachina/":
+        out.append({"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "LexMachina",
+                    "applicationCategory": "BusinessApplication", "operatingSystem": "Web",
+                    "url": f"{SITE}/{path}", "description": desc, "inLanguage": "fr-CH", "publisher": ref})
+    elif path.startswith("fr/traduction/") and path.count("/") == 3:
+        slug = path.split("/")[2]
+        langs = slug.split("-")
+        srv = {"@context": "https://schema.org", "@type": "Service", "name": short, "description": desc,
+               "serviceType": "Traduction juridique et financière", "url": f"{SITE}/{path}",
+               "provider": ref, "areaServed": {"@type": "Country", "name": "Suisse"}}
+        if len(langs) == 2 and all(l in PAIRES_LANG for l in langs):
+            srv["availableLanguage"] = [PAIRES_LANG[l] for l in langs]
+        out.append(srv)
+    return [json.dumps(x, ensure_ascii=False) for x in out]
+
+
 def build_page(path, meta, body):
     """path : chemin logique terminé par / (ex. 'fr/corrext/')."""
     depth = path.count("/")
@@ -218,7 +251,17 @@ def build_page(path, meta, body):
                          "item": f"{SITE}/{target}" if target else f"{SITE}/{path}"}
                         for i, (label, target) in enumerate(items)]}
         lds.append(json.dumps(crumb_ld, ensure_ascii=False))
+    lds += entites(path, meta, short, desc)
 
+    # image de partage : celle de l'article s'il en a une, sinon l'image de marque (1200 x 630)
+    og_image = f"{SITE}/assets/img/og-neuron.jpg"
+    if meta.get("image"):
+        # LinkedIn lit mal le WebP : copie JPG dans assets/img/blog/og/
+        jpg = "assets/img/blog/og/" + os.path.splitext(os.path.basename(meta["image"]))[0] + ".jpg"
+        og_image = f"{SITE}/{jpg}" if os.path.exists(os.path.join(BASE, jpg)) else f"{SITE}/{meta['image']}"
+    og_alt = meta.get("image_alt") or "Neur.on, traduction par IA pour le droit, la fiscalité et la finance"
+    lecture = re.match(r"fr/ressources/(blog|guides|etudes)/[^/]+/$", path) and path != "fr/ressources/blog/actualites/"
+    og_type = "article" if lecture else "website"
     head = [
         '<!DOCTYPE html>', f'<html lang="{LANG}">', '<head>',
         '<meta charset="UTF-8">',
@@ -234,7 +277,9 @@ def build_page(path, meta, body):
         f'<meta property="og:title" content="{esc(title)}">',
         f'<meta property="og:description" content="{esc(desc)}">',
         f'<meta property="og:url" content="{canonical}">',
-        '<meta property="og:type" content="website">',
+        f'<meta property="og:type" content="{og_type}">',
+        f'<meta property="og:image" content="{og_image}">',
+        f'<meta property="og:image:alt" content="{esc(og_alt)}">',
         '<meta property="og:site_name" content="Neur.on">',
         '<meta property="og:locale" content="fr_CH">',
         '<meta name="twitter:card" content="summary_large_image">',
