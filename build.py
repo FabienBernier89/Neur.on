@@ -593,8 +593,12 @@ def write_annexes(built):
     red = load_json_data("redirections")
     for r in (red or {}).get("redirections", []):
         ancien, nouveau = r["ancien"].strip("/") + "/", r["nouveau"].lstrip("/")
-        if ancien in SORTIES or ancien == "/":
-            raise SystemExit(f"Redirection {ancien} : l'adresse est déjà une page du site")
+        if ancien == "/":
+            raise SystemExit("Redirection de la racine : interdite")
+        if ancien in SORTIES:
+            # l'ancienne adresse est redevenue une vraie page (ex. /de/impressum/) : la page prend sa place
+            print(f"Redirection {ancien} ignorée : l'adresse est désormais une page du site")
+            continue
         racine = "../" * ancien.count("/")
         write(os.path.join(OUT, ancien, "index.html"),
               '<!DOCTYPE html>\n<html lang="fr"><head><meta charset="UTF-8"><title>Page déplacée · Neur.on</title>'
