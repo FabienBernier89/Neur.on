@@ -33,6 +33,11 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 h1,h2,h3,h4,h5{font-family:'Inter',sans-serif;color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+h1,h2,h3,h4,h5{overflow-wrap:break-word}
+/* Mots composés allemands : césure sur petit écran, sinon ils débordent */
+@media (max-width:640px){
+  :lang(de) :is(h1,h2,h3,h4,p,li,dt,dd,td,th,summary,figcaption,blockquote){-webkit-hyphens:auto;hyphens:auto}
+}
 a{color:inherit;text-decoration:none}
 img,svg{display:block;max-width:100%}
 button{font-family:inherit;cursor:pointer;border:none}
@@ -1298,3 +1303,6 @@ body.nav-open{overflow:hidden}
 /* Pages outils : illustration de la fonction dans le héro (outils/visuels_outils.py) */
 .tvis{margin:0 auto;max-width:520px;width:100%}
 .tvis-svg{display:block;width:100%;height:auto}
+
+/* Petit écran : un libellé de bouton trop long passe à la ligne au lieu de déborder (après .btn, qui l'interdit) */
+@media (max-width:640px){.btn{white-space:normal;justify-content:center;text-align:center}}

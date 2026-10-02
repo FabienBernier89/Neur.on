@@ -458,6 +458,38 @@ REDIR_WP = (("sitemap_index.xml", "sitemap.xml"), ("post-sitemap.xml", "sitemap.
             ("author-sitemap.xml", "sitemap.xml"), ("feed/", "fr/ressources/blog/"))
 
 
+# Page de renvoi d'une ancienne adresse, dans la langue de la page d'arrivée
+PAGE_DEPLACEE = {
+    "fr": ("Page déplacée", 'Cette page a déménagé : <a href="{0}">voir la nouvelle adresse</a>.'),
+    "de": ("Seite verschoben", 'Diese Seite ist umgezogen: <a href="{0}">zur neuen Adresse</a>.'),
+    "it": ("Pagina spostata", 'Questa pagina è stata spostata: <a href="{0}">vai al nuovo indirizzo</a>.'),
+    "en": ("Page moved", 'This page has moved: <a href="{0}">go to the new address</a>.'),
+}
+
+
+def redirections_actives(redirections):
+    """Anciennes adresses de neur-on.ai à renvoyer, chacune vers la page de sa langue quand elle est publiée.
+    L'ancien site servait l'anglais à la racine, l'allemand sous /de/ et le français sous /fr/.
+    Une ancienne adresse redevenue une page du site (ex. /de/impressum/) n'est plus renvoyée."""
+    out = []
+    for r in redirections:
+        ancien = r["ancien"].strip("/") + "/"
+        if ancien == "/":
+            raise SystemExit("Redirection de la racine : interdite")
+        if ancien in SORTIES:
+            print(f"Redirection {ancien} ignorée : l'adresse est désormais une page du site")
+            continue
+        cible, _, ancre = r["nouveau"].lstrip("/").partition("#")
+        seg = ancien.split("/")[0]
+        lang = seg if seg in ("de", "it", "en", "fr") else "en"
+        if lang != "fr" and cible in DISPO.get(lang, ()):
+            cible = chemin_sortie(cible, lang)
+        else:
+            lang = "fr"
+        out.append({"ancien": ancien, "nouveau": cible + ("#" + ancre if ancre else ""), "lang": lang})
+    return out
+
+
 def htaccess(redirections, langs=("fr",)):
     """Règles Apache (Infomaniak et la plupart des hébergeurs) : https sans www, racine vers /fr/,
     301 des anciennes adresses de neur-on.ai, page 404. Un hébergeur Nginx reprend les mêmes règles."""
@@ -591,24 +623,19 @@ def write_annexes(built):
     write(os.path.join(OUT, "robots.txt"), robots)
 
     # anciennes adresses de neur-on.ai : une page de renvoi à chaque adresse (les 301 serveur viendront en production)
-    red = load_json_data("redirections")
-    for r in (red or {}).get("redirections", []):
-        ancien, nouveau = r["ancien"].strip("/") + "/", r["nouveau"].lstrip("/")
-        if ancien == "/":
-            raise SystemExit("Redirection de la racine : interdite")
-        if ancien in SORTIES:
-            # l'ancienne adresse est redevenue une vraie page (ex. /de/impressum/) : la page prend sa place
-            print(f"Redirection {ancien} ignorée : l'adresse est désormais une page du site")
-            continue
+    red = redirections_actives((load_json_data("redirections") or {}).get("redirections", []))
+    for r in red:
+        ancien, nouveau, l = r["ancien"], r["nouveau"], r["lang"]
         racine = "../" * ancien.count("/")
+        titre, phrase = PAGE_DEPLACEE[l]
         write(os.path.join(OUT, ancien, "index.html"),
-              '<!DOCTYPE html>\n<html lang="fr"><head><meta charset="UTF-8"><title>Page déplacée · Neur.on</title>'
+              f'<!DOCTYPE html>\n<html lang="{l}"><head><meta charset="UTF-8"><title>{titre} · Neur.on</title>'
               f'<meta name="robots" content="noindex"><link rel="canonical" href="{SITE}/{nouveau}">'
               f'<meta http-equiv="refresh" content="0; url={racine}{nouveau}">'
               f'<script>location.replace("{racine}{nouveau}"+"")</script></head>'
-              f'<body><p>Cette page a déménagé : <a href="{racine}{nouveau}">voir la nouvelle adresse</a>.</p></body></html>\n')
+              f'<body><p>{phrase.format(f"{racine}{nouveau}")}</p></body></html>\n')
     if PRODUCTION:
-        write(os.path.join(OUT, ".htaccess"), htaccess((red or {}).get("redirections", []), langs))
+        write(os.path.join(OUT, ".htaccess"), htaccess(red, langs))
 
     # sitemap
     prio = {"fr/": "1.0"}

@@ -37,6 +37,11 @@ def mini_site():
         open(os.path.join(d, rel), "w", encoding="utf-8").write(txt)
     json.dump({"fr/": {"de": "de/"}, "fr/traduction/": {"de": "de/uebersetzung/"}},
               open(os.path.join(d, "src", "routes.json"), "w"))
+    # anciennes adresses : allemandes sous /de/, anglaises à la racine (ancien site), une devenue page du site
+    json.dump({"redirections": [{"ancien": "/de/about/", "nouveau": "/fr/traduction/"},
+                                {"ancien": "/about/", "nouveau": "/fr/traduction/#x"},
+                                {"ancien": "/de/uebersetzung/", "nouveau": "/fr/"}]},
+              open(os.path.join(d, "src", "data", "redirections.json"), "w"))
     cles = json.load(open(os.path.join(DEPOT, "src", "i18n", "cles.json"), encoding="utf-8"))
     os.makedirs(os.path.join(d, "src", "i18n"))
     json.dump({k: "[de] " + k for k in cles}, open(os.path.join(d, "src", "i18n", "de.json"), "w", encoding="utf-8"),
@@ -91,6 +96,31 @@ class TestBuildMultilingue(unittest.TestCase):
         sm = self.lire("sitemap.xml")
         self.assertIn("<loc>https://neur-on.ai/de/uebersetzung/</loc>", sm)
         self.assertIn('<xhtml:link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/uebersetzung/"/>', sm)
+
+    def test_redirection_vers_la_langue(self):
+        # l'ancienne adresse allemande renvoie à la page allemande, avec un texte allemand
+        h = self.lire("de/about/index.html")
+        self.assertIn('<html lang="de">', h)
+        self.assertIn('url=../../de/uebersetzung/"', h)
+        # l'ancienne adresse anglaise reste vers le FR tant que l'anglais n'existe pas ; l'ancre est gardée
+        h = self.lire("about/index.html")
+        self.assertIn('<html lang="fr">', h)
+        self.assertIn('url=../fr/traduction/#x"', h)
+
+    def test_redirection_devenue_page(self):
+        self.assertIn("<h1>Übersetzung</h1>", self.lire("de/uebersetzung/index.html"))
+
+    def test_htaccess_production(self):
+        d = mini_site()
+        json.dump({"fr/": "relue", "fr/traduction/": "relue"},
+                  open(os.path.join(d, "src", "langues", "de", "statut.json"), "w"))
+        r = subprocess.run([sys.executable, os.path.join(d, "build.py"), "--production"],
+                           env={**os.environ, "NEURON_BASE": d}, capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        ht = open(os.path.join(d, "docs", ".htaccess"), encoding="utf-8").read()
+        self.assertIn("RewriteRule ^de/about/?$ https://neur-on.ai/de/uebersetzung/ [R=301,L,NE]", ht)
+        self.assertIn("RewriteRule ^about/?$ https://neur-on.ai/fr/traduction/#x [R=301,L,NE]", ht)
+        self.assertNotIn("^de/uebersetzung/?$", ht)
 
     def test_cle_manquante_fait_echouer(self):
         d = mini_site()

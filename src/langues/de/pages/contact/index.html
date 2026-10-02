@@ -1,6 +1,6 @@
 <!--page
 title: Kontakt und Demo · Neur.on, juristische Übersetzung Schweiz
-description: Fragen Sie bei Neur.on eine Demo von Corrext an: Eine Fachperson für Schweizer Recht in Freiburg zeigt sie mit Ihren Dokumenten, Sprachen und Begriffen.
+description: Demo von Corrext bei Neur.on anfragen: Eine Fachperson für Schweizer Recht in Freiburg zeigt sie mit Ihren Dokumenten, Sprachen und Ihrer Terminologie.
 short: Kontakt
 nav:
 canonical: https://neur-on.ai/fr/contact/
@@ -48,7 +48,7 @@ canonical: https://neur-on.ai/fr/contact/
    "name": "Was passiert nach meiner Anfrage?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Zuerst ein Abklärungsgespräch: Ihre Sprachen, Ihre Dokumenttypen, Ihre Vorgaben zur Vertraulichkeit und wie Ihre Übersetzungen heute laufen. Darauf folgt eine Demonstration von Corrext, die auf diesem Gespräch aufbaut. Passt das Tool, folgt ein begleiteter Test mit Umfang, Nutzerinnen und Nutzern und Dauer, die wir gemeinsam festlegen."
+    "text": "Zuerst ein Abklärungsgespräch: Ihre Sprachen, Ihre Dokumenttypen, Ihre Vorgaben zur Vertraulichkeit und wie Ihre Übersetzungen heute laufen. Danach sehen Sie Corrext in einer Demonstration, die auf diesem Gespräch aufbaut. Passt das Tool, folgt ein begleiteter Test mit Umfang, Nutzerinnen und Nutzern und Dauer, die wir gemeinsam festlegen."
    }
   },
   {
@@ -200,7 +200,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
       <!-- À CÂBLER : action du formulaire (HubSpot, Formspree ou endpoint Neur.on) -->
       <form class="cf-form" id="demande" method="post" action="#" aria-labelledby="cf-title" data-endpoint="" data-mailto="team@corrext.com" novalidate>
         <h2 id="cf-title">Demonstration anfragen</h2>
-        <p class="cf-intro">Felder mit Sternchen sind Pflichtfelder. Je genauer Sie Ihren Kontext beschreiben, desto näher ist die Demonstration an Ihrer Praxis.</p>
+        <p class="cf-intro">Felder mit Sternchen sind Pflichtfelder. Je genauer Sie Ihren Kontext beschreiben, desto näher kommt die Demonstration Ihrer Praxis.</p>
 
         <div class="cf-row">
           <div class="cf-f">
@@ -316,7 +316,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
         </div>
 
         <div class="cf-card">
-          <h2>Schreiben Sie uns, besuchen Sie uns</h2>
+          <h2>Kontakt und Adresse</h2>
           <address class="cf-adr">
             <b>Neur.on AI Solutions SA</b><br>
             Place de la Gare 15<br>
@@ -353,7 +353,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
     <div class="faq-list">
       <details class="faq-item">
         <summary>Was passiert nach meiner Anfrage?</summary>
-        <p>Zuerst ein Abklärungsgespräch: Ihre Sprachen, Ihre Dokumenttypen, Ihre Vorgaben zur Vertraulichkeit und wie Ihre Übersetzungen heute laufen. Darauf folgt eine Demonstration von Corrext, die auf diesem Gespräch aufbaut. Passt das Tool, folgt ein begleiteter Test mit Umfang, Nutzerinnen und Nutzern und Dauer, die wir gemeinsam festlegen.</p>
+        <p>Zuerst ein Abklärungsgespräch: Ihre Sprachen, Ihre Dokumenttypen, Ihre Vorgaben zur Vertraulichkeit und wie Ihre Übersetzungen heute laufen. Danach sehen Sie Corrext in einer Demonstration, die auf diesem Gespräch aufbaut. Passt das Tool, folgt ein begleiteter Test mit Umfang, Nutzerinnen und Nutzern und Dauer, die wir gemeinsam festlegen.</p>
       </details>
       <details class="faq-item">
         <summary>Findet die Demo mit unseren eigenen Dokumenten statt?</summary>
@@ -428,7 +428,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
     if(!endpoint){mailto();return;}
     var btn=f.querySelector('[type=submit]');btn.disabled=true;
     fetch(endpoint,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
-      .then(function(r){if(!r.ok){throw new Error(r.status);} f.reset(); show('Danke, Ihre Anfrage ist gesendet. Wir melden uns, um das Abklärungsgespräch zu vereinbaren.');})
+      .then(function(r){if(!r.ok){throw new Error(r.status);} f.reset(); show('Danke, Ihre Anfrage wurde gesendet. Wir melden uns, um das Abklärungsgespräch zu vereinbaren.');})
       .catch(function(){mailto();})
       .then(function(){btn.disabled=false;});
   });
