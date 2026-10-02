@@ -34,9 +34,9 @@ body{
 }
 h1,h2,h3,h4,h5{font-family:'Inter',sans-serif;color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.15}
 h1,h2,h3,h4,h5{overflow-wrap:break-word}
-/* Mots composés allemands : césure sur petit écran, sinon ils débordent */
+/* Mots composés allemands : césure des seuls mots longs sur petit écran, sinon ils débordent */
 @media (max-width:640px){
-  :lang(de) :is(h1,h2,h3,h4,p,li,dt,dd,td,th,summary,figcaption,blockquote){-webkit-hyphens:auto;hyphens:auto}
+  :lang(de) :is(h1,h2,h3,h4,p,li,dt,dd,td,th,summary,figcaption,blockquote){-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:16 6 6}
 }
 a{color:inherit;text-decoration:none}
 img,svg{display:block;max-width:100%}
