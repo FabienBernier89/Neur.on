@@ -11,18 +11,15 @@ canonical: https://neur-on.ai/fr/corrext/
 /* ============ HERO DU HUB : deux colonnes, fenêtre débordante ============ */
 .phero{padding:92px 0 0;color:#fff;position:relative;background:radial-gradient(900px 480px at 82% 0%, rgba(127,176,255,.28), transparent 60%),radial-gradient(600px 420px at 6% 100%, rgba(49,123,255,.22), transparent 62%),var(--navy-grad)}
 .phero-txt{padding-top:10px;padding-bottom:64px}
-.phero-grid{display:grid;grid-template-columns:5fr 7fr;gap:52px;align-items:start}
+.phero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:52px;align-items:start}
 
 .phero h1{font-size:clamp(30px,4vw,46px);color:#fff;letter-spacing:-.03em;line-height:1.12;margin:0 0 18px;max-width:17ch;text-wrap:balance}
 .phero h1 em{font-style:normal;color:var(--sky)}
 .phero .lead{font-size:17.5px;color:rgba(255,255,255,.84);line-height:1.6;max-width:44ch;margin-bottom:28px}
-.phero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.phero-cta{display:flex;gap:14px;flex-wrap:wrap}
 .phero-cta .btn-blue{padding:16px 28px;font-size:15px}
 .phero-cta .btn-ghost{padding:16px 26px;font-size:15px;color:#fff;border:1px solid rgba(255,255,255,.32)}
 .phero-cta .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
-.phero-promise{display:flex;flex-direction:column;gap:9px;font-size:13.5px;color:rgba(255,255,255,.82)}
-.phero-promise span{display:flex;align-items:center;gap:9px}
-.phero-promise svg{width:15px;height:15px;color:var(--sky);flex-shrink:0}
 
 /* Fenêtre Corrext · vue tableau de bord (matériau principal) */
 .dash{position:relative;z-index:2;display:flex;background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);box-shadow:0 44px 92px -42px rgba(8,24,68,.34);overflow:hidden;margin-top:12px;margin-bottom:-120px;min-height:620px;color:var(--text)}
@@ -79,7 +76,7 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .tree-note svg{width:13px;height:13px;color:var(--blue-d)}
 
 /* ============ LES QUATRE POSTES (blocs alternés, mini-mockups) ============ */
-.postes{padding:168px 0 56px;background:linear-gradient(180deg,var(--bg) 0%,#fff 28%)}
+.postes{padding:84px 0 56px;background:linear-gradient(180deg,var(--bg) 0%,#fff 28%)}
 .postes .sec-head{margin-bottom:64px}
 .mock{padding:26px;background:var(--bg);display:flex;justify-content:center}
 .mock svg{width:100%;max-width:400px;height:auto}
@@ -111,18 +108,17 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 @media(min-width:1024px){
   .phero{height:var(--hero-h);padding-top:92px}
   .phero-txt{padding-top:0;padding-bottom:0}
-  .dash{height:calc(var(--hero-h) - 92px - 12px + 120px);min-height:0}
   .dash::after{content:"";position:absolute;left:0;right:0;bottom:0;height:72px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none;z-index:3}
 }
-@media(min-width:1024px) and (max-width:1279px){.phero-grid{grid-template-columns:9fr 11fr;gap:40px}.phero-cta{gap:10px}.phero-cta .btn-blue,.phero-cta .btn-ghost{padding:16px 18px;font-size:14.5px}}
+@media(min-width:1024px) and (max-width:1279px){.phero-grid{gap:40px}.phero-cta{gap:10px}.phero-cta .btn-blue,.phero-cta .btn-ghost{padding:16px 18px;font-size:14.5px}}
 @media(max-width:940px){
   .phero{padding-top:52px}
-  .phero-grid{grid-template-columns:1fr;gap:28px}
+  .phero-grid{grid-template-columns:minmax(0,1fr);gap:28px}
 
   .phero h1{max-width:none}
-  .dash{margin-bottom:-48px;min-height:auto}
+  .dash{margin-bottom:0;min-height:auto}
   .dash .drail{display:none}
-  .postes{padding-top:110px}
+  .postes{padding-top:56px}
   .ptable .hm{display:none}
   .usp-grid{grid-template-columns:1fr;gap:36px}
   .usp-lead h2{max-width:none}
@@ -134,6 +130,17 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
   .tree .doc{grid-template-columns:1fr auto;padding-left:14px}
   .tree .doc small{grid-column:1 / -1}
 }
+/* Fenêtre du héro : elle garde sa mise en page d'origine (140 % de la colonne) et se réduit à l'échelle pour tenir dans la colonne, sans déborder du héro */
+@media(min-width:941px){
+  .dash-fit{position:relative;min-width:0;height:446px}
+  .dash-fit .dash{width:140%;height:624px;min-height:0;margin:0;transform:scale(.7143);transform-origin:top left}
+}
+/* Bandeau des garanties, sous le héro */
+.ptrust{padding:22px 0;background:#fff;border-bottom:1px solid var(--line)}
+.ptrust-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 32px;list-style:none;margin:0;padding:0}
+.ptrust-list li{display:flex;align-items:flex-start;gap:11px;font-size:14px;line-height:1.5;color:var(--ink)}
+.ptrust-list svg{width:18px;height:18px;color:var(--blue-d);flex-shrink:0;margin-top:1px}
+@media(max-width:940px){.ptrust-list{grid-template-columns:1fr;gap:12px}}
 </style>
 
 <script type="application/ld+json">
@@ -178,14 +185,11 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
           </a>
           <a href="#outils" class="btn btn-ghost">Voir les quatre outils</a>
         </div>
-        <div class="phero-promise">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Hébergé en Suisse (Infomaniak) ; traité en Suisse en mode Highly sensitive ou avec LexMachina ; ISO&nbsp;27001, hors US CLOUD Act</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Droits d'accès jusqu'au document, via SharePoint / AD</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dans MS Word ou dans le navigateur, API et on-premises</span>
-        </div>
+
       </div>
 
       <!-- Fenêtre Corrext · tableau de bord -->
+      <div class="dash-fit">
       <div class="dash" aria-label="Aperçu de Corrext en vue tableau de bord (données de démonstration)">
         <div class="drail">
           <span class="rlogo">Corr<span>ext</span></span>
@@ -257,7 +261,19 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
           <div class="kpis"><span><b>5</b> projets actifs</span><span><b>4</b> devis générés</span><span><b>26</b> domaines CHnell</span><span><b>2</b> projets Highly sensitive</span></div>
         </div>
       </div>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- Garanties, juste sous le héro -->
+<section class="ptrust" aria-label="Garanties de Corrext">
+  <div class="container">
+    <ul class="ptrust-list">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Hébergé en Suisse (Infomaniak) ; traité en Suisse en mode Highly sensitive ou avec LexMachina ; ISO&nbsp;27001, hors US CLOUD Act</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Droits d'accès jusqu'au document, via SharePoint&nbsp;/&nbsp;AD</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Dans MS Word ou dans le navigateur, API et <span style="white-space:nowrap">on-premises</span></span></li>
+    </ul>
   </div>
 </section>
 
@@ -487,6 +503,41 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 </section>
 
 <!-- FINAL CTA -->
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Questions fréquentes sur Corrext</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Qu'est-ce que Corrext&nbsp;?</summary>
+        <p>Corrext est la plateforme de traduction juridique et financière de Neur.on. Elle réunit quatre outils dans un seul environnement suisse : Traduction texte et document, Gestion de projet, Fast lookup CHnell et les extraits certifiés du registre du commerce.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Où mes documents sont-ils stockés et traités&nbsp;?</summary>
+        <p>Corrext est hébergé en Suisse, chez Infomaniak. Les documents sont traités en Suisse en mode Highly sensitive content ou avec le moteur LexMachina. Les moteurs hébergés à l'étranger déclenchent l'avis de confidentialité de votre organisation et ne sont pas disponibles en mode Highly sensitive content. Neur.on est certifiée ISO&nbsp;27001.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quels moteurs de traduction puis-je utiliser&nbsp;?</summary>
+        <p>LexMachina, DeepL Pro, Azure OpenAI GPT ou Claude, au choix à chaque envoi. Corrext peut afficher jusqu'à quatre alternatives, chacune attribuée à son moteur, pour comparer avant de choisir.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quels formats et quelles langues Corrext accepte-t-il&nbsp;?</summary>
+        <p>Sept types de fichiers bureautiques, du PDF au PowerPoint, jusqu'à 25 fichiers de 50 Mo par envoi, et du texte collé jusqu'à 10'000 caractères. L'allemand, le français, l'italien et l'anglais sont natifs ; la plateforme propose trente langues en tout.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Corrext remplace-t-il la relecture par un traducteur&nbsp;?</summary>
+        <p>Non. Pour un document engageant, Gestion de projet commande une relecture : Light review ou Full review par un traducteur juridique, ou Double review et traduction certifiée. Le devis et le délai s'affichent avant toute validation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Comment Corrext s'intègre-t-il à nos outils&nbsp;?</summary>
+        <p>Par un plugin MS Word natif ou une application dans le navigateur, par une API REST pour vos DMS et vos intranets, ou en déploiement on-premises. Les droits d'accès se règlent jusqu'au document, via SharePoint ou Active Directory.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <div class="final-cta-inner">
