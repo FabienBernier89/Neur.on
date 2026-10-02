@@ -246,3 +246,6 @@
   .az-nav-r .btn-blue{white-space:normal;text-align:center;line-height:1.2;max-width:150px;padding:8px 12px}
   .az-lang-menu summary span{display:none}
 }
+
+/* éléments clés mis en avant dans les textes explicatifs */
+.az-kf{color:var(--blue-d);font-weight:700}
