@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lektorat juristischer Übersetzungen: der Editor von Corrext</title>
+<meta name="description" content="Lektorieren Sie Ihre Übersetzungen Satz für Satz in Corrext. Jede Korrektur fliesst in Ihr Translation Memory in der Schweiz und dient den nächsten Projekten.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/de/corrext/lektorat/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/corrext/editeur-de-relecture/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/corrext/lektorat/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="Lektorat juristischer Übersetzungen: der Editor von Corrext">
+<meta property="og:description" content="Lektorieren Sie Ihre Übersetzungen Satz für Satz in Corrext. Jede Korrektur fliesst in Ihr Translation Memory in der Schweiz und dient den nächsten Projekten.">
+<meta property="og:url" content="https://neur-on.ai/de/corrext/lektorat/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, KI-Übersetzung für Recht, Steuern und Finanzen">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="de_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=de2299c0">
+<style>/* Démo Éditeur de relecture · éditeur segment par segment reproduit dans le cadre Corrext (préfixe .cxe-, couleurs --cx-* uniquement) */
+.cx [hidden]{display:none!important}
+.cxe-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.cxe-app{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:14px;padding:16px 18px 6px;align-items:start}
+.cxe-app.fold{grid-template-columns:minmax(0,1fr) auto}
+.cxe-ed,.cxe-side{border:1px solid var(--cx-line);border-radius:var(--r-btn);background:#fff;min-width:0;overflow:hidden}
+/* Barre d'outils */
+.cxe-tb{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;padding:9px 12px;border-bottom:1px solid var(--cx-line)}
+.cxe-back{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--cx-indigo);margin-right:4px}
+.cxe-back svg{width:14px;height:14px}
+.cxe-tools{display:inline-flex;align-items:center;gap:6px}
+.cxe-tag{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10.5px;font-weight:700;color:var(--cx-ink);background:var(--cx-dim-2);border-radius:6px;padding:3px 6px;line-height:1.3}
+.cxe-f{width:18px;text-align:center;font-size:12.5px;color:var(--cx-dim)}
+.cxe-f.b{font-weight:800}
+.cxe-f.i{font-style:italic;font-family:Georgia,serif}
+.cxe-f.u{text-decoration:underline}
+.cxe-sep{width:1px;height:20px;background:var(--cx-line);margin:0 2px}
+.cxe-copy{width:34px;height:26px;border:0;border-radius:6px;background:var(--cx-indigo-soft);color:var(--cx-indigo);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.cxe-copy:hover{background:var(--cx-lav)}
+.cxe-copy svg{width:16px;height:16px}
+.cxe-prog{margin-left:auto;display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--cx-ink);font-variant-numeric:tabular-nums}
+.cxe-prog .bar{width:72px;height:8px;border-radius:8px;background:var(--cx-line);overflow:hidden}
+.cxe-prog .bar i{display:block;height:100%;background:var(--cx-indigo);transform:scaleX(0);transform-origin:left center;transition:transform .3s ease}
+/* Tableau des segments */
+.cxe-scroll{overflow:auto;max-height:560px}
+.cxe-tab{width:100%;min-width:520px;border-collapse:collapse;table-layout:fixed;font-size:12.5px;line-height:1.5}
+.cxe-tab col.c-id{width:44px}
+.cxe-tab col.c-ind{width:50px}
+.cxe-tab col.c-ok{width:44px}
+.cxe-tab th{position:sticky;top:0;z-index:2;background:var(--cx-bg);padding:8px 6px;border-bottom:1px solid var(--cx-line);font-weight:700;color:var(--cx-ink);text-align:center;vertical-align:middle}
+.cxe-tab td{position:relative;padding:8px;border-bottom:1px solid var(--cx-line);vertical-align:middle;color:var(--cx-ink)}
+.cxe-tab tbody tr{cursor:pointer}
+.cxe-tab td.id{text-align:center;font-weight:700}
+.cxe-tab td.ok{text-align:center}
+.cxe-tab td.ind{text-align:center;padding:8px 4px;background:var(--cx-indigo-soft);background:color-mix(in srgb,var(--cx-lav) 42%,#fff)}
+.cxe-tab tr.sel td{background:var(--cx-indigo-soft)}
+.cxe-tab tr.sel td.ind{background:color-mix(in srgb,var(--cx-lav) 62%,#fff)}
+.cxe-src{color:var(--cx-text)}
+.cxe-tgt{min-height:1.5em;border-radius:4px;padding:1px 3px;margin:-1px -3px;outline:0;cursor:text;overflow-wrap:anywhere}
+.cxe-tgt:hover{box-shadow:inset 0 0 0 1px var(--cx-dim-2)}
+.cxe-tgt:focus{box-shadow:inset 0 0 0 2px var(--cx-indigo);background:#fff}
+.cxe-chk{width:16px;height:16px;accent-color:var(--cx-indigo);margin:0;cursor:pointer;vertical-align:middle}
+.cxe-ind{display:inline-flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;font-weight:600;color:var(--cx-text);letter-spacing:.02em}
+.cxe-ind b{font-weight:600}
+.cxe-gauge{display:inline-flex;width:22px;height:9px;border:1px solid var(--cx-muted);border-radius:6px;overflow:hidden;background:#fff}
+.cxe-gauge i{flex:1}
+.cxe-gauge i+i{border-left:1px solid #fff}
+.cxe-gauge i.on{background:var(--cx-indigo)}
+.cxe-sim{font-size:10px;font-weight:700;color:var(--cx-indigo)}
+.cxe-rep{display:flex;justify-content:center;margin-top:4px;color:var(--cx-indigo)}
+.cxe-rep svg{width:14px;height:14px}
+.cxe-filter{display:flex;align-items:center;gap:5px;border:1px solid var(--cx-line);border-radius:8px;background:#fff;padding:4px 5px 4px 8px;font-weight:400}
+.cxe-filter:focus-within{border-color:var(--cx-indigo)}
+.cxe-filter svg{width:13px;height:13px;color:var(--cx-muted);flex-shrink:0}
+.cxe-filter input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:12px;color:var(--cx-ink);padding:2px 0}
+.cxe-filter input::placeholder{color:var(--cx-ph);opacity:1}
+.cxe-clr{width:22px;height:22px;border:0;background:transparent;color:var(--cx-muted);border-radius:4px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.cxe-clr:hover{color:var(--cx-ink);background:var(--cx-bg)}
+.cxe-clr svg{width:12px;height:12px}
+.cxe-tab tr.cxe-none{cursor:default}
+.cxe-tab tr.cxe-none td{text-align:center;color:var(--cx-muted);font-style:italic;padding:18px}
+/* Traduction mise à jour : voile qui s'efface (opacité seule) */
+.cxe-tab td.cxe-upd::after{content:"";position:absolute;inset:0;background:var(--cx-hl);mix-blend-mode:multiply;opacity:0;pointer-events:none;animation:cxeFlash 1.2s ease}
+@keyframes cxeFlash{0%{opacity:.8}100%{opacity:0}}
+/* Panneau latéral */
+.cxe-side{display:grid;grid-template-columns:minmax(0,1fr) 52px;grid-template-rows:auto 1fr}
+.cxe-head{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px 8px 14px;border-bottom:1px solid var(--cx-line);min-height:46px}
+.cxe-title{margin:0;font-size:13.5px;font-weight:700;color:var(--cx-indigo)}
+.cxe-fold{width:30px;height:30px;border:0;border-radius:6px;background:transparent;color:var(--cx-indigo);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.cxe-fold:hover{background:var(--cx-indigo-soft)}
+.cxe-fold svg{width:18px;height:18px;transition:transform .2s ease}
+.cxe-app.fold .cxe-fold svg{transform:rotate(180deg)}
+.cxe-rail{grid-column:2;grid-row:2;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0;border-left:1px solid var(--cx-line)}
+.cxe-rb{position:relative;width:36px;height:36px;border:0;border-radius:8px;background:transparent;color:var(--cx-indigo);display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;font-size:12px;font-weight:700}
+.cxe-rb:hover{background:var(--cx-indigo-soft)}
+.cxe-rb[aria-selected="true"]{background:var(--cx-indigo);color:#fff}
+.cxe-rb svg{width:19px;height:19px;flex-shrink:0}
+.cxe-rb .l{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.cxe-dot{position:absolute;top:3px;right:3px;width:9px;height:9px;border-radius:50%;background:var(--cx-indigo);border:2px solid #fff}
+.cxe-rb[aria-selected="true"] .cxe-dot{background:#fff;border-color:var(--cx-indigo)}
+.cxe-body{grid-column:1;grid-row:2;padding:12px 14px 14px;max-height:560px;overflow:auto;min-width:0}
+.cxe-app.fold .cxe-side{grid-template-columns:52px}
+.cxe-app.fold .cxe-title,.cxe-app.fold .cxe-body{display:none}
+.cxe-app.fold .cxe-head{justify-content:center;padding:8px 0}
+.cxe-app.fold .cxe-rail{grid-column:1;border-left:0}
+.cxe-pan p{margin:0}
+.cxe-pan:focus{outline:none}
+/* Onglet Translation memories */
+.cxe-empty{border:1px solid var(--cx-line);border-radius:8px;padding:16px 14px;text-align:center;font-size:12.5px;font-style:italic;color:var(--cx-muted)}
+.cxe-match{border:1px solid var(--cx-line);border-radius:8px;padding:11px 12px}
+.cxe-pan .cxe-ml{font-size:11px;font-weight:700;color:var(--cx-muted);letter-spacing:.02em;margin-bottom:6px}
+.cxe-ms{font-size:12.5px;color:var(--cx-text)}
+.cxe-pan .cxe-mt{font-size:12.5px;color:var(--cx-ink);margin-top:7px;padding-top:7px;border-top:1px dashed var(--cx-line)}
+.cxe-ma{display:flex;justify-content:flex-end;margin-top:10px}
+.cxe-sm{padding:6px 14px;font-size:12px}
+.cxe-pan .cx-note{padding:10px 0 0}
+/* Onglet Fast Lookup */
+.cx .cxe-live{margin:0 0 10px}
+.cxe-q{display:flex;gap:8px;margin-bottom:10px}
+.cxe-qbox{flex:1;display:flex;align-items:center;gap:7px;border:1px solid var(--cx-line);border-radius:8px;padding:0 5px 0 10px;min-width:0;background:#fff}
+.cxe-qbox:focus-within{border-color:var(--cx-indigo)}
+.cxe-qbox > svg{width:14px;height:14px;color:var(--cx-muted);flex-shrink:0}
+.cxe-qbox input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:12.5px;color:var(--cx-ink);padding:8px 0}
+.cxe-q .cx-btn{display:inline-flex;align-items:center;gap:6px}
+.cxe-q .cx-btn svg{width:14px;height:14px}
+.cxe-seg{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--cx-bg);border:1px solid var(--cx-line);border-radius:8px;padding:3px;margin-bottom:4px;max-width:260px}
+.cxe-seg button{border:1.5px solid transparent;background:transparent;border-radius:6px;padding:5px 10px;font-size:12.5px;font-weight:700;color:var(--cx-ink);cursor:pointer}
+.cxe-seg button.on{background:#fff;border-color:var(--cx-indigo);color:var(--cx-indigo)}
+.cxe-pan .cxe-h{font-size:13px;font-weight:700;color:var(--cx-ink);margin:12px 0 6px}
+.cxe-nr{font-size:12.5px;color:var(--cx-text)}
+.cxe-res{border:1px solid var(--cx-line);border-radius:8px;overflow:hidden}
+.cxe-rh,.cxe-rr{display:grid;grid-template-columns:1fr 1fr}
+.cxe-rh span{padding:8px 10px;background:var(--cx-bg);font-size:12px;font-weight:700;color:var(--cx-ink)}
+.cxe-rr{border-top:1px solid var(--cx-line)}
+.cxe-pan .cxe-rr p{padding:9px 10px;font-size:12px;line-height:1.5;color:var(--cx-ink)}
+.cxe-rr mark{background:var(--cx-hl);color:inherit;padding:0 1px}
+.cxe-pan .cxe-rr .doc{grid-column:1 / -1;padding:0 10px 9px;font-size:11px;font-weight:600;color:var(--cx-indigo);text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
+/* Onglet AI Assistant */
+.cxe-ai{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+.cxe-ai button{border:1.5px solid var(--cx-line);background:var(--cx-bg);border-radius:8px;padding:7px 10px;font-size:12.5px;font-weight:700;color:var(--cx-ink);cursor:pointer}
+.cxe-ai button.on{background:#fff;border-color:var(--cx-indigo);color:var(--cx-indigo)}
+.cxe-box{border:1px solid var(--cx-line);border-radius:8px;padding:10px 12px}
+.cxe-gen{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;padding:2px 0;font-size:12.5px;font-weight:700;color:var(--cx-indigo);cursor:pointer}
+.cxe-gen:disabled{color:var(--cx-dim);cursor:default}
+.cxe-gen svg{width:15px;height:15px}
+.cxe-pan .cxe-alt{font-size:12.5px;line-height:1.55;color:var(--cx-ink);padding:10px 0;border-bottom:1px solid var(--cx-line)}
+.cxe-pan .cxe-alt:last-child{border-bottom:0;padding-bottom:2px}
+.cxe-alt .e{color:var(--cx-indigo)}
+.cxe-rrow{display:flex;gap:8px;margin-bottom:10px;align-items:stretch}
+.cxe-rrow .cx-sel{border:1px solid var(--cx-line);border-radius:8px;flex:1;min-width:0;width:auto;padding:9px 32px 9px 12px}
+.cxe-setb{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--cx-line);border-radius:8px;background:#fff;padding:0 12px;font-size:12.5px;font-weight:600;color:var(--cx-ink);cursor:pointer;flex-shrink:0}
+.cxe-setb svg{width:14px;height:14px;transition:transform .2s ease}
+.cxe-setb[aria-expanded="true"] svg{transform:rotate(180deg)}
+.cx .cxe-pop{position:static;width:auto;margin:0 0 10px;box-shadow:none}
+.cxe-pop .cx-chips{margin-bottom:10px}
+.cxe-rout{font-size:13px;line-height:1.6;color:var(--cx-ink);min-height:62px}
+.cxe-rout u{text-decoration:underline;text-decoration-color:var(--cx-indigo);text-underline-offset:3px;color:var(--cx-indigo)}
+.cxe-rfoot{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin-top:10px}
+.cxe-icb{width:32px;height:32px;border:1px solid var(--cx-line);border-radius:8px;background:#fff;color:var(--cx-indigo);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.cxe-icb:hover{background:var(--cx-indigo-soft)}
+.cxe-icb svg{width:15px;height:15px}
+.cxe-rnote .cx-btn{margin-top:10px}
+/* Onglet Sync */
+.cxe-sblock+.cxe-sblock{margin-top:16px}
+.cxe-pan .cxe-sh{font-size:13px;font-weight:700;color:var(--cx-ink);margin:0 0 8px}
+.cxe-sh:focus{outline:none}
+.cxe-sync{border:1px solid var(--cx-line);border-radius:8px;padding:10px 12px}
+.cxe-pan .cxe-sl{font-size:11px;font-weight:700;color:var(--cx-muted);margin-bottom:6px}
+.cxe-ver{display:grid;grid-template-columns:86px 1fr;gap:8px;font-size:12.5px;padding:5px 0;color:var(--cx-ink)}
+.cxe-ver+.cxe-ver{border-top:1px dashed var(--cx-line)}
+.cxe-ver.one{grid-template-columns:1fr}
+.cxe-ver b{font-size:11.5px;color:var(--cx-indigo)}
+.cxe-sact{display:flex;justify-content:flex-end;gap:8px;margin-top:10px;flex-wrap:wrap}
+.cxe-okst{border:1px solid var(--cx-line);border-radius:8px;padding:14px;text-align:center;font-size:12.5px;font-style:italic;color:var(--cx-muted)}
+.cxe-okst svg{display:block;margin:6px auto 0;width:18px;height:18px;color:var(--cx-indigo)}
+.cxe-pchk{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--cx-ink);margin-top:8px;cursor:pointer}
+.cxe-note{padding:4px 18px 16px}
+@media(max-width:940px){
+  .cxe-app,.cxe-app.fold{grid-template-columns:minmax(0,1fr)}
+  .cxe-side,.cxe-app.fold .cxe-side{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto}
+  .cxe-fold{display:none}
+  .cxe-app.fold .cxe-title,.cxe-app.fold .cxe-body{display:block}
+  .cxe-app.fold .cxe-head{justify-content:space-between;padding:8px 10px 8px 14px}
+  .cxe-rail,.cxe-app.fold .cxe-rail{grid-column:1;grid-row:2;flex-direction:row;justify-content:flex-start;border-left:0;border-bottom:1px solid var(--cx-line);padding:8px 10px;overflow-x:auto;gap:6px}
+  .cxe-rb{width:auto;height:34px;padding:0 10px;white-space:nowrap}
+  .cxe-rb .l{position:static;width:auto;height:auto;overflow:visible;clip:auto}
+  .cxe-body{grid-row:3;max-height:none}
+  .cxe-scroll{max-height:420px}
+}
+@media(max-width:560px){
+  .cxe-app{padding:12px 12px 4px}
+  /* Sur téléphone, chaque segment devient une ligne empilée : source au-dessus, traduction dessous */
+  .cxe-tab{min-width:0}
+  .cxe-tab colgroup{display:none}
+  .cxe-tab thead tr{display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:6px;padding:8px 0 8px 8px;background:var(--cx-bg);border-bottom:1px solid var(--cx-line)}
+  .cxe-tab thead th{display:block;position:static;padding:0;border:0;background:transparent}
+  .cxe-tab thead th:nth-child(1),.cxe-tab thead th:nth-child(4){display:none}
+  .cxe-tab thead th:nth-child(2),.cxe-tab thead th:nth-child(3){grid-column:1}
+  .cxe-tab thead th:nth-child(5){grid-column:2;grid-row:1 / span 2;align-self:center}
+  .cxe-tab tbody tr[data-i]{display:grid;grid-template-columns:40px minmax(0,1fr) 40px;grid-template-areas:"id src ok" "ind tgt ok";border-bottom:1px solid var(--cx-line)}
+  .cxe-tab tbody tr[data-i] td{display:block;border-bottom:0}
+  .cxe-tab td.id{grid-area:id;padding:8px 4px 4px}
+  .cxe-tab td.cxe-src{grid-area:src;padding:8px 8px 6px}
+  .cxe-tab td.cxe-src+td{grid-area:tgt;padding:6px 8px 9px;border-top:1px dashed var(--cx-line)}
+  .cxe-tab td.ind{grid-area:ind;display:flex;align-items:center;justify-content:center}
+  .cxe-tab td.ok{grid-area:ok;display:flex;align-items:center;justify-content:center;padding:8px 4px}
+  .cxe-tab tr.cxe-none{display:block}
+  .cxe-tab tr.cxe-none td{display:block}
+  .cxe-prog .bar{width:44px}
+  .cxe-q{flex-wrap:wrap}
+  .cxe-q .cx-btn{flex:1;justify-content:center}
+  .cxe-ver{grid-template-columns:1fr;gap:2px}
+  .cxe-note{padding:4px 12px 14px}
+}
+@media(prefers-reduced-motion:reduce){
+  .cxe-prog .bar i,.cxe-fold svg,.cxe-setb svg{transition:none}
+  .cxe-tab td.cxe-upd::after{animation:none}
+}
+/* Page : paragraphes successifs dans l'encadré et titre de section dans un bloc fonctionnalité */
+.cxe-gov .gov-box p+p{margin-top:12px}
+.cxe-links{display:flex;flex-direction:column;gap:10px;margin-top:26px}
+.cxe-word{padding:84px 0}
+.cxe-word .feat-txt h2{font-size:clamp(24px,2.6vw,32px);color:var(--ink);margin-bottom:16px;letter-spacing:-.02em;line-height:1.2}
+.cxe-word .feat-txt h2 .pn{color:var(--blue)}
+.cxe-word .word-panel .pbox{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.cxe-word .word-panel .pbox.on{border-color:var(--blue-d);color:var(--blue-d);font-weight:700}</style>
+<style>@media (prefers-reduced-motion:reduce){.tvis-svg .anim{display:none}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was ist ein CAT-Tool?", "acceptedAnswer": {"@type": "Answer", "text": "CAT steht für «Computer-Assisted Translation», auf Deutsch computergestützte Übersetzung. Ein solches Tool zerlegt das Dokument in Segmente, also in Sätze oder Titel, und stellt jedes neben seine Übersetzung. Die lektorierende Person korrigiert und bestätigt jedes Segment, unterstützt durch Translation Memorys und Terminologie. In Corrext heisst dieses Tool Lektorats-Editor."}}, {"@type": "Question", "name": "Wie öffne ich den Lektorats-Editor?", "acceptedAnswer": {"@type": "Answer", "text": "Über das Dashboard eines Projekts. Jede Datei hat dort eine Schaltfläche Open in CAT, die das Dokument im Editor öffnet. Das Projekt selbst erstellen Sie im Projektmanagement: Sprachen, Vertraulichkeitsniveau, Terminologie und Übersetzungsmotor."}}, {"@type": "Question", "name": "Fliessen meine Korrekturen in die nächsten Übersetzungen ein?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, bei Standard-Vertraulichkeit. Ihre Projekte bleiben auf den Schweizer Servern von Corrext und dienen nur Ihnen als Translation Memory. Eine Korrektur von heute wird in Ihren nächsten Projekten übernommen. So passt sich die Übersetzung an Ihre Sprache an und bleibt von Projekt zu Projekt einheitlich."}}, {"@type": "Question", "name": "Und im Modus für hochsensible Inhalte?", "acceptedAnswer": {"@type": "Answer", "text": "In diesem Modus (Highly sensitive content) fliessen die Übersetzungen nicht ins Translation Memory. Die Daten werden ausschliesslich in der Schweiz gespeichert und verarbeitet. Der Modus ist auf Deutsch, Französisch, Italienisch und Englisch verfügbar. Sie wählen ihn beim Erstellen jedes Projekts."}}, {"@type": "Question", "name": "Können mehrere Personen dasselbe Dokument lektorieren?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Die Registerkarte Sync organisiert die Arbeit im Team. Sie zeigt Konflikte zwischen zwei Fassungen desselben Satzes, über die zu entscheiden ist. Sie listet die Änderungen einer Kollegin oder eines Kollegen auf, die zu übernehmen sind. Und sie schlägt vor, eine Korrektur auf identische Sätze im Dokument zu übertragen: die Propagation. Das Projektteam verwalten Sie im Dashboard."}}, {"@type": "Question", "name": "Brauche ich Microsoft Word für das Lektorat?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Den Lektorats-Editor nutzen Sie direkt in Corrext. Wenn Sie lieber in Word arbeiten, exportieren Sie das Dokument im Dashboard (Export docx), lektorieren es mit dem Add-in Corrext und importieren es wieder (Reimport docx). Das Add-in erfordert eine Anmeldung, die Mitgliedschaft im Projekt und Office 2021 oder Microsoft 365."}}, {"@type": "Question", "name": "Werden die von mir festgelegten Begriffe eingehalten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Beim Erstellen des Projekts extrahiert Corrext selbst die Begriffskandidaten aus dem Dokument. Sie legen deren Übersetzung fest oder fügen eigene Begriffe hinzu. Ein festgelegter Begriff wird unverändert in die maschinelle Übersetzung übernommen, die Sie danach im Editor lektorieren."}}, {"@type": "Question", "name": "Welche Dateiformate kann ich lektorieren?", "acceptedAnswer": {"@type": "Answer", "text": "Die Formate, die Sie in ein Projekt hochladen: .pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx, bis 50 MB pro Datei. Die Anwendung empfiehlt das Originalformat statt PDF. Im Dashboard exportieren Sie das lektorierte Dokument als Word-Datei, und sein Translation Memory laden Sie im Format TMX herunter, dem Standardformat für den Austausch von Translation Memorys."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://neur-on.ai/de/"}, {"@type": "ListItem", "position": 2, "name": "Corrext", "item": "https://neur-on.ai/de/corrext/"}, {"@type": "ListItem", "position": 3, "name": "Lektorats-Editor", "item": "https://neur-on.ai/de/corrext/lektorat/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="nav" id="siteNav" data-active="corrext">
+  <div class="container nav-inner">
+    <a href="../../../de/" class="logo" aria-label="Neur.on, zurück zur Startseite"><img src="../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Lösungen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../../de/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressourcen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Sprache">
+        <a class="on" href="../../../de/corrext/lektorat/" aria-current="true">DE</a><span class="sep">·</span>
+        <a href="../../../de/corrext/lektorat/">FR</a><span class="sep">·</span>
+        <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="it/">IT</a><span class="sep">·</span>
+        <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="en/">EN</a>
+      </div>
+      <a href="../../../de/kontakt/" class="btn btn-blue">Demo anfragen</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Menü öffnen">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Die Plattform</p>
+        <a href="../../../de/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, die Schaltzentrale</b><em>Projekte, Offerten, Ressourcen und Zugriffsrechte in einer einzigen Schweizer Umgebung</em></span></a>
+        <a href="../../../de/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>Der Übersetzungsmotor, trainiert auf Schweizer Recht und Finanzen</em></span></a>
+        <a href="../../../de/sicherheit/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Sicherheit und Datensouveränität</b><em>Wo Ihre Daten gespeichert und verarbeitet werden und mit welchem Motor</em></span></a>
+        <a href="../../../de/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API und On-Premises</b><em>Integration in Ihre DMS, Intranets und Workflows</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Die Tools</p>
+        <a href="../../../de/corrext/dokumente-uebersetzen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Text- und Dokumentübersetzung</b><em>Text, Dateien, PDF in Word, Umformulieren</em></span></a>
+        <a href="../../../de/corrext/uebersetzungsprojekte/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Projektmanagement</b><em>Lektorat durch Fachleute nach Bedarf, Offerte und Lieferfrist sofort</em></span></a>
+        <a href="../../../de/corrext/lektorat/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Lektorats-Editor</b><em>Lektorat Satz für Satz, Korrekturen bleiben gespeichert</em></span></a>
+        <a href="../../../de/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>Die Konkordanz für Schweizer Recht, 30 Fachgebiete</em></span></a>
+        <a href="../../../de/corrext/handelsregisterauszug/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Handelsregisterauszüge</b><em>Beglaubigte Übersetzung, notariell oder mit Apostille</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Mehr erfahren</p>
+        <a href="../../../de/qualitaetsstufen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Vier Qualitätsstufen</b><em>Von der maschinellen Übersetzung bis zur Beglaubigung</em></span></a>
+        <a href="../../../de/sprachen-und-formate/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Sprachen und Formate</b><em>30 Sprachen, vier davon nativ, alle Ihre Office-Formate</em></span></a>
+        <a href="../../../de/hilfe/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Hilfe-Center</b><em>Anleitungen Schritt für Schritt</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Ohne Registrierung testen</p>
+        <p class="mega-p">Die Oberfläche von Corrext, originalgetreu nachgebildet, mit drei Auszügen aus dem Schweizer Recht.</p>
+        <a href="../../../de/corrext/dokumente-uebersetzen/#demo" class="mega-cta">Live-Demo öffnen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Nach Branche</p>
+        <a href="../../../de/loesungen/anwaltskanzleien/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Anwaltskanzleien</b></span></a>
+        <a href="../../../de/loesungen/banken/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banken und Finanzen</b></span></a>
+        <a href="../../../de/loesungen/rechtsabteilungen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Rechtsabteilungen und Legal Ops</b></span></a>
+        <a href="../../../de/loesungen/behoerden/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Behörden und Verwaltung</b></span></a>
+        <a href="../../../de/loesungen/treuhand/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Treuhand und Beratung</b></span></a>
+        <a href="../../../de/loesungen/legaltech-verlage/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTechs und Verlage</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nach Rechtsgebiet</p>
+        <a href="../../../de/uebersetzung/vertraege/"><b>Verträge</b></a>
+        <a href="../../../de/uebersetzung/gesellschaftsrecht/"><b>Gesellschaftsrecht</b></a>
+        <a href="../../../de/uebersetzung/fusionen-uebernahmen/"><b>Fusionen und Akquisitionen</b></a>
+        <a href="../../../de/uebersetzung/prozesse-schiedsverfahren/"><b>Prozessführung und Schiedsverfahren</b></a>
+        <a href="../../../de/uebersetzung/bank-und-finanzrecht/"><b>Bank- und Finanzrecht</b></a>
+        <a href="../../../de/uebersetzung/compliance-finma/"><b>Compliance und FINMA</b></a>
+        <a href="../../../de/uebersetzung/" class="mega-all">Alle Rechtsgebiete <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nach Sprachpaar</p>
+        <a href="../../../de/uebersetzung/deutsch-franzoesisch/"><b>Deutsch nach Französisch</b></a>
+        <a href="../../../de/uebersetzung/franzoesisch-deutsch/"><b>Französisch nach Deutsch</b></a>
+        <a href="../../../de/uebersetzung/deutsch-englisch/"><b>Deutsch nach Englisch</b></a>
+        <a href="../../../de/uebersetzung/franzoesisch-englisch/"><b>Französisch nach Englisch</b></a>
+        <a href="../../../de/uebersetzung/italienisch-franzoesisch/"><b>Italienisch nach Französisch</b></a>
+        <a href="../../../de/uebersetzung/englisch-deutsch/"><b>Englisch nach Deutsch</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Noch unschlüssig?</p>
+        <p class="mega-p">Was Corrext kann und generische Tools nicht, Punkt für Punkt verglichen.</p>
+        <a href="../../../de/vergleich/" class="mega-cta">Zu den Vergleichen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Verstehen</p>
+        <a href="../../../de/ressourcen/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Schweizer Recht, Übersetzung und künstliche Intelligenz</em></span></a>
+        <a href="../../../de/ressourcen/leitfaeden/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Leitfäden</b><em>Fundierte Methoden, verfasst von unseren Fachleuten</em></span></a>
+        <a href="../../../de/ressourcen/studien/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studien und Benchmarks</b><em>Unsere Messungen an Schweizer Rechtstexten</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nachschlagen</p>
+        <a href="../../../de/ressourcen/glossar/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Schweizer Rechtsglossar</b><em>Jeder Begriff auf Deutsch, Französisch, Italienisch und Englisch</em></span></a>
+        <a href="../../../de/hilfe/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Hilfe-Center für Corrext</b><em>Einstieg und praktische Antworten</em></span></a>
+        <a href="../../../de/hilfe/corrext-kennenlernen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Häufige Fragen</b><em>Corrext, LexMachina, Lektorat, Preise</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Vergleichen</p>
+        <a href="../../../de/vergleich/deepl-juristische-uebersetzung/"><b>Corrext und DeepL</b></a>
+        <a href="../../../de/vergleich/chatgpt-juristische-uebersetzung/"><b>Corrext und allgemeine LLM</b></a>
+        <a href="../../../de/vergleich/uebersetzungsbuero-oder-plattform/"><b>Übersetzungsbüro oder Plattform</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Ein Schweizer Unternehmen, eine Schweizer Infrastruktur, ein auf Schweizer Recht trainierter Übersetzungsmotor.</p>
+        <a href="../../../de/ueber-uns/" class="mega-cta">Über uns und Auszeichnungen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../de/corrext/">Corrext, die Plattform</a>
+        <a href="../../../de/corrext/dokumente-uebersetzen/">Text- und Dokumentübersetzung</a>
+        <a href="../../../de/corrext/uebersetzungsprojekte/">Projektmanagement</a>
+        <a href="../../../de/corrext/lektorat/">Lektorats-Editor</a>
+        <a href="../../../de/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../de/corrext/handelsregisterauszug/">Handelsregisterauszüge</a>
+        <a href="../../../de/corrext/api-on-premises/">API und On-Premises</a>
+        <a href="../../../de/lexmachina/">LexMachina</a>
+        <a href="../../../de/sicherheit/">Sicherheit und Datensouveränität</a>
+        <a href="../../../de/qualitaetsstufen/">Qualitätsstufen</a>
+        <a href="../../../de/sprachen-und-formate/">Sprachen und Formate</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Lösungen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../de/loesungen/anwaltskanzleien/">Anwaltskanzleien</a>
+        <a href="../../../de/loesungen/banken/">Banken und Finanzen</a>
+        <a href="../../../de/loesungen/rechtsabteilungen/">Rechtsabteilungen und Legal Ops</a>
+        <a href="../../../de/loesungen/behoerden/">Behörden und Verwaltung</a>
+        <a href="../../../de/loesungen/treuhand/">Treuhand und Beratung</a>
+        <a href="../../../de/loesungen/legaltech-verlage/">LegalTechs und Verlage</a>
+        <a href="../../../de/uebersetzung/">Übersetzung nach Rechtsgebiet</a>
+        <a href="../../../de/vergleich/">Vergleiche</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressourcen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../de/ressourcen/blog/">Blog</a>
+        <a href="../../../de/ressourcen/leitfaeden/">Leitfäden</a>
+        <a href="../../../de/ressourcen/glossar/">Schweizer Rechtsglossar</a>
+        <a href="../../../de/ressourcen/studien/">Studien und Benchmarks</a>
+        <a href="../../../de/hilfe/">Hilfe-Center</a>
+        <a href="../../../de/ueber-uns/">Über uns</a>
+      </div>
+    </div>
+    <a href="../../../de/kontakt/" class="btn btn-blue nm-cta">Demo anfragen</a>
+    <div class="nm-langs" aria-label="Sprache">
+      <a class="on" href="../../../de/corrext/lektorat/" aria-current="true">DE</a><span>·</span>
+      <a href="../../../de/corrext/lektorat/">FR</a><span>·</span>
+      <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="it/">IT</a><span>·</span>
+      <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="en/">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Navigationspfad"><div class="container"><ol><li><a href="../../../de/">Startseite</a></li><li><a href="../../../de/corrext/">Corrext</a></li><li><span aria-current="page">Lektorats-Editor</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO compact : la démo est l'objet -->
+<section class="thero thero-demo thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Lektorats-Editor.</em> Ihre Korrekturen dienen Ihren nächsten Übersetzungen</h1>
+        <p class="lead">Der Lektorats-Editor ist das in Corrext integrierte CAT-Tool (computergestützte Übersetzung). Er zeigt Ihr Dokument Satz für Satz: links das Original, rechts die Übersetzung. Sie korrigieren und bestätigen. Jede Korrektur wird im Translation Memory gespeichert und in Ihren nächsten Übersetzungen wiederverwendet.</p>
+        <div class="thero-cta">
+          <a href="../../../de/kontakt/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#demo" class="btn btn-ghost">Editor testen</a>
+        </div>
+      </div>
+      <!-- visuel:debut --><figure class="tvis"><svg class="tvis-svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Illustration: ein zweispaltiger Lektorats-Editor, Segmente einzeln bestätigt, aktuelles Segment mit Vorschlägen zur Umformulierung" focusable="false"><defs>
+<linearGradient id="veg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+<linearGradient id="vea" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#96BCFF"/><stop offset="1" stop-color="#317BFF"/></linearGradient>
+<radialGradient id="veh"><stop offset="0" stop-color="#317BFF" stop-opacity=".55"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
+<radialGradient id="vew"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".4" stop-color="#96BCFF" stop-opacity=".45"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
+<filter id="ves" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000a24" flood-opacity=".45"/></filter>
+</defs><ellipse cx="260" cy="205" rx="250" ry="175" fill="url(#veh)" opacity=".55"/><rect x="36" y="58" width="448" height="290" rx="14" fill="url(#veg)" stroke="#fff" stroke-opacity=".18" filter="url(#ves)" /><rect x="36" y="58" width="448" height="38" rx="14" fill="#fff" fill-opacity=".06"/><rect x="56" y="74" width="70" height="6" rx="3.0" fill="#fff" fill-opacity=".4"/><rect x="140" y="74" width="46" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><circle cx="452" cy="77" r="11" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3.5"/><circle cx="452" cy="77" r="11" fill="none" stroke="#96BCFF" stroke-width="3.5" stroke-dasharray="41 70" transform="rotate(-90 452 77)" stroke-linecap="round"/><rect x="54" y="110" width="412" height="36" rx="8" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".08"/><rect x="68" y="120" width="150" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="68" y="131" width="96" height="5" rx="2.5" fill="#fff" fill-opacity=".2"/><path d="M258 116v24" stroke="#fff" stroke-opacity=".12"/><rect x="272" y="120" width="132" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".55"/><rect x="272" y="131" width="88" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".4"/><circle cx="446" cy="128" r="9" fill="url(#vea)"/><path d="M441.5 128l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="54" y="156" width="412" height="36" rx="8" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".08"/><rect x="68" y="166" width="120" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="68" y="177" width="130" height="5" rx="2.5" fill="#fff" fill-opacity=".2"/><path d="M258 162v24" stroke="#fff" stroke-opacity=".12"/><rect x="272" y="166" width="116" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".55"/><rect x="272" y="177" width="120" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".4"/><circle cx="446" cy="174" r="9" fill="url(#vea)"/><path d="M441.5 174l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="54" y="202" width="412" height="36" rx="8" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".08"/><rect x="68" y="212" width="164" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="68" y="223" width="84" height="5" rx="2.5" fill="#fff" fill-opacity=".2"/><path d="M258 208v24" stroke="#fff" stroke-opacity=".12"/><rect x="272" y="212" width="140" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".55"/><rect x="272" y="223" width="92" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".4"/><circle cx="446" cy="220" r="9" fill="url(#vea)"/><path d="M441.5 220l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="54" y="248" width="412" height="36" rx="8" fill="#fff" fill-opacity=".1" stroke="#96BCFF" stroke-width="1.6"/><rect x="68" y="258" width="136" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="68" y="269" width="118" height="5" rx="2.5" fill="#fff" fill-opacity=".2"/><path d="M258 254v24" stroke="#fff" stroke-opacity=".12"/><rect x="272" y="258" width="100" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".55"/><rect x="272" y="269" width="0" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".4"/><circle cx="446" cy="266" r="9" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.6"/><rect x="54" y="294" width="412" height="36" rx="8" fill="#fff" fill-opacity=".045" stroke="#fff" stroke-opacity=".08"/><rect x="68" y="304" width="110" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="68" y="315" width="92" height="5" rx="2.5" fill="#fff" fill-opacity=".2"/><path d="M258 300v24" stroke="#fff" stroke-opacity=".12"/><rect x="272" y="304" width="0" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".55"/><rect x="272" y="315" width="0" height="5" rx="2.5" fill="#96BCFF" fill-opacity=".4"/><circle cx="446" cy="312" r="9" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.6"/><rect x="300" y="290" width="184" height="78" rx="10" fill="#001B4C" fill-opacity=".94" stroke="#96BCFF" stroke-opacity=".5" filter="url(#ves)"/><path d="M318 304l3-7 3 7 7 3-7 3-3 7-3-7-7-3z" fill="#96BCFF"/><rect x="338" y="302" width="126" height="6" rx="3" fill="#fff" fill-opacity=".75"/><rect x="338" y="320" width="104" height="6" rx="3" fill="#fff" fill-opacity=".45"/><rect x="338" y="338" width="116" height="6" rx="3" fill="#fff" fill-opacity=".32"/><g class="anim"><rect x="374" y="255" width="2" height="16" fill="#fff"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1.1s" repeatCount="indefinite"/></rect></g></svg></figure><!-- visuel:fin -->
+    </div>
+  </div>
+</section>
+
+<!-- DÉMO : l'éditeur dans le cadre Corrext, débordant sous le hero -->
+<section class="tdemo demo" id="demo" style="padding:0;background:transparent">
+  <div class="container">
+    <div class="cx" id="cx" aria-label="Demo der Oberfläche von Corrext, Lektorats-Editor">
+      <div class="cx-top">
+        <span class="cx-logo"><img src="../../../assets/img/corrext-logo.svg" alt="Corrext" class="cx-brand"></span>
+        <span class="home">Home</span>
+        <span class="grow"></span>
+        <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <span class="cx-avatar" aria-hidden="true">AM</span>
+      </div>
+
+      <div class="cxe-app" id="cxeApp">
+
+        <!-- Éditeur : barre d'outils et tableau des segments -->
+        <div class="cxe-ed">
+          <div class="cxe-tb">
+            <span class="cxe-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>Back</span>
+            <span class="cxe-tools" aria-hidden="true">
+              <span class="cxe-tag">&lt;tag&gt;</span><span class="cxe-tag">&lt;/tag&gt;</span><span class="cxe-tag">&lt;tag/&gt;</span>
+              <span class="cxe-f b">B</span><span class="cxe-f i">I</span><span class="cxe-f u">U</span>
+            </span>
+            <span class="cxe-sep" aria-hidden="true"></span>
+            <button type="button" class="cxe-copy" id="cxeCopy" aria-label="Copy source: den Ausgangstext in die Übersetzung des gewählten Segments kopieren"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5v14"/><path d="M8 12h12M15 7l5 5-5 5"/></svg></button>
+            <span class="cxe-prog"><span class="bar" aria-hidden="true"><i id="cxePBar"></i></span><span id="cxePNum">0%</span><span class="cxe-sr"> der Segmente bestätigt</span></span>
+          </div>
+          <div class="cxe-scroll">
+            <table class="cxe-tab">
+              <caption class="cxe-sr">Segmente des Dokuments, Ausgangstext auf Französisch und Übersetzung auf Deutsch</caption>
+              <colgroup><col class="c-id"><col><col><col class="c-ind"><col class="c-ok"></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col"><span class="cxe-sr">Ausgangstext (Französisch)</span>
+                    <span class="cxe-filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeFs" placeholder="Filter source" aria-label="Filter source" autocomplete="off"><button type="button" class="cxe-clr" data-for="cxeFs" aria-label="Filter Ausgangstext löschen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
+                  </th>
+                  <th scope="col"><span class="cxe-sr">Übersetzung (Deutsch)</span>
+                    <span class="cxe-filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeFt" placeholder="Filter target" aria-label="Filter target" autocomplete="off"><button type="button" class="cxe-clr" data-for="cxeFt" aria-label="Filter Übersetzung löschen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
+                  </th>
+                  <th scope="col"><span class="cxe-sr">Herkunft der Übersetzung</span></th>
+                  <th scope="col"><input type="checkbox" class="cxe-chk" id="cxeAll" aria-label="Alle Segmente bestätigen"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-i="0">
+                  <td class="id">0<span class="cxe-rep" title="Wiederholter Satz in Segment 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span class="cxe-sr">Wiederholter Satz in Segment 5</span></span></td>
+                  <td class="cxe-src" lang="fr">Contrat de mandat (exemple fictif)</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-label="Übersetzung von Segment 0" lang="de" spellcheck="false">Auftragsvertrag (fiktives Beispiel)</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Maschinelle Übersetzung, hohe Qualität</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Segment 0 bestätigen"></td>
+                </tr>
+                <tr data-i="1">
+                  <td class="id">1</td>
+                  <td class="cxe-src" lang="fr">Article 1 · Objet</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-label="Übersetzung von Segment 1" lang="de" spellcheck="false">Artikel 1 · Gegenstand</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Maschinelle Übersetzung, hohe Qualität</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Segment 1 bestätigen"></td>
+                </tr>
+                <tr data-i="2" class="sel">
+                  <td class="id">2</td>
+                  <td class="cxe-src" lang="fr">La Mandataire fournit à la Mandante des prestations de conseil en conformité réglementaire, conformément au cahier des charges annexé.</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Übersetzung von Segment 2" lang="de" spellcheck="false">Die Auftragnehmerin erbringt der Auftraggeberin gemäss beiliegendem Leistungsverzeichnis beratende Dienstleistungen in regulatorischer Hinsicht.</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><span class="cxe-sr">Maschinelle Übersetzung, mittlere Qualität</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Segment 2 bestätigen"></td>
+                </tr>
+                <tr data-i="3">
+                  <td class="id">3</td>
+                  <td class="cxe-src" lang="fr">Toute facture impayée à l'échéance porte intérêt moratoire à 5 % l'an.</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Übersetzung von Segment 3" lang="de" spellcheck="false">Für jede bei Fälligkeit unbezahlte Rechnung ist ein Verzugszins von 5 % pro Jahr geschuldet.</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Translation memory"><b>TM</b><span class="cxe-sim">100%</span><span class="cxe-sr">Aus dem Translation Memory übernommen, vollständige Übereinstimmung</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Segment 3 bestätigen"></td>
+                </tr>
+                <tr data-i="4">
+                  <td class="id">4</td>
+                  <td class="cxe-src" lang="fr">Le présent contrat est soumis au droit suisse, en particulier au Code des obligations. Le for exclusif est à Fribourg.</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Übersetzung von Segment 4" lang="de" spellcheck="false">Dieser Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Maschinelle Übersetzung, hohe Qualität</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Segment 4 bestätigen"></td>
+                </tr>
+                <tr data-i="5">
+                  <td class="id">5<span class="cxe-rep" title="Wiederholter Satz in Segment 0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span class="cxe-sr">Wiederholter Satz in Segment 0</span></span></td>
+                  <td class="cxe-src" lang="fr">Contrat de mandat (exemple fictif)</td>
+                  <td><div class="cxe-tgt" contenteditable="true" role="textbox" aria-label="Übersetzung von Segment 5" lang="de" spellcheck="false">Mandatsvertrag (fiktives Beispiel)</div></td>
+                  <td class="ind"><span class="cxe-ind" title="Machine translation"><b>MT</b><span class="cxe-gauge" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="cxe-sr">Maschinelle Übersetzung, hohe Qualität</span></span></td>
+                  <td class="ok"><input type="checkbox" class="cxe-chk" aria-label="Segment 5 bestätigen"></td>
+                </tr>
+                <tr class="cxe-none" id="cxeNone" hidden><td colspan="5">Kein Satz entspricht dem Filter.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Panneau latéral à quatre onglets -->
+        <div class="cxe-side">
+          <div class="cxe-head">
+            <p class="cxe-title" id="cxeTitle">Translation memories</p>
+            <button type="button" class="cxe-fold" id="cxeFold" aria-expanded="true" aria-controls="cxeBody" aria-label="Bereich einklappen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+          </div>
+          <div class="cxe-rail" role="tablist" aria-orientation="vertical" aria-label="Registerkarten des Bereichs">
+            <button type="button" class="cxe-rb" role="tab" id="cxeT0" aria-selected="true" aria-controls="cxeP0" data-title="Translation memories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span class="l">Translation memories</span></button>
+            <button type="button" class="cxe-rb" role="tab" id="cxeT1" aria-selected="false" aria-controls="cxeP1" data-title="Fast Lookup" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19V5a2 2 0 0 1 2-2h12v15H7a2 2 0 0 0-2 2 2 2 0 0 0 2 2h12"/><path d="M10 3v7l2.5-1.8L15 10V3"/></svg><span class="l">Fast Lookup</span></button>
+            <button type="button" class="cxe-rb" role="tab" id="cxeT2" aria-selected="false" aria-controls="cxeP2" data-title="AI Assistant" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4"/><circle cx="12" cy="3.5" r="1"/><path d="M9 13h.01M15 13h.01M9.5 16h5"/></svg><span class="l">AI Assistant</span></button>
+            <button type="button" class="cxe-rb" role="tab" id="cxeT3" aria-selected="false" aria-controls="cxeP3" data-title="Sync" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg><span class="l">Sync</span><span class="cxe-dot" id="cxeDot" aria-hidden="true"></span><span class="cxe-sr" id="cxeDotTxt">, 3 Elemente ausstehend</span></button>
+          </div>
+          <div class="cxe-body" id="cxeBody">
+
+            <!-- Translation memories -->
+            <div class="cxe-pan" id="cxeP0" role="tabpanel" aria-labelledby="cxeT0" tabindex="0">
+              <div id="cxeMem"></div>
+            </div>
+
+            <!-- Fast Lookup -->
+            <div class="cxe-pan" id="cxeP1" role="tabpanel" aria-labelledby="cxeT1" tabindex="0" hidden>
+              <button type="button" class="cx-switch cxe-live" id="cxeLiveSw" aria-pressed="true"><i aria-hidden="true"></i> Live search</button>
+              <form class="cxe-q" id="cxeQForm" role="search" autocomplete="off">
+                <span class="cxe-qbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" enterkeyhint="search" id="cxeQ" value="intérêt moratoire" aria-label="Begriff in den Translation Memorys und in CHnell suchen"><button type="button" class="cxe-clr" id="cxeQClr" aria-label="Suche löschen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></span>
+                <button type="submit" class="cx-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</button>
+              </form>
+              <div class="cxe-seg" role="group" aria-label="Suche im Ausgangs- oder Zieltext">
+                <button type="button" class="on" data-side="src" aria-pressed="true">Source</button>
+                <button type="button" data-side="tgt" aria-pressed="false">Target</button>
+              </div>
+              <div id="cxeLk"></div>
+            </div>
+
+            <!-- AI Assistant -->
+            <div class="cxe-pan" id="cxeP2" role="tabpanel" aria-labelledby="cxeT2" tabindex="0" hidden>
+              <div class="cxe-ai" role="tablist" aria-label="Funktionen des KI-Assistenten">
+                <button type="button" class="on" role="tab" id="cxeAiA" aria-selected="true" aria-controls="cxeAiAP">Alternatives</button>
+                <button type="button" role="tab" id="cxeAiR" aria-selected="false" aria-controls="cxeAiRP" tabindex="-1">Rephrasing</button>
+              </div>
+              <div id="cxeAiAP" role="tabpanel" aria-labelledby="cxeAiA">
+                <div class="cxe-box">
+                  <button type="button" class="cxe-gen" id="cxeMore"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 16 8"/><path d="m14 6 4 4"/><path d="M19 3v3M17.5 4.5h3M7 3v2M6 4h2M20 13v2M19 14h2"/></svg>Generate more</button>
+                  <div id="cxeAlt"></div>
+                </div>
+              </div>
+              <div id="cxeAiRP" role="tabpanel" aria-labelledby="cxeAiR" hidden>
+                <div id="cxeRWrap">
+                  <div class="cxe-rrow">
+                    
+                    <button type="button" class="cxe-setb" id="cxeSet" aria-expanded="false" aria-controls="cxePop">Settings <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+                  </div>
+                  <div class="cx-set-pop cxe-pop" id="cxePop">
+                    <p class="cx-h5" id="cxeStyH">Styles</p>
+                    <div class="cx-chips" role="group" aria-labelledby="cxeStyH">
+                      <button type="button" class="cx-chip" data-style="legal" aria-pressed="false">Formal legal</button>
+                      <button type="button" class="cx-chip" data-style="fin" aria-pressed="false">Financial</button>
+                      <button type="button" class="cx-chip" data-style="simp" aria-pressed="false">Simplified</button>
+                      <button type="button" class="cx-chip" data-style="formal" aria-pressed="false">Formal</button>
+                      <button type="button" class="cx-chip" data-style="inf" aria-pressed="false">Informal</button>
+                    </div>
+                    <p class="cx-h5" id="cxeOptH">Options</p>
+                    <div class="cx-chips" role="group" aria-labelledby="cxeOptH"><button type="button" class="cx-chip" id="cxeShort" aria-pressed="false">Shorten</button></div>
+                    <div class="cx-set-act"><button type="button" class="rst" id="cxeReset">Reset</button><button type="button" class="cx-btn" id="cxeSetOk">Apply</button></div>
+                  </div>
+                  <div class="cxe-box">
+                    <div class="cxe-rout" id="cxeROut" lang="de"></div>
+                    <div class="cxe-rfoot">
+                      <button type="button" class="cxe-icb" id="cxeRegen" aria-label="Umformulierung neu generieren"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 4v5h-5"/></svg></button>
+                      <button type="button" class="cx-btn" id="cxeRApply">Apply</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cxe-rnote" id="cxeRNote" hidden>
+                  <p class="cxe-empty">Demo: Die Umformulierung ist für Segment 4 vorbereitet, die Klausel zum anwendbaren Recht.</p>
+                  <button type="button" class="cx-btn ghost" id="cxeGo4">Segment 4 wählen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sync -->
+            <div class="cxe-pan" id="cxeP3" role="tabpanel" aria-labelledby="cxeT3" tabindex="0" hidden>
+              <div id="cxeSync"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="cx-note cxe-note">Demo: Klicken Sie auf einen Satz, korrigieren Sie die Übersetzung und bestätigen Sie sie. Öffnen Sie dann die vier Registerkarten des Bereichs. Es wird nichts gesendet.</p>
+      <p class="cxe-sr" id="cxeLive" aria-live="polite"></p>
+    </div>
+
+    <p class="cx-caption">Oberfläche nach der Anwendung Corrext nachgebildet · fiktiver Vertrag · Übersetzungen, Alternativen und Umformulierungen von den Motoren in Corrext erstellt · Translation Memory und Fassungen von Kolleginnen und Kollegen simuliert · Auszüge aus CHnell aus der Anwendung.</p>
+  </div>
+</section>
+
+<div class="tafter">
+
+<!-- CE QUE FAIT L'OUTIL : registre de faits observés -->
+<section class="facts" id="faits">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Was der Lektorats-Editor genau macht</h2>
+        <p>Ein CAT-Tool zerlegt das Dokument in Segmente. Ein Segment ist ein Satz oder ein Titel. Sie lektorieren jedes Segment neben dem Original, korrigieren es bei Bedarf und bestätigen es dann.</p>
+        <p>Der Editor öffnet sich im Dashboard des Projekts über die Schaltfläche Open in CAT. Alles Folgende wurde in der Anwendung beobachtet.</p>
+        <div class="links">
+          <a href="../../../de/corrext/uebersetzungsprojekte/" class="feat-link">Projekt erstellen: Projektmanagement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="../../../de/corrext/chnell/" class="feat-link">Begriff prüfen: Fast lookup CHnell <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Zwei Spalten</b><p><strong class="kf">Links das Original, rechts die Übersetzung</strong>, Segment für Segment. Ein Suchfilter über jeder Spalte findet einen Satz im Ausgangstext oder in der Übersetzung.</p></div>
+        <div class="fact"><b>Herkunft jedes Satzes</b><p>Eine Anzeige zeigt, ob die Übersetzung <strong class="kf">vom Motor oder aus dem Translation Memory</strong> stammt. Bei maschineller Übersetzung gibt eine Skala die <strong class="kf">Qualitätsstufe</strong> an: niedrig, mittel oder hoch.<small>Das Translation Memory enthält bereits freigegebene Übersetzungen.</small></p></div>
+        <div class="fact"><b>Bestätigung</b><p><strong class="kf">Ein Kontrollkästchen pro Segment</strong> bestätigt das Lektorat. Der Fortschritt des Dokuments erscheint <strong class="kf">in Prozent</strong> oben im Editor.</p></div>
+        <div class="fact"><b>Werkzeugleiste</b><p><strong class="kf">Formatierungs-Tags</strong> (öffnend, schliessend, eigenständig), fett, kursiv, unterstrichen und Kopie des Ausgangstexts in die Übersetzung.<small>Die Tags markieren die Formatierung des Originaldokuments.</small></p></div>
+        <div class="fact"><b>Prüfungen</b><p>Der Editor erkennt <strong class="kf">wiederholte Sätze</strong> und <strong class="kf">inkonsistente Tags</strong>.</p></div>
+        <div class="fact"><b>Translation Memorys</b><p>Für den gewählten Satz die <strong class="kf">ähnlichsten bereits freigegebenen Übersetzungen</strong>. Ein Klick auf Apply übernimmt sie in die Übersetzung.</p></div>
+        <div class="fact"><b>Fast Lookup</b><p>Live-Suche in <strong class="kf">Ihren Translation Memorys und in CHnell</strong>, im Ausgangs- oder Zieltext. Jedes Ergebnis ist zweisprachig, der Begriff ist auf beiden Seiten markiert, und das Originaldokument wird angegeben.</p></div>
+        <div class="fact"><b>KI-Assistent</b><p>Alternatives: derselbe Satz, von mehreren Motoren übersetzt, nebeneinander, weitere auf Anfrage. Rephrasing: eine Umformulierung in <strong class="kf">fünf Stilen</strong> (formell juristisch, finanziell, vereinfacht, formell, informell), mit einer Option zum Kürzen.<small>Die von der Umformulierung geänderten Wörter sind unterstrichen.</small></p></div>
+        <div class="fact"><b>Sync</b><p><strong class="kf">Für das Lektorat im Team</strong>: Konflikte zwischen zwei Fassungen, über die zu entscheiden ist, Änderungen einer Kollegin oder eines Kollegen, die zu übernehmen sind, und die Übertragung einer Korrektur auf identische Sätze.</p></div>
+        <div class="fact"><b>Dashboard</b><p>Vertraulichkeit, Art des Lektorats, Sprachen, Fortschritt, Referenzdateien, Anweisungen, Translation Memorys und Team. Für jede Datei: <strong class="kf">Open in CAT</strong>, Preview, Export docx, Reimport docx, <strong class="kf">Download TMX</strong> und Validate.<small>TMX ist das Standardformat für den Austausch von Translation Memorys.</small></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LA PROMESSE : une mémoire qui apprend, et sa limite -->
+<section class="gov cxe-gov" id="memoire">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Fliessen Ihre Korrekturen in die nächsten Übersetzungen ein?</h2>
+        <p>Ja, bei Standard-Vertraulichkeit. Jede Korrektur im Editor wird in Ihrem Translation Memory gespeichert. Beim nächsten Projekt übernimmt Corrext sie. So passt sich die Übersetzung Projekt für Projekt an Ihren Schreibstil an. Und dieselbe Passage wird von Projekt zu Projekt gleich übersetzt.</p>
+        <p>Eine gewollte Ausnahme: Im Modus für hochsensible Inhalte (Highly sensitive content) fliessen die Übersetzungen nicht ins Translation Memory. Die Daten werden dann ausschliesslich in der Schweiz gespeichert und verarbeitet. Dieser Modus ist auf Deutsch, Französisch, Italienisch und Englisch verfügbar.</p>
+        <a href="../../../de/sicherheit/" class="feat-link">Sicherheit und Datensouveränität <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>Sie korrigieren.</b> Im Editor, Satz für Satz, neben dem Original.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg><span><b>Die Korrektur wird gespeichert.</b> Das Projekt bleibt auf den Schweizer Servern von Corrext und dient nur Ihnen als Translation Memory.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12"/><path d="m7 22-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg><span><b>Das nächste Projekt übernimmt sie.</b> Ihre Formulierungen kehren wieder, und Ihre Übersetzungen bleiben über alle Projekte hinweg einheitlich.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Ausser im hochsensiblen Modus.</b> Speicherung und Verarbeitung ausschliesslich in der Schweiz, keine Wiederverwendung im Translation Memory.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LE PARCOURS : l'éditeur dans un projet -->
+<section class="trust" id="parcours">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-lead">
+        <h2>Von der hochgeladenen Datei zum freigegebenen Dokument</h2>
+        <p>Das Lektorat ist ein Schritt eines Projekts in Corrext. Hier der vollständige Ablauf, in der Reihenfolge der Anwendung. Die ersten vier Schritte erfolgen beim Erstellen des Projekts.</p>
+        <div class="cxe-links">
+          <a href="../../../de/corrext/uebersetzungsprojekte/" class="feat-link">Projektmanagement, Schritt für Schritt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="../../../de/lexmachina/" class="feat-link">LexMachina, der Übersetzungsmotor zu 100 % aus der Schweiz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="ledger">
+        <div class="ledger-row"><span class="ty">01</span><span class="tn">Projekt erstellen<small>Name, Zielsprachen, Vertraulichkeitsniveau und ob die Kommentare im Dokument übersetzt werden.</small></span><span class="tb">Projekt</span></div>
+        <div class="ledger-row"><span class="ty">02</span><span class="tn">Analyse der Dateien<small>Jede Datei wird in Normseiten gezählt. Eine Normseite umfasst 1'800 Zeichen inklusive Leerzeichen.</small></span><span class="tb">Projekt</span></div>
+        <div class="ledger-row"><span class="ty">03</span><span class="tn">Terminologie des Projekts<small>Corrext extrahiert selbst die Begriffskandidaten aus dem Dokument. Sie legen deren Übersetzung fest oder fügen eigene Begriffe hinzu.</small></span><span class="tb">Projekt</span></div>
+        <div class="ledger-row"><span class="ty">04</span><span class="tn">Wahl des Motors<small>LexMachina, zu 100 % aus der Schweiz, oder ein von Ihrer Organisation zugelassener Drittmotor: DeepL Pro, Azure OpenAI GPT, Claude. Die Drittmotoren sind im Ausland gehostet.</small></span><span class="tb">Projekt</span></div>
+        <div class="ledger-row"><span class="ty">05</span><span class="tn">Maschinelle Übersetzung<small>Der gewählte Motor übersetzt das Dokument. Die in Schritt 3 festgelegten Begriffe werden unverändert übernommen.</small></span><span class="tb">Motor</span></div>
+        <div class="ledger-row"><span class="ty">06</span><span class="tn">Lektorat im Editor<small>Open in CAT: Sie lektorieren, korrigieren und bestätigen jeden Satz, allein oder im Team.</small></span><span class="tb">Editor</span></div>
+        <div class="ledger-row"><span class="ty">07</span><span class="tn">Freigabe<small>Die lektorierte Datei wird im Dashboard des Projekts freigegeben.</small></span><span class="tb">Dashboard</span></div>
+        <div class="ledger-row"><span class="ty">08</span><span class="tn">Export<small>Das übersetzte Dokument wird als Word-Datei exportiert. Das Translation Memory der Datei lässt sich im Format TMX herunterladen.</small></span><span class="tb">Dashboard</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section class="who who-s">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Drei Einsatzbereiche des Lektorats-Editors</h2>
+    </div>
+    <div class="ws-grid">
+      <article class="ws-item">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13"/><path d="M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></svg></span><span><span class="pn">Legal Ops.</span> Dieselben Worte von Vertrag zu Vertrag</span></h3>
+        <p>Ihre Juristinnen und Juristen korrigieren die erste Übersetzung eines Mustervertrags. Die folgenden Übersetzungen übernehmen ihre Formulierungen, und die festgelegten Begriffe werden eingehalten. Das hauseigene Vokabular bleibt stabil, Projekt für Projekt.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></span><span><span class="pn">Anwaltskanzleien.</span> Im Team lektorieren vor dem Versand</span></h3>
+        <p>Zwei Lektorierende teilen sich das Dokument. Die Registerkarte Sync zeigt Konflikte zwischen Fassungen und die Änderungen der anderen Person. Sie schlägt ausserdem vor, eine Korrektur auf identische Sätze zu übertragen.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span><span class="pn">Bank-Compliance.</span> Ein sensibles Dossier bearbeiten</span></h3>
+        <p>Das Projekt wird im Modus für hochsensible Inhalte erstellt: Speicherung und Verarbeitung ausschliesslich in der Schweiz. Sie lektorieren im selben Editor, und kein Satz wird im Translation Memory wiederverwendet.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVAILLER DANS WORD -->
+<section class="cxe-word" id="word">
+  <div class="container">
+    <div class="feature">
+      <div class="feat-txt">
+        <h2><span class="pn">In Word arbeiten.</span> Derselbe Bereich in Ihrer Textverarbeitung</h2>
+        <p>Das Lektorat ist auch in Microsoft Word möglich. Exportieren Sie das Dokument im Dashboard des Projekts (Export docx). Öffnen Sie es in Word mit dem Add-in Corrext: KI-Assistent, Fast Lookup, Translation Memorys und Sync finden Sie dort in einem Seitenbereich. Nach dem Lektorat importieren Sie die Datei wieder (Reimport docx).</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Export docx, Lektorat in Word, dann Reimport docx</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> KI-Assistent, Fast Lookup, Translation Memorys und Sync im Add-in</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Anmeldung erforderlich, nur für Mitglieder des Projekts, Office 2021 oder Microsoft 365</li>
+        </ul>
+        <a href="../../../de/hilfe/" class="feat-link">Schritt für Schritt im Hilfe-Center <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win" role="img" aria-label="Schema: ein in Word geöffnetes Dokument, mit der Registerkarte Corrext im Menüband und dem Bereich des Add-ins rechts">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="word-rib">
+            <span class="tabb">Start</span><span>Einfügen</span><span>Überprüfen</span>
+            <span class="tabb brand">Corrext</span>
+          </div>
+          <div class="word-area">
+            <div class="word-doc">
+              <div class="wl src w90"></div><div class="wl tgt w80"></div>
+              <div class="wl src w80"></div><div class="wl tgt w90"></div>
+              <div class="wl src w65"></div><div class="wl tgt w65"></div>
+            </div>
+            <div class="word-panel">
+              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg> Corrext editor</div>
+              <div class="pbox on">AI Assistant</div>
+              <div class="pbox">Fast Lookup</div>
+              <div class="pbox">Matches</div>
+              <div class="pbox">Sync</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTILS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Die weiteren Tools von Corrext</h2>
+    <div class="siblings-row">
+      <a href="../../../de/corrext/uebersetzungsprojekte/"><b>Projektmanagement</b><span>Das Projekt in drei Schritten: Vertraulichkeit, analysierte Dateien, internes oder externes Lektorat, Offerte und Lieferfrist.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../de/corrext/chnell/"><b>Fast lookup CHnell</b><span>Die Konkordanz des Schweizer Rechts: amtliche Quellen, 30 Fachgebiete, Ihre eigenen Ressourcen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../de/corrext/dokumente-uebersetzen/"><b>Text- und Dokumentübersetzung</b><span>Text oder Datei sofort übersetzt, Alternativen je Motor, PDF in Word, Umformulierung in fünf Stilen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ : le FAQPage JSON-LD est généré mot pour mot par build.py -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zum Lektorats-Editor</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Was ist ein CAT-Tool?</summary>
+        <p>CAT steht für «Computer-Assisted Translation», auf Deutsch computergestützte Übersetzung. Ein solches Tool zerlegt das Dokument in Segmente, also in Sätze oder Titel, und stellt jedes neben seine Übersetzung. Die lektorierende Person korrigiert und bestätigt jedes Segment, unterstützt durch Translation Memorys und Terminologie. In Corrext heisst dieses Tool Lektorats-Editor.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie öffne ich den Lektorats-Editor?</summary>
+        <p>Über das Dashboard eines Projekts. Jede Datei hat dort eine Schaltfläche Open in CAT, die das Dokument im Editor öffnet. Das Projekt selbst erstellen Sie im Projektmanagement: Sprachen, Vertraulichkeitsniveau, Terminologie und Übersetzungsmotor.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Fliessen meine Korrekturen in die nächsten Übersetzungen ein?</summary>
+        <p>Ja, bei Standard-Vertraulichkeit. Ihre Projekte bleiben auf den Schweizer Servern von Corrext und dienen nur Ihnen als Translation Memory. Eine Korrektur von heute wird in Ihren nächsten Projekten übernommen. So passt sich die Übersetzung an Ihre Sprache an und bleibt von Projekt zu Projekt einheitlich.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Und im Modus für hochsensible Inhalte?</summary>
+        <p>In diesem Modus (Highly sensitive content) fliessen die Übersetzungen nicht ins Translation Memory. Die Daten werden ausschliesslich in der Schweiz gespeichert und verarbeitet. Der Modus ist auf Deutsch, Französisch, Italienisch und Englisch verfügbar. Sie wählen ihn beim Erstellen jedes Projekts.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Können mehrere Personen dasselbe Dokument lektorieren?</summary>
+        <p>Ja. Die Registerkarte Sync organisiert die Arbeit im Team. Sie zeigt Konflikte zwischen zwei Fassungen desselben Satzes, über die zu entscheiden ist. Sie listet die Änderungen einer Kollegin oder eines Kollegen auf, die zu übernehmen sind. Und sie schlägt vor, eine Korrektur auf identische Sätze im Dokument zu übertragen: die Propagation. Das Projektteam verwalten Sie im Dashboard.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Brauche ich Microsoft Word für das Lektorat?</summary>
+        <p>Nein. Den Lektorats-Editor nutzen Sie direkt in Corrext. Wenn Sie lieber in Word arbeiten, exportieren Sie das Dokument im Dashboard (Export docx), lektorieren es mit dem Add-in Corrext und importieren es wieder (Reimport docx). Das Add-in erfordert eine Anmeldung, die Mitgliedschaft im Projekt und Office 2021 oder Microsoft 365.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Werden die von mir festgelegten Begriffe eingehalten?</summary>
+        <p>Ja. Beim Erstellen des Projekts extrahiert Corrext selbst die Begriffskandidaten aus dem Dokument. Sie legen deren Übersetzung fest oder fügen eigene Begriffe hinzu. Ein festgelegter Begriff wird unverändert in die maschinelle Übersetzung übernommen, die Sie danach im Editor lektorieren.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Dateiformate kann ich lektorieren?</summary>
+        <p>Die Formate, die Sie in ein Projekt hochladen: .pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx, bis 50 MB pro Datei. Die Anwendung empfiehlt das Originalformat statt PDF. Im Dashboard exportieren Sie das lektorierte Dokument als Word-Datei, und sein Translation Memory laden Sie im Format TMX herunter, dem Standardformat für den Austausch von Translation Memorys.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Sehen Sie den Lektorats-Editor an Ihren eigenen Dokumenten</h2>
+      <p>Eine individuelle Demo mit einer Fachperson für Schweizer Recht: eines Ihrer Dokumente, Ihre Zielsprachen und Ihre Terminologie.</p>
+      <div class="final-cta-btns">
+        <a href="../../../de/kontakt/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../../de/corrext/" class="btn-outline">Zurück zur Plattform Corrext</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+/* Démo Éditeur de relecture · segments éditables, confirmation, filtres et panneau latéral à quatre onglets.
+   Contrat fictif ; les extraits CHnell reprennent des résultats réels déjà publiés sur le site. */
+(function(){
+  var cx=document.getElementById('cx'); if(!cx){return;}
+  var reduce=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var $=function(id){return document.getElementById(id);};
+  var each=function(list,fn){Array.prototype.forEach.call(list,fn);};
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function norm(s){return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+  var liveEl=$('cxeLive'),lt;
+  function say(t){clearTimeout(lt);liveEl.textContent='';lt=setTimeout(function(){liveEl.textContent=t;},40);}
+
+  /* ---------- Données de démonstration ---------- */
+  var ALT=[
+    [{e:'LexMachina',t:'Mandatsvertrag (fiktives Beispiel)'},{e:'DeepL Pro',t:'Auftragsvertrag (fiktives Beispiel)'},{e:'Azure OpenAI GPT',t:'Auftragsvertrag (fiktives Beispiel)'}],
+    [{e:'LexMachina',t:'Artikel 1 · Gegenstand'},{e:'DeepL Pro',t:'Artikel 1 · Gegenstand'},{e:'Azure OpenAI GPT',t:'Artikel 1 · Gegenstand'}],
+    [{e:'LexMachina',t:'Die Auftragnehmerin erbringt der Auftraggeberin gemäss beiliegendem Leistungsverzeichnis beratende Dienstleistungen in regulatorischer Hinsicht.'},
+     {e:'DeepL Pro',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der Einhaltung gesetzlicher Vorschriften gemäss dem im Anhang beigefügten Lastenheft.'},
+     {e:'Azure OpenAI GPT',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der regulatorischen Compliance gemäss dem beigefügten Pflichtenheft.'}],
+    [{e:'LexMachina',t:'Jede bei Fälligkeit offene Rechnung wird mit einem Verzugszins von 5% p.a. verzinst.'},
+     {e:'DeepL Pro',t:'Für jede Rechnung, die bei Fälligkeit noch nicht beglichen ist, fallen Verzugszinsen in Höhe von 5 % pro Jahr an.'},
+     {e:'Azure OpenAI GPT',t:'Jede bei Fälligkeit unbezahlte Rechnung trägt einen Verzugszins von 5 % pro Jahr.'}],
+    [{e:'LexMachina',t:'Dieser Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.'},
+     {e:'DeepL Pro',t:'Der vorliegende Vertrag unterliegt schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.'},
+     {e:'Azure OpenAI GPT',t:'Dieser Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Der ausschliessliche Gerichtsstand ist in Freiburg.'}]
+  ];
+
+  ALT[5]=ALT[0];
+  var MEM=[
+    null,
+    {s:'Article 1 · Objet du contrat',t:'Artikel 1 · Vertragsgegenstand',n:'Demo: In einem früheren Projekt freigegebene Formulierung.'},
+    {s:'La Mandataire fournit à la Mandante des prestations de conseil en conformité réglementaire, conformément au cahier des charges annexé au présent contrat.',t:'Die Beauftragte erbringt für die Auftraggeberin Beratungsleistungen im Bereich der regulatorischen Compliance gemäss dem diesem Vertrag beigefügten Pflichtenheft.',n:'Demo: Diese Formulierung wurde in einem früheren Projekt korrigiert und freigegeben. Apply übernimmt sie hier.'},
+    {s:'Toute facture impayée à l\'échéance porte intérêt moratoire à 5 % l\'an.',t:'Für jede bei Fälligkeit unbezahlte Rechnung ist ein Verzugszins von 5 % pro Jahr geschuldet.',n:'Demo: Die Übersetzung dieses Segments wurde unverändert aus dem Translation Memory übernommen.'},
+    null,
+    null
+  ];
+  var REPH={4:{
+    none:'Dieser Vertrag <u>ist dem schweizerischen</u> Recht <u>unterworfen</u>, <u>namentlich</u> dem Obligationenrecht. <u>Der ausschliessliche</u> Gerichtsstand ist Freiburg.',
+    legal:'<u>Der vorliegende</u> Vertrag <u>unterliegt dem schweizerischen</u> Recht, <u>namentlich</u> dem Obligationenrecht. <u>Der ausschliessliche</u> Gerichtsstand ist Freiburg.',
+    fin:'Dieser Vertrag <u>unterliegt dem Schweizer</u> Recht, insbesondere dem Obligationenrecht. <u>Der ausschliessliche</u> Gerichtsstand ist Freiburg.',
+    simp:'Dieser Vertrag <u>richtet sich nach dem</u> Recht <u>der Schweiz</u>, <u>vor allem nach</u> dem Obligationenrecht. <u>Der alleinige</u> Gerichtsstand ist Freiburg.',
+    formal:'Dieser Vertrag <u>unterliegt dem schweizerischen</u> Recht, <u>namentlich</u> dem Obligationenrecht. <u>Der ausschliessliche</u> Gerichtsstand ist Freiburg.',
+    inf:'Dieser Vertrag <u>unterliegt dem Schweizer</u> Recht, <u>genauer gesagt</u> dem Obligationenrecht. <u>Der ausschliessliche</u> Gerichtsstand ist Freiburg.',
+    short:'<u>Der</u> Vertrag <u>unterliegt dem schweizerischen</u> Recht, <u>vorrangig</u> dem Obligationenrecht. <u>Der ausschliessliche</u> Gerichtsstand ist Freiburg.'
+  }};
+  var LK={
+    tm:[{s:'Toute facture impayée à l\'échéance porte intérêt moratoire à 5 % l\'an.',t:'Für jede bei Fälligkeit unbezahlte Rechnung ist ein Verzugszins von 5 % pro Jahr geschuldet.',d:'Contrat-cadre_conseil.docx'}],
+    ch:[{s:'Si l\'agent payeur ne peut plus prélever ultérieurement le montant manquant avec l\'intérêt moratoire, notamment parce que la personne concernée n\'est plus cliente de son établissement, il reste tenu de verser le montant correspondant.',
+         t:'Kann die Zahlstelle den fehlenden Betrag zuzüglich Verzugszins nicht mehr der betroffenen Person nachbelasten, zum Beispiel weil diese nicht mehr ihre Kundin ist, so ist die Zahlstelle zur Leistung des fehlenden Betrages zuzüglich Verzugszins verpflichtet.',d:'Feuille Fédérale/Bundesblatt'},
+        {s:'Art. 24 Intérêt moratoire Un intérêt moratoire est dû sans sommation dès l\'échéance des délais fixés dans la présente loi sur les paiements uniques, les impôts libératoires et les paiements libératoires virés en retard à l\'AFC et jusqu\'à réception des sommes dues.',
+         t:'Art. 24 Verzugszins Auf Einmalzahlungen, abgeltenden Steuern und Abgeltungszahlungen, die der ESTV verspätet überwiesen werden, ist ohne Mahnung ein Verzugszins nach Ablauf der in diesem Gesetz festgelegten Fristen bis zum Datum des Eingangs geschuldet.',d:'Bundesgesetz-über-die-internationale-Quellenbesteuerung-IQG'}]
+  };
+  var REP={0:5,5:0};
+
+  /* ---------- Segments ---------- */
+  var rows=cx.querySelectorAll('.cxe-tab tbody tr[data-i]');
+  var tg=[],src=[],box=[],sel=2;
+  var last=[];
+  each(rows,function(r,i){tg[i]=r.querySelector('.cxe-tgt');src[i]=r.querySelector('.cxe-src').textContent;box[i]=r.querySelector('.cxe-chk');last[i]=tg[i].textContent;});
+
+  function select(i){
+    if(i===sel){return;}
+    sel=i;
+    each(rows,function(r,k){r.classList.toggle('sel',k===i);});
+    renderMem();renderAlt();renderReph(false);
+  }
+  each(rows,function(r,i){
+    r.addEventListener('click',function(e){
+      if(e.target.closest('input,button')){return;}
+      select(i);
+    });
+    tg[i].addEventListener('focus',function(){select(i);});
+  });
+
+  /* Progression : une case par segment, case générale en tête */
+  var all=$('cxeAll'),pbar=$('cxePBar'),pnum=$('cxePNum');
+  function progress(){
+    var n=0;box.forEach(function(b){if(b.checked){n++;}});
+    var p=Math.round(n*100/box.length);
+    pbar.style.transform='scaleX('+(p/100)+')';pnum.textContent=p+'%';
+    all.checked=n===box.length;all.indeterminate=n>0&&n<box.length;
+  }
+  box.forEach(function(b,i){b.addEventListener('change',function(){progress();say(b.checked?'Segment '+i+' bestätigt.':'Segment '+i+' wieder zu lektorieren.');});});
+  all.addEventListener('change',function(){var v=all.checked;box.forEach(function(b){b.checked=v;});progress();say(v?'Alle Segmente sind bestätigt.':'Kein Segment bestätigt.');});
+
+  /* Filtres source et traduction */
+  var fs=$('cxeFs'),ft=$('cxeFt'),none=$('cxeNone');
+  function filter(){
+    var a=norm(fs.value.trim()),b=norm(ft.value.trim()),vis=0;
+    each(rows,function(r,i){var ok=(!a||norm(src[i]).indexOf(a)>=0)&&(!b||norm(tg[i].textContent).indexOf(b)>=0);r.hidden=!ok;if(ok){vis++;}});
+    none.hidden=vis>0;
+  }
+  fs.addEventListener('input',filter);ft.addEventListener('input',filter);
+  each(cx.querySelectorAll('.cxe-clr[data-for]'),function(btn){btn.addEventListener('click',function(){var inp=$(btn.getAttribute('data-for'));inp.value='';filter();inp.focus();});});
+
+  /* Mise à jour d'une traduction (mémoire, reformulation, Sync, copie de la source) */
+  function setT(i,text,msg,noProp){
+    tg[i].textContent=text;last[i]=text;
+    if(box[i].checked){box[i].checked=false;progress();}
+    var td=tg[i].parentNode;td.classList.remove('cxe-upd');void td.offsetWidth;td.classList.add('cxe-upd');
+    if(msg){say(msg);}
+    if(!noProp){checkProp(i);}
+    filter();
+  }
+  $('cxeCopy').addEventListener('click',function(){setT(sel,src[sel],'Ausgangstext in die Übersetzung von Segment '+sel+' kopiert.');});
+
+  /* Saisie directe : texte brut, pas de retour à la ligne, la case de confirmation se décoche */
+  var editT={};
+  tg.forEach(function(t,i){
+    t.addEventListener('input',function(){
+      if(box[i].checked){box[i].checked=false;progress();}
+      clearTimeout(editT[i]);editT[i]=setTimeout(function(){edited(i);},900);
+    });
+    t.addEventListener('blur',function(){clearTimeout(editT[i]);edited(i);});
+    t.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();}});
+    t.addEventListener('paste',function(e){
+      e.preventDefault();
+      var txt=((e.clipboardData||window.clipboardData).getData('text')||'').replace(/\s+/g,' ');
+      var s=window.getSelection();if(!s.rangeCount){return;}
+      var rg=s.getRangeAt(0);rg.deleteContents();var node=document.createTextNode(txt);rg.insertNode(node);
+      rg.setStartAfter(node);rg.collapse(true);s.removeAllRanges();s.addRange(rg);
+    });
+  });
+
+  /* ---------- Panneau latéral ---------- */
+  var app=$('cxeApp'),fold=$('cxeFold'),title=$('cxeTitle');
+  var rbs=cx.querySelectorAll('.cxe-rb'),pans=[$('cxeP0'),$('cxeP1'),$('cxeP2'),$('cxeP3')];
+  function setFold(on){
+    app.classList.toggle('fold',on);
+    fold.setAttribute('aria-expanded',on?'false':'true');
+    fold.setAttribute('aria-label',on?'Bereich ausklappen':'Bereich einklappen');
+  }
+  fold.addEventListener('click',function(){setFold(!app.classList.contains('fold'));});
+  function tab(k,focus){
+    each(rbs,function(b,j){var on=j===k;b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;pans[j].hidden=!on;});
+    title.textContent=rbs[k].getAttribute('data-title');
+    if(app.classList.contains('fold')){setFold(false);}
+    if(focus){rbs[k].focus();}
+  }
+  each(rbs,function(b,j){
+    b.addEventListener('click',function(){tab(j);});
+    b.addEventListener('keydown',function(e){
+      var n=null,L=rbs.length;
+      if(e.key==='ArrowDown'||e.key==='ArrowRight'){n=(j+1)%L;}
+      else if(e.key==='ArrowUp'||e.key==='ArrowLeft'){n=(j+L-1)%L;}
+      else if(e.key==='Home'){n=0;}else if(e.key==='End'){n=L-1;}
+      if(n!==null){e.preventDefault();tab(n,true);}
+    });
+  });
+
+  /* Onglet Translation memories */
+  var memBox=$('cxeMem');
+  function renderMem(){
+    var m=MEM[sel];
+    if(!m){memBox.innerHTML='<p class="cxe-empty">Demo: keine ähnliche freigegebene Übersetzung für Segment '+sel+'. Wählen Sie Segment 1, 2 oder 3.</p>';return;}
+    memBox.innerHTML='<div class="cxe-match"><p class="cxe-ml">From this project\'s TM</p><p class="cxe-ms">'+esc(m.s)+'</p><p class="cxe-mt" lang="de">'+esc(m.t)+'</p><div class="cxe-ma"><button type="button" class="cx-btn cxe-sm" id="cxeMemOk">Apply</button></div></div><p class="cx-note">'+esc(m.n)+'</p>';
+    $('cxeMemOk').addEventListener('click',function(){setT(sel,m.t,'Übersetzung aus dem Translation Memory auf Segment '+sel+' angewendet.');});
+  }
+
+  /* Onglet Fast Lookup : mémoires et CHnell, côté source ou cible */
+  var lk=$('cxeLk'),q=$('cxeQ'),liveSw=$('cxeLiveSw'),side='src',lkT;
+  var sideBtns=cx.querySelectorAll('.cxe-seg button');
+  var RX={src:/int[ée]r[êe]ts?\s+moratoires?/gi,tgt:/Verzugszins\w*/g};
+  function mark(text,rx){return esc(text).replace(rx,function(x){return '<mark>'+x+'</mark>';});}
+  function block(list){
+    return '<div class="cxe-res"><div class="cxe-rh"><span>Source</span><span>Target</span></div>'+list.map(function(r){
+      return '<div class="cxe-rr"><p>'+mark(r.s,RX.src)+'</p><p lang="de">'+mark(r.t,RX.tgt)+'</p><p class="doc">'+esc(r.d)+'</p></div>';
+    }).join('')+'</div>';
+  }
+  function lookup(announce){
+    var v=norm(q.value.trim()),hit=false;
+    if(v){hit=side==='src'?(v.indexOf('moratoire')>=0||v.indexOf('interet')>=0):(v.indexOf('verzug')>=0);}
+    var h='<p class="cxe-h">Translation memories</p>'+(hit?block(LK.tm):'<p class="cxe-nr">No result</p>');
+    h+='<p class="cxe-h">CHnell</p>'+(hit?block(LK.ch):'<p class="cxe-nr">No result</p>');
+    if(!hit&&v){h+='<p class="cx-note">Demo: Versuchen Sie «intérêt moratoire» unter Source oder «Verzugszins» unter Target.</p>';}
+    lk.innerHTML=h;
+    if(announce){say(hit?'1 Ergebnis in den Translation Memorys, 2 in CHnell.':'Kein Ergebnis.');}
+  }
+  $('cxeQForm').addEventListener('submit',function(e){e.preventDefault();lookup(true);});
+  q.addEventListener('input',function(){if(liveSw.getAttribute('aria-pressed')==='true'){clearTimeout(lkT);lkT=setTimeout(function(){lookup(true);},400);}});
+  $('cxeQClr').addEventListener('click',function(){q.value='';lookup(false);q.focus();});
+  liveSw.addEventListener('click',function(){var on=liveSw.getAttribute('aria-pressed')!=='true';liveSw.setAttribute('aria-pressed',on?'true':'false');liveSw.classList.toggle('off',!on);});
+  each(sideBtns,function(b){b.addEventListener('click',function(){
+    side=b.getAttribute('data-side');
+    each(sideBtns,function(o){var on=o===b;o.classList.toggle('on',on);o.setAttribute('aria-pressed',on?'true':'false');});
+    q.value=side==='src'?'intérêt moratoire':'Verzugszins';
+    lookup(true);
+  });});
+
+  /* Onglet AI Assistant : Alternatives et Rephrasing */
+  var aiT=[$('cxeAiA'),$('cxeAiR')],aiP=[$('cxeAiAP'),$('cxeAiRP')];
+  function aiTab(k,focus){
+    aiT.forEach(function(b,j){var on=j===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;aiP[j].hidden=!on;});
+    if(focus){aiT[k].focus();}
+  }
+  aiT.forEach(function(b,j){
+    b.addEventListener('click',function(){aiTab(j);});
+    b.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();aiTab(1-j,true);}});
+  });
+  var altBox=$('cxeAlt'),more=$('cxeMore'),shown=2,gt;
+  function renderAlt(){
+    altBox.innerHTML=ALT[sel].slice(0,shown).map(function(x){return '<p class="cxe-alt"><span lang="de">'+esc(x.t)+'</span> <span class="e">- '+esc(x.e)+'</span></p>';}).join('');
+    more.disabled=shown>=ALT[sel].length;
+  }
+  more.addEventListener('click',function(){
+    if(more.disabled){return;}
+    more.disabled=true;
+    altBox.insertAdjacentHTML('beforeend','<p class="cxe-alt"><span class="cx-shim" style="display:block"></span><span class="cx-shim" style="display:block;width:60%"></span></p>');
+    clearTimeout(gt);
+    gt=setTimeout(function(){shown=3;renderAlt();say('Alternative hinzugefügt: Azure OpenAI GPT.');},reduce?0:700);
+  });
+
+  var style=null,shorten=false,pStyle=null,pShort=false,rt;
+  var rWrap=$('cxeRWrap'),rNote=$('cxeRNote'),rOut=$('cxeROut'),setB=$('cxeSet'),pop=$('cxePop');
+  var chips=pop.querySelectorAll('[data-style]'),shortChip=$('cxeShort');
+  function rephHTML(){var d=REPH[sel];return shorten?d.short:d[style||'none'];}
+  function renderReph(anim){
+    var d=REPH[sel];
+    rWrap.hidden=!d;rNote.hidden=!!d;
+    if(!d){return;}
+    clearTimeout(rt);
+    if(anim&&!reduce){
+      rOut.innerHTML='<span class="cx-shim" style="display:block"></span><span class="cx-shim" style="display:block;width:70%"></span>';
+      rt=setTimeout(function(){rOut.innerHTML=rephHTML();},650);
+    }else{rOut.innerHTML=rephHTML();}
+  }
+  function syncChips(){
+    each(chips,function(c){var on=c.getAttribute('data-style')===pStyle;c.classList.toggle('on',on);c.setAttribute('aria-pressed',on?'true':'false');});
+    shortChip.classList.toggle('on',pShort);shortChip.setAttribute('aria-pressed',pShort?'true':'false');
+  }
+  function openPop(open){
+    pop.classList.toggle('on',open);setB.setAttribute('aria-expanded',open?'true':'false');
+    if(open){pStyle=style;pShort=shorten;syncChips();chips[0].focus();}
+  }
+  setB.addEventListener('click',function(){openPop(!pop.classList.contains('on'));});
+  pop.addEventListener('keydown',function(e){if(e.key==='Escape'){openPop(false);setB.focus();}});
+  each(chips,function(c){c.addEventListener('click',function(){var s=c.getAttribute('data-style');pStyle=pStyle===s?null:s;syncChips();});});
+  shortChip.addEventListener('click',function(){pShort=!pShort;syncChips();});
+  $('cxeReset').addEventListener('click',function(){pStyle=null;pShort=false;syncChips();});
+  $('cxeSetOk').addEventListener('click',function(){style=pStyle;shorten=pShort;openPop(false);setB.focus();renderReph(true);say('Umformulierung neu generiert.');});
+  $('cxeRegen').addEventListener('click',function(){renderReph(true);});
+  $('cxeRApply').addEventListener('click',function(){if(REPH[sel]){setT(sel,rOut.textContent,'Umformulierung auf Segment '+sel+' angewendet.');}});
+  $('cxeGo4').addEventListener('click',function(){select(4);rows[4].scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'});setB.focus();});
+
+  /* Onglet Sync : conflits, modifications entrantes, propagation */
+  var syncBox=$('cxeSync'),dot=$('cxeDot'),dotTxt=$('cxeDotTxt');
+  var S={
+    conflict:{seg:1,mine:'Artikel 1 · Gegenstand',last:'Artikel 1 · Vertragsgegenstand'},
+    incoming:{seg:4,text:'Der vorliegende Vertrag untersteht schweizerischem Recht, insbesondere dem Obligationenrecht. Ausschliesslicher Gerichtsstand ist Freiburg.'},
+    prop:{from:0,to:5,text:'Auftragsvertrag (fiktives Beispiel)'}
+  };
+  var OK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+  /* Une saisie réelle (texte différent du dernier connu) déclenche le contrôle des répétitions */
+  function edited(i){var t=tg[i].textContent;if(t===last[i]){return;}last[i]=t;checkProp(i);filter();}
+  function checkProp(i){
+    if(!(i in REP)){return;}
+    var j=REP[i];
+    if(tg[i].textContent!==tg[j].textContent){
+      S.prop={from:i,to:j,text:tg[i].textContent};renderSync();
+      say('Segment '+j+' ist identisch: In Sync wartet eine Entscheidung zur Propagation.');
+    }else if(S.prop){S.prop=null;renderSync();}
+  }
+  function renderSync(focusSel){
+    var h='<div class="cxe-sblock"><p class="cxe-sh" id="cxeSh1" tabindex="-1">Conflicting changes</p>';
+    if(S.conflict){
+      var c=S.conflict;
+      h+='<div class="cxe-sync"><p class="cxe-sl">Segment '+c.seg+'</p><div class="cxe-ver"><b>My Edit · AM</b><span lang="de">'+esc(c.mine)+'</span></div><div class="cxe-ver"><b>Last Edit · LM</b><span lang="de">'+esc(c.last)+'</span></div><div class="cxe-sact"><button type="button" class="cx-btn ghost cxe-sm" data-act="keep">Keep all My Edits</button><button type="button" class="cx-btn cxe-sm" data-act="applyall">Apply all Last Edits</button></div></div>';
+    }else{h+='<p class="cxe-okst">No conflicting change to resolve.'+OK+'</p>';}
+    h+='</div><div class="cxe-sblock"><p class="cxe-sh" id="cxeSh2" tabindex="-1">Incoming changes</p>';
+    if(S.incoming){
+      var n=S.incoming;
+      h+='<div class="cxe-sync"><p class="cxe-sl">Segment '+n.seg+' · LM</p><div class="cxe-ver one"><span lang="de">'+esc(n.text)+'</span></div><div class="cxe-sact"><button type="button" class="cx-btn cxe-sm" data-act="incoming">Apply</button></div></div>';
+    }else{h+='<p class="cxe-okst">No incoming change to apply.'+OK+'</p>';}
+    h+='</div><div class="cxe-sblock"><p class="cxe-sh" id="cxeSh3" tabindex="-1">Propagation decisions</p>';
+    if(S.prop){
+      var p=S.prop;
+      h+='<div class="cxe-sync"><p class="cxe-sl">Segment '+p.from+' · repeated</p><div class="cxe-ver one"><span lang="de">'+esc(p.text)+'</span></div><label class="cxe-pchk"><input type="checkbox" class="cxe-chk" id="cxePropBox" checked> Segment '+p.to+'</label><div class="cxe-sact"><button type="button" class="cx-btn ghost cxe-sm" data-act="asis">Keep as is</button><button type="button" class="cx-btn cxe-sm" data-act="prop">Apply</button></div></div>';
+    }else{h+='<p class="cxe-okst">No propagation decision required.'+OK+'</p>';}
+    h+='</div>';
+    syncBox.innerHTML=h;
+    var pend=(S.conflict?1:0)+(S.incoming?1:0)+(S.prop?1:0);
+    dot.hidden=!pend;dotTxt.textContent=pend?', '+pend+(pend>1?' Elemente':' Element')+' ausstehend':'';
+    if(focusSel){var f=$(focusSel);if(f){f.focus();}}
+  }
+  syncBox.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-act]');if(!b){return;}
+    var a=b.getAttribute('data-act');
+    if(a==='keep'){S.conflict=null;renderSync('cxeSh1');say('Konflikt gelöst: Ihre Fassung bleibt bestehen.');}
+    else if(a==='applyall'){var c=S.conflict;S.conflict=null;setT(c.seg,c.last,'Konflikt gelöst: Die letzte Fassung wird auf Segment '+c.seg+' angewendet.',true);renderSync('cxeSh1');}
+    else if(a==='incoming'){var n=S.incoming;S.incoming=null;setT(n.seg,n.text,'Änderung der Kollegin oder des Kollegen auf Segment '+n.seg+' angewendet.',true);renderSync('cxeSh2');}
+    else if(a==='prop'){var p=S.prop,go=$('cxePropBox').checked;S.prop=null;if(go){setT(p.to,p.text,'Korrektur auf Segment '+p.to+' übertragen.',true);}renderSync('cxeSh3');}
+    else if(a==='asis'){S.prop=null;renderSync('cxeSh3');say('Segment unverändert gelassen.');}
+  });
+
+  /* État initial */
+  progress();renderMem();renderAlt();renderReph(false);lookup(false);renderSync();
+})();
+</script>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../de/" class="logo"><img src="../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>Der Übersetzungsmotor für Schweizer Recht, Steuern und Finanzen. Eine durchgehend schweizerische Lösung: Unternehmen, Infrastruktur und der Motor LexMachina, für Präzision in vier Sprachen und volle Datensouveränität.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hosting in der Schweiz (Infomaniak) · nDSG und DSGVO</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on auf LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Plattform</p>
+        <ul>
+          <li><a href="../../../de/corrext/">Corrext, die Plattform</a></li>
+          <li><a href="../../../de/corrext/dokumente-uebersetzen/">Text- und Dokumentübersetzung</a></li>
+          <li><a href="../../../de/corrext/uebersetzungsprojekte/">Projektmanagement</a></li>
+          <li><a href="../../../de/corrext/lektorat/">Lektorats-Editor</a></li>
+          <li><a href="../../../de/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../de/corrext/handelsregisterauszug/">Handelsregisterauszüge</a></li>
+          <li><a href="../../../de/corrext/api-on-premises/">API und On-Premises</a></li>
+          <li><a href="../../../de/lexmachina/">LexMachina, der Übersetzungsmotor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Lösungen</p>
+        <ul>
+          <li><a href="../../../de/loesungen/anwaltskanzleien/">Anwaltskanzleien</a></li>
+          <li><a href="../../../de/loesungen/banken/">Banken und Finanzen</a></li>
+          <li><a href="../../../de/loesungen/rechtsabteilungen/">Rechtsabteilungen</a></li>
+          <li><a href="../../../de/loesungen/behoerden/">Behörden und Verwaltung</a></li>
+          <li><a href="../../../de/loesungen/treuhand/">Treuhand und Beratung</a></li>
+          <li><a href="../../../de/loesungen/legaltech-verlage/">LegalTechs und Verlage</a></li>
+          <li><a href="../../../de/uebersetzung/">Übersetzung nach Rechtsgebiet</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Ressourcen</p>
+        <ul>
+          <li><a href="../../../de/ressourcen/blog/">Blog</a></li>
+          <li><a href="../../../de/ressourcen/leitfaeden/">Leitfäden</a></li>
+          <li><a href="../../../de/ressourcen/glossar/">Rechtsglossar</a></li>
+          <li><a href="../../../de/ressourcen/studien/">Studien und Benchmarks</a></li>
+          <li><a href="../../../de/vergleich/">Vergleiche</a></li>
+          <li><a href="../../../de/hilfe/">Hilfe-Center</a></li>
+          <li><a href="../../../de/sicherheit/">Sicherheit und Datensouveränität</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../../de/ueber-uns/">Über uns und Auszeichnungen</a></li>
+          <li><a href="../../../de/ueber-uns/presse/">Presse</a></li>
+          <li><a href="../../../de/kontakt/">Demo anfragen</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Freiburg, Schweiz. Alle Rechte vorbehalten.</span>
+      <div class="links">
+        <a href="../../../de/impressum/">Impressum und Nutzungsbedingungen</a>
+        <a href="../../../de/datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../assets/nav.js?v=de2299c0" defer></script>
+</body>
+</html>

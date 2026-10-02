@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LexMachina: maschinelle Übersetzung für Schweizer Recht</title>
+<meta name="description" content="LexMachina, der Motor von Corrext, trainiert mit über 15 Mio. Segmenten aus dem Schweizer Recht: BGE, FINMA, Gesetze. Viersprachig, läuft in der Schweiz.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/de/lexmachina/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/lexmachina/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/lexmachina/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="LexMachina: maschinelle Übersetzung für Schweizer Recht">
+<meta property="og:description" content="LexMachina, der Motor von Corrext, trainiert mit über 15 Mio. Segmenten aus dem Schweizer Recht: BGE, FINMA, Gesetze. Viersprachig, läuft in der Schweiz.">
+<meta property="og:url" content="https://neur-on.ai/de/lexmachina/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, KI-Übersetzung für Recht, Steuern und Finanzen">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="de_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../assets/neuron.css?v=de2299c0">
+<style>/* Hero sans cadre de démonstration : on annule la réserve prévue pour l'application */
+
+/* Preuve par l'exemple : une phrase source, deux moteurs, une ligne d'explication */
+.nlex{padding:86px 0 60px;background:linear-gradient(180deg,var(--bg) 0%,#fff 100%)}
+.nlex-src{max-width:980px;margin:0 auto 20px;background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:24px 28px;box-shadow:0 30px 60px -44px rgba(8,24,68,.26)}
+.nlex-tag{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:50px;padding:5px 12px;margin-bottom:13px}
+.nlex-tag svg{width:13px;height:13px}
+.nlex-src p{font-size:16px;color:var(--ink);line-height:1.62}
+.nlex-src .src-lb{display:block;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.02em;margin-bottom:7px}
+.nlex-cols{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.nlex-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:22px 24px}
+.nlex-card.brand{border-color:var(--blue);box-shadow:0 30px 60px -38px rgba(8,24,68,.28)}
+.nlex-card .eng{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--muted);letter-spacing:.02em;margin-bottom:12px}
+.nlex-card .eng i{width:8px;height:8px;border-radius:50%;background:#d4ddee;flex-shrink:0}
+.nlex-card.brand .eng{color:var(--blue-d)}
+.nlex-card.brand .eng i{background:var(--blue)}
+.nlex-card p{font-size:14.5px;color:var(--ink);line-height:1.66}
+.nlex mark{background:rgba(49,123,255,.16);color:var(--ink);border-radius:4px;padding:1px 5px;font-weight:700}
+.nlex mark.oth{background:rgba(194,144,46,.2)}
+.nlex-note{max-width:980px;margin:26px auto 0;border-left:2px solid var(--blue);padding-left:20px;font-size:15px;color:var(--text);line-height:1.7}
+.nlex-note b{color:var(--ink);font-weight:700}
+.nlex-cap{max-width:980px;margin:18px auto 0;padding-left:22px;font-size:12.5px;color:var(--muted);line-height:1.55}
+
+/* Registre de faits et bande de liens : ces sections n'ont pas de marge haute par défaut */
+
+
+@media(max-width:940px){
+
+  .nlex-cols{grid-template-columns:1fr}
+}
+
+/* Ce qu'est LexMachina : quatre chiffres clés, trois tuiles, une ligne de pied */
+.nlspec{padding:52px 0 84px;background:#fff}
+.nlspec .sec-head{text-align:center;margin:0 auto 34px;max-width:760px}
+.nls-kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;grid-auto-rows:auto auto 1fr}
+.nls-k{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;padding:26px 24px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc)}
+.nls-k b{font-size:clamp(34px,3.4vw,44px);font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--navy)}
+.nls-k span{margin:10px 0 12px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--blue-d)}
+.nls-k p{font-size:14px;line-height:1.6;color:var(--text)}
+.nls-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px;grid-auto-rows:auto auto auto}
+.nls-t{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;align-content:start;padding:24px 24px 26px;background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc)}
+.nls-t h3{display:flex;align-items:center;gap:12px;font-size:16.5px;line-height:1.3;letter-spacing:-.015em;margin-bottom:12px}
+.nls-t h3 .ws-ic{width:40px;height:40px}
+.nls-t p{font-size:13.5px;line-height:1.6;color:var(--muted);margin-bottom:14px}
+.nls-t p a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-decoration-color:rgba(31,95,214,.35);text-underline-offset:3px}
+.nls-chips{display:flex;flex-wrap:wrap;gap:6px;align-content:start}
+.nls-chips span{font-size:12px;font-weight:600;color:var(--navy);background:#fff;border:1px solid var(--line-2);border-radius:999px;padding:4px 10px}
+.nls-foot{margin-top:24px;font-size:13.5px;color:var(--muted);line-height:1.7;text-align:center}
+.nls-foot a{color:var(--blue-d);font-weight:600}
+/* Piliers : pictogramme à gauche du titre, de la hauteur de ses deux lignes */
+.pillars-grid{grid-auto-rows:auto 1fr}
+.pillars .pillar{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0}
+.pillars .pillar h3{display:flex;align-items:center;gap:14px;line-height:1.3;margin-bottom:14px}
+.pillars .pillar .ws-ic svg{width:22px;height:22px}
+@media(min-width:1024px) and (max-width:1179px){.pillars-grid{gap:16px}.pillars .pillar{padding:28px 22px}.pillars .pillar h3{font-size:17px;gap:12px}}
+@media(max-width:1023px){.nls-kpi{grid-template-columns:repeat(2,1fr)}.nls-row{grid-template-columns:1fr}}
+@media(max-width:560px){.nls-kpi{grid-template-columns:1fr}}
+/* Visuel du hero : SVG animé inline (outils/visuel_lexmachina.py), posé directement sur le fond du hero */
+.nlviz{position:relative;margin:0 auto;max-width:520px;width:100%}
+.nlviz svg{display:block;width:100%;height:auto}</style>
+<style>@media (prefers-reduced-motion:reduce){.nnviz .nn-anim{display:none}}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Womit wird LexMachina trainiert?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Mit Schweizer Rechts- und Finanzdaten: über 15 Millionen mehrsprachige Segmente aus Urteilen des Bundesgerichts (BGE/ATF), Publikationen der FINMA sowie Gesetzbüchern und Bundesgesetzen. Nie mit den Dokumenten unserer Kundschaft."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Welche Sprachen deckt LexMachina ab?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Deutsch, Französisch, Italienisch und Englisch, nativ und in allen Sprachpaaren: die vier Sprachen, in denen Juristinnen und Juristen in der Schweiz schreiben und plädieren. Die Plattform Corrext bietet insgesamt 30 Sprachen an. Für alle weiteren Sprachen übersetzt ein Motor eines Drittanbieters."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wo läuft der Übersetzungsmotor?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In der Schweiz, auf der Schweizer Infrastruktur von Neur.on. Wenn Sie LexMachina wählen, bleibt die Verarbeitung in der Schweiz, auch ohne den Modus Highly sensitive content. Ein Pseudonymisierungshinweis erscheint nicht, denn nichts geht ins Ausland."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Werden meine Dokumente zum Training des Modells verwendet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. LexMachina lernt aus öffentlichen Schweizer Rechts- und Finanztexten, nicht aus Ihren Dossiers. Im Modus Standard fliessen Ihre Projekte in ein Translation Memory, das ausschliesslich Ihre Organisation nutzen kann. Im Modus Highly sensitive content wird kein Translation Memory gespeist."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kann ich neben LexMachina andere Übersetzungsmotoren nutzen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Corrext ist modellunabhängig: DeepL Pro, Azure OpenAI GPT und Claude stehen in derselben Oberfläche zur Verfügung. Den Motor wählen Sie bei jeder Übersetzung neu. Im Ausland gehostete Motoren lösen den Hinweis Attorney-Client privilege Ihrer Organisation aus."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie vergleiche ich die Motoren an meinen eigenen Texten?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In der Text- und Dokumentübersetzung öffnet die Schaltfläche mit dem Funkensymbol den Bereich Alternatives: bis zu vier Vorschläge für denselben Satz, jeder mit Angabe seines Motors. Mit Generate more erhalten Sie weitere. So urteilen Sie anhand Ihrer eigenen Texte, nicht anhand eines Versprechens."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://neur-on.ai/de/"}, {"@type": "ListItem", "position": 2, "name": "LexMachina", "item": "https://neur-on.ai/de/lexmachina/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "LexMachina", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://neur-on.ai/de/lexmachina/", "description": "LexMachina, der Motor von Corrext, trainiert mit über 15 Mio. Segmenten aus dem Schweizer Recht: BGE, FINMA, Gesetze. Viersprachig, läuft in der Schweiz.", "inLanguage": "de-CH", "publisher": {"@type": "Organization", "@id": "https://neur-on.ai/#organisation", "name": "Neur.on", "url": "https://neur-on.ai/"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="nav" id="siteNav" data-active="lexmachina">
+  <div class="container nav-inner">
+    <a href="../../de/" class="logo" aria-label="Neur.on, zurück zur Startseite"><img src="../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Lösungen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../de/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressourcen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Sprache">
+        <a class="on" href="../../de/lexmachina/" aria-current="true">DE</a><span class="sep">·</span>
+        <a href="../../de/lexmachina/">FR</a><span class="sep">·</span>
+        <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="it/">IT</a><span class="sep">·</span>
+        <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="en/">EN</a>
+      </div>
+      <a href="../../de/kontakt/" class="btn btn-blue">Demo anfragen</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Menü öffnen">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Die Plattform</p>
+        <a href="../../de/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, die Schaltzentrale</b><em>Projekte, Offerten, Ressourcen und Zugriffsrechte in einer einzigen Schweizer Umgebung</em></span></a>
+        <a href="../../de/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>Der Übersetzungsmotor, trainiert auf Schweizer Recht und Finanzen</em></span></a>
+        <a href="../../de/sicherheit/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Sicherheit und Datensouveränität</b><em>Wo Ihre Daten gespeichert und verarbeitet werden und mit welchem Motor</em></span></a>
+        <a href="../../de/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API und On-Premises</b><em>Integration in Ihre DMS, Intranets und Workflows</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Die Tools</p>
+        <a href="../../de/corrext/dokumente-uebersetzen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Text- und Dokumentübersetzung</b><em>Text, Dateien, PDF in Word, Umformulieren</em></span></a>
+        <a href="../../de/corrext/uebersetzungsprojekte/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Projektmanagement</b><em>Lektorat durch Fachleute nach Bedarf, Offerte und Lieferfrist sofort</em></span></a>
+        <a href="../../de/corrext/lektorat/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Lektorats-Editor</b><em>Lektorat Satz für Satz, Korrekturen bleiben gespeichert</em></span></a>
+        <a href="../../de/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>Die Konkordanz für Schweizer Recht, 30 Fachgebiete</em></span></a>
+        <a href="../../de/corrext/handelsregisterauszug/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Handelsregisterauszüge</b><em>Beglaubigte Übersetzung, notariell oder mit Apostille</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Mehr erfahren</p>
+        <a href="../../de/qualitaetsstufen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Vier Qualitätsstufen</b><em>Von der maschinellen Übersetzung bis zur Beglaubigung</em></span></a>
+        <a href="../../de/sprachen-und-formate/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Sprachen und Formate</b><em>30 Sprachen, vier davon nativ, alle Ihre Office-Formate</em></span></a>
+        <a href="../../de/hilfe/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Hilfe-Center</b><em>Anleitungen Schritt für Schritt</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Ohne Registrierung testen</p>
+        <p class="mega-p">Die Oberfläche von Corrext, originalgetreu nachgebildet, mit drei Auszügen aus dem Schweizer Recht.</p>
+        <a href="../../de/corrext/dokumente-uebersetzen/#demo" class="mega-cta">Live-Demo öffnen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Nach Branche</p>
+        <a href="../../de/loesungen/anwaltskanzleien/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Anwaltskanzleien</b></span></a>
+        <a href="../../de/loesungen/banken/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banken und Finanzen</b></span></a>
+        <a href="../../de/loesungen/rechtsabteilungen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Rechtsabteilungen und Legal Ops</b></span></a>
+        <a href="../../de/loesungen/behoerden/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Behörden und Verwaltung</b></span></a>
+        <a href="../../de/loesungen/treuhand/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Treuhand und Beratung</b></span></a>
+        <a href="../../de/loesungen/legaltech-verlage/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTechs und Verlage</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nach Rechtsgebiet</p>
+        <a href="../../de/uebersetzung/vertraege/"><b>Verträge</b></a>
+        <a href="../../de/uebersetzung/gesellschaftsrecht/"><b>Gesellschaftsrecht</b></a>
+        <a href="../../de/uebersetzung/fusionen-uebernahmen/"><b>Fusionen und Akquisitionen</b></a>
+        <a href="../../de/uebersetzung/prozesse-schiedsverfahren/"><b>Prozessführung und Schiedsverfahren</b></a>
+        <a href="../../de/uebersetzung/bank-und-finanzrecht/"><b>Bank- und Finanzrecht</b></a>
+        <a href="../../de/uebersetzung/compliance-finma/"><b>Compliance und FINMA</b></a>
+        <a href="../../de/uebersetzung/" class="mega-all">Alle Rechtsgebiete <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nach Sprachpaar</p>
+        <a href="../../de/uebersetzung/deutsch-franzoesisch/"><b>Deutsch nach Französisch</b></a>
+        <a href="../../de/uebersetzung/franzoesisch-deutsch/"><b>Französisch nach Deutsch</b></a>
+        <a href="../../de/uebersetzung/deutsch-englisch/"><b>Deutsch nach Englisch</b></a>
+        <a href="../../de/uebersetzung/franzoesisch-englisch/"><b>Französisch nach Englisch</b></a>
+        <a href="../../de/uebersetzung/italienisch-franzoesisch/"><b>Italienisch nach Französisch</b></a>
+        <a href="../../de/uebersetzung/englisch-deutsch/"><b>Englisch nach Deutsch</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Noch unschlüssig?</p>
+        <p class="mega-p">Was Corrext kann und generische Tools nicht, Punkt für Punkt verglichen.</p>
+        <a href="../../de/vergleich/" class="mega-cta">Zu den Vergleichen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Verstehen</p>
+        <a href="../../de/ressourcen/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Schweizer Recht, Übersetzung und künstliche Intelligenz</em></span></a>
+        <a href="../../de/ressourcen/leitfaeden/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Leitfäden</b><em>Fundierte Methoden, verfasst von unseren Fachleuten</em></span></a>
+        <a href="../../de/ressourcen/studien/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studien und Benchmarks</b><em>Unsere Messungen an Schweizer Rechtstexten</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nachschlagen</p>
+        <a href="../../de/ressourcen/glossar/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Schweizer Rechtsglossar</b><em>Jeder Begriff auf Deutsch, Französisch, Italienisch und Englisch</em></span></a>
+        <a href="../../de/hilfe/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Hilfe-Center für Corrext</b><em>Einstieg und praktische Antworten</em></span></a>
+        <a href="../../de/hilfe/corrext-kennenlernen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Häufige Fragen</b><em>Corrext, LexMachina, Lektorat, Preise</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Vergleichen</p>
+        <a href="../../de/vergleich/deepl-juristische-uebersetzung/"><b>Corrext und DeepL</b></a>
+        <a href="../../de/vergleich/chatgpt-juristische-uebersetzung/"><b>Corrext und allgemeine LLM</b></a>
+        <a href="../../de/vergleich/uebersetzungsbuero-oder-plattform/"><b>Übersetzungsbüro oder Plattform</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Ein Schweizer Unternehmen, eine Schweizer Infrastruktur, ein auf Schweizer Recht trainierter Übersetzungsmotor.</p>
+        <a href="../../de/ueber-uns/" class="mega-cta">Über uns und Auszeichnungen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../de/corrext/">Corrext, die Plattform</a>
+        <a href="../../de/corrext/dokumente-uebersetzen/">Text- und Dokumentübersetzung</a>
+        <a href="../../de/corrext/uebersetzungsprojekte/">Projektmanagement</a>
+        <a href="../../de/corrext/lektorat/">Lektorats-Editor</a>
+        <a href="../../de/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../de/corrext/handelsregisterauszug/">Handelsregisterauszüge</a>
+        <a href="../../de/corrext/api-on-premises/">API und On-Premises</a>
+        <a href="../../de/lexmachina/">LexMachina</a>
+        <a href="../../de/sicherheit/">Sicherheit und Datensouveränität</a>
+        <a href="../../de/qualitaetsstufen/">Qualitätsstufen</a>
+        <a href="../../de/sprachen-und-formate/">Sprachen und Formate</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Lösungen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../de/loesungen/anwaltskanzleien/">Anwaltskanzleien</a>
+        <a href="../../de/loesungen/banken/">Banken und Finanzen</a>
+        <a href="../../de/loesungen/rechtsabteilungen/">Rechtsabteilungen und Legal Ops</a>
+        <a href="../../de/loesungen/behoerden/">Behörden und Verwaltung</a>
+        <a href="../../de/loesungen/treuhand/">Treuhand und Beratung</a>
+        <a href="../../de/loesungen/legaltech-verlage/">LegalTechs und Verlage</a>
+        <a href="../../de/uebersetzung/">Übersetzung nach Rechtsgebiet</a>
+        <a href="../../de/vergleich/">Vergleiche</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressourcen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../de/ressourcen/blog/">Blog</a>
+        <a href="../../de/ressourcen/leitfaeden/">Leitfäden</a>
+        <a href="../../de/ressourcen/glossar/">Schweizer Rechtsglossar</a>
+        <a href="../../de/ressourcen/studien/">Studien und Benchmarks</a>
+        <a href="../../de/hilfe/">Hilfe-Center</a>
+        <a href="../../de/ueber-uns/">Über uns</a>
+      </div>
+    </div>
+    <a href="../../de/kontakt/" class="btn btn-blue nm-cta">Demo anfragen</a>
+    <div class="nm-langs" aria-label="Sprache">
+      <a class="on" href="../../de/lexmachina/" aria-current="true">DE</a><span>·</span>
+      <a href="../../de/lexmachina/">FR</a><span>·</span>
+      <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="it/">IT</a><span>·</span>
+      <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="en/">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Navigationspfad"><div class="container"><ol><li><a href="../../de/">Startseite</a></li><li><span aria-current="page">LexMachina</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="thero nlhero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>LexMachina.</em> Der Übersetzungsmotor, der die Gesetze kennt, die er übersetzt</h1>
+        <p class="lead">Ein neuronaler Übersetzungsmotor, trainiert mit Schweizer Rechts- und Finanzdaten: über 15 Millionen mehrsprachige Segmente aus Urteilen des Bundesgerichts, Publikationen der FINMA und den Gesetzbüchern des Bundes.</p>
+        <div class="thero-cta">
+          <a href="../../de/kontakt/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#exemple" class="btn btn-ghost">Echtes Beispiel ansehen</a>
+        </div>
+      </div>
+      <figure class="nlviz">
+        <!-- reseau:debut --><svg class="nnviz" viewBox="0 0 520 400" width="520" height="400" role="img" focusable="false" aria-label="Neuronales Netz im Training: Signale durchlaufen die Schichten und kehren zurück, um die Verbindungen anzupassen" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="nnh"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".35" stop-color="#96BCFF" stop-opacity=".45"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient><radialGradient id="nnbg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#317BFF" stop-opacity=".22"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient><linearGradient id="nne" x1="0" y1="0" x2="520" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7FB0FF"/><stop offset=".5" stop-color="#317BFF"/><stop offset="1" stop-color="#96BCFF"/></linearGradient><linearGradient id="nnn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f5fd6"/><stop offset="1" stop-color="#06246b"/></linearGradient></defs><g><animateTransform class="nn-anim" attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/><ellipse cx="260.0" cy="200" rx="250" ry="185" fill="url(#nnbg)"/><g fill="none" stroke="url(#nne)" stroke-linecap="round"><path d="M88.8 101.2C134.1 105.2 132.3 50.7 182.8 52.4" stroke-width=".9" stroke-opacity="0.15"><animate class="nn-anim" attributeName="stroke-opacity" values="0.15;0.15;0.15" dur="3.7s" begin="-3.3s" repeatCount="indefinite"/></path><path d="M88.8 101.2C134.1 105.2 134.1 105.2 183.8 109.5" stroke-width=".9" stroke-opacity="0.20"><animate class="nn-anim" attributeName="stroke-opacity" values="0.20;0.30;0.20" dur="5.2s" begin="-2.0s" repeatCount="indefinite"/></path><path d="M88.8 101.2C134.1 105.2 135.9 157.8 184.7 164.6" stroke-width=".9" stroke-opacity="0.24"><animate class="nn-anim" attributeName="stroke-opacity" values="0.24;0.26;0.24" dur="6.1s" begin="-4.1s" repeatCount="indefinite"/></path><path d="M88.8 101.2C134.1 105.2 137.6 208.7 185.7 217.7" stroke-width=".9" stroke-opacity="0.27"><animate class="nn-anim" attributeName="stroke-opacity" values="0.27;0.22;0.27" dur="3.6s" begin="-0.5s" repeatCount="indefinite"/></path><path d="M88.8 101.2C134.1 105.2 139.3 257.9 186.6 269.0" stroke-width=".9" stroke-opacity="0.24"><animate class="nn-anim" attributeName="stroke-opacity" values="0.24;0.13;0.24" dur="5.6s" begin="-3.5s" repeatCount="indefinite"/></path><path d="M88.8 101.2C134.1 105.2 140.9 305.4 187.5 318.5" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.33;0.10" dur="3.1s" begin="-2.7s" repeatCount="indefinite"/></path><path d="M91.3 151.7C135.9 157.8 132.3 50.7 182.8 52.4" stroke-width=".9" stroke-opacity="0.27"><animate class="nn-anim" attributeName="stroke-opacity" values="0.27;0.15;0.27" dur="5.9s" begin="-4.3s" repeatCount="indefinite"/></path><path d="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" stroke-width=".9" stroke-opacity="0.11"><animate class="nn-anim" attributeName="stroke-opacity" values="0.11;0.29;0.11" dur="3.5s" begin="-3.2s" repeatCount="indefinite"/></path><path d="M91.3 151.7C135.9 157.8 135.9 157.8 184.7 164.6" stroke-width=".9" stroke-opacity="0.23"><animate class="nn-anim" attributeName="stroke-opacity" values="0.23;0.39;0.23" dur="3.2s" begin="-1.0s" repeatCount="indefinite"/></path><path d="M91.3 151.7C135.9 157.8 137.6 208.7 185.7 217.7" stroke-width=".9" stroke-opacity="0.21"><animate class="nn-anim" attributeName="stroke-opacity" values="0.21;0.27;0.21" dur="3.7s" begin="-3.3s" repeatCount="indefinite"/></path><path d="M91.3 151.7C135.9 157.8 139.3 257.9 186.6 269.0" stroke-width=".9" stroke-opacity="0.27"><animate class="nn-anim" attributeName="stroke-opacity" values="0.27;0.18;0.27" dur="3.6s" begin="-2.4s" repeatCount="indefinite"/></path><path d="M91.3 151.7C135.9 157.8 140.9 305.4 187.5 318.5" stroke-width=".9" stroke-opacity="0.16"><animate class="nn-anim" attributeName="stroke-opacity" values="0.16;0.29;0.16" dur="5.0s" begin="-2.0s" repeatCount="indefinite"/></path><path d="M93.6 200.5C137.6 208.7 132.3 50.7 182.8 52.4" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.12;0.10" dur="4.8s" begin="-3.5s" repeatCount="indefinite"/></path><path d="M93.6 200.5C137.6 208.7 134.1 105.2 183.8 109.5" stroke-width=".9" stroke-opacity="0.16"><animate class="nn-anim" attributeName="stroke-opacity" values="0.16;0.32;0.16" dur="5.2s" begin="-4.5s" repeatCount="indefinite"/></path><path d="M93.6 200.5C137.6 208.7 135.9 157.8 184.7 164.6" stroke-width=".9" stroke-opacity="0.22"><animate class="nn-anim" attributeName="stroke-opacity" values="0.22;0.18;0.22" dur="3.6s" begin="-0.2s" repeatCount="indefinite"/></path><path d="M93.6 200.5C137.6 208.7 137.6 208.7 185.7 217.7" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.36;0.10" dur="6.5s" begin="-4.9s" repeatCount="indefinite"/></path><path d="M93.6 200.5C137.6 208.7 139.3 257.9 186.6 269.0" stroke-width=".9" stroke-opacity="0.11"><animate class="nn-anim" attributeName="stroke-opacity" values="0.11;0.29;0.11" dur="3.5s" begin="-3.1s" repeatCount="indefinite"/></path><path d="M93.6 200.5C137.6 208.7 140.9 305.4 187.5 318.5" stroke-width=".9" stroke-opacity="0.22"><animate class="nn-anim" attributeName="stroke-opacity" values="0.22;0.32;0.22" dur="5.4s" begin="-2.3s" repeatCount="indefinite"/></path><path d="M95.9 247.7C139.3 257.9 132.3 50.7 182.8 52.4" stroke-width=".9" stroke-opacity="0.27"><animate class="nn-anim" attributeName="stroke-opacity" values="0.27;0.39;0.27" dur="4.0s" begin="-1.7s" repeatCount="indefinite"/></path><path d="M95.9 247.7C139.3 257.9 134.1 105.2 183.8 109.5" stroke-width=".9" stroke-opacity="0.24"><animate class="nn-anim" attributeName="stroke-opacity" values="0.24;0.30;0.24" dur="4.6s" begin="-2.1s" repeatCount="indefinite"/></path><path d="M95.9 247.7C139.3 257.9 135.9 157.8 184.7 164.6" stroke-width=".9" stroke-opacity="0.31"><animate class="nn-anim" attributeName="stroke-opacity" values="0.31;0.17;0.31" dur="3.8s" begin="-2.6s" repeatCount="indefinite"/></path><path d="M95.9 247.7C139.3 257.9 137.6 208.7 185.7 217.7" stroke-width=".9" stroke-opacity="0.13"><animate class="nn-anim" attributeName="stroke-opacity" values="0.13;0.37;0.13" dur="4.3s" begin="-4.0s" repeatCount="indefinite"/></path><path d="M95.9 247.7C139.3 257.9 139.3 257.9 186.6 269.0" stroke-width=".9" stroke-opacity="0.15"><animate class="nn-anim" attributeName="stroke-opacity" values="0.15;0.36;0.15" dur="6.0s" begin="-4.4s" repeatCount="indefinite"/></path><path d="M95.9 247.7C139.3 257.9 140.9 305.4 187.5 318.5" stroke-width=".9" stroke-opacity="0.12"><animate class="nn-anim" attributeName="stroke-opacity" values="0.12;0.13;0.12" dur="3.1s" begin="-0.6s" repeatCount="indefinite"/></path><path d="M182.8 52.4C238.0 54.4 238.0 54.4 299.2 56.5" stroke-width=".9" stroke-opacity="0.22"><animate class="nn-anim" attributeName="stroke-opacity" values="0.22;0.10;0.22" dur="3.9s" begin="-2.2s" repeatCount="indefinite"/></path><path d="M182.8 52.4C238.0 54.4 238.0 114.3 298.0 119.5" stroke-width=".9" stroke-opacity="0.11"><animate class="nn-anim" attributeName="stroke-opacity" values="0.11;0.19;0.11" dur="3.9s" begin="-2.6s" repeatCount="indefinite"/></path><path d="M182.8 52.4C238.0 54.4 238.0 172.0 296.8 180.1" stroke-width=".9" stroke-opacity="0.11"><animate class="nn-anim" attributeName="stroke-opacity" values="0.11;0.40;0.11" dur="5.4s" begin="-3.8s" repeatCount="indefinite"/></path><path d="M182.8 52.4C238.0 54.4 238.0 227.5 295.6 238.3" stroke-width=".9" stroke-opacity="0.19"><animate class="nn-anim" attributeName="stroke-opacity" values="0.19;0.24;0.19" dur="6.9s" begin="-6.2s" repeatCount="indefinite"/></path><path d="M182.8 52.4C238.0 54.4 238.0 281.0 294.5 294.3" stroke-width=".9" stroke-opacity="0.26"><animate class="nn-anim" attributeName="stroke-opacity" values="0.26;0.09;0.26" dur="5.4s" begin="-5.0s" repeatCount="indefinite"/></path><path d="M182.8 52.4C238.0 54.4 238.0 332.7 293.5 348.2" stroke-width=".9" stroke-opacity="0.21"><animate class="nn-anim" attributeName="stroke-opacity" values="0.21;0.24;0.21" dur="5.6s" begin="-1.0s" repeatCount="indefinite"/></path><path d="M183.8 109.5C238.0 114.3 238.0 54.4 299.2 56.5" stroke-width=".9" stroke-opacity="0.24"><animate class="nn-anim" attributeName="stroke-opacity" values="0.24;0.33;0.24" dur="3.3s" begin="-1.7s" repeatCount="indefinite"/></path><path d="M183.8 109.5C238.0 114.3 238.0 114.3 298.0 119.5" stroke-width=".9" stroke-opacity="0.20"><animate class="nn-anim" attributeName="stroke-opacity" values="0.20;0.19;0.20" dur="5.7s" begin="-5.3s" repeatCount="indefinite"/></path><path d="M183.8 109.5C238.0 114.3 238.0 172.0 296.8 180.1" stroke-width=".9" stroke-opacity="0.29"><animate class="nn-anim" attributeName="stroke-opacity" values="0.29;0.18;0.29" dur="3.6s" begin="-3.1s" repeatCount="indefinite"/></path><path d="M183.8 109.5C238.0 114.3 238.0 227.5 295.6 238.3" stroke-width=".9" stroke-opacity="0.21"><animate class="nn-anim" attributeName="stroke-opacity" values="0.21;0.35;0.21" dur="6.5s" begin="-1.8s" repeatCount="indefinite"/></path><path d="M183.8 109.5C238.0 114.3 238.0 281.0 294.5 294.3" stroke-width=".9" stroke-opacity="0.20"><animate class="nn-anim" attributeName="stroke-opacity" values="0.20;0.18;0.20" dur="6.2s" begin="-4.3s" repeatCount="indefinite"/></path><path d="M183.8 109.5C238.0 114.3 238.0 332.7 293.5 348.2" stroke-width=".9" stroke-opacity="0.13"><animate class="nn-anim" attributeName="stroke-opacity" values="0.13;0.24;0.13" dur="5.4s" begin="-1.3s" repeatCount="indefinite"/></path><path d="M184.7 164.6C238.0 172.0 238.0 54.4 299.2 56.5" stroke-width=".9" stroke-opacity="0.12"><animate class="nn-anim" attributeName="stroke-opacity" values="0.12;0.23;0.12" dur="3.3s" begin="-1.6s" repeatCount="indefinite"/></path><path d="M184.7 164.6C238.0 172.0 238.0 114.3 298.0 119.5" stroke-width=".9" stroke-opacity="0.30"><animate class="nn-anim" attributeName="stroke-opacity" values="0.30;0.34;0.30" dur="3.2s" begin="-2.7s" repeatCount="indefinite"/></path><path d="M184.7 164.6C238.0 172.0 238.0 172.0 296.8 180.1" stroke-width=".9" stroke-opacity="0.23"><animate class="nn-anim" attributeName="stroke-opacity" values="0.23;0.31;0.23" dur="3.1s" begin="-2.4s" repeatCount="indefinite"/></path><path d="M184.7 164.6C238.0 172.0 238.0 227.5 295.6 238.3" stroke-width=".9" stroke-opacity="0.12"><animate class="nn-anim" attributeName="stroke-opacity" values="0.12;0.34;0.12" dur="4.3s" begin="-1.6s" repeatCount="indefinite"/></path><path d="M184.7 164.6C238.0 172.0 238.0 281.0 294.5 294.3" stroke-width=".9" stroke-opacity="0.12"><animate class="nn-anim" attributeName="stroke-opacity" values="0.12;0.36;0.12" dur="3.9s" begin="-3.4s" repeatCount="indefinite"/></path><path d="M184.7 164.6C238.0 172.0 238.0 332.7 293.5 348.2" stroke-width=".9" stroke-opacity="0.18"><animate class="nn-anim" attributeName="stroke-opacity" values="0.18;0.13;0.18" dur="5.6s" begin="-3.0s" repeatCount="indefinite"/></path><path d="M185.7 217.7C238.0 227.5 238.0 54.4 299.2 56.5" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.34;0.10" dur="4.1s" begin="-0.1s" repeatCount="indefinite"/></path><path d="M185.7 217.7C238.0 227.5 238.0 114.3 298.0 119.5" stroke-width=".9" stroke-opacity="0.25"><animate class="nn-anim" attributeName="stroke-opacity" values="0.25;0.31;0.25" dur="4.5s" begin="-0.8s" repeatCount="indefinite"/></path><path d="M185.7 217.7C238.0 227.5 238.0 172.0 296.8 180.1" stroke-width=".9" stroke-opacity="0.18"><animate class="nn-anim" attributeName="stroke-opacity" values="0.18;0.27;0.18" dur="5.8s" begin="-2.8s" repeatCount="indefinite"/></path><path d="M185.7 217.7C238.0 227.5 238.0 227.5 295.6 238.3" stroke-width=".9" stroke-opacity="0.19"><animate class="nn-anim" attributeName="stroke-opacity" values="0.19;0.31;0.19" dur="3.8s" begin="-0.7s" repeatCount="indefinite"/></path><path d="M185.7 217.7C238.0 227.5 238.0 281.0 294.5 294.3" stroke-width=".9" stroke-opacity="0.17"><animate class="nn-anim" attributeName="stroke-opacity" values="0.17;0.32;0.17" dur="6.2s" begin="-5.3s" repeatCount="indefinite"/></path><path d="M185.7 217.7C238.0 227.5 238.0 332.7 293.5 348.2" stroke-width=".9" stroke-opacity="0.16"><animate class="nn-anim" attributeName="stroke-opacity" values="0.16;0.31;0.16" dur="3.4s" begin="-1.3s" repeatCount="indefinite"/></path><path d="M186.6 269.0C238.0 281.0 238.0 54.4 299.2 56.5" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.35;0.10" dur="7.0s" begin="-4.7s" repeatCount="indefinite"/></path><path d="M186.6 269.0C238.0 281.0 238.0 114.3 298.0 119.5" stroke-width=".9" stroke-opacity="0.24"><animate class="nn-anim" attributeName="stroke-opacity" values="0.24;0.20;0.24" dur="6.2s" begin="-0.5s" repeatCount="indefinite"/></path><path d="M186.6 269.0C238.0 281.0 238.0 172.0 296.8 180.1" stroke-width=".9" stroke-opacity="0.15"><animate class="nn-anim" attributeName="stroke-opacity" values="0.15;0.19;0.15" dur="6.5s" begin="-1.1s" repeatCount="indefinite"/></path><path d="M186.6 269.0C238.0 281.0 238.0 227.5 295.6 238.3" stroke-width=".9" stroke-opacity="0.11"><animate class="nn-anim" attributeName="stroke-opacity" values="0.11;0.11;0.11" dur="6.4s" begin="-2.0s" repeatCount="indefinite"/></path><path d="M186.6 269.0C238.0 281.0 238.0 281.0 294.5 294.3" stroke-width=".9" stroke-opacity="0.29"><animate class="nn-anim" attributeName="stroke-opacity" values="0.29;0.18;0.29" dur="6.3s" begin="-1.2s" repeatCount="indefinite"/></path><path d="M186.6 269.0C238.0 281.0 238.0 332.7 293.5 348.2" stroke-width=".9" stroke-opacity="0.29"><animate class="nn-anim" attributeName="stroke-opacity" values="0.29;0.39;0.29" dur="6.5s" begin="-4.5s" repeatCount="indefinite"/></path><path d="M187.5 318.5C238.0 332.7 238.0 54.4 299.2 56.5" stroke-width=".9" stroke-opacity="0.29"><animate class="nn-anim" attributeName="stroke-opacity" values="0.29;0.37;0.29" dur="6.9s" begin="-1.9s" repeatCount="indefinite"/></path><path d="M187.5 318.5C238.0 332.7 238.0 114.3 298.0 119.5" stroke-width=".9" stroke-opacity="0.27"><animate class="nn-anim" attributeName="stroke-opacity" values="0.27;0.33;0.27" dur="4.4s" begin="-0.7s" repeatCount="indefinite"/></path><path d="M187.5 318.5C238.0 332.7 238.0 172.0 296.8 180.1" stroke-width=".9" stroke-opacity="0.29"><animate class="nn-anim" attributeName="stroke-opacity" values="0.29;0.23;0.29" dur="5.1s" begin="-4.5s" repeatCount="indefinite"/></path><path d="M187.5 318.5C238.0 332.7 238.0 227.5 295.6 238.3" stroke-width=".9" stroke-opacity="0.17"><animate class="nn-anim" attributeName="stroke-opacity" values="0.17;0.16;0.17" dur="5.7s" begin="-3.1s" repeatCount="indefinite"/></path><path d="M187.5 318.5C238.0 332.7 238.0 281.0 294.5 294.3" stroke-width=".9" stroke-opacity="0.13"><animate class="nn-anim" attributeName="stroke-opacity" values="0.13;0.30;0.13" dur="6.6s" begin="-1.6s" repeatCount="indefinite"/></path><path d="M187.5 318.5C238.0 332.7 238.0 332.7 293.5 348.2" stroke-width=".9" stroke-opacity="0.26"><animate class="nn-anim" attributeName="stroke-opacity" values="0.26;0.32;0.26" dur="5.1s" begin="-1.0s" repeatCount="indefinite"/></path><path d="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" stroke-width=".9" stroke-opacity="0.22"><animate class="nn-anim" attributeName="stroke-opacity" values="0.22;0.17;0.22" dur="4.0s" begin="-3.4s" repeatCount="indefinite"/></path><path d="M299.2 56.5C368.0 58.9 361.3 220.1 433.8 232.0" stroke-width=".9" stroke-opacity="0.13"><animate class="nn-anim" attributeName="stroke-opacity" values="0.13;0.11;0.13" dur="6.4s" begin="-6.3s" repeatCount="indefinite"/></path><path d="M299.2 56.5C368.0 58.9 358.8 280.0 429.6 295.0" stroke-width=".9" stroke-opacity="0.14"><animate class="nn-anim" attributeName="stroke-opacity" values="0.14;0.21;0.14" dur="5.2s" begin="-3.9s" repeatCount="indefinite"/></path><path d="M298.0 119.5C365.2 125.4 363.9 157.7 438.2 166.1" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.29;0.10" dur="3.9s" begin="-3.7s" repeatCount="indefinite"/></path><path d="M298.0 119.5C365.2 125.4 361.3 220.1 433.8 232.0" stroke-width=".9" stroke-opacity="0.16"><animate class="nn-anim" attributeName="stroke-opacity" values="0.16;0.38;0.16" dur="4.8s" begin="-3.1s" repeatCount="indefinite"/></path><path d="M298.0 119.5C365.2 125.4 358.8 280.0 429.6 295.0" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.14;0.10" dur="4.2s" begin="-1.5s" repeatCount="indefinite"/></path><path d="M296.8 180.1C362.5 189.2 363.9 157.7 438.2 166.1" stroke-width=".9" stroke-opacity="0.12"><animate class="nn-anim" attributeName="stroke-opacity" values="0.12;0.21;0.12" dur="3.4s" begin="-1.9s" repeatCount="indefinite"/></path><path d="M296.8 180.1C362.5 189.2 361.3 220.1 433.8 232.0" stroke-width=".9" stroke-opacity="0.31"><animate class="nn-anim" attributeName="stroke-opacity" values="0.31;0.35;0.31" dur="5.5s" begin="-5.4s" repeatCount="indefinite"/></path><path d="M296.8 180.1C362.5 189.2 358.8 280.0 429.6 295.0" stroke-width=".9" stroke-opacity="0.24"><animate class="nn-anim" attributeName="stroke-opacity" values="0.24;0.28;0.24" dur="4.8s" begin="-0.4s" repeatCount="indefinite"/></path><path d="M295.6 238.3C360.0 250.4 363.9 157.7 438.2 166.1" stroke-width=".9" stroke-opacity="0.29"><animate class="nn-anim" attributeName="stroke-opacity" values="0.29;0.37;0.29" dur="6.2s" begin="-4.3s" repeatCount="indefinite"/></path><path d="M295.6 238.3C360.0 250.4 361.3 220.1 433.8 232.0" stroke-width=".9" stroke-opacity="0.26"><animate class="nn-anim" attributeName="stroke-opacity" values="0.26;0.39;0.26" dur="6.9s" begin="-5.3s" repeatCount="indefinite"/></path><path d="M295.6 238.3C360.0 250.4 358.8 280.0 429.6 295.0" stroke-width=".9" stroke-opacity="0.10"><animate class="nn-anim" attributeName="stroke-opacity" values="0.10;0.38;0.10" dur="5.3s" begin="-2.4s" repeatCount="indefinite"/></path><path d="M294.5 294.3C357.5 309.1 363.9 157.7 438.2 166.1" stroke-width=".9" stroke-opacity="0.16"><animate class="nn-anim" attributeName="stroke-opacity" values="0.16;0.17;0.16" dur="3.1s" begin="-1.9s" repeatCount="indefinite"/></path><path d="M294.5 294.3C357.5 309.1 361.3 220.1 433.8 232.0" stroke-width=".9" stroke-opacity="0.21"><animate class="nn-anim" attributeName="stroke-opacity" values="0.21;0.11;0.21" dur="6.7s" begin="-6.0s" repeatCount="indefinite"/></path><path d="M294.5 294.3C357.5 309.1 358.8 280.0 429.6 295.0" stroke-width=".9" stroke-opacity="0.28"><animate class="nn-anim" attributeName="stroke-opacity" values="0.28;0.25;0.28" dur="4.5s" begin="-2.1s" repeatCount="indefinite"/></path><path d="M293.5 348.2C355.2 365.5 363.9 157.7 438.2 166.1" stroke-width=".9" stroke-opacity="0.15"><animate class="nn-anim" attributeName="stroke-opacity" values="0.15;0.39;0.15" dur="6.7s" begin="-6.0s" repeatCount="indefinite"/></path><path d="M293.5 348.2C355.2 365.5 361.3 220.1 433.8 232.0" stroke-width=".9" stroke-opacity="0.18"><animate class="nn-anim" attributeName="stroke-opacity" values="0.18;0.24;0.18" dur="5.7s" begin="-1.7s" repeatCount="indefinite"/></path><path d="M293.5 348.2C355.2 365.5 358.8 280.0 429.6 295.0" stroke-width=".9" stroke-opacity="0.12"><animate class="nn-anim" attributeName="stroke-opacity" values="0.12;0.40;0.12" dur="4.1s" begin="-1.1s" repeatCount="indefinite"/></path></g><g class="nn-anim"><path d="M88.8 101.2C134.1 105.2 132.3 50.7 182.8 52.4" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.0350;0.1050;0.1650;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M88.8 101.2C134.1 105.2 132.3 50.7 182.8 52.4" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.0350;0.1050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0350;0.0430;0.0990;0.1050;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M88.8 101.2C134.1 105.2 132.3 50.7 182.8 52.4" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.4100;0.4650;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.4100;0.4180;0.4590;0.4650;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.0350;0.1050;0.1650;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.0350;0.1050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0350;0.0430;0.0990;0.1050;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.4100;0.4650;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.4100;0.4180;0.4590;0.4650;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M95.9 247.7C139.3 257.9 140.9 305.4 187.5 318.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.0350;0.1050;0.1650;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M95.9 247.7C139.3 257.9 140.9 305.4 187.5 318.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.0350;0.1050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0350;0.0430;0.0990;0.1050;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M95.9 247.7C139.3 257.9 140.9 305.4 187.5 318.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.4100;0.4650;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.4100;0.4180;0.4590;0.4650;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M182.8 52.4C238.0 54.4 238.0 172.0 296.8 180.1" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.1100;0.1800;0.2400;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M182.8 52.4C238.0 54.4 238.0 172.0 296.8 180.1" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.1100;0.1800;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1100;0.1180;0.1740;0.1800;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M182.8 52.4C238.0 54.4 238.0 172.0 296.8 180.1" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.3500;0.4050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.3500;0.3580;0.3990;0.4050;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M183.8 109.5C238.0 114.3 238.0 54.4 299.2 56.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.1100;0.1800;0.2400;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M183.8 109.5C238.0 114.3 238.0 54.4 299.2 56.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.1100;0.1800;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1100;0.1180;0.1740;0.1800;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M183.8 109.5C238.0 114.3 238.0 54.4 299.2 56.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.3500;0.4050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.3500;0.3580;0.3990;0.4050;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M187.5 318.5C238.0 332.7 238.0 54.4 299.2 56.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.1100;0.1800;0.2400;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M187.5 318.5C238.0 332.7 238.0 54.4 299.2 56.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.1100;0.1800;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1100;0.1180;0.1740;0.1800;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M187.5 318.5C238.0 332.7 238.0 54.4 299.2 56.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.3500;0.4050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.3500;0.3580;0.3990;0.4050;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.1850;0.2550;0.3150;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.1850;0.2550;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1850;0.1930;0.2490;0.2550;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.2900;0.3450;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.2900;0.2980;0.3390;0.3450;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M299.2 56.5C368.0 58.9 358.8 280.0 429.6 295.0" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.1850;0.2550;0.3150;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M299.2 56.5C368.0 58.9 358.8 280.0 429.6 295.0" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.1850;0.2550;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1850;0.1930;0.2490;0.2550;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M299.2 56.5C368.0 58.9 358.8 280.0 429.6 295.0" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.2900;0.3450;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.2900;0.2980;0.3390;0.3450;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M296.8 180.1C362.5 189.2 361.3 220.1 433.8 232.0" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.1850;0.2550;0.3150;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M296.8 180.1C362.5 189.2 361.3 220.1 433.8 232.0" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.1850;0.2550;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1850;0.1930;0.2490;0.2550;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M296.8 180.1C362.5 189.2 361.3 220.1 433.8 232.0" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.2900;0.3450;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.2900;0.2980;0.3390;0.3450;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M88.8 101.2C134.1 105.2 137.6 208.7 185.7 217.7" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.5350;0.6050;0.6650;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M88.8 101.2C134.1 105.2 137.6 208.7 185.7 217.7" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.5350;0.6050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5350;0.5430;0.5990;0.6050;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M88.8 101.2C134.1 105.2 137.6 208.7 185.7 217.7" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.9100;0.9650;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.9100;0.9180;0.9590;0.9650;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.5350;0.6050;0.6650;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.5350;0.6050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5350;0.5430;0.5990;0.6050;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M91.3 151.7C135.9 157.8 134.1 105.2 183.8 109.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.9100;0.9650;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.9100;0.9180;0.9590;0.9650;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M183.8 109.5C238.0 114.3 238.0 114.3 298.0 119.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.6100;0.6800;0.7400;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M183.8 109.5C238.0 114.3 238.0 114.3 298.0 119.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.6100;0.6800;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6100;0.6180;0.6740;0.6800;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M183.8 109.5C238.0 114.3 238.0 114.3 298.0 119.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.8500;0.9050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.8500;0.8580;0.8990;0.9050;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M183.8 109.5C238.0 114.3 238.0 172.0 296.8 180.1" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.6100;0.6800;0.7400;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M183.8 109.5C238.0 114.3 238.0 172.0 296.8 180.1" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.6100;0.6800;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6100;0.6180;0.6740;0.6800;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M183.8 109.5C238.0 114.3 238.0 172.0 296.8 180.1" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.8500;0.9050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.8500;0.8580;0.8990;0.9050;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M185.7 217.7C238.0 227.5 238.0 54.4 299.2 56.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.6100;0.6800;0.7400;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M185.7 217.7C238.0 227.5 238.0 54.4 299.2 56.5" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.6100;0.6800;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6100;0.6180;0.6740;0.6800;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M185.7 217.7C238.0 227.5 238.0 54.4 299.2 56.5" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.8500;0.9050;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.8500;0.8580;0.8990;0.9050;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.6850;0.7550;0.8150;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.6850;0.7550;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6850;0.6930;0.7490;0.7550;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M299.2 56.5C368.0 58.9 363.9 157.7 438.2 166.1" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.7900;0.8450;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.7900;0.7980;0.8390;0.8450;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M298.0 119.5C365.2 125.4 361.3 220.1 433.8 232.0" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.6850;0.7550;0.8150;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M298.0 119.5C365.2 125.4 361.3 220.1 433.8 232.0" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.6850;0.7550;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6850;0.6930;0.7490;0.7550;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M298.0 119.5C365.2 125.4 361.3 220.1 433.8 232.0" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.7900;0.8450;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.7900;0.7980;0.8390;0.8450;1" dur="10.0s" repeatCount="indefinite"/></g><path d="M296.8 180.1C362.5 189.2 358.8 280.0 429.6 295.0" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;.7;0;0" keyTimes="0;0.6850;0.7550;0.8150;1" dur="10.0s" repeatCount="indefinite"/></path><g opacity="0"><circle r="7" fill="url(#nnh)"/><circle r="1.8" fill="#fff"/><animateMotion path="M296.8 180.1C362.5 189.2 358.8 280.0 429.6 295.0" dur="10.0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.6850;0.7550;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6850;0.6930;0.7490;0.7550;1" dur="10.0s" repeatCount="indefinite"/></g><g opacity="0"><circle r="4.5" fill="url(#nnh)" opacity=".6"/><circle r="1.2" fill="#E3ECFF"/><animateMotion path="M296.8 180.1C362.5 189.2 358.8 280.0 429.6 295.0" dur="10.0s" repeatCount="indefinite" keyPoints="1;1;0;0" keyTimes="0;0.7900;0.8450;1" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1"/><animate attributeName="opacity" values="0;0;.75;.75;0;0" keyTimes="0;0.7900;0.7980;0.8390;0.8450;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.69"><circle cx="88.8" cy="101.2" r="8.04" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="88.8" cy="101.2" r="2.68" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="88.8" cy="101.2" r="21.44" fill="url(#nnh)"/><circle cx="88.8" cy="101.2" r="8.04" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="88.8" cy="101.2" r="3.04" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.0270;0.0450;0.1400;0.5270;0.5450;0.6400;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.67"><circle cx="91.3" cy="151.7" r="7.91" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="91.3" cy="151.7" r="2.64" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="91.3" cy="151.7" r="21.09" fill="url(#nnh)"/><circle cx="91.3" cy="151.7" r="7.91" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="91.3" cy="151.7" r="2.99" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.0270;0.0450;0.1400;0.5270;0.5450;0.6400;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.65"><circle cx="93.6" cy="200.5" r="7.78" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="93.6" cy="200.5" r="2.59" fill="#96BCFF" fill-opacity=".75"/></g><g opacity="0.63"><circle cx="95.9" cy="247.7" r="7.66" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="95.9" cy="247.7" r="2.55" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="95.9" cy="247.7" r="20.42" fill="url(#nnh)"/><circle cx="95.9" cy="247.7" r="7.66" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="95.9" cy="247.7" r="2.89" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.0270;0.0450;0.1400;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.85"><circle cx="182.8" cy="52.4" r="8.98" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="182.8" cy="52.4" r="2.99" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="182.8" cy="52.4" r="23.95" fill="url(#nnh)"/><circle cx="182.8" cy="52.4" r="8.98" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="182.8" cy="52.4" r="3.39" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.1020;0.1200;0.2150;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.82"><circle cx="183.8" cy="109.5" r="8.82" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="183.8" cy="109.5" r="2.94" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="183.8" cy="109.5" r="23.51" fill="url(#nnh)"/><circle cx="183.8" cy="109.5" r="8.82" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="183.8" cy="109.5" r="3.33" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.1020;0.1200;0.2150;0.6020;0.6200;0.7150;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.79"><circle cx="184.7" cy="164.6" r="8.66" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="184.7" cy="164.6" r="2.89" fill="#96BCFF" fill-opacity=".75"/></g><g opacity="0.77"><circle cx="185.7" cy="217.7" r="8.51" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="185.7" cy="217.7" r="2.84" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="185.7" cy="217.7" r="22.68" fill="url(#nnh)"/><circle cx="185.7" cy="217.7" r="8.51" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="185.7" cy="217.7" r="3.21" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.6020;0.6200;0.7150;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.74"><circle cx="186.6" cy="269.0" r="8.36" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="186.6" cy="269.0" r="2.79" fill="#96BCFF" fill-opacity=".75"/></g><g opacity="0.72"><circle cx="187.5" cy="318.5" r="8.22" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="187.5" cy="318.5" r="2.74" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="187.5" cy="318.5" r="21.91" fill="url(#nnh)"/><circle cx="187.5" cy="318.5" r="8.22" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="187.5" cy="318.5" r="3.10" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.1020;0.1200;0.2150;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="1.00"><circle cx="299.2" cy="56.5" r="9.95" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="299.2" cy="56.5" r="3.32" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="299.2" cy="56.5" r="26.53" fill="url(#nnh)"/><circle cx="299.2" cy="56.5" r="9.95" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="299.2" cy="56.5" r="3.76" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.1770;0.1950;0.2900;0.6770;0.6950;0.7900;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.97"><circle cx="298.0" cy="119.5" r="9.75" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="298.0" cy="119.5" r="3.25" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="298.0" cy="119.5" r="26.00" fill="url(#nnh)"/><circle cx="298.0" cy="119.5" r="9.75" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="298.0" cy="119.5" r="3.68" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.6770;0.6950;0.7900;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.94"><circle cx="296.8" cy="180.1" r="9.56" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="296.8" cy="180.1" r="3.19" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="296.8" cy="180.1" r="25.48" fill="url(#nnh)"/><circle cx="296.8" cy="180.1" r="9.56" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="296.8" cy="180.1" r="3.61" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.1770;0.1950;0.2900;0.6770;0.6950;0.7900;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="0.91"><circle cx="295.6" cy="238.3" r="9.37" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="295.6" cy="238.3" r="3.12" fill="#96BCFF" fill-opacity=".75"/></g><g opacity="0.88"><circle cx="294.5" cy="294.3" r="9.19" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="294.5" cy="294.3" r="3.06" fill="#96BCFF" fill-opacity=".75"/></g><g opacity="0.85"><circle cx="293.5" cy="348.2" r="9.02" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="293.5" cy="348.2" r="3.01" fill="#96BCFF" fill-opacity=".75"/></g><g opacity="1.00"><circle cx="438.2" cy="166.1" r="10.79" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="438.2" cy="166.1" r="3.60" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="438.2" cy="166.1" r="28.77" fill="url(#nnh)"/><circle cx="438.2" cy="166.1" r="10.79" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="438.2" cy="166.1" r="4.08" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.2520;0.2700;0.3650;0.7520;0.7700;0.8650;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="1.00"><circle cx="433.8" cy="232.0" r="10.55" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="433.8" cy="232.0" r="3.52" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="433.8" cy="232.0" r="28.14" fill="url(#nnh)"/><circle cx="433.8" cy="232.0" r="10.55" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="433.8" cy="232.0" r="3.99" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.2520;0.2700;0.3650;0.7520;0.7700;0.8650;1" dur="10.0s" repeatCount="indefinite"/></g></g><g opacity="1.00"><circle cx="429.6" cy="295.0" r="10.33" fill="url(#nnn)" stroke="#7FB0FF" stroke-opacity=".7" stroke-width="1.2"/><circle cx="429.6" cy="295.0" r="3.44" fill="#96BCFF" fill-opacity=".75"/><g class="nn-anim" opacity="0"><circle cx="429.6" cy="295.0" r="27.54" fill="url(#nnh)"/><circle cx="429.6" cy="295.0" r="10.33" fill="#317BFF" stroke="#fff" stroke-width="1.2"/><circle cx="429.6" cy="295.0" r="3.90" fill="#fff"/><animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.2520;0.2700;0.3650;0.7520;0.7700;0.8650;1" dur="10.0s" repeatCount="indefinite"/></g></g></g></svg><!-- reseau:fin -->
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- LA PREUVE PAR L'EXEMPLE -->
+<section class="nlex" id="exemple">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Vier Zeichen machen den Unterschied</h2>
+      <p>Ein Satz aus der Schiedsgerichtsbarkeit, in der Text- und Dokumentübersetzung vom Französischen ins Englische übersetzt. Achten Sie auf das Gesetzeszitat, nicht auf den Stil.</p>
+    </div>
+
+    <div class="nlex-src">
+      <span class="nlex-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg> Schiedsverfahren · Art. 186 IPRG</span>
+      <p lang="fr"><span class="src-lb" lang="de">AUSGANGSTEXT · FRANZÖSISCH</span>Le tribunal arbitral statue sur sa propre compétence conformément à l'art. 186 LDIP, et la sentence peut faire l'objet d'un recours au Tribunal fédéral.</p>
+    </div>
+
+    <div class="nlex-cols">
+      <div class="nlex-card brand">
+        <div class="eng"><i aria-hidden="true"></i> LEXMACHINA · ENGLISCH</div>
+        <p lang="en">The arbitral tribunal shall decide on its own jurisdiction in accordance with art. 186 <mark>PILA</mark>, and the award may be appealed to the <mark class="oth">Federal Tribunal</mark>.</p>
+      </div>
+      <div class="nlex-card">
+        <div class="eng"><i aria-hidden="true"></i> DEEPL PRO · ENGLISCH</div>
+        <p lang="en">The arbitral tribunal shall rule on its own jurisdiction in accordance with Article 186 of the <mark class="oth">LDIP</mark>, and the award may be appealed to the <mark>Federal Supreme Court</mark>.</p>
+      </div>
+    </div>
+
+    <p class="nlex-note">Beide Sätze sind verständlich. Der eine zitiert den Artikel in seiner amtlichen englischen Form: <b>PILA</b>, die Abkürzung, die der Bund für das Bundesgesetz über das Internationale Privatrecht verwendet. Der andere behält im englischen Text die französische Abkürzung <b>LDIP</b> bei. In einer Rechtsschrift für ein Gericht oder eine englischsprachige Partei korrigiert eine Partnerin oder ein Partner genau diese Zeile von Hand. Bei der Bezeichnung des Gerichts ist es umgekehrt: DeepL Pro verwendet den amtlichen englischen Namen des Bundesgerichts, <b>Federal Supreme Court</b>, während LexMachina <b>Federal Tribunal</b> schreibt. Azure OpenAI GPT gibt bei demselben Satz ebenfalls PILA wieder. Kein Motor liegt immer richtig. Genau deshalb vergleicht Corrext die Motoren vor Ihren Augen, statt Ihnen einen vorzuschreiben.</p>
+    <p class="nlex-cap">Echte Ausgaben aus dem Bereich Alternatives in Corrext, wortgetreu wiedergegeben. PILA und Federal Supreme Court sind die Formen der englischen Übersetzungen auf Fedlex, geprüft in CHnell. Die Ausgaben eines Motors ändern sich von Generierung zu Generierung: Urteilen Sie anhand Ihrer eigenen Texte, nicht anhand eines ausgewählten Beispiels.</p>
+  </div>
+</section>
+
+<!-- CE QU'EST LE MODÈLE -->
+<section class="nlspec" id="faits">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Was LexMachina genau ist</h2>
+      <p>Ein spezialisierter Übersetzungsmotor, in der Schweiz entwickelt. In Corrext steht er gleichberechtigt neben den gängigen Motoren des Marktes.</p>
+    </div>
+    <div class="nls-kpi">
+      <div class="nls-k"><b>15 Mio.+</b><span>Trainingssegmente</span><p>Urteile des Bundesgerichts (BGE/ATF), Publikationen der FINMA, Gesetzbücher und Bundesgesetze. Nie Dokumente der Kundschaft.</p></div>
+      <div class="nls-k"><b>4</b><span>native Sprachen</span><p>Deutsch, Französisch, Italienisch und Englisch, in allen Sprachpaaren. Für weitere Sprachen nutzt Corrext einen Drittmotor.</p></div>
+      <div class="nls-k"><b>CH</b><span>läuft in der Schweiz</span><p>Mit dieser Wahl bleibt die Verarbeitung in der Schweiz, auch ausserhalb des Modus Highly sensitive content.</p></div>
+      <div class="nls-k"><b>4</b><span>Alternativen pro Satz</span><p>Jede mit Angabe ihres Motors, weitere über «Generate more».</p></div>
+    </div>
+    <div class="nls-row">
+      <div class="nls-t"><h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><span>Die Rechtsgebiete</span></h3><p>Jeden Begriff prüfen Sie in CHnell, das 30 Fachgebiete abdeckt.</p><div class="nls-chips"><span>OR · Verträge</span><span>BankG · Bankrecht</span><span>FINMA</span><span>IPRG · Schiedsverfahren</span><span>Gesellschaftsrecht</span><span>Steuerrecht</span><span>Verfahrensrecht</span></div></div>
+      <div class="nls-t"><h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/></svg></span><span>In Corrext</span></h3><p>Motor frei wählbar, bei jeder Übersetzung. <a href="../../de/corrext/dokumente-uebersetzen/">In der Demo testen</a></p><div class="nls-chips"><span>Textübersetzung</span><span>Dateiübersetzung</span><span>Übersetzungsprojekte</span></div></div>
+      <div class="nls-t"><h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6.5 17M12 11.5l5.5 5.5"/></svg></span><span>Die anderen Motoren bleiben verfügbar</span></h3><p>Mit Pseudonymisierungshinweis für Motoren, die im Ausland gehostet sind.</p><div class="nls-chips"><span>DeepL Pro</span><span>Azure OpenAI GPT</span><span>Claude</span></div></div>
+    </div>
+    <p class="nls-foot">Forschung: Innovationsprojekt mit Unterstützung von Innosuisse, durchgeführt mit dem Institut iCoSys der HTA-FR.<br>Die Qualität eines Motors ist eine laufende Aufgabe, kein erreichter Zustand. <a href="../../de/sicherheit/">Wo Ihre Daten verarbeitet werden</a></p>
+  </div>
+</section>
+
+<!-- SPÉCIALISTE PLUTÔT QUE GÉNÉRALISTE -->
+<section class="pillars">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Warum ein spezialisiertes Modell statt eines Allzweckmodells</h2>
+      <p>Nicht, weil es absolut gesehen «besser» wäre. Sondern weil das Schweizer Recht eine seltene Eigenschaft hat: Es liegt bereits in vier Sprachen vor, und dieser Stoff lässt sich lernen.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span>Die amtliche Terminologie gibt es bereits</span></h3>
+        <p>Der Bund veröffentlicht seine Gesetze auf Deutsch, Französisch und Italienisch, einen grossen Teil seiner Texte auch auf Englisch. Ein Modell, das mit diesen Texten trainiert ist, sucht keine plausible Entsprechung. Es übernimmt den massgebenden Begriff. Aus «Verzugszins» wird «intérêt moratoire», der Begriff der amtlichen französischen Fassung.</p>
+      </div>
+      <div class="pillar">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span><span>Gesetzeszitate haben eine Struktur</span></h3>
+        <p>«Art. 104 al. 1 CO» lautet auf Deutsch «Art. 104 Abs. 1 OR» und auf Englisch «Art. 104 para. 1 CO». Aus LDIP wird IPRG, dann PILA. Ein Modell, das Millionen solcher Entsprechungen gesehen hat, gibt sie in ihrer amtlichen Form wieder, statt die Abkürzung wörtlich zu übersetzen.</p>
+      </div>
+      <div class="pillar">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 1 3 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span><span>Konsistenz über die ganze Länge</span></h3>
+        <p>In einem Vertrag von 60 Seiten muss ein Begriff von der ersten bis zur letzten Seite gleich heissen. Dafür sorgen ein Wortschatz, der an konsistenten Texten gelernt wurde, und der Bereich Alternatives: Dort legen Sie eine Formulierung fest und bleiben danach dabei.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR ALLER PLUS LOIN -->
+<section class="vn">
+  <div class="container">
+    <h2>Mehr zum Thema</h2>
+    <div class="vn-grid">
+      <a class="vn-card" href="../../de/corrext/dokumente-uebersetzen/"><span class="vn-term vn-kv"><span><i>Text</i><b>bis 10'000 Zeichen</b></span><span><i>Dateien</i><b>25 Dateien zu 50 MB</b></span></span><b class="vn-t">Text- und Dokumentübersetzung</b><span class="vn-d">Testen Sie den Motor in der Demo an echten Gesetzesartikeln und vergleichen Sie die Alternativen.</span><em>Zum Tool <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vn-card" href="../../de/sicherheit/"><span class="vn-term vn-kv"><span><i>Speicherung</i><b>in der Schweiz</b></span><span><i>Norm</i><b>ISO 27001</b></span></span><b class="vn-t">Sicherheit und Datensouveränität</b><span class="vn-d">Wohin Ihr Dokument je nach gewähltem Modus und Motor geht, ohne Vereinfachung.</span><em>Zur Seite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+      <a class="vn-card" href="../../de/corrext/chnell/"><span class="vn-term vn-kv"><span><i>Dokumente</i><b>über 20'000</b></span><span><i>Fachgebiete</i><b>30, filterbar</b></span></span><b class="vn-t">Fast lookup CHnell</b><span class="vn-d">Die Konkordanz für Schweizer Recht: amtliche Quellen, 30 Fachgebiete, Ihre eigenen Ressourcen.</span><em>Zum Tool <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></em></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu LexMachina</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Womit wird LexMachina trainiert?</summary>
+        <p>Mit Schweizer Rechts- und Finanzdaten: über 15 Millionen mehrsprachige Segmente aus Urteilen des Bundesgerichts (BGE/ATF), Publikationen der FINMA sowie Gesetzbüchern und Bundesgesetzen. Nie mit den Dokumenten unserer Kundschaft.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Sprachen deckt LexMachina ab?</summary>
+        <p>Deutsch, Französisch, Italienisch und Englisch, nativ und in allen Sprachpaaren: die vier Sprachen, in denen Juristinnen und Juristen in der Schweiz schreiben und plädieren. Die Plattform Corrext bietet insgesamt 30 Sprachen an. Für alle weiteren Sprachen übersetzt ein Motor eines Drittanbieters.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wo läuft der Übersetzungsmotor?</summary>
+        <p>In der Schweiz, auf der Schweizer Infrastruktur von Neur.on. Wenn Sie LexMachina wählen, bleibt die Verarbeitung in der Schweiz, auch ohne den Modus Highly sensitive content. Ein Pseudonymisierungshinweis erscheint nicht, denn nichts geht ins Ausland.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Werden meine Dokumente zum Training des Modells verwendet?</summary>
+        <p>Nein. LexMachina lernt aus öffentlichen Schweizer Rechts- und Finanztexten, nicht aus Ihren Dossiers. Im Modus Standard fliessen Ihre Projekte in ein Translation Memory, das ausschliesslich Ihre Organisation nutzen kann. Im Modus Highly sensitive content wird kein Translation Memory gespeist.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kann ich neben LexMachina andere Übersetzungsmotoren nutzen?</summary>
+        <p>Ja. Corrext ist modellunabhängig: DeepL Pro, Azure OpenAI GPT und Claude stehen in derselben Oberfläche zur Verfügung. Den Motor wählen Sie bei jeder Übersetzung neu. Im Ausland gehostete Motoren lösen den Hinweis Attorney-Client privilege Ihrer Organisation aus.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie vergleiche ich die Motoren an meinen eigenen Texten?</summary>
+        <p>In der Text- und Dokumentübersetzung öffnet die Schaltfläche mit dem Funkensymbol den Bereich Alternatives: bis zu vier Vorschläge für denselben Satz, jeder mit Angabe seines Motors. Mit Generate more erhalten Sie weitere. So urteilen Sie anhand Ihrer eigenen Texte, nicht anhand eines Versprechens.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Beurteilen Sie den Motor an Ihren eigenen Texten</h2>
+      <p>Eine Demo mit einer Fachperson für Schweizer Recht: Ihre Sätze, Ihre Sprachen, Ihre Gesetzeszitate. Dazu die Motoren im direkten Vergleich, vor Ihren Augen.</p>
+      <div class="final-cta-btns">
+        <a href="../../de/kontakt/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../de/corrext/dokumente-uebersetzen/" class="btn-outline">Demo der Text- und Dokumentübersetzung testen</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Motor in der Schweiz gehostet und betrieben</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../de/" class="logo"><img src="../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>Der Übersetzungsmotor für Schweizer Recht, Steuern und Finanzen. Eine durchgehend schweizerische Lösung: Unternehmen, Infrastruktur und der Motor LexMachina, für Präzision in vier Sprachen und volle Datensouveränität.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hosting in der Schweiz (Infomaniak) · nDSG und DSGVO</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on auf LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Plattform</p>
+        <ul>
+          <li><a href="../../de/corrext/">Corrext, die Plattform</a></li>
+          <li><a href="../../de/corrext/dokumente-uebersetzen/">Text- und Dokumentübersetzung</a></li>
+          <li><a href="../../de/corrext/uebersetzungsprojekte/">Projektmanagement</a></li>
+          <li><a href="../../de/corrext/lektorat/">Lektorats-Editor</a></li>
+          <li><a href="../../de/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../de/corrext/handelsregisterauszug/">Handelsregisterauszüge</a></li>
+          <li><a href="../../de/corrext/api-on-premises/">API und On-Premises</a></li>
+          <li><a href="../../de/lexmachina/">LexMachina, der Übersetzungsmotor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Lösungen</p>
+        <ul>
+          <li><a href="../../de/loesungen/anwaltskanzleien/">Anwaltskanzleien</a></li>
+          <li><a href="../../de/loesungen/banken/">Banken und Finanzen</a></li>
+          <li><a href="../../de/loesungen/rechtsabteilungen/">Rechtsabteilungen</a></li>
+          <li><a href="../../de/loesungen/behoerden/">Behörden und Verwaltung</a></li>
+          <li><a href="../../de/loesungen/treuhand/">Treuhand und Beratung</a></li>
+          <li><a href="../../de/loesungen/legaltech-verlage/">LegalTechs und Verlage</a></li>
+          <li><a href="../../de/uebersetzung/">Übersetzung nach Rechtsgebiet</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Ressourcen</p>
+        <ul>
+          <li><a href="../../de/ressourcen/blog/">Blog</a></li>
+          <li><a href="../../de/ressourcen/leitfaeden/">Leitfäden</a></li>
+          <li><a href="../../de/ressourcen/glossar/">Rechtsglossar</a></li>
+          <li><a href="../../de/ressourcen/studien/">Studien und Benchmarks</a></li>
+          <li><a href="../../de/vergleich/">Vergleiche</a></li>
+          <li><a href="../../de/hilfe/">Hilfe-Center</a></li>
+          <li><a href="../../de/sicherheit/">Sicherheit und Datensouveränität</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../de/ueber-uns/">Über uns und Auszeichnungen</a></li>
+          <li><a href="../../de/ueber-uns/presse/">Presse</a></li>
+          <li><a href="../../de/kontakt/">Demo anfragen</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Freiburg, Schweiz. Alle Rechte vorbehalten.</span>
+      <div class="links">
+        <a href="../../de/impressum/">Impressum und Nutzungsbedingungen</a>
+        <a href="../../de/datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/nav.js?v=de2299c0" defer></script>
+</body>
+</html>

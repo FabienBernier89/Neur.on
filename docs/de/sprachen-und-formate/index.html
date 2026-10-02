@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF übersetzen, Layout beibehalten · Corrext von Neur.on</title>
+<meta name="description" content="Die 30 Sprachen von Corrext, davon vier native, die akzeptierten Formate (.docx, .pdf, .xlsx, .pptx), 25 Dateien zu 50 MB, Layout bleibt erhalten.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/de/sprachen-und-formate/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/langues-et-formats/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/sprachen-und-formate/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="PDF übersetzen, Layout beibehalten · Corrext von Neur.on">
+<meta property="og:description" content="Die 30 Sprachen von Corrext, davon vier native, die akzeptierten Formate (.docx, .pdf, .xlsx, .pptx), 25 Dateien zu 50 MB, Layout bleibt erhalten.">
+<meta property="og:url" content="https://neur-on.ai/de/sprachen-und-formate/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, KI-Übersetzung für Recht, Steuern und Finanzen">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="de_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../assets/neuron.css?v=de2299c0">
+<style>/* Page Langues et formats · styles propres (préfixe .lf-) */
+
+/* Quatre langues natives */
+.lf-native{padding:80px 0 0;background:#fff}
+.lf-nat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.lf-nat{background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);padding:22px;transition:border-color .25s ease,transform .25s ease}
+.lf-nat:hover{transform:translateY(-3px);border-color:var(--line-2)}
+.lf-nat b{display:block;font-family:'Inter',sans-serif;font-weight:800;font-size:19px;color:var(--ink);letter-spacing:-.02em}
+.lf-nat .en{display:block;font-size:12.5px;color:var(--muted);margin:3px 0 12px}
+.lf-nat .bd{display:inline-block;font-size:11px;font-weight:700;color:var(--navy);background:var(--blue-pale);border-radius:6px;padding:4px 9px}
+.lf-nat p{font-size:13.5px;color:var(--text);line-height:1.55;margin-top:12px}
+.lf-note{margin:26px auto 0;font-size:14.5px;color:var(--text);line-height:1.65;max-width:980px;text-align:center}
+.lf-note b{color:var(--ink)}
+/* Les 30 langues de la plateforme */
+.lf-all{padding:56px 0 60px;background:#fff}
+.lf-all h2{font-size:22px;margin-bottom:10px;text-align:center}
+.lf-all .intro{font-size:14.5px;color:var(--muted);line-height:1.65;max-width:980px;margin:0 auto 24px;text-align:center}
+.lf-langs{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.lf-langs li{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;padding:11px 16px 11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink)}
+.lf-langs li .en{font-size:12.5px;color:var(--muted)}
+.lf-langs li .nat{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);background:var(--blue-pale);border-radius:5px;padding:2px 7px}
+.lf-cap{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.6;max-width:none}
+/* Formats et mise en page */
+.lf-facts{padding:84px 0;background:linear-gradient(180deg,var(--bg) 0%,#fff 46%)}
+.lf-layout{padding:10px 0 90px;background:#fff}
+@media(max-width:940px){
+  .lf-nat-grid{grid-template-columns:repeat(2,1fr)}
+  .lf-langs{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .lf-nat-grid{grid-template-columns:1fr}
+  .lf-langs{grid-template-columns:1fr}
+}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Welche Sprachen unterstützt Corrext nativ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Vier: Deutsch, Französisch, Italienisch und Englisch, in allen Sprachpaaren. In diesen Sprachen wurde LexMachina, der Schweizer Übersetzungsmotor, mit über 15 Millionen juristischen und finanziellen Segmenten trainiert. Nur sie sind im Modus Highly sensitive content verfügbar. Die ersten drei sind die Amtssprachen des Bundes, in denen das Bundesrecht veröffentlicht wird."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie viele Dateien kann ich auf einmal hochladen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Bis zu 25 Dateien pro Upload in File translation und in PDF to Word. In einem Übersetzungsprojekt laden Sie die Dateien im Schritt File overview hoch. Dort zeigt jede Datei ihre Anzahl Normseiten, die erkannte Sprache und die erkannte Rechtskategorie."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie gross darf eine Datei höchstens sein?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "50 MB pro Datei. Für Text, den Sie direkt ins Tool einfügen, liegt die Grenze bei 10'000 Zeichen für die Textübersetzung und bei 5'000 Zeichen für die Umformulierung. Für längere Texte laden Sie Dateien hoch oder legen ein Übersetzungsprojekt an."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kann ich ein gescanntes PDF hochladen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Das Format .pdf wird akzeptiert, auch als Scan. Der Reiter PDF to Word wandelt ein PDF in ein bearbeitbares Word-Dokument um, vor der Übersetzung oder für die interne Arbeit. Liegt die ursprüngliche Office-Datei vor, empfiehlt die Anwendung jedoch, diese statt der PDF-Version hochzuladen: Das Ergebnis ist besser und das Layout originalgetreuer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Bleibt das Layout erhalten?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Sie erhalten die Übersetzung im Originalformat zurück: eine .docx als .docx, eine .xlsx als .xlsx, eine .pptx als .pptx, mit der Struktur des Dokuments. Deshalb empfiehlt die Anwendung, das Originalformat hochzuladen statt eines daraus erzeugten PDF."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Sind alle Sprachen im Modus Highly sensitive content verfügbar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. Der Modus Highly sensitive content schreibt Speicherung und Verarbeitung ausschliesslich in der Schweiz vor und verbietet die Wiederverwendung des Inhalts im Translation Memory. Er ist für Deutsch, Französisch, Italienisch und Englisch verfügbar. Die übrigen Sprachen der Plattform nutzen Sie im Modus Standard: Gespeichert wird in jedem Fall in der Schweiz, die Verarbeitung hängt aber vom gewählten Motor ab."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://neur-on.ai/de/"}, {"@type": "ListItem", "position": 2, "name": "Sprachen und Formate", "item": "https://neur-on.ai/de/sprachen-und-formate/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="nav" id="siteNav" data-active="corrext">
+  <div class="container nav-inner">
+    <a href="../../de/" class="logo" aria-label="Neur.on, zurück zur Startseite"><img src="../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Lösungen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../de/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Ressourcen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Sprache">
+        <a class="on" href="../../de/sprachen-und-formate/" aria-current="true">DE</a><span class="sep">·</span>
+        <a href="../../de/sprachen-und-formate/">FR</a><span class="sep">·</span>
+        <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="it/">IT</a><span class="sep">·</span>
+        <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="en/">EN</a>
+      </div>
+      <a href="../../de/kontakt/" class="btn btn-blue">Demo anfragen</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Menü öffnen">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Die Plattform</p>
+        <a href="../../de/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, die Schaltzentrale</b><em>Projekte, Offerten, Ressourcen und Zugriffsrechte in einer einzigen Schweizer Umgebung</em></span></a>
+        <a href="../../de/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>Der Übersetzungsmotor, trainiert auf Schweizer Recht und Finanzen</em></span></a>
+        <a href="../../de/sicherheit/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Sicherheit und Datensouveränität</b><em>Wo Ihre Daten gespeichert und verarbeitet werden und mit welchem Motor</em></span></a>
+        <a href="../../de/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API und On-Premises</b><em>Integration in Ihre DMS, Intranets und Workflows</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Die Tools</p>
+        <a href="../../de/corrext/dokumente-uebersetzen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Text- und Dokumentübersetzung</b><em>Text, Dateien, PDF in Word, Umformulieren</em></span></a>
+        <a href="../../de/corrext/uebersetzungsprojekte/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Projektmanagement</b><em>Lektorat durch Fachleute nach Bedarf, Offerte und Lieferfrist sofort</em></span></a>
+        <a href="../../de/corrext/lektorat/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Lektorats-Editor</b><em>Lektorat Satz für Satz, Korrekturen bleiben gespeichert</em></span></a>
+        <a href="../../de/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>Die Konkordanz für Schweizer Recht, 30 Fachgebiete</em></span></a>
+        <a href="../../de/corrext/handelsregisterauszug/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Handelsregisterauszüge</b><em>Beglaubigte Übersetzung, notariell oder mit Apostille</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Mehr erfahren</p>
+        <a href="../../de/qualitaetsstufen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Vier Qualitätsstufen</b><em>Von der maschinellen Übersetzung bis zur Beglaubigung</em></span></a>
+        <a href="../../de/sprachen-und-formate/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Sprachen und Formate</b><em>30 Sprachen, vier davon nativ, alle Ihre Office-Formate</em></span></a>
+        <a href="../../de/hilfe/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Hilfe-Center</b><em>Anleitungen Schritt für Schritt</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Ohne Registrierung testen</p>
+        <p class="mega-p">Die Oberfläche von Corrext, originalgetreu nachgebildet, mit drei Auszügen aus dem Schweizer Recht.</p>
+        <a href="../../de/corrext/dokumente-uebersetzen/#demo" class="mega-cta">Live-Demo öffnen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Nach Branche</p>
+        <a href="../../de/loesungen/anwaltskanzleien/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Anwaltskanzleien</b></span></a>
+        <a href="../../de/loesungen/banken/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banken und Finanzen</b></span></a>
+        <a href="../../de/loesungen/rechtsabteilungen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Rechtsabteilungen und Legal Ops</b></span></a>
+        <a href="../../de/loesungen/behoerden/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Behörden und Verwaltung</b></span></a>
+        <a href="../../de/loesungen/treuhand/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Treuhand und Beratung</b></span></a>
+        <a href="../../de/loesungen/legaltech-verlage/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTechs und Verlage</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nach Rechtsgebiet</p>
+        <a href="../../de/uebersetzung/vertraege/"><b>Verträge</b></a>
+        <a href="../../de/uebersetzung/gesellschaftsrecht/"><b>Gesellschaftsrecht</b></a>
+        <a href="../../de/uebersetzung/fusionen-uebernahmen/"><b>Fusionen und Akquisitionen</b></a>
+        <a href="../../de/uebersetzung/prozesse-schiedsverfahren/"><b>Prozessführung und Schiedsverfahren</b></a>
+        <a href="../../de/uebersetzung/bank-und-finanzrecht/"><b>Bank- und Finanzrecht</b></a>
+        <a href="../../de/uebersetzung/compliance-finma/"><b>Compliance und FINMA</b></a>
+        <a href="../../de/uebersetzung/" class="mega-all">Alle Rechtsgebiete <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nach Sprachpaar</p>
+        <a href="../../de/uebersetzung/deutsch-franzoesisch/"><b>Deutsch nach Französisch</b></a>
+        <a href="../../de/uebersetzung/franzoesisch-deutsch/"><b>Französisch nach Deutsch</b></a>
+        <a href="../../de/uebersetzung/deutsch-englisch/"><b>Deutsch nach Englisch</b></a>
+        <a href="../../de/uebersetzung/franzoesisch-englisch/"><b>Französisch nach Englisch</b></a>
+        <a href="../../de/uebersetzung/italienisch-franzoesisch/"><b>Italienisch nach Französisch</b></a>
+        <a href="../../de/uebersetzung/englisch-deutsch/"><b>Englisch nach Deutsch</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Noch unschlüssig?</p>
+        <p class="mega-p">Was Corrext kann und generische Tools nicht, Punkt für Punkt verglichen.</p>
+        <a href="../../de/vergleich/" class="mega-cta">Zu den Vergleichen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Verstehen</p>
+        <a href="../../de/ressourcen/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Schweizer Recht, Übersetzung und künstliche Intelligenz</em></span></a>
+        <a href="../../de/ressourcen/leitfaeden/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Leitfäden</b><em>Fundierte Methoden, verfasst von unseren Fachleuten</em></span></a>
+        <a href="../../de/ressourcen/studien/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studien und Benchmarks</b><em>Unsere Messungen an Schweizer Rechtstexten</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Nachschlagen</p>
+        <a href="../../de/ressourcen/glossar/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Schweizer Rechtsglossar</b><em>Jeder Begriff auf Deutsch, Französisch, Italienisch und Englisch</em></span></a>
+        <a href="../../de/hilfe/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Hilfe-Center für Corrext</b><em>Einstieg und praktische Antworten</em></span></a>
+        <a href="../../de/hilfe/corrext-kennenlernen/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Häufige Fragen</b><em>Corrext, LexMachina, Lektorat, Preise</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Vergleichen</p>
+        <a href="../../de/vergleich/deepl-juristische-uebersetzung/"><b>Corrext und DeepL</b></a>
+        <a href="../../de/vergleich/chatgpt-juristische-uebersetzung/"><b>Corrext und allgemeine LLM</b></a>
+        <a href="../../de/vergleich/uebersetzungsbuero-oder-plattform/"><b>Übersetzungsbüro oder Plattform</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Ein Schweizer Unternehmen, eine Schweizer Infrastruktur, ein auf Schweizer Recht trainierter Übersetzungsmotor.</p>
+        <a href="../../de/ueber-uns/" class="mega-cta">Über uns und Auszeichnungen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../de/corrext/">Corrext, die Plattform</a>
+        <a href="../../de/corrext/dokumente-uebersetzen/">Text- und Dokumentübersetzung</a>
+        <a href="../../de/corrext/uebersetzungsprojekte/">Projektmanagement</a>
+        <a href="../../de/corrext/lektorat/">Lektorats-Editor</a>
+        <a href="../../de/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../de/corrext/handelsregisterauszug/">Handelsregisterauszüge</a>
+        <a href="../../de/corrext/api-on-premises/">API und On-Premises</a>
+        <a href="../../de/lexmachina/">LexMachina</a>
+        <a href="../../de/sicherheit/">Sicherheit und Datensouveränität</a>
+        <a href="../../de/qualitaetsstufen/">Qualitätsstufen</a>
+        <a href="../../de/sprachen-und-formate/">Sprachen und Formate</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Lösungen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../de/loesungen/anwaltskanzleien/">Anwaltskanzleien</a>
+        <a href="../../de/loesungen/banken/">Banken und Finanzen</a>
+        <a href="../../de/loesungen/rechtsabteilungen/">Rechtsabteilungen und Legal Ops</a>
+        <a href="../../de/loesungen/behoerden/">Behörden und Verwaltung</a>
+        <a href="../../de/loesungen/treuhand/">Treuhand und Beratung</a>
+        <a href="../../de/loesungen/legaltech-verlage/">LegalTechs und Verlage</a>
+        <a href="../../de/uebersetzung/">Übersetzung nach Rechtsgebiet</a>
+        <a href="../../de/vergleich/">Vergleiche</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Ressourcen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../de/ressourcen/blog/">Blog</a>
+        <a href="../../de/ressourcen/leitfaeden/">Leitfäden</a>
+        <a href="../../de/ressourcen/glossar/">Schweizer Rechtsglossar</a>
+        <a href="../../de/ressourcen/studien/">Studien und Benchmarks</a>
+        <a href="../../de/hilfe/">Hilfe-Center</a>
+        <a href="../../de/ueber-uns/">Über uns</a>
+      </div>
+    </div>
+    <a href="../../de/kontakt/" class="btn btn-blue nm-cta">Demo anfragen</a>
+    <div class="nm-langs" aria-label="Sprache">
+      <a class="on" href="../../de/sprachen-und-formate/" aria-current="true">DE</a><span>·</span>
+      <a href="../../de/sprachen-und-formate/">FR</a><span>·</span>
+      <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="it/">IT</a><span>·</span>
+      <a class="soon" aria-disabled="true" data-soon="demnächst" data-cible="en/">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Navigationspfad"><div class="container"><ol><li><a href="../../de/">Startseite</a></li><li><span aria-current="page">Sprachen und Formate</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="thero lf-hero thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Sprachen und Formate.</em> Was Corrext annimmt und was Sie zurückerhalten</h1>
+        <p class="lead">Die Referenzseite mit genauen Angaben: die vier nativen Sprachen und die dreissig Sprachen der Plattform, die akzeptierten Office-Formate, die Grenzen für Dateigrösse und Zeichenzahl und was mit dem Layout Ihres Dokuments geschieht.</p>
+        <div class="thero-cta">
+          <a href="../../de/kontakt/" class="btn btn-blue">
+            Demo anfragen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#formats" class="btn btn-ghost">Akzeptierte Formate ansehen</a>
+        </div>
+      </div>
+      <div class="law-spec hcarte"><div class="sh"><b>Was Corrext akzeptiert</b><span>30 Sprachen</span></div><div class="sr"><i>Formate</i><b>.pdf .doc .docx .xls .xlsx .ppt .pptx</b></div><div class="sr"><i>Pro Upload</i><b>25 Dateien zu je 50 MB</b></div><div class="sr"><i>Eingefügter Text</i><b>bis 10'000 Zeichen</b></div><div class="sr"><i>Nativ</i><b>Deutsch, Französisch, Italienisch, Englisch</b></div><div class="sf">In der App angezeigte Werte</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUATRE LANGUES NATIVES -->
+<section class="lf-native" id="langues">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Vier native Sprachen, in denen die Schweiz ihr Recht schreibt</h2>
+      <p>Nativ heisst hier: trainiert mit Schweizer Rechts- und Finanzdaten in dieser Sprache, über 15 Millionen Segmente, und verfügbar im Modus mit dem höchsten Schutz der Plattform.</p>
+    </div>
+    <div class="lf-nat-grid">
+      <div class="lf-nat">
+        <b>Deutsch</b><span class="en">German · DE</span>
+        <span class="bd">Nativ</span>
+        <p>Amtssprache des Bundes und erste Sprache des Schweizer Marktes. Schweizer Hochdeutsch: «ss», nie «ß».</p>
+      </div>
+      <div class="lf-nat">
+        <b>Französisch</b><span class="en">French · FR</span>
+        <span class="bd">Nativ</span>
+        <p>Amtssprache des Bundes. Terminologie der Romandie und des Bundes, im Kontext überprüfbar in CHnell.</p>
+      </div>
+      <div class="lf-nat">
+        <b>Italienisch</b><span class="en">Italian · IT</span>
+        <span class="bd">Nativ</span>
+        <p>Amtssprache des Bundes. Die Bundesgesetze sind in allen drei Amtssprachen verbindlich, auch auf Italienisch.</p>
+      </div>
+      <div class="lf-nat">
+        <b>Englisch</b><span class="en">English · EN</span>
+        <span class="bd">Nativ</span>
+        <p>Arbeitssprache für grenzüberschreitende Dossiers, internationale Schiedsverfahren und Finanzdokumentation.</p>
+      </div>
+    </div>
+    <p class="lf-note"><b>Alle Sprachpaare, in beide Richtungen.</b> Nur diese vier Sprachen sind auch im Modus Highly sensitive content verfügbar. Er schreibt Speicherung und Verarbeitung ausschliesslich in der Schweiz vor und verbietet die Wiederverwendung des Inhalts im Translation Memory. Rätoromanisch, die vierte Landessprache, gehört nicht zu den Sprachen der Plattform.</p>
+  </div>
+</section>
+
+<!-- LES 30 LANGUES -->
+<section class="lf-all">
+  <div class="container">
+    <h2>Die dreissig Sprachen der Plattform</h2>
+    <p class="intro">Die Zielsprachenauswahl von Corrext umfasst zweiunddreissig Einträge für dreissig verschiedene Sprachen: Chinesisch und Portugiesisch erscheinen je in zwei Varianten. Die Anwendung bezeichnet die Sprachen auf Englisch. Diese Bezeichnungen stehen hier bei jeder Sprache.</p>
+    <ul class="lf-langs">
+      <li>Deutsch <span class="en">German</span> <span class="nat">Nativ</span></li>
+      <li>Englisch <span class="en">English</span> <span class="nat">Nativ</span></li>
+      <li>Arabisch <span class="en">Arabic</span></li>
+      <li>Bulgarisch <span class="en">Bulgarian</span></li>
+      <li>Chinesisch (vereinfacht) <span class="en">Chinese (Simplified)</span></li>
+      <li>Chinesisch (traditionell) <span class="en">Chinese (Traditional)</span></li>
+      <li>Koreanisch <span class="en">Korean</span></li>
+      <li>Dänisch <span class="en">Danish</span></li>
+      <li>Spanisch <span class="en">Spanish</span></li>
+      <li>Estnisch <span class="en">Estonian</span></li>
+      <li>Finnisch <span class="en">Finnish</span></li>
+      <li>Französisch <span class="en">French</span> <span class="nat">Nativ</span></li>
+      <li>Griechisch <span class="en">Greek</span></li>
+      <li>Ungarisch <span class="en">Hungarian</span></li>
+      <li>Indonesisch <span class="en">Indonesian</span></li>
+      <li>Italienisch <span class="en">Italian</span> <span class="nat">Nativ</span></li>
+      <li>Japanisch <span class="en">Japanese</span></li>
+      <li>Lettisch <span class="en">Latvian</span></li>
+      <li>Litauisch <span class="en">Lithuanian</span></li>
+      <li>Niederländisch <span class="en">Dutch</span></li>
+      <li>Norwegisch (Bokmål) <span class="en">Norwegian Bokmål</span></li>
+      <li>Polnisch <span class="en">Polish</span></li>
+      <li>Portugiesisch (Brasilien) <span class="en">Portuguese (Brazil)</span></li>
+      <li>Portugiesisch (Portugal) <span class="en">Portuguese (Portugal)</span></li>
+      <li>Rumänisch <span class="en">Romanian</span></li>
+      <li>Russisch <span class="en">Russian</span></li>
+      <li>Slowakisch <span class="en">Slovak</span></li>
+      <li>Slowenisch <span class="en">Slovenian</span></li>
+      <li>Schwedisch <span class="en">Swedish</span></li>
+      <li>Tschechisch <span class="en">Czech</span></li>
+      <li>Türkisch <span class="en">Turkish</span></li>
+      <li>Ukrainisch <span class="en">Ukrainian</span></li>
+    </ul>
+    <p class="lf-cap">Ausserhalb der vier nativen Sprachen stützt sich die Übersetzung auf die Motoren, die in der Oberfläche verfügbar sind: LexMachina, DeepL Pro, Azure OpenAI GPT und Claude. Im Ausland gehostete Motoren lösen den Hinweis Attorney-Client privilege Ihrer Organisation aus und sind im Modus Highly sensitive content nicht verfügbar.</p>
+  </div>
+</section>
+
+<!-- QUADRILINGUISME SUISSE -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Warum eine Übersetzung für die Schweiz mehr ist als Deutsch, Französisch oder Italienisch</h2>
+        <p>Das Bundesrecht wird auf Fedlex in den drei Amtssprachen veröffentlicht, und alle drei Fassungen sind verbindlich. Wer einen Schweizer Rechtstext übersetzt, erfindet also keine Formulierung. Er sucht diejenige, die in der anderen Amtssprache bereits besteht. Dazu kommen Schreibkonventionen, an denen man eine anderswo erstellte Übersetzung sofort erkennt.</p>
+        <a href="../../de/corrext/chnell/" class="feat-link">Einen Begriff in den amtlichen Quellen prüfen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg><span><b>Schweizer Hochdeutsch.</b> Das «ß» gibt es nicht: Man schreibt in jedem Fall «ss», also «Strasse» und nicht «Straße».</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V6M20 18V6M8 12h8"/></svg><span><b>Tausendertrennzeichen.</b> In der Schweiz schreibt man 15'000 mit Apostroph, in allen vier Sprachen, und nicht 15.000 oder 15 000.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M9 8h6M9 12h6"/></svg><span><b>Dreisprachige Gesetzestexte.</b> Fedlex veröffentlicht das Bundesrecht auf Deutsch, Französisch und Italienisch: Die Zielfassung existiert bereits. Sie wird zitiert, nicht neu übersetzt.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/></svg><span><b>Abkürzungen je nach Sprache.</b> Dasselbe Gesetz wird auf Deutsch, Französisch und Italienisch nicht mit derselben Abkürzung zitiert.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABRÉVIATIONS -->
+<section class="compare" id="abreviations">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Dasselbe Gesetz, drei amtliche Abkürzungen</h2>
+    </div>
+    <p class="compare-note">Ein Schweizer Gesetz mit der Abkürzung einer anderen Sprache zu zitieren, ist der auffälligste Fehler in einer juristischen Übersetzung. Hier sind fünf der am häufigsten zitierten Erlasse, mit ihrer Abkürzung in jeder der drei Amtssprachen.</p>
+    <div class="compare-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th style="text-align:left">Erlass</th>
+            <th class="brand">Französisch</th>
+            <th>Deutsch</th>
+            <th>Italienisch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Obligationenrecht</th>
+            <td class="brand">CO</td>
+            <td>OR</td>
+            <td>CO</td>
+          </tr>
+          <tr>
+            <th scope="row">Zivilgesetzbuch</th>
+            <td class="brand">CC</td>
+            <td>ZGB</td>
+            <td>CC</td>
+          </tr>
+          <tr>
+            <th scope="row">Bankengesetz</th>
+            <td class="brand">LB</td>
+            <td>BankG</td>
+            <td>LBCR</td>
+          </tr>
+          <tr>
+            <th scope="row">Bundesgesetz über das Internationale Privatrecht</th>
+            <td class="brand">LDIP</td>
+            <td>IPRG</td>
+            <td>LDIP</td>
+          </tr>
+          <tr>
+            <th scope="row">Bundesgesetz über Schuldbetreibung und Konkurs</th>
+            <td class="brand">LP</td>
+            <td>SchKG</td>
+            <td>LEF</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cmp-legend">
+      <span>Amtliche Abkürzungen, wie auf Fedlex veröffentlicht</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="facts lf-facts" id="formats">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>Akzeptierte Formate und ihre Grenzen</h2>
+        <p>Corrext verarbeitet die Office-Formate der täglichen juristischen Arbeit: sieben Dateitypen, vom PDF bis zu PowerPoint, in Text- und Dokumentübersetzung ebenso wie im geführten Ablauf von Projektmanagement.</p>
+        <div class="links">
+          <a href="../../de/corrext/dokumente-uebersetzen/" class="feat-link">Mit einem Schweizer Gesetzestext testen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="../../de/sicherheit/" class="feat-link">Wo Ihre Dateien gespeichert und verarbeitet werden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Akzeptierte Formate</b><p>.pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx, in File translation ebenso wie im Schritt File overview eines Projekts.</p></div>
+        <div class="fact"><b>Anzahl Dateien</b><p>Bis zu 25 Dateien pro Upload, auf einmal ausgewählt oder in die Ablagezone gezogen.</p></div>
+        <div class="fact"><b>Maximale Grösse</b><p>50 MB pro Datei. Ein grösseres Dokument teilen Sie auf oder übersetzen es in einem Übersetzungsprojekt.</p></div>
+        <div class="fact"><b>Originalformat empfohlen</b><p>Die Anwendung empfiehlt, das Originalformat hochzuladen, wenn es vorliegt: eine .docx- oder .xlsx-Datei statt des daraus erzeugten PDF. Der Text wird dann direkt gelesen, ohne Zeichenerkennung.</p></div>
+        <div class="fact"><b>PDF, auch gescannt</b><p>Das PDF wird akzeptiert, auch als Scan. Der Reiter PDF to Word wandelt es in ein bearbeitbares Word-Dokument um, vor der Übersetzung oder für die interne Arbeit.<small>Auf diesem Reiter ist der Schalter Highly sensitive content ausgegraut: Die Umwandlung übersetzt nicht.</small></p></div>
+        <div class="fact"><b>Eingefügter Text</b><p>Höchstens 10'000 Zeichen für die Textübersetzung, 5'000 Zeichen für die Umformulierung. Ein Zähler zeigt den Stand in Echtzeit.</p></div>
+        <div class="fact"><b>Was Sie zurückerhalten</b><p>Die Übersetzung im Originalformat: Eine .docx kommt als .docx zurück, eine .xlsx als .xlsx, eine .pptx als .pptx.</p></div>
+        <div class="fact"><b>Was analysiert wird</b><p>In einem Projekt zeigt jede hochgeladene Datei ihre Anzahl Normseiten, die erkannte Sprache und die erkannte Rechtskategorie. Beide lassen sich ändern, bevor Sie weitergehen.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISE EN PAGE -->
+<section class="lf-layout">
+  <div class="container">
+    <div class="feature">
+      <div class="feat-txt">
+        <h3>Das Layout bleibt beim Übersetzen erhalten</h3>
+        <p>Ein hundertseitiger Vertrag mit nummerierten Artikeln, eine Tabelle mit Covenants, ein Foliensatz für einen Ausschuss: Die Übersetzung kommt im Originalformat zurück, samt Struktur. Sie müssen nichts nachträglich neu formatieren.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Das Zieldokument behält Format und Struktur des Ausgangsdokuments</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Tabellen, nummerierte Listen und Abschnitte bleiben an ihrem Platz</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Ein gescanntes PDF geht zuerst durch PDF to Word und wird so wieder bearbeitbar</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Deshalb ist das Originalformat immer besser als ein PDF</li>
+        </ul>
+        <a href="../../de/corrext/dokumente-uebersetzen/" class="feat-link">Zum Tool für die Dateiübersetzung <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="doc-body">
+            <div class="doc-paper">
+              <div class="doc-h"></div>
+              <div class="doc-l w95"></div><div class="doc-l w90"></div><div class="doc-l w75"></div>
+              <div class="doc-table">
+                <span class="hd"></span><span class="hd"></span><span class="hd"></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+              </div>
+              <div class="doc-l w90"></div><div class="doc-l w60"></div>
+              <div class="doc-page"><span>Darlehensvertrag_FR.docx</span><span>S. 14 / 100</span></div>
+            </div>
+            <div class="fmt-row">
+              <span class="fmt">PDF</span><span class="fmt">DOC</span><span class="fmt">DOCX</span><span class="fmt">XLS</span><span class="fmt">XLSX</span><span class="fmt">PPT</span><span class="fmt">PPTX</span><span class="fmt">PDF in Word</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>Mehr zum Thema</h2>
+    <div class="siblings-row">
+      <a href="../../de/corrext/dokumente-uebersetzen/"><b>Text- und Dokumentübersetzung</b><span>Dateien hochladen, Motor wählen, Alternativen vergleichen.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../de/sicherheit/"><b>Sicherheit und Datensouveränität</b><span>Wo Ihre Daten gespeichert und verarbeitet werden, und durch welchen Motor.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../de/qualitaetsstufen/"><b>Qualitätsstufen</b><span>Von der maschinellen Übersetzung bis zur Beglaubigung: welche Stufe für welches Dokument.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Häufige Fragen zu Sprachen und Formaten</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Welche Sprachen unterstützt Corrext nativ?</summary>
+        <p>Vier: Deutsch, Französisch, Italienisch und Englisch, in allen Sprachpaaren. In diesen Sprachen wurde LexMachina, der Schweizer Übersetzungsmotor, mit über 15 Millionen juristischen und finanziellen Segmenten trainiert. Nur sie sind im Modus Highly sensitive content verfügbar. Die ersten drei sind die Amtssprachen des Bundes, in denen das Bundesrecht veröffentlicht wird.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie viele Dateien kann ich auf einmal hochladen?</summary>
+        <p>Bis zu 25 Dateien pro Upload in File translation und in PDF to Word. In einem Übersetzungsprojekt laden Sie die Dateien im Schritt File overview hoch. Dort zeigt jede Datei ihre Anzahl Normseiten, die erkannte Sprache und die erkannte Rechtskategorie.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie gross darf eine Datei höchstens sein?</summary>
+        <p>50 MB pro Datei. Für Text, den Sie direkt ins Tool einfügen, liegt die Grenze bei 10'000 Zeichen für die Textübersetzung und bei 5'000 Zeichen für die Umformulierung. Für längere Texte laden Sie Dateien hoch oder legen ein Übersetzungsprojekt an.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kann ich ein gescanntes PDF hochladen?</summary>
+        <p>Ja. Das Format .pdf wird akzeptiert, auch als Scan. Der Reiter PDF to Word wandelt ein PDF in ein bearbeitbares Word-Dokument um, vor der Übersetzung oder für die interne Arbeit. Liegt die ursprüngliche Office-Datei vor, empfiehlt die Anwendung jedoch, diese statt der PDF-Version hochzuladen: Das Ergebnis ist besser und das Layout originalgetreuer.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Bleibt das Layout erhalten?</summary>
+        <p>Ja. Sie erhalten die Übersetzung im Originalformat zurück: eine .docx als .docx, eine .xlsx als .xlsx, eine .pptx als .pptx, mit der Struktur des Dokuments. Deshalb empfiehlt die Anwendung, das Originalformat hochzuladen statt eines daraus erzeugten PDF.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Sind alle Sprachen im Modus Highly sensitive content verfügbar?</summary>
+        <p>Nein. Der Modus Highly sensitive content schreibt Speicherung und Verarbeitung ausschliesslich in der Schweiz vor und verbietet die Wiederverwendung des Inhalts im Translation Memory. Er ist für Deutsch, Französisch, Italienisch und Englisch verfügbar. Die übrigen Sprachen der Plattform nutzen Sie im Modus Standard: Gespeichert wird in jedem Fall in der Schweiz, die Verarbeitung hängt aber vom gewählten Motor ab.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Ihre Sprachen, Ihre Formate, Ihre Dokumente</h2>
+      <p>Bringen Sie eine Datei mit, die für Ihren Alltag typisch ist: Wir übersetzen sie in der Demo mit Corrext, im Sprachpaar, das Sie interessiert.</p>
+      <div class="final-cta-btns">
+        <a href="../../de/kontakt/" class="btn btn-blue">
+          Demo anfragen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../de/corrext/dokumente-uebersetzen/" class="btn-outline">Online-Demo testen</a>
+      </div>
+      <p class="micro">Individuelle Demo · auf Deutsch, Französisch, Italienisch oder Englisch · Hosting zu 100 % in der Schweiz</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../de/" class="logo"><img src="../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>Der Übersetzungsmotor für Schweizer Recht, Steuern und Finanzen. Eine durchgehend schweizerische Lösung: Unternehmen, Infrastruktur und der Motor LexMachina, für Präzision in vier Sprachen und volle Datensouveränität.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hosting in der Schweiz (Infomaniak) · nDSG und DSGVO</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on auf LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Plattform</p>
+        <ul>
+          <li><a href="../../de/corrext/">Corrext, die Plattform</a></li>
+          <li><a href="../../de/corrext/dokumente-uebersetzen/">Text- und Dokumentübersetzung</a></li>
+          <li><a href="../../de/corrext/uebersetzungsprojekte/">Projektmanagement</a></li>
+          <li><a href="../../de/corrext/lektorat/">Lektorats-Editor</a></li>
+          <li><a href="../../de/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../de/corrext/handelsregisterauszug/">Handelsregisterauszüge</a></li>
+          <li><a href="../../de/corrext/api-on-premises/">API und On-Premises</a></li>
+          <li><a href="../../de/lexmachina/">LexMachina, der Übersetzungsmotor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Lösungen</p>
+        <ul>
+          <li><a href="../../de/loesungen/anwaltskanzleien/">Anwaltskanzleien</a></li>
+          <li><a href="../../de/loesungen/banken/">Banken und Finanzen</a></li>
+          <li><a href="../../de/loesungen/rechtsabteilungen/">Rechtsabteilungen</a></li>
+          <li><a href="../../de/loesungen/behoerden/">Behörden und Verwaltung</a></li>
+          <li><a href="../../de/loesungen/treuhand/">Treuhand und Beratung</a></li>
+          <li><a href="../../de/loesungen/legaltech-verlage/">LegalTechs und Verlage</a></li>
+          <li><a href="../../de/uebersetzung/">Übersetzung nach Rechtsgebiet</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Ressourcen</p>
+        <ul>
+          <li><a href="../../de/ressourcen/blog/">Blog</a></li>
+          <li><a href="../../de/ressourcen/leitfaeden/">Leitfäden</a></li>
+          <li><a href="../../de/ressourcen/glossar/">Rechtsglossar</a></li>
+          <li><a href="../../de/ressourcen/studien/">Studien und Benchmarks</a></li>
+          <li><a href="../../de/vergleich/">Vergleiche</a></li>
+          <li><a href="../../de/hilfe/">Hilfe-Center</a></li>
+          <li><a href="../../de/sicherheit/">Sicherheit und Datensouveränität</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../de/ueber-uns/">Über uns und Auszeichnungen</a></li>
+          <li><a href="../../de/ueber-uns/presse/">Presse</a></li>
+          <li><a href="../../de/kontakt/">Demo anfragen</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Freiburg, Schweiz. Alle Rechte vorbehalten.</span>
+      <div class="links">
+        <a href="../../de/impressum/">Impressum und Nutzungsbedingungen</a>
+        <a href="../../de/datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/nav.js?v=de2299c0" defer></script>
+</body>
+</html>
