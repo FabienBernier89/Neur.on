@@ -461,14 +461,39 @@ TERMS_CSS = """<style>
 .tlaw:first-child{border-top:1px solid var(--line)}
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
+.tlaw b a{color:inherit;text-decoration:underline;text-decoration-color:rgba(49,123,255,.45);text-underline-offset:3px}
+.tlaw b a:hover{color:var(--blue-d);text-decoration-color:currentColor}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
 @media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}
 </style>"""
 
 
+_FEDLEX = None
+
+
+def fedlex(cle):
+    """Adresse Fedlex (version française en vigueur) d'un texte, par abréviation ou par nom."""
+    global _FEDLEX
+    if _FEDLEX is None:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "fedlex.json"), encoding="utf-8") as f:
+            _FEDLEX = json.load(f)
+        for k, v in list(_FEDLEX.items()):
+            _FEDLEX[v["nom"].lower()] = v
+        for nom, k in (("loi sur la poursuite pour dettes et la faillite", "LP"),
+                       ("loi fédérale sur le tribunal fédéral", "LTF"), ("code civil suisse", "CC")):
+            _FEDLEX[nom] = _FEDLEX[k]
+    v = _FEDLEX.get(cle) or _FEDLEX.get(cle.lower())
+    return v["url"] if v else None
+
+
+def lien_loi(nom, cle):
+    u = fedlex(cle)
+    return f'<a href="{u}" rel="noopener" target="_blank">{nom}</a>' if u else nom
+
+
 def laws_block(titre, intro, lois):
     ls = "".join(
-        f'<div class="tlaw"><span class="ab">{l["abbr"]}</span><div><b>{l["nom"]}</b>'
+        f'<div class="tlaw"><span class="ab">{l["abbr"]}</span><div><b>{lien_loi(l["nom"], l["abbr"])}</b>'
         f'<p>{l["note"]}</p></div></div>' for l in lois)
     return f'''<section class="tlaws">
   <div class="container">
@@ -640,6 +665,13 @@ def gen_traduction_hub(src):
         "short": "Traduction", "nav": "solutions"}, body)]
 
 
+def source_liee(source):
+    """« Fedlex, Code des obligations » : le nom du texte renvoie à sa page Fedlex."""
+    base, _, nom = source.partition(", ")
+    u = fedlex(nom) if nom else None
+    return f'{base}, <a href="{u}" rel="noopener" target="_blank">{nom}</a>' if u else source
+
+
 def gen_glossaire(src):
     pages, data = [], load(src, "glossaire")
     if not data:
@@ -664,6 +696,7 @@ def gen_glossaire(src):
 .gex-row div i{font-style:normal;display:block;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
 .gex-row mark{background:#fff2a8;padding:0 2px}
 .gsrc{margin-top:18px;font-size:13px;color:var(--muted)}
+.gsrc a{color:var(--blue-d);text-decoration:underline;text-underline-offset:2px}
 @media(max-width:940px){.gterm-grid,.gex-row{grid-template-columns:1fr;gap:28px}}
 </style>"""
     for d in data:
@@ -706,7 +739,7 @@ def gen_glossaire(src):
         <div><i>Allemand</i><p>{d["exemple"]["de"]}</p></div>
         <div><i>Français</i><p>{d["exemple"]["fr"]}</p></div>
       </div>
-      <p class="gsrc">Source : {d["source"]}. Dans Corrext, ce segment et ceux qui l'entourent
+      <p class="gsrc">Source : {source_liee(d["source"])}. Dans Corrext, ce segment et ceux qui l'entourent
         s'affichent dans <a href="{{{{ROOT}}}}fr/corrext/chnell/">Fast lookup CHnell</a>,
         chacun avec sa référence.</p>
     </div>

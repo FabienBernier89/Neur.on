@@ -387,6 +387,10 @@ table.cmp tbody tr:last-child td,table.cmp tbody tr:last-child th{border-bottom:
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:48px;margin-bottom:44px}
 .footer .logo{margin-bottom:16px}
 .footer-about p{font-size:14px;color:var(--muted);max-width:320px;line-height:1.6}
+.footer-social{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:var(--r-btn);transition:border-color .2s,box-shadow .2s}
+.footer-social:hover{border-color:var(--line-2);box-shadow:0 12px 26px -18px rgba(0,27,76,.35)}
+.footer-social:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.footer-social svg{width:20px;height:20px;display:block}
 .footer .ft-h{color:var(--ink);font-size:13px;line-height:1.4;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;font-family:'Inter',sans-serif}
 .footer ul{list-style:none}
 .footer ul li{margin-bottom:11px;font-size:14px;color:var(--muted)}

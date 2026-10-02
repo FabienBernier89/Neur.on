@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" href="../../../assets/img/neuron-mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/neuron-mark-180.png">
 <meta name="theme-color" content="#001B4C">
-<link rel="stylesheet" href="../../../assets/neuron.css?v=27f13fb3">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=2e3b592c">
 <style>.tterms{padding:84px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tterms .sec-head{margin-bottom:34px}
 .tterms-table{min-width:760px}
@@ -43,6 +43,8 @@
 .tlaw:first-child{border-top:1px solid var(--line)}
 .tlaw .ab{font-size:13px;font-weight:800;color:var(--blue-d);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tlaw b{display:block;font-size:14.5px;color:var(--ink)}
+.tlaw b a{color:inherit;text-decoration:underline;text-decoration-color:rgba(49,123,255,.45);text-underline-offset:3px}
+.tlaw b a:hover{color:var(--blue-d);text-decoration-color:currentColor}
 .tlaw p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:3px}
 @media(max-width:940px){.tlaws-grid{grid-template-columns:1fr;gap:34px}.tlaws h2{max-width:none}.tlaws-lead{position:static}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Pourquoi ne pas traduire un contrat avec un outil grand public ?", "acceptedAnswer": {"@type": "Answer", "text": "Parce que le vocabulaire contractuel suisse est fixé par un texte publié en trois langues, et qu'un outil généraliste propose une traduction plausible plutôt que la formulation du Code des obligations. À cela s'ajoute la question du lieu de traitement : avec Corrext, le stockage est suisse dans tous les cas, et le traitement reste en Suisse avec LexMachina ou en mode Highly sensitive content."}}, {"@type": "Question", "name": "La mise en page du contrat est-elle conservée ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, le document revient dans son format d'origine, avec ses articles, ses alinéas et ses annexes. L'application recommande de déposer le fichier natif, Word ou Excel, plutôt qu'un PDF quand il est disponible. Pour un contrat scanné, l'onglet PDF to Word produit d'abord un document éditable."}}, {"@type": "Question", "name": "Qui relit un contrat avant signature ?", "acceptedAnswer": {"@type": "Answer", "text": "Un traducteur juridique, en Light review pour un contrôle de cohérence ou en Full review pour une vérification ligne à ligne. Pour un document qui engage la société devant un tiers, la Double review mobilise deux traducteurs et une agence spécialisée, avec certificat. Le niveau se choisit document par document."}}, {"@type": "Question", "name": "Mes contrats servent-ils à entraîner un moteur ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Les contenus clients ne servent pas à entraîner les moteurs. Les projets en confidentialité Standard peuvent alimenter une mémoire de traduction réutilisable exclusivement par votre organisation ; les projets en mode Highly sensitive content ne sont jamais réutilisés, même en interne."}}, {"@type": "Question", "name": "Comment garder le même terme d'un avenant à l'autre ?", "acceptedAnswer": {"@type": "Answer", "text": "En vérifiant le terme retenu la première fois. Un mot surligné ouvre Fast lookup CHnell sur ce mot en contexte, avec sa source officielle, et le concordancier accepte vos propres ressources terminologiques en plus des 30 domaines déjà couverts. Les projets en confidentialité Standard alimentent en outre une mémoire de traduction réutilisable par votre seule organisation."}}, {"@type": "Question", "name": "Puis-je traduire un extrait de contrat sans déposer de fichier ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La traduction de texte de Traduction texte et document accepte jusqu'à 10'000 caractères collés directement, avec le choix du moteur et jusqu'à quatre alternatives de formulation. C'est le geste adapté à une clause isolée en cours de négociation. Le résultat se copie directement dans le document en cours de rédaction."}}]}</script>
@@ -291,7 +293,7 @@
   <div class="container">
     <div class="tlaws-grid">
       <div class="tlaws-lead"><h2>Les textes qu'un contrat cite tous les jours</h2><p>Le Code des obligations porte l'essentiel du vocabulaire contractuel suisse. Mais un contrat en cite d'autres dès qu'il touche la propriété, le défaut de paiement ou une partie établie à l'étranger.</p></div>
-      <div class="tlaws-list"><div class="tlaw"><span class="ab">CO</span><div><b>Code des obligations</b><p>Il régit la formation, l'exécution et l'extinction des contrats ainsi que le droit des sociétés ; OR en allemand, CO en italien.</p></div></div><div class="tlaw"><span class="ab">CC</span><div><b>Code civil suisse</b><p>Il fixe les notions de personne, de propriété et de bonne foi auxquelles les contrats renvoient sans les redéfinir ; ZGB en allemand, CC en italien.</p></div></div><div class="tlaw"><span class="ab">LP</span><div><b>Loi fédérale sur la poursuite pour dettes et la faillite</b><p>Elle commande ce qui suit un défaut de paiement, du commandement de payer à la faillite ; SchKG en allemand, LEF en italien.</p></div></div><div class="tlaw"><span class="ab">LDIP</span><div><b>Loi fédérale sur le droit international privé</b><p>Elle désigne le droit applicable et le for compétent dès qu'une partie ou une prestation se trouve à l'étranger ; IPRG en allemand, LDIP en italien.</p></div></div></div>
+      <div class="tlaws-list"><div class="tlaw"><span class="ab">CO</span><div><b><a href="https://www.fedlex.admin.ch/eli/cc/27/317_321_377/fr" rel="noopener" target="_blank">Code des obligations</a></b><p>Il régit la formation, l'exécution et l'extinction des contrats ainsi que le droit des sociétés ; OR en allemand, CO en italien.</p></div></div><div class="tlaw"><span class="ab">CC</span><div><b><a href="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/fr" rel="noopener" target="_blank">Code civil suisse</a></b><p>Il fixe les notions de personne, de propriété et de bonne foi auxquelles les contrats renvoient sans les redéfinir ; ZGB en allemand, CC en italien.</p></div></div><div class="tlaw"><span class="ab">LP</span><div><b><a href="https://www.fedlex.admin.ch/eli/cc/11/529_488_529/fr" rel="noopener" target="_blank">Loi fédérale sur la poursuite pour dettes et la faillite</a></b><p>Elle commande ce qui suit un défaut de paiement, du commandement de payer à la faillite ; SchKG en allemand, LEF en italien.</p></div></div><div class="tlaw"><span class="ab">LDIP</span><div><b><a href="https://www.fedlex.admin.ch/eli/cc/1988/1776_1776_1776/fr" rel="noopener" target="_blank">Loi fédérale sur le droit international privé</a></b><p>Elle désigne le droit applicable et le for compétent dès qu'une partie ou une prestation se trouve à l'étranger ; IPRG en allemand, LDIP en italien.</p></div></div></div>
     </div>
   </div>
 </section>
@@ -337,6 +339,7 @@
         <a href="../../../fr/" class="logo"><img src="../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
         <p>Le moteur de traduction du droit, de la fiscalité et de la finance suisses. Une solution entièrement suisse : entité, infrastructure et moteur LexMachina, pour une précision quadrilingue et une souveraineté totale des données.</p>
         <p class="footer-iso">ISO&nbsp;27001 · Hébergement en Suisse (Infomaniak) · nLPD et RGPD</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on sur LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
       </div>
       <div>
         <p class="ft-h">Plateforme</p>
@@ -402,6 +405,6 @@
   </div>
 </footer>
 
-<script src="../../../assets/nav.js?v=27f13fb3" defer></script>
+<script src="../../../assets/nav.js?v=2e3b592c" defer></script>
 </body>
 </html>
