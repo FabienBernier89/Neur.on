@@ -387,7 +387,7 @@
       },
       {
         "k": "Prioritäten",
-        "v": "Ein Fälligkeitsdatum und eine Reihenfolge der Dateien legen Sie bei der Offerte fest."
+        "v": "Einen Liefertermin und eine Reihenfolge der Dateien legen Sie bei der Offerte fest."
       },
       {
         "k": "Zugriffsrechte",
@@ -465,7 +465,7 @@
     "faq": [
       {
         "q": "Wie wird die Offerte berechnet?",
-        "r": "Aus der Zahl der Normseiten, die in jeder Datei erkannt wird, der erkannten juristischen Kategorie, der gewählten Lektoratsstufe und dem Fälligkeitsdatum. Lieferfrist und Kosten erscheinen in der Anwendung vor jeder Freigabe."
+        "r": "Aus der Zahl der Normseiten, die in jeder Datei erkannt wird, der erkannten juristischen Kategorie, der gewählten Lektoratsstufe und dem Liefertermin. Lieferfrist und Kosten erscheinen in der Anwendung vor jeder Freigabe."
       },
       {
         "q": "Können wir intern statt extern prüfen lassen?",
