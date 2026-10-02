@@ -450,7 +450,7 @@
     "voisins": [
       ["allemand-anglais", "Allemand vers anglais", "Le sens inverse, pour un lecteur de common law"],
       ["francais-anglais", "Français vers anglais", "Le droit suisse romand pour un dossier international"],
-      ["allemand-francais", "Allemand vers français", "La paire interne la plus demandée"]
+      ["allemand-francais", "Allemand vers français", "Entre deux langues nationales"]
     ]
   },
 
@@ -562,7 +562,7 @@
     "cta_p": "Une démonstration avec un spécialiste du droit suisse, sur vos formats et vos délais.",
     "voisins": [
       ["anglais-allemand", "Anglais vers allemand", "Les contrats anglais soumis au droit suisse"],
-      ["allemand-francais", "Allemand vers français", "La paire interne la plus demandée"],
+      ["allemand-francais", "Allemand vers français", "Entre deux langues nationales"],
       ["italien-francais", "Italien vers français", "La troisième langue officielle, et ses termes propres"]
     ]
   },
@@ -674,7 +674,7 @@
     "cta_t": "Faites vérifier un dossier tessinois par un juriste-linguiste",
     "cta_p": "Une démonstration sur vos documents, avec la terminologie officielle des trois langues.",
     "voisins": [
-      ["allemand-francais", "Allemand vers français", "La paire interne la plus demandée"],
+      ["allemand-francais", "Allemand vers français", "Entre deux langues nationales"],
       ["francais-allemand", "Français vers allemand", "Le français romand pour un lecteur alémanique"],
       ["francais-anglais", "Français vers anglais", "Le droit suisse romand pour un dossier international"]
     ]

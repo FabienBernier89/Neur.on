@@ -4,7 +4,7 @@
     "short": "Anwaltskanzleien",
     "resume": "Vertrauliche Akten rasch übersetzen, ohne dass das Dossier die Schweiz verlässt.",
     "title": "Übersetzung für Anwaltskanzleien in der Schweiz · Neur.on",
-    "description": "Prozessführung, Schiedsverfahren, M&A: Akten und Verträge unter Berufsgeheimnis übersetzen, in Schweizer Terminologie, geprüft von juristischen Übersetzern.",
+    "description": "Übersetzung für Anwaltskanzleien: Prozess-, Schieds- und M&A-Akten sowie Verträge unter Berufsgeheimnis, in Schweizer Terminologie, juristisch lektoriert.",
     "lede": "Anwaltskanzleien.",
     "h1": "Ein Dossier übersetzen, ohne dass es die Schweiz verlässt",
     "lead": "Vierhundert Seiten Akten vor der Verhandlung. Ein Vertrag, der heute Abend fertig sein muss. Eine Rechtsschrift, die wörtlich zu zitieren ist. Corrext erledigt all das in einer Schweizer Umgebung, mit der Terminologie der amtlichen Texte und einem juristischen Lektorat, das Sie im selben Fenster bestellen.",
@@ -60,7 +60,7 @@
       },
       {
         "k": "Verbindliches Dokument",
-        "v": "Im Projektmanagement bestellen Sie eine Light review oder Full review durch eine juristische Übersetzerin oder einen juristischen Übersetzer, oder eine Double review mit Zertifikat durch eine spezialisierte Agentur."
+        "v": "Im Projektmanagement bestellen Sie eine Light review oder Full review durch eine juristische Übersetzerin oder einen juristischen Übersetzer, oder Double review und beglaubigte Übersetzung durch eine spezialisierte Agentur."
       },
       {
         "k": "Einreichung bei einer Behörde",
@@ -146,7 +146,7 @@
       },
       {
         "q": "Wer prüft Dokumente, die an Dritte gehen?",
-        "r": "Eine juristische Übersetzerin oder ein juristischer Übersetzer, als Light review oder Full review. Für eine Double review mit Zertifikat sind es zwei Übersetzungsfachleute und eine spezialisierte Agentur. Die Stufe wählen Sie pro Dokument, mit Lieferfrist vor der Freigabe."
+        "r": "Eine juristische Übersetzerin oder ein juristischer Übersetzer, als Light review oder Full review. Für Double review und beglaubigte Übersetzung sind es zwei Übersetzungsfachleute und eine spezialisierte Agentur. Die Stufe wählen Sie pro Dokument, und die Lieferfrist sehen Sie vor der Freigabe."
       },
       {
         "q": "Können meine eigenen Mitarbeitenden das Lektorat machen?",
@@ -162,7 +162,7 @@
     "temoignage": {
       "exemple": true,
       "citation": "Vierhundert Seiten Akten auf Deutsch kamen zehn Tage vor der Verhandlung. Mit Corrext las das Team das Dossier schon am nächsten Tag auf Französisch, und jeden zweifelhaften Begriff prüften wir in CHnell, ohne das Dokument zu verlassen. Dass nichts die Schweiz verlässt, war für unseren Klienten nicht verhandelbar: Das gab den Ausschlag.",
-      "auteur": "Associée, département contentieux",
+      "auteur": "Partnerin, Abteilung Prozessführung",
       "fonction": "Wirtschaftskanzlei, Genf"
     }
   },
@@ -171,7 +171,7 @@
     "short": "Banken und Finanzinstitute",
     "resume": "Bankgeheimnis, FINMA-Anforderungen und mehrsprachige Berichte, ohne Transfer ins Ausland.",
     "title": "Übersetzung für Banken in der Schweiz · Neur.on",
-    "description": "Bankgeheimnis, FINMA-Rundschreiben, Prospekte und Geschäftsberichte: in vier Sprachen übersetzt, in der Schweiz verarbeitet, mit amtlicher Terminologie.",
+    "description": "Übersetzung für Banken: Bankgeheimnis, FINMA-Rundschreiben, Prospekte, Geschäftsberichte. Vier Sprachen, Verarbeitung in der Schweiz, amtliche Terminologie.",
     "lede": "Banken und Finanzinstitute.",
     "h1": "Aufsichtsrechtliches Vokabular, in der Schweiz übersetzt",
     "lead": "Ein FINMA-Rundschreiben, ein Fondsprospekt, eine Compliance-Richtlinie, ein Geschäftsbericht: Diese Texte werden zitiert, verglichen und archiviert. Corrext übersetzt sie mit den Begriffen der amtlichen Texte und behält die Kontrolle über den Ort der Verarbeitung.",
@@ -217,7 +217,7 @@
       },
       {
         "k": "Geschäftsberichte",
-        "v": "Wiederkehrende Volumen laufen über das Projektmanagement, mit einer Full review oder, wenn das Dokument veröffentlicht wird, mit Double review und Beglaubigung."
+        "v": "Wiederkehrende Volumen laufen über das Projektmanagement, mit einer Full review oder, wenn das Dokument veröffentlicht wird, mit der Stufe Double review und beglaubigte Übersetzung."
       },
       {
         "k": "Interne Richtlinien",
@@ -328,7 +328,7 @@
     "temoignage": {
       "exemple": true,
       "citation": "Die Anfrage der Behörde kam an einem Freitag auf Deutsch, die Antwort wurde auf Französisch und Italienisch erwartet. Die Arbeitsfassungen lagen innert einer Stunde vor, und jeder aufsichtsrechtliche Begriff wurde vor dem Versand in seiner amtlichen Quelle geprüft. Für unsere Geschäftsleitung war die Speicherung der Dokumente in der Schweiz die Grundvoraussetzung.",
-      "auteur": "Responsable compliance",
+      "auteur": "Leitung Compliance",
       "fonction": "Privatbank, Zürich"
     }
   },
@@ -337,7 +337,7 @@
     "short": "Rechtsabteilungen",
     "resume": "Einen zersplitterten Übersetzungsprozess wieder in den Griff bekommen, mit nachvollziehbaren Offerten.",
     "title": "Übersetzung für Rechtsabteilungen und Legal Ops · Neur.on",
-    "description": "Übersetzungen zentral in der Schweiz: Offerte und Lieferfrist sofort, internes oder externes Lektorat, Translation Memory, Zugriff pro Dokument.",
+    "description": "Übersetzung für Rechtsabteilungen in der Schweiz: Offerte und Lieferfrist sofort, internes oder externes Lektorat, Translation Memory, Zugriff pro Dokument.",
     "lede": "Rechtsabteilungen und Legal Ops.",
     "h1": "Übersetzung, die sich messen lässt",
     "lead": "Anfragen, die in sechs Richtungen gehen. Rechnungen von vier Dienstleistern. Und niemand weiss, was schon übersetzt wurde. Corrext vereint Anfrage, Offerte, Lektorat und Sprachressourcen in einer einzigen Umgebung, gehostet in der Schweiz.",
@@ -493,7 +493,7 @@
     "temoignage": {
       "exemple": true,
       "citation": "Wir wussten nicht, wie viel Zeit die Übersetzung das Team kostet. Die Offerte zeigt jetzt vor jeder Freigabe Vorbereitung, internes und externes Lektorat: Wir entscheiden auf Grundlage von Zahlen. Und bereits korrigierte Klauseln beginnen nicht mehr bei null.",
-      "auteur": "Directeur juridique",
+      "auteur": "Leiter Rechtsabteilung",
       "fonction": "Industriekonzern, Westschweiz"
     }
   },
@@ -502,7 +502,7 @@
     "short": "Behörden und Verwaltung",
     "resume": "Institutionelle Viersprachigkeit, mit Daten, die die Schweiz nicht verlassen.",
     "title": "Übersetzung für Behörden und Verwaltung · Neur.on",
-    "description": "Gerichte und Verwaltungen: Übersetzen Sie Entscheide, Verfügungen und Berichte in vier Sprachen, verarbeitet in der Schweiz, mit der Terminologie der Gesetze.",
+    "description": "Übersetzung für Behörden und Verwaltung: Entscheide, Berichte und amtliche Dokumente in vier Sprachen, in der Schweiz verarbeitet, mit Gesetzesterminologie.",
     "lede": "Behörden und Verwaltung.",
     "h1": "Übersetzungen, die die Schweiz nie verlassen",
     "lead": "Eine Verfügung, die in der Sprache der Partei zu eröffnen ist. Ein Bericht, der in drei Amtssprachen erscheint. Ein Dossier für eine ausländische Behörde. Corrext arbeitet mit der Terminologie der veröffentlichten Texte und hält die Verarbeitung in der Schweiz.",
@@ -657,7 +657,7 @@
     "temoignage": {
       "exemple": true,
       "citation": "Unsere Entscheide müssen in der Sprache der Partei eröffnet werden, oft innert weniger Tage. Die Gerichtskanzlei geht jetzt von einer Fassung aus, die Begriff für Begriff in den veröffentlichten Texten geprüft und dann von einer juristischen Übersetzerin oder einem juristischen Übersetzer lektoriert wurde. Dass nichts die Schweiz verlässt, hat die Freigabe durch unsere Informatik vereinfacht.",
-      "auteur": "Greffier en chef",
+      "auteur": "Leitender Gerichtsschreiber",
       "fonction": "Erstinstanzliches Gericht, zweisprachiger Kanton"
     }
   },
@@ -666,7 +666,7 @@
     "short": "Treuhand und Beratung",
     "resume": "Statuten, Auszüge, Berichte und Steuerdokumente, beglaubigt, wenn es verlangt wird.",
     "title": "Übersetzung für Treuhand, Revision und Beratung · Neur.on",
-    "description": "Statuten, Handelsregisterauszüge, Revisionsberichte, Steuerdokumente: Unternehmensdokumente übersetzen und beglaubigen lassen, verarbeitet in der Schweiz.",
+    "description": "Übersetzung für Treuhand und Revision: Statuten, Handelsregisterauszüge, Revisionsberichte, Steuerdokumente, übersetzt und beglaubigt in der Schweiz.",
     "lede": "Treuhand und Beratung.",
     "h1": "Unternehmensdokumente übersetzt und beglaubigt",
     "lead": "Statuten, Handelsregisterauszüge, Revisionsberichte, Steuerdokumente: Ihre Arbeit dreht sich um amtliche Dokumente, deren Übersetzung manchmal beglaubigt, notariell beglaubigt oder mit Apostille versehen sein muss. Corrext deckt die ganze Kette ab, vom schnellen Lesen bis zur Apostille.",
@@ -727,7 +727,7 @@
       },
       {
         "k": "30 Sprachen",
-        "v": "Für Empfängerinnen und Empfänger in anderen Sprachen deckt die Plattform insgesamt 30 Sprachen ab."
+        "v": "Für Empfängerinnen und Empfänger, die andere Sprachen lesen, deckt die Plattform insgesamt 30 Sprachen ab."
       }
     ],
     "who_titre": "Drei wiederkehrende Anfragen",
@@ -760,7 +760,7 @@
     "gov_etapes": [
       {
         "t": "Beglaubigung durch Corrext.",
-        "d": "Vom Anbieter unterzeichnete und gestempelte Bestätigung, für den üblichen Gebrauch."
+        "d": "Vom Anbieter unterzeichnete und gestempelte Bescheinigung, für den üblichen Gebrauch."
       },
       {
         "t": "Notarielle Beglaubigung.",
@@ -781,7 +781,7 @@
       {
         "href": "fr/corrext/traduction-texte-et-document/",
         "t": "Text- und Dokumentübersetzung",
-        "d": "Einen Anhang oder Statuten schnell lesen."
+        "d": "Anhänge oder Statuten schnell lesen."
       },
       {
         "href": "fr/corrext/gestion-de-projet/",
@@ -809,7 +809,7 @@
       },
       {
         "q": "Und die übrigen Unternehmensdokumente?",
-        "r": "Statuten, Protokolle sowie Berichte samt Anhang laufen über das Projektmanagement, mit der Lektoratsstufe, die zur empfangenden Stelle passt, bis zur Double review mit Zertifikat durch eine spezialisierte Agentur."
+        "r": "Statuten, Protokolle sowie Berichte samt Anhang laufen über das Projektmanagement, mit der Lektoratsstufe, die zur empfangenden Stelle passt, bis zur Stufe Double review und beglaubigte Übersetzung durch eine spezialisierte Agentur."
       },
       {
         "q": "Bleiben Mandantendossiers vertraulich?",
@@ -820,8 +820,8 @@
     "cta_p": "Eine Demo mit Ihren Statuten, Auszügen und Berichten, in den Sprachen, die Ihre Empfänger verlangen.",
     "temoignage": {
       "exemple": true,
-      "citation": "Ein Mandant eröffnete eine Tochtergesellschaft in Deutschland, und die Bank verlangte einen übersetzten Handelsregisterauszug mit Apostille. Die Bestellung lief in wenigen Minuten online, auf der richtigen Beglaubigungsstufe. Den Anhang zu Revisionsberichten lesen wir jetzt noch am selben Tag in Übersetzung.",
-      "auteur": "Expert fiduciaire",
+      "citation": "Ein Mandant eröffnete eine Tochtergesellschaft in Deutschland, und die Bank verlangte einen übersetzten Handelsregisterauszug mit Apostille. Die Bestellung lief in wenigen Minuten online, auf der richtigen Beglaubigungsstufe. Beim Anhang zu Revisionsberichten lesen wir die Übersetzung jetzt noch am selben Tag.",
+      "auteur": "Treuhandexperte",
       "fonction": "Treuhandgesellschaft, Lausanne"
     }
   },
@@ -830,7 +830,7 @@
     "short": "LegalTechs und Verlage",
     "resume": "Einen Schweizer Übersetzungsmotor für Recht in Ihr Produkt integrieren, per API oder als White Label.",
     "title": "Juristische Übersetzung für LegalTechs und Verlage · Neur.on",
-    "description": "Integrieren Sie LexMachina und die Terminologie des Schweizer Rechts in Ihr Produkt: REST-API, On-Premises, vier Kernsprachen, Verarbeitung in der Schweiz.",
+    "description": "Juristische Übersetzung per API für LegalTechs: LexMachina und Schweizer Rechtsterminologie, On-Premises, vier Kernsprachen, Verarbeitung in der Schweiz.",
     "lede": "LegalTechs und juristische Verlage.",
     "h1": "Unser Übersetzungsmotor in Ihrem Produkt",
     "lead": "Ihre Nutzerinnen und Nutzer sind Schweizer Juristinnen und Juristen. Sie erkennen sofort einen ungenauen Gesetzesverweis oder einen Begriff, der in keinem amtlichen Text vorkommt. LexMachina und die Konkordanz CHnell lassen sich in Ihr Produkt integrieren, mit einer Verarbeitung, die in der Schweiz bleiben kann.",
@@ -986,7 +986,7 @@
     "temoignage": {
       "exemple": true,
       "citation": "Unsere Abonnentinnen und Abonnenten lesen die Rechtsprechung jetzt in ihrer Sprache, und jeder Begriff verweist auf seinen Gebrauch in den amtlichen Texten. Wir haben den Übersetzungsmotor über die API angebunden, ohne selbst ein Modell zu bauen. Das Argument, das unsere Kunden überzeugt hat: Die Verarbeitung bleibt in der Schweiz.",
-      "auteur": "Directrice produit",
+      "auteur": "Produktleiterin",
       "fonction": "Juristischer Fachverlag, Zürich"
     }
   }

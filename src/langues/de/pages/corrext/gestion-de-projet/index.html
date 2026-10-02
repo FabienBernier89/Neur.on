@@ -143,7 +143,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
    "name": "Was ist eine Normseite?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Die Zähleinheit, die Corrext für jede Datei gleich nach dem Hochladen anzeigt, neben der erkannten Sprache und der juristischen Kategorie. Geschätzte Lieferfrist und Offerte beruhen auf dieser Anzahl Normseiten. Im Beispiel dieser Seite umfasst ein Versicherungsvertrag von wenigen Seiten 2,5 Normseiten."
+    "text": "Die Normseite ist die Zähleinheit, die Corrext für jede Datei gleich nach dem Hochladen anzeigt, neben der erkannten Sprache und der juristischen Kategorie. Geschätzte Lieferfrist und Offerte beruhen auf dieser Anzahl Normseiten. Im Beispiel dieser Seite umfasst ein Versicherungsvertrag von wenigen Seiten 2,5 Normseiten."
    }
   },
   {
@@ -151,7 +151,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
    "name": "Welches sind die drei Stufen des externen Lektorats?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Light review durch juristische Übersetzende: Wesentliche Fehler, Auslassungen und Sinnfehler der maschinellen Übersetzung werden korrigiert. Das Ergebnis ist eine vollständige und sinngetreue Übersetzung für das Verständnis und die interne Weitergabe. Full review durch juristische Übersetzende: Die Übersetzung wird zusätzlich in Bezug auf Kohärenz, idiomatische Wendungen, Stil und Ton überarbeitet und ist bereit für Dritte. Double review und beglaubigte Übersetzung durch ein spezialisiertes Übersetzungsbüro: vollständiges Lektorat durch zwei qualifizierte juristische Übersetzende und ein unterzeichnetes Zertifikat, das Richtigkeit und Unparteilichkeit der Übersetzung bestätigt, für den rechtlichen Gebrauch, die Publikation oder die Einreichung bei Behörden."
+    "text": "Light review durch juristische Übersetzende: Wesentliche Fehler, Auslassungen und Sinnfehler der maschinellen Übersetzung werden korrigiert. Das Ergebnis ist eine vollständige und sinngetreue Übersetzung für das Verständnis und die interne Weitergabe. Full review durch juristische Übersetzende: Die Übersetzung wird zusätzlich in Bezug auf Kohärenz, idiomatische Wendungen, Stil und Ton überarbeitet und ist bereit für Dritte. Double review und beglaubigte Übersetzung durch ein spezialisiertes Übersetzungsbüro: vollständiges Lektorat durch zwei qualifizierte juristische Übersetzende und eine unterzeichnete Bescheinigung, die Richtigkeit und Unparteilichkeit der Übersetzung bestätigt, für den rechtlichen Gebrauch, die Publikation oder die Einreichung bei Behörden."
    }
   },
   {
@@ -159,7 +159,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
    "name": "Wer lektoriert meine Dokumente?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Das entscheiden Sie Datei für Datei. Bei Internal review ist es Ihr eigenes Team: Sie geben seinen Preis pro Normseite und seinen ungefähren Stundensatz an, damit diese Arbeit in der Offerte bewertet wird. Beim externen Lektorat sind es juristische Übersetzende für Light review und Full review, oder ein spezialisiertes Übersetzungsbüro mit zwei Übersetzenden und einem unterzeichneten Zertifikat für Double review und beglaubigte Übersetzung."
+    "text": "Das entscheiden Sie Datei für Datei. Bei Internal review ist es Ihr eigenes Team: Sie geben seinen Preis pro Normseite und seinen ungefähren Stundensatz an, damit diese Arbeit in der Offerte bewertet wird. Beim externen Lektorat sind es juristische Übersetzende für Light review und Full review, oder ein spezialisiertes Übersetzungsbüro mit zwei Übersetzenden und einer unterzeichneten Bescheinigung für Double review und beglaubigte Übersetzung."
    }
   },
   {
@@ -323,8 +323,8 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
                 <p class="cx-h4">Einstellungen für das interne Lektorat</p>
                 <div class="cxp-spec">
                   <label>Anzahl Normseiten im internen Lektorat <input type="text" class="cxp-input" value="2,5" readonly></label>
-                  <label>Lektoratspreis pro Normseite, von Ihnen verrechnet <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
-                  <label>Ungefährer Stundensatz für das Lektorat <input type="text" class="cxp-input" value="masqué en démo" disabled></label>
+                  <label>Lektoratspreis pro Normseite, von Ihnen verrechnet <input type="text" class="cxp-input" value="in der Demo ausgeblendet" disabled></label>
+                  <label>Ungefährer Stundensatz für das Lektorat <input type="text" class="cxp-input" value="in der Demo ausgeblendet" disabled></label>
                 </div>
               </div>
               <aside class="cxp-est" aria-label="Geschätzte Lieferfrist">
@@ -369,16 +369,16 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
                           <td class="fn">Contrat_assurance.docx</td>
                           <td>FR → DE</td>
                           <td><select class="cx-sel" id="cxpRev" aria-label="Lektorat"><option selected>Extern</option><option>Intern</option></select></td>
-                          <td><select class="cx-sel" id="cxpLevel" aria-label="Lektoratsstufe"><option value="" selected>Lektorat wählen</option><option value="light">Leichtes Lektorat (juristische Übersetzung)</option><option value="full">Vollständiges Lektorat (juristische Übersetzung)</option><option value="double">Doppeltes Lektorat und beglaubigte Übersetzung</option></select></td>
+                          <td><select class="cx-sel" id="cxpLevel" aria-label="Lektoratsstufe"><option value="" selected>Lektorat wählen</option><option value="light">Light review (juristische Übersetzende)</option><option value="full">Full review (juristische Übersetzende)</option><option value="double">Double review und beglaubigte Übersetzung</option></select></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   <div class="cxp-info" id="cxpInfo" hidden>
                     <dl>
-                      <div><dt>Leichtes Lektorat (juristische Übersetzung)</dt><dd>Eine Übersetzerin oder ein Übersetzer lektoriert die maschinelle Übersetzung und korrigiert wesentliche Fehler, Auslassungen und Sinnfehler. Das Ergebnis ist eine vollständige und sinngetreue Übersetzung, empfohlen, um das Dokument zu verstehen und intern weiterzugeben.</dd></div>
-                      <div><dt>Vollständiges Lektorat (juristische Übersetzung)</dt><dd>Eine Übersetzerin oder ein Übersetzer lektoriert die maschinelle Übersetzung, passt sie an und überarbeitet sie, mit besonderem Augenmerk auf Kohärenz, idiomatische Wendungen, Stil und Ton. Sie erhalten eine gute juristische Übersetzung Ihrer Dokumente, bereit zur Weitergabe an Dritte.</dd></div>
-                      <div><dt>Doppeltes Lektorat und beglaubigte Übersetzung</dt><dd>Vollständiges Lektorat der Dokumente durch zwei qualifizierte juristische Übersetzende. Ein Zertifikat, unterzeichnet vom zuständigen spezialisierten Übersetzungsbüro, bestätigt Richtigkeit und Unparteilichkeit der Übersetzung. Geeignet für Dokumente für den rechtlichen Gebrauch, die Publikation oder Behörden.</dd></div>
+                      <div><dt>Light review (juristische Übersetzende)</dt><dd>Eine Übersetzerin oder ein Übersetzer lektoriert die maschinelle Übersetzung und korrigiert wesentliche Fehler, Auslassungen und Sinnfehler. Das Ergebnis ist eine vollständige und sinngetreue Übersetzung, empfohlen, um das Dokument zu verstehen und intern weiterzugeben.</dd></div>
+                      <div><dt>Full review (juristische Übersetzende)</dt><dd>Eine Übersetzerin oder ein Übersetzer lektoriert die maschinelle Übersetzung, passt sie an und überarbeitet sie, mit besonderem Augenmerk auf Kohärenz, idiomatische Wendungen, Stil und Ton. Sie erhalten eine gute juristische Übersetzung Ihrer Dokumente, bereit zur Weitergabe an Dritte.</dd></div>
+                      <div><dt>Double review und beglaubigte Übersetzung</dt><dd>Vollständiges Lektorat der Dokumente durch zwei qualifizierte juristische Übersetzende. Eine Bescheinigung, unterzeichnet vom zuständigen spezialisierten Übersetzungsbüro, bestätigt Richtigkeit und Unparteilichkeit der Übersetzung. Geeignet für Dokumente für den rechtlichen Gebrauch, die Publikation oder Behörden.</dd></div>
                     </dl>
                   </div>
                   <p class="cx-note">Demo: Die Beträge der Offerte werden nicht angezeigt.</p>
@@ -392,7 +392,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
                   <div><dt>Externes Lektorat</dt><dd id="cxpEstExt">-</dd></div>
                   <div class="tot"><dt>Geschätzte Dauer des Lektorats</dt><dd id="cxpEstTot">-</dd></div>
                 </dl>
-                <p class="cx-note" id="cxpEstNote" hidden>Demo: Erfasst wurde nur die Lieferfrist der Stufe Vollständiges Lektorat; die übrigen Fristen zeigt die Anwendung an.</p>
+                <p class="cx-note" id="cxpEstNote" hidden>Demo: Erfasst wurde nur die Lieferfrist der Stufe Full review; die übrigen Fristen zeigt die Anwendung an.</p>
                 <button type="button" class="cx-btn" id="cxpQuote" disabled>Offerte erstellen</button>
                 <p class="cxp-banner" id="cxpQuoteMsg" role="status" hidden>Demo: Es wird keine Offerte erstellt oder gesendet.</p>
               </aside>
@@ -436,7 +436,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
         <div class="fact"><b>File overview</b><p>Formate .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, <strong class="kf">50 MB pro Datei</strong>; die Anwendung empfiehlt das Originalformat (.docx oder .xlsx statt .pdf). Für jede Datei: <strong class="kf">Anzahl Normseiten</strong>, erkannte Sprache und erkannte juristische Kategorie, beide änderbar.<small>Beobachtetes Beispiel: 2,5 Normseiten, French, Private Insurance.</small></p></div>
         <div class="fact"><b>Internal review</b><p><strong class="kf">Ihr Team lektoriert selbst</strong> die maschinelle Übersetzung. Sie geben die Anzahl Normseiten, den Preis pro Seite und den ungefähren Stundensatz Ihres Lektorats an, <strong class="kf">damit es in der Offerte bewertet wird</strong>.<small>Angezeigte Lieferfrist für das Beispiel mit 2,5 Normseiten: 1-2 Stunden.</small></p></div>
         <div class="fact"><b>Custom workflow</b><p><strong class="kf">Fälligkeitsdatum</strong> (Wochenenden ausgegraut), Kontaktlink für eine schnellere Lieferung, Priorität zwischen den Dateien, dann für jede Datei die Wahl zwischen <strong class="kf">internem und externem Lektorat</strong> und die Lektoratsstufe. Die Schaltfläche wird zu Generate quote.</p></div>
-        <div class="fact"><b>Die drei Stufen</b><p><strong class="kf">Light review</strong> durch juristische Übersetzende: wesentliche Fehler, Auslassungen und Sinnfehler korrigiert, zum Verstehen und für die interne Weitergabe. <strong class="kf">Full review</strong> durch juristische Übersetzende: Kohärenz, idiomatische Wendungen, Stil und Ton, bereit für Dritte. <strong class="kf">Double review und beglaubigte Übersetzung</strong> durch ein spezialisiertes Übersetzungsbüro: zwei juristische Übersetzende und ein unterzeichnetes Zertifikat, für den rechtlichen Gebrauch, die Publikation oder Behörden.</p></div>
+        <div class="fact"><b>Die drei Stufen</b><p><strong class="kf">Light review</strong> durch juristische Übersetzende: wesentliche Fehler, Auslassungen und Sinnfehler korrigiert, zum Verstehen und für die interne Weitergabe. <strong class="kf">Full review</strong> durch juristische Übersetzende: Kohärenz, idiomatische Wendungen, Stil und Ton, bereit für Dritte. <strong class="kf">Double review und beglaubigte Übersetzung</strong> durch ein spezialisiertes Übersetzungsbüro: zwei juristische Übersetzende und eine unterzeichnete Bescheinigung, für den rechtlichen Gebrauch, die Publikation oder Behörden.</p></div>
         <div class="fact"><b>Offerte und Lieferfrist</b><p><strong class="kf">Sofort berechnet</strong> aus Normseiten, erkannter Kategorie, Lektoratsstufe und Fälligkeitsdatum: Vorbereitung, internes Lektorat, externes Lektorat und gesamte Lieferfrist, <strong class="kf">vor jeder Bestellung</strong>.<small>Beobachtetes Beispiel: Full review, Fälligkeit in zehn Tagen, 2,5 Normseiten: 1 Tag.</small></p></div>
         <div class="fact"><b>Translation Memory</b><p>Projekte mit Standard confidentiality werden auf den Schweizer Servern von Corrext gespeichert und sind <strong class="kf">ausschliesslich für Sie</strong> als Translation Memory für Ihre künftigen Projekte wiederverwendbar. <strong class="kf">Im Modus Highly sensitive wird nichts wiederverwendet</strong>.</p></div>
       </div>
@@ -448,7 +448,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
 <section class="who who-s">
   <div class="container">
     <div class="sec-head">
-      <h2>Drei Situationen für das Projektmanagement</h2>
+      <h2>Drei Situationen, in denen das Projektmanagement übernimmt</h2>
     </div>
     <div class="ws-grid">
       <article class="ws-item">
@@ -457,7 +457,7 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
       </article>
       <article class="ws-item">
         <h3><span class="ws-ic">{{ICONE:globe}}</span><span><span class="pn">Anwältinnen und Anwälte.</span> Akten für eine Korrespondenzkanzlei im Ausland</span></h3>
-        <p>Projekt mit Highly sensitive content: Speicherung und Verarbeitung in der Schweiz, keine Wiederverwendung im Translation Memory. Full review durch juristische Übersetzende für Akten, die bereit zur Weitergabe sind, mit dem Fälligkeitsdatum bereits in der Offerte; Double review und beglaubigte Übersetzung, wenn die Empfängerbehörde ein Zertifikat verlangt.</p>
+        <p>Projekt mit Highly sensitive content: Speicherung und Verarbeitung in der Schweiz, keine Wiederverwendung im Translation Memory. Full review durch juristische Übersetzende für Akten, die bereit zur Weitergabe sind, mit dem Fälligkeitsdatum bereits in der Offerte; Double review und beglaubigte Übersetzung, wenn die Empfängerbehörde eine Bescheinigung verlangt.</p>
       </article>
       <article class="ws-item">
         <h3><span class="ws-ic">{{ICONE:equipe}}</span><span><span class="pn">Compliance.</span> Lektorat durch das interne Team</span></h3>
@@ -512,15 +512,15 @@ canonical: https://neur-on.ai/fr/corrext/gestion-de-projet/
       </details>
       <details class="faq-item">
         <summary>Was ist eine Normseite?</summary>
-        <p>Die Zähleinheit, die Corrext für jede Datei gleich nach dem Hochladen anzeigt, neben der erkannten Sprache und der juristischen Kategorie. Geschätzte Lieferfrist und Offerte beruhen auf dieser Anzahl Normseiten. Im Beispiel dieser Seite umfasst ein Versicherungsvertrag von wenigen Seiten 2,5 Normseiten.</p>
+        <p>Die Normseite ist die Zähleinheit, die Corrext für jede Datei gleich nach dem Hochladen anzeigt, neben der erkannten Sprache und der juristischen Kategorie. Geschätzte Lieferfrist und Offerte beruhen auf dieser Anzahl Normseiten. Im Beispiel dieser Seite umfasst ein Versicherungsvertrag von wenigen Seiten 2,5 Normseiten.</p>
       </details>
       <details class="faq-item">
         <summary>Welches sind die drei Stufen des externen Lektorats?</summary>
-        <p>Light review durch juristische Übersetzende: Wesentliche Fehler, Auslassungen und Sinnfehler der maschinellen Übersetzung werden korrigiert. Das Ergebnis ist eine vollständige und sinngetreue Übersetzung für das Verständnis und die interne Weitergabe. Full review durch juristische Übersetzende: Die Übersetzung wird zusätzlich in Bezug auf Kohärenz, idiomatische Wendungen, Stil und Ton überarbeitet und ist bereit für Dritte. Double review und beglaubigte Übersetzung durch ein spezialisiertes Übersetzungsbüro: vollständiges Lektorat durch zwei qualifizierte juristische Übersetzende und ein unterzeichnetes Zertifikat, das Richtigkeit und Unparteilichkeit der Übersetzung bestätigt, für den rechtlichen Gebrauch, die Publikation oder die Einreichung bei Behörden.</p>
+        <p>Light review durch juristische Übersetzende: Wesentliche Fehler, Auslassungen und Sinnfehler der maschinellen Übersetzung werden korrigiert. Das Ergebnis ist eine vollständige und sinngetreue Übersetzung für das Verständnis und die interne Weitergabe. Full review durch juristische Übersetzende: Die Übersetzung wird zusätzlich in Bezug auf Kohärenz, idiomatische Wendungen, Stil und Ton überarbeitet und ist bereit für Dritte. Double review und beglaubigte Übersetzung durch ein spezialisiertes Übersetzungsbüro: vollständiges Lektorat durch zwei qualifizierte juristische Übersetzende und eine unterzeichnete Bescheinigung, die Richtigkeit und Unparteilichkeit der Übersetzung bestätigt, für den rechtlichen Gebrauch, die Publikation oder die Einreichung bei Behörden.</p>
       </details>
       <details class="faq-item">
         <summary>Wer lektoriert meine Dokumente?</summary>
-        <p>Das entscheiden Sie Datei für Datei. Bei Internal review ist es Ihr eigenes Team: Sie geben seinen Preis pro Normseite und seinen ungefähren Stundensatz an, damit diese Arbeit in der Offerte bewertet wird. Beim externen Lektorat sind es juristische Übersetzende für Light review und Full review, oder ein spezialisiertes Übersetzungsbüro mit zwei Übersetzenden und einem unterzeichneten Zertifikat für Double review und beglaubigte Übersetzung.</p>
+        <p>Das entscheiden Sie Datei für Datei. Bei Internal review ist es Ihr eigenes Team: Sie geben seinen Preis pro Normseite und seinen ungefähren Stundensatz an, damit diese Arbeit in der Offerte bewertet wird. Beim externen Lektorat sind es juristische Übersetzende für Light review und Full review, oder ein spezialisiertes Übersetzungsbüro mit zwei Übersetzenden und einer unterzeichneten Bescheinigung für Double review und beglaubigte Übersetzung.</p>
       </details>
       <details class="faq-item">
         <summary>Sind Offerte und Lieferfrist wirklich sofort verfügbar?</summary>

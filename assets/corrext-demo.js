@@ -53,6 +53,18 @@
     }
   };
   var LANGS={de:"German",en:"English",it:"Italian"};
+  // notes de la démo dans la langue de la page (les libellés de l'interface Corrext restent en anglais)
+  var TX={
+    fr:{bientot:" (démo : bientôt)",lookup:"Démo : Fast Lookup est disponible sur les extraits « Contrat » et « Banque ».",
+        reph:"Démo : choisissez l'extrait « Contrat · art. 104 CO » pour la réécriture.",
+        style:"Démo : le style « {0} » n'est pas disponible sur cet extrait ; réglage par défaut appliqué. Styles réels de Corrext : Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
+        rnote:tx.rnote},
+    de:{bientot:" (Demo: bald verfügbar)",lookup:"Demo: Fast Lookup ist bei den Auszügen «Vertrag» und «Bank» verfügbar.",
+        reph:"Demo: Wählen Sie für die Umformulierung den Auszug «Vertrag · Art. 104 OR».",
+        style:"Demo: Der Stil «{0}» ist bei diesem Auszug nicht verfügbar, es gilt die Standardeinstellung. Stile in Corrext: Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
+        rnote:"Demo: Umformulierung beim Auszug «Vertrag · Art. 104 OR» verfügbar, mit der Standardeinstellung und dem Stil Simplified."}
+  };
+  var tx=TX[(document.documentElement.lang||"fr").slice(0,2)]||TX.fr;
   var $=function(id){return document.getElementById(id);};
   var cx=$("cx"); if(!cx) return;
   var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -62,7 +74,7 @@
 
   function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function setTargets(ex){
-    var d=EX[ex]; [].forEach.call(tgt.options,function(o){var ok=!!d.out[o.value]; o.disabled=!ok; o.textContent=LANGS[o.value]+(ok?"":" (démo : bientôt)");});
+    var d=EX[ex]; [].forEach.call(tgt.options,function(o){var ok=!!d.out[o.value]; o.disabled=!ok; o.textContent=LANGS[o.value]+(ok?"":tx.bientot);});
     if(!d.out[st.tgt]) st.tgt=d.def; tgt.value=st.tgt;
   }
   function loadExample(ex){
@@ -150,7 +162,7 @@
   function mark(text,terms){var h=esc(text); terms.forEach(function(t){h=h.split(esc(t)).join('<mark>'+esc(t)+'</mark>');}); return h;}
   function openLookup(){
     var d=EX[st.ex]; var cols=$("cxLkCols");
-    if(!d.lookup){cols.innerHTML='<div class="cell" style="grid-column:1 / -1">Démo : Fast Lookup est disponible sur les extraits « Contrat » et « Banque ».</div>'; modal.classList.add("on"); return;}
+    if(!d.lookup){cols.innerHTML='<div class="cell" style="grid-column:1 / -1">'+esc(tx.lookup)+'</div>'; modal.classList.add("on"); return;}
     $("cxLkQ").textContent=d.lookup.q; $("cxLkL1").textContent=d.lookup.l1; $("cxLkL2").textContent=d.lookup.l2;
     var h='<div class="colh"><i>'+esc(d.lookup.q)+'</i> in <b>'+esc(d.lookup.l1)+'</b><small>'+esc(d.lookup.count)+'</small></div><div class="colh r"><i>'+esc(d.lookup.q)+'</i> in <b>'+esc(d.lookup.l2)+'</b></div>';
     d.lookup.rows.forEach(function(r){h+='<div class="cell">'+mark(r.a,d.lookup.mark)+'</div><div class="cell r">'+mark(r.b,d.lookup.mark)+'</div><div class="meta"><span><span class="dom">'+esc(r.dom)+'</span>'+esc(r.src)+'</span><a>Show in context</a></div>';});
@@ -177,7 +189,7 @@
   var rsrc=$("cxRSrc"),rout=$("cxROut"),rcnt=$("cxRCnt"),pop=$("cxSetPop"),dot=$("cxSetDot"),rstyle=null,rTimer=null;
   function loadReph(){
     var d=EX[st.ex];
-    if(!d.reph){rsrc.value=""; rcnt.textContent="0 / 5000"; rout.innerHTML='<span class="ph">'+esc("Démo : choisissez l'extrait « Contrat · art. 104 CO » pour la réécriture.")+'</span>'; return;}
+    if(!d.reph){rsrc.value=""; rcnt.textContent="0 / 5000"; rout.innerHTML='<span class="ph">'+esc(tx.reph)+'</span>'; return;}
     rsrc.value=d.src; rcnt.textContent=d.src.length+" / 5000"; rephrase();
   }
   function rephrase(){
@@ -194,8 +206,8 @@
   $("cxSetApply").addEventListener("click",function(){
     var on=document.querySelector("#cxSetPop .cx-chip.on"); rstyle=on?on.getAttribute("data-style"):null;
     dot.classList.toggle("on",!!rstyle); pop.classList.remove("on");
-    if(rstyle&&rstyle!=="Simplified"){$("cxRNote").textContent="Démo : le style « "+rstyle+" » n'est pas disponible sur cet extrait ; réglage par défaut appliqué. Styles réels de Corrext : Formal legal, Financial, Simplified, Formal, Informal, Shorten."; rstyle=null; dot.classList.remove("on");}
-    else{$("cxRNote").textContent="Démo : réécriture disponible sur l'extrait « Contrat · art. 104 CO », avec le réglage par défaut et le style Simplified.";}
+    if(rstyle&&rstyle!=="Simplified"){$("cxRNote").textContent=tx.style.replace("{0}",rstyle); rstyle=null; dot.classList.remove("on");}
+    else{$("cxRNote").textContent=tx.rnote;}
     rephrase();
   });
   $("cxSetReset").addEventListener("click",function(){[].forEach.call(document.querySelectorAll("#cxSetPop .cx-chip"),function(x){x.classList.remove("on");}); rstyle=null; dot.classList.remove("on"); pop.classList.remove("on"); rephrase();});

@@ -4,9 +4,9 @@
     "short": "Deutsch-Französisch",
     "resume": "Schweizer Rechtsdeutsch ins Französische, ohne Umweg über Berlin.",
     "title": "Juristische Übersetzung Deutsch-Französisch · Neur.on",
-    "description": "Schweizer Rechtsdeutsch ins Französische übersetzen: OR, ZGB und SchKG richtig umgesetzt, Schweizer Schreibweise erkannt, Verarbeitung in der Schweiz.",
+    "description": "Juristische Übersetzung Deutsch-Französisch: Abkürzungen wie OR, ZGB und SchKG umgesetzt, Schweizer Schreibweise erkannt, Verarbeitung in der Schweiz.",
     "lede": "Übersetzung Deutsch-Französisch.",
-    "h1": "Schweizer Recht über die Sprachgrenze",
+    "h1": "Schweizer Recht über die Sprachgrenze hinweg",
     "lead": "Ein Zürcher Urteil, das in Genf gelesen wird. Ein Basler Vertrag, der in der Romandie unterzeichnet wird. Dafür braucht es zwei Schritte: das Schweizer Rechtsdeutsch samt Abkürzungen verstehen, dann das französische Wort desselben Gesetzes finden.",
     "promesses": [
       {
@@ -105,7 +105,7 @@
         "ref": "Art. 927 OR"
       }
     ],
-    "termes_note": "Sechs Begriffe, die das Schweizer Recht auf Deutsch und auf Französisch je eigen benennt, mit dem Artikel, der die Entsprechung festlegt. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "termes_note": "Sechs Begriffe, für die das Schweizer Recht auf Deutsch und auf Französisch je ein eigenes Wort hat, mit dem Artikel, der die Entsprechung festlegt. Die englische Spalte übernimmt, falls vorhanden, die Übersetzung des Bundes auf Fedlex (ohne Gesetzeskraft), sonst die gebräuchliche Formulierung.",
     "who_titre": "Drei Situationen, in denen dieses Sprachpaar den Tag bestimmt",
     "who": [
       {
@@ -118,7 +118,7 @@
         "vis": "signature",
         "a": "Transaktionen",
         "t": "AGB aus Zürich, in Genf unterzeichnet",
-        "p": "Die französische Fassung muss die Begriffe des Obligationenrechts verwenden, nicht deren Umschreibung. Die Full review durch eine juristische Übersetzerin oder einen juristischen Übersetzer bestellen Sie im Projektmanagement, mit der Lieferfrist vor der Freigabe."
+        "p": "Die französische Fassung muss die Begriffe des Obligationenrechts verwenden, nicht deren Umschreibung. Die Full review durch eine juristische Übersetzerin oder einen juristischen Übersetzer bestellen Sie im Projektmanagement. Die Lieferfrist sehen Sie vor der Freigabe."
       },
       {
         "vis": "institution",
@@ -155,18 +155,18 @@
     "voisins": [
       [
         "francais-allemand",
-        "Français vers allemand",
-        "Le sens inverse, avec ses propres pièges"
+        "Französisch-Deutsch",
+        "Die umgekehrte Richtung, mit eigenen Fallstricken"
       ],
       [
         "allemand-anglais",
-        "Allemand vers anglais",
-        "Le droit suisse expliqué à un lecteur de common law"
+        "Deutsch-Englisch",
+        "Schweizer Recht, erklärt für Leserinnen und Leser aus dem Common Law"
       ],
       [
         "italien-francais",
-        "Italien vers français",
-        "La troisième langue officielle, et ses termes propres"
+        "Italienisch-Französisch",
+        "Die dritte Amtssprache und ihre eigenen Begriffe"
       ]
     ]
   },
@@ -175,7 +175,7 @@
     "short": "Französisch-Deutsch",
     "resume": "Schweizer Rechtsfranzösisch in ein Deutsch, wie man es in Zürich, Bern oder Chur liest.",
     "title": "Übersetzung Französisch-Deutsch im Schweizer Recht · Neur.on",
-    "description": "Schweizer Rechtsfranzösisch ins Deutsche: Begriffe der Bundesgesetze, ss und Apostroph bei Tausendern, aus CO, LP und LDIP werden OR, SchKG und IPRG.",
+    "description": "Übersetzung Französisch-Deutsch im Schweizer Recht: Begriffe der Bundesgesetze, ss und Apostroph bei Tausendern, aus CO, LP und LDIP werden OR, SchKG und IPRG.",
     "lede": "Übersetzung Französisch-Deutsch.",
     "h1": "Rechtstexte für die Deutschschweiz",
     "lead": "Eine Westschweizer Rechtsschrift vor einer Deutschschweizer Instanz, AGB für die ganze Schweiz. Der deutsche Text muss die Wörter der Bundesgesetze verwenden, in Schweizer Schreibweise.",
@@ -206,7 +206,7 @@
       },
       {
         "k": "Nie ß",
-        "v": "Das Schweizer Hochdeutsch schreibt immer ss: Strasse, Massnahme, gemäss. Ein Text mit ß zeigt sofort, dass er nicht für die Schweiz geschrieben wurde.",
+        "v": "Das Schweizer Hochdeutsch schreibt immer ss: Strasse, Abschluss, gemäss. Ein Text mit ß zeigt sofort, dass er nicht für die Schweiz geschrieben wurde.",
         "s": "Das gilt auch für Kopfzeilen, Tabellen und Dateinamen."
       },
       {
@@ -227,7 +227,7 @@
         "s": "Mit Italienisch und Englisch sind es auch die einzigen Sprachen, die im Modus Highly sensitive content verfügbar sind."
       },
       {
-        "k": "Kohärenz über die Zeit",
+        "k": "Kohärenz auf Dauer",
         "v": "Ein Begriff muss im Vertrag samt Anhang und in den Nachträgen, die sechs Monate später unterzeichnet werden, gleich wiedergegeben werden. Die terminologischen Ressourcen von CHnell tragen diese Entscheidungen von einem Projekt ins nächste."
       }
     ],
@@ -275,7 +275,7 @@
         "ref": "Art. 107 OR"
       }
     ],
-    "termes_note": "Der Wortschatz des Gesellschafts- und Vertragsrechts, in der genauen Form der deutschen, französischen und italienischen Fassung des Obligationenrechts. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "termes_note": "Der Wortschatz des Gesellschafts- und Vertragsrechts, in der genauen Form der deutschen, französischen und italienischen Fassung des Obligationenrechts. Die englische Spalte übernimmt, falls vorhanden, die Übersetzung des Bundes auf Fedlex (ohne Gesetzeskraft), sonst die gebräuchliche Formulierung.",
     "who_titre": "Drei Momente, in denen die deutsche Fassung gefragt ist",
     "who": [
       {
@@ -309,11 +309,11 @@
       },
       {
         "q": "Können beide Fassungen eines Vertrags massgebend sein?",
-        "r": "Die Parteien können das vereinbaren, und bei einem zweisprachigen Schweizer Vertrag ist das häufig. Dann müssen beide Fassungen Begriff für Begriff abgeglichen werden, denn eine Abweichung im Wortschatz wird zu einer Abweichung im Recht. Für diesen Fall ist die Double review mit Zertifikat vorgesehen."
+        "r": "Die Parteien können das vereinbaren, und bei einem zweisprachigen Schweizer Vertrag ist das häufig. Dann müssen beide Fassungen Begriff für Begriff abgeglichen werden, denn eine Abweichung im Wortschatz wird zu einer Abweichung im Recht. Für diesen Fall ist die Stufe Double review und beglaubigte Übersetzung vorgesehen."
       },
       {
         "q": "Lässt sich die firmeneigene Terminologie vorgeben?",
-        "r": "Ja. Fast lookup CHnell deckt 30 Fachgebiete aus amtlichen Quellen ab, und Ihre eigenen Ressourcen kommen hinzu, privat oder geteilt. Ihre Hausbegriffe erscheinen dann in den folgenden Übersetzungen, mit ihrem Kontext."
+        "r": "Ja. Fast lookup CHnell deckt 30 Fachgebiete aus amtlichen Quellen ab, und Ihre eigenen Ressourcen kommen hinzu, privat oder geteilt. Ihre firmeneigenen Begriffe erscheinen dann in den folgenden Übersetzungen, mit ihrem Kontext."
       },
       {
         "q": "Wo wird das Dokument verarbeitet?",
@@ -325,18 +325,18 @@
     "voisins": [
       [
         "allemand-francais",
-        "Allemand vers français",
-        "Le sens inverse, avec ses propres pièges"
+        "Deutsch-Französisch",
+        "Die umgekehrte Richtung, mit eigenen Fallstricken"
       ],
       [
         "francais-anglais",
-        "Français vers anglais",
-        "Le même texte pour un dossier international"
+        "Französisch-Englisch",
+        "Derselbe Text für ein internationales Dossier"
       ],
       [
         "italien-francais",
-        "Italien vers français",
-        "La troisième langue officielle, et ses termes propres"
+        "Italienisch-Französisch",
+        "Die dritte Amtssprache und ihre eigenen Begriffe"
       ]
     ]
   },
@@ -345,7 +345,7 @@
     "short": "Deutsch-Englisch",
     "resume": "Schweizer Recht auf Deutsch, lesbar gemacht für Leserinnen und Leser aus dem Common Law.",
     "title": "Juristische Übersetzung Deutsch-Englisch · Neur.on",
-    "description": "Juristische Übersetzung Deutsch-Englisch: Englische Gesetzesfassungen sind unverbindlich, Schweizer Rechtsbegriffe behalten ihre Originalbezeichnung.",
+    "description": "Juristische Übersetzung Deutsch-Englisch für Schweizer Recht: Englische Gesetzesfassungen sind unverbindlich, Schweizer Begriffe bleiben im Original.",
     "lede": "Übersetzung Deutsch-Englisch.",
     "h1": "Schweizer Recht verständlich machen",
     "lead": "Eine Due Diligence, die von London aus geführt wird. Ein Bericht für eine Muttergesellschaft in den USA. Auf Englisch gibt es keine amtlichen Schweizer Begriffe: Die Übersetzung erklärt, ohne ein Recht zu erfinden, das es nicht gibt.",
@@ -494,27 +494,27 @@
     "voisins": [
       [
         "anglais-allemand",
-        "Anglais vers allemand",
-        "Le sens inverse, pour les contrats de droit suisse"
+        "Englisch-Deutsch",
+        "Die umgekehrte Richtung, für Verträge nach Schweizer Recht"
       ],
       [
         "allemand-francais",
-        "Allemand vers français",
-        "La même source, pour la Suisse romande"
+        "Deutsch-Französisch",
+        "Dieselbe Ausgangssprache, für die Westschweiz"
       ],
       [
         "francais-anglais",
-        "Français vers anglais",
-        "Le droit suisse romand pour un dossier international"
+        "Französisch-Englisch",
+        "Westschweizer Recht für ein internationales Dossier"
       ]
     ]
   },
   {
     "slug": "anglais-allemand",
     "short": "Englisch-Deutsch",
-    "resume": "Auf Englisch verfasste Verträge, sicher im Schweizer Recht verankert.",
+    "resume": "Auf Englisch verfasste Verträge, im Schweizer Recht verankert.",
     "title": "Verträge Englisch-Deutsch übersetzen · Neur.on",
-    "description": "Englische Verträge unter Schweizer Recht ins Deutsche übersetzen: Die deutsche Fassung verankert jede Klausel in den genauen Begriffen des Obligationenrechts.",
+    "description": "Verträge Englisch-Deutsch übersetzen, unter Schweizer Recht: Die deutsche Fassung verankert jede Klausel in den genauen Begriffen des Obligationenrechts.",
     "lede": "Übersetzung Englisch-Deutsch.",
     "h1": "Den Vertrag im Schweizer Recht verankern",
     "lead": "Ein Unternehmenskaufvertrag, auf Englisch verfasst, aber Schweizer Recht unterstellt. Die deutsche Fassung, die die Behörde lesen wird, ordnet jede Klausel einem Begriff des Obligationenrechts zu.",
@@ -561,8 +561,8 @@
         "s": "Die terminologischen Ressourcen von CHnell tragen diese Entscheidungen von Anhang zu Anhang."
       },
       {
-        "k": "Umfang und Anhang",
-        "v": "Der Anhang mit Zahlen, Übertragungstabellen und Vertragslisten macht oft den grössten Teil der Seiten aus. Corrext liefert Word-, Excel- und PowerPoint-Dateien im Originalformat zurück."
+        "k": "Umfang und Anhänge",
+        "v": "Zahlenanhänge, Übertragungstabellen und Vertragslisten machen oft den grössten Teil der Seiten aus. Corrext liefert Word-, Excel- und PowerPoint-Dateien im Originalformat zurück."
       },
       {
         "k": "Vertraulichkeit",
@@ -613,7 +613,7 @@
         "ref": "Art. 143 OR"
       }
     ],
-    "termes_note": "Die Begriffe, die eine englische Klausel im Schweizer Recht wiederfinden muss, mit dem Artikel, der sie regelt. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "termes_note": "Die Begriffe, die eine englische Klausel im Schweizer Recht wiederfinden muss, mit dem Artikel, der sie regelt. Die englische Spalte übernimmt, falls vorhanden, die Übersetzung des Bundes auf Fedlex (ohne Gesetzeskraft), sonst die gebräuchliche Formulierung.",
     "who_titre": "Drei Verträge, die auf Englisch eintreffen",
     "who": [
       {
@@ -646,12 +646,12 @@
         "r": "Man übersetzt die angestrebte Wirkung mit den Begriffen des Schweizer Rechts, nicht die ursprüngliche Formel. Eine Freistellungsklausel wird mit Haftung und Gewährleistung ausgedrückt, eine «liquidated damages clause» wird zur Konventionalstrafe. Diese Wahl trifft die Juristin oder der Jurist: Die maschinelle Übersetzung bereitet den Text vor, das juristische Lektorat entscheidet."
       },
       {
-        "q": "Soll man die englischen Begriffsdefinitionen des Vertrags beibehalten?",
-        "r": "Bei Begriffen, die nur diese Transaktion betreffen, ist das üblich, sofern die Wahl konsequent und kenntlich ist. Jeder definierte Begriff braucht eine einzige Behandlung, identisch übernommen im Anhang und in den Nachträgen. Abweichungen von einem Dokument zum anderen sind die häufigste Quelle von Auslegungsstreitigkeiten."
+        "q": "Soll man die im Vertrag definierten englischen Begriffe beibehalten?",
+        "r": "Bei Begriffen, die nur diese Transaktion betreffen, ist das üblich, sofern die Wahl konsequent und kenntlich ist. Jeder definierte Begriff braucht eine einheitliche Behandlung, die im Anhang und in den Nachträgen identisch übernommen wird. Abweichungen von einem Dokument zum anderen sind die häufigste Quelle von Auslegungsstreitigkeiten."
       },
       {
         "q": "Können beide Fassungen gleichzeitig massgebend sein?",
-        "r": "Die Parteien können das vorsehen, aber es ist eine folgenreiche Wahl: Jede Abweichung zwischen den Fassungen wird zur Auslegungsfrage. Einfacher ist eine Vorrangklausel, die festlegt, welche Fassung gilt. Sind beide Fassungen massgebend, ist die Double review mit Zertifikat die passende Kontrollstufe."
+        "r": "Die Parteien können das vorsehen, aber es ist eine folgenreiche Wahl: Jede Abweichung zwischen den Fassungen wird zur Auslegungsfrage. Einfacher ist eine Vorrangklausel, die festlegt, welche Fassung gilt. Sind beide Fassungen massgebend, passt die Kontrollstufe Double review und beglaubigte Übersetzung."
       },
       {
         "q": "Wo wird der Vertrag verarbeitet?",
@@ -663,18 +663,18 @@
     "voisins": [
       [
         "allemand-anglais",
-        "Allemand vers anglais",
-        "Le sens inverse, pour un lecteur de common law"
+        "Deutsch-Englisch",
+        "Die umgekehrte Richtung, für Leserinnen und Leser aus dem Common Law"
       ],
       [
         "francais-anglais",
-        "Français vers anglais",
-        "Le droit suisse romand pour un dossier international"
+        "Französisch-Englisch",
+        "Westschweizer Recht für ein internationales Dossier"
       ],
       [
         "allemand-francais",
-        "Allemand vers français",
-        "La paire interne la plus demandée"
+        "Deutsch-Französisch",
+        "Zwischen zwei Landessprachen"
       ]
     ]
   },
@@ -683,7 +683,7 @@
     "short": "Französisch-Englisch",
     "resume": "Westschweizer Recht, lesbar gemacht für ein internationales Dossier.",
     "title": "Juristische Übersetzung Französisch-Englisch · Neur.on",
-    "description": "Westschweizer Recht auf Englisch: Schiedsverfahren, Bundesgerichtsentscheide und Compliance, mit englischen Gesetzesfassungen, die nur informieren.",
+    "description": "Juristische Übersetzung Französisch-Englisch für Westschweizer Recht: Schiedsverfahren, Bundesgerichtsentscheide, Compliance. Englisch bleibt unverbindlich.",
     "lede": "Übersetzung Französisch-Englisch.",
     "h1": "Das Westschweizer Dossier, international lesbar",
     "lead": "In Genf und Lausanne wird auf Französisch gearbeitet und oft auf Englisch plädiert. Die Übersetzung macht das Schweizer Recht verständlich und hält fest, dass keine englische Fassung eines Schweizer Gesetzes verbindlich ist.",
@@ -832,18 +832,18 @@
     "voisins": [
       [
         "anglais-allemand",
-        "Anglais vers allemand",
-        "Les contrats anglais soumis au droit suisse"
+        "Englisch-Deutsch",
+        "Englische Verträge unter Schweizer Recht"
       ],
       [
         "allemand-francais",
-        "Allemand vers français",
-        "La paire interne la plus demandée"
+        "Deutsch-Französisch",
+        "Zwischen zwei Landessprachen"
       ],
       [
         "italien-francais",
-        "Italien vers français",
-        "La troisième langue officielle, et ses termes propres"
+        "Italienisch-Französisch",
+        "Die dritte Amtssprache und ihre eigenen Begriffe"
       ]
     ]
   },
@@ -852,7 +852,7 @@
     "short": "Italienisch-Französisch",
     "resume": "Schweizer Rechtsitalienisch, das sich vom Italienisch Italiens unterscheidet, auf Französisch.",
     "title": "Juristische Übersetzung Italienisch-Französisch · Neur.on",
-    "description": "Schweizer Rechtsitalienisch ins Französische: ricorso, precetto esecutivo, Tribunale federale und die Begriffe des Tessins, anders als in Italien.",
+    "description": "Übersetzung Italienisch-Französisch im Schweizer Recht: ricorso, precetto esecutivo, Tribunale federale und die Begriffe des Tessins, anders als in Italien.",
     "lede": "Übersetzung Italienisch-Französisch.",
     "h1": "Die dritte Amtssprache, vollwertig behandelt",
     "lead": "Im Tessin wird auf Italienisch Recht gesprochen, und der Bund veröffentlicht seine Gesetze auch in dieser Sprache. Schweizer Rechtsitalienisch ist nicht das Italienisch Italiens: Ein allgemeiner Übersetzungsmotor ersetzt das eine gern durch das andere.",
@@ -874,7 +874,7 @@
     "facts": [
       {
         "k": "Eine verbindliche Fassung",
-        "v": "Die italienische Fassung eines Bundesgesetzes hat denselben Rang wie die deutsche und die französische. Sie ist keine Übersetzung zur Information, sondern ein massgebender Text."
+        "v": "Die italienische Fassung eines Bundesgesetzes hat denselben Rang wie die deutsche und die französische. Sie ist keine nichtamtliche Übersetzung, sondern ein massgebender Text."
       },
       {
         "k": "Schweiz oder Italien",
@@ -887,7 +887,7 @@
       },
       {
         "k": "Eigene Abkürzungen",
-        "v": "Das Schuldbetreibungs- und Konkursrecht heisst auf Italienisch LEF, auf Französisch LP und auf Deutsch SchKG. Das Obligationenrecht heisst auf Italienisch wie auf Französisch CO, auf Deutsch aber OR."
+        "v": "Das Bundesgesetz über Schuldbetreibung und Konkurs wird auf Italienisch mit LEF abgekürzt, auf Französisch mit LP und auf Deutsch mit SchKG. Das Obligationenrecht heisst auf Italienisch wie auf Französisch CO, auf Deutsch aber OR."
       },
       {
         "k": "Rechtsprechung",
@@ -951,7 +951,7 @@
         "ref": "Art. 201 OR"
       }
     ],
-    "termes_note": "Sechs Begriffe, bei denen das Italienisch der Schweiz eigene Wege geht, mit dem Artikel des Bundesrechts, der die vier Fassungen festlegt. Die englische Spalte übernimmt, wo vorhanden, die vom Bund auf Fedlex veröffentlichte Übersetzung, die nicht rechtsverbindlich ist, sonst die gebräuchliche Formulierung.",
+    "termes_note": "Sechs Begriffe, bei denen das Italienisch der Schweiz eigene Wege geht, mit dem Artikel des Bundesrechts, der die vier Fassungen festlegt. Die englische Spalte übernimmt, falls vorhanden, die Übersetzung des Bundes auf Fedlex (ohne Gesetzeskraft), sonst die gebräuchliche Formulierung.",
     "who_titre": "Drei Dossiers aus dem Tessin",
     "who": [
       {
@@ -977,7 +977,7 @@
     "faq": [
       {
         "q": "Unterscheidet sich Schweizer Rechtsitalienisch vom Italienisch Italiens?",
-        "r": "Ja, und zwar im Wesentlichen: bei Institutionen und Verfahren. Der Schweizer ricorso geht an das Tribunale federale, der precetto esecutivo gehört zum bundesrechtlichen Betreibungsverfahren, und der decreto d'accusa ist eine Handlung nach der Schweizerischen Strafprozessordnung. Dieselben Wörter gibt es teils auch in Italien, mit anderer Bedeutung."
+        "r": "Ja, und zwar im Wesentlichen: bei Institutionen und Verfahren. Der Schweizer ricorso geht an das Tribunale federale, der precetto esecutivo gehört zum bundesrechtlichen Betreibungsverfahren, und der decreto d'accusa ist ein Instrument der Schweizerischen Strafprozessordnung. Dieselben Wörter gibt es teils auch in Italien, mit anderer Bedeutung."
       },
       {
         "q": "Ist die italienische Fassung eines Bundesgesetzes verbindlich?",
@@ -985,7 +985,7 @@
       },
       {
         "q": "Wie werden Gesetzesabkürzungen umgesetzt?",
-        "r": "Je nach Zielsprache. Das Schuldbetreibungs- und Konkursrecht heisst auf Italienisch LEF, auf Französisch LP und auf Deutsch SchKG. Das Internationale Privatrecht heisst in beiden Sprachen LDIP, auf Deutsch aber IPRG. Das Obligationenrecht bleibt auf Italienisch und Französisch CO, auf Deutsch OR. Im Zweifel steht der volle Name des Gesetzes."
+        "r": "Je nach Zielsprache. Das Bundesgesetz über Schuldbetreibung und Konkurs wird auf Italienisch mit LEF abgekürzt, auf Französisch mit LP und auf Deutsch mit SchKG. Das Bundesgesetz über das Internationale Privatrecht heisst in beiden Sprachen LDIP, auf Deutsch aber IPRG. Das Obligationenrecht bleibt auf Italienisch und Französisch CO, auf Deutsch OR. Im Zweifel wird der Name des Gesetzes ausgeschrieben."
       },
       {
         "q": "Übersetzen Sie auch aus dem Französischen ins Italienische?",
@@ -1001,18 +1001,18 @@
     "voisins": [
       [
         "allemand-francais",
-        "Allemand vers français",
-        "La paire interne la plus demandée"
+        "Deutsch-Französisch",
+        "Zwischen zwei Landessprachen"
       ],
       [
         "francais-allemand",
-        "Français vers allemand",
-        "Le français romand pour un lecteur alémanique"
+        "Französisch-Deutsch",
+        "Westschweizer Französisch für die Deutschschweiz"
       ],
       [
         "francais-anglais",
-        "Français vers anglais",
-        "Le droit suisse romand pour un dossier international"
+        "Französisch-Englisch",
+        "Westschweizer Recht für ein internationales Dossier"
       ]
     ]
   }

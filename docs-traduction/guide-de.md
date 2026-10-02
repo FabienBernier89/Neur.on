@@ -12,7 +12,7 @@ Ordre de priorité : les règles absolues (section 1), puis ce guide, puis le br
 4. **Noms jamais traduits ni modifiés** : Neur.on, Corrext, LexMachina, CHnell, Fast lookup CHnell, Highly sensitive content, Infomaniak. Casse et orthographe intactes.
    - Pas de génitif collé (« Correxts ») : « die Funktionen von Corrext ».
    - Pas de mot composé avec un nom de produit : « die Plattform Corrext », « der Übersetzungsmotor LexMachina », et non « Corrext-Plattform ».
-   - Le mode s'écrit « der Modus Highly sensitive content ».
+   - Le mode s'écrit « der Modus Highly sensitive content ». Là où le FR emploie la forme courte « mode Highly sensitive », garder la forme courte : le contrôle compte les noms de produits segment par segment.
    - La raison sociale reste « Neur.on AI Solutions SA » (pas « AG »).
 5. **LexMachina** est un « neuronaler Übersetzungsmotor », un « Übersetzungsmotor » ou un « neuronales Übersetzungsmodell ». Jamais « LLM », « Sprachmodell » ni « Chatbot ». Seule exception : les actualités historiques, qui gardent leurs faits et leurs mots (par exemple les AI Days 2025).
 6. **Noms interdits** : Legal 230, Lexa, « Gruppe », « Übernahme », « Zusammenschluss » ou toute allusion au rapprochement. Aucun prix, aucun montant en CHF, aucun nom de client.
@@ -137,7 +137,7 @@ Trois mots-vedettes du glossaire ne sont pas la forme du texte officiel. Les fic
 | 8 | Bouton | Demander une démo | Demo anfragen | Verbe à l'infinitif en fin de bouton. |
 | 9 | Bouton | Essayer Corrext en direct | Corrext live testen | Court : tient sur un bouton à 375 px. |
 | 10 | Bandeau | Essayez Corrext, sans inscription | Testen Sie Corrext ohne Registrierung | Impératif de politesse, pas de virgule superflue. |
-| 11 | Sécurité | Mode Highly sensitive : stockage et traitement exclusivement en Suisse | Modus Highly sensitive content: Speicherung und Verarbeitung ausschliesslich in der Schweiz | Nom du mode complet ; « ausschliesslich » avec ss. |
+| 11 | Sécurité | Mode Highly sensitive : stockage et traitement exclusivement en Suisse | Modus Highly sensitive content: Speicherung und Verarbeitung ausschliesslich in der Schweiz | Forme du nom du mode identique au FR ; « ausschliesslich » avec ss. |
 | 12 | Sécurité | Hébergement 100% suisse · Infomaniak | Hosting zu 100 % in der Schweiz · Infomaniak | Espace avant %, point médian conservé. |
 | 13 | Sécurité | Hors CLOUD Act. Société suisse, infrastructure suisse : le stockage de vos projets ne relève pas du US CLOUD Act. | Ausserhalb des CLOUD Act. Schweizer Unternehmen, Schweizer Infrastruktur: Die Speicherung Ihrer Projekte fällt nicht unter den US CLOUD Act. | Majuscule après les deux-points devant une phrase complète. |
 | 14 | Sécurité | Aucun entraînement sur vos contenus. LexMachina apprend de corpus juridiques et financiers suisses publics, jamais de vos dossiers. | Kein Training mit Ihren Inhalten. LexMachina lernt aus öffentlichen Schweizer Rechts- und Finanztexten, nie aus Ihren Dossiers. | Composé suspendu « Rechts- und Finanztexte » plutôt que « juristische und finanzielle Korpora ». |

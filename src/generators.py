@@ -29,6 +29,16 @@ SPARK = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
 ICONS = [SHIELD, GLOBE, SPARK]
 
 
+NOM_LANGUE = {"fr": "Français", "it": "Italien", "en": "Anglais"}
+
+
+def langue_exemple(ex):
+    """Seconde langue de la citation officielle d'une fiche du glossaire : celle de la page,
+    le français pour une page allemande ou quand la loi n'a pas de version dans la langue."""
+    l = i18n.langue()
+    return l if l in ("it", "en") and ex.get(l) else "fr"
+
+
 def load(src, name):
     p = os.path.join(src, "data", name + ".json")
     if not os.path.exists(p):
@@ -770,6 +780,7 @@ def gen_glossaire(src):
                     "inDefinedTermSet": {"@type": "DefinedTermSet", "name": T("Glossaire juridique suisse"),
                                          "url": f"{SITE}/fr/ressources/glossaire/"}}
         # Les retours à la ligne et l'indentation font partie des clés : la sortie FR reste identique
+        lex = langue_exemple(d["exemple"])
         gnote = T("Les lois fédérales suisses sont publiées en allemand, en français et en italien, et les\n"
                   "          trois versions font foi. L'équivalence ci-contre n'est donc pas une traduction d'usage :\n"
                   "          c'est le terme employé par le texte officiel lui-même.")
@@ -798,8 +809,8 @@ def gen_glossaire(src):
     <div class="gex-box">
       <h2>{T("Le terme dans un texte officiel")}</h2>
       <div class="gex-row">
-        <div><i>{T("Allemand")}</i><p>{d["exemple"]["de"]}</p></div>
-        <div><i>{T("Français")}</i><p>{d["exemple"]["fr"]}</p></div>
+        <div><i>{T("Allemand")}</i><p lang="de">{d["exemple"]["de"]}</p></div>
+        <div><i>{T(NOM_LANGUE[lex])}</i><p lang="{lex}">{d["exemple"][lex]}</p></div>
       </div>
       <p class="gsrc">{gsrc}</p>
     </div>
