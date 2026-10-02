@@ -13,10 +13,12 @@ VIDES = {"br", "img", "wbr"}
 ATTRS = ("alt", "aria-label", "title", "placeholder")
 FRONT = ("title", "description", "short")
 # clés JSON jamais traduites : identifiants, chemins, dimensions, équivalents officiels déjà fixés
-TECH = {"slug", "icone", "vis", "href", "url", "src", "date", "maj", "w", "h", "voisins", "id", "ancre", "image",
+TECH = {"slug", "icone", "vis", "href", "url", "src", "date", "maj", "w", "h", "id", "ancre",
         "vignette", "lien", "de", "fr", "it", "en", "exemple", "cle", "nav", "hero", "lastmod", "categorie",
-        "sous_categorie", "auteur", "auteur_personne", "mentions", "date_affichee", "u", "outil", "espace",
-        "temoignage_exemple", "exemple_flag", "type", "langues"}
+        "sous_categorie", "auteur_personne", "mentions", "date_affichee", "u", "outil", "espace",
+        "temoignage_exemple", "exemple_flag", "type", "langues", "page", "source_num"}
+# valeur en forme d'identifiant (« generee », « francais-allemand », « kuendigung ») : jamais traduite
+IDENT = re.compile(r"[a-z0-9]+(?:[-_][a-z0-9]+)*")
 LETTRE = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ]")
 JETON = re.compile(r"\{\{[^}]+\}\}")
 PLACE = re.compile(r"\{\d+\}")  # emplacement d'un gabarit T("{0} actualités").format(n)
@@ -235,7 +237,7 @@ def _parcours(o, chemin, fichier, unites):
     elif isinstance(o, list):
         for i, v in enumerate(o):
             _parcours(v, chemin + (i,), fichier, unites)
-    elif isinstance(o, str) and LETTRE.search(o) and not CHEMIN.match(o):
+    elif isinstance(o, str) and LETTRE.search(o) and not CHEMIN.match(o) and not IDENT.fullmatch(o):
         texte, table = proteger(o)
         unites.append({"id": fichier + ":" + "/".join(map(str, chemin)), "chemin": chemin, "genre": "json",
                        "html": o, "texte": texte, "table": table})

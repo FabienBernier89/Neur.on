@@ -105,7 +105,7 @@
     "lois_titre": "Les textes que les actes de société citent tous les jours",
     "lois_intro": "Le droit suisse des sociétés tient dans le Code des obligations, complété par l'ordonnance qui organise le registre du commerce. Deux autres textes entrent en jeu dès qu'une structure change de forme ou qu'une fondation est en cause.",
     "lois": [
-      {"abbr": "CO", "nom": "Code des obligations", "note": "Ses titres 24 à 33 régissent sociétés simples, SA, Sàrl, coopératives et registre du commerce ; OR en allemand, CO en italien."},
+      {"abbr": "CO", "nom": "Code des obligations", "note": "Ses titres 23 à 32 régissent la société simple, la société en nom collectif, la SA, la Sàrl, la coopérative, le registre du commerce, les raisons de commerce et la comptabilité ; OR en allemand, CO en italien."},
       {"abbr": "ORC", "nom": "Ordonnance sur le registre du commerce", "note": "Elle fixe le contenu des inscriptions, des réquisitions et des extraits ; HRegV en allemand."},
       {"abbr": "LFus", "nom": "Loi fédérale sur la fusion, la scission, la transformation et le transfert de patrimoine", "note": "Elle encadre tout changement de structure d'une société ou d'une fondation ; FusG en allemand."},
       {"abbr": "CC", "nom": "Code civil suisse", "note": "Il régit les associations et les fondations, que le Code des obligations ne couvre pas ; ZGB en allemand, CC en italien."}
@@ -559,7 +559,7 @@
     "lois": [
       {"abbr": "LCA", "nom": "Loi fédérale sur le contrat d'assurance", "note": "Elle régit la proposition, la police, la prime, la déclaration du risque et le sinistre ; VVG en allemand, LCA en italien."},
       {"abbr": "LSA", "nom": "Loi fédérale sur la surveillance des entreprises d'assurance", "note": "Elle soumet les assureurs et les réassureurs à autorisation et à surveillance ; VAG en allemand."},
-      {"abbr": "CO", "nom": "Code des obligations", "note": "Il s'applique à titre supplétif au contrat d'assurance et régit la prescription des prétentions ; OR en allemand, CO en italien."},
+      {"abbr": "CO", "nom": "Code des obligations", "note": "Il s'applique à titre supplétif au contrat d'assurance, pour tout ce que la LCA ne règle pas ; OR en allemand, CO en italien."},
       {"abbr": "LPD", "nom": "Loi fédérale sur la protection des données", "note": "Elle encadre le traitement des données personnelles, notamment de santé, dans les dossiers de sinistre ; DSG en allemand, LPD en italien."}
     ],
     "who_titre": "Trois moments du cycle assurantiel qui exigent une traduction",
