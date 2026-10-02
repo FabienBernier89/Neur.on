@@ -243,7 +243,7 @@
   "title": "Generalversammlung : l'assemblée générale en Suisse · Neur.on",
   "description": "Generalversammlung, assemblée générale, assemblea generale, general meeting : l'organe suprême de la société anonyme suisse, dans les quatre langues.",
   "lead": "L'assemblée générale des actionnaires est le pouvoir suprême de la société anonyme. Ses convocations, ses procès-verbaux et ses décisions sont parmi les documents les plus souvent traduits dans un contexte multilingue.",
-  "definition": "L'assemblée générale réunit les actionnaires et constitue le pouvoir suprême de la société anonyme. Elle adopte et modifie les statuts, élit les membres du conseil d'administration et l'organe de révision, approuve les comptes annuels, décide de l'emploi du bénéfice et donne décharge. Certaines de ses décisions exigent une majorité qualifiée. Le procès-verbal consigne les décisions et les résultats des votes.",
+  "definition": "L'assemblée générale réunit les actionnaires et constitue le pouvoir suprême de la société anonyme. Elle adopte et modifie les statuts, élit les membres du conseil d'administration et l'organe de révision, approuve les comptes annuels, décide de l'emploi du bénéfice et donne décharge. Certaines de ses décisions exigent une majorité qualifiée. Le procès-verbal consigne les décisions et le résultat des élections.",
   "base": "art. 698 CO",
   "domaine": "Droit des sociétés",
   "source": "Fedlex, Code des obligations",
@@ -1224,7 +1224,7 @@
   "source": "Fedlex, loi sur le Tribunal fédéral",
   "resume": "L'autorité judiciaire suprême de la Confédération, qui siège à Lausanne et à Lucerne.",
   "lead": "Un même arrêt du Tribunal fédéral se cite ATF en français, BGE en allemand et DTF en italien. L'anglais n'a pas de sigle officiel.",
-  "definition": "Le Tribunal fédéral est l'autorité judiciaire suprême de la Confédération. Il siège à Lausanne ; ses cours de droit social siègent à Lucerne. Il statue notamment sur les recours en matière civile, en matière pénale et en matière de droit public. Ses arrêts publiés au recueil officiel se citent ATF en français, BGE en allemand et DTF en italien.",
+  "definition": "Le Tribunal fédéral est l'autorité judiciaire suprême de la Confédération. Il siège à Lausanne ; ses troisième et quatrième cours de droit public siègent à Lucerne (art. 26 du règlement du Tribunal fédéral). Il statue notamment sur les recours en matière civile, en matière pénale et en matière de droit public. Ses arrêts publiés au recueil officiel se citent ATF en français, BGE en allemand et DTF en italien.",
   "voisins": [
    "beschwerde",
    "schiedsgericht",
