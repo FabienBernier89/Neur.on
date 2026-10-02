@@ -69,7 +69,7 @@ canonical: https://neur-on.ai/fr/contact/
   },
   {
    "@type": "Question",
-   "name": "Which languages can we use with you?",
+   "name": "Which languages can we communicate in?",
    "acceptedAnswer": {
     "@type": "Answer",
     "text": "German, French, Italian and English, in writing and in meetings. These are the four native languages of LexMachina and the languages of Swiss legal practice."
@@ -276,7 +276,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
           </div>
           <div class="cf-f">
             <label for="cf-sujet">What you translate most often</label>
-            <input class="cf-in" type="text" id="cf-sujet" name="sujet" autocomplete="off" placeholder="Contracts, court filings, FINMA reports...">
+            <input class="cf-in" type="text" id="cf-sujet" name="sujet" autocomplete="off" placeholder="Contracts, court documents, FINMA reports...">
           </div>
         </div>
 
@@ -364,7 +364,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
         <p>No, and that is a deliberate choice. Corrext handles documents covered by professional secrecy or banking secrecy: access rights, engine policy, terminology and translation memories are configured with you. A self-service sign-up form allows neither this scoping nor this accountability. A trial is available, but it is supervised and it follows the demonstration.</p>
       </details>
       <details class="faq-item">
-        <summary>Which languages can we use with you?</summary>
+        <summary>Which languages can we communicate in?</summary>
         <p>German, French, Italian and English, in writing and in meetings. These are the four native languages of LexMachina and the languages of Swiss legal practice.</p>
       </details>
     </div>
@@ -420,7 +420,7 @@ textarea.cf-in{min-height:112px;resize:vertical;line-height:1.6}
     var subject='Corrext demo request'+(org?' · '+org:'');
     var body=lines().join('\n')+'\n\nConsent to data processing: yes';
     window.location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-    show('Your email program opens with the request ready to send to <a href="mailto:'+to+'">'+to+'</a>. If nothing opens, write to us directly at this address.');
+    show('Your email client opens with the request ready to send to <a href="mailto:'+to+'">'+to+'</a>. If nothing opens, write to us directly at this address.');
   }
   f.addEventListener('submit',function(e){
     e.preventDefault();
