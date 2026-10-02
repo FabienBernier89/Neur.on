@@ -1280,3 +1280,6 @@ body.nav-open{overflow:hidden}
 
 /* Comparatifs : mention de prudence unique, en pied de tableau */
 .cmp-mention{margin-top:18px;font-size:12.5px;line-height:1.6;color:var(--muted);text-align:center}
+
+/* Chiffres clés et informations essentielles dans les listes « Ce que fait… » : gras et bleu profond (lisible sur fond clair) */
+.fact p .kf{color:var(--blue-d);font-weight:700}
