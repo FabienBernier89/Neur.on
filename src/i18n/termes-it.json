@@ -1,0 +1,1996 @@
+[
+ {
+  "fr": "Neur.on",
+  "it": "Neur.on",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Corrext",
+  "it": "Corrext",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "LexMachina",
+  "it": "LexMachina",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "CHnell",
+  "it": "CHnell",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Fast lookup CHnell",
+  "it": "Fast lookup CHnell",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Highly sensitive content",
+  "it": "Highly sensitive content",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Infomaniak",
+  "it": "Infomaniak",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "intérêt moratoire",
+  "it": "interesse moratorio",
+  "source": "glossaire (verzugszins) : art. 104 CO ; domaine contrats : art. 104 CO ; paire allemand-francais : art. 104 CO ; paire francais-anglais : art. 104 CO ; paire italien-francais : art. 104 CO ; texte italien : art. 104 CO, « interessi moratori » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Le texte emploie le pluriel « interessi moratori », repris par les tableaux ; le glossaire donne le singulier.",
+  "variantes": [
+   "interessi moratori"
+  ]
+ },
+ {
+  "fr": "prescription",
+  "it": "prescrizione",
+  "source": "glossaire (verjaehrung) : art. 127 CO ; domaine contrats : art. 127 CO ; paire anglais-allemand : art. 127 CO ; texte italien : art. 127 CO, titre marginal « G. Prescrizione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "dommages-intérêts",
+  "it": "risarcimento del danno",
+  "source": "glossaire (schadenersatz) : art. 97 CO ; domaine contrats : art. 107 CO ; paire francais-allemand : art. 107 CO ; texte italien : art. 97 cpv. 1 CO, « risarcimento del danno » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "clause pénale",
+  "it": "pena convenzionale",
+  "source": "glossaire (konventionalstrafe) : art. 160 CO ; domaine contrats : art. 160 CO ; paire anglais-allemand : art. 160 CO ; texte italien : art. 160 CO, titre marginal « C. Pena convenzionale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "cautionnement",
+  "it": "fideiussione",
+  "source": "glossaire (buergschaft) : art. 492 CO ; domaine banque-finance : art. 492 CO ; paire francais-allemand : art. 492 CO ; texte italien : art. 492 cpv. 1 CO, « Mediante la fideiussione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "cession de créance",
+  "it": "cessione del credito",
+  "source": "glossaire (abtretung) : art. 164 CO ; paire anglais-allemand : art. 164 CO ; texte italien : art. 164 CO (« cedere ad altri il suo credito », titre « Cessione volontaria ») ; art. 32 cpv. 3 CO, « cessione del credito » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "prohibition de faire concurrence",
+  "it": "divieto di concorrenza",
+  "source": "glossaire (konkurrenzverbot) : art. 340 CO ; domaine droit-du-travail : art. 340 CO ; texte italien : art. 340 CO, titre marginal « VII. Divieto di concorrenza » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "heures de travail supplémentaires",
+  "it": "lavoro straordinario",
+  "source": "glossaire (ueberstunden) : art. 321c CO ; domaine droit-du-travail : art. 321c CO ; texte italien : art. 321c CO, titre marginal « IV. Lavoro straordinario » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Texte officiel : art. 321c CO, titre marginal « IV. Lavoro straordinario » ; le cpv. 1 parle d'« ore suppletive ». Le glossaire garde « Überstunden » comme mot-vedette.",
+  "variantes": [
+   "ore suppletive"
+  ]
+ },
+ {
+  "fr": "société anonyme",
+  "it": "società anonima",
+  "source": "glossaire (aktiengesellschaft) : art. 620 CO ; domaine droit-des-societes : art. 620 CO ; paire francais-allemand : art. 620 CO ; paire allemand-anglais : art. 620 CO ; texte italien : art. 620 CO, « La società anonima è una società di capitali » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Abréviation : SA (ORC, allegato 2, art. 116a : liste des abréviations des formes juridiques). Jamais « società per azioni » ni « SpA », formes de l'Italie."
+ },
+ {
+  "fr": "assemblée générale",
+  "it": "assemblea generale",
+  "source": "glossaire (generalversammlung) : art. 698 CO ; domaine droit-des-societes : art. 698 CO ; paire francais-allemand : art. 698 CO ; texte italien : art. 698 CO, « L'assemblea generale degli azionisti » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "conseil d'administration",
+  "it": "consiglio d'amministrazione",
+  "source": "glossaire (verwaltungsrat) : art. 707 CO ; domaine droit-des-societes : art. 707 CO ; paire francais-allemand : art. 707 CO ; paire allemand-anglais : art. 707 CO ; texte italien : art. 707 CO, « Il consiglio d'amministrazione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Avec élision : « consiglio d'amministrazione », comme le CO."
+ },
+ {
+  "fr": "organe de révision",
+  "it": "ufficio di revisione",
+  "source": "glossaire (revisionsstelle) : art. 727 CO ; domaine droit-des-societes : art. 727 CO ; paire francais-allemand : art. 727 CO ; paire allemand-anglais : art. 727 CO ; texte italien : art. 727 CO, « effettuata da un ufficio di revisione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « revisore legale » ni « collegio sindacale », institutions de l'Italie."
+ },
+ {
+  "fr": "registre du commerce",
+  "it": "registro di commercio",
+  "source": "glossaire (handelsregister) : art. 927 CO ; domaine droit-des-societes : art. 927 CO ; paire allemand-francais : art. 927 CO ; texte italien : art. 927 CO, « Il registro di commercio è un insieme di banche dati » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « registro delle imprese », institution de l'Italie."
+ },
+ {
+  "fr": "poursuite",
+  "it": "esecuzione",
+  "source": "glossaire (betreibung) : art. 38 LP ; paire allemand-francais : art. 38 LP ; texte italien : art. 38 LEF, « L'esecuzione ha per scopo » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Poursuite pour dettes au sens de la LEF ; « esecuzione » désigne aussi l'exécution d'un jugement ou d'un contrat."
+ },
+ {
+  "fr": "commandement de payer",
+  "it": "precetto esecutivo",
+  "source": "glossaire (zahlungsbefehl) : art. 69 LP ; paire italien-francais : art. 69 LP ; texte italien : art. 69 LEF, titre marginal « A. Precetto esecutivo » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « decreto ingiuntivo » ni « atto di precetto », procédure de l'Italie."
+ },
+ {
+  "fr": "opposition",
+  "it": "opposizione",
+  "source": "glossaire (rechtsvorschlag) : art. 74 LP ; paire allemand-francais : art. 74 LP ; texte italien : art. 74 LEF, titre marginal « C. Opposizione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Opposizione al precetto esecutivo (art. 74 LEF) uniquement."
+ },
+ {
+  "fr": "faillite",
+  "it": "fallimento",
+  "source": "glossaire (konkurs) : art. 197 LP ; paire allemand-anglais : art. 197 LP ; paire francais-anglais : art. 197 LP ; texte italien : art. 197 LEF, « massa del fallimento » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "séquestre",
+  "it": "sequestro",
+  "source": "glossaire (arrest) : art. 271 LP ; texte italien : art. 271 LEF, titre marginal « A. Cause di sequestro » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "secret bancaire",
+  "it": "segreto bancario",
+  "source": "glossaire (bankgeheimnis) : art. 47 LB ; domaine banque-finance : art. 47 LB ; paire allemand-anglais : art. 47 LB ; paire francais-anglais : art. 47 LB ; texte italien : art. 47 LBCR : le texte dit « segreto professionale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Terme d'usage : l'art. 47 LBCR parle de « segreto professionale » ; « segreto bancario » n'apparaît pas dans le texte de la loi."
+ },
+ {
+  "fr": "blanchiment d'argent",
+  "it": "riciclaggio di denaro",
+  "source": "glossaire (geldwaescherei) : art. 305bis CP ; domaine compliance-finma : art. 305bis CP ; paire allemand-anglais : art. 305bis CP ; texte italien : art. 305bis CP, titre « Riciclaggio di denaro » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "prospectus",
+  "it": "prospetto",
+  "source": "glossaire (prospekt) : art. 35 LSFin ; domaine banque-finance : art. 35 LSFin ; texte italien : art. 35 LSerFi, titre « Obbligo di pubblicare un prospetto » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "tribunal arbitral",
+  "it": "tribunale arbitrale",
+  "source": "glossaire (schiedsgericht) : art. 176 LDIP ; domaine contentieux-arbitrage : art. 186 LDIP ; paire anglais-allemand : art. 176 LDIP ; paire francais-anglais : art. 176 LDIP ; texte italien : art. 176 LDIP, « Sede del tribunale arbitrale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "recours",
+  "it": "ricorso",
+  "source": "glossaire (beschwerde) : art. 72 LTF ; paire francais-anglais : art. 72 LTF ; paire italien-francais : art. 72 LTF ; texte italien : art. 72 LTF, « ricorso in materia civile » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Ricorso al Tribunale federale (art. 72 LTF) et ricorso amministrativo. L'appel cantonal se dit « appello » (art. 308 CPC)."
+ },
+ {
+  "fr": "ordonnance pénale",
+  "it": "decreto d'accusa",
+  "source": "glossaire (strafbefehl) : art. 352 CPP ; domaine droit-penal : art. 352 CPP ; paire italien-francais : art. 352 CPP ; texte italien : art. 352 CPP, « il pubblico ministero emette un decreto d'accusa » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « decreto penale di condanna », forme de l'Italie."
+ },
+ {
+  "fr": "détention provisoire",
+  "it": "carcerazione preventiva",
+  "source": "glossaire (untersuchungshaft) : art. 220 CPP ; domaine droit-penal : art. 220 CPP ; texte italien : art. 220 cpv. 1 CPP, « La carcerazione preventiva » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "impôt anticipé",
+  "it": "imposta preventiva",
+  "source": "glossaire (verrechnungssteuer) : art. 1 LIA ; domaine fiscalite : art. 1 LIA ; texte italien : art. 1 cpv. 1 LIP, « riscuote un'imposta preventiva » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "taxe sur la valeur ajoutée",
+  "it": "imposta sul valore aggiunto",
+  "source": "glossaire (mehrwertsteuer) : art. 1 LTVA ; domaine fiscalite : art. 1 LTVA ; texte italien : art. 1 cpv. 1 LIVA, « (imposta sul valore aggiunto, IVA) » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Abréviation : IVA."
+ },
+ {
+  "fr": "décision",
+  "it": "decisione",
+  "source": "glossaire (verfuegung) : art. 5 PA ; paire allemand-francais : art. 5 PA ; texte italien : art. 5 PA, titre marginal « I. Decisioni » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Decisione amministrativa au sens de l'art. 5 PA."
+ },
+ {
+  "fr": "données personnelles",
+  "it": "dati personali",
+  "source": "glossaire (personendaten) : art. 5 LPD ; texte italien : art. 5 lett. a LPD, « dati personali » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "contrat d'assurance",
+  "it": "contratto d'assicurazione",
+  "source": "glossaire (versicherungsvertrag) : art. 1 LCA ; domaine assurance : art. 1 LCA ; texte italien : titre de la LCA, « Legge federale sul contratto d'assicurazione » ; art. 1 cpv. 1 LCA : « contratto di assicurazione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Les deux graphies figurent dans la LCA ; le titre de la loi élide."
+ },
+ {
+  "fr": "résiliation",
+  "it": "disdetta",
+  "source": "glossaire (kuendigung) : art. 335 CO ; texte italien : art. 335 CO, titre marginal « 1. Disdetta, in generale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Même terme italien que « congé » (art. 335 CO). « Licenziamento » est réservé au licenciement collectif (art. 335d CO)."
+ },
+ {
+  "fr": "résiliation immédiate",
+  "it": "risoluzione immediata",
+  "source": "glossaire (fristlose-kuendigung) : art. 337 CO ; domaine droit-du-travail : art. 337 CO ; texte italien : art. 337 CO, titre marginal « IV. Risoluzione immediata » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Texte officiel : art. 337 CO, titre marginal « IV. Risoluzione immediata ». Le glossaire garde « fristlose Kündigung » comme mot-vedette."
+ },
+ {
+  "fr": "contrat de travail",
+  "it": "contratto di lavoro",
+  "source": "glossaire (arbeitsvertrag) : art. 319 CO ; texte italien : CO, titolo decimo « Del contratto di lavoro » ; art. 319 CO : « contratto individuale di lavoro » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "bail à loyer",
+  "it": "contratto di locazione",
+  "source": "glossaire (mietvertrag) : art. 253 CO ; domaine contrats : art. 253 CO ; texte italien : art. 253 CO, « La locazione è il contratto » ; art. 270e CO, « Il contratto di locazione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Le tableau du domaine Contrats écrit « locazione ».",
+  "variantes": [
+   "locazione"
+  ]
+ },
+ {
+  "fr": "demeure du débiteur",
+  "it": "mora del debitore",
+  "source": "glossaire (schuldnerverzug) : art. 102 CO ; domaine contrats : art. 102 CO ; texte italien : art. 102 CO, titre marginal « B. Mora del debitore » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Texte officiel : art. 102 CO, titre marginal « B. Mora del debitore ». Le glossaire garde « Schuldnerverzug » comme mot-vedette."
+ },
+ {
+  "fr": "garantie",
+  "it": "garanzia",
+  "source": "glossaire (gewaehrleistung) : art. 197 CO ; texte italien : art. 197 CO, titre marginal « III. Garanzia pei difetti della cosa » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Garantie des défauts (art. 197 CO) uniquement. Le CO écrit « pei », forme ancienne de « per i »."
+ },
+ {
+  "fr": "avis au vendeur",
+  "it": "avviso al venditore",
+  "source": "glossaire (maengelruege) : art. 201 CO ; paire italien-francais : art. 201 CO ; texte italien : art. 201 CO, titre marginal « 4. Verifica della cosa e avviso al venditore » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "avis des défauts",
+  "it": "avviso relativo ai difetti",
+  "source": "glossaire (maengelruege) : art. 201 CO ; texte italien : art. 219a CO, titre marginal « II. Avviso relativo ai difetti » (FR « Avis des défauts ») (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "La fiche Mängelrüge (art. 201 CO) donne « avviso al venditore »."
+ },
+ {
+  "fr": "pouvoirs",
+  "it": "facoltà di rappresentanza",
+  "source": "glossaire (vollmacht) : art. 32 à 34 CO ; texte italien : art. 33 et 34 CO : « La facoltà di compiere atti giuridici a nome di un terzo » ; titre marginal « G. Rappresentanza » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Pouvoirs de représentation (art. 32 à 34 CO) : le CO italien dit « facoltà ». La fiche du glossaire donne « procura » (voir l'entrée « procuration »)."
+ },
+ {
+  "fr": "procuration",
+  "it": "procura",
+  "source": "glossaire (vollmacht) : art. 32 à 34 CO ; texte italien : art. 68 cpv. 3 CPC, « Il rappresentante deve legittimarsi mediante procura » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Attention : dans le CO, « procura » désigne aussi la procura commerciale (art. 458 CO, DE « Prokura »). Pour les pouvoirs de l'art. 32 CO, « facoltà di rappresentanza »."
+ },
+ {
+  "fr": "société à responsabilité limitée",
+  "it": "società a garanzia limitata",
+  "source": "glossaire (gmbh) : art. 772 CO ; domaine droit-des-societes : art. 772 CO ; texte italien : art. 772 CO, « La società a garanzia limitata è una società di capitali » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Abréviation : Sagl (ORC, allegato 2, art. 116a : liste des abréviations des formes juridiques). Jamais « società a responsabilità limitata » ni « Srl », formes de l'Italie."
+ },
+ {
+  "fr": "statuts",
+  "it": "statuto",
+  "source": "glossaire (statuten) : art. 626 CO ; domaine droit-des-societes : art. 626 CO ; texte italien : art. 626 CO, « Lo statuto deve contenere » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Singulier en italien : « lo statuto »."
+ },
+ {
+  "fr": "capital-actions",
+  "it": "capitale azionario",
+  "source": "glossaire (aktienkapital) : art. 621 CO ; domaine droit-des-societes : art. 621 CO ; texte italien : art. 621 CO, titre marginal « B. Capitale azionario » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "« capitale sociale » désigne le capital de la Sagl (art. 772 CO), pas celui de la SA."
+ },
+ {
+  "fr": "registre foncier",
+  "it": "registro fondiario",
+  "source": "glossaire (grundbuch) : art. 942 CC ; paire allemand-francais : art. 942 CC ; texte italien : art. 942 cpv. 2 CC, « Il registro fondiario consiste » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « catasto » ni « conservatoria dei registri immobiliari »."
+ },
+ {
+  "fr": "réserve",
+  "it": "porzione legittima",
+  "source": "glossaire (pflichtteil) : art. 470 et 471 CC ; texte italien : art. 470 cpv. 1 CC, « eccedente la loro porzione legittima » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Réserve héréditaire (art. 470 CC) uniquement. Le CC dit aussi « legittima »."
+ },
+ {
+  "fr": "exécuteur testamentaire",
+  "it": "esecutore testamentario",
+  "source": "glossaire (willensvollstrecker) : art. 517 et 518 CC ; texte italien : CC, capo quinto « Degli esecutori testamentari » (art. 517 et 518) (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "mainlevée",
+  "it": "rigetto dell'opposizione",
+  "source": "glossaire (rechtsoeffnung) : art. 80 à 84 LP ; texte italien : art. 80 cpv. 1 LEF, « il rigetto definitivo dell'opposizione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "sursis concordataire",
+  "it": "moratoria concordataria",
+  "source": "glossaire (nachlassstundung) : art. 293 à 298 LP ; texte italien : art. 173a cpv. 1 LEF, « domanda di moratoria concordataria » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "mesures provisionnelles",
+  "it": "provvedimenti cautelari",
+  "source": "glossaire (vorsorgliche-massnahmen) : art. 261 à 265 CPC ; texte italien : art. 261 cpv. 1 CPC, « i necessari provvedimenti cautelari » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "Tribunal fédéral",
+  "it": "Tribunale federale",
+  "source": "glossaire (bundesgericht) : art. 188 Cst. et art. 1 LTF ; domaine contentieux-arbitrage : art. 188 Cst. ; paire francais-anglais : art. 188 Cst. ; paire italien-francais : art. 188 Cst. ; texte italien : art. 188 Cost. et art. 1 LTF, « Il Tribunale federale è l'autorità giudiziaria suprema della Confederazione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "ayant droit économique",
+  "it": "avente economicamente diritto",
+  "source": "glossaire (wirtschaftlich-berechtigte-person) : art. 4 LBA ; domaine compliance-finma : art. 4 LBA ; texte italien : art. 4 LRD, titre « Accertamento dell'avente economicamente diritto » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « titolare effettivo », terme de l'Italie."
+ },
+ {
+  "fr": "obligations de diligence",
+  "it": "obblighi di diligenza",
+  "source": "glossaire (sorgfaltspflichten) : art. 3 à 8 LBA ; domaine compliance-finma : art. 3 LBA ; texte italien : LRD, sezione 1 « Obblighi di diligenza degli intermediari finanziari » (art. 3 à 8) (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "soustraction d'impôt",
+  "it": "sottrazione d'imposta",
+  "source": "glossaire (steuerhinterziehung) : art. 175 LIFD ; domaine fiscalite : art. 175 LIFD ; texte italien : art. 175 LIFD, titre « Sottrazione consumata » ; cpv. 3 « sottrazione d'imposta » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "impôt à la source",
+  "it": "imposta alla fonte",
+  "source": "glossaire (quellensteuer) : art. 83 à 101 LIFD ; texte italien : art. 83 LIFD, « assoggettati a un'imposta alla fonte » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "erreur essentielle",
+  "it": "errore essenziale",
+  "source": "domaine contrats : art. 23 CO ; texte italien : art. 23 CO, « da errore essenziale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "garantie en raison des défauts",
+  "it": "garanzia per i difetti",
+  "source": "domaine contrats : art. 197 CO ; texte italien : art. 197 CO, titre marginal « III. Garanzia pei difetti della cosa » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Le CO écrit « garanzia pei difetti della cosa » (« pei », forme ancienne de « per i ») ; le site écrit « garanzia per i difetti »."
+ },
+ {
+  "fr": "fusion",
+  "it": "fusione",
+  "source": "domaine fusions-acquisitions : art. 3 LFus ; texte italien : art. 3 LFus (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrat de fusion",
+  "it": "contratto di fusione",
+  "source": "domaine fusions-acquisitions : art. 12 LFus ; texte italien : art. 12 LFus (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "décision de fusion",
+  "it": "decisione di fusione",
+  "source": "domaine fusions-acquisitions : art. 18 LFus ; texte italien : art. 18 LFus (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "scission",
+  "it": "scissione",
+  "source": "domaine fusions-acquisitions : art. 29 LFus ; texte italien : art. 29 LFus (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "transformation",
+  "it": "trasformazione",
+  "source": "domaine fusions-acquisitions : art. 53 LFus ; texte italien : art. 53 LFus (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "transfert de patrimoine",
+  "it": "trasferimento di patrimonio",
+  "source": "domaine fusions-acquisitions : art. 69 LFus ; texte italien : titre de la LFus, « trasferimento di patrimonio » ; art. 69 LFus (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "augmentation du capital",
+  "it": "aumento del capitale",
+  "source": "domaine fusions-acquisitions : art. 650 CO ; texte italien : art. 650 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "concentration d'entreprises",
+  "it": "concentrazione di imprese",
+  "source": "domaine fusions-acquisitions : art. 4 LCart ; texte italien : art. 4 cpv. 3 LCart, « Per concentrazioni di imprese si intendono » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "sentence arbitrale",
+  "it": "lodo arbitrale",
+  "source": "domaine contentieux-arbitrage : art. 189 LDIP ; texte italien : art. 189 LDIP, titre « Lodo » ; art. 194 LDIP (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Le LDIP dit « lodo » ; « sentenza arbitrale » figure dans le titre de la Convention de New York cité à l'art. 194."
+ },
+ {
+  "fr": "reconnaissance et exécution",
+  "it": "riconoscimento ed esecuzione",
+  "source": "domaine contentieux-arbitrage : art. 194 LDIP ; texte italien : art. 194 LDIP, « Il riconoscimento e l'esecuzione di lodi stranieri » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "conclusions",
+  "it": "conclusioni",
+  "source": "domaine contentieux-arbitrage : art. 221 CPC ; texte italien : art. 58 CPC, « conclusioni delle parti » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Conclusions d'une partie. Attention : l'art. 221 cpv. 1 lett. b CPC désigne les conclusions de la demande par « la domanda »."
+ },
+ {
+  "fr": "réponse",
+  "it": "risposta",
+  "source": "domaine contentieux-arbitrage : art. 222 CPC ; texte italien : art. 222 CPC (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Risposta alla petizione (art. 222 CPC) uniquement."
+ },
+ {
+  "fr": "appel",
+  "it": "appello",
+  "source": "domaine contentieux-arbitrage : art. 308 CPC ; texte italien : art. 308 CPC (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "recours en matière civile",
+  "it": "ricorso in materia civile",
+  "source": "domaine contentieux-arbitrage : art. 72 LTF ; texte italien : art. 72 cpv. 2 LTF, « Al ricorso in materia civile » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "fonds propres",
+  "it": "fondi propri",
+  "source": "domaine banque-finance : art. 4 LB ; texte italien : art. 4 LBCR (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "prêt de consommation",
+  "it": "mutuo",
+  "source": "domaine banque-finance : art. 312 CO ; texte italien : art. 312 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "papiers-valeurs",
+  "it": "cartevalori",
+  "source": "domaine banque-finance : art. 965 CO ; texte italien : art. 965 CO, « Titolo di credito (cartavalore) » ; pluriel « cartevalori » aux art. 14 et 114 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Le titre du CO dit « titoli di credito » (titolo trentesimoterzo) ; « cartavalore » au singulier."
+ },
+ {
+  "fr": "placements collectifs de capitaux",
+  "it": "investimenti collettivi di capitale",
+  "source": "domaine banque-finance : art. 7 LPCC ; texte italien : art. 7 LICol (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "intermédiaire financier",
+  "it": "intermediario finanziario",
+  "source": "domaine compliance-finma : art. 2 LBA ; texte italien : art. 2 cpv. 2 LRD, « Sono intermediari finanziari » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "obligation de communiquer",
+  "it": "obbligo di comunicazione",
+  "source": "domaine compliance-finma : art. 9 LBA ; texte italien : art. 9 LRD (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "autorisation",
+  "it": "autorizzazione",
+  "source": "domaine compliance-finma : art. 3 LB ; texte italien : art. 3 cpv. 1 LBCR, « l'autorizzazione della FINMA » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Autorizzazione della FINMA (art. 3 LBCR) uniquement."
+ },
+ {
+  "fr": "surveillance des marchés financiers",
+  "it": "vigilanza sui mercati finanziari",
+  "source": "domaine compliance-finma : art. 1 LFINMA ; texte italien : art. 1 LFINMA ; titre de la LFINMA (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "rapport de gestion",
+  "it": "relazione sulla gestione",
+  "source": "domaine rapports-annuels-financiers : art. 958 CO ; texte italien : art. 958 cpv. 2 CO, « I conti sono presentati nella relazione sulla gestione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Les sociétés publient aussi un « rapporto annuale » ou « rapporto di gestione » ; le texte officiel dit « relazione sulla gestione »."
+ },
+ {
+  "fr": "comptes annuels",
+  "it": "conto annuale",
+  "source": "domaine rapports-annuels-financiers : art. 958 CO ; texte italien : art. 958 cpv. 2 CO, « il conto annuale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Jamais « bilancio d'esercizio », forme de l'Italie."
+ },
+ {
+  "fr": "bilan",
+  "it": "bilancio",
+  "source": "domaine rapports-annuels-financiers : art. 959 CO ; texte italien : art. 959 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "compte de résultat",
+  "it": "conto economico",
+  "source": "domaine rapports-annuels-financiers : art. 959b CO ; texte italien : art. 959b CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "annexe",
+  "it": "allegato",
+  "source": "domaine rapports-annuels-financiers : art. 959c CO ; texte italien : art. 959c CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Allegato del conto annuale (art. 959c CO) uniquement."
+ },
+ {
+  "fr": "comptes consolidés",
+  "it": "conto di gruppo",
+  "source": "domaine rapports-annuels-financiers : art. 963 CO ; texte italien : art. 963 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Jamais « bilancio consolidato », forme de l'Italie."
+ },
+ {
+  "fr": "contrôle ordinaire",
+  "it": "revisione ordinaria",
+  "source": "domaine rapports-annuels-financiers : art. 727 CO ; texte italien : art. 727 CO, titre marginal « 1. Revisione ordinaria » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrôle restreint",
+  "it": "revisione limitata",
+  "source": "domaine rapports-annuels-financiers : art. 727a CO ; texte italien : art. 727a CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "impôt fédéral direct",
+  "it": "imposta federale diretta",
+  "source": "domaine fiscalite : art. 1 LIFD ; texte italien : titre de la LIFD ; art. 1 LIFD (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "assujettissement à l'impôt",
+  "it": "assoggettamento all'imposta",
+  "source": "domaine fiscalite : art. 3 LIFD ; texte italien : LIFD, parte seconda, titolo primo « Assoggettamento » ; art. 3 LIFD (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "revenu imposable",
+  "it": "reddito imponibile",
+  "source": "domaine fiscalite : art. 16 LIFD ; texte italien : art. 41 cpv. 1 LIFD, « Il reddito imponibile » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "impôt sur le bénéfice",
+  "it": "imposta sull'utile",
+  "source": "domaine fiscalite : art. 57 LIFD ; texte italien : art. 57 LIFD (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "impôt sur le capital",
+  "it": "imposta sul capitale",
+  "source": "domaine fiscalite : art. 29 LHID ; texte italien : art. 29 LAID (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "preneur d'assurance",
+  "it": "stipulante",
+  "source": "domaine assurance : art. 2 LCA ; texte italien : art. 2a et 3 LCA, « Lo stipulante » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "conditions générales d'assurance",
+  "it": "condizioni generali d'assicurazione",
+  "source": "domaine assurance : art. 3 LCA ; texte italien : art. 2 cpv. 2 LCA, « condizioni generali d'assicurazione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "réticence",
+  "it": "reticenza",
+  "source": "domaine assurance : art. 6 LCA ; texte italien : art. 6 LCA, titre marginal « Reticenze e loro conseguenze » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "prime",
+  "it": "premio",
+  "source": "domaine assurance : art. 19 LCA ; texte italien : art. 19 LCA (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Premio d'assicurazione (art. 19 LCA) uniquement."
+ },
+ {
+  "fr": "sinistre",
+  "it": "sinistro",
+  "source": "domaine assurance : art. 38 LCA ; texte italien : art. 38 LCA, titre marginal « Obbligo di dare avviso del sinistro » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "réassurance",
+  "it": "riassicurazione",
+  "source": "domaine assurance : art. 2 LSA ; texte italien : art. 2 LSA (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "invention",
+  "it": "invenzione",
+  "source": "domaine propriete-intellectuelle : art. 1 LBI ; texte italien : art. 1 LBI (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "brevet",
+  "it": "brevetto",
+  "source": "domaine propriete-intellectuelle : art. 1 LBI ; texte italien : art. 1 LBI, « brevetti d'invenzione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "marque",
+  "it": "marchio",
+  "source": "domaine propriete-intellectuelle : art. 1 LPM ; texte italien : art. 1 LPM (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "indication de provenance",
+  "it": "indicazione di provenienza",
+  "source": "domaine propriete-intellectuelle : art. 47 LPM ; texte italien : art. 47 LPM (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "droit d'auteur",
+  "it": "diritto d'autore",
+  "source": "domaine propriete-intellectuelle : art. 1 LDA ; texte italien : titre de la LDA, « Legge federale sul diritto d'autore » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "œuvre",
+  "it": "opera",
+  "source": "domaine propriete-intellectuelle : art. 2 LDA ; texte italien : art. 2 LDA, « Sono opere » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "design",
+  "it": "design",
+  "source": "domaine propriete-intellectuelle : art. 1 LDes ; texte italien : art. 1 LDes (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "secret commercial",
+  "it": "segreto commerciale",
+  "source": "domaine propriete-intellectuelle : art. 162 CP ; texte italien : art. 162 CP, « Violazione del segreto di fabbrica o commerciale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrat individuel de travail",
+  "it": "contratto individuale di lavoro",
+  "source": "domaine droit-du-travail : art. 319 CO ; texte italien : art. 319 cpv. 1 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "certificat",
+  "it": "attestato",
+  "source": "domaine droit-du-travail : art. 330a CO ; texte italien : art. 330a CO, titre marginal « 2. Attestato » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Attestato di lavoro (art. 330a CO) uniquement."
+ },
+ {
+  "fr": "congé",
+  "it": "disdetta",
+  "source": "domaine droit-du-travail : art. 335 CO ; texte italien : art. 335 CO, titre marginal « 1. Disdetta, in generale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Même terme italien que « résiliation » (glossaire)."
+ },
+ {
+  "fr": "résiliation abusive",
+  "it": "disdetta abusiva",
+  "source": "domaine droit-du-travail : art. 336 CO ; texte italien : art. 336 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "convention collective de travail",
+  "it": "contratto collettivo di lavoro",
+  "source": "domaine droit-du-travail : art. 356 CO ; texte italien : art. 356 CO (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Jamais « CCNL », forme de l'Italie."
+ },
+ {
+  "fr": "prévenu",
+  "it": "imputato",
+  "source": "domaine droit-penal : art. 111 CPP ; texte italien : art. 111 CPP (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "ministère public",
+  "it": "pubblico ministero",
+  "source": "domaine droit-penal : art. 12 CPP ; texte italien : art. 12 CPP (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "ordonnance de classement",
+  "it": "decreto di abbandono",
+  "source": "domaine droit-penal : art. 319 CPP ; texte italien : art. 320 CPP, titre « Decreto di abbandono » (le tableau cite l'art. 319 CPP, motifs de l'abandon) (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "acte d'accusation",
+  "it": "atto d'accusa",
+  "source": "domaine droit-penal : art. 325 CPP ; texte italien : art. 325 CPP (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "escroquerie",
+  "it": "truffa",
+  "source": "domaine droit-penal : art. 146 CP ; texte italien : art. 146 CP (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "gestion déloyale",
+  "it": "amministrazione infedele",
+  "source": "domaine droit-penal : art. 158 CP ; texte italien : art. 158 CP (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "compétence",
+  "it": "competenza",
+  "source": "paire anglais-allemand : titre 2 CPC ; texte italien : CPC, titolo secondo « Competenza dei tribunali e ricusazione » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "solidarité passive",
+  "it": "debito solidale",
+  "source": "paire anglais-allemand : art. 143 CO ; texte italien : art. 143 CO, titre marginal « A. Debito solidale » (Fedlex, version en vigueur, vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "CC",
+  "it": "CC",
+  "source": "Fedlex, eli/cc/24/233_245_233, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code civil",
+  "it": "Codice civile",
+  "source": "Fedlex, eli/cc/24/233_245_233, titre ITA : « Codice civile svizzero del 10 dicembre 1907 »",
+  "type": "loi"
+ },
+ {
+  "fr": "CO",
+  "it": "CO",
+  "source": "Fedlex, eli/cc/27/317_321_377, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code des obligations",
+  "it": "Codice delle obbligazioni",
+  "source": "Fedlex, eli/cc/27/317_321_377, titre ITA : « Legge federale del 30 marzo 1911 di complemento del Codice civile svizzero (Libro quinto: Diritto delle obbligazioni) »",
+  "type": "loi"
+ },
+ {
+  "fr": "CP",
+  "it": "CP",
+  "source": "Fedlex, eli/cc/54/757_781_799, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code pénal suisse",
+  "it": "Codice penale svizzero",
+  "source": "Fedlex, eli/cc/54/757_781_799, titre ITA : « Codice penale svizzero del 21 dicembre 1937 »",
+  "type": "loi"
+ },
+ {
+  "fr": "CPC",
+  "it": "CPC",
+  "source": "Fedlex, eli/cc/2010/262, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code de procédure civile",
+  "it": "Codice di procedura civile",
+  "source": "Fedlex, eli/cc/2010/262, titre ITA : « Codice di diritto processuale civile svizzero del 19 dicembre 2008 (Codice di procedura civile, CPC) »",
+  "type": "loi"
+ },
+ {
+  "fr": "CPP",
+  "it": "CPP",
+  "source": "Fedlex, eli/cc/2010/267, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code de procédure pénale suisse",
+  "it": "Codice di procedura penale",
+  "source": "Fedlex, eli/cc/2010/267, titre ITA : « Codice di diritto processuale penale svizzero del 5 ottobre 2007 (Codice di procedura penale, CPP) »",
+  "type": "loi"
+ },
+ {
+  "fr": "EIMP",
+  "it": "AIMP",
+  "source": "Fedlex, eli/cc/1982/846_846_846, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : AIMP."
+ },
+ {
+  "fr": "loi sur l'entraide internationale en matière pénale",
+  "it": "legge federale sull'assistenza internazionale in materia penale",
+  "source": "Fedlex, eli/cc/1982/846_846_846, titre ITA : « Legge federale del 20 marzo 1981 sull'assistenza internazionale in materia penale (Assistenza in materia penale, AIMP) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LB",
+  "it": "LBCR",
+  "source": "Fedlex, eli/cc/51/117_121_129, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LBCR (jamais « LB »)."
+ },
+ {
+  "fr": "loi fédérale sur les banques et les caisses d'épargne",
+  "it": "legge federale sulle banche e le casse di risparmio",
+  "source": "Fedlex, eli/cc/51/117_121_129, titre ITA : « Legge federale dell'8 novembre 1934 sulle banche e le casse di risparmio (Legge sulle banche, LBCR) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LBA",
+  "it": "LRD",
+  "source": "Fedlex, eli/cc/1998/892_892_892, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LRD."
+ },
+ {
+  "fr": "loi sur le blanchiment d'argent",
+  "it": "legge sul riciclaggio di denaro",
+  "source": "Fedlex, eli/cc/1998/892_892_892, titre ITA : « Legge federale del 10 ottobre 1997 relativa alla lotta contro il riciclaggio di denaro e il finanziamento del terrorismo (Legge sul riciclaggio di denaro, LRD) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LBI",
+  "it": "LBI",
+  "source": "Fedlex, eli/cc/1955/871_893_899, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les brevets",
+  "it": "legge sui brevetti",
+  "source": "Fedlex, eli/cc/1955/871_893_899, titre ITA : « Legge federale del 25 giugno 1954 sui brevetti d'invenzione (Legge sui brevetti, LBI) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LCA",
+  "it": "LCA",
+  "source": "Fedlex, eli/cc/24/719_735_717, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur le contrat d'assurance",
+  "it": "legge federale sul contratto d'assicurazione",
+  "source": "Fedlex, eli/cc/24/719_735_717, titre ITA : « Legge federale del 2 aprile 1908 sul contratto d'assicurazione (Legge sul contratto d'assicurazione, LCA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LCart",
+  "it": "LCart",
+  "source": "Fedlex, eli/cc/1996/546_546_546, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les cartels",
+  "it": "legge sui cartelli",
+  "source": "Fedlex, eli/cc/1996/546_546_546, titre ITA : « Legge federale del 6 ottobre 1995 sui cartelli e altre limitazioni della concorrenza (Legge sui cartelli, LCart) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LDA",
+  "it": "LDA",
+  "source": "Fedlex, eli/cc/1993/1798_1798_1798, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur le droit d'auteur",
+  "it": "legge sul diritto d'autore",
+  "source": "Fedlex, eli/cc/1993/1798_1798_1798, titre ITA : « Legge federale del 9 ottobre 1992 sul diritto d'autore e sui diritti di protezione affini (Legge sul diritto d'autore, LDA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LDIP",
+  "it": "LDIP",
+  "source": "Fedlex, eli/cc/1988/1776_1776_1776, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur le droit international privé",
+  "it": "legge federale sul diritto internazionale privato",
+  "source": "Fedlex, eli/cc/1988/1776_1776_1776, titre ITA : « Legge federale del 18 dicembre 1987 sul diritto internazionale privato (LDIP) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LDes",
+  "it": "LDes",
+  "source": "Fedlex, eli/cc/2002/226, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les designs",
+  "it": "legge sul design",
+  "source": "Fedlex, eli/cc/2002/226, titre ITA : « Legge federale del 5 ottobre 2001 sulla protezione del design (Legge sul design, LDes) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LEI",
+  "it": "LStrI",
+  "source": "Fedlex, eli/cc/2007/758, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LStrI."
+ },
+ {
+  "fr": "loi fédérale sur les étrangers et l'intégration",
+  "it": "legge federale sugli stranieri e la loro integrazione",
+  "source": "Fedlex, eli/cc/2007/758, titre ITA : « Legge federale del 16 dicembre 2005 sugli stranieri e la loro integrazione (LStrI) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LFINMA",
+  "it": "LFINMA",
+  "source": "Fedlex, eli/cc/2008/736, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la surveillance des marchés financiers",
+  "it": "legge sulla vigilanza dei mercati finanziari",
+  "source": "Fedlex, eli/cc/2008/736, titre ITA : « Legge federale del 22 giugno 2007 concernente l'Autorità federale di vigilanza sui mercati finanziari (Legge sulla vigilanza dei mercati finanziari, LFINMA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LFus",
+  "it": "LFus",
+  "source": "Fedlex, eli/cc/2004/320, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la fusion",
+  "it": "legge sulla fusione",
+  "source": "Fedlex, eli/cc/2004/320, titre ITA : « Legge federale del 3 ottobre 2003 sulla fusione, la scissione, la trasformazione e il trasferimento di patrimonio (Legge sulla fusione, LFus) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LHID",
+  "it": "LAID",
+  "source": "Fedlex, eli/cc/1991/1256_1256_1256, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LAID."
+ },
+ {
+  "fr": "loi sur l'harmonisation des impôts directs",
+  "it": "legge federale sull'armonizzazione delle imposte dirette dei Cantoni e dei Comuni",
+  "source": "Fedlex, eli/cc/1991/1256_1256_1256, titre ITA : « Legge federale del 14 dicembre 1990 sull'armonizzazione delle imposte dirette dei Cantoni e dei Comuni (LAID) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LIA",
+  "it": "LIP",
+  "source": "Fedlex, eli/cc/1966/371_385_384, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LIP."
+ },
+ {
+  "fr": "loi fédérale sur l'impôt anticipé",
+  "it": "legge federale sull'imposta preventiva",
+  "source": "Fedlex, eli/cc/1966/371_385_384, titre ITA : « Legge federale del 13 ottobre 1965 sull'imposta preventiva (LIP) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LIFD",
+  "it": "LIFD",
+  "source": "Fedlex, eli/cc/1991/1184_1184_1184, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur l'impôt fédéral direct",
+  "it": "legge federale sull'imposta federale diretta",
+  "source": "Fedlex, eli/cc/1991/1184_1184_1184, titre ITA : « Legge federale del 14 dicembre 1990 sull'imposta federale diretta (LIFD) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LP",
+  "it": "LEF",
+  "source": "Fedlex, eli/cc/11/529_488_529, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Le titre officiel garde la forme ancienne « sulla esecuzione » ; les autres lois écrivent « sull'esecuzione e sul fallimento » (p. ex. art. 97 cpv. 2 CO). Abréviation : LEF."
+ },
+ {
+  "fr": "loi fédérale sur la poursuite pour dettes et la faillite",
+  "it": "legge federale sulla esecuzione e sul fallimento",
+  "source": "Fedlex, eli/cc/11/529_488_529, titre ITA : « Legge federale dell'11 aprile 1889 sulla esecuzione e sul fallimento (LEF) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LPCC",
+  "it": "LICol",
+  "source": "Fedlex, eli/cc/2006/822, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LICol."
+ },
+ {
+  "fr": "loi sur les placements collectifs",
+  "it": "legge sugli investimenti collettivi",
+  "source": "Fedlex, eli/cc/2006/822, titre ITA : « Legge federale del 23 giugno 2006 sugli investimenti collettivi di capitale (Legge sugli investimenti collettivi, LICol) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LPD",
+  "it": "LPD",
+  "source": "Fedlex, eli/cc/2022/491, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur la protection des données",
+  "it": "legge federale sulla protezione dei dati",
+  "source": "Fedlex, eli/cc/2022/491, titre ITA : « Legge federale del 25 settembre 2020 sulla protezione dei dati (LPD) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LPM",
+  "it": "LPM",
+  "source": "Fedlex, eli/cc/1993/274_274_274, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la protection des marques",
+  "it": "legge sulla protezione dei marchi",
+  "source": "Fedlex, eli/cc/1993/274_274_274, titre ITA : « Legge federale del 28 agosto 1992 sulla protezione dei marchi e delle indicazioni di provenienza (Legge sulla protezione dei marchi, LPM) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LSA",
+  "it": "LSA",
+  "source": "Fedlex, eli/cc/2005/734, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la surveillance des assurances",
+  "it": "legge sulla sorveglianza degli assicuratori",
+  "source": "Fedlex, eli/cc/2005/734, titre ITA : « Legge federale del 17 dicembre 2004 sulla sorveglianza delle imprese di assicurazione (Legge sulla sorveglianza degli assicuratori, LSA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LSFin",
+  "it": "LSerFi",
+  "source": "Fedlex, eli/cc/2019/758, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LSerFi."
+ },
+ {
+  "fr": "loi fédérale sur les services financiers",
+  "it": "legge federale sui servizi finanziari",
+  "source": "Fedlex, eli/cc/2019/758, titre ITA : « Legge federale del 15 giugno 2018 sui servizi finanziari (Legge sui servizi finanziari, LSerFi) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LTF",
+  "it": "LTF",
+  "source": "Fedlex, eli/cc/2006/218, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur le Tribunal fédéral",
+  "it": "legge sul Tribunale federale",
+  "source": "Fedlex, eli/cc/2006/218, titre ITA : « Legge del 17 giugno 2005 sul Tribunale federale (LTF) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LTVA",
+  "it": "LIVA",
+  "source": "Fedlex, eli/cc/2009/615, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LIVA ; titre abrégé « Legge sull'IVA »."
+ },
+ {
+  "fr": "loi fédérale régissant la taxe sur la valeur ajoutée",
+  "it": "legge federale concernente l'imposta sul valore aggiunto",
+  "source": "Fedlex, eli/cc/2009/615, titre ITA : « Legge federale del 12 giugno 2009 concernente l'imposta sul valore aggiunto (Legge sull'IVA, LIVA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LTr",
+  "it": "LL",
+  "source": "Fedlex, eli/cc/1966/57_57_57, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : LL."
+ },
+ {
+  "fr": "loi sur le travail",
+  "it": "legge sul lavoro",
+  "source": "Fedlex, eli/cc/1966/57_57_57, titre ITA : « Legge federale del 13 marzo 1964 sul lavoro nell'industria, nell'artigianato e nel commercio (Legge sul lavoro, LL) »",
+  "type": "loi"
+ },
+ {
+  "fr": "ORC",
+  "it": "ORC",
+  "source": "Fedlex, eli/cc/2007/686, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "ordonnance sur le registre du commerce",
+  "it": "ordinanza sul registro di commercio",
+  "source": "Fedlex, eli/cc/2007/686, titre ITA : « Ordinanza del 17 ottobre 2007 sul registro di commercio (ORC) »",
+  "type": "loi"
+ },
+ {
+  "fr": "PA",
+  "it": "PA",
+  "source": "Fedlex, eli/cc/1969/737_757_755, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur la procédure administrative",
+  "it": "legge federale sulla procedura amministrativa",
+  "source": "Fedlex, eli/cc/1969/737_757_755, titre ITA : « Legge federale del 20 dicembre 1968 sulla procedura amministrativa (PA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "Cst.",
+  "it": "Cost.",
+  "source": "Fedlex, eli/cc/1999/404, jolux:titleShort de l'expression ITA (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Abréviation italienne : Cost."
+ },
+ {
+  "fr": "Constitution fédérale",
+  "it": "Costituzione federale",
+  "source": "Fedlex, eli/cc/1999/404, titre ITA : « Costituzione federale della Confederazione Svizzera del 18 aprile 1999 »",
+  "type": "loi"
+ },
+ {
+  "fr": "RS",
+  "it": "RS",
+  "source": "Fedlex, legge sulle pubblicazioni ufficiali (LPubb, RS 170.512), art. 1 : « Raccolta sistematica del diritto federale, RS »",
+  "type": "publication"
+ },
+ {
+  "fr": "RO",
+  "it": "RU",
+  "source": "Fedlex, LPubb (RS 170.512), art. 1 : « Raccolta ufficiale delle leggi federali, RU »",
+  "type": "publication"
+ },
+ {
+  "fr": "FF",
+  "it": "FF",
+  "source": "Fedlex, LPubb (RS 170.512), art. 1 : « Foglio federale (FF) »",
+  "type": "publication"
+ },
+ {
+  "fr": "Recueil systématique du droit fédéral",
+  "it": "Raccolta sistematica del diritto federale",
+  "source": "Fedlex, LPubb (RS 170.512), art. 1 et section 3",
+  "type": "publication"
+ },
+ {
+  "fr": "Recueil officiel du droit fédéral",
+  "it": "Raccolta ufficiale delle leggi federali",
+  "source": "Fedlex, LPubb (RS 170.512), art. 1 et section 2",
+  "type": "publication",
+  "note": "Le titre italien dit « delle leggi federali », pas « del diritto federale »."
+ },
+ {
+  "fr": "Feuille fédérale",
+  "it": "Foglio federale",
+  "source": "Fedlex, LPubb (RS 170.512), titre et art. 1",
+  "type": "publication"
+ },
+ {
+  "fr": "ATF",
+  "it": "DTF",
+  "source": "Istruzioni della Cancelleria federale per la redazione dei testi ufficiali in italiano (2023, stato 15 dicembre 2025), n. 76 : « Raccolta ufficiale delle decisioni del Tribunale federale (DTF) »",
+  "type": "publication"
+ },
+ {
+  "fr": "nLPD",
+  "it": "nLPD",
+  "source": "Istruzioni della Cancelleria federale (2023), tabella 1 : « nLPD » cité en exemple d'abréviation d'un acte adopté non encore en vigueur",
+  "type": "loi",
+  "note": "La LPD du 25 septembre 2020 est en vigueur : en contexte juridique, écrire « LPD » ; « nLPD » seulement en texte marketing."
+ },
+ {
+  "fr": "RGPD",
+  "it": "GDPR",
+  "source": "usage : règlement (UE) 2016/679 ; abréviation non vérifiée dans un texte fédéral en italien, traduction maison à valider",
+  "type": "loi",
+  "note": "Nom complet : « regolamento generale sulla protezione dei dati ». On rencontre aussi « RGPD »."
+ },
+ {
+  "fr": "Fribourg",
+  "it": "Friburgo",
+  "source": "Istruzioni della Cancelleria federale (2023), n. 58 : « Fribourg = Friburgo » ; art. 1 Cost.",
+  "type": "lieu",
+  "note": "Dans l'adresse postale, garder « 1700 Fribourg »."
+ },
+ {
+  "fr": "État de Fribourg",
+  "it": "Cantone di Friburgo",
+  "source": "Fedlex, RS 131.219, traduction italienne de la Constitution fribourgeoise, art. 1 : « Il Cantone di Friburgo è uno Stato di diritto » (FR : « Le canton de Fribourg est un État de droit »)",
+  "type": "lieu",
+  "note": "Traduction non officielle : le texte original est en français et en allemand."
+ },
+ {
+  "fr": "Genève",
+  "it": "Ginevra",
+  "source": "art. 1 Cost. (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Zurich",
+  "it": "Zurigo",
+  "source": "art. 1 Cost. (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Saint-Gall",
+  "it": "San Gallo",
+  "source": "art. 1 Cost. (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Berne",
+  "it": "Berna",
+  "source": "art. 1 Cost. (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Lucerne",
+  "it": "Lucerna",
+  "source": "art. 1 Cost. et art. 4 cpv. 2 LTF (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Lausanne",
+  "it": "Losanna",
+  "source": "art. 4 cpv. 1 LTF (texte italien) : « La sede del Tribunale federale è Losanna »",
+  "type": "lieu"
+ },
+ {
+  "fr": "Schwyz",
+  "it": "Svitto",
+  "source": "art. 1 Cost. (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Londres",
+  "it": "Londra",
+  "source": "nom italien de la ville (usage), traduction maison à valider",
+  "type": "lieu"
+ },
+ {
+  "fr": "Coire",
+  "it": "Coira",
+  "source": "nom italien de la ville (usage), non vérifié dans Fedlex, traduction maison à valider",
+  "type": "lieu"
+ },
+ {
+  "fr": "Tessin",
+  "it": "Ticino",
+  "source": "art. 1 Cost. (texte italien) ; Istruzioni della Cancelleria federale (2023), n. 111 : « il Cantone Ticino », sans « di »",
+  "type": "lieu"
+ },
+ {
+  "fr": "Vaud",
+  "it": "Vaud",
+  "source": "art. 1 Cost. (texte italien)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Suisse romande",
+  "it": "Svizzera romanda",
+  "source": "usage, traduction maison à valider",
+  "type": "lieu"
+ },
+ {
+  "fr": "Suisse italienne",
+  "it": "Svizzera italiana",
+  "source": "Istruzioni della Cancelleria federale (2023), n. 58",
+  "type": "lieu"
+ },
+ {
+  "fr": "Confédération",
+  "it": "Confederazione",
+  "source": "art. 1 et 174 Cost. (texte italien)",
+  "type": "lieu",
+  "note": "Majuscule : « la Confederazione » ; « Confederazione Svizzera » dans le nom officiel."
+ },
+ {
+  "fr": "canton",
+  "it": "Cantone",
+  "source": "art. 1 Cost. ; Istruzioni della Cancelleria federale (2023), n. 110 : « Cantone » s'écrit avec la majuscule",
+  "type": "lieu",
+  "note": "« Cantone di Friburgo », mais « Cantone Ticino », « Cantone dei Grigioni », « Cantone del Vallese », « Cantone del Giura » (n. 111)."
+ },
+ {
+  "fr": "HEIA-FR",
+  "it": "HEIA-FR",
+  "source": "sigle de la Haute école d'ingénierie et d'architecture de Fribourg ; pas de nom italien officiel connu (Istruzioni, n. 55 : nom original), traduction maison à valider",
+  "type": "lieu"
+ },
+ {
+  "fr": "devis",
+  "it": "preventivo",
+  "source": "art. 375 CO : FR « Dépassement de devis » = IT « Recesso per sorpasso del preventivo » (Fedlex) ; vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "« offerta » est aussi l'usage commercial suisse (Offerte) ; « preventivo » désigne en outre le budget de la Confédération (art. 167 Cost. : « ne adotta il preventivo »). Choix à confirmer."
+ },
+ {
+  "fr": "page standard",
+  "it": "pagina standard",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "pages standard",
+  "it": "pagine standard",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "traducteur juridique",
+  "it": "traduttore giuridico",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Maschile inclusivo dans le texte courant (Istruzioni, n. 146) ; « traduttrici e traduttori giuridici » à la rigueur dans un titre."
+ },
+ {
+  "fr": "juriste-linguiste",
+  "it": "giurista linguista",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Variante rencontrée : « giurilinguista » (non vérifiée dans un texte fédéral)."
+ },
+ {
+  "fr": "juristes-linguistes",
+  "it": "giuristi linguisti",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "relecture juridique",
+  "it": "revisione giuridica",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "« revisione » désigne aussi l'audit (« ufficio di revisione ») : préciser « revisione della traduzione » si le contexte est ambigu."
+ },
+ {
+  "fr": "relecture humaine",
+  "it": "revisione da parte di specialisti",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "post-édition",
+  "it": "post-editing",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "traduction machine",
+  "it": "traduzione automatica",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "moteur de traduction",
+  "it": "motore di traduzione",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "moteur de traduction neuronale",
+  "it": "motore di traduzione neurale",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "LexMachina : jamais « LLM » (sauf actualités historiques)."
+ },
+ {
+  "fr": "mémoire de traduction",
+  "it": "memoria di traduzione",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Le sigle anglais TM peut suivre entre parenthèses."
+ },
+ {
+  "fr": "traduction certifiée",
+  "it": "traduzione certificata",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Le document de l'agence qui atteste l'exactitude : « attestazione » (« certificato » est réservé à la certification ISO 27001)."
+ },
+ {
+  "fr": "traduction notariée",
+  "it": "traduzione autenticata da un notaio",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "apostille",
+  "it": "apostille",
+  "source": "Cancelleria dello Stato del Cantone Ticino (ti.ch, page « Autentiche di documenti », relevée le 2026-10-02) : « apostille », aussi « postilla » ; vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "La traduction italienne de la Convention de La Haye du 5 octobre 1961 (RS 0.172.030.4, art. 3 et 4) dit « postilla »."
+ },
+ {
+  "fr": "extrait du registre du commerce",
+  "it": "estratto del registro di commercio",
+  "source": "art. 11 ORC (« estratti autenticati ») et art. 927 CO (Fedlex, texte italien)",
+  "type": "metier"
+ },
+ {
+  "fr": "secret professionnel",
+  "it": "segreto professionale",
+  "source": "art. 321 CP (texte italien), titre « Violazione del segreto professionale »",
+  "type": "metier",
+  "note": "Pour l'avocat, l'usage parle aussi de « segreto professionale dell'avvocato »."
+ },
+ {
+  "fr": "cabinet d'avocats",
+  "it": "studio legale",
+  "source": "art. 5 cpv. 2 lett. d LLCA (RS 935.61, texte italien) : « il nome dello studio legale »",
+  "type": "metier"
+ },
+ {
+  "fr": "étude d'avocats",
+  "it": "studio legale",
+  "source": "art. 5 cpv. 2 lett. d LLCA (RS 935.61, texte italien)",
+  "type": "metier"
+ },
+ {
+  "fr": "direction juridique",
+  "it": "ufficio legale",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Dans l'administration : « servizio giuridico »."
+ },
+ {
+  "fr": "fiduciaire",
+  "it": "fiduciaria",
+  "source": "loi tessinoise sur l'exercice des professions de fiduciaire (LFid, RL 953.100) : « fiduciario commercialista » ; vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "La personne : « fiduciario » ; le secteur : « settore fiduciario ». Jamais « commercialista » seul, profession de l'Italie."
+ },
+ {
+  "fr": "souveraineté des données",
+  "it": "sovranità dei dati",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "hébergement en Suisse",
+  "it": "hosting in Svizzera",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "certification ISO 27001",
+  "it": "certificazione ISO 27001",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "concordancier",
+  "it": "concordanziere",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "texte officiel",
+  "it": "testo ufficiale",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "délai",
+  "it": "termine di consegna",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Délai de livraison d'une traduction uniquement ; délai légal : « termine »."
+ },
+ {
+  "fr": "Demander une démo",
+  "it": "Richiedere una demo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Demandez une démo",
+  "it": "Richiedete una demo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir",
+  "it": "Scoprire",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir Corrext",
+  "it": "Scoprire Corrext",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir CHnell",
+  "it": "Scoprire CHnell",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir l'outil",
+  "it": "Scoprire lo strumento",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Voir la plateforme",
+  "it": "Alla piattaforma",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "Forme « Alla … » des liens de navigation, comme UBS Svizzera (« Alle opportunità di investimento »)."
+ },
+ {
+  "fr": "Essayer Corrext en direct",
+  "it": "Provare Corrext dal vivo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ouvrir la démo en direct",
+  "it": "Aprire la demo dal vivo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Essayez sans inscription",
+  "it": "Provare senza registrazione",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Voir les comparatifs",
+  "it": "Ai confronti",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "À propos et distinctions",
+  "it": "Chi siamo e riconoscimenti",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Contacter l'équipe",
+  "it": "Contattare il team",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Centre d'aide",
+  "it": "Centro assistenza",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "En bref",
+  "it": "In breve",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Lire l'article",
+  "it": "Leggere l'articolo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Lire la définition",
+  "it": "Leggere la definizione",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tous les articles",
+  "it": "Tutti gli articoli",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tous les domaines",
+  "it": "Tutti i settori del diritto",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tout le glossaire",
+  "it": "Tutto il glossario",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Voir les termes",
+  "it": "Vedere i termini",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Termes voisins",
+  "it": "Termini correlati",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Le terme, quatre langues",
+  "it": "Il termine in quattro lingue",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Un terme, quatre langues",
+  "it": "Un termine, quattro lingue",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Le terme dans un texte officiel",
+  "it": "Il termine in un testo ufficiale",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Terminologie officielle",
+  "it": "Terminologia ufficiale",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Définition",
+  "it": "Definizione",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Source",
+  "it": "Fonte",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Référence",
+  "it": "Riferimento",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Questions fréquentes",
+  "it": "Domande frequenti",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Une question reste sans réponse ?",
+  "it": "Avete ancora una domanda?",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ce que Corrext apporte",
+  "it": "Che cosa offre Corrext",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ce que Corrext change",
+  "it": "Che cosa cambia con Corrext",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Traduction par domaine",
+  "it": "Traduzione per settore del diritto",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Par domaine du droit",
+  "it": "Per settore del diritto",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Par paire de langues",
+  "it": "Per combinazione linguistica",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Par métier",
+  "it": "Per professione",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Solutions",
+  "it": "Soluzioni",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ressources",
+  "it": "Risorse",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Glossaire juridique suisse",
+  "it": "Glossario giuridico svizzero",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Guides",
+  "it": "Guide",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Études et benchmarks",
+  "it": "Studi e benchmark",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Comparatifs",
+  "it": "Confronti",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Actualités",
+  "it": "Notizie",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Blog",
+  "it": "Blog",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Presse",
+  "it": "Stampa",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Sécurité et souveraineté",
+  "it": "Sicurezza e sovranità dei dati",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Langues et formats",
+  "it": "Lingue e formati",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Niveaux de qualité",
+  "it": "Livelli di qualità",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Traduction texte et document",
+  "it": "Traduzione di testi e documenti",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Gestion de projet",
+  "it": "Gestione dei progetti",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Éditeur de relecture",
+  "it": "Editor di revisione",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Extraits du registre",
+  "it": "Estratti del registro di commercio",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "API et on-premises",
+  "it": "API e on-premises",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Mentions légales et CGU",
+  "it": "Note legali e condizioni d'uso",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Protection des données",
+  "it": "Protezione dei dati",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Accueil",
+  "it": "Pagina iniziale",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "Libellé d'admin.ch (« Pagina iniziale »)."
+ },
+ {
+  "fr": "Aller au contenu",
+  "it": "Passare al contenuto",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Fil d'Ariane",
+  "it": "Percorso di navigazione",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Partager",
+  "it": "Condividere",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Partager sur LinkedIn",
+  "it": "Condividere su LinkedIn",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Suivre Neur.on sur LinkedIn",
+  "it": "Seguire Neur.on su LinkedIn",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "{0} min de lecture",
+  "it": "Lettura: {0} min",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "mis à jour le {0}",
+  "it": "aggiornato il {0}",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tous droits réservés.",
+  "it": "Tutti i diritti riservati.",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Hébergement 100% suisse",
+  "it": "Hosting al 100 % in Svizzera",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "Espace protégé entre le nombre et % (Istruzioni, n. 49)."
+ },
+ {
+  "fr": "ISO 27001 certifié",
+  "it": "Certificato ISO 27001",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Soutenu par Innosuisse",
+  "it": "Sostenuto da Innosuisse",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Démo sur mesure",
+  "it": "Demo personalizzata",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Code de procédure pénale suisse",
+  "it": "Codice di diritto processuale penale svizzero",
+  "source": "Fedlex, eli/cc/2010/267, titre ITA : « Codice di diritto processuale penale svizzero del 5 ottobre 2007 (Codice di procedura penale, CPP) »",
+  "type": "loi"
+ },
+ {
+  "fr": "Code pénal suisse",
+  "it": "Codice penale",
+  "source": "Fedlex, eli/cc/54/757_781_799, titre ITA : « Codice penale svizzero del 21 dicembre 1937 »",
+  "type": "loi"
+ },
+ {
+  "fr": "Code civil suisse",
+  "it": "Codice civile svizzero",
+  "source": "Fedlex, eli/cc/24/233_245_233, titre ITA : « Codice civile svizzero del 10 dicembre 1907 »",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur la poursuite pour dettes et la faillite",
+  "it": "legge federale sull'esecuzione e sul fallimento",
+  "source": "Fedlex, art. 97 cpv. 2 CO (texte italien), forme moderne du titre de la LEF",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la poursuite pour dettes et la faillite",
+  "it": "legge sull'esecuzione e sul fallimento",
+  "source": "forme abrégée de la LEF (FR : alias des sources du glossaire) ; art. 97 cpv. 2 CO (texte italien) : « legge federale [...] sull'esecuzione e sul fallimento »",
+  "type": "loi"
+ }
+]
