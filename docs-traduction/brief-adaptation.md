@@ -46,7 +46,7 @@ Seulement le texte des brouillons : contenus des balises, attributs lisibles (`a
 
 Lance `python3 outils/controle_traductions.py <lang> --seulement <motif de ton lot>` et corrige tous les problèmes bloquants. Traite aussi les avertissements SEO et terminologiques, sauf choix motivé.
 
-Ne lance pas `build.py`, ne commite pas.
+Ne lance pas `build.py`, ne commite pas. D'autres agents travaillent en même temps dans le dépôt : git en lecture seule (status, diff, log, show), jamais reset, checkout, restore, stash ni clean, qui effaceraient leur travail.
 
 ## Rapport (en français, court)
 

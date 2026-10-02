@@ -20,7 +20,7 @@ Tu relis un lot de pages du site Neur.on qu'un autre agent vient d'adapter du fr
 
 Corrige directement dans les fichiers adaptés, en respectant les mêmes interdits que l'adaptateur : structure, liens `{{ROOT}}fr/…`, jetons et valeurs techniques intouchables ; aucun tiret cadratin ni demi-cadratin ; pas de ß en allemand. Puis lance `python3 outils/controle_traductions.py <lang> --seulement <motif du lot>` : aucun bloquant ne doit rester.
 
-Ne lance pas `build.py`, ne commite pas.
+Ne lance pas `build.py`, ne commite pas. D'autres agents travaillent en même temps dans le dépôt : git en lecture seule (status, diff, log, show), jamais reset, checkout, restore, stash ni clean, qui effaceraient leur travail.
 
 ## Rapport (en français, court)
 
