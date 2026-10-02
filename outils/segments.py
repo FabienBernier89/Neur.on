@@ -23,6 +23,8 @@ LETTRE = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ]")
 JETON = re.compile(r"\{\{[^}]+\}\}")
 PLACE = re.compile(r"\{\d+\}")  # emplacement d'un gabarit T("{0} actualités").format(n)
 CHEMIN = re.compile(r"^(https?:|mailto:|tel:|/|\{\{ROOT\}\}|fr/|assets/|#)")
+# code de symbole en tête d'une cellule de tableau (cartes de héros : y ✓, p ⚠, n ✕) : jamais traduit
+SYMBOLE = re.compile(r"^[ypn]:(?=\S)")
 
 
 def _nom(tag):
@@ -238,9 +240,16 @@ def _parcours(o, chemin, fichier, unites):
         for i, v in enumerate(o):
             _parcours(v, chemin + (i,), fichier, unites)
     elif isinstance(o, str) and LETTRE.search(o) and not CHEMIN.match(o) and not IDENT.fullmatch(o):
-        texte, table = proteger(o)
+        m = SYMBOLE.match(o)
+        prefixe = m.group(0) if m else ""
+        texte, table = proteger(o[len(prefixe):])
         unites.append({"id": fichier + ":" + "/".join(map(str, chemin)), "chemin": chemin, "genre": "json",
-                       "html": o, "texte": texte, "table": table})
+                       "html": o, "texte": texte, "table": table, "prefixe": prefixe})
+
+
+def restaurer_unite(traduction, unite):
+    """Traduction d'une unité -> valeur finale : balisage rétabli, code de symbole remis en tête."""
+    return unite.get("prefixe", "") + restaurer(traduction, unite["table"])
 
 
 def extraire_json(data, fichier):

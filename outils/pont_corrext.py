@@ -140,13 +140,13 @@ def _traduit(u, faits, a_revoir, rel):
     if t is None:
         return None
     try:
-        return S.restaurer(t, u["table"])
+        return S.restaurer_unite(t, u)
     except ValueError as e:
         # marqueurs abîmés : texte sans balisage, jetons {{…}} remis en fin, à reprendre par l'agent d'adaptation
         plat = re.sub(r"\{\s*/?\s*\d+\s*\}", "", t)
         jetons = [e2["vide"] for e2 in u["table"].values() if "vide" in e2 and e2["vide"].startswith("{{")]
         a_revoir.append({"fichier": rel, "segment": u["id"], "probleme": str(e), "source": u["html"]})
-        return S.html.escape(" ".join(plat.split()), quote=False) + "".join(" " + j for j in jetons)
+        return u.get("prefixe", "") + S.html.escape(" ".join(plat.split()), quote=False) + "".join(" " + j for j in jetons)
 
 
 def reinjecter(lang):

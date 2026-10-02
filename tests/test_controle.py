@@ -176,6 +176,13 @@ class TestStructure(Base):
         self.glossaire(fr="la résiliation")
         self.assertBloquant("structure", GLOSS, "fr")
 
+    def test_code_de_symbole_modifie(self):
+        fr = json.loads(json.dumps(GLOSSAIRE_FR))
+        fr[0]["cellule"] = "y:En Suisse, toujours"
+        self.ecrire("src/data/glossaire.json", fr)
+        self.glossaire(cellule="Immer y:In der Schweiz")
+        self.assertBloquant("structure", GLOSS, "cellule")
+
     def test_json_invalide(self):
         self.ecrire(GLOSS, '[{"slug": "kuendigung",')
         self.assertBloquant("structure", GLOSS)

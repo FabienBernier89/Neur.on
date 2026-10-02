@@ -96,6 +96,14 @@ class TestJson(unittest.TestCase):
         self.assertEqual(out[0]["faq"][0]["q"], "X")
         self.assertEqual(out[0]["termes"][0]["fr"], "résiliation")
 
+    def test_code_de_symbole_protege(self):
+        # « y: », « p: », « n: » en tête d'une cellule de tableau (✓, ⚠, ✕) ne passe jamais par le moteur
+        data = {"lignes": [["Stockage", "y:En Suisse"]]}
+        unites = S.extraire_json(data, "cartes.json")
+        self.assertEqual(sorted(u["texte"] for u in unites), ["En Suisse", "Stockage"])
+        u = next(u for u in unites if u["texte"] == "En Suisse")
+        self.assertEqual(S.restaurer_unite("In der Schweiz", u), "y:In der Schweiz")
+
 
 if __name__ == "__main__":
     unittest.main()

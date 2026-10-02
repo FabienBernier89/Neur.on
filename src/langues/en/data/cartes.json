@@ -10,23 +10,23 @@
   "lignes": [
    [
     "Storage",
-    "n:Hors of Switzerland",
-    "y:En Switzerland, always"
+    "n:Outside Switzerland",
+    "y:Always in Switzerland"
    ],
    [
-    "Before dispatch",
-    "n:Aucun Notice",
-    "privilege Client y:Attorney"
+    "Before sending",
+    "n:No notice",
+    "y:Attorney-Client privilege"
    ],
    [
     "Swiss terminology",
-    "p:Glossaires to be created",
-    "y:CHnell, 30 areas"
+    "p:Glossaries to build yourself",
+    "y:CHnell, 30 domains"
    ],
    [
     "Formats",
     "y:Office and PDF",
-    "y:Format of origin"
+    "y:Original format"
    ]
   ],
   "pied": "Full table below"
@@ -41,24 +41,24 @@
   ],
   "lignes": [
    [
-    "Reformulate, explain",
+    "Rephrase, explain",
     "y:Excellent",
     "y:Rephrasing, five styles"
    ],
    [
     "Legal references",
-    "deaf n:Jamais",
-    "y:Vérifiées in CHnell"
+    "n:Never sourced",
+    "y:Checked in CHnell"
    ],
    [
     "Several engines",
-    "n:Un only Model",
-    "alternative y:Quatre"
+    "n:A single model",
+    "y:Four alternatives"
    ],
    [
-    "Commissioned re-reading",
-    "n:Non",
-    "y:Light, full, Double"
+    "Commissioned review",
+    "n:No",
+    "y:Light, Full, Double"
    ]
   ],
   "pied": "Full table below"
@@ -74,23 +74,23 @@
   "lignes": [
    [
     "Getting started",
-    "p:Devis command",
-    "y:Immédiate"
+    "p:Quote, then order",
+    "y:Immediate"
    ],
    [
     "Binding document",
-    "y:C 'is his job",
-    "ordered y:Relecture"
+    "y:Its core business",
+    "y:Commissioned review"
    ],
    [
     "Confidentiality",
-    "p:Selon the channel",
-    "Swiss y:Stockage, ISO 27001"
+    "p:Depends on the channel",
+    "y:Swiss storage, ISO 27001"
    ],
    [
-    "Process Control",
-    "n:Hors from home",
-    "y:Une only Interface"
+    "Process control",
+    "n:Outside your firm",
+    "y:A single interface"
    ]
   ],
   "pied": "Full table below"

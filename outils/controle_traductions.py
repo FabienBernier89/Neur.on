@@ -418,6 +418,8 @@ def _structure(a, b, chemin, fichier, racine, out):
             bl(f"lien modifié : {lieu} : « {_extrait(a)} » → « {_extrait(b)} »")
         elif S.IDENT.fullmatch(a) and a != b:  # identifiant (valeur d'énumération, slug) : jamais traduit
             bl(f"identifiant modifié : {lieu} : « {a} » → « {_extrait(b)} »")
+        elif S.SYMBOLE.match(a) and not b.startswith(a[:2]):  # code ✓ ⚠ ✕ d'une cellule de tableau
+            bl(f"code de symbole modifié : {lieu} : « {_extrait(a)} » → « {_extrait(b)} »")
     elif a != b:
         bl(f"valeur modifiée : {lieu} : {a!r} → {b!r}")
 
