@@ -19,6 +19,7 @@ TECH = {"slug", "icone", "vis", "href", "url", "src", "date", "maj", "w", "h", "
         "temoignage_exemple", "exemple_flag", "type", "langues"}
 LETTRE = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ]")
 JETON = re.compile(r"\{\{[^}]+\}\}")
+PLACE = re.compile(r"\{\d+\}")  # emplacement d'un gabarit T("{0} actualités").format(n)
 CHEMIN = re.compile(r"^(https?:|mailto:|tel:|/|\{\{ROOT\}\}|fr/|assets/|#)")
 
 
@@ -29,7 +30,7 @@ def _nom(tag):
 
 def proteger(fragment):
     """HTML en ligne -> (texte à traduire avec marqueurs, table des marqueurs)."""
-    jetons = re.findall(r"\{\{[^}]+\}\}|<[^>]+>|[^<{]+|[<{]", fragment)
+    jetons = re.findall(r"\{\{[^}]+\}\}|\{\d+\}|<[^>]+>|[^<{]+|[<{]", fragment)
     sortie, table, pile, n = [], {}, [], 0
     # numérotation : une ouverture ou un élément vide prend un numéro ; la fermeture reprend celui de l'ouverture
     fermees = set()
@@ -51,7 +52,7 @@ def proteger(fragment):
             pile.append(i)
     num = {}
     for i, j in enumerate(jetons):
-        if JETON.fullmatch(j) or (j.startswith("<") and not j.startswith("</")):
+        if JETON.fullmatch(j) or PLACE.fullmatch(j) or (j.startswith("<") and not j.startswith("</")):
             n += 1
             num[i] = n
             if i in appariement:
@@ -111,7 +112,7 @@ def _ouvre(m, table):
 
 
 def _a_du_texte(fragment):
-    t = JETON.sub("", re.sub(r"<[^>]+>", "", fragment))
+    t = PLACE.sub("", JETON.sub("", re.sub(r"<[^>]+>", "", fragment)))
     return bool(LETTRE.search(html.unescape(t)))
 
 
@@ -141,6 +142,23 @@ def extraire_html(source):
     run = []
 
     def vide_run():
+        if not run:
+            return
+        # aux bords : retirer les blancs et les balises dont la paire n'est pas dans le passage
+        jet = [source[a:b] for a, b in run]
+        pile, paire = [], set()
+        for i, j in enumerate(jet):
+            if j.startswith("</"):
+                for k in range(len(pile) - 1, -1, -1):
+                    if _nom(jet[pile[k]]) == _nom(j):
+                        paire.update((pile[k], i)); del pile[k:]; break
+            elif j.startswith("<") and _nom(j) not in VIDES:
+                pile.append(i)
+        bord = lambda i: (not jet[i].startswith("<") and not jet[i].strip()) or (jet[i].startswith("<") and i not in paire)
+        while run and bord(0):
+            run.pop(0); jet.pop(0); paire = {p - 1 for p in paire if p > 0}
+        while run and bord(len(run) - 1):
+            run.pop(); jet.pop()
         if not run:
             return
         d, f = run[0][0], run[-1][1]

@@ -7,7 +7,11 @@ des textes de loi suisses publiés dans les langues officielles.
 """
 import json, os, re
 
-ARROW = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" '
+import i18n
+from i18n import T, date_longue
+from langues import HREFLANG
+
+ARROW =('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" '
          'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
          '<path d="M5 12h14M13 5l7 7-7 7"/></svg>')
 CHECK = ('<span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
@@ -49,7 +53,7 @@ def carte(nom):
     pied = f'<div class="sf">{c["pied"]}</div>' if c.get("pied") else ""
     if c["type"] == "terme":
         corps = "".join(f'<div class="sr{" first" if i == 0 else ""}"><i>{lab}</i><b lang="{k}">{c["mots"][k]}</b></div>'
-                        for i, (k, lab) in enumerate((("de", "Allemand"), ("fr", "Français"), ("it", "Italien"), ("en", "Anglais"))))
+                        for i, (k, lab) in enumerate((("de", T("Allemand")), ("fr", T("Français")), ("it", T("Italien")), ("en", T("Anglais")))))
         return f'<div class="law-spec hcarte">{tete}{corps}{pied}</div>'
     if c["type"] == "tableau":
         val = lambda v: SYMB[v[0]] + v[2:]
@@ -64,7 +68,10 @@ def carte(nom):
     return f'<div class="law-spec hcarte">{tete}{corps}{pied}</div>'
 
 
-def hero(h1_lede, h1_rest, lead, nom_carte, ancre="#faits", ancre_txt="Voir le détail"):
+def hero(h1_lede, h1_rest, lead, nom_carte, ancre="#faits", ancre_txt=None):
+    # Libellé par défaut traduit à l'appel, pas à l'import du module
+    if ancre_txt is None:
+        ancre_txt = T("Voir le détail")
     return f'''<section class="thero thero-carte">
   <div class="container">
     <div class="thero-grid">
@@ -72,7 +79,7 @@ def hero(h1_lede, h1_rest, lead, nom_carte, ancre="#faits", ancre_txt="Voir le d
         <h1><em>{h1_lede}</em> {h1_rest}</h1>
         <p class="lead">{lead}</p>
         <div class="thero-cta">
-          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">Demander une démo {ARROW}</a>
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">{T("Demander une démo")} {ARROW}</a>
           <a href="{ancre}" class="btn btn-ghost">{ancre_txt}</a>
         </div>
       </div>
@@ -82,8 +89,10 @@ def hero(h1_lede, h1_rest, lead, nom_carte, ancre="#faits", ancre_txt="Voir le d
 </section>'''
 
 
-def hero_job(lede, rest, lead, promesses, titre_fiche, ancre="#faits", ancre_txt="Ce que Corrext change"):
+def hero_job(lede, rest, lead, promesses, titre_fiche, ancre="#faits", ancre_txt=None):
     """Hero métier : le bleu nuit du produit, mais les repères forment une fiche de profil."""
+    if ancre_txt is None:
+        ancre_txt = T("Ce que Corrext change")
     ps = "".join(
         f'<span>{ICONS[i % 3]}<span><b>{p["t"]} :</b> {p["d"]}</span></span>'
         for i, p in enumerate(promesses))
@@ -94,7 +103,7 @@ def hero_job(lede, rest, lead, promesses, titre_fiche, ancre="#faits", ancre_txt
         <h1><em>{lede}</em> {rest}</h1>
         <p class="lead">{lead}</p>
         <div class="thero-cta">
-          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">Demander une démo {ARROW}</a>
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">{T("Demander une démo")} {ARROW}</a>
           <a href="{ancre}" class="btn btn-ghost">{ancre_txt}</a>
         </div>
       </div>
@@ -104,12 +113,14 @@ def hero_job(lede, rest, lead, promesses, titre_fiche, ancre="#faits", ancre_txt
 </section>'''
 
 
-def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt="Ce que Corrext apporte"):
+def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt=None):
     """Hero des pages de matière juridique : la terminologie tient lieu de visuel."""
+    if ancre_txt is None:
+        ancre_txt = T("Ce que Corrext apporte")
     rows = "".join(
         f'<div class="sr{" first" if i == 0 else ""}"><i>{lab}</i><b>{spec["mots"][k]}</b></div>'
-        for i, (k, lab) in enumerate((("de", "Allemand"), ("fr", "Français"),
-                                      ("it", "Italien"), ("en", "Anglais"))))
+        for i, (k, lab) in enumerate((("de", T("Allemand")), ("fr", T("Français")),
+                                      ("it", T("Italien")), ("en", T("Anglais")))))
     return f'''<section class="thero thero-law">
   <div class="container">
     <div class="thero-grid">
@@ -117,7 +128,7 @@ def hero_law(lede, rest, lead, spec, ancre="#faits", ancre_txt="Ce que Corrext a
         <h1><em>{lede}</em> {rest}</h1>
         <p class="lead">{lead}</p>
         <div class="thero-cta">
-          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">Demander une démo {ARROW}</a>
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">{T("Demander une démo")} {ARROW}</a>
           <a href="{ancre}" class="btn btn-ghost">{ancre_txt}</a>
         </div>
       </div>
@@ -180,19 +191,19 @@ VIGNETTES = {
     "outil-projet": lambda: _win("Translation project",
         f'<div class="jv-steps"><span class="ok">{V_CHECK}Set-up</span><i></i>'
         f'<span class="ok">{V_CHECK}File overview</span><i></i><span class="cur">Quotes</span></div>'
-        '<div class="jv-opts"><div class="jv-opt on"><b>Internal review</b><span>par vos équipes</span></div>'
-        '<div class="jv-opt"><b>Custom workflow</b><span>traducteur juridique</span></div></div>'),
+        f'<div class="jv-opts"><div class="jv-opt on"><b>Internal review</b><span>{T("par vos équipes")}</span></div>'
+        f'<div class="jv-opt"><b>Custom workflow</b><span>{T("traducteur juridique")}</span></div></div>'),
     "outil-chnell": lambda: _win("CHnell",
         f'<div class="jv-search">{V_SEARCH}<b>Verzugszins</b><span>German → French</span></div>'
         '<div class="jv-res"><div lang="de">… den fehlenden Betrag zuzüglich <mark>Verzugszins</mark> nicht mehr nachbelasten …</div>'
         '<div lang="fr">… prélever le montant manquant avec l\'<mark>intérêt moratoire</mark> …</div></div>'
-        f'<div class="jv-src">{V_BOOK}Feuille fédérale</div>'),
+        f'<div class="jv-src">{V_BOOK}{T("Feuille fédérale")}</div>'),
     # Même illustration que la page API : pas une documentation, le contrat d'interface fait foi.
-    "outil-api": lambda: _win("API REST",
+    "outil-api": lambda: _win(T("API REST"),
         '<div class="jv-code"><span class="m">POST</span> /v1/translate\n{\n'
         '  <span class="k">"source_language"</span>: "de",\n  <span class="k">"target_language"</span>: "fr",\n'
         '  <span class="k">"engine"</span>: "lexmachina",\n  <span class="k">"domain"</span>: "banking"\n}</div>'
-        '<div class="jv-foot">Illustration · le contrat d\'interface est remis au cadrage</div>'),
+        f'<div class="jv-foot">{T("Illustration · le contrat d'interface est remis au cadrage")}</div>'),
     # Parcours auszug-hr.ch, données de démonstration de la page Extraits.
     "outil-extraits": lambda: _win("Commercial register extract",
         f'<div class="jv-search">{V_SEARCH}<b>Muster AG</b><span>CHE-000.000.000</span></div>'
@@ -201,7 +212,7 @@ VIGNETTES = {
     # Mode Highly sensitive : seul le moteur suisse reste sélectionnable, les autres sont grisés.
     "outil-lexmachina": lambda: _win("Translation engine",
         f'<div class="jv-chips"><span class="jv-chip dark">{V_LOCK}Highly sensitive</span></div>'
-        '<ul class="jv-list"><li class="on"><i></i>LexMachina<span>Suisse</span></li>'
+        f'<ul class="jv-list"><li class="on"><i></i>LexMachina<span>{T("Suisse")}</span></li>'
         '<li class="off"><i></i>DeepL Pro</li><li class="off"><i></i>Azure OpenAI GPT</li></ul>'),
 }
 OUTIL_VIS = {"fr/corrext/traduction-texte-et-document/": "outil-texte",
@@ -212,7 +223,7 @@ OUTIL_VIS = {"fr/corrext/traduction-texte-et-document/": "outil-texte",
 
 def outils_visuel(titre, items):
     ss = "".join(f'<a class="jv-tool" href="{{{{ROOT}}}}{s["href"]}">{VIGNETTES[OUTIL_VIS[s["href"]]]()}'
-                 f'<b>{s["t"]}</b><span>{s["d"]}</span><em>Découvrir l\'outil {ARROW}</em></a>'
+                 f'<b>{s["t"]}</b><span>{s["d"]}</span><em>{T("Découvrir l'outil")} {ARROW}</em></a>'
                  for s in items)
     return ('<section class="siblings jv-tools">\n  <div class="container">\n'
             f'    <h2>{titre}</h2>\n    <div class="jv-tgrid">{ss}</div>\n  </div>\n</section>')
@@ -298,14 +309,17 @@ def who(titre, items, metiers=None):
     return ('<section class="who who-s">\n  <div class="container">\n'
             f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
             f'    <div class="ws-grid">{ws}</div>\n'
-            + (f'    <p class="ws-metiers">Par métier : ' + " · ".join(
-                f'<a href="{{{{ROOT}}}}fr/solutions/{m}/">{METIERS[m]}</a>' for m in metiers) + "</p>\n"
+            + (f'    <p class="ws-metiers">{T("Par métier :")} ' + " · ".join(
+                f'<a href="{{{{ROOT}}}}fr/solutions/{m}/">{T(METIERS[m])}</a>' for m in metiers) + "</p>\n"
                if metiers else "")
             + '  </div>\n</section>')
 
 
-def voisins(titre, items, lien="Voir le domaine"):
+def voisins(titre, items, lien=None):
     """Pages voisines en cartes : le terme phare dans deux langues (allemand et français par défaut), puis le nom et le résumé."""
+    if lien is None:
+        lien = T("Voir le domaine")
+
     def terme(v):
         t = v.get("terme")
         if not t:
@@ -323,12 +337,13 @@ def voisins(titre, items, lien="Voir le domaine"):
 def temoignage(t):
     """Citation client. Sans citation fournie, l'emplacement s'affiche comme « à fournir » : jamais de texte inventé."""
     if not t or not t.get("citation"):
-        return ('<section class="temo temo-todo" aria-label="Emplacement du témoignage client à fournir">\n'
+        attente = T("Témoignage client à fournir : deux ou trois phrases d'un associé ou d'une "
+                    "associée sur un dossier concret traité avec Corrext, publiées avec son accord écrit.")
+        return (f'<section class="temo temo-todo" aria-label="{T("Emplacement du témoignage client à fournir")}">\n'
                 '  <div class="container"><figure class="temo-fig">\n'
                 '    <span class="temo-mark" aria-hidden="true">«</span>\n'
-                '    <blockquote><p>Témoignage client à fournir : deux ou trois phrases d\'un associé ou d\'une '
-                'associée sur un dossier concret traité avec Corrext, publiées avec son accord écrit.</p></blockquote>\n'
-                '    <figcaption><b>Prénom Nom</b><span>Fonction, cabinet</span></figcaption>\n'
+                f'    <blockquote><p>{attente}</p></blockquote>\n'
+                f'    <figcaption><b>{T("Prénom Nom")}</b><span>{T("Fonction, cabinet")}</span></figcaption>\n'
                 '  </figure></div>\n</section>')
     # Un exemple n'est plus étiqueté à l'écran, mais la classe temo-ex reste : la garde de production de build.py s'appuie dessus.
     ex = t.get("exemple")
@@ -392,10 +407,10 @@ def cta(titre, texte, second=None):
       <h2>{titre}</h2>
       <p>{texte}</p>
       <div class="final-cta-btns">
-        <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">Demander une démo {ARROW}</a>
+        <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">{T("Demander une démo")} {ARROW}</a>
         {sec}
       </div>
-      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+      <p class="micro">{T("Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse")}</p>
     </div>
   </div>
 </section>'''
@@ -417,26 +432,31 @@ def fiche_glossaire(de):
     return _GLOSSAIRE.get(de.lower()) or alias.get(de.lower())
 
 
-def terms_table(termes, caption, titre="Les équivalences officielles, dans les quatre langues"):
+def terms_table(termes, caption, titre=None):
+    if titre is None:
+        titre = T("Les équivalences officielles, dans les quatre langues")
+
     def terme(de):
         s = fiche_glossaire(de)
         return f'<a href="{{{{ROOT}}}}fr/ressources/glossaire/{s}/">{de}</a>' if s else de
     rows = "".join(
         f'<tr><td><b>{terme(t["de"])}</b></td><td>{t["fr"]}</td><td>{t["it"]}</td><td>{t["en"]}</td>'
         f'<td class="ref">{t["ref"]}</td></tr>' for t in termes)
+    # Les retours à la ligne et l'indentation font partie de la clé : la sortie FR reste identique
+    note = T("Équivalences tirées des textes officiels suisses, publiés en allemand,\n"
+             "      français et italien. Dans Corrext, chaque terme s'ouvre en contexte dans\n"
+             "      {0}, avec sa source.").format('<a href="{{ROOT}}fr/corrext/chnell/">Fast lookup CHnell</a>')
     return f'''<section class="tterms">
   <div class="container">
     <div class="sec-head"><h2>{titre}</h2>
       <p>{caption}</p></div>
     <div class="compare-wrap">
       <table class="cmp tterms-table">
-        <thead><tr><th>Allemand</th><th>Français</th><th>Italien</th><th>Anglais</th><th>Référence</th></tr></thead>
+        <thead><tr><th>{T("Allemand")}</th><th>{T("Français")}</th><th>{T("Italien")}</th><th>{T("Anglais")}</th><th>{T("Référence")}</th></tr></thead>
         <tbody>{rows}</tbody>
       </table>
     </div>
-    <p class="tterms-note">Équivalences tirées des textes officiels suisses, publiés en allemand,
-      français et italien. Dans Corrext, chaque terme s'ouvre en contexte dans
-      <a href="{{{{ROOT}}}}fr/corrext/chnell/">Fast lookup CHnell</a>, avec sa source.</p>
+    <p class="tterms-note">{note}</p>
   </div>
 </section>'''
 
@@ -513,14 +533,14 @@ def gen_solutions(src):
     for d in data:
         body = "\n".join([
             hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
-                     "Ce métier, en trois points"),
+                     T("Ce métier, en trois points")),
             facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
             who(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
             outils_visuel(d["outils_titre"], d["outils"]),
             temoignage(d.get("temoignage")),
             faq(d["faq_titre"], d["faq"]),
-            cta(d["cta_t"], d["cta_p"], {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
+            cta(d["cta_t"], d["cta_p"], {"href": "fr/corrext/", "txt": T("Voir la plateforme")}),
         ])
         pages.append((f'fr/solutions/{d["slug"]}/',
                       {"title": d["title"], "description": d["description"],
@@ -530,34 +550,34 @@ def gen_solutions(src):
             f'<a href="{{{{ROOT}}}}fr/solutions/{d["slug"]}/"><b>{d["short"]}</b>'
             f'<span>{d["resume"]}</span>{ARROW}</a>' for d in data)
         body = "\n".join([
-            hero("Solutions.", "Le même socle suisse, adapté à votre métier",
-                 "Un cabinet d'avocats, une banque et une autorité cantonale ne traduisent ni les "
-                 "mêmes documents, ni pour les mêmes raisons. Voici ce que Corrext change pour "
-                 "chacun, avec les mêmes garanties de confidentialité.",
+            hero(T("Solutions."), T("Le même socle suisse, adapté à votre métier"),
+                 T("Un cabinet d'avocats, une banque et une autorité cantonale ne traduisent ni les "
+                   "mêmes documents, ni pour les mêmes raisons. Voici ce que Corrext change pour "
+                   "chacun, avec les mêmes garanties de confidentialité."),
                  "solutions",
-                 "#metiers", "Voir les six métiers"),
+                 "#metiers", T("Voir les six métiers")),
             f'''<section class="siblings" id="metiers" style="padding:84px 0">
-  <div class="container"><h2>Par métier</h2>
+  <div class="container"><h2>{T("Par métier")}</h2>
     <div class="siblings-row solutions-row">{cards}</div></div>
 </section>
 <style>.solutions-row{{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:940px){{.solutions-row{{grid-template-columns:1fr}}}}</style>''',
-            siblings("Explorer autrement", [
-                {"href": "fr/traduction/", "t": "Par domaine du droit",
-                 "d": "Douze domaines, leur terminologie et leurs textes de référence"},
-                {"href": "fr/comparatif/", "t": "Par comparaison",
-                 "d": "Corrext face à DeepL, aux LLM généralistes et à l'agence externe"},
-                {"href": "fr/corrext/", "t": "Par outil",
-                 "d": "Les quatre outils de la plateforme, démonstration à l'appui"}]),
-            cta("Voyez Corrext sur les documents de votre métier",
-                "Une démonstration sur mesure, menée par un spécialiste du droit suisse.",
-                {"href": "fr/corrext/", "txt": "Voir la plateforme"}),
+            siblings(T("Explorer autrement"), [
+                {"href": "fr/traduction/", "t": T("Par domaine du droit"),
+                 "d": T("Douze domaines, leur terminologie et leurs textes de référence")},
+                {"href": "fr/comparatif/", "t": T("Par comparaison"),
+                 "d": T("Corrext face à DeepL, aux LLM généralistes et à l'agence externe")},
+                {"href": "fr/corrext/", "t": T("Par outil"),
+                 "d": T("Les quatre outils de la plateforme, démonstration à l'appui")}]),
+            cta(T("Voyez Corrext sur les documents de votre métier"),
+                T("Une démonstration sur mesure, menée par un spécialiste du droit suisse."),
+                {"href": "fr/corrext/", "txt": T("Voir la plateforme")}),
         ])
         pages.append(("fr/solutions/", {
-            "title": "Solutions par métier · Neur.on, traduction juridique suisse",
-            "description": "Avocats, banques, directions juridiques, autorités, fiduciaires, "
-                           "éditeurs : ce que Corrext change pour chaque métier, stockage en Suisse compris.",
-            "short": "Solutions", "nav": "solutions"}, body))
+            "title": T("Solutions par métier · Neur.on, traduction juridique suisse"),
+            "description": T("Avocats, banques, directions juridiques, autorités, fiduciaires, "
+                             "éditeurs : ce que Corrext change pour chaque métier, stockage en Suisse compris."),
+            "short": T("Solutions"), "nav": "solutions"}, body))
     return pages
 
 
@@ -566,25 +586,25 @@ def gen_domaines(src):
     for d in data:
         vois = [v for v in data if v["slug"] in d.get("voisins", [])][:3]
         t0 = d["termes"][0]
-        spec = {"titre": "Terminologie officielle", "compte": f'{len(d["termes"])} termes',
-                "mots": t0, "pied": f'{t0["ref"]} · vérifiable dans Fast lookup CHnell'}
+        spec = {"titre": T("Terminologie officielle"), "compte": T("{0} termes").format(len(d["termes"])),
+                "mots": t0, "pied": T("{0} · vérifiable dans Fast lookup CHnell").format(t0["ref"])}
         body = "\n".join([
             TERMS_CSS,
             hero_law(d["lede"], d["h1"], d["lead"], spec),
-            facts(d.get("facts_titre", "Concrètement, dans Corrext"), d["definition"],
-                  [{"href": "fr/corrext/traduction-texte-et-document/", "txt": "Traduire un document maintenant"},
-                   {"href": "fr/corrext/gestion-de-projet/", "txt": "Commander une relecture juridique"}],
+            facts(d.get("facts_titre", T("Concrètement, dans Corrext")), d["definition"],
+                  [{"href": "fr/corrext/traduction-texte-et-document/", "txt": T("Traduire un document maintenant")},
+                   {"href": "fr/corrext/gestion-de-projet/", "txt": T("Commander une relecture juridique")}],
                   d["facts"]),
-            terms_table(d["termes"], d["termes_note"], d.get("termes_titre", "La terminologie officielle, dans les quatre langues")),
-            laws_block(d.get("lois_titre", "Les textes de référence, cités au quotidien"), d["lois_intro"], d["lois"]),
+            terms_table(d["termes"], d["termes_note"], d.get("termes_titre", T("La terminologie officielle, dans les quatre langues"))),
+            laws_block(d.get("lois_titre", T("Les textes de référence, cités au quotidien")), d["lois_intro"], d["lois"]),
             who(d["who_titre"], d["who"], DOMAINE_METIERS.get(d["slug"])),
             faq(d["faq_titre"], d["faq"]),
-            voisins("Autres domaines",
+            voisins(T("Autres domaines"),
                     [{"href": f'fr/traduction/{v["slug"]}/', "t": v["short"], "d": v["resume"],
                       "terme": v["termes"][0]} for v in vois] or
-                    [{"href": "fr/traduction/", "t": "Tous les domaines",
-                      "d": "Les douze domaines couverts"}]),
-            cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": "Tous les domaines"}),
+                    [{"href": "fr/traduction/", "t": T("Tous les domaines"),
+                      "d": T("Les douze domaines couverts")}]),
+            cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": T("Tous les domaines")}),
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',
                       {"title": d["title"], "description": d["description"],
@@ -600,24 +620,24 @@ def gen_paires(src):
     par_slug = {p["slug"]: p for p in data}
     for d in data:
         t0 = d["termes"][0]
-        spec = {"titre": "Un terme, quatre langues", "compte": f'{len(d["termes"])} termes',
-                "mots": t0, "pied": f'{t0["ref"]} · publié dans les langues officielles'}
+        spec = {"titre": T("Un terme, quatre langues"), "compte": T("{0} termes").format(len(d["termes"])),
+                "mots": t0, "pied": T("{0} · publié dans les langues officielles").format(t0["ref"])}
         body = "\n".join([
             TERMS_CSS,
-            hero_law(d["lede"], d["h1"], d["lead"], spec, "#faits", "Ce qui change dans cette paire"),
-            facts("Cette paire de langues, en pratique", d["definition"],
-                  [{"href": "fr/corrext/traduction-texte-et-document/", "txt": "Essayer sur un extrait de loi"},
-                   {"href": "fr/langues-et-formats/", "txt": "Toutes les langues et formats"}],
+            hero_law(d["lede"], d["h1"], d["lead"], spec, "#faits", T("Ce qui change dans cette paire")),
+            facts(T("Cette paire de langues, en pratique"), d["definition"],
+                  [{"href": "fr/corrext/traduction-texte-et-document/", "txt": T("Essayer sur un extrait de loi")},
+                   {"href": "fr/langues-et-formats/", "txt": T("Toutes les langues et formats")}],
                   d["facts"]),
             terms_table(d["termes"], d["termes_note"]),
             who(d["who_titre"], d["who"]),
             faq(d["faq_titre"], d["faq"]),
-            voisins("Autres paires de langues",
+            voisins(T("Autres paires de langues"),
                     [{"href": f'fr/traduction/{v}/', "t": t, "d": r,
                       "terme": par_slug[v]["termes"][0] if v in par_slug else None,
                       "langues": tuple(LANGUES[x] for x in v.split("-"))}
-                     for v, t, r in d["voisins"]], "Voir la paire"),
-            cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": "Traduction par domaine"}),
+                     for v, t, r in d["voisins"]], T("Voir la paire")),
+            cta(d["cta_t"], d["cta_p"], {"href": "fr/traduction/", "txt": T("Traduction par domaine")}),
         ])
         pages.append((f'fr/traduction/{d["slug"]}/',
                       {"title": d["title"], "description": d["description"],
@@ -636,33 +656,33 @@ def gen_traduction_hub(src):
         f'<a href="{{{{ROOT}}}}fr/traduction/{p["slug"]}/"><b>{p["short"]}</b>'
         f'<span>{p["resume"]}</span>{ARROW}</a>' for p in pai)
     body = "\n".join([
-        hero("Traduction juridique et financière.", "Par domaine du droit et par paire de langues",
-             "Le vocabulaire d'un prospectus de fonds n'est pas celui d'une sentence arbitrale, et "
-             "l'allemand juridique suisse n'est pas l'allemand de Berlin. Chaque page ci-dessous "
-             "donne la terminologie officielle, les textes de référence et la façon dont Corrext "
-             "les traite.",
+        hero(T("Traduction juridique et financière."), T("Par domaine du droit et par paire de langues"),
+             T("Le vocabulaire d'un prospectus de fonds n'est pas celui d'une sentence arbitrale, et "
+               "l'allemand juridique suisse n'est pas l'allemand de Berlin. Chaque page ci-dessous "
+               "donne la terminologie officielle, les textes de référence et la façon dont Corrext "
+               "les traite."),
              "traduction",
-             "#domaines", "Voir les domaines"),
+             "#domaines", T("Voir les domaines")),
         f'''<section class="siblings" id="domaines" style="padding:84px 0">
-  <div class="container"><h2>Par domaine du droit et de la finance</h2>
+  <div class="container"><h2>{T("Par domaine du droit et de la finance")}</h2>
     <div class="siblings-row grid3">{dcards}</div></div>
 </section>''',
         f'''<section class="siblings" id="langues" style="padding:0 0 84px">
-  <div class="container"><h2>Par paire de langues</h2>
+  <div class="container"><h2>{T("Par paire de langues")}</h2>
     <div class="siblings-row grid3">{pcards}</div></div>
 </section>
 <style>.grid3{{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:940px){{.grid3{{grid-template-columns:1fr}}}}</style>''',
-        cta("Votre domaine n'est pas dans la liste ?",
-            "Corrext couvre 30 domaines dans son concordancier et 30 langues sur la plateforme. "
-            "Dites-nous ce que vous traduisez.",
-            {"href": "fr/corrext/chnell/", "txt": "Voir Fast lookup CHnell"}),
+        cta(T("Votre domaine n'est pas dans la liste ?"),
+            T("Corrext couvre 30 domaines dans son concordancier et 30 langues sur la plateforme. "
+              "Dites-nous ce que vous traduisez."),
+            {"href": "fr/corrext/chnell/", "txt": T("Voir Fast lookup CHnell")}),
     ])
     return [("fr/traduction/", {
-        "title": "Traduction juridique par domaine et par langue · Neur.on",
-        "description": "Douze domaines du droit suisse et les principales paires de langues : "
-                       "la terminologie officielle en allemand, français, italien et anglais, et ses sources.",
-        "short": "Traduction", "nav": "solutions"}, body)]
+        "title": T("Traduction juridique par domaine et par langue · Neur.on"),
+        "description": T("Douze domaines du droit suisse et les principales paires de langues : "
+                         "la terminologie officielle en allemand, français, italien et anglais, et ses sources."),
+        "short": T("Traduction"), "nav": "solutions"}, body)]
 
 
 def source_liee(source):
@@ -703,30 +723,36 @@ def gen_glossaire(src):
         vois = [v for v in data if v["slug"] in d.get("voisins", [])][:3]
         body_hero = hero_law(
             d["de"], "· " + d["fr"], d["lead"],
-            {"titre": "Le terme, quatre langues", "compte": d["domaine"],
+            {"titre": T("Le terme, quatre langues"), "compte": d["domaine"],
              "mots": {k: d[k] for k in ("de", "fr", "it", "en")},
-             "pied": f'{d["base"]} · source : {d["source"]}'},
-            "#definition", "Lire la définition")
+             "pied": T("{0} · source : {1}").format(d["base"], d["source"])},
+            "#definition", T("Lire la définition"))
         # Données structurées : le terme allemand, ses équivalents officiels et sa source
         ld_terme = {"@context": "https://schema.org", "@type": "DefinedTerm", "name": d["de"], "inLanguage": "de-CH",
                     "alternateName": [d["fr"], d["it"], d["en"]], "description": d["resume"],
                     "termCode": d["base"], "url": f'{SITE}/fr/ressources/glossaire/{d["slug"]}/',
-                    "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "Glossaire juridique suisse",
+                    "inDefinedTermSet": {"@type": "DefinedTermSet", "name": T("Glossaire juridique suisse"),
                                          "url": f"{SITE}/fr/ressources/glossaire/"}}
+        # Les retours à la ligne et l'indentation font partie des clés : la sortie FR reste identique
+        gnote = T("Les lois fédérales suisses sont publiées en allemand, en français et en italien, et les\n"
+                  "          trois versions font foi. L'équivalence ci-contre n'est donc pas une traduction d'usage :\n"
+                  "          c'est le terme employé par le texte officiel lui-même.")
+        gsrc = T("Source : {0}. Dans Corrext, ce segment et ceux qui l'entourent\n"
+                 "        s'affichent dans {1},\n"
+                 "        chacun avec sa référence.").format(
+            source_liee(d["source"]), '<a href="{{ROOT}}fr/corrext/chnell/">Fast lookup CHnell</a>')
         body = "\n".join([css, '<script type="application/ld+json">' + json.dumps(ld_terme, ensure_ascii=False) + "</script>", body_hero,
             f'''<section class="gterm" id="definition">
   <div class="container">
     <div class="gterm-grid">
       <div>
-        <h2>Définition</h2>
+        <h2>{T("Définition")}</h2>
         <p class="gdef">{d["definition"]}</p>
         <div class="gmeta"><span>{d["domaine"]}</span><span>{d["base"]}</span></div>
       </div>
       <div class="gnote">
-        <p>Les lois fédérales suisses sont publiées en allemand, en français et en italien, et les
-          trois versions font foi. L'équivalence ci-contre n'est donc pas une traduction d'usage :
-          c'est le terme employé par le texte officiel lui-même.</p>
-        <a class="feat-link" href="{{{{ROOT}}}}fr/ressources/glossaire/">Tout le glossaire {ARROW}</a>
+        <p>{gnote}</p>
+        <a class="feat-link" href="{{{{ROOT}}}}fr/ressources/glossaire/">{T("Tout le glossaire")} {ARROW}</a>
       </div>
     </div>
   </div>
@@ -734,26 +760,24 @@ def gen_glossaire(src):
             f'''<section class="gex">
   <div class="container">
     <div class="gex-box">
-      <h2>Le terme dans un texte officiel</h2>
+      <h2>{T("Le terme dans un texte officiel")}</h2>
       <div class="gex-row">
-        <div><i>Allemand</i><p>{d["exemple"]["de"]}</p></div>
-        <div><i>Français</i><p>{d["exemple"]["fr"]}</p></div>
+        <div><i>{T("Allemand")}</i><p>{d["exemple"]["de"]}</p></div>
+        <div><i>{T("Français")}</i><p>{d["exemple"]["fr"]}</p></div>
       </div>
-      <p class="gsrc">Source : {source_liee(d["source"])}. Dans Corrext, ce segment et ceux qui l'entourent
-        s'affichent dans <a href="{{{{ROOT}}}}fr/corrext/chnell/">Fast lookup CHnell</a>,
-        chacun avec sa référence.</p>
+      <p class="gsrc">{gsrc}</p>
     </div>
   </div>
 </section>''',
-            siblings("Termes voisins",
+            siblings(T("Termes voisins"),
                      [{"href": f'fr/ressources/glossaire/{v["slug"]}/',
                        "t": f'{v["de"]} · {v["fr"]}', "d": v["resume"]} for v in vois] or
-                     [{"href": "fr/ressources/glossaire/", "t": "Tout le glossaire",
-                       "d": "La terminologie juridique suisse en quatre langues"}]),
-            cta("Cette terminologie, appliquée à vos documents",
-                "Corrext vérifie chaque terme dans son contexte officiel et garde vos choix "
-                "cohérents d'un document à l'autre.",
-                {"href": "fr/corrext/chnell/", "txt": "Découvrir CHnell"}),
+                     [{"href": "fr/ressources/glossaire/", "t": T("Tout le glossaire"),
+                       "d": T("La terminologie juridique suisse en quatre langues")}]),
+            cta(T("Cette terminologie, appliquée à vos documents"),
+                T("Corrext vérifie chaque terme dans son contexte officiel et garde vos choix "
+                  "cohérents d'un document à l'autre."),
+                {"href": "fr/corrext/chnell/", "txt": T("Découvrir CHnell")}),
         ])
         pages.append((f'fr/ressources/glossaire/{d["slug"]}/', {
             "title": d["title"], "description": d["description"],
@@ -766,8 +790,8 @@ def gen_glossaire(src):
         f'<span class="it" lang="it">{d["it"]}</span><span class="en" lang="en">{d["en"]}</span><span class="dom"><em>{d["domaine"]}</em></span></a>'
         for d in sorted(data, key=lambda x: x["de"].lower()))
     # En-tête de colonnes : chaque langue reste dans sa colonne, d'une ligne à l'autre
-    entete = ('<div class="ghead" aria-hidden="true"><span>Allemand</span><span>Français</span>'
-              '<span>Italien</span><span>Anglais</span><span>Domaine</span></div>')
+    entete = (f'<div class="ghead" aria-hidden="true"><span>{T("Allemand")}</span><span>{T("Français")}</span>'
+              f'<span>{T("Italien")}</span><span>{T("Anglais")}</span><span>{T("Domaine")}</span></div>')
     body = "\n".join([
         """<style>
 .glist{padding:84px 0}
@@ -785,36 +809,40 @@ def gen_glossaire(src):
 .grow2 .dom em{display:inline-block;font-style:normal;font-size:11.5px;font-weight:700;color:var(--blue-d);background:var(--tint);border-radius:50px;padding:4px 11px;white-space:nowrap}
 @media(max-width:940px){.ghead{display:none}.grow2{grid-template-columns:1fr 1fr;gap:6px 14px}.grow2 .dom{grid-column:1 / -1}}
 </style>""",
-        hero("Glossaire juridique suisse.", "Chaque terme dans les quatre langues, avec sa source",
-             "Les lois suisses sont publiées en allemand, en français et en italien : dans ces "
-             "trois langues, les équivalences ci-dessous sont les termes des textes officiels. "
-             "L'anglais suit les traductions publiées sur Fedlex, qui n'ont pas force de loi. "
-             "Chaque terme renvoie à son article et à sa source.",
+        hero(T("Glossaire juridique suisse."), T("Chaque terme dans les quatre langues, avec sa source"),
+             T("Les lois suisses sont publiées en allemand, en français et en italien : dans ces "
+               "trois langues, les équivalences ci-dessous sont les termes des textes officiels. "
+               "L'anglais suit les traductions publiées sur Fedlex, qui n'ont pas force de loi. "
+               "Chaque terme renvoie à son article et à sa source."),
              "glossaire",
-             "#liste", "Voir les termes"),
+             "#liste", T("Voir les termes")),
         f'''<section class="glist" id="liste">
   <div class="container">
-    <div class="sec-head glist-head"><h2>Les termes</h2>
-      <p>Classés par terme allemand. Le glossaire s'étoffe au fil des vérifications de nos
-        juristes-linguistes.</p></div>
+    <div class="sec-head glist-head"><h2>{T("Les termes")}</h2>
+      <p>{T("Classés par terme allemand. Le glossaire s'étoffe au fil des vérifications de nos\n        juristes-linguistes.")}</p></div>
     {entete}{rows}
   </div>
 </section>''',
-        cta("Votre terminologie, appliquée partout",
-            "CHnell couvre 30 domaines et vos propres ressources s'y ajoutent.",
-            {"href": "fr/corrext/chnell/", "txt": "Découvrir CHnell"}),
+        cta(T("Votre terminologie, appliquée partout"),
+            T("CHnell couvre 30 domaines et vos propres ressources s'y ajoutent."),
+            {"href": "fr/corrext/chnell/", "txt": T("Découvrir CHnell")}),
     ])
-    ld_set = {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Glossaire juridique suisse",
+    ld_set = {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": T("Glossaire juridique suisse"),
               "inLanguage": ["de-CH", "fr-CH", "it-CH", "en"], "url": f"{SITE}/fr/ressources/glossaire/",
               "hasDefinedTerm": [{"@type": "DefinedTerm", "name": d["de"], "alternateName": [d["fr"], d["it"], d["en"]],
                                   "url": f'{SITE}/fr/ressources/glossaire/{d["slug"]}/'} for d in data]}
     body = '<script type="application/ld+json">' + json.dumps(ld_set, ensure_ascii=False) + "</script>\n" + body
     pages.append(("fr/ressources/glossaire/", {
-        "title": "Glossaire juridique suisse en quatre langues · Neur.on",
-        "description": "52 termes du droit suisse en allemand, français, italien et anglais, avec "
-                       "la base légale, la source officielle et un exemple tiré de la loi.",
-        "short": "Glossaire", "nav": "ressources"}, body))
+        "title": T("Glossaire juridique suisse en quatre langues · Neur.on"),
+        "description": T("52 termes du droit suisse en allemand, français, italien et anglais, avec "
+                         "la base légale, la source officielle et un exemple tiré de la loi."),
+        "short": T("Glossaire"), "nav": "ressources"}, body))
     return pages
+
+
+def _js(s):
+    """Texte inséré dans une chaîne JavaScript entre apostrophes : barre oblique inverse et apostrophe échappées."""
+    return s.replace("\\", "\\\\").replace("'", "\\'")
 
 
 def gen_aide(src):
@@ -823,8 +851,8 @@ def gen_aide(src):
     data = load(src, "aide")
     if not data:
         return []
-    ESPACES = (("utilisateur", "Utiliser Corrext", "Traduire, faire relire, vérifier un terme : les gestes du quotidien dans l'application."),
-               ("admin", "Administrer Corrext", "Pour les administrateurs : membres et rôles, politique de moteurs, mémoires et terminologie de l'organisation."))
+    ESPACES = (("utilisateur", T("Utiliser Corrext"), T("Traduire, faire relire, vérifier un terme : les gestes du quotidien dans l'application.")),
+               ("admin", T("Administrer Corrext"), T("Pour les administrateurs : membres et rôles, politique de moteurs, mémoires et terminologie de l'organisation.")))
     plat = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h)).strip()
 
     def reponse(x):
@@ -832,27 +860,27 @@ def gen_aide(src):
         if x["etapes"]:
             h += '<ol class="hc-steps">' + "".join(f"<li>{e}</li>" for e in x["etapes"]) + "</ol>"
         if x.get("savoir"):
-            h += '<div class="hc-know"><b>À savoir</b><ul>' + "".join(f"<li>{s}</li>" for s in x["savoir"]) + "</ul></div>"
+            h += f'<div class="hc-know"><b>{T("À savoir")}</b><ul>' + "".join(f"<li>{s}</li>" for s in x["savoir"]) + "</ul></div>"
         return h
 
     index = [{"q": x["question"], "t": plat(" ".join([x["reponse"]] + x["etapes"] + x.get("savoir", []))),
-              "r": r["titre"], "e": "Administrateurs" if r["espace"] == "admin" else "Utilisateurs",
+              "r": r["titre"], "e": T("Administrateurs") if r["espace"] == "admin" else T("Utilisateurs"),
               "u": f'{{{{ROOT}}}}fr/aide/{r["slug"]}/#{x["slug"]}'} for r in data for x in r["articles"]]
     recherche = lambda grande: f'''<form class="hc-search{" big" if grande else ""}" action="{{{{ROOT}}}}fr/aide/" role="search">
-  <label class="sr-only" for="hc-q">Rechercher dans le centre d'aide</label>
+  <label class="sr-only" for="hc-q">{T("Rechercher dans le centre d'aide")}</label>
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-  <input id="hc-q" name="q" type="search" autocomplete="off" placeholder="Rechercher une question (ex : traduire un fichier, devis, ajouter un membre)">
+  <input id="hc-q" name="q" type="search" autocomplete="off" placeholder="{T("Rechercher une question (ex : traduire un fichier, devis, ajouter un membre)")}">
   {'<div class="hc-results" id="hc-results" role="listbox" hidden></div>' if grande else ''}
 </form>'''
-    side = lambda courant: ('<nav class="hc-side" aria-label="Rubriques du centre d\'aide">'
-                            f'<a class="hc-back" href="{{{{ROOT}}}}fr/aide/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>Centre d\'aide</a>') + "".join(
+    side = lambda courant: (f'<nav class="hc-side" aria-label="{T("Rubriques du centre d'aide")}">'
+                            f'<a class="hc-back" href="{{{{ROOT}}}}fr/aide/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"/></svg>{T("Centre d'aide")}</a>') + "".join(
         f'<p class="hc-side-t">{titre}</p><ul>' + "".join(
             f'<li><a href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"{" aria-current=\"page\"" if r["slug"] == courant else ""}>'
             f'<span class="ws-ic">{WS_ICONS[r["icone"]]}</span>{r["titre"]}</a></li>' for r in data if r["espace"] == esp) + "</ul>"
         for esp, titre, _ in ESPACES) + "</nav>"
-    contact = cta("Une question reste sans réponse ?",
-                  "Écrivez à team@corrext.com : l'équipe Neur.on répond en français, en allemand, en italien et en anglais, et vous aide à démarrer avec Corrext.",
-                  {"href": "fr/contact/", "txt": "Contacter l'équipe"})
+    contact = cta(T("Une question reste sans réponse ?"),
+                  T("Écrivez à team@corrext.com : l'équipe Neur.on répond en français, en allemand, en italien et en anglais, et vous aide à démarrer avec Corrext."),
+                  {"href": "fr/contact/", "txt": T("Contacter l'équipe")})
     script_ancre = """<script>(function(){function o(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;var d=document.getElementById(h);if(d&&d.tagName==='DETAILS'){d.open=true;d.scrollIntoView({block:'start'});}}window.addEventListener('hashchange',o);o();})();</script>"""
 
     pages = []
@@ -862,7 +890,7 @@ def gen_aide(src):
                      for x in r["articles"])
         ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": x["question"], "acceptedAnswer": {"@type": "Answer", "text": plat(reponse(x))}} for x in r["articles"]]}
-        espace = "Administrateurs" if r["espace"] == "admin" else "Utilisateurs"
+        espace = T("Administrateurs") if r["espace"] == "admin" else T("Utilisateurs")
         body = "\n".join([
             '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
             f'''<section class="hc" id="questions">
@@ -870,7 +898,7 @@ def gen_aide(src):
     <div class="hc-grid">
       {side(r["slug"])}
       <div class="hc-main">
-        <p class="hc-kicker">Centre d'aide · {espace}</p>
+        <p class="hc-kicker">{T("Centre d'aide")} · {espace}</p>
         <h1 class="hc-h1">{r["titre"]}</h1>
         <p class="hc-intro">{r["lead"]}</p>
         <div class="faq-list hc-list">{qs}</div>
@@ -887,10 +915,10 @@ def gen_aide(src):
     blocs = "".join(
         f'''<section class="hc-space{" admin" if esp == "admin" else ""}" id="{esp}">
   <div class="container">
-    <div class="hc-space-head"><span class="hc-badge">{"Administrateurs" if esp == "admin" else "Utilisateurs"}</span><h2>{titre}</h2><p>{texte}</p></div>
+    <div class="hc-space-head"><span class="hc-badge">{T("Administrateurs") if esp == "admin" else T("Utilisateurs")}</span><h2>{titre}</h2><p>{texte}</p></div>
     <div class="hc-cards">''' + "".join(
             f'<a class="hc-card" href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"><span class="ws-ic">{WS_ICONS[r["icone"]]}</span>'
-            f'<b>{r["titre"]}</b><span class="d">{r["lead"]}</span><em>{len(r["articles"])} questions {ARROW}</em></a>'
+            f'<b>{r["titre"]}</b><span class="d">{r["lead"]}</span><em>{T("{0} questions").format(len(r["articles"]))} {ARROW}</em></a>'
             for r in data if r["espace"] == esp) + '''</div>
   </div>
 </section>''' for esp, titre, texte in ESPACES)
@@ -900,25 +928,25 @@ var V=I.map(function(x){return {x:x,q:n(x.q),t:n(x.t),r:n(x.r)};});
 function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function cherche(v){var m=n(v).split(' ').filter(function(w){return w.length>1;});if(!m.length){box.hidden=true;box.innerHTML='';return [];}
 var r=V.map(function(o){var s=0;m.forEach(function(w){if(o.q.indexOf(w)>-1)s+=4;if(o.r.indexOf(w)>-1)s+=2;if(o.t.indexOf(w)>-1)s+=1;});return {o:o,s:s};}).filter(function(a){return a.s>0;}).sort(function(a,b){return b.s-a.s;}).slice(0,8);
-box.innerHTML=r.length?r.map(function(a){return '<a role="option" href="'+a.o.x.u+'"><b>'+esc(a.o.x.q)+'</b><span>'+esc(a.o.x.e)+' · '+esc(a.o.x.r)+'</span></a>';}).join(''):'<p class="none">Aucune réponse pour « '+esc(v)+' ». Essayez un autre mot, ou contactez l\\'équipe.</p>';box.hidden=false;return r;}
+box.innerHTML=r.length?r.map(function(a){return '<a role="option" href="'+a.o.x.u+'"><b>'+esc(a.o.x.q)+'</b><span>'+esc(a.o.x.e)+' · '+esc(a.o.x.r)+'</span></a>';}).join(''):'<p class="none">""" + _js(T("Aucune réponse pour « {0} ». Essayez un autre mot, ou contactez l'équipe.")).format("'+esc(v)+'") + """</p>';box.hidden=false;return r;}
 q.addEventListener('input',function(){cherche(q.value);});
 f.addEventListener('submit',function(e){e.preventDefault();var r=cherche(q.value);if(r.length)location.href=r[0].o.x.u;});
 var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;cherche(p);}})();</script>"""
     body = "\n".join([
         f'''<section class="hc-hero">
   <div class="container">
-    <p class="hc-kicker">Centre d'aide</p>
-    <h1>Comment <span class="nw">pouvons-nous</span> vous aider\u00a0?</h1>
-    <p class="lead">Toutes les réponses pour utiliser Corrext au quotidien et pour l'administrer, vérifiées dans l'application.</p>
+    <p class="hc-kicker">{T("Centre d'aide")}</p>
+    <h1>{T("Comment {0} vous aider\u00a0?").format(f'<span class="nw">{T("pouvons-nous")}</span>')}</h1>
+    <p class="lead">{T("Toutes les réponses pour utiliser Corrext au quotidien et pour l'administrer, vérifiées dans l'application.")}</p>
     {recherche(True)}
   </div>
 </section>''',
         blocs, contact,
         "<script>window.HC_INDEX=" + json.dumps(index, ensure_ascii=False).replace("</", "<\\/") + ";</script>", moteur,
     ])
-    pages.append(("fr/aide/", {"hero": "aide", "title": "Centre d'aide Corrext · Neur.on",
-                               "description": f"{total} réponses sur Corrext, vérifiées dans l'application : traduire, faire relire, vérifier un terme, sécurité, et administration de votre organisation.",
-                               "short": "Centre d'aide", "nav": "ressources"}, body))
+    pages.append(("fr/aide/", {"hero": "aide", "title": T("Centre d'aide Corrext · Neur.on"),
+                               "description": T("{0} réponses sur Corrext, vérifiées dans l'application : traduire, faire relire, vérifier un terme, sécurité, et administration de votre organisation.").format(total),
+                               "short": T("Centre d'aide"), "nav": "ressources"}, body))
     return pages
 
 
@@ -927,8 +955,7 @@ var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;cherche(p);}
 # articles de fond écrits à la main dans src/pages (ils appellent {{BLOG:entete:slug}} et
 # {{BLOG:recents:slug}}), "page": "generee" pour les articles dont le corps est dans le JSON.
 SITE = "https://neur-on.ai"
-MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
-_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+_SVG ='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
 BLOG_IC = {
     "auteur": _SVG + '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
     "date": _SVG + '<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
@@ -954,28 +981,29 @@ BLOG_OUTILS = [
     ("calendrier", "Actualités", "Prix, conférences, partenariats et presse : toutes les brèves de Neur.on depuis 2020.", "fr/ressources/blog/actualites/"),
 ]
 LINKEDIN = "https://www.linkedin.com/company/neur-on"
-A_PROPOS = ('<aside class="ar-about"><b>À propos de Neur.on</b><p>Neur.on AI Solutions SA, à Fribourg, édite <a href="{{ROOT}}fr/corrext/">Corrext</a>, '
-            'la plateforme suisse de traduction juridique et financière, et son moteur de traduction neuronale '
-            '<a href="{{ROOT}}fr/lexmachina/">LexMachina</a>, entraîné sur la donnée juridique et financière suisse.</p></aside>')
+
+
+def a_propos():
+    """Encadré « À propos de Neur.on » en fin d'article : les liens restent hors des clés."""
+    texte = T("Neur.on AI Solutions SA, à Fribourg, édite {0}, la plateforme suisse de traduction juridique et financière, "
+              "et son moteur de traduction neuronale {1}, entraîné sur la donnée juridique et financière suisse.").format(
+        '<a href="{{ROOT}}fr/corrext/">Corrext</a>', '<a href="{{ROOT}}fr/lexmachina/">LexMachina</a>')
+    return f'<aside class="ar-about"><b>{T("À propos de Neur.on")}</b><p>{texte}</p></aside>'
 
 
 def blog_outils():
-    cartes = "".join(f'<a class="bl-seg-card" href="{{{{ROOT}}}}{u}"><span class="ws-ic">{WS_ICONS[ic]}</span><b>{t}</b><span>{d}</span></a>'
+    cartes = "".join(f'<a class="bl-seg-card" href="{{{{ROOT}}}}{u}"><span class="ws-ic">{WS_ICONS[ic]}</span><b>{T(t)}</b><span>{T(d)}</span></a>'
                      for ic, t, d, u in BLOG_OUTILS)
-    return ('<section class="bl-seg"><div class="container"><div class="sec-head"><span class="bl-k">Ressources et outils</span>'
-            '<h2>Pour passer de la lecture à la pratique</h2><p>Un comparatif, une page sécurité, un glossaire quadrilingue, des guides, le centre d\'aide '
-            f'et l\'historique de nos actualités.</p></div><div class="bl-seg-grid">{cartes}</div></div></section>')
+    return (f'<section class="bl-seg"><div class="container"><div class="sec-head"><span class="bl-k">{T("Ressources et outils")}</span>'
+            f'<h2>{T("Pour passer de la lecture à la pratique")}</h2><p>{T("Un comparatif, une page sécurité, un glossaire quadrilingue, des guides, le centre d'aide et l'historique de nos actualités.")}'
+            f'</p></div><div class="bl-seg-grid">{cartes}</div></div></section>')
 
 
 def blog_linkedin():
     return ('<section class="bl-li"><div class="container"><div class="bl-li-band"><div><span class="bl-k">LinkedIn</span>'
-            '<h2>Les nouveaux articles et actualités, dès leur parution</h2>'
-            '<p>Neur.on publie ses articles, ses conférences et ses actualités sur sa page LinkedIn. Suivez-la pour ne rien manquer.</p></div>'
-            f'<a class="btn btn-blue" href="{LINKEDIN}" target="_blank" rel="noopener">Suivre Neur.on sur LinkedIn {ARROW}</a></div></div></section>')
-
-def date_fr(iso):
-    a, m, j = iso.split("-")
-    return f'{int(j)}{"er" if j == "01" else ""} {MOIS[int(m) - 1]} {a}'
+            f'<h2>{T("Les nouveaux articles et actualités, dès leur parution")}</h2>'
+            f'<p>{T("Neur.on publie ses articles, ses conférences et ses actualités sur sa page LinkedIn. Suivez-la pour ne rien manquer.")}</p></div>'
+            f'<a class="btn btn-blue" href="{LINKEDIN}" target="_blank" rel="noopener">{T("Suivre Neur.on sur LinkedIn")} {ARROW}</a></div></div></section>')
 
 
 def blog_articles(src):
@@ -990,7 +1018,7 @@ def blog_url(a):
 def blog_visuel(a, une=False):
     """Bandeau de carte : photo de l'article si elle existe, sinon dégradé bleu nuit ; catégorie et signature."""
     img = a.get("vignette") or a.get("image")
-    tag = (f'<span class="bl-tag">{BLOG_IC["une"]}À la une</span>' if une else f'<span class="bl-tag">{a["categorie"]}</span>')
+    tag = (f'<span class="bl-tag">{BLOG_IC["une"]}{T("À la une")}</span>' if une else f'<span class="bl-tag">{T(a["categorie"])}</span>')
     photo = (f'<img src="{{{{ROOT}}}}{img["src"]}" alt="" width="{img["w"]}" height="{img["h"]}" loading="lazy" decoding="async">'
              if img else "")
     return (f'<div class="bl-vis{" photo" if img else ""}">{photo}{tag}'
@@ -999,8 +1027,8 @@ def blog_visuel(a, une=False):
 
 def blog_carte(a):
     return (f'<a class="bl-card" href="{{{{ROOT}}}}{blog_url(a)}" data-cat="{a["categorie"]}">{blog_visuel(a)}'
-            f'<div class="bl-body"><span class="bl-date"><time datetime="{a["date"]}">{date_fr(a["date"])}</time></span>'
-            f'<h3>{a["titre"]}</h3><p>{a["extrait"]}</p><span class="bl-more">Lire l\'article {ARROW}</span></div></a>')
+            f'<div class="bl-body"><span class="bl-date"><time datetime="{a["date"]}">{date_longue(a["date"])}</time></span>'
+            f'<h3>{a["titre"]}</h3><p>{a["extrait"]}</p><span class="bl-more">{T("Lire l'article")} {ARROW}</span></div></a>')
 
 
 def blog_entete(src, slug, mots):
@@ -1008,19 +1036,19 @@ def blog_entete(src, slug, mots):
     a = next(x for x in load(src, "blog") if x["slug"] == slug)
     from urllib.parse import quote
     u, t = quote(f"{SITE}/{blog_url(a)}", safe=""), quote(a["titre"], safe="")
-    partage = "".join(f'<a class="sh-{k}" href="{h.format(u=u, t=t)}"{"" if k == "mail" else " target=\"_blank\" rel=\"noopener\""} aria-label="{l}">{svg}</a>'
+    partage = "".join(f'<a class="sh-{k}" href="{h.format(u=u, t=t)}"{"" if k == "mail" else " target=\"_blank\" rel=\"noopener\""} aria-label="{T(l)}">{svg}</a>'
                       for k, (l, h, svg) in SHARE.items())
-    maj = f' · mis à jour le {date_fr(a["maj"])}' if a.get("maj") and a["maj"] != a["date"] else ""
+    maj = f' · {T("mis à jour le {0}").format(date_longue(a["maj"]))}' if a.get("maj") and a["maj"] != a["date"] else ""
     return f'''<section class="ar-head">
   <div class="container"><div class="ar-col">
-    <p class="bl-k">{a["categorie"]}{" · " + a["sous_categorie"] if a.get("sous_categorie") else ""}</p>
+    <p class="bl-k">{T(a["categorie"])}{" · " + T(a["sous_categorie"]) if a.get("sous_categorie") else ""}</p>
     <h1>{a.get("h1", a["titre"])}</h1>
     <div class="ar-meta">
       <span>{BLOG_IC["auteur"]} <b>{a["auteur"]}</b></span>
-      <span>{BLOG_IC["date"]} <time datetime="{a["date"]}">{date_fr(a["date"])}</time>{maj}</span>
-      <span>{BLOG_IC["duree"]} {max(1, round(mots / 220))} min de lecture</span>
+      <span>{BLOG_IC["date"]} <time datetime="{a["date"]}">{date_longue(a["date"])}</time>{maj}</span>
+      <span>{BLOG_IC["duree"]} {T("{0} min de lecture").format(max(1, round(mots / 220)))}</span>
     </div>
-    <div class="ar-share" aria-label="Partager cet article"><span>Partager</span>{partage}</div>
+    <div class="ar-share" aria-label="{T("Partager cet article")}"><span>{T("Partager")}</span>{partage}</div>
   </div></div>
 </section>'''
 
@@ -1030,14 +1058,14 @@ def blog_recents(src, slug):
     cat = next((a["categorie"] for a in load(src, "blog") if a["slug"] == slug), None)
     meme = [a for a in tous if a["categorie"] == cat]
     autres = (meme + [a for a in tous if a not in meme])[:3]
-    return ('<section class="ar-latest"><div class="container"><h2>Les derniers articles</h2><div class="bl-grid">'
+    return (f'<section class="ar-latest"><div class="container"><h2>{T("Les derniers articles")}</h2><div class="bl-grid">'
             + "".join(blog_carte(a) for a in autres) + "</div></div></section>")
 
 
 def blog_ld(a, mots):
     ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": a["titre"],
           "description": a["description"], "datePublished": a["date"], "dateModified": a.get("maj", a["date"]),
-          "inLanguage": "fr-CH", "wordCount": mots, "articleSection": a["categorie"],
+          "inLanguage": HREFLANG[i18n.langue()], "wordCount": mots, "articleSection": T(a["categorie"]),
           "mainEntityOfPage": f"{SITE}/{blog_url(a)}",
           "author": ({"@type": "Person", "name": a["auteur_personne"]} if a.get("auteur_personne")
                      else {"@type": "Organization", "name": "Neur.on AI Solutions SA"}),
@@ -1050,42 +1078,47 @@ def blog_ld(a, mots):
     return '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"
 
 
-BLOG_HERO = """<section class="thero thero-read thero-centre">
+def blog_hero():
+    """Hero de la page Blog : chaque phrase passe par T()."""
+    return f"""<section class="thero thero-read thero-centre">
   <div class="container">
     <div class="thero-grid">
       <div>
-        <h1><em>Blog.</em> Ce qu'il faut savoir pour traduire le droit suisse</h1>
-        <p class="lead">Méthodes, analyses et retours de terrain sur la traduction juridique et financière en Suisse : terminologie des lois fédérales, achat de traduction, secret professionnel. Et les actualités de Neur.on depuis 2020. Les articles sont écrits par l'équipe juridique et linguistique de Neur.on.</p>
+        <h1><em>{T("Blog.")}</em> {T("Ce qu'il faut savoir pour traduire le droit suisse")}</h1>
+        <p class="lead">{T("Méthodes, analyses et retours de terrain sur la traduction juridique et financière en Suisse : terminologie des lois fédérales, achat de traduction, secret professionnel. Et les actualités de Neur.on depuis 2020. Les articles sont écrits par l'équipe juridique et linguistique de Neur.on.")}</p>
         <div class="thero-cta">
-          <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
-            Demander une démo
+          <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">
+            {T("Demander une démo")}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="#articles" class="btn btn-ghost">Voir les articles</a>
+          <a href="#articles" class="btn btn-ghost">{T("Voir les articles")}</a>
         </div>
       </div>
       <div class="thero-promise">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span><b>Utile d'abord :</b> terminologie, devis, secret professionnel, des réponses que l'on peut appliquer</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span><b>Sources vérifiables :</b> textes officiels suisses, ou observations datées dans l'application</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>Signé par l'équipe :</b> juristes et linguistes de Neur.on, en français, allemand, italien et anglais</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span><b>{T("Utile d'abord :")}</b> {T("terminologie, devis, secret professionnel, des réponses que l'on peut appliquer")}</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span><b>{T("Sources vérifiables :")}</b> {T("textes officiels suisses, ou observations datées dans l'application")}</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>{T("Signé par l'équipe :")}</b> {T("juristes et linguistes de Neur.on, en français, allemand, italien et anglais")}</span></span>
       </div>
     </div>
   </div>
 </section>"""
 
-BLOG_FIN = """<section class="final-cta">
+
+def blog_fin():
+    """Appel à l'action de fin de page Blog : chaque phrase passe par T()."""
+    return f"""<section class="final-cta">
   <div class="container">
     <div class="final-cta-inner">
-      <h2>Ces sujets se voient mieux sur vos documents</h2>
-      <p>Une démo avec un spécialiste du droit suisse : terminologie, niveaux de relecture, modes de confidentialité, sur vos propres fichiers.</p>
+      <h2>{T("Ces sujets se voient mieux sur vos documents")}</h2>
+      <p>{T("Une démo avec un spécialiste du droit suisse : terminologie, niveaux de relecture, modes de confidentialité, sur vos propres fichiers.")}</p>
       <div class="final-cta-btns">
-        <a href="{{ROOT}}fr/contact/" class="btn btn-blue">
-          Demander une démo
+        <a href="{{{{ROOT}}}}fr/contact/" class="btn btn-blue">
+          {T("Demander une démo")}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="{{ROOT}}fr/corrext/" class="btn-outline">Découvrir Corrext</a>
+        <a href="{{{{ROOT}}}}fr/corrext/" class="btn-outline">{T("Découvrir Corrext")}</a>
       </div>
-      <p class="micro">Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse</p>
+      <p class="micro">{T("Démo sur mesure · en français, allemand, italien ou anglais · hébergement 100% suisse")}</p>
     </div>
   </div>
 </section>"""
@@ -1113,16 +1146,16 @@ def gen_blog(src):
             f'''<section class="art">
   <div class="container">
     <div class="art-wrap">
-      <div class="ar-brief"><b>En bref</b><p>{a["bref"]}</p></div>
+      <div class="ar-brief"><b>{T("En bref")}</b><p>{a["bref"]}</p></div>
       {corps}
-      {A_PROPOS}
+      {a_propos()}
     </div>
   </div>
 </section>''',
             blog_recents(src, a["slug"]),
-            cta("Voyez Corrext sur vos propres documents",
-                "Une démonstration avec un spécialiste du droit suisse : terminologie, niveaux de relecture et modes de confidentialité, sur vos fichiers.",
-                {"href": "fr/contact/", "txt": "Demander une démo"}),
+            cta(T("Voyez Corrext sur vos propres documents"),
+                T("Une démonstration avec un spécialiste du droit suisse : terminologie, niveaux de relecture et modes de confidentialité, sur vos fichiers."),
+                {"href": "fr/contact/", "txt": T("Demander une démo")}),
         ])
         pages.append((blog_url(a), {"title": a["title"], "description": a["description"], "short": a.get("court", a["titre"]),
                                     "nav": "ressources", "hero": "aide", "lastmod": a.get("maj", a["date"]),
@@ -1134,17 +1167,17 @@ def gen_blog(src):
         if a["categorie"] not in cats:
             cats.append(a["categorie"])
     n = lambda c: sum(1 for a in arts if a["categorie"] == c)
-    filtres = ('<button type="button" class="bl-chip" aria-pressed="true" data-f="">Tous les articles</button>'
-               + "".join(f'<button type="button" class="bl-chip" aria-pressed="false" data-f="{c}">{c}<em>{n(c)}</em></button>' for c in cats if n(c)))
-    une_html = f'''<section class="bl-feat" aria-label="Article à la une">
+    filtres = (f'<button type="button" class="bl-chip" aria-pressed="true" data-f="">{T("Tous les articles")}</button>'
+               + "".join(f'<button type="button" class="bl-chip" aria-pressed="false" data-f="{c}">{T(c)}<em>{n(c)}</em></button>' for c in cats if n(c)))
+    une_html = f'''<section class="bl-feat" aria-label="{T("Article à la une")}">
   <div class="container">
     <a class="bl-feat-card" href="{{{{ROOT}}}}{blog_url(une)}">{blog_visuel(une, une=True)}
       <div class="bl-feat-body">
-        <span class="bl-k">{une["categorie"]}</span>
+        <span class="bl-k">{T(une["categorie"])}</span>
         <h2>{une["titre"]}</h2>
         <p>{une["extrait"]}</p>
-        <span class="feat-link">Lire l\'article {ARROW}</span>
-        <div class="bl-meta"><span>{BLOG_IC["date"]} <time datetime="{une["date"]}">{date_fr(une["date"])}</time></span><span>{BLOG_IC["auteur"]} {une["auteur"]}</span></div>
+        <span class="feat-link">{T("Lire l'article")} {ARROW}</span>
+        <div class="bl-meta"><span>{BLOG_IC["date"]} <time datetime="{une["date"]}">{date_longue(une["date"])}</time></span><span>{BLOG_IC["auteur"]} {une["auteur"]}</span></div>
       </div>
     </a>
   </div>
@@ -1152,22 +1185,22 @@ def gen_blog(src):
     script = """<script>(function(){var b=document.querySelectorAll('.bl-chip'),c=document.querySelectorAll('.bl-grid .bl-card'),v=document.querySelector('.bl-empty');
 function f(x){b.forEach(function(e){e.setAttribute('aria-pressed',e.getAttribute('data-f')===x?'true':'false');});var k=0;c.forEach(function(e){var o=!x||e.getAttribute('data-cat')===x;e.hidden=!o;if(o)k++;});if(v)v.hidden=k>0;}
 b.forEach(function(e){e.addEventListener('click',function(){f(e.getAttribute('data-f'));});});})();</script>"""
-    liste = {"@context": "https://schema.org", "@type": "Blog", "name": "Blog Neur.on", "url": f"{SITE}/fr/ressources/blog/", "inLanguage": "fr-CH",
+    liste = {"@context": "https://schema.org", "@type": "Blog", "name": T("Blog Neur.on"), "url": f"{SITE}/fr/ressources/blog/", "inLanguage": HREFLANG[i18n.langue()],
              "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
              "blogPost": [{"@type": "BlogPosting", "headline": a["titre"], "datePublished": a["date"], "url": f"{SITE}/{blog_url(a)}"} for a in arts]}
     body = "\n".join([
         '<script type="application/ld+json">' + json.dumps(liste, ensure_ascii=False) + "</script>",
-        BLOG_HERO, une_html, blog_outils(),
-        f'<section class="bl-filters" id="articles" aria-label="Filtrer par catégorie"><div class="container">{filtres}</div></section>',
-        f'<section class="bl-list"><div class="container"><div class="bl-grid">{"".join(blog_carte(a) for a in arts)}</div><p class="bl-empty" hidden>Aucun article dans cette catégorie pour le moment.</p></div></section>',
+        blog_hero(), une_html, blog_outils(),
+        f'<section class="bl-filters" id="articles" aria-label="{T("Filtrer par catégorie")}"><div class="container">{filtres}</div></section>',
+        f'<section class="bl-list"><div class="container"><div class="bl-grid">{"".join(blog_carte(a) for a in arts)}</div><p class="bl-empty" hidden>{T("Aucun article dans cette catégorie pour le moment.")}</p></div></section>',
         ('<section class="bl-actu"><div class="container"><a class="bl-actu-card" href="{{ROOT}}fr/ressources/blog/actualites/">'
-         f'<span class="bl-k">Actualités</span><b>Toutes les brèves de Neur.on, année par année</b><span>Prix, conférences, partenariats et presse depuis 2020. {ARROW}</span></a></div></section>')
+         f'<span class="bl-k">{T("Actualités")}</span><b>{T("Toutes les brèves de Neur.on, année par année")}</b><span>{T("Prix, conférences, partenariats et presse depuis 2020.")} {ARROW}</span></a></div></section>')
         if load(src, "actualites") else "",
-        blog_linkedin(), BLOG_FIN, script,
+        blog_linkedin(), blog_fin(), script,
     ])
-    pages.append(("fr/ressources/blog/", {"title": "Blog Neur.on : droit suisse, traduction et actualités",
-                                           "description": "Articles de fond sur la traduction juridique en Suisse (terminologie, devis, secret professionnel) et actualités de Neur.on : conférences, événements, presse.",
-                                           "short": "Blog", "nav": "ressources", "hero": "read",
+    pages.append(("fr/ressources/blog/", {"title": T("Blog Neur.on : droit suisse, traduction et actualités"),
+                                           "description": T("Articles de fond sur la traduction juridique en Suisse (terminologie, devis, secret professionnel) et actualités de Neur.on : conférences, événements, presse."),
+                                           "short": T("Blog"), "nav": "ressources", "hero": "read",
                                            "canonical": f"{SITE}/fr/ressources/blog/"}, body))
     return pages
 
@@ -1193,41 +1226,44 @@ def gen_actualites(src):
         lien = x.get("lien_principal")
         if x.get("article"):
             titre = f'<a href="{{{{ROOT}}}}{x["article"]}">{x["titre"]}</a>'
-            btn = f'<a class="ac-lien" href="{{{{ROOT}}}}{x["article"]}">Lire l\'article {ARROW}</a>'
+            btn = f'<a class="ac-lien" href="{{{{ROOT}}}}{x["article"]}">{T("Lire l'article")} {ARROW}</a>'
         else:
             titre = x["titre"]
             btn = (f'<a class="ac-lien" href="{lien["url"]}" target="_blank" rel="noopener">{lien["libelle"]} {ARROW}</a>' if lien else "")
         return (f'<article class="ac-item{" ac-art" if x.get("article") else ""}" id="actu-{x["num"]}">{vis}<div class="ac-txt">'
-                f'<p class="ac-meta"><time datetime="{x["date"]}">{date_fr(x["date"])}</time><span>{x["categorie"]}</span></p>'
+                f'<p class="ac-meta"><time datetime="{x["date"]}">{date_longue(x["date"])}</time><span>{T(x["categorie"])}</span></p>'
                 f'<h3>{titre}</h3><div class="ac-corps">{x["texte"]}</div>{btn}</div></article>')
-    blocs = "".join(f'<section class="ac-annee" id="annee-{an}" aria-labelledby="t-{an}"><h2 id="t-{an}">{an}<em>{sum(1 for x in data if x["date"][:4] == an)} actualités</em></h2>'
+    blocs = "".join(f'<section class="ac-annee" id="annee-{an}" aria-labelledby="t-{an}"><h2 id="t-{an}">{an}<em>{T("{0} actualités").format(sum(1 for x in data if x["date"][:4] == an))}</em></h2>'
                     + "".join(item(x) for x in data if x["date"][:4] == an) + "</section>" for an in annees)
     nav = "".join(f'<a class="bl-chip" href="#annee-{an}">{an}</a>' for an in annees)
-    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Actualités de Neur.on",
-          "url": f"{SITE}/fr/ressources/blog/actualites/", "inLanguage": "fr-CH",
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": T("Actualités de Neur.on"),
+          "url": f"{SITE}/fr/ressources/blog/actualites/", "inLanguage": HREFLANG[i18n.langue()],
           "about": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
           "mainEntity": {"@type": "ItemList", "numberOfItems": len(data), "itemListElement": [
               {"@type": "ListItem", "position": i + 1, "item": {"@type": "NewsArticle", "headline": x["titre"], "datePublished": x["date"],
                                                                "url": f'{SITE}/{x["article"]}' if x.get("article") else f'{SITE}/fr/ressources/blog/actualites/#actu-{x["num"]}'}}
               for i, x in enumerate(data)]}}
+    lead = T("Prix, conférences, partenariats, presse et recherche : {0} actualités, de la plus récente à la plus ancienne, "
+             "dont {1} à lire en article complet dans le {2}.").format(
+        len(data), len(articles), f'<a href="{{{{ROOT}}}}fr/ressources/blog/">{T("blog")}</a>')
     body = "\n".join([
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
         f'''<section class="ar-head">
   <div class="container"><div class="ar-col">
-    <p class="bl-k">Actualités</p>
-    <h1>Toutes les actualités de Neur.on</h1>
-    <p class="ac-lead">Prix, conférences, partenariats, presse et recherche : {len(data)} actualités, de la plus récente à la plus ancienne, dont {len(articles)} à lire en article complet dans le <a href="{{{{ROOT}}}}fr/ressources/blog/">blog</a>.</p>
-    <nav class="ac-nav" aria-label="Aller à une année">{nav}</nav>
+    <p class="bl-k">{T("Actualités")}</p>
+    <h1>{T("Toutes les actualités de Neur.on")}</h1>
+    <p class="ac-lead">{lead}</p>
+    <nav class="ac-nav" aria-label="{T("Aller à une année")}">{nav}</nav>
   </div></div>
 </section>''',
         f'<section class="ac"><div class="container"><div class="ar-col">{blocs}</div></div></section>',
-        cta("Voyez Corrext sur vos propres documents",
-            "Une démonstration avec un spécialiste du droit suisse : terminologie, niveaux de relecture et modes de confidentialité, sur vos fichiers.",
-            {"href": "fr/contact/", "txt": "Demander une démo"}),
+        cta(T("Voyez Corrext sur vos propres documents"),
+            T("Une démonstration avec un spécialiste du droit suisse : terminologie, niveaux de relecture et modes de confidentialité, sur vos fichiers."),
+            {"href": "fr/contact/", "txt": T("Demander une démo")}),
     ])
-    return [("fr/ressources/blog/actualites/", {"title": "Actualités de Neur.on depuis 2020 · Neur.on",
-                                                 "description": f"{len(data)} actualités de Neur.on depuis {annees[-1]} : prix et distinctions, conférences, partenariats, presse et recherche, classés par année.",
-                                                 "short": "Actualités", "nav": "ressources", "hero": "aide", "lastmod": data[0]["date"]}, body)]
+    return [("fr/ressources/blog/actualites/", {"title": T("Actualités de Neur.on depuis 2020 · Neur.on"),
+                                                 "description": T("{0} actualités de Neur.on depuis {1} : prix et distinctions, conférences, partenariats, presse et recherche, classés par année.").format(len(data), annees[-1]),
+                                                 "short": T("Actualités"), "nav": "ressources", "hero": "aide", "lastmod": data[0]["date"]}, body)]
 
 
 def build_all(src):

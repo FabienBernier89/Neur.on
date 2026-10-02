@@ -40,6 +40,11 @@ class TestProteger(unittest.TestCase):
         with self.assertRaises(ValueError):
             S.restaurer("{1}a{/1} {1}b{/1}", table)
 
+    def test_emplacements_de_gabarit(self):
+        t, table = S.proteger("{0} actualités depuis {1}")
+        self.assertEqual(t, "{1} actualités depuis {2}")
+        self.assertEqual(S.restaurer("{1} Meldungen seit {2}", table), "{0} Meldungen seit {1}")
+
     def test_entites(self):
         t, table = S.proteger("Tarif&nbsp;: 1 &amp; 2")
         self.assertEqual(t, "Tarif : 1 & 2")
