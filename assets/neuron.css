@@ -1283,3 +1283,7 @@ body.nav-open{overflow:hidden}
 
 /* Chiffres clés et informations essentielles dans les listes « Ce que fait… » : gras et bleu profond (lisible sur fond clair) */
 .fact p .kf{color:var(--blue-d);font-weight:700}
+
+/* Pages outils : illustration de la fonction dans le héro (outils/visuels_outils.py) */
+.tvis{margin:0 auto;max-width:520px;width:100%}
+.tvis-svg{display:block;width:100%;height:auto}
