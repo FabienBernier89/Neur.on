@@ -66,7 +66,11 @@
     it:{bientot:" (demo: presto disponibile)",lookup:"Demo: Fast Lookup è disponibile per gli estratti «Contratto» e «Banca».",
         reph:"Demo: per la riformulazione scegliete l'estratto «Contratto · art. 104 CO».",
         style:"Demo: lo stile «{0}» non è disponibile per questo estratto; si applica l'impostazione predefinita. Stili reali di Corrext: Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
-        rnote:"Demo: riformulazione disponibile per l'estratto «Contratto · art. 104 CO», con l'impostazione predefinita e lo stile Simplified."}
+        rnote:"Demo: riformulazione disponibile per l'estratto «Contratto · art. 104 CO», con l'impostazione predefinita e lo stile Simplified."},
+    en:{bientot:" (demo: coming soon)",lookup:"Demo: Fast Lookup is available on the ‘Contract’ and ‘Banking’ excerpts.",
+        reph:"Demo: choose the ‘Contract · Art. 104 CO’ excerpt for rephrasing.",
+        style:"Demo: the ‘{0}’ style is not available on this excerpt, so the default setting applies. Actual Corrext styles: Formal legal, Financial, Simplified, Formal, Informal, Shorten.",
+        rnote:"Demo: rephrasing is available on the ‘Contract · Art. 104 CO’ excerpt, with the default setting and the Simplified style."}
   };
   var tx=TX[(document.documentElement.lang||"fr").slice(0,2)]||TX.fr;
   var $=function(id){return document.getElementById(id);};

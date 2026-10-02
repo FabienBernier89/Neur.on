@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segreto professionale e strumenti di traduzione IA · Neur.on</title>
+<meta name="description" content="Archiviare non è trattare: che cosa vale una pseudonimizzazione, perché un avviso nello strumento vale più di un regolamento, che cosa chiedere a un fornitore.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/it/risorse/blog/segreto-professionale-traduzione-ia/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/ressources/blog/secret-professionnel-outils-traduction/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/ressourcen/blog/berufsgeheimnis-uebersetzungstools/">
+<link rel="alternate" hreflang="it-CH" href="https://neur-on.ai/it/risorse/blog/segreto-professionale-traduzione-ia/">
+<link rel="alternate" hreflang="en" href="https://neur-on.ai/en/resources/blog/professional-secrecy-ai-translation/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="Segreto professionale e strumenti di traduzione IA · Neur.on">
+<meta property="og:description" content="Archiviare non è trattare: che cosa vale una pseudonimizzazione, perché un avviso nello strumento vale più di un regolamento, che cosa chiedere a un fornitore.">
+<meta property="og:url" content="https://neur-on.ai/it/risorse/blog/segreto-professionale-traduzione-ia/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, traduzione con l'IA per il diritto, il fisco e la finanza">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="it_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../../../assets/neuron.css?v=75b323d8">
+<style>.art-warn{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-bloc);padding:24px 28px;margin:26px 0}
+.art-warn .wh{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+.art-warn .wh svg{width:16px;height:16px;color:var(--blue-d);flex-shrink:0}
+.art-warn blockquote{font-size:14.5px;line-height:1.64;color:var(--muted);border-left:2px solid var(--line-2);padding-left:16px;margin:0}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Segreto professionale e strumenti di traduzione: la questione del luogo del trattamento",
+ "description": "Distinguere archiviazione e trattamento, capire che cosa protegge una pseudonimizzazione e porre a un fornitore di traduzione le domande che contano davvero per la riservatezza di un dossier.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "it-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Che differenza c'è tra archiviazione e trattamento dei dati?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "L'archiviazione è il luogo in cui il file si trova in modo durevole. Il trattamento è il luogo in cui il file viene letto ed elaborato, anche solo per pochi secondi. Uno strumento può benissimo conservare i vostri documenti su server svizzeri e inviare ogni frase a un motore ospitato all'estero per tradurla. Le due risposte vanno ottenute separatamente, e la seconda dipende dal motore scelto per ogni invio."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Basta pseudonimizzare un documento per eliminare il rischio?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, la pseudonimizzazione riduce il rischio senza eliminarlo. Togliere i nomi delle parti lascia intatto il contesto: un'operazione particolare, una clausola insolita, una combinazione di date e giurisdizioni possono bastare a risalire a un dossier. La pseudonimizzazione è un'utile misura di prudenza, non un'anonimizzazione, e non esonera mai dal sapere dove il testo viene trattato."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Perché un avviso nello strumento funziona meglio di un regolamento interno?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Perché compare al momento della decisione, alla persona che la prende. Un regolamento firmato all'assunzione viene dimenticato il giorno in cui bisogna tradurre quaranta atti prima di un'udienza. In Corrext, la scelta di un motore ospitato all'estero fa comparire l'avviso Attorney-Client privilege, che ricorda l'obbligo di pseudonimizzare e il divieto di usare questi motori per i dossier sensibili."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quali domande porre a un fornitore di traduzione sulla riservatezza?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dove si trovano i server di archiviazione e chi li gestisce, dove avviene il trattamento per ogni motore proposto, quali subfornitori intervengono, quali dati vengono riutilizzati e a quale scopo, per quanto tempo i contenuti sono conservati e come vengono cancellati, quale certificazione possiede il fornitore e con quale campo di applicazione, e quale diritto si applica al contratto."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Una certificazione ISO 27001 garantisce che i miei dati restino in Svizzera?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Una certificazione di sicurezza delle informazioni attesta che esiste un sistema di gestione e che è stato sottoposto ad audit per un determinato campo di applicazione. Da sola non dice nulla sul luogo dei trattamenti. Chiedete il certificato, la sua data e il suo campo di applicazione esatto, e ponete separatamente la domanda sul luogo del trattamento per ogni motore proposto."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Pagina iniziale", "item": "https://neur-on.ai/it/"}, {"@type": "ListItem", "position": 2, "name": "Risorse", "item": "https://neur-on.ai/it/risorse/"}, {"@type": "ListItem", "position": 3, "name": "Blog", "item": "https://neur-on.ai/it/risorse/blog/"}, {"@type": "ListItem", "position": 4, "name": "Segreto professionale", "item": "https://neur-on.ai/it/risorse/blog/segreto-professionale-traduzione-ia/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Passare al contenuto</a>
+<header class="nav" id="siteNav" data-active="ressources">
+  <div class="container nav-inner">
+    <a href="../../../../it/" class="logo" aria-label="Neur.on, alla pagina iniziale"><img src="../../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Soluzioni<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../../../it/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Risorse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Lingua">
+        <a href="../../../../de/ressourcen/blog/berufsgeheimnis-uebersetzungstools/">DE</a><span class="sep">·</span>
+        <a href="../../../../it/risorse/blog/segreto-professionale-traduzione-ia/">FR</a><span class="sep">·</span>
+        <a class="on" href="../../../../it/risorse/blog/segreto-professionale-traduzione-ia/" aria-current="true">IT</a><span class="sep">·</span>
+        <a href="../../../../en/resources/blog/professional-secrecy-ai-translation/">EN</a>
+      </div>
+      <a href="../../../../it/contatto/" class="btn btn-blue">Richiedere una demo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Aprire il menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La piattaforma</p>
+        <a href="../../../../it/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, la cabina di regia</b><em>Progetti, offerte, risorse e diritti d'accesso in un unico ambiente svizzero</em></span></a>
+        <a href="../../../../it/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>Il motore addestrato sul diritto e sulla finanza svizzeri</em></span></a>
+        <a href="../../../../it/sicurezza/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Sicurezza e sovranità dei dati</b><em>Dove i vostri dati sono archiviati e trattati, e da quale motore</em></span></a>
+        <a href="../../../../it/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API e on-premises</b><em>Integrazione con i vostri DMS, intranet e flussi di lavoro</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Gli strumenti</p>
+        <a href="../../../../it/corrext/traduzione-documenti/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Traduzione di testi e documenti</b><em>Testi, file, PDF in Word, riformulazione</em></span></a>
+        <a href="../../../../it/corrext/progetti-di-traduzione/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Gestione dei progetti</b><em>Revisione da parte di specialisti a scelta, offerta e termine di consegna immediati</em></span></a>
+        <a href="../../../../it/corrext/revisione/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Editor di revisione</b><em>Revisione frase per frase, correzioni salvate in memoria</em></span></a>
+        <a href="../../../../it/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>Il concordanziere del diritto svizzero, 30 settori</em></span></a>
+        <a href="../../../../it/corrext/estratto-registro-di-commercio/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Estratti del registro di commercio</b><em>Traduzione certificata, autenticata da un notaio o con apostille</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per saperne di più</p>
+        <a href="../../../../it/livelli-di-qualita/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Quattro livelli di qualità</b><em>Dalla traduzione automatica alla certificazione</em></span></a>
+        <a href="../../../../it/lingue-e-formati/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Lingue e formati</b><em>30 lingue, quattro native, tutti i vostri formati da ufficio</em></span></a>
+        <a href="../../../../it/aiuto/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Centro assistenza</b><em>Come fare, passo dopo passo</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Provare senza registrazione</p>
+        <p class="mega-p">L'interfaccia di Corrext, riprodotta fedelmente su tre estratti di diritto svizzero.</p>
+        <a href="../../../../it/corrext/traduzione-documenti/#demo" class="mega-cta">Aprire la demo dal vivo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Per professione</p>
+        <a href="../../../../it/soluzioni/studi-legali/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Studi legali</b></span></a>
+        <a href="../../../../it/soluzioni/banche/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banche e finanza</b></span></a>
+        <a href="../../../../it/soluzioni/uffici-legali/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Uffici legali e Legal Ops</b></span></a>
+        <a href="../../../../it/soluzioni/enti-pubblici/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Autorità e amministrazioni</b></span></a>
+        <a href="../../../../it/soluzioni/fiduciarie/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Fiduciarie e consulenza</b></span></a>
+        <a href="../../../../it/soluzioni/legaltech-editori/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTech ed editori</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per settore del diritto</p>
+        <a href="../../../../it/traduzione/contratti/"><b>Contratti</b></a>
+        <a href="../../../../it/traduzione/diritto-societario/"><b>Diritto societario</b></a>
+        <a href="../../../../it/traduzione/fusioni-acquisizioni/"><b>Fusioni e acquisizioni</b></a>
+        <a href="../../../../it/traduzione/contenzioso-arbitrato/"><b>Contenzioso e arbitrato</b></a>
+        <a href="../../../../it/traduzione/banca-finanza/"><b>Banca e finanza</b></a>
+        <a href="../../../../it/traduzione/compliance-finma/"><b>Compliance e FINMA</b></a>
+        <a href="../../../../it/traduzione/" class="mega-all">Tutti i settori del diritto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per combinazione linguistica</p>
+        <a href="../../../../it/traduzione/tedesco-francese/"><b>Dal tedesco al francese</b></a>
+        <a href="../../../../it/traduzione/francese-tedesco/"><b>Dal francese al tedesco</b></a>
+        <a href="../../../../it/traduzione/tedesco-inglese/"><b>Dal tedesco all'inglese</b></a>
+        <a href="../../../../it/traduzione/francese-inglese/"><b>Dal francese all'inglese</b></a>
+        <a href="../../../../it/traduzione/italiano-francese/"><b>Dall'italiano al francese</b></a>
+        <a href="../../../../it/traduzione/inglese-tedesco/"><b>Dall'inglese al tedesco</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Avete ancora dubbi?</p>
+        <p class="mega-p">Ciò che Corrext fa e gli strumenti generici no, a confronto punto per punto.</p>
+        <a href="../../../../it/confronto/" class="mega-cta">Ai confronti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Capire</p>
+        <a href="../../../../it/risorse/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Diritto svizzero, traduzione e intelligenza artificiale</em></span></a>
+        <a href="../../../../it/risorse/guide/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Guide</b><em>Metodi approfonditi, firmati dai nostri specialisti</em></span></a>
+        <a href="../../../../it/risorse/studi/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studi e benchmark</b><em>Le nostre misurazioni su testi di diritto svizzero</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consultare</p>
+        <a href="../../../../it/risorse/glossario/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Glossario giuridico svizzero</b><em>Ogni termine in tedesco, francese, italiano e inglese</em></span></a>
+        <a href="../../../../it/aiuto/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Centro assistenza Corrext</b><em>Primi passi e risposte pratiche</em></span></a>
+        <a href="../../../../it/aiuto/scoprire-corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Domande frequenti</b><em>Corrext, LexMachina, revisione, prezzi</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Confrontare</p>
+        <a href="../../../../it/confronto/deepl-traduzione-giuridica/"><b>Corrext e DeepL</b></a>
+        <a href="../../../../it/confronto/chatgpt-traduzione-giuridica/"><b>Corrext e gli LLM generalisti</b></a>
+        <a href="../../../../it/confronto/agenzia-o-piattaforma/"><b>Agenzia di traduzione o piattaforma</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Una società svizzera, un'infrastruttura svizzera, un motore di traduzione addestrato sul diritto svizzero.</p>
+        <a href="../../../../it/chi-siamo/" class="mega-cta">Chi siamo e riconoscimenti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../../it/corrext/">Corrext, la piattaforma</a>
+        <a href="../../../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a>
+        <a href="../../../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a>
+        <a href="../../../../it/corrext/revisione/">Editor di revisione</a>
+        <a href="../../../../it/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../../it/corrext/estratto-registro-di-commercio/">Estratti del registro di commercio</a>
+        <a href="../../../../it/corrext/api-on-premises/">API e on-premises</a>
+        <a href="../../../../it/lexmachina/">LexMachina</a>
+        <a href="../../../../it/sicurezza/">Sicurezza e sovranità dei dati</a>
+        <a href="../../../../it/livelli-di-qualita/">Livelli di qualità</a>
+        <a href="../../../../it/lingue-e-formati/">Lingue e formati</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Soluzioni<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../../it/soluzioni/studi-legali/">Studi legali</a>
+        <a href="../../../../it/soluzioni/banche/">Banche e finanza</a>
+        <a href="../../../../it/soluzioni/uffici-legali/">Uffici legali e Legal Ops</a>
+        <a href="../../../../it/soluzioni/enti-pubblici/">Autorità e amministrazioni</a>
+        <a href="../../../../it/soluzioni/fiduciarie/">Fiduciarie e consulenza</a>
+        <a href="../../../../it/soluzioni/legaltech-editori/">LegalTech ed editori</a>
+        <a href="../../../../it/traduzione/">Traduzione per settore del diritto</a>
+        <a href="../../../../it/confronto/">Confronti</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Risorse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../../it/risorse/blog/">Blog</a>
+        <a href="../../../../it/risorse/guide/">Guide</a>
+        <a href="../../../../it/risorse/glossario/">Glossario giuridico svizzero</a>
+        <a href="../../../../it/risorse/studi/">Studi e benchmark</a>
+        <a href="../../../../it/aiuto/">Centro assistenza</a>
+        <a href="../../../../it/chi-siamo/">Chi siamo</a>
+      </div>
+    </div>
+    <a href="../../../../it/contatto/" class="btn btn-blue nm-cta">Richiedere una demo</a>
+    <div class="nm-langs" aria-label="Lingua">
+      <a href="../../../../de/ressourcen/blog/berufsgeheimnis-uebersetzungstools/">DE</a><span>·</span>
+      <a href="../../../../it/risorse/blog/segreto-professionale-traduzione-ia/">FR</a><span>·</span>
+      <a class="on" href="../../../../it/risorse/blog/segreto-professionale-traduzione-ia/" aria-current="true">IT</a><span>·</span>
+      <a href="../../../../en/resources/blog/professional-secrecy-ai-translation/">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs crumbs-light crumbs-band" aria-label="Percorso di navigazione"><div class="container"><ol><li><a href="../../../../it/">Pagina iniziale</a></li><li><a href="../../../../it/risorse/">Risorse</a></li><li><a href="../../../../it/risorse/blog/">Blog</a></li><li><span aria-current="page">Segreto professionale</span></li></ol></div></nav>
+
+<main id="main">
+<section class="ar-head">
+  <div class="container"><div class="ar-col">
+    <p class="bl-k">Riservatezza</p>
+    <h1>Segreto professionale e strumenti di traduzione: la questione del luogo del trattamento</h1>
+    <div class="ar-meta">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> <b>Team giuridico e linguistico di Neur.on</b></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> <time datetime="2026-09-15">15 settembre 2026</time></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Lettura: 9 min</span>
+    </div>
+    <div class="ar-share" aria-label="Condividere questo articolo"><span>Condividere</span><a class="sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fneur-on.ai%2Ffr%2Fressources%2Fblog%2Fsecret-professionnel-outils-traduction%2F" target="_blank" rel="noopener" aria-label="Condividere su LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a><a class="sh-x" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fneur-on.ai%2Ffr%2Fressources%2Fblog%2Fsecret-professionnel-outils-traduction%2F&amp;text=Segreto%20professionale%20e%20strumenti%20di%20traduzione%3A%20la%20questione%20del%20luogo%20del%20trattamento" target="_blank" rel="noopener" aria-label="Condividere su X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a><a class="sh-mail" href="mailto:?subject=Segreto%20professionale%20e%20strumenti%20di%20traduzione%3A%20la%20questione%20del%20luogo%20del%20trattamento&amp;body=https%3A%2F%2Fneur-on.ai%2Ffr%2Fressources%2Fblog%2Fsecret-professionnel-outils-traduction%2F" aria-label="Inviare per e-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a></div>
+  </div></div>
+</section>
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <div class="ar-brief"><b>In breve</b><p>Sapere dove sono archiviati i vostri documenti non dice quasi nulla. La domanda che conta davvero per il segreto professionale riguarda il luogo in cui il testo viene letto ed elaborato, motore per motore, invio per invio. Ecco come porre questa domanda e come interpretare la risposta.</p></div>
+
+      <p class="art-lead">Il segreto professionale dell'avvocato è disciplinato dal diritto federale, e la sua applicazione agli strumenti digitali non si risolve con una nota interna. Si risolve con fatti verificabili: dove si trova il testo, dove viene elaborato, chi vi accede, che cosa ne viene conservato. Questo articolo non dice che cosa è permesso; dice che cosa bisogna sapere prima di decidere.</p>
+
+      <h2 id="stocker-traiter">Archiviare non è trattare</h2>
+
+      <p>È la distinzione che la maggior parte della documentazione commerciale lascia nel vago, ed è quella che decide tutto.</p>
+
+      <div class="art-tbl">
+        <table>
+          <thead>
+            <tr><th>Domanda</th><th>Che cosa comprende</th><th>Che cosa non garantisce</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Dove sono archiviati i miei file?</b></td>
+              <td>Il luogo fisico in cui il documento si trova in modo durevole: centro dati, Paese, gestore dell'infrastruttura.</td>
+              <td>Che il contenuto non abbia mai lasciato quel Paese durante il trattamento.</td>
+            </tr>
+            <tr>
+              <td><b>Dove sono trattati i miei file?</b></td>
+              <td>Il luogo in cui il testo viene effettivamente letto ed elaborato da un motore, anche solo per pochi secondi.</td>
+              <td>Che il file venga poi conservato nello stesso luogo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Una piattaforma può benissimo archiviare i vostri documenti su server svizzeri e trasmettere ogni segmento a un motore ospitato altrove per tradurlo. Le due affermazioni sono vere contemporaneamente, e solo la seconda conta per un dossier coperto dal segreto. <strong>Un trattamento transitorio resta un trattamento</strong>: il testo è stato trasmesso, letto, elaborato e rinviato, fuori dalla vostra giurisdizione.</p>
+
+      <p>Per questo la formulazione da pretendere da un fornitore non è mai «i vostri dati sono in Svizzera», ma una frase che separa le due cose: <em>archiviazione su server in Svizzera in ogni caso; trattamento in Svizzera in una data configurazione, all'estero in un'altra</em>. Se il vostro interlocutore non sa rispondere separatamente, non sa rispondere.</p>
+
+      <h2 id="moteur-etranger">Che cosa succede quando scegliete un motore ospitato all'estero</h2>
+
+      <p>Le piattaforme di traduzione professionali oggi sono multimotore: orchestrano più modelli, alcuni dei quali gestiti da terzi fuori dalla Svizzera. È un bene, perché i motori non hanno gli stessi punti di forza, ed è un punto di attenzione, perché <strong>il luogo del trattamento cambia con il motore selezionato, a ogni invio</strong>.</p>
+
+      <p>Succedono allora tre cose, da tenere presenti.</p>
+
+      <ul>
+        <li><strong>Il testo esce dal territorio nazionale.</strong> Viene trasmesso a un operatore soggetto a un altro diritto, in un Paese le cui autorità possono avere poteri di accesso diversi da quelli delle vostre.</li>
+        <li><strong>Si pone la questione del riutilizzo.</strong> Un motore può conservare i contenuti inviati, usarli per migliorare i propri modelli o salvarli nei registri di sistema. Le condizioni variano secondo il contratto, l'offerta commerciale e l'entità contraente: è una domanda da porre per iscritto, per ogni motore, non un'ipotesi.</li>
+        <li><strong>La catena dei subfornitori si allunga.</strong> Tra voi e il motore possono esserci un integratore, un fornitore di hosting, un fornitore di infrastruttura. Ogni anello in più è un punto di accesso in più da documentare.</li>
+      </ul>
+
+      <p>Al contrario, un motore gestito nello stesso Paese dell'archiviazione elimina questa rottura. È la logica della modalità più rigorosa di una piattaforma: in Corrext l'opzione <em>Highly sensitive content</em> impone <strong>archiviazione e trattamento esclusivamente in Svizzera</strong> per tedesco, francese, italiano e inglese e, secondo la definizione mostrata dall'applicazione, il contenuto tradotto non viene riutilizzato in una memoria di traduzione per progetti futuri.</p>
+
+      <h2 id="pseudonymisation">La pseudonimizzazione: che cosa protegge e che cosa no</h2>
+
+      <p>Pseudonimizzare un documento prima di inviarlo a un motore estero significa togliere o sostituire gli elementi che identificano le persone e la causa: nomi delle parti, società, legali, indirizzi, riferimenti del dossier e talvolta l'oggetto stesso della controversia.</p>
+
+      <p>È una misura di prudenza seria. Ha però due limiti, da dire con chiarezza.</p>
+
+      <ul>
+        <li><strong>Non è un'anonimizzazione.</strong> Il collegamento con la persona resta presso di voi, e il testo rimane contenuto del dossier. Il rischio di divulgazione si riduce, ma non scompare.</li>
+        <li><strong>Il contesto permette di risalire all'identità.</strong> Un'operazione particolare, una clausola insolita, una combinazione di date, giurisdizioni e settori possono bastare a riconoscere un caso noto, anche senza un solo nome proprio. Più il dossier è noto, meno la pseudonimizzazione protegge.</li>
+      </ul>
+
+      <p>Bisogna tenere conto anche del costo pratico: pseudonimizzare correttamente quaranta atti a mano richiede tempo, e una pseudonimizzazione parziale dà un falso senso di sicurezza, peggiore dell'assenza di pseudonimizzazione, perché abbassa l'attenzione. <strong>Per i dossier davvero sensibili la risposta giusta non è oscurare meglio: è non uscire dal Paese.</strong></p>
+
+      <div class="art-note">
+        <p><b>La regola di selezione in una frase.</b> Se l'unica misura che rende accettabile un invio è la pseudonimizzazione, chiedetevi quanto rischio resterebbe se fosse imperfetta. Quando la risposta è «molto», scegliete un trattamento che non esce dalla Svizzera.</p>
+      </div>
+
+      <h2 id="avertissement">Perché un avviso nello strumento funziona meglio di un regolamento</h2>
+
+      <p>La maggior parte delle organizzazioni ha un regolamento sull'uso degli strumenti digitali. Viene firmato all'assunzione, archiviato in un intranet e dimenticato il giorno in cui un collaboratore deve capire quaranta atti in tedesco prima dell'udienza dell'indomani. Non è un problema di disciplina: è un problema di momento.</p>
+
+      <p><strong>Una regola viene applicata solo se compare al momento della decisione, alla persona che la prende.</strong> È esattamente ciò che fa un avviso contestuale. In Corrext, la scelta di un motore ospitato all'estero fa comparire l'avviso seguente, così come si presenta nell'applicazione:</p>
+
+      <div class="art-warn">
+        <span class="wh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Attorney-Client privilege notice</span>
+        <blockquote>«You have chosen to use third-party translation engines hosted abroad. Before uploading your file(s), your organization requires you to remove any references that could potentially disclose the identity of clients, any other related parties, or the subject matter at hand. Third-party translation engines hosted abroad may exclusively be used for documents that have been completely pseudonymized. The use of such engines for high-profile or price-sensitive matters is strictly prohibited.»</blockquote>
+      </div>
+
+      <p>In questo dispositivo meritano attenzione tre aspetti, indipendentemente dallo strumento.</p>
+
+      <ul>
+        <li><strong>L'avviso è attivato da un'azione, non da un calendario.</strong> Compare solo quando il rischio si presenta, e così conserva il suo valore di allarme.</li>
+        <li><strong>Enuncia le regole dell'organizzazione, non quelle del fornitore.</strong> È lo studio legale a decidere che cosa è vietato; lo strumento si limita a ricordarlo dove serve.</li>
+        <li><strong>Non blocca.</strong> L'utente resta responsabile e può procedere con cognizione di causa. Uno strumento che vieta tutto finisce aggirato con soluzioni per il grande pubblico, che invece non avvertono di nulla.</li>
+      </ul>
+
+      <p>Quest'ultimo punto è il più importante per un ufficio legale. Il rischio principale non è che un collaboratore scelga un motore estero in uno strumento controllato dall'organizzazione: è che incolli un paragrafo in un servizio gratuito in linea perché lo strumento approvato gli ha detto di no. <strong>Una regola praticabile riduce il rischio più di una regola perfetta.</strong></p>
+
+      <h2 id="questions">Dodici domande da porre a un fornitore</h2>
+
+      <h3>Ubicazione</h3>
+      <ol>
+        <li>Dove si trovano i server di archiviazione, in quale Paese, e chi li gestisce?</li>
+        <li>Per ogni motore proposto, dove avviene il trattamento?</li>
+        <li>Esiste una configurazione in cui il trattamento non esce mai dal Paese, e come la attiva l'utente?</li>
+        <li>A quale diritto è sottoposto il contratto, e quale foro è competente?</li>
+      </ol>
+
+      <h3>Soggetti coinvolti</h3>
+      <ol start="5">
+        <li>Quali subfornitori intervengono nella catena, e quali accedono al contenuto?</li>
+        <li>Chi, presso il fornitore, può tecnicamente leggere un documento, e questo accesso viene registrato?</li>
+        <li>Chi rivede le traduzioni è dipendente o indipendente, e quale impegno di riservatezza ha sottoscritto?</li>
+        <li>È prevista una notifica in caso di richiesta di accesso da parte di un'autorità, nella misura in cui il diritto applicabile lo consente?</li>
+      </ol>
+
+      <h3>Dati e prove</h3>
+      <ol start="9">
+        <li>Quali dati vengono riutilizzati, a quale scopo, e si può disattivare il riutilizzo progetto per progetto?</li>
+        <li>Per quanto tempo vengono conservati i contenuti, e con quale procedura vengono cancellati?</li>
+        <li>Quale certificazione possiede il fornitore, di quale data, e con quale campo di applicazione esatto? Chiedete il certificato, non il logo.</li>
+        <li>È proposto un accordo sul trattamento dei dati, e prevede un diritto di audit realistico?</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>Come leggere le risposte.</b> Una risposta precisa e circoscritta vale più di una risposta rassicurante e generica. «Trattamento in Svizzera solo in questa modalità, all'estero con questi motori» è una buona risposta. «I vostri dati sono al sicuro» non lo è.</p>
+      </div>
+
+      <h2 id="pratique">Che cosa potete decidere questa settimana</h2>
+
+      <ul>
+        <li><strong>Suddividete i vostri documenti in tre categorie</strong>: ciò che può essere tradotto da qualsiasi motore, ciò che richiede un trattamento in Svizzera, ciò che non esce dallo studio. La maggior parte delle organizzazioni non ha mai fatto questo esercizio, e basta una riunione.</li>
+        <li><strong>Mettete a disposizione uno strumento approvato come scelta predefinita.</strong> Finché non esiste, la scelta predefinita è il servizio in linea più a portata di mano.</li>
+        <li><strong>Scrivete la regola come una scelta, non come un divieto</strong>: in questo caso, questa modalità; in quest'altro, quest'altra. Una regola che comincia con «è vietato» non dice che cosa fare.</li>
+        <li><strong>Verificate una volta all'anno</strong> le risposte alle domande qui sopra: i motori, i subfornitori e le condizioni cambiano più in fretta dei contratti.</li>
+      </ul>
+
+      <p>Infine, una parola sui testi normativi. La protezione dei dati è disciplinata dalla legge federale sulla protezione dei dati e, quando sono coinvolte persone interessate nell'Unione europea, dal regolamento europeo; il segreto professionale dell'avvocato è invece disciplinato dal diritto penale federale e dalle norme professionali. Questi quadri non si sostituiscono l'uno all'altro, e la loro applicazione a un determinato strumento dipende dalle circostanze. <strong>Questo articolo descrive una prassi di prudenza; non sostituisce il parere del vostro responsabile della conformità o del vostro ordine professionale.</strong></p>
+
+      <div class="art-end">
+        <p>Per sapere come questi principi sono applicati nella nostra piattaforma, leggete <a href="../../../../it/sicurezza/">Sicurezza e sovranità dei dati</a>, il funzionamento del motore svizzero <a href="../../../../it/lexmachina/">LexMachina</a> e le modalità di riservatezza della procedura <a href="../../../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a>. L'archiviazione avviene su server svizzeri in ogni caso; il trattamento resta esclusivamente in Svizzera nella modalità Highly sensitive content o con LexMachina.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Domande frequenti</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Che differenza c'è tra archiviazione e trattamento dei dati?</summary>
+        <p>L'archiviazione è il luogo in cui il file si trova in modo durevole. Il trattamento è il luogo in cui il file viene letto ed elaborato, anche solo per pochi secondi. Uno strumento può benissimo conservare i vostri documenti su server svizzeri e inviare ogni frase a un motore ospitato all'estero per tradurla. Le due risposte vanno ottenute separatamente, e la seconda dipende dal motore scelto per ogni invio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Basta pseudonimizzare un documento per eliminare il rischio?</summary>
+        <p>No, la pseudonimizzazione riduce il rischio senza eliminarlo. Togliere i nomi delle parti lascia intatto il contesto: un'operazione particolare, una clausola insolita, una combinazione di date e giurisdizioni possono bastare a risalire a un dossier. La pseudonimizzazione è un'utile misura di prudenza, non un'anonimizzazione, e non esonera mai dal sapere dove il testo viene trattato.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Perché un avviso nello strumento funziona meglio di un regolamento interno?</summary>
+        <p>Perché compare al momento della decisione, alla persona che la prende. Un regolamento firmato all'assunzione viene dimenticato il giorno in cui bisogna tradurre quaranta atti prima di un'udienza. In Corrext, la scelta di un motore ospitato all'estero fa comparire l'avviso Attorney-Client privilege, che ricorda l'obbligo di pseudonimizzare e il divieto di usare questi motori per i dossier sensibili.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quali domande porre a un fornitore di traduzione sulla riservatezza?</summary>
+        <p>Dove si trovano i server di archiviazione e chi li gestisce, dove avviene il trattamento per ogni motore proposto, quali subfornitori intervengono, quali dati vengono riutilizzati e a quale scopo, per quanto tempo i contenuti sono conservati e come vengono cancellati, quale certificazione possiede il fornitore e con quale campo di applicazione, e quale diritto si applica al contratto.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Una certificazione ISO 27001 garantisce che i miei dati restino in Svizzera?</summary>
+        <p>No. Una certificazione di sicurezza delle informazioni attesta che esiste un sistema di gestione e che è stato sottoposto ad audit per un determinato campo di applicazione. Da sola non dice nulla sul luogo dei trattamenti. Chiedete il certificato, la sua data e il suo campo di applicazione esatto, e ponete separatamente la domanda sul luogo del trattamento per ogni motore proposto.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="ar-latest"><div class="container"><h2>Gli ultimi articoli</h2><div class="bl-grid"><a class="bl-card" href="../../../../it/risorse/blog/tradurre-contratto-diritto-svizzero/" data-cat="Droit suisse"><div class="bl-vis"><span class="bl-tag">Diritto svizzero</span><span class="bl-mark" aria-hidden="true">NEUR<span>.ON</span></span></div><div class="bl-body"><span class="bl-date"><time datetime="2026-09-15">15 settembre 2026</time></span><h3>Tradurre un contratto di diritto svizzero: che cosa cambia con il quadrilinguismo</h3><p>Le leggi federali esistono in tedesco, francese e italiano, e le tre versioni fanno ugualmente fede. Le conseguenze concrete per un contratto: abbreviazioni che cambiano secondo la lingua, inglese senza valore legale, falsi amici tra l'italiano svizzero e quello d'Italia, e un metodo per verificare un termine in tre minuti.</p><span class="bl-more">Leggere l'articolo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span></div></a><a class="bl-card" href="../../../../it/risorse/blog/preventivo-traduzione-giuridica/" data-cat="Bonnes pratiques"><div class="bl-vis"><span class="bl-tag">Buone pratiche</span><span class="bl-mark" aria-hidden="true">NEUR<span>.ON</span></span></div><div class="bl-body"><span class="bl-date"><time datetime="2026-09-15">15 settembre 2026</time></span><h3>Pagine standard, livelli di revisione, termini di consegna: capire un preventivo di traduzione giuridica</h3><p>Che cos'è una pagina standard e perché rende confrontabili due offerte. Che cosa garantisce esattamente ciascuno dei tre livelli di revisione esterna e perché la revisione interna sembra gratuita. Infine, le otto domande da porre prima di accettare un'offerta, qualunque sia il fornitore.</p><span class="bl-more">Leggere l'articolo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span></div></a><a class="bl-card" href="../../../../it/risorse/blog/pwc-legaltech-fund-londra/" data-cat="Actualités"><div class="bl-vis photo"><img src="../../../../assets/img/blog/paula-reichenberg-pwc-legaltech-fund-londres-v.webp" alt="" width="450" height="640" loading="lazy" decoding="async"><span class="bl-tag">Notizie</span><span class="bl-mark" aria-hidden="true">NEUR<span>.ON</span></span></div><div class="bl-body"><span class="bl-date"><time datetime="2025-05-23">23 maggio 2025</time></span><h3>Paula Reichenberg presenta Neur.on all’evento di PwC e The LegalTech Fund a Londra</h3><p>Durante un evento londinese su invito, la CEO di Neur.on ha presentato la soluzione ad attori della legaltech. È tornata con tre «premi» inattesi, tra cui una constatazione: la domanda di traduzione giuridica multilingue cresce.</p><span class="bl-more">Leggere l'articolo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span></div></a></div></div></section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Verificate le nostre risposte, domanda per domanda</h2>
+      <p>Una demo con uno specialista: luoghi di archiviazione e di trattamento, modalità di riservatezza, certificazione e campo di applicazione, sui vostri casi reali.</p>
+      <div class="final-cta-btns">
+        <a href="../../../../it/contatto/" class="btn btn-blue">
+          Richiedere una demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../../../it/sicurezza/" class="btn-outline">Sicurezza e sovranità dei dati</a>
+      </div>
+      <p class="micro">Demo personalizzata · in tedesco, francese, italiano o inglese · hosting al 100 % in Svizzera</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../../it/" class="logo"><img src="../../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>Il motore di traduzione per il diritto, il fisco e la finanza svizzeri. Una soluzione interamente svizzera: società, infrastruttura e motore LexMachina, per una precisione in quattro lingue e la piena sovranità dei dati.</p>
+        <p class="footer-iso">ISO 27001 · Hosting in Svizzera (Infomaniak) · nLPD e GDPR</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on su LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Piattaforma</p>
+        <ul>
+          <li><a href="../../../../it/corrext/">Corrext, la piattaforma</a></li>
+          <li><a href="../../../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a></li>
+          <li><a href="../../../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a></li>
+          <li><a href="../../../../it/corrext/revisione/">Editor di revisione</a></li>
+          <li><a href="../../../../it/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../../it/corrext/estratto-registro-di-commercio/">Estratti del registro di commercio</a></li>
+          <li><a href="../../../../it/corrext/api-on-premises/">API e on-premises</a></li>
+          <li><a href="../../../../it/lexmachina/">LexMachina, il motore</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Soluzioni</p>
+        <ul>
+          <li><a href="../../../../it/soluzioni/studi-legali/">Studi legali</a></li>
+          <li><a href="../../../../it/soluzioni/banche/">Banche e finanza</a></li>
+          <li><a href="../../../../it/soluzioni/uffici-legali/">Uffici legali</a></li>
+          <li><a href="../../../../it/soluzioni/enti-pubblici/">Autorità e amministrazioni</a></li>
+          <li><a href="../../../../it/soluzioni/fiduciarie/">Fiduciarie e consulenza</a></li>
+          <li><a href="../../../../it/soluzioni/legaltech-editori/">LegalTech ed editori</a></li>
+          <li><a href="../../../../it/traduzione/">Traduzione per settore del diritto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Risorse</p>
+        <ul>
+          <li><a href="../../../../it/risorse/blog/">Blog</a></li>
+          <li><a href="../../../../it/risorse/guide/">Guide</a></li>
+          <li><a href="../../../../it/risorse/glossario/">Glossario giuridico</a></li>
+          <li><a href="../../../../it/risorse/studi/">Studi e benchmark</a></li>
+          <li><a href="../../../../it/confronto/">Confronti</a></li>
+          <li><a href="../../../../it/aiuto/">Centro assistenza</a></li>
+          <li><a href="../../../../it/sicurezza/">Sicurezza e sovranità dei dati</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../../../it/chi-siamo/">Chi siamo e riconoscimenti</a></li>
+          <li><a href="../../../../it/chi-siamo/stampa/">Stampa</a></li>
+          <li><a href="../../../../it/contatto/">Richiedere una demo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Friburgo, Svizzera. Tutti i diritti riservati.</span>
+      <div class="links">
+        <a href="../../../../it/note-legali/">Note legali e condizioni d'uso</a>
+        <a href="../../../../it/protezione-dei-dati/">Protezione dei dati</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../../assets/nav.js?v=75b323d8" defer></script>
+</body>
+</html>

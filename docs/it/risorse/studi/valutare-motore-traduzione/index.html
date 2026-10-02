@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valutare un motore di traduzione giuridica svizzera · Neur.on</title>
+<meta name="description" content="Sei criteri misurabili, un protocollo in doppio cieco e sette insidie che falsano i confronti tra motori di traduzione su testi di diritto svizzero.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/it/risorse/studi/valutare-motore-traduzione/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/ressources/etudes/evaluer-moteur-traduction-juridique/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/ressourcen/studien/uebersetzungsmotor-evaluieren/">
+<link rel="alternate" hreflang="it-CH" href="https://neur-on.ai/it/risorse/studi/valutare-motore-traduzione/">
+<link rel="alternate" hreflang="en" href="https://neur-on.ai/en/resources/studies/evaluating-translation-engines/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="Valutare un motore di traduzione giuridica svizzera · Neur.on">
+<meta property="og:description" content="Sei criteri misurabili, un protocollo in doppio cieco e sette insidie che falsano i confronti tra motori di traduzione su testi di diritto svizzero.">
+<meta property="og:url" content="https://neur-on.ai/it/risorse/studi/valutare-motore-traduzione/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, traduzione con l'IA per il diritto, il fisco e la finanza">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="it_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../../../assets/neuron.css?v=75b323d8">
+<style>.meta{font-size:13.5px;color:var(--muted);margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.art{padding:66px 0 26px}
+.art-wrap{max-width:768px;margin:0 auto}
+.art-wrap h2{font-size:clamp(22px,2.6vw,29px);margin:56px 0 16px;letter-spacing:-.022em;scroll-margin-top:96px}
+.art-wrap h3{font-size:18.5px;margin:32px 0 10px;letter-spacing:-.015em}
+.art-wrap p{font-size:17px;line-height:1.72;margin-bottom:18px}
+.art-wrap .art-lead{font-size:19.5px;line-height:1.62;color:var(--ink);margin-bottom:26px}
+.art-wrap ul,.art-wrap ol{margin:0 0 20px;padding-left:22px}
+.art-wrap li{font-size:17px;line-height:1.7;margin-bottom:9px;padding-left:4px}
+.art-wrap li::marker{color:var(--blue-d)}
+.art-wrap strong{color:var(--ink);font-weight:700}
+.art-wrap a:not(.feat-link){color:var(--blue-d);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.art-wrap a:not(.feat-link):hover{color:var(--navy)}
+.toc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc);padding:26px 30px;margin:0 0 46px}
+.toc b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;font-weight:700}
+.toc ol{margin:0;padding-left:20px}
+.toc li{font-size:16px;margin-bottom:9px;line-height:1.5;padding-left:2px}
+.toc li::marker{color:var(--blue-d);font-weight:700}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-2)}
+.toc a:hover{color:var(--blue-d);border-color:var(--blue)}
+.art-note{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 var(--r-bloc) var(--r-bloc) 0;padding:22px 26px;margin:28px 0}
+.art-note p{font-size:15.5px;margin-bottom:10px}
+.art-note p:last-child{margin-bottom:0}
+.crit{border:1px solid var(--line-2);border-radius:var(--r-bloc);padding:22px 26px;margin:18px 0;background:#fff}
+.crit .cn{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-d);margin-bottom:10px}
+.crit .cn i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:block}
+.crit h3{margin:0 0 10px;font-size:18px}
+.crit p{font-size:16px;margin-bottom:12px}
+.crit .q{font-size:14.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin:0}
+.crit .q b{color:var(--ink)}
+.art-end{margin-top:54px;padding-top:26px;border-top:1px solid var(--line)}
+.art-end p{font-size:15.5px}
+@media(max-width:560px){.art{padding:44px 0 18px}.art-wrap p,.art-wrap li{font-size:16.5px}.toc,.crit{padding:22px 20px}}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Come valutare un motore di traduzione sul diritto svizzero",
+ "description": "Un metodo di valutazione dei motori di traduzione applicato ai testi giuridici svizzeri: criteri misurabili, costituzione del corpus, protocollo in doppio cieco e insidie metodologiche.",
+ "datePublished": "2026-09-15",
+ "dateModified": "2026-09-15",
+ "inLanguage": "it-CH",
+ "author": {"@type": "Organization", "name": "Neur.on AI Solutions SA"},
+ "publisher": {"@type": "Organization", "name": "Neur.on AI Solutions SA"}
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Perché i punteggi automatici non bastano per un testo giuridico?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Perché misurano una somiglianza superficiale con una traduzione di riferimento, non l'esattezza di un riferimento legale. Una frase che cita l'articolo sbagliato o il tribunale sbagliato può ottenere un ottimo punteggio automatico: è scorrevole, vicina al riferimento e giuridicamente sbagliata. Sul diritto, la valutazione va fatta da persone, su criteri binari definiti in anticipo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quanti segmenti servono per valutare un motore di traduzione giuridica?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non esiste un numero universale: la dimensione dipende dal numero di criteri, dalla rarità dei fenomeni osservati e dalla precisione ricercata. La regola utile è un'altra: il corpus deve coprire ogni settore, ogni direzione di traduzione e ogni tipo di documento che trattate davvero, con abbastanza segmenti per casella perché uno scarto non dipenda da una sola frase. Un corpus squilibrato dà un risultato falso, qualunque sia la sua dimensione."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Che cos'è una valutazione alla cieca dei motori di traduzione?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "È una valutazione in cui il valutatore non sa quale motore ha prodotto il risultato che sta giudicando. I risultati sono anonimizzati, mescolati e presentati in ordine casuale. Senza questa cecità, il nome del motore influenza il giudizio, in entrambe le direzioni: indulgenza verso il motore che si conosce, severità verso quello di cui si diffida."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Bisogna valutare lo stesso segmento una volta sola o più volte?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Più volte, in date diverse. Un risultato può variare da una generazione all'altra, o al contrario restare identico. In una sessione di osservazione, rigenerare la stessa frase ha dato risultati rigorosamente identici per alcuni segmenti, mentre altri variavano. Una misura fatta una sola volta non dice se lo scarto osservato è una differenza di qualità o una variazione di generazione."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quali criteri misurare su testi di diritto svizzero?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sei criteri si valutano in modo binario e quindi riproducibile: l'esattezza del riferimento legale, la conformità terminologica al testo ufficiale, la coerenza all'interno di uno stesso documento, la resa dei nomi di tribunali e autorità, la gestione di importi e date nel formato svizzero e l'integrità del segmento, cioè l'assenza di omissioni, aggiunte e caratteri spuri."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Pagina iniziale", "item": "https://neur-on.ai/it/"}, {"@type": "ListItem", "position": 2, "name": "Risorse", "item": "https://neur-on.ai/it/risorse/"}, {"@type": "ListItem", "position": 3, "name": "Studi e benchmark", "item": "https://neur-on.ai/it/risorse/studi/"}, {"@type": "ListItem", "position": 4, "name": "Valutare un motore", "item": "https://neur-on.ai/it/risorse/studi/valutare-motore-traduzione/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Passare al contenuto</a>
+<header class="nav" id="siteNav" data-active="ressources">
+  <div class="container nav-inner">
+    <a href="../../../../it/" class="logo" aria-label="Neur.on, alla pagina iniziale"><img src="../../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Soluzioni<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../../../it/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Risorse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Lingua">
+        <a href="../../../../de/ressourcen/studien/uebersetzungsmotor-evaluieren/">DE</a><span class="sep">·</span>
+        <a href="../../../../it/risorse/studi/valutare-motore-traduzione/">FR</a><span class="sep">·</span>
+        <a class="on" href="../../../../it/risorse/studi/valutare-motore-traduzione/" aria-current="true">IT</a><span class="sep">·</span>
+        <a href="../../../../en/resources/studies/evaluating-translation-engines/">EN</a>
+      </div>
+      <a href="../../../../it/contatto/" class="btn btn-blue">Richiedere una demo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Aprire il menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La piattaforma</p>
+        <a href="../../../../it/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, la cabina di regia</b><em>Progetti, offerte, risorse e diritti d'accesso in un unico ambiente svizzero</em></span></a>
+        <a href="../../../../it/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>Il motore addestrato sul diritto e sulla finanza svizzeri</em></span></a>
+        <a href="../../../../it/sicurezza/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Sicurezza e sovranità dei dati</b><em>Dove i vostri dati sono archiviati e trattati, e da quale motore</em></span></a>
+        <a href="../../../../it/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API e on-premises</b><em>Integrazione con i vostri DMS, intranet e flussi di lavoro</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Gli strumenti</p>
+        <a href="../../../../it/corrext/traduzione-documenti/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Traduzione di testi e documenti</b><em>Testi, file, PDF in Word, riformulazione</em></span></a>
+        <a href="../../../../it/corrext/progetti-di-traduzione/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Gestione dei progetti</b><em>Revisione da parte di specialisti a scelta, offerta e termine di consegna immediati</em></span></a>
+        <a href="../../../../it/corrext/revisione/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Editor di revisione</b><em>Revisione frase per frase, correzioni salvate in memoria</em></span></a>
+        <a href="../../../../it/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>Il concordanziere del diritto svizzero, 30 settori</em></span></a>
+        <a href="../../../../it/corrext/estratto-registro-di-commercio/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Estratti del registro di commercio</b><em>Traduzione certificata, autenticata da un notaio o con apostille</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per saperne di più</p>
+        <a href="../../../../it/livelli-di-qualita/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Quattro livelli di qualità</b><em>Dalla traduzione automatica alla certificazione</em></span></a>
+        <a href="../../../../it/lingue-e-formati/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Lingue e formati</b><em>30 lingue, quattro native, tutti i vostri formati da ufficio</em></span></a>
+        <a href="../../../../it/aiuto/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Centro assistenza</b><em>Come fare, passo dopo passo</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Provare senza registrazione</p>
+        <p class="mega-p">L'interfaccia di Corrext, riprodotta fedelmente su tre estratti di diritto svizzero.</p>
+        <a href="../../../../it/corrext/traduzione-documenti/#demo" class="mega-cta">Aprire la demo dal vivo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Per professione</p>
+        <a href="../../../../it/soluzioni/studi-legali/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Studi legali</b></span></a>
+        <a href="../../../../it/soluzioni/banche/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banche e finanza</b></span></a>
+        <a href="../../../../it/soluzioni/uffici-legali/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Uffici legali e Legal Ops</b></span></a>
+        <a href="../../../../it/soluzioni/enti-pubblici/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Autorità e amministrazioni</b></span></a>
+        <a href="../../../../it/soluzioni/fiduciarie/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Fiduciarie e consulenza</b></span></a>
+        <a href="../../../../it/soluzioni/legaltech-editori/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTech ed editori</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per settore del diritto</p>
+        <a href="../../../../it/traduzione/contratti/"><b>Contratti</b></a>
+        <a href="../../../../it/traduzione/diritto-societario/"><b>Diritto societario</b></a>
+        <a href="../../../../it/traduzione/fusioni-acquisizioni/"><b>Fusioni e acquisizioni</b></a>
+        <a href="../../../../it/traduzione/contenzioso-arbitrato/"><b>Contenzioso e arbitrato</b></a>
+        <a href="../../../../it/traduzione/banca-finanza/"><b>Banca e finanza</b></a>
+        <a href="../../../../it/traduzione/compliance-finma/"><b>Compliance e FINMA</b></a>
+        <a href="../../../../it/traduzione/" class="mega-all">Tutti i settori del diritto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per combinazione linguistica</p>
+        <a href="../../../../it/traduzione/tedesco-francese/"><b>Dal tedesco al francese</b></a>
+        <a href="../../../../it/traduzione/francese-tedesco/"><b>Dal francese al tedesco</b></a>
+        <a href="../../../../it/traduzione/tedesco-inglese/"><b>Dal tedesco all'inglese</b></a>
+        <a href="../../../../it/traduzione/francese-inglese/"><b>Dal francese all'inglese</b></a>
+        <a href="../../../../it/traduzione/italiano-francese/"><b>Dall'italiano al francese</b></a>
+        <a href="../../../../it/traduzione/inglese-tedesco/"><b>Dall'inglese al tedesco</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Avete ancora dubbi?</p>
+        <p class="mega-p">Ciò che Corrext fa e gli strumenti generici no, a confronto punto per punto.</p>
+        <a href="../../../../it/confronto/" class="mega-cta">Ai confronti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Capire</p>
+        <a href="../../../../it/risorse/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Diritto svizzero, traduzione e intelligenza artificiale</em></span></a>
+        <a href="../../../../it/risorse/guide/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Guide</b><em>Metodi approfonditi, firmati dai nostri specialisti</em></span></a>
+        <a href="../../../../it/risorse/studi/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studi e benchmark</b><em>Le nostre misurazioni su testi di diritto svizzero</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consultare</p>
+        <a href="../../../../it/risorse/glossario/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Glossario giuridico svizzero</b><em>Ogni termine in tedesco, francese, italiano e inglese</em></span></a>
+        <a href="../../../../it/aiuto/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Centro assistenza Corrext</b><em>Primi passi e risposte pratiche</em></span></a>
+        <a href="../../../../it/aiuto/scoprire-corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Domande frequenti</b><em>Corrext, LexMachina, revisione, prezzi</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Confrontare</p>
+        <a href="../../../../it/confronto/deepl-traduzione-giuridica/"><b>Corrext e DeepL</b></a>
+        <a href="../../../../it/confronto/chatgpt-traduzione-giuridica/"><b>Corrext e gli LLM generalisti</b></a>
+        <a href="../../../../it/confronto/agenzia-o-piattaforma/"><b>Agenzia di traduzione o piattaforma</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Una società svizzera, un'infrastruttura svizzera, un motore di traduzione addestrato sul diritto svizzero.</p>
+        <a href="../../../../it/chi-siamo/" class="mega-cta">Chi siamo e riconoscimenti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../../it/corrext/">Corrext, la piattaforma</a>
+        <a href="../../../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a>
+        <a href="../../../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a>
+        <a href="../../../../it/corrext/revisione/">Editor di revisione</a>
+        <a href="../../../../it/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../../it/corrext/estratto-registro-di-commercio/">Estratti del registro di commercio</a>
+        <a href="../../../../it/corrext/api-on-premises/">API e on-premises</a>
+        <a href="../../../../it/lexmachina/">LexMachina</a>
+        <a href="../../../../it/sicurezza/">Sicurezza e sovranità dei dati</a>
+        <a href="../../../../it/livelli-di-qualita/">Livelli di qualità</a>
+        <a href="../../../../it/lingue-e-formati/">Lingue e formati</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Soluzioni<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../../it/soluzioni/studi-legali/">Studi legali</a>
+        <a href="../../../../it/soluzioni/banche/">Banche e finanza</a>
+        <a href="../../../../it/soluzioni/uffici-legali/">Uffici legali e Legal Ops</a>
+        <a href="../../../../it/soluzioni/enti-pubblici/">Autorità e amministrazioni</a>
+        <a href="../../../../it/soluzioni/fiduciarie/">Fiduciarie e consulenza</a>
+        <a href="../../../../it/soluzioni/legaltech-editori/">LegalTech ed editori</a>
+        <a href="../../../../it/traduzione/">Traduzione per settore del diritto</a>
+        <a href="../../../../it/confronto/">Confronti</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Risorse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../../it/risorse/blog/">Blog</a>
+        <a href="../../../../it/risorse/guide/">Guide</a>
+        <a href="../../../../it/risorse/glossario/">Glossario giuridico svizzero</a>
+        <a href="../../../../it/risorse/studi/">Studi e benchmark</a>
+        <a href="../../../../it/aiuto/">Centro assistenza</a>
+        <a href="../../../../it/chi-siamo/">Chi siamo</a>
+      </div>
+    </div>
+    <a href="../../../../it/contatto/" class="btn btn-blue nm-cta">Richiedere una demo</a>
+    <div class="nm-langs" aria-label="Lingua">
+      <a href="../../../../de/ressourcen/studien/uebersetzungsmotor-evaluieren/">DE</a><span>·</span>
+      <a href="../../../../it/risorse/studi/valutare-motore-traduzione/">FR</a><span>·</span>
+      <a class="on" href="../../../../it/risorse/studi/valutare-motore-traduzione/" aria-current="true">IT</a><span>·</span>
+      <a href="../../../../en/resources/studies/evaluating-translation-engines/">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs crumbs-light" aria-label="Percorso di navigazione"><div class="container"><ol><li><a href="../../../../it/">Pagina iniziale</a></li><li><a href="../../../../it/risorse/">Risorse</a></li><li><a href="../../../../it/risorse/studi/">Studi e benchmark</a></li><li><span aria-current="page">Valutare un motore</span></li></ol></div></nav>
+
+<main id="main">
+<section class="thero thero-read thero-centre">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Studio.</em> Come valutare un motore di traduzione sul diritto svizzero</h1>
+        <p class="lead">Questa pagina non pubblica una classifica. Pubblica un metodo: i criteri che si possono misurare, il protocollo che evita di sbagliare e gli errori di ragionamento che portano a conclusioni affrettate. Qui saranno pubblicati i risultati di un primo corpus.</p>
+        <div class="thero-cta">
+          <a href="../../../../it/contatto/" class="btn btn-blue">
+            Richiedere una demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#sommaire" class="btn btn-ghost">Vedere il metodo</a>
+        </div>
+      </div>
+      <div class="thero-promise">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Sei criteri binari</b>, definiti perché due valutatori arrivino allo stesso verdetto</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg><span><b>Un protocollo alla cieca</b>: corpus, anonimizzazione, doppia valutazione, replica</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><span><b>Sette insidie metodologiche</b> che invalidano la maggior parte dei confronti pubblicati</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="art">
+  <div class="container">
+    <div class="art-wrap">
+      <p class="meta">A cura del team giuridico e linguistico di Neur.on · 15 settembre 2026 · aggiornato il 15 settembre 2026</p>
+
+      <p class="art-lead">La domanda «qual è il miglior motore di traduzione per il diritto svizzero?» non ha risposta finché non si è detto su quali testi, in quale direzione, secondo quali criteri e con quale margine di errore. Questo documento propone un metodo che qualsiasi ufficio legale può applicare senza un laboratorio, e che chiunque può contestare punto per punto.</p>
+
+      <nav class="toc" id="sommaire" aria-label="Indice dello studio">
+        <b>Indice</b>
+        <ol>
+          <li><a href="#pourquoi">Perché i punteggi automatici non bastano</a></li>
+          <li><a href="#criteres">Sei criteri misurabili</a></li>
+          <li><a href="#corpus">Costituire il corpus</a></li>
+          <li><a href="#protocole">Il protocollo di valutazione</a></li>
+          <li><a href="#pieges">Sette insidie metodologiche</a></li>
+          <li><a href="#rendre">Presentare i risultati</a></li>
+          <li><a href="#suite">Che cosa sarà pubblicato su questa pagina</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="pourquoi">1. Perché i punteggi automatici non bastano</h2>
+
+      <p>Le metriche automatiche di traduzione confrontano un risultato con una traduzione di riferimento e ne misurano la somiglianza. Sono utili per seguire l'evoluzione di un sistema da una versione all'altra. Sono fuorvianti quando si tratta di decidere una scelta giuridica, per una ragione strutturale: <strong>non distinguono una sfumatura di formulazione da un errore di diritto</strong>.</p>
+
+      <p>Una frase che rende correttamente tutte le parole ma cita un articolo inesistente, o attribuisce una competenza a un tribunale straniero, resta vicina al riferimento e ottiene un buon punteggio. Una frase perfettamente esatta ma formulata in modo diverso dal riferimento viene penalizzata. Per un giurista è esattamente il contrario di ciò che conta.</p>
+
+      <p>La valutazione di un motore sul diritto deve quindi essere <strong>umana, su criteri binari definiti in anticipo</strong>. Binari, perché un voto da uno a dieci misura soprattutto l'umore del valutatore, mentre una domanda chiusa come «il riferimento legale citato è esatto?» dà lo stesso verdetto con due persone diverse.</p>
+
+      <h2 id="criteres">2. Sei criteri misurabili</h2>
+
+      <p>Ogni criterio si valuta conforme o non conforme, segmento per segmento. Quando un criterio non si applica a un segmento, viene segnato come non applicabile ed esce dal denominatore per quel segmento.</p>
+
+      <div class="crit">
+        <span class="cn"><i></i> Criterio 1</span>
+        <h3>Esattezza del riferimento legale</h3>
+        <p>Il risultato cita il testo giusto, con l'abbreviazione della lingua di arrivo, il numero di articolo giusto e la suddivisione giusta?</p>
+        <p class="q"><b>Non conforme se:</b> l'abbreviazione resta quella della lingua di partenza, l'abbreviazione appartiene a un altro testo, il numero di articolo o il capoverso cambia, la nomenclatura delle suddivisioni non è quella della lingua di arrivo.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Criterio 2</span>
+        <h3>Conformità terminologica al testo ufficiale</h3>
+        <p>Il termine scelto figura nella versione ufficiale del testo citato, o in una fonte ufficiale del settore?</p>
+        <p class="q"><b>Non conforme se:</b> il termine è un sinonimo corretto ma assente dal testo ufficiale, un prestito da un altro ordinamento giuridico, o la traduzione letterale di un termine che ha già un equivalente legale consolidato.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Criterio 3</span>
+        <h3>Coerenza all'interno del documento</h3>
+        <p>Uno stesso termine di partenza è reso con uno stesso termine di arrivo da un capo all'altro del documento, titoli, note e allegati compresi?</p>
+        <p class="q"><b>Misura:</b> questo criterio non si valuta sul segmento ma sul documento. Individuate ogni termine chiave di partenza, contate le sue rese diverse e segnate non conforme non appena un termine chiave riceve più di una resa senza giustificazione.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Criterio 4</span>
+        <h3>Nomi di tribunali e autorità</h3>
+        <p>I tribunali, le autorità e i registri menzionati sono designati con il loro nome svizzero nella lingua di arrivo?</p>
+        <p class="q"><b>Non conforme se:</b> un tribunale svizzero è reso con il nome di un tribunale straniero, il nome di un'autorità è tradotto alla lettera mentre esiste una denominazione ufficiale, o cambia il grado di giurisdizione.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Criterio 5</span>
+        <h3>Importi, date e unità nel formato svizzero</h3>
+        <p>I dati numerici sono esatti e conformi alle convenzioni di scrittura della lingua di arrivo in Svizzera?</p>
+        <p class="q"><b>Non conforme se:</b> una cifra, un tasso o un termine differisce dal testo di partenza, il separatore delle migliaia non è l'apostrofo, la valuta cambia codice, o una data diventa ambigua nella versione inglese.</p>
+      </div>
+
+      <div class="crit">
+        <span class="cn"><i></i> Criterio 6</span>
+        <h3>Integrità del segmento</h3>
+        <p>Il risultato contiene tutto il contenuto del testo di partenza, e nient'altro?</p>
+        <p class="q"><b>Non conforme se:</b> una proposizione è omessa, un contenuto è aggiunto, una virgoletta o un carattere spurio compare all'inizio o alla fine del risultato, o il risultato è troncato.</p>
+      </div>
+
+      <p>Questi sei criteri non hanno la stessa gravità, e soprattutto non bisogna farne una media. <strong>Separate gli errori squalificanti dagli scarti di preferenza.</strong> Un riferimento legale sbagliato e un'omissione rendono un segmento inutilizzabile; un termine corretto ma assente dal testo ufficiale richiede una correzione, niente di più. Pubblicate quindi due tassi distinti: la quota di segmenti con almeno un errore squalificante e la quota di segmenti con almeno uno scarto da correggere.</p>
+
+      <h2 id="corpus">3. Costituire il corpus</h2>
+
+      <p>Il corpus decide il risultato più dei motori. Quattro requisiti.</p>
+
+      <h3>Rappresentatività</h3>
+      <p>Il corpus deve rispecchiare ciò che trattate davvero, non ciò che è facile raccogliere. Incrociate tre dimensioni: il settore (contratti, contenzioso, diritto societario, regolamentazione finanziaria, diritto amministrativo), il tipo di documento (atto, atto scritto delle parti, decisione, corrispondenza, clausola tipo) e la direzione di traduzione. <strong>Un motore efficace dal tedesco all'italiano può non esserlo dall'italiano al tedesco</strong>: le due direzioni vanno contate separatamente, mai aggregate.</p>
+
+      <h3>Dimensione</h3>
+      <p>Non esiste un numero magico di segmenti: la dimensione utile dipende dal numero di criteri, dalla rarità dei fenomeni osservati e dalla precisione desiderata. La regola pratica è ragionare per casella: ogni combinazione di settore e direzione di traduzione deve contenere abbastanza segmenti perché uno scarto non dipenda da una o due frasi. Meglio un corpus piccolo ed equilibrato che un corpus vasto e concentrato su un solo settore.</p>
+
+      <h3>Densità di fenomeni</h3>
+      <p>Componete deliberatamente una parte del corpus con segmenti che contengono ciò che volete misurare: riferimenti legali, nomi di tribunali, importi, date, termini regolamentari. Un corpus di frasi neutre non misura nulla di utile, perché tutti i motori le traducono bene.</p>
+
+      <h3>Tracciabilità e riservatezza</h3>
+      <p>Ogni segmento deve indicare la sua provenienza, perché l'esattezza possa essere verificata nella fonte ufficiale. Se usate documenti interni, pseudonimizzateli prima di qualsiasi trasmissione a un motore di terzi, e documentate questo trattamento: costituire un corpus di valutazione è un trattamento di dati come un altro. Il tema è approfondito nel nostro articolo sul <a href="../../../../it/risorse/blog/segreto-professionale-traduzione-ia/">luogo del trattamento</a>.</p>
+
+      <div class="art-note">
+        <p><b>Congelate il corpus e assegnategli una versione.</b> Un corpus che cambia tra due campagne rende i risultati non confrontabili. Dategli un numero di versione e una data, e conservatelo così com'è per la campagna successiva.</p>
+      </div>
+
+      <h2 id="protocole">4. Il protocollo di valutazione</h2>
+
+      <ol>
+        <li><strong>Fissare i parametri.</strong> Stessa combinazione linguistica, stesse impostazioni, stessa modalità di riservatezza, stessa assenza o presenza di glossario per tutti i motori. Una differenza di configurazione invalida l'intero confronto.</li>
+        <li><strong>Generare in un'unica finestra temporale</strong> e registrare data e ora di ogni risultato. I motori evolvono; un risultato senza data non è un dato.</li>
+        <li><strong>Anonimizzare i risultati.</strong> Togliete ogni menzione del motore, compresi gli indizi di formattazione che lo tradiscono, e assegnate un identificativo neutro.</li>
+        <li><strong>Rendere casuale l'ordine di presentazione</strong>, in modo diverso per ogni valutatore, perché la stanchezza e l'effetto d'ordine non si concentrino sullo stesso motore.</li>
+        <li><strong>Far valutare da due persone indipendenti</strong>, senza comunicazione tra loro, sulla stessa griglia.</li>
+        <li><strong>Misurare l'accordo tra valutatori</strong> prima di guardare i risultati. Un accordo debole segnala che la griglia è ambigua, non che i valutatori sono scarsi: bisogna allora precisare le definizioni e ricominciare.</li>
+        <li><strong>Risolvere i disaccordi con un terzo arbitro</strong>, che a sua volta non conosce l'origine dei risultati, e annotare la regola ricavata per i casi successivi.</li>
+        <li><strong>Replicare.</strong> Ripetete un sottoinsieme del corpus a qualche settimana di distanza, con gli stessi parametri, per misurare la varianza nel tempo.</li>
+      </ol>
+
+      <p>Quest'ultimo punto non è teorico. In una sessione di osservazione, rigenerare alcuni segmenti ha prodotto risultati <strong>rigorosamente identici</strong>, mentre altri segmenti variavano da una generazione all'altra. Una campagna che non misura questa varianza non può dire se uno scarto tra due motori è uno scarto di qualità o un caso della generazione.</p>
+
+      <h2 id="pieges">5. Sette insidie metodologiche</h2>
+
+      <ol>
+        <li><strong>Giudicare su una frase.</strong> È l'insidia più comune e la più costosa. Una frase ben tradotta non dice nulla del comportamento di un motore su un documento di sessanta pagine, dove la coerenza diventa il primo criterio.</li>
+        <li><strong>Confondere scorrevolezza ed esattezza.</strong> I motori recenti producono frasi gradevoli. Un risultato scorrevole che cita un testo inesistente è più pericoloso di un risultato goffo, perché non invita alla verifica. Nella stessa sessione di osservazione, un risultato ha reso il nome dell'autorità giudiziaria suprema svizzera con quello di un tribunale straniero, in una frase per il resto costruita perfettamente.</li>
+        <li><strong>Dimenticare la varianza tra generazioni.</strong> Confrontare un risultato di ciascun motore equivale a confrontare due estrazioni a sorte. Senza replica, lo scarto misurato può essere dovuto interamente al caso della generazione.</li>
+        <li><strong>Aggregare le direzioni di traduzione.</strong> Un punteggio medio tra tedesco-italiano e italiano-tedesco nasconde esattamente l'informazione che vi interessa.</li>
+        <li><strong>Lasciar vedere il nome del motore.</strong> Il valutatore che sa che cosa sta giudicando non giudica più il risultato: giudica la sua opinione del motore.</li>
+        <li><strong>Mescolare gravità e preferenza.</strong> Contare nello stesso totale un riferimento legale sbagliato e una scelta stilistica discutibile produce una cifra che nessuno sa interpretare.</li>
+        <li><strong>Valutare su testi pubblici molto diffusi.</strong> I testi di legge più citati sono abbondantemente presenti nei dati di addestramento dei modelli generalisti. Riuscire su questi testi non predice le prestazioni sui vostri documenti. Tenetene una parte per il controllo, ma costruite il nucleo del corpus su testi meno esposti.</li>
+      </ol>
+
+      <div class="art-note">
+        <p><b>Un'ottava insidia, organizzativa.</b> Far valutare la persona che ha scelto il motore. Separate sempre chi decide e chi valuta; altrimenti, la valutazione alla cieca è l'unica protezione che resta.</p>
+      </div>
+
+      <h2 id="rendre">6. Presentare i risultati</h2>
+
+      <p>Un rapporto di valutazione credibile pubblica tutto ciò che permette di contestarlo.</p>
+
+      <ul>
+        <li><strong>La composizione del corpus</strong>: numero di segmenti per settore e per direzione di traduzione, provenienza, data di costituzione, versione.</li>
+        <li><strong>I parametri esatti</strong> di ogni generazione, e la loro data.</li>
+        <li><strong>La griglia dei criteri</strong>, con le definizioni di non conformità utilizzate.</li>
+        <li><strong>Il tasso di accordo tra valutatori</strong>, prima dell'arbitrato.</li>
+        <li><strong>I risultati per criterio e per casella</strong>, mai un unico punteggio globale.</li>
+        <li><strong>La varianza misurata</strong> durante la replica.</li>
+        <li><strong>I limiti</strong>, per esteso: ciò che il corpus non copre, ciò che il metodo non misura.</li>
+      </ul>
+
+      <p>E una regola di prudenza: <strong>non usate mai una classifica di motori come argomento di vendita</strong>, nemmeno la vostra. Una classifica vale per un corpus, una data e una configurazione. Ciò che si trasmette onestamente è il metodo con i dati, non il podio.</p>
+
+      <h2 id="suite">7. Che cosa sarà pubblicato su questa pagina</h2>
+
+      <p>Stiamo applicando questo metodo a un primo corpus di diritto svizzero, costruito secondo i requisiti descritti al punto 3 e che copre le combinazioni delle lingue nazionali. <strong>I risultati saranno pubblicati su questa pagina</strong>, con la composizione del corpus, la griglia utilizzata, i tassi di accordo tra valutatori e i limiti dell'esercizio.</p>
+
+      <p>Fino ad allora qui non si avanza alcuna cifra: un metodo non dimostra nulla da solo, e pubblicare un punteggio prima di aver pubblicato il protocollo sarebbe esattamente ciò che questo documento sconsiglia.</p>
+
+      <div class="art-end">
+        <p>Se volete applicare questo metodo ai vostri documenti, il confronto dei risultati è disponibile direttamente nell'applicazione: la funzione Alternatives di <a href="../../../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a> mostra fino a quattro proposte, ciascuna attribuita al suo motore, e permette così di costituire un corpus di valutazione a partire dai vostri testi reali. Il funzionamento del motore svizzero è descritto alla pagina <a href="../../../../it/lexmachina/">LexMachina</a>, e un <a href="../../../../it/confronto/">confronto ragionato degli approcci</a> completa la lettura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="siblings">
+  <div class="container">
+    <h2>Da leggere anche</h2>
+    <div class="siblings-row">
+      <a href="../../../../it/risorse/blog/tradurre-contratto-diritto-svizzero/"><b>Il quadrilinguismo del diritto svizzero</b><span>Perché la terminologia non è una questione di gusto, e dove verificarla.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../../it/risorse/blog/segreto-professionale-traduzione-ia/"><b>Segreto professionale e luogo del trattamento</b><span>Che cosa sapere prima di affidare un corpus a un motore di terzi.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../../it/risorse/guide/organizzare-traduzioni-studio-legale/"><b>Organizzare le traduzioni in uno studio legale</b><span>Regole, ruoli e indicatori per gestire la traduzione giuridica.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Domande frequenti</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Perché i punteggi automatici non bastano per un testo giuridico?</summary>
+        <p>Perché misurano una somiglianza superficiale con una traduzione di riferimento, non l'esattezza di un riferimento legale. Una frase che cita l'articolo sbagliato o il tribunale sbagliato può ottenere un ottimo punteggio automatico: è scorrevole, vicina al riferimento e giuridicamente sbagliata. Sul diritto, la valutazione va fatta da persone, su criteri binari definiti in anticipo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quanti segmenti servono per valutare un motore di traduzione giuridica?</summary>
+        <p>Non esiste un numero universale: la dimensione dipende dal numero di criteri, dalla rarità dei fenomeni osservati e dalla precisione ricercata. La regola utile è un'altra: il corpus deve coprire ogni settore, ogni direzione di traduzione e ogni tipo di documento che trattate davvero, con abbastanza segmenti per casella perché uno scarto non dipenda da una sola frase. Un corpus squilibrato dà un risultato falso, qualunque sia la sua dimensione.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Che cos'è una valutazione alla cieca dei motori di traduzione?</summary>
+        <p>È una valutazione in cui il valutatore non sa quale motore ha prodotto il risultato che sta giudicando. I risultati sono anonimizzati, mescolati e presentati in ordine casuale. Senza questa cecità, il nome del motore influenza il giudizio, in entrambe le direzioni: indulgenza verso il motore che si conosce, severità verso quello di cui si diffida.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Bisogna valutare lo stesso segmento una volta sola o più volte?</summary>
+        <p>Più volte, in date diverse. Un risultato può variare da una generazione all'altra, o al contrario restare identico. In una sessione di osservazione, rigenerare la stessa frase ha dato risultati rigorosamente identici per alcuni segmenti, mentre altri variavano. Una misura fatta una sola volta non dice se lo scarto osservato è una differenza di qualità o una variazione di generazione.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quali criteri misurare su testi di diritto svizzero?</summary>
+        <p>Sei criteri si valutano in modo binario e quindi riproducibile: l'esattezza del riferimento legale, la conformità terminologica al testo ufficiale, la coerenza all'interno di uno stesso documento, la resa dei nomi di tribunali e autorità, la gestione di importi e date nel formato svizzero e l'integrità del segmento, cioè l'assenza di omissioni, aggiunte e caratteri spuri.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Applicare questo metodo ai vostri documenti</h2>
+      <p>Una demo con uno specialista del diritto svizzero: costituzione di un corpus a partire dai vostri testi, confronto dei risultati, lettura degli scarti.</p>
+      <div class="final-cta-btns">
+        <a href="../../../../it/contatto/" class="btn btn-blue">
+          Richiedere una demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../../../it/risorse/studi/" class="btn-outline">Tutti gli studi</a>
+      </div>
+      <p class="micro">Demo personalizzata · in tedesco, francese, italiano o inglese · hosting al 100 % in Svizzera</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../../it/" class="logo"><img src="../../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>Il motore di traduzione per il diritto, il fisco e la finanza svizzeri. Una soluzione interamente svizzera: società, infrastruttura e motore LexMachina, per una precisione in quattro lingue e la piena sovranità dei dati.</p>
+        <p class="footer-iso">ISO 27001 · Hosting in Svizzera (Infomaniak) · nLPD e GDPR</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on su LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Piattaforma</p>
+        <ul>
+          <li><a href="../../../../it/corrext/">Corrext, la piattaforma</a></li>
+          <li><a href="../../../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a></li>
+          <li><a href="../../../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a></li>
+          <li><a href="../../../../it/corrext/revisione/">Editor di revisione</a></li>
+          <li><a href="../../../../it/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../../it/corrext/estratto-registro-di-commercio/">Estratti del registro di commercio</a></li>
+          <li><a href="../../../../it/corrext/api-on-premises/">API e on-premises</a></li>
+          <li><a href="../../../../it/lexmachina/">LexMachina, il motore</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Soluzioni</p>
+        <ul>
+          <li><a href="../../../../it/soluzioni/studi-legali/">Studi legali</a></li>
+          <li><a href="../../../../it/soluzioni/banche/">Banche e finanza</a></li>
+          <li><a href="../../../../it/soluzioni/uffici-legali/">Uffici legali</a></li>
+          <li><a href="../../../../it/soluzioni/enti-pubblici/">Autorità e amministrazioni</a></li>
+          <li><a href="../../../../it/soluzioni/fiduciarie/">Fiduciarie e consulenza</a></li>
+          <li><a href="../../../../it/soluzioni/legaltech-editori/">LegalTech ed editori</a></li>
+          <li><a href="../../../../it/traduzione/">Traduzione per settore del diritto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Risorse</p>
+        <ul>
+          <li><a href="../../../../it/risorse/blog/">Blog</a></li>
+          <li><a href="../../../../it/risorse/guide/">Guide</a></li>
+          <li><a href="../../../../it/risorse/glossario/">Glossario giuridico</a></li>
+          <li><a href="../../../../it/risorse/studi/">Studi e benchmark</a></li>
+          <li><a href="../../../../it/confronto/">Confronti</a></li>
+          <li><a href="../../../../it/aiuto/">Centro assistenza</a></li>
+          <li><a href="../../../../it/sicurezza/">Sicurezza e sovranità dei dati</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../../../it/chi-siamo/">Chi siamo e riconoscimenti</a></li>
+          <li><a href="../../../../it/chi-siamo/stampa/">Stampa</a></li>
+          <li><a href="../../../../it/contatto/">Richiedere una demo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Friburgo, Svizzera. Tutti i diritti riservati.</span>
+      <div class="links">
+        <a href="../../../../it/note-legali/">Note legali e condizioni d'uso</a>
+        <a href="../../../../it/protezione-dei-dati/">Protezione dei dati</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../../assets/nav.js?v=75b323d8" defer></script>
+</body>
+</html>

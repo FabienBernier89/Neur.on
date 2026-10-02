@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiss commercial register extract translation · Neur.on</title>
+<meta name="description" content="Certified translation of Swiss commercial register extracts, ordered online: Corrext certification, notarised or apostilled, over 30 languages.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/en/corrext/commercial-register-extracts/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/corrext/extraits-registre-commerce/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/corrext/handelsregisterauszug/">
+<link rel="alternate" hreflang="it-CH" href="https://neur-on.ai/it/corrext/estratto-registro-di-commercio/">
+<link rel="alternate" hreflang="en" href="https://neur-on.ai/en/corrext/commercial-register-extracts/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="Swiss commercial register extract translation · Neur.on">
+<meta property="og:description" content="Certified translation of Swiss commercial register extracts, ordered online: Corrext certification, notarised or apostilled, over 30 languages.">
+<meta property="og:url" content="https://neur-on.ai/en/corrext/commercial-register-extracts/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, AI translation for law, tax and finance">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../../assets/neuron.css?v=75b323d8">
+<style>/* ============ DÉMO · parcours de commande auszug-hr.ch (préfixe .cxr-, couleurs via --cx-*) ============ */
+.cxr [hidden]{display:none!important}
+.cxr .cx-top .home{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.cxr-lang{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--cx-muted);margin-right:4px;white-space:nowrap}
+.cxr-lang b{color:var(--cx-indigo);font-weight:700}
+.cxr-lang i{font-style:normal;color:var(--cx-muted)}
+.cxr-body{padding:18px 18px 18px}
+.cxr .cx-h4{font-size:13px;font-weight:700;color:var(--cx-ink);margin:0 0 10px}
+.cxr .cxr-title{font-size:18px;line-height:1.3;letter-spacing:-.01em;margin:2px 0 18px;max-width:40ch}
+.cxr-help{font-size:12.5px;color:var(--cx-muted);margin:0 0 14px;line-height:1.5}
+/* Stepper */
+.cxr-steps{list-style:none;margin:0 0 20px;padding:0 0 16px;display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--cx-line)}
+.cxr-steps li{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--cx-muted);min-width:0;padding-right:10px}
+.cxr-steps li .n{width:26px;height:26px;border-radius:50%;border:1px solid var(--cx-dim-2);display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:700;color:var(--cx-muted);flex-shrink:0}
+.cxr-steps li .n svg{width:13px;height:13px;display:none}
+.cxr-steps li .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cxr-steps li::after{content:"";flex:1;height:1px;background:var(--cx-line);margin-left:6px;min-width:10px}
+.cxr-steps li:last-child::after{display:none}
+.cxr-steps li.cur,.cxr-steps li.done{color:var(--cx-ink)}
+.cxr-steps li.cur .n,.cxr-steps li.done .n{background:var(--cx-indigo);border-color:var(--cx-indigo);color:#fff}
+.cxr-steps li.done .n span{display:none}
+.cxr-steps li.done .n svg{display:block}
+/* Panneaux */
+.cxr-panel{display:none;outline:none}
+.cxr-panel.on{display:block;animation:cxrIn .28s ease both}
+@keyframes cxrIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+/* Étape 1 */
+.cxr-seg{display:inline-flex;background:var(--cx-bg);border:1px solid var(--cx-line);border-radius:8px;padding:3px;margin-bottom:14px}
+.cxr-seg button{border:1px solid transparent;background:transparent;font-size:12.5px;font-weight:600;color:var(--cx-ink);padding:6px 12px;border-radius:6px;cursor:pointer}
+.cxr-seg button.on{background:#fff;border-color:var(--cx-indigo);color:var(--cx-indigo)}
+.cxr-lbl{display:block;font-size:12px;font-weight:600;color:var(--cx-ink);margin-bottom:5px}
+.cxr-row{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:560px}
+.cxr-in{width:100%;border:1px solid var(--cx-line);border-radius:8px;padding:10px 12px;font-family:inherit;font-size:13px;color:var(--cx-ink);background:transparent;min-width:0}
+.cxr-in::placeholder{color:var(--cx-ph);opacity:1}
+.cxr-in:disabled{color:var(--cx-muted);background:var(--cx-bg);cursor:default}
+.cxr-sel{border:1px solid var(--cx-line);border-radius:8px;padding:10px 32px 10px 12px}
+.cxr-field{margin-top:16px;max-width:360px}
+.cxr-shim{display:none;margin-top:12px;padding:14px;border:1px solid var(--cx-line);border-radius:var(--r-btn);max-width:560px}
+.cxr-shim.on{display:block}
+.cxr-shim .cx-shim:last-child{width:55%;margin-bottom:0}
+.cxr-result{display:none;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid var(--cx-line);border-radius:var(--r-btn);padding:12px 14px;margin-top:12px;max-width:560px}
+.cxr-result.on{display:flex;animation:cxrIn .28s ease both}
+.cxr-result.sel{border-color:var(--cx-indigo)}
+.cxr-tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cx-muted);background:var(--cx-bg);border:1px solid var(--cx-line);border-radius:8px;padding:3px 8px;white-space:nowrap}
+.cxr-co{flex:1;min-width:180px}
+.cxr-co b{display:block;font-size:13px;color:var(--cx-ink)}
+.cxr-co span{display:block;font-size:12px;color:var(--cx-muted);margin-top:2px;line-height:1.45}
+.cxr-selected{display:none;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--cx-indigo)}
+.cxr-selected svg{width:14px;height:14px}
+.cxr-result.sel .cxr-selbtn{display:none}
+.cxr-result.sel .cxr-selected{display:inline-flex}
+/* Cartes radio */
+.cxr-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cxr-cards.two{grid-template-columns:repeat(2,1fr);max-width:560px}
+.cxr-list{display:grid;gap:10px;max-width:560px}
+.cxr-card{position:relative;border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 14px 14px 40px;text-align:left;background:transparent;cursor:pointer;font-family:inherit;color:var(--cx-text);width:100%}
+.cxr-list .cxr-card{border-radius:var(--r-btn);padding:12px 14px 12px 40px}
+.cxr-card:hover{border-color:var(--cx-dim)}
+.cxr-card[aria-checked="true"]{border-color:var(--cx-indigo);background:var(--cx-indigo-soft)}
+.cxr-card .rd{position:absolute;left:14px;top:15px;width:16px;height:16px;border-radius:50%;border:1px solid var(--cx-dim)}
+.cxr-list .cxr-card .rd{top:13px}
+.cxr-card[aria-checked="true"] .rd{border-color:var(--cx-indigo)}
+.cxr-card[aria-checked="true"] .rd::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--cx-indigo)}
+.cxr-card b{display:block;font-size:12.5px;color:var(--cx-ink);margin-bottom:4px;line-height:1.35}
+.cxr-card span{display:block;font-size:12px;color:var(--cx-muted);line-height:1.5}
+.cxr-list .cxr-card b{margin-bottom:0}
+/* Récapitulatif et pied */
+.cxr-sum{border:1px solid var(--cx-line);border-radius:var(--r-bloc);padding:14px 16px;margin-top:18px;background:var(--cx-bg);max-width:560px}
+.cxr-sum dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0;font-size:12.5px}
+.cxr-sum dt{color:var(--cx-muted);font-weight:600}
+.cxr-sum dd{margin:0;color:var(--cx-ink);font-weight:600}
+.cxr-foot{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1px solid var(--cx-line)}
+.cxr-foot .grow{flex:1}
+.cxr-foot .cx-btn{line-height:1.3}
+.cxr .cx-btn.ghost:disabled{background:transparent;border-color:var(--cx-dim-2);color:var(--cx-dim)}
+.cxr-foot a.cx-btn{display:inline-flex;align-items:center;text-decoration:none}
+.cxr-done{display:none;position:relative;margin-top:12px;padding:12px 14px 12px 40px;background:var(--cx-indigo-soft);border-radius:var(--r-btn);font-size:12.5px;color:var(--cx-ink);line-height:1.5}
+.cxr-done.on{display:block;animation:cxrIn .28s ease both}
+.cxr-done svg{position:absolute;left:14px;top:13px;width:16px;height:16px;color:var(--cx-ink)}
+.cxr-done a{color:var(--cx-indigo);font-weight:700}
+.cxr-addr{display:none;margin-top:14px;max-width:560px}
+.cxr-addr.on{display:block}
+@media(prefers-reduced-motion:reduce){.cxr-panel.on,.cxr-result.on,.cxr-done.on{animation:none}}
+@media(max-width:940px){.cxr-cards{grid-template-columns:1fr}.cxr-cards.two{grid-template-columns:1fr 1fr;max-width:none}}
+@media(max-width:560px){
+  .cxr .cx-top{gap:10px;padding:12px 14px}
+  .cxr .cx-top .home{font-size:12px}
+  .cxr-lang{display:none}
+  .cxr-body{padding:14px}
+  .cxr .cxr-title{font-size:16px}
+  .cxr-steps{display:flex;gap:6px}
+  .cxr-steps li{flex:0 0 auto;padding-right:0}
+  .cxr-steps li.cur{flex:1;min-width:0}
+  .cxr-steps li .l{display:none}
+  .cxr-steps li.cur .l{display:block}
+  .cxr-steps li::after{min-width:8px}
+  .cxr-row{grid-template-columns:1fr}
+  .cxr-cards.two{grid-template-columns:1fr}
+  .cxr-foot{flex-wrap:wrap}
+  .cxr-sum dl{grid-template-columns:1fr;gap:2px 0}
+  .cxr-sum dd{margin-bottom:6px}
+}</style>
+<style>@media (prefers-reduced-motion:reduce){.tvis-svg .anim{display:none}}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Service",
+   "name": "Certified translation of commercial register extracts",
+   "provider": {
+    "@type": "Organization",
+    "name": "Neur.on AI Solutions SA",
+    "url": "https://neur-on.ai"
+   },
+   "areaServed": "CH",
+   "url": "https://auszug-hr.ch"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is an apostille?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The apostille is the formality provided for by the Hague Convention of 5 October 1961. It authenticates the signature of the notary who certified the translation, so that the document is recognised in the other States party to the Convention. On auszug-hr.ch, it is issued by the cantonal State Chancellery in the Notarized & Apostilled Certification level."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What certification level does a foreign authority require?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the authority and the country. As a rule, an authority of a State party to the Hague Convention requires a notarised and apostilled translation. A Swiss authority is usually satisfied with notarised certification. For internal use or a private third party, Corrext certification is often accepted. Check with the receiving authority before you order: it sets the requirement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does a certified translation take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The delivery time depends on the certification level, the target language and the option you choose: standard or express, for Switzerland or international. You choose it at the fourth step of the order, and it is shown before you confirm. Notarised or apostilled certification adds a step with the notary, then with the State Chancellery."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which languages can the extract be translated into?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Over 30 target languages. At the first step, the selector lists German, French, Italian, English and Spanish first, then the other languages available on the platform."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the service part of Corrext?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. auszug-hr.ch is the Corrext online service for commercial register extracts, also accessible from the platform's home page. The translations are done by legal translators who specialise in corporate housekeeping, assisted by language models specifically trained on Swiss commercial register extracts by the Corrext team of lawyer-linguists and data scientists."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I order a certified translation of an extract?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In four steps, entirely online on auszug-hr.ch. Search for the company by name or UID and choose the target language. Select the certification level. Choose the delivery method: by email, or with a paper copy by post or courier. Set the delivery time, standard or express, for Switzerland or international. Then confirm with Order a translation, or contact the team via Contact us."
+     }
+    }
+   ]
+  }
+ ]
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://neur-on.ai/en/"}, {"@type": "ListItem", "position": 2, "name": "Corrext", "item": "https://neur-on.ai/en/corrext/"}, {"@type": "ListItem", "position": 3, "name": "Commercial register extracts", "item": "https://neur-on.ai/en/corrext/commercial-register-extracts/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="siteNav" data-active="corrext">
+  <div class="container nav-inner">
+    <a href="../../../en/" class="logo" aria-label="Neur.on, back to the home page"><img src="../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../../en/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Resources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Language">
+        <a href="../../../de/corrext/handelsregisterauszug/">DE</a><span class="sep">·</span>
+        <a href="../../../en/corrext/commercial-register-extracts/">FR</a><span class="sep">·</span>
+        <a href="../../../it/corrext/estratto-registro-di-commercio/">IT</a><span class="sep">·</span>
+        <a class="on" href="../../../en/corrext/commercial-register-extracts/" aria-current="true">EN</a>
+      </div>
+      <a href="../../../en/contact/" class="btn btn-blue">Request a demo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Open the menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">The platform</p>
+        <a href="../../../en/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, the command centre</b><em>Projects, quotes, resources and access rights in a single Swiss environment</em></span></a>
+        <a href="../../../en/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>The engine trained on Swiss law and finance</em></span></a>
+        <a href="../../../en/security/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Security and data sovereignty</b><em>Where your data is stored and processed, and by which engine</em></span></a>
+        <a href="../../../en/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API and on-premises</b><em>Integration with your DMS, intranets and workflows</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">The tools</p>
+        <a href="../../../en/corrext/document-translation/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Text and document translation</b><em>Text, files, PDF to Word, rephrasing</em></span></a>
+        <a href="../../../en/corrext/translation-projects/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Translation projects</b><em>Human review as needed, instant quote and delivery time</em></span></a>
+        <a href="../../../en/corrext/review-editor/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Review editor</b><em>Sentence-by-sentence review, corrections kept in memory</em></span></a>
+        <a href="../../../en/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>The Swiss law concordancer, 30 domains</em></span></a>
+        <a href="../../../en/corrext/commercial-register-extracts/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Commercial register extracts</b><em>Certified, notarised and apostilled translation</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Learn more</p>
+        <a href="../../../en/quality-levels/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Four quality levels</b><em>From machine translation to certification</em></span></a>
+        <a href="../../../en/languages-and-formats/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Languages and formats</b><em>30 languages, four native, all your office formats</em></span></a>
+        <a href="../../../en/help/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Help Centre</b><em>How to do it, step by step</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Try it without signing up</p>
+        <p class="mega-p">The Corrext interface, reproduced exactly, on three extracts of Swiss law.</p>
+        <a href="../../../en/corrext/document-translation/#demo" class="mega-cta">Open the live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">By sector</p>
+        <a href="../../../en/solutions/law-firms/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Law firms</b></span></a>
+        <a href="../../../en/solutions/banks/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banking and finance</b></span></a>
+        <a href="../../../en/solutions/legal-departments/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Legal departments and Legal Ops</b></span></a>
+        <a href="../../../en/solutions/public-authorities/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Authorities and public administration</b></span></a>
+        <a href="../../../en/solutions/fiduciaries/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Fiduciary and advisory firms</b></span></a>
+        <a href="../../../en/solutions/legaltech-publishers/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTechs and publishers</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">By area of law</p>
+        <a href="../../../en/translation/contracts/"><b>Contracts</b></a>
+        <a href="../../../en/translation/corporate-law/"><b>Company law</b></a>
+        <a href="../../../en/translation/mergers-and-acquisitions/"><b>Mergers and acquisitions</b></a>
+        <a href="../../../en/translation/litigation-and-arbitration/"><b>Litigation and arbitration</b></a>
+        <a href="../../../en/translation/banking-and-finance/"><b>Banking and finance</b></a>
+        <a href="../../../en/translation/compliance-finma/"><b>Compliance and FINMA</b></a>
+        <a href="../../../en/translation/" class="mega-all">All areas of law <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">By language pair</p>
+        <a href="../../../en/translation/german-french/"><b>German to French</b></a>
+        <a href="../../../en/translation/french-german/"><b>French to German</b></a>
+        <a href="../../../en/translation/german-english/"><b>German to English</b></a>
+        <a href="../../../en/translation/french-english/"><b>French to English</b></a>
+        <a href="../../../en/translation/italian-french/"><b>Italian to French</b></a>
+        <a href="../../../en/translation/english-german/"><b>English to German</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Still undecided?</p>
+        <p class="mega-p">What Corrext does that generic tools do not, compared point by point.</p>
+        <a href="../../../en/comparison/" class="mega-cta">See the comparisons <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Understand</p>
+        <a href="../../../en/resources/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Swiss law, translation and artificial intelligence</em></span></a>
+        <a href="../../../en/resources/guides/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Guides</b><em>In-depth methods, signed by our specialists</em></span></a>
+        <a href="../../../en/resources/studies/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studies and benchmarks</b><em>Our measurements on Swiss legal texts</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Look up</p>
+        <a href="../../../en/resources/glossary/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Swiss legal glossary</b><em>Each term in German, French, Italian and English</em></span></a>
+        <a href="../../../en/help/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Corrext Help Centre</b><em>Getting started and practical answers</em></span></a>
+        <a href="../../../en/help/corrext-overview/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Frequently asked questions</b><em>Corrext, LexMachina, review, pricing</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Compare</p>
+        <a href="../../../en/comparison/deepl-legal-translation/"><b>Corrext and DeepL</b></a>
+        <a href="../../../en/comparison/chatgpt-legal-translation/"><b>Corrext and generic LLMs</b></a>
+        <a href="../../../en/comparison/translation-agency-or-platform/"><b>Translation agency or platform</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">A Swiss company, Swiss infrastructure and an engine trained on Swiss law.</p>
+        <a href="../../../en/about/" class="mega-cta">About us and awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../en/corrext/">Corrext, the platform</a>
+        <a href="../../../en/corrext/document-translation/">Text and document translation</a>
+        <a href="../../../en/corrext/translation-projects/">Translation projects</a>
+        <a href="../../../en/corrext/review-editor/">Review editor</a>
+        <a href="../../../en/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../../en/corrext/commercial-register-extracts/">Commercial register extracts</a>
+        <a href="../../../en/corrext/api-on-premises/">API and on-premises</a>
+        <a href="../../../en/lexmachina/">LexMachina</a>
+        <a href="../../../en/security/">Security and data sovereignty</a>
+        <a href="../../../en/quality-levels/">Quality levels</a>
+        <a href="../../../en/languages-and-formats/">Languages and formats</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Solutions<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../en/solutions/law-firms/">Law firms</a>
+        <a href="../../../en/solutions/banks/">Banking and finance</a>
+        <a href="../../../en/solutions/legal-departments/">Legal departments and Legal Ops</a>
+        <a href="../../../en/solutions/public-authorities/">Authorities and public administration</a>
+        <a href="../../../en/solutions/fiduciaries/">Fiduciary and advisory firms</a>
+        <a href="../../../en/solutions/legaltech-publishers/">LegalTechs and publishers</a>
+        <a href="../../../en/translation/">Translation by area of law</a>
+        <a href="../../../en/comparison/">Comparisons</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Resources<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../../en/resources/blog/">Blog</a>
+        <a href="../../../en/resources/guides/">Guides</a>
+        <a href="../../../en/resources/glossary/">Swiss legal glossary</a>
+        <a href="../../../en/resources/studies/">Studies and benchmarks</a>
+        <a href="../../../en/help/">Help Centre</a>
+        <a href="../../../en/about/">About us</a>
+      </div>
+    </div>
+    <a href="../../../en/contact/" class="btn btn-blue nm-cta">Request a demo</a>
+    <div class="nm-langs" aria-label="Language">
+      <a href="../../../de/corrext/handelsregisterauszug/">DE</a><span>·</span>
+      <a href="../../../en/corrext/commercial-register-extracts/">FR</a><span>·</span>
+      <a href="../../../it/corrext/estratto-registro-di-commercio/">IT</a><span>·</span>
+      <a class="on" href="../../../en/corrext/commercial-register-extracts/" aria-current="true">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="../../../en/">Home</a></li><li><a href="../../../en/corrext/">Corrext</a></li><li><span aria-current="page">Commercial register extracts</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO compact : la démo est l'objet -->
+<section class="thero thero-demo thero-carte">
+  <div class="container">
+    <div class="thero-grid">
+      <div>
+        <h1><em>Commercial register extracts.</em> Translated online</h1>
+        <p class="lead">Search for the company by name or by UID (the Swiss business identification number), then choose the certification level, delivery method and delivery time. The translation is done by legal translators who specialise in corporate housekeeping, assisted by language models specifically trained on Swiss commercial register extracts. You order entirely online.</p>
+        <div class="thero-cta">
+          <a href="../../../fr/contact/" class="btn btn-blue">
+            Request a demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#demo" class="btn btn-ghost">See how to order</a>
+        </div>
+      </div>
+      <!-- visuel:debut --><figure class="tvis"><svg class="tvis-svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Illustration: a German commercial register extract and its certified French translation, with a seal and an apostille" focusable="false"><defs>
+<linearGradient id="vxg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+<linearGradient id="vxa" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#96BCFF"/><stop offset="1" stop-color="#317BFF"/></linearGradient>
+<radialGradient id="vxh"><stop offset="0" stop-color="#317BFF" stop-opacity=".55"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
+<radialGradient id="vxw"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".4" stop-color="#96BCFF" stop-opacity=".45"/><stop offset="1" stop-color="#317BFF" stop-opacity="0"/></radialGradient>
+<filter id="vxs" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000a24" flood-opacity=".45"/></filter>
+</defs><ellipse cx="260" cy="205" rx="250" ry="175" fill="url(#vxh)" opacity=".55"/><g transform="rotate(-6 170 200)"><rect x="70" y="70" width="190" height="250" rx="10" fill="url(#vxg)" stroke="#fff" stroke-opacity=".18" filter="url(#vxs)" /><rect x="92" y="110" width="120" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="128" width="96" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="146" width="136" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="164" width="88" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="182" width="110" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="92" y="84" width="34" height="20" rx="10" fill="rgba(255,255,255,.14)"/><text x="109" y="98" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#fff" letter-spacing=".04em">DE</text></g><rect x="200" y="56" width="220" height="286" rx="12" fill="url(#vxg)" stroke="#fff" stroke-opacity=".18" filter="url(#vxs)" /><rect x="200" y="56" width="220" height="44" rx="12" fill="url(#vxa)" fill-opacity=".9"/><rect x="218" y="68" width="34" height="20" rx="10" fill="rgba(255,255,255,.22)"/><text x="235" y="82" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#fff" letter-spacing=".04em">FR</text><rect x="262" y="74" width="92" height="6" rx="3.0" fill="#fff" fill-opacity=".85"/><rect x="220" y="118" width="170" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="136" width="150" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="154" width="176" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="172" width="132" height="6" rx="3.0" fill="#fff" fill-opacity=".3"/><rect x="220" y="196" width="180" height="58" rx="8" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".12"/><rect x="232" y="208" width="70" height="6" rx="3.0" fill="#fff" fill-opacity=".28"/><rect x="232" y="224" width="96" height="6" rx="3.0" fill="#fff" fill-opacity=".28"/><rect x="320" y="208" width="64" height="6" rx="3.0" fill="#96BCFF" fill-opacity=".5"/><rect x="320" y="224" width="50" height="6" rx="3.0" fill="#96BCFF" fill-opacity=".5"/><rect x="220" y="272" width="96" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><rect x="220" y="288" width="70" height="6" rx="3.0" fill="#fff" fill-opacity=".22"/><path d="M376 300l-12 46 18-10 10 18 8-44z" fill="#317BFF"/><path d="M404 300l12 46-18-10-10 18-8-44z" fill="#7FB0FF"/><circle cx="390" cy="292" r="36" fill="url(#vxa)" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><circle cx="390" cy="292" r="27" fill="none" stroke="#fff" stroke-opacity=".7" stroke-dasharray="2 3"/><path d="M378 292l8 8 16-17" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><g transform="rotate(8 458 140)"><rect x="428" y="118" width="62" height="44" rx="8" fill="url(#vxg)" stroke="#fff" stroke-opacity=".3"/><path d="M459 128l3.5 7 7.5 1-5.5 5.3 1.3 7.5-6.8-3.6-6.8 3.6 1.3-7.5-5.5-5.3 7.5-1z" fill="#96BCFF"/></g><g class="anim"><circle cx="390" cy="292" r="36" fill="none" stroke="#fff" stroke-width="2"><animate attributeName="r" values="36;52" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.8s" repeatCount="indefinite"/></circle></g></svg></figure><!-- visuel:fin -->
+    </div>
+  </div>
+</section>
+
+<!-- DÉMO : le parcours de commande en quatre étapes, dans le cadre Corrext -->
+<section class="tdemo demo" id="demo" style="padding:0;background:transparent">
+  <div class="container">
+    <div class="cx cxr" id="cx" aria-label="Demo of the auszug-hr.ch ordering process, a Corrext service">
+      <div class="cx-top">
+        <span class="cx-logo"><img src="../../../assets/img/corrext-logo.svg" alt="Corrext" class="cx-brand"></span>
+        <span class="home">Commercial register extract</span>
+        <span class="grow"></span>
+        <span class="cxr-lang" aria-label="auszug-hr.ch site language, English active (demo)"><b>EN</b><i>·</i><span>DE</span><i>·</i><span>FR</span><i>·</i><span>IT</span></span>
+        <span class="bell" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+        <span class="cx-avatar" aria-hidden="true">AM</span>
+      </div>
+
+      <div class="cxr-body">
+        <p class="cx-h4 cxr-title">Order a certified translation of Swiss commercial register extracts</p>
+
+        <ol class="cxr-steps" id="cxrSteps" aria-label="Order steps">
+          <li class="cur" aria-current="step"><span class="n"><span>1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">Find the company</span></li>
+          <li><span class="n"><span>2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">Select the certification level</span></li>
+          <li><span class="n"><span>3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">Choose the delivery method</span></li>
+          <li><span class="n"><span>4</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="l">Set the delivery timeline</span></li>
+        </ol>
+
+        <!-- Étape 1 · Find the company -->
+        <div class="cxr-panel on" id="cxrP1" tabindex="-1" aria-label="Step 1, Find the company">
+          <p class="cx-h4">Find the company</p>
+          <p class="cxr-help">Search the Swiss commercial register by company name or UID, select the company, then choose the target language.</p>
+          <div class="cxr-seg" id="cxrSeg" role="group" aria-label="Search by">
+            <button type="button" class="on" aria-pressed="true" data-mode="name">Company Name</button>
+            <button type="button" aria-pressed="false" data-mode="uid">Company UID</button>
+          </div>
+          <label class="cxr-lbl" for="cxrQ" id="cxrQLbl">Company Name</label>
+          <div class="cxr-row">
+            <input class="cxr-in" id="cxrQ" type="text" value="Muster AG" autocomplete="off" spellcheck="false">
+            <button type="button" class="cx-btn" id="cxrSearch">Search</button>
+          </div>
+          <div class="cxr-shim" id="cxrShim" aria-hidden="true"><div class="cx-shim"></div><div class="cx-shim"></div></div>
+          <div class="cxr-result" id="cxrRes" role="status">
+            <span class="cxr-tag">Demo data</span>
+<span class="cxr-co"><b>Muster AG</b><span>UID CHE-000.000.000 · Commercial register (demo canton)</span></span>
+            <button type="button" class="cx-btn ghost cxr-selbtn" id="cxrSelect">Select</button>
+            <span class="cxr-selected"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Selected</span>
+          </div>
+          <div class="cxr-field">
+            <label class="cxr-lbl" for="cxrTgt">Target language</label>
+            <select class="cx-sel cxr-sel" id="cxrTgt" disabled>
+              <option>German</option>
+              <option>French</option>
+              <option>Italian</option>
+              <option>English</option>
+              <option>Spanish</option>
+              <option disabled>+30 languages available</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Étape 2 · Select the certification level -->
+        <div class="cxr-panel" id="cxrP2" tabindex="-1" aria-label="Step 2, Select the certification level">
+          <p class="cx-h4">Select the certification level</p>
+          <p class="cxr-help">Choose the level required by the recipient of the translation.</p>
+          <div class="cxr-cards" id="cxrLevels" role="radiogroup" aria-label="Certification level">
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Standard Corrext Certification"><span class="rd" aria-hidden="true"></span><b>Standard Corrext Certification</b><span>Certified translation with a certificate signed and stamped by Corrext.</span></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Notarized Certification"><span class="rd" aria-hidden="true"></span><b>Notarized Certification</b><span>Certified translation authenticated by a Swiss notary.</span></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Notarized &amp; Apostilled Certification"><span class="rd" aria-hidden="true"></span><b>Notarized &amp; Apostilled Certification</b><span>Notarized translation with an apostille issued by the State Chancellery under the Hague Convention of 5 October 1961.</span></button>
+          </div>
+        </div>
+
+        <!-- Étape 3 · Choose the delivery method -->
+        <div class="cxr-panel" id="cxrP3" tabindex="-1" aria-label="Step 3, Choose the delivery method">
+          <p class="cx-h4">Choose the delivery method</p>
+          <p class="cxr-help">The certified translation is always sent by e-mail as a PDF. Add a paper copy if the recipient requires an original.</p>
+          <div class="cxr-list" id="cxrDeliv" role="radiogroup" aria-label="Delivery method">
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="E-mail (PDF)"><span class="rd" aria-hidden="true"></span><b>E-mail (PDF)</b></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="E-mail + paper copy by post"><span class="rd" aria-hidden="true"></span><b>E-mail + paper copy by post</b></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="E-mail + paper copy by courier"><span class="rd" aria-hidden="true"></span><b>E-mail + paper copy by courier</b></button>
+          </div>
+          <div class="cxr-addr" id="cxrAddr">
+            <label class="cxr-lbl" for="cxrAddrIn">Postal address</label>
+            <input class="cxr-in" id="cxrAddrIn" type="text" disabled placeholder="Postal address hidden in the demo">
+          </div>
+        </div>
+
+        <!-- Étape 4 · Set the delivery timeline -->
+        <div class="cxr-panel" id="cxrP4" tabindex="-1" aria-label="Step 4, Set the delivery timeline">
+          <p class="cx-h4">Set the delivery timeline</p>
+          <p class="cxr-help">Choose the timeline and the delivery country, then review your order.</p>
+          <div class="cxr-cards two" id="cxrTime" role="radiogroup" aria-label="Delivery timeline">
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Standard"><span class="rd" aria-hidden="true"></span><b>Standard</b><span>Regular processing of the translation and certification.</span></button>
+            <button type="button" class="cxr-card" role="radio" aria-checked="false" data-value="Express"><span class="rd" aria-hidden="true"></span><b>Express</b><span>Priority processing of the translation and certification.</span></button>
+          </div>
+          <div class="cxr-field">
+            <label class="cxr-lbl" for="cxrCountry">Delivery country</label>
+            <select class="cx-sel cxr-sel" id="cxrCountry">
+              <option>Switzerland</option>
+              <option>International</option>
+            </select>
+          </div>
+          <div class="cxr-sum" aria-live="polite">
+            <p class="cx-h4">Your order</p>
+            <dl>
+              <dt>Company</dt><dd id="cxrSumCo"></dd>
+              <dt>Target language</dt><dd id="cxrSumTgt"></dd>
+              <dt>Certification level</dt><dd id="cxrSumLvl"></dd>
+              <dt>Delivery method</dt><dd id="cxrSumDel"></dd>
+              <dt>Delivery timeline</dt><dd id="cxrSumTl"></dd>
+              <dt>Delivery country</dt><dd id="cxrSumCty"></dd>
+            </dl>
+          </div>
+          <div class="cxr-done" id="cxrDone" role="status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Demo: no order is placed. The real service is on <a href="https://auszug-hr.ch" rel="noopener">auszug-hr.ch</a>.
+          </div>
+        </div>
+
+        <div class="cxr-foot">
+          <button type="button" class="cx-btn ghost" id="cxrPrev" disabled>Previous</button>
+          <span class="grow"></span>
+          <a class="cx-btn ghost" id="cxrContact" href="../../../fr/contact/" hidden>Contact us</a>
+          <button type="button" class="cx-btn" id="cxrOrder" disabled hidden>Order a translation</button>
+          <button type="button" class="cx-btn" id="cxrNext" disabled>Next</button>
+        </div>
+        <p class="cx-note">Demo: simulated process, no data is transmitted.</p>
+      </div>
+    </div>
+
+    <p class="cx-caption">Process reproduced from the Corrext service auszug-hr.ch · demo data · certification levels and steps as observed in the service.</p>
+  </div>
+</section>
+
+<!-- CE QUE COUVRE LE SERVICE : registre de faits observés -->
+<div class="tafter">
+<section class="facts" id="faits">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="facts-lead">
+        <h2>What the service covers, exactly</h2>
+        <p>Commercial register extracts is the Corrext online service that delivers the certified translation of a Swiss commercial register extract. You search for the company by name or UID. You choose the target language, certification level, delivery method and delivery time when you order, entirely online on auszug-hr.ch.</p>
+        <div class="links">
+          <a href="../../../fr/corrext/gestion-de-projet/" class="feat-link">For other documents to be certified: Translation projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="https://auszug-hr.ch" rel="noopener" class="feat-link">Go to the auszug-hr.ch service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="facts-list">
+        <div class="fact"><b>Search</b><p>By <strong class="kf">company name</strong> or by <strong class="kf">UID</strong>, at the first step of the order. You choose the target language in the same place, once the company is selected.</p></div>
+        <div class="fact"><b>Languages</b><p><strong class="kf">Over 30 target languages</strong>. German, French, Italian, English and Spanish at the top of the selector, then the other languages available on the platform.</p></div>
+        <div class="fact"><b>Level 1 · Standard Corrext Certification</b><p>Translation with a certificate <strong class="kf">signed and stamped by Corrext</strong>.<small>As a rule: internal use, partners and private third parties.</small></p></div>
+        <div class="fact"><b>Level 2 · Notarized Certification</b><p>Certified translation <strong class="kf">authenticated by a Swiss notary</strong>.<small>As a rule: Swiss authorities and courts.</small></p></div>
+        <div class="fact"><b>Level 3 · Notarized &amp; Apostilled Certification</b><p>Notarised certification, then an <strong class="kf">apostille</strong> issued by the cantonal State Chancellery under the <strong class="kf">Hague Convention</strong> of 5 October 1961.<small>As a rule: foreign authorities of a State party to the Convention.</small></p></div>
+        <div class="fact"><b>Delivery</b><p>By <strong class="kf">email (PDF)</strong>, or email plus a <strong class="kf">paper copy</strong> sent by post or courier. You enter the postal address when you order.</p></div>
+        <div class="fact"><b>Delivery time</b><p><strong class="kf">Standard or express</strong>, for Switzerland and international. You choose the delivery time at the fourth step, and it is shown before you confirm the order.</p></div>
+        <div class="fact"><b>Who translates</b><p><strong class="kf">Professional legal translators</strong> who specialise in corporate housekeeping, assisted by language models specifically trained on Swiss commercial register extracts by the Corrext team of lawyer-linguists and data scientists.</p></div>
+        <div class="fact"><b>Confidentiality</b><p>Swiss infrastructure, <strong class="kf">ISO 27001-certified</strong>. Processing in line with the <strong class="kf">Swiss FADP and the GDPR</strong>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section class="who who-s">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Three situations where a certified extract is required</h2>
+    </div>
+    <div class="ws-grid">
+      <article class="ws-item">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span><span><span class="pn">Fiduciary firms.</span> A subsidiary or an account abroad</span></h3>
+        <p>As a rule, the foreign authority or bank requires the Swiss company's extract translated into its language, notarised and apostilled if the State is party to the Hague Convention. You order the Notarized &amp; Apostilled Certification level online, with the paper copy sent by post or courier.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><span><span class="pn">Legal departments.</span> Due diligence abroad</span></h3>
+        <p>A certified extract in English, or in the counterparty's language, usually goes with the file. Depending on the recipient, Corrext certification is enough or notarised certification is required. You choose the level at the second step, without changing provider.</p>
+      </article>
+      <article class="ws-item">
+        <h3><span class="ws-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V11M9.5 21V11M14.5 21V11M19 21V11"/><path d="M12 3 3 8h18z"/></svg></span><span><span class="pn">Banks.</span> Documenting a company for use abroad</span></h3>
+        <p>In a KYC review by an institution or a correspondent bank abroad, the Swiss extract must generally be provided translated and certified. The level required depends on the counterparty: Corrext certification for a private third party, notarised or apostilled if an authority is involved.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NIVEAUX DE CERTIFICATION -->
+<section class="gov">
+  <div class="container">
+    <div class="gov-box">
+      <div>
+        <h2>Which certification level for which use?</h2>
+        <p>As a rule, Corrext certification is enough for internal use or a private third party. Swiss authorities and courts require notarised certification. Foreign authorities of a State party to the Hague Convention require notarised and apostilled certification. In every case, the receiving authority decides on the level required: check with it before you order.</p>
+        <a href="#demo" class="feat-link">Choose the level in the ordering process <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="gov-steps">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg><span><b>Standard Corrext Certification.</b> Certificate signed and stamped by Corrext: internal use, partners and private third parties.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span><b>Notarized Certification.</b> Authentication by a Swiss notary: Swiss authorities and courts, as a rule.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg><span><b>Notarized &amp; Apostilled Certification.</b> Apostille from the State Chancellery, Hague Convention of 5 October 1961: foreign authorities of the States party.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTILS VOISINS -->
+<section class="siblings">
+  <div class="container">
+    <h2>The other Corrext tools</h2>
+    <div class="siblings-row">
+      <a href="../../../fr/corrext/traduction-texte-et-document/"><b>Text and document translation</b><span>Instant translation of texts and files, alternatives labelled with their engine, rephrasing in five styles.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/corrext/gestion-de-projet/"><b>Translation projects</b><span>A project in three steps, internal or external review at three levels, instant quote and delivery time.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="../../../fr/corrext/chnell/"><b>Fast lookup CHnell</b><span>The Swiss law concordancer: official sources, 30 domains, your own resources.</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Frequently asked questions about certified extracts</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is an apostille?</summary>
+        <p>The apostille is the formality provided for by the Hague Convention of 5 October 1961. It authenticates the signature of the notary who certified the translation, so that the document is recognised in the other States party to the Convention. On auszug-hr.ch, it is issued by the cantonal State Chancellery in the Notarized &amp; Apostilled Certification level.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What certification level does a foreign authority require?</summary>
+        <p>It depends on the authority and the country. As a rule, an authority of a State party to the Hague Convention requires a notarised and apostilled translation. A Swiss authority is usually satisfied with notarised certification. For internal use or a private third party, Corrext certification is often accepted. Check with the receiving authority before you order: it sets the requirement.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does a certified translation take?</summary>
+        <p>The delivery time depends on the certification level, the target language and the option you choose: standard or express, for Switzerland or international. You choose it at the fourth step of the order, and it is shown before you confirm. Notarised or apostilled certification adds a step with the notary, then with the State Chancellery.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which languages can the extract be translated into?</summary>
+        <p>Over 30 target languages. At the first step, the selector lists German, French, Italian, English and Spanish first, then the other languages available on the platform.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is the service part of Corrext?</summary>
+        <p>Yes. auszug-hr.ch is the Corrext online service for commercial register extracts, also accessible from the platform's home page. The translations are done by legal translators who specialise in corporate housekeeping, assisted by language models specifically trained on Swiss commercial register extracts by the Corrext team of lawyer-linguists and data scientists.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I order a certified translation of an extract?</summary>
+        <p>In four steps, entirely online on auszug-hr.ch. Search for the company by name or UID and choose the target language. Select the certification level. Choose the delivery method: by email, or with a paper copy by post or courier. Set the delivery time, standard or express, for Switzerland or international. Then confirm with Order a translation, or contact the team via Contact us.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>An extract to translate and certify?</h2>
+      <p>A Corrext demo with an expert in Swiss law, or a direct order on the online service: you choose the certification level in a few clicks.</p>
+      <div class="final-cta-btns">
+        <a href="../../../fr/contact/" class="btn btn-blue">
+          Request a demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://auszug-hr.ch" rel="noopener" class="btn-outline">Order on auszug-hr.ch</a>
+      </div>
+      <p class="micro">Personalised demo · in German, French, Italian or English · 100% Swiss hosting</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+/* Démo · parcours de commande auszug-hr.ch en quatre étapes (simulation, aucune donnée transmise) */
+(function(){
+  'use strict';
+  var $=function(id){return document.getElementById(id);};
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var state={step:1,mode:'name',company:null,tgt:'German',level:'',delivery:'',timeline:'',country:'Switzerland'};
+  var stepEls=$('cxrSteps').querySelectorAll('li');
+  var panels=[$('cxrP1'),$('cxrP2'),$('cxrP3'),$('cxrP4')];
+  var prev=$('cxrPrev'),next=$('cxrNext'),order=$('cxrOrder'),contact=$('cxrContact'),done=$('cxrDone');
+  var q=$('cxrQ'),qLbl=$('cxrQLbl'),shim=$('cxrShim'),res=$('cxrRes'),tgt=$('cxrTgt');
+  var addr=$('cxrAddr'),country=$('cxrCountry');
+  var timer=null;
+
+  /* Le bouton Next ne s'active que lorsque l'étape courante est complète */
+  function canNext(){
+    if(state.step===1)return !!state.company;
+    if(state.step===2)return !!state.level;
+    if(state.step===3)return !!state.delivery;
+    return false;
+  }
+  function text(id,v){$(id).textContent=v;}
+  function summary(){
+    text('cxrSumCo',state.company?state.company.name+' · UID '+state.company.uid:'');
+    text('cxrSumTgt',state.tgt);
+    text('cxrSumLvl',state.level);
+    text('cxrSumDel',state.delivery);
+    text('cxrSumTl',state.timeline||'To be chosen');
+    text('cxrSumCty',state.country);
+  }
+  function render(focus){
+    var last=state.step===4;
+    for(var i=0;i<4;i++){
+      var n=i+1,li=stepEls[i];
+      li.classList.toggle('cur',n===state.step);
+      li.classList.toggle('done',n<state.step);
+      if(n===state.step)li.setAttribute('aria-current','step');else li.removeAttribute('aria-current');
+      panels[i].classList.toggle('on',n===state.step);
+    }
+    prev.disabled=state.step===1;
+    next.hidden=last;order.hidden=!last;contact.hidden=!last;
+    next.disabled=!canNext();
+    order.disabled=!state.timeline;
+    if(last)summary();
+    if(focus){try{panels[state.step-1].focus({preventScroll:true});}catch(e){panels[state.step-1].focus();}}
+  }
+  function go(n){state.step=Math.max(1,Math.min(4,n));done.classList.remove('on');render(true);}
+  prev.addEventListener('click',function(){go(state.step-1);});
+  next.addEventListener('click',function(){if(canNext())go(state.step+1);});
+
+  /* Étape 1 · recherche par nom ou IDE, résultat de démonstration, sélection */
+  var segBtns=$('cxrSeg').querySelectorAll('button');
+  function resetSearch(){
+    if(timer){clearTimeout(timer);timer=null;}
+    shim.classList.remove('on');res.classList.remove('on');res.classList.remove('sel');
+    state.company=null;tgt.disabled=true;render(false);
+  }
+  Array.prototype.forEach.call(segBtns,function(b){
+    b.addEventListener('click',function(){
+      var mode=b.getAttribute('data-mode');
+      if(mode===state.mode)return;
+      state.mode=mode;
+      Array.prototype.forEach.call(segBtns,function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on?'true':'false');});
+      qLbl.textContent=mode==='uid'?'Company UID':'Company Name';
+      q.value=mode==='uid'?'CHE-000.000.000':'Muster AG';
+      resetSearch();
+    });
+  });
+  $('cxrSearch').addEventListener('click',function(){
+    resetSearch();
+    shim.classList.add('on');
+    timer=setTimeout(function(){shim.classList.remove('on');res.classList.add('on');timer=null;},reduce?250:900);
+  });
+  q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();$('cxrSearch').click();}});
+  $('cxrSelect').addEventListener('click',function(){
+    state.company={name:'Muster AG',uid:'CHE-000.000.000'};
+    res.classList.add('sel');tgt.disabled=false;render(false);
+    try{tgt.focus({preventScroll:true});}catch(e){}
+  });
+  tgt.addEventListener('change',function(){state.tgt=tgt.options[tgt.selectedIndex].text;});
+
+  /* Cartes radio : clic, Entrée, Espace et flèches */
+  function radioGroup(id,onPick){
+    var items=$(id).querySelectorAll('[role="radio"]');
+    function pick(el){
+      Array.prototype.forEach.call(items,function(x){x.setAttribute('aria-checked',x===el?'true':'false');});
+      onPick(el.getAttribute('data-value'));
+      render(false);
+    }
+    Array.prototype.forEach.call(items,function(el,i){
+      el.addEventListener('click',function(){pick(el);});
+      el.addEventListener('keydown',function(e){
+        var d=0;
+        if(e.key==='ArrowRight'||e.key==='ArrowDown')d=1;
+        else if(e.key==='ArrowLeft'||e.key==='ArrowUp')d=-1;
+        if(!d)return;
+        e.preventDefault();
+        var t=items[(i+d+items.length)%items.length];
+        t.focus();pick(t);
+      });
+    });
+  }
+  radioGroup('cxrLevels',function(v){state.level=v;});
+  radioGroup('cxrDeliv',function(v){state.delivery=v;addr.classList.toggle('on',/paper/i.test(v));});
+  radioGroup('cxrTime',function(v){state.timeline=v;});
+  country.addEventListener('change',function(){state.country=country.value;summary();});
+
+  /* Étape 4 · la commande n'est jamais passée */
+  order.addEventListener('click',function(){done.classList.add('on');});
+
+  render(false);
+})();
+</script>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../../en/" class="logo"><img src="../../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>The translation engine for Swiss law, tax and finance. A fully Swiss solution: Swiss company, Swiss infrastructure and the LexMachina engine, for accuracy in four languages and full data sovereignty.</p>
+        <p class="footer-iso">ISO&nbsp;27001 · Hosting in Switzerland (Infomaniak) · Revised FADP and GDPR</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Platform</p>
+        <ul>
+          <li><a href="../../../en/corrext/">Corrext, the platform</a></li>
+          <li><a href="../../../en/corrext/document-translation/">Text and document translation</a></li>
+          <li><a href="../../../en/corrext/translation-projects/">Translation projects</a></li>
+          <li><a href="../../../en/corrext/review-editor/">Review editor</a></li>
+          <li><a href="../../../en/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../../en/corrext/commercial-register-extracts/">Commercial register extracts</a></li>
+          <li><a href="../../../en/corrext/api-on-premises/">API and on-premises</a></li>
+          <li><a href="../../../en/lexmachina/">LexMachina, the engine</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Solutions</p>
+        <ul>
+          <li><a href="../../../en/solutions/law-firms/">Law firms</a></li>
+          <li><a href="../../../en/solutions/banks/">Banking and finance</a></li>
+          <li><a href="../../../en/solutions/legal-departments/">Legal departments</a></li>
+          <li><a href="../../../en/solutions/public-authorities/">Authorities and public administration</a></li>
+          <li><a href="../../../en/solutions/fiduciaries/">Fiduciary and advisory firms</a></li>
+          <li><a href="../../../en/solutions/legaltech-publishers/">LegalTechs and publishers</a></li>
+          <li><a href="../../../en/translation/">Translation by area of law</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Resources</p>
+        <ul>
+          <li><a href="../../../en/resources/blog/">Blog</a></li>
+          <li><a href="../../../en/resources/guides/">Guides</a></li>
+          <li><a href="../../../en/resources/glossary/">Swiss legal glossary</a></li>
+          <li><a href="../../../en/resources/studies/">Studies and benchmarks</a></li>
+          <li><a href="../../../en/comparison/">Comparisons</a></li>
+          <li><a href="../../../en/help/">Help Centre</a></li>
+          <li><a href="../../../en/security/">Security and data sovereignty</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../../en/about/">About us and awards</a></li>
+          <li><a href="../../../en/about/press/">Press</a></li>
+          <li><a href="../../../en/contact/">Request a demo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Fribourg, Switzerland. All rights reserved.</span>
+      <div class="links">
+        <a href="../../../en/impressum/">Impressum and Terms of Use</a>
+        <a href="../../../en/privacy-policy/">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../../assets/nav.js?v=75b323d8" defer></script>
+</body>
+</html>

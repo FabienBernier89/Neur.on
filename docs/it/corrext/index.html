@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corrext: piattaforma di traduzione giuridica · Neur.on</title>
+<meta name="description" content="Traduzione di testi e documenti, Gestione dei progetti, Fast lookup CHnell ed estratti certificati in un ambiente svizzero. Dati in Svizzera, ISO 27001.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://neur-on.ai/it/corrext/">
+<link rel="alternate" hreflang="fr-CH" href="https://neur-on.ai/fr/corrext/">
+<link rel="alternate" hreflang="de-CH" href="https://neur-on.ai/de/corrext/">
+<link rel="alternate" hreflang="it-CH" href="https://neur-on.ai/it/corrext/">
+<link rel="alternate" hreflang="en" href="https://neur-on.ai/en/corrext/">
+<link rel="alternate" hreflang="x-default" href="https://neur-on.ai/">
+<meta property="og:title" content="Corrext: piattaforma di traduzione giuridica · Neur.on">
+<meta property="og:description" content="Traduzione di testi e documenti, Gestione dei progetti, Fast lookup CHnell ed estratti certificati in un ambiente svizzero. Dati in Svizzera, ISO 27001.">
+<meta property="og:url" content="https://neur-on.ai/it/corrext/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://neur-on.ai/assets/img/og-neuron.jpg">
+<meta property="og:image:alt" content="Neur.on, traduzione con l'IA per il diritto, il fisco e la finanza">
+<meta property="og:site_name" content="Neur.on">
+<meta property="og:locale" content="it_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="../../assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/img/neuron-mark.png">
+<link rel="apple-touch-icon" href="../../assets/img/neuron-mark-180.png">
+<meta name="theme-color" content="#001B4C">
+<link rel="stylesheet" href="../../assets/neuron.css?v=75b323d8">
+<style>/* ============ HERO DU HUB : deux colonnes, fenêtre débordante ============ */
+.phero{padding:92px 0 0;color:#fff;position:relative;background:radial-gradient(900px 480px at 82% 0%, rgba(127,176,255,.28), transparent 60%),radial-gradient(600px 420px at 6% 100%, rgba(49,123,255,.22), transparent 62%),var(--navy-grad)}
+.phero-txt{padding-top:10px;padding-bottom:64px}
+.phero-grid{display:grid;grid-template-columns:minmax(0,5.7fr) minmax(0,6.3fr);gap:48px;align-items:start}
+
+.phero h1{font-size:clamp(30px,4vw,46px);color:#fff;letter-spacing:-.03em;line-height:1.12;margin:0 0 18px;max-width:17ch;text-wrap:balance}
+.phero h1 em{font-style:normal;color:var(--sky)}
+.phero .lead{font-size:17.5px;color:rgba(255,255,255,.84);line-height:1.6;max-width:44ch;margin-bottom:28px}
+.phero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.phero-cta .btn-blue{padding:16px 28px;font-size:15px}
+.phero-cta .btn-ghost{padding:16px 26px;font-size:15px;color:#fff;border:1px solid rgba(255,255,255,.32)}
+.phero-cta .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* Fenêtre Corrext · vue tableau de bord (matériau principal) */
+.dash{position:relative;z-index:2;display:flex;background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);box-shadow:0 44px 92px -42px rgba(8,24,68,.34);overflow:hidden;margin-top:12px;margin-bottom:-120px;min-height:620px;color:var(--text)}
+.dash .drail{width:62px}
+.dash .dwrap{flex:1;min-width:0;display:flex;flex-direction:column}
+.dash .dtop{flex-wrap:wrap;gap:10px}
+button.dtab{border:0;background:transparent;font-family:inherit;cursor:pointer;line-height:1.3}
+button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.ddata{margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:50px;padding:5px 12px;white-space:nowrap}
+.dpanel{display:none;padding:14px 22px 18px;flex:1}
+.dpanel.on{display:block;animation:dfade .28s ease}
+@keyframes dfade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.dpanel.on{animation:none}}
+.dph{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+.dph .dt{font-size:18.5px;font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.15}
+.dph span{font-size:12.5px;color:var(--muted)}
+.ptable{width:100%;border-collapse:collapse;font-size:13px}
+.ptable th{text-align:left;font-size:12px;font-weight:600;color:var(--muted);padding:6px 10px 8px;border-bottom:1px solid var(--line)}
+.ptable td{padding:11px 10px;border-bottom:1px solid var(--line);color:var(--ink);vertical-align:middle;transition:background .2s}
+.ptable td.hm{white-space:nowrap}
+.ptable tr:last-child td{border-bottom:none}
+.ptable tbody tr:hover td{background:rgba(49,123,255,.04)}
+.ptable .pn2{font-weight:700}
+.ptable .pn2 small{display:block;font-weight:400;font-size:12px;color:var(--muted);margin-top:2px}
+.ptable .num{font-variant-numeric:tabular-nums;text-align:right;color:var(--muted)}
+.st{display:inline-block;font-size:11.5px;font-weight:700;border-radius:50px;padding:4px 10px;white-space:nowrap;background:var(--blue-pale);color:var(--navy)}
+.st.rev{background:rgba(49,123,255,.12);color:var(--blue-d)}
+.st.done{background:var(--navy);color:#fff}
+.st.quote{background:var(--tint);color:var(--navy);border:1px solid var(--line)}
+.pbar{display:inline-block;vertical-align:middle;height:6px;width:84px;border-radius:4px;background:#e4ebf6;overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--blue);border-radius:4px}
+.pbar + b{font-size:12px;color:var(--muted);font-weight:600;margin-left:8px;font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:repeat(3,max-content);column-gap:26px;row-gap:8px;padding:12px 22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);background:var(--bg)}
+.kpis b{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
+.qlist{display:flex;flex-direction:column;gap:9px}
+.qrow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r-btn);transition:background .2s}
+.qrow:hover{background:rgba(49,123,255,.04)}
+.qrow b{font-size:13.5px;color:var(--ink)}
+.qrow small{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.qrow .pill{font-size:11.5px;font-weight:700;color:#fff;background:var(--navy);border-radius:50px;padding:4px 10px;white-space:nowrap}
+.qrow .gen{font-size:12px;font-weight:600;color:var(--blue-d);white-space:nowrap}
+.tree{font-size:13px}
+.tree .folder{font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px;margin:4px 0 8px}
+.tree .folder svg{width:15px;height:15px;color:var(--navy)}
+.tree .doc{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding:10px 12px 10px 26px;border-top:1px solid var(--line)}
+.tree .doc:last-child{border-bottom:1px solid var(--line)}
+.tree .doc span{color:var(--ink)}
+.tree .doc small{font-size:12px;color:var(--muted)}
+.tg{width:34px;height:20px;border-radius:50px;background:var(--blue-d);position:relative;flex-shrink:0}
+.tg::after{content:"";position:absolute;top:3px;right:3px;width:14px;height:14px;border-radius:50%;background:#fff}
+.tg.off{background:#dbe3f3}
+.tg.off::after{right:auto;left:3px}
+.tree-note{margin-top:12px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:7px}
+.tree-note svg{width:13px;height:13px;color:var(--blue-d)}
+
+/* ============ LES QUATRE POSTES (blocs alternés, mini-mockups) ============ */
+.postes{padding:84px 0 56px;background:linear-gradient(180deg,var(--bg) 0%,#fff 28%)}
+.postes .sec-head{margin-bottom:64px}
+.mock{padding:26px;background:var(--bg);display:flex;justify-content:center}
+.mock svg{width:100%;max-width:400px;height:auto}
+.feature .feat-txt h3 .pn{color:var(--blue-d)}
+
+/* ============ USP (registre éditorial) ============ */
+.usp{padding:90px 0;background:#fff;border-top:1px solid var(--line)}
+.usp-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start}
+.usp-lead h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px;max-width:16ch}
+.usp-lead p{color:var(--muted);font-size:16.5px;line-height:1.65;max-width:46ch}
+.usp-lead .links{display:flex;flex-direction:column;gap:10px;margin-top:26px}
+.usp-list{border-top:1px solid var(--line)}
+.usp-row{padding:20px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:6px;transition:background .2s}
+.usp-row:hover{background:rgba(49,123,255,.04)}
+.usp-row b{font-size:16px;color:var(--ink);letter-spacing:-.01em}
+.usp-row p{font-size:14.5px;color:var(--muted);line-height:1.6}
+
+/* ============ Niveaux de qualité (bande) ============ */
+.qband{padding:30px 0;color:#fff;background:radial-gradient(940px 460px at 50% -12%, rgba(127,176,255,.18), transparent 60%),var(--navy-grad)}
+.qband-inner{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.qgauge{display:flex;gap:4px;width:112px;flex-shrink:0}
+.qgauge i{flex:1;height:6px;border-radius:4px;background:var(--sky)}
+.qband p{font-size:14.5px;color:rgba(255,255,255,.82);flex:1;min-width:260px}
+.qband p b{font-weight:700;color:#fff}
+.qband .feat-link{white-space:nowrap;color:#fff}
+.qband .feat-link svg{color:var(--sky)}
+.qband .feat-link:hover{color:var(--sky)}
+
+/* Hauteur commune des heros : le hero du hub prend la hauteur du hero métier ; la fenêtre garde son débord de 120 px
+   sur la section suivante, avec un fondu en bas quand le tableau de bord est plus long que l'espace disponible */
+@media(min-width:1024px){
+  .phero{height:var(--hero-h);padding-top:92px}
+  .phero-txt{padding-top:0;padding-bottom:0}
+}
+@media(min-width:1024px) and (max-width:1279px){.phero-grid{gap:40px}.phero-cta{gap:10px}.phero-cta .btn-blue,.phero-cta .btn-ghost{padding:16px 18px;font-size:14.5px}}
+@media(max-width:940px){
+  .phero{padding-top:52px}
+  .phero-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+
+  .phero h1{max-width:none}
+  .dash{margin-bottom:0;min-height:auto}
+  .dash .drail{display:none}
+  .postes{padding-top:56px}
+  .ptable .hm{display:none}
+  .usp-grid{grid-template-columns:1fr;gap:36px}
+  .usp-lead h2{max-width:none}
+}
+@media(max-width:560px){
+  .ptable .hs{display:none}
+  .dph{flex-direction:column;align-items:flex-start;gap:2px}
+  .kpis{display:flex;flex-wrap:wrap;gap:8px 18px}
+  .tree .doc{grid-template-columns:1fr auto;padding-left:14px}
+  .tree .doc small{grid-column:1 / -1}
+}
+/* Fenêtre du héro : elle garde sa mise en page d'origine (140 % de la colonne) et se réduit à l'échelle pour tenir dans la colonne, sans déborder du héro */
+@media(min-width:941px){
+  .dash-fit{position:relative;min-width:0;height:404px;margin-top:-6px}
+  .dash-fit .dash{width:140%;height:566px;min-height:0;margin:0;transform:scale(.7143);transform-origin:top left}
+  /* Dans le héro, quatre projets suffisent : la fenêtre reste entière, sans coupure en bas */
+  .dash-fit #p-projets tbody tr:nth-child(5){display:none}
+}
+@media(min-width:941px) and (max-width:1279px){.dash-fit{height:470px}.dash-fit .dash{height:658px}}
+/* Bandeau des garanties, sous le héro : trois colonnes séparées, pastille d'icône, titre court et détail */
+.ptrust{padding:26px 0;background:#fff;border-bottom:1px solid var(--line)}
+.ptrust-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0}
+.ptrust-list li{display:flex;align-items:center;gap:14px;padding:16px 18px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-bloc)}
+.ptrust-ic{display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;border-radius:var(--r-bloc);background:#fff;border:1px solid var(--line);color:var(--blue-d)}
+.ptrust-ic svg{width:20px;height:20px}
+.ptrust-t{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ptrust-t b{font-size:15px;line-height:1.3;color:var(--ink);letter-spacing:-.01em}
+.ptrust-t>span{font-size:13px;line-height:1.5;color:var(--muted)}
+@media(max-width:940px){.ptrust-list{grid-template-columns:1fr;gap:10px}}</style>
+<script type="application/ld+json">{
+ "@type": "SoftwareApplication",
+ "name": "Corrext",
+ "applicationCategory": "BusinessApplication",
+ "operatingSystem": "Web",
+ "url": "https://neur-on.ai/it/corrext/",
+ "description": "Piattaforma svizzera di traduzione giuridica e finanziaria con l'IA: Traduzione di testi e documenti, Gestione dei progetti, Fast lookup CHnell, estratti certificati del registro di commercio.",
+ "publisher": {
+  "@type": "Organization",
+  "name": "Neur.on AI Solutions SA",
+  "url": "https://neur-on.ai/"
+ },
+ "offers": {
+  "@type": "Offer",
+  "availability": "https://schema.org/InStock",
+  "description": "Prezzo su offerta, demo personalizzata su richiesta"
+ },
+ "featureList": [
+  "Traduction texte et document",
+  "Gestion de projet",
+  "Fast lookup CHnell",
+  "Extraits du registre du commerce certifiés"
+ ],
+ "inLanguage": "it-CH"
+}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Che cos'è Corrext?", "acceptedAnswer": {"@type": "Answer", "text": "Corrext è la piattaforma di traduzione giuridica e finanziaria di Neur.on. Riunisce quattro strumenti in un unico ambiente svizzero: Traduzione di testi e documenti, Gestione dei progetti, Fast lookup CHnell e gli estratti certificati del registro di commercio."}}, {"@type": "Question", "name": "Dove sono archiviati e trattati i miei documenti?", "acceptedAnswer": {"@type": "Answer", "text": "Corrext è ospitato in Svizzera, presso Infomaniak. I documenti sono trattati in Svizzera in modalità Highly sensitive content o con il motore di traduzione LexMachina. I motori ospitati all'estero attivano l'avviso di riservatezza della vostra organizzazione e non sono disponibili in modalità Highly sensitive content. Neur.on è certificata ISO 27001."}}, {"@type": "Question", "name": "Quali motori di traduzione posso usare?", "acceptedAnswer": {"@type": "Answer", "text": "LexMachina, DeepL Pro, Azure OpenAI GPT o Claude, a scelta a ogni invio. Corrext può mostrare fino a quattro alternative, ciascuna con il suo motore, per confrontarle prima di scegliere."}}, {"@type": "Question", "name": "Quali formati e quali lingue accetta Corrext?", "acceptedAnswer": {"@type": "Answer", "text": "Sette tipi di file d'ufficio, dal PDF al PowerPoint, fino a 25 file da 50 MB per invio, e testo incollato fino a 10'000 caratteri. Tedesco, francese, italiano e inglese sono lingue native; in tutto la piattaforma offre trenta lingue."}}, {"@type": "Question", "name": "Corrext sostituisce la revisione da parte di un traduttore?", "acceptedAnswer": {"@type": "Answer", "text": "No. Per un documento vincolante, con Gestione dei progetti ordinate una revisione: Light review o Full review da parte di un traduttore giuridico, oppure Double review e traduzione certificata. L'offerta e il termine di consegna compaiono prima di ogni conferma."}}, {"@type": "Question", "name": "Come si integra Corrext con i nostri strumenti?", "acceptedAnswer": {"@type": "Answer", "text": "Con un plug-in nativo per MS Word o un'applicazione nel browser, con un'API REST per i vostri DMS e intranet, oppure con un'installazione on-premises. I diritti di accesso si impostano fino al singolo documento, tramite SharePoint o Active Directory."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Pagina iniziale", "item": "https://neur-on.ai/it/"}, {"@type": "ListItem", "position": 2, "name": "Corrext", "item": "https://neur-on.ai/it/corrext/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Passare al contenuto</a>
+<header class="nav" id="siteNav" data-active="corrext">
+  <div class="container nav-inner">
+    <a href="../../it/" class="logo" aria-label="Neur.on, alla pagina iniziale"><img src="../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <div class="nav-item" data-key="corrext">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-corrext">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="solutions">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-solutions">Soluzioni<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+      <div class="nav-item" data-key="lexmachina">
+        <a href="../../it/lexmachina/" class="nav-a">LexMachina</a>
+      </div>
+      <div class="nav-item" data-key="ressources">
+        <button type="button" class="nav-btn" aria-expanded="false" aria-controls="mega-ressources">Risorse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch" aria-label="Lingua">
+        <a href="../../de/corrext/">DE</a><span class="sep">·</span>
+        <a href="../../it/corrext/">FR</a><span class="sep">·</span>
+        <a class="on" href="../../it/corrext/" aria-current="true">IT</a><span class="sep">·</span>
+        <a href="../../en/corrext/">EN</a>
+      </div>
+      <a href="../../it/contatto/" class="btn btn-blue">Richiedere una demo</a>
+      <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="navMobile" aria-label="Aprire il menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : CORREXT -->
+  <div class="mega" id="mega-corrext" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">La piattaforma</p>
+        <a href="../../it/corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></i><span class="mtxt"><b>Corrext, la cabina di regia</b><em>Progetti, offerte, risorse e diritti d'accesso in un unico ambiente svizzero</em></span></a>
+        <a href="../../it/lexmachina/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i><span class="mtxt"><b>LexMachina</b><em>Il motore addestrato sul diritto e sulla finanza svizzeri</em></span></a>
+        <a href="../../it/sicurezza/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></i><span class="mtxt"><b>Sicurezza e sovranità dei dati</b><em>Dove i vostri dati sono archiviati e trattati, e da quale motore</em></span></a>
+        <a href="../../it/corrext/api-on-premises/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></i><span class="mtxt"><b>API e on-premises</b><em>Integrazione con i vostri DMS, intranet e flussi di lavoro</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Gli strumenti</p>
+        <a href="../../it/corrext/traduzione-documenti/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h7M7.5 6v9M13 19l4-10 4 10M14.5 16h5"/></svg></i><span class="mtxt"><b>Traduzione di testi e documenti</b><em>Testi, file, PDF in Word, riformulazione</em></span></a>
+        <a href="../../it/corrext/progetti-di-traduzione/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></i><span class="mtxt"><b>Gestione dei progetti</b><em>Revisione da parte di specialisti a scelta, offerta e termine di consegna immediati</em></span></a>
+        <a href="../../it/corrext/revisione/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/><path d="M6.5 9h3M6.5 13h3M14.5 9h3M14.5 13h2"/></svg></i><span class="mtxt"><b>Editor di revisione</b><em>Revisione frase per frase, correzioni salvate in memoria</em></span></a>
+        <a href="../../it/corrext/chnell/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></i><span class="mtxt"><b>Fast lookup CHnell</b><em>Il concordanziere del diritto svizzero, 30 settori</em></span></a>
+        <a href="../../it/corrext/estratto-registro-di-commercio/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3v5h5"/><circle cx="17.5" cy="16.5" r="3.5"/><path d="m16 19-.6 3 2.1-1.2L19.6 22 19 19"/></svg></i><span class="mtxt"><b>Estratti del registro di commercio</b><em>Traduzione certificata, autenticata da un notaio o con apostille</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per saperne di più</p>
+        <a href="../../it/livelli-di-qualita/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20h-20"/></svg></i><span class="mtxt"><b>Quattro livelli di qualità</b><em>Dalla traduzione automatica alla certificazione</em></span></a>
+        <a href="../../it/lingue-e-formati/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></i><span class="mtxt"><b>Lingue e formati</b><em>30 lingue, quattro native, tutti i vostri formati da ufficio</em></span></a>
+        <a href="../../it/aiuto/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Centro assistenza</b><em>Come fare, passo dopo passo</em></span></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Provare senza registrazione</p>
+        <p class="mega-p">L'interfaccia di Corrext, riprodotta fedelmente su tre estratti di diritto svizzero.</p>
+        <a href="../../it/corrext/traduzione-documenti/#demo" class="mega-cta">Aprire la demo dal vivo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : SOLUTIONS -->
+  <div class="mega" id="mega-solutions" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Per professione</p>
+        <a href="../../it/soluzioni/studi-legali/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 8l4-3 4 3-4 6z"/><path d="M13 8l4-3 4 3-4 6z"/></svg></i><span class="mtxt"><b>Studi legali</b></span></a>
+        <a href="../../it/soluzioni/banche/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9M9 10v9M15 10v9M3 21h18"/></svg></i><span class="mtxt"><b>Banche e finanza</b></span></a>
+        <a href="../../it/soluzioni/uffici-legali/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i><span class="mtxt"><b>Uffici legali e Legal Ops</b></span></a>
+        <a href="../../it/soluzioni/enti-pubblici/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7h6v7"/><path d="M12 3l8 5H4z"/></svg></i><span class="mtxt"><b>Autorità e amministrazioni</b></span></a>
+        <a href="../../it/soluzioni/fiduciarie/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></i><span class="mtxt"><b>Fiduciarie e consulenza</b></span></a>
+        <a href="../../it/soluzioni/legaltech-editori/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-5 4 5 4M15 8l5 4-5 4"/></svg></i><span class="mtxt"><b>LegalTech ed editori</b></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per settore del diritto</p>
+        <a href="../../it/traduzione/contratti/"><b>Contratti</b></a>
+        <a href="../../it/traduzione/diritto-societario/"><b>Diritto societario</b></a>
+        <a href="../../it/traduzione/fusioni-acquisizioni/"><b>Fusioni e acquisizioni</b></a>
+        <a href="../../it/traduzione/contenzioso-arbitrato/"><b>Contenzioso e arbitrato</b></a>
+        <a href="../../it/traduzione/banca-finanza/"><b>Banca e finanza</b></a>
+        <a href="../../it/traduzione/compliance-finma/"><b>Compliance e FINMA</b></a>
+        <a href="../../it/traduzione/" class="mega-all">Tutti i settori del diritto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Per combinazione linguistica</p>
+        <a href="../../it/traduzione/tedesco-francese/"><b>Dal tedesco al francese</b></a>
+        <a href="../../it/traduzione/francese-tedesco/"><b>Dal francese al tedesco</b></a>
+        <a href="../../it/traduzione/tedesco-inglese/"><b>Dal tedesco all'inglese</b></a>
+        <a href="../../it/traduzione/francese-inglese/"><b>Dal francese all'inglese</b></a>
+        <a href="../../it/traduzione/italiano-francese/"><b>Dall'italiano al francese</b></a>
+        <a href="../../it/traduzione/inglese-tedesco/"><b>Dall'inglese al tedesco</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Avete ancora dubbi?</p>
+        <p class="mega-p">Ciò che Corrext fa e gli strumenti generici no, a confronto punto per punto.</p>
+        <a href="../../it/confronto/" class="mega-cta">Ai confronti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉGA-PANNEAU : RESSOURCES -->
+  <div class="mega" id="mega-ressources" hidden>
+    <div class="container mega-inner">
+      <div class="mega-col">
+        <p class="mega-h">Capire</p>
+        <a href="../../it/risorse/blog/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"/><path d="M4 20h7"/></svg></i><span class="mtxt"><b>Blog</b><em>Diritto svizzero, traduzione e intelligenza artificiale</em></span></a>
+        <a href="../../it/risorse/guide/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h6"/></svg></i><span class="mtxt"><b>Guide</b><em>Metodi approfonditi, firmati dai nostri specialisti</em></span></a>
+        <a href="../../it/risorse/studi/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg></i><span class="mtxt"><b>Studi e benchmark</b><em>Le nostre misurazioni su testi di diritto svizzero</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Consultare</p>
+        <a href="../../it/risorse/glossario/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5A1.5 1.5 0 0 1 4.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4.5A1.5 1.5 0 0 1 3 16.5z"/><path d="M21 5.5A1.5 1.5 0 0 0 19.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></i><span class="mtxt"><b>Glossario giuridico svizzero</b><em>Ogni termine in tedesco, francese, italiano e inglese</em></span></a>
+        <a href="../../it/aiuto/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg></i><span class="mtxt"><b>Centro assistenza Corrext</b><em>Primi passi e risposte pratiche</em></span></a>
+        <a href="../../it/aiuto/scoprire-corrext/" class="mico"><i class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.4-4.2A8 8 0 1 1 21 12z"/><path d="M10 10a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"/><path d="M12 16h.01"/></svg></i><span class="mtxt"><b>Domande frequenti</b><em>Corrext, LexMachina, revisione, prezzi</em></span></a>
+      </div>
+      <div class="mega-col">
+        <p class="mega-h">Confrontare</p>
+        <a href="../../it/confronto/deepl-traduzione-giuridica/"><b>Corrext e DeepL</b></a>
+        <a href="../../it/confronto/chatgpt-traduzione-giuridica/"><b>Corrext e gli LLM generalisti</b></a>
+        <a href="../../it/confronto/agenzia-o-piattaforma/"><b>Agenzia di traduzione o piattaforma</b></a>
+      </div>
+      <div class="mega-col mega-promo">
+        <p class="mega-h">Neur.on</p>
+        <p class="mega-p">Una società svizzera, un'infrastruttura svizzera, un motore di traduzione addestrato sul diritto svizzero.</p>
+        <a href="../../it/chi-siamo/" class="mega-cta">Chi siamo e riconoscimenti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile" id="navMobile" hidden>
+  <div class="container">
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Corrext<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../it/corrext/">Corrext, la piattaforma</a>
+        <a href="../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a>
+        <a href="../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a>
+        <a href="../../it/corrext/revisione/">Editor di revisione</a>
+        <a href="../../it/corrext/chnell/">Fast lookup CHnell</a>
+        <a href="../../it/corrext/estratto-registro-di-commercio/">Estratti del registro di commercio</a>
+        <a href="../../it/corrext/api-on-premises/">API e on-premises</a>
+        <a href="../../it/lexmachina/">LexMachina</a>
+        <a href="../../it/sicurezza/">Sicurezza e sovranità dei dati</a>
+        <a href="../../it/livelli-di-qualita/">Livelli di qualità</a>
+        <a href="../../it/lingue-e-formati/">Lingue e formati</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Soluzioni<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../it/soluzioni/studi-legali/">Studi legali</a>
+        <a href="../../it/soluzioni/banche/">Banche e finanza</a>
+        <a href="../../it/soluzioni/uffici-legali/">Uffici legali e Legal Ops</a>
+        <a href="../../it/soluzioni/enti-pubblici/">Autorità e amministrazioni</a>
+        <a href="../../it/soluzioni/fiduciarie/">Fiduciarie e consulenza</a>
+        <a href="../../it/soluzioni/legaltech-editori/">LegalTech ed editori</a>
+        <a href="../../it/traduzione/">Traduzione per settore del diritto</a>
+        <a href="../../it/confronto/">Confronti</a>
+      </div>
+    </div>
+    <div class="nm-group">
+      <button type="button" class="nm-head" aria-expanded="false">Risorse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="nm-body">
+        <a href="../../it/risorse/blog/">Blog</a>
+        <a href="../../it/risorse/guide/">Guide</a>
+        <a href="../../it/risorse/glossario/">Glossario giuridico svizzero</a>
+        <a href="../../it/risorse/studi/">Studi e benchmark</a>
+        <a href="../../it/aiuto/">Centro assistenza</a>
+        <a href="../../it/chi-siamo/">Chi siamo</a>
+      </div>
+    </div>
+    <a href="../../it/contatto/" class="btn btn-blue nm-cta">Richiedere una demo</a>
+    <div class="nm-langs" aria-label="Lingua">
+      <a href="../../de/corrext/">DE</a><span>·</span>
+      <a href="../../it/corrext/">FR</a><span>·</span>
+      <a class="on" href="../../it/corrext/" aria-current="true">IT</a><span>·</span>
+      <a href="../../en/corrext/">EN</a>
+    </div>
+  </div>
+</div>
+
+<nav class="crumbs" aria-label="Percorso di navigazione"><div class="container"><ol><li><a href="../../it/">Pagina iniziale</a></li><li><span aria-current="page">Corrext</span></li></ol></div></nav>
+
+<main id="main">
+<!-- HERO : le poste de commande -->
+<section class="phero">
+  <div class="container">
+    <div class="phero-grid">
+      <div class="phero-txt">
+        <h1>Corrext: riprendete il controllo delle <em>vostre traduzioni</em></h1>
+        <p class="lead">La piattaforma che riunisce i vostri progetti, le offerte, le risorse terminologiche e i diritti di accesso in un unico ambiente svizzero. Vedete tutto e decidete tutto voi.</p>
+        <div class="phero-cta">
+          <a href="../../fr/contact/" class="btn btn-blue">
+            Richiedere una demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#outils" class="btn btn-ghost">Ai quattro strumenti</a>
+        </div>
+
+      </div>
+
+      <!-- Fenêtre Corrext · tableau de bord -->
+      <div class="dash-fit">
+      <div class="dash" aria-label="Vista del cruscotto di Corrext (dati dimostrativi)">
+        <div class="drail">
+          <span class="rlogo">Corr<span>ext</span></span>
+          <span class="ri on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg></span>
+          <span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>
+          <span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+          <span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></span>
+          <span class="ri bottom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></span>
+        </div>
+        <div class="dwrap">
+          <div class="dtop" role="tablist" aria-label="Viste del cruscotto">
+            <div class="dtabs">
+              <button class="dtab on" role="tab" aria-selected="true" aria-controls="p-projets" id="t-projets">Progetti</button>
+              <button class="dtab" role="tab" aria-selected="false" aria-controls="p-devis" id="t-devis">Offerte</button>
+              <button class="dtab" role="tab" aria-selected="false" aria-controls="p-memoires" id="t-memoires">Risorse</button>
+              <button class="dtab" role="tab" aria-selected="false" aria-controls="p-droits" id="t-droits">Diritti</button>
+            </div>
+            <span class="ddata">Dati dimostrativi</span>
+          </div>
+
+          <div class="dpanel on" id="p-projets" role="tabpanel" aria-labelledby="t-projets">
+            <div class="dph"><p class="dt">Progetti in corso</p><span>Settimana 38 · ordinati per scadenza</span></div>
+            <table class="ptable">
+              <thead><tr><th>Progetto</th><th class="hs">Livello</th><th>Stato</th><th class="hm">Avanzamento</th><th class="num">Pagine</th></tr></thead>
+              <tbody>
+                <tr><td class="pn2">Contratto di mutuo · SPA<small>DE → FR · scadenza giovedì</small></td><td class="hs">Full review</td><td><span class="st rev">In revisione</span></td><td class="hm"><span class="pbar"><i style="width:72%"></i></span><b>72 %</b></td><td class="num">14</td></tr>
+                <tr><td class="pn2">Rapporto annuale 2025<small>FR → DE, IT · scadenza 30 set.</small></td><td class="hs">Double review</td><td><span class="st">In traduzione</span></td><td class="hm"><span class="pbar"><i style="width:38%"></i></span><b>38 %</b></td><td class="num">96</td></tr>
+                <tr><td class="pn2">Atti dell'arbitrato · lotto 3<small>EN → FR · consegnato ieri</small></td><td class="hs">Internal review</td><td><span class="st done">Consegnato</span></td><td class="hm"><span class="pbar"><i style="width:100%"></i></span><b>100 %</b></td><td class="num">412</td></tr>
+                <tr><td class="pn2">CG piattaforma<small>DE → FR, IT, EN · inizio lunedì</small></td><td class="hs">Light review</td><td><span class="st quote">Offerta approvata</span></td><td class="hm"><span class="pbar"><i style="width:0%"></i></span><b>0 %</b></td><td class="num">22</td></tr>
+                <tr><td class="pn2">Parere giuridico · successione internazionale<small>FR → DE · scadenza venerdì</small></td><td class="hs">Full review</td><td><span class="st rev">In revisione</span></td><td class="hm"><span class="pbar"><i style="width:55%"></i></span><b>55 %</b></td><td class="num">9</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="dpanel" id="p-devis" role="tabpanel" aria-labelledby="t-devis">
+            <div class="dph"><p class="dt">Offerte generate</p><span>Revisione interna o esterna · termine di consegna e offerta immediati</span></div>
+            <div class="qlist">
+              <div class="qrow"><div><b>Offerta #4127 · Contrat_assurance.docx</b><small>2,5 pagine standard · FR → DE · External · Full review (Legal translator)</small></div><span class="pill">1 giorno</span></div>
+              <div class="qrow"><div><b>Offerta #4126 · CG piattaforma</b><small>22 pagine standard · DE → FR, IT, EN · External · Light review (Legal translator)</small></div><span class="pill">Offerta pronta</span></div>
+              <div class="qrow"><div><b>Offerta #4121 · Rapporto annuale 2025</b><small>96 pagine standard · FR → DE, IT · External · Double review &amp; certified translation</small></div><span class="pill">Offerta pronta</span></div>
+              <div class="qrow"><div><b>Offerta #4118 · Atti dell'arbitrato · lotto 4</b><small>380 pagine standard · EN → FR · Internal review · i vostri team</small></div><span class="gen">Termine calcolato all'istante</span></div>
+            </div>
+          </div>
+
+          <div class="dpanel" id="p-memoires" role="tabpanel" aria-labelledby="t-memoires">
+            <div class="dph"><p class="dt">Risorse linguistiche</p><span>Memoria privata e concordanziere CHnell</span></div>
+            <table class="ptable">
+              <thead><tr><th>Risorsa</th><th class="hs">Tipo</th><th>Accesso</th><th class="num">Lingue</th></tr></thead>
+              <tbody>
+                <tr><td class="pn2">Memoria privata · progetti Standard<small>Riutilizzabile solo dalla vostra organizzazione</small></td><td class="hs">Memoria di traduzione</td><td><span class="st rev">Attiva</span></td><td class="num">DE, FR, IT, EN</td></tr>
+                <tr><td class="pn2">Progetti Highly sensitive<small>Nessun riutilizzo nella memoria</small></td><td class="hs">Memoria di traduzione</td><td><span class="st quote">Escluso</span></td><td class="num">EN, FR, IT, DE</td></tr>
+                <tr><td class="pn2">CHnell · risorse condivise <small>Fedlex, Foglio federale, amministrazioni federali</small></td><td class="hs">Concordanziere</td><td><span class="st done">Condiviso</span></td><td class="num">DE, FR, IT, EN</td></tr>
+                <tr><td class="pn2">CHnell · risorse proprie<small>I vostri documenti di riferimento · 30 settori</small></td><td class="hs">Concordanziere</td><td><span class="st done">Proprio</span></td><td class="num">DE, FR</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="dpanel" id="p-droits" role="tabpanel" aria-labelledby="t-droits">
+            <div class="dph"><p class="dt">Diritti di accesso</p><span>Per utente, progetto e documento</span></div>
+            <div class="tree">
+              <div class="folder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-7l-2-2H5a2 2 0 0 0-2 2z"/></svg> Dossier arbitrato · lotto 3</div>
+              <div class="doc"><span>Pièces_01-40.pdf<small>Team contenzioso · revisione</small></span><small>Accesso completo</small><span class="tg" role="img" aria-label="Accesso attivato"></span></div>
+              <div class="doc"><span>Pièces_41-80.pdf<small>Studio legale esterno · sola lettura</small></span><small>Sospeso</small><span class="tg off" role="img" aria-label="Accesso disattivato"></span></div>
+              <div class="doc"><span>Rapport_annuel_2025.docx<small>Direzione finanziaria · modifica</small></span><small>Accesso completo</small><span class="tg" role="img" aria-label="Accesso attivato"></span></div>
+            </div>
+            <div class="tree-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Diritti sincronizzati con SharePoint / Active Directory</div>
+          </div>
+
+          <div class="kpis"><span><b>5</b> progetti attivi</span><span><b>4</b> offerte generate</span><span><b>30</b> settori CHnell</span><span><b>2</b> progetti Highly sensitive</span></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Garanties, juste sous le héro -->
+<section class="ptrust" aria-label="Garanzie di Corrext">
+  <div class="container">
+    <ul class="ptrust-list">
+      <li><span class="ptrust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span class="ptrust-t"><b>Ospitato in Svizzera, presso Infomaniak</b><span>Trattamento in Svizzera in modalità Highly sensitive o con LexMachina · ISO&nbsp;27001 · fuori dal CLOUD Act statunitense</span></span></li>
+      <li><span class="ptrust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="ptrust-t"><b>Diritti di accesso fino al singolo documento</b><span>Gestiti tramite SharePoint e Active Directory</span></span></li>
+      <li><span class="ptrust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="ptrust-t"><b>In MS Word o nel browser</b><span>Con un'API REST, oppure con installazione <span style="white-space:nowrap">on-premises</span></span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- LES QUATRE OUTILS (réels, observés dans l'application le 14 septembre 2026) -->
+<section class="postes" id="outils">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Quattro strumenti, un'unica sala di controllo</h2>
+      <p>Ogni strumento ha la sua pagina. Insieme coprono l'intero processo di traduzione, dalla verifica di un termine alla traduzione certificata.</p>
+    </div>
+
+    <!-- Outil 1 : Traduction texte et document -->
+    <div class="feature">
+      <div class="feat-txt">
+        <h3><span class="pn">Traduzione di testi e documenti.</span> Testo o file, tradotto all'istante</h3>
+        <p>Incollate un testo o caricate fino a 25 file Word, Excel, PowerPoint o PDF. Scegliete il motore e la lingua di arrivo e confrontate fino a quattro alternative, ciascuna con il suo motore. Verificate un termine in CHnell evidenziandolo e riformulate il testo in cinque stili.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Testo fino a 10'000 caratteri, file fino a 50 MB, conversione da PDF a Word</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> LexMachina, DeepL Pro, Azure OpenAI GPT o Claude, a scelta a ogni invio</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Modalità Highly sensitive content: trattamento esclusivamente in Svizzera</li>
+        </ul>
+        <a href="../../fr/corrext/traduction-texte-et-document/" class="feat-link">Scoprire la traduzione di testi e documenti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="mock">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Traduzione di testi e documenti: riquadri di partenza e di arrivo affiancati, selezione della lingua e del motore, pannello delle alternative">
+              <rect width="200" height="150" rx="8" fill="#F5F8FF"/>
+              <rect x="14" y="14" width="172" height="16" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="20" y="19" width="44" height="6" rx="3" fill="#8DA0C0"/>
+              <rect x="78" y="19" width="44" height="6" rx="3" fill="#8DA0C0"/>
+              <rect x="136" y="18" width="44" height="8" rx="4" fill="#001B4C"/>
+              <text x="158" y="24.3" font-family="Inter, Lato, sans-serif" font-size="6.2" font-weight="700" fill="#fff" text-anchor="middle">LexMachina</text>
+              <rect x="14" y="38" width="84" height="70" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="102" y="38" width="84" height="70" rx="4" fill="#fff" stroke="#317BFF"/>
+              <rect x="22" y="48" width="66" height="5" rx="2.5" fill="#8DA0C0"/>
+              <rect x="22" y="58" width="58" height="5" rx="2.5" fill="#8DA0C0"/>
+              <rect x="22" y="68" width="70" height="5" rx="2.5" fill="#8DA0C0"/>
+              <rect x="22" y="78" width="40" height="5" rx="2.5" fill="#8DA0C0"/>
+              <rect x="110" y="48" width="64" height="5" rx="2.5" fill="#96BCFF"/>
+              <rect x="110" y="58" width="70" height="5" rx="2.5" fill="#96BCFF"/>
+              <rect x="110" y="68" width="52" height="5" rx="2.5" fill="#96BCFF"/>
+              <rect x="110" y="78" width="60" height="5" rx="2.5" fill="#96BCFF"/>
+              <circle cx="174" cy="98" r="6.5" fill="#317BFF"/>
+              <path d="M174 94.2l1 2.9 2.9 1-2.9 1-1 2.9-1-2.9-2.9-1 2.9-1z" fill="#fff"/>
+              <rect x="14" y="116" width="172" height="20" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <text x="22" y="129" font-family="Inter, Lato, sans-serif" font-size="8" font-weight="700" fill="#001B4C">Alternatives</text>
+              <rect x="80" y="123" width="60" height="5" rx="2.5" fill="#96BCFF"/>
+              <text x="178" y="129" font-family="Inter, Lato, sans-serif" font-size="7.5" font-weight="700" fill="#317BFF" text-anchor="end">1 / 4</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outil 2 : Gestion de projet -->
+    <div class="feature rev">
+      <div class="feat-txt">
+        <h3><span class="pn">Gestione dei progetti.</span> Dalla richiesta all'offerta, in tre fasi</h3>
+        <p>Date un nome al progetto, sceglietene la riservatezza (Standard o Highly sensitive) e caricate i file. Corrext rileva la lingua, la categoria giuridica e il numero di pagine standard, poi calcola il termine di consegna di una revisione interna o esterna in tre livelli.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Revisione interna da parte dei vostri team, o esterna da parte di un traduttore giuridico o di un'agenzia certificata</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Offerta e termine di consegna immediati, data di scadenza, priorità dei file</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Progetti Standard riutilizzati come memoria privata; nessun riutilizzo in modalità sensibile</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Revisione frase per frase nell'<a href="../../it/corrext/revisione/">editor di revisione</a>: le vostre correzioni confluiscono nella vostra memoria</li>
+        </ul>
+        <a href="../../fr/corrext/gestion-de-projet/" class="feat-link">Scoprire la gestione dei progetti <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="mock">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Gestione dei progetti: tre fasi Set-up, File overview e Quotes, file rilevato con pagine standard, lingua e categoria, termine di revisione stimato">
+              <rect width="200" height="150" rx="8" fill="#F5F8FF"/>
+              <line x1="30" y1="24" x2="170" y2="24" stroke="#8DA0C0" stroke-width="1.5"/>
+              <circle cx="30" cy="24" r="8" fill="#001B4C"/>
+              <path d="M26.5 24.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="100" cy="24" r="8" fill="#001B4C"/>
+              <path d="M96.5 24.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="170" cy="24" r="8" fill="#fff" stroke="#317BFF" stroke-width="1.8"/>
+              <text x="170" y="27" font-family="Inter, Lato, sans-serif" font-size="8" font-weight="700" fill="#317BFF" text-anchor="middle">3</text>
+              <text x="30" y="42" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="600" fill="#556273" text-anchor="middle">Set-up</text>
+              <text x="100" y="42" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="600" fill="#556273" text-anchor="middle">File overview</text>
+              <text x="170" y="42" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="700" fill="#001B4C" text-anchor="middle">Quotes</text>
+              <rect x="14" y="54" width="172" height="34" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="22" y="62" width="14" height="18" rx="2" fill="#EAF2FF" stroke="#317BFF"/>
+              <text x="44" y="68" font-family="Inter, Lato, sans-serif" font-size="7.5" font-weight="700" fill="#001B4C">Contrat_assurance.docx</text>
+              <text x="44" y="80" font-family="Inter, Lato, sans-serif" font-size="6.5" fill="#556273">2.5 standard pages · French · Private Insurance</text>
+              <rect x="14" y="96" width="106" height="40" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <text x="22" y="109" font-family="Inter, Lato, sans-serif" font-size="6.5" fill="#556273">Review level</text>
+              <text x="22" y="121" font-family="Inter, Lato, sans-serif" font-size="7.5" font-weight="700" fill="#001B4C">Full review · Legal translator</text>
+              <rect x="22" y="126" width="60" height="4" rx="2" fill="#96BCFF"/>
+              <rect x="126" y="96" width="60" height="40" rx="4" fill="#001B4C"/>
+              <text x="156" y="111" font-family="Inter, Lato, sans-serif" font-size="6.5" fill="#96BCFF" text-anchor="middle">Estimated time</text>
+              <text x="156" y="126" font-family="Inter, Lato, sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">1 day</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outil 3 : Fast lookup CHnell -->
+    <div class="feature">
+      <div class="feat-txt">
+        <h3><span class="pn">Fast lookup CHnell.</span> Ogni termine verificato nel suo contesto ufficiale</h3>
+        <p>CHnell, il concordanziere di Neur.on, allinea segmenti di partenza e di arrivo tratti dal Foglio federale, da Fedlex, dalla FINMA e dalle amministrazioni. Trenta settori, risorse condivise o proprie della vostra organizzazione, operatori di ricerca precisi.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Verzugszins ↔ intérêt moratoire (interesse moratorio): 324 segmenti allineati, ciascuno con la sua fonte</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Filtri per settore, fonte e tipo di risorsa; operatori "" - or</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Fast Lookup da qualsiasi traduzione, con una semplice evidenziazione</li>
+        </ul>
+        <a href="../../fr/corrext/chnell/" class="feat-link">Scoprire Fast lookup CHnell <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="mock">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Fast lookup CHnell: ricerca del termine Verzugszins, dal tedesco al francese, segmenti allineati con il termine evidenziato, settore e fonte">
+              <rect width="200" height="150" rx="8" fill="#F5F8FF"/>
+              <text x="14" y="22" font-family="Inter, Lato, sans-serif" font-size="10" font-weight="800" fill="#001B4C">CH<tspan font-weight="300">nell</tspan></text>
+              <rect x="14" y="30" width="110" height="16" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <circle cx="24" cy="38" r="3.2" fill="none" stroke="#556273" stroke-width="1.2"/>
+              <line x1="26.4" y1="40.4" x2="29" y2="43" stroke="#556273" stroke-width="1.2" stroke-linecap="round"/>
+              <text x="34" y="41" font-family="Inter, Lato, sans-serif" font-size="7.5" font-weight="600" fill="#001B4C">Verzugszins</text>
+              <rect x="130" y="30" width="56" height="16" rx="4" fill="#001B4C"/>
+              <text x="158" y="41" font-family="Inter, Lato, sans-serif" font-size="7" font-weight="700" fill="#fff" text-anchor="middle">DE → FR</text>
+              <text x="14" y="58" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="600" fill="#556273">324 results</text>
+              <rect x="14" y="64" width="84" height="34" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="102" y="64" width="84" height="34" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="20" y="70" width="48" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="20" y="78" width="30" height="6" rx="2" fill="#FFF2A8"/>
+              <rect x="52" y="79" width="38" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="20" y="88" width="60" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="108" y="70" width="60" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="108" y="78" width="44" height="6" rx="2" fill="#FFF2A8"/>
+              <rect x="154" y="79" width="26" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="108" y="88" width="50" height="4" rx="2" fill="#8DA0C0"/>
+              <text x="14" y="110" font-family="Inter, Lato, sans-serif" font-size="6" font-weight="700" fill="#1f5fd6" letter-spacing=".5">TAX LAW &amp; CUSTOMS</text>
+              <text x="14" y="119" font-family="Inter, Lato, sans-serif" font-size="6" fill="#556273">Source: fedlex.admin.ch · Data Set: Neur.on</text>
+              <rect x="14" y="126" width="84" height="12" rx="3" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="102" y="126" width="84" height="12" rx="3" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="20" y="130" width="40" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="108" y="130" width="52" height="4" rx="2" fill="#8DA0C0"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outil 4 : Extraits du registre du commerce -->
+    <div class="feature rev">
+      <div class="feat-txt">
+        <h3><span class="pn">Estratti del registro di commercio.</span> Tradotti, certificati, con apostille, in linea</h3>
+        <p>Cercate la società per nome o per IDI, poi scegliete il livello di certificazione, la spedizione e il termine di consegna. La traduzione è affidata a traduttori giuridici specializzati nel corporate housekeeping, che lavorano con modelli di traduzione addestrati sugli estratti del registro svizzero.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Tre livelli: certificazione Corrext, autenticazione notarile, autenticazione notarile con apostille (Convenzione dell'Aia)</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Oltre 30 lingue di arrivo, consegna per e-mail o su carta, standard o express</li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Ordinazione interamente in linea, infrastruttura svizzera certificata ISO&nbsp;27001</li>
+        </ul>
+        <a href="../../fr/corrext/extraits-registre-commerce/" class="feat-link">Scoprire gli estratti certificati <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="feat-visual">
+        <div class="win">
+          <div class="win-top"><span class="d"></span><span class="d"></span><span class="d"></span></div>
+          <div class="mock">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Estratto del registro di commercio tradotto: documento certificato con sigillo, tre livelli di certificazione">
+              <rect width="200" height="150" rx="8" fill="#F5F8FF"/>
+              <rect x="30" y="12" width="104" height="126" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <rect x="42" y="24" width="52" height="6" rx="3" fill="#001B4C"/>
+              <rect x="42" y="36" width="80" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="42" y="44" width="70" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="42" y="52" width="78" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="42" y="66" width="60" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="42" y="74" width="80" height="4" rx="2" fill="#8DA0C0"/>
+              <rect x="42" y="82" width="54" height="4" rx="2" fill="#8DA0C0"/>
+              <circle cx="104" cy="112" r="16" fill="#EAF2FF" stroke="#317BFF" stroke-width="1.5"/>
+              <circle cx="104" cy="112" r="11" fill="none" stroke="#317BFF" stroke-width="1" stroke-dasharray="2 1.6"/>
+              <path d="M98.5 112.2l3.6 3.6 7.4-8" fill="none" stroke="#1f5fd6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="42" y="106" width="40" height="4" rx="2" fill="#96BCFF"/>
+              <rect x="42" y="114" width="30" height="4" rx="2" fill="#96BCFF"/>
+              <rect x="142" y="40" width="46" height="18" rx="4" fill="#001B4C"/>
+              <text x="165" y="51.5" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="700" fill="#fff" text-anchor="middle">Apostilled</text>
+              <rect x="142" y="64" width="46" height="18" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <text x="165" y="75.5" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="700" fill="#556273" text-anchor="middle">Notarized</text>
+              <rect x="142" y="88" width="46" height="18" rx="4" fill="#fff" stroke="#8DA0C0"/>
+              <text x="165" y="99.5" font-family="Inter, Lato, sans-serif" font-size="6.5" font-weight="700" fill="#556273" text-anchor="middle">Standard</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USP : registre éditorial -->
+<section class="usp" id="integrations">
+  <div class="container">
+    <div class="usp-grid">
+      <div class="usp-lead">
+        <h2>Una piattaforma unica, indipendente dai modelli e duratura</h2>
+        <p>Corrext non vi vincola a nessun modello e a nessun fornitore. Coordina i vostri, con i dati giusti, in un ambiente approvato e ospitato in Svizzera.</p>
+        <div class="links">
+          <a href="../../fr/securite-souverainete/" class="feat-link">Sicurezza e sovranità dei dati <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="../../fr/lexmachina/" class="feat-link">LexMachina, il motore di traduzione addestrato sul diritto svizzero <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="usp-list">
+        <div class="usp-row"><b>Tutto in un unico posto</b><p>Dalla traduzione grezza al testo pronto per la stampa, dal fai da te all'esternalizzazione completa, in tutti i formati. Statistiche d'uso e risorse linguistiche dello studio restano sotto il vostro controllo.</p></div>
+        <div class="usp-row"><b>Flussi di dati sicuri</b><p>Basta con le traduzioni incontrollate in strumenti in linea non sicuri: nessuno scambio di dati con traduttori esterni fuori dall'ambiente approvato.</p></div>
+        <div class="usp-row"><b>Indipendente dai modelli e dai fornitori</b><p>LexMachina, i vostri modelli ottimizzati con fine-tuning e LLM generici tramite API, con prompt corretti in background. Accessi assegnati in modo granulare a clienti, specialisti esterni e fornitori.</p></div>
+        <div class="usp-row"><b>Word o browser, API o on-premises</b><p>Plug-in nativo per MS Word o applicazione autonoma nel browser. API REST per i vostri DMS e intranet, installazione on-premises per gli ambienti più sensibili.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Niveaux de qualité : rappel -->
+<section class="qband">
+  <div class="container">
+    <div class="qband-inner">
+      <span class="qgauge" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <p><b>Quattro livelli di qualità, scelti documento per documento.</b> Traduzione automatica · Post-editing · Revisione giuridica · Autenticazione e apostille.</p>
+      <a href="../../fr/#qualite" class="feat-link">Ai livelli di qualità <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <h2>Domande frequenti su Corrext</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Che cos'è Corrext?</summary>
+        <p>Corrext è la piattaforma di traduzione giuridica e finanziaria di Neur.on. Riunisce quattro strumenti in un unico ambiente svizzero: Traduzione di testi e documenti, Gestione dei progetti, Fast lookup CHnell e gli estratti certificati del registro di commercio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Dove sono archiviati e trattati i miei documenti?</summary>
+        <p>Corrext è ospitato in Svizzera, presso Infomaniak. I documenti sono trattati in Svizzera in modalità Highly sensitive content o con il motore di traduzione LexMachina. I motori ospitati all'estero attivano l'avviso di riservatezza della vostra organizzazione e non sono disponibili in modalità Highly sensitive content. Neur.on è certificata ISO&nbsp;27001.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quali motori di traduzione posso usare?</summary>
+        <p>LexMachina, DeepL Pro, Azure OpenAI GPT o Claude, a scelta a ogni invio. Corrext può mostrare fino a quattro alternative, ciascuna con il suo motore, per confrontarle prima di scegliere.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quali formati e quali lingue accetta Corrext?</summary>
+        <p>Sette tipi di file d'ufficio, dal PDF al PowerPoint, fino a 25 file da 50 MB per invio, e testo incollato fino a 10'000 caratteri. Tedesco, francese, italiano e inglese sono lingue native; in tutto la piattaforma offre trenta lingue.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Corrext sostituisce la revisione da parte di un traduttore?</summary>
+        <p>No. Per un documento vincolante, con Gestione dei progetti ordinate una revisione: Light review o Full review da parte di un traduttore giuridico, oppure Double review e traduzione certificata. L'offerta e il termine di consegna compaiono prima di ogni conferma.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Come si integra Corrext con i nostri strumenti?</summary>
+        <p>Con un plug-in nativo per MS Word o un'applicazione nel browser, con un'API REST per i vostri DMS e intranet, oppure con un'installazione on-premises. I diritti di accesso si impostano fino al singolo documento, tramite SharePoint o Active Directory.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Vedete Corrext all'opera sui vostri documenti</h2>
+      <p>Una demo personalizzata, guidata da uno specialista del diritto svizzero, sui vostri formati, le vostre lingue e la vostra terminologia.</p>
+      <div class="final-cta-btns">
+        <a href="../../fr/contact/" class="btn btn-blue">
+          Richiedere una demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="../../fr/#demo" class="btn-outline">Provare la demo dal vivo</a>
+      </div>
+      <p class="micro">Demo personalizzata · in tedesco, francese, italiano o inglese · hosting al 100 % in Svizzera</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+(function(){
+  /* Onglets réels du tableau de bord Corrext : Projets / Devis / Mémoires / Droits */
+  var tabs=Array.prototype.slice.call(document.querySelectorAll('.dash .dtab'));
+  var panels=Array.prototype.slice.call(document.querySelectorAll('.dash .dpanel'));
+  function activate(t){
+    tabs.forEach(function(x){var on=(x===t);x.classList.toggle('on',on);x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;});
+    panels.forEach(function(p){p.classList.toggle('on',p.id===t.getAttribute('aria-controls'));});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){activate(t);});
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();activate(n);n.focus();}
+    });
+  });
+})();
+</script>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../../it/" class="logo"><img src="../../assets/img/neuron-logo.png" alt="Neur.on" width="557" height="170"></a>
+        <p>Il motore di traduzione per il diritto, il fisco e la finanza svizzeri. Una soluzione interamente svizzera: società, infrastruttura e motore LexMachina, per una precisione in quattro lingue e la piena sovranità dei dati.</p>
+        <p class="footer-iso">ISO 27001 · Hosting in Svizzera (Infomaniak) · nLPD e GDPR</p>
+        <a class="footer-social" href="https://www.linkedin.com/company/neur-on" target="_blank" rel="noopener" aria-label="Neur.on su LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#ffffff" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.45 4.78 5.64V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+      </div>
+      <div>
+        <p class="ft-h">Piattaforma</p>
+        <ul>
+          <li><a href="../../it/corrext/">Corrext, la piattaforma</a></li>
+          <li><a href="../../it/corrext/traduzione-documenti/">Traduzione di testi e documenti</a></li>
+          <li><a href="../../it/corrext/progetti-di-traduzione/">Gestione dei progetti</a></li>
+          <li><a href="../../it/corrext/revisione/">Editor di revisione</a></li>
+          <li><a href="../../it/corrext/chnell/">Fast lookup CHnell</a></li>
+          <li><a href="../../it/corrext/estratto-registro-di-commercio/">Estratti del registro di commercio</a></li>
+          <li><a href="../../it/corrext/api-on-premises/">API e on-premises</a></li>
+          <li><a href="../../it/lexmachina/">LexMachina, il motore</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Soluzioni</p>
+        <ul>
+          <li><a href="../../it/soluzioni/studi-legali/">Studi legali</a></li>
+          <li><a href="../../it/soluzioni/banche/">Banche e finanza</a></li>
+          <li><a href="../../it/soluzioni/uffici-legali/">Uffici legali</a></li>
+          <li><a href="../../it/soluzioni/enti-pubblici/">Autorità e amministrazioni</a></li>
+          <li><a href="../../it/soluzioni/fiduciarie/">Fiduciarie e consulenza</a></li>
+          <li><a href="../../it/soluzioni/legaltech-editori/">LegalTech ed editori</a></li>
+          <li><a href="../../it/traduzione/">Traduzione per settore del diritto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Risorse</p>
+        <ul>
+          <li><a href="../../it/risorse/blog/">Blog</a></li>
+          <li><a href="../../it/risorse/guide/">Guide</a></li>
+          <li><a href="../../it/risorse/glossario/">Glossario giuridico</a></li>
+          <li><a href="../../it/risorse/studi/">Studi e benchmark</a></li>
+          <li><a href="../../it/confronto/">Confronti</a></li>
+          <li><a href="../../it/aiuto/">Centro assistenza</a></li>
+          <li><a href="../../it/sicurezza/">Sicurezza e sovranità dei dati</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-h">Neur.on</p>
+        <ul class="footer-contact">
+          <li><a href="../../it/chi-siamo/">Chi siamo e riconoscimenti</a></li>
+          <li><a href="../../it/chi-siamo/stampa/">Stampa</a></li>
+          <li><a href="../../it/contatto/">Richiedere una demo</a></li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Place de la Gare 15, 1700 Fribourg
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:team@corrext.com">team@corrext.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neur.on AI Solutions SA · Friburgo, Svizzera. Tutti i diritti riservati.</span>
+      <div class="links">
+        <a href="../../it/note-legali/">Note legali e condizioni d'uso</a>
+        <a href="../../it/protezione-dei-dati/">Protezione dei dati</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/nav.js?v=75b323d8" defer></script>
+</body>
+</html>
