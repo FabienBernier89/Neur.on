@@ -40,6 +40,14 @@ def load(src, name):
 # ---------------------------------------------------------------- briques
 
 _CARTES = None
+# dossier des données de la langue en cours (src/data pour le FR, src/langues/<lang>/data sinon), fixé par utiliser()
+_DONNEES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+
+
+def utiliser(src):
+    """Prend les données de la langue en cours pour les briques appelées hors de build_all (cartes de héros)."""
+    global _DONNEES, _CARTES
+    _DONNEES, _CARTES = os.path.join(src, "data"), None
 SYMB = {"y": '<span class="cmp-y">✓</span> ', "p": '<span class="cmp-p">⚠</span> ', "n": '<span class="cmp-n">✕</span> '}
 
 
@@ -47,7 +55,7 @@ def carte(nom):
     """Carte de droite des heros (src/data/cartes.json) : fiche, terme en quatre langues, extrait de tableau ou code."""
     global _CARTES
     if _CARTES is None:
-        _CARTES = json.load(open(os.path.join(os.path.dirname(__file__), "data", "cartes.json"), encoding="utf-8"))
+        _CARTES = json.load(open(os.path.join(_DONNEES, "cartes.json"), encoding="utf-8"))
     c = _CARTES[nom]
     tete = f'<div class="sh"><b>{c["titre"]}</b><span>{c["droite"]}</span></div>'
     pied = f'<div class="sf">{c["pied"]}</div>' if c.get("pied") else ""
@@ -503,7 +511,15 @@ def fedlex(cle):
                        ("loi fédérale sur le tribunal fédéral", "LTF"), ("code civil suisse", "CC")):
             _FEDLEX[nom] = _FEDLEX[k]
     v = _FEDLEX.get(cle) or _FEDLEX.get(cle.lower())
-    return v["url"] if v else None
+    if not v:
+        return None
+    # version linguistique du texte : allemand et italien existent pour tout le droit fédéral ; l'anglais au cas par cas
+    lang = i18n.langue()
+    if lang in ("de", "it"):
+        return v["url"][:-2] + lang
+    if lang == "en":
+        return v.get("url_en") or v["url"][:-2] + "de"
+    return v["url"]
 
 
 def lien_loi(nom, cle):
@@ -1267,6 +1283,7 @@ def gen_actualites(src):
 
 
 def build_all(src):
+    utiliser(src)
     pages = []
     pages += gen_solutions(src)
     pages += gen_domaines(src)
