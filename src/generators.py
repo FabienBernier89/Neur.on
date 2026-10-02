@@ -32,6 +32,13 @@ ICONS = [SHIELD, GLOBE, SPARK]
 NOM_LANGUE = {"fr": "Français", "it": "Italien", "en": "Anglais"}
 
 
+def equivalent(d):
+    """Équivalent affiché à côté du mot-vedette allemand d'une fiche : celui de la langue de la page,
+    le français pour une page française ou allemande."""
+    l = i18n.langue()
+    return d[l] if l in ("it", "en") else d["fr"]
+
+
 def langue_exemple(ex):
     """Seconde langue de la citation officielle d'une fiche du glossaire : celle de la page,
     le français pour une page allemande ou quand la loi n'a pas de version dans la langue."""
@@ -768,7 +775,7 @@ def gen_glossaire(src):
     for d in data:
         vois = [v for v in data if v["slug"] in d.get("voisins", [])][:3]
         body_hero = hero_law(
-            d["de"], "· " + d["fr"], d["lead"],
+            d["de"], "· " + equivalent(d), d["lead"],
             {"titre": T("Le terme, quatre langues"), "compte": d["domaine"],
              "mots": {k: d[k] for k in ("de", "fr", "it", "en")},
              "pied": T("{0} · source : {1}").format(d["base"], d["source"])},
@@ -818,7 +825,7 @@ def gen_glossaire(src):
 </section>''',
             siblings(T("Termes voisins"),
                      [{"href": f'fr/ressources/glossaire/{v["slug"]}/',
-                       "t": f'{v["de"]} · {v["fr"]}', "d": v["resume"]} for v in vois] or
+                       "t": f'{v["de"]} · {equivalent(v)}', "d": v["resume"]} for v in vois] or
                      [{"href": "fr/ressources/glossaire/", "t": T("Tout le glossaire"),
                        "d": T("La terminologie juridique suisse en quatre langues")}]),
             cta(T("Cette terminologie, appliquée à vos documents"),
@@ -828,7 +835,7 @@ def gen_glossaire(src):
         ])
         pages.append((f'fr/ressources/glossaire/{d["slug"]}/', {
             "title": d["title"], "description": d["description"],
-            "short": f'{d["de"]} · {d["fr"]}', "nav": "ressources", "hero": "law"}, body))
+            "short": f'{d["de"]} · {equivalent(d)}', "nav": "ressources", "hero": "law"}, body))
 
     # index du glossaire
     rows = "".join(

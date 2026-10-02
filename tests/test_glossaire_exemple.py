@@ -23,5 +23,16 @@ class TestLangueExemple(unittest.TestCase):
         self.assertEqual(self.choix("en", {"de": "a", "fr": "b", "it": "c"}), "fr")
 
 
+class TestEquivalent(unittest.TestCase):
+    """Titre, fil d'Ariane et cartes voisines : mot-vedette allemand et équivalent dans la langue de la page."""
+    FICHE = {"de": "Verzugszins", "fr": "intérêt moratoire", "it": "interesse moratorio", "en": "default interest"}
+
+    def test_par_langue(self):
+        for lang, attendu in (("fr", "intérêt moratoire"), ("de", "intérêt moratoire"),
+                              ("it", "interesse moratorio"), ("en", "default interest")):
+            i18n.activer(lang, tempfile.mkdtemp())
+            self.assertEqual(generators.equivalent(self.FICHE), attendu)
+
+
 if __name__ == "__main__":
     unittest.main()
