@@ -95,13 +95,15 @@ button.dtab:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .usp-row p{font-size:14.5px;color:var(--muted);line-height:1.6}
 
 /* ============ Niveaux de qualité (bande) ============ */
-.qband{padding:30px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.qband{padding:30px 0;color:#fff;background:radial-gradient(940px 460px at 50% -12%, rgba(127,176,255,.18), transparent 60%),var(--navy-grad)}
 .qband-inner{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .qgauge{display:flex;gap:4px;width:112px;flex-shrink:0}
-.qgauge i{flex:1;height:6px;border-radius:4px;background:var(--blue)}
-.qband p{font-size:14.5px;color:var(--ink);flex:1;min-width:260px}
-.qband p b{font-weight:700}
-.qband .feat-link{white-space:nowrap}
+.qgauge i{flex:1;height:6px;border-radius:4px;background:var(--sky)}
+.qband p{font-size:14.5px;color:rgba(255,255,255,.82);flex:1;min-width:260px}
+.qband p b{font-weight:700;color:#fff}
+.qband .feat-link{white-space:nowrap;color:#fff}
+.qband .feat-link svg{color:var(--sky)}
+.qband .feat-link:hover{color:var(--sky)}
 
 /* Hauteur commune des heros : le hero du hub prend la hauteur du hero métier ; la fenêtre garde son débord de 120 px
    sur la section suivante, avec un fondu en bas quand le tableau de bord est plus long que l'espace disponible */
