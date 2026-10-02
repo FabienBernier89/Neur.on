@@ -1,0 +1,2058 @@
+[
+ {
+  "fr": "Neur.on",
+  "en": "Neur.on",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Corrext",
+  "en": "Corrext",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "LexMachina",
+  "en": "LexMachina",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "CHnell",
+  "en": "CHnell",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Fast lookup CHnell",
+  "en": "Fast lookup CHnell",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Highly sensitive content",
+  "en": "Highly sensitive content",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "Infomaniak",
+  "en": "Infomaniak",
+  "source": "nom de produit ou de fournisseur, jamais traduit",
+  "type": "produit"
+ },
+ {
+  "fr": "intérêt moratoire",
+  "en": "default interest",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 104 : « default interest » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "prescription",
+  "en": "prescription",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 127 et titre « G. Prescription » : « All claims prescribe after ten years » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Fedlex garde « prescription », terme civiliste. Le droit anglais dit « limitation » (« limitation period ») : glose possible, jamais à la place du terme."
+ },
+ {
+  "fr": "dommages-intérêts",
+  "en": "damages",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 107 : « claim damages for non-performance » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.5 : « damages » est la somme allouée, « damage » le préjudice subi. L'art. 97 CO (base de la fiche) dit « make amends for the resulting damage »."
+ },
+ {
+  "fr": "clause pénale",
+  "en": "contractual penalty",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 160, titre « C. Contractual penalty » : « Contractual penalty » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "« Liquidated damages » et « penalty clause » relèvent de la common law : ne pas les employer pour la Konventionalstrafe."
+ },
+ {
+  "fr": "cautionnement",
+  "en": "contract of surety",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 492 : « Under a contract of surety, the surety undertakes » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Ne pas confondre avec « guarantee » : l'art. 111 CO (« Guarantee of performance by third party ») est une autre figure."
+ },
+ {
+  "fr": "cession de créance",
+  "en": "assignment of claims",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), titre « A. Assignment of claims » (art. 164 ss) : « Assignment of claims » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "La fiche écrit « assignment of a claim » : même terme au singulier.",
+  "variantes": [
+   "assignment of a claim"
+  ]
+ },
+ {
+  "fr": "prohibition de faire concurrence",
+  "en": "prohibition of competition",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 340, titre « VII. Prohibition of competition » : « The prohibition of competition is binding only where » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Usage courant des contrats en anglais : « non-compete clause ». Glose possible ; dans les tableaux, la forme Fedlex."
+ },
+ {
+  "fr": "heures de travail supplémentaires",
+  "en": "overtime",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 321c, titre « IV. Overtime » : « the employee is obliged to perform such overtime » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "société anonyme",
+  "en": "company limited by shares",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 620 : « The company limited by shares is a company in which » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Ni « public limited company » (plc, droit anglais) ni « corporation » (usage américain). La forme « AG / SA » peut suivre entre parenthèses."
+ },
+ {
+  "fr": "assemblée générale",
+  "en": "general meeting",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 698 : « The supreme governing body of a company limited by shares is the general meeting » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "conseil d'administration",
+  "en": "board of directors",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 707 : « The company's board of directors comprises one or more members » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "organe de révision",
+  "en": "external auditor",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 727 et titre « C. External Auditors » : « reviewed by an external auditor in an ordinary audit » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "ÉCART : la fiche glossaire.json et les tableaux de domaines.json et paires.json écrivent « auditor ». Fedlex dit « external auditor(s) » : à aligner ou à assumer."
+ },
+ {
+  "fr": "registre du commerce",
+  "en": "commercial register",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 927 : « The commercial register is a network of state-run databases » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « Companies House » ni « register of companies » (institutions britanniques)."
+ },
+ {
+  "fr": "poursuite",
+  "en": "debt enforcement",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), art. 38 : « Debt enforcement is an enforcement procedure carried out to secure the payment of money » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Notion propre au droit suisse : ajouter « (Betreibung) » à la première mention d'une page. Fedlex n'est pas cohérent : l'art. 97 CO en anglais cite la LP comme « Federal Act … on Debt Collection and Bankruptcy ». Retenir « debt enforcement » et DEBA."
+ },
+ {
+  "fr": "commandement de payer",
+  "en": "summons for payment",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), art. 69, titre « A. Summons for payment » : « the debt enforcement office shall issue a summons for payment » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Ne pas confondre avec l'« European order for payment » (procédure européenne d'injonction de payer)."
+ },
+ {
+  "fr": "opposition",
+  "en": "objection",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), art. 74, titre « C. Objection » : « If the debtor wishes to object to the summons for payment » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Opposition au commandement de payer uniquement (« objection to the summons for payment »). « Objection » traduit aussi la Beschwerde du CPC (Legal Style Guide §3.4.2) : préciser le contexte."
+ },
+ {
+  "fr": "faillite",
+  "en": "bankruptcy",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), art. 197 : « at the time that bankruptcy is declared » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Vise aussi les débiteurs inscrits au registre du commerce (DEBA art. 39) : ne pas remplacer par « insolvency », « liquidation » ou « winding-up »."
+ },
+ {
+  "fr": "séquestre",
+  "en": "attachment",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), art. 271, titre « A. Grounds for attachment » : « The creditor may request that assets of a debtor that are located in Switzerland be attached » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "« Sequestration » a un autre sens dans plusieurs droits anglophones : ne pas l'employer. « Freezing order » (droit anglais) n'est pas un équivalent."
+ },
+ {
+  "fr": "secret bancaire",
+  "en": "banking secrecy",
+  "source": "aucune traduction anglaise de la LB dans Fedlex (expressions ENG vides, vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "glossaire",
+  "note": "Terme d'usage. L'art. 47 LB vise le secret professionnel du banquier ; Fedlex rend « Berufsgeheimnis » par « professional secrecy » (LBA) ou « professional confidentiality » (CP art. 321). Variante d'usage : « bank client confidentiality »."
+ },
+ {
+  "fr": "blanchiment d'argent",
+  "en": "money laundering",
+  "source": "Fedlex, traduction anglaise (SCC, sans force légale), art. 305bis, titre « Money laundering » : « Money laundering » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "prospectus",
+  "en": "prospectus",
+  "source": "Fedlex, traduction anglaise (FinSA, sans force légale), art. 35 : « must first publish a prospectus » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "tribunal arbitral",
+  "en": "arbitral tribunal",
+  "source": "Fedlex, traduction anglaise (PILA, sans force légale), art. 176 : « arbitral tribunals that have their seat in Switzerland » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.2 : « arbitral tribunal », jamais « arbitration court »."
+ },
+ {
+  "fr": "recours",
+  "en": "appeal",
+  "source": "aucune traduction anglaise de la LTF dans Fedlex (vérifié le 2026-10-02) ; DEBA art. 19 en anglais : « An appeal to the Federal Supreme Court is governed by the Federal Supreme Court Act » ; Legal Style Guide §3.4.2",
+  "type": "glossaire",
+  "note": "Recours au Tribunal fédéral et recours en général : « appeal ». Le CPC en anglais rend la Beschwerde par « objection » ; ne jamais écrire « complaint » (Legal Style Guide §3.4.2)."
+ },
+ {
+  "fr": "ordonnance pénale",
+  "en": "summary penalty order",
+  "source": "Fedlex, traduction anglaise (CrimPC, sans force légale), art. 352 : « the public prosecutor shall issue a summary penalty order » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.4.3 : « summary penalty order procedure » pour la procédure."
+ },
+ {
+  "fr": "détention provisoire",
+  "en": "remand",
+  "source": "Fedlex, traduction anglaise (CrimPC, sans force légale), art. 220 : « Remand begins when it is ordered by the compulsory measures court » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "La fiche écrit « remand (pre-trial detention) » : glose utile, terme « remand ». Fedlex distingue « preventive detention » (Sicherheitshaft, art. 220 al. 2).",
+  "variantes": [
+   "pre-trial detention"
+  ]
+ },
+ {
+  "fr": "impôt anticipé",
+  "en": "withholding tax",
+  "source": "aucune traduction anglaise de la LIA dans Fedlex (vérifié le 2026-10-02) ; Fedlex, Cst. en anglais, art. 132 : « Stamp duty and withholding tax »",
+  "type": "glossaire"
+ },
+ {
+  "fr": "taxe sur la valeur ajoutée",
+  "en": "value added tax",
+  "source": "Fedlex, traduction anglaise (VAT Act, sans force légale), art. 1 : « (Value Added Tax) » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Abréviation courante : VAT."
+ },
+ {
+  "fr": "décision",
+  "en": "ruling",
+  "source": "Fedlex, traduction anglaise (APA, sans force légale), art. 5, titre « I. Rulings » : « Rulings are decisions of the authorities in individual cases » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Décision administrative (art. 5 PA) uniquement. Une décision de justice : « decision » ou « judgment »."
+ },
+ {
+  "fr": "données personnelles",
+  "en": "personal data",
+  "source": "Fedlex, traduction anglaise (FADP, sans force légale), art. 5 : « personal data means any information relating to an identified or identifiable natural person » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "contrat d'assurance",
+  "en": "insurance contract",
+  "source": "aucune traduction anglaise de la LCA dans Fedlex (vérifié le 2026-10-02) ; Fedlex, PILA en anglais : « the law applicable to the insurance contract »",
+  "type": "glossaire"
+ },
+ {
+  "fr": "résiliation",
+  "en": "termination",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 335 : « may be terminated by either party » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.4.4 : « terminate » pour kündigen / résilier ; jamais « cancel » ni « rescind »."
+ },
+ {
+  "fr": "résiliation immédiate",
+  "en": "termination with immediate effect",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 337, titre « IV. Termination with immediate effect » : « terminate the employment relationship with immediate effect at any time for good cause » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.4.4 : « termination for good cause » pour la résiliation pour justes motifs."
+ },
+ {
+  "fr": "contrat de travail",
+  "en": "employment contract",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 319 : « By means of an individual employment contract » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "bail à loyer",
+  "en": "lease",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 253 : « Leases are contracts in which a landlord or lessor grants a tenant or lessee » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "demeure du débiteur",
+  "en": "default of obligor",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), titre « B. Default of obligor » (art. 102) : « the obligor is in default as soon as he receives a formal reminder » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "La fiche écrit « default of the obligor » : même terme, avec article.",
+  "variantes": [
+   "default of the obligor"
+  ]
+ },
+ {
+  "fr": "garantie",
+  "en": "warranty",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 197, titre « III. Warranty of quality and fitness » : « breach of warranty of quality » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Garantie des défauts (art. 197 CO) uniquement. Legal Style Guide §3.4.4 : « warranty » et « guarantee » ne sont pas synonymes."
+ },
+ {
+  "fr": "avis au vendeur",
+  "en": "notice of defects",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 201, titre « 4. Notice of defects » : « Notice of defects » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "avis des défauts",
+  "en": "notice of defects",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 201, titre « 4. Notice of defects » : « Notice of defects » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "pouvoirs",
+  "en": "authority",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 33, titre « b. Scope of authority » : « Where such authority is conferred by means of the transaction itself » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Pouvoirs de représentation (art. 32 à 34 CO)."
+ },
+ {
+  "fr": "procuration",
+  "en": "power of attorney",
+  "source": "Fedlex, traduction anglaise (CPC, sans force légale), art. 221 al. 2 : « a power of attorney » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Le CO (art. 32 à 34) parle d'« authority ». Legal Style Guide §3.3 : au Royaume-Uni, un « attorney » est le titulaire d'une procuration, pas un avocat."
+ },
+ {
+  "fr": "société à responsabilité limitée",
+  "en": "limited liability company",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 772 : « A limited liability company is a company with separate legal personality » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « Ltd » ni « private limited company » (formes britanniques)."
+ },
+ {
+  "fr": "statuts",
+  "en": "articles of association",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 626 : « The articles of association must contain provisions concerning » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.1 : jamais « statutes »."
+ },
+ {
+  "fr": "capital-actions",
+  "en": "share capital",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 621 : « The share capital amounts to at least 100,000 francs » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "registre foncier",
+  "en": "land register",
+  "source": "Fedlex, traduction anglaise (CC, sans force légale), art. 942 : « The land register is kept as a record of property rights » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "réserve",
+  "en": "statutory entitlement",
+  "source": "Fedlex, traduction anglaise (CC, sans force légale), art. 470 et 471, titre « II. Statutory entitlement » : « The statutory entitlement is one-half of the statutory succession rights » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Réserve héréditaire uniquement. « Forced heirship » est l'expression comparatiste courante : glose possible, pas comme terme."
+ },
+ {
+  "fr": "exécuteur testamentaire",
+  "en": "executor",
+  "source": "Fedlex, traduction anglaise (CC, sans force légale), art. 517 et 518, titre « A. Appointment of executors » : « Appointment of executors » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "mainlevée",
+  "en": "setting aside of the objection",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), art. 80 et 82 : « setting aside the objection definitively / provisionally » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "La fiche écrit « setting aside of an objection » : même terme.",
+  "variantes": [
+   "setting aside of an objection"
+  ]
+ },
+ {
+  "fr": "sursis concordataire",
+  "en": "composition moratorium",
+  "source": "Fedlex, traduction anglaise (DEBA, sans force légale), titre onzième, « I. Composition Moratorium » (art. 293 ss) : « Composition Moratorium » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "ÉCART : la fiche glossaire.json écrit « debt restructuring moratorium ». Forme Fedlex à préférer ; « restructuring » peut figurer dans la définition."
+ },
+ {
+  "fr": "mesures provisionnelles",
+  "en": "interim measures",
+  "source": "Fedlex, traduction anglaise (CPC, sans force légale), art. 261 : « The court shall order the interim measures required » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "Tribunal fédéral",
+  "en": "Federal Supreme Court",
+  "source": "Fedlex, traduction anglaise (Cst., sans force légale), art. 188 : « The Federal Supreme Court is the supreme judicial authority of the Confederation » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Legal Style Guide §3.2 et General Style Guide §21. Jamais « Federal Court » seul."
+ },
+ {
+  "fr": "ayant droit économique",
+  "en": "beneficial owner",
+  "source": "Fedlex, traduction anglaise (AMLA, sans force légale), art. 4 : « Establishing the identity of the beneficial owner » (vérifié le 2026-10-02)",
+  "type": "glossaire"
+ },
+ {
+  "fr": "obligations de diligence",
+  "en": "due diligence obligations",
+  "source": "Fedlex, traduction anglaise (AMLA, sans force légale), chapitre 2, section 1 : « Financial Intermediaries Duty of Due Diligence » (art. 3 à 8) ; Legal Style Guide §3.5 : « due diligence obligations » (vérifié le 2026-10-02)",
+  "type": "glossaire",
+  "note": "Jamais « duty of care » (notion du droit de la négligence, Legal Style Guide §3.5)."
+ },
+ {
+  "fr": "soustraction d'impôt",
+  "en": "tax evasion",
+  "source": "aucune traduction anglaise de la LIFD dans Fedlex (vérifié le 2026-10-02) ; Fedlex, VAT Act en anglais, art. 96 : « tax evasion »",
+  "type": "glossaire",
+  "note": "Le Legal Style Guide (§3.4.3) rappelle que certains comportements qualifiés de « tax evasion » au Royaume-Uni ne sont pas des infractions pénales en Suisse. Jamais « tax fraud » (Steuerbetrug, notion distincte)."
+ },
+ {
+  "fr": "impôt à la source",
+  "en": "tax at source",
+  "source": "aucune traduction anglaise de la LIFD dans Fedlex (vérifié le 2026-10-02) ; terme absent du corpus anglais consulté ; traduction maison à valider",
+  "type": "glossaire",
+  "note": "Jamais « withholding tax », réservé à l'impôt anticipé."
+ },
+ {
+  "fr": "erreur essentielle",
+  "en": "fundamental error",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 23 : « A party labouring under a fundamental error » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "garantie en raison des défauts",
+  "en": "warranty of quality and fitness",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 197, titre « III. Warranty of quality and fitness » : « Warranty of quality and fitness » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "fusion",
+  "en": "merger",
+  "source": "aucune traduction anglaise de la LFus dans Fedlex (vérifié le 2026-10-02) ; Fedlex, PILA en anglais, titre « VI. Transfer, merger, demerger and transfer of assets and liabilities »",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrat de fusion",
+  "en": "merger agreement",
+  "source": "aucune traduction anglaise de la LFus (vérifié le 2026-10-02) ; Fedlex, PILA en anglais, art. 163c : « Merger agreement »",
+  "type": "tableau"
+ },
+ {
+  "fr": "décision de fusion",
+  "en": "merger resolution",
+  "source": "aucune traduction anglaise de la LFus dans Fedlex (vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "tableau"
+ },
+ {
+  "fr": "scission",
+  "en": "demerger",
+  "source": "aucune traduction anglaise de la LFus (vérifié le 2026-10-02) ; Fedlex, PILA en anglais, art. 163d : « Demerger and transfer of assets and liabilities »",
+  "type": "tableau"
+ },
+ {
+  "fr": "transformation",
+  "en": "conversion",
+  "source": "aucune traduction anglaise de la LFus dans Fedlex (vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "tableau",
+  "note": "Variante possible : « change of legal form »."
+ },
+ {
+  "fr": "transfert de patrimoine",
+  "en": "transfer of assets and liabilities",
+  "source": "aucune traduction anglaise de la LFus (vérifié le 2026-10-02) ; Fedlex, PILA en anglais, art. 163d : « transfer of assets and liabilities »",
+  "type": "tableau"
+ },
+ {
+  "fr": "augmentation du capital",
+  "en": "capital increase",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 650, titre « I. Ordinary capital increase » : « an ordinary increase in share capital » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "concentration d'entreprises",
+  "en": "concentration of undertakings",
+  "source": "Fedlex, traduction anglaise (CartA, sans force légale), art. 4 al. 3 : « Concentration of undertakings are » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "sentence arbitrale",
+  "en": "arbitral award",
+  "source": "Fedlex, traduction anglaise (PILA, sans force légale), art. 189 : « The arbitral award shall be rendered » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "reconnaissance et exécution",
+  "en": "recognition and enforcement",
+  "source": "Fedlex, traduction anglaise (PILA, sans force légale), art. 194 : « The recognition and enforcement of foreign arbitral awards » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Legal Style Guide §3.4.2 : « enforcement », pas « execution »."
+ },
+ {
+  "fr": "conclusions",
+  "en": "prayers for relief",
+  "source": "Fedlex, traduction anglaise (CPC, sans force légale), art. 221 : « the prayers for relief » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Conclusions d'une partie (art. 221 CPC) uniquement."
+ },
+ {
+  "fr": "réponse",
+  "en": "statement of defence",
+  "source": "Fedlex, traduction anglaise (CPC, sans force légale), art. 222 : « Statement of defence » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Réponse à la demande (art. 222 CPC) uniquement. Orthographe britannique « defence »."
+ },
+ {
+  "fr": "appel",
+  "en": "appeal",
+  "source": "Fedlex, traduction anglaise (CPC, sans force légale), art. 308 : « An appeal is admissible against » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "recours en matière civile",
+  "en": "appeal in civil matters",
+  "source": "aucune traduction anglaise de la LTF dans Fedlex (vérifié le 2026-10-02) ; terme absent du corpus anglais consulté ; traduction maison à valider",
+  "type": "tableau"
+ },
+ {
+  "fr": "fonds propres",
+  "en": "own funds",
+  "source": "aucune traduction anglaise de la LB dans Fedlex (vérifié le 2026-10-02) ; Fedlex, FINMASA en anglais : « the own funds and risk diversification regulations »",
+  "type": "tableau"
+ },
+ {
+  "fr": "prêt de consommation",
+  "en": "fixed-term loan",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 312 : « A fixed-term loan is a contract whereby the lender undertakes » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Fedlex ne calque pas « loan for consumption » : garder « fixed-term loan »."
+ },
+ {
+  "fr": "papiers-valeurs",
+  "en": "negotiable securities",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 965, titre « A. Definition of negotiable security » : « A negotiable security is any instrument » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "ÉCART : le tableau de domaines.json (banque-finance) écrit « securities ». « Securities » seul désigne les valeurs mobilières (Effekten, LSFin)."
+ },
+ {
+  "fr": "placements collectifs de capitaux",
+  "en": "collective investment schemes",
+  "source": "Fedlex, traduction anglaise (CISA, sans force légale), art. 7 : « Collective investment schemes are assets raised from investors » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "intermédiaire financier",
+  "en": "financial intermediary",
+  "source": "Fedlex, traduction anglaise (AMLA, sans force légale), art. 2 : « Financial intermediaries are » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "obligation de communiquer",
+  "en": "duty to report",
+  "source": "Fedlex, traduction anglaise (AMLA, sans force légale), art. 9 : « Duty to report » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "autorisation",
+  "en": "licence",
+  "source": "aucune traduction anglaise de la LB dans Fedlex (vérifié le 2026-10-02) ; Fedlex, FINMASA en anglais, art. 37 : « Revocation of licence »",
+  "type": "tableau",
+  "note": "Autorisation d'exercer de la FINMA uniquement. Orthographe britannique : le nom « licence », le verbe « license »."
+ },
+ {
+  "fr": "surveillance des marchés financiers",
+  "en": "financial market supervision",
+  "source": "Fedlex, traduction anglaise (FINMASA, sans force légale), titre court : « Financial Market Supervision Act » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "rapport de gestion",
+  "en": "annual report",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 958 : « The accounts are filed in the annual report » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "comptes annuels",
+  "en": "annual accounts",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 958 : « the annual accounts (the financial statements of the individual entity) » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "bilan",
+  "en": "balance sheet",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 959 : « The balance sheet shows the asset and financing position » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "compte de résultat",
+  "en": "profit and loss account",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 959b : « The profit and loss account shall present the earnings » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "annexe",
+  "en": "notes to the accounts",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 959c, titre « C. Notes to the accounts » : « Notes to the accounts » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Annexe des comptes annuels uniquement. Legal Style Guide §3.4.4 : « notes to the financial statements » en contexte financier."
+ },
+ {
+  "fr": "comptes consolidés",
+  "en": "consolidated accounts",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 963 : « consolidated annual accounts (consolidated accounts) » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrôle ordinaire",
+  "en": "ordinary audit",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 727 : « in an ordinary audit » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrôle restreint",
+  "en": "limited audit",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 727a, titre « 2. Limited audit » : « in a limited audit » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "impôt fédéral direct",
+  "en": "direct federal tax",
+  "source": "aucune traduction anglaise de la LIFD (vérifié le 2026-10-02) ; Fedlex, Cst. en anglais, disposition transitoire de l'art. 128 : « the direct federal tax »",
+  "type": "tableau"
+ },
+ {
+  "fr": "assujettissement à l'impôt",
+  "en": "tax liability",
+  "source": "aucune traduction anglaise de la LIFD (vérifié le 2026-10-02) ; Fedlex, Cst. en anglais, art. 129 : « tax liability »",
+  "type": "tableau"
+ },
+ {
+  "fr": "revenu imposable",
+  "en": "taxable income",
+  "source": "aucune traduction anglaise de la LIFD dans Fedlex (vérifié le 2026-10-02) ; terme absent du corpus anglais consulté ; traduction maison à valider",
+  "type": "tableau"
+ },
+ {
+  "fr": "impôt sur le bénéfice",
+  "en": "profit tax",
+  "source": "aucune traduction anglaise de la LIFD (vérifié le 2026-10-02) ; Fedlex, Cst. en anglais : « profit tax » (art. 128 : « the net profit of legal entities »)",
+  "type": "tableau"
+ },
+ {
+  "fr": "impôt sur le capital",
+  "en": "capital tax",
+  "source": "aucune traduction anglaise de la LHID dans Fedlex (vérifié le 2026-10-02) ; terme absent du corpus anglais consulté ; traduction maison à valider",
+  "type": "tableau"
+ },
+ {
+  "fr": "preneur d'assurance",
+  "en": "policyholder",
+  "source": "aucune traduction anglaise de la LCA dans Fedlex (vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "tableau"
+ },
+ {
+  "fr": "conditions générales d'assurance",
+  "en": "general insurance conditions",
+  "source": "aucune traduction anglaise de la LCA dans Fedlex (vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "tableau",
+  "note": "Legal Style Guide §3.4.4 : « General Terms and Conditions » pour les conditions générales ; variante : « general terms and conditions of insurance »."
+ },
+ {
+  "fr": "réticence",
+  "en": "breach of the duty of disclosure",
+  "source": "aucune traduction anglaise de la LCA dans Fedlex (vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "tableau"
+ },
+ {
+  "fr": "prime",
+  "en": "premium",
+  "source": "aucune traduction anglaise de la LCA (vérifié le 2026-10-02) ; Fedlex, FINMASA en anglais : « premium income »",
+  "type": "tableau",
+  "note": "Prime d'assurance uniquement."
+ },
+ {
+  "fr": "sinistre",
+  "en": "insured event",
+  "source": "aucune traduction anglaise de la LCA dans Fedlex (vérifié le 2026-10-02) ; traduction maison à valider",
+  "type": "tableau",
+  "note": "Terme d'usage : l'art. 38 LCA parle de l'« événement redouté »."
+ },
+ {
+  "fr": "réassurance",
+  "en": "reinsurance",
+  "source": "aucune traduction anglaise de la LSA (vérifié le 2026-10-02) ; Fedlex, VAT Act en anglais, art. 21 : « insurance and reinsurance supplies »",
+  "type": "tableau"
+ },
+ {
+  "fr": "invention",
+  "en": "invention",
+  "source": "Fedlex, traduction anglaise (PatA, sans force légale), art. 1 : « Patents for inventions are granted for new inventions » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "brevet",
+  "en": "patent",
+  "source": "Fedlex, traduction anglaise (PatA, sans force légale), art. 1 : « Patents for inventions are granted » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "marque",
+  "en": "trade mark",
+  "source": "Fedlex, traduction anglaise (TmPA, sans force légale), art. 1 : « A trade mark is a sign » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Orthographe britannique en deux mots, comme Fedlex ; « trademark » est américain."
+ },
+ {
+  "fr": "indication de provenance",
+  "en": "indication of source",
+  "source": "Fedlex, traduction anglaise (TmPA, sans force légale), art. 47 : « Indications of source are direct or indirect references » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "droit d'auteur",
+  "en": "copyright",
+  "source": "Fedlex, traduction anglaise (CopA, sans force légale), titre : « Federal Act on Copyright and Related Rights » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "œuvre",
+  "en": "work",
+  "source": "Fedlex, traduction anglaise (CopA, sans force légale), art. 2 : « Works are literary and artistic intellectual creations » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "design",
+  "en": "design",
+  "source": "Fedlex, traduction anglaise (DesA, sans force légale), art. 1 : « This Act protects the design of products » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "secret commercial",
+  "en": "trade secret",
+  "source": "Fedlex, traduction anglaise (SCC, sans force légale), art. 162 : « Any person who betrays a manufacturing or trade secret » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "contrat individuel de travail",
+  "en": "individual employment contract",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 319 : « By means of an individual employment contract » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "certificat",
+  "en": "reference",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 330a, titre « 2. Reference » : « request from the employer a reference » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Certificat de travail uniquement ; jamais « work certificate »."
+ },
+ {
+  "fr": "congé",
+  "en": "termination",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 335 : « The party giving notice of termination » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Même terme anglais que « résiliation » (glossaire) : le FR emploie les deux."
+ },
+ {
+  "fr": "résiliation abusive",
+  "en": "wrongful termination",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 336, titre « 1. Wrongful termination » : « Notice of termination is unlawful where given » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "« Unfair dismissal » est une notion du droit anglais du travail : ne pas l'employer."
+ },
+ {
+  "fr": "convention collective de travail",
+  "en": "collective employment contract",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 356 : « A collective employment contract is a contract whereby employers » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "« Collective bargaining agreement » est l'usage américain : ne pas l'employer."
+ },
+ {
+  "fr": "prévenu",
+  "en": "accused",
+  "source": "Fedlex, traduction anglaise (CrimPC, sans force légale), art. 111 : « the accused is a person suspected, accused of or charged with an offence » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Le tableau écrit « accused person » : même terme. Legal Style Guide §3.4.3 : « suspect » avant l'inculpation, « accused » ensuite.",
+  "variantes": [
+   "accused person"
+  ]
+ },
+ {
+  "fr": "ministère public",
+  "en": "public prosecutor",
+  "source": "Fedlex, traduction anglaise (CrimPC, sans force légale), art. 12 : « the public prosecutor » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Legal Style Guide §3.4.3 : « cantonal prosecutor's office » ; le Ministère public de la Confédération est l'« Office of the Attorney General of Switzerland »."
+ },
+ {
+  "fr": "ordonnance de classement",
+  "en": "ruling abandoning proceedings",
+  "source": "Fedlex, traduction anglaise (CrimPC, sans force légale), art. 320 : « Ruling abandoning proceedings » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "acte d'accusation",
+  "en": "indictment",
+  "source": "Fedlex, traduction anglaise (CrimPC, sans force légale), art. 325 : « Content of the indictment » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "escroquerie",
+  "en": "fraud",
+  "source": "Fedlex, traduction anglaise (SCC, sans force légale), art. 146, titre « Fraud » : « Fraud » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "gestion déloyale",
+  "en": "criminal mismanagement",
+  "source": "Fedlex, traduction anglaise (SCC, sans force légale), art. 158, titre « Criminal mismanagement » : « Criminal mismanagement » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "compétence",
+  "en": "jurisdiction",
+  "source": "Fedlex, traduction anglaise (CPC, sans force légale), titre 2 « Jurisdiction of the Courts and Recusal » : « Jurisdiction of the Courts and Recusal » (vérifié le 2026-10-02)",
+  "type": "tableau",
+  "note": "Compétence d'un tribunal uniquement. Legal Style Guide §3.5 : « authority » ou « powers » pour une autorité administrative."
+ },
+ {
+  "fr": "solidarité passive",
+  "en": "joint and several liability",
+  "source": "Fedlex, traduction anglaise (CO, sans force légale), art. 143, titre « A. Joint and several debtors » : « Debtors become jointly and severally liable » (vérifié le 2026-10-02)",
+  "type": "tableau"
+ },
+ {
+  "fr": "CC",
+  "en": "CC",
+  "source": "Fedlex, eli/cc/24/233_245_233, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code civil",
+  "en": "Swiss Civil Code",
+  "source": "Fedlex, eli/cc/24/233_245_233, titre ENG : « Swiss Civil Code of 10 December 1907 »",
+  "type": "loi"
+ },
+ {
+  "fr": "CO",
+  "en": "CO",
+  "source": "Fedlex, eli/cc/27/317_321_377, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code des obligations",
+  "en": "Code of Obligations",
+  "source": "Fedlex, eli/cc/27/317_321_377, titre ENG : « Federal Act of 30 March 1911 on the Amendment of the Swiss Civil Code (Part Five: The Code of Obligations) »",
+  "type": "loi"
+ },
+ {
+  "fr": "CP",
+  "en": "SCC",
+  "source": "Fedlex, eli/cc/54/757_781_799, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code pénal suisse",
+  "en": "Swiss Criminal Code",
+  "source": "Fedlex, eli/cc/54/757_781_799, titre ENG : « Swiss Criminal Code of 21 December 1937 »",
+  "type": "loi"
+ },
+ {
+  "fr": "CPC",
+  "en": "CPC",
+  "source": "Fedlex, eli/cc/2010/262, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code de procédure civile",
+  "en": "Civil Procedure Code",
+  "source": "Fedlex, eli/cc/2010/262, titre ENG : « Swiss Civil Procedure Code of 19 December 2008 (Civil Procedure Code, CPC) »",
+  "type": "loi"
+ },
+ {
+  "fr": "CPP",
+  "en": "CrimPC",
+  "source": "Fedlex, eli/cc/2010/267, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code de procédure pénale suisse",
+  "en": "Criminal Procedure Code",
+  "source": "Fedlex, eli/cc/2010/267, titre ENG : « Swiss Criminal Procedure Code of 5 October 2007 (Criminal Procedure Code, CrimPC) »",
+  "type": "loi"
+ },
+ {
+  "fr": "EIMP",
+  "en": "IMAC",
+  "source": "Fedlex, eli/cc/1982/846_846_846, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur l'entraide internationale en matière pénale",
+  "en": "Mutual Assistance Act",
+  "source": "Fedlex, eli/cc/1982/846_846_846, titre ENG : « Federal Act of 20 March 1981 on International Mutual Assistance in Criminal Matters (Mutual Assistance Act, IMAC) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LB",
+  "en": "BankA",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, AMLA en anglais, art. 2 al. 2 : « Banking Act of 8 November 1934 (BankA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur les banques et les caisses d'épargne",
+  "en": "Banking Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, AMLA en anglais, art. 2 al. 2 : « Banking Act of 8 November 1934 (BankA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LBA",
+  "en": "AMLA",
+  "source": "Fedlex, eli/cc/1998/892_892_892, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur le blanchiment d'argent",
+  "en": "Anti-Money Laundering Act",
+  "source": "Fedlex, eli/cc/1998/892_892_892, titre ENG : « Federal Act of 10 October 1997 on Combating Money Laundering and Terrorist Financing (Anti-Money Laundering Act, AMLA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LBI",
+  "en": "PatA",
+  "source": "Fedlex, eli/cc/1955/871_893_899, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les brevets",
+  "en": "Patents Act",
+  "source": "Fedlex, eli/cc/1955/871_893_899, titre ENG : « Federal Act of 25 June 1954 on Patents for Inventions (Patents Act, PatA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LCA",
+  "en": "Federal Act on Contracts of Insurance",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, FINMASA en anglais, art. 1 : « Federal Act on Contracts of Insurance of 2 April 1908 »",
+  "type": "loi",
+  "note": "Les notes du CO en anglais disent « Insurance Contracts Act » : Fedlex n'est pas cohérent. Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "loi fédérale sur le contrat d'assurance",
+  "en": "Federal Act on Contracts of Insurance",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, FINMASA en anglais, art. 1 : « Federal Act on Contracts of Insurance of 2 April 1908 »",
+  "type": "loi"
+ },
+ {
+  "fr": "LCart",
+  "en": "CartA",
+  "source": "Fedlex, eli/cc/1996/546_546_546, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les cartels",
+  "en": "Cartel Act",
+  "source": "Fedlex, eli/cc/1996/546_546_546, titre ENG : « Federal Act of 6 October 1995 on Cartels and other Restraints of Competition (Cartel Act, CartA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LDA",
+  "en": "CopA",
+  "source": "Fedlex, eli/cc/1993/1798_1798_1798, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur le droit d'auteur",
+  "en": "Copyright Act",
+  "source": "Fedlex, eli/cc/1993/1798_1798_1798, titre ENG : « Federal Act of 9 October 1992 on Copyright and Related Rights (Copyright Act, CopA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LDIP",
+  "en": "PILA",
+  "source": "Fedlex, eli/cc/1988/1776_1776_1776, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Pas de titre court en anglais. Le Legal Style Guide (§3.4.1) préfère « international private law » pour la matière ; le titre Fedlex dit « Private International Law » : garder le titre Fedlex pour la loi."
+ },
+ {
+  "fr": "loi fédérale sur le droit international privé",
+  "en": "Federal Act on Private International Law",
+  "source": "Fedlex, eli/cc/1988/1776_1776_1776, titre ENG : « Federal Act on Private International Law (PILA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LDes",
+  "en": "DesA",
+  "source": "Fedlex, eli/cc/2002/226, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les designs",
+  "en": "Designs Act",
+  "source": "Fedlex, eli/cc/2002/226, titre ENG : « Federal Act of 5 October 2001 on the Protection of Designs (Designs Act, DesA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LEI",
+  "en": "FNIA",
+  "source": "Fedlex, eli/cc/2007/758, titre de la consolidation ENG du 1er février 2026 (« Foreign Nationals and Integration Act, FNIA ») ; jolux:titleShort de l'acte : « FNA » (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Retenir FNIA, abréviation du titre en vigueur."
+ },
+ {
+  "fr": "loi fédérale sur les étrangers et l'intégration",
+  "en": "Foreign Nationals and Integration Act",
+  "source": "Fedlex, eli/cc/2007/758, titre ENG : « Federal Act on Foreign Nationals and Integration (Foreign Nationals and Integration Act, FNIA) of 16 December 2005 »",
+  "type": "loi"
+ },
+ {
+  "fr": "LFINMA",
+  "en": "FINMASA",
+  "source": "Fedlex, eli/cc/2008/736, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la surveillance des marchés financiers",
+  "en": "Financial Market Supervision Act",
+  "source": "Fedlex, eli/cc/2008/736, titre ENG : « Federal Act of 22 June 2007 on the Swiss Financial Market Supervisory Authority (Financial Market Supervision Act, FINMASA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LFus",
+  "en": "Mergers Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, notes du CO en anglais : « Mergers Act of 3 Oct. 2003 »",
+  "type": "loi",
+  "note": "Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "loi sur la fusion",
+  "en": "Mergers Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, notes du CO en anglais : « Mergers Act of 3 Oct. 2003 »",
+  "type": "loi"
+ },
+ {
+  "fr": "LHID",
+  "en": "Federal Act on the Harmonisation of Direct Taxes of the Cantons and Communes",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; traduction maison à valider ; Fedlex, SCC en anglais, art. 305bis, écrit « Federal Act of 14 December 1990 on the Harmonisation of Direct Federal Taxation at Cantonal and Communal Levels »",
+  "type": "loi",
+  "note": "La forme de l'art. 305bis CP en anglais s'écarte du titre allemand (« direkte Steuern der Kantone und Gemeinden ») : à trancher par un traducteur expert. Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "loi sur l'harmonisation des impôts directs",
+  "en": "Federal Act on the Harmonisation of Direct Taxes of the Cantons and Communes",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; traduction maison à valider ; Fedlex, SCC en anglais, art. 305bis, écrit « Federal Act of 14 December 1990 on the Harmonisation of Direct Federal Taxation at Cantonal and Communal Levels »",
+  "type": "loi"
+ },
+ {
+  "fr": "LIA",
+  "en": "Federal Act on Withholding Tax",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; traduction maison à valider ; Fedlex, Cst. en anglais, art. 132 : « withholding tax »",
+  "type": "loi",
+  "note": "Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "loi fédérale sur l'impôt anticipé",
+  "en": "Federal Act on Withholding Tax",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; traduction maison à valider ; Fedlex, Cst. en anglais, art. 132 : « withholding tax »",
+  "type": "loi"
+ },
+ {
+  "fr": "LIFD",
+  "en": "DFTA",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, VAT Act en anglais : « Federal Act of 14 December 1990 on Direct Federal Taxation (DFTA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur l'impôt fédéral direct",
+  "en": "Federal Act on Direct Federal Taxation",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, VAT Act en anglais : « Federal Act of 14 December 1990 on Direct Federal Taxation (DFTA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LP",
+  "en": "DEBA",
+  "source": "Fedlex, eli/cc/11/529_488_529, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Pas de titre court en anglais : « Debt Enforcement and Bankruptcy Act » n'est pas la forme Fedlex."
+ },
+ {
+  "fr": "loi fédérale sur la poursuite pour dettes et la faillite",
+  "en": "Federal Act on Debt Enforcement and Bankruptcy",
+  "source": "Fedlex, eli/cc/11/529_488_529, titre ENG : « Federal Act of 11 April 1889 on Debt Enforcement and Bankruptcy (DEBA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LPCC",
+  "en": "CISA",
+  "source": "Fedlex, eli/cc/2006/822, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur les placements collectifs",
+  "en": "Collective Investment Schemes Act",
+  "source": "Fedlex, eli/cc/2006/822, titre ENG : « Federal Act of 23 June 2006 on Collective Investment Schemes (Collective Investment Schemes Act, CISA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LPD",
+  "en": "FADP",
+  "source": "Fedlex, eli/cc/2022/491, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur la protection des données",
+  "en": "Data Protection Act",
+  "source": "Fedlex, eli/cc/2022/491, titre ENG : « Federal Act of 25 September 2020 on Data Protection (Data Protection Act, FADP) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LPM",
+  "en": "TmPA",
+  "source": "Fedlex, eli/cc/1993/274_274_274, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi sur la protection des marques",
+  "en": "Trade Mark Protection Act",
+  "source": "Fedlex, eli/cc/1993/274_274_274, titre ENG : « Federal Act of 28 August 1992 on the Protection of Trade Marks and Indications of Source (Trade Mark Protection Act, TmPA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LSA",
+  "en": "ISA",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, FinSA en anglais, art. 2 : « Insurance Supervision Act of 17 December 2004 (ISA) »",
+  "type": "loi",
+  "note": "La FINMASA en anglais écrit « (IOA) » : Fedlex n'est pas cohérent, retenir ISA."
+ },
+ {
+  "fr": "loi sur la surveillance des assurances",
+  "en": "Insurance Supervision Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, FinSA en anglais, art. 2 : « Insurance Supervision Act of 17 December 2004 (ISA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LSFin",
+  "en": "FinSA",
+  "source": "Fedlex, eli/cc/2019/758, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur les services financiers",
+  "en": "Financial Services Act",
+  "source": "Fedlex, eli/cc/2019/758, titre ENG : « Federal Act of 15 June 2018 on Financial Services (Financial Services Act, FinSA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LTF",
+  "en": "Federal Supreme Court Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, DEBA en anglais, art. 19 : « Federal Supreme Court Act of 17 June 2005 »",
+  "type": "loi",
+  "note": "Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "loi sur le Tribunal fédéral",
+  "en": "Federal Supreme Court Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, DEBA en anglais, art. 19 : « Federal Supreme Court Act of 17 June 2005 »",
+  "type": "loi"
+ },
+ {
+  "fr": "LTVA",
+  "en": "VAT Act",
+  "source": "Fedlex, eli/cc/2009/615, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi",
+  "note": "Le Legal Style Guide (§3.1) donne « VATA » en exemple ; Fedlex dit « VAT Act » : retenir Fedlex."
+ },
+ {
+  "fr": "loi fédérale régissant la taxe sur la valeur ajoutée",
+  "en": "Value Added Tax Act",
+  "source": "Fedlex, eli/cc/2009/615, titre ENG : « Federal Act of 12 June 2009 on Value Added Tax (Value Added Tax Act, VAT Act) »",
+  "type": "loi"
+ },
+ {
+  "fr": "LTr",
+  "en": "Employment Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, notes du CO en anglais : « Employment Act of 13 March 1964 »",
+  "type": "loi",
+  "note": "« Labour Act » est courant ailleurs, mais absent du corpus Fedlex consulté. Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "loi sur le travail",
+  "en": "Employment Act",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; Fedlex, notes du CO en anglais : « Employment Act of 13 March 1964 »",
+  "type": "loi"
+ },
+ {
+  "fr": "ORC",
+  "en": "Commercial Register Ordinance",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; traduction maison à valider ; dénomination absente du corpus anglais consulté",
+  "type": "loi",
+  "note": "Pas d'abréviation anglaise attestée : écrire le titre anglais en entier, jamais une abréviation improvisée (General Style Guide §13)."
+ },
+ {
+  "fr": "ordonnance sur le registre du commerce",
+  "en": "Commercial Register Ordinance",
+  "source": "aucune traduction anglaise dans Fedlex (expressions ENG vides, sans fichier, vérifié le 2026-10-02) ; traduction maison à valider ; dénomination absente du corpus anglais consulté",
+  "type": "loi"
+ },
+ {
+  "fr": "PA",
+  "en": "APA",
+  "source": "Fedlex, eli/cc/1969/737_757_755, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "loi fédérale sur la procédure administrative",
+  "en": "Administrative Procedure Act",
+  "source": "Fedlex, eli/cc/1969/737_757_755, titre ENG : « Federal Act of 20 December 1968 on Administrative Procedure (Administrative Procedure Act, APA) »",
+  "type": "loi"
+ },
+ {
+  "fr": "Cst.",
+  "en": "Cst.",
+  "source": "Fedlex, eli/cc/1999/404, jolux:titleShort de l'expression ENG (vérifié le 2026-10-02)",
+  "type": "loi"
+ },
+ {
+  "fr": "Constitution fédérale",
+  "en": "Federal Constitution",
+  "source": "Fedlex, eli/cc/1999/404, titre ENG : « Federal Constitution of the Swiss Confederation of 18 April 1999 »",
+  "type": "loi"
+ },
+ {
+  "fr": "nLPD",
+  "en": "FADP",
+  "source": "usage (la loi est la LPD / FADP du 25 septembre 2020)",
+  "type": "loi",
+  "note": "Dans un texte marketing : « the revised FADP » ; dans une référence juridique : « FADP »."
+ },
+ {
+  "fr": "RGPD",
+  "en": "GDPR",
+  "source": "usage européen (règlement (UE) 2016/679, General Data Protection Regulation, EUR-Lex)",
+  "type": "loi"
+ },
+ {
+  "fr": "Code civil suisse",
+  "en": "Swiss Civil Code",
+  "source": "Fedlex, titre ENG",
+  "type": "loi"
+ },
+ {
+  "fr": "RS",
+  "en": "SR",
+  "source": "Fedlex : les traductions anglaises gardent « SR » (ex. « SR 641.20 ») ; Legal Style Guide §2.4.3 (vérifié le 2026-10-02)",
+  "type": "publication"
+ },
+ {
+  "fr": "RO",
+  "en": "AS",
+  "source": "Fedlex : notes des traductions anglaises (« AS 1971 1465 », CO) (vérifié le 2026-10-02)",
+  "type": "publication"
+ },
+ {
+  "fr": "FF",
+  "en": "BBl",
+  "source": "Fedlex : notes des traductions anglaises (« BBl 1967 II 241 », CO) (vérifié le 2026-10-02)",
+  "type": "publication"
+ },
+ {
+  "fr": "Recueil systématique du droit fédéral",
+  "en": "Classified Compilation of Federal Legislation",
+  "source": "Legal Style Guide §2.4.3",
+  "type": "publication"
+ },
+ {
+  "fr": "Recueil officiel du droit fédéral",
+  "en": "Official Compilation of Federal Legislation",
+  "source": "traduction maison à valider (dénomination absente du corpus consulté)",
+  "type": "publication"
+ },
+ {
+  "fr": "Feuille fédérale",
+  "en": "Federal Gazette",
+  "source": "Fedlex, CartA et FNIA en anglais : « published … in the Federal Gazette » (vérifié le 2026-10-02)",
+  "type": "publication"
+ },
+ {
+  "fr": "ATF",
+  "en": "BGE",
+  "source": "Legal Style Guide §2.4.3 : garder la citation BGE (« Decisions of the Swiss Federal Supreme Court ») pour que le lecteur retrouve l'arrêt",
+  "type": "publication"
+ },
+ {
+  "fr": "Fribourg",
+  "en": "Fribourg",
+  "source": "General Style Guide, annexe 1",
+  "type": "lieu",
+  "note": "Ni « Freiburg » ni « Friburg » ; à la première mention sur À propos et Presse : « Fribourg, Switzerland »."
+ },
+ {
+  "fr": "État de Fribourg",
+  "en": "Canton of Fribourg",
+  "source": "General Style Guide §4 (majuscule à « Canton » pour le gouvernement cantonal) ; fr.ch n'a pas de version anglaise ; traduction maison à valider",
+  "type": "lieu"
+ },
+ {
+  "fr": "Genève",
+  "en": "Geneva",
+  "source": "General Style Guide, annexe 1",
+  "type": "lieu"
+ },
+ {
+  "fr": "Zurich",
+  "en": "Zurich",
+  "source": "General Style Guide, annexe 1 (sans tréma)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Saint-Gall",
+  "en": "St Gallen",
+  "source": "General Style Guide, annexe 1 (sans point : « St » est une contraction)",
+  "type": "lieu"
+ },
+ {
+  "fr": "Berne",
+  "en": "Bern",
+  "source": "General Style Guide, annexe 1",
+  "type": "lieu"
+ },
+ {
+  "fr": "Lucerne",
+  "en": "Lucerne",
+  "source": "General Style Guide, annexe 1",
+  "type": "lieu"
+ },
+ {
+  "fr": "Londres",
+  "en": "London",
+  "source": "nom anglais de la ville",
+  "type": "lieu"
+ },
+ {
+  "fr": "Tessin",
+  "en": "Ticino",
+  "source": "General Style Guide, annexe 1",
+  "type": "lieu"
+ },
+ {
+  "fr": "Confédération",
+  "en": "Confederation",
+  "source": "General Style Guide §21",
+  "type": "lieu",
+  "note": "« the Swiss Confederation » dans les noms officiels, « the Confederation » pour l'État fédéral."
+ },
+ {
+  "fr": "HEIA-FR",
+  "en": "HEIA-FR",
+  "source": "heia-fr.ch/en : « School of Engineering and Architecture of Fribourg (HEIA-FR) » (vérifié le 2026-10-02)",
+  "type": "lieu",
+  "note": "Nom complet à la première mention : « School of Engineering and Architecture of Fribourg (HEIA-FR) »."
+ },
+ {
+  "fr": "canton",
+  "en": "canton",
+  "source": "General Style Guide §4 (« the canton of Bern », minuscule pour le territoire)",
+  "type": "lieu"
+ },
+ {
+  "fr": "devis",
+  "en": "quote",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "page standard",
+  "en": "standard page",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "pages standard",
+  "en": "standard pages",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "traducteur juridique",
+  "en": "legal translator",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "juriste-linguiste",
+  "en": "lawyer-linguist",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Terme des institutions européennes. Pluriel : « lawyer-linguists »."
+ },
+ {
+  "fr": "juristes-linguistes",
+  "en": "lawyer-linguists",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "relecture juridique",
+  "en": "legal review",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "relecture humaine",
+  "en": "human review",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "post-édition",
+  "en": "post-editing",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "traduction machine",
+  "en": "machine translation",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "moteur de traduction",
+  "en": "translation engine",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "moteur de traduction neuronale",
+  "en": "neural machine translation engine",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "LexMachina : jamais « LLM » (sauf actualités historiques)."
+ },
+ {
+  "fr": "mémoire de traduction",
+  "en": "translation memory",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "traduction certifiée",
+  "en": "certified translation",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "traduction notariée",
+  "en": "notarised translation",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Orthographe britannique dans le texte courant ; le libellé de l'application « Notarized & Apostilled Certification » reste tel quel."
+ },
+ {
+  "fr": "apostille",
+  "en": "apostille",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Majuscule seulement en tête de phrase ou dans un libellé."
+ },
+ {
+  "fr": "extrait du registre du commerce",
+  "en": "commercial register extract",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "secret professionnel",
+  "en": "professional secrecy",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Fedlex rend « Berufsgeheimnis » par « professional secrecy » (AMLA) et « professional confidentiality » (SCC art. 321). Jamais « attorney-client privilege » ni « legal professional privilege », notions de common law ; le libellé d'application « Attorney-Client privilege notice » reste tel quel."
+ },
+ {
+  "fr": "cabinet d'avocats",
+  "en": "law firm",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.3 : « law firm », jamais « chambers »."
+ },
+ {
+  "fr": "étude d'avocats",
+  "en": "law firm",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.3."
+ },
+ {
+  "fr": "avocat",
+  "en": "lawyer",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.3 : ni « solicitor », ni « barrister », ni « advocate »."
+ },
+ {
+  "fr": "juriste",
+  "en": "legal expert",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.3 : jamais « jurist ». Selon le contexte : « in-house lawyer », « legal counsel », « legal officer »."
+ },
+ {
+  "fr": "notaire",
+  "en": "notary",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.3 : jamais « notary public » pour un notaire suisse."
+ },
+ {
+  "fr": "direction juridique",
+  "en": "legal department",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.3 (« in-house legal department »)."
+ },
+ {
+  "fr": "fiduciaire",
+  "en": "fiduciary",
+  "source": "Legal Style Guide de la Chancellerie fédérale et du DFAE (août 2025)",
+  "type": "metier",
+  "note": "Legal Style Guide §3.5 : jamais « trust » ni « trustee » pour une fiduciaire suisse. Pour le secteur : « fiduciary and audit firms »."
+ },
+ {
+  "fr": "souveraineté des données",
+  "en": "data sovereignty",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "hébergement en Suisse",
+  "en": "hosting in Switzerland",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "certification ISO 27001",
+  "en": "ISO 27001 certification",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "concordancier",
+  "en": "concordancer",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "texte officiel",
+  "en": "official text",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier"
+ },
+ {
+  "fr": "délai",
+  "en": "delivery time",
+  "source": "vocabulaire du site, traduction maison à valider",
+  "type": "metier",
+  "note": "Délai de livraison d'une traduction uniquement ; délai légal : « time limit » (Fedlex) ou « deadline »."
+ },
+ {
+  "fr": "Demander une démo",
+  "en": "Request a demo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Demandez une démo",
+  "en": "Request a demo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir",
+  "en": "Explore",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir Corrext",
+  "en": "Explore Corrext",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir CHnell",
+  "en": "Explore CHnell",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Découvrir l'outil",
+  "en": "See the tool",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Voir la plateforme",
+  "en": "See the platform",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Essayer Corrext en direct",
+  "en": "Try Corrext live",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ouvrir la démo en direct",
+  "en": "Open the live demo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Essayez sans inscription",
+  "en": "Try it without signing up",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Voir les comparatifs",
+  "en": "See the comparisons",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "À propos et distinctions",
+  "en": "About us and awards",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Contacter l'équipe",
+  "en": "Contact the team",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Centre d'aide",
+  "en": "Help Centre",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "Orthographe britannique « Centre »."
+ },
+ {
+  "fr": "En bref",
+  "en": "In brief",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Lire l'article",
+  "en": "Read the article",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Lire la définition",
+  "en": "Read the definition",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tous les articles",
+  "en": "All articles",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tous les domaines",
+  "en": "All areas of law",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tout le glossaire",
+  "en": "Full glossary",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Voir les termes",
+  "en": "See the terms",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Termes voisins",
+  "en": "Related terms",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Le terme, quatre langues",
+  "en": "The term in four languages",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Un terme, quatre langues",
+  "en": "One term, four languages",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Le terme dans un texte officiel",
+  "en": "The term in an official text",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Terminologie officielle",
+  "en": "Official terminology",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Définition",
+  "en": "Definition",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Source",
+  "en": "Source",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Référence",
+  "en": "Reference",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Questions fréquentes",
+  "en": "Frequently asked questions",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Une question reste sans réponse ?",
+  "en": "Still have a question?",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ce que Corrext apporte",
+  "en": "What Corrext adds",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ce que Corrext change",
+  "en": "What Corrext changes",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Traduction par domaine",
+  "en": "Translation by area of law",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Par domaine du droit",
+  "en": "By area of law",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Par paire de langues",
+  "en": "By language pair",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Par métier",
+  "en": "By sector",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Solutions",
+  "en": "Solutions",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Ressources",
+  "en": "Resources",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Glossaire juridique suisse",
+  "en": "Swiss legal glossary",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Guides",
+  "en": "Guides",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Études et benchmarks",
+  "en": "Studies and benchmarks",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Comparatifs",
+  "en": "Comparisons",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Actualités",
+  "en": "News",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Blog",
+  "en": "Blog",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Presse",
+  "en": "Press",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Sécurité et souveraineté",
+  "en": "Security and data sovereignty",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Langues et formats",
+  "en": "Languages and formats",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Niveaux de qualité",
+  "en": "Quality levels",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Traduction texte et document",
+  "en": "Text and document translation",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Gestion de projet",
+  "en": "Translation projects",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "L'application nomme l'outil « Translation project » : le menu suit l'application."
+ },
+ {
+  "fr": "Éditeur de relecture",
+  "en": "Review editor",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Extraits du registre",
+  "en": "Commercial register extracts",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "API et on-premises",
+  "en": "API and on-premises",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Mentions légales et CGU",
+  "en": "Impressum and Terms of Use",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "Titre de l'ancienne page anglaise : « Impressum & Terms of Use »."
+ },
+ {
+  "fr": "Protection des données",
+  "en": "Privacy policy",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "Continuité avec l'ancienne page anglaise « Privacy Policy » (/privacy-policy/)."
+ },
+ {
+  "fr": "Accueil",
+  "en": "Home",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Aller au contenu",
+  "en": "Skip to content",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Fil d'Ariane",
+  "en": "Breadcrumb",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Partager",
+  "en": "Share",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Partager sur LinkedIn",
+  "en": "Share on LinkedIn",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Suivre Neur.on sur LinkedIn",
+  "en": "Follow Neur.on on LinkedIn",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "{0} min de lecture",
+  "en": "{0} min read",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "mis à jour le {0}",
+  "en": "updated on {0}",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Tous droits réservés.",
+  "en": "All rights reserved.",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Hébergement 100% suisse",
+  "en": "100% Swiss hosting",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface",
+  "note": "General Style Guide §10 : « % » collé au chiffre."
+ },
+ {
+  "fr": "ISO 27001 certifié",
+  "en": "ISO 27001 certified",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Soutenu par Innosuisse",
+  "en": "Supported by Innosuisse",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Démo sur mesure",
+  "en": "Personalised demo",
+  "source": "interface : traduction proposée, à valider",
+  "type": "interface"
+ },
+ {
+  "fr": "Light review",
+  "en": "Light review",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Full review",
+  "en": "Full review",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Double review & certified translation",
+  "en": "Double review & certified translation",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Notarized & Apostilled Certification",
+  "en": "Notarized & Apostilled Certification",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface",
+  "note": "Orthographe de l'application conservée (« Notarized » américain compris)."
+ },
+ {
+  "fr": "File translation",
+  "en": "File translation",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Text translation",
+  "en": "Text translation",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "PDF to Word",
+  "en": "PDF to Word",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Rephrasing",
+  "en": "Rephrasing",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Attorney-Client privilege notice",
+  "en": "Attorney-Client privilege notice",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Fast translation",
+  "en": "Fast translation",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Translation project",
+  "en": "Translation project",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Open in CAT",
+  "en": "Open in CAT",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Export docx",
+  "en": "Export docx",
+  "source": "libellé anglais de l'application Corrext, cité tel quel sur le site FR",
+  "type": "interface"
+ },
+ {
+  "fr": "Double review et traduction certifiée",
+  "en": "Double review & certified translation",
+  "source": "convention du site (2026-10-02) : en anglais, le libellé exact de l'application",
+  "type": "interface",
+  "note": "Toutes les variantes FR (« Double review avec certificat », « Double review certifiée ») deviennent le libellé exact. Jamais « Double review and certified translation »."
+ }
+]
