@@ -747,11 +747,11 @@
         "titre": "Filtrer par domaine et par source",
         "title": "Filtrer une recherche CHnell par domaine et source · Neur.on",
         "description": "Advanced search et le panneau Filters restreignent les résultats CHnell à un type de ressource, à certains des 30 domaines et à des sources précises.",
-        "reponse": "CHnell classe ses segments par domaine juridique et par source. Avant de chercher, le bloc repliable « Advanced search » permet de restreindre le type de ressource et de cocher un ou plusieurs domaines parmi les 26 disponibles, du droit des sociétés à la fiscalité en passant par l'arbitrage. Sur la page de résultats, le panneau « Filters » reprend ces critères et y ajoute la sélection des sources.",
+        "reponse": "CHnell classe ses segments par domaine juridique et par source. Avant de chercher, le bloc repliable « Advanced search » permet de restreindre le type de ressource et de cocher un ou plusieurs domaines parmi les 30 disponibles, du droit des sociétés à la fiscalité en passant par l'arbitrage. Sur la page de résultats, le panneau « Filters » reprend ces critères et y ajoute la sélection des sources.",
         "etapes": [
           "Sur l'écran CHnell, dépliez le bloc <b>« Advanced search »</b> au-dessus du champ de recherche.",
           "Réglez <b>« Resource type »</b> pour limiter la recherche à un type de ressource.",
-          "Ouvrez <b>« Domains »</b> et cochez les domaines utiles : la liste en compte 26, du droit bancaire au droit des brevets.",
+          "Ouvrez <b>« Domains »</b> et cochez les domaines utiles : la liste en compte 30, du droit bancaire au droit des brevets.",
           "Lancez la recherche avec le bouton « Search ».",
           "Sur la page de résultats, dépliez le panneau <b>« Filters »</b> pour ajuster les mêmes critères sans tout ressaisir.",
           "Utilisez <b>« Select sources »</b> dans ce panneau pour ne garder que certaines sources, par exemple les textes fédéraux."

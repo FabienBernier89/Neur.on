@@ -747,11 +747,11 @@
     "titre": "Nach Rechtsgebiet und Quelle filtern",
     "title": "In CHnell nach Rechtsgebiet und Quelle filtern · Neur.on",
     "description": "Advanced search und der Bereich Filters beschränken die Treffer in CHnell auf einen Ressourcentyp, auf einige der 30 Rechtsgebiete und auf einzelne Quellen.",
-    "reponse": "CHnell ordnet seine Segmente nach Rechtsgebiet und Quelle. Vor der Suche schränken Sie im aufklappbaren Block «Advanced search» den Ressourcentyp ein und wählen eines oder mehrere der 26 verfügbaren Rechtsgebiete, vom Gesellschaftsrecht über die Schiedsgerichtsbarkeit bis zum Steuerrecht. Auf der Ergebnisseite übernimmt der Bereich «Filters» diese Kriterien und ergänzt sie um die Auswahl der Quellen.",
+    "reponse": "CHnell ordnet seine Segmente nach Rechtsgebiet und Quelle. Vor der Suche schränken Sie im aufklappbaren Block «Advanced search» den Ressourcentyp ein und wählen eines oder mehrere der 30 verfügbaren Rechtsgebiete, vom Gesellschaftsrecht über die Schiedsgerichtsbarkeit bis zum Steuerrecht. Auf der Ergebnisseite übernimmt der Bereich «Filters» diese Kriterien und ergänzt sie um die Auswahl der Quellen.",
     "etapes": [
      "Klappen Sie auf dem Bildschirm von CHnell den Block <b>«Advanced search»</b> über dem Suchfeld auf.",
      "Stellen Sie <b>«Resource type»</b> ein, um die Suche auf einen Ressourcentyp zu beschränken.",
-     "Öffnen Sie <b>«Domains»</b> und wählen Sie die passenden Rechtsgebiete: Die Liste umfasst 26, vom Bankrecht bis zum Patentrecht.",
+     "Öffnen Sie <b>«Domains»</b> und wählen Sie die passenden Rechtsgebiete: Die Liste umfasst 30, vom Bankrecht bis zum Patentrecht.",
      "Starten Sie die Suche mit der Schaltfläche «Search».",
      "Klappen Sie auf der Ergebnisseite den Bereich <b>«Filters»</b> auf, um dieselben Kriterien anzupassen, ohne alles neu einzugeben.",
      "Beschränken Sie die Suche mit <b>«Select sources»</b> in diesem Bereich auf bestimmte Quellen, zum Beispiel die Texte des Bundes."

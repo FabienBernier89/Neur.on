@@ -747,11 +747,11 @@
     "titre": "Filter by domain and source",
     "title": "Filter CHnell research by domain and source · Neur.on",
     "description": "Advanced Search and Filters panel restrict CHnell results to a resource type, some of the 30 domains, and specific sources.",
-    "reponse": "CHnell classifies its segments by legal area and source. Before searching, the folding block Advanced Search restricts the type of resource and selects one or more areas from the 26 available, from company law to tax and arbitration. On the results page, the Filters panel repeats these criteria and adds the source selection to them.",
+    "reponse": "CHnell classifies its segments by legal area and source. Before searching, the folding block Advanced Search restricts the type of resource and selects one or more areas from the 30 available, from company law to tax and arbitration. On the results page, the Filters panel repeats these criteria and adds the source selection to them.",
     "etapes": [
      "On the CHnell screen, fold block <b>Advanced Search</b> above the search field.",
      "Set <b>Resource Type</b> to limit the search to a resource type.",
-     "Open <b>“domains”</b> and check the relevant domains: the list in account 26, from banking to patent law.",
+     "Open <b>“domains”</b> and check the relevant domains: the list in account 30, from banking to patent law.",
      "Start the search with the Search button.",
      "On the results page, unfold the <b>“Filters” panel</b> to adjust the same criteria without trying everything again.",
      "Use <b>Select sources</b> in this panel to retain only certain sources, such as federal text."

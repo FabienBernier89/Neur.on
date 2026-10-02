@@ -747,11 +747,11 @@
     "titre": "Filtrare per settore e per fonte",
     "title": "Filtrare una ricerca CHnell per settore e fonte · Neur.on",
     "description": "Advanced search e il pannello Filters limitano i risultati di CHnell a un tipo di risorsa, ad alcuni dei 30 settori del diritto e a fonti precise.",
-    "reponse": "CHnell classifica i segmenti per settore del diritto e per fonte. Prima della ricerca, la sezione espandibile «Advanced search» permette di limitare il tipo di risorsa. Permette anche di selezionare uno o più settori tra i 26 disponibili, dal diritto societario alla fiscalità, passando per l'arbitrato. Nella pagina dei risultati, il pannello «Filters» riprende questi criteri e aggiunge la selezione delle fonti.",
+    "reponse": "CHnell classifica i segmenti per settore del diritto e per fonte. Prima della ricerca, la sezione espandibile «Advanced search» permette di limitare il tipo di risorsa. Permette anche di selezionare uno o più settori tra i 30 disponibili, dal diritto societario alla fiscalità, passando per l'arbitrato. Nella pagina dei risultati, il pannello «Filters» riprende questi criteri e aggiunge la selezione delle fonti.",
     "etapes": [
      "Nella schermata di CHnell, aprite la sezione <b>«Advanced search»</b> sopra il campo di ricerca.",
      "Impostate <b>«Resource type»</b> per limitare la ricerca a un tipo di risorsa.",
-     "Aprite <b>«Domains»</b> e selezionate i settori utili: l'elenco ne conta 26, dal diritto bancario al diritto dei brevetti.",
+     "Aprite <b>«Domains»</b> e selezionate i settori utili: l'elenco ne conta 30, dal diritto bancario al diritto dei brevetti.",
      "Avviate la ricerca con il pulsante «Search».",
      "Nella pagina dei risultati, aprite il pannello <b>«Filters»</b> per modificare gli stessi criteri senza reinserire tutto.",
      "Usate <b>«Select sources»</b> in questo pannello per tenere solo alcune fonti, per esempio i testi federali."
