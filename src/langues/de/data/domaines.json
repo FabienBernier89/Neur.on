@@ -4,7 +4,7 @@
   "short": "Verträge",
   "resume": "Mietverträge, AGB, Darlehen: das Vokabular des Obligationenrechts.",
   "title": "Vertragsübersetzung nach Schweizer Recht, DE FR IT · Neur.on",
-  "description": "Mietverträge, Arbeitsverträge, AGB und Darlehen übersetzen: mit der Terminologie des Obligationenrechts und juristischem Lektorat durch Fachleute.",
+  "description": "Vertragsübersetzung für Mietverträge, Arbeitsverträge, AGB und Darlehen: mit der Terminologie des Obligationenrechts, lektoriert von juristischen Fachleuten.",
   "lede": "Vertragsübersetzung.",
   "h1": "Das Obligationenrecht von Sprache zu Sprache",
   "lead": "Mietvertrag, AGB, Darlehensvertrag: Jede Klausel verweist auf einen Begriff des Obligationenrechts, das auf Deutsch, Französisch und Italienisch veröffentlicht ist. Corrext behält das Layout und die Formulierung des amtlichen Textes bei.",
@@ -19,10 +19,10 @@
    },
    {
     "t": "Lektorat nach Bedarf",
-    "d": "Light review, Full review oder Double review mit Zertifikat"
+    "d": "Light review, Full review oder Double review und beglaubigte Übersetzung"
    }
   ],
-  "definition": "Einen Vertrag nach Schweizer Recht zu übersetzen heisst, Pflichten mit Rechtswirkung in eine andere Sprache zu übertragen. Jeder Ausdruck steht für einen Begriff, den das Obligationenrecht definiert, und dieses ist auf Deutsch, Französisch und Italienisch veröffentlicht. Die Übersetzung übernimmt die Formulierung des amtlichen Textes und lässt Artikelverweise, Fristen und Beträge unverändert.",
+  "definition": "Einen Vertrag nach Schweizer Recht zu übersetzen heisst, Pflichten mit Rechtswirkung in eine andere Sprache zu übertragen. Jeder Ausdruck verweist auf einen Begriff, den das Obligationenrecht definiert. Dieses Gesetz ist auf Deutsch, Französisch und Italienisch veröffentlicht. Die Übersetzung übernimmt die Formulierung des amtlichen Textes und lässt Artikelverweise, Fristen und Beträge unverändert.",
   "facts": [
    {
     "k": "Mietvertrag und Beilagen",
@@ -44,11 +44,11 @@
    },
    {
     "k": "Ein Begriff, eine Legaldefinition",
-    "v": "Den Verzugszins von Art. 104 OR übersetzt man nicht nach Gefühl: CHnell zeigt den Artikel in den drei Amtssprachen nebeneinander."
+    "v": "Den Verzugszins nach Art. 104 OR übersetzt man nicht nach Gefühl: CHnell zeigt den Artikel in den drei Amtssprachen nebeneinander."
    },
    {
     "k": "Dokument für die Gegenpartei",
-    "v": "In Projektmanagement bestellen Sie eine Light review oder Full review durch juristische Übersetzerinnen und Übersetzer. Verlässt der Text das Haus, wählen Sie die Double review mit Zertifikat."
+    "v": "In Projektmanagement bestellen Sie eine Light review oder Full review durch juristische Übersetzerinnen und Übersetzer. Verlässt der Text das Haus, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "k": "Vertrauliche Verhandlung",
@@ -167,7 +167,7 @@
   "faq": [
    {
     "q": "Warum nicht einfach ein gängiges Übersetzungstool für Verträge nutzen?",
-    "r": "Weil das Schweizer Vertragsvokabular in einem dreisprachig veröffentlichten Gesetz festgelegt ist und ein allgemeines Tool eine plausible Übersetzung liefert, nicht die Formulierung des Obligationenrechts. Dazu kommt die Frage, wo die Daten verarbeitet werden. Mit Corrext erfolgt die Speicherung in jedem Fall in der Schweiz, und die Verarbeitung bleibt mit LexMachina oder im Modus Highly sensitive content in der Schweiz."
+    "r": "Weil das Schweizer Vertragsvokabular in einem Gesetz festgelegt ist, das in drei Sprachen veröffentlicht wird. Ein allgemeines Tool liefert eine plausible Übersetzung, nicht die Formulierung des Obligationenrechts. Dazu kommt die Frage, wo die Daten verarbeitet werden. Mit Corrext erfolgt die Speicherung in jedem Fall in der Schweiz, und die Verarbeitung bleibt mit LexMachina oder im Modus Highly sensitive content in der Schweiz."
    },
    {
     "q": "Bleibt das Layout des Vertrags erhalten?",
@@ -175,7 +175,7 @@
    },
    {
     "q": "Wer prüft einen Vertrag vor der Unterzeichnung?",
-    "r": "Juristische Übersetzerinnen und Übersetzer: in der Light review als Kohärenzkontrolle, in der Full review als Prüfung Zeile für Zeile. Für ein Dokument, das die Gesellschaft gegenüber Dritten bindet, setzt die Double review zwei Übersetzende und eine spezialisierte Agentur ein, mit Zertifikat. Die Stufe wählen Sie für jedes Dokument einzeln."
+    "r": "Juristische Übersetzerinnen und Übersetzer: in der Light review als Kohärenzkontrolle, in der Full review als Prüfung Zeile für Zeile. Für ein Dokument, das die Gesellschaft gegenüber Dritten bindet, setzt die Stufe Double review und beglaubigte Übersetzung zwei Übersetzende und eine spezialisierte Agentur ein. Dazu gehört eine Bescheinigung. Die Stufe wählen Sie für jedes Dokument einzeln."
    },
    {
     "q": "Werden meine Verträge zum Training eines Übersetzungsmotors verwendet?",
@@ -190,7 +190,7 @@
     "r": "Ja. Die Textübersetzung in Text- und Dokumentübersetzung nimmt bis zu 10'000 direkt eingefügte Zeichen an, mit Wahl des Übersetzungsmotors und bis zu vier alternativen Formulierungen. Das passt für eine einzelne Klausel mitten in der Verhandlung. Das Ergebnis kopieren Sie direkt in das Dokument, an dem Sie gerade arbeiten."
    }
   ],
-  "cta_t": "Sehen Sie Corrext an einem Ihrer Verträge",
+  "cta_t": "Sehen Sie Corrext bei einem Ihrer Verträge im Einsatz",
   "cta_p": "Eine Demo mit Ihren eigenen Klauseln, zusammen mit einer Fachperson für Schweizer Recht.",
   "voisins": [
    "droit-des-societes",
@@ -206,13 +206,13 @@
   "short": "Gesellschaftsrecht",
   "resume": "Statuten, Protokolle, Handelsregisterauszüge: das Vokabular der Gesellschaften.",
   "title": "Übersetzung Gesellschaftsrecht: Statuten, DE FR IT · Neur.on",
-  "description": "Statuten, Einberufungen, GV-Protokolle, Handelsregisterauszüge: die Terminologie des Schweizer Gesellschaftsrechts in vier Sprachen übersetzt.",
+  "description": "Statuten, Einberufungen, GV-Protokolle und Handelsregisterauszüge übersetzen: mit der Terminologie des Schweizer Gesellschaftsrechts, in vier Sprachen.",
   "lede": "Gesellschaftsrecht.",
   "h1": "Statuten und Protokolle übersetzen",
-  "lead": "Statuten auf Deutsch hinterlegt, Protokolle auf Französisch geführt, der Handelsregisterauszug auf Italienisch verlangt: Eine Schweizer Gesellschaft lebt in mehreren Sprachen. Corrext verwendet die Begriffe des Obligationenrechts selbst.",
+  "lead": "Statuten auf Deutsch eingereicht, Protokolle auf Französisch geführt, der Handelsregisterauszug auf Italienisch verlangt: Eine Schweizer Gesellschaft lebt in mehreren Sprachen. Corrext verwendet die Begriffe des Obligationenrechts selbst.",
   "promesses": [
    {
-    "t": "Begriffe des Registers",
+    "t": "Begriffe des Handelsregisters",
     "d": "Verwaltungsrat, Handelsregister, Statuten und ihre amtlichen Entsprechungen"
    },
    {
@@ -224,8 +224,8 @@
     "d": "Handelsregisterauszug mit notarieller Beglaubigung und Apostille, online bestellt"
    }
   ],
-  "facts_titre": "Gesellschaftsakten übersetzen in der Praxis",
-  "definition": "Im Gesellschaftsrecht übersetzen heisst, die Akten zu übertragen, die das Leben einer juristischen Person abbilden: Statuten, Organisationsreglemente, Einberufungen, Protokolle, Eintragungen im Handelsregister. Organe und Rechtsformen tragen in jeder der drei Amtssprachen einen genauen Namen. Massgebend ist der Name, der im Register steht, keine freie Übersetzung.",
+  "facts_titre": "Gesellschaftsdokumente übersetzen in der Praxis",
+  "definition": "Im Gesellschaftsrecht übersetzen heisst, die Dokumente zu übertragen, die das Leben einer juristischen Person abbilden: Statuten, Organisationsreglemente, Einberufungen, Protokolle, Eintragungen im Handelsregister. Organe und Rechtsformen tragen in jeder der drei Amtssprachen einen genauen Namen. Massgebend ist der Name, der im Register steht, keine freie Übersetzung.",
   "facts": [
    {
     "k": "Statuten",
@@ -237,7 +237,7 @@
    },
    {
     "k": "Protokolle",
-    "v": "Beschlüsse der Generalversammlung und des Verwaltungsrats werden im ursprünglichen Layout übersetzt, Mehrheiten und Angaben zur Beschlussfähigkeit bleiben an ihrem Platz."
+    "v": "Beschlüsse der Generalversammlung und des Verwaltungsrats werden im ursprünglichen Layout übersetzt. Mehrheiten und Angaben zur Beschlussfähigkeit bleiben an ihrem Platz."
    },
    {
     "k": "Eintragung im Handelsregister",
@@ -319,8 +319,8 @@
     "ref": "Art. 927 OR"
    }
   ],
-  "termes_note": "Diese Entsprechungen stammen aus der deutschen, französischen und italienischen Fassung des Obligationenrechts. Die Handelsregisterämter verwenden dieselben Bezeichnungen, deshalb lassen sie sich Akte für Akte überprüfen. Die englische Spalte übernimmt die vom Bund auf Fedlex veröffentlichte Übersetzung, soweit vorhanden, ohne Rechtskraft, sonst die gebräuchliche Formulierung.",
-  "lois_titre": "Die Erlasse, die Gesellschaftsakten täglich zitieren",
+  "termes_note": "Diese Entsprechungen stammen aus der deutschen, französischen und italienischen Fassung des Obligationenrechts. Die Handelsregisterämter verwenden dieselben Bezeichnungen, deshalb lassen sie sich Dokument für Dokument überprüfen. Die englische Spalte übernimmt die vom Bund auf Fedlex veröffentlichte Übersetzung, soweit vorhanden, ohne Rechtskraft, sonst die gebräuchliche Formulierung.",
+  "lois_titre": "Die Erlasse, die Gesellschaftsdokumente täglich zitieren",
   "lois_intro": "Das Schweizer Gesellschaftsrecht steht im Obligationenrecht, ergänzt durch die Handelsregisterverordnung. Zwei weitere Erlasse kommen hinzu, sobald eine Gesellschaft ihre Struktur ändert oder eine Stiftung betroffen ist.",
   "lois": [
    {
@@ -393,7 +393,7 @@
    }
   ],
   "cta_t": "Ihre Statuten und Protokolle in Corrext",
-  "cta_p": "Eine Demo mit Ihren eigenen Akten und der Terminologie des Handelsregisters.",
+  "cta_p": "Eine Demo mit Ihren eigenen Gesellschaftsdokumenten und der Terminologie des Handelsregisters.",
   "voisins": [
    "fusions-acquisitions",
    "contrats",
@@ -424,11 +424,11 @@
    }
   ],
   "facts_titre": "Eine Transaktion übersetzen in der Praxis",
-  "definition": "Eine Fusion oder einen Unternehmenskauf zu übersetzen heisst, zwei sehr unterschiedliche Textmengen zu bearbeiten. Tausende Seiten Due Diligence müssen schnell verstanden werden. Eine Handvoll Akten bindet die Parteien, vom Fusionsvertrag bis zu den Beschlüssen der Generalversammlung. Das Vokabular stammt aus dem Fusionsgesetz und dem Obligationenrecht, in ihren drei amtlichen Fassungen.",
+  "definition": "Eine Fusion oder einen Unternehmenskauf zu übersetzen heisst, zwei sehr unterschiedliche Textmengen zu bearbeiten. Tausende Seiten Due Diligence müssen schnell verstanden werden. Eine Handvoll Dokumente bindet die Parteien, vom Fusionsvertrag bis zu den Beschlüssen der Generalversammlung. Das Vokabular stammt aus dem Fusionsgesetz und dem Obligationenrecht, in ihren drei amtlichen Fassungen.",
   "facts": [
    {
     "k": "Data Room",
-    "v": "Das Paket geht in File translation und kommt im Originalformat zurück: Das Team liest, statt zu entziffern, ohne Copy-paste von Dokument zu Dokument.",
+    "v": "Das Paket geht in File translation und kommt im Originalformat zurück: Das Team liest, statt zu entziffern, ohne Kopieren und Einfügen von Dokument zu Dokument.",
     "s": "Bis zu 25 Dateien zu je 50 MB pro Upload, Formate .pdf .doc .docx .xls .xlsx .ppt .pptx."
    },
    {
@@ -441,7 +441,7 @@
    },
    {
     "k": "Fusionsvertrag",
-    "v": "Die Akte, die die Parteien bindet, geht in die Full review oder in die Double review mit Zertifikat. Die Lieferfrist wird vor der Bestätigung der Offerte angezeigt."
+    "v": "Für das Dokument, das die Parteien bindet, wählen Sie die Full review oder Double review und beglaubigte Übersetzung. Die Lieferfrist wird vor der Bestätigung der Offerte angezeigt."
    },
    {
     "k": "Gesellschaftsbeschlüsse",
@@ -449,7 +449,7 @@
    },
    {
     "k": "Meldung an die Wettbewerbsbehörde",
-    "v": "Eine meldepflichtige Transaktion wird in der Sprache der zuständigen Behörde beschrieben, mit dem Vokabular des Kartellgesetzes."
+    "v": "Ein meldepflichtiger Unternehmenszusammenschluss wird in der Sprache der zuständigen Behörde beschrieben, mit dem Vokabular des Kartellgesetzes."
    },
    {
     "k": "Vertraulichkeit der Transaktion",
@@ -561,8 +561,8 @@
    },
    {
     "a": "Closing",
-    "t": "Akten für das Handelsregister",
-    "p": "Fusionsbeschluss, Vertrag, Bericht der Revisionsstelle: Diese Unterlagen gehen in die Full review oder in die Double review mit Zertifikat. Danach bestellen Sie den Handelsregisterauszug online, in der verlangten Beglaubigungsstufe.",
+    "t": "Belege für das Handelsregister",
+    "p": "Fusionsbeschluss, Vertrag, Bericht der Revisionsstelle: Für diese Unterlagen wählen Sie die Full review oder Double review und beglaubigte Übersetzung. Danach bestellen Sie den Handelsregisterauszug online, in der verlangten Beglaubigungsstufe.",
     "vis": "signature"
    }
   ],
@@ -574,15 +574,15 @@
    },
    {
     "q": "Wie viele Dokumente kann ich auf einmal hochladen?",
-    "r": "Bis zu 25 Dateien zu je 50 MB pro Upload in Text- und Dokumentübersetzung, in den Formaten .pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx. Für grössere Pakete, eine Bearbeitung in Tranchen oder ein Lektorat durch Fachleute ist Projektmanagement der richtige Einstieg."
+    "r": "Bis zu 25 Dateien zu je 50 MB pro Upload in Text- und Dokumentübersetzung, in den Formaten .pdf, .doc, .docx, .xls, .xlsx, .ppt und .pptx. Für grössere Pakete, eine Nachverfolgung nach Paketen oder ein Lektorat durch Fachleute ist Projektmanagement der richtige Einstieg."
    },
    {
     "q": "Braucht jedes Dokument einer Transaktion ein Lektorat durch Fachleute?",
-    "r": "Nein, und genau deshalb trennt man die beiden Schritte. Unterlagen, die nur dem Verständnis dienen, gehen in die maschinelle Übersetzung. Akten, die die Parteien binden, allen voran Fusionsvertrag und Gesellschaftsbeschlüsse, gehen in die Full review oder in die Double review mit Zertifikat, Dokument für Dokument gewählt."
+    "r": "Nein, und genau deshalb trennt man die beiden Schritte. Unterlagen, die nur dem Verständnis dienen, gehen in die maschinelle Übersetzung. Dokumente, die die Parteien binden, allen voran Fusionsvertrag und Gesellschaftsbeschlüsse, gehen in die Full review oder in die Stufe Double review und beglaubigte Übersetzung. Die Stufe wählen Sie Dokument für Dokument."
    },
    {
     "q": "Landen die Dokumente der Transaktion in einer gemeinsamen Datenbank?",
-    "r": "Projekte im Vertraulichkeitsmodus Standard können ein Translation Memory speisen, das ausschliesslich Ihre Organisation nutzen kann. Projekte im Modus Highly sensitive content werden nie im Translation Memory wiederverwendet, das passt zu Transaktionen, die noch vertraulich sind. Den Modus wählen Sie für jedes Projekt bei dessen Erstellung."
+    "r": "Projekte im Vertraulichkeitsmodus Standard können ein Translation Memory speisen, das ausschliesslich Ihre Organisation nutzen kann. Projekte im Modus Highly sensitive content werden nie im Translation Memory wiederverwendet. Das passt zu Transaktionen, die noch vertraulich sind. Den Modus wählen Sie für jedes Projekt bei dessen Erstellung."
    },
    {
     "q": "Wie übersetze ich das Vokabular der Umstrukturierung?",
@@ -608,8 +608,8 @@
   "title": "Übersetzung für Prozesse und Schiedsverfahren · Neur.on",
   "description": "Rechtsschriften, Beilagenverzeichnisse, Schiedssprüche, Beschwerden ans Bundesgericht: Übersetzung mit der Terminologie von ZPO und IPRG in der Schweiz.",
   "lede": "Prozesse und Schiedsverfahren.",
-  "h1": "Was Gericht und Schiedsgericht lesen werden",
-  "lead": "Ein Schweizer Verfahren wird in der Sprache des Gerichtsstands geführt, die Beilagen kommen aber in allen Sprachen. Zuerst muss man schnell verstehen, dann zitierfähige Übersetzungen einreichen. Corrext leistet beides, in der Schweiz.",
+  "h1": "Was ein Gericht oder Schiedsgericht lesen wird",
+  "lead": "Ein Schweizer Verfahren wird in der Sprache des Gerichtsstands geführt, die Beilagen kommen aber in allen Sprachen. Zuerst muss man schnell verstehen, dann zitierfähige Übersetzungen liefern. Corrext leistet beides, in der Schweiz.",
   "promesses": [
    {
     "t": "Menge an Beilagen",
@@ -633,11 +633,11 @@
    },
    {
     "k": "Gescannte Beilagen",
-    "v": "Beilagen kommen oft als gescannte PDF: Die Registerkarte PDF to Word wandelt sie vor der Übersetzung oder Markierung in bearbeitbare Dokumente um."
+    "v": "Beilagen kommen oft als gescannte PDFs: Die Registerkarte PDF to Word wandelt sie vor der Übersetzung oder Markierung in bearbeitbare Dokumente um."
    },
    {
     "k": "Rechtsschrift und Rechtsbegehren",
-    "v": "Die Rechtsbegehren binden die Partei. Sie gehen in die Full review durch juristische Übersetzerinnen und Übersetzer. Verlangt das Gericht eine bescheinigte Übersetzung, folgt die Double review mit Zertifikat."
+    "v": "Die Rechtsbegehren binden die Partei. Sie gehen in die Full review durch juristische Übersetzerinnen und Übersetzer. Verlangt das Gericht eine Bescheinigung der Übersetzung, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "k": "Schiedsspruch",
@@ -727,7 +727,7 @@
    {
     "abbr": "ZPO",
     "nom": "Schweizerische Zivilprozessordnung",
-    "note": "Sie regelt Rechtsschriften, Beweise, Fristen und die kantonalen Rechtsmittel (Berufung und Beschwerde); auf Französisch und Italienisch CPC."
+    "note": "Sie regelt Rechtsschriften, Beweise, Fristen und die kantonalen Rechtsmittel; auf Französisch und Italienisch CPC."
    },
    {
     "abbr": "IPRG",
@@ -756,7 +756,7 @@
    {
     "a": "Rechtsschriften",
     "t": "Rechtsbegehren in der Sprache des Gerichts",
-    "p": "Die Rechtsschrift ist auf Englisch verfasst und muss auf Deutsch eingereicht werden. In der Full review prüfen juristische Übersetzerinnen und Übersetzer die Rechtsbegehren Zeile für Zeile. Verlangt das Gericht eine Bescheinigung, deckt die Double review mit Zertifikat diesen Fall ab.",
+    "p": "Die Rechtsschrift ist auf Englisch verfasst und muss auf Deutsch eingereicht werden. In der Full review prüfen juristische Übersetzerinnen und Übersetzer die Rechtsbegehren Zeile für Zeile. Verlangt das Gericht eine Bescheinigung, gibt es dafür Double review und beglaubigte Übersetzung.",
     "vis": "marteau"
    },
    {
@@ -770,7 +770,7 @@
   "faq": [
    {
     "q": "Akzeptiert ein Schweizer Gericht eine maschinelle Übersetzung?",
-    "r": "Eine eingereichte Beilage muss verlässlich sein und je nach Fall bescheinigt. Die maschinelle Übersetzung dient dazu, das Dossier zu verstehen. Was eingereicht wird, geht durch eine Full review durch juristische Übersetzerinnen und Übersetzer oder durch eine Double review mit Zertifikat, wenn eine Bescheinigung verlangt wird."
+    "r": "Eine eingereichte Beilage muss verlässlich sein, je nach Fall auch bescheinigt. Die maschinelle Übersetzung dient dazu, das Dossier zu verstehen. Was eingereicht wird, lektorieren juristische Übersetzerinnen und Übersetzer in der Full review. Wird eine Bescheinigung verlangt, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "q": "In welche Sprache müssen die Beilagen übersetzt werden?",
@@ -793,7 +793,7 @@
     "r": "Die Registerkarte PDF to Word in Text- und Dokumentübersetzung wandelt einen Scan vor der Übersetzung oder Annotation in ein bearbeitbares Word-Dokument um. Das ist oft der erste Schritt bei einem Beilagenverzeichnis, in dem ein Teil der Beilagen nur als Bild vorliegt. Das so erhaltene Word-Dokument wird danach wie jede native Datei übersetzt."
    }
   ],
-  "cta_t": "Sehen Sie Corrext an einem Beilagenverzeichnis",
+  "cta_t": "Sehen Sie Corrext bei einem Beilagenverzeichnis im Einsatz",
   "cta_p": "Eine Demo mit Ihren eigenen Dossiers, zusammen mit einer Fachperson für Schweizer Recht.",
   "voisins": [
    "droit-penal",
@@ -939,12 +939,12 @@
     "note": "Es bleibt die Grundlage für Kredit, Bürgschaft und Wertpapiere; auf Französisch und Italienisch CO."
    }
   ],
-  "who_titre": "Drei Bankgeschäfte, bei denen die Übersetzung Pflicht ist",
+  "who_titre": "Drei Bankgeschäfte, bei denen es ohne Übersetzung nicht geht",
   "who": [
    {
     "a": "Kredit",
     "t": "Ein Darlehensvertrag in zwei Sprachen",
-    "p": "Der Vertrag wird auf Englisch verhandelt und von einer Darlehensnehmerin aus der Deutschschweiz auf Deutsch unterzeichnet. Die maschinelle Übersetzung dient der Verhandlung, die Full review durch juristische Übersetzerinnen und Übersetzer sichert die unterzeichnete Fassung ab, mit Anzeige der Lieferfrist vor der Bestätigung.",
+    "p": "Der Vertrag wird auf Englisch verhandelt und von einer Darlehensnehmerin aus der Deutschschweiz auf Deutsch unterzeichnet. Die maschinelle Übersetzung dient der Verhandlung. Die unterzeichnete Fassung sichern juristische Übersetzerinnen und Übersetzer in der Full review ab, und die Lieferfrist erscheint vor der Bestätigung.",
     "vis": "financement"
    },
    {
@@ -968,7 +968,7 @@
    },
    {
     "q": "Welche Übersetzungsmotoren stehen zur Verfügung?",
-    "r": "LexMachina, der Schweizer Übersetzungsmotor, trainiert mit Rechts- und Finanzdaten aus der Schweiz, sowie DeepL Pro, Azure OpenAI GPT und Claude. Die drei letzten werden im Ausland gehostet: Die Anwendung weist bei der Wahl darauf hin, vor jedem Versand eines Dokuments."
+    "r": "LexMachina, der Schweizer Übersetzungsmotor, trainiert mit Rechts- und Finanzdaten aus der Schweiz, sowie DeepL Pro, Azure OpenAI GPT und Claude. Die letzten drei werden im Ausland gehostet: Die Anwendung weist bei der Wahl darauf hin, vor jedem Versand eines Dokuments."
    },
    {
     "q": "Lassen sich Excel-Dateien mit Finanztabellen übersetzen?",
@@ -980,7 +980,7 @@
    },
    {
     "q": "Wer lektoriert eine Dokumentation für Investorinnen und Investoren?",
-    "r": "Juristische Übersetzerinnen und Übersetzer, je nach Bedeutung in der Light review oder in der Full review. Für eine Double review mit Zertifikat arbeiten zwei Übersetzende und eine spezialisierte Agentur. Die Stufe wählen Sie für jedes Dokument einzeln, und die Lieferfrist wird vor der Bestätigung der Offerte angezeigt."
+    "r": "Juristische Übersetzerinnen und Übersetzer, je nach Bedeutung in der Light review oder in der Full review. In der Stufe Double review und beglaubigte Übersetzung arbeiten zwei Übersetzende und eine spezialisierte Agentur, mit Bescheinigung. Die Stufe wählen Sie für jedes Dokument einzeln, und die Lieferfrist wird vor der Bestätigung der Offerte angezeigt."
    },
    {
     "q": "Werden die übersetzten Dokumente zum Training eines Übersetzungsmotors verwendet?",
@@ -1023,7 +1023,7 @@
   "facts": [
    {
     "k": "Interne Weisungen",
-    "v": "Eine Weisung gilt für alle Niederlassungen: Die Übersetzung muss in jeder Sprachregion identisch sein, Fassung für Fassung."
+    "v": "Eine Weisung gilt für alle Zweigniederlassungen: Die Übersetzung muss in jeder Sprachregion identisch sein, Fassung für Fassung."
    },
    {
     "k": "Sorgfaltsdossiers",
@@ -1036,7 +1036,7 @@
    },
    {
     "k": "Korrespondenz",
-    "v": "Der Austausch mit der Aufsicht erfolgt oft innert eines Tages: Die Textübersetzung nimmt bis zu 10'000 eingefügte Zeichen an, mit freier Wahl des Übersetzungsmotors."
+    "v": "Die Korrespondenz mit der Aufsicht geht oft noch am selben Tag hinaus: Die Textübersetzung nimmt bis zu 10'000 eingefügte Zeichen an, mit freier Wahl des Übersetzungsmotors."
    },
    {
     "k": "Schulung der Teams",
@@ -1129,7 +1129,7 @@
    {
     "abbr": "StGB",
     "nom": "Schweizerisches Strafgesetzbuch",
-    "note": "Sein Art. 305bis definiert die Geldwäscherei, auf die sich das ganze Compliance-System stützt; auf Französisch und Italienisch CP."
+    "note": "Sein Art. 305bis definiert die Geldwäscherei, auf die das ganze Compliance-Regelwerk verweist; auf Französisch und Italienisch CP."
    }
   ],
   "who_titre": "Drei Compliance-Aufgaben, die eine Übersetzung brauchen",
@@ -1173,11 +1173,11 @@
    },
    {
     "q": "Welche Lektoratsstufe braucht ein Dokument für die Aufsichtsbehörde?",
-    "r": "Mindestens eine Full review durch juristische Übersetzerinnen und Übersetzer, die den Text Zeile für Zeile prüfen. Wird eine Bescheinigung erwartet, setzt die Double review zwei Übersetzende und eine spezialisierte Agentur ein und stellt ein Zertifikat aus. Die Wahl treffen Sie für jedes Dokument einzeln."
+    "r": "Mindestens eine Full review durch juristische Übersetzerinnen und Übersetzer, die den Text Zeile für Zeile prüfen. Wird eine Bescheinigung erwartet, setzt die Stufe Double review und beglaubigte Übersetzung zwei Übersetzende und eine spezialisierte Agentur ein und liefert eine Bescheinigung. Die Wahl treffen Sie für jedes Dokument einzeln."
    },
    {
     "q": "Hinterlassen die Übersetzungen eine Spur, die im Audit verwertbar ist?",
-    "r": "Ja. Der Ablauf in Projektmanagement erfasst für jedes Dokument die gewählte Lektoratsstufe und die bestätigte Lieferfrist, das dokumentiert den Vorgang. Der gewählte Vertraulichkeitsmodus bestimmt zudem, ob der Inhalt ein Translation Memory speisen darf oder nicht."
+    "r": "Ja. Der Ablauf in Projektmanagement erfasst für jedes Dokument die gewählte Lektoratsstufe und die bestätigte Lieferfrist. So ist der Vorgang dokumentiert. Der gewählte Vertraulichkeitsmodus bestimmt zudem, ob der Inhalt ein Translation Memory speisen darf oder nicht."
    }
   ],
   "cta_t": "Ihre Compliance-Dokumentation, bearbeitet in der Schweiz",
@@ -1361,7 +1361,7 @@
    },
    {
     "q": "Welche Bezeichnungen der Rechnungslegung muss ich verwenden?",
-    "r": "Jene des 32. Titels des Obligationenrechts, der Bilanz, Erfolgsrechnung und Anhang in den drei Amtssprachen benennt. Es gibt Gepflogenheiten am Finanzplatz, aber ein veröffentlichter Bericht übernimmt mit Vorteil das gesetzliche Vokabular, das die Konkordanz mit Quelle anzeigt."
+    "r": "Jene des 32. Titels des Obligationenrechts, der Bilanz, Erfolgsrechnung und Anhang in den drei Amtssprachen benennt. Es gibt gebräuchliche Bezeichnungen aus der Praxis, aber ein veröffentlichter Bericht übernimmt mit Vorteil das gesetzliche Vokabular, das die Konkordanz mit Quelle anzeigt."
    },
    {
     "q": "Ist ein noch nicht veröffentlichter Bericht geschützt?",
@@ -1377,7 +1377,7 @@
    },
    {
     "q": "In welchen Sprachen kann ich publizieren?",
-    "r": "Deutsch, Französisch, Italienisch und Englisch werden in allen Sprachpaaren nativ unterstützt, das deckt den Bedarf eines Schweizer Berichts. Für Publikationen an ausländische Investorinnen und Investoren unterstützt die Plattform insgesamt 30 Sprachen. Die Sprachen wählen Sie im Projektablauf für jedes Dokument einzeln."
+    "r": "Deutsch, Französisch, Italienisch und Englisch werden in allen Sprachpaaren nativ unterstützt. Das deckt den Bedarf eines Schweizer Berichts. Für Publikationen an ausländische Investorinnen und Investoren unterstützt die Plattform insgesamt 30 Sprachen. Die Sprachen wählen Sie im Projektablauf für jedes Dokument einzeln."
    }
   ],
   "cta_t": "Bereiten Sie Ihren nächsten Abschluss mit Corrext vor",
@@ -1416,7 +1416,7 @@
   "facts": [
    {
     "k": "Veranlagungsverfügung",
-    "v": "Eine Verfügung kommt in der Amtssprache des Kantons: Die Übersetzung dient dem Entscheid über eine Einsprache, oft innert kurzer Frist."
+    "v": "Eine Verfügung kommt in der Amtssprache des Kantons: Mit der Übersetzung entscheiden Sie, ob Sie Einsprache erheben, oft innert kurzer Frist."
    },
    {
     "k": "Einsprache und Beschwerde",
@@ -1424,7 +1424,7 @@
    },
    {
     "k": "Korrespondenz mit der Verwaltung",
-    "v": "Der Austausch mit der Verwaltung wird laufend übersetzt: bis zu 10'000 eingefügte Zeichen in der Textübersetzung."
+    "v": "Der Austausch mit der Verwaltung wird direkt übersetzt: bis zu 10'000 eingefügte Zeichen in der Textübersetzung."
    },
    {
     "k": "Buchhalterische Beilagen",
@@ -1536,13 +1536,13 @@
    {
     "a": "Unternehmen",
     "t": "Eine Veranlagung in einer anderen Sprache",
-    "p": "Der Hauptsitz liegt in Basel, die Niederlassung in Lausanne erhält die Verfügung auf Französisch, und die Einsprachefrist läuft. Die sofortige Übersetzung erlaubt einen schnellen Entscheid, und nur die eingereichte Einsprache geht ins Lektorat durch juristische Übersetzerinnen und Übersetzer.",
+    "p": "Der Hauptsitz liegt in der Deutschschweiz, die Zweigniederlassung in der Romandie erhält die Verfügung auf Französisch, und die Einsprachefrist läuft. Die sofortige Übersetzung erlaubt einen schnellen Entscheid, und nur die eingereichte Einsprache geht ins Lektorat durch juristische Übersetzerinnen und Übersetzer.",
     "vis": "societe"
    },
    {
     "a": "Treuhand",
     "t": "Dossiers in mehreren Kantonen",
-    "p": "Dieselbe Kundschaft untersteht Kantonen mit unterschiedlicher Sprache, mit Bezeichnungen, die sich nicht immer decken. Die gemeinsamen terminologischen Ressourcen in CHnell halten das Vokabular von Dossier zu Dossier einheitlich.",
+    "p": "Eine Mandantin oder ein Mandant untersteht mehreren Kantonen mit unterschiedlicher Sprache, mit Bezeichnungen, die sich nicht immer decken. Die gemeinsamen terminologischen Ressourcen in CHnell halten das Vokabular von Dossier zu Dossier einheitlich.",
     "vis": "fiscal"
    },
    {
@@ -1560,7 +1560,7 @@
    },
    {
     "q": "Genügt eine Übersetzung, um auf eine Verfügung zu antworten?",
-    "r": "Die Übersetzung dient dem Verständnis und dem Entscheid. Die eingereichte Rechtsschrift, Einsprache oder Beschwerde, bindet die steuerpflichtige Person und rechtfertigt eine Full review durch juristische Übersetzerinnen und Übersetzer. Wird eine Bescheinigung verlangt, steht die Double review mit Zertifikat zur Verfügung. Die Lieferfrist des Lektorats wird vor der Bestätigung der Offerte angezeigt."
+    "r": "Die Übersetzung dient dem Verständnis und dem Entscheid. Die eingereichte Rechtsschrift, Einsprache oder Beschwerde, bindet die steuerpflichtige Person und rechtfertigt eine Full review durch juristische Übersetzerinnen und Übersetzer. Wird eine Bescheinigung verlangt, steht die Stufe Double review und beglaubigte Übersetzung zur Verfügung. Die Lieferfrist des Lektorats wird vor der Bestätigung der Offerte angezeigt."
    },
    {
     "q": "Wie übersetze ich Steuerbegriffe ohne Entsprechung?",
@@ -1592,7 +1592,7 @@
   "short": "Versicherungsrecht",
   "resume": "Versicherungsbedingungen, Policen, Schadenmeldungen: das Vokabular des VVG.",
   "title": "Versicherungsübersetzung nach Schweizer Recht · Neur.on",
-  "description": "AVB, Policen, Schadenmeldungen: Privatversicherung übersetzen, mit der Terminologie des Schweizer Versicherungsvertragsgesetzes (VVG).",
+  "description": "AVB, Policen, Schadenmeldungen: Versicherungsübersetzung für die Privatversicherung, mit der Terminologie des Versicherungsvertragsgesetzes (VVG).",
   "lede": "Versicherungsrecht.",
   "h1": "Von den AVB bis zum Schadendossier",
   "lead": "Ein Schweizer Versicherer veröffentlicht seine AVB in mehreren Sprachen, erhält Schadenmeldungen in allen Sprachen und antwortet in jener der versicherten Person. Corrext folgt dem Versicherungsvertragsgesetz.",
@@ -1715,7 +1715,7 @@
    {
     "abbr": "OR",
     "nom": "Obligationenrecht",
-    "note": "Es gilt ergänzend für den Versicherungsvertrag, soweit das VVG nichts anderes regelt; auf Französisch und Italienisch CO."
+    "note": "Es gilt ergänzend für den Versicherungsvertrag, soweit das VVG keine Vorschriften enthält; auf Französisch und Italienisch CO."
    },
    {
     "abbr": "DSG",
@@ -1764,7 +1764,7 @@
    },
    {
     "q": "Deckt die Konkordanz das Versicherungsvokabular ab?",
-    "r": "Ja, mit einem Fachgebiet Private Insurance und einem Fachgebiet Employment & Social Ins. für Dossiers, die Sozialversicherungen betreffen. Jeder Treffer öffnet sich im Kontext mit seiner amtlichen Quelle, so entscheiden Sie zwischen zwei plausiblen Formulierungen. Ihre eigenen terminologischen Ressourcen kommen hinzu."
+    "r": "Ja, mit einem Fachgebiet Private Insurance und einem Fachgebiet Employment & Social Ins. für Dossiers, die Sozialversicherungen betreffen. Jeder Treffer öffnet sich im Kontext mit seiner amtlichen Quelle. So entscheiden Sie zwischen zwei plausiblen Formulierungen. Ihre eigenen terminologischen Ressourcen kommen hinzu."
    },
    {
     "q": "Wie viele Dokumente kann ich für einen Versicherungsfall hochladen?",
@@ -1783,8 +1783,8 @@
   "slug": "propriete-intellectuelle",
   "short": "Geistiges Eigentum",
   "resume": "Patente, Marken, Urheberrecht: Schutzrechte übersetzen, die gegenüber Dritten gelten.",
-  "title": "Patentübersetzung, Marken und Urheberrecht · Neur.on",
-  "description": "Patentanmeldungen, Markeneintragungsgesuche, Lizenzen, Widersprüche: Schutzrechte übersetzen, mit der Schweizer Terminologie von PatG, MSchG und URG.",
+  "title": "Patentübersetzung, Marken- und Urheberrecht · Neur.on",
+  "description": "Patentanmeldungen, Markenanmeldungen, Lizenzen, Widersprüche: Schutzrechte übersetzen, mit der Schweizer Terminologie von PatG, MSchG und URG.",
   "lede": "Geistiges Eigentum.",
   "h1": "Schutzrechte, die gegenüber Dritten gelten",
   "lead": "Ein Patentanspruch, eine Liste der Waren und Dienstleistungen, eine Rechteabtretung: Die Übersetzung wird zum Schutztitel selbst, und jede Abweichung verändert den Schutz. Corrext stützt sich auf die Begriffe der Schweizer Gesetze.",
@@ -1795,7 +1795,7 @@
    },
    {
     "t": "Tragweite bleibt gewahrt",
-    "d": "Full review oder Double review mit Zertifikat für eingereichte Unterlagen"
+    "d": "Full review oder Double review und beglaubigte Übersetzung für eingereichte Unterlagen"
    },
    {
     "t": "Einheitliches Portfolio",
@@ -1803,7 +1803,7 @@
    }
   ],
   "facts_titre": "Ein Patent oder eine Marke übersetzen in der Praxis",
-  "definition": "Im geistigen Eigentum übersetzen heisst, einen Text zu liefern, der den Umfang eines Rechts selbst festlegt. Das sind die Ansprüche eines Patents, die Waren- und Dienstleistungsliste einer Marke oder der Gegenstand einer Abtretung von Urheberrechten. Die Grundbegriffe legen die Schweizer Gesetze über Patente, Marken, Design und Urheberrecht fest, die in den drei Amtssprachen veröffentlicht sind.",
+  "definition": "Im Bereich des geistigen Eigentums übersetzen heisst, einen Text zu liefern, der den Umfang eines Rechts selbst festlegt. Das sind die Ansprüche eines Patents, die Waren- und Dienstleistungsliste einer Marke oder der Gegenstand einer Abtretung von Urheberrechten. Die Grundbegriffe legen die Schweizer Gesetze über Patente, Marken, Design und Urheberrecht fest, die in den drei Amtssprachen veröffentlicht sind.",
   "facts": [
    {
     "k": "Patentanmeldung",
@@ -1819,7 +1819,7 @@
    },
    {
     "k": "Widerspruch und Klage",
-    "v": "Rechtsschriften vor der Behörde oder dem Gericht gehen in die Full review oder in die Double review mit Zertifikat, wenn eine Bescheinigung verlangt wird."
+    "v": "Rechtsschriften an die Behörde oder das Gericht gehen in die Full review. Wird eine Bescheinigung verlangt, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "k": "Technische Unterlagen",
@@ -1933,21 +1933,21 @@
    {
     "a": "Marken",
     "t": "Eine Liste der Waren und Dienstleistungen",
-    "p": "Die Liste bestimmt, was geschützt ist und was nicht. Die Konkordanz zeigt den amtlichen Gebrauch jedes Begriffs im Fachgebiet Intellectual Property, das verhindert ungewollte Erweiterungen.",
+    "p": "Die Liste bestimmt, was geschützt ist und was nicht. Die Konkordanz zeigt den amtlichen Gebrauch jedes Begriffs im Fachgebiet Intellectual Property. So vermeiden Sie ungewollte Erweiterungen.",
     "vis": "etiquette"
    },
    {
     "a": "Verträge",
     "t": "Eine Rechteabtretung in zwei Sprachen",
-    "p": "Der Vertrag verbindet das Vokabular des Obligationenrechts mit jenem des Urheberrechtsgesetzes. Die Begriffe beider Bereiche prüfen Sie im Kontext, und die unterzeichnete Fassung geht in die Full review oder in die Double review mit Zertifikat.",
+    "p": "Der Vertrag verbindet das Vokabular des Obligationenrechts mit jenem des Urheberrechtsgesetzes. Die Begriffe beider Bereiche prüfen Sie im Kontext, und für die unterzeichnete Fassung wählen Sie die Full review oder Double review und beglaubigte Übersetzung.",
     "vis": "signature"
    }
   ],
-  "faq_titre": "Häufige Fragen zur Übersetzung im geistigen Eigentum",
+  "faq_titre": "Häufige Fragen zur Übersetzung im Immaterialgüterrecht",
   "faq": [
    {
     "q": "Genügt eine maschinelle Übersetzung für eine Anmeldung?",
-    "r": "Für den eingereichten Text nicht. Die maschinelle Übersetzung bereitet die Arbeit vor und hilft, den Stand der Technik oder einen gegnerischen Widerspruch zu verstehen. Ein Schutzrecht, das Dritten entgegengehalten wird, rechtfertigt aber eine Full review durch juristische Übersetzerinnen und Übersetzer. Wird eine Bescheinigung verlangt, wählen Sie die Double review mit Zertifikat."
+    "r": "Für den eingereichten Text nicht. Die maschinelle Übersetzung bereitet die Arbeit vor und hilft, den Stand der Technik oder einen gegnerischen Widerspruch zu verstehen. Ein Schutzrecht, das Dritten entgegengehalten wird, rechtfertigt aber eine Full review durch juristische Übersetzerinnen und Übersetzer. Wird eine Bescheinigung verlangt, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "q": "Wie bleibt die Terminologie im ganzen Portfolio einheitlich?",
@@ -1971,7 +1971,7 @@
    }
   ],
   "cta_t": "Ihre Anmeldungen und Lizenzverträge in Corrext",
-  "cta_p": "Eine Demo mit Ihren eigenen Patentansprüchen und Warenlisten.",
+  "cta_p": "Eine Demo mit Ihren eigenen Patentansprüchen und Waren- und Dienstleistungslisten.",
   "voisins": [
    "contrats",
    "contentieux-arbitrage",
@@ -2146,11 +2146,11 @@
   "faq": [
    {
     "q": "Muss ein Arbeitsvertrag in der Sprache der Mitarbeiterin oder des Mitarbeiters abgefasst sein?",
-    "r": "Nein. Das Gesetz schreibt für den Einzelarbeitsvertrag keine bestimmte Sprache vor. Wer aber eine Verpflichtung will, die verstanden wird und entgegengehalten werden kann, stellt mit Vorteil eine Fassung in der Arbeitssprache der Mitarbeiterin oder des Mitarbeiters bereit. Die vier Sprachen der Plattform (Deutsch, Französisch, Italienisch und Englisch) decken diesen Bedarf ab."
+    "r": "Nein. Das Gesetz schreibt für den Einzelarbeitsvertrag keine bestimmte Sprache vor. Wer als Arbeitgeberin oder Arbeitgeber aber eine Verpflichtung will, die verstanden wird und sich entgegenhalten lässt, stellt mit Vorteil eine Fassung in der Arbeitssprache der Mitarbeiterin oder des Mitarbeiters bereit. Die vier Sprachen der Plattform (Deutsch, Französisch, Italienisch und Englisch) decken diesen Bedarf ab."
    },
    {
     "q": "Wie übersetze ich ein Kündigungsschreiben ohne Risiko?",
-    "r": "Indem Sie die drei Tatbestände des Obligationenrechts unterscheiden: ordentliche Kündigung, missbräuchliche Kündigung und fristlose Auflösung aus wichtigen Gründen. Die amtlichen Begriffe gibt es in den drei Sprachen, und das Schreiben selbst rechtfertigt vor dem Versand eine Full review durch juristische Übersetzerinnen und Übersetzer."
+    "r": "Indem Sie die drei Beendigungsformen des Obligationenrechts unterscheiden: ordentliche Kündigung, missbräuchliche Kündigung und fristlose Auflösung aus wichtigen Gründen. Die amtlichen Begriffe gibt es in den drei Sprachen, und das Schreiben selbst rechtfertigt vor dem Versand eine Full review durch juristische Übersetzerinnen und Übersetzer."
    },
    {
     "q": "Dürfen Personaldossiers über die Plattform laufen?",
@@ -2184,7 +2184,7 @@
   "title": "Übersetzung im Strafrecht und Strafprozessrecht · Neur.on",
   "description": "Strafbefehle, Anklageschriften, Untersuchungsakten, Rechtshilfe: ein Schweizer Strafverfahren übersetzen, mit den Begriffen von StGB und StPO.",
   "lede": "Strafrecht.",
-  "h1": "Die Akten eines Strafverfahrens, von Sprache zu Sprache",
+  "h1": "Die Dokumente eines Strafverfahrens, von Sprache zu Sprache",
   "lead": "Ein Strafverfahren wird in der Sprache des Kantons geführt, doch beschuldigte Personen, Zeuginnen, Zeugen und Beilagen sprechen sie nicht immer. Akten und Strafbefehle zirkulieren übersetzt, und Corrext bearbeitet sie in der Schweiz.",
   "promesses": [
    {
@@ -2201,7 +2201,7 @@
    }
   ],
   "facts_titre": "Ein Strafverfahren übersetzen in der Praxis",
-  "definition": "Im Schweizer Strafrecht übersetzen heisst, Verfahrensakten mit genau bestimmter Rechtsnatur zu übertragen: Strafbefehl, Anklageschrift, Einstellungsverfügung, Haftentscheid. Strafgesetzbuch und Strafprozessordnung sind auf Deutsch, Französisch und Italienisch veröffentlicht, und jede Akte trägt in jeder dieser Sprachen einen amtlichen Namen.",
+  "definition": "Im Schweizer Strafrecht übersetzen heisst, Verfahrensdokumente mit genau bestimmter Rechtsnatur zu übertragen: Strafbefehl, Anklageschrift, Einstellungsverfügung, Haftentscheid. Strafgesetzbuch und Strafprozessordnung sind auf Deutsch, Französisch und Italienisch veröffentlicht, und jedes Dokument trägt in jeder dieser Sprachen einen amtlichen Namen.",
   "facts": [
    {
     "k": "Untersuchungsakten",
@@ -2218,7 +2218,7 @@
    },
    {
     "k": "Anklageschrift",
-    "v": "Die Anklageschrift umgrenzt den Prozessgegenstand: Ihre Übersetzung geht in die Full review oder in die Double review mit Zertifikat, wenn eine Bescheinigung verlangt wird."
+    "v": "Die Anklageschrift umgrenzt den Prozessgegenstand: Ihre Übersetzung geht in die Full review. Wird eine Bescheinigung verlangt, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "k": "Internationale Rechtshilfe",
@@ -2296,7 +2296,7 @@
     "ref": "Art. 158 StGB"
    }
   ],
-  "termes_note": "Die Verfahrensakten tragen Namen, die von Sprache zu Sprache nicht wörtlich übereinstimmen: Der Strafbefehl heisst auf Französisch «ordonnance pénale», auf Italienisch aber «decreto d'accusa», und die Anklageschrift «atto d'accusa». Diese Entsprechungen sind jene des amtlichen Textes. Die englische Spalte übernimmt die vom Bund auf Fedlex veröffentlichte Übersetzung, soweit vorhanden, ohne Rechtskraft, sonst die gebräuchliche Formulierung.",
+  "termes_note": "Die Verfahrensdokumente tragen Namen, die von Sprache zu Sprache nicht wörtlich übereinstimmen: Der Strafbefehl heisst auf Französisch «ordonnance pénale», auf Italienisch aber «decreto d'accusa», und die Anklageschrift «atto d'accusa». Diese Entsprechungen sind jene des amtlichen Textes. Die englische Spalte übernimmt die vom Bund auf Fedlex veröffentlichte Übersetzung, soweit vorhanden, ohne Rechtskraft, sonst die gebräuchliche Formulierung.",
   "lois_titre": "Die Erlasse, die ein Strafverfahren täglich zitiert",
   "lois_intro": "Das Schweizer Strafrecht beruht auf einem materiellen Gesetzbuch und einer seit 2011 vereinheitlichten Prozessordnung. Internationale Rechtshilfe und Geldwäschereibekämpfung bringen eigene Erlasse und eigenes Vokabular mit.",
   "lois": [
@@ -2326,7 +2326,7 @@
    {
     "a": "Verteidigung",
     "t": "Eine Untersuchung in einer anderen Sprache",
-    "p": "Das Verfahren wird in Lausanne auf Französisch geführt, die beschuldigte Person wird von einer Zürcher Anwaltskanzlei verteidigt. Die Pakete gehen im Modus Highly sensitive content in File translation, und die Verteidigung liest alles, bevor sie die Beilagen auswählt, die lektoriert werden.",
+    "p": "Die Untersuchung wird in der Romandie auf Französisch geführt, die beschuldigte Person wird von einer Anwaltskanzlei aus der Deutschschweiz verteidigt. Die Pakete gehen im Modus Highly sensitive content in File translation, und die Verteidigung liest alles, bevor sie die Beilagen auswählt, die lektoriert werden.",
     "vis": "dossier"
    },
    {
@@ -2346,15 +2346,15 @@
   "faq": [
    {
     "q": "Kann eine maschinelle Übersetzung zu den Akten gegeben werden?",
-    "r": "Sie dient zunächst dem Verständnis. Eine Beilage, die bei der Strafbehörde eingereicht wird, muss verlässlich und je nach Fall bescheinigt sein. Sie geht dann durch eine Full review durch juristische Übersetzerinnen und Übersetzer oder durch eine Double review mit Zertifikat, wenn das Gericht eine beglaubigte Übersetzung verlangt."
+    "r": "Sie dient zunächst dem Verständnis. Eine Beilage, die bei der Strafbehörde eingereicht wird, muss verlässlich und je nach Fall bescheinigt sein. Dann lektorieren juristische Übersetzerinnen und Übersetzer sie in der Full review. Verlangt das Gericht eine beglaubigte Fassung, wählen Sie Double review und beglaubigte Übersetzung."
    },
    {
     "q": "Wie bleibt das Untersuchungsgeheimnis gewahrt?",
     "r": "Die Speicherung erfolgt in jedem Fall auf Servern in der Schweiz. Der Modus Highly sensitive content schreibt zusätzlich die Verarbeitung ausschliesslich in der Schweiz vor, ohne Wiederverwendung des Inhalts im Translation Memory. Übersetzungsmotoren mit Hosting im Ausland zeigen vor jedem Versand eine Warnung an."
    },
    {
-    "q": "Sind die Bezeichnungen der Verfahrensakten vereinheitlicht?",
-    "r": "Ja. Die Strafprozessordnung ist seit 2011 vereinheitlicht und in den drei Amtssprachen veröffentlicht, das legt den Namen jeder Akte fest. Die Konkordanz zeigt diese Treffer im Kontext, mit Quelle, in den Fachgebieten Criminal Law und Litigation & Enforcement."
+    "q": "Sind die Bezeichnungen der Verfahrensdokumente vereinheitlicht?",
+    "r": "Ja. Die Strafprozessordnung ist seit 2011 vereinheitlicht und in den drei Amtssprachen veröffentlicht. Damit ist der Name jedes Dokuments festgelegt. Die Konkordanz zeigt diese Treffer im Kontext, mit Quelle, in den Fachgebieten Criminal Law und Litigation & Enforcement."
    },
    {
     "q": "Lässt sich ein Dossier mit mehreren tausend Seiten bearbeiten?",
