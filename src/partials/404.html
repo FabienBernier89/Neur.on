@@ -31,6 +31,8 @@ a:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:3p
 .stage{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:64px;align-items:center;padding-top:56px;padding-bottom:64px}
 h1{font-size:clamp(36px,4.6vw,58px);line-height:1.06;font-weight:800;letter-spacing:-.03em;text-wrap:balance;margin-bottom:22px}
 .lead{font-size:18px;color:rgba(255,255,255,.84);max-width:52ch;margin-bottom:30px}
+html:lang(de) .lead q,html:lang(it) .lead q{quotes:"«" "»"}
+html:lang(en) .lead q{quotes:"\201C" "\201D"}
 .lead q{quotes:"«\00a0" "\00a0»";color:#fff;font-weight:600}
 .sugg{margin:0 0 30px;max-width:52ch}
 .sugg p{font-size:14px;font-weight:600;color:var(--sky-2);margin-bottom:10px}
@@ -84,46 +86,46 @@ h1{font-size:clamp(36px,4.6vw,58px);line-height:1.06;font-weight:800;letter-spac
 </head>
 <body>
 <header class="top">
-  <a class="logo" href="/fr/"><img src="/assets/img/neuron-logo-blanc.png" alt="Neur.on, retour à l'accueil" width="557" height="170"></a>
+  <a class="logo" href="/fr/" data-l="fr/"><img src="/assets/img/neuron-logo-blanc.png" alt="Neur.on, retour à l'accueil" data-ta="alt:logo" width="557" height="170"></a>
 </header>
 
 <main class="stage" id="main">
   <section class="copy">
-    <h1>Cette page est introuvable.</h1>
-    <p class="lead">Selon l'art.&nbsp;404 du Code des obligations, le mandat <q>peut être révoqué ou répudié en tout temps</q>. Cette page semble avoir usé de ce droit. Elle a peut-être changé d'adresse&nbsp;: voici par où reprendre.</p>
+    <h1 data-t="h1">Cette page est introuvable.</h1>
+    <p class="lead" data-t="lead">Selon l'art.&nbsp;404 du Code des obligations, le mandat <q>peut être révoqué ou répudié en tout temps</q>. Cette page semble avoir usé de ce droit. Elle a peut-être changé d'adresse&nbsp;: voici par où reprendre.</p>
     <div class="sugg" id="sugg" hidden>
-      <p>Vous cherchiez peut-être&nbsp;:</p>
+      <p data-t="sugg">Vous cherchiez peut-être&nbsp;:</p>
       <ul id="sugg-list"></ul>
     </div>
     <div class="cta">
-      <a class="b b1" href="/fr/">Retour à l'accueil {{FLECHE}}</a>
-      <a class="b b2" href="/fr/corrext/">Découvrir Corrext</a>
+      <a class="b b1" href="/fr/" data-l="fr/"><span data-t="accueil">Retour à l'accueil</span> {{FLECHE}}</a>
+      <a class="b b2" href="/fr/corrext/" data-l="fr/corrext/" data-t="corrext">Découvrir Corrext</a>
     </div>
-    <nav class="quick" aria-label="Pages utiles">
-      <a href="/fr/ressources/glossaire/">Glossaire juridique</a>
-      <a href="/fr/aide/">Centre d'aide</a>
-      <a href="/fr/ressources/blog/">Blog</a>
-      <a href="/fr/contact/">Contact</a>
+    <nav class="quick" aria-label="Pages utiles" data-ta="aria-label:utiles">
+      <a href="/fr/ressources/glossaire/" data-l="fr/ressources/glossaire/" data-t="glossaire">Glossaire juridique</a>
+      <a href="/fr/aide/" data-l="fr/aide/" data-t="aide">Centre d'aide</a>
+      <a href="/fr/ressources/blog/" data-l="fr/ressources/blog/">Blog</a>
+      <a href="/fr/contact/" data-l="fr/contact/" data-t="contact">Contact</a>
     </nav>
   </section>
 
   <div class="vis">
     {{RESEAU}}
-    <aside class="card" aria-label="Page introuvable, en quatre langues">
-      <div class="card-h"><span>Le terme, quatre langues</span><b>Erreur 404</b></div>
+    <aside class="card" aria-label="Page introuvable, en quatre langues" data-ta="aria-label:carte">
+      <div class="card-h"><span data-t="terme">Le terme, quatre langues</span><b data-t="erreur">Erreur 404</b></div>
       <dl>
-        <div><dt>Allemand</dt><dd lang="de">Seite nicht gefunden</dd></div>
-        <div><dt>Français</dt><dd>Page introuvable</dd></div>
-        <div><dt>Italien</dt><dd lang="it">Pagina non trovata</dd></div>
-        <div><dt>Anglais</dt><dd lang="en">Page not found</dd></div>
+        <div><dt data-t="l_de">Allemand</dt><dd lang="de">Seite nicht gefunden</dd></div>
+        <div><dt data-t="l_fr">Français</dt><dd>Page introuvable</dd></div>
+        <div><dt data-t="l_it">Italien</dt><dd lang="it">Pagina non trovata</dd></div>
+        <div><dt data-t="l_en">Anglais</dt><dd lang="en">Page not found</dd></div>
       </dl>
-      <p class="card-f">art.&nbsp;404 al.&nbsp;1 CO · <a href="{{FEDLEX_CO}}" rel="noopener" target="_blank">le texte sur Fedlex</a></p>
+      <p class="card-f"><span data-t="art">art.&nbsp;404 al.&nbsp;1 CO</span> · <a href="{{FEDLEX_CO}}" rel="noopener" target="_blank" data-t="fedlex" data-fedlex>le texte sur Fedlex</a></p>
     </aside>
   </div>
 </main>
 
 <footer class="foot">
-  Neur.on AI Solutions SA · Fribourg · <a href="/fr/mentions-legales/">Mentions légales</a> · <a href="/fr/protection-des-donnees/">Protection des données</a>
+  Neur.on AI Solutions SA · Fribourg · <a href="/fr/mentions-legales/" data-l="fr/mentions-legales/" data-t="mentions">Mentions légales</a> · <a href="/fr/protection-des-donnees/" data-l="fr/protection-des-donnees/" data-t="donnees">Protection des données</a>
 </footer>
 
 <script>
@@ -136,8 +138,21 @@ h1{font-size:clamp(36px,4.6vw,58px);line-height:1.06;font-weight:800;letter-spac
       var at = el.tagName === "IMG" ? "src" : "href"; el.setAttribute(at, pre + el.getAttribute(at));
     });
   }
-  /* Suggestions : pages du site dont l'adresse ou le titre partage des mots avec l'adresse demandée */
-  var PAGES = {{INDEX}};
+  /* Langue : premier segment de l'adresse demandée, parmi les langues publiées */
+  var TXT = {{TEXTES}}, LIENS = {{LIENS}}, INDEX = {{INDEX}};
+  var seg = (location.pathname.slice(pre.length).split("/")[1] || "").toLowerCase();
+  var lang = INDEX[seg] ? seg : "fr";
+  if (lang !== "fr") {
+    var t = TXT[lang] || {};
+    document.documentElement.lang = lang;
+    if (t.titre) document.title = t.titre;
+    [].forEach.call(document.querySelectorAll("[data-t]"), function(el){ var k = el.getAttribute("data-t"); if (t[k]) el.innerHTML = t[k]; });
+    [].forEach.call(document.querySelectorAll("[data-ta]"), function(el){ var a = el.getAttribute("data-ta").split(":"); if (t[a[1]]) el.setAttribute(a[0], t[a[1]]); });
+    [].forEach.call(document.querySelectorAll("[data-l]"), function(el){ var c = (LIENS[lang] || {})[el.getAttribute("data-l")]; if (c) el.setAttribute("href", pre + "/" + c); });
+    var fx = document.querySelector("[data-fedlex]"); if (fx) fx.setAttribute("href", fx.getAttribute("href").replace(/\/fr$/, "/" + lang));
+  }
+  /* Suggestions : pages de la langue dont l'adresse ou le titre partage des mots avec l'adresse demandée */
+  var PAGES = INDEX[lang];
   var VIDES = "les des une pour avec sur dans par the and for und der die das von mit html htm php www page pages index fr de it en blog news category tag author".split(" ");
   function mots(s){
     return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-z0-9]+/)

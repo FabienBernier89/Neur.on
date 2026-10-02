@@ -562,13 +562,20 @@ def write_annexes(built):
     # page 404 : gabarit src/partials/404.html, servi depuis n'importe quelle profondeur (styles en ligne)
     fleche = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" '
               'stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>')
-    index = [[p, re.sub(r"\s*·\s*Neur\.on$", "", PAGES[("fr", p)]["title"] or PAGES[("fr", p)]["short"])] for p in sorted(paths)
-             if p not in ("fr/mentions-legales/", "fr/protection-des-donnees/")]
+    # index des suggestions, par langue : [adresse publiée, titre]
+    index = {l: [[o, re.sub(r"\s*·\s*Neur\.on$", "", PAGES[(l, p)]["title"] or PAGES[(l, p)]["short"])]
+                 for ll, p, o in sorted(built) if ll == l and p not in ("fr/mentions-legales/", "fr/protection-des-donnees/")]
+             for l in langs}
+    liens_404 = ("fr/", "fr/corrext/", "fr/ressources/glossaire/", "fr/aide/", "fr/ressources/blog/", "fr/contact/",
+                 "fr/mentions-legales/", "fr/protection-des-donnees/")
     page404 = (read(os.path.join(SRC, "partials", "404.html"))
                .replace("{{RESEAU}}", reseau_404())
                .replace("{{FEDLEX_CO}}", load_json_data("fedlex")["CO"]["url"])
                .replace("{{FLECHE_JS}}", json.dumps(fleche))
                .replace("{{FLECHE}}", fleche)
+               .replace("{{TEXTES}}", json.dumps({l: v for l, v in json.load(open(os.path.join(SRC, "partials", "404-textes.json"),
+                                                                                 encoding="utf-8")).items() if l in langs}, ensure_ascii=False))
+               .replace("{{LIENS}}", json.dumps({l: {p: chemin_sortie(p, l) for p in liens_404 if p in DISPO[l]} for l in langs}))
                .replace("{{INDEX}}", json.dumps(index, ensure_ascii=False).replace("</", "<\\/")))
     write(os.path.join(OUT, "404.html"), page404)
 
