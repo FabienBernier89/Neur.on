@@ -2,32 +2,32 @@
  {
   "slug": "cabinets-avocats",
   "short": "Studi legali",
-  "resume": "Tradurre rapidamente documenti confidenziali senza stralciare il dossier dalla Svizzera.",
-  "title": "Traduzioni legali per studi legali svizzeri · Neur.on",
-  "description": "Contenzioso, arbitrato, M &amp; A: traducete documenti e contratti sotto segreto professionale, nella terminologia svizzera, riletti da un traduttore giuridico.",
+  "resume": "Tradurre rapidamente atti riservati, senza che il dossier lasci la Svizzera.",
+  "title": "Traduzione per studi legali in Svizzera · Neur.on",
+  "description": "Contenzioso, arbitrato, M&A: traducete atti e contratti coperti dal segreto professionale, con terminologia svizzera e la revisione di un traduttore giuridico.",
   "lede": "Studi legali.",
-  "h1": "Tradurre un dossier senza mai uscirne dalla Svizzera",
-  "lead": "Quattrocento pagine di documenti da comprendere prima dell’udienza, un contratto da consegnare stasera, una memoria da citare. Corrext tratta tutto ciò in un contesto svizzero, con la terminologia dei testi ufficiali e una rilettura giuridica ordinata nello stesso schermo.",
+  "h1": "Tradurre un dossier senza che lasci mai la Svizzera",
+  "lead": "Quattrocento pagine di atti da capire prima dell'udienza. Un contratto da consegnare stasera. Un atto scritto da citare alla lettera. Corrext gestisce tutto questo in un ambiente svizzero, con la terminologia dei testi ufficiali e una revisione giuridica ordinata nella stessa schermata.",
   "promesses": [
    {
     "t": "Segreto professionale",
-    "d": "modalità «High sensitive content»: stoccaggio ed elaborazione esclusivamente in Svizzera"
+    "d": "modalità Highly sensitive content: archiviazione e trattamento esclusivamente in Svizzera"
    },
    {
     "t": "Volume",
-    "d": "fino a 25 file da 50 MB per invio, layout originale conservato"
+    "d": "fino a 25 file da 50 MB per invio, impaginazione originale conservata"
    },
    {
     "t": "Precisione",
-    "d": "riferimenti legali svizzeri verificabili nel contesto, termine per termine"
+    "d": "riferimenti normativi svizzeri verificabili nel contesto, termine per termine"
    }
   ],
-  "facts_titre": "Cosa cambia Corrext in uno studio medico",
-  "facts_intro": "Uno studio medico traduce per tre motivi: comprendere rapidamente, produrre un documento impegnativo e depositare presso un’autorità. Questi tre bisogni non richiedono né lo stesso strumento, né lo stesso livello di rilettura, né lo stesso budget di tempo. Corrext li separa esplicitamente.",
+  "facts_titre": "Che cosa cambia con Corrext in uno studio legale",
+  "facts_intro": "Uno studio legale traduce per tre ragioni: capire in fretta, produrre un documento vincolante e depositare un atto presso un'autorità. Queste tre esigenze non richiedono lo stesso strumento, né lo stesso livello di revisione, né gli stessi tempi. Corrext le separa esplicitamente.",
   "facts_liens": [
    {
     "href": "fr/corrext/traduction-texte-et-document/",
-    "txt": "Tradurre ora i documenti"
+    "txt": "Tradurre subito degli atti"
    },
    {
     "href": "fr/securite-souverainete/",
@@ -36,165 +36,165 @@
   ],
   "facts": [
    {
-    "k": "Revisione di documenti",
-    "v": "Depositate il lotto in file Translation: ogni documento ritorna nel suo formato originale, leggibile, senza copiare e incollare.",
-    "s": "Formati. pdf. doc. docx. xls. xlsx. ppt. pptx, fino a 25 file da 50 MB per invio."
+    "k": "Esame degli atti",
+    "v": "Caricate il lotto in File translation: ogni documento torna nel formato originale, leggibile, senza copia e incolla.",
+    "s": "Formati .pdf .doc .docx .xls .xlsx .ppt .pptx, fino a 25 file da 50 MB per invio."
    },
    {
-    "k": "Parti scansionate",
-    "v": "La scheda PDF to Word converte una scansione in un documento Word modificabile prima della traduzione o dell’annotazione."
+    "k": "Atti scansionati",
+    "v": "La scheda PDF to Word converte una scansione in un documento Word modificabile prima della traduzione o dell'annotazione."
    },
    {
     "k": "Segreto professionale",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione.",
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in una memoria di traduzione.",
     "s": "Disponibile in tedesco, francese, italiano e inglese."
    },
    {
     "k": "Motori esteri",
-    "v": "Se un collaboratore sceglie DeepL Pro, Azure OpenAI GPT o Claude, l’avviso Attorney-Cliente privilege ricorda la regola dello studio medico prima di qualsiasi invio.",
-    "s": "Possono essere loro affidati soltanto documenti completamente pseudonimizzati."
+    "v": "Se un collaboratore sceglie DeepL Pro, Azure OpenAI GPT o Claude, l'avviso Attorney-Client privilege ricorda la regola dello studio prima di ogni invio.",
+    "s": "Si possono affidare loro solo documenti interamente pseudonimizzati."
    },
    {
     "k": "Terminologia",
-    "v": "Una parola evidenziata apre Fast Lookup CHnell su questa parola nel contesto, con la sua fonte ufficiale: Foglio federale, Fedlex, giurisprudenza."
+    "v": "Una parola evidenziata apre Fast lookup CHnell su quella parola nel suo contesto, con la fonte ufficiale: Foglio federale, Fedlex, giurisprudenza."
    },
    {
     "k": "Documento vincolante",
-    "v": "Project Management ordina una revisione Light o Full da parte di un traduttore legale o una doppia revisione certificata da un’agenzia specializzata."
+    "v": "In Gestione dei progetti ordinate una Light review o una Full review da parte di un traduttore giuridico, oppure una Double review e traduzione certificata da parte di un'agenzia specializzata."
    },
    {
-    "k": "Deposito presso un’autorità",
-    "v": "Per un estratto del registro di commercio, la certificazione, la notarizzazione e l’apostilla sono ordinate online."
+    "k": "Deposito presso un'autorità",
+    "v": "Per un estratto del registro di commercio, certificazione, autenticazione notarile e apostille si ordinano in linea."
    },
    {
     "k": "Arbitrato internazionale",
-    "v": "Le coppie tedesca, francese, italiana e inglese sono native; la piattaforma copre 30 lingue per i documenti stranieri."
+    "v": "Le combinazioni tra tedesco, francese, italiano e inglese sono native; la piattaforma copre 30 lingue per i documenti stranieri."
    }
   ],
   "who_titre": "Tre momenti in cui lo studio guadagna ore",
   "who": [
    {
     "a": "Contenzioso",
-    "t": "400 pagine di atti prima dell’udienza",
-    "p": "Il lotto parte in file Translation con LexMachina e la modalità High-sensitive ritorna nel formato originale e il team legge invece di decifrare. I termini dubbi si basano su un’evidenziazione.",
+    "t": "400 pagine di atti prima dell'udienza",
+    "p": "Il lotto parte in File translation con LexMachina e la modalità Highly sensitive, torna nel formato originale e il team legge invece di decifrare. I termini dubbi si verificano evidenziandoli.",
     "vis": "lot"
    },
    {
     "a": "Transazioni",
-    "t": "Contratto di prestito da consegnare domani mattina",
-    "p": "Traduzione automatica di sera, Full Review da parte di un traduttore giuridico ordinata successivamente, termine visualizzato prima della convalida. Il cliente riceve un documento pronto per la firma, non una bozza.",
+    "t": "Un contratto di mutuo da consegnare domattina",
+    "p": "Traduzione automatica la sera, Full review da parte di un traduttore giuridico ordinata subito dopo, termine di consegna visibile prima della conferma. Il cliente riceve un documento pronto per la firma, non una bozza.",
     "vis": "pret"
    },
    {
     "a": "Arbitrato",
-    "t": "Una sentenza degna di nota",
-    "p": "Le alternative per motore mostrano le formulazioni concorrenti, CHnell dà l’uso ufficiale del termine nella legge e nella giurisprudenza e il socio decide con cognizione di causa.",
+    "t": "Un lodo da citare alla lettera",
+    "p": "Le alternative proposte dai diversi motori mostrano le formulazioni concorrenti, CHnell indica l'uso ufficiale del termine nella legge e nella giurisprudenza, e il socio decide con cognizione di causa.",
     "vis": "sentence"
    }
   ],
-  "gov_q": "Uno studio può affidare un dossier a uno strumento di traduzione online?",
-  "gov_p": "La questione non è teorica: si pone ogni volta che un collaboratore inserisce un paragrafo in un servizio pubblico; Corrext non lo vieta con una carta, applica la regola dello studio medico al momento della scelta del motore e propone un’alternativa che rimane in Svizzera.",
+  "gov_q": "Uno studio legale può affidare un dossier a uno strumento di traduzione in linea?",
+  "gov_p": "La domanda non è teorica: si pone ogni volta che un collaboratore incolla un paragrafo in un servizio per il grande pubblico. Corrext non lo vieta con un regolamento: applica la regola dello studio al momento della scelta del motore e propone un'alternativa che resta in Svizzera.",
   "gov_lien": {
    "href": "fr/securite-souverainete/",
    "txt": "Sicurezza e sovranità dei dati"
   },
   "gov_etapes": [
    {
-    "t": "Stoccaggio in Svizzera in ogni caso.",
-    "d": "I progetti sono conservati sui server svizzeri di Corrext presso un albergatore svizzero."
+    "t": "Archiviazione in Svizzera in ogni caso.",
+    "d": "I progetti sono conservati sui server svizzeri di Corrext, presso un fornitore di hosting svizzero."
    },
    {
     "t": "Trattamento in Svizzera su richiesta.",
-    "d": "Modalità «high sensitive content» o «motore LexMachina»: il testo non lascia il Paese."
+    "d": "Modalità Highly sensitive content o motore LexMachina: il testo non lascia il Paese."
    },
    {
-    "t": "Avvertenza prima di qualsiasi spedizione all’estero.",
-    "d": "L’avviso Attorney-Cliente privilege viene visualizzato non appena viene selezionato un motore terzo."
+    "t": "Avviso prima di ogni invio all'estero.",
+    "d": "L'avviso Attorney-Client privilege compare non appena si seleziona un motore di terzi."
    }
   ],
-  "outils_titre": "Gli strumenti più utilizzati dagli avvocati",
+  "outils_titre": "Gli strumenti più usati dagli avvocati",
   "outils": [
    {
     "href": "fr/corrext/traduction-texte-et-document/",
-    "t": "Traduzioni testo e documento",
-    "d": "Documenti, contratti, corrispondenza: testo e file, in pochi secondi."
+    "t": "Traduzione di testi e documenti",
+    "d": "Atti, contratti, corrispondenza: testi e file, in pochi secondi."
    },
    {
     "href": "fr/corrext/gestion-de-projet/",
-    "t": "Gestione di progetti",
-    "d": "Revisione da parte di un traduttore giuridico, preventivi e termini visualizzati prima della convalida."
+    "t": "Gestione dei progetti",
+    "d": "Revisione da parte di un traduttore giuridico, offerta e termine di consegna visibili prima della conferma."
    },
    {
     "href": "fr/corrext/chnell/",
-    "t": "Fast look CHnell",
-    "d": "L’uso ufficiale di un termine, sorretto, nelle quattro lingue."
+    "t": "Fast lookup CHnell",
+    "d": "L'uso ufficiale di un termine, con la sua fonte, nelle quattro lingue."
    }
   ],
-  "faq_titre": "Domande frequenti degli studi medici",
+  "faq_titre": "Domande frequenti degli studi legali",
   "faq": [
    {
-    "q": "Il segreto professionale dell’avvocato è compatibile con una traduzione automatica?",
-    "r": "Sì, a condizione di padroneggiare dove è trattato il testo. La modalità «High sensitive content» di Corrext impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzare il contenuto in memoria di traduzione. I motori ospitati all’estero restano disponibili, ma l’applicazione visualizza un avvertimento e richiede una pseudonimizzazione preliminare."
+    "q": "Il segreto professionale dell'avvocato è compatibile con una traduzione automatica?",
+    "r": "Sì, a condizione di sapere dove viene trattato il testo. La modalità Highly sensitive content di Corrext impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in una memoria di traduzione. I motori ospitati all'estero restano disponibili, ma l'applicazione mostra un avviso ed esige una pseudonimizzazione preliminare."
    },
    {
-    "q": "Quanti pezzi posso tradurre in una sola volta?",
-    "r": "Fino a 25 file da 50 MB ciascuno per invio in traduzione testo e documento, nei formati. pdf,. doc,. docx,. xls,. xlsx,. ppt e. pptx. Per un lotto più grande o una rilettura umana, create un progetto di traduzione."
+    "q": "Quanti atti posso tradurre in una volta?",
+    "r": "Fino a 25 file da 50 MB ciascuno per invio in Traduzione di testi e documenti, nei formati .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. Per un lotto più grande o una revisione da parte di specialisti, create un progetto di traduzione."
    },
    {
-    "q": "Il layout dei contratti viene mantenuto?",
-    "r": "Sì, la traduzione è fornita nel formato originale. L’applicazione raccomanda di depositare, se disponibile, il formato originale, un file Word o Excel anziché un PDF."
+    "q": "L'impaginazione dei contratti viene conservata?",
+    "r": "Sì, la traduzione viene consegnata nel formato originale. Quando è disponibile, l'applicazione raccomanda di caricare il formato originale, un file Word o Excel invece di un PDF."
    },
    {
-    "q": "Chi riproduce i documenti destinati a terzi?",
-    "r": "Un traduttore giuridico, in lettura Light o Full, o due traduttori e un’agenzia specializzata per una doppia revisione con certificato. Il livello si sceglie documento per documento, con il termine indicato prima della convalida."
+    "q": "Chi rivede i documenti destinati a terzi?",
+    "r": "Un traduttore giuridico, con una Light review o una Full review, oppure due traduttori e un'agenzia specializzata per una Double review e traduzione certificata. Il livello si sceglie documento per documento, con il termine di consegna visibile prima della conferma."
    },
    {
-    "q": "Posso far rileggere dai miei collaboratori?",
-    "r": "Sì. La modalità Internal Review del tunnel progetto organizza la rivisitazione da parte dei vostri team e cifra il tempo necessario a partire dal numero di pagine standard rilevato."
+    "q": "Posso far rivedere i documenti dai miei collaboratori?",
+    "r": "Sì. La modalità Internal review, nel percorso di creazione del progetto, organizza la revisione da parte dei vostri team. Calcola anche il tempo necessario in base al numero di pagine standard rilevato."
    },
    {
-    "q": "Le traduzioni di un dossier forniscono una base comune?",
-    "r": "I progetti in confidenzialità standard possono fungere da memoria di traduzione, riutilizzabile esclusivamente dalla vostra organizzazione. I progetti in modalità «high sensitive content» non vengono mai riutilizzati."
+    "q": "Le traduzioni di un dossier alimentano una banca dati comune?",
+    "r": "I progetti con riservatezza Standard possono servire da memoria di traduzione, riutilizzabile esclusivamente dalla vostra organizzazione. I progetti in modalità Highly sensitive content non vengono mai riutilizzati."
    }
   ],
-  "cta_t": "Guardate Corrext sui vostri pezzi",
-  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero sui vostri formati, lingue e terminologia.",
+  "cta_t": "Mettete Corrext alla prova sui vostri atti",
+  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero, sui vostri formati, nelle vostre lingue e con la vostra terminologia.",
   "temoignage": {
    "exemple": true,
-   "citation": "Quattrocento pagine di documenti in lingua tedesca sono pervenute dieci giorni prima dell’udienza. Con Corrext, il team ha letto il dossier in francese già il giorno seguente e ogni termine sospetto si verificava in CHnell senza lasciare il documento. Che dalla Svizzera nulla fosse negoziabile per il nostro cliente: questo punto ha portato con sé la decisione.",
-   "auteur": "Associata, dipartimento contenzioso",
-   "fonction": "Studio d’affari, Ginevra"
+   "citation": "Quattrocento pagine di atti in tedesco sono arrivate dieci giorni prima dell'udienza. Con Corrext il team ha letto il dossier in francese già il giorno dopo, e ogni termine dubbio si verificava in CHnell senza uscire dal documento. Che nulla uscisse dalla Svizzera non era negoziabile per il nostro cliente: è stato questo l'elemento decisivo.",
+   "auteur": "Socia, dipartimento contenzioso",
+   "fonction": "Studio legale d'affari, Ginevra"
   }
  },
  {
   "slug": "banques-finance",
-  "short": "Banche e finanza",
-  "resume": "Segreto bancario, requisiti FINMA e rapporti multilingue, senza trasferimento al di fuori della Svizzera.",
-  "title": "Traduzioni legali e finanziarie per banche · Neur.on",
-  "description": "Segreto bancario, circolari FINMA, prospetti e rapporti annuali: tradotti in quattro lingue, trattati in Svizzera, con la terminologia ufficiale.",
-  "lede": "Banche e finanza.",
-  "h1": "Il vocabolario prudenziale, trattato in Svizzera",
-  "lead": "Una circolare FINMA, un prospetto dei fondi, una politica di conformità, un rapporto annuale: questi testi si citano, si confrontano e si archiviano. Corrext li traducono con i termini dei testi ufficiali e tengono la mano sul luogo di trattamento.",
+  "short": "Banche e istituti finanziari",
+  "resume": "Segreto bancario, requisiti FINMA e rapporti multilingui, senza trasferimenti fuori dalla Svizzera.",
+  "title": "Traduzione finanziaria per banche in Svizzera · Neur.on",
+  "description": "Segreto bancario, circolari FINMA, prospetti e rapporti annuali: traducete in quattro lingue, con trattamento in Svizzera e la terminologia ufficiale.",
+  "lede": "Banche e istituti finanziari.",
+  "h1": "Il lessico prudenziale, tradotto in Svizzera",
+  "lead": "Una circolare FINMA, un prospetto di fondi, una direttiva di conformità, un rapporto annuale: sono testi che si citano, si confrontano e si archiviano. Corrext li traduce con i termini dei testi ufficiali e vi lascia il controllo sul luogo del trattamento.",
   "promesses": [
    {
     "t": "Segreto bancario",
-    "d": "art. 47 LBCR: «high sensitive content»: tutto rimane in Svizzera"
+    "d": "art. 47 LBCR: modalità Highly sensitive content, tutto resta in Svizzera"
    },
    {
     "t": "Terminologia prudenziale",
-    "d": "settori Banking &amp; Finance e Supervisory (FINMA) in CHnell"
+    "d": "settori Banking & Finance e Supervisory (FINMA) in CHnell"
    },
    {
-    "t": "Multilingue predefinita",
-    "d": "tedesco, francese, italiano e inglese in madrelingua"
+    "t": "Multilingue di serie",
+    "d": "tedesco, francese, italiano e inglese come lingue native"
    }
   ],
-  "facts_titre": "Cosa cambia Corrext in un istituto finanziario",
-  "facts_intro": "In una banca, la traduzione non è un servizio annesso: si tratta di un obbligo regolamentare ripetuto, su testi la cui formulazione obbliga l’istituto. Corrext tratta questi testi come documenti regolamentati, non come contenuto.",
+  "facts_titre": "Che cosa cambia con Corrext in un istituto finanziario",
+  "facts_intro": "In una banca la traduzione non è un servizio accessorio: è un obbligo normativo ricorrente, su testi la cui formulazione impegna l'istituto. Corrext tratta questi testi come documenti regolamentati, non come semplici contenuti.",
   "facts_liens": [
    {
     "href": "fr/traduction/compliance-finma/",
-    "txt": "Traduzioni e conformità FINMA"
+    "txt": "Traduzione e conformità FINMA"
    },
    {
     "href": "fr/securite-souverainete/",
@@ -204,37 +204,37 @@
   "facts": [
    {
     "k": "Segreto bancario",
-    "v": "Il modo «High sensitive Content» mantiene lo stoccaggio e il trattamento esclusivamente in Svizzera, il che corrisponde alla logica dell’articolo 47 LBCR.",
+    "v": "La modalità Highly sensitive content mantiene archiviazione e trattamento esclusivamente in Svizzera, in linea con la logica dell'art. 47 LBCR.",
     "s": "Disponibile in tedesco, francese, italiano e inglese."
    },
    {
     "k": "Circolari e direttive",
-    "v": "La terminologia della vigilanza si basa sul contesto: CHnell copre i settori Banking &amp; Finance e Supervisory (FINMA)."
+    "v": "La terminologia della vigilanza si verifica nel contesto: CHnell copre i settori Banking & Finance e Supervisory (FINMA)."
    },
    {
-    "k": "Prospetti di fondi",
-    "v": "Il settore Fund Prospectuses di CHnell fornisce le formulazioni utilizzate nei documenti pubblicati."
+    "k": "Prospetti dei fondi",
+    "v": "Il settore Fund Prospectuses di CHnell fornisce le formulazioni usate nei documenti pubblicati."
    },
    {
     "k": "Rapporti annuali",
-    "v": "I volumi ricorrenti passano alla gestione del progetto con una revisione Full Review, o doppia review e certificazione quando il documento viene pubblicato."
+    "v": "I volumi ricorrenti passano da Gestione dei progetti con una Full review, oppure con una Double review e traduzione certificata quando il documento viene pubblicato."
    },
    {
-    "k": "Politiche interne",
-    "v": "Rifrasing riformula un testo in stile Financial o Simplified per una nota interna, partendo dal documento convalidato."
+    "k": "Direttive interne",
+    "v": "Rephrasing riformula un testo in stile Financial o Simplified per una nota interna, partendo dal documento convalidato."
    },
    {
     "k": "Governance dei motori",
-    "v": "DeepL Pro, Azure OpenAI GPT e Claude restano disponibili, con l’avviso Attorney-Client privilege e l’esigenza di pseudonimizzazione.",
-    "s": "La politica si applica nello strumento, al momento della scelta."
+    "v": "DeepL Pro, Azure OpenAI GPT e Claude restano disponibili, con l'avviso Attorney-Client privilege e l'obbligo di pseudonimizzazione.",
+    "s": "Le regole si applicano nello strumento, al momento della scelta."
    },
    {
-    "k": "Memoria dell’istituto",
-    "v": "I progetti in confidenzialità standard costituiscono una memoria riutilizzabile dalla vostra sola organizzazione."
+    "k": "Memoria dell'istituto",
+    "v": "I progetti con riservatezza Standard costituiscono una memoria riutilizzabile soltanto dalla vostra organizzazione."
    },
    {
     "k": "Certificazione",
-    "v": "Un estratto del registro di commercio destinato a una controparte estera deve essere autenticato, autenticato o apostillato."
+    "v": "Un estratto del registro di commercio destinato a una controparte estera si ordina con traduzione certificata, autenticata da un notaio o con apostille."
    }
   ],
   "who_titre": "Tre situazioni di conformità",
@@ -242,125 +242,125 @@
    {
     "vis": "bouclier",
     "a": "Compliance",
-    "t": "Rispondere all’autorità in tre lingue",
-    "p": "Il testo di riferimento è tradotto con la terminologia della sorveglianza, le alternative per motore mostrano le possibili formulazioni e ogni termine si verifica nella sua fonte ufficiale prima dell’invio."
+    "t": "Rispondere all'autorità in tre lingue",
+    "p": "Il testo di riferimento viene tradotto con la terminologia della vigilanza. Le alternative dei diversi motori mostrano le formulazioni possibili e ogni termine si verifica nella sua fonte ufficiale prima dell'invio."
    },
    {
     "vis": "signature",
-    "a": "Giuridico",
-    "t": "Contratto quadro da firmare in tedesco",
-    "p": "Traduzione automatica e Full Review da parte di un traduttore giuridico, termine visualizzato prima della convalida. La controparte tedesca riceve un documento riprodotto, non una versione grezza."
+    "a": "Legale",
+    "t": "Un contratto quadro da firmare in tedesco",
+    "p": "Traduzione automatica, poi Full review da parte di un traduttore giuridico, con il termine di consegna visibile prima della conferma. La controparte della Svizzera tedesca riceve un documento rivisto, non una versione grezza."
    },
    {
     "vis": "rapport",
     "a": "Comunicazione finanziaria",
     "t": "Un rapporto in tre lingue",
-    "p": "Il rapporto annuale diventa un progetto unico, le tre lingue target sono selezionate insieme e la rilettura esterna è ordinata al livello richiesto dalla pubblicazione."
+    "p": "Il rapporto annuale diventa un progetto unico, le tre lingue d'arrivo si selezionano insieme e la revisione esterna si ordina al livello richiesto da una pubblicazione."
    }
   ],
-  "gov_q": "Il segreto bancario sopravvive alla traduzione automatica?",
-  "gov_p": "Tutto dipende dal luogo di elaborazione e dal riutilizzo dei dati. Corrext separa esplicitamente i due dati: lo stoccaggio è svizzero in ogni caso, il trattamento lo è in modalità «High-sensitive Content» o con il motore LexMachina, e i contenuti sensibili non nutrono alcuna memoria.",
+  "gov_q": "Il segreto bancario sopravvive a una traduzione automatica?",
+  "gov_p": "Tutto dipende dal luogo del trattamento e dal riutilizzo dei dati. Corrext separa esplicitamente i due aspetti: l'archiviazione è svizzera in ogni caso. Il trattamento lo è in modalità Highly sensitive content o con il motore LexMachina, e i contenuti sensibili non alimentano alcuna memoria.",
   "gov_lien": {
    "href": "fr/securite-souverainete/",
    "txt": "Sicurezza e sovranità dei dati"
   },
   "gov_etapes": [
    {
-    "t": "Alloggio svizzero.",
+    "t": "Hosting svizzero.",
     "d": "Infrastruttura in Svizzera, certificazione ISO 27001 ottenuta nel febbraio 2024."
    },
    {
     "t": "Trattamento svizzero su richiesta.",
-    "d": "Modalità «High sensitive content» o motore LexMachina, in tedesco, francese, italiano e inglese."
+    "d": "Modalità Highly sensitive content o motore LexMachina, in tedesco, francese, italiano e inglese."
    },
    {
-    "t": "Nessun allenamento sui contenuti.",
-    "d": "I documenti del cliente non vengono utilizzati per addestrare i modelli di Neur.on."
+    "t": "Nessun addestramento sui vostri contenuti.",
+    "d": "I documenti dei clienti non servono ad addestrare i modelli di Neur.on."
    }
   ],
-  "outils_titre": "Gli strumenti più utilizzati dagli istituti finanziari",
+  "outils_titre": "Gli strumenti più usati dagli istituti finanziari",
   "outils": [
    {
     "href": "fr/corrext/gestion-de-projet/",
-    "t": "Gestione di progetti",
-    "d": "Revisioni legali e certificazioni per i documenti pubblicati."
+    "t": "Gestione dei progetti",
+    "d": "Revisione giuridica e certificazione per i documenti pubblicati."
    },
    {
     "href": "fr/corrext/chnell/",
-    "t": "Fast look CHnell",
-    "d": "Terminologia bancaria e prudenziale, datata e datata."
+    "t": "Fast lookup CHnell",
+    "d": "Terminologia bancaria e prudenziale, con fonte e data."
    },
    {
     "href": "fr/corrext/traduction-texte-et-document/",
-    "t": "Traduzioni testo e documento",
-    "d": "Quotidiano: appunti, corrispondenza, documenti di lavoro."
+    "t": "Traduzione di testi e documenti",
+    "d": "Il lavoro quotidiano: note, corrispondenza, documenti di lavoro."
    }
   ],
   "faq_titre": "Domande frequenti degli istituti finanziari",
   "faq": [
    {
-    "q": "Una traduzione automatica è compatibile con l’articolo 47 LBCR?",
-    "r": "La questione riguarda il luogo di trattamento e il riutilizzo dei dati. Nella modalità «High sensitive content», Corrext memorizza ed elabora i documenti esclusivamente in Svizzera e non ne fa alcuna memoria di traduzione. I motori terzi ospitati all’estero attivano un avvertimento e richiedono una pseudonimizzazione preliminare."
+    "q": "Una traduzione automatica è compatibile con l'art. 47 LBCR?",
+    "r": "La domanda riguarda il luogo del trattamento e il riutilizzo dei dati. In modalità Highly sensitive content, Corrext archivia e tratta i documenti esclusivamente in Svizzera e non ne ricava alcuna memoria di traduzione. I motori di terzi ospitati all'estero attivano un avviso ed esigono una pseudonimizzazione preliminare."
    },
    {
     "q": "La terminologia della FINMA è coperta?",
-    "r": "Il concordato CHnell copre 30 settori, tra cui Banking &amp; Finance, Supervisory (FINMA) e Fund Prospectuses. Ogni risultato presenta la sua fonte ufficiale, ad esempio il Foglio federale o Fedlex, e si apre nel contesto."
+    "r": "Il concordanziere CHnell copre 30 settori, tra cui Banking & Finance, Supervisory (FINMA) e Fund Prospectuses. Ogni risultato mostra la sua fonte ufficiale, per esempio il Foglio federale o Fedlex, e si apre nel contesto."
    },
    {
-    "q": "Si può imporre un motore svizzero a tutta l’organizzazione?",
-    "r": "La politica dell’organizzazione viene mostrata nello strumento al momento della scelta del motore, sotto forma di avviso Attorney-Client privilege, e la modalità «High sensitive content» garantisce un trattamento in Svizzera. L’inquadratura precisa avviene durante la dimostrazione."
+    "q": "Si può imporre un motore svizzero a tutta l'organizzazione?",
+    "r": "Le regole dell'organizzazione compaiono nello strumento al momento della scelta del motore, sotto forma di avviso Attorney-Client privilege, e la modalità Highly sensitive content garantisce un trattamento in Svizzera. I dettagli si definiscono durante la dimostrazione."
    },
    {
-    "q": "I nostri rapporti annuali multilingue possono seguire lo stesso processo?",
-    "r": "Sì. Un progetto accetta più lingue target, individua il numero di pagine standard e la categoria giuridica di ogni file, poi cifra il termine di lettura scelto."
+    "q": "I nostri rapporti annuali multilingui possono seguire uno stesso processo?",
+    "r": "Sì. Un progetto accetta più lingue d'arrivo, rileva il numero di pagine standard e la categoria giuridica di ogni file, poi calcola il termine di consegna della revisione scelta."
    },
    {
-    "q": "Cosa succede alla memoria di traduzione dell’istituto?",
-    "r": "I progetti in confidenzialità standard possono essere riutilizzati come memoria dalla vostra sola organizzazione. I progetti in modalità «high sensitive content» non vengono mai riutilizzati."
+    "q": "Che cosa succede alla memoria di traduzione dell'istituto?",
+    "r": "I progetti con riservatezza Standard possono essere riutilizzati come memoria soltanto dalla vostra organizzazione. I progetti in modalità Highly sensitive content non vengono mai riutilizzati."
    },
    {
     "q": "Quali lingue sono disponibili?",
-    "r": "Trenta lingue sulla piattaforma. Tedesco, francese, italiano e inglese sono madrelingua LexMachina e sono le quattro lingue disponibili in modalità high sensitive content."
+    "r": "Trenta lingue sulla piattaforma. Tedesco, francese, italiano e inglese sono native con LexMachina e sono le quattro lingue disponibili in modalità Highly sensitive content."
    }
   ],
-  "cta_t": "Corrext sui documenti normativi",
-  "cta_p": "Una dimostrazione con uno specialista sulle circolari, i prospetti e la terminologia.",
+  "cta_t": "Mettete Corrext alla prova sui vostri documenti regolamentari",
+  "cta_p": "Una dimostrazione con uno specialista, sulle vostre circolari, sui vostri prospetti e con la vostra terminologia.",
   "temoignage": {
    "exemple": true,
-   "citation": "La richiesta dell’autorità è pervenuta in tedesco un venerdì, con una risposta attesa in francese e in italiano. Le versioni di lavoro erano pronte in tempo utile e ogni termine di vigilanza è stato verificato nella sua fonte ufficiale prima dell’invio. Per la nostra direzione, la condizione di partenza era che i documenti rimanessero stoccati in Svizzera.",
+   "citation": "La richiesta dell'autorità è arrivata in tedesco un venerdì, con una risposta attesa in francese e in italiano. Le versioni di lavoro erano pronte entro un'ora, e ogni termine prudenziale è stato verificato nella sua fonte ufficiale prima dell'invio. Per la nostra direzione, che i documenti restassero archiviati in Svizzera era la condizione di partenza.",
    "auteur": "Responsabile compliance",
    "fonction": "Banca privata, Zurigo"
   }
  },
  {
   "slug": "directions-juridiques",
-  "short": "Direzioni legali",
-  "resume": "Riprendere il controllo di un processo di traduzione disperso, con preventivi leggibili.",
-  "title": "Traduzioni per direzioni legali e Legal Ops · Neur.on",
-  "description": "Centralizzate le traduzioni dell’azienda in Svizzera: preventivi e scadenze immediati, revisioni interne o esterne, memoria riutilizzabile, accesso ai documenti.",
-  "lede": "Direzioni giuridiche e Legal Ops.",
-  "h1": "Una traduzione misurabile",
-  "lead": "Richieste che partono in sei direzioni, fatture che arrivano da quattro fornitori e nessuno che sa cosa è già stato tradotto. Corrext riunisce la domanda, il preventivo, la rilettura e le risorse linguistiche in un unico ambiente, ospitato in Svizzera.",
+  "short": "Uffici legali d'impresa",
+  "resume": "Riprendere il controllo di un processo di traduzione frammentato, con offerte chiare.",
+  "title": "Traduzione per uffici legali e Legal Ops · Neur.on",
+  "description": "Traduzioni centralizzate in Svizzera: offerta e termine di consegna immediati, revisione interna o esterna, memoria riutilizzabile, accessi per documento.",
+  "lede": "Uffici legali e Legal Ops.",
+  "h1": "Una traduzione che si può misurare",
+  "lead": "Richieste che partono in sei direzioni, fatture che arrivano da quattro fornitori, e nessuno che sa che cosa è già stato tradotto. Corrext riunisce richiesta, offerta, revisione e risorse linguistiche in un unico ambiente, con hosting in Svizzera.",
   "promesses": [
    {
     "t": "Visibilità",
-    "d": "preventivo e termine visualizzati prima dell’avvio, progetto per progetto"
+    "d": "offerta e termine di consegna visibili prima di avviare il lavoro, progetto per progetto"
    },
    {
     "t": "Governance",
-    "d": "diritti di accesso al documento, sincronizzati con SharePoint e Active Directory"
+    "d": "diritti di accesso fino al singolo documento, sincronizzati con SharePoint e Active Directory"
    },
    {
     "t": "Capitalizzazione",
-    "d": "i progetti standard diventano una memoria riutilizzabile per la vostra organizzazione"
+    "d": "i progetti Standard diventano una memoria riutilizzabile dalla vostra organizzazione"
    }
   ],
-  "facts_titre": "Cosa cambia Corrext in una direzione giuridica",
-  "facts_intro": "Il problema di una direzione giuridica non è la qualità di una traduzione isolata, bensì la dispersione. Ogni servizio ordina dove vuole, nessuno capitalizza e i documenti sensibili circolano per e-mail. Corrext riporta tutto in un unico flusso, senza privare i team della possibilità di andare in fretta.",
+  "facts_titre": "Che cosa cambia con Corrext in un ufficio legale",
+  "facts_intro": "Il problema di un ufficio legale non è la qualità di una singola traduzione: è la frammentazione. Ogni servizio ordina dove vuole, nessuno capitalizza il lavoro e i documenti sensibili circolano per posta elettronica. Corrext riporta tutto in un unico flusso di lavoro, senza togliere ai team la possibilità di andare veloci.",
   "facts_liens": [
    {
     "href": "fr/corrext/gestion-de-projet/",
-    "txt": "La galleria progetto passo dopo passo"
+    "txt": "Il percorso del progetto, passo dopo passo"
    },
    {
     "href": "fr/niveaux-de-qualite/",
@@ -369,159 +369,159 @@
   ],
   "facts": [
    {
-    "k": "Domanda unica",
-    "v": "Un progetto si articola in tre fasi: nome e confidenzialità, deposito dei file, preventivo. I richiedenti non devono più cercare un fornitore di servizi."
+    "k": "Richiesta unica",
+    "v": "Un progetto si crea in tre passi: nome e riservatezza, caricamento dei file, offerta. Chi fa la richiesta non deve più cercare un fornitore."
    },
    {
-    "k": "Rilevazione automatica",
-    "v": "Ogni file depositato visualizza il suo numero di pagine standard, la sua lingua scoperta e la sua categoria giuridica, modificabili.",
-    "s": "La base del termine e del preventivo è quindi visibile prima di qualsiasi convalida."
+    "k": "Rilevamento automatico",
+    "v": "Ogni file caricato mostra il numero di pagine standard, la lingua rilevata e la categoria giuridica, tutti modificabili.",
+    "s": "La base del termine di consegna e dell'offerta è quindi visibile prima di qualsiasi conferma."
    },
    {
     "k": "Revisione interna",
-    "v": "I vostri giuristi rileggono e il tempo che impiegano è stimato nel preventivo."
+    "v": "I vostri giuristi rivedono il testo, e il tempo che ciò richiede è stimato nell'offerta."
    },
    {
-    "k": "Revisioni esterne",
-    "v": "Tre livelli: Light Review e Full Review da parte di un traduttore giuridico, Double Review e Traduzione certificata da un’agenzia specializzata."
+    "k": "Revisione esterna",
+    "v": "Tre livelli: Light review e Full review da parte di un traduttore giuridico, Double review e traduzione certificata da parte di un'agenzia specializzata."
    },
    {
     "k": "Priorità",
-    "v": "Una data di scadenza e un ordine di priorità tra i file si fissano al momento del preventivo."
+    "v": "La data di consegna e l'ordine di priorità tra i file si fissano al momento dell'offerta."
    },
    {
-    "k": "Diritti d’accesso",
-    "v": "Gli accessi vengono impostati fino al documento e sincronizzati con SharePoint e Active Directory."
+    "k": "Diritti di accesso",
+    "v": "Gli accessi si regolano fino al singolo documento e si sincronizzano con SharePoint e Active Directory."
    },
    {
     "k": "Memoria aziendale",
-    "v": "I progetti di confidenzialità standard forniscono alla vostra organizzazione una memoria riutilizzabile."
+    "v": "I progetti con riservatezza Standard alimentano una memoria riutilizzabile soltanto dalla vostra organizzazione."
    },
    {
-    "k": "Fine delle traduzioni selvagge",
-    "v": "I team dispongono di uno strumento approvato, il che non giustifica l’utilizzo di un servizio online non securizzato."
+    "k": "Basta traduzioni improvvisate",
+    "v": "I team dispongono di uno strumento approvato e non hanno più motivo di usare un servizio in linea non protetto."
    }
   ],
-  "who_titre": "Tre cantieri di una direzione giuridica",
+  "who_titre": "Tre cantieri di un ufficio legale",
   "who": [
    {
     "vis": "jauge",
-    "a": "Pilotaggio",
-    "t": "Misurare quanto costa una traduzione",
-    "p": "Il preventivo indica il periodo di preparazione, di rilettura interna e di rilettura esterna prima della convalida. Lei arbitra sui dati, non su una stampa."
+    "a": "Gestione",
+    "t": "Misurare il tempo che costa una traduzione",
+    "p": "Prima della conferma l'offerta mostra i tempi di preparazione, di revisione interna e di revisione esterna. Decidete in base ai dati, non a un'impressione."
    },
    {
     "vis": "courriel",
     "a": "Conformità",
-    "t": "Più documenti sensibili via e-mail",
-    "p": "Un ambiente unico, uno stoccaggio svizzero, diritti fino al documento e un avvertimento non appena viene scelto un motore estero."
+    "t": "Basta atti sensibili per posta elettronica",
+    "p": "Un ambiente unico, un'archiviazione svizzera, diritti fino al singolo documento e un avviso non appena si sceglie un motore estero."
    },
    {
     "vis": "memoire",
     "a": "Capitalizzazione",
-    "t": "Non tradurre più la stessa clausola",
-    "p": "Le correzioni convalidate nei progetti standard alimentano la memoria dell’impresa per le traduzioni successive e la terminologia si verifica in un concordato sorto piuttosto che nei ricordi di ognuno."
+    "t": "Non ritradurre più la stessa clausola",
+    "p": "Le correzioni convalidate nei progetti Standard alimentano la memoria dell'azienda per le traduzioni successive. La terminologia si verifica in un concordanziere con le fonti, invece che nei ricordi di ciascuno."
    }
   ],
-  "gov_q": "Come mantenere la padronanza senza rallentare i team?",
-  "gov_p": "Separando gli usi. La comprensione rapida passa per la traduzione di testo e documento, in self-service e in pochi secondi. Il documento impegnativo passa per un progetto, con rilettura e preventivo. La stessa piattaforma copre entrambe sotto la medesima Privacy Policy.",
+  "gov_q": "Come mantenere il controllo senza rallentare i team?",
+  "gov_p": "Separando gli usi. La comprensione rapida passa da Traduzione di testi e documenti, in autonomia e in pochi secondi. Il documento vincolante passa da un progetto, con revisione e offerta. La stessa piattaforma copre entrambi, con le stesse regole di riservatezza.",
   "gov_lien": {
    "href": "fr/securite-souverainete/",
    "txt": "Sicurezza e sovranità dei dati"
   },
   "gov_etapes": [
    {
-    "t": "Confidenzialità scelta progetto per progetto.",
-    "d": "Standard o «high sensitive content», con le conseguenze indicate al momento della scelta."
+    "t": "Riservatezza scelta progetto per progetto.",
+    "d": "Standard o Highly sensitive content, con le conseguenze mostrate al momento della scelta."
    },
    {
-    "t": "Preventivo e termine prima dell’impiego.",
-    "d": "Calcolati a partire dalle pagine standard e dalla categoria rilevata."
+    "t": "Offerta e termine di consegna prima dell'impegno.",
+    "d": "Calcolati in base alle pagine standard e alla categoria rilevata."
    },
    {
     "t": "Tracciabilità degli accessi.",
-    "d": "Diritti fino al documento, sincronizzati con le directory."
+    "d": "Diritti fino al singolo documento, sincronizzati con le vostre directory aziendali."
    }
   ],
-  "outils_titre": "Gli strumenti più utilizzati dalle direzioni legali",
+  "outils_titre": "Gli strumenti più usati dagli uffici legali",
   "outils": [
    {
     "href": "fr/corrext/gestion-de-projet/",
-    "t": "Gestione di progetti",
-    "d": "Il fulcro del dispositivo: progetto, rilettura, preventivo e termine."
+    "t": "Gestione dei progetti",
+    "d": "Il cuore del sistema: progetto, revisione, offerta e termine di consegna."
    },
    {
     "href": "fr/corrext/traduction-texte-et-document/",
-    "t": "Traduzioni testo e documento",
-    "d": "Il self-service che sostituisce gli utensili non protetti."
+    "t": "Traduzione di testi e documenti",
+    "d": "Lo strumento in autonomia che sostituisce i servizi non protetti."
    },
    {
     "href": "fr/corrext/api-on-premises/",
     "t": "API e on-premises",
-    "d": "Collegare la traduzione ai sistemi esistenti."
+    "d": "Collegare la traduzione ai vostri sistemi esistenti."
    }
   ],
-  "faq_titre": "Domande frequenti delle direzioni legali",
+  "faq_titre": "Domande frequenti degli uffici legali",
   "faq": [
    {
-    "q": "Come viene calcolato il preventivo?",
-    "r": "A partire dal numero di pagine standard rilevato in ogni file, dalla categoria giuridica riconosciuta, dal livello di riproduzione scelto e dalla data di scadenza. Il termine e il costo vengono visualizzati prima della convalida nell’applicazione."
+    "q": "Come viene calcolata l'offerta?",
+    "r": "In base al numero di pagine standard rilevato in ogni file, alla categoria giuridica riconosciuta, al livello di revisione scelto e alla data di consegna. Il termine di consegna e il costo compaiono nell'applicazione prima di qualsiasi conferma."
    },
    {
-    "q": "Si può far rileggere internamente anziché esternamente?",
-    "r": "Sì. La modalità Internal Review calcola il tempo di riproduzione dei vostri team in base al numero di pagine standard e potete valutare voi stessi questo tempo nel preventivo."
+    "q": "Si può far rivedere internamente invece che esternamente?",
+    "r": "Sì. La modalità Internal review calcola il tempo di revisione dei vostri team in base al numero di pagine standard, e potete valorizzare voi stessi questo tempo nell'offerta."
    },
    {
-    "q": "Come sono gestiti i diritti d’accesso?",
-    "r": "I diritti si regolano fino al livello del documento e si sincronizzano con SharePoint e Active Directory."
+    "q": "Come vengono gestiti i diritti di accesso?",
+    "r": "I diritti si regolano fino al livello del singolo documento e si sincronizzano con SharePoint e Active Directory."
    },
    {
     "q": "Le nostre traduzioni passate possono essere riutilizzate?",
-    "r": "I progetti creati in confidenzialità standard possono fungere da memoria di traduzione, riutilizzabile esclusivamente dalla vostra organizzazione. I progetti in modalità «high sensitive content» non lo sono mai."
+    "r": "I progetti creati con riservatezza Standard possono servire da memoria di traduzione, riutilizzabile esclusivamente dalla vostra organizzazione. I progetti in modalità Highly sensitive content non lo sono mai."
    },
    {
-    "q": "Le squadre vanno formate?",
-    "r": "L’interfaccia riprende i gesti attesi: depositare un file, scegliere una lingua, lanciare. Il centro d’aiuto documenta ogni schermo e la dimostrazione avviene sui propri documenti."
+    "q": "Bisogna formare i team?",
+    "r": "L'interfaccia riprende i gesti attesi: caricare un file, scegliere una lingua, avviare. Il centro assistenza documenta ogni schermata, e la dimostrazione si fa sui vostri documenti."
    },
    {
-    "q": "Possiamo integrare Corrext nei nostri strumenti?",
-    "r": "Un’API REST consente di collegare la traduzione ai sistemi di gestione dei documenti e alle reti Intranet ed è possibile distribuirla sui propri server per gli ambienti più sensibili."
+    "q": "Si può integrare Corrext nei nostri strumenti?",
+    "r": "Un'API REST permette di collegare la traduzione ai vostri sistemi di gestione documentale e alle vostre intranet, e per gli ambienti più sensibili è possibile un'installazione sui vostri server."
    }
   ],
   "cta_t": "Riprendete il controllo delle vostre traduzioni",
-  "cta_p": "Una dimostrazione dei vostri volumi, delle vostre lingue e delle vostre regole di riservatezza.",
+  "cta_p": "Una dimostrazione sui vostri volumi, sulle vostre lingue e sulle vostre regole di riservatezza.",
   "temoignage": {
    "exemple": true,
-   "citation": "Non sapevamo per quanto tempo la traduzione costasse al team. Il preventivo visualizza ora la preparazione, la rilettura interna e la rilettura esterna prima di ogni convalida: arbitriamo sulle cifre. Le clausole già corrette non partono più da zero.",
-   "auteur": "Direttore giuridico",
-   "fonction": "Gruppo industriale, Svizzera romanda"
+   "citation": "Non sapevamo quanto tempo costasse la traduzione al team. Ora l'offerta mostra preparazione, revisione interna e revisione esterna prima di ogni conferma: decidiamo in base alle cifre. E le clausole già corrette non ripartono più da zero.",
+   "auteur": "Responsabile dell'ufficio legale",
+   "fonction": "Impresa industriale, Svizzera romanda"
   }
  },
  {
   "slug": "autorites-administration",
   "short": "Autorità e amministrazione",
-  "resume": "Il quadrilinguismo istituzionale, con dati che non escono dalla Svizzera.",
-  "title": "Traduzioni per autorità e amministrazioni svizzere · Neur.on",
-  "description": "Tribunali e amministrazioni: traducete decisioni, rapporti e documenti ufficiali in quattro lingue, trattati in Svizzera, con la terminologia delle leggi.",
+  "resume": "Il quadrilinguismo istituzionale, con dati che non lasciano la Svizzera.",
+  "title": "Traduzione per enti pubblici e amministrazioni · Neur.on",
+  "description": "Tribunali e amministrazioni: traducete decisioni, rapporti e documenti ufficiali in quattro lingue, con trattamento in Svizzera e la terminologia delle leggi.",
   "lede": "Autorità e amministrazione.",
-  "h1": "Niente lascia la Svizzera",
-  "lead": "Una decisione da notificare nella lingua della parte, un rapporto da pubblicare in tre lingue ufficiali, un dossier da trasmettere a un’autorità estera. Corrext collabora con la terminologia dei testi pubblicati e conserva il trattamento in Svizzera.",
+  "h1": "Traduzioni che non lasciano mai la Svizzera",
+  "lead": "Una decisione da notificare nella lingua della parte, un rapporto da pubblicare in tre lingue ufficiali, un dossier da trasmettere a un'autorità estera. Corrext lavora con la terminologia dei testi pubblicati e mantiene il trattamento in Svizzera.",
   "promesses": [
    {
     "t": "Sovranità",
-    "d": "alloggio in Svizzera, trattamento svizzero in modalità high sensitive content"
+    "d": "hosting in Svizzera, trattamento svizzero in modalità Highly sensitive content"
    },
    {
     "t": "Lingue ufficiali",
-    "d": "tedesco, francese e italiano in madrelingua, più l’inglese"
+    "d": "tedesco, francese e italiano come lingue native, più l'inglese"
    },
    {
     "t": "Terminologia pubblicata",
-    "d": "Fedlex, Foglio federale e giurisprudenza citati alla fonte"
+    "d": "Fedlex, Foglio federale e giurisprudenza, con la fonte citata"
    }
   ],
-  "facts_titre": "Cosa cambia Corrext in un’amministrazione",
-  "facts_intro": "Un’amministrazione svizzera non traduce per informare: traduce perché la legge lo prevede, in lingue che hanno tutte lo stesso valore. La questione non è dunque la fluidità del rendering, bensì la fedeltà al testo ufficiale e la padronanza del circuito dei dati.",
+  "facts_titre": "Che cosa cambia con Corrext in un'amministrazione",
+  "facts_intro": "Un'amministrazione svizzera non traduce per informare: traduce perché la legge lo prevede, in lingue che hanno tutte lo stesso valore. La questione non è quindi la scorrevolezza della resa, ma la fedeltà al testo ufficiale e il controllo del percorso dei dati.",
   "facts_liens": [
    {
     "href": "fr/securite-souverainete/",
@@ -529,41 +529,41 @@
    },
    {
     "href": "fr/traduction/",
-    "txt": "Ambiti del diritto coperti"
+    "txt": "I settori del diritto coperti"
    }
   ],
   "facts": [
    {
     "k": "Lingue ufficiali",
-    "v": "Tedesco, francese e italiano sono madrelingua, come l’inglese. La piattaforma copre 30 lingue per i documenti stranieri."
+    "v": "Tedesco, francese e italiano sono native, come l'inglese. La piattaforma copre 30 lingue per i documenti stranieri."
    },
    {
     "k": "Trattamento in Svizzera",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera, senza riutilizzo in memoria."
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo in una memoria."
    },
    {
     "k": "Terminologia ufficiale",
-    "v": "CHnell allinea segmenti tratti da fedlex, dal Foglio federale e dalle pubblicazioni delle amministrazioni federali, ciascuno con la sua fonte."
+    "v": "CHnell allinea segmenti tratti da Fedlex, dal Foglio federale e dalle pubblicazioni delle amministrazioni federali, ciascuno con la sua fonte."
    },
    {
     "k": "Decisioni e rapporti",
-    "v": "I documenti impegnativi passano attraverso una rilettura giuridica ordinata nello stesso schermo."
+    "v": "I documenti vincolanti passano da una revisione giuridica ordinata nella stessa schermata."
    },
    {
-    "k": "Documenti per l’estero",
-    "v": "Un estratto del registro di commercio si ordina tradotto, certificato, notarile e apostillato secondo la Convenzione dell’Aia del 5 ottobre 1961."
+    "k": "Documenti per l'estero",
+    "v": "Un estratto del registro di commercio si ordina tradotto, certificato, autenticato da un notaio e con apostille secondo la Convenzione dell'Aia del 5 ottobre 1961."
    },
    {
     "k": "Formati di lavoro",
-    "v": "Word, Excel, PowerPoint e PDF, fino a 25 file da 50 MB per invio, con conservazione del layout."
+    "v": "Word, Excel, PowerPoint e PDF, fino a 25 file da 50 MB per invio, con l'impaginazione conservata."
    },
    {
-    "k": "Accesso",
-    "v": "Diritti fino al documento e sincronizzazione con gli elenchi dell’organizzazione."
+    "k": "Accessi",
+    "v": "Diritti fino al singolo documento e sincronizzazione con le directory dell'organizzazione."
    },
    {
-    "k": "Implementazione",
-    "v": "L’installazione sui propri server è possibile per gli ambienti più sensibili."
+    "k": "Installazione",
+    "v": "Per gli ambienti più sensibili è possibile un'installazione sui vostri server."
    }
   ],
   "who_titre": "Tre usi nel settore pubblico",
@@ -571,163 +571,163 @@
    {
     "vis": "marteau",
     "a": "Tribunali",
-    "t": "Notifica nella lingua della parte",
-    "p": "Il testo è tradotto con la terminologia della procedura, verificato termine per termine nelle fonti ufficiali e riletto da un traduttore giuridico prima della notifica."
+    "t": "Notificare nella lingua della parte",
+    "p": "Il testo viene tradotto con la terminologia della procedura, verificato termine per termine nelle fonti ufficiali, poi rivisto da un traduttore giuridico prima della notifica."
    },
    {
     "vis": "institution",
     "a": "Amministrazioni",
     "t": "Pubblicare in tre lingue ufficiali",
-    "p": "Un rapporto diventa un progetto: tre lingue target, un livello di rivisitazione unico e un termine visualizzato prima della convalida."
+    "p": "Un rapporto diventa un progetto: tre lingue d'arrivo, un unico livello di revisione e un termine di consegna visibile prima della conferma."
    },
    {
     "vis": "globe",
-    "a": "Assistenza reciproca",
-    "t": "Trasmettere un dossier all’estero",
-    "p": "I documenti entrano in progetto con la rilettura e la certificazione richiesta dall’autorità destinataria. Gli estratti del registro di commercio si ordinano autenticati, autenticati, autenticati o apposti online."
+    "a": "Assistenza giudiziaria",
+    "t": "Trasmettere un dossier all'estero",
+    "p": "Gli atti passano da un progetto con la revisione e la certificazione richieste dall'autorità destinataria. Gli estratti del registro di commercio si ordinano in linea, certificati, autenticati da un notaio o con apostille."
    }
   ],
-  "gov_q": "Un’amministrazione può avvalersi di un servizio di traduzione online?",
-  "gov_p": "I dati di un’autorità sottostanno spesso a una legislazione cantonale o federale sulla protezione dei dati e sul segreto d’ufficio. Corrext rende esplicito che: l’utente sceglie la modalità di riservatezza e il motore e l’applicazione visualizza le conseguenze di tale scelta prima dell’invio.",
+  "gov_q": "Un'amministrazione può usare un servizio di traduzione in linea?",
+  "gov_p": "I dati di un'autorità rientrano spesso in una legislazione cantonale o federale sulla protezione dei dati e sul segreto d'ufficio. Corrext rende esplicito il percorso: scegliete la modalità di riservatezza e il motore, e l'applicazione mostra le conseguenze di questa scelta prima dell'invio.",
   "gov_lien": {
    "href": "fr/securite-souverainete/",
    "txt": "Sicurezza e sovranità dei dati"
   },
   "gov_etapes": [
    {
-    "t": "Alloggio svizzero.",
+    "t": "Hosting svizzero.",
     "d": "Infrastruttura in Svizzera, certificazione ISO 27001 ottenuta nel febbraio 2024."
    },
    {
     "t": "Trattamento svizzero su richiesta.",
-    "d": "Modalità «High sensitive content» o motore LexMachina."
+    "d": "Modalità Highly sensitive content o motore LexMachina."
    },
    {
-    "t": "In loco, se necessario.",
-    "d": "Implementazione on-premises per gli ambienti più sensibili."
+    "t": "In sede, se necessario.",
+    "d": "Installazione on-premises per gli ambienti più sensibili."
    }
   ],
-  "outils_titre": "Gli strumenti più utilizzati dalle autorità e dalle amministrazioni",
+  "outils_titre": "Gli strumenti più usati da autorità e amministrazioni",
   "outils": [
    {
     "href": "fr/corrext/gestion-de-projet/",
-    "t": "Gestione di progetti",
-    "d": "Decisioni e rapporti, con le relative revisioni e scadenze."
+    "t": "Gestione dei progetti",
+    "d": "Decisioni e rapporti, con revisione e termine di consegna visibili."
    },
    {
     "href": "fr/corrext/chnell/",
-    "t": "Fast look CHnell",
-    "d": "La terminologia dei testi pubblicati, con la relativa fonte."
+    "t": "Fast lookup CHnell",
+    "d": "La terminologia dei testi pubblicati, con la sua fonte."
    },
    {
     "href": "fr/corrext/extraits-registre-commerce/",
     "t": "Estratti certificati",
-    "d": "Autenticazione, notarizzazione e apostille ordinate online."
+    "d": "Certificazione, autenticazione notarile e apostille ordinate in linea."
    }
   ],
   "faq_titre": "Domande frequenti del settore pubblico",
   "faq": [
    {
     "q": "I dati restano in Svizzera?",
-    "r": "Lo stoccaggio è sempre svizzero. Il trattamento avviene anche in modalità high sensitive content o con il motore LexMachina. I motori terzi, alloggiati all’estero, attivano un avvertimento esplicito prima di qualsiasi spedizione."
+    "r": "L'archiviazione è svizzera in ogni caso. Lo è anche il trattamento, in modalità Highly sensitive content o con il motore LexMachina. I motori di terzi, ospitati all'estero, attivano un avviso esplicito prima di ogni invio."
    },
    {
-    "q": "La terminologia dei testi ufficiali è rispettata?",
-    "r": "Il concordato CHnell allinea segmenti di Fedlex, del Foglio federale e delle pubblicazioni delle amministrazioni federali. Ogni evento presenta la sua fonte e si apre nel contesto."
+    "q": "La terminologia dei testi ufficiali viene rispettata?",
+    "r": "Il concordanziere CHnell allinea segmenti provenienti da Fedlex, dal Foglio federale e dalle pubblicazioni delle amministrazioni federali. Ogni occorrenza mostra la sua fonte e si apre nel contesto."
    },
    {
-    "q": "Una distribuzione sui nostri server è possibile?",
-    "r": "Sì, è previsto un impiego on-premises per gli ambienti più sensibili. L’inquadramento avviene in occasione di uno scambio tecnico."
+    "q": "È possibile un'installazione sui nostri server?",
+    "r": "Sì, per gli ambienti più sensibili è prevista un'installazione on-premises. I dettagli si definiscono in un colloquio tecnico."
    },
    {
-    "q": "Come ottenere una traduzione certificata per un’autorità estera?",
-    "r": "Per un estratto del registro di commercio, il servizio online offre tre livelli: certificazione per Corrext, certificazione notarile, e certificazione notarile apposta in seguito secondo la Convenzione dell’Aia del 5 ottobre 1961."
+    "q": "Come ottenere una traduzione certificata per un'autorità estera?",
+    "r": "Per un estratto del registro di commercio il servizio in linea propone tre livelli: certificazione da parte di Corrext, certificazione notarile, e certificazione notarile seguita da apostille secondo la Convenzione dell'Aia del 5 ottobre 1961."
    },
    {
     "q": "Quali lingue sono coperte?",
-    "r": "Trenta lingue sulla piattaforma. Tedesco, francese, italiano e inglese sono madrelingua e sono le quattro lingue disponibili nella modalità «High sensitive Content»."
+    "r": "Trenta lingue sulla piattaforma. Tedesco, francese, italiano e inglese sono native e sono le quattro lingue disponibili in modalità Highly sensitive content."
    },
    {
-    "q": "I documenti servono a creare modelli?",
-    "r": "No. I contenuti del cliente non servono ad addestrare i modelli di Neur.on e i progetti in modalità «high sensitive content» non vengono riutilizzati nella memoria di traduzione."
+    "q": "I documenti servono ad addestrare modelli?",
+    "r": "No. I contenuti dei clienti non servono ad addestrare i modelli di Neur.on, e i progetti in modalità Highly sensitive content non vengono riutilizzati in una memoria di traduzione."
    }
   ],
-  "cta_t": "Vedi Corrext sui tuoi documenti ufficiali",
-  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero, nelle vostre lingue e secondo le vostre regole di confidenzialità.",
+  "cta_t": "Mettete Corrext alla prova sui vostri documenti ufficiali",
+  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero, nelle vostre lingue e secondo le vostre regole di riservatezza.",
   "temoignage": {
    "exemple": true,
-   "citation": "Le nostre decisioni devono essere notificate nella lingua della parte, spesso in pochi giorni. La cancelleria parte ora da una versione verificata termine per termine nei testi pubblicati e successivamente riprodotta da un traduttore giuridico. Che nulla lasci la Svizzera ha semplificato la convalida da parte del nostro servizio informatico.",
-   "auteur": "Cancelliere in capo",
-   "fonction": "Pretura, Cantone bilingue"
+   "citation": "Le nostre decisioni devono essere notificate nella lingua della parte, spesso in pochi giorni. Ora la cancelleria parte da una versione verificata termine per termine nei testi pubblicati, poi rivista da un traduttore giuridico. Che nulla lasci la Svizzera ha semplificato la convalida da parte del nostro servizio informatico.",
+   "auteur": "Cancelliere capo",
+   "fonction": "Tribunale di primo grado, Cantone bilingue"
   }
  },
  {
   "slug": "fiduciaires-conseil",
-  "short": "Fiduciari e consulenza",
-  "resume": "Statuti, estratti, rapporti e documenti fiscali, con certificazione se richiesta.",
-  "title": "Traduzioni per fiduciari, audit e consulenza · Neur.on",
-  "description": "Statuto, estratti del registro di commercio, rapporti di audit, documenti fiscali: Traducete e fate certificare i vostri documenti aziendali, trattati in Svizzera.",
-  "lede": "Fiduciari e consulenza.",
+  "short": "Fiduciarie e consulenza",
+  "resume": "Statuti, estratti, rapporti e documenti fiscali, con certificazione quando è richiesta.",
+  "title": "Traduzione per fiduciarie e società di revisione · Neur.on",
+  "description": "Statuti, estratti del registro di commercio, rapporti di revisione, documenti fiscali: traducete e fate certificare i documenti aziendali, trattati in Svizzera.",
+  "lede": "Fiduciarie e consulenza.",
   "h1": "Documenti aziendali tradotti e certificati",
-  "lead": "Statuto, estratti del registro, rapporti di audit, documenti fiscali: la vostra produzione ruota attorno a documenti ufficiali la cui traduzione deve talvolta essere certificata, notarile o apostillata. Corrext copre l’intera catena, dalla lettura rapida all’apostille.",
+  "lead": "Statuti, estratti del registro di commercio, rapporti di revisione, documenti fiscali: il vostro lavoro ruota attorno a documenti ufficiali. La loro traduzione deve talvolta essere certificata, autenticata da un notaio o munita di apostille. Corrext copre l'intera catena, dalla lettura rapida all'apostille.",
   "promesses": [
    {
     "t": "Corporate housekeeping",
-    "d": "estratti del registro tradotti da traduttori specializzati"
+    "d": "estratti del registro di commercio tradotti da traduttori specializzati"
    },
    {
-    "t": "Certificazione online",
-    "d": "tre livelli, fino all’apostille della Convenzione dell’Aia"
+    "t": "Certificazione in linea",
+    "d": "tre livelli, fino all'apostille della Convenzione dell'Aia"
    },
    {
     "t": "Volume",
-    "d": "fino a 25 file da 50 MB, layout conservato"
+    "d": "fino a 25 file da 50 MB, impaginazione conservata"
    }
   ],
-  "facts_titre": "Cosa cambia Corrext in una fiduciaria",
-  "facts_intro": "La traduzione di un documento aziendale ha raramente una valenza letteraria e una valenza di accettazione. Il destinatario, la banca, l’autorità o il partner estero accetta o rifiuta il documento. Corrext organizza quindi il lavoro intorno al livello di certificazione richiesto.",
+  "facts_titre": "Che cosa cambia con Corrext in una fiduciaria",
+  "facts_intro": "La traduzione di un documento aziendale ha raramente una posta in gioco letteraria: la posta in gioco è l'accettazione. Il destinatario, che sia una banca, un'autorità o un partner estero, accetta o rifiuta il documento. Corrext organizza quindi il lavoro in base al livello di certificazione richiesto.",
   "facts_liens": [
    {
     "href": "fr/corrext/extraits-registre-commerce/",
-    "txt": "Estratti del registro certificati"
+    "txt": "Estratti certificati del registro di commercio"
    },
    {
     "href": "fr/traduction/droit-des-societes/",
-    "txt": "Traduzioni in diritto societario"
+    "txt": "Traduzione in diritto societario"
    }
   ],
   "facts": [
    {
-    "k": "Estratti del registro",
-    "v": "Ricerca per ragione sociale o numero IDI, scelta del livello di certificazione, della consegna e del termine, interamente online."
+    "k": "Estratti del registro di commercio",
+    "v": "Ricerca per ragione sociale o numero IDI, scelta del livello di certificazione, del modo di consegna e del termine di consegna, interamente in linea."
    },
    {
     "k": "Tre livelli",
-    "v": "Certificazione Corrext, certificazione notarile, certificazione notarile poi apostillata secondo la Convenzione dell’Aia del 5 ottobre 1961."
+    "v": "Certificazione Corrext, certificazione notarile, certificazione notarile seguita da apostille secondo la Convenzione dell'Aia del 5 ottobre 1961."
    },
    {
     "k": "Traduttori specializzati",
-    "v": "Il servizio mobilita traduttori giuridici del corporate housekeeping, assistiti da modelli tratti dagli estratti del registro svizzero."
+    "v": "Il servizio impiega traduttori giuridici specializzati in corporate housekeeping, assistiti da modelli addestrati sugli estratti del registro di commercio svizzero."
    },
    {
-    "k": "Statuto e verbali",
-    "v": "Il settore articoli dell’Associazione di CHnell fornisce la terminologia utilizzata nei documenti pubblicati."
+    "k": "Statuti e verbali",
+    "v": "Il settore Articles of Association di CHnell fornisce la terminologia usata nei documenti pubblicati."
    },
    {
     "k": "Rapporti e allegati",
-    "v": "I volumi ricorrenti passano in progetto con il livello di riproduzione adeguato al destinatario."
+    "v": "I volumi ricorrenti passano da un progetto, con il livello di revisione della traduzione adatto al destinatario."
    },
    {
     "k": "Documenti fiscali",
-    "v": "Il settore Tax &amp; Customs di CHnell copre la terminologia fiscale e doganale."
+    "v": "Il settore Tax & Customs di CHnell copre la terminologia fiscale e doganale."
    },
    {
-    "k": "Riservatezza cliente",
-    "v": "La modalità «High-sensitive Content» consente di archiviare e trattare i dossier sensibili in Svizzera."
+    "k": "Riservatezza per i clienti",
+    "v": "La modalità Highly sensitive content mantiene archiviazione e trattamento in Svizzera per i dossier sensibili."
    },
    {
     "k": "30 lingue",
-    "v": "Per i destinatari che leggono altre lingue, la piattaforma copre un totale di 30."
+    "v": "Per i destinatari che leggono altre lingue, la piattaforma ne copre 30 in totale."
    }
   ],
   "who_titre": "Tre richieste ricorrenti",
@@ -735,24 +735,24 @@
    {
     "vis": "societe",
     "a": "Corporate housekeeping",
-    "t": "Un estratto per l’estero",
-    "p": "La società si cerca per nome o per IDI, il livello di certificazione si sceglie a seconda dell’autorità destinataria e l’ordine termina online."
+    "t": "Un estratto per l'estero",
+    "p": "La società si cerca per nome o per numero IDI, il livello di certificazione si sceglie in base all'autorità destinataria e l'ordine si conclude in linea."
    },
    {
     "vis": "audit",
-    "a": "Audit",
-    "t": "Appendici da leggere prima di una rivista",
-    "p": "Il lotto parte in traduzione testo e documento, ritorna nel suo formato originale e i termini contabili si verificano nel concordato."
+    "a": "Revisione",
+    "t": "Allegati da leggere in fretta prima di una verifica",
+    "p": "Il lotto parte in Traduzione di testi e documenti, torna nel suo formato originale e i termini contabili si verificano nel concordanziere."
    },
    {
     "vis": "fiscal",
     "a": "Fiscalità",
-    "t": "Dossier per l’amministrazione cantonale",
-    "p": "Traduzione nella lingua del Cantone, rilettura da parte di un traduttore giuridico e terminologia fiscale verificata nei testi pubblicati."
+    "t": "Un dossier per l'amministrazione cantonale",
+    "p": "Traduzione nella lingua del Cantone, revisione da parte di un traduttore giuridico e terminologia fiscale verificata nei testi pubblicati."
    }
   ],
   "gov_q": "Quale livello di certificazione richiedere?",
-  "gov_p": "Di norma, un uso interno o una trasmissione a un terzo privato si accontenta di una certificazione da parte del fornitore di servizi; un’autorità o un tribunale svizzero richiede spesso una certificazione notarile; un’autorità estera di uno Stato parte alla Convenzione dell’Aia richiede in linea di principio l’apostille. L’autorità destinataria rimane l’unica giudice.",
+  "gov_p": "Di regola, per un uso interno o per una trasmissione a un privato basta una certificazione da parte del fornitore. Un'autorità o un tribunale svizzero chiede spesso una certificazione notarile. Un'autorità estera di uno Stato parte della Convenzione dell'Aia esige in linea di principio l'apostille. Decide in ultima istanza l'autorità destinataria.",
   "gov_lien": {
    "href": "fr/corrext/extraits-registre-commerce/",
    "txt": "I tre livelli di certificazione"
@@ -760,139 +760,139 @@
   "gov_etapes": [
    {
     "t": "Certificazione Corrext.",
-    "d": "Certificato firmato e timbrato dal fornitore di servizi per uso corrente."
+    "d": "Attestazione firmata e timbrata dal fornitore, per l'uso corrente."
    },
    {
     "t": "Certificazione notarile.",
     "d": "Intervento di un notaio svizzero, spesso richiesto dalle autorità svizzere."
    },
    {
-    "t": "Notarile e apostillata.",
-    "d": "Apostille della Cancelleria di Stato, per gli Stati parte alla Convenzione dell’Aia."
+    "t": "Notarile e con apostille.",
+    "d": "Apostille della Cancelleria dello Stato, per gli Stati parte della Convenzione dell'Aia."
    }
   ],
-  "outils_titre": "Gli strumenti più utilizzati dai fiduciari",
+  "outils_titre": "Gli strumenti più usati dalle fiduciarie",
   "outils": [
    {
     "href": "fr/corrext/extraits-registre-commerce/",
-    "t": "Estratti del registro",
-    "d": "Ordinazione online, tre livelli di certificazione."
+    "t": "Estratti del registro di commercio",
+    "d": "Ordine in linea, tre livelli di certificazione."
    },
    {
     "href": "fr/corrext/traduction-texte-et-document/",
-    "t": "Traduzioni testo e documento",
-    "d": "Leggere rapidamente una serie di allegati o di statuti."
+    "t": "Traduzione di testi e documenti",
+    "d": "Leggere in fretta una serie di allegati o di statuti."
    },
    {
     "href": "fr/corrext/gestion-de-projet/",
-    "t": "Gestione di progetti",
-    "d": "Revisione giuridica dei documenti impegnativi."
+    "t": "Gestione dei progetti",
+    "d": "Revisione giuridica dei documenti vincolanti."
    }
   ],
-  "faq_titre": "Domande frequenti dei fiduciari",
+  "faq_titre": "Domande frequenti delle fiduciarie",
   "faq": [
    {
     "q": "Come ordinare la traduzione certificata di un estratto del registro di commercio?",
-    "r": "Il servizio online si articola in quattro fasi: ricerca della società per ragione sociale o numero IDI, scelta del livello di certificazione, scelta della modalità di consegna, scelta del termine. Tutto avviene online, senza appuntamento."
+    "r": "Il servizio in linea si completa in quattro passi: ricerca della società per ragione sociale o numero IDI, scelta del livello di certificazione, scelta del modo di consegna, scelta del termine di consegna. Tutto avviene in linea, senza appuntamento."
    },
    {
-    "q": "Qual è la differenza tra certificazione, notarizzazione e apostille?",
-    "r": "La certificazione attesta la fedeltà della traduzione da parte del fornitore di servizi. La notarizzazione vi aggiunge l’intervento di un notaio svizzero. L’apostille, rilasciata dalla Cancelleria di Stato secondo la Convenzione dell’Aia del 5 ottobre 1961, autentica la firma del notaio per gli Stati contraenti."
+    "q": "Che differenza c'è tra certificazione, autenticazione notarile e apostille?",
+    "r": "La certificazione attesta, da parte del fornitore, la fedeltà della traduzione. L'autenticazione notarile vi aggiunge l'intervento di un notaio svizzero. L'apostille, rilasciata dalla Cancelleria dello Stato secondo la Convenzione dell'Aia del 5 ottobre 1961, autentica la firma del notaio per gli Stati parte."
    },
    {
     "q": "In quali lingue vengono tradotti gli estratti?",
-    "r": "Il servizio annuncia più di trenta lingue target, tra cui il tedesco, il francese, l’italiano, l’inglese e lo spagnolo."
+    "r": "Il servizio indica oltre trenta lingue d'arrivo, tra cui tedesco, francese, italiano, inglese e spagnolo."
    },
    {
-    "q": "Chi traduce gli estratti del registro?",
-    "r": "Traduttori giuridici specializzati nel corporate housekeeping, assistiti da modelli tratti dagli estratti del registro di commercio svizzero."
+    "q": "Chi traduce gli estratti del registro di commercio?",
+    "r": "Traduttori giuridici specializzati in corporate housekeeping, assistiti da modelli addestrati sugli estratti del registro di commercio svizzero."
    },
    {
     "q": "E per gli altri documenti aziendali?",
-    "r": "Statuti, verbali, rapporti e allegati passano per la gestione del progetto, con il livello di rilettura adeguato al destinatario, fino alla doppia rilettura certificata da un’agenzia specializzata."
+    "r": "Statuti, verbali, rapporti e allegati passano da Gestione dei progetti, con il livello di revisione della traduzione adatto al destinatario, fino alla Double review e traduzione certificata da parte di un'agenzia specializzata."
    },
    {
-    "q": "I dossier dei clienti rimangono confidenziali?",
-    "r": "Lo stoccaggio è in ogni caso svizzero e il modo «high sensitive content» mantiene il trattamento anche in Svizzera, senza riutilizzare il contenuto in memoria di traduzione."
+    "q": "I dossier dei clienti restano riservati?",
+    "r": "L'archiviazione è svizzera in ogni caso, e la modalità Highly sensitive content mantiene in Svizzera anche il trattamento, senza riutilizzo del contenuto in una memoria di traduzione."
    }
   ],
-  "cta_t": "Vedi Corrext sui tuoi documenti aziendali",
+  "cta_t": "Mettete Corrext alla prova sui vostri documenti aziendali",
   "cta_p": "Una dimostrazione sui vostri statuti, estratti e rapporti, nelle lingue dei vostri destinatari.",
   "temoignage": {
    "exemple": true,
-   "citation": "Un cliente aveva aperto una filiale in Germania e la banca esigeva un estratto del registro tradotto e apostillato. L’ordine è stato effettuato online in pochi minuti, al giusto livello di certificazione. Per quanto riguarda gli allegati di audit, leggiamo ora la traduzione il giorno stesso.",
+   "citation": "Un cliente apriva una filiale in Germania e la banca esigeva un estratto del registro di commercio tradotto e munito di apostille. L'ordine è stato fatto in linea in pochi minuti, al giusto livello di certificazione. Per gli allegati della revisione leggiamo ora la traduzione in giornata.",
    "auteur": "Esperto fiduciario",
-   "fonction": "Società fiduciaria, Lausanne"
+   "fonction": "Società fiduciaria, Losanna"
   }
  },
  {
   "slug": "editeurs-legaltech",
-  "short": "Legaltecs ed editori",
-  "resume": "Integrare un motore giuridico svizzero nel vostro prodotto, tramite API o con marchio bianco.",
-  "title": "Traduzioni legali per legaltech ed editori · Neur.on",
-  "description": "Integrate LexMachina e terminologia del diritto svizzero nel vostro prodotto: API REST, introduzione on-premises, quattro lingue native, trattamento in Svizzera.",
-  "lede": "Legaltecs ed editori giuridici.",
-  "h1": "Il nostro motore nel vostro prodotto",
-  "lead": "I vostri utenti sono giuristi svizzeri: individuano immediatamente un riferimento legale approssimativo o un termine che non figura in nessun testo ufficiale. LexMachina e il concordato CHnell si integrano nel vostro prodotto, con un trattamento che può rimanere in Svizzera.",
+  "short": "LegalTech ed editori",
+  "resume": "Integrare un motore di traduzione giuridica svizzero nel vostro prodotto, tramite API o con il vostro marchio.",
+  "title": "API di traduzione giuridica per LegalTech ed editori · Neur.on",
+  "description": "Integrate LexMachina e la terminologia giuridica svizzera nel vostro prodotto: API REST, on-premises, quattro lingue native, trattamento in Svizzera.",
+  "lede": "LegalTech ed editori giuridici.",
+  "h1": "Il nostro motore di traduzione nel vostro prodotto",
+  "lead": "I vostri utenti sono giuristi svizzeri: notano subito un riferimento normativo approssimativo o un termine che non compare in nessun testo ufficiale. LexMachina e il concordanziere CHnell si integrano nel vostro prodotto, con un trattamento che può restare in Svizzera.",
   "promesses": [
    {
     "t": "API REST",
-    "d": "traduzioni integrate in prodotti, flussi e schermi"
+    "d": "traduzione integrata nel vostro prodotto, nei vostri flussi di lavoro e nelle vostre schermate"
    },
    {
     "t": "On-premises",
-    "d": "distribuzione sui server per gli ambienti più sensibili"
+    "d": "installazione sui vostri server per gli ambienti più sensibili"
    },
    {
     "t": "Specializzato",
-    "d": "un modello basato su oltre 15 milioni di segmenti giuridici e finanziari svizzeri"
+    "d": "un modello addestrato su oltre 15 milioni di segmenti giuridici e finanziari svizzeri"
    }
   ],
-  "facts_titre": "Cosa Neur.on apporta a un prodotto terzo",
-  "facts_intro": "Un editore giuridico non ha bisogno di un motore in più: ha bisogno di un motore che i suoi utenti non mancheranno su un riferimento al Codice delle obbligazioni. Questo è l’unico terreno su cui Neur.on confrontarsi.",
+  "facts_titre": "Che cosa porta Neur.on a un prodotto di terzi",
+  "facts_intro": "Un editore giuridico non ha bisogno di un motore in più: ha bisogno di un motore che i suoi utenti non colgano in fallo su un riferimento al Codice delle obbligazioni. È l'unico terreno su cui Neur.on accetta il confronto.",
   "facts_liens": [
    {
     "href": "fr/lexmachina/",
-    "txt": "Il motore LexMachina"
+    "txt": "Il motore di traduzione LexMachina"
    },
    {
     "href": "fr/corrext/api-on-premises/",
-    "txt": "API e implementazione on-premises"
+    "txt": "API e installazione on-premises"
    }
   ],
   "facts": [
    {
     "k": "Modello specializzato",
-    "v": "LexMachina si basa sui dati giuridici e finanziari svizzeri: giurisprudenza del Tribunale federale, testi della FINMA, codici.",
-    "s": "Oltre 15 milioni di segmenti multilingue."
+    "v": "LexMachina è addestrato su dati giuridici e finanziari svizzeri: giurisprudenza del Tribunale federale, testi della FINMA, codici.",
+    "s": "Oltre 15 milioni di segmenti multilingui."
    },
    {
     "k": "Quadrilinguismo",
-    "v": "Tedesco, francese, italiano e inglese in madrelingua, tutte coppie, con la terminologia dei testi ufficiali."
+    "v": "Tedesco, francese, italiano e inglese come lingue native, in tutte le combinazioni, con la terminologia del testo ufficiale."
    },
    {
     "k": "Concordanziere",
-    "v": "CHnell copre 30 domini e cita la fonte di ogni segmento, il che dà ai vostri utenti la possibilità di verificare."
+    "v": "CHnell copre 30 settori e cita la fonte di ogni segmento: i vostri utenti hanno di che verificare."
    },
    {
-    "k": "Agnostico",
-    "v": "Anche la piattaforma orchestrale DeepL Pro, Blue OpenAI GPT e Claude: non scommetti su un singolo fornitore."
+    "k": "Agnostica",
+    "v": "La piattaforma orchestra anche DeepL Pro, Azure OpenAI GPT e Claude: non puntate su un solo fornitore."
    },
    {
     "k": "API REST",
-    "v": "Integrazione negli schermi, nei flussi di lavoro e nei sistemi di gestione dei documenti."
+    "v": "Integrazione nelle vostre schermate, nei vostri flussi di lavoro e nei vostri sistemi di gestione documentale."
    },
    {
     "k": "On-premises",
-    "v": "Distribuzione sui propri server quando i propri clienti lo richiedono."
+    "v": "Installazione sui vostri server quando i vostri clienti lo esigono."
    },
    {
     "k": "Trattamento in Svizzera",
-    "v": "Argomento commerciale diretto presso i vostri clienti svizzeri, con certificazione ISO 27001 ottenuta nel febbraio 2024."
+    "v": "Un argomento commerciale diretto presso i vostri clienti svizzeri, con una certificazione ISO 27001 ottenuta nel febbraio 2024."
    },
    {
     "k": "Ricerca",
-    "v": "Il motore è nato da un progetto d’innovazione sostenuto da Innosuisse, condotto con l’istituto iCoSys della HEIA-FR."
+    "v": "Il motore nasce da un progetto d'innovazione sostenuto da Innosuisse, condotto con l'istituto iCoSys della HEIA-FR."
    }
   ],
   "who_titre": "Tre forme di integrazione",
@@ -900,43 +900,43 @@
    {
     "vis": "base",
     "a": "Editori giuridici",
-    "t": "La vostra base in quattro lingue",
-    "p": "Il motore traduce i vostri contenuti in tedesco, francese, italiano e inglese con la terminologia ufficiale e il concordato permette ai vostri abbonati di risalire alla fonte di ogni termine."
+    "t": "La vostra banca dati in quattro lingue",
+    "p": "Il motore traduce i vostri contenuti in tedesco, francese, italiano e inglese con la terminologia ufficiale, e il concordanziere permette ai vostri abbonati di risalire alla fonte di ogni termine."
    },
    {
     "vis": "code",
-    "a": "Legaltecs",
+    "a": "LegalTech",
     "t": "Tradurre senza costruire un motore",
-    "p": "Un API REST, un motore basato sul diritto svizzero ed eseguito in Svizzera, sotto il vostro marchio se il contratto lo prevede."
+    "p": "Un'API REST, un motore addestrato sul diritto svizzero ed eseguito in Svizzera, con il vostro marchio se il contratto lo prevede."
    },
    {
     "vis": "echange",
     "a": "Fornitori di servizi linguistici",
-    "t": "Consegna in Trados o MemoQ",
-    "p": "I traduttori legali lavorano nei loro strumenti abituali e consegnano nella catena del progetto, dove la rilettura avviene nell’editore Corrext o in Word."
+    "t": "Consegnare in Trados o memoQ",
+    "p": "I traduttori giuridici lavorano nei loro strumenti abituali e consegnano nella catena del progetto, dove la revisione si fa nell'editor di Corrext o in Word."
    }
   ],
-  "gov_q": "Cosa differenzia un motore specializzato da un motore generico?",
-  "gov_p": "Tre cose misurabili sui vostri testi: la terminologia utilizzata nelle leggi svizzere pubblicate in tedesco, francese e italiano; la forma esatta dei riferimenti legali, che cambia a seconda della lingua; la coerenza di un documento all’altro. Questo è esattamente ciò che un utente giurista verifica per primo.",
+  "gov_q": "Che cosa distingue un motore specializzato da un motore generico?",
+  "gov_p": "Tre aspetti misurabili sui vostri testi: la terminologia usata nelle leggi svizzere pubblicate in tedesco, francese e italiano; la forma esatta dei riferimenti normativi, che cambia secondo la lingua; la coerenza da un documento all'altro. È proprio ciò che un utente giurista verifica per primo.",
   "gov_lien": {
    "href": "fr/lexmachina/",
-   "txt": "A cosa serve LexMachina"
+   "txt": "Su che cosa è addestrato LexMachina"
   },
   "gov_etapes": [
    {
     "t": "Terminologia ufficiale.",
-    "d": "Le equivalenze derivano dai testi di legge pubblicati nelle tre lingue ufficiali della Confederazione."
+    "d": "Le equivalenze provengono dai testi di legge pubblicati nelle tre lingue ufficiali della Confederazione."
    },
    {
-    "t": "Riferimenti legali.",
-    "d": "Le abbreviazioni cambiano a seconda della lingua: CO, ORO, CO per il Codice delle obbligazioni."
+    "t": "Riferimenti normativi.",
+    "d": "Le abbreviazioni cambiano secondo la lingua: CO in francese, OR in tedesco, CO in italiano per il Codice delle obbligazioni."
    },
    {
     "t": "Verificabilità.",
-    "d": "Ogni termine si apre nel contesto, con la fonte ufficiale che lo porta."
+    "d": "Ogni termine si apre nel contesto, con la fonte ufficiale che lo attesta."
    }
   ],
-  "outils_titre": "Gli strumenti più utilizzati dagli editori e dai legaltecs",
+  "outils_titre": "Gli strumenti più usati da editori e LegalTech",
   "outils": [
    {
     "href": "fr/corrext/api-on-premises/",
@@ -946,47 +946,47 @@
    {
     "href": "fr/lexmachina/",
     "t": "LexMachina",
-    "d": "Il motore, i dati di allenamento e le lingue."
+    "d": "Il motore, i suoi dati di addestramento e le sue lingue."
    },
    {
     "href": "fr/corrext/chnell/",
-    "t": "Fast look CHnell",
-    "d": "Il concordato che i vostri utenti potranno citare."
+    "t": "Fast lookup CHnell",
+    "d": "Il concordanziere che i vostri utenti potranno citare."
    }
   ],
-  "faq_titre": "Domande frequenti degli editori e dei legaltecs",
+  "faq_titre": "Domande frequenti di editori e LegalTech",
   "faq": [
    {
-    "q": "Il motore può essere integrato tramite API?",
-    "r": "Sì, un’API REST permette di collegare la traduzione ai prodotti, ai sistemi di gestione dei documenti e alle reti interne. L’inquadratura tecnica avviene in occasione di uno scambio dedicato."
+    "q": "Si può integrare il motore tramite API?",
+    "r": "Sì, un'API REST permette di collegare la traduzione ai vostri prodotti, ai vostri sistemi di gestione documentale e alle vostre intranet. I dettagli tecnici si definiscono in un colloquio dedicato."
    },
    {
-    "q": "Una distribuzione sui nostri server è possibile?",
-    "r": "Sì, è previsto un impiego on-premises per gli ambienti più sensibili."
+    "q": "È possibile un'installazione sui nostri server?",
+    "r": "Sì, per gli ambienti più sensibili è prevista un'installazione on-premises."
    },
    {
-    "q": "Su cosa è guidato il motore?",
-    "r": "Dati giuridici e finanziari svizzeri: giurisprudenza del Tribunale federale, testi della FINMA, codici per più di 15 milioni di segmenti multilingue."
+    "q": "Su che cosa è addestrato il motore?",
+    "r": "Su dati giuridici e finanziari svizzeri: giurisprudenza del Tribunale federale, testi della FINMA, codici, per oltre 15 milioni di segmenti multilingui."
    },
    {
-    "q": "Siamo legati a un solo modello?",
-    "r": "No. La piattaforma è agnostica: orchestra LexMachina, DeepL Pro, Azure OpenAI GPT e Claude e la funzione alternative confronta le loro proposte."
+    "q": "Siamo vincolati a un solo modello?",
+    "r": "No. La piattaforma è agnostica: orchestra LexMachina, DeepL Pro, Azure OpenAI GPT e Claude, e la funzione Alternatives ne confronta le proposte."
    },
    {
-    "q": "Si può offrire il servizio in segno bianco?",
-    "r": "Le modalità d’integrazione, anche in segno bianco, si inseriscono nel singolo caso in occasione di uno scambio tecnico e commerciale."
+    "q": "Si può offrire il servizio con il proprio marchio?",
+    "r": "Le modalità di integrazione, anche con il vostro marchio (white label), si definiscono caso per caso in un colloquio tecnico e commerciale."
    },
    {
-    "q": "Quali garanzie di sicurezza possiamo offrire ai nostri clienti?",
-    "r": "Alloggiamento in Svizzera, certificazione ISO 27001 ottenuta nel febbraio 2024, conformità nLPD e RGPD, ed elaborazione esclusivamente in Svizzera in modalità «High sensitive content» o con il motore LexMachina."
+    "q": "Quali garanzie di sicurezza possiamo comunicare ai nostri clienti?",
+    "r": "Hosting in Svizzera, certificazione ISO 27001 ottenuta nel febbraio 2024, conformità alla nLPD e al GDPR, e trattamento esclusivamente in Svizzera in modalità Highly sensitive content o con il motore LexMachina."
    }
   ],
-  "cta_t": "Quadrati la vostra integrazione",
-  "cta_p": "Uno scambio tecnico con il nostro team per definire i volumi, le lingue e le modalità di implementazione.",
+  "cta_t": "Definiamo insieme la vostra integrazione",
+  "cta_p": "Un colloquio tecnico con il nostro team per definire volumi, lingue e modalità di installazione.",
   "temoignage": {
    "exemple": true,
-   "citation": "I nostri abbonati leggono ora la giurisprudenza nella loro lingua e ogni termine rimanda al suo uso nei testi ufficiali. Abbiamo collegato il motore tramite l’API, senza costruire noi stessi un modello. L’argomento che ha convinto i nostri clienti: il trattamento rimane in Svizzera.",
-   "auteur": "Direttrice prodotto",
+   "citation": "I nostri abbonati leggono ora la giurisprudenza nella loro lingua, e ogni termine rimanda al suo uso nei testi ufficiali. Abbiamo collegato il motore tramite l'API, senza costruire noi stessi un modello. L'argomento che ha convinto i nostri clienti: il trattamento resta in Svizzera.",
+   "auteur": "Direttrice di prodotto",
    "fonction": "Editore giuridico, Zurigo"
   }
  }

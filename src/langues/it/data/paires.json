@@ -1,64 +1,64 @@
 [
  {
   "slug": "allemand-francais",
-  "short": "Tedesco verso francese",
-  "resume": "Dal tedesco giuridico svizzero al francese, senza deviazione per Berlino.",
+  "short": "Tedesco-francese",
+  "resume": "Il tedesco giuridico svizzero reso in francese, senza passare da Berlino.",
   "title": "Traduzione giuridica dal tedesco al francese · Neur.on",
-  "description": "Dal tedesco giuridico svizzero al francese: abbreviazioni ORO, ZGB, SchKG convertiti, ortografia svizzera riconosciuta, documenti trattati in Svizzera.",
-  "lede": "Tedesco verso francese.",
-  "h1": "Il diritto svizzero da una riva all’altra",
+  "description": "Traduzione giuridica dal tedesco al francese: abbreviazioni OR, ZGB e SchKG convertite, ortografia svizzera riconosciuta, trattamento in Svizzera.",
+  "lede": "Traduzione dal tedesco al francese.",
+  "h1": "Il diritto svizzero da una regione linguistica all'altra",
   "lead": "Una sentenza zurighese da leggere a Ginevra, un contratto basilese da firmare nella Svizzera romanda. Bisogna leggere il tedesco giuridico svizzero e le sue abbreviazioni, poi ritrovare la parola francese dello stesso testo di legge.",
   "promesses": [
    {
     "t": "Tedesco svizzero",
-    "d": "SS anziché SS, migliaia in 15’000, virgolette «»"
+    "d": "ss al posto di ß, migliaia scritte 15'000, virgolette «»"
    },
    {
     "t": "Abbreviazioni",
-    "d": "ORA diventa CO, ZGB diventa CC, SchKG diventa LP"
+    "d": "OR diventa CO, ZGB diventa CC, SchKG diventa LP (LEF in italiano)"
    },
    {
     "t": "Due lingue native",
-    "d": "la coppia viene trattata direttamente tramite LexMachina"
+    "d": "LexMachina tratta direttamente questa combinazione"
    }
   ],
-  "definition": "Le leggi federali sono adottate e pubblicate in tedesco, francese e italiano, e le tre versioni fanno parimente fede. Tradurre dal tedesco al francese non significa dunque inventare un equivalente, ma ritrovare la parola che il legislatore stesso ha scritto nella versione francese dello stesso articolo.",
+  "definition": "Le leggi federali sono adottate e pubblicate in tedesco, francese e italiano, e ciascuna delle tre versioni è vincolante. Tradurre dal tedesco al francese non significa quindi inventare un equivalente: significa ritrovare la parola che il legislatore stesso ha scritto nella versione francese dello stesso articolo.",
   "facts": [
    {
     "k": "Tre versioni, stesso valore",
-    "v": "Una legge federale esiste in tedesco, francese e italiano e tutti e tre i testi fanno fede. La traduzione consiste nel ritrovare la versione francese ufficiale, non nel produrne una nuova.",
-    "s": "Raccolta sistematica del diritto federale: RS in francese, RS in tedesco, RS in italiano."
+    "v": "Una legge federale esiste in tedesco, francese e italiano, e tutti e tre i testi sono vincolanti. Tradurre significa ritrovare la versione francese ufficiale, non produrne una nuova.",
+    "s": "Raccolta sistematica del diritto federale: RS in francese, SR in tedesco, RS in italiano."
    },
    {
     "k": "Abbreviazioni da convertire",
-    "v": "ORA diventa CO, ZGB diventa CC, StGB diventa CP, SchKG diventa LP, IPRG diventa LDIP. Un’abbreviazione in tedesco in un testo francese si vede già dalla prima lettura."
+    "v": "OR diventa CO, ZGB diventa CC, StGB diventa CP, SchKG diventa LP (LEF in italiano), IPRG diventa LDIP. Un'abbreviazione rimasta in tedesco in un testo francese salta all'occhio alla prima lettura."
    },
    {
     "k": "Ortografia svizzera",
-    "v": "Il tedesco svizzero ignora la ss. e scrive sempre ss. un documento che contiene ss. non proviene dalla Svizzera, il che cambia spesso il diritto applicabile.",
-    "s": "Un indizio utile per individuare un pezzo straniero in un lotto di diverse centinaia di pagine."
+    "v": "Il tedesco della Svizzera non usa la ß e scrive sempre ss. Un documento che contiene la ß non proviene dalla Svizzera, e questo cambia spesso il diritto applicabile.",
+    "s": "Un indizio utile per individuare un documento estero in un insieme di diverse centinaia di pagine."
    },
    {
     "k": "Cifre e importi",
-    "v": "Le migliaia scrivono con un’apostrofa: 15’000. Il formato deve sopravvivere alla traduzione, nel corpo del testo come nelle tabelle e negli allegati numerati."
+    "v": "Le migliaia si scrivono con l'apostrofo: 15'000. Il formato deve resistere alla traduzione, nel testo come nelle tabelle e negli allegati numerici."
    },
    {
     "k": "Giurisprudenza federale",
-    "v": "Una sentenza citata BGE in tedesco si cita DTF in francese e DTF in italiano, con lo stesso numero di volume, di parte e di pagina. Il riferimento si converte, non si traduce."
+    "v": "Una sentenza citata BGE in tedesco si cita ATF in francese e DTF in italiano, con lo stesso numero di volume, di parte e di pagina. Il riferimento si converte, non si traduce."
    },
    {
-    "k": "Composti germanici",
-    "v": "Schadenersatzpflicht, Rechtsmittelbelehrung, Handelsregisteramt: una parola tedesca si articola in tre o quattro parole francesi. Il testo si allunga e il layout deve colmare la lacuna.",
-    "s": "Corrext rende il file nel suo formato originale, comprese tabelle e caselle di testo."
+    "k": "Composti tedeschi",
+    "v": "Schadenersatzpflicht, Rechtsmittelbelehrung, Handelsregisteramt: una parola tedesca diventa tre o quattro parole in francese. Il testo si allunga e l'impaginazione deve assorbire la differenza.",
+    "s": "Corrext restituisce il file nel formato originale, tabelle e caselle di testo comprese."
    },
    {
-    "k": "Motore esercitato sul diritto svizzero",
-    "v": "LexMachina è stato addestrato su testi giuridici e finanziari svizzeri, oltre 15 milioni di segmenti multilingue, codici e giurisprudenza federale inclusi."
+    "k": "Motore addestrato sul diritto svizzero",
+    "v": "LexMachina è stato addestrato su testi giuridici e finanziari svizzeri: oltre 15 milioni di segmenti multilingui, codici e giurisprudenza federale compresi."
    },
    {
     "k": "Riservatezza",
-    "v": "La modalità «High sensitive content» impone lo stoccaggio e l’elaborazione esclusivamente in Svizzera. Copre tedesco, francese, italiano e inglese, quindi questa coppia.",
-    "s": "I motori ospitati all’estero restano disponibili, con l’avviso Attorney-Cliente privilege."
+    "v": "La modalità Highly sensitive content impone archiviazione e trattamento esclusivamente in Svizzera. Copre tedesco, francese, italiano e inglese, quindi anche questa combinazione.",
+    "s": "I motori con hosting all'estero restano disponibili, con l'avviso Attorney-Client privilege."
    }
   ],
   "termes": [
@@ -105,130 +105,130 @@
     "ref": "art. 927 CO"
    }
   ],
-  "termes_note": "Sei termini che il tedesco e il francese del diritto svizzero designano ciascuno a modo loro, con l’articolo che fissa l’equivalenza. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "who_titre": "Tre situazioni in cui questa coppia decide della giornata",
+  "termes_note": "Sei termini che il tedesco e il francese del diritto svizzero esprimono ciascuno a modo suo, con l'articolo che fissa l'equivalenza. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, che non ha forza di legge; altrimenti la formulazione d'uso.",
+  "who_titre": "Tre situazioni in cui questa combinazione linguistica è decisiva",
   "who": [
    {
     "vis": "marteau",
     "a": "Contenzioso",
-    "t": "Una sentenza tedesca da sfruttare",
-    "p": "La sentenza parte in traduzione con LexMachina, ritorna nel suo layout e i considerandi si leggono di seguito. I termini sensibili sono evidenziati in Fast Lookup CHnell, che visualizza l’uso ufficiale della parola e la sua fonte."
+    "t": "Una sentenza della Svizzera tedesca da utilizzare",
+    "p": "La sentenza viene tradotta con LexMachina e torna nella sua impaginazione: i considerandi si leggono di seguito. I termini delicati si verificano evidenziandoli: Fast lookup CHnell mostra l'uso ufficiale della parola e la sua fonte."
    },
    {
     "vis": "signature",
     "a": "Transazioni",
-    "t": "CGV di Zurigo firmate a Ginevra",
-    "p": "La versione francese deve impiegare i termini del Codice delle obbligazioni, non la loro parafrasi. La revisione Full da parte di un traduttore giuridico è ordinata nella gestione del progetto, con il termine indicato prima della convalida."
+    "t": "Condizioni generali di Zurigo firmate a Ginevra",
+    "p": "La versione francese deve usare i termini del Codice delle obbligazioni, non una loro parafrasi. La Full review da parte di un traduttore giuridico si ordina in Gestione dei progetti, con il termine di consegna indicato prima della conferma."
    },
    {
     "vis": "institution",
     "a": "Autorità",
     "t": "Una decisione da notificare in francese",
-    "p": "Il vocabolario della procedura amministrativa è fissato: Verfurgung dà decisione, Einsprache dà opposizione, Rechtsmittelbelehrung dà indicazione dei rimedi giuridici. Corrext mantiene costanti queste scelte da un documento all’altro."
+    "p": "Il vocabolario della procedura amministrativa è fisso. In francese Verfügung diventa «décision» (decisione), Einsprache diventa «opposition» (opposizione) e Rechtsmittelbelehrung diventa «indication des voies de droit» (indicazione dei rimedi giuridici). Corrext mantiene queste scelte costanti da un documento all'altro."
    }
   ],
-  "faq_titre": "Domande frequenti dal tedesco al francese",
+  "faq_titre": "Domande frequenti sulla traduzione dal tedesco al francese",
   "faq": [
    {
-    "q": "Il tedesco legale svizzero è davvero diverso dal tedesco tedesco?",
-    "r": "Sì, e non solo per via ortografica. Il SS non esiste in Svizzera, le migliaia si scrivono con un’apostrofa e le virgolette sono delle travi. Soprattutto, il vocabolario rimanda ad altre leggi: SchKG, ORO e ZGB non hanno un equivalente tedesco diretto e un motore basato su testi tedeschi produce termini che non esistono nel diritto svizzero."
+    "q": "Il tedesco giuridico svizzero è davvero diverso da quello della Germania?",
+    "r": "Sì, e non solo nell'ortografia. In Svizzera la ß non esiste, le migliaia si scrivono con l'apostrofo e le virgolette sono caporali. Soprattutto, il vocabolario rimanda ad altre leggi: SchKG, OR e ZGB non hanno un equivalente diretto in Germania. Un motore addestrato su testi provenienti dalla Germania produce termini che nel diritto svizzero non esistono."
    },
    {
-    "q": "Come sono trattate le abbreviazioni di leggi?",
-    "r": "Sono convertite, mai riprodotte. ORA diventa CO, ZGB diventa CC, StGB diventa CP, SchKG diventa LP e IPRG diventa LDIP. Se il contesto lascia dubbi, il nome completo della legge è scritto in lettere anziché in un’abbreviazione approssimativa."
+    "q": "Come vengono trattate le abbreviazioni delle leggi?",
+    "r": "Vengono convertite, mai ricopiate. OR diventa CO, ZGB diventa CC, StGB diventa CP, SchKG diventa LP (LEF in italiano) e IPRG diventa LDIP. Se il contesto lascia un dubbio, si scrive per esteso il nome della legge invece di un'abbreviazione approssimativa."
    },
    {
-    "q": "Convertono anche i riferimenti giurisprudenziali?",
-    "r": "Sì. Una BGE germanica si cita DTF in francese, con lo stesso volume e la stessa pagina; il Foglio federale si cita BBl in tedesco e FF in francese; la Raccolta sistematica passa da SR a RS. Queste conversioni sono meccaniche, ma rendono una memoria citabile davanti a un’autorità romanda."
+    "q": "Anche i riferimenti giurisprudenziali vengono convertiti?",
+    "r": "Sì. Una sentenza citata BGE in tedesco si cita ATF in francese (DTF in italiano), con lo stesso volume e la stessa pagina. Il Foglio federale si cita BBl in tedesco e FF in francese, e la Raccolta sistematica passa da SR a RS. Sono conversioni meccaniche, ma sono loro a rendere un atto scritto citabile davanti a un'autorità romanda."
    },
    {
-    "q": "Un documento a lungo termine mantiene il layout?",
-    "r": "Sì, la traduzione è fornita nel formato originale. Traduzioni testo e documento accettano fino a 25 file da 50 MB per invio, nei formati. pdf,. doc,. docx,. xls,. xlsx,. ppt e. pptx, e la scheda PDF to Word converte una scansione in documento modificabile prima dell’elaborazione."
+    "q": "Un documento lungo mantiene la sua impaginazione?",
+    "r": "Sì, la traduzione viene consegnata nel formato originale. Traduzione di testi e documenti accetta fino a 25 file da 50 MB per invio, nei formati .pdf, .doc, .docx, .xls, .xlsx, .ppt e .pptx. La scheda PDF to Word converte una scansione in un documento modificabile prima del trattamento."
    },
    {
-    "q": "Il testo può rimanere in Svizzera dall’inizio alla fine?",
-    "r": "Sì. I progetti vengono in ogni caso archiviati su server svizzeri e la modalità «High sensitive Content» o il motore LexMachina garantiscono un trattamento esclusivamente in Svizzera. Se un collaboratore sceglie un motore terzo ospitato all’estero, l’avviso Attorney-Cliente privilege viene visualizzato prima di ogni invio."
+    "q": "Il testo può restare in Svizzera dall'inizio alla fine?",
+    "r": "Sì. I progetti sono archiviati in ogni caso su server svizzeri. La modalità Highly sensitive content o il motore LexMachina garantiscono inoltre un trattamento esclusivamente in Svizzera. Se un collaboratore sceglie un motore di terzi ospitato all'estero, prima di ogni invio compare l'avviso Attorney-Client privilege."
    }
   ],
-  "cta_t": "Provate questa coppia su uno dei vostri documenti",
-  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero sui vostri formati e terminologia.",
+  "cta_t": "Provate questa combinazione su un vostro documento",
+  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero, sui vostri formati e con la vostra terminologia.",
   "voisins": [
    [
     "francais-allemand",
-    "Francese verso tedesco",
-    "Il senso inverso con trappole proprie"
+    "Francese-tedesco",
+    "Il senso inverso, con le sue trappole"
    ],
    [
     "allemand-anglais",
-    "Tedesco verso inglese",
+    "Tedesco-inglese",
     "Il diritto svizzero spiegato a un lettore di common law"
    ],
    [
     "italien-francais",
-    "Italiano verso francese",
-    "La terza lingua ufficiale e i suoi termini propri"
+    "Italiano-francese",
+    "L'italiano svizzero e i suoi termini propri"
    ]
   ]
  },
  {
   "slug": "francais-allemand",
-  "short": "Francese verso tedesco",
-  "resume": "Dal francese giuridico svizzero al tedesco letto a Zurigo, Berna o Coira.",
-  "title": "Traduzione giuridica dal francese al tedesco · Neur.on",
-  "description": "Dal francese giuridico svizzero al tedesco: termini delle leggi federali, ss. e apostrofo delle migliaia, abbreviazioni CO, LEF, LDIP convertite.",
-  "lede": "Francese verso tedesco.",
-  "h1": "Scrivere per un lettore tedesco",
-  "lead": "Una memoria romanda davanti a un’istanza tedesca, delle condizioni generali per tutta la Svizzera. Il testo tedesco deve usare le parole delle leggi federali nella loro ortografia svizzera.",
+  "short": "Francese-tedesco",
+  "resume": "Il francese giuridico svizzero reso nel tedesco che si legge a Zurigo, Berna o Coira.",
+  "title": "Traduzione francese-tedesco nel diritto svizzero · Neur.on",
+  "description": "Dal francese giuridico svizzero al tedesco: termini delle leggi federali, ss e apostrofo nelle migliaia, abbreviazioni CO, LP e LDIP convertite.",
+  "lede": "Traduzione dal francese al tedesco.",
+  "h1": "Testi giuridici per un lettore della Svizzera tedesca",
+  "lead": "Un atto scritto romando davanti a un'istanza della Svizzera tedesca, condizioni generali valide in tutta la Svizzera. Il testo tedesco deve usare le parole delle leggi federali, nella loro ortografia svizzera.",
   "promesses": [
    {
     "t": "Tedesco svizzero",
-    "d": "SS ovunque, mai ss, apostrofo nelle migliaia"
+    "d": "ss ovunque, mai ß, apostrofo nelle migliaia"
    },
    {
     "t": "Abbreviazioni",
-    "d": "CO diventa ORO, LP diventa SchKG, LDIP diventa IPRG"
+    "d": "CO diventa OR, LP (LEF in italiano) diventa SchKG, LDIP diventa IPRG"
    },
    {
-    "t": "Terminologia stabilita",
-    "d": "parole della versione tedesca ufficiale, non sinonimi"
+    "t": "Terminologia fissa",
+    "d": "le parole della versione tedesca ufficiale, non sinonimi"
    }
   ],
-  "definition": "La maggior parte dei Cantoni svizzeri rende giustizia in tedesco. Una memoria, condizioni generali o una decisione redatta in francese devono quindi esistere in una versione tedesca che riprende i termini delle leggi federali: quelli che il lettore tedesco riconosce e quelli che il tribunale citerà.",
+  "definition": "La maggior parte dei Cantoni svizzeri amministra la giustizia in tedesco. Un atto scritto, condizioni generali o una decisione redatti in francese devono quindi esistere anche in versione tedesca. Questa versione riprende i termini delle leggi federali: quelli che il lettore della Svizzera tedesca riconosce e che il tribunale citerà.",
   "facts": [
    {
     "k": "La parola esiste già",
     "v": "Ogni nozione del Codice delle obbligazioni ha un termine tedesco ufficiale nella versione pubblicata accanto al testo francese. Il traduttore non sceglie tra più sinonimi: riprende quello.",
-    "s": "Entrambe le versioni sono pubblicate in parallelo nel Fast Lookup CHnell con il relativo rimando."
+    "s": "In Fast lookup CHnell le due versioni si leggono in parallelo, con il loro riferimento."
    },
    {
     "k": "Abbreviazioni da convertire",
-    "v": "CO diventa ORO, CC diventa ZGB, CP diventa StGB, LP diventa SchKG, LDIP diventa IPRG. La legge sulle banche diventa BankG, non Bankengesetz abbreviato al giudicato."
+    "v": "CO diventa OR, CC diventa ZGB, CP diventa StGB, LP (LEF in italiano) diventa SchKG, LDIP diventa IPRG. La legge sulle banche diventa BankG, non un Bankengesetz abbreviato a intuito."
    },
    {
-    "k": "Mai di SS",
-    "v": "Il tedesco standard svizzero scrive sempre ss: Strasse, Abschluss, gemäss. Un testo fornito con le ss segnala immediatamente che non è stato redatto per la Svizzera.",
-    "s": "Lo stesso vale per intestazioni, tabelle e nomi di file."
+    "k": "Mai la ß",
+    "v": "Il tedesco standard della Svizzera scrive sempre ss: Strasse, Abschluss, gemäss. Un testo consegnato con la ß rivela subito che non è stato redatto per la Svizzera.",
+    "s": "La regola vale anche nelle intestazioni, nelle tabelle e nei nomi dei file."
    },
    {
     "k": "Importi e date",
-    "v": "Le migliaia conservano l’apostrofo, 15’000, e gli importi restano in franchi svizzeri. Le conversioni di formato interrompono le tabelle finanziarie più spesso degli errori di vocabolario."
+    "v": "Le migliaia mantengono l'apostrofo, 15'000, e gli importi restano in franchi svizzeri. Le conversioni di formato rompono le tabelle finanziarie più spesso degli errori di vocabolario."
    },
    {
     "k": "Falsi amici romandi",
-    "v": "Il foro del contratto è un Gerichtsstand, non un luogo; un ricorso di diritto amministrativo non è un Rekurs in tutti i procedimenti. Questi spostamenti provengono dal francese di Francia o da un uso cantonale."
+    "v": "Il foro del contratto è un Gerichtsstand, non un luogo; un ricorso di diritto amministrativo non è un Rekurs in tutte le procedure. Questi slittamenti vengono dal francese di Francia o da un uso cantonale."
    },
    {
-    "k": "Composti per ricostruire",
-    "v": "Dove il francese allinea quattro parole, il tedesco attende un composto unico: obbligo di riparare il danno dà Schadenersatzpflicht. Una parola per parola letterale si legge come una traduzione."
+    "k": "Composti da ricostruire",
+    "v": "Dove il francese allinea quattro parole, il tedesco si aspetta un unico composto: «obligation de réparer le dommage» diventa Schadenersatzpflicht. Una resa parola per parola si legge come una traduzione."
    },
    {
     "k": "Due lingue native",
-    "v": "Il francese e il tedesco sono due delle quattro lingue native di LexMachina, formate in oltre 15 milioni di segmenti giuridici e finanziari svizzeri.",
-    "s": "Queste sono anche le uniche lingue, insieme all’italiano e all’inglese, disponibili in «High sensitive Content»."
+    "v": "Il francese e il tedesco sono due delle quattro lingue native di LexMachina, addestrato su oltre 15 milioni di segmenti giuridici e finanziari svizzeri.",
+    "s": "Sono anche, con l'italiano e l'inglese, le sole lingue disponibili in Highly sensitive content."
    },
    {
-    "k": "Coerenza temporale",
-    "v": "Lo stesso termine deve essere reso nello stesso modo nel contratto, nei suoi allegati e nelle clausole aggiuntive firmate sei mesi dopo. Le risorse terminologiche di CHnell portano queste scelte da un progetto all’altro."
+    "k": "Coerenza nel tempo",
+    "v": "Uno stesso termine va reso allo stesso modo nel contratto, nei suoi allegati e nelle modifiche firmate sei mesi dopo. Le risorse terminologiche di CHnell portano queste scelte da un progetto all'altro."
    }
   ],
   "termes": [
@@ -275,129 +275,129 @@
     "ref": "art. 107 CO"
    }
   ],
-  "termes_note": "Il vocabolario delle società e dei contratti, nella forma esatta delle versioni tedesca, francese e italiana del Codice delle obbligazioni. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "who_titre": "Tre momenti in cui è attesa la versione tedesca",
+  "termes_note": "Il vocabolario delle società e dei contratti, nella forma esatta delle versioni tedesca, francese e italiana del Codice delle obbligazioni. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, che non ha forza di legge; altrimenti la formulazione d'uso.",
+  "who_titre": "Tre momenti in cui serve la versione tedesca",
   "who": [
    {
     "vis": "marteau",
     "a": "Contenzioso",
-    "t": "Una memoria romanda in tedesco",
-    "p": "Le conclusioni e le citazioni delle sentenze sono dapprima convertite: DTF diventa BGE, CO diventa ORO. La rilettura giuridica verte poi sull’argomento che deve essere letto come un testo redatto in tedesco."
+    "t": "Un atto scritto romando in tedesco",
+    "p": "Prima si convertono le conclusioni e le citazioni delle sentenze: ATF (DTF in italiano) diventa BGE, CO diventa OR. La revisione giuridica verte poi sull'argomentazione, che deve leggersi come un testo redatto in tedesco."
    },
    {
     "vis": "societe",
     "a": "Imprese",
-    "t": "CGV per tutta la Svizzera",
-    "p": "Una clausola del foro, una clausola di prescrizione e una penale non hanno margini d’interpretazione: esse riprendono i termini dell’Obligationenrecht. La coerenza tra le due versioni si verifica in modo lineare."
+    "t": "Condizioni generali per tutta la Svizzera",
+    "p": "Una clausola di proroga di foro, una clausola sulla prescrizione e una pena convenzionale non lasciano margini di interpretazione: riprendono i termini dell'Obligationenrecht. La coerenza tra le due versioni si verifica riga per riga."
    },
    {
     "vis": "envoi",
     "a": "Autorità",
     "t": "Un comunicato per due regioni",
-    "p": "Il testo tedesco deve apparire lo stesso giorno, con lo stesso livello linguistico. Management progettuale organizza la revisione interna e quantifica il tempo necessario a partire dal numero di pagine standard rilevato."
+    "p": "Il testo tedesco deve uscire lo stesso giorno, con lo stesso registro. Gestione dei progetti organizza la revisione interna e calcola il tempo necessario in base al numero di pagine standard rilevato."
    }
   ],
-  "faq_titre": "Domande frequenti dal francese al tedesco",
+  "faq_titre": "Domande frequenti sulla traduzione dal francese al tedesco",
   "faq": [
    {
-    "q": "Bisogna scrivere in tedesco standard o in tedesco svizzero?",
-    "r": "In tedesco standard, nella sua variante svizzera. Lo svizzero tedesco è una lingua parlata: in un dialetto non è redatto alcun testo giuridico. La variante svizzera del tedesco standard impone il SS al posto del SS, l’apostrofo nelle migliaia, le virgolette a spina di pesce e il vocabolario delle leggi federali."
+    "q": "Bisogna scrivere in tedesco standard o in svizzero tedesco?",
+    "r": "In tedesco standard, nella sua variante svizzera. Lo svizzero tedesco è una lingua parlata: nessun testo giuridico è redatto in dialetto. La variante svizzera del tedesco standard impone ss al posto di ß, l'apostrofo nelle migliaia, le virgolette caporali e il vocabolario delle leggi federali."
    },
    {
-    "q": "Come si possono evitare i termini del diritto tedesco o austriaco?",
-    "r": "Partendo dai testi svizzeri piuttosto che da un corpus generalista. LexMachina è basato sul diritto svizzero, e ogni termine sospetto si verifica in Fast Lookup CHnell, che visualizza il segmento ufficiale, la sua lingua di origine e il suo riferimento. Un termine che non figura in nessun testo svizzero non trova posto nel documento."
+    "q": "Come evitare i termini del diritto tedesco o austriaco?",
+    "r": "Partendo dai testi svizzeri invece che da testi generici. LexMachina è addestrato sul diritto svizzero, e ogni termine dubbio si verifica in Fast lookup CHnell, che mostra il segmento ufficiale, la sua lingua di partenza e il suo riferimento. Un termine che non compare in nessun testo svizzero non ha posto nel documento."
    },
    {
-    "q": "Le due versioni di un contratto possono fare fede?",
-    "r": "Le parti possono convenirla, ed è frequente per un contratto svizzero bilingue. Ciò impone un controllo a termine delle due versioni, poiché uno scarto di vocabolario diviene uno scarto di diritto. Una doppia review con certificato è il livello di riproduzione previsto per questo caso."
+    "q": "Le due versioni di un contratto possono fare fede entrambe?",
+    "r": "Le parti possono convenirlo, ed è frequente per un contratto svizzero bilingue. Questo impone un controllo termine per termine delle due versioni, perché uno scarto di vocabolario diventa uno scarto di diritto. La Double review e traduzione certificata è il livello di revisione previsto per questo caso."
    },
    {
-    "q": "Si può imporre la terminologia interna dell’impresa?",
-    "r": "Sì. Fast Lookup CHnell copre 30 domini da fonti ufficiali, a cui si aggiungono risorse proprie, in accesso privato o condiviso. I termini maison si ritrovano allora nelle traduzioni seguenti con il loro contesto."
+    "q": "Si può imporre la terminologia interna dell'azienda?",
+    "r": "Sì. Fast lookup CHnell copre 30 settori a partire da fonti ufficiali, e le vostre risorse vi si aggiungono, con accesso privato o condiviso. I termini interni compaiono così nelle traduzioni successive, con il loro contesto."
    },
    {
-    "q": "Dove viene elaborato il documento?",
-    "r": "Lo stoccaggio è in ogni caso in Svizzera. Con LexMachina o in modalità «high sensitive content» lo stesso vale per l’elaborazione e il contenuto non viene riutilizzato nella memoria di traduzione. I motori terzi, alloggiati all’estero, attivano l’avviso Attorney-Cliente privilege e presuppongono un documento pseudonimizzato."
+    "q": "Dove viene trattato il documento?",
+    "r": "L'archiviazione avviene in ogni caso in Svizzera. Con LexMachina o in modalità Highly sensitive content vi avviene anche il trattamento, e il contenuto non viene riutilizzato in una memoria di traduzione. I motori di terzi, ospitati all'estero, attivano l'avviso Attorney-Client privilege e presuppongono un documento pseudonimizzato."
    }
   ],
-  "cta_t": "Fate rileggere la vostra versione tedesca da un giurista linguista",
-  "cta_p": "Dimostrazione sui vostri documenti, con la terminologia e i formati della vostra organizzazione.",
+  "cta_t": "Fate rivedere la vostra versione tedesca da un giurista linguista",
+  "cta_p": "Una dimostrazione sui vostri documenti, con la terminologia e i formati della vostra organizzazione.",
   "voisins": [
    [
     "allemand-francais",
-    "Tedesco verso francese",
-    "Il senso inverso con trappole proprie"
+    "Tedesco-francese",
+    "Il senso inverso, con le sue trappole"
    ],
    [
     "francais-anglais",
-    "Francese verso inglese",
-    "Stesso testo per un dossier internazionale"
+    "Francese-inglese",
+    "Lo stesso testo per un dossier internazionale"
    ],
    [
     "italien-francais",
-    "Italiano verso francese",
-    "La terza lingua ufficiale e i suoi termini propri"
+    "Italiano-francese",
+    "L'italiano svizzero e i suoi termini propri"
    ]
   ]
  },
  {
   "slug": "allemand-anglais",
-  "short": "Tedesco verso inglese",
-  "resume": "Il diritto svizzero in tedesco, reso leggibile per un lettore di common law.",
-  "title": "Traduzione giuridica dal tedesco all’inglese · Neur.on",
-  "description": "Il diritto svizzero tedesco in inglese: le versioni inglese delle leggi non hanno forza di legge e le nozioni svizzere conservano il loro termine originale.",
-  "lede": "Tedesco verso inglese.",
+  "short": "Tedesco-inglese",
+  "resume": "Il diritto svizzero in tedesco, reso comprensibile per un lettore di common law.",
+  "title": "Traduzione giuridica dal tedesco all'inglese · Neur.on",
+  "description": "Il diritto della Svizzera tedesca in inglese: le versioni inglesi delle leggi non hanno forza di legge e le nozioni svizzere mantengono il termine originale.",
+  "lede": "Traduzione dal tedesco all'inglese.",
   "h1": "Rendere comprensibile il diritto svizzero",
-  "lead": "Una due diligence guidata da Londra, un rapporto per una casa madre americana. L’inglese non ha alcun termine ufficiale svizzero: la traduzione spiega senza inventare un diritto che non esiste.",
+  "lead": "Una due diligence gestita da Londra, un rapporto per una casa madre statunitense. L'inglese non ha alcun termine ufficiale svizzero: la traduzione spiega, senza inventare un diritto che non esiste.",
   "promesses": [
    {
     "t": "Lingua non ufficiale",
-    "d": "le versioni inglese delle leggi svizzere sono informative"
+    "d": "le versioni inglesi delle leggi svizzere hanno valore informativo"
    },
    {
-    "t": "Concetti senza equivalenti",
-    "d": "Betreibung e Verfurgung conservano il loro termine originale"
+    "t": "Nozioni senza equivalente",
+    "d": "Betreibung e Verfügung mantengono il termine originale"
    },
    {
     "t": "Trattamento in Svizzera",
-    "d": "l’inglese è una delle quattro lingue native"
+    "d": "l'inglese è una delle quattro lingue native"
    }
   ],
-  "definition": "L’inglese non è una lingua ufficiale della Confederazione. Le leggi federali fanno fede in tedesco, francese e italiano; le loro versioni in inglese sono traduzioni pubblicate a titolo informativo, prive di valore giuridico. Un documento inglese serve quindi a comprendere e a decidere, mai a fondare un’interpretazione dinanzi a un’autorità svizzera.",
+  "definition": "L'inglese non è una lingua ufficiale della Confederazione. Le leggi federali fanno fede in tedesco, francese e italiano; le loro versioni inglesi sono traduzioni pubblicate a titolo informativo, senza valore giuridico. Un documento inglese serve quindi a capire e a decidere, mai a fondare un'interpretazione davanti a un'autorità svizzera.",
   "facts": [
    {
-    "k": "Nessuna versione che faccia fede",
-    "v": "Le traduzioni inglesi delle leggi federali sono messe a disposizione a titolo informativo e non hanno forza di legge. Il testo di riferimento resta il tedesco, il francese o l’italiano.",
-    "s": "Questa riserva figura sulle traduzioni inglesi pubblicate dalla Confederazione."
+    "k": "Nessuna versione vincolante",
+    "v": "Le traduzioni inglesi delle leggi federali sono messe a disposizione a titolo informativo e non hanno forza di legge. Il testo di riferimento resta quello tedesco, francese o italiano.",
+    "s": "Questa avvertenza figura sulle traduzioni inglesi pubblicate dalla Confederazione."
    },
    {
-    "k": "Concetti senza equivalenti",
-    "v": "La Betreibung non è una debt collection nel senso anglosassone e la Verfurgung non è una decisione di common law. L’uso è quello di mantenere il termine svizzero e di spiegarlo una sola volta."
+    "k": "Nozioni senza equivalente",
+    "v": "La Betreibung non è una debt collection in senso anglosassone e la Verfügung non è una decision di common law. La prassi è mantenere il termine svizzero e spiegarlo una volta."
    },
    {
     "k": "La trappola inversa",
-    "v": "Consideration, trust, estoppel, Discovery: queste nozioni non hanno controparti nel diritto svizzero. Utilizzarli per rendere un concetto svizzero crea un controsenso che il lettore non rileva."
+    "v": "Consideration, trust, estoppel, discovery: queste nozioni non hanno una controparte nel diritto svizzero. Usarle per rendere un concetto svizzero crea un controsenso che il lettore non nota."
    },
    {
     "k": "Società",
-    "v": "Aktiengesellschaft si reca per Company Limited by shares nei testi della Confederazione, non per corporazione. La sigla AG si conserva nella ragione sociale, che non si traduce mai.",
-    "s": "Una ditta iscritta nel registro di commercio mantiene la sua forma iscritta."
+    "v": "Nei testi della Confederazione Aktiengesellschaft si rende con company limited by shares, non con corporation. La sigla AG resta nella ragione sociale, che non si traduce mai.",
+    "s": "Una ragione sociale iscritta nel registro di commercio mantiene la forma iscritta."
    },
    {
-    "k": "Riferimenti legali",
-    "v": "Una citazione di un articolo si lascia in chiaro: art. 104 ORO o art. 104 CO, seguita dal nome completo della legge. Inventare una sigla inglese rende la fonte irreperibile per il destinatario."
+    "k": "Riferimenti normativi",
+    "v": "La citazione di un articolo resta in chiaro: art. 104 OR o art. 104 CO, seguita dal nome completo della legge. Inventare una sigla inglese rende la fonte introvabile per il destinatario."
    },
    {
     "k": "Finanza e conformità",
-    "v": "I rapporti FINMA, i prospetti e i documenti di conformità viaggiano in inglese. La terminologia finanziaria svizzera è riportata in CHnell, che comprende 30 settori da fonti ufficiali."
+    "v": "I rapporti FINMA, i prospetti e i documenti di conformità viaggiano in inglese. La terminologia finanziaria svizzera si trova in CHnell, che copre 30 settori a partire da fonti ufficiali."
    },
    {
-    "k": "Volume delle due diligenze",
-    "v": "La traduzione di testo e documento accetta fino a 25 file da 50 MB per invio e la scheda PDF to Word trasforma una scansione in un documento modificabile, ciò che conta quando una parte importante dei pezzi viene digitalizzata."
+    "k": "Volume delle due diligence",
+    "v": "Traduzione di testi e documenti accetta fino a 25 file da 50 MB per invio. La scheda PDF to Word trasforma una scansione in un documento modificabile: conta quando una parte importante degli atti arriva digitalizzata."
    },
    {
     "k": "Riservatezza",
-    "v": "L’inglese fa parte delle quattro lingue del modo «High sensitive content»: archiviazione ed elaborazione esclusivamente in Svizzera, senza riutilizzo del contenuto in memoria di traduzione."
+    "v": "L'inglese è una delle quattro lingue della modalità Highly sensitive content: archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo del contenuto in una memoria di traduzione."
    }
   ],
   "termes": [
@@ -413,7 +413,7 @@
     "fr": "blanchiment d'argent",
     "it": "riciclaggio di denaro",
     "en": "money laundering",
-    "ref": "art. 305 bis CP"
+    "ref": "art. 305bis CP"
    },
    {
     "de": "Verwaltungsrat",
@@ -445,128 +445,128 @@
    }
   ],
   "termes_note": "Le colonne tedesca, francese e italiana provengono dalle versioni ufficiali; la colonna inglese segue le traduzioni pubblicate a titolo informativo dalla Confederazione.",
-  "who_titre": "Tre dossier che passano per l’inglese",
+  "who_titre": "Tre dossier che passano per l'inglese",
   "who": [
    {
     "vis": "loupe",
-    "a": "M &amp; A",
-    "t": "Una data room per un acquirente straniero",
-    "p": "Lo statuto, i contratti e gli estratti del registro di commercio partono in lotti e ritornano nel loro formato. I concetti svizzeri conservano il loro termine originale, spiegato una volta, evitando così i passi indietro del team acquirente."
+    "a": "M&A",
+    "t": "Una data room per un acquirente estero",
+    "p": "Statuti, contratti ed estratti del registro di commercio partono a lotti e tornano nel loro formato. Le nozioni svizzere mantengono il termine originale, spiegato una volta, e questo evita i rimpalli con il team dell'acquirente."
    },
    {
     "vis": "bouclier",
     "a": "Banche",
-    "t": "Rapporto di conformità per il Gruppo",
-    "p": "Il vocabolario della vigilanza e del segreto bancario deve rimanere stabile da un trimestre all’altro. La modalità «High sensitive content» mantiene l’intero trattamento in Svizzera mentre circola il rapporto."
+    "t": "Un rapporto di conformità per la casa madre",
+    "p": "Il vocabolario della vigilanza e del segreto bancario deve restare stabile da un trimestre all'altro. La modalità Highly sensitive content mantiene l'intero trattamento in Svizzera mentre il rapporto circola."
    },
    {
     "vis": "sentence",
     "a": "Arbitrato",
-    "t": "Monete alemaniche in inglese",
-    "p": "Il tribunale arbitrale legge in inglese, ma decide in merito al diritto svizzero. Le alternative proposte da diversi motori mostrano le formulazioni concorrenti e il Consiglio sceglie quella che assume davanti al tribunale."
+    "t": "Atti della Svizzera tedesca in inglese",
+    "p": "Il tribunale arbitrale legge in inglese ma decide in base al diritto svizzero. Le alternative proposte da più motori mostrano le formulazioni concorrenti, e l'avvocato sceglie quella di cui risponde davanti al tribunale."
    }
   ],
-  "faq_titre": "Domande frequenti dal tedesco all’inglese",
+  "faq_titre": "Domande frequenti sulla traduzione dal tedesco all'inglese",
   "faq": [
    {
-    "q": "Una traduzione in inglese di una legge svizzera ha valore giuridico?",
-    "r": "No. L’inglese non è una lingua ufficiale della Confederazione. Le leggi federali fanno fede in tedesco, francese e italiano; le versioni inglesi sono pubblicate a titolo informativo e non possono essere opposte ad un’autorità svizzera. Per una citazione vincolante, la versione tedesca, francese o italiana è ripresa, se necessario accompagnata dalla sua traduzione."
+    "q": "Una traduzione inglese di una legge svizzera ha valore giuridico?",
+    "r": "No. L'inglese non è una lingua ufficiale della Confederazione. Le leggi federali fanno fede in tedesco, francese e italiano; le versioni inglesi sono pubblicate a titolo informativo e non possono essere invocate davanti a un'autorità svizzera. Per una citazione vincolante si riprende la versione tedesca, francese o italiana, se necessario accompagnata dalla sua traduzione."
    },
    {
-    "q": "Tradurre o mantenere i termini svizzeri?",
-    "r": "Entrambe, in questo ordine. Il termine svizzero è conservato, seguito da una spiegazione alla sua prima occorrenza, e riutilizzato come tale. Solo così la Betreibung o la Verfurgung possono essere convertite in concetti di common law diversi."
+    "q": "I termini svizzeri vanno tradotti o mantenuti?",
+    "r": "Entrambe le cose, in quest'ordine. Il termine svizzero si mantiene, seguito da una spiegazione alla prima occorrenza, poi si riutilizza tale e quale. È l'unico modo per rendere la Betreibung o la Verfügung senza convertirle in nozioni di common law che non coprono la stessa realtà."
    },
    {
-    "q": "Come si trattano le ragioni sociali e le sigle?",
-    "r": "Non si traducono. Una società iscritta nel registro di commercio nella forma AG o GmbH conserva tale forma in tutto il documento. Solo la natura giuridica può essere esplicitata una sola volta, per esempio Company Limited by shares per l’Aktiengesellschaft."
+    "q": "Come trattare ragioni sociali e sigle?",
+    "r": "Non si traducono. Una società iscritta nel registro di commercio nella forma AG o GmbH mantiene questa forma in tutto il documento. Solo la natura giuridica può essere spiegata una volta, per esempio company limited by shares per l'Aktiengesellschaft."
    },
    {
-    "q": "Le traduzioni in inglese sono meno precise rispetto alle altre coppie?",
-    "r": "L’inglese è una delle quattro lingue native di LexMachina, formate su testi giuridici e finanziari svizzeri. Ciò che cambia non è la qualità della lingua, bensì lo statuto del testo prodotto: informativo, perché il diritto svizzero non si scrive in inglese."
+    "q": "Le traduzioni in inglese sono meno precise delle altre combinazioni?",
+    "r": "L'inglese è una delle quattro lingue native di LexMachina, addestrato su testi giuridici e finanziari svizzeri. Non cambia la qualità della lingua, ma il valore del testo prodotto: informativo, perché il diritto svizzero non si scrive in inglese."
    },
    {
-    "q": "Il documento può rimanere in Svizzera mentre il destinatario è all’estero?",
-    "r": "Sì. Il luogo di trattamento non dipende dal destinatario, bensì dal motore scelto. Con LexMachina o in modalità high sensitive content, lo stoccaggio e il trattamento restano esclusivamente in Svizzera. Il file tradotto viene poi trasmesso tramite i propri canali."
+    "q": "Il documento può restare in Svizzera anche se il destinatario è all'estero?",
+    "r": "Sì. Il luogo del trattamento non dipende dal destinatario, ma dal motore scelto. Con LexMachina o in modalità Highly sensitive content, archiviazione e trattamento restano esclusivamente in Svizzera. Il file tradotto viene poi trasmesso attraverso i vostri canali."
    }
   ],
-  "cta_t": "Mostraci un dossier tedesco da aprire in inglese",
-  "cta_p": "Una dimostrazione sui vostri pezzi reali, con la terminologia del vostro settore.",
+  "cta_t": "Mostrateci un dossier della Svizzera tedesca da aprire in inglese",
+  "cta_p": "Una dimostrazione sui vostri documenti reali, con la terminologia del vostro settore.",
   "voisins": [
    [
     "anglais-allemand",
-    "Inglese verso tedesco",
-    "Senso contrario per i contratti di diritto svizzero"
+    "Inglese-tedesco",
+    "Il senso inverso, per i contratti di diritto svizzero"
    ],
    [
     "allemand-francais",
-    "Tedesco verso francese",
-    "Stessa fonte per la Svizzera romanda"
+    "Tedesco-francese",
+    "La stessa lingua di partenza, per la Svizzera romanda"
    ],
    [
     "francais-anglais",
-    "Francese verso inglese",
+    "Francese-inglese",
     "Il diritto svizzero romando per un dossier internazionale"
    ]
   ]
  },
  {
   "slug": "anglais-allemand",
-  "short": "Inglese verso tedesco",
-  "resume": "Contratti redatti in inglese, da far atterrare nel diritto svizzero.",
-  "title": "Traduzione giuridica dall’inglese al tedesco · Neur.on",
-  "description": "Contratti redatti in inglese e soggetti al diritto svizzero: la versione tedesca ancora ogni clausola sulle nozioni esatte del Codice delle obbligazioni.",
-  "lede": "Inglese verso tedesco.",
-  "h1": "Riportare il contratto al diritto svizzero",
-  "lead": "Un contratto d’acquisto redatto in inglese ma soggetto al diritto svizzero: la versione tedesca, quella che leggerà l’autorità, ricollega ogni clausola a una nozione del Codice delle obbligazioni.",
+  "short": "Inglese-tedesco",
+  "resume": "Contratti redatti in inglese, da ricondurre al diritto svizzero.",
+  "title": "Tradurre un contratto dall'inglese al tedesco · Neur.on",
+  "description": "Contratti redatti in inglese e soggetti al diritto svizzero: la versione tedesca ancora ogni clausola alle nozioni esatte del Codice delle obbligazioni.",
+  "lede": "Traduzione dall'inglese al tedesco.",
+  "h1": "Ricondurre il contratto al diritto svizzero",
+  "lead": "Un contratto di acquisizione redatto in inglese ma soggetto al diritto svizzero: la versione tedesca, quella che leggerà l'autorità, collega ogni clausola a una nozione del Codice delle obbligazioni.",
   "promesses": [
    {
-    "t": "Ancoraggio legale",
-    "d": "ogni clausola ricondotta alle nozioni dell’Obligationenrecht"
+    "t": "Ancoraggio giuridico",
+    "d": "ogni clausola ricondotta alle nozioni dell'Obligationenrecht"
    },
    {
     "t": "Tedesco svizzero",
-    "d": "SS, apostrofo nelle migliaia, sigle svizzere conservate"
+    "d": "ss, apostrofo nelle migliaia, sigle svizzere mantenute"
    },
    {
     "t": "Trattamento in Svizzera",
-    "d": "entrambe le lingue sono native in LexMachina"
+    "d": "le due lingue sono native in LexMachina"
    }
   ],
-  "definition": "Un contratto redatto in inglese può benissimo essere soggetto al diritto svizzero: le parti scelgono la lingua, la legge applicabile è un’altra questione. La traduzione tedesca serve allora alla lettura da parte di una controparte, di un’autorità o di un tribunale svizzero e deve impiegare le nozioni del Codice delle obbligazioni.",
+  "definition": "Un contratto redatto in inglese può benissimo essere soggetto al diritto svizzero: le parti scelgono la lingua, il diritto applicabile è un'altra questione. La traduzione tedesca serve allora alla lettura da parte di una controparte, di un'autorità o di un tribunale svizzero, e deve usare le nozioni del Codice delle obbligazioni.",
   "facts": [
    {
     "k": "Lingua e diritto applicabile",
-    "v": "La lingua del contratto e la legge che lo disciplina sono due scelte distinte. Un testo inglese soggetto al diritto svizzero si interpreta secondo il Codice delle obbligazioni, non secondo gli usi del common law."
+    "v": "La lingua del contratto e la legge che lo regola sono due scelte distinte. Un testo inglese soggetto al diritto svizzero si interpreta secondo il Codice delle obbligazioni, non secondo gli usi della common law."
    },
    {
-    "k": "Clausole senza equivalenti",
-    "v": "Indemnify and hold Harmless, best effort, representations and warranties: queste formule non hanno un corrispondente esatto. Si basano sui concetti svizzeri di garanzia, diligenza e responsabilità."
+    "k": "Clausole senza equivalente",
+    "v": "Indemnify and hold harmless, best efforts, representations and warranties: queste formule non hanno un corrispondente esatto. Si rendono con le nozioni svizzere di garanzia, diligenza e responsabilità, non parola per parola."
    },
    {
-    "k": "Clausola penale",
-    "v": "Una liquidated damages clause si configura nel diritto svizzero come una Konventionalstrafe, con il regime dell’art. 160 CO e la possibilità per il giudice di ridurre una pena eccessiva."
+    "k": "Pena convenzionale",
+    "v": "Nel diritto svizzero una liquidated damages clause si legge come una Konventionalstrafe, con il regime dell'art. 160 CO e la possibilità per il giudice di ridurre una pena eccessiva."
    },
    {
     "k": "Arbitrato internazionale",
-    "v": "Una clausola compromissoria con sede in Svizzera rientra nel capitolo sull’arbitrato internazionale della legge sul diritto internazionale privato, IPRG in tedesco.",
-    "s": "Il tribunale arbitrale decide autonomamente in merito alla sua competenza, art. 186 LDIP."
+    "v": "Una clausola compromissoria con sede in Svizzera rientra nel capitolo sull'arbitrato internazionale della legge federale sul diritto internazionale privato, IPRG in tedesco.",
+    "s": "Il tribunale arbitrale decide da sé sulla propria competenza, art. 186 LDIP."
    },
    {
     "k": "Ortografia e formato",
-    "v": "La versione tedesca segue le convenzioni svizzere: ss e mai ss, migliaia in 15’000, importi in franchi svizzeri. Le date e i riferimenti incrociati devono rimanere allineati all’originale."
+    "v": "La versione tedesca segue le convenzioni svizzere: ss e mai ß, migliaia scritte 15'000, importi in franchi svizzeri. Date e riferimenti incrociati devono restare allineati all'originale."
    },
    {
     "k": "Definizioni del contratto",
-    "v": "Un contratto anglosassone si apre con una lunga lista di termini definiti. Ogni termine definito deve ricevere un solo equivalente germanico, riutilizzato senza variazione in tutto il documento e nei suoi allegati.",
-    "s": "Le risorse terminologiche di CHnell portano queste scelte da un allegato all’altro."
+    "v": "Un contratto di stampo anglosassone si apre con un lungo elenco di termini definiti. Ogni termine definito deve ricevere un solo equivalente tedesco, riutilizzato senza variazioni in tutto il documento e nei suoi allegati.",
+    "s": "Le risorse terminologiche di CHnell portano queste scelte da un allegato all'altro."
    },
    {
     "k": "Volume e allegati",
-    "v": "Gli allegati crittografati, le tabelle delle alienazioni e gli elenchi dei contratti rappresentano spesso la maggior parte delle pagine. Corrext restituisce i file Word, Excel e PowerPoint nel loro formato originale."
+    "v": "Allegati con cifre, tabelle di cessione ed elenchi di contratti rappresentano spesso la maggior parte delle pagine. Corrext restituisce i file Word, Excel e PowerPoint nel formato originale."
    },
    {
     "k": "Riservatezza",
-    "v": "L’inglese e il tedesco fanno parte delle quattro lingue del modo «High sensitive Content»: stoccaggio e trattamento esclusivamente in Svizzera, senza riutilizzo in memoria di traduzione."
+    "v": "L'inglese e il tedesco sono due delle quattro lingue della modalità Highly sensitive content: archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo in una memoria di traduzione."
    }
   ],
   "termes": [
@@ -582,7 +582,7 @@
     "fr": "compétence",
     "it": "competenza",
     "en": "jurisdiction",
-    "ref": "titolo 2: CPC"
+    "ref": "titolo 2 CPC"
    },
    {
     "de": "Konventionalstrafe",
@@ -613,129 +613,129 @@
     "ref": "art. 143 CO"
    }
   ],
-  "termes_note": "Le nozioni che una clausola inglese deve ritrovare nel diritto svizzero, con l’articolo che le disciplina. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "who_titre": "Tre contratti in lingua inglese",
+  "termes_note": "Le nozioni che una clausola inglese deve ritrovare nel diritto svizzero, con l'articolo che le disciplina. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, che non ha forza di legge; altrimenti la formulazione d'uso.",
+  "who_titre": "Tre contratti che arrivano in inglese",
   "who": [
    {
     "vis": "signature",
-    "a": "M &amp; A",
-    "t": "Un contratto d’acquisto svizzero",
-    "p": "Le dichiarazioni e le garanzie, la clausola di indennizzo e le soglie cifrate si orientano alle nozioni del Codice delle obbligazioni. La rilettura Full da parte di un traduttore giuridico verte innanzitutto su queste clausole, non sugli allegati descrittivi."
+    "a": "M&A",
+    "t": "Un contratto di acquisizione svizzero",
+    "p": "Le dichiarazioni e garanzie, la clausola di manleva e le soglie numeriche si rendono con le nozioni del Codice delle obbligazioni. La Full review da parte di un traduttore giuridico verte prima di tutto su queste clausole, non sugli allegati descrittivi."
    },
    {
     "vis": "financement",
     "a": "Finanziamento",
-    "t": "Un credito con un creditore estero",
-    "p": "Le garanzie, la cessione di crediti e la solidarietà dei Mutuatari sono concetti precisi nel diritto svizzero. Un termine fluttuante nella versione tedesca diviene un’incertezza al momento dell’esecuzione."
+    "t": "Un credito con un mutuante estero",
+    "p": "Le garanzie, la cessione dei crediti e la solidarietà dei mutuatari sono nozioni precise del diritto svizzero. Un termine incerto nella versione tedesca diventa un'incertezza al momento dell'esecuzione."
    },
    {
     "vis": "verrou",
-    "a": "Direzione giuridica",
-    "t": "Un NDA tipo in tedesco",
-    "p": "Una volta adottata la versione tedesca, essa funge da riferimento per tutti i contratti seguenti. I termini convalidati si trovano in Fast Lookup CHnell, con le proprie risorse accanto alle fonti ufficiali."
+    "a": "Ufficio legale",
+    "t": "Un NDA standard in tedesco",
+    "p": "Una volta definita, la versione tedesca serve da riferimento per tutti i contratti successivi. I termini convalidati si ritrovano in Fast lookup CHnell, con le vostre risorse accanto alle fonti ufficiali."
    }
   ],
-  "faq_titre": "Domande frequenti sull’inglese in tedesco",
+  "faq_titre": "Domande frequenti sulla traduzione dall'inglese al tedesco",
   "faq": [
    {
-    "q": "Un contratto in inglese è valido nel diritto svizzero?",
-    "r": "Sì, le parti sono libere di scegliere la lingua del loro contratto e il diritto svizzero può applicarsi a un testo inglese. La difficoltà è pratica: davanti a un’autorità o a un tribunale svizzero germanico sarà letta la versione tedesca e le nozioni anglosassone dovranno comunque essere ricollegate al Codice delle obbligazioni."
+    "q": "Un contratto in inglese è valido secondo il diritto svizzero?",
+    "r": "Sì, le parti sono libere di scegliere la lingua del contratto, e il diritto svizzero può applicarsi a un testo inglese. La difficoltà è pratica: davanti a un'autorità o a un tribunale della Svizzera tedesca si leggerà la versione tedesca, e le nozioni anglosassoni andranno comunque ricondotte al Codice delle obbligazioni."
    },
    {
     "q": "Come rendere una clausola che non ha equivalenti svizzeri?",
-    "r": "Traducendo l’effetto perseguito con le nozioni del diritto svizzero piuttosto che con la formula originale. Una clausola di indennizzo si esprime in termini di responsabilità e di garanzia; una liquidated damages clause diviene una clausola penale. Questa scelta spetta al giurista: la traduzione automatica prepara il testo, decide la rilettura giuridica."
+    "r": "Traducendo l'effetto voluto con le nozioni del diritto svizzero anziché la formula originale. Una clausola di manleva si esprime in termini di responsabilità e di garanzia; una liquidated damages clause diventa una pena convenzionale. Questa scelta spetta al giurista: la traduzione automatica prepara il testo, la revisione giuridica decide."
    },
    {
-    "q": "Devono essere mantenuti i termini inglesi definiti nel contratto?",
-    "r": "È frequente per i termini propri dell’operazione, a condizione che la scelta sia costante e segnalata. Ogni termine definito deve ricevere un trattamento unico, ripreso nello stesso modo negli allegati e nelle aggiunte. Le variazioni da un documento all’altro sono la principale fonte di controversie d’interpretazione."
+    "q": "Bisogna mantenere i termini inglesi definiti nel contratto?",
+    "r": "È frequente per i termini propri dell'operazione, a condizione che la scelta sia costante e segnalata. Ogni termine definito deve ricevere un trattamento unico, ripreso tale e quale negli allegati e nelle modifiche. Le variazioni da un documento all'altro sono la prima fonte di controversie interpretative."
    },
    {
-    "q": "Entrambe le versioni possono far fede contemporaneamente?",
-    "r": "Le parti possono prevederlo, ma è una scelta pesante: ogni differenza tra le due versioni diventa una questione di interpretazione. Una clausola di prevalenza che designa la versione che prevale è più semplice. Se entrambe le versioni fanno fede, una doppia review con certificato è il livello di controllo adeguato."
+    "q": "Le due versioni possono fare fede contemporaneamente?",
+    "r": "Le parti possono prevederlo, ma è una scelta impegnativa: ogni scarto tra le due versioni diventa una questione di interpretazione. Una clausola di prevalenza, che indica quale versione prevale, è più semplice. Quando entrambe le versioni fanno fede, il livello di controllo adatto è la Double review e traduzione certificata."
    },
    {
-    "q": "Dove è trattato il contratto?",
-    "r": "Su server svizzeri in ogni caso. Con LexMachina o in modalità high sensitive content, anche il trattamento rimane esclusivamente in Svizzera e il contenuto non alimenta alcuna memoria. Se è selezionato un motore terzo ospitato all’estero, l’avviso Attorney-Cliente privilege viene visualizzato prima dell’invio."
+    "q": "Dove viene trattato il contratto?",
+    "r": "In ogni caso su server svizzeri. Con LexMachina o in modalità Highly sensitive content anche il trattamento resta esclusivamente in Svizzera, e il contenuto non alimenta alcuna memoria. Se si seleziona un motore di terzi ospitato all'estero, prima dell'invio compare l'avviso Attorney-Client privilege."
    }
   ],
-  "cta_t": "Presentaci una clausola difficile",
-  "cta_p": "Una dimostrazione sui vostri contratti con uno specialista del diritto svizzero delle obbligazioni.",
+  "cta_t": "Sottoponeteci una clausola difficile",
+  "cta_p": "Una dimostrazione sui vostri contratti, con uno specialista del diritto svizzero delle obbligazioni.",
   "voisins": [
    [
     "allemand-anglais",
-    "Tedesco verso inglese",
-    "Il senso inverso per un lettore di common law"
+    "Tedesco-inglese",
+    "Il senso inverso, per un lettore di common law"
    ],
    [
     "francais-anglais",
-    "Francese verso inglese",
+    "Francese-inglese",
     "Il diritto svizzero romando per un dossier internazionale"
    ],
    [
     "allemand-francais",
-    "Tedesco verso francese",
-    "Entre deux langues nationales"
+    "Tedesco-francese",
+    "Tra due lingue nazionali"
    ]
   ]
  },
  {
   "slug": "francais-anglais",
-  "short": "Francese verso inglese",
-  "resume": "Il diritto svizzero romando è reso leggibile in un dossier internazionale.",
-  "title": "Traduzione giuridica dal francese all’inglese · Neur.on",
-  "description": "Il diritto svizzero romanda in inglese: arbitrato, sentenze del Tribunale federale e conformità con versioni informative inglesi che non fanno fede.",
-  "lede": "Francese verso inglese.",
-  "h1": "Dossier romando a livello internazionale",
-  "lead": "Ginevra e Lausanne lavorano in francese e spesso si esprimono in inglese. La traduzione rende comprensibile il diritto svizzero, ricordando che nessuna versione inglese di una legge svizzera fa fede.",
+  "short": "Francese-inglese",
+  "resume": "Il diritto della Svizzera romanda reso comprensibile in un dossier internazionale.",
+  "title": "Traduzione giuridica dal francese all'inglese · Neur.on",
+  "description": "Il diritto svizzero romando in inglese: arbitrato, sentenze del Tribunale federale e conformità, con versioni inglesi informative che non fanno fede.",
+  "lede": "Traduzione dal francese all'inglese.",
+  "h1": "Il dossier romando sulla scena internazionale",
+  "lead": "Ginevra e Losanna lavorano in francese e spesso patrocinano in inglese. La traduzione rende comprensibile il diritto svizzero, ricordando che nessuna versione inglese di una legge svizzera fa fede.",
   "promesses": [
    {
     "t": "Lingua non ufficiale",
-    "d": "le versioni inglese delle leggi sono informative"
+    "d": "le versioni inglesi delle leggi hanno valore informativo"
    },
    {
     "t": "Arbitrato",
-    "d": "il vocabolario del capitolo 12 LDIP, termine per termine"
+    "d": "il vocabolario del capitolo 12 della LDIP, termine per termine"
    },
    {
     "t": "Trattamento in Svizzera",
-    "d": "francese e inglese sono nativi di LexMachina"
+    "d": "francese e inglese sono native in LexMachina"
    }
   ],
-  "definition": "Le leggi svizzere fanno fede in tedesco, francese e italiano; le loro versioni in lingua inglese sono pubblicate a titolo informativo e non hanno forza di legge. Una traduzione da francese a inglese serve quindi a comprendere, a negoziare o a difendersi e rimanda sempre al testo francese quando una citazione deve impegnare.",
+  "definition": "Le leggi svizzere fanno fede in tedesco, francese e italiano; le loro versioni inglesi sono pubblicate a titolo informativo e non hanno forza di legge. Una traduzione dal francese all'inglese serve quindi a capire, a negoziare o a patrocinare, e rinvia sempre al testo francese quando una citazione deve essere vincolante.",
   "facts": [
    {
-    "k": "Non fa fede nessuna versione inglese",
-    "v": "Le traduzioni inglesi delle leggi federali sono messe a disposizione a titolo informativo. La citazione che impegna rimane in francese, in tedesco o in italiano, eventualmente seguita dalla sua traduzione.",
-    "s": "La riserva figura sulle traduzioni inglesi pubblicate dalla Confederazione."
+    "k": "Nessuna versione inglese fa fede",
+    "v": "Le traduzioni inglesi delle leggi federali sono messe a disposizione a titolo informativo. La citazione vincolante resta in francese, tedesco o italiano, eventualmente seguita dalla sua traduzione.",
+    "s": "L'avvertenza figura sulle traduzioni inglesi pubblicate dalla Confederazione."
    },
    {
     "k": "Arbitrato internazionale",
-    "v": "La sede arbitrale svizzera rientra nel capitolo sull’arbitrato internazionale della legge sul diritto internazionale privato. Competenza, lodo e ricorso hanno ciascuno un termine fisso.",
-    "s": "Il ricorso contro un lodo è interposto dinanzi al Tribunale federale."
+    "v": "La sede arbitrale svizzera rientra nel capitolo sull'arbitrato internazionale della legge federale sul diritto internazionale privato. Competenza, lodo e ricorso vi hanno ciascuno un termine fisso.",
+    "s": "Il ricorso contro un lodo si propone davanti al Tribunale federale."
    },
    {
     "k": "Citare una sentenza",
-    "v": "Una DTF cita la DTF con il suo volume, la sua parte e la sua pagina. Convertirlo in un riferimento in stile anglosassone rende la sentenza irreperibile per la controparte e per il tribunale."
+    "v": "Una sentenza citata ATF (DTF in italiano) resta ATF anche nel testo inglese, con volume, parte e pagina. Convertirla in un riferimento di stile anglosassone la rende introvabile sia per la controparte sia per il tribunale."
    },
    {
     "k": "Il Tribunale federale",
-    "v": "L’istituto si chiama Federal Supreme Court nei testi in lingua inglese della Confederazione. Supreme Court da solo è confusa con altre giurisdizioni."
+    "v": "Nei testi inglesi della Confederazione l'istituzione si chiama Federal Supreme Court. Supreme Court da solo crea confusione con altre giurisdizioni."
    },
    {
-    "k": "Concetti senza equivalenti",
-    "v": "Perseguimento, sequestro, decreto d’accusa: questi concetti non hanno una controparte esatta in common law. Si recano con una spiegazione, poi con un termine costante in tutto il dossier."
+    "k": "Nozioni senza equivalente",
+    "v": "Esecuzione, sequestro, decreto d'accusa: queste nozioni non hanno una controparte esatta nella common law. Si rendono con una spiegazione, poi con un termine costante in tutto il dossier."
    },
    {
-    "k": "Finanza e reportistica",
-    "v": "I prospetti, i rapporti annuali e i documenti di conformità sono disponibili in inglese. La terminologia finanziaria svizzera è verificabile in CHnell, che comprende 30 settori a partire da fonti ufficiali."
+    "k": "Finanza e reporting",
+    "v": "Prospetti, rapporti annuali e documenti di conformità circolano in inglese. La terminologia finanziaria svizzera si può verificare in CHnell, che copre 30 settori a partire da fonti ufficiali."
    },
    {
-    "k": "Volume dell’arbitrato",
-    "v": "I documenti sono disponibili in centinaia di pagine e spesso in formato PDF. Traduzione testo e documento accetta fino a 25 file da 50 MB per invio e converte una scansione in Word modificabile prima dell’elaborazione."
+    "k": "Il volume di un arbitrato",
+    "v": "Gli atti arrivano a centinaia di pagine, spesso in PDF. Traduzione di testi e documenti accetta fino a 25 file da 50 MB per invio e converte una scansione in un Word modificabile prima del trattamento."
    },
    {
     "k": "Riservatezza",
-    "v": "Il francese e l’inglese fanno parte delle quattro lingue del modo «High sensitive Content»: stoccaggio e trattamento esclusivamente in Svizzera, senza riutilizzo in memoria di traduzione."
+    "v": "Il francese e l'inglese sono due delle quattro lingue della modalità Highly sensitive content: archiviazione e trattamento esclusivamente in Svizzera, senza riutilizzo in una memoria di traduzione."
    }
   ],
   "termes": [
@@ -783,128 +783,128 @@
    }
   ],
   "termes_note": "Le colonne tedesca, francese e italiana provengono dalle versioni ufficiali; la colonna inglese segue le traduzioni pubblicate a titolo informativo dalla Confederazione.",
-  "who_titre": "Tre dossier romandi in lingua inglese",
+  "who_titre": "Tre dossier romandi che passano all'inglese",
   "who": [
    {
     "vis": "sentence",
     "a": "Arbitrato",
-    "t": "Una tesi ginevrina in lingua inglese",
-    "p": "Le citazioni di sentenze e di articoli restano in francese, accompagnate dalla loro traduzione. Il resto della memoria è redatto in inglese, con un vocabolario d’arbitrato costante dal primo scambio al lodo."
+    "t": "Un atto scritto ginevrino da presentare in inglese",
+    "p": "Le citazioni di sentenze e di articoli restano in francese, accompagnate dalla loro traduzione. Il resto dell'atto si legge in inglese, con un vocabolario arbitrale costante dal primo scambio fino al lodo."
    },
    {
     "vis": "bouclier",
     "a": "Banche",
-    "t": "Un dossier per un regolatore estero",
-    "p": "Il segreto bancario, la lotta contro il riciclaggio di denaro e gli obblighi di diligenza hanno termini fissi. La modalità «High sensitive content» mantiene il trattamento in Svizzera mentre il dossier circola."
+    "t": "Un dossier per un'autorità di vigilanza estera",
+    "p": "Il segreto bancario, la lotta contro il riciclaggio e gli obblighi di diligenza hanno termini fissi. La modalità Highly sensitive content mantiene il trattamento in Svizzera mentre il dossier circola."
    },
    {
     "vis": "globe",
     "a": "Organizzazioni",
     "t": "Un testo pubblicato in due lingue",
-    "p": "Le due versioni escono insieme e devono restare allineate, paragrafo per paragrafo. Project Management organizza la rilettura e visualizza il termine prima della convalida."
+    "p": "Le due versioni escono insieme e devono restare allineate, paragrafo per paragrafo. Gestione dei progetti organizza la revisione e indica il termine di consegna prima della conferma."
    }
   ],
-  "faq_titre": "Domande frequenti dal francese all’inglese",
+  "faq_titre": "Domande frequenti sulla traduzione dal francese all'inglese",
   "faq": [
    {
-    "q": "In una memoria è possibile menzionare una legge svizzera in inglese?",
-    "r": "Si può citarla in inglese per la lettura, ma non fargliela dire. L’inglese non è una lingua ufficiale della Confederazione e le versioni inglese delle leggi sono pubblicate a titolo informativo. L’uso sicuro consiste nel citare il testo francese, tedesco o italiano e nel darne la traduzione in inglese."
+    "q": "Si può citare una legge svizzera in inglese in un atto scritto?",
+    "r": "La si può citare in inglese per facilitarne la lettura, ma non le si può far dire qualcosa. L'inglese non è una lingua ufficiale della Confederazione e le versioni inglesi delle leggi sono pubblicate a titolo informativo. La prassi sicura è citare il testo francese, tedesco o italiano, poi darne la traduzione inglese."
    },
    {
-    "q": "Come citare una sentenza del Tribunale federale in inglese?",
-    "r": "Il riferimento non si traduce: una DTF mantiene la sua forma, il suo volume, la sua parte e la sua pagina e l’istituzione si chiama Federal Supreme Court. Viene tradotto solo il passo citato, precisando che si tratta di una traduzione di cortesia."
+    "q": "Come si cita in inglese una sentenza del Tribunale federale?",
+    "r": "Il riferimento non si traduce: una sentenza citata ATF (DTF in italiano) mantiene la sua forma, con volume, parte e pagina, e l'istituzione si chiama Federal Supreme Court. Si traduce solo il passaggio citato, precisando che si tratta di una traduzione di cortesia."
    },
    {
-    "q": "Il vocabolario dell’arbitrato è stabile da un dossier all’altro?",
-    "r": "Deve avvenire innanzitutto all’interno dello stesso dossier. Competenza, lodo, ricorso e provvedimenti cautelari ricevono un termine unico, ripreso in tutti gli scambi. Fast Lookup CHnell mostra l’uso ufficiale di ogni termine e le proprie risorse si aggiungono alle fonti pubbliche."
+    "q": "Il vocabolario dell'arbitrato è stabile da un dossier all'altro?",
+    "r": "Deve esserlo prima di tutto all'interno di uno stesso dossier. Competenza, lodo, ricorso e provvedimenti cautelari ricevono un termine unico, ripreso in tutti gli scambi. Fast lookup CHnell mostra l'uso ufficiale di ogni termine, e le vostre risorse si aggiungono alle fonti pubbliche."
    },
    {
-    "q": "Che fare delle nozioni che non esistono nel common law?",
-    "r": "Conservarli e spiegarli. Il perseguimento, il sequestro o il decreto d’accusa non hanno contropartita esatta: il termine svizzero è conservato, spiegato alla sua prima occorrenza e riutilizzato così com’è. La traduzione con una nozione anglosassone approssimativa crea un contres invisibile per il lettore."
+    "q": "Che cosa fare delle nozioni che non esistono nella common law?",
+    "r": "Mantenerle e spiegarle. L'esecuzione, il sequestro o il decreto d'accusa non hanno una controparte esatta: il termine svizzero si mantiene, si spiega alla prima occorrenza, poi si riutilizza tale e quale. Tradurlo con una nozione anglosassone simile crea un controsenso invisibile per il lettore."
    },
    {
-    "q": "Dove sono trattati i pezzi?",
-    "r": "Su server svizzeri in ogni caso. Con LexMachina o la modalità «high sensitive content», il trattamento rimane esclusivamente in Svizzera e il contenuto non viene riutilizzato in memoria. I motori terzi ospitati all’estero attivano l’avviso Attorney-Cliente privilege e presuppongono una pseudonimizzazione preliminare."
+    "q": "Dove vengono trattati gli atti?",
+    "r": "In ogni caso su server svizzeri. Con LexMachina o con la modalità Highly sensitive content il trattamento resta esclusivamente in Svizzera, e il contenuto non viene riutilizzato in una memoria. I motori di terzi ospitati all'estero attivano l'avviso Attorney-Client privilege e presuppongono una pseudonimizzazione preliminare."
    }
   ],
-  "cta_t": "Testare la coppia su una memoria o un prospetto",
-  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero sui vostri formati e scadenze.",
+  "cta_t": "Provate questa combinazione su un atto scritto o un prospetto",
+  "cta_p": "Una dimostrazione con uno specialista del diritto svizzero, sui vostri formati e con i vostri termini di consegna.",
   "voisins": [
    [
     "anglais-allemand",
-    "Inglese verso tedesco",
-    "Contratti inglesi soggetti al diritto svizzero"
+    "Inglese-tedesco",
+    "I contratti in inglese soggetti al diritto svizzero"
    ],
    [
     "allemand-francais",
-    "Tedesco verso francese",
-    "Entre deux langues nationales"
+    "Tedesco-francese",
+    "Tra due lingue nazionali"
    ],
    [
     "italien-francais",
-    "Italiano verso francese",
-    "La terza lingua ufficiale e i suoi termini propri"
+    "Italiano-francese",
+    "L'italiano svizzero e i suoi termini propri"
    ]
   ]
  },
  {
   "slug": "italien-francais",
-  "short": "Italiano verso francese",
-  "resume": "L’italiano giuridico svizzero, distinto da quello italiano, reso in francese.",
-  "title": "Traduzione giuridica dall’italiano al francese · Neur.on",
-  "description": "L’italiano giuridico svizzero verso il francese: ricorso, Precetto esecutivo, Tribunale federale e i termini del Ticino, distinti dall’italiano d’Italia.",
-  "lede": "Italiano verso francese.",
-  "h1": "La terza lingua ufficiale, a pieno titolo",
-  "lead": "Il Ticino rende giustizia in italiano e la Confederazione pubblica le sue leggi in questa lingua. L’italiano giuridico svizzero non è quello italiano: un motore generalista lo sostituisce volentieri.",
+  "short": "Italiano-francese",
+  "resume": "Il vostro italiano giuridico svizzero, distinto da quello d'Italia, reso in francese.",
+  "title": "Traduzione giuridica dall'italiano al francese · Neur.on",
+  "description": "L'italiano giuridico svizzero verso il francese: ricorso, precetto esecutivo, Tribunale federale e i termini del Ticino, distinti dall'italiano d'Italia.",
+  "lede": "Traduzione dall'italiano al francese.",
+  "h1": "La vostra lingua, lingua ufficiale a pieno titolo",
+  "lead": "Il Ticino amministra la giustizia in italiano e la Confederazione pubblica le sue leggi anche in questa lingua. L'italiano giuridico che leggete nei testi federali non è quello d'Italia: un motore generico tende a sostituirlo con quest'ultimo.",
   "promesses": [
    {
-    "t": "Italiano di Svizzera",
-    "d": "ricorso, Precetto esecutivo, Tribunale federale"
+    "t": "Italiano svizzero",
+    "d": "ricorso, precetto esecutivo, Tribunale federale"
    },
    {
     "t": "Versione che fa fede",
-    "d": "l’italiano è una delle tre lingue ufficiali delle leggi"
+    "d": "l'italiano è una delle tre lingue ufficiali delle leggi"
    },
    {
     "t": "Lingua nativa",
-    "d": "l’italiano è una delle quattro lingue di LexMachina"
+    "d": "l'italiano è una delle quattro lingue di LexMachina"
    }
   ],
-  "definition": "L’italiano è una delle tre lingue in cui le leggi federali sono pubblicate e fanno fede. La terminologia giuridica italiana della Svizzera deriva dunque da questi testi, non dall’uso italiano: le stesse parole possono esistere su entrambi i lati del confine, designando istituzioni e procedure differenti.",
+  "definition": "L'italiano è una delle tre lingue in cui le leggi federali sono pubblicate e fanno fede. La terminologia giuridica italiana della Svizzera nasce quindi da questi testi, non dall'uso italiano: le stesse parole possono esistere sui due lati del confine e designare istituzioni e procedure diverse.",
   "facts": [
    {
     "k": "Una versione che fa fede",
-    "v": "La versione italiana di una legge federale ha lo stesso valore della versione tedesca e della versione francese. Non si tratta di una traduzione di cortesia, bensì di un testo di riferimento."
+    "v": "La versione italiana di una legge federale ha lo stesso valore della versione tedesca e di quella francese. Non è una traduzione di cortesia: è un testo di riferimento."
    },
    {
     "k": "Svizzera o Italia",
-    "v": "Ricorso, Precetto esecutivo, decreto d’accusa designano in Svizzera precisi atti procedurali. Un motore esercitato sul diritto italiano sostituisce loro concetti della penisola che non coprono le stesse regole.",
-    "s": "L’errore è silenzioso: il testo rimane fluido, ma descrive un’altra procedura."
+    "v": "Ricorso, precetto esecutivo, decreto d'accusa designano in Svizzera atti procedurali precisi. Un motore addestrato sul diritto italiano li sostituisce con nozioni della Penisola che non seguono le stesse regole.",
+    "s": "L'errore è silenzioso: il testo resta scorrevole, ma descrive un'altra procedura."
    },
    {
     "k": "Le istituzioni",
-    "v": "Il Tribunale federale è la giurisdizione suprema svizzera; è verso di lui che va il ricorso. Nessun rinvio a una giurisdizione italiana ha senso in un documento svizzero."
+    "v": "Il Tribunale federale è la massima giurisdizione svizzera, ed è a lui che si rivolge il ricorso. Nessun rinvio a una giurisdizione italiana ha senso in un documento svizzero."
    },
    {
     "k": "Abbreviazioni proprie",
-    "v": "L’esecuzione e il fallimento si distinguono da LEF in italiano, LP in francese e SchKG in tedesco. Il Codice delle obbligazioni rimane CO in italiano come in francese, ma diventa ORO in tedesco."
+    "v": "La legge sull'esecuzione e sul fallimento si abbrevia LEF in italiano, LP in francese e SchKG in tedesco. Il Codice delle obbligazioni resta CO in italiano come in francese, ma diventa OR in tedesco."
    },
    {
     "k": "Giurisprudenza",
-    "v": "Una sentenza pubblicata si cita DTF in italiano, DTF in francese e BGE in tedesco, con lo stesso numero di volume e di pagina. RS è abbreviata nella Raccolta sistematica in italiano e francese."
+    "v": "Una sentenza pubblicata si cita DTF in italiano, ATF in francese e BGE in tedesco, con lo stesso numero di volume e di pagina. La Raccolta sistematica si abbrevia RS in italiano come in francese."
    },
    {
     "k": "Documenti cantonali",
-    "v": "Gli atti del Cantone Ticino, le sue decisioni e i suoi formulari seguono la terminologia federale italiana. Funge da base per qualsiasi adeguamento in francese."
+    "v": "Gli atti del Cantone Ticino, le sue decisioni e i suoi moduli seguono la terminologia federale italiana. È questa la base, prima di ogni adattamento in francese."
    },
    {
     "k": "Lingua nativa",
-    "v": "L’italiano è una delle quattro lingue native di LexMachina, insieme al tedesco, al francese e all’inglese, e una delle sole disponibili in «high sensitive content».",
-    "s": "La piattaforma copre inoltre 30 lingue per i documenti esteri di un dossier."
+    "v": "L'italiano è una delle quattro lingue native di LexMachina, con il tedesco, il francese e l'inglese, e una delle sole lingue disponibili in Highly sensitive content.",
+    "s": "La piattaforma copre inoltre 30 lingue per i documenti stranieri di un dossier."
    },
    {
     "k": "Verifica nel contesto",
-    "v": "Ogni termine italiano si trova in Fast Lookup CHnell con il suo segmento originale e il suo riferimento, accanto alle versioni francese e tedesca dello stesso articolo."
+    "v": "Ogni termine italiano si ritrova in Fast lookup CHnell con il segmento d'origine e il suo riferimento, accanto alle versioni francese e tedesca dello stesso articolo."
    }
   ],
   "termes": [
@@ -951,67 +951,67 @@
     "ref": "art. 201 CO"
    }
   ],
-  "termes_note": "Sei termini in cui l’italiano di Svizzera segue la propria via, con l’articolo federale che fissa le quattro versioni. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex quando esiste, senza forza di legge, e la formulazione d’uso altrimenti.",
-  "who_titre": "Tre casi provenienti dal Ticino",
+  "termes_note": "Sei termini in cui l'italiano della Svizzera segue una via propria, con l'articolo federale che fissa le quattro versioni. La colonna inglese riprende la traduzione pubblicata dalla Confederazione su Fedlex, se esiste, che non ha forza di legge; altrimenti la formulazione d'uso.",
+  "who_titre": "Tre dossier che arrivano dal Ticino",
   "who": [
    {
     "vis": "marteau",
     "a": "Contenzioso",
-    "t": "Una decisione ticinese da sfruttare",
-    "p": "La procedura descritta è federale, cambia solo la lingua. I termini di procedura sono convertiti a partire dalla versione francese dello stesso articolo e non da un dizionario italiano-francese generalista."
+    "t": "Una decisione ticinese da utilizzare",
+    "p": "La procedura descritta è federale, cambia solo la lingua. I termini procedurali si convertono a partire dalla versione francese dello stesso articolo, non da un dizionario generico italiano-francese."
    },
    {
     "vis": "dossier",
     "a": "Esecuzioni",
-    "t": "Un Precetto esecutivo da tradurre",
-    "p": "Precetto esecutivo, opposizione, rigetto dell’esecuzione: la catena dell’esecuzione ha un vocabolario fisso nelle tre lingue ufficiali. Un’approssimazione in questa tappa costa un termine, talvolta il diritto stesso."
+    "t": "Un precetto esecutivo da tradurre",
+    "p": "Precetto esecutivo, opposizione, rigetto dell'opposizione: la catena dell'esecuzione ha un vocabolario fisso nelle tre lingue ufficiali. Un'approssimazione in questa fase costa un termine, a volte il diritto stesso."
    },
    {
     "vis": "societe",
     "a": "Imprese",
-    "t": "Integrazione di contratti ticinesi",
-    "p": "Gli estratti del registro di commercio, gli statuti e i contratti si traducono con i termini del Codice delle obbligazioni. Le ragioni sociali e le forme giuridiche iscritte rimangono invariate."
+    "t": "Contratti ticinesi da integrare",
+    "p": "Estratti del registro di commercio, statuti e contratti si traducono con i termini del Codice delle obbligazioni. Le ragioni sociali e le forme giuridiche iscritte restano invariate."
    }
   ],
-  "faq_titre": "Domande frequenti dall’italiano al francese",
+  "faq_titre": "Domande frequenti sulla traduzione dall'italiano al francese",
   "faq": [
    {
-    "q": "L’italiano giuridico svizzero è diverso dall’italiano italiano d’Italia?",
-    "r": "Sì, e la differenza riguarda l’essenziale: le istituzioni e le procedure. Il ricorso svizzero va al Tribunale federale, il Precetto esecutivo appartiene alla procedura di perseguimento penale prevista dal diritto federale, il decreto d’accusa è un atto del Codice di procedura penale svizzero. Le stesse parole esistono talvolta in Italia per designare qualcos’altro."
+    "q": "L'italiano giuridico svizzero è diverso da quello d'Italia?",
+    "r": "Sì, e la differenza riguarda l'essenziale: le istituzioni e le procedure. Il ricorso svizzero va al Tribunale federale. Il precetto esecutivo appartiene alla procedura d'esecuzione prevista dal diritto federale. Il decreto d'accusa è un atto del Codice di diritto processuale penale svizzero. In Italia le stesse parole designano talvolta altre cose."
    },
    {
-    "q": "Fa fede la versione italiana di una legge federale?",
-    "r": "Sì, alla stessa stregua delle versioni tedesca e francese. Per questo motivo le equivalenze terminologiche si leggono direttamente nei testi ufficiali: le tre versioni di un articolo danno i tre termini esatti, senza passare per una traduzione d’uso."
+    "q": "La versione italiana di una legge federale fa fede?",
+    "r": "Sì, allo stesso titolo delle versioni tedesca e francese. Per questo le equivalenze terminologiche si leggono direttamente nel testo ufficiale: le tre versioni di un articolo danno i tre termini esatti, senza passare da una traduzione d'uso."
    },
    {
-    "q": "Come vengono convertite le abbreviazioni di leggi?",
-    "r": "A seconda della lingua target. L’esecuzione per debiti e il fallimento si abbreviano nella LEF in italiano e nella LEF in francese; il diritto internazionale privato è abbreviato LDIP in entrambe le lingue, ma IPRG in tedesco; il Codice delle obbligazioni resta CO in italiano e francese. In caso di dubbio, il nome completo della legge è scritto per scritto."
+    "q": "Come vengono convertite le abbreviazioni delle leggi?",
+    "r": "Secondo la lingua d'arrivo. La legge sull'esecuzione e sul fallimento si abbrevia LEF in italiano e LP in francese. Il diritto internazionale privato si abbrevia LDIP in entrambe le lingue, ma IPRG in tedesco. Il Codice delle obbligazioni resta CO in italiano e in francese. In caso di dubbio, il nome completo della legge si scrive per esteso."
    },
    {
-    "q": "Tratta anche il francese in italiano?",
-    "r": "Sì, le quattro lingue native funzionano in tutte le combinazioni, in un senso come nell’altro. Queste sono anche le sole lingue disponibili in modalità «high sensitive content»; la piattaforma copre inoltre 30 lingue per i documenti stranieri."
+    "q": "Traducete anche dal francese all'italiano?",
+    "r": "Sì, le quattro lingue native funzionano in tutte le combinazioni, in entrambe le direzioni. Sono anche le sole lingue disponibili in modalità Highly sensitive content; la piattaforma copre inoltre 30 lingue per i documenti stranieri."
    },
    {
-    "q": "I documenti ticinesi vengono spesso scansionati, è un problema?",
-    "r": "No. La scheda PDF to Word di Traduzione testo e documento converte una scansione in un documento Word modificabile prima della traduzione, il che permette di conservare la struttura e di annotare in seguito. I file ripartono nel loro formato originale."
+    "q": "I documenti ticinesi arrivano spesso scansionati: è un problema?",
+    "r": "No. La scheda PDF to Word di Traduzione di testi e documenti converte una scansione in un documento Word modificabile prima della traduzione. La struttura si conserva e si può annotare in seguito. I file ripartono nel loro formato originale."
    }
   ],
-  "cta_t": "Far verificare un dossier ticinese da un giurista linguista",
+  "cta_t": "Fate verificare un dossier ticinese da un giurista linguista",
   "cta_p": "Una dimostrazione sui vostri documenti, con la terminologia ufficiale delle tre lingue.",
   "voisins": [
    [
     "allemand-francais",
-    "Tedesco verso francese",
-    "Entre deux langues nationales"
+    "Tedesco-francese",
+    "Tra due lingue nazionali"
    ],
    [
     "francais-allemand",
-    "Francese verso tedesco",
-    "Il francese romando per un lettore tedesco"
+    "Francese-tedesco",
+    "Il francese romando per un lettore della Svizzera tedesca"
    ],
    [
     "francais-anglais",
-    "Francese verso inglese",
+    "Francese-inglese",
     "Il diritto svizzero romando per un dossier internazionale"
    ]
   ]
