@@ -7,27 +7,33 @@
 <meta name="description" content="Order a certified translation of Swiss commercial register extracts online: standard, notarized or apostilled certification under the Hague Convention, accurate legal terminology, +30 languages. From CHF 99.-">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#001B4C">
+<!-- Favicon repris du site source (auszug-hr.ch/favicon.ico) -->
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<!-- Versions de langue (maquette : liens relatifs). Production : https://auszug-hr.ch/en · https://auszug-hr.ch/fr (hreflang en, fr, x-default vers /en) -->
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="x-default" href="../en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<!-- Socle de la charte Neur.on, puis styles propres à la page -->
+<!-- Socle de la charte Neur.on, puis styles propres aux maquettes auszug-hr -->
 <link rel="stylesheet" href="../../../assets/neuron.css">
-<link rel="stylesheet" href="auszug.css">
+<link rel="stylesheet" href="../assets/auszug.css">
 </head>
 <body>
 
 <!-- ============ EN-TÊTE DU SERVICE ============ -->
 <header class="nav az-nav">
   <div class="container nav-inner">
-    <a href="/en" class="az-logo" aria-label="Corrext, home">Corr<span>ext</span></a>
+    <a href="../en/" class="az-logo"><img src="../assets/corrext.svg" alt="Corrext logo" width="391" height="112"></a>
 
     <div class="az-nav-r">
-      <!-- Sélecteur de langue en ligne (bureau) -->
+      <!-- Sélecteur de langue en ligne (bureau). Deutsch et Italiano : pas de version sur le site source, affichés sans lien -->
       <nav class="lang-switch az-lang-inline" aria-label="Language">
-        <a class="on" href="/en" hreflang="en" lang="en" aria-current="true">English</a><span class="sep" aria-hidden="true">·</span>
-        <a href="/de" hreflang="de" lang="de">Deutsch</a><span class="sep" aria-hidden="true">·</span>
-        <a href="/fr" hreflang="fr" lang="fr">Français</a><span class="sep" aria-hidden="true">·</span>
-        <a href="/it" hreflang="it" lang="it">Italiano</a>
+        <a class="on" aria-current="true" href="../en/" hreflang="en" lang="en">English</a><span class="sep" aria-hidden="true">·</span>
+        <span class="az-soon" lang="de" aria-disabled="true">Deutsch</span><span class="sep" aria-hidden="true">·</span>
+        <a href="../fr/" hreflang="fr" lang="fr">Français</a><span class="sep" aria-hidden="true">·</span>
+        <span class="az-soon" lang="it" aria-disabled="true">Italiano</span>
       </nav>
       <!-- Sélecteur de langue compact (tablette et mobile) -->
       <details class="az-lang-menu">
@@ -37,15 +43,15 @@
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </summary>
         <ul>
-          <li><a href="/en" hreflang="en" lang="en" aria-current="true">English</a></li>
-          <li><a href="/de" hreflang="de" lang="de">Deutsch</a></li>
-          <li><a href="/fr" hreflang="fr" lang="fr">Français</a></li>
-          <li><a href="/it" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="../en/" hreflang="en" lang="en" aria-current="true">English</a></li>
+          <li><span class="az-soon" lang="de" aria-disabled="true">Deutsch</span></li>
+          <li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><span class="az-soon" lang="it" aria-disabled="true">Italiano</span></li>
         </ul>
       </details>
-      <!-- Lien de contact à brancher par le développeur -->
-      <a href="/en/contact" class="btn btn-ghost az-nav-contact">Contact us</a>
-      <a href="/en/order_translation" class="btn btn-blue">Order a translation</a>
+      <!-- Sur le site source, « Contact » ouvre une fenêtre qui affiche team [at] corrext.com -->
+      <a href="mailto:team@corrext.com" class="btn btn-ghost az-nav-contact">Contact us</a>
+      <a href="https://auszug-hr.ch/en/order_translation" class="btn btn-blue">Order a translation</a>
     </div>
   </div>
 </header>
@@ -61,10 +67,10 @@
           <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="4" fill="#D8232A"/><rect x="13" y="6" width="6" height="20" fill="#fff"/><rect x="6" y="13" width="20" height="6" fill="#fff"/></svg>
           Certification or apostille
         </p>
-        <h1 id="az-h1">Order a certified translation of <em>Swiss commercial register extracts</em></h1>
+        <h1 id="az-h1">Order a certified translation <em>of Swiss commercial register extracts</em></h1>
 
-        <!-- Recherche : envoi en GET vers /en/order_translation (q = nom ou UID, by = mode choisi) ; la vraie recherche est à brancher -->
-        <form class="az-search" action="/en/order_translation" method="get" role="search" aria-label="Company search">
+        <!-- Recherche : envoi en GET vers la page de commande (q = nom ou UID, by = mode choisi) ; la vraie recherche est à brancher -->
+        <form class="az-search" action="https://auszug-hr.ch/en/order_translation" method="get" role="search" aria-label="Company search">
           <div class="az-search-top">
             <div class="az-by" role="group" aria-labelledby="az-by-l">
               <span class="az-by-l" id="az-by-l">Search by:</span>
@@ -108,12 +114,10 @@
 <!-- ============ ABOUT ============ -->
 <section class="az-sec az-about" id="about" aria-labelledby="az-about-h">
   <div class="container">
-    <div class="az-about-head">
-      <div>
-        <p class="az-sk">About</p>
-        <h2 class="az-h2" id="az-about-h">A high-quality, legally compliant translation</h2>
-        <p class="az-q">Do you need a certified translation of an extract from the Swiss Commercial Register?</p>
-      </div>
+    <div class="az-about-head az-center">
+      <p class="az-sk">About</p>
+      <h2 class="az-h2" id="az-about-h">A high-quality, legally compliant translation</h2>
+      <p class="az-q">Do you need a certified translation of an extract from the Swiss Commercial Register?</p>
       <div class="az-prose">
         <p>As the first Swiss legal translation provider with a fully digitized order process, we ensure certified translations of Swiss Commercial Register extracts that are fast, reliable, and officially recognized.</p>
         <p>We work exclusively with professional legal translators specialized in corporate housekeeping documentation, delivering translations that fully meet legal standards in Switzerland and abroad.</p>
@@ -142,7 +146,7 @@
         <div class="az-prose">
           <p>Corrext offers three levels of certification to match every legal and administrative requirement:</p>
           <ul class="az-levels">
-            <li><span class="az-gauge" data-l="1" aria-hidden="true"><i></i><i></i><i></i></span><p><b>Standard Corrext Certification:</b> The translation is issued with a certificate, duly signed and stamped, confirming the translator's credentials and certifying that the translation has been prepared with due care and to the best of the translator's ability.</p></li>
+            <li><span class="az-gauge" data-l="1" aria-hidden="true"><i></i><i></i><i></i></span><p><b>Standard Corrext Certification:</b> The translation is issued with a certificate, duly signed and stamped, confirming the translator’s credentials and certifying that the translation has been prepared with due care and to the best of the translator’s ability.</p></li>
             <li><span class="az-gauge" data-l="2" aria-hidden="true"><i></i><i></i><i></i></span><p><b>Notarized Certification:</b> For documents that must carry additional legal weight, the Corrext certificate can be notarized by a Swiss notary public. This ensures formal recognition by courts and administrative bodies.</p></li>
             <li><span class="az-gauge" data-l="3" aria-hidden="true"><i></i><i></i><i></i></span><p><b>Notarized &amp; Apostilled Certification:</b> When documents are destined for use abroad, we can provide an apostille from the competent Swiss State Chancellery pursuant to the Hague Convention of 5 October 1961. This formality allows recognition by foreign courts and authorities in countries that are parties to the Convention.</p></li>
           </ul>
@@ -157,7 +161,7 @@
         <div class="az-prose">
           <p>Our service is designed as a fully digitized, seamless process, from order to delivery of a certified translation ready for immediate use.</p>
           <p>We take care of the entire workflow for you: retrieval of the commercial register extract, professional legal translation and certification, as well as notarization and apostille where required. Once finalized, your documents are delivered directly by email and, if needed, in printed form by mail or courier.</p>
-          <p>With Corrext's end-to-end solution, you have a single point of contact throughout. This removes the hassle of dealing with multiple providers and authorities, streamlines your administrative formalities, and saves you valuable time.</p>
+          <p>With Corrext’s end-to-end solution, you have a single point of contact throughout. This removes the hassle of dealing with multiple providers and authorities, streamlines your administrative formalities, and saves you valuable time.</p>
         </div>
       </article>
     </div>
@@ -202,11 +206,11 @@
     </ol>
 
     <div class="az-cta">
-      <a href="/en/order_translation" class="btn btn-blue">
+      <a href="https://auszug-hr.ch/en/order_translation" class="btn btn-blue">
         Order a translation
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
-      <a href="/en/contact" class="btn btn-ghost">Contact us</a>
+      <a href="mailto:team@corrext.com" class="btn btn-ghost">Contact us</a>
     </div>
   </div>
 </section>
@@ -219,7 +223,7 @@
         <p class="az-sk">Certifications</p>
         <h2 class="az-h2" id="az-cert-h">The benefits of different levels of translation certification</h2>
         <div class="az-prose">
-          <p>Every client and every procedure is unique. That's why Corrext gives you the flexibility to choose the certification level that best fits your situation.</p>
+          <p>Every client and every procedure is unique. That’s why Corrext gives you the flexibility to choose the certification level that best fits your situation.</p>
           <p>Whether you simply need a reliable translation of a Swiss Commercial Register extract, or you must file it with Swiss or foreign authorities, we provide the appropriate solution. This tailored approach allows you to optimize costs while ensuring that your translation meets the legal or administrative requirements of your case.</p>
           <p>Click on the boxes on the right to learn more about each certification option.</p>
         </div>
@@ -229,15 +233,15 @@
       <div class="az-acc">
         <details class="az-box" name="az-cert" open>
           <summary><span class="az-gauge" data-l="1" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Standard Corrext Certification</span></summary>
-          <div class="az-box-b"><p>The translation is accompanied by a duly signed and stamped certificate attesting to the translator's credentials and certifying that, to the best of the translator's knowledge, skill, and belief, the translation is complete and accurate.</p></div>
+          <div class="az-box-b"><p>The translation is accompanied by a duly signed and stamped certificate attesting to the translator’s credentials and certifying that, to the best of the translator’s knowledge, skill, and belief, the translation is complete and accurate.</p></div>
         </details>
         <details class="az-box" name="az-cert">
           <summary><span class="az-gauge" data-l="2" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Notarized Certification</span></summary>
-          <div class="az-box-b"><p>For documents that must carry additional legal weight, the Corrext certificate can be notarized by a Swiss notary public. This ensures formal recognition by courts and administrative bodies.</p></div>
+          <div class="az-box-b"><p>The signature on the Corrext Translation Certificate is duly notarized by a Swiss notary public. This additional formality may be requested by courts or administrative authorities to validate the translation for official use.</p></div>
         </details>
         <details class="az-box" name="az-cert">
           <summary><span class="az-gauge" data-l="3" aria-hidden="true"><i></i><i></i><i></i></span><span class="t">Notarized &amp; Apostilled Certification</span></summary>
-          <div class="az-box-b"><p>When documents are destined for use abroad, we can provide an apostille from the competent Swiss State Chancellery pursuant to the Hague Convention of 5 October 1961. This formality allows recognition by foreign courts and authorities in countries that are parties to the Convention.</p></div>
+          <div class="az-box-b"><p>To facilitate use abroad, the notarization can be authenticated by an “apostille” issued by the competent Swiss State Chancellery in accordance with the Hague Convention of 5 October 1961. This additional formality may be requested by foreign courts or administrative authorities. The apostille is accepted exclusively in countries that are parties to the Hague Convention.</p></div>
         </details>
       </div>
     </div>
@@ -253,24 +257,24 @@
     </div>
     <div class="az-safe-grid">
       <article class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3>Security is in our DNA.</h3>
         <p>Because confidentiality is key in every legal context, we have obtained ISO 27001 certification, the international gold standard in information security.</p>
       </article>
       <article class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M3 21v-5h5"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M3 21v-5h5"/></svg></div>
         <h3>Continuous improvement.</h3>
         <p>We keep improving our processes to deliver secure, accurate, and cost-effective results.</p>
       </article>
       <article class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7.5h7M9 11.5h5"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7.5h7M9 11.5h5"/></svg></div>
         <h3>Full legal compliance.</h3>
         <p>We strictly adhere to all relevant data protection regulations, including the Swiss Data Protection Act (LPD) and the EU GDPR.</p>
       </article>
       <article class="pillar">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7.5h.01M7 17h.01"/></svg></div>
         <h3>Swiss-based infrastructure.</h3>
-        <p>We rely exclusively on sovereign Swiss infrastructure, reflecting Switzerland's long-standing commitment to discretion and confidentiality.</p>
+        <p>We rely exclusively on sovereign Swiss infrastructure, reflecting Switzerland’s long-standing commitment to discretion and confidentiality.</p>
       </article>
     </div>
   </div>
@@ -282,11 +286,11 @@
     <div class="final-cta-inner">
       <h2 id="az-final-h">Order a certified translation of Swiss commercial register extracts</h2>
       <div class="final-cta-btns">
-        <a href="/en/order_translation" class="btn btn-blue">
+        <a href="https://auszug-hr.ch/en/order_translation" class="btn btn-blue">
           Order a translation
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="/en/contact" class="btn-outline">Contact us</a>
+        <a href="mailto:team@corrext.com" class="btn-outline">Contact us</a>
       </div>
     </div>
   </div>
@@ -298,19 +302,20 @@
 <footer class="az-foot">
   <div class="container az-foot-in">
     <div class="az-foot-l">
-      <a href="/en" class="az-logo" aria-label="Corrext, home">Corr<span>ext</span></a>
+      <a href="./" class="az-logo"><img src="../assets/corrext.svg" alt="Corrext logo" width="391" height="112"></a>
       <p>© Neur.on AI Solutions SA</p>
     </div>
+    <!-- Pages légales : une seule version, en anglais, sur le site source (liens du pied de page EN et FR) -->
     <nav aria-label="Legal">
-      <a href="https://neur-on.ai/impressum/">Terms of Use</a>
-      <a href="https://neur-on.ai/privacy-policy/">Data privacy</a>
+      <a href="../en/impressum/">Terms of Use</a>
+      <a href="../en/privacy-policy/">Data privacy</a>
     </nav>
   </div>
 </footer>
 
 <script>
 (function(){
-  /* Bascule de recherche Company Name / Company UID : état aria-pressed, texte d'aide, libellé et mode transmis */
+  /* Bascule de recherche (nom ou UID) : état aria-pressed, texte d'aide, libellé et mode transmis */
   var btns=Array.prototype.slice.call(document.querySelectorAll('.az-seg button'));
   var q=document.getElementById('az-q');
   var lbl=document.getElementById('az-q-l');
