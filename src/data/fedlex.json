@@ -1,130 +1,162 @@
 {
  "CC": {
   "url": "https://www.fedlex.admin.ch/eli/cc/24/233_245_233/fr",
-  "nom": "Code civil"
+  "nom": "Code civil",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/24/233_245_233/en"
  },
  "CO": {
   "url": "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/fr",
-  "nom": "Code des obligations"
+  "nom": "Code des obligations",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/en"
  },
  "CP": {
   "url": "https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr",
-  "nom": "Code pénal suisse"
+  "nom": "Code pénal suisse",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/54/757_781_799/en"
  },
  "CPC": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2010/262/fr",
-  "nom": "Code de procédure civile"
+  "nom": "Code de procédure civile",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2010/262/en"
  },
  "CPP": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2010/267/fr",
-  "nom": "Code de procédure pénale suisse"
+  "nom": "Code de procédure pénale suisse",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2010/267/en"
  },
  "EIMP": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1982/846_846_846/fr",
-  "nom": "loi sur l'entraide internationale en matière pénale"
+  "nom": "loi sur l'entraide internationale en matière pénale",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1982/846_846_846/en"
  },
  "LB": {
   "url": "https://www.fedlex.admin.ch/eli/cc/51/117_121_129/fr",
-  "nom": "loi fédérale sur les banques et les caisses d'épargne"
+  "nom": "loi fédérale sur les banques et les caisses d'épargne",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/51/117_121_129/en"
  },
  "LBA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1998/892_892_892/fr",
-  "nom": "loi sur le blanchiment d'argent"
+  "nom": "loi sur le blanchiment d'argent",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1998/892_892_892/en"
  },
  "LBI": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1955/871_893_899/fr",
-  "nom": "loi sur les brevets"
+  "nom": "loi sur les brevets",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1955/871_893_899/en"
  },
  "LCA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/24/719_735_717/fr",
-  "nom": "loi fédérale sur le contrat d'assurance"
+  "nom": "loi fédérale sur le contrat d'assurance",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/24/719_735_717/en"
  },
  "LCart": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1996/546_546_546/fr",
-  "nom": "loi sur les cartels"
+  "nom": "loi sur les cartels",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1996/546_546_546/en"
  },
  "LDA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1993/1798_1798_1798/fr",
-  "nom": "loi sur le droit d'auteur"
+  "nom": "loi sur le droit d'auteur",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1993/1798_1798_1798/en"
  },
  "LDIP": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1988/1776_1776_1776/fr",
-  "nom": "loi fédérale sur le droit international privé"
+  "nom": "loi fédérale sur le droit international privé",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1988/1776_1776_1776/en"
  },
  "LDes": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2002/226/fr",
-  "nom": "loi sur les designs"
+  "nom": "loi sur les designs",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2002/226/en"
  },
  "LEI": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2007/758/fr",
-  "nom": "loi fédérale sur les étrangers et l'intégration"
+  "nom": "loi fédérale sur les étrangers et l'intégration",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2007/758/en"
  },
  "LFINMA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2008/736/fr",
-  "nom": "loi sur la surveillance des marchés financiers"
+  "nom": "loi sur la surveillance des marchés financiers",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2008/736/en"
  },
  "LFus": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2004/320/fr",
-  "nom": "loi sur la fusion"
+  "nom": "loi sur la fusion",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2004/320/en"
  },
  "LHID": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/fr",
-  "nom": "loi sur l'harmonisation des impôts directs"
+  "nom": "loi sur l'harmonisation des impôts directs",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/en"
  },
  "LIA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/fr",
-  "nom": "loi fédérale sur l'impôt anticipé"
+  "nom": "loi fédérale sur l'impôt anticipé",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/en"
  },
  "LIFD": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/fr",
-  "nom": "loi fédérale sur l'impôt fédéral direct"
+  "nom": "loi fédérale sur l'impôt fédéral direct",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/en"
  },
  "LP": {
   "url": "https://www.fedlex.admin.ch/eli/cc/11/529_488_529/fr",
-  "nom": "loi fédérale sur la poursuite pour dettes et la faillite"
+  "nom": "loi fédérale sur la poursuite pour dettes et la faillite",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/11/529_488_529/en"
  },
  "LPCC": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2006/822/fr",
-  "nom": "loi sur les placements collectifs"
+  "nom": "loi sur les placements collectifs",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2006/822/en"
  },
  "LPD": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2022/491/fr",
-  "nom": "loi fédérale sur la protection des données"
+  "nom": "loi fédérale sur la protection des données",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2022/491/en"
  },
  "LPM": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1993/274_274_274/fr",
-  "nom": "loi sur la protection des marques"
+  "nom": "loi sur la protection des marques",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1993/274_274_274/en"
  },
  "LSA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2005/734/fr",
-  "nom": "loi sur la surveillance des assurances"
+  "nom": "loi sur la surveillance des assurances",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2005/734/en"
  },
  "LSFin": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2019/758/fr",
-  "nom": "loi fédérale sur les services financiers"
+  "nom": "loi fédérale sur les services financiers",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2019/758/en"
  },
  "LTF": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2006/218/fr",
-  "nom": "loi sur le Tribunal fédéral"
+  "nom": "loi sur le Tribunal fédéral",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2006/218/en"
  },
  "LTVA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2009/615/fr",
-  "nom": "loi fédérale régissant la taxe sur la valeur ajoutée"
+  "nom": "loi fédérale régissant la taxe sur la valeur ajoutée",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2009/615/en"
  },
  "LTr": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/fr",
-  "nom": "loi sur le travail"
+  "nom": "loi sur le travail",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/en"
  },
  "ORC": {
   "url": "https://www.fedlex.admin.ch/eli/cc/2007/686/fr",
-  "nom": "ordonnance sur le registre du commerce"
+  "nom": "ordonnance sur le registre du commerce",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/2007/686/en"
  },
  "PA": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1969/737_757_755/fr",
-  "nom": "loi fédérale sur la procédure administrative"
+  "nom": "loi fédérale sur la procédure administrative",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1969/737_757_755/en"
  },
  "Cst.": {
   "url": "https://www.fedlex.admin.ch/eli/cc/1999/404/fr",
-  "nom": "Constitution fédérale"
+  "nom": "Constitution fédérale",
+  "url_en": "https://www.fedlex.admin.ch/eli/cc/1999/404/en"
  }
 }
