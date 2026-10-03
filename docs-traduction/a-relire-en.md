@@ -30,7 +30,7 @@
 
 - « the best tools lawyers have ever had » (comparatif LLM) : superlatif absolu ; proposition du relecteur : « Few tools have ever served lawyers as well for working on the meaning of a text ».
 - « one of the best general-purpose translation engines on the market » (DeepL) : concession à un concurrent, acceptable.
-- Actualités historiques : « most-read newspaper » (Le Temps), affirmations « only » et « first » de 2020 et 2021, mention de Bratschi (n° 98) ; Pascal Crittin présenté comme directeur chez SRF dans l'original et le FR (plutôt la RTS ?).
+- Actualités historiques : « most-read newspaper » (Le Temps), affirmations « only » et « first » de 2020 et 2021 ; Pascal Crittin présenté comme directeur chez SRF dans l'original et le FR (plutôt la RTS ?).
 
 ## Pages légales
 
