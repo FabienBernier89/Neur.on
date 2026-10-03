@@ -62,14 +62,23 @@ FORM_ENDPOINT = "https://…"
 
 puis regénérez. Le formulaire des quatre langues l'utilisera.
 
-## 5. Après la mise en ligne
+## 5. Outil de gestion des cookies
+
+Le site contient un bandeau de consentement minimal (`assets/consent.js`, traduit dans les quatre langues) : Google Analytics 4 n'est chargé qu'après acceptation, et un lien « Préférences cookies » est ajouté au pied de page.
+
+Neur.on prévoit d'installer un outil de gestion des consentements (CMP) après la mise en ligne. Pour le faire :
+1. dans `build.py`, mettre `GA4_ID = ""` : le bandeau minimal, son lien de pied de page et le chargement de GA4 disparaissent ;
+2. intégrer le script de l'outil et charger GA4 par son intermédiaire (dans `build.py`, fonction `build_page`, à l'endroit où `consent.js` est ajouté) ;
+3. faire adapter les sections 4 et 5 de la politique de confidentialité (`src/pages/protection-des-donnees/` et ses versions dans `src/langues/`), qui citent le bandeau et le lien « Préférences cookies ».
+
+## 6. Après la mise en ligne
 
 1. Vérifier quelques anciennes adresses (redirection 301), par exemple `/about/`, `/de/about/`, `/fr/about/`, `/news/`, et une adresse inexistante (page 404).
 2. Vérifier `https://neur-on.ai/robots.txt`, `https://neur-on.ai/sitemap.xml` et `https://neur-on.ai/llms.txt`.
 3. Soumettre `https://neur-on.ai/sitemap.xml` dans Google Search Console et dans Bing Webmaster Tools. Le sitemap contient les versions linguistiques de chaque page (balises `hreflang`).
 4. Vérifier dans Google Analytics que les visites arrivent après acceptation du bandeau, et rien avant.
 
-## 6. Modifier le site ensuite
+## 7. Modifier le site ensuite
 
 Toute modification se fait dans les sources, jamais dans `docs/` (il est effacé à chaque génération) :
 

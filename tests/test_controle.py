@@ -221,6 +221,12 @@ class TestBalises(Base):
         self.remplacer(PAGE, "<em>Schweizer</em>", "Schweizer")
         self.assertBloquant("balises", PAGE)
 
+    def test_retour_a_la_ligne_admis(self):
+        # un <br> ne change ni la structure ni les liens : chaque langue coupe ses titres où elle veut
+        self.remplacer(PAGE, "<h1>Neur.on, ein <em>Schweizer</em> Unternehmen</h1>",
+                       "<h1>Neur.on,<br>ein <em>Schweizer</em> Unternehmen</h1>")
+        self.assertFalse([p for p in self.regle("balises") if p["gravite"] == "bloquant"])
+
     def test_lien_interne_localise_refuse(self):
         self.remplacer(PAGE, 'href="{{ROOT}}fr/corrext/"', 'href="{{ROOT}}de/corrext/"')
         self.assertBloquant("balises", PAGE, "fr/corrext/")

@@ -275,6 +275,9 @@ def _analyse(txt):
                 else:
                     a["scripts"].append(m.group(3))
             continue
+        if m.group(5).lower() == "br":  # retour à la ligne : libre dans chaque langue
+            hors.append(m.group(0))
+            continue
         a["noms"].append(m.group(4) + m.group(5).lower())
         a["liens"] += _liens(m.group(0), i)
         hors.append(m.group(0))
