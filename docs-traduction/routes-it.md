@@ -1,5 +1,7 @@
 # Table des adresses italiennes (IT)
 
+**Table validée par Fabien le 3 octobre 2026.** Une adresse IT ne change plus une fois publiée en production.
+
 Version lisible de `docs-traduction/routes-it.json` (à fusionner dans `src/routes.json`, clé `it`). Lecteur visé : avocate ou avocat tessinois, banque ou fiduciaria à Lugano, giurista d'impresa, administration de la Suisse italienne.
 
 Logique des slugs :

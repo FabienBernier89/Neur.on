@@ -25,7 +25,7 @@ Références (lues le 2 octobre 2026) :
    - Le mode s'écrit « Highly sensitive content mode ». Là où le FR emploie la forme courte « mode Highly sensitive », garder la forme courte : « Highly sensitive mode ». Le contrôle compte les noms de produits segment par segment.
    - La raison sociale reste **Neur.on AI Solutions SA**, jamais « Ltd » : le GSG (§13) interdit de remplacer « SA » ou « GmbH » par « Inc. » ou « Ltd », et le registre du commerce inscrit la société sous la forme SA. L'ancienne page anglaise écrivait « Ltd » : voir l'annexe A.
 4. **LexMachina** est un « neural machine translation engine », un « translation engine » ou un « neural translation model ». Jamais « LLM », « language model », « AI model » ni « chatbot ». Seule exception : les actualités historiques, qui gardent leurs faits et leurs mots (par exemple les AI Days 2025).
-5. **Noms interdits** : Legal 230, Lexa, « group », « acquisition », « merger » au sens du rapprochement, ou toute allusion au rapprochement. Aucun prix, aucun montant en CHF, aucun nom de client.
+5. **Noms interdits** : toute autre marque que celles de Neur.on, « group », « acquisition », « merger » au sens du rapprochement, ou toute allusion au rapprochement. Aucun prix, aucun montant en CHF, aucun nom de client.
 6. **Moteurs tiers sans numéro de version** : DeepL Pro, Azure OpenAI GPT, ChatGPT, Claude.
 7. **Aucun tiret cadratin ni demi-cadratin** (U+2014, U+2013). Le GSG (§6.4, §11, §12) emploie le demi-cadratin pour les intervalles et les incises : le site s'en écarte, parce que son contrôle automatique bloque ces deux signes dans toutes les langues. À la place :
    - intervalles : « to » (« Articles 80 to 84 DEBA », « from 2020 to 2024 »), forme que le GSG §12 impose lui-même (« from … to », « between … and ») ; dans un tableau, le trait d'union simple (« 2025-2028 ») ;
@@ -38,7 +38,7 @@ Références (lues le 2 octobre 2026) :
     - « seamless », « robust », « leverage », « delve », « game-changer », « harness the power of », « navigate the complexities of », « tailored » à répétition ;
     - « It is important to note that », « Not only … but also » à répétition ;
     - les séries de trois adjectifs, les questions rhétoriques en cascade, un « In conclusion » au bout de chaque section.
-11. **Aucune phrase reprise d'un site du groupe** (contrôle par séquences de 8 mots, pages anglaises de Lexa comprises).
+11. **Aucune phrase reprise d'un autre site** (contrôle par séquences de 8 mots).
 12. **Langage inclusif** (GSG §17) : « they » singulier, noms neutres (« chair », « lawyer », « legal expert »). Jamais « he/she ».
 
 ## 2. Formats

@@ -15,7 +15,7 @@ Ordre de priorité : les règles absolues (section 1), puis ce guide, puis le br
    - Le mode s'écrit « der Modus Highly sensitive content ». Là où le FR emploie la forme courte « mode Highly sensitive », garder la forme courte : le contrôle compte les noms de produits segment par segment.
    - La raison sociale reste « Neur.on AI Solutions SA » (pas « AG »).
 5. **LexMachina** est un « neuronaler Übersetzungsmotor », un « Übersetzungsmotor » ou un « neuronales Übersetzungsmodell ». Jamais « LLM », « Sprachmodell » ni « Chatbot ». Seule exception : les actualités historiques, qui gardent leurs faits et leurs mots (par exemple les AI Days 2025).
-6. **Noms interdits** : Legal 230, Lexa, « Gruppe », « Übernahme », « Zusammenschluss » ou toute allusion au rapprochement. Aucun prix, aucun montant en CHF, aucun nom de client.
+6. **Noms interdits** : toute autre marque que celles de Neur.on, « Gruppe », « Übernahme », « Zusammenschluss » ou toute allusion au rapprochement. Aucun prix, aucun montant en CHF, aucun nom de client.
 7. **Moteurs tiers sans numéro de version** : DeepL Pro, Azure OpenAI GPT, ChatGPT, Claude.
 8. **Aucun tiret cadratin ni demi-cadratin** (U+2014, U+2013), alors que l'allemand en use beaucoup. À la place : deux-points, virgule, parenthèses, point médian « · ». Les intervalles s'écrivent avec « bis » (« Art. 80 bis 84 SchKG ») ou avec le trait d'union simple (« 2025-2028 »).
 9. **Aucun superlatif sans preuve** : pas de « der beste », « führend », « einzigartig », « revolutionär », « modernste ». Un chiffre sourcé vaut mieux qu'un adjectif.

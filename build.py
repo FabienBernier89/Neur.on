@@ -24,6 +24,9 @@ TODAY = datetime.date.today().isoformat()
 GA4_ID = "G-H128S2PTKN"
 # Jeton de vérification Google Search Console (balise HTML), à renseigner si la vérification DNS n'est pas retenue.
 GSC_TOKEN = ""
+# Adresse qui reçoit les demandes du formulaire de contact (HubSpot, Formspree ou service de Neur.on), en production.
+# Vide : le formulaire ouvre un courriel à team@corrext.com.
+FORM_ENDPOINT = ""
 def _asset_version():
     import hashlib
     h = hashlib.sha1()
@@ -380,6 +383,8 @@ def build_page(path, meta, body, lang="fr"):
     for a in meta.get("assets", []) or []:
         scripts.append(f'<script src="{root}assets/{a}?v={ASSET_V}"></script>')
 
+    if PRODUCTION and FORM_ENDPOINT:
+        body = body.replace('data-endpoint=""', f'data-endpoint="{FORM_ENDPOINT}"')
     html = "\n".join(head) + "\n<body>\n" + nav + crumb_html + \
            '\n<main id="main">\n' + body.strip() + "\n</main>\n\n" + foot + "\n" + \
            "\n".join(scripts) + "\n</body>\n</html>\n"

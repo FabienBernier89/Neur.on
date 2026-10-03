@@ -6,6 +6,18 @@
   if (!GA) { return; }
   var PRIV = (me && me.getAttribute("data-privacy")) || "https://neur-on.ai/privacy-policy/";
   var KEY = "neuron-consent";
+  // textes du bandeau dans la langue de la page (le nom du lien « Préférences cookies » est cité dans chaque politique)
+  var TX = {
+    fr: {aria: "Cookies de mesure d'audience", txt: "Nous aimerions mesurer la fréquentation du site avec Google Analytics. Aucun cookie de mesure n'est déposé sans votre accord.",
+         priv: "Protection des données", non: "Refuser", oui: "Accepter", pref: "Préférences cookies"},
+    de: {aria: "Cookies zur Reichweitenmessung", txt: "Wir möchten die Nutzung der Website mit Google Analytics messen. Ohne Ihre Einwilligung wird kein Mess-Cookie gesetzt.",
+         priv: "Datenschutz", non: "Ablehnen", oui: "Akzeptieren", pref: "Cookie-Einstellungen"},
+    it: {aria: "Cookie di misurazione del pubblico", txt: "Vorremmo misurare la frequentazione del sito con Google Analytics. Nessun cookie di misurazione viene installato senza il vostro consenso.",
+         priv: "Protezione dei dati", non: "Rifiutare", oui: "Accettare", pref: "Preferenze cookie"},
+    en: {aria: "Analytics cookies", txt: "We would like to measure site traffic with Google Analytics. No analytics cookie is set without your consent.",
+         priv: "Privacy policy", non: "Decline", oui: "Accept", pref: "Cookie preferences"}
+  };
+  var tx = TX[(document.documentElement.lang || "fr").slice(0, 2)] || TX.fr;
   function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
 
@@ -28,12 +40,11 @@
     b.id = "ckBar";
     b.className = "ck-bar";
     b.setAttribute("role", "dialog");
-    b.setAttribute("aria-label", "Cookies de mesure d'audience");
+    b.setAttribute("aria-label", tx.aria);
     b.innerHTML =
-      '<p>Nous aimerions mesurer la fréquentation du site avec Google Analytics. Aucun cookie de mesure n\'est déposé sans votre accord. ' +
-      '<a href="' + PRIV + '">Protection des données</a></p>' +
-      '<div class="ck-btns"><button type="button" class="btn-outline ck-no">Refuser</button>' +
-      '<button type="button" class="btn btn-blue ck-yes">Accepter</button></div>';
+      '<p>' + tx.txt + ' <a href="' + PRIV + '">' + tx.priv + '</a></p>' +
+      '<div class="ck-btns"><button type="button" class="btn-outline ck-no">' + tx.non + '</button>' +
+      '<button type="button" class="btn btn-blue ck-yes">' + tx.oui + '</button></div>';
     document.body.appendChild(b);
     b.querySelector(".ck-yes").addEventListener("click", function () { set("granted"); b.remove(); loadGA(); });
     b.querySelector(".ck-no").addEventListener("click", function () { set("denied"); b.remove(); });
@@ -47,7 +58,7 @@
     a.type = "button";
     a.id = "ckPref";
     a.className = "ck-pref";
-    a.textContent = "Préférences cookies";
+    a.textContent = tx.pref;
     a.addEventListener("click", banner);
     links.appendChild(a);
   }

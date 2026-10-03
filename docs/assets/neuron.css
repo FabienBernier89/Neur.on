@@ -1,5 +1,5 @@
 :root{
-  /* Arrondis communs (modèle validé le 2026-10-02 : bouton Lexa) : blocs, cartes et images · boutons et champs */
+  /* Arrondis communs (validés le 2026-10-02) : blocs, cartes et images · boutons et champs */
   --r-bloc:8px;
   --r-btn:6px;
   --navy:#001B4C;
@@ -1041,7 +1041,7 @@ body.nav-open{overflow:hidden}
 /* ============ CENTRE D'AIDE : accueil avec recherche, espaces, rubriques en accordéon ============ */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .hc-kicker{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue-d);margin-bottom:14px}
-/* Centre d'aide · accueil : héro clair et centré, sans visuel ni bouton, la recherche au centre (modèle lexamt.com/aide) */
+/* Centre d'aide · accueil : héro clair et centré, sans visuel ni bouton, la recherche au centre */
 .crumbs-band{background:var(--bg);border-bottom:1px solid var(--line);padding:14px 0}
 .hc-hero{padding:72px 0 44px;text-align:center;background:radial-gradient(900px 460px at 50% -20%,rgba(49,123,255,.13),transparent 62%),linear-gradient(#fff 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
 .hc-hero h1{font-size:clamp(34px,4.6vw,52px);line-height:1.16;letter-spacing:-.03em;color:var(--ink);max-width:720px;margin:0 auto 18px;text-wrap:balance}
@@ -1129,7 +1129,7 @@ body.nav-open{overflow:hidden}
 @media(max-width:1023px){.hc-cards{grid-template-columns:repeat(2,1fr)}.hc-grid{grid-template-columns:1fr;gap:28px}.hc-main{order:1}.hc-side{order:2;position:static;border-top:1px solid var(--line);padding-top:24px}.hc-side ul{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.hc-side a{padding:6px 12px 6px 6px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:13.5px}.hc-side a .ws-ic{width:22px;height:22px;border-radius:999px}.hc-side a .ws-ic svg{width:13px;height:13px}.hc-side-t{margin:0 0 10px}}
 @media(max-width:620px){.hc-cards{grid-template-columns:1fr}}
 
-/* ============ BLOG · liste (modèle lexamt.com/ressources#articles) ============ */
+/* ============ BLOG · liste ============ */
 .bl-feat{padding:64px 0 8px}
 .bl-feat-card{display:grid;grid-template-columns:1.05fr 1fr;background:#fff;border:1px solid var(--line);border-radius:var(--r-bloc);overflow:hidden;box-shadow:0 34px 70px -46px rgba(8,24,68,.35);transition:box-shadow .35s cubic-bezier(.16,1,.3,1),border-color .35s}
 .bl-feat-card:hover{box-shadow:0 40px 80px -40px rgba(8,24,68,.42);border-color:#d3def0}
@@ -1174,7 +1174,7 @@ body.nav-open{overflow:hidden}
 .bl-card:hover .bl-more svg,.bl-feat-card:hover .feat-link svg{transform:translateX(3px)}
 .bl-empty{text-align:center;color:var(--muted);font-size:15px;padding:30px 0}
 
-/* ============ BLOG · article (modèle lexamt.com, page d'article) ============ */
+/* ============ BLOG · article ============ */
 .ar-head{padding:48px 0 26px;background:#fff}
 .ar-col{max-width:760px;margin:0 auto}
 .ar-head h1{font-size:clamp(30px,3.8vw,46px);line-height:1.18;letter-spacing:-.03em;color:var(--ink);margin-bottom:20px;text-wrap:balance}

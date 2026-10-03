@@ -56,11 +56,11 @@ vos classes pour éviter les collisions.
 ## Règles absolues
 
 - **Français** partout, sauf les libellés de l'application Corrext, qui restent en anglais.
-- **Jamais** le tiret cadratin « — » (U+2014). Utilisez « · », « : », la virgule ou « - ».
-- **Jamais** les mots Legal 230, Lexa, LexMachina, « groupe », « rapprochement ». Le moteur maison
-  s'appelle **LexMachina**. Les moteurs tiers se nomment sans numéro de version : DeepL Pro,
+- **Jamais** le tiret cadratin (U+2014) ni le demi-cadratin (U+2013). Utilisez « · », « : », la virgule ou « - ».
+- **Jamais** d'autre marque que celles de Neur.on, ni « groupe » ou « rapprochement ». Le moteur maison
+  s'appelle **LexMachina** (moteur de traduction neuronale, jamais « LLM »). Les moteurs tiers se nomment sans numéro de version : DeepL Pro,
   Azure OpenAI GPT, Claude.
-- **Jamais** de prix, de montant en francs, de nom de client, de témoignage, de logo client, ni de
+- **Jamais** de prix, de montant en francs, de nom de client, de témoignage non signalé comme exemple, de logo client, ni de
   promesse non observée dans l'application.
 - Chiffres autorisés : plus de 15 millions de segments, ISO 27001 (février 2024), 30 langues sur la
   plateforme, quatre langues natives, 25 fichiers de 50 Mo, 30 domaines CHnell, économies « jusqu'à »

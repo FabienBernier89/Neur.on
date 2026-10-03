@@ -1,5 +1,7 @@
 # Table des adresses anglaises (EN)
 
+**Table validée par Fabien le 3 octobre 2026.** Une adresse EN ne change plus une fois publiée en production.
+
 Source de vérité : `docs-traduction/routes-en.json` (chemin FR → adresse EN), à fusionner dans `src/routes.json` avec les entrées IT. Ce fichier-ci n'en est que la version lisible.
 
 Logique des slugs :

@@ -39,7 +39,7 @@ Seulement le texte des brouillons : contenus des balises, attributs lisibles (`a
 
 - Aucun tiret cadratin (U+2014) ni demi-cadratin (U+2013), nulle part.
 - En allemand : ss, jamais ß.
-- Jamais de mention de Legal 230, Lexa, d'un groupe ou d'un rapprochement. Jamais de prix ni de nom de client.
+- Jamais d'autre marque que celles de Neur.on (Neur.on, Corrext, LexMachina, CHnell), ni d'allusion à un groupe ou à un rapprochement. Jamais de prix ni de nom de client.
 - LexMachina est un moteur de traduction neuronale, jamais un « LLM » (sauf dans les actualités historiques, à laisser telles quelles).
 
 ## Vérification avant de rendre
