@@ -21,20 +21,14 @@ Ce que `--production` change par rapport à l'aperçu :
 - plus de `noindex`, `robots.txt` ouvert aux moteurs et aux assistants IA ;
 - Google Analytics 4 (`G-H128S2PTKN`), chargé **seulement après consentement** (bandeau `assets/consent.js`, dans la langue de la page) ;
 - fichier `.htaccess` (voir § 3) ;
-- seules les langues entièrement relues sont publiées (voir § 2).
+- les quatre langues sont publiées, chacune à ses propres adresses (`/fr/`, `/de/`, `/it/`, `/en/`).
 
 ## 2. Deux verrous avant la mise en ligne
 
 Le build de production **refuse de s'exécuter** tant que l'une de ces conditions n'est pas remplie. C'est voulu.
 
 1. **Témoignages d'exemple.** Les pages « Solutions » contiennent des témoignages signalés comme exemples, en attendant de vrais témoignages. Le build de production s'arrête avec le message « Production refusée : témoignage d'exemple à remplacer ». Neur.on fournira les textes définitifs.
-2. **Langues relues.** Une langue n'est publiée que si toutes ses pages sont marquées `"relue"` dans `src/langues/<langue>/statut.json` (le français est toujours publié). Aujourd'hui, l'allemand, l'italien et l'anglais sont en cours de relecture par des traducteurs ; quand une langue est validée, toutes ses valeurs passent de `"brouillon"` à `"relue"`, par exemple :
-
-   ```bash
-   python3 -c "import json;p='src/langues/de/statut.json';d=json.load(open(p));json.dump({k:'relue' for k in d},open(p,'w'),indent=1)"
-   ```
-
-   Tant qu'une langue n'est pas relue, ses liens dans le sélecteur de langue apparaissent comme « bientôt » et ne sont pas cliquables.
+2. **Langues relues.** Une langue n'est publiée que si toutes ses pages sont marquées `"relue"` dans `src/langues/<langue>/statut.json` (le français est toujours publié). Les quatre langues sont validées : français, allemand, italien et anglais sont publiés. Si une langue devait être retirée temporairement, il suffirait de repasser une de ses valeurs à `"brouillon"` ; ses liens dans le sélecteur de langue apparaîtraient alors comme « bientôt ».
 
 ## 3. Hébergement (Infomaniak, Apache)
 
