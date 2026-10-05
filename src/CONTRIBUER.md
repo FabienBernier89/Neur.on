@@ -37,7 +37,7 @@ générateur. N'y mettez jamais de `BreadcrumbList` : il est généré.
 |---|---|
 | Section standard | `section` + `.container`, en-tête `.sec-head` (h2 + p) |
 | Registre de faits | `.facts` > `.facts-grid` > `.facts-lead` (h2, p, `.links`) + `.facts-list` > `.fact` (b + p, `small` pour la précision) |
-| Trois situations | Liste éditoriale, jamais de cartes : `section.who.who-s.sc` > `.sec-head` + `.sc-list` > `article.sc-row` (`<div class="sc-ctx"><span class="ws-ic" aria-hidden="true">{{ICONE:nom}}</span><span class="sc-a">Audience</span></div>`, puis `<h3>Situation</h3>`, puis `<p>`). Libellé de contexte sans point final. Pictogrammes : `WS_ICONS` dans generators.py |
+| Trois situations | Un scénario mis en avant (le premier, en panneau), les deux autres en appui à droite ; jamais trois cartes identiques : `section.who.who-s.sc` > `.sec-head` + `.sc-list` > `article.sc-row` (`<div class="sc-ctx"><span class="ws-ic" aria-hidden="true">{{ICONE:nom}}</span><span class="sc-a">Audience</span></div>`, puis `<h3>Situation</h3>`, puis `<p>`). Libellé de contexte sans point final. Pictogrammes : `WS_ICONS` dans generators.py |
 | Encadré à question | `.gov` > `.gov-box` (div avec h2 + p + `.feat-link`) + `.gov-steps` > div (svg + span avec `<b>`) |
 | Bande de liens | `.siblings` > h2 + `.siblings-row` > a (b + span + svg flèche) |
 | Bloc fonctionnalité | `.feature` (+ `.rev` pour inverser) > `.feat-txt` (h3, p, `.feat-list` > li > `.chk`, `.feat-link`) + `.feat-visual` > `.win` |
