@@ -65,7 +65,7 @@ def utiliser(src):
     """Prend les données de la langue en cours pour les briques appelées hors de build_all (cartes de héros)."""
     global _DONNEES, _CARTES
     _DONNEES, _CARTES = os.path.join(src, "data"), None
-SYMB = {"y": '<span class="cmp-y">✓</span> ', "p": '<span class="cmp-p">⚠</span> ', "n": '<span class="cmp-n">✕</span> '}
+SYMB = {"y": '<span class="cmp-y" aria-hidden="true"></span> ', "p": '<span class="cmp-p" aria-hidden="true"></span> ', "n": '<span class="cmp-n" aria-hidden="true"></span> '}
 
 
 def carte(nom):
@@ -952,7 +952,6 @@ def gen_aide(src):
     <div class="hc-grid">
       {side(r["slug"])}
       <div class="hc-main">
-        <p class="hc-kicker">{T("Centre d'aide")} · {espace}</p>
         <h1 class="hc-h1">{r["titre"]}</h1>
         <p class="hc-intro">{r["lead"]}</p>
         <div class="faq-list hc-list">{qs}</div>
@@ -969,7 +968,7 @@ def gen_aide(src):
     blocs = "".join(
         f'''<section class="hc-space{" admin" if esp == "admin" else ""}" id="{esp}">
   <div class="container">
-    <div class="hc-space-head"><span class="hc-badge">{T("Administrateurs") if esp == "admin" else T("Utilisateurs")}</span><h2>{titre}</h2><p>{texte}</p></div>
+    <div class="hc-space-head"><h2>{titre}</h2><p>{texte}</p></div>
     <div class="hc-cards">''' + "".join(
             f'<a class="hc-card" href="{{{{ROOT}}}}fr/aide/{r["slug"]}/"><span class="ws-ic">{WS_ICONS[r["icone"]]}</span>'
             f'<b>{r["titre"]}</b><span class="d">{r["lead"]}</span><em>{T("{0} questions").format(len(r["articles"]))} {ARROW}</em></a>'
@@ -989,7 +988,6 @@ var p=new URLSearchParams(location.search).get('q');if(p){q.value=p;cherche(p);}
     body = "\n".join([
         f'''<section class="hc-hero">
   <div class="container">
-    <p class="hc-kicker">{T("Centre d'aide")}</p>
     <h1>{T("Comment {0} vous aider\u00a0?").format(f'<span class="nw">{T("pouvons-nous")}</span>')}</h1>
     <p class="lead">{T("Toutes les réponses pour utiliser Corrext au quotidien et pour l'administrer, vérifiées dans l'application.")}</p>
     {recherche(True)}
@@ -1048,13 +1046,13 @@ def a_propos():
 def blog_outils():
     cartes = "".join(f'<a class="bl-seg-card" href="{{{{ROOT}}}}{u}"><span class="ws-ic">{WS_ICONS[ic]}</span><b>{T(t)}</b><span>{T(d)}</span></a>'
                      for ic, t, d, u in BLOG_OUTILS)
-    return (f'<section class="bl-seg"><div class="container"><div class="sec-head"><span class="bl-k">{T("Ressources et outils")}</span>'
+    return (f'<section class="bl-seg"><div class="container"><div class="sec-head">'
             f'<h2>{T("Pour passer de la lecture à la pratique")}</h2><p>{T("Un comparatif, une page sécurité, un glossaire quadrilingue, des guides, le centre d'aide et l'historique de nos actualités.")}'
             f'</p></div><div class="bl-seg-grid">{cartes}</div></div></section>')
 
 
 def blog_linkedin():
-    return ('<section class="bl-li"><div class="container"><div class="bl-li-band"><div><span class="bl-k">LinkedIn</span>'
+    return ('<section class="bl-li"><div class="container"><div class="bl-li-band"><div>'
             f'<h2>{T("Les nouveaux articles et actualités, dès leur parution")}</h2>'
             f'<p>{T("Neur.on publie ses articles, ses conférences et ses actualités sur sa page LinkedIn. Suivez-la pour ne rien manquer.")}</p></div>'
             f'<a class="btn btn-blue" href="{LINKEDIN}" target="_blank" rel="noopener">{T("Suivre Neur.on sur LinkedIn")} {ARROW}</a></div></div></section>')
@@ -1095,9 +1093,9 @@ def blog_entete(src, slug, mots):
     maj = f' · {T("mis à jour le {0}").format(date_longue(a["maj"]))}' if a.get("maj") and a["maj"] != a["date"] else ""
     return f'''<section class="ar-head">
   <div class="container"><div class="ar-col">
-    <p class="bl-k">{T(a["categorie"])}{" · " + T(a["sous_categorie"]) if a.get("sous_categorie") else ""}</p>
     <h1>{a.get("h1", a["titre"])}</h1>
     <div class="ar-meta">
+      <span class="ar-cat">{T(a["categorie"])}{" · " + T(a["sous_categorie"]) if a.get("sous_categorie") else ""}</span>
       <span>{BLOG_IC["auteur"]} <b>{a["auteur"]}</b></span>
       <span>{BLOG_IC["date"]} <time datetime="{a["date"]}">{date_longue(a["date"])}</time>{maj}</span>
       <span>{BLOG_IC["duree"]} {T("{0} min de lecture").format(max(1, round(mots / 220)))}</span>
@@ -1227,11 +1225,10 @@ def gen_blog(src):
   <div class="container">
     <a class="bl-feat-card" href="{{{{ROOT}}}}{blog_url(une)}">{blog_visuel(une, une=True)}
       <div class="bl-feat-body">
-        <span class="bl-k">{T(une["categorie"])}</span>
         <h2>{une["titre"]}</h2>
         <p>{une["extrait"]}</p>
         <span class="feat-link">{T("Lire l'article")} {ARROW}</span>
-        <div class="bl-meta"><span>{BLOG_IC["date"]} <time datetime="{une["date"]}">{date_longue(une["date"])}</time></span><span>{BLOG_IC["auteur"]} {une["auteur"]}</span></div>
+        <div class="bl-meta"><span class="bl-cat">{T(une["categorie"])}</span><span>{BLOG_IC["date"]} <time datetime="{une["date"]}">{date_longue(une["date"])}</time></span><span>{BLOG_IC["auteur"]} {une["auteur"]}</span></div>
       </div>
     </a>
   </div>
@@ -1248,7 +1245,7 @@ b.forEach(function(e){e.addEventListener('click',function(){f(e.getAttribute('da
         f'<section class="bl-filters" id="articles" aria-label="{T("Filtrer par catégorie")}"><div class="container">{filtres}</div></section>',
         f'<section class="bl-list"><div class="container"><div class="bl-grid">{"".join(blog_carte(a) for a in arts)}</div><p class="bl-empty" hidden>{T("Aucun article dans cette catégorie pour le moment.")}</p></div></section>',
         ('<section class="bl-actu"><div class="container"><a class="bl-actu-card" href="{{ROOT}}fr/ressources/blog/actualites/">'
-         f'<span class="bl-k">{T("Actualités")}</span><b>{T("Toutes les brèves de Neur.on, année par année")}</b><span>{T("Prix, conférences, partenariats et presse depuis 2020.")} {ARROW}</span></a></div></section>')
+         f'<b>{T("Toutes les brèves de Neur.on, année par année")}</b><span>{T("Prix, conférences, partenariats et presse depuis 2020.")} {ARROW}</span></a></div></section>')
         if load(src, "actualites") else "",
         blog_linkedin(), blog_fin(), script,
     ])
@@ -1304,7 +1301,6 @@ def gen_actualites(src):
         '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>",
         f'''<section class="ar-head">
   <div class="container"><div class="ar-col">
-    <p class="bl-k">{T("Actualités")}</p>
     <h1>{T("Toutes les actualités de Neur.on")}</h1>
     <p class="ac-lead">{lead}</p>
     <nav class="ac-nav" aria-label="{T("Aller à une année")}">{nav}</nav>
