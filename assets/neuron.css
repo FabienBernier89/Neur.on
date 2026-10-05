@@ -986,6 +986,9 @@ body.nav-open{overflow:hidden}
 .vn-term i{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.07em;color:var(--muted)}
 .vn-term b{font-size:14.5px;font-weight:600;color:var(--ink);letter-spacing:-.005em}
 .vn-term>span:first-child b{color:var(--navy);font-weight:700}
+/* Variante libellé + valeur : la colonne de 26 px est prévue pour un code de langue ; ici elle prend la largeur du libellé le plus long de la carte, commune aux deux lignes (subgrid, repli en max-content) */
+.vn-term.vn-kv{display:grid;grid-template-columns:max-content 1fr}
+.vn-term.vn-kv>span{grid-column:1/-1;grid-template-columns:max-content 1fr;grid-template-columns:subgrid}
 .vn-t{font-size:17px;color:var(--ink);letter-spacing:-.015em;margin-bottom:6px}
 .vn-d{font-size:14px;color:var(--muted);line-height:1.6}
 .vn-card>em{display:inline-flex;align-items:center;gap:6px;justify-self:start;margin-top:16px;font-style:normal;font-size:13.5px;font-weight:600;color:var(--blue-d)}
