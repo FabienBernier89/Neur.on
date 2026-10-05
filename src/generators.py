@@ -323,20 +323,22 @@ DOMAINE_METIERS = {
 
 
 def who(titre, items, metiers=None):
-    """Bloc « situations » en cartes : pictogramme facultatif (clé vis) sur la ligne du titre, puis le texte.
-    metiers : slugs de pages Solutions à proposer sous les cartes."""
+    """Bloc « situations » en liste éditoriale : une ligne par scénario, contexte (pictogramme + libellé),
+    situation en titre, explication. Remplace l'ancienne grille de trois cartes identiques.
+    metiers : slugs de pages Solutions à proposer sous le bloc."""
     def ic(w):
-        return f'<span class="ws-ic">{WS_ICONS[w["vis"]]}</span>' if w.get("vis") else ""
-    ws = "".join(
-        f'<article class="ws-item"><h3>{ic(w)}'
-        f'<span><span class="pn">{w["a"]}.</span> {w["t"]}</span></h3><p>{w["p"]}</p></article>'
+        return f'<span class="ws-ic" aria-hidden="true">{WS_ICONS[w["vis"]]}</span>' if w.get("vis") else ""
+    lignes = "".join(
+        f'<article class="sc-row"><div class="sc-ctx">{ic(w)}<span class="sc-a">{w["a"]}</span></div>'
+        f'<h3>{w["t"]}</h3><p>{w["p"]}</p></article>'
         for w in items)
-    return ('<section class="who who-s">\n  <div class="container">\n'
+    par_metier = (f'    <p class="ws-metiers">{T("Par métier :")} ' + " · ".join(
+        f'<a href="{{{{ROOT}}}}fr/solutions/{m}/">{T(METIERS[m])}</a>' for m in metiers) + "</p>\n"
+        if metiers else "")
+    return ('<section class="who who-s sc">\n  <div class="container">\n'
             f'    <div class="sec-head"><h2>{titre}</h2></div>\n'
-            f'    <div class="ws-grid">{ws}</div>\n'
-            + (f'    <p class="ws-metiers">{T("Par métier :")} ' + " · ".join(
-                f'<a href="{{{{ROOT}}}}fr/solutions/{m}/">{T(METIERS[m])}</a>' for m in metiers) + "</p>\n"
-               if metiers else "")
+            f'    <div class="sc-list">{lignes}</div>\n'
+            + par_metier
             + '  </div>\n</section>')
 
 
@@ -587,9 +589,10 @@ def gen_solutions(src):
         body = "\n".join([
             hero_job(d["lede"], d["h1"], d["lead"], d["promesses"],
                      T("Ce métier, en trois points")),
-            facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
+            # Les scénarios du métier ouvrent la page, puis la question sécurité et les faits
             who(d["who_titre"], d["who"]),
             gov(d["gov_q"], d["gov_p"], d["gov_lien"], d["gov_etapes"]),
+            facts(d["facts_titre"], d["facts_intro"], d["facts_liens"], d["facts"]),
             outils_visuel(d["outils_titre"], d["outils"]),
             temoignage(d.get("temoignage")),
             faq(d["faq_titre"], d["faq"]),
@@ -644,11 +647,12 @@ def gen_domaines(src):
         body = "\n".join([
             TERMS_CSS,
             hero_law(d["lede"], d["h1"], d["lead"], spec),
+            # La terminologie du domaine, preuve propre à la page, passe avant les faits génériques
+            terms_table(d["termes"], d["termes_note"], d.get("termes_titre", T("La terminologie officielle, dans les quatre langues"))),
             facts(d.get("facts_titre", T("Concrètement, dans Corrext")), d["definition"],
                   [{"href": "fr/corrext/traduction-texte-et-document/", "txt": T("Traduire un document maintenant")},
                    {"href": "fr/corrext/gestion-de-projet/", "txt": T("Commander une relecture juridique")}],
                   d["facts"]),
-            terms_table(d["termes"], d["termes_note"], d.get("termes_titre", T("La terminologie officielle, dans les quatre langues"))),
             laws_block(d.get("lois_titre", T("Les textes de référence, cités au quotidien")), d["lois_intro"], d["lois"]),
             who(d["who_titre"], d["who"], DOMAINE_METIERS.get(d["slug"])),
             faq(d["faq_titre"], d["faq"]),
@@ -678,11 +682,11 @@ def gen_paires(src):
         body = "\n".join([
             TERMS_CSS,
             hero_law(d["lede"], d["h1"], d["lead"], spec, "#faits", T("Ce qui change dans cette paire")),
+            terms_table(d["termes"], d["termes_note"]),
             facts(T("Cette paire de langues, en pratique"), d["definition"],
                   [{"href": "fr/corrext/traduction-texte-et-document/", "txt": T("Essayer sur un extrait de loi")},
                    {"href": "fr/langues-et-formats/", "txt": T("Toutes les langues et formats")}],
                   d["facts"]),
-            terms_table(d["termes"], d["termes_note"]),
             who(d["who_titre"], d["who"]),
             faq(d["faq_titre"], d["faq"]),
             voisins(T("Autres paires de langues"),
