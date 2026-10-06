@@ -995,6 +995,8 @@ body.nav-open{overflow:hidden}
 .temo figcaption::before{content:"";width:36px;height:2px;border-radius:2px;background:var(--blue);margin-bottom:14px}
 .temo figcaption b{font-size:15px;color:var(--ink)}
 .temo figcaption span{font-size:14px;color:var(--muted)}
+/* Témoignage d'exemple : mention discrète à la place de l'attribution */
+.temo figcaption .temo-lab{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--muted)}
 .temo-todo .temo-fig{padding:44px 40px;border:1.5px dashed var(--line-2);border-radius:var(--r-bloc)}
 .temo-todo blockquote p{color:var(--muted)}
 .temo-todo .temo-mark{color:var(--line-2)}

@@ -43,3 +43,7 @@ Exemples transposés au Tessin ou aux Grisons dans les domaines, les paires et l
 ## Source FR corrigée pendant l'adaptation italienne
 
 Points relevés par les agents italiens et corrigés dans toutes les langues : Verzugszinse (art. 104 OR), Anwaltskongress, 30 domaines CHnell, titres 23 à 32 du CO, cours du Tribunal fédéral à Lucerne, procès-verbal de l'assemblée générale (art. 702 CO), et les fiches du glossaire listées dans le commit « Glossaire FR et DE : 13 imprécisions corrigées ».
+
+## Ajout du 2026-10-06
+
+- Mention des témoignages d'exemple (pages Solutions) : « Exemple de cas d'usage » → « Esempio di caso d'uso ». À valider.

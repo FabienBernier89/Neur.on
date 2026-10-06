@@ -372,13 +372,17 @@ def temoignage(t):
                 f'    <blockquote><p>{attente}</p></blockquote>\n'
                 f'    <figcaption><b>{T("Prénom Nom")}</b><span>{T("Fonction, cabinet")}</span></figcaption>\n'
                 '  </figure></div>\n</section>')
-    # Un exemple n'est plus étiqueté à l'écran, mais la classe temo-ex reste : la garde de production de build.py s'appuie dessus.
+    # Un exemple (citation non attribuable à un client réel) est signalé comme tel et n'est attribué à personne ;
+    # la garde de production de build.py refuse tout exemple qui ne porterait pas cette mention.
     ex = t.get("exemple")
+    legende = (f'<span class="temo-lab">{T("Exemple de cas d\'usage")}</span>' if ex
+               else f'<b>{t["auteur"]}</b><span>{t["fonction"]}</span>')
     return (f'<section class="temo{" temo-ex" if ex else ""}">\n  <div class="container"><figure class="temo-fig">\n'
             + '    <span class="temo-mark" aria-hidden="true">«</span>\n'
             f'    <blockquote><p>{t["citation"]}</p></blockquote>\n'
-            f'    <figcaption><b>{t["auteur"]}</b><span>{t["fonction"]}</span></figcaption>\n'
+            f'    <figcaption>{legende}</figcaption>\n'
             '  </figure></div>\n</section>')
+
 
 
 def gov(question, texte, lien, etapes):

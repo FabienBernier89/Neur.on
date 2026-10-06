@@ -27,6 +27,11 @@ GSC_TOKEN = ""
 # Adresse qui reçoit les demandes du formulaire de contact (HubSpot, Formspree ou service de Neur.on), en production.
 # Vide : le formulaire ouvre un courriel à team@corrext.com.
 FORM_ENDPOINT = ""
+
+def exemple_non_signale(body):
+    """Vrai si une page contient un témoignage d'exemple sans la mention « Exemple de cas d'usage » (garde de production)."""
+    return any('class="temo-lab"' not in bloc for bloc in re.findall(r'<section class="temo temo-ex".*?</section>', body, re.S))
+
 def _asset_version():
     import hashlib
     h = hashlib.sha1()
@@ -709,9 +714,9 @@ def main():
         par_langue[lang] = pages
         cles_manquantes[lang] = set(i18n.MANQUANTS)
     if PRODUCTION:
-        exemples = [f"{l}:{path}" for l, pages in par_langue.items() for path, _m, body in pages if "temo-ex" in body]
+        exemples = [f"{l}:{path}" for l, pages in par_langue.items() for path, _m, body in pages if exemple_non_signale(body)]
         if exemples:
-            sys.exit("Production refusée : témoignage d'exemple à remplacer sur " + ", ".join(exemples))
+            sys.exit("Production refusée : témoignage d'exemple sans la mention « Exemple de cas d'usage » sur " + ", ".join(exemples))
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT, exist_ok=True)

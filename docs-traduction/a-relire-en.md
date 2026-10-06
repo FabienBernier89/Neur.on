@@ -39,3 +39,7 @@ Texte anglais d'origine de neur-on.ai repris dans la structure FR, comparé mot 
 ## Source FR corrigée pendant l'adaptation anglaise
 
 Points relevés par les agents anglais et corrigés dans toutes les langues : 80 % non sourcé (comparatif agence), séparateur des milliers (les textes fédéraux écrivent une espace), FAQ des extraits du registre (trois niveaux réels), équivalents anglais alignés sur Fedlex (external auditor, composition moratorium, negotiable securities), fiches du glossaire (sursis concordataire, mesures provisionnelles, statuts, organes de la SA).
+
+## Ajout du 2026-10-06
+
+- Mention des témoignages d'exemple (pages Solutions) : « Exemple de cas d'usage » → « Example use case ». À valider.

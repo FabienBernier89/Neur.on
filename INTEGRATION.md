@@ -23,11 +23,11 @@ Ce que `--production` change par rapport à l'aperçu :
 - fichier `.htaccess` (voir § 3) ;
 - les quatre langues sont publiées, chacune à ses propres adresses (`/fr/`, `/de/`, `/it/`, `/en/`).
 
-## 2. Deux verrous avant la mise en ligne
+## 2. Deux contrôles avant la mise en ligne
 
-Le build de production **refuse de s'exécuter** tant que l'une de ces conditions n'est pas remplie. C'est voulu.
+Le build de production **refuse de s'exécuter** si l'une de ces conditions n'est pas remplie. C'est voulu.
 
-1. **Témoignages d'exemple.** Les pages « Solutions » contiennent des témoignages signalés comme exemples, en attendant de vrais témoignages. Le build de production s'arrête avec le message « Production refusée : témoignage d'exemple à remplacer ». Neur.on fournira les textes définitifs.
+1. **Témoignages d'exemple.** Les pages « Solutions » contiennent des témoignages d'exemple, en attendant de vrais témoignages. Ils s'affichent avec la mention « Exemple de cas d'usage » (dans chaque langue) à la place d'un nom ou d'une fonction, et peuvent être publiés ainsi. Le build de production ne s'arrête que si un exemple perdait cette mention (message « Production refusée : témoignage d'exemple sans la mention »). Un vrai témoignage, publié avec l'accord écrit du client, s'ajoute dans `src/data/solutions.json` (et ses traductions) sans le champ `"exemple"`.
 2. **Langues relues.** Une langue n'est publiée que si toutes ses pages sont marquées `"relue"` dans `src/langues/<langue>/statut.json` (le français est toujours publié). Les quatre langues sont validées : français, allemand, italien et anglais sont publiés. Si une langue devait être retirée temporairement, il suffirait de repasser une de ses valeurs à `"brouillon"` ; ses liens dans le sélecteur de langue apparaîtraient alors comme « bientôt ».
 
 ## 3. Hébergement (Infomaniak, Apache)
